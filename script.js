@@ -394,6 +394,8 @@ const AuthManager = (() => {
         } catch { return null; }
     }
 
+    function isLoggedIn() { return getSession() !== null; }
+
     ensureAdminExists();
 
     return { signUp, signIn, signOut, recoverPassword, getSession, isLoggedIn, simpleHash };
