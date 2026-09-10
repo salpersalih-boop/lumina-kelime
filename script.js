@@ -19,7 +19,7 @@ const TOTAL_GROUPS_FR = 10; // Fransızca grup sayısı
 const TOTAL_GROUPS_NO = 5;  // Norveççe grup sayısı
 
 // ── C# API ADRESİ ──
-const API_BASE_URL = 'https://localhost:7024/api';
+const API_BASE_URL = 'https://localhost:7047/api';
 
 // ── GLOBAL DEĞİŞKENLER ──
 let currentLanguage = 'English';
@@ -233,6 +233,17 @@ async function fetchLocalCsvData() {
 
 async function loadLanguageData(langName) {
     currentLanguage = langName;
+
+    // İngilizce için önce /api/words endpoint'ini dene
+    if (langName === 'English') {
+        const apiWordsLoaded = await loadWordsFromApi();
+        if (apiWordsLoaded) {
+            console.log(`✅ English kelimeleri /api/words endpoint'inden başarıyla yüklendi.`);
+            return; // allWords zaten loadWordsFromApi() içinde dolduruldu
+        }
+        console.warn('⚠️ /api/words başarısız, /api/English endpoint\'i deneniyor...');
+    }
+
     try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 1500);
@@ -274,6 +285,63 @@ async function loadLanguageData(langName) {
             v3: word.v3
         });
     });
+}
+
+// ── /api/words ENDPOINT'İNDEN İNGİLİZCE KELİMELERİ ÇEK ──
+// Bu fonksiyon C# API'nizin /api/words endpoint'inden tüm kelimeleri çeker
+// ve mevcut Lumina sistemiyle entegre eder.
+async function loadWordsFromApi() {
+    try {
+        console.log('🔄 /api/words endpoint\'inden kelimeler çekiliyor...');
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 3000);
+        const response = await fetch(`${API_BASE_URL}/words`, { signal: controller.signal });
+        clearTimeout(timeoutId);
+
+        if (!response.ok) {
+            throw new Error(`Kelimeler sunucudan alınamadı! HTTP: ${response.status}`);
+        }
+
+        const apiWords = await response.json();
+        console.log('✅ Veritabanından gelen kelimeler (/api/words):', apiWords);
+        console.log(`📊 Toplam ${apiWords.length} kelime alındı.`);
+
+        // API'den gelen kelimeleri Lumina formatına dönüştür
+        if (apiWords && apiWords.length > 0) {
+            wordsData = apiWords.map((w, idx) => ({
+                id:      w.id      || idx + 1,
+                groupId: w.groupId || Math.min(30, Math.floor(idx / 100) + 1),
+                english: w.english || w.word  || w.en || '',
+                turkish: w.turkish || w.tr    || '',
+                v1: w.v1 || null,
+                v2: w.v2 || null,
+                v3: w.v3 || null
+            }));
+
+            // allWords nesnesini güncelle (grup bazlı)
+            allWords = {};
+            wordsData.forEach(word => {
+                const key = `group${word.groupId}`;
+                if (!allWords[key]) allWords[key] = [];
+                allWords[key].push({
+                    id: word.id,
+                    en: word.english,
+                    tr: word.turkish,
+                    v1: word.v1,
+                    v2: word.v2,
+                    v3: word.v3
+                });
+            });
+
+            console.log('✅ Kelimeler başarıyla sisteme yüklendi. Gruplar:', Object.keys(allWords).length);
+            return true;
+        }
+
+        return false;
+    } catch (error) {
+        console.warn('⚠️ /api/words bağlantı hatası (yerel veriseti kullanılacak):', error.message);
+        return false;
+    }
 }
 
 async function loadVerbsLabData() {
