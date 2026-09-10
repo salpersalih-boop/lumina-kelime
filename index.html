@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina 3000 – İngilizce Çalışma Sistemi</title>
+  <meta name="description" content="3000 kelimelik, 30 gruba bölünmüş kişisel İngilizce kelime çalışma sistemi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════ GLOBAL TOP USER BAR ══════════════ -->
+  <header id="globalTopBar" class="global-top-bar hidden">
+    <div class="top-bar-container">
+      <!-- Quick Info / Status -->
+      <div class="top-bar-left"></div>
+
+      <!-- User Actions & Profile -->
+      <div class="top-bar-right">
+        <!-- Dil Seç (Sadece dil seçildikten sonra görünür) -->
+        <button id="btnSwitchLang" class="btn-switch-lang-top hidden" title="Dil Seçim Ekranına Dön">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+          <span>Dil Seç</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="btnThemeToggle" class="top-bar-btn" title="Karanlık / Aydınlık Mod">
+          <span class="theme-icon-dark">🌙</span>
+          <span class="theme-icon-light hidden">☀️</span>
+        </button>
+
+        <!-- Notification Bell -->
+        <div class="notif-wrapper">
+          <button id="btnNotifToggle" class="top-bar-btn" title="Bildirimler & Aktivite">
+            <span class="notif-bell-icon">🔔</span>
+            <span id="notifBadge" class="notif-badge hidden">0</span>
+          </button>
+
+          <!-- Notification Popover -->
+          <div id="notifPopover" class="notif-popover hidden">
+            <div class="notif-header">
+              <h4>🔔 Aktivite & Bildirimler</h4>
+              <button id="btnClearNotifs" class="btn-text-sm">Temizle</button>
+            </div>
+            <div id="notifList" class="notif-list">
+              <div class="notif-empty">Henüz bildirim yok.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- User Profile Dropdown Trigger -->
+        <div class="user-dropdown-wrapper">
+          <button id="userDropdownTrigger" class="user-dropdown-btn">
+            <span id="topUserLangFlag" class="user-lang-flag">🇬🇧</span>
+            <div id="topUserAvatar" class="top-user-avatar">A</div>
+            <span id="topUserName" class="top-user-name">a@l.com</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+
+          <!-- User Dropdown Menu -->
+          <div id="userDropdownMenu" class="user-dropdown-menu hidden">
+            <div class="dropdown-user-header">
+              <div id="menuUserAvatar" class="dropdown-avatar">A</div>
+              <div class="dropdown-user-info">
+                <div id="menuUserName" class="dropdown-name">Admin User</div>
+                <div id="menuUserEmail" class="dropdown-email">a@l.com</div>
+                <span id="menuUserRoleBadge" class="user-role-badge admin">⚡ Admin</span>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <button id="btnOpenManageAccount" class="dropdown-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <span>Hesabı Yönet</span>
+            </button>
+            <button id="btnOpenChangePassword" class="dropdown-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              <span>Şifre Değiştir</span>
+            </button>
+            <div class="dropdown-divider"></div>
+            <button id="btnDropdownLogout" class="dropdown-item danger" onclick="authSignOut()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                <polyline points="16 17 21 12 16 7" />
+                <line x1="21" y1="12" x2="9" y2="12" />
+              </svg>
+              <span>Çıkış Yap</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════ AUTH SCREEN ══════════════ -->
+  <div id="authScreen" class="screen active">
+    <div class="auth-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="auth-container">
+      <!-- Logo -->
+      <div class="auth-logo">
+        <span class="logo-icon">✦</span>
+        <h1 class="logo-title">Lumina <span class="accent">3000</span></h1>
+        <p class="auth-tagline">Kişisel İngilizce Kelime Sistemi</p>
+      </div>
+
+      <!-- Auth Card -->
+      <div class="auth-card" id="authCard">
+
+        <!-- ── TAB SWITCHER ── -->
+        <div class="auth-tabs" id="authTabs">
+          <button class="auth-tab active" id="tabSignIn" onclick="authShowPanel('signin')">Giriş Yap</button>
+          <button class="auth-tab" id="tabSignUp" onclick="authShowPanel('signup')">Kayıt Ol</button>
+        </div>
+
+        <!-- ── SIGN IN PANEL ── -->
+        <div class="auth-panel active" id="panelSignIn">
+          <div class="auth-field-group">
+            <label class="auth-label" for="siEmail">E-posta</label>
+            <div class="auth-input-wrap">
+              <svg class="auth-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 7 10-7" />
+              </svg>
+              <input id="siEmail" class="auth-input" type="email" placeholder="ornek@mail.com" autocomplete="email" />
+            </div>
+          </div>
+          <div class="auth-field-group">
+            <label class="auth-label" for="siPassword">Şifre</label>
+            <div class="auth-input-wrap">
+              <svg class="auth-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              <input id="siPassword" class="auth-input" type="password" placeholder="••••••"
+                autocomplete="current-password" />
+              <button class="auth-eye-btn" id="siEyeBtn" onclick="authToggleEye('siPassword','siEyeBtn')" tabindex="-1"
+                type="button">👁</button>
+            </div>
+          </div>
+          <div id="siError" class="auth-error hidden"></div>
+          <button class="auth-submit-btn" id="btnSignIn" onclick="authSignIn()">
+            <span>Giriş Yap</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+          <button class="auth-forgot-link" onclick="authShowPanel('forgot')">Şifremi Unuttum</button>
+
+          <!-- Quick Admin Login -->
+          <div class="auth-divider"><span>veya hızlı giriş</span></div>
+          <button class="auth-admin-btn" onclick="authQuickAdmin()">
+            <span class="admin-badge">⚡ Admin</span>
+            <span>a@l.com ile hızlı giriş</span>
+          </button>
+        </div>
+
+        <!-- ── SIGN UP PANEL ── -->
+        <div class="auth-panel" id="panelSignUp">
+          <div class="auth-field-group">
+            <label class="auth-label" for="suName">İsim (isteğe bağlı)</label>
+            <div class="auth-input-wrap">
+              <svg class="auth-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+              </svg>
+              <input id="suName" class="auth-input" type="text" placeholder="Adınız" autocomplete="name" />
+            </div>
+          </div>
+          <div class="auth-field-group">
+            <label class="auth-label" for="suEmail">E-posta</label>
+            <div class="auth-input-wrap">
+              <svg class="auth-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 7 10-7" />
+              </svg>
+              <input id="suEmail" class="auth-input" type="email" placeholder="ornek@mail.com" autocomplete="email" />
+            </div>
+          </div>
+          <div class="auth-field-group">
+            <label class="auth-label" for="suPassword">Şifre <span
+                style="color:var(--text-muted);font-size:0.75rem;">(en az 6 karakter)</span></label>
+            <div class="auth-input-wrap">
+              <svg class="auth-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              <input id="suPassword" class="auth-input" type="password" placeholder="••••••"
+                autocomplete="new-password" />
+              <button class="auth-eye-btn" id="suEyeBtn" onclick="authToggleEye('suPassword','suEyeBtn')" tabindex="-1"
+                type="button">👁</button>
+            </div>
+          </div>
+          <div id="suError" class="auth-error hidden"></div>
+          <div id="suSuccess" class="auth-success hidden"></div>
+          <button class="auth-submit-btn" id="btnSignUp" onclick="authSignUp()">
+            <span>Hesap Oluştur</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- ── FORGOT PASSWORD PANEL ── -->
+        <div class="auth-panel" id="panelForgot">
+          <div class="auth-back-row">
+            <button class="auth-back-link" onclick="authShowPanel('signin')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16">
+                <path d="M19 12H5M12 5l-7 7 7 7" />
+              </svg>
+              Geri Dön
+            </button>
+          </div>
+          <p class="auth-forgot-desc">E-posta adresinizi girin, şifrenizi gösterelim.</p>
+          <div class="auth-field-group">
+            <label class="auth-label" for="fpEmail">E-posta</label>
+            <div class="auth-input-wrap">
+              <svg class="auth-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 7 10-7" />
+              </svg>
+              <input id="fpEmail" class="auth-input" type="email" placeholder="ornek@mail.com" autocomplete="email" />
+            </div>
+          </div>
+          <div id="fpError" class="auth-error hidden"></div>
+          <div id="fpSuccess" class="auth-success hidden"></div>
+          <button class="auth-submit-btn" id="btnForgot" onclick="authForgotPassword()">
+            <span>Şifremi Göster</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+      </div><!-- /auth-card -->
+    </div><!-- /auth-container -->
+  </div>
+
+  <!-- ══════════════ LANGUAGE SCREEN ══════════════ -->
+  <div id="languageScreen" class="screen" style="justify-content: center; align-items: center; min-height: 100dvh;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <h1 class="logo-title" style="font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: 1rem;">Lumina <span
+          class="accent">3000</span></h1>
+      <p class="logo-sub" style="font-size: 1.1rem; color: var(--text-muted);">Choose Your Journey / Yolculuğunu Seç</p>
+    </div>
+    <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; padding: 0 20px;">
+
+      <button class="lang-btn" id="btnLangEn">
+        <div class="lang-icon-wrap en">
+          <span class="flag-emoji">🇬🇧</span>
+          <span class="flag-code">EN</span>
+        </div>
+        <div class="lang-info">
+          <h3>İngilizce</h3>
+          <p>Mevcut 3000 Kelimeyi Öğren</p>
+        </div>
+      </button>
+
+      <button class="lang-btn es-theme" id="btnLangEs">
+        <div class="lang-icon-wrap es">
+          <span class="flag-emoji">🇪🇸</span>
+          <span class="flag-code">ES</span>
+        </div>
+        <div class="lang-info">
+          <h3>İspanyolca</h3>
+          <p>Yeni İspanyolca Modülü</p>
+        </div>
+      </button>
+
+      <button class="lang-btn de-theme" id="btnLangDe">
+        <div class="lang-icon-wrap de">
+          <span class="flag-emoji">🇩🇪</span>
+          <span class="flag-code">DE</span>
+        </div>
+        <div class="lang-info">
+          <h3>Almanca</h3>
+          <p>Yeni Almanca Modülü</p>
+        </div>
+      </button>
+
+      <button class="lang-btn fr-theme" id="btnLangFr">
+        <div class="lang-icon-wrap fr">
+          <span class="flag-emoji">🇫🇷</span>
+          <span class="flag-code">FR</span>
+        </div>
+        <div class="lang-info">
+          <h3>Fransızca</h3>
+          <p>Yeni Fransızca Modülü</p>
+        </div>
+      </button>
+
+      <button class="lang-btn no-theme" id="btnLangNo">
+        <div class="lang-icon-wrap no">
+          <span class="flag-emoji">🇳🇴</span>
+          <span class="flag-code">NO</span>
+        </div>
+        <div class="lang-info">
+          <h3>Norveççe</h3>
+          <p>Yeni Norveççe Modülü</p>
+        </div>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ══════════════ DASHBOARD ══════════════ -->
+  <div id="dashboard" class="screen">
+    <header class="dash-header">
+      <div class="logo-wrap">
+        <span class="logo-icon">✦</span>
+        <h1 class="logo-title">Lumina <span class="accent">3000</span></h1>
+      </div>
+      <p class="logo-sub">Kişisel İngilizce Kelime Sistemi · 30 Grup · 3000 Kelime</p>
+      <!-- User Info + Logout -->
+      <div class="dash-user-row" id="dashUserRow">
+        <div class="dash-user-avatar" id="dashUserAvatar">A</div>
+        <span class="dash-user-email" id="dashUserEmail">a@l.com</span>
+        <button class="dash-logout-btn" id="btnLogout" onclick="authSignOut()" title="Çıkış Yap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+          Çıkış
+        </button>
+      </div>
+    </header>
+
+    <div class="groups-grid" id="groupsGrid"></div>
+
+    <!-- TIMELINE SECTION -->
+    <div class="timeline-section"
+      style="margin-top: 48px; border-top: 1px dashed rgba(124, 110, 247, 0.2); padding-top: 32px;">
+      <h3 class="modules-title">⏱️ Etkinlik Çizelgesi</h3>
+      <div class="timeline-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 32px;">
+
+        <div class="timeline-card">
+          <div class="tl-header">
+            <h4>Bugün <span class="tl-count" id="tlCountToday">0</span></h4>
+          </div>
+          <div class="tl-list" id="tlListToday">
+            <div class="tl-empty">Henüz kelime öğrenilmedi.</div>
+          </div>
+        </div>
+
+        <div class="timeline-card">
+          <div class="tl-header">
+            <h4>Dün <span class="tl-count" id="tlCountYesterday">0</span></h4>
+          </div>
+          <div class="tl-list" id="tlListYesterday">
+            <div class="tl-empty">Henüz kelime öğrenilmedi.</div>
+          </div>
+        </div>
+
+        <div class="timeline-card">
+          <div class="tl-header">
+            <h4>Bu Hafta <span class="tl-count" id="tlCountWeek">0</span></h4>
+          </div>
+          <div class="tl-list" id="tlListWeek">
+            <div class="tl-empty">Henüz kelime öğrenilmedi.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- INTERACTIVE MODULES -->
+    <div class="modules-section">
+      <h3 class="modules-title">✨ İnteraktif Modüller</h3>
+      <div class="modules-grid">
+        <button class="module-card lab" id="btnGoLab">
+          <span class="mod-icon">🧪</span>
+          <div class="mod-info">
+            <h4>Kelime Lab (V1-V2-V3)</h4>
+            <p>Fiillerin 3 halini istatistiksiz çalış</p>
+          </div>
+        </button>
+        <button class="module-card match" id="btnGoMatch">
+          <span class="mod-icon">🧩</span>
+          <div class="mod-info">
+            <h4>Match & Learn</h4>
+            <p>Sürükle bırak, eşleştir, öğren</p>
+          </div>
+        </button>
+        <button class="module-card sandbox" id="btnGoSandbox">
+          <span class="mod-icon">🏖️</span>
+          <div class="mod-info">
+            <h4>Sandbox Pekiştirme</h4>
+            <p>Bilmiyorum dediklerin, baskı yok!</p>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <footer class="dash-footer">
+      <span id="totalProgress">Toplam ilerleme yükleniyor…</span>
+      <button id="btnResetProgress" class="btn-text"
+        style="color: var(--text-dim); margin-left: auto; cursor: pointer; background:none; border:none; text-decoration: underline;">Tüm
+        İlerlemeyi Sıfırla</button>
+    </footer>
+  </div>
+
+  <!-- ══════════════ GROUP SCREEN ══════════════ -->
+  <div id="groupScreen" class="screen">
+    <div class="group-header">
+      <button class="btn-back" id="btnBack" aria-label="Geri dön">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 5l-7 7 7 7" />
+        </svg>
+        Dashboard
+      </button>
+      <h2 id="groupTitle">Grup 1</h2>
+      <div class="group-stats" id="groupStats"></div>
+    </div>
+
+    <!-- Mode selector -->
+    <div class="mode-selector">
+      <button class="mode-btn" id="modeNew" data-mode="new">
+        <span class="mode-icon">🌱</span>
+        <span class="mode-label">Yeni Kelimeler</span>
+        <span class="mode-count" id="countNew">0</span>
+      </button>
+      <button class="mode-btn" id="modeErrors" data-mode="errors">
+        <span class="mode-icon">🔴</span>
+        <span class="mode-label">Hataları Tekrar Et</span>
+        <span class="mode-count" id="countErrors">0</span>
+      </button>
+      <button class="mode-btn" id="modeUnsure" data-mode="unsure">
+        <span class="mode-icon">🤔</span>
+        <span class="mode-label">Kararsızlıklarım</span>
+        <span class="mode-count" id="countUnsure">0</span>
+      </button>
+      <button class="mode-btn" id="modeKnown" data-mode="known">
+        <span class="mode-icon">✅</span>
+        <span class="mode-label">Bildiklerimi Tazele</span>
+        <span class="mode-count" id="countKnown">0</span>
+      </button>
+      <button class="mode-btn" id="modeLabGroup" data-mode="lab-group">
+        <span class="mode-icon">🧪</span>
+        <span class="mode-label">Gruptaki Fiiller (V1-V2-V3)</span>
+        <span class="mode-count" id="countLabGroup">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════════ FLASHCARD SCREEN ══════════════ -->
+  <div id="flashcardScreen" class="screen">
+    <div class="fc-header">
+      <button class="btn-back" id="btnBackFC" aria-label="Gruba dön">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 5l-7 7 7 7" />
+        </svg>
+        <span id="fcGroupTitle">Grup 1</span>
+      </button>
+      <div class="fc-progress-wrap">
+        <div class="fc-progress-bar">
+          <div class="fc-progress-fill" id="fcProgressFill"></div>
+        </div>
+        <span class="fc-progress-text" id="fcProgressText"></span>
+      </div>
+      <span class="fc-mode-badge" id="fcModeBadge"></span>
+      <button class="btn-shuffle" id="btnShuffleSession" title="Kalan Kelimeleri Karıştır">🔀</button>
+    </div>
+
+    <!-- Card -->
+    <div class="card-scene" id="cardScene">
+      <div class="card" id="flashCard">
+        <div class="card-face card-front">
+          <span class="card-lang-tag">EN</span>
+          <div style="display:flex; align-items:center; gap: 12px; justify-content:center;">
+            <p class="card-word" id="cardWordFront"></p>
+            <button class="btn-audio" id="btnAudioFront" aria-label="Dinle"
+              onclick="event.stopPropagation(); playAudio(document.getElementById('cardWordFront').textContent)">🔊</button>
+          </div>
+          <span class="card-hint">Kartı çevirmek için tıkla</span>
+        </div>
+        <div class="card-face card-back">
+          <span class="card-lang-tag tr">TR</span>
+          <p class="card-word" id="cardWordBack"></p>
+          <p class="card-word-en-small" id="cardWordBackEn"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Answer buttons -->
+    <div class="answer-btns" id="answerBtns">
+      <button class="btn-wrong" id="btnWrong" disabled>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+        Bilmiyorum
+      </button>
+      <button class="btn-unsure" id="btnUnsure" disabled>
+        🤔 Kararsızım
+      </button>
+      <button class="btn-correct" id="btnCorrect" disabled>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+        Biliyorum
+      </button>
+    </div>
+
+    <!-- Session complete -->
+    <div class="session-complete hidden" id="sessionComplete">
+      <div class="complete-card">
+        <div class="complete-icon">🎉</div>
+        <h3 class="complete-title">Oturum Tamamlandı!</h3>
+        <div class="complete-stats" id="completeStats"></div>
+        <div class="complete-actions">
+          <button class="btn-primary" id="btnRestartSession">Tekrar Çalış</button>
+          <button class="btn-secondary" id="btnBackToGroup">Gruba Dön</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ LAB SCREEN ══════════════ -->
+  <div id="labScreen" class="screen">
+    <div class="fc-header" style="margin-bottom: 24px;">
+      <button class="btn-back" id="btnBackLab" aria-label="Dashboard'a dön">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 5l-7 7 7 7" />
+        </svg>
+        Dashboard
+      </button>
+      <h2 id="labTitle" style="margin:0; font-size: 1.4rem; color: var(--accent-1);">🧪 Kelime Laboratuvarı</h2>
+    </div>
+    <div class="lab-grid" id="labGrid">
+      <!-- Verbs injected here -->
+    </div>
+  </div>
+
+  <!-- ══════════════ MATCH SCREEN ══════════════ -->
+  <div id="matchScreen" class="screen">
+    <div class="fc-header" style="margin-bottom: 24px;">
+      <button class="btn-back" id="btnBackMatch" aria-label="Dashboard'a dön">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 5l-7 7 7 7" />
+        </svg>
+        Dashboard
+      </button>
+      <h2 style="margin:0; font-size: 1.4rem; color: var(--accent-2);">🧩 Match & Learn</h2>
+      <button class="btn-primary" id="btnRefreshMatch"
+        style="margin-left:auto; padding: 8px 16px; border-radius: 99px; background: rgba(94,196,245,0.15); color: var(--accent-2); border: 1px solid rgba(94,196,245,0.4); cursor:pointer;">♻️
+        Yenile</button>
+    </div>
+    <div class="match-board">
+      <div class="match-col eng" id="matchColEng"></div>
+      <div class="match-col tr" id="matchColTr"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════ MODALS ══════════════ -->
+  <!-- Hesabı Yönet Modalı -->
+  <div id="manageAccountModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>👤 Hesabı Yönet</h3>
+        <button class="modal-close-btn" onclick="closeModal('manageAccountModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="profile-avatar-large" id="maAvatar">A</div>
+
+        <div class="auth-field-group">
+          <label class="auth-label" for="maNameInput">Ad Soyad / İsim</label>
+          <div class="auth-input-wrap">
+            <input id="maNameInput" class="auth-input" type="text" placeholder="Adınız" />
+          </div>
+        </div>
+
+        <div class="auth-field-group">
+          <label class="auth-label">E-posta Adresi</label>
+          <div class="auth-input-wrap">
+            <input id="maEmailInput" class="auth-input" type="email" readonly disabled
+              style="opacity: 0.7; cursor: not-allowed;" />
+          </div>
+        </div>
+
+        <div class="auth-field-group">
+          <label class="auth-label">Kullanıcı Rolü</label>
+          <div class="role-badge-box">
+            <span id="maRoleBadge" class="user-role-badge admin">⚡ Admin</span>
+          </div>
+        </div>
+
+        <div id="maSuccess" class="auth-success hidden"></div>
+        <div id="maError" class="auth-error hidden"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeModal('manageAccountModal')">İptal</button>
+        <button class="btn-primary" onclick="saveProfileChanges()">Değişiklikleri Kaydet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Şifre Değiştir Modalı -->
+  <div id="changePasswordModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>🔑 Şifre Değiştir</h3>
+        <button class="modal-close-btn" onclick="closeModal('changePasswordModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="auth-field-group">
+          <label class="auth-label" for="cpOldPassword">Mevcut Şifre</label>
+          <div class="auth-input-wrap">
+            <input id="cpOldPassword" class="auth-input" type="password" placeholder="••••••" />
+            <button class="auth-eye-btn" onclick="authToggleEye('cpOldPassword', this)">👁</button>
+          </div>
+        </div>
+
+        <div class="auth-field-group">
+          <label class="auth-label" for="cpNewPassword">Yeni Şifre <span
+              style="color:var(--text-muted);font-size:0.75rem;">(en az 6 karakter)</span></label>
+          <div class="auth-input-wrap">
+            <input id="cpNewPassword" class="auth-input" type="password" placeholder="••••••" />
+            <button class="auth-eye-btn" onclick="authToggleEye('cpNewPassword', this)">👁</button>
+          </div>
+        </div>
+
+        <div class="auth-field-group">
+          <label class="auth-label" for="cpConfirmPassword">Yeni Şifre (Tekrar)</label>
+          <div class="auth-input-wrap">
+            <input id="cpConfirmPassword" class="auth-input" type="password" placeholder="••••••" />
+            <button class="auth-eye-btn" onclick="authToggleEye('cpConfirmPassword', this)">👁</button>
+          </div>
+        </div>
+
+        <div id="cpSuccess" class="auth-success hidden"></div>
+        <div id="cpError" class="auth-error hidden"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeModal('changePasswordModal')">İptal</button>
+        <button class="btn-primary" onclick="savePasswordChanges()">Şifreyi Güncelle</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="logoutModal" class="logout-modal hidden" style="display: none;">
+    <div class="logout-box">
+      <h2>Güvenli Çıkış Yapıldı</h2>
+      <p>Bir dil bir insan, iki dil iki insan 😊</p>
+      <button onclick="closeModal('logoutModal')" class="modal-btn">Tamam</button>
+    </div>
+  </div>
+
+  <!-- ══════════════ ÇIKIŞ ONAY MODALI ══════════════ -->
+  <div id="logoutConfirmModal" class="modal-overlay hidden">
+    <div class="modal-card logout-confirm-card">
+      <div class="logout-confirm-icon">🌍</div>
+      <div class="logout-confirm-body">
+        <p class="logout-quote-primary">Her yeni kelime yeni bir kapıdır.</p>
+        <p class="logout-quote-secondary">1 dil = 1 insan, 2 dil = 2 insan.</p>
+      </div>
+      <div class="logout-confirm-actions">
+        <button class="btn-logout-cancel" onclick="closeModal('logoutConfirmModal')">Vazgeç</button>
+        <button class="btn-logout-confirm" onclick="executeSignOut()">Çıkış Yap</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

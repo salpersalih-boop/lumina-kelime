@@ -1,0 +1,30 @@
+Lumına Sistemi 
+Ne Kullanacağız? (Teknoloji Yığını)
+Veritabanı: SQL Server (Zaten bilgisayarında kurulu, SSMS üzerinden yöneteceğiz).
+
+Backend (Arka Plan): C# ve WordsController. Excel dosyanı okumak için çok hafif ve hızlı olan EPPlus kütüphanesini projeye dahil edeceğiz.
+
+Frontend (Web Arayüzü): HTML, CSS ve JavaScript (Fetch API). Yönetim panelin için göz yormayan, şık bir karanlık tema (dark mode) tasarımı hazırlayacağız.
+
+Şimdi Ne Yapacağız? (Adım Adım Plan)
+1. Adım: Veritabanını Hazırlama
+SQL Server Management Studio'yu (SSMS) açıp, daha önce bahsettiğim ve 30 dile de sorunsuz dayanıklı olan o esnek Words tablosunu oluşturacak SQL kodunu çalıştıracağız.
+
+2. Adım: C# WordsController'ı Güncelleme
+Projene NuGet üzerinden Excel dosyalarını okuyabilmek için EPPlus paketini kuracağız. Ardından WordsController dosyasının içine şu iki işlemi yapan kodları ekleyeceğiz:
+
+Web arayüzünden yüklediğin Excel dosyasının alt sayfalarını (Türkçe, Almanca vb.) otomatik okuyup SQL'e kaydeden metot.
+
+Web sitesinden "3. Grup" isteği geldiğinde, kelimeleri 100'erli gruplara (pagination mantığıyla) bölüp sadece ilgili 100 kelimeyi gönderen metot.
+
+3. Adım: Web Arayüzünü (Frontend) Kodlama
+Karanlık tema ile hazırlayacağımız web sayfasına şunları ekleyeceğiz:
+
+Sistemine Excel yüklemeni sağlayacak modern bir dosya yükleme arayüzü.
+
+Backend'den gelen bilgiye göre otomatik oluşan ve yan yana sıralanan "Grup 1", "Grup 2", "Grup 3" butonları.
+
+Herhangi bir gruba tıklandığında, JavaScript ile sayfayı yenilemeden WordsController'a gidip gelen kelimeleri ekrandaki listeye yerleştiren yapı.
+
+Kodları yazmaya başlamadan önce yapımızı tam oturtmak için küçük bir detaya ihtiyacım var:
+C# web projende SQL veritabanına bağlanmak için Entity Framework Core mu kullanıyorsun (örn. _context.Words.ToList()), yoksa standart ADO.NET (örn. new SqlConnection("...")) mi kullanıyorsun?
