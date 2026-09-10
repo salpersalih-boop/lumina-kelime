@@ -11,7 +11,6 @@ const LS_KEY_ES = 'lumina_progress_es';
 const LS_KEY_DE = 'lumina_progress_de';
 const LS_KEY_FR = 'lumina_progress_fr';
 const LS_KEY_NO = 'lumina_progress_no';
-const LOCAL_STORAGE_KEY = LS_KEY;
 
 const TOTAL_GROUPS = 30;    // İngilizce varsayılan grup sayısı
 const TOTAL_GROUPS_ES = 9;  // İspanyolca grup sayısı
@@ -175,6 +174,63 @@ const FALLBACK_DATA = {
 };
 
 // ── DATA LOADING FUNCTIONS ──
+function parseCsvText(csvText) {
+    const lines = csvText.split(/\r?\n/);
+    const parsed = [];
+    const extractedVerbs = [];
+
+    for (let i = 1; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+        const parts = line.split(';');
+        if (parts.length < 2) continue;
+
+        const english = parts[0]?.trim();
+        const turkish = parts[1]?.trim();
+        let v1 = parts[2]?.trim();
+        let v2 = parts[3]?.trim();
+        let v3 = parts[4]?.trim();
+
+        if (!english || !turkish) continue;
+
+        if (v1 === '-' || !v1) v1 = null;
+        if (v2 === '-' || !v2) v2 = null;
+        if (v3 === '-' || !v3) v3 = null;
+
+        // Group size: ~100 words per group across 30 groups
+        const groupId = Math.min(30, Math.floor(parsed.length / 100) + 1);
+
+        const wordItem = {
+            id: parsed.length + 1,
+            groupId,
+            english,
+            turkish,
+            v1,
+            v2,
+            v3
+        };
+        parsed.push(wordItem);
+
+        if (v1 && v2 && v3) {
+            extractedVerbs.push({ v1, v2, v3, tr: turkish });
+        }
+    }
+
+    return { words: parsed, verbs: extractedVerbs };
+}
+
+async function fetchLocalCsvData() {
+    try {
+        const response = await fetch('./Oxford_3000_TR.csv');
+        if (!response.ok) throw new Error(`CSV HTTP Hatası: ${response.status}`);
+        const csvText = await response.text();
+        return parseCsvText(csvText);
+    } catch (err) {
+        console.warn("⚠️ Oxford 3000 CSV okunamadı:", err.message);
+        return null;
+    }
+}
+
 async function loadLanguageData(langName) {
     currentLanguage = langName;
     try {
@@ -188,7 +244,21 @@ async function loadLanguageData(langName) {
         console.log(`✅ ${langName} sunucudan yüklendi:`, wordsData.length);
     } catch (error) {
         console.warn(`⚠️ ${langName} sunucudan alınamadı, yerel verisetine geçiliyor:`, error.message);
-        wordsData = FALLBACK_DATA[langName] || FALLBACK_DATA.English;
+
+        if (langName === 'English') {
+            const csvResult = await fetchLocalCsvData();
+            if (csvResult && csvResult.words.length > 0) {
+                wordsData = csvResult.words;
+                if (csvResult.verbs.length > 0) {
+                    verbsLabData = csvResult.verbs;
+                }
+                console.log(`✅ English (Oxford 3000) yerel CSV dosyasından yüklendi:`, wordsData.length);
+            } else {
+                wordsData = FALLBACK_DATA[langName] || FALLBACK_DATA.English;
+            }
+        } else {
+            wordsData = FALLBACK_DATA[langName] || FALLBACK_DATA.English;
+        }
     }
 
     allWords = {};
@@ -207,6 +277,7 @@ async function loadLanguageData(langName) {
 }
 
 async function loadVerbsLabData() {
+    if (verbsLabData.length > 0) return; // Zaten CSV veya API'den yüklendi
     try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 1500);
@@ -217,8 +288,10 @@ async function loadVerbsLabData() {
         verbsLabData = await response.json();
         console.log("✅ VerbsLab sunucudan yüklendi:", verbsLabData.length);
     } catch (error) {
-        console.warn("⚠️ VerbsLab sunucudan alınamadı, yerel fiiller yükleniyor:", error.message);
-        verbsLabData = DEFAULT_VERBS_LAB;
+        console.warn("⚠️ VerbsLab sunucudan alınamadı, yerel fiiller kullanılıyor:", error.message);
+        if (verbsLabData.length === 0) {
+            verbsLabData = DEFAULT_VERBS_LAB;
+        }
     }
 }
 
@@ -321,11 +394,9 @@ const AuthManager = (() => {
         } catch { return null; }
     }
 
-    function isLoggedIn() { return getSession() !== null; }
-
     ensureAdminExists();
 
-    return { signUp, signIn, signOut, recoverPassword, getSession, isLoggedIn };
+    return { signUp, signIn, signOut, recoverPassword, getSession, isLoggedIn, simpleHash };
 })();
 
 // ── AUTH UI FUNCTIONS ──
@@ -1102,12 +1173,20 @@ function startSandbox() {
 }
 
 // ── UTILITIES ──
-function playAudio(text, lang = 'en-US') {
-    if (!window.speechSynthesis) return;
-    const safeText = text.replace('/', ' or ');
-    const utterance = new SpeechSynthesisUtterance(safeText);
-    utterance.lang = lang;
-    window.speechSynthesis.speak(utterance);
+function playAudio(text, lang) {
+    if (!window.speechSynthesis || !text) return;
+    const langMap = { en: 'en-US', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', no: 'nb-NO' };
+    const targetLang = lang || langMap[state.lang] || 'en-US';
+    const safeText = text.toString().replace(/\//g, ' or ');
+
+    try {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(safeText);
+        utterance.lang = targetLang;
+        window.speechSynthesis.speak(utterance);
+    } catch (e) {
+        console.warn('Ses okuma hatası:', e);
+    }
 }
 
 function shuffle(arr) {
@@ -1218,25 +1297,11 @@ AuthManager.changePassword = function (oldPassword, newPassword) {
     const user = users.find(u => u.email === session.email);
     if (!user) return { ok: false, error: 'Kullanıcı bulunamadı.' };
 
-    let hash = 0;
-    for (let i = 0; i < oldPassword.length; i++) {
-        const char = oldPassword.charCodeAt(i);
-        hash = ((hash << 5) - hash) + char;
-        hash = hash & hash;
-    }
-    const oldHashStr = hash.toString(36);
-
-    if (user.passwordHash !== oldHashStr) {
+    if (user.passwordHash !== AuthManager.simpleHash(oldPassword)) {
         return { ok: false, error: 'Mevcut şifreniz hatalı.' };
     }
 
-    let newHash = 0;
-    for (let i = 0; i < newPassword.length; i++) {
-        const char = newPassword.charCodeAt(i);
-        newHash = ((newHash << 5) - newHash) + char;
-        newHash = newHash & newHash;
-    }
-    user.passwordHash = newHash.toString(36);
+    user.passwordHash = AuthManager.simpleHash(newPassword);
 
     localStorage.setItem('lumina_users', JSON.stringify(users));
     NotificationManager.addNotification('Şifre Değiştirildi', 'Şifreniz başarıyla güncellendi.', '🔑');
