@@ -21,6 +21,10 @@ const TOTAL_GROUPS_NO = 5;  // Norveççe grup sayısı
 // ── C# API ADRESİ ──
 const API_BASE_URL = 'https://localhost:7047/api';
 
+// ── GOOGLE OAUTH CLIENT ID ──
+// Google Cloud Console'dan alınan Client ID'nizi buraya yazın
+const GOOGLE_CLIENT_ID = '1035406332647-50tntld2uiphj58kn5r1od3o4rjo2aof.apps.googleusercontent.com';
+
 // ── GLOBAL DEĞİŞKENLER ──
 let currentLanguage = 'English';
 let wordsData = [];
@@ -309,10 +313,10 @@ async function loadWordsFromApi() {
         // API'den gelen kelimeleri Lumina formatına dönüştür
         if (apiWords && apiWords.length > 0) {
             wordsData = apiWords.map((w, idx) => ({
-                id:      w.id      || idx + 1,
+                id: w.id || idx + 1,
                 groupId: w.groupId || Math.min(30, Math.floor(idx / 100) + 1),
-                english: w.english || w.word  || w.en || '',
-                turkish: w.turkish || w.tr    || '',
+                english: w.english || w.word || w.en || '',
+                turkish: w.turkish || w.tr || '',
                 v1: w.v1 || null,
                 v2: w.v2 || null,
                 v3: w.v3 || null
@@ -589,6 +593,182 @@ function authQuickAdmin() {
     authSignIn();
 }
 
+// ── GOOGLE SIGN-IN FUNCTIONS ──
+function initGoogleSignIn() {
+    // Google Identity Services API'nin yüklenmesini bekle
+    if (typeof google === 'undefined' || !google.accounts) {
+        // API henüz yüklenmedi, biraz bekleyip tekrar dene
+        setTimeout(initGoogleSignIn, 200);
+        return;
+    }
+    google.accounts.id.initialize({
+        client_id: GOOGLE_CLIENT_ID,
+        callback: handleGoogleCredentialResponse,
+        auto_select: false,
+        cancel_on_tap_outside: true
+    });
+}
+
+function decodeJwtPayload(token) {
+    try {
+        const base64Url = token.split('.')[1];
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        const jsonPayload = decodeURIComponent(
+            atob(base64).split('').map(c =>
+                '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+            ).join('')
+        );
+        return JSON.parse(jsonPayload);
+    } catch (e) {
+        console.error('JWT decode hatası:', e);
+        return null;
+    }
+}
+
+function handleGoogleCredentialResponse(response) {
+    const payload = decodeJwtPayload(response.credential);
+    if (!payload) {
+        authShowMsg('siError', '⚠️ Google girişi başarısız oldu. Lütfen tekrar deneyin.', true);
+        return;
+    }
+
+    const email = payload.email;
+    const name = payload.name || email.split('@')[0];
+    const picture = payload.picture || '';
+
+    // Kullanıcıyı lumina_users listesine ekle/güncelle
+    const LS_USERS = 'lumina_users';
+    let users = [];
+    try { users = JSON.parse(localStorage.getItem(LS_USERS) || '[]'); } catch { users = []; }
+
+    const existingIndex = users.findIndex(u => u.email === email);
+    const userData = {
+        email,
+        name,
+        picture,
+        authProvider: 'google',
+        role: 'user',
+        createdAt: existingIndex >= 0 ? users[existingIndex].createdAt : new Date().toISOString()
+    };
+
+    if (existingIndex >= 0) {
+        // Mevcut kullanıcıyı güncelle ama rolünü koru
+        userData.role = users[existingIndex].role || 'user';
+        users[existingIndex] = { ...users[existingIndex], ...userData };
+    } else {
+        users.push(userData);
+    }
+    localStorage.setItem(LS_USERS, JSON.stringify(users));
+
+    // Session oluştur
+    const session = {
+        email,
+        name,
+        picture,
+        role: userData.role,
+        authProvider: 'google',
+        loginAt: new Date().toISOString()
+    };
+    localStorage.setItem('lumina_session', JSON.stringify(session));
+
+    // İlerleme verisi migration: eski genel anahtarı kullanıcıya özel anahtara taşı
+    migrateProgressToUser(email);
+
+    // Dashboard'a yönlendir
+    authGoToDashboard(session);
+}
+
+function googleSignIn() {
+    if (typeof google === 'undefined' || !google.accounts) {
+        authShowMsg('siError', '⚠️ Google servisi henüz yüklenemedi. Sayfayı yenileyip tekrar deneyin.', true);
+        return;
+    }
+    google.accounts.id.prompt((notification) => {
+        if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
+            // One Tap görüntülenemedi, fallback: popup modunda aç
+            const client = google.accounts.oauth2.initTokenClient({
+                client_id: GOOGLE_CLIENT_ID,
+                scope: 'email profile',
+                callback: (tokenResponse) => {
+                    // Token ile kullanıcı bilgilerini al
+                    fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+                        headers: { 'Authorization': 'Bearer ' + tokenResponse.access_token }
+                    })
+                        .then(res => res.json())
+                        .then(userInfo => {
+                            const fakeCredentialPayload = {
+                                email: userInfo.email,
+                                name: userInfo.name,
+                                picture: userInfo.picture
+                            };
+                            // Doğrudan handleGoogleCredentialResponse benzeri işlem yap
+                            const email = fakeCredentialPayload.email;
+                            const name = fakeCredentialPayload.name || email.split('@')[0];
+                            const picture = fakeCredentialPayload.picture || '';
+
+                            const LS_USERS = 'lumina_users';
+                            let users = [];
+                            try { users = JSON.parse(localStorage.getItem(LS_USERS) || '[]'); } catch { users = []; }
+
+                            const existingIndex = users.findIndex(u => u.email === email);
+                            const userData = {
+                                email, name, picture,
+                                authProvider: 'google',
+                                role: 'user',
+                                createdAt: existingIndex >= 0 ? users[existingIndex].createdAt : new Date().toISOString()
+                            };
+
+                            if (existingIndex >= 0) {
+                                userData.role = users[existingIndex].role || 'user';
+                                users[existingIndex] = { ...users[existingIndex], ...userData };
+                            } else {
+                                users.push(userData);
+                            }
+                            localStorage.setItem(LS_USERS, JSON.stringify(users));
+
+                            const session = {
+                                email, name, picture,
+                                role: userData.role,
+                                authProvider: 'google',
+                                loginAt: new Date().toISOString()
+                            };
+                            localStorage.setItem('lumina_session', JSON.stringify(session));
+                            migrateProgressToUser(email);
+                            authGoToDashboard(session);
+                        })
+                        .catch(err => {
+                            console.error('Google userinfo hatası:', err);
+                            authShowMsg('siError', '⚠️ Google girişi sırasında bir hata oluştu.', true);
+                        });
+                }
+            });
+            client.requestAccessToken();
+        }
+    });
+}
+
+function migrateProgressToUser(email) {
+    if (!email) return;
+    const langKeys = [
+        { base: 'lumina_progress_en', suffix: '_en' },
+        { base: 'lumina_progress_es', suffix: '_es' },
+        { base: 'lumina_progress_de', suffix: '_de' },
+        { base: 'lumina_progress_fr', suffix: '_fr' },
+        { base: 'lumina_progress_no', suffix: '_no' }
+    ];
+
+    langKeys.forEach(({ base }) => {
+        const userKey = base + '_' + email;
+        // Eğer kullanıcıya özel anahtar henüz yoksa ve genel anahtar varsa, taşı
+        if (!localStorage.getItem(userKey)) {
+            const oldData = localStorage.getItem(base);
+            if (oldData) {
+                localStorage.setItem(userKey, oldData);
+            }
+        }
+    });
+}
+
 function authToggleEye(inputId, btnId) {
     const input = document.getElementById(inputId);
     const btn = typeof btnId === 'string' ? document.getElementById(btnId) : btnId;
@@ -634,11 +814,18 @@ function activeTotalGroups() {
 }
 
 function activeLSKey() {
-    if (state.lang === 'es') return LS_KEY_ES;
-    if (state.lang === 'de') return LS_KEY_DE;
-    if (state.lang === 'fr') return LS_KEY_FR;
-    if (state.lang === 'no') return LS_KEY_NO;
-    return LS_KEY;
+    let baseKey = LS_KEY;
+    if (state.lang === 'es') baseKey = LS_KEY_ES;
+    else if (state.lang === 'de') baseKey = LS_KEY_DE;
+    else if (state.lang === 'fr') baseKey = LS_KEY_FR;
+    else if (state.lang === 'no') baseKey = LS_KEY_NO;
+
+    // Kullanıcıya özel anahtar: lumina_progress_en_user@email.com
+    const session = AuthManager.getSession();
+    if (session && session.email) {
+        return baseKey + '_' + session.email;
+    }
+    return baseKey;
 }
 
 function activeGroupName(i) {
@@ -1383,16 +1570,33 @@ function updateUserUI(session) {
 
     const initial = (session.name || session.email).charAt(0).toUpperCase();
     const displayName = session.name || session.email.split('@')[0];
+    const isGoogleUser = session.authProvider === 'google';
+    const hasPhoto = isGoogleUser && session.picture;
 
-    const topAvatar = document.getElementById('topUserAvatar');
-    const menuAvatar = document.getElementById('menuUserAvatar');
-    const maAvatar = document.getElementById('maAvatar');
-    const dashAvatar = document.getElementById('dashUserAvatar');
+    // Google kullanıcısı için body class ekle (şifre değiştir gizleme için)
+    if (isGoogleUser) {
+        document.body.classList.add('google-user');
+    } else {
+        document.body.classList.remove('google-user');
+    }
 
-    if (topAvatar) topAvatar.textContent = initial;
-    if (menuAvatar) menuAvatar.textContent = initial;
-    if (maAvatar) maAvatar.textContent = initial;
-    if (dashAvatar) dashAvatar.textContent = initial;
+    const avatarEls = [
+        document.getElementById('topUserAvatar'),
+        document.getElementById('menuUserAvatar'),
+        document.getElementById('maAvatar'),
+        document.getElementById('dashUserAvatar')
+    ];
+
+    avatarEls.forEach(el => {
+        if (!el) return;
+        if (hasPhoto) {
+            el.innerHTML = `<img src="${session.picture}" alt="${displayName}" referrerpolicy="no-referrer" />`;
+            el.classList.add('has-photo');
+        } else {
+            el.textContent = initial;
+            el.classList.remove('has-photo');
+        }
+    });
 
     const topName = document.getElementById('topUserName');
     const menuName = document.getElementById('menuUserName');
@@ -1542,7 +1746,14 @@ window.authSignOut = function () {
 
 window.executeSignOut = function () {
     closeModal('logoutConfirmModal');
+
+    // Google oturumunu kapat
+    if (typeof google !== 'undefined' && google.accounts && google.accounts.id) {
+        google.accounts.id.disableAutoSelect();
+    }
+
     AuthManager.signOut();
+    document.body.classList.remove('google-user');
     const topBar = document.getElementById('globalTopBar');
     if (topBar) topBar.classList.add('hidden');
     document.getElementById('userDropdownMenu')?.classList.add('hidden');
@@ -1553,6 +1764,9 @@ window.executeSignOut = function () {
 document.addEventListener('DOMContentLoaded', async () => {
     loadSavedTheme();
     NotificationManager.renderNotifs();
+
+    // Google Sign-In başlat
+    initGoogleSignIn();
 
     // Initial language load
     await loadLanguageData('English');
