@@ -1156,7 +1156,21 @@ function renderDashboard() {
     renderTLList(logsYesterday, 'tlListYesterday', 'tlCountYesterday');
     renderTLList(logsWeek, 'tlListWeek', 'tlCountWeek');
 
-    // Header sub-text updates
+    // Header title & sub-text updates
+    const dashLogoTitle = document.querySelector('#dashboard .logo-title');
+    if (dashLogoTitle) {
+        const langMapTitle = {
+            'en': 'İNGİLİZCE',
+            'es': 'İSPANYOLCA',
+            'de': 'ALMANCA',
+            'fr': 'FRANSIZCA',
+            'no': 'NORVEÇÇE',
+            'sv': 'İSVEÇÇE'
+        };
+        const langNameUpper = langMapTitle[state.lang] || 'İNGİLİZCE';
+        dashLogoTitle.innerHTML = `LUMINA <span class="accent">${langNameUpper}</span>`;
+    }
+
     const logoSub = document.querySelector('.logo-sub');
     if (logoSub) {
         if (state.lang === 'es') {
@@ -1167,6 +1181,8 @@ function renderDashboard() {
             logoSub.textContent = `Kişisel Fransızca Kelime Sistemi · ${totalGrp} Grup · ${totalWords} Kelime`;
         } else if (state.lang === 'no') {
             logoSub.textContent = `Kişisel Norveççe Kelime Sistemi · ${totalGrp} Grup · ${totalWords} Kelime`;
+        } else if (state.lang === 'sv') {
+            logoSub.textContent = `Kişisel İsveççe Kelime Sistemi · ${totalGrp} Grup · ${totalWords} Kelime`;
         } else {
             logoSub.textContent = `Kişisel İngilizce Kelime Sistemi · ${totalGrp} Grup · ${totalWords} Kelime`;
         }
@@ -1223,8 +1239,8 @@ function openGroup(groupNum) {
     document.getElementById('modeErrors').disabled = cntErrors === 0;
     document.getElementById('modeKnown').disabled = cntKnown === 0;
     if (document.getElementById('modeUnsure')) document.getElementById('modeUnsure').disabled = cntUnsure === 0;
-    if (document.getElementById('modeTestErrors')) document.getElementById('modeTestErrors').disabled = cntTestErrors === 0;
-    if (document.getElementById('modeWriteErrors')) document.getElementById('modeWriteErrors').disabled = cntWriteErrors === 0;
+    if (document.getElementById('modeTestErrors')) document.getElementById('modeTestErrors').disabled = false;
+    if (document.getElementById('modeWriteErrors')) document.getElementById('modeWriteErrors').disabled = false;
 
     const labGroupBtn = document.getElementById('modeLabGroup');
     if (labGroupBtn) {
@@ -1940,13 +1956,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Card mode buttons
     document.getElementById('modeNew')?.addEventListener('click', () => startSession('new'));
     document.getElementById('modeErrors')?.addEventListener('click', () => startSession('errors'));
-    document.getElementById('modeTestErrors')?.addEventListener('click', () => startTestMode(true));
-    document.getElementById('modeWriteErrors')?.addEventListener('click', () => startWriteMode(true));
+    document.getElementById('modeTestErrors')?.addEventListener('click', () => openTestHub());
+    document.getElementById('modeWriteErrors')?.addEventListener('click', () => openWriteHub());
     document.getElementById('modeUnsure')?.addEventListener('click', () => startSession('unsure'));
-    document.getElementById('modeKnown')?.addEventListener('click', () => {
-        document.getElementById('refreshOptionsModal').classList.remove('hidden');
-    });
+    document.getElementById('modeKnown')?.addEventListener('click', () => startSession('known'));
     document.getElementById('modeLabGroup')?.addEventListener('click', () => startLabForGroup(state.currentGroup));
+
+    // Test Hub buttons
+    document.getElementById('btnBackTestHub')?.addEventListener('click', () => openGroup(state.currentGroup));
+    document.getElementById('hubBtnTest')?.addEventListener('click', () => startTestMode(false));
+    document.getElementById('hubBtnTestErrors')?.addEventListener('click', () => renderTestHubErrors());
+    document.getElementById('hubBtnTestKnown')?.addEventListener('click', () => renderTestHubKnown());
+    document.getElementById('btnPracticeTestErrors')?.addEventListener('click', () => startTestMode(true));
+
+    // Write Hub buttons
+    document.getElementById('btnBackWriteHub')?.addEventListener('click', () => openGroup(state.currentGroup));
+    document.getElementById('hubBtnWrite')?.addEventListener('click', () => startWriteMode(false));
+    document.getElementById('hubBtnWriteErrors')?.addEventListener('click', () => renderWriteHubErrors());
+    document.getElementById('hubBtnWriteKnown')?.addEventListener('click', () => renderWriteHubKnown());
+    document.getElementById('btnPracticeWriteErrorsHub')?.addEventListener('click', () => startWriteMode(true));
 
     // Flashcard interaction
     document.getElementById('flashCard')?.addEventListener('click', flipCard);
@@ -2152,16 +2180,214 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-function startRefreshMode(mode) {
-    closeModal('refreshOptionsModal');
-    if (mode === 'card') {
-        startSession('known');
-    } else if (mode === 'test') {
-        startTestMode();
-    } else if (mode === 'write') {
-        startWriteMode();
-    }
+// ── TEST HUB ──
+function openTestHub() {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
+
+    // Başlık
+    document.getElementById('testHubTitle').textContent = `📝 Test Merkezi — ${activeGroupName(state.currentGroup)}`;
+
+    // sayaçlar
+    const testErrCount = (gp.testErrors || []).length;
+    const knownCount = (gp.known || []).length;
+    document.getElementById('hubCountTestErrors').textContent = testErrCount;
+    document.getElementById('hubCountTestKnown').textContent = knownCount;
+    document.getElementById('hubCountTest').textContent = `${knownCount} kelime`;
+
+    // Test başlatma butonunu devre dışı bırak eğer yeterli kelime yoksa
+    const testBtn = document.getElementById('hubBtnTest');
+    if (testBtn) testBtn.disabled = knownCount < 4;
+
+    // Hata butonu devre dışı bırak eğer hata yoksa
+    const errBtn = document.getElementById('hubBtnTestErrors');
+    if (errBtn) errBtn.disabled = testErrCount === 0;
+
+    // Panelleri gizle
+    document.getElementById('testHubErrorsPanel').classList.add('hidden');
+    document.getElementById('testHubKnownPanel').classList.add('hidden');
+
+    showScreen('testHubScreen');
 }
+
+function renderTestHubErrors() {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
+    const listEl = document.getElementById('testHubErrorsList');
+
+    // Diğer paneli kapat
+    document.getElementById('testHubKnownPanel').classList.add('hidden');
+
+    if (!gp.testErrors || gp.testErrors.length === 0) {
+        listEl.innerHTML = '<div class="hub-empty">Henüz test hatanız bulunmuyor.</div>';
+    } else {
+        listEl.innerHTML = gp.testErrors.map(errItem => {
+            let sentence, tr, en;
+            if (typeof errItem === 'object') {
+                tr = errItem.tr || '-';
+                en = errItem.en || '-';
+                sentence = errItem.sentence || getTestSentence(en);
+                const userAns = errItem.userAns || '-';
+                return `<div class="hub-list-item">
+                    <div class="item-left">
+                        <div class="item-tr">${sentence}</div>
+                        <div class="item-wrong">Senin cevabın: <strong>${userAns}</strong></div>
+                    </div>
+                    <div class="item-right">
+                        <div class="item-label">Doğru Cevap</div>
+                        <div class="item-correct">${en}</div>
+                    </div>
+                </div>`;
+            } else {
+                const wObj = wordsInGroup.find(w => w.id === errItem);
+                if (!wObj) return '';
+                sentence = getTestSentence(wObj.en);
+                return `<div class="hub-list-item">
+                    <div class="item-left">
+                        <div class="item-tr">${sentence}</div>
+                        <div class="item-wrong">İpucu: ${wObj.tr}</div>
+                    </div>
+                    <div class="item-right">
+                        <div class="item-label">Doğru Cevap</div>
+                        <div class="item-correct">${wObj.en}</div>
+                    </div>
+                </div>`;
+            }
+        }).join('');
+    }
+
+    document.getElementById('testHubErrorsPanel').classList.remove('hidden');
+}
+
+function renderTestHubKnown() {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
+    const listEl = document.getElementById('testHubKnownList');
+
+    // Diğer paneli kapat
+    document.getElementById('testHubErrorsPanel').classList.add('hidden');
+
+    if (!gp.known || gp.known.length === 0) {
+        listEl.innerHTML = '<div class="hub-empty">Henüz bilinen kelime bulunmuyor.</div>';
+    } else {
+        listEl.innerHTML = gp.known.map(wordId => {
+            const wObj = wordsInGroup.find(w => w.id === wordId);
+            if (!wObj) return '';
+            return `<div class="hub-list-item">
+                <div class="item-left">
+                    <div class="item-word">${wObj.en}</div>
+                    <div class="item-wrong" style="color:var(--text-muted);">${wObj.tr}</div>
+                </div>
+                <div class="item-check">✓</div>
+            </div>`;
+        }).join('');
+    }
+
+    document.getElementById('testHubKnownPanel').classList.remove('hidden');
+}
+
+// ── WRITE HUB ──
+function openWriteHub() {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
+
+    // Başlık
+    document.getElementById('writeHubTitle').textContent = `✍️ Yazı Merkezi — ${activeGroupName(state.currentGroup)}`;
+
+    // sayaçlar
+    const writeErrCount = (gp.writeErrors || []).length;
+    const knownCount = (gp.known || []).length;
+    document.getElementById('hubCountWriteErrors').textContent = writeErrCount;
+    document.getElementById('hubCountWriteKnown').textContent = knownCount;
+    document.getElementById('hubCountWrite').textContent = `${knownCount} kelime`;
+
+    // Yazı başlatma butonunu devre dışı bırak eğer kelime yoksa
+    const writeBtn = document.getElementById('hubBtnWrite');
+    if (writeBtn) writeBtn.disabled = knownCount === 0;
+
+    // Hata butonu devre dışı bırak eğer hata yoksa
+    const errBtn = document.getElementById('hubBtnWriteErrors');
+    if (errBtn) errBtn.disabled = writeErrCount === 0;
+
+    // Panelleri gizle
+    document.getElementById('writeHubErrorsPanel').classList.add('hidden');
+    document.getElementById('writeHubKnownPanel').classList.add('hidden');
+
+    showScreen('writeHubScreen');
+}
+
+function renderWriteHubErrors() {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
+    const listEl = document.getElementById('writeHubErrorsList');
+
+    // Diğer paneli kapat
+    document.getElementById('writeHubKnownPanel').classList.add('hidden');
+
+    if (!gp.writeErrors || gp.writeErrors.length === 0) {
+        listEl.innerHTML = '<div class="hub-empty">Henüz yazı hatanız bulunmuyor.</div>';
+    } else {
+        listEl.innerHTML = gp.writeErrors.map(errItem => {
+            let tr, en, userAns;
+            if (typeof errItem === 'object') {
+                tr = errItem.tr || '-';
+                en = errItem.en || '-';
+                userAns = errItem.userAns || '-';
+            } else {
+                const wObj = wordsInGroup.find(w => w.id === errItem);
+                tr = wObj ? wObj.tr : '-';
+                en = wObj ? wObj.en : '-';
+                userAns = '-';
+            }
+            return `<div class="hub-list-item">
+                <div class="item-left">
+                    <div class="item-tr">Türkçe: <strong>${tr}</strong></div>
+                    <div class="item-wrong">Senin cevabın: <strong>${userAns}</strong></div>
+                </div>
+                <div class="item-right">
+                    <div class="item-label">Doğru Cevap</div>
+                    <div class="item-correct">${en}</div>
+                </div>
+            </div>`;
+        }).join('');
+    }
+
+    document.getElementById('writeHubErrorsPanel').classList.remove('hidden');
+}
+
+function renderWriteHubKnown() {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
+    const listEl = document.getElementById('writeHubKnownList');
+
+    // Diğer paneli kapat
+    document.getElementById('writeHubErrorsPanel').classList.add('hidden');
+
+    if (!gp.known || gp.known.length === 0) {
+        listEl.innerHTML = '<div class="hub-empty">Henüz bilinen kelime bulunmuyor.</div>';
+    } else {
+        listEl.innerHTML = gp.known.map(wordId => {
+            const wObj = wordsInGroup.find(w => w.id === wordId);
+            if (!wObj) return '';
+            return `<div class="hub-list-item">
+                <div class="item-left">
+                    <div class="item-word">${wObj.en}</div>
+                    <div class="item-wrong" style="color:var(--text-muted);">${wObj.tr}</div>
+                </div>
+                <div class="item-check">✓</div>
+            </div>`;
+        }).join('');
+    }
+
+    document.getElementById('writeHubKnownPanel').classList.remove('hidden');
+}
+
 
 const TEST_SENTENCE_BANK = {
     'schule': 'Ich gehe zur ______.',
@@ -2190,7 +2416,8 @@ function startTestMode(isErrorMode = false) {
     let pool = [];
     if (isErrorMode) {
         if (gp.testErrors && gp.testErrors.length > 0) {
-            pool = [...gp.testErrors];
+            // testErrors may contain rich objects {id, tr, en, ...} or plain IDs
+            pool = gp.testErrors.map(e => typeof e === 'object' ? e.id : e);
         }
     } else {
         if (gp.known && gp.known.length > 0) {
@@ -2280,13 +2507,13 @@ function checkTestAnswer(selectedId, targetId, btn) {
         btn.style.background = 'rgba(78, 232, 160, 0.2)';
         btn.style.borderColor = 'var(--accent-ok)';
         
-        gp.testErrors = gp.testErrors.filter(id => id !== targetId);
+        gp.testErrors = (gp.testErrors || []).filter(e => (typeof e === 'object' ? e.id : e) !== targetId);
     } else {
         state.testWrong++;
         btn.style.background = 'rgba(245, 124, 110, 0.2)';
         btn.style.borderColor = 'var(--accent-3)';
         
-        // Highlight correct answer
+    // Highlight correct answer
         allBtns.forEach(b => {
             const wordObj = activeWords()[`group${state.currentGroup}`].find(w => w.id === targetId);
             if (b.textContent === wordObj.en) {
@@ -2295,8 +2522,27 @@ function checkTestAnswer(selectedId, targetId, btn) {
             }
         });
         
-        if (!gp.testErrors.includes(targetId)) {
-            gp.testErrors.push(targetId);
+        // Yanlış soruyu en sona ekle
+        state.testQueue.push(targetId);
+        
+        // Hata kaydını zengin obje olarak kaydet
+        const wordsInGroup = activeWords()[`group${state.currentGroup}`];
+        const targetWordObj = wordsInGroup.find(w => w.id === targetId);
+        const selectedWordObj = wordsInGroup.find(w => w.id === selectedId);
+        const sentence = getTestSentence(targetWordObj ? targetWordObj.en : '');
+        const errObj = {
+            id: targetId,
+            tr: targetWordObj ? targetWordObj.tr : '-',
+            en: targetWordObj ? targetWordObj.en : '-',
+            sentence: sentence,
+            userAns: selectedWordObj ? selectedWordObj.en : '?'
+        };
+        if (!gp.testErrors) gp.testErrors = [];
+        const existIdx = gp.testErrors.findIndex(e => (typeof e === 'object' ? e.id : e) === targetId);
+        if (existIdx >= 0) {
+            gp.testErrors[existIdx] = errObj;
+        } else {
+            gp.testErrors.push(errObj);
         }
     }
     
@@ -2323,12 +2569,8 @@ function endTestSession() {
 
 // Event Listeners for Test Mode
 document.getElementById('btnRestartTest')?.addEventListener('click', () => startTestMode());
-document.getElementById('btnBackTest')?.addEventListener('click', () => {
-    openGroupDetails(state.currentGroup);
-});
-document.getElementById('btnBackToGroupTest')?.addEventListener('click', () => {
-    openGroupDetails(state.currentGroup);
-});
+document.getElementById('btnBackTest')?.addEventListener('click', () => showScreen('testHubScreen'));
+document.getElementById('btnBackToGroupTest')?.addEventListener('click', () => showScreen('testHubScreen'));
 
 function startWriteMode(isErrorMode = false) {
     const p = loadProgress();
@@ -2338,7 +2580,7 @@ function startWriteMode(isErrorMode = false) {
     let pool = [];
     if (isErrorMode) {
         if (gp.writeErrors && gp.writeErrors.length > 0) {
-            pool = [...gp.writeErrors];
+            pool = gp.writeErrors.map(e => typeof e === 'object' ? e.id : e);
         }
     } else {
         if (gp.known && gp.known.length > 0) {
@@ -2403,15 +2645,23 @@ function checkWriteAnswer() {
         feedbackEl.textContent = "✅ Doğru!";
         
         // Hatalar arasından çıkar
-        gp.writeErrors = gp.writeErrors.filter(id => id !== wordId);
+        gp.writeErrors = (gp.writeErrors || []).filter(e => (typeof e === 'object' ? e.id : e) !== wordId);
     } else {
         state.writeWrong++;
         feedbackEl.style.color = "var(--accent-3)";
         feedbackEl.textContent = `❌ Yanlış! Doğrusu: ${wordObj.en}`;
         
-        // Hatayı kaydet
-        if (!gp.writeErrors.includes(wordId)) {
-            gp.writeErrors.push(wordId);
+        // Yanlış cevabı bu test oturumunun sonuna ekle ki bitmeden sorulsun
+        state.writeQueue.push(wordId);
+
+        // Hatayı detaylı kaydet
+        if (!gp.writeErrors) gp.writeErrors = [];
+        const existingIdx = gp.writeErrors.findIndex(e => (typeof e === 'object' ? e.id : e) === wordId);
+        const errObj = { id: wordId, tr: wordObj.tr, en: wordObj.en, userAns: userInput || '-' };
+        if (existingIdx >= 0) {
+            gp.writeErrors[existingIdx] = errObj;
+        } else {
+            gp.writeErrors.push(errObj);
         }
     }
     
@@ -2436,15 +2686,13 @@ function endWriteSession() {
     document.getElementById('writeSessionComplete').classList.remove('hidden');
 }
 
+
+
 // Event Listeners for Write Mode
 document.getElementById('btnCheckWrite')?.addEventListener('click', checkWriteAnswer);
 document.getElementById('writeInput')?.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') checkWriteAnswer();
 });
 document.getElementById('btnRestartWrite')?.addEventListener('click', () => startWriteMode());
-document.getElementById('btnBackWrite')?.addEventListener('click', () => {
-    openGroupDetails(state.currentGroup);
-});
-document.getElementById('btnBackToGroupWrite')?.addEventListener('click', () => {
-    openGroupDetails(state.currentGroup);
-});
+document.getElementById('btnBackWrite')?.addEventListener('click', () => showScreen('writeHubScreen'));
+document.getElementById('btnBackToGroupWrite')?.addEventListener('click', () => showScreen('writeHubScreen'));
