@@ -11,12 +11,14 @@ const LS_KEY_ES = 'lumina_progress_es';
 const LS_KEY_DE = 'lumina_progress_de';
 const LS_KEY_FR = 'lumina_progress_fr';
 const LS_KEY_NO = 'lumina_progress_no';
+const LS_KEY_SV = 'lumina_progress_sv';
 
-const TOTAL_GROUPS = 30;    // İngilizce varsayılan grup sayısı
-const TOTAL_GROUPS_ES = 9;  // İspanyolca grup sayısı
-const TOTAL_GROUPS_DE = 10; // Almanca grup sayısı
-const TOTAL_GROUPS_FR = 10; // Fransızca grup sayısı
-const TOTAL_GROUPS_NO = 5;  // Norveççe grup sayısı
+let TOTAL_GROUPS = 30;    // İngilizce varsayılan grup sayısı
+let TOTAL_GROUPS_ES = 9;  // İspanyolca grup sayısı
+let TOTAL_GROUPS_DE = 306; // Almanca grup sayısı
+let TOTAL_GROUPS_FR = 58; // Fransızca grup sayısı
+let TOTAL_GROUPS_NO = 5;  // Norveççe grup sayısı
+let TOTAL_GROUPS_SV = 58;  // İsveççe grup sayısı
 
 // ── C# API ADRESİ ──
 const API_BASE_URL = 'https://localhost:7047/api';
@@ -41,7 +43,15 @@ const state = {
     sessionCorrect: 0,
     sessionWrong: 0,
     sessionUnsure: 0,
-    isFlipped: false
+    isFlipped: false,
+    writeQueue: [],
+    writeIndex: 0,
+    writeCorrect: 0,
+    writeWrong: 0,
+    testQueue: [],
+    testIndex: 0,
+    testCorrect: 0,
+    testWrong: 0
 };
 
 function activeWords() {
@@ -201,8 +211,8 @@ function parseCsvText(csvText) {
         if (v2 === '-' || !v2) v2 = null;
         if (v3 === '-' || !v3) v3 = null;
 
-        // Group size: ~100 words per group across 30 groups
-        const groupId = Math.min(30, Math.floor(parsed.length / 100) + 1);
+        // Group size: ~100 words per group
+        const groupId = Math.floor(parsed.length / 100) + 1;
 
         const wordItem = {
             id: parsed.length + 1,
@@ -221,6 +231,87 @@ function parseCsvText(csvText) {
     }
 
     return { words: parsed, verbs: extractedVerbs };
+}
+
+function parseAlmancaCsv(csvText) {
+    const lines = csvText.split(/\r?\n/);
+    const parsed = [];
+    for (let i = 1; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+        const parts = line.split(',');
+        if (parts.length < 4) continue;
+        const wordItem = {
+            id: parsed.length + 1,
+            groupId: Math.floor(parsed.length / 100) + 1,
+            english: parts[1]?.trim() || '', // target word
+            turkish: parts[3]?.trim() || ''
+        };
+        if (wordItem.english && wordItem.turkish) {
+            parsed.push(wordItem);
+        }
+    }
+    TOTAL_GROUPS_DE = Math.max(1, Math.floor(parsed.length / 100) + (parsed.length % 100 > 0 ? 1 : 0));
+    return { words: parsed, verbs: [] };
+}
+
+function parseFransizcaCsv(csvText) {
+    const lines = csvText.split(/\r?\n/);
+    const parsed = [];
+    for (let i = 1; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+        const parts = line.split(',');
+        if (parts.length < 4) continue;
+        const wordItem = {
+            id: parsed.length + 1,
+            groupId: Math.floor(parsed.length / 100) + 1,
+            english: parts[1]?.trim() || '', // target word
+            turkish: parts[3]?.trim() || ''
+        };
+        if (wordItem.english && wordItem.turkish) {
+            parsed.push(wordItem);
+        }
+    }
+    TOTAL_GROUPS_FR = Math.max(1, Math.floor(parsed.length / 100) + (parsed.length % 100 > 0 ? 1 : 0));
+    return { words: parsed, verbs: [] };
+}
+
+function parseIsvecceCsv(csvText) {
+    const lines = csvText.split(/\r?\n/);
+    const parsed = [];
+    for (let i = 1; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+        
+        let inQuotes = false;
+        let currentPart = "";
+        let parts = [];
+        for (let j = 0; j < line.length; j++) {
+            if (line[j] === '"') {
+                inQuotes = !inQuotes;
+            } else if (line[j] === ',' && !inQuotes) {
+                parts.push(currentPart);
+                currentPart = "";
+            } else {
+                currentPart += line[j];
+            }
+        }
+        parts.push(currentPart);
+
+        if (parts.length < 4) continue;
+        const wordItem = {
+            id: parsed.length + 1,
+            groupId: Math.floor(parsed.length / 100) + 1,
+            english: parts[2]?.trim() || '', // target word (İsveççe Anlamı)
+            turkish: parts[3]?.trim() || ''
+        };
+        if (wordItem.english && wordItem.turkish) {
+            parsed.push(wordItem);
+        }
+    }
+    TOTAL_GROUPS_SV = Math.max(1, Math.floor(parsed.length / 100) + (parsed.length % 100 > 0 ? 1 : 0));
+    return { words: parsed, verbs: [] };
 }
 
 async function fetchLocalCsvData() {
@@ -248,31 +339,67 @@ async function loadLanguageData(langName) {
         console.warn('⚠️ /api/words başarısız, /api/English endpoint\'i deneniyor...');
     }
 
-    try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 1500);
-        const response = await fetch(`${API_BASE_URL}/${langName}`, { signal: controller.signal });
-        clearTimeout(timeoutId);
+    // Özel CSV'lerden yükleme
+    if (langName === 'German') {
+        try {
+            const response = await fetch('./Almanca_Frekans.csv');
+            if (response.ok) {
+                const text = await response.text();
+                const res = parseAlmancaCsv(text);
+                wordsData = res.words;
+            } else {
+                wordsData = FALLBACK_DATA.German;
+            }
+        } catch(e) { wordsData = FALLBACK_DATA.German; }
+    } else if (langName === 'French') {
+        try {
+            const response = await fetch('./Fransizca.csv');
+            if (response.ok) {
+                const text = await response.text();
+                const res = parseFransizcaCsv(text);
+                wordsData = res.words;
+            } else {
+                wordsData = FALLBACK_DATA.French;
+            }
+        } catch(e) { wordsData = FALLBACK_DATA.French; }
+    } else if (langName === 'Swedish') {
+        try {
+            const response = await fetch('./Isvecce.csv');
+            if (response.ok) {
+                const text = await response.text();
+                const res = parseIsvecceCsv(text);
+                wordsData = res.words;
+            } else {
+                wordsData = FALLBACK_DATA.Norwegian || []; // Fallback boş veya norwegian
+            }
+        } catch(e) { wordsData = []; }
+    } else {
+        try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 1500);
+            const response = await fetch(`${API_BASE_URL}/${langName}`, { signal: controller.signal });
+            clearTimeout(timeoutId);
 
-        if (!response.ok) throw new Error(`HTTP Hatası: ${response.status}`);
-        wordsData = await response.json();
-        console.log(`✅ ${langName} sunucudan yüklendi:`, wordsData.length);
-    } catch (error) {
-        console.warn(`⚠️ ${langName} sunucudan alınamadı, yerel verisetine geçiliyor:`, error.message);
+            if (!response.ok) throw new Error(`HTTP Hatası: ${response.status}`);
+            wordsData = await response.json();
+            console.log(`✅ ${langName} sunucudan yüklendi:`, wordsData.length);
+        } catch (error) {
+            console.warn(`⚠️ ${langName} sunucudan alınamadı, yerel verisetine geçiliyor:`, error.message);
 
-        if (langName === 'English') {
-            const csvResult = await fetchLocalCsvData();
-            if (csvResult && csvResult.words.length > 0) {
-                wordsData = csvResult.words;
-                if (csvResult.verbs.length > 0) {
-                    verbsLabData = csvResult.verbs;
+            if (langName === 'English') {
+                const csvResult = await fetchLocalCsvData();
+                if (csvResult && csvResult.words.length > 0) {
+                    wordsData = csvResult.words;
+                    if (csvResult.verbs.length > 0) {
+                        verbsLabData = csvResult.verbs;
+                    }
+                    console.log(`✅ English (Oxford 3000) yerel CSV dosyasından yüklendi:`, wordsData.length);
+                } else {
+                    wordsData = FALLBACK_DATA[langName] || FALLBACK_DATA.English;
                 }
-                console.log(`✅ English (Oxford 3000) yerel CSV dosyasından yüklendi:`, wordsData.length);
             } else {
                 wordsData = FALLBACK_DATA[langName] || FALLBACK_DATA.English;
             }
-        } else {
-            wordsData = FALLBACK_DATA[langName] || FALLBACK_DATA.English;
         }
     }
 
@@ -288,6 +415,23 @@ async function loadLanguageData(langName) {
             v2: word.v2,
             v3: word.v3
         });
+    });
+
+    updateAppTitle(langName);
+}
+
+function updateAppTitle(langName) {
+    const titleMap = {
+        'English': 'İNGİLİZCE',
+        'Spanish': 'İSPANYOLCA',
+        'German': 'ALMANCA',
+        'French': 'FRANSIZCA',
+        'Norwegian': 'NORVEÇÇE',
+        'Swedish': 'İSVEÇÇE'
+    };
+    const trName = titleMap[langName] || '3000';
+    document.querySelectorAll('.logo-title').forEach(el => {
+        el.innerHTML = `LUMINA <span class="accent">${trName}</span>`;
     });
 }
 
@@ -848,7 +992,7 @@ function loadProgress() {
 function buildEmptyProgress() {
     const p = { timeLogs: [] };
     for (let i = 1; i <= activeTotalGroups(); i++) {
-        p[`group${i}`] = { known: [], errors: [], unsure: [] };
+        p[`group${i}`] = { known: [], errors: [], unsure: [], testErrors: [], writeErrors: [] };
     }
     return p;
 }
@@ -859,10 +1003,12 @@ function saveProgress(progress) {
 
 function getGroupProgress(progress, groupNum) {
     const key = `group${groupNum}`;
-    if (!progress[key]) progress[key] = { known: [], errors: [], unsure: [] };
+    if (!progress[key]) progress[key] = { known: [], errors: [], unsure: [], testErrors: [], writeErrors: [] };
     if (!progress[key].unsure) progress[key].unsure = [];
     if (!progress[key].errors) progress[key].errors = [];
     if (!progress[key].known) progress[key].known = [];
+    if (!progress[key].testErrors) progress[key].testErrors = [];
+    if (!progress[key].writeErrors) progress[key].writeErrors = [];
     return progress[key];
 }
 
@@ -1052,6 +1198,9 @@ function openGroup(groupNum) {
     const cntKnown = gp.known.length;
     const cntUnsure = gp.unsure.length;
 
+    const cntTestErrors = (gp.testErrors || []).length;
+    const cntWriteErrors = (gp.writeErrors || []).length;
+
     const groupVerbs = words.filter(w => verbsLabData.some(vd => vd && vd.v1 === w.en));
     const cntLabGroup = groupVerbs.length;
 
@@ -1059,6 +1208,8 @@ function openGroup(groupNum) {
     document.getElementById('countErrors').textContent = cntErrors;
     document.getElementById('countKnown').textContent = cntKnown;
     if (document.getElementById('countUnsure')) document.getElementById('countUnsure').textContent = cntUnsure;
+    if (document.getElementById('countTestErrors')) document.getElementById('countTestErrors').textContent = cntTestErrors;
+    if (document.getElementById('countWriteErrors')) document.getElementById('countWriteErrors').textContent = cntWriteErrors;
     document.getElementById('countLabGroup').textContent = cntLabGroup;
 
     document.getElementById('groupStats').innerHTML = `
@@ -1072,6 +1223,8 @@ function openGroup(groupNum) {
     document.getElementById('modeErrors').disabled = cntErrors === 0;
     document.getElementById('modeKnown').disabled = cntKnown === 0;
     if (document.getElementById('modeUnsure')) document.getElementById('modeUnsure').disabled = cntUnsure === 0;
+    if (document.getElementById('modeTestErrors')) document.getElementById('modeTestErrors').disabled = cntTestErrors === 0;
+    if (document.getElementById('modeWriteErrors')) document.getElementById('modeWriteErrors').disabled = cntWriteErrors === 0;
 
     const labGroupBtn = document.getElementById('modeLabGroup');
     if (labGroupBtn) {
@@ -1787,8 +1940,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Card mode buttons
     document.getElementById('modeNew')?.addEventListener('click', () => startSession('new'));
     document.getElementById('modeErrors')?.addEventListener('click', () => startSession('errors'));
+    document.getElementById('modeTestErrors')?.addEventListener('click', () => startTestMode(true));
+    document.getElementById('modeWriteErrors')?.addEventListener('click', () => startWriteMode(true));
     document.getElementById('modeUnsure')?.addEventListener('click', () => startSession('unsure'));
-    document.getElementById('modeKnown')?.addEventListener('click', () => startSession('known'));
+    document.getElementById('modeKnown')?.addEventListener('click', () => {
+        document.getElementById('refreshOptionsModal').classList.remove('hidden');
+    });
     document.getElementById('modeLabGroup')?.addEventListener('click', () => startLabForGroup(state.currentGroup));
 
     // Flashcard interaction
@@ -1878,7 +2035,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangEn) {
         btnLangEn.addEventListener('click', async () => {
             state.lang = 'en';
-            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv');
             await loadLanguageData('English');
             renderDashboard();
         });
@@ -1887,7 +2044,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangEs) {
         btnLangEs.addEventListener('click', async () => {
             state.lang = 'es';
-            document.body.classList.remove('theme-de', 'theme-fr', 'theme-no');
+            document.body.classList.remove('theme-de', 'theme-fr', 'theme-no', 'theme-sv');
             document.body.classList.add('theme-es');
             await loadLanguageData('Spanish');
             renderDashboard();
@@ -1897,7 +2054,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangDe) {
         btnLangDe.addEventListener('click', async () => {
             state.lang = 'de';
-            document.body.classList.remove('theme-es', 'theme-fr', 'theme-no');
+            document.body.classList.remove('theme-es', 'theme-fr', 'theme-no', 'theme-sv');
             document.body.classList.add('theme-de');
             await loadLanguageData('German');
             renderDashboard();
@@ -1907,7 +2064,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangFr) {
         btnLangFr.addEventListener('click', async () => {
             state.lang = 'fr';
-            document.body.classList.remove('theme-es', 'theme-de', 'theme-no');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-no', 'theme-sv');
             document.body.classList.add('theme-fr');
             await loadLanguageData('French');
             renderDashboard();
@@ -1917,9 +2074,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangNo) {
         btnLangNo.addEventListener('click', async () => {
             state.lang = 'no';
-            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-sv');
             document.body.classList.add('theme-no');
             await loadLanguageData('Norwegian');
+            renderDashboard();
+        });
+    }
+
+    const btnLangSv = document.getElementById('btnLangSv');
+    if (btnLangSv) {
+        btnLangSv.addEventListener('click', async () => {
+            state.lang = 'sv';
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no');
+            document.body.classList.add('theme-sv');
+            await loadLanguageData('Swedish');
             renderDashboard();
         });
     }
@@ -1982,4 +2150,301 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else {
         showScreen('authScreen');
     }
+});
+
+function startRefreshMode(mode) {
+    closeModal('refreshOptionsModal');
+    if (mode === 'card') {
+        startSession('known');
+    } else if (mode === 'test') {
+        startTestMode();
+    } else if (mode === 'write') {
+        startWriteMode();
+    }
+}
+
+const TEST_SENTENCE_BANK = {
+    'schule': 'Ich gehe zur ______.',
+    'haus': 'Das ist mein neues ______.',
+    'wasser': 'Ich trinke jeden Tag ______.',
+    'buch': 'Ich lese ein gutes ______.',
+    'school': 'I am going to ______.',
+    'house': 'This is my new ______.',
+    'water': 'I drink ______ every day.',
+    'book': 'I am reading a good ______.'
+};
+
+function getTestSentence(wordStr) {
+    const w = wordStr.toLowerCase();
+    if (TEST_SENTENCE_BANK[w]) {
+        return TEST_SENTENCE_BANK[w];
+    }
+    // Fallback if we don't have a sentence for this word
+    return `Lütfen şu kelimenin doğru karşılığını seçiniz: ______`;
+}
+
+function startTestMode(isErrorMode = false) {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    
+    let pool = [];
+    if (isErrorMode) {
+        if (gp.testErrors && gp.testErrors.length > 0) {
+            pool = [...gp.testErrors];
+        }
+    } else {
+        if (gp.known && gp.known.length > 0) {
+            pool = [...gp.known];
+        }
+    }
+    
+    if (pool.length < 4 && !isErrorMode) {
+        alert("Test modunu başlatmak için bu grupta en az 4 kelime bilmelisiniz.");
+        return;
+    } else if (pool.length === 0 && isErrorMode) {
+        alert("Test modunda tekrar edilecek hatanız bulunmuyor.");
+        return;
+    }
+    
+    state.testQueue = pool.sort(() => Math.random() - 0.5);
+    state.testIndex = 0;
+    state.testCorrect = 0;
+    state.testWrong = 0;
+    
+    document.getElementById('testGroupTitle').textContent = activeGroupName(state.currentGroup);
+    document.getElementById('testSessionComplete').classList.add('hidden');
+    
+    showScreen('testScreen');
+    showNextTestQuestion();
+}
+
+function showNextTestQuestion() {
+    if (state.testIndex >= state.testQueue.length) {
+        endTestSession();
+        return;
+    }
+    
+    const wordId = state.testQueue[state.testIndex];
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`];
+    const targetWordObj = wordsInGroup.find(w => w.id === wordId);
+    
+    const sentence = getTestSentence(targetWordObj.en.trim());
+    document.getElementById('testSentence').textContent = sentence;
+    document.getElementById('testTrHint').textContent = `(İpucu: ${targetWordObj.tr})`;
+    
+    // Generate 3 random wrong options from the known pool
+    let options = [targetWordObj];
+    let knownPool = state.testQueue.filter(id => id !== wordId);
+    knownPool = knownPool.sort(() => Math.random() - 0.5);
+    
+    for (let i = 0; i < 3 && i < knownPool.length; i++) {
+        options.push(wordsInGroup.find(w => w.id === knownPool[i]));
+    }
+    
+    // Shuffle options
+    options = options.sort(() => Math.random() - 0.5);
+    
+    const optionsContainer = document.getElementById('testOptions');
+    optionsContainer.innerHTML = '';
+    
+    options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.className = 'btn-primary';
+        btn.style.padding = '16px';
+        btn.style.fontSize = '1.1rem';
+        btn.style.borderRadius = 'var(--radius-sm)';
+        btn.style.background = 'var(--bg-card)';
+        btn.style.border = '1px solid var(--border)';
+        btn.style.color = 'var(--text-primary)';
+        btn.textContent = opt.en;
+        
+        btn.onclick = () => checkTestAnswer(opt.id, targetWordObj.id, btn);
+        optionsContainer.appendChild(btn);
+    });
+    
+    const pct = Math.round((state.testIndex / state.testQueue.length) * 100);
+    document.getElementById('testProgressFill').style.width = pct + '%';
+    document.getElementById('testProgressText').textContent = `${state.testIndex} / ${state.testQueue.length}`;
+}
+
+function checkTestAnswer(selectedId, targetId, btn) {
+    // Disable all buttons to prevent multiple clicks
+    const allBtns = document.getElementById('testOptions').querySelectorAll('button');
+    allBtns.forEach(b => b.disabled = true);
+    
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    
+    if (selectedId === targetId) {
+        state.testCorrect++;
+        btn.style.background = 'rgba(78, 232, 160, 0.2)';
+        btn.style.borderColor = 'var(--accent-ok)';
+        
+        gp.testErrors = gp.testErrors.filter(id => id !== targetId);
+    } else {
+        state.testWrong++;
+        btn.style.background = 'rgba(245, 124, 110, 0.2)';
+        btn.style.borderColor = 'var(--accent-3)';
+        
+        // Highlight correct answer
+        allBtns.forEach(b => {
+            const wordObj = activeWords()[`group${state.currentGroup}`].find(w => w.id === targetId);
+            if (b.textContent === wordObj.en) {
+                b.style.background = 'rgba(78, 232, 160, 0.2)';
+                b.style.borderColor = 'var(--accent-ok)';
+            }
+        });
+        
+        if (!gp.testErrors.includes(targetId)) {
+            gp.testErrors.push(targetId);
+        }
+    }
+    
+    saveProgress(p);
+    state.testIndex++;
+    
+    setTimeout(() => {
+        showNextTestQuestion();
+    }, 1500);
+}
+
+function endTestSession() {
+    document.getElementById('testProgressFill').style.width = '100%';
+    document.getElementById('testProgressText').textContent = `${state.testQueue.length} / ${state.testQueue.length}`;
+    
+    const statsEl = document.getElementById('testCompleteStats');
+    statsEl.innerHTML = `
+        <div class="stat-item"><span class="val">${state.testCorrect}</span><span class="lbl">Doğru</span></div>
+        <div class="stat-item"><span class="val">${state.testWrong}</span><span class="lbl">Yanlış</span></div>
+    `;
+    
+    document.getElementById('testSessionComplete').classList.remove('hidden');
+}
+
+// Event Listeners for Test Mode
+document.getElementById('btnRestartTest')?.addEventListener('click', () => startTestMode());
+document.getElementById('btnBackTest')?.addEventListener('click', () => {
+    openGroupDetails(state.currentGroup);
+});
+document.getElementById('btnBackToGroupTest')?.addEventListener('click', () => {
+    openGroupDetails(state.currentGroup);
+});
+
+function startWriteMode(isErrorMode = false) {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    
+    // Yalnızca bilinen kelimelerden oluşturulacak veya hatalardan
+    let pool = [];
+    if (isErrorMode) {
+        if (gp.writeErrors && gp.writeErrors.length > 0) {
+            pool = [...gp.writeErrors];
+        }
+    } else {
+        if (gp.known && gp.known.length > 0) {
+            pool = [...gp.known];
+        }
+    }
+    
+    if (pool.length === 0) {
+        if (isErrorMode) alert("Yazı modunda tekrar edilecek hatanız bulunmuyor.");
+        else alert("Bu grupta yazı pratiği yapacak kadar bilinen kelime yok. Önce biraz kelime öğrenin.");
+        return;
+    }
+    
+    state.writeQueue = pool.sort(() => Math.random() - 0.5);
+    state.writeIndex = 0;
+    state.writeCorrect = 0;
+    state.writeWrong = 0;
+    
+    document.getElementById('writeGroupTitle').textContent = activeGroupName(state.currentGroup);
+    document.getElementById('writeSessionComplete').classList.add('hidden');
+    document.getElementById('writeInput').value = '';
+    document.getElementById('writeFeedback').textContent = '';
+    
+    showScreen('writeScreen');
+    showNextWriteWord();
+}
+
+function showNextWriteWord() {
+    if (state.writeIndex >= state.writeQueue.length) {
+        endWriteSession();
+        return;
+    }
+    
+    const wordId = state.writeQueue[state.writeIndex];
+    const wordObj = activeWords()[`group${state.currentGroup}`].find(w => w.id === wordId);
+    
+    document.getElementById('writeWordTr').textContent = wordObj.tr;
+    document.getElementById('writeInput').value = '';
+    document.getElementById('writeInput').focus();
+    document.getElementById('writeFeedback').textContent = '';
+    
+    const pct = Math.round((state.writeIndex / state.writeQueue.length) * 100);
+    document.getElementById('writeProgressFill').style.width = pct + '%';
+    document.getElementById('writeProgressText').textContent = `${state.writeIndex} / ${state.writeQueue.length}`;
+}
+
+function checkWriteAnswer() {
+    if (state.writeIndex >= state.writeQueue.length) return;
+    
+    const wordId = state.writeQueue[state.writeIndex];
+    const wordObj = activeWords()[`group${state.currentGroup}`].find(w => w.id === wordId);
+    const userInput = document.getElementById('writeInput').value.trim().toLowerCase();
+    const correctAnswer = wordObj.en.trim().toLowerCase();
+    const feedbackEl = document.getElementById('writeFeedback');
+    
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    
+    if (userInput === correctAnswer) {
+        state.writeCorrect++;
+        feedbackEl.style.color = "var(--accent-ok)";
+        feedbackEl.textContent = "✅ Doğru!";
+        
+        // Hatalar arasından çıkar
+        gp.writeErrors = gp.writeErrors.filter(id => id !== wordId);
+    } else {
+        state.writeWrong++;
+        feedbackEl.style.color = "var(--accent-3)";
+        feedbackEl.textContent = `❌ Yanlış! Doğrusu: ${wordObj.en}`;
+        
+        // Hatayı kaydet
+        if (!gp.writeErrors.includes(wordId)) {
+            gp.writeErrors.push(wordId);
+        }
+    }
+    
+    saveProgress(p);
+    state.writeIndex++;
+    
+    setTimeout(() => {
+        showNextWriteWord();
+    }, 1500);
+}
+
+function endWriteSession() {
+    document.getElementById('writeProgressFill').style.width = '100%';
+    document.getElementById('writeProgressText').textContent = `${state.writeQueue.length} / ${state.writeQueue.length}`;
+    
+    const statsEl = document.getElementById('writeCompleteStats');
+    statsEl.innerHTML = `
+        <div class="stat-item"><span class="val">${state.writeCorrect}</span><span class="lbl">Doğru</span></div>
+        <div class="stat-item"><span class="val">${state.writeWrong}</span><span class="lbl">Yanlış</span></div>
+    `;
+    
+    document.getElementById('writeSessionComplete').classList.remove('hidden');
+}
+
+// Event Listeners for Write Mode
+document.getElementById('btnCheckWrite')?.addEventListener('click', checkWriteAnswer);
+document.getElementById('writeInput')?.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') checkWriteAnswer();
+});
+document.getElementById('btnRestartWrite')?.addEventListener('click', () => startWriteMode());
+document.getElementById('btnBackWrite')?.addEventListener('click', () => {
+    openGroupDetails(state.currentGroup);
+});
+document.getElementById('btnBackToGroupWrite')?.addEventListener('click', () => {
+    openGroupDetails(state.currentGroup);
 });

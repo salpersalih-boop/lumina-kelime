@@ -348,6 +348,17 @@
         </div>
       </button>
 
+      <button class="lang-btn sv-theme" id="btnLangSv">
+        <div class="lang-icon-wrap sv">
+          <span class="flag-emoji">🇸🇪</span>
+          <span class="flag-code">SV</span>
+        </div>
+        <div class="lang-info">
+          <h3>İsveççe</h3>
+          <p>Yeni İsveççe Modülü</p>
+        </div>
+      </button>
+
     </div>
   </div>
 
@@ -472,8 +483,18 @@
       </button>
       <button class="mode-btn" id="modeErrors" data-mode="errors">
         <span class="mode-icon">🔴</span>
-        <span class="mode-label">Hataları Tekrar Et</span>
+        <span class="mode-label">Hataları Tekrar Et (Kart)</span>
         <span class="mode-count" id="countErrors">0</span>
+      </button>
+      <button class="mode-btn" id="modeTestErrors" data-mode="testErrors">
+        <span class="mode-icon">📝</span>
+        <span class="mode-label">Test Hatalarım</span>
+        <span class="mode-count" id="countTestErrors">0</span>
+      </button>
+      <button class="mode-btn" id="modeWriteErrors" data-mode="writeErrors">
+        <span class="mode-icon">✍️</span>
+        <span class="mode-label">Yazı Hatalarım</span>
+        <span class="mode-count" id="countWriteErrors">0</span>
       </button>
       <button class="mode-btn" id="modeUnsure" data-mode="unsure">
         <span class="mode-icon">🤔</span>
@@ -490,6 +511,99 @@
         <span class="mode-label">Gruptaki Fiiller (V1-V2-V3)</span>
         <span class="mode-count" id="countLabGroup">0</span>
       </button>
+    </div>
+  </div>
+  <!-- ══════════════ TEST SCREEN ══════════════ -->
+  <div id="testScreen" class="screen">
+    <div class="fc-header">
+      <button class="btn-back" id="btnBackTest" aria-label="Gruba dön">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 5l-7 7 7 7" />
+        </svg>
+        <span id="testGroupTitle">Grup 1</span>
+      </button>
+      <div class="fc-progress-wrap">
+        <div class="fc-progress-bar">
+          <div class="fc-progress-fill" id="testProgressFill"></div>
+        </div>
+        <span class="fc-progress-text" id="testProgressText"></span>
+      </div>
+      <span class="fc-mode-badge" id="testModeBadge">TEST MODU</span>
+    </div>
+
+    <div class="card-scene" style="margin-top: 40px; perspective: none;">
+      <div class="card" style="cursor: default; transform: none; box-shadow: none; border: none; background: transparent;">
+        <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; gap:20px; width: 100%;">
+          <div id="testQuestionBox" style="background: var(--bg-elevated); padding: 24px; border-radius: var(--radius-lg); width: 100%; text-align: center; border: 1px solid var(--border);">
+            <p id="testSentence" style="font-size: 1.4rem; font-weight: 600; line-height: 1.5; margin-bottom: 8px;"></p>
+            <p id="testTrHint" style="font-size: 1rem; color: var(--text-muted);"></p>
+          </div>
+          
+          <div id="testOptions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; max-width: 500px;">
+            <!-- Options will be injected here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="session-complete hidden" id="testSessionComplete">
+      <div class="complete-card">
+        <div class="complete-icon">🎉</div>
+        <h3 class="complete-title">Test Oturumu Tamamlandı!</h3>
+        <div class="complete-stats" id="testCompleteStats"></div>
+        <div class="complete-actions">
+          <button class="btn-primary" id="btnRestartTest">Tekrar Çalış</button>
+          <button class="btn-secondary" id="btnBackToGroupTest">Gruba Dön</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ WRITE SCREEN ══════════════ -->
+  <div id="writeScreen" class="screen">
+    <div class="fc-header">
+      <button class="btn-back" id="btnBackWrite" aria-label="Gruba dön">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 5l-7 7 7 7" />
+        </svg>
+        <span id="writeGroupTitle">Grup 1</span>
+      </button>
+      <div class="fc-progress-wrap">
+        <div class="fc-progress-bar">
+          <div class="fc-progress-fill" id="writeProgressFill"></div>
+        </div>
+        <span class="fc-progress-text" id="writeProgressText"></span>
+      </div>
+      <span class="fc-mode-badge" id="writeModeBadge">YAZI MODU</span>
+    </div>
+
+    <div class="card-scene" style="margin-top: 40px;">
+      <div class="card" style="cursor: default;">
+        <div class="card-face card-front" style="display:flex; flex-direction:column; justify-content:center; align-items:center; gap:20px;">
+          <span class="card-lang-tag tr">TR</span>
+          <p class="card-word" id="writeWordTr"></p>
+          
+          <div style="width: 80%; max-width: 300px; display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" id="writeInput" class="auth-input" placeholder="Kelimeyi buraya yaz..." autocomplete="off" style="text-align: center; font-size: 1.2rem; padding: 15px;" />
+            <button class="btn-primary" id="btnCheckWrite" style="padding: 12px; border-radius: var(--radius-sm);">Kontrol Et</button>
+          </div>
+          <div id="writeFeedback" style="font-size: 1.1rem; font-weight: 600; min-height: 24px; text-align: center;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="session-complete hidden" id="writeSessionComplete">
+      <div class="complete-card">
+        <div class="complete-icon">🎉</div>
+        <h3 class="complete-title">Yazı Oturumu Tamamlandı!</h3>
+        <div class="complete-stats" id="writeCompleteStats"></div>
+        <div class="complete-actions">
+          <button class="btn-primary" id="btnRestartWrite">Tekrar Çalış</button>
+          <button class="btn-secondary" id="btnBackToGroupWrite">Gruba Dön</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -689,6 +803,20 @@
       <div class="modal-footer">
         <button class="btn-secondary" onclick="closeModal('changePasswordModal')">İptal</button>
         <button class="btn-primary" onclick="savePasswordChanges()">Şifreyi Güncelle</button>
+      </div>
+    </div>
+  </div>
+  <!-- ══════════════ BİLDİKLERİMİ TAZELE SEÇENEKLERİ MODALI ══════════════ -->
+  <div id="refreshOptionsModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>✨ Bildiklerini nasıl tazelemek istersin?</h3>
+        <button class="modal-close-btn" onclick="closeModal('refreshOptionsModal')">✕</button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 12px; padding-top: 16px;">
+        <button class="btn-primary" onclick="startRefreshMode('test')" style="font-size: 1.1rem; padding: 14px;">📝 Test</button>
+        <button class="btn-primary" onclick="startRefreshMode('card')" style="font-size: 1.1rem; padding: 14px;">🃏 Kart</button>
+        <button class="btn-primary" onclick="startRefreshMode('write')" style="font-size: 1.1rem; padding: 14px;">✍️ Yazı</button>
       </div>
     </div>
   </div>
