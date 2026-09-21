@@ -1,4 +1,4 @@
-/* ═══════════════════════════════════════
+﻿/* ═══════════════════════════════════════
    LUMINA 3000 — Global Design Tokens
 ═══════════════════════════════════════ */
 :root {
@@ -1429,24 +1429,10 @@ body.theme-es .group-card {
     overflow: hidden;
 }
 
-.mode-btn::after {
-    content: '→';
-    position: absolute;
-    right: 24px;
-    font-size: 1.1rem;
-    color: var(--text-muted);
-    transition: var(--transition);
-}
-
 .mode-btn:hover {
     border-color: var(--border-hover);
     transform: translateX(6px);
     box-shadow: var(--shadow-glow);
-}
-
-.mode-btn:hover::after {
-    right: 18px;
-    color: var(--text-primary);
 }
 
 .mode-btn:active {
@@ -1457,10 +1443,6 @@ body.theme-es .group-card {
     opacity: 0.4;
     cursor: not-allowed;
     transform: none;
-}
-
-.mode-btn:disabled::after {
-    display: none;
 }
 
 .mode-icon {
@@ -3704,7 +3686,7 @@ body.theme-sv .group-card {
     min-height: 160px;
 }
 
-/* �� HUB PANEL STYLES �� */
+/* �� HUB PANEL STYLES �� */
 .hub-panel {
     margin-top: 24px;
     background: var(--bg-card);
@@ -3800,4 +3782,62 @@ body.theme-sv .group-card {
     padding: 24px;
     color: var(--text-muted);
     font-size: 0.95rem;
+}
+
+/* ── HUB SOURCE PICKER ── */
+.hub-source-picker {
+    padding: 0 0 16px;
+    margin-bottom: 8px;
+}
+
+.hub-source-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.hub-source-btns {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hub-source-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 99px;
+    border: 1.5px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
+}
+
+.hub-source-btn:hover {
+    border-color: var(--accent-1);
+    color: var(--text-primary);
+    background: rgba(124, 110, 247, 0.08);
+}
+
+.hub-source-btn.active {
+    border-color: var(--accent-1);
+    background: rgba(124, 110, 247, 0.15);
+    color: var(--accent-1);
+}
+
+.source-icon {
+    font-size: 1rem;
+}
+
+.source-count {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: inherit;
+    opacity: 0.8;
 }

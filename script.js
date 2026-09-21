@@ -23,6 +23,41 @@ let TOTAL_GROUPS_SV = 58;  // İsveççe grup sayısı
 // ── C# API ADRESİ ──
 const API_BASE_URL = 'https://localhost:7047/api';
 
+// ── SERVICE WORKER & OFFLINE YÖNETİMİ ──
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('Service Worker registered!', reg))
+            .catch(err => console.error('Service Worker registration failed:', err));
+    });
+}
+
+function showOfflineBanner(isOffline) {
+    let banner = document.getElementById('offline-banner');
+    if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'offline-banner';
+        banner.style.cssText = 'position:fixed; top:0; left:0; width:100%; background-color:#ff9800; color:#fff; text-align:center; padding:10px; z-index:9999; font-weight:bold; font-family:Inter, sans-serif; display:none;';
+        document.body.appendChild(banner);
+    }
+    
+    if (isOffline) {
+        banner.innerText = 'Çevrimdışısınız. "Kelime Çalışma" özellikleri aktif, ancak hesap/ayarlar kısıtlanmıştır.';
+        banner.style.display = 'block';
+    } else {
+        banner.innerText = 'İnternet bağlantısı sağlandı.';
+        banner.style.backgroundColor = '#4caf50';
+        setTimeout(() => { banner.style.display = 'none'; banner.style.backgroundColor = '#ff9800'; }, 3000);
+    }
+}
+
+window.addEventListener('offline', () => showOfflineBanner(true));
+window.addEventListener('online', () => showOfflineBanner(false));
+// Başlangıçta kontrol et
+if (!navigator.onLine) {
+    showOfflineBanner(true);
+}
+
 // ── GOOGLE OAUTH CLIENT ID ──
 // Google Cloud Console'dan alınan Client ID'nizi buraya yazın
 const GOOGLE_CLIENT_ID = '1035406332647-50tntld2uiphj58kn5r1od3o4rjo2aof.apps.googleusercontent.com';
@@ -1358,6 +1393,19 @@ function answerCard(type) {
         if (type === 'correct') state.sessionCorrect++;
         else if (type === 'wrong') state.sessionWrong++;
         else state.sessionUnsure++;
+    } else if (state.currentMode === 'weeklyReview') {
+        if (type === 'correct') state.sessionCorrect++;
+        else if (type === 'wrong') state.sessionWrong++;
+        else state.sessionUnsure++;
+
+        const progress = loadProgress();
+        if (!progress.timeLogs) progress.timeLogs = [];
+        const todayStart = new Date().setHours(0, 0, 0, 0);
+        progress.timeLogs = progress.timeLogs.filter(
+            l => !(l.en === word.en && l.ts >= todayStart)
+        );
+        progress.timeLogs.push({ en: word.en, tr: word.tr, ts: Date.now(), type: type });
+        saveProgress(progress);
     } else {
         const progress = loadProgress();
         const gp = getGroupProgress(progress, state.currentGroup);
@@ -1964,18 +2012,41 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Test Hub buttons
     document.getElementById('btnBackTestHub')?.addEventListener('click', () => openGroup(state.currentGroup));
-    document.getElementById('hubBtnTest')?.addEventListener('click', () => startTestMode(false));
+    document.getElementById('hubBtnTest')?.addEventListener('click', () => {
+        const useAll = testSourceMode === 'all';
+        startTestMode(false, useAll);
+    });
+    document.getElementById('hubBtnTestRepeat')?.addEventListener('click', () => startTestMode(false, false));
     document.getElementById('hubBtnTestErrors')?.addEventListener('click', () => renderTestHubErrors());
     document.getElementById('hubBtnTestKnown')?.addEventListener('click', () => renderTestHubKnown());
     document.getElementById('btnPracticeTestErrors')?.addEventListener('click', () => startTestMode(true));
+    document.getElementById('testSourceKnown')?.addEventListener('click', () => {
+        testSourceMode = 'known';
+        _updateTestSourceUI();
+    });
+    document.getElementById('testSourceAll')?.addEventListener('click', () => {
+        testSourceMode = 'all';
+        _updateTestSourceUI();
+    });
 
     // Write Hub buttons
     document.getElementById('btnBackWriteHub')?.addEventListener('click', () => openGroup(state.currentGroup));
-    document.getElementById('hubBtnWrite')?.addEventListener('click', () => startWriteMode(false));
+    document.getElementById('hubBtnWrite')?.addEventListener('click', () => {
+        const useAll = writeSourceMode === 'all';
+        startWriteMode(false, useAll);
+    });
+    document.getElementById('hubBtnWriteRepeat')?.addEventListener('click', () => startWriteMode(false, false));
     document.getElementById('hubBtnWriteErrors')?.addEventListener('click', () => renderWriteHubErrors());
     document.getElementById('hubBtnWriteKnown')?.addEventListener('click', () => renderWriteHubKnown());
     document.getElementById('btnPracticeWriteErrorsHub')?.addEventListener('click', () => startWriteMode(true));
-
+    document.getElementById('writeSourceKnown')?.addEventListener('click', () => {
+        writeSourceMode = 'known';
+        _updateWriteSourceUI();
+    });
+    document.getElementById('writeSourceAll')?.addEventListener('click', () => {
+        writeSourceMode = 'all';
+        _updateWriteSourceUI();
+    });
     // Flashcard interaction
     document.getElementById('flashCard')?.addEventListener('click', flipCard);
     document.getElementById('btnCorrect')?.addEventListener('click', () => answerCard('correct'));
@@ -2181,6 +2252,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 // ── TEST HUB ──
+let testSourceMode = 'known'; // 'known' veya 'all'
+let writeSourceMode = 'known'; // 'known' veya 'all'
+
 function openTestHub() {
     const p = loadProgress();
     const gp = getGroupProgress(p, state.currentGroup);
@@ -2192,13 +2266,19 @@ function openTestHub() {
     // sayaçlar
     const testErrCount = (gp.testErrors || []).length;
     const knownCount = (gp.known || []).length;
+    const allCount = wordsInGroup.length;
     document.getElementById('hubCountTestErrors').textContent = testErrCount;
     document.getElementById('hubCountTestKnown').textContent = knownCount;
-    document.getElementById('hubCountTest').textContent = `${knownCount} kelime`;
 
-    // Test başlatma butonunu devre dışı bırak eğer yeterli kelime yoksa
-    const testBtn = document.getElementById('hubBtnTest');
-    if (testBtn) testBtn.disabled = knownCount < 4;
+    // Kaynak seçim sayıçlarını güncelle
+    document.getElementById('hubCountTest').textContent = `${knownCount} kelime`;
+    document.getElementById('hubCountTestAll').textContent = `${allCount} kelime`;
+
+    // Seçim durumunu yansıt
+    _updateTestSourceUI();
+
+    // Test başlatma butonunu devre dışı bırak eğer yetersiz kelime varsa
+    _updateTestHubButtons();
 
     // Hata butonu devre dışı bırak eğer hata yoksa
     const errBtn = document.getElementById('hubBtnTestErrors');
@@ -2209,6 +2289,74 @@ function openTestHub() {
     document.getElementById('testHubKnownPanel').classList.add('hidden');
 
     showScreen('testHubScreen');
+}
+
+function _updateTestSourceUI() {
+    const knownBtn = document.getElementById('testSourceKnown');
+    const allBtn = document.getElementById('testSourceAll');
+    if (!knownBtn || !allBtn) return;
+    if (testSourceMode === 'known') {
+        knownBtn.classList.add('active');
+        allBtn.classList.remove('active');
+    } else {
+        allBtn.classList.add('active');
+        knownBtn.classList.remove('active');
+    }
+    _updateTestHubButtons();
+}
+
+function _updateTestHubButtons() {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
+    const knownCount = (gp.known || []).length;
+    const allCount = wordsInGroup.length;
+
+    const useAll = testSourceMode === 'all';
+    const activeCount = useAll ? allCount : knownCount;
+
+    const testBtn = document.getElementById('hubBtnTest');
+    const repeatBtn = document.getElementById('hubBtnTestRepeat');
+    if (testBtn) {
+        testBtn.disabled = activeCount < 4;
+    }
+    if (repeatBtn) {
+        repeatBtn.disabled = knownCount < 4;
+    }
+}
+
+function _updateWriteSourceUI() {
+    const knownBtn = document.getElementById('writeSourceKnown');
+    const allBtn = document.getElementById('writeSourceAll');
+    if (!knownBtn || !allBtn) return;
+    if (writeSourceMode === 'known') {
+        knownBtn.classList.add('active');
+        allBtn.classList.remove('active');
+    } else {
+        allBtn.classList.add('active');
+        knownBtn.classList.remove('active');
+    }
+    _updateWriteHubButtons();
+}
+
+function _updateWriteHubButtons() {
+    const p = loadProgress();
+    const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
+    const knownCount = (gp.known || []).length;
+    const allCount = wordsInGroup.length;
+
+    const useAll = writeSourceMode === 'all';
+    const activeCount = useAll ? allCount : knownCount;
+
+    const writeBtn = document.getElementById('hubBtnWrite');
+    const repeatBtn = document.getElementById('hubBtnWriteRepeat');
+    if (writeBtn) {
+        writeBtn.disabled = activeCount === 0;
+    }
+    if (repeatBtn) {
+        repeatBtn.disabled = knownCount === 0;
+    }
 }
 
 function renderTestHubErrors() {
@@ -2301,11 +2449,12 @@ function openWriteHub() {
     // sayaçlar
     const writeErrCount = (gp.writeErrors || []).length;
     const knownCount = (gp.known || []).length;
+    const allCount = wordsInGroup.length;
     document.getElementById('hubCountWriteErrors').textContent = writeErrCount;
     document.getElementById('hubCountWriteKnown').textContent = knownCount;
-    document.getElementById('hubCountWrite').textContent = `${knownCount} kelime`;
 
-    // Yazı başlatma butonunu devre dışı bırak eğer kelime yoksa
+    // Kaynak seçim sayıçlarını güncelle
+    document.getElementById('hubCountWrite').textContent = `${knownCount} kelime`;
     const writeBtn = document.getElementById('hubBtnWrite');
     if (writeBtn) writeBtn.disabled = knownCount === 0;
 
@@ -2409,9 +2558,10 @@ function getTestSentence(wordStr) {
     return `Lütfen şu kelimenin doğru karşılığını seçiniz: ______`;
 }
 
-function startTestMode(isErrorMode = false) {
+function startTestMode(isErrorMode = false, useAllWords = false) {
     const p = loadProgress();
     const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
     
     let pool = [];
     if (isErrorMode) {
@@ -2419,14 +2569,18 @@ function startTestMode(isErrorMode = false) {
             // testErrors may contain rich objects {id, tr, en, ...} or plain IDs
             pool = gp.testErrors.map(e => typeof e === 'object' ? e.id : e);
         }
+    } else if (useAllWords) {
+        // Bütün kelimeler - testSourceMode'a göre
+        pool = wordsInGroup.map(w => w.id);
     } else {
+        // Bildiklerimden
         if (gp.known && gp.known.length > 0) {
             pool = [...gp.known];
         }
     }
     
     if (pool.length < 4 && !isErrorMode) {
-        alert("Test modunu başlatmak için bu grupta en az 4 kelime bilmelisiniz.");
+        alert("Test modunu başlatmak için bu grupta en az 4 kelime gereklidir.");
         return;
     } else if (pool.length === 0 && isErrorMode) {
         alert("Test modunda tekrar edilecek hatanız bulunmuyor.");
@@ -2572,16 +2726,19 @@ document.getElementById('btnRestartTest')?.addEventListener('click', () => start
 document.getElementById('btnBackTest')?.addEventListener('click', () => showScreen('testHubScreen'));
 document.getElementById('btnBackToGroupTest')?.addEventListener('click', () => showScreen('testHubScreen'));
 
-function startWriteMode(isErrorMode = false) {
+function startWriteMode(isErrorMode = false, useAllWords = false) {
     const p = loadProgress();
     const gp = getGroupProgress(p, state.currentGroup);
+    const wordsInGroup = activeWords()[`group${state.currentGroup}`] || [];
     
-    // Yalnızca bilinen kelimelerden oluşturulacak veya hatalardan
+    // Yelnızca bilinen kelimelerden oluşturulacak veya hatalardan
     let pool = [];
     if (isErrorMode) {
         if (gp.writeErrors && gp.writeErrors.length > 0) {
             pool = gp.writeErrors.map(e => typeof e === 'object' ? e.id : e);
         }
+    } else if (useAllWords) {
+        pool = wordsInGroup.map(w => w.id);
     } else {
         if (gp.known && gp.known.length > 0) {
             pool = [...gp.known];
@@ -2696,3 +2853,61 @@ document.getElementById('writeInput')?.addEventListener('keypress', function(e) 
 document.getElementById('btnRestartWrite')?.addEventListener('click', () => startWriteMode());
 document.getElementById('btnBackWrite')?.addEventListener('click', () => showScreen('writeHubScreen'));
 document.getElementById('btnBackToGroupWrite')?.addEventListener('click', () => showScreen('writeHubScreen'));
+
+function startCustomReview(timeframe) {
+    const progress = loadProgress();
+    const timeLogs = progress.timeLogs || [];
+    const now = new Date();
+    
+    let startTime;
+    let endTime = now.getTime(); // default: up to now
+    
+    if (timeframe === 'yesterday') {
+        const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+        startTime = startOfToday - 86400000;
+        endTime = startOfToday;
+    } else if (timeframe === 'week') {
+        const startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+        startTime = startOfToday - (6 * 86400000);
+    } else {
+        return; // fallback
+    }
+    
+    const logsTarget = timeLogs.filter(l => l.ts >= startTime && l.ts < endTime).sort((a, b) => b.ts - a.ts);
+    
+    const uniqueWords = [];
+    const seen = new Set();
+    
+    for (const log of logsTarget) {
+        if (!seen.has(log.en)) {
+            seen.add(log.en);
+            uniqueWords.push({ en: log.en, tr: log.tr });
+        }
+    }
+    
+    if (uniqueWords.length === 0) {
+        if (typeof NotificationManager !== 'undefined') {
+            NotificationManager.addNotification('Bilgi', 'Tekrar edilecek kelime bulunamadı.', 'ℹ️');
+        } else {
+            alert('Tekrar edilecek kelime bulunamadı.');
+        }
+        return;
+    }
+    
+    state.sessionQueue = uniqueWords.map((w, idx) => ({ idx, word: w })).sort(() => Math.random() - 0.5);
+    state.sessionIndex = 0;
+    state.sessionCorrect = 0;
+    state.sessionWrong = 0;
+    state.sessionUnsure = 0;
+    state.currentMode = 'weeklyReview'; // Keep this state name to trigger the same saving logic
+    
+    document.getElementById('sessionComplete')?.classList.add('hidden');
+    const badge = document.getElementById('fcModeBadge');
+    if (badge) {
+        badge.textContent = timeframe === 'yesterday' ? 'Dünün Tekrarı' : 'Haftalık Tekrar';
+        badge.className = 'fc-mode-badge sandbox';
+    }
+    
+    showScreen('flashcardScreen');
+    renderCard();
+}

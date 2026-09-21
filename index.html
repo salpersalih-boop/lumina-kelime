@@ -404,8 +404,9 @@
         </div>
 
         <div class="timeline-card">
-          <div class="tl-header">
-            <h4>Dün <span class="tl-count" id="tlCountYesterday">0</span></h4>
+          <div class="tl-header" style="display: flex; justify-content: space-between; align-items: center;">
+            <h4 style="margin: 0;">Dün <span class="tl-count" id="tlCountYesterday">0</span></h4>
+            <button onclick="startCustomReview('yesterday')" style="padding: 4px 10px; font-size: 0.75rem; border-radius: 4px; border: none; background: rgba(124, 110, 247, 0.2); color: #7c6ef7; cursor: pointer; font-family: Inter, sans-serif; font-weight: 600; transition: all 0.2s ease;">Tekrar Et 🔄</button>
           </div>
           <div class="tl-list" id="tlListYesterday">
             <div class="tl-empty">Henüz kelime öğrenilmedi.</div>
@@ -413,8 +414,9 @@
         </div>
 
         <div class="timeline-card">
-          <div class="tl-header">
-            <h4>Bu Hafta <span class="tl-count" id="tlCountWeek">0</span></h4>
+          <div class="tl-header" style="display: flex; justify-content: space-between; align-items: center;">
+            <h4 style="margin: 0;">Bu Hafta <span class="tl-count" id="tlCountWeek">0</span></h4>
+            <button onclick="startCustomReview('week')" style="padding: 4px 10px; font-size: 0.75rem; border-radius: 4px; border: none; background: rgba(124, 110, 247, 0.2); color: #7c6ef7; cursor: pointer; font-family: Inter, sans-serif; font-weight: 600; transition: all 0.2s ease;">Tekrar Et 🔄</button>
           </div>
           <div class="tl-list" id="tlListWeek">
             <div class="tl-empty">Henüz kelime öğrenilmedi.</div>
@@ -483,7 +485,7 @@
       </button>
       <button class="mode-btn" id="modeErrors" data-mode="errors">
         <span class="mode-icon">🔴</span>
-        <span class="mode-label">Hataları Tekrar Et (Kart)</span>
+        <span class="mode-label">Hataları Tekrar Et</span>
         <span class="mode-count" id="countErrors">0</span>
       </button>
       <button class="mode-btn" id="modeTestErrors" data-mode="testErrors">
@@ -818,11 +820,32 @@
       <h2 id="testHubTitle">Test Merkezi</h2>
       <div class="group-stats" id="testHubStats"></div>
     </div>
+    <!-- Test Kaynak Seçimi -->
+    <div class="hub-source-picker">
+      <p class="hub-source-label">Testi hangi kelimelerle yapmak istersiniz?</p>
+      <div class="hub-source-btns">
+        <button class="hub-source-btn active" id="testSourceKnown">
+          <span class="source-icon">✅</span>
+          <span>Bildiklerimden</span>
+          <span class="source-count" id="hubCountTest"></span>
+        </button>
+        <button class="hub-source-btn" id="testSourceAll">
+          <span class="source-icon">📚</span>
+          <span>Bütün Kelimelerden</span>
+          <span class="source-count" id="hubCountTestAll"></span>
+        </button>
+      </div>
+    </div>
     <div class="mode-selector">
       <button class="mode-btn" id="hubBtnTest">
         <span class="mode-icon">📝</span>
-        <span class="mode-label">Test</span>
-        <span class="mode-count" id="hubCountTest"></span>
+        <span class="mode-label">Testi Başlat</span>
+        <span class="mode-count" id="hubCountTestStart"></span>
+      </button>
+      <button class="mode-btn" id="hubBtnTestRepeat">
+        <span class="mode-icon">🔁</span>
+        <span class="mode-label">Bildiklerimi de Tekrar Et</span>
+        <span class="mode-count" id="hubCountTestRepeat"></span>
       </button>
       <button class="mode-btn" id="hubBtnTestErrors">
         <span class="mode-icon">❌</span>
@@ -864,11 +887,32 @@
       <h2 id="writeHubTitle">Yazı Merkezi</h2>
       <div class="group-stats" id="writeHubStats"></div>
     </div>
+    <!-- Yazı Kaynak Seçimi -->
+    <div class="hub-source-picker">
+      <p class="hub-source-label">Yazı pratiğini hangi kelimelerle yapmak istersiniz?</p>
+      <div class="hub-source-btns">
+        <button class="hub-source-btn active" id="writeSourceKnown">
+          <span class="source-icon">✅</span>
+          <span>Bildiklerimden</span>
+          <span class="source-count" id="hubCountWrite"></span>
+        </button>
+        <button class="hub-source-btn" id="writeSourceAll">
+          <span class="source-icon">📚</span>
+          <span>Bütün Kelimelerden</span>
+          <span class="source-count" id="hubCountWriteAll"></span>
+        </button>
+      </div>
+    </div>
     <div class="mode-selector">
       <button class="mode-btn" id="hubBtnWrite">
         <span class="mode-icon">✍️</span>
-        <span class="mode-label">Yazı</span>
-        <span class="mode-count" id="hubCountWrite"></span>
+        <span class="mode-label">Yazıyı Başlat</span>
+        <span class="mode-count" id="hubCountWriteStart"></span>
+      </button>
+      <button class="mode-btn" id="hubBtnWriteRepeat">
+        <span class="mode-icon">🔁</span>
+        <span class="mode-label">Bildiklerimi de Tekrar Et</span>
+        <span class="mode-count" id="hubCountWriteRepeat"></span>
       </button>
       <button class="mode-btn" id="hubBtnWriteErrors">
         <span class="mode-icon">❌</span>
