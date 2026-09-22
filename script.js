@@ -374,29 +374,60 @@ async function loadLanguageData(langName) {
         console.warn('⚠️ /api/words başarısız, /api/English endpoint\'i deneniyor...');
     }
 
-    // Özel CSV'lerden yükleme
+    // Almanca: Önce SQL API'den çek, başarısız olursa CSV'ye düş
     if (langName === 'German') {
         try {
-            const response = await fetch('./Almanca_Frekans.csv');
+            console.log('🔄 Almanca kelimeler SQL API\'den çekiliyor...');
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000);
+            const response = await fetch(`${API_BASE_URL}/words/german`, { signal: controller.signal });
+            clearTimeout(timeoutId);
             if (response.ok) {
-                const text = await response.text();
-                const res = parseAlmancaCsv(text);
-                wordsData = res.words;
-            } else {
-                wordsData = FALLBACK_DATA.German;
-            }
-        } catch(e) { wordsData = FALLBACK_DATA.German; }
+                const apiData = await response.json();
+                if (apiData && apiData.length > 0) {
+                    wordsData = apiData;
+                    TOTAL_GROUPS_DE = Math.max(1, Math.ceil(apiData.length / 100));
+                    console.log(`✅ Almanca: ${apiData.length} kelime SQL'den yüklendi, ${TOTAL_GROUPS_DE} grup.`);
+                } else { throw new Error('API boş veri döndü'); }
+            } else { throw new Error(`HTTP ${response.status}`); }
+        } catch(e) {
+            console.warn('⚠️ Almanca API başarısız, CSV\'ye geçiliyor:', e.message);
+            try {
+                const response = await fetch('./Almanca_Frekans.csv');
+                if (response.ok) {
+                    const text = await response.text();
+                    const res = parseAlmancaCsv(text);
+                    wordsData = res.words;
+                } else { wordsData = FALLBACK_DATA.German; }
+            } catch(e2) { wordsData = FALLBACK_DATA.German; }
+        }
+    // Fransızca: Önce SQL API'den çek, başarısız olursa CSV'ye düş
     } else if (langName === 'French') {
         try {
-            const response = await fetch('./Fransizca.csv');
+            console.log('🔄 Fransızca kelimeler SQL API\'den çekiliyor...');
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000);
+            const response = await fetch(`${API_BASE_URL}/words/french`, { signal: controller.signal });
+            clearTimeout(timeoutId);
             if (response.ok) {
-                const text = await response.text();
-                const res = parseFransizcaCsv(text);
-                wordsData = res.words;
-            } else {
-                wordsData = FALLBACK_DATA.French;
-            }
-        } catch(e) { wordsData = FALLBACK_DATA.French; }
+                const apiData = await response.json();
+                if (apiData && apiData.length > 0) {
+                    wordsData = apiData;
+                    TOTAL_GROUPS_FR = Math.max(1, Math.ceil(apiData.length / 100));
+                    console.log(`✅ Fransızca: ${apiData.length} kelime SQL'den yüklendi, ${TOTAL_GROUPS_FR} grup.`);
+                } else { throw new Error('API boş veri döndü'); }
+            } else { throw new Error(`HTTP ${response.status}`); }
+        } catch(e) {
+            console.warn('⚠️ Fransızca API başarısız, CSV\'ye geçiliyor:', e.message);
+            try {
+                const response = await fetch('./Fransizca.csv');
+                if (response.ok) {
+                    const text = await response.text();
+                    const res = parseFransizcaCsv(text);
+                    wordsData = res.words;
+                } else { wordsData = FALLBACK_DATA.French; }
+            } catch(e2) { wordsData = FALLBACK_DATA.French; }
+        }
     } else if (langName === 'Swedish') {
         try {
             const response = await fetch('./Isvecce.csv');
@@ -490,12 +521,13 @@ async function loadWordsFromApi() {
         console.log(`📊 Toplam ${apiWords.length} kelime alındı.`);
 
         // API'den gelen kelimeleri Lumina formatına dönüştür
+        // Yeni API: { id, groupId, english, turkish } formatında döner
         if (apiWords && apiWords.length > 0) {
             wordsData = apiWords.map((w, idx) => ({
                 id: w.id || idx + 1,
                 groupId: w.groupId || Math.min(30, Math.floor(idx / 100) + 1),
-                english: w.english || w.word || w.en || '',
-                turkish: w.turkish || w.tr || '',
+                english: w.english || w.original || w.word || w.en || '',
+                turkish: w.turkish || w.translated || w.tr || '',
                 v1: w.v1 || null,
                 v2: w.v2 || null,
                 v3: w.v3 || null
@@ -516,7 +548,8 @@ async function loadWordsFromApi() {
                 });
             });
 
-            console.log('✅ Kelimeler başarıyla sisteme yüklendi. Gruplar:', Object.keys(allWords).length);
+            TOTAL_GROUPS = Object.keys(allWords).length;
+            console.log(`✅ İngilizce: ${wordsData.length} kelime SQL'den yüklendi, ${TOTAL_GROUPS} grup.`);
             return true;
         }
 
@@ -1076,6 +1109,68 @@ function showScreen(id) {
             switchLangBtn.classList.remove('hidden');
         }
     }
+
+    // Dil seçim ekranı açılınca kelime sayılarını SQL API'den çek
+    if (id === 'languageScreen') {
+        fetchAndShowLangCounts();
+    }
+}
+
+// Dil butonlarındaki kelime sayılarını SQL API'den dinamik olarak günceller
+async function fetchAndShowLangCounts() {
+    // İngilizce sayısını çek
+    try {
+        const ctrlEn = new AbortController();
+        setTimeout(() => ctrlEn.abort(), 3000);
+        const resEn = await fetch(`${API_BASE_URL}/words/count`, { signal: ctrlEn.signal });
+        if (resEn.ok) {
+            const dataEn = await resEn.json();
+            const countEn = dataEn.count || 0;
+            const grupsEn = Math.max(1, Math.ceil(countEn / 100));
+            const enBtn = document.getElementById('btnLangEn');
+            if (enBtn) {
+                const p = enBtn.querySelector('.lang-info p');
+                if (p) p.textContent = `${countEn.toLocaleString('tr-TR')} Kelime • ${grupsEn} Grup • SQL`;
+            }
+            TOTAL_GROUPS = grupsEn;
+        }
+    } catch(e) { /* sessizce geç */ }
+
+    // Almanca sayısını çek
+    try {
+        const ctrlDe = new AbortController();
+        setTimeout(() => ctrlDe.abort(), 3000);
+        const resDe = await fetch(`${API_BASE_URL}/words/german/count`, { signal: ctrlDe.signal });
+        if (resDe.ok) {
+            const dataDe = await resDe.json();
+            const countDe = dataDe.count || 0;
+            const grupsDe = Math.max(1, Math.ceil(countDe / 100));
+            const deBtn = document.getElementById('btnLangDe');
+            if (deBtn) {
+                const p = deBtn.querySelector('.lang-info p');
+                if (p) p.textContent = `${countDe.toLocaleString('tr-TR')} Kelime • ${grupsDe} Grup • SQL`;
+            }
+            TOTAL_GROUPS_DE = grupsDe;
+        }
+    } catch(e) { /* sessizce geç */ }
+
+    // Fransızca sayısını çek
+    try {
+        const ctrlFr = new AbortController();
+        setTimeout(() => ctrlFr.abort(), 3000);
+        const resFr = await fetch(`${API_BASE_URL}/words/french/count`, { signal: ctrlFr.signal });
+        if (resFr.ok) {
+            const dataFr = await resFr.json();
+            const countFr = dataFr.count || 0;
+            const grupsFr = Math.max(1, Math.ceil(countFr / 100));
+            const frBtn = document.getElementById('btnLangFr');
+            if (frBtn) {
+                const p = frBtn.querySelector('.lang-info p');
+                if (p) p.textContent = `${countFr.toLocaleString('tr-TR')} Kelime • ${grupsFr} Grup • SQL`;
+            }
+            TOTAL_GROUPS_FR = grupsFr;
+        }
+    } catch(e) { /* sessizce geç */ }
 }
 
 // ── DASHBOARD RENDER ──

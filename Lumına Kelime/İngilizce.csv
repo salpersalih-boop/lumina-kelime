@@ -92,7 +92,7 @@ already;zaten;-;-;-
 also;ayrýca;-;-;-
 alter;deðiþtirmek;alter;altered;altered
 alternative;alternatif;-;-;-
-although;-e raðmen;-;-;-
+although;#AD?;-;-;-
 always;her zaman;-;-;-
 amazed;hayrete düþmüþ;-;-;-
 amazing;inanýlmaz;-;-;-
@@ -719,7 +719,7 @@ designer;tasarýmcý;-;-;-
 desire;arzu, arzulamak;desire;desired;desired
 desk;masa;-;-;-
 desperate;umutsuz;-;-;-
-despite;-e raðmen;-;-;-
+despite;#AD?;-;-;-
 destination;varýþ noktasý;-;-;-
 destroy;yok etmek;destroy;destroyed;destroyed
 detail;detay;detail;detailed;detailed
@@ -1115,7 +1115,7 @@ frighten;korkutmak;frighten;frightened;frightened
 frightened;korkmuþ;-;-;-
 frightening;korkutucu;-;-;-
 frog;kurbaða;-;-;-
-from;-den;-;-;-
+from;#AD?;-;-;-
 front;ön;-;-;-
 frozen;donmuþ;-;-;-
 fruit;meyve;-;-;-
@@ -1641,7 +1641,7 @@ method;yöntem;-;-;-
 metre;metre;-;-;-
 middle;orta;-;-;-
 midnight;gece yarýsý;-;-;-
-might;-ebilir (olasýlýk);-;-;-
+might;#AD?;-;-;-
 mild;hafif, ýlýman;-;-;-
 mile;mil;-;-;-
 military;askeri;-;-;-
@@ -1836,7 +1836,7 @@ original;orijinal;-;-;-
 originally;baþlangýçta;-;-;-
 other;diðer;-;-;-
 otherwise;aksi takdirde;-;-;-
-ought;-meli (görev);-;-;-
+ought;#AD?;-;-;-
 our;bizim;-;-;-
 ours;bizimki;-;-;-
 ourselves;kendimiz;-;-;-
@@ -2392,7 +2392,7 @@ shop;dükkan, alýþveriþ yapmak;shop;shopped;shopped
 shopping;alýþveriþ;-;-;-
 short;kýsa;-;-;-
 shot;atýþ, çekim;-;-;-
-should;-meli;-;-;-
+should;#AD?;-;-;-
 shoulder;omuz;-;-;-
 shout;baðýrmak;shout;shouted;shouted
 show;göstermek;show;showed;shown
@@ -2416,7 +2416,7 @@ similarity;benzerlik;-;-;-
 similarly;benzer þekilde;-;-;-
 simple;basit;-;-;-
 simply;basitçe;-;-;-
-since;-den beri;-;-;-
+since;#AD?;-;-;-
 sincere;samimi;-;-;-
 sing;þarký söylemek;sing;sang;sung
 singer;þarkýcý;-;-;-
@@ -2666,7 +2666,7 @@ term;dönem, terim;term;termed;termed
 terrible;korkunç, berbat;-;-;-
 test;test, sýnamak;test;tested;tested
 text;metin, mesaj atmak;text;texted;texted
-than;-den;-;-;-
+than;#AD?;-;-;-
 thank;teþekkür etmek;thank;thanked;thanked
 thanks;teþekkürler;-;-;-
 that;o, þu;-;-;-
@@ -2710,7 +2710,7 @@ ticket;bilet;-;-;-
 tidy;düzenli, düzenlemek;tidy;tidied;tidied
 tie;baðlamak, kravat;tie;tied;tied
 tight;sýký, dar;-;-;-
-till;-e kadar;-;-;-
+till;#AD?;-;-;-
 time;zaman, zamanlamak;time;timed;timed
 tin;teneke;-;-;-
 tiny;minik;-;-;-
@@ -2817,12 +2817,12 @@ united;birleþik;-;-;-
 universe;evren;-;-;-
 university;üniversite;-;-;-
 unknown;bilinmeyen;-;-;-
-unless;-mediði sürece;-;-;-
-unlike;-den farklý;-;-;-
+unless;#AD?;-;-;-
+unlike;#AD?;-;-;-
 unlikely;olasý olmayan;-;-;-
 unnecessary;gereksiz;-;-;-
 unpleasant;nahoþ;-;-;-
-until;-e kadar;-;-;-
+until;#AD?;-;-;-
 unusual;olaðandýþý;-;-;-
 up;yukarý;-;-;-
 update;güncellemek, güncelleme;update;updated;updated
@@ -2926,7 +2926,7 @@ whereas;oysa ki;-;-;-
 wherever;nerede olursa olsun;-;-;-
 whether;olup olmadýðý;-;-;-
 which;hangi;-;-;-
-while;-iken;-;-;-
+while;#AD?;-;-;-
 whisper;fýsýldamak;whisper;whispered;whispered
 white;beyaz;-;-;-
 who;kim;-;-;-
@@ -2939,7 +2939,7 @@ widely;geniþ çapta;-;-;-
 wife;eþ (kadýn);-;-;-
 wild;vahþi;-;-;-
 wildlife;yaban hayatý;-;-;-
-will;-ecek (gelecek);-;-;-
+will;#AD?;-;-;-
 willing;istekli;-;-;-
 win;kazanmak;win;won;won
 wind1;rüzgar;-;-;-
@@ -2973,7 +2973,7 @@ worry;endiþelenmek;worry;worried;worried
 worse;daha kötü;-;-;-
 worst;en kötü;-;-;-
 worth;deðerinde;-;-;-
-would;-erdi;-;-;-
+would;#AD?;-;-;-
 wound;yara, yaralamak;wound;wounded;wounded
 wow;vay canýna;-;-;-
 wrap;sarmak, paketlemek;wrap;wrapped;wrapped
@@ -2981,7 +2981,7 @@ write;yazmak;write;wrote;written
 writer;yazar;-;-;-
 writing;yazý, yazma;-;-;-
 written;yazýlý;-;-;-
-wrong;yanlýþ;-;-;-
+wrong;YANLIÞ;-;-;-
 yard;avlu, yarda;-;-;-
 yeah;evet;-;-;-
 year;yýl;-;-;-
