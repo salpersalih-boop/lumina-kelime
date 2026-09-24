@@ -1,16 +1,12 @@
-const CACHE_NAME = 'lumina-cache-v2';
+const CACHE_NAME = 'lumina-cache-v5';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/style.css',
   '/script.js',
-  '/Oxford3000.csv',
-  '/Oxford_3000_TR.csv',
-  '/Almanca_Frekans.csv',
-  '/Fransizca.csv',
-  '/Isvecce.csv',
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'
 ];
+
 
 // Install Event: Cache static assets
 self.addEventListener('install', (event) => {

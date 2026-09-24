@@ -1,4 +1,4 @@
-﻿/* ═══════════════════════════════════════
+/* ═══════════════════════════════════════
    LUMINA 3000 — Global Design Tokens
 ═══════════════════════════════════════ */
 :root {
@@ -45,6 +45,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Global overflow safety */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+img, video, svg, canvas, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, span, a, label, td, th {
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 html {
@@ -1953,9 +1969,57 @@ body.theme-es .group-card {
 /* ═══════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════ */
-@media (max-width: 600px) {
+/* ═══════════════════════════════════════
+   RESPONSIVE — TABLET (≤768px)
+═══════════════════════════════════════ */
+@media (max-width: 768px) {
+    .global-top-bar {
+        padding: 6px 8px;
+    }
+
+    .top-bar-container {
+        padding: 0 4px;
+        gap: 6px;
+    }
+
+    .top-bar-right {
+        gap: 6px;
+    }
+
+    .top-user-name {
+        max-width: 80px;
+        font-size: 0.78rem;
+    }
+
+    .user-dropdown-btn {
+        padding: 4px 8px 4px 4px;
+        gap: 6px;
+    }
+
+    .btn-switch-lang-top span {
+        display: none;
+    }
+
+    .btn-switch-lang-top {
+        padding: 7px 10px;
+    }
+
+    /* Dashboard */
     #dashboard {
         padding: 0 16px 40px;
+    }
+
+    .dash-header {
+        padding: 32px 0 24px;
+    }
+
+    .logo-title {
+        font-size: clamp(1.8rem, 5vw, 2.6rem);
+    }
+
+    .logo-sub {
+        font-size: 0.8rem;
+        padding: 0 8px;
     }
 
     .groups-grid {
@@ -1967,11 +2031,15 @@ body.theme-es .group-card {
         padding: 14px 10px 12px;
     }
 
+    /* Group / Flashcard Screens */
     #groupScreen,
-    #flashcardScreen {
+    #flashcardScreen,
+    #testScreen,
+    #writeScreen {
         padding: 20px 16px 32px;
     }
 
+    /* Card */
     .card-scene {
         min-height: 240px;
     }
@@ -1980,37 +2048,413 @@ body.theme-es .group-card {
         height: 240px;
     }
 
+    .card-face {
+        padding: 24px 16px;
+    }
+
     .card-word {
         font-size: clamp(1.3rem, 6vw, 1.8rem);
     }
 
+    /* Answer buttons */
     .answer-btns {
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
     }
 
     .btn-wrong,
-    .btn-correct {
+    .btn-correct,
+    .btn-unsure {
         font-size: 0.82rem;
         padding: 11px 14px;
+        max-width: none;
+        flex: 1 1 auto;
+        min-width: 0;
     }
 
+    /* Session complete */
     .complete-card {
-        padding: 32px 24px;
+        padding: 32px 20px;
     }
 
     .complete-actions {
         flex-direction: column;
     }
+
+    /* Timeline */
+    .timeline-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Modules */
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .module-card {
+        padding: 18px 16px;
+    }
+
+    /* Lab */
+    .lab-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Match */
+    .match-board {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .match-btn {
+        padding: 12px 8px;
+        font-size: 0.82rem;
+    }
+
+    /* FC Header */
+    .fc-header {
+        gap: 8px;
+    }
+
+    .fc-mode-badge {
+        font-size: 0.65rem;
+        padding: 3px 8px;
+    }
+
+    /* Language cards */
+    .lang-btn {
+        max-width: 100%;
+        padding: 16px 18px;
+    }
+
+    .lang-info h3 {
+        font-size: 1rem;
+    }
+
+    .lang-info p {
+        font-size: 0.75rem;
+    }
+
+    /* Modals */
+    .modal-card {
+        max-width: calc(100vw - 32px);
+        padding: 20px 16px;
+    }
+
+    .logout-confirm-card {
+        max-width: calc(100vw - 32px);
+    }
+
+    /* Dropdown */
+    .user-dropdown-menu {
+        position: fixed;
+        top: 52px;
+        right: 8px;
+        left: auto;
+        width: calc(100vw - 16px);
+        max-width: 280px;
+    }
+
+    /* Hub source */
+    .hub-source-btns {
+        flex-direction: column;
+    }
+
+    .hub-source-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Hub panel */
+    .hub-panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    /* Test options grid */
+    #testOptions {
+        grid-template-columns: 1fr !important;
+    }
 }
 
-@media (max-width: 380px) {
-    .groups-grid {
-        grid-template-columns: repeat(4, 1fr);
+/* ═══════════════════════════════════════
+   RESPONSIVE — SMALL PHONES (≤480px)
+═══════════════════════════════════════ */
+@media (max-width: 480px) {
+    /* Top bar: hide user name completely */
+    .top-user-name {
+        display: none;
+    }
+
+    .top-bar-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
+
+    .top-user-avatar {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+
+    .chevron-icon {
+        display: none;
+    }
+
+    /* Dashboard header */
+    .dash-header {
+        padding: 24px 0 16px;
+    }
+
+    .logo-wrap {
         gap: 8px;
+    }
+
+    .logo-icon {
+        font-size: 1.8rem;
+    }
+
+    .logo-title {
+        font-size: clamp(1.5rem, 7vw, 2rem);
+        letter-spacing: -1px;
+    }
+
+    .logo-sub {
+        font-size: 0.72rem;
+    }
+
+    /* Dashboard */
+    #dashboard {
+        padding: 0 12px 32px;
+    }
+
+    .groups-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .group-card {
+        padding: 10px 8px;
+        gap: 6px;
     }
 
     .group-num {
         font-size: 1.2rem;
+    }
+
+    .group-label {
+        font-size: 0.6rem;
+    }
+
+    .group-ring-wrap {
+        width: 36px;
+        height: 36px;
+    }
+
+    .group-ring-wrap svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Group screen */
+    #groupScreen {
+        padding: 16px 12px 24px;
+        gap: 16px;
+    }
+
+    .group-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .group-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .mode-btn {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .mode-icon {
+        font-size: 1.3rem;
+    }
+
+    .mode-label {
+        font-size: 0.88rem;
+    }
+
+    /* Answer buttons — stack vertically on very small screens */
+    .answer-btns {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-wrong,
+    .btn-correct,
+    .btn-unsure {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Write screen */
+    #writeScreen {
+        padding: 16px 12px 24px;
+    }
+
+    /* Card */
+    .card {
+        height: 220px;
+    }
+
+    .card-scene {
+        min-height: 220px;
+    }
+
+    /* Language selection */
+    #languageScreen > div:first-child h1 {
+        font-size: clamp(1.6rem, 7vw, 2.5rem) !important;
+    }
+
+    .lang-icon-wrap {
+        width: 48px;
+        height: 48px;
+    }
+
+    .flag-emoji {
+        font-size: 1.4rem;
+    }
+
+    .flag-code {
+        font-size: 0.55rem;
+    }
+
+    /* Match */
+    .match-board {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .match-btn {
+        padding: 14px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Lab */
+    #labScreen {
+        padding: 20px 12px 32px;
+    }
+
+    /* Modules section */
+    .modules-section {
+        margin-top: 32px;
+        padding-top: 20px;
+    }
+
+    .mod-icon {
+        font-size: 1.8rem;
+    }
+
+    .mod-info h4 {
+        font-size: 0.95rem;
+    }
+
+    /* Dash footer */
+    .dash-footer {
+        font-size: 0.72rem;
+        flex-direction: column;
+        display: flex;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* Auth */
+    .auth-card {
+        padding: 24px 16px 20px;
+        border-radius: var(--radius-lg);
+    }
+
+    .auth-container {
+        padding: 16px 12px 32px;
+        gap: 20px;
+    }
+
+    /* Stat pills */
+    .group-stats {
+        gap: 6px;
+    }
+
+    .stat-pill {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+    }
+
+    /* Timeline */
+    .timeline-section {
+        margin-top: 32px !important;
+        padding-top: 20px !important;
+    }
+
+    .tl-header h4 {
+        font-size: 0.88rem;
+    }
+
+    /* Session complete */
+    .complete-card {
+        padding: 24px 16px;
+    }
+
+    .complete-title {
+        font-size: 1.2rem;
+    }
+
+    .complete-icon {
+        font-size: 2.4rem;
+    }
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — VERY SMALL (≤360px)
+═══════════════════════════════════════ */
+@media (max-width: 360px) {
+    .groups-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
+    .group-num {
+        font-size: 1rem;
+    }
+
+    .group-ring-wrap {
+        width: 32px;
+        height: 32px;
+    }
+
+    .group-ring-wrap svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mode-btn {
+        padding: 12px 12px;
+    }
+
+    .fc-progress-wrap {
+        min-width: 80px;
+    }
+
+    .btn-back {
+        padding: 7px 10px;
+        font-size: 0.78rem;
+    }
+
+    .auth-card {
+        padding: 20px 12px 16px;
     }
 }
 
@@ -2243,17 +2687,7 @@ body.theme-es .group-card {
     }
 }
 
-@media (max-width: 600px) {
-    .match-board {
-        flex-direction: row;
-        gap: 12px;
-    }
-
-    .match-btn {
-        padding: 12px 10px;
-        font-size: 0.85rem;
-    }
-}
+/* Match responsive moved to main media queries */
 
 /* ═══════════════════════════════════════
    AUDIO & SHUFFLE BUTTONS
@@ -2691,17 +3125,19 @@ body.light-theme .user-dropdown-btn:hover {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(124, 110, 247, 0.18);
-    padding: 8px 24px;
+    padding: 8px 12px;
     transition: var(--transition);
 }
 
 .top-bar-container {
     width: 100%;
     max-width: 100%;
-    padding: 0 28px;
+    padding: 0 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
+    overflow: hidden;
 }
 
 .btn-switch-lang-top {
@@ -2781,10 +3217,12 @@ body.light-theme .user-dropdown-btn:hover {
 
 /* Notification Popover */
 .notif-popover {
-    position: absolute;
-    top: 48px;
-    right: 0;
-    width: 310px;
+    position: fixed;
+    top: 56px;
+    right: 8px;
+    left: 8px;
+    max-width: 340px;
+    margin-left: auto;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
@@ -2906,6 +3344,8 @@ body.light-theme .user-dropdown-btn:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    flex-shrink: 1;
+    min-width: 0;
 }
 
 .chevron-icon {
@@ -3203,11 +3643,14 @@ body.light-theme .user-dropdown-btn:hover {
     color: var(--text-primary);
     cursor: pointer;
     transition: var(--spring);
-    min-width: 220px;
+    min-width: 0;
+    width: 100%;
+    max-width: 340px;
     text-align: left;
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    flex-shrink: 1;
 }
 
 .lang-btn:hover {

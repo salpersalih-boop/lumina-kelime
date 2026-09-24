@@ -102,8 +102,8 @@ namespace Lumina.Api.Controllers
                             while (reader.Read())
                             {
                                 index++;
-                                var kelime = reader[1]?.ToString()?.Trim() ?? "";
-                                var turkce = reader[3]?.ToString()?.Trim() ?? "";
+                                var kelime = reader[1] is DBNull ? "" : reader[1].ToString()?.Trim() ?? "";
+                                var turkce = reader[3] is DBNull ? "" : reader[3].ToString()?.Trim() ?? "";
 
                                 if (!string.IsNullOrEmpty(kelime) && !string.IsNullOrEmpty(turkce))
                                 {
@@ -162,8 +162,8 @@ namespace Lumina.Api.Controllers
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    // Fransizca tablosu: Sıra | Kelime | Anlamı | Türkçe Anlamı
-                    string query = "SELECT * FROM Fransizca";
+                    // Fransızca tablosu: [Sıra] | [Fransızca Kelime] | [Tür] | [Türkçe Anlamı]
+                    string query = "SELECT [Sıra], [Fransızca Kelime], [Tür], [Türkçe Anlamı] FROM dbo.[Fransızca]";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -173,8 +173,8 @@ namespace Lumina.Api.Controllers
                             while (reader.Read())
                             {
                                 index++;
-                                var kelime = reader[1]?.ToString()?.Trim() ?? "";
-                                var turkce = reader[3]?.ToString()?.Trim() ?? "";
+                                var kelime = reader["Fransızca Kelime"] is DBNull ? "" : reader["Fransızca Kelime"].ToString()?.Trim() ?? "";
+                                var turkce = reader["Türkçe Anlamı"] is DBNull ? "" : reader["Türkçe Anlamı"].ToString()?.Trim() ?? "";
 
                                 if (!string.IsNullOrEmpty(kelime) && !string.IsNullOrEmpty(turkce))
                                 {
@@ -195,7 +195,7 @@ namespace Lumina.Api.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Fransızca kelimeler yüklenemedi.", detail = ex.Message });
+                return StatusCode(500, new { error = ex.Message, stack = ex.StackTrace });
             }
         }
 
@@ -208,7 +208,78 @@ namespace Lumina.Api.Controllers
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT COUNT(*) FROM Fransizca";
+                    string query = "SELECT COUNT(*) FROM dbo.[Fransızca]";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        int count = (int)command.ExecuteScalar();
+                        return Ok(new { count });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        // ── İsveççe: GET /api/words/swedish ──
+        [HttpGet("swedish")]
+        public IActionResult GetSwedishWords()
+        {
+            var wordsList = new List<object>();
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    // Isvecce tablosu: Sıra | Kelime | Anlamı | Türkçe Anlamı
+                    string query = "SELECT * FROM dbo.[Isvecce]";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            int index = 0;
+                            while (reader.Read())
+                            {
+                                index++;
+                                var kelime = reader[1] is DBNull ? "" : reader[1].ToString()?.Trim() ?? "";
+                                var turkce = reader[3] is DBNull ? "" : reader[3].ToString()?.Trim() ?? "";
+
+                                if (!string.IsNullOrEmpty(kelime) && !string.IsNullOrEmpty(turkce))
+                                {
+                                    wordsList.Add(new
+                                    {
+                                        id = index,
+                                        groupId = (int)Math.Ceiling((double)index / 100),
+                                        english = kelime,
+                                        turkish = turkce
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }
+
+                return Ok(wordsList);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "İsveççe kelimeler yüklenemedi.", detail = ex.Message });
+            }
+        }
+
+        // ── İsveççe kelime sayısı: GET /api/words/swedish/count ──
+        [HttpGet("swedish/count")]
+        public IActionResult GetSwedishCount()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "SELECT COUNT(*) FROM dbo.[Isvecce]";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         int count = (int)command.ExecuteScalar();

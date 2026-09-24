@@ -1,4 +1,4 @@
-namespace Lumina.Api
+ï»¿namespace Lumina.Api
 {
     public class Program
     {
@@ -12,7 +12,7 @@ namespace Lumina.Api
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
-            // 1. CORS Ýzin Politikasýný Tanýmlýyoruz
+            // 1. CORS Ä°zin PolitikasÄ±nÄ± TanÄ±mlÄ±yoruz
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll",
@@ -32,9 +32,9 @@ namespace Lumina.Api
                 app.MapOpenApi();
             }
 
-            app.UseHttpsRedirection();
+            // HTTPS redirection kaldirildi - HTTP uzerinden calisiyoruz
 
-            // 2. CORS politikasýný aktif hale getiriyoruz (UseAuthorization'dan ÖNCE olmalý)
+            // 2. CORS politikasÄ±nÄ± aktif hale getiriyoruz (UseAuthorization'dan Ã–NCE olmalÄ±)
             app.UseCors("AllowAll");
 
             app.UseAuthorization();

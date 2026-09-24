@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lumina.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff171950735e4d292395c56b606a61a46d33dc55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66c484e7428e6ce4aaa33b61b714101890cdcec9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lumina.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lumina.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

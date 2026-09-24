@@ -1,5 +1,5 @@
 Kelime,Türkçe Anlamý,V1 (Yalýn Hali),V2 (Geçmiþ Zaman),V3 (Sýfat Fiil)
-"a, an",belgisiz harf,-,-,-
+a, an,belgisiz harf,-,-,-
 ability,yetenek,-,-,-
 able,yapabilen,-,-,-
 about,hakkýnda,-,-,-
@@ -15,15 +15,15 @@ accident,kaza,-,-,-
 accommodation,konaklama,-,-,-
 accompany,eþlik etmek,accompany,accompanied,accompanied
 according to,göre,-,-,-
-account,"hesap / hesaba katmak, açýklamak",account,accounted,accounted
-accurate,"doðru, kesin",-,-,-
+"account,""hesap / hesaba katmak, açýklamak"",account,accounted,accounted"
+"accurate,""doðru, kesin"",-,-,-"
 accuse,suçlamak,accuse,accused,accused
 achieve,baþarmak,achieve,achieved,achieved
 achievement,baþarý,-,-,-
 acknowledge,kabul etmek,acknowledge,acknowledged,acknowledged
 acquire,elde etmek,acquire,acquired,acquired
 across,karþýsýnda,-,-,-
-act,"davranmak, eylem",act,acted,acted
+"act,""davranmak, eylem"",act,acted,acted"
 action,aksiyon,-,-,-
 active,aktif,-,-,-
 activity,aktivite,-,-,-
@@ -35,23 +35,23 @@ ad,reklam,-,-,-
 adapt,uyum saðlamak,adapt,adapted,adapted
 add,eklemek,add,added,added
 addition,ekleme,-,-,-
-additional,"ek, ilave",-,-,-
-address,"adres, hitap etmek",address,addressed,addressed
-administration,"yönetim, idare",-,-,-
+"additional,""ek, ilave"",-,-,-"
+"address,""adres, hitap etmek"",address,addressed,addressed"
+"administration,""yönetim, idare"",-,-,-"
 admire,hayran olmak,admire,admired,admired
-admit,"kabul etmek, itiraf etmek",admit,admitted,admitted
-adopt,"benimsemek, evlat edinmek",adopt,adopted,adopted
+"admit,""kabul etmek, itiraf etmek"",admit,admitted,admitted"
+"adopt,""benimsemek, evlat edinmek"",adopt,adopted,adopted"
 adult,yetiþkin,-,-,-
-advance,"ilerleme, ilerlemek",advance,advanced,advanced
+"advance,""ilerleme, ilerlemek"",advance,advanced,advanced"
 advanced,ileri düzey,-,-,-
 advantage,avantaj,-,-,-
 adventure,macera,-,-,-
 advertise,reklamýný yapmak,advertise,advertised,advertised
 advertisement,reklam,-,-,-
 advertising,reklamcýlýk,-,-,-
-advice,"öðüt, tavsiye",-,-,-
+"advice,""öðüt, tavsiye"",-,-,-"
 advise,tavsiye etmek,advise,advised,advised
-affair,"olay, iliþki",-,-,-
+"affair,""olay, iliþki"",-,-,-"
 affect,etkilemek,affect,affected,affected
 afford,gücü yetmek,afford,afforded,afforded
 afraid,korkmuþ,-,-,-
@@ -60,11 +60,11 @@ afternoon,öðleden sonra,-,-,-
 afterwards,daha sonra,-,-,-
 again,tekrar,-,-,-
 against,karþý,-,-,-
-age,"yaþ, yaþlanmak",age,aged,aged
+"age,""yaþ, yaþlanmak"",age,aged,aged"
 aged,yaþlý,-,-,-
 agency,ajans,-,-,-
 agenda,gündem,-,-,-
-agent,"acente, ajan",-,-,-
+"agent,""acente, ajan"",-,-,-"
 aggressive,saldýrgan,-,-,-
 ago,önce,-,-,-
 agree,ayný fikirde olmak,agree,agreed,agreed
@@ -72,7 +72,7 @@ agreement,anlaþma,-,-,-
 ah,ah,-,-,-
 ahead,ileride,-,-,-
 aid,yardým,aid,aided,aided
-aim,"hedeflemek, amaç",aim,aimed,aimed
+"aim,""hedeflemek, amaç"",aim,aimed,aimed"
 air,hava,-,-,-
 aircraft,uçak,-,-,-
 airline,havayolu,-,-,-
@@ -81,9 +81,9 @@ alarm,alarm,alarm,alarmed,alarmed
 album,albüm,-,-,-
 alcohol,alkol,-,-,-
 alcoholic,alkollü,-,-,-
-alive,"canlý, hayatta",-,-,-
-all,"tüm, hepsi",-,-,-
-all right,"tamam, iyi",-,-,-
+"alive,""canlý, hayatta"",-,-,-"
+"all,""tüm, hepsi"",-,-,-"
+"all right,""tamam, iyi"",-,-,-"
 allow,izin vermek,allow,allowed,allowed
 almost,neredeyse,-,-,-
 alone,yalnýz,-,-,-
@@ -96,10 +96,10 @@ although,-e raðmen,-,-,-
 always,her zaman,-,-,-
 amazed,hayrete düþmüþ,-,-,-
 amazing,inanýlmaz,-,-,-
-ambition,"hýrs, hedef",-,-,-
+"ambition,""hýrs, hedef"",-,-,-"
 ambitious,hýrslý,-,-,-
 among,arasýnda,-,-,-
-amount,"miktar, tutmak (para)",amount,amounted,amounted
+"amount,""miktar, tutmak (para)"",amount,amounted,amounted"
 analyse,analiz etmek,analyse,analysed,analysed
 analysis,analiz,-,-,-
 ancient,antik,-,-,-
@@ -117,7 +117,7 @@ annoyed,sinirlenmiþ,-,-,-
 annoying,sinir bozucu,-,-,-
 annual,yýllýk,-,-,-
 another,baþka bir,-,-,-
-answer,"cevap, cevaplamak",answer,answered,answered
+"answer,""cevap, cevaplamak"",answer,answered,answered"
 anxious,kaygýlý,-,-,-
 any,herhangi,-,-,-
 any more,artýk,-,-,-
@@ -130,17 +130,17 @@ apart,ayrý,-,-,-
 apartment,daire,-,-,-
 apologize,özür dilemek,apologize,apologized,apologized
 app,uygulama,-,-,-
-apparent,"görünen, açýk",-,-,-
+"apparent,""görünen, açýk"",-,-,-"
 apparently,görünüþe göre,-,-,-
-appeal,"çekicilik, baþvurmak",appeal,appealed,appealed
+"appeal,""çekicilik, baþvurmak"",appeal,appealed,appealed"
 appear,görünmek,appear,appeared,appeared
 appearance,görünüþ,-,-,-
 apple,elma,-,-,-
-application,"uygulama, baþvuru",-,-,-
-apply,"baþvurmak, uygulamak",apply,applied,applied
+"application,""uygulama, baþvuru"",-,-,-"
+"apply,""baþvurmak, uygulamak"",apply,applied,applied"
 appointment,randevu,-,-,-
 appreciate,takdir etmek,appreciate,appreciated,appreciated
-approach,"yaklaþým, yaklaþmak",approach,approached,approached
+"approach,""yaklaþým, yaklaþmak"",approach,approached,approached"
 appropriate,uygun,-,-,-
 approval,onay,-,-,-
 approve,onaylamak,approve,approved,approved
@@ -148,7 +148,7 @@ approximately,yaklaþýk olarak,-,-,-
 April,Nisan,-,-,-
 architect,mimar,-,-,-
 architecture,mimarlýk,-,-,-
-area,"alan, bölge",-,-,-
+"area,""alan, bölge"",-,-,-"
 argue,tartýþmak,argue,argued,argued
 argument,tartýþma,-,-,-
 arise,ortaya çýkmak,arise,arose,arisen
@@ -156,7 +156,7 @@ arm,kol,-,-,-
 armed,silahlý,-,-,-
 arms,silahlar,-,-,-
 army,ordu,-,-,-
-around,"etrafýnda, çevresinde",-,-,-
+"around,""etrafýnda, çevresinde"",-,-,-"
 arrange,düzenlemek,arrange,arranged,arranged
 arrangement,düzenleme,-,-,-
 arrest,tutuklamak,arrest,arrested,arrested
@@ -167,47 +167,47 @@ article,makale,-,-,-
 artificial,yapay,-,-,-
 artist,sanatçý,-,-,-
 artistic,sanatsal,-,-,-
-as,"olarak, gibi",-,-,-
+"as,""olarak, gibi"",-,-,-"
 ashamed,utanmýþ,-,-,-
 ask,sormak,ask,asked,asked
 asleep,uykuda,-,-,-
-aspect,"yön, husus",-,-,-
+"aspect,""yön, husus"",-,-,-"
 assess,deðerlendirmek,assess,assessed,assessed
 assessment,deðerlendirme,-,-,-
-assignment,"ödev, görev",-,-,-
+"assignment,""ödev, görev"",-,-,-"
 assist,yardým etmek,assist,assisted,assisted
 assistant,asistan,-,-,-
 associate,iliþkilendirmek,associate,associated,associated
 associated,iliþkili,-,-,-
-association,"dernek, iliþki",-,-,-
+"association,""dernek, iliþki"",-,-,-"
 assume,varsaymak,assume,assumed,assumed
-at,"-de, -da",-,-,-
+"at,""-de, -da"",-,-,-"
 athlete,sporcu,-,-,-
 atmosphere,atmosfer,-,-,-
-attach,"eklemek, iliþtirmek",attach,attached,attached
-attack,"saldýrmak, saldýrý",attack,attacked,attacked
-attempt,"denemek, giriþim",attempt,attempted,attempted
+"attach,""eklemek, iliþtirmek"",attach,attached,attached"
+"attack,""saldýrmak, saldýrý"",attack,attacked,attacked"
+"attempt,""denemek, giriþim"",attempt,attempted,attempted"
 attend,katýlmak,attend,attended,attended
 attention,dikkat,-,-,-
 attitude,tutum,-,-,-
-attract,"çekmek, cezbetmek",attract,attracted,attracted
-attraction,"çekicilik, cazibe",-,-,-
+"attract,""çekmek, cezbetmek"",attract,attracted,attracted"
+"attraction,""çekicilik, cazibe"",-,-,-"
 attractive,çekici,-,-,-
 audience,izleyici kitlesi,-,-,-
 August,Aðustos,-,-,-
-aunt,"hala, teyze",-,-,-
+"aunt,""hala, teyze"",-,-,-"
 author,yazar,-,-,-
-authority,"otorite, yetki",-,-,-
+"authority,""otorite, yetki"",-,-,-"
 autumn,sonbahar,-,-,-
-available,"mevcut, uygun",-,-,-
+"available,""mevcut, uygun"",-,-,-"
 average,ortalama,average,averaged,averaged
 avoid,kaçýnmak,avoid,avoided,avoided
-award,"ödül, ödüllendirmek",award,awarded,awarded
+"award,""ödül, ödüllendirmek"",award,awarded,awarded"
 aware,farkýnda,-,-,-
 away,uzakta,-,-,-
 awful,berbat,-,-,-
 baby,bebek,-,-,-
-back,"arka, geri, sýrt",back,backed,backed
+"back,""arka, geri, sýrt"",back,backed,backed"
 background,arka plan,-,-,-
 backwards,geriye doðru,-,-,-
 bacteria,bakteri,-,-,-
@@ -215,36 +215,36 @@ bad,kötü,-,-,-
 badly,kötü bir þekilde,-,-,-
 bag,çanta,-,-,-
 bake,fýrýnda piþirmek,bake,baked,baked
-balance,"denge, dengelemek",balance,balanced,balanced
+"balance,""denge, dengelemek"",balance,balanced,balanced"
 ball,top,-,-,-
-ban,"yasaklamak, yasak",ban,banned,banned
+"ban,""yasaklamak, yasak"",ban,banned,banned"
 banana,muz,-,-,-
-band,"grup, bant",-,-,-
+"band,""grup, bant"",-,-,-"
 bank (money),banka,-,-,-
 bank (river),nehir kýyýsý,-,-,-
-bar,"bar, çubuk",bar,barred,barred
+"bar,""bar, çubuk"",bar,barred,barred"
 barrier,engel,-,-,-
-base,"taban, dayandýrmak",base,based,based
+"base,""taban, dayandýrmak"",base,based,based"
 baseball,beyzbol,-,-,-
 based,dayalý,-,-,-
 basic,temel,-,-,-
 basically,temelde,-,-,-
-basis,"temel, esas",-,-,-
+"basis,""temel, esas"",-,-,-"
 basketball,basketbol,-,-,-
 bath,banyo,-,-,-
 bathroom,banyo (oda),-,-,-
-battery,"pil, batarya",-,-,-
-battle,"savaþ, mücadele etmek",battle,battled,battled
+"battery,""pil, batarya"",-,-,-"
+"battle,""savaþ, mücadele etmek"",battle,battled,battled"
 be,olmak,be,was/were,been
 beach,plaj,-,-,-
 bean,fasulye,-,-,-
 bear (animal),ayý,-,-,-
 bear (deal with),katlanmak,bear,bore,borne
-beat,"yenmek, vurmak",beat,beat,beaten
+"beat,""yenmek, vurmak"",beat,beat,beaten"
 beautiful,güzel,-,-,-
 beauty,güzellik,-,-,-
 because,çünkü,-,-,-
-become,"olmak, dönüþmek",become,became,become
+"become,""olmak, dönüþmek"",become,became,become"
 bed,yatak,-,-,-
 bedroom,yatak odasý,-,-,-
 bee,arý,-,-,-
@@ -257,18 +257,18 @@ beginning,baþlangýç,-,-,-
 behave,davranmak,behave,behaved,behaved
 behaviour,davranýþ,-,-,-
 behind,arkasýnda,-,-,-
-being,"varlýk, olma hali",-,-,-
+"being,""varlýk, olma hali"",-,-,-"
 belief,inanç,-,-,-
 believe,inanmak,believe,believed,believed
 bell,zil,-,-,-
 belong,ait olmak,belong,belonged,belonged
 below,aþaðýda,-,-,-
 belt,kemer,-,-,-
-bend,"bükmek, viraj",bend,bent,bent
-benefit,"fayda, yararlanmak",benefit,benefited,benefited
+"bend,""bükmek, viraj"",bend,bent,bent"
+"benefit,""fayda, yararlanmak"",benefit,benefited,benefited"
 bent,eðik,-,-,-
 best,en iyi,-,-,-
-bet,"bahis, bahse girmek",bet,bet,bet
+"bet,""bahis, bahse girmek"",bet,bet,bet"
 better,daha iyi,-,-,-
 between,arasýnda,-,-,-
 beyond,ötesinde,-,-,-
@@ -283,28 +283,28 @@ bird,kuþ,-,-,-
 birth,doðum,-,-,-
 birthday,doðum günü,-,-,-
 biscuit,bisküvi,-,-,-
-bit,"biraz, parça",-,-,-
+"bit,""biraz, parça"",-,-,-"
 bite,ýsýrmak,bite,bit,bitten
 bitter,acý,-,-,-
 black,siyah,-,-,-
 blame,suçlamak,blame,blamed,blamed
 blank,boþ,-,-,-
 blind,kör,-,-,-
-block,"blok, engellemek",block,blocked,blocked
+"block,""blok, engellemek"",block,blocked,blocked"
 blog,blog,-,-,-
 blonde,sarýþýn,-,-,-
 blood,kan,-,-,-
-blow,"üflemek, esmek",blow,blew,blown
+"blow,""üflemek, esmek"",blow,blew,blown"
 blue,mavi,-,-,-
-board,"tahta, kurul",board,boarded,boarded
+"board,""tahta, kurul"",board,boarded,boarded"
 boat,tekne,-,-,-
 body,vücut,-,-,-
 boil,kaynatmak,boil,boiled,boiled
 bomb,bomba,bomb,bombed,bombed
-bond,"bað, tahvil",-,-,-
+"bond,""bað, tahvil"",-,-,-"
 bone,kemik,-,-,-
-book,"kitap, rezervasyon yapmak",book,booked,booked
-boot,"bot, çizme",-,-,-
+"book,""kitap, rezervasyon yapmak"",book,booked,booked"
+"boot,""bot, çizme"",-,-,-"
 border,sýnýr,border,bordered,bordered
 bored,sýkýlmýþ,-,-,-
 boring,sýkýcý,-,-,-
@@ -314,17 +314,17 @@ boss,patron,-,-,-
 both,her ikisi,-,-,-
 bother,rahatsýz etmek,bother,bothered,bothered
 bottle,þiþe,-,-,-
-bottom,"alt, dip",-,-,-
+"bottom,""alt, dip"",-,-,-"
 bowl,kase,-,-,-
 box,kutu,-,-,-
 boy,erkek çocuk,-,-,-
 boyfriend,erkek arkadaþ,-,-,-
 brain,beyin,-,-,-
-branch,"dal, þube",-,-,-
+"branch,""dal, þube"",-,-,-"
 brand,marka,-,-,-
 brave,cesur,-,-,-
 bread,ekmek,-,-,-
-break,"kýrmak, mola",break,broke,broken
+"break,""kýrmak, mola"",break,broke,broken"
 breakfast,kahvaltý,-,-,-
 breast,göðüs,-,-,-
 breath,nefes,-,-,-
@@ -333,22 +333,22 @@ breathing,nefes alma,-,-,-
 bride,gelin,-,-,-
 bridge,köprü,-,-,-
 brief,kýsa,-,-,-
-bright,"parlak, zeki",-,-,-
-brilliant,"parlak, mükemmel",-,-,-
+"bright,""parlak, zeki"",-,-,-"
+"brilliant,""parlak, mükemmel"",-,-,-"
 bring,getirmek,bring,brought,brought
 broad,geniþ,-,-,-
 broadcast,yayýnlamak,broadcast,broadcast,broadcast
 broken,kýrýk,-,-,-
 brother,erkek kardeþ,-,-,-
 brown,kahverengi,-,-,-
-brush,"fýrça, fýrçalamak",brush,brushed,brushed
+"brush,""fýrça, fýrçalamak"",brush,brushed,brushed"
 bubble,kabarcýk,-,-,-
 budget,bütçe,-,-,-
 build,inþa etmek,build,built,built
 building,bina,-,-,-
 bullet,mermi,-,-,-
-bunch,"demet, grup",-,-,-
-burn,"yakmak, yanmak",burn,burned/burnt,burned/burnt
+"bunch,""demet, grup"",-,-,-"
+"burn,""yakmak, yanmak"",burn,burned/burnt,burned/burnt"
 bury,gömmek,bury,buried,buried
 bus,otobüs,-,-,-
 bush,çalý,-,-,-
@@ -365,7 +365,7 @@ cable,kablo,-,-,-
 cafe,kafe,-,-,-
 cake,pasta,-,-,-
 calculate,hesaplamak,calculate,calculated,calculated
-call,"aramak, çaðýrmak",call,called,called
+"call,""aramak, çaðýrmak"",call,called,called"
 calm,sakin,calm,calmed,calmed
 camera,kamera,-,-,-
 camp,kamp,camp,camped,camped
@@ -378,15 +378,15 @@ cancel,iptal etmek,cancel,cancelled,cancelled
 cancer,kanser,-,-,-
 candidate,aday,-,-,-
 cannot,yapamamak,-,-,-
-cap,"kep, þapka",-,-,-
+"cap,""kep, þapka"",-,-,-"
 capable,yetenekli,-,-,-
 capacity,kapasite,-,-,-
-capital,"baþkent, sermaye",-,-,-
+"capital,""baþkent, sermaye"",-,-,-"
 captain,kaptan,-,-,-
 capture,ele geçirmek,capture,captured,captured
 car,araba,-,-,-
 card,kart,-,-,-
-care,"önemsemek, bakým",care,cared,cared
+"care,""önemsemek, bakým"",care,cared,cared"
 career,kariyer,-,-,-
 careful,dikkatli,-,-,-
 carefully,dikkatlice,-,-,-
@@ -395,14 +395,14 @@ carpet,halý,-,-,-
 carrot,havuç,-,-,-
 carry,taþýmak,carry,carried,carried
 cartoon,çizgi film,-,-,-
-case,"durum, dava",-,-,-
+"case,""durum, dava"",-,-,-"
 cash,nakit,-,-,-
 cast,oyuncu kadrosu,cast,cast,cast
 castle,kale,-,-,-
 cat,kedi,-,-,-
 catch,yakalamak,catch,caught,caught
 category,kategori,-,-,-
-cause,"neden, neden olmak",cause,caused,caused
+"cause,""neden, neden olmak"",cause,caused,caused"
 CD,CD,-,-,-
 ceiling,tavan,-,-,-
 celebrate,kutlamak,celebrate,celebrated,celebrated
@@ -414,22 +414,22 @@ central,merkezi,-,-,-
 centre,merkez,centre,centred,centred
 century,yüzyýl,-,-,-
 ceremony,tören,-,-,-
-certain,"kesin, emin",-,-,-
+"certain,""kesin, emin"",-,-,-"
 certainly,kesinlikle,-,-,-
 chain,zincir,chain,chained,chained
 chair,sandalye,chair,chaired,chaired
 chairman,baþkan,-,-,-
-challenge,"meydan okuma, zorlamak",challenge,challenged,challenged
+"challenge,""meydan okuma, zorlamak"",challenge,challenged,challenged"
 champion,þampiyon,-,-,-
-chance,"þans, fýrsat",-,-,-
-change,"deðiþmek, deðiþtirmek",change,changed,changed
+"chance,""þans, fýrsat"",-,-,-"
+"change,""deðiþmek, deðiþtirmek"",change,changed,changed"
 channel,kanal,-,-,-
 chapter,bölüm,-,-,-
 character,karakter,-,-,-
 characteristic,özellik,-,-,-
-charge,"ücret, þarj etmek",charge,charged,charged
+"charge,""ücret, þarj etmek"",charge,charged,charged"
 charity,hayýr kurumu,-,-,-
-chart,"grafik, tablo",chart,charted,charted
+"chart,""grafik, tablo"",chart,charted,charted"
 chat,sohbet etmek,chat,chatted,chatted
 cheap,ucuz,-,-,-
 cheat,hile yapmak,cheat,cheated,cheated
@@ -441,18 +441,18 @@ chemical,kimyasal,-,-,-
 chemistry,kimya,-,-,-
 chest,göðüs,-,-,-
 chicken,tavuk,-,-,-
-chief,"þef, baþ",-,-,-
+"chief,""þef, baþ"",-,-,-"
 child,çocuk,-,-,-
 childhood,çocukluk,-,-,-
-chip,"cips, çip",-,-,-
+"chip,""cips, çip"",-,-,-"
 chocolate,çikolata,-,-,-
 choice,seçim,-,-,-
 choose,seçmek,choose,chose,chosen
 church,kilise,-,-,-
 cigarette,sigara,-,-,-
 cinema,sinema,-,-,-
-circle,"daire, çevrelemek",circle,circled,circled
-circumstance,"durum, koþul",-,-,-
+"circle,""daire, çevrelemek"",circle,circled,circled"
+"circumstance,""durum, koþul"",-,-,-"
 cite,alýntý yapmak,cite,cited,cited
 citizen,vatandaþ,-,-,-
 city,þehir,-,-,-
@@ -462,9 +462,9 @@ class,sýnýf,-,-,-
 classic,klasik,-,-,-
 classical,klasik (müzik),-,-,-
 classroom,sýnýf (oda),-,-,-
-clause,"cümlecik, madde",-,-,-
-clean,"temiz, temizlemek",clean,cleaned,cleaned
-clear,"net, temizlemek",clear,cleared,cleared
+"clause,""cümlecik, madde"",-,-,-"
+"clean,""temiz, temizlemek"",clean,cleaned,cleaned"
+"clear,""net, temizlemek"",clear,cleared,cleared"
 clearly,açýkça,-,-,-
 clever,akýllý,-,-,-
 click,týklamak,click,clicked,clicked
@@ -482,7 +482,7 @@ clothing,giyim,-,-,-
 cloud,bulut,-,-,-
 club,kulüp,-,-,-
 clue,ipucu,-,-,-
-coach,"antrenör, koç",coach,coached,coached
+"coach,""antrenör, koç"",coach,coached,coached"
 coal,kömür,-,-,-
 coast,kýyý,-,-,-
 coat,palto,-,-,-
@@ -494,7 +494,7 @@ collapse,çökmek,collapse,collapsed,collapsed
 colleague,meslektaþ,-,-,-
 collect,toplamak,collect,collected,collected
 collection,koleksiyon,-,-,-
-college,"kolej, yüksekokul",-,-,-
+"college,""kolej, yüksekokul"",-,-,-"
 colour,renk,colour,coloured,coloured
 coloured,renkli,-,-,-
 column,sütun,-,-,-
@@ -502,16 +502,16 @@ combination,kombinasyon,-,-,-
 combine,birleþtirmek,combine,combined,combined
 come,gelmek,come,came,come
 comedy,komedi,-,-,-
-comfort,"rahatlýk, teselli etmek",comfort,comforted,comforted
+"comfort,""rahatlýk, teselli etmek"",comfort,comforted,comforted"
 comfortable,rahat,-,-,-
-command,"emir, komuta etmek",command,commanded,commanded
+"command,""emir, komuta etmek"",command,commanded,commanded"
 comment,yorum,comment,commented,commented
 commercial,ticari,-,-,-
 commission,komisyon,commission,commissioned,commissioned
-commit,"iþlemek (suç), adamak",commit,committed,committed
+"commit,""iþlemek (suç), adamak"",commit,committed,committed"
 commitment,baðlýlýk,-,-,-
 committee,komite,-,-,-
-common,"ortak, yaygýn",-,-,-
+"common,""ortak, yaygýn"",-,-,-"
 commonly,genellikle,-,-,-
 communicate,iletiþim kurmak,communicate,communicated,communicated
 communication,iletiþim,-,-,-
@@ -520,12 +520,12 @@ company,þirket,-,-,-
 compare,karþýlaþtýrmak,compare,compared,compared
 comparison,karþýlaþtýrma,-,-,-
 compete,yarýþmak,compete,competed,competed
-competition,"yarýþma, rekabet",-,-,-
+"competition,""yarýþma, rekabet"",-,-,-"
 competitive,rekabetçi,-,-,-
 competitor,rakip,-,-,-
 complain,þikayet etmek,complain,complained,complained
 complaint,þikayet,-,-,-
-complete,"tamamlamak, tam",complete,completed,completed
+"complete,""tamamlamak, tam"",complete,completed,completed"
 completely,tamamen,-,-,-
 complex,karmaþýk,-,-,-
 complicated,karmaþýk,-,-,-
@@ -534,13 +534,13 @@ computer,bilgisayar,-,-,-
 concentrate,odaklanmak,concentrate,concentrated,concentrated
 concentration,konsantrasyon,-,-,-
 concept,kavram,-,-,-
-concern,"endiþe, ilgilendirmek",concern,concerned,concerned
+"concern,""endiþe, ilgilendirmek"",concern,concerned,concerned"
 concerned,endiþeli,-,-,-
 concert,konser,-,-,-
 conclude,sonuçlandýrmak,conclude,concluded,concluded
 conclusion,sonuç,-,-,-
-condition,"durum, koþul",-,-,-
-conduct,"yürütmek, davranýþ",conduct,conducted,conducted
+"condition,""durum, koþul"",-,-,-"
+"conduct,""yürütmek, davranýþ"",conduct,conducted,conducted"
 conference,konferans,-,-,-
 confidence,özgüven,-,-,-
 confident,kendinden emin,-,-,-
@@ -555,19 +555,19 @@ connection,baðlantý,-,-,-
 conscious,bilinçli,-,-,-
 consequence,sonuç,-,-,-
 conservative,muhafazakar,-,-,-
-consider,"düþünmek, göz önünde bulundurmak",consider,considered,considered
+"consider,""düþünmek, göz önünde bulundurmak"",consider,considered,considered"
 consideration,dikkate alma,-,-,-
 consist,oluþmak,consist,consisted,consisted
 consistent,tutarlý,-,-,-
-constant,"sabit, sürekli",-,-,-
+"constant,""sabit, sürekli"",-,-,-"
 constantly,sürekli olarak,-,-,-
 construct,inþa etmek,construct,constructed,constructed
 construction,inþaat,-,-,-
 consume,tüketmek,consume,consumed,consumed
 consumer,tüketici,-,-,-
-contact,"temas, iletiþim kurmak",contact,contacted,contacted
+"contact,""temas, iletiþim kurmak"",contact,contacted,contacted"
 contain,içermek,contain,contained,contained
-container,"kap, konteyner",-,-,-
+"container,""kap, konteyner"",-,-,-"
 contemporary,çaðdaþ,-,-,-
 content1,içerik,-,-,-
 contest,yarýþma,contest,contested,contested
@@ -579,23 +579,23 @@ contract,sözleþme,contract,contracted,contracted
 contrast,karþýtlýk,contrast,contrasted,contrasted
 contribute,katkýda bulunmak,contribute,contributed,contributed
 contribution,katký,-,-,-
-control,"kontrol, kontrol etmek",control,controlled,controlled
-convenient,"uygun, elveriþli",-,-,-
+"control,""kontrol, kontrol etmek"",control,controlled,controlled"
+"convenient,""uygun, elveriþli"",-,-,-"
 conversation,konuþma,-,-,-
 convert,dönüþtürmek,convert,converted,converted
 convince,ikna etmek,convince,convinced,convinced
 convinced,ikna olmuþ,-,-,-
-cook,"piþirmek, aþçý",cook,cooked,cooked
+"cook,""piþirmek, aþçý"",cook,cooked,cooked"
 cooker,ocak (mutfak),-,-,-
 cooking,yemek piþirme,-,-,-
-cool,"serin, harika",cool,cooled,cooled
-copy,"kopya, kopyalamak",copy,copied,copied
+"cool,""serin, harika"",cool,cooled,cooled"
+"copy,""kopya, kopyalamak"",copy,copied,copied"
 core,çekirdek,-,-,-
 corner,köþe,-,-,-
 corporate,kurumsal,-,-,-
-correct,"doðru, düzeltmek",correct,corrected,corrected
+"correct,""doðru, düzeltmek"",correct,corrected,corrected"
 correctly,doðru bir þekilde,-,-,-
-cost,"maliyet, mal olmak",cost,cost,cost
+"cost,""maliyet, mal olmak"",cost,cost,cost"
 costume,kostüm,-,-,-
 cottage,kulübe,-,-,-
 cotton,pamuk,-,-,-
@@ -605,33 +605,33 @@ count,saymak,count,counted,counted
 country,ülke,-,-,-
 countryside,kýrsal alan,-,-,-
 county,ilçe,-,-,-
-couple,"çift, birkaç",-,-,-
+"couple,""çift, birkaç"",-,-,-"
 courage,cesaret,-,-,-
-course,"ders, rota",-,-,-
+"course,""ders, rota"",-,-,-"
 court,mahkeme,-,-,-
 cousin,kuzen,-,-,-
-cover,"kapatmak, örtmek",cover,covered,covered
+"cover,""kapatmak, örtmek"",cover,covered,covered"
 covered,örtülü,-,-,-
 cow,inek,-,-,-
-crash,"çarpýþma, çarpýþmak",crash,crashed,crashed
+"crash,""çarpýþma, çarpýþmak"",crash,crashed,crashed"
 crazy,çýlgýn,-,-,-
 cream,krema,-,-,-
 create,yaratmak,create,created,created
 creation,yaratýlýþ,-,-,-
 creative,yaratýcý,-,-,-
 creature,yaratýk,-,-,-
-credit,"kredi, itibar",credit,credited,credited
+"credit,""kredi, itibar"",credit,credited,credited"
 crew,mürettebat,-,-,-
 crime,suç,-,-,-
 criminal,suçlu,-,-,-
 crisis,kriz,-,-,-
 criterion,ölçüt,-,-,-
 critic,eleþtirmen,-,-,-
-critical,"eleþtirel, kritik",-,-,-
+"critical,""eleþtirel, kritik"",-,-,-"
 criticism,eleþtiri,-,-,-
 criticize,eleþtirmek,criticize,criticized,criticized
-crop,"ekin, ürün",-,-,-
-cross,"geçmek, çapraz",cross,crossed,crossed
+"crop,""ekin, ürün"",-,-,-"
+"cross,""geçmek, çapraz"",cross,crossed,crossed"
 crowd,kalabalýk,-,-,-
 crowded,kalabalýk (sýfat),-,-,-
 crucial,çok önemli,-,-,-
@@ -641,10 +641,10 @@ cultural,kültürel,-,-,-
 culture,kültür,-,-,-
 cup,fincan,-,-,-
 cupboard,dolap,-,-,-
-cure,"tedavi, iyileþtirmek",cure,cured,cured
+"cure,""tedavi, iyileþtirmek"",cure,cured,cured"
 curly,kývýrcýk,-,-,-
 currency,para birimi,-,-,-
-current,"mevcut, akým",-,-,-
+"current,""mevcut, akým"",-,-,-"
 currently,þu anda,-,-,-
 curtain,perde,-,-,-
 curve,eðri,curve,curved,curved
@@ -652,10 +652,10 @@ curved,eðri (sýfat),-,-,-
 custom,gelenek,-,-,-
 customer,müþteri,-,-,-
 cut,kesmek,cut,cut,cut
-cycle,"döngü, bisiklete binmek",cycle,cycled,cycled
+"cycle,""döngü, bisiklete binmek"",cycle,cycled,cycled"
 dad,baba,-,-,-
 daily,günlük,-,-,-
-damage,"hasar, zarar vermek",damage,damaged,damaged
+"damage,""hasar, zarar vermek"",damage,damaged,damaged"
 dance,dans etmek,dance,danced,danced
 dancer,dansçý,-,-,-
 dancing,dans etme,-,-,-
@@ -663,22 +663,22 @@ danger,tehlike,-,-,-
 dangerous,tehlikeli,-,-,-
 dark,karanlýk,-,-,-
 data,veri,-,-,-
-date,"tarih, randevu",date,dated,dated
+"date,""tarih, randevu"",date,dated,dated"
 daughter,kýz evlat,-,-,-
 day,gün,-,-,-
 dead,ölü,-,-,-
-deal,"anlaþma, uðraþmak",deal,dealt,dealt
+"deal,""anlaþma, uðraþmak"",deal,dealt,dealt"
 dear,sevgili,-,-,-
 death,ölüm,-,-,-
-debate,"tartýþma, tartýþmak",debate,debated,debated
+"debate,""tartýþma, tartýþmak"",debate,debated,debated"
 debt,borç,-,-,-
 decade,on yýl,-,-,-
 December,Aralýk,-,-,-
-decent,"iyi, düzgün",-,-,-
+"decent,""iyi, düzgün"",-,-,-"
 decide,karar vermek,decide,decided,decided
 decision,karar,-,-,-
 declare,beyan etmek,declare,declared,declared
-decline,"reddetmek, azalmak",decline,declined,declined
+"decline,""reddetmek, azalmak"",decline,declined,declined"
 decorate,dekore etmek,decorate,decorated,decorated
 decoration,dekorasyon,-,-,-
 decrease,azalmak,decrease,decreased,decreased
@@ -692,31 +692,31 @@ definite,kesin,-,-,-
 definitely,kesinlikle,-,-,-
 definition,taným,-,-,-
 degree,derece,-,-,-
-delay,"geciktirmek, gecikme",delay,delayed,delayed
+"delay,""geciktirmek, gecikme"",delay,delayed,delayed"
 deliberate,kasýtlý,-,-,-
 deliberately,kasýtlý olarak,-,-,-
 delicious,lezzetli,-,-,-
-delight,"memnuniyet, sevindirmek",delight,delighted,delighted
+"delight,""memnuniyet, sevindirmek"",delight,delighted,delighted"
 delighted,çok memnun,-,-,-
 deliver,teslim etmek,deliver,delivered,delivered
 delivery,teslimat,-,-,-
-demand,"talep, talep etmek",demand,demanded,demanded
+"demand,""talep, talep etmek"",demand,demanded,demanded"
 demonstrate,göstermek,demonstrate,demonstrated,demonstrated
 dentist,diþ hekimi,-,-,-
 deny,inkar etmek,deny,denied,denied
 department,departman,-,-,-
-departure,"hareket, kalkýþ",-,-,-
+"departure,""hareket, kalkýþ"",-,-,-"
 depend,baðlý olmak,depend,depended,depended
 depressed,depresif,-,-,-
 depressing,karamsar,-,-,-
 depth,derinlik,-,-,-
-describe,"tanýmlamak, betimlemek",describe,described,described
+"describe,""tanýmlamak, betimlemek"",describe,described,described"
 description,tanýmlama,-,-,-
-desert,"çöl, terk etmek",desert,deserted,deserted
+"desert,""çöl, terk etmek"",desert,deserted,deserted"
 deserve,hak etmek,deserve,deserved,deserved
-design,"tasarým, tasarlamak",design,designed,designed
+"design,""tasarým, tasarlamak"",design,designed,designed"
 designer,tasarýmcý,-,-,-
-desire,"arzu, arzulamak",desire,desired,desired
+"desire,""arzu, arzulamak"",desire,desired,desired"
 desk,masa,-,-,-
 desperate,umutsuz,-,-,-
 despite,-e raðmen,-,-,-
@@ -746,10 +746,10 @@ difficulty,zorluk,-,-,-
 dig,kazmak,dig,dug,dug
 digital,dijital,-,-,-
 dinner,akþam yemeði,-,-,-
-direct,"doðrudan, yönetmek",direct,directed,directed
+"direct,""doðrudan, yönetmek"",direct,directed,directed"
 direction,yön,-,-,-
 directly,doðrudan,-,-,-
-director,"yönetmen, müdür",-,-,-
+"director,""yönetmen, müdür"",-,-,-"
 dirt,kir,-,-,-
 dirty,kirli,-,-,-
 disadvantage,dezavantaj,-,-,-
@@ -763,20 +763,20 @@ discipline,disiplin,-,-,-
 discount,indirim,discount,discounted,discounted
 discover,keþfetmek,discover,discovered,discovered
 discovery,keþif,-,-,-
-discuss,"tartýþmak, görüþmek",discuss,discussed,discussed
-discussion,"tartýþma, görüþme",-,-,-
+"discuss,""tartýþmak, görüþmek"",discuss,discussed,discussed"
+"discussion,""tartýþma, görüþme"",-,-,-"
 disease,hastalýk,-,-,-
-dish,"yemek, tabak",-,-,-
+"dish,""yemek, tabak"",-,-,-"
 dishonest,dürüst olmayan,-,-,-
 dislike,hoþlanmamak,dislike,disliked,disliked
 dismiss,görevden almak,dismiss,dismissed,dismissed
-display,"sergilemek, ekran",display,displayed,displayed
+"display,""sergilemek, ekran"",display,displayed,displayed"
 distance,mesafe,-,-,-
 distribute,daðýtmak,distribute,distributed,distributed
 distribution,daðýtým,-,-,-
-district,"bölge, ilçe",-,-,-
+"district,""bölge, ilçe"",-,-,-"
 divide,bölmek,divide,divided,divided
-division,"bölünme, bölüm",-,-,-
+"division,""bölünme, bölüm"",-,-,-"
 divorced,boþanmýþ,-,-,-
 do1,yapmak,do,did,done
 doctor,doktor,-,-,-
@@ -784,12 +784,12 @@ document,belge,document,documented,documented
 documentary,belgesel,-,-,-
 dog,köpek,-,-,-
 dollar,dolar,-,-,-
-domestic,"yerli, ev ile ilgili",-,-,-
+"domestic,""yerli, ev ile ilgili"",-,-,-"
 dominate,hakim olmak,dominate,dominated,dominated
 donate,baðýþlamak,donate,donated,donated
 door,kapý,-,-,-
-double,"çift, iki katýna çýkarmak",double,doubled,doubled
-doubt,"þüphe, þüphelenmek",doubt,doubted,doubted
+"double,""çift, iki katýna çýkarmak"",double,doubled,doubled"
+"doubt,""þüphe, þüphelenmek"",doubt,doubted,doubted"
 down,aþaðý,-,-,-
 download,indirmek,download,downloaded,downloaded
 downstairs,alt kat,-,-,-
@@ -801,19 +801,19 @@ drama,drama,-,-,-
 dramatic,dramatik,-,-,-
 draw,çizmek,draw,drew,drawn
 drawing,çizim,-,-,-
-dream,"rüya, hayal etmek",dream,dreamed/dreamt,dreamed/dreamt
-dress,"elbise, giydirmek",dress,dressed,dressed
+"dream,""rüya, hayal etmek"",dream,dreamed/dreamt,dreamed/dreamt"
+"dress,""elbise, giydirmek"",dress,dressed,dressed"
 dressed,giyinmiþ,-,-,-
 drink,içmek,drink,drank,drunk
 drive,sürmek (araba),drive,drove,driven
 driver,sürücü,-,-,-
 driving,sürüþ,-,-,-
-drop,"düþürmek, damla",drop,dropped,dropped
-drug,"ilaç, uyuþturucu",-,-,-
+"drop,""düþürmek, damla"",drop,dropped,dropped"
+"drug,""ilaç, uyuþturucu"",-,-,-"
 drum,davul,-,-,-
 drunk,sarhoþ,-,-,-
-dry,"kuru, kurulamak",dry,dried,dried
-due,"beklenen, borçlu",-,-,-
+"dry,""kuru, kurulamak"",dry,dried,dried"
+"due,""beklenen, borçlu"",-,-,-"
 during,sýrasýnda,-,-,-
 dust,toz,-,-,-
 duty,görev,-,-,-
@@ -833,7 +833,7 @@ economic,ekonomik,-,-,-
 economy,ekonomi,-,-,-
 edge,kenar,-,-,-
 edit,düzenlemek (metin),edit,edited,edited
-edition,"baský, sürüm",-,-,-
+"edition,""baský, sürüm"",-,-,-"
 editor,editör,-,-,-
 educate,eðitmek,educate,educated,educated
 educated,eðitimli,-,-,-
@@ -856,7 +856,7 @@ electric,elektrikli,-,-,-
 electrical,elektrikli,-,-,-
 electricity,elektrik,-,-,-
 electronic,elektronik,-,-,-
-element,"unsur, öðe",-,-,-
+"element,""unsur, öðe"",-,-,-"
 elephant,fil,-,-,-
 eleven,on bir,-,-,-
 else,baþka,-,-,-
@@ -874,34 +874,34 @@ employ,istihdam etmek,employ,employed,employed
 employee,çalýþan,-,-,-
 employer,iþveren,-,-,-
 employment,istihdam,-,-,-
-empty,"boþ, boþaltmak",empty,emptied,emptied
+"empty,""boþ, boþaltmak"",empty,emptied,emptied"
 enable,olanak saðlamak,enable,enabled,enabled
 encounter,karþýlaþmak,encounter,encountered,encountered
 encourage,teþvik etmek,encourage,encouraged,encouraged
-end,"son, bitirmek",end,ended,ended
+"end,""son, bitirmek"",end,ended,ended"
 ending,son (bölüm),-,-,-
 enemy,düþman,-,-,-
 energy,enerji,-,-,-
-engage,"meþgul etmek, katýlmak",engage,engaged,engaged
-engaged,"niþanlý, meþgul",-,-,-
+"engage,""meþgul etmek, katýlmak"",engage,engaged,engaged"
+"engaged,""niþanlý, meþgul"",-,-,-"
 engine,motor,-,-,-
 engineer,mühendis,-,-,-
 engineering,mühendislik,-,-,-
-enhance,"geliþtirmek, iyileþtirmek",enhance,enhanced,enhanced
+"enhance,""geliþtirmek, iyileþtirmek"",enhance,enhanced,enhanced"
 enjoy,zevk almak,enjoy,enjoyed,enjoyed
 enormous,çok büyük,-,-,-
 enough,yeterli,-,-,-
-enquiry,"soruþturma, sorgu",-,-,-
-ensure,"saðlamak, garanti etmek",ensure,ensured,ensured
+"enquiry,""soruþturma, sorgu"",-,-,-"
+"ensure,""saðlamak, garanti etmek"",ensure,ensured,ensured"
 enter,girmek,enter,entered,entered
 entertain,eðlendirmek,entertain,entertained,entertained
 entertainment,eðlence,-,-,-
 enthusiasm,coþku,-,-,-
 enthusiastic,hevesli,-,-,-
-entire,"bütün, tüm",-,-,-
+"entire,""bütün, tüm"",-,-,-"
 entirely,tamamen,-,-,-
 entrance,giriþ,-,-,-
-entry,"giriþ, kayýt",-,-,-
+"entry,""giriþ, kayýt"",-,-,-"
 environment,çevre,-,-,-
 environmental,çevresel,-,-,-
 episode,bölüm (dizi),-,-,-
@@ -911,15 +911,15 @@ equipment,ekipman,-,-,-
 error,hata,-,-,-
 escape,kaçmak,escape,escaped,escaped
 especially,özellikle,-,-,-
-essay,"deneme, kompozisyon",-,-,-
-essential,"gerekli, temel",-,-,-
+"essay,""deneme, kompozisyon"",-,-,-"
+"essential,""gerekli, temel"",-,-,-"
 establish,kurmak,establish,established,established
-estate,"mülk, emlak",-,-,-
+"estate,""mülk, emlak"",-,-,-"
 estimate,tahmin etmek,estimate,estimated,estimated
 ethical,etik,-,-,-
 euro,avro,-,-,-
 evaluate,deðerlendirmek,evaluate,evaluated,evaluated
-even,"hatta, düz",-,-,-
+"even,""hatta, düz"",-,-,-"
 evening,akþam,-,-,-
 event,olay,-,-,-
 eventually,sonunda,-,-,-
@@ -932,21 +932,21 @@ everything,her þey,-,-,-
 everywhere,her yerde,-,-,-
 evidence,kanýt,-,-,-
 evil,kötü,-,-,-
-exact,"tam, kesin",-,-,-
+"exact,""tam, kesin"",-,-,-"
 exactly,tam olarak,-,-,-
 exam,sýnav,-,-,-
-examination,"inceleme, sýnav",-,-,-
+"examination,""inceleme, sýnav"",-,-,-"
 examine,incelemek,examine,examined,examined
 example,örnek,-,-,-
 excellent,mükemmel,-,-,-
 except,hariç,-,-,-
-exchange,"deðiþim, deðiþtirmek",exchange,exchanged,exchanged
+"exchange,""deðiþim, deðiþtirmek"",exchange,exchanged,exchanged"
 excited,heyecanlý,-,-,-
 excitement,heyecan,-,-,-
 exciting,heyecan verici,-,-,-
-excuse,"bahane, mazur görmek",excuse,excused,excused
+"excuse,""bahane, mazur görmek"",excuse,excused,excused"
 executive,yönetici,-,-,-
-exercise,"egzersiz, egzersiz yapmak",exercise,exercised,exercised
+"exercise,""egzersiz, egzersiz yapmak"",exercise,exercised,exercised"
 exhibition,sergi,-,-,-
 exist,var olmak,exist,existed,existed
 existence,varlýk,-,-,-
@@ -954,7 +954,7 @@ expand,geniþlemek,expand,expanded,expanded
 expect,beklemek,expect,expected,expected
 expectation,beklenti,-,-,-
 expected,beklenen,-,-,-
-expedition,"sefer, keþif gezisi",-,-,-
+"expedition,""sefer, keþif gezisi"",-,-,-"
 expense,masraf,-,-,-
 expensive,pahalý,-,-,-
 experience,deneyim,experience,experienced,experienced
@@ -967,51 +967,51 @@ explode,patlamak,explode,exploded,exploded
 exploration,keþif,-,-,-
 explore,keþfetmek,explore,explored,explored
 explosion,patlama,-,-,-
-export,"ihracat, ihraç etmek",export,exported,exported
+"export,""ihracat, ihraç etmek"",export,exported,exported"
 expose,maruz býrakmak,expose,exposed,exposed
 express,ifade etmek,express,expressed,expressed
 expression,ifade,-,-,-
-extend,"uzatmak, geniþletmek",extend,extended,extended
-extent,"derece, kapsam",-,-,-
+"extend,""uzatmak, geniþletmek"",extend,extended,extended"
+"extent,""derece, kapsam"",-,-,-"
 external,dýþ,-,-,-
-extra,"ekstra, fazladan",-,-,-
+"extra,""ekstra, fazladan"",-,-,-"
 extraordinary,olaðanüstü,-,-,-
 extreme,aþýrý,-,-,-
 extremely,son derece,-,-,-
 eye,göz,-,-,-
-face,"yüz, karþýlaþmak",face,faced,faced
-facility,"tesis, imkan",-,-,-
+"face,""yüz, karþýlaþmak"",face,faced,faced"
+"facility,""tesis, imkan"",-,-,-"
 fact,gerçek,-,-,-
 factor,faktör,-,-,-
 factory,fabrika,-,-,-
 fail,baþarýsýz olmak,fail,failed,failed
 failure,baþarýsýzlýk,-,-,-
 fair,adil,-,-,-
-fairly,"oldukça, adil bir þekilde",-,-,-
+"fairly,""oldukça, adil bir þekilde"",-,-,-"
 faith,inanç,-,-,-
 fall,düþmek,fall,fell,fallen
-false,"yanlýþ, sahte",-,-,-
-familiar,"tanýdýk, aþina",-,-,-
+"false,""yanlýþ, sahte"",-,-,-"
+"familiar,""tanýdýk, aþina"",-,-,-"
 family,aile,-,-,-
 famous,ünlü,-,-,-
-fan,"hayran, yelpaze",-,-,-
-fancy,"hayal etmek, süslü",fancy,fancied,fancied
+"fan,""hayran, yelpaze"",-,-,-"
+"fancy,""hayal etmek, süslü"",fancy,fancied,fancied"
 fantastic,harika,-,-,-
 far,uzak,-,-,-
-farm,"çiftlik, çiftçilik yapmak",farm,farmed,farmed
+"farm,""çiftlik, çiftçilik yapmak"",farm,farmed,farmed"
 farmer,çiftçi,-,-,-
 farming,çiftçilik,-,-,-
 fascinating,büyüleyici,-,-,-
 fashion,moda,-,-,-
 fashionable,moda olan,-,-,-
 fast,hýzlý,-,-,-
-fasten,"baðlamak, sýkýþtýrmak",fasten,fastened,fastened
-fat,"yað, þiþman",-,-,-
+"fasten,""baðlamak, sýkýþtýrmak"",fasten,fastened,fastened"
+"fat,""yað, þiþman"",-,-,-"
 father,baba,-,-,-
-fault,"kusur, hata",-,-,-
+"fault,""kusur, hata"",-,-,-"
 favour,iyilik,favour,favoured,favoured
 favourite,favori,-,-,-
-fear,"korku, korkmak",fear,feared,feared
+"fear,""korku, korkmak"",fear,feared,feared"
 feather,tüy,-,-,-
 feature,özellik,feature,featured,featured
 February,Þubat,-,-,-
@@ -1019,52 +1019,52 @@ fee,ücret,-,-,-
 feed,beslemek,feed,fed,fed
 feedback,geri bildirim,-,-,-
 feel,hissetmek,feel,felt,felt
-feeling,"his, duygu",-,-,-
-fellow,"arkadaþ, meslektaþ",-,-,-
-female,"diþi, kadýn",-,-,-
+"feeling,""his, duygu"",-,-,-"
+"fellow,""arkadaþ, meslektaþ"",-,-,-"
+"female,""diþi, kadýn"",-,-,-"
 fence,çit,-,-,-
 festival,festival,-,-,-
 few,az sayýda,-,-,-
 fiction,kurgu,-,-,-
-field,"tarla, alan",-,-,-
+"field,""tarla, alan"",-,-,-"
 fifteen,on beþ,-,-,-
 fifth,beþinci,-,-,-
 fifty,elli,-,-,-
-fight,"kavga etmek, savaþmak",fight,fought,fought
-fighting,"kavga, dövüþ",-,-,-
-figure,"rakam, þekil",figure,figured,figured
+"fight,""kavga etmek, savaþmak"",fight,fought,fought"
+"fighting,""kavga, dövüþ"",-,-,-"
+"figure,""rakam, þekil"",figure,figured,figured"
 file,dosya,file,filed,filed
 fill,doldurmak,fill,filled,filled
-film,"film, filme çekmek",film,filmed,filmed
-final,"son, final",-,-,-
+"film,""film, filme çekmek"",film,filmed,filmed"
+"final,""son, final"",-,-,-"
 finally,sonunda,-,-,-
 finance,finans,finance,financed,financed
 financial,finansal,-,-,-
 find,bulmak,find,found,found
 finding,bulgu,-,-,-
-fine,"iyi, ince",-,-,-
+"fine,""iyi, ince"",-,-,-"
 finger,parmak,-,-,-
 finish,bitirmek,finish,finished,finished
-fire,"ateþ, kovmak",fire,fired,fired
-firm,"firma, saðlam",-,-,-
+"fire,""ateþ, kovmak"",fire,fired,fired"
+"firm,""firma, saðlam"",-,-,-"
 first,ilk,-,-,-
 firstly,ilk olarak,-,-,-
-fish,"balýk, balýk tutmak",fish,fished,fished
+"fish,""balýk, balýk tutmak"",fish,fished,fished"
 fishing,balýkçýlýk,-,-,-
-fit,"uygun olmak, formda",fit,fitted/fit,fitted/fit
-fitness,"fitness, form",-,-,-
+"fit,""uygun olmak, formda"",fit,fitted/fit,fitted/fit"
+"fitness,""fitness, form"",-,-,-"
 five,beþ,-,-,-
-fix,"onarmak, sabitlemek",fix,fixed,fixed
+"fix,""onarmak, sabitlemek"",fix,fixed,fixed"
 fixed,sabit,-,-,-
 flag,bayrak,-,-,-
 flame,alev,-,-,-
-flash,"flaþ, parlamak",flash,flashed,flashed
-flat,"daire, düz",-,-,-
+"flash,""flaþ, parlamak"",flash,flashed,flashed"
+"flat,""daire, düz"",-,-,-"
 flexible,esnek,-,-,-
 flight,uçuþ,-,-,-
-float,"yüzmek (suda), süzülmek",float,floated,floated
-flood,"sel, su basmak",flood,flooded,flooded
-floor,"kat, zemin",-,-,-
+"float,""yüzmek (suda), süzülmek"",float,floated,floated"
+"flood,""sel, su basmak"",flood,flooded,flooded"
+"floor,""kat, zemin"",-,-,-"
 flour,un,-,-,-
 flow,akmak,flow,flowed,flowed
 flower,çiçek,-,-,-
@@ -1076,23 +1076,23 @@ fold,katlamak,fold,folded,folded
 folding,katlanabilir,-,-,-
 folk,halk,-,-,-
 follow,takip etmek,follow,followed,followed
-following,"takip eden, sonraki",-,-,-
+"following,""takip eden, sonraki"",-,-,-"
 food,yiyecek,-,-,-
 foot,ayak,-,-,-
 football,futbol,-,-,-
 for,için,-,-,-
-force,"güç, zorlamak",force,forced,forced
+"force,""güç, zorlamak"",force,forced,forced"
 foreign,yabancý,-,-,-
 forest,orman,-,-,-
 forever,sonsuza dek,-,-,-
 forget,unutmak,forget,forgot,forgotten
 forgive,affetmek,forgive,forgave,forgiven
 fork,çatal,-,-,-
-form,"form, þekillendirmek",form,formed,formed
+"form,""form, þekillendirmek"",form,formed,formed"
 formal,resmi,-,-,-
-former,"eski, önceki",-,-,-
+"former,""eski, önceki"",-,-,-"
 fortunately,neyse ki,-,-,-
-fortune,"servet, þans",-,-,-
+"fortune,""servet, þans"",-,-,-"
 forty,kýrk,-,-,-
 forward,ileri,-,-,-
 found,kurmak,found,founded,founded
@@ -1100,7 +1100,7 @@ four,dört,-,-,-
 fourteen,on dört,-,-,-
 fourth,dördüncü,-,-,-
 frame,çerçeve,frame,framed,framed
-free,"özgür, ücretsiz",free,freed,freed
+"free,""özgür, ücretsiz"",free,freed,freed"
 freedom,özgürlük,-,-,-
 freeze,donmak,freeze,froze,frozen
 frequency,sýklýk,-,-,-
@@ -1124,8 +1124,8 @@ fuel,yakýt,fuel,fuelled,fuelled
 full,dolu,-,-,-
 fully,tamamen,-,-,-
 fun,eðlence,-,-,-
-function,"iþlev, çalýþmak",function,functioned,functioned
-fund,"fon, fonlamak",fund,funded,funded
+"function,""iþlev, çalýþmak"",function,functioned,functioned"
+"fund,""fon, fonlamak"",fund,funded,funded"
 fundamental,temel,-,-,-
 funding,finansman,-,-,-
 funny,komik,-,-,-
@@ -1134,26 +1134,26 @@ furniture,mobilya,-,-,-
 further,daha ileri,-,-,-
 furthermore,ayrýca,-,-,-
 future,gelecek,-,-,-
-gain,"kazanmak, kazanç",gain,gained,gained
+"gain,""kazanmak, kazanç"",gain,gained,gained"
 gallery,galeri,-,-,-
 game,oyun,-,-,-
 gang,çete,-,-,-
-gap,"boþluk, aralýk",-,-,-
+"gap,""boþluk, aralýk"",-,-,-"
 garage,garaj,-,-,-
 garden,bahçe,-,-,-
 gas,gaz,-,-,-
-gate,"kapý, giriþ",-,-,-
-gather,"toplamak, bir araya gelmek",gather,gathered,gathered
+"gate,""kapý, giriþ"",-,-,-"
+"gather,""toplamak, bir araya gelmek"",gather,gathered,gathered"
 general,genel,-,-,-
 generally,genellikle,-,-,-
-generate,"üretmek, yaratmak",generate,generated,generated
+"generate,""üretmek, yaratmak"",generate,generated,generated"
 generation,nesil,-,-,-
 generous,cömert,-,-,-
 genre,tür (edebi/sanatsal),-,-,-
-gentle,"nazik, yumuþak",-,-,-
+"gentle,""nazik, yumuþak"",-,-,-"
 gentleman,beyefendi,-,-,-
 geography,coðrafya,-,-,-
-get,"almak, elde etmek",get,got,got/gotten
+"get,""almak, elde etmek"",get,got,got/gotten"
 ghost,hayalet,-,-,-
 giant,dev,-,-,-
 gift,hediye,-,-,-
@@ -1161,11 +1161,11 @@ girl,kýz çocuk,-,-,-
 girlfriend,kýz arkadaþ,-,-,-
 give,vermek,give,gave,given
 glad,memnun,-,-,-
-glass,"cam, bardak",-,-,-
+"glass,""cam, bardak"",-,-,-"
 global,küresel,-,-,-
 glove,eldiven,-,-,-
 go,gitmek,go,went,gone
-goal,"hedef, gol",-,-,-
+"goal,""hedef, gol"",-,-,-"
 god,tanrý,-,-,-
 gold,altýn,-,-,-
 golf,golf,-,-,-
@@ -1175,7 +1175,7 @@ goods,mallar,-,-,-
 govern,yönetmek (devlet),govern,governed,governed
 government,hükümet,-,-,-
 grab,kapmak,grab,grabbed,grabbed
-grade,"not, sýnýf",grade,graded,graded
+"grade,""not, sýnýf"",grade,graded,graded"
 gradually,yavaþ yavaþ,-,-,-
 graduate,mezun olmak,graduate,graduated,graduated
 grain,tahýl,-,-,-
@@ -1183,62 +1183,62 @@ grand,görkemli,-,-,-
 grandfather,dede,-,-,-
 grandmother,büyükanne,-,-,-
 grandparent,büyük ebeveyn,-,-,-
-grant,"hibe, vermek",grant,granted,granted
+"grant,""hibe, vermek"",grant,granted,granted"
 grass,çim,-,-,-
 grateful,minnettar,-,-,-
-great,"harika, büyük",-,-,-
+"great,""harika, büyük"",-,-,-"
 green,yeþil,-,-,-
 greet,selamlamak,greet,greeted,greeted
 grey,gri,-,-,-
-ground,"zemin, yer",-,-,-
+"ground,""zemin, yer"",-,-,-"
 group,grup,-,-,-
 grow,büyümek,grow,grew,grown
 growth,büyüme,-,-,-
-guarantee,"garanti, garanti etmek",guarantee,guaranteed,guaranteed
-guard,"muhafýz, korumak",guard,guarded,guarded
+"guarantee,""garanti, garanti etmek"",guarantee,guaranteed,guaranteed"
+"guard,""muhafýz, korumak"",guard,guarded,guarded"
 guess,tahmin etmek,guess,guessed,guessed
 guest,misafir,-,-,-
-guide,"rehber, rehberlik etmek",guide,guided,guided
+"guide,""rehber, rehberlik etmek"",guide,guided,guided"
 guilty,suçlu,-,-,-
 guitar,gitar,-,-,-
-gun,"silah, tabanca",-,-,-
-guy,"adam, herif",-,-,-
+"gun,""silah, tabanca"",-,-,-"
+"guy,""adam, herif"",-,-,-"
 gym,spor salonu,-,-,-
 habit,alýþkanlýk,-,-,-
 hair,saç,-,-,-
-half,"yarým, yarý",-,-,-
-hall,"salon, koridor",-,-,-
-hand,"el, uzatmak",hand,handed,handed
-handle,"kulp, ele almak",handle,handled,handled
+"half,""yarým, yarý"",-,-,-"
+"hall,""salon, koridor"",-,-,-"
+"hand,""el, uzatmak"",hand,handed,handed"
+"handle,""kulp, ele almak"",handle,handled,handled"
 hang,asmak,hang,hung,hung
-happen,"olmak, gerçekleþmek",happen,happened,happened
+"happen,""olmak, gerçekleþmek"",happen,happened,happened"
 happily,mutlu bir þekilde,-,-,-
 happiness,mutluluk,-,-,-
 happy,mutlu,-,-,-
-hard,"zor, sert",-,-,-
+"hard,""zor, sert"",-,-,-"
 hardly,neredeyse hiç,-,-,-
-harm,"zarar, zarar vermek",harm,harmed,harmed
+"harm,""zarar, zarar vermek"",harm,harmed,harmed"
 harmful,zararlý,-,-,-
 hat,þapka,-,-,-
 hate,nefret etmek,hate,hated,hated
 have,sahip olmak,have,had,had
 have to,zorunda olmak,-,-,-
 he,o (erkek),-,-,-
-head,"baþ, yönetmek",head,headed,headed
+"head,""baþ, yönetmek"",head,headed,headed"
 headache,baþ aðrýsý,-,-,-
 headline,manþet,-,-,-
 health,saðlýk,-,-,-
 healthy,saðlýklý,-,-,-
 hear,duymak,hear,heard,heard
-hearing,"duyma, iþitme",-,-,-
+"hearing,""duyma, iþitme"",-,-,-"
 heart,kalp,-,-,-
-heat,"ýsý, ýsýtmak",heat,heated,heated
+"heat,""ýsý, ýsýtmak"",heat,heated,heated"
 heating,ýsýtma,-,-,-
 heaven,cennet,-,-,-
 heavily,aðýr bir þekilde,-,-,-
 heavy,aðýr,-,-,-
 heel,topuk,-,-,-
-height,"boy, yükseklik",-,-,-
+"height,""boy, yükseklik"",-,-,-"
 helicopter,helikopter,-,-,-
 hell,cehennem,-,-,-
 hello,merhaba,-,-,-
@@ -1254,12 +1254,12 @@ hey,hey,-,-,-
 hi,selam,-,-,-
 hide,saklamak,hide,hid,hidden
 high,yüksek,-,-,-
-highlight,"vurgulamak, önemli nokta",highlight,highlighted,highlighted
-highly,"oldukça, son derece",-,-,-
+"highlight,""vurgulamak, önemli nokta"",highlight,highlighted,highlighted"
+"highly,""oldukça, son derece"",-,-,-"
 hill,tepe,-,-,-
 him,onu (erkek),-,-,-
 himself,kendisi (erkek),-,-,-
-hire,"kiralamak, iþe almak",hire,hired,hired
+"hire,""kiralamak, iþe almak"",hire,hired,hired"
 his,onun (erkek),-,-,-
 historic,tarihi (önemli),-,-,-
 historical,tarihsel,-,-,-
@@ -1275,18 +1275,18 @@ holy,kutsal,-,-,-
 home,ev,-,-,-
 homework,ev ödevi,-,-,-
 honest,dürüst,-,-,-
-honour,"onur, onurlandýrmak",honour,honoured,honoured
+"honour,""onur, onurlandýrmak"",honour,honoured,honoured"
 hope,umut etmek,hope,hoped,hoped
 horrible,korkunç,-,-,-
-horror,"dehþet, korku",-,-,-
+"horror,""dehþet, korku"",-,-,-"
 horse,at,-,-,-
 hospital,hastane,-,-,-
-host,"ev sahibi, sunmak",host,hosted,hosted
+"host,""ev sahibi, sunmak"",host,hosted,hosted"
 hot,sýcak,-,-,-
 hotel,otel,-,-,-
 hour,saat (süre),-,-,-
-house,"ev, barýndýrmak",house,housed,housed
-household,"hane, ev halký",-,-,-
+"house,""ev, barýndýrmak"",house,housed,housed"
+"household,""hane, ev halký"",-,-,-"
 housing,konut,-,-,-
 how,nasýl,-,-,-
 however,ancak,-,-,-
@@ -1300,33 +1300,33 @@ hunt,avlamak,hunt,hunted,hunted
 hunting,avcýlýk,-,-,-
 hurricane,kasýrga,-,-,-
 hurry,acele etmek,hurry,hurried,hurried
-hurt,"incitmek, acý vermek",hurt,hurt,hurt
+"hurt,""incitmek, acý vermek"",hurt,hurt,hurt"
 husband,koca,-,-,-
 I,ben,-,-,-
 ice,buz,-,-,-
 ice cream,dondurma,-,-,-
 idea,fikir,-,-,-
 ideal,ideal,-,-,-
-identify,"tanýmlamak, kimliðini belirlemek",identify,identified,identified
+"identify,""tanýmlamak, kimliðini belirlemek"",identify,identified,identified"
 identity,kimlik,-,-,-
 if,eðer,-,-,-
 ignore,görmezden gelmek,ignore,ignored,ignored
 ill,hasta,-,-,-
 illegal,yasadýþý,-,-,-
 illness,hastalýk,-,-,-
-illustrate,"göstermek, resimlemek",illustrate,illustrated,illustrated
-illustration,"çizim, resim",-,-,-
-image,"imaj, görüntü",-,-,-
+"illustrate,""göstermek, resimlemek"",illustrate,illustrated,illustrated"
+"illustration,""çizim, resim"",-,-,-"
+"image,""imaj, görüntü"",-,-,-"
 imaginary,hayali,-,-,-
 imagination,hayal gücü,-,-,-
 imagine,hayal etmek,imagine,imagined,imagined
-immediate,"acil, ani",-,-,-
+"immediate,""acil, ani"",-,-,-"
 immediately,hemen,-,-,-
 immigrant,göçmen,-,-,-
 impact,etki,impact,impacted,impacted
 impatient,sabýrsýz,-,-,-
 imply,ima etmek,imply,implied,implied
-import,"ithal etmek, ithalat",import,imported,imported
+"import,""ithal etmek, ithalat"",import,imported,imported"
 importance,önem,-,-,-
 important,önemli,-,-,-
 impose,dayatmak,impose,imposed,imposed
@@ -1335,35 +1335,35 @@ impress,etkilemek,impress,impressed,impressed
 impressed,etkilenmiþ,-,-,-
 impression,izlenim,-,-,-
 impressive,etkileyici,-,-,-
-improve,"geliþtirmek, iyileþtirmek",improve,improved,improved
+"improve,""geliþtirmek, iyileþtirmek"",improve,improved,improved"
 improvement,iyileþme,-,-,-
 in,içinde,-,-,-
 inch,inç,-,-,-
 incident,olay,-,-,-
-include,"içermek, dahil etmek",include,included,included
+"include,""içermek, dahil etmek"",include,included,included"
 included,dahil,-,-,-
 including,dahil olmak üzere,-,-,-
 income,gelir,-,-,-
-increase,"artmak, artýrmak",increase,increased,increased
+"increase,""artmak, artýrmak"",increase,increased,increased"
 increasingly,giderek artan þekilde,-,-,-
 incredible,inanýlmaz,-,-,-
 incredibly,inanýlmaz derecede,-,-,-
 indeed,gerçekten,-,-,-
 independent,baðýmsýz,-,-,-
-indicate,"belirtmek, göstermek",indicate,indicated,indicated
+"indicate,""belirtmek, göstermek"",indicate,indicated,indicated"
 indirect,dolaylý,-,-,-
-individual,"birey, bireysel",-,-,-
+"individual,""birey, bireysel"",-,-,-"
 indoor,kapalý mekan,-,-,-
 indoors,iç mekanda,-,-,-
 industrial,endüstriyel,-,-,-
 industry,endüstri,-,-,-
 infection,enfeksiyon,-,-,-
-influence,"etki, etkilemek",influence,influenced,influenced
+"influence,""etki, etkilemek"",influence,influenced,influenced"
 inform,bilgilendirmek,inform,informed,informed
 informal,resmi olmayan,-,-,-
 information,bilgi,-,-,-
 ingredient,malzeme (yemek),-,-,-
-initial,"ilk, baþlangýç",-,-,-
+"initial,""ilk, baþlangýç"",-,-,-"
 initially,baþlangýçta,-,-,-
 initiative,giriþim,-,-,-
 injure,yaralamak,injure,injured,injured
@@ -1383,7 +1383,7 @@ institute,enstitü,-,-,-
 institution,kurum,-,-,-
 instruction,talimat,-,-,-
 instructor,eðitmen,-,-,-
-instrument,"enstrüman, alet",-,-,-
+"instrument,""enstrüman, alet"",-,-,-"
 insurance,sigorta,-,-,-
 intelligence,zeka,-,-,-
 intelligent,zeki,-,-,-
@@ -1391,34 +1391,34 @@ intend,niyetlenmek,intend,intended,intended
 intended,amaçlanan,-,-,-
 intense,yoðun,-,-,-
 intention,niyet,-,-,-
-interest,"ilgi, faiz",interest,interested,interested
+"interest,""ilgi, faiz"",interest,interested,interested"
 interested,ilgilenen,-,-,-
 interesting,ilginç,-,-,-
-internal,"iç, dahili",-,-,-
+"internal,""iç, dahili"",-,-,-"
 international,uluslararasý,-,-,-
 internet,internet,-,-,-
 interpret,yorumlamak,interpret,interpreted,interpreted
 interrupt,kesmek (sözünü),interrupt,interrupted,interrupted
-interview,"görüþme, röportaj yapmak",interview,interviewed,interviewed
+"interview,""görüþme, röportaj yapmak"",interview,interviewed,interviewed"
 into,içine,-,-,-
 introduce,tanýtmak,introduce,introduced,introduced
-introduction,"giriþ, tanýtým",-,-,-
+"introduction,""giriþ, tanýtým"",-,-,-"
 invent,icat etmek,invent,invented,invented
 invention,icat,-,-,-
 invest,yatýrým yapmak,invest,invested,invested
-investigate,"araþtýrmak, soruþturmak",investigate,investigated,investigated
+"investigate,""araþtýrmak, soruþturmak"",investigate,investigated,investigated"
 investigation,soruþturma,-,-,-
 investment,yatýrým,-,-,-
 invitation,davet,-,-,-
 invite,davet etmek,invite,invited,invited
-involve,"içermek, dahil etmek",involve,involved,involved
+"involve,""içermek, dahil etmek"",involve,involved,involved"
 involved,dahil olmuþ,-,-,-
-iron,"ütü, demir",iron,ironed,ironed
+"iron,""ütü, demir"",iron,ironed,ironed"
 island,ada,-,-,-
-issue,"konu, sorun",issue,issued,issued
+"issue,""konu, sorun"",issue,issued,issued"
 IT,bilgi teknolojisi,-,-,-
 it,o (nesne),-,-,-
-item,"madde, ürün",-,-,-
+"item,""madde, ürün"",-,-,-"
 its,onun (nesne),-,-,-
 itself,kendisi (nesne),-,-,-
 jacket,ceket,-,-,-
@@ -1429,23 +1429,23 @@ jeans,kot pantolon,-,-,-
 jewellery,mücevher,-,-,-
 job,iþ,-,-,-
 join,katýlmak,join,joined,joined
-joke,"þaka, þaka yapmak",joke,joked,joked
-journal,"dergi, günlük",-,-,-
+"joke,""þaka, þaka yapmak"",joke,joked,joked"
+"journal,""dergi, günlük"",-,-,-"
 journalist,gazeteci,-,-,-
 journey,yolculuk,-,-,-
 joy,neþe,-,-,-
-judge,"hakim, yargýlamak",judge,judged,judged
-judgement,"yargý, karar",-,-,-
+"judge,""hakim, yargýlamak"",judge,judged,judged"
+"judgement,""yargý, karar"",-,-,-"
 juice,meyve suyu,-,-,-
 July,Temmuz,-,-,-
 jump,atlamak,jump,jumped,jumped
 June,Haziran,-,-,-
-junior,"genç, alt kademeli",-,-,-
-just,"sadece, tam",-,-,-
+"junior,""genç, alt kademeli"",-,-,-"
+"just,""sadece, tam"",-,-,-"
 justice,adalet,-,-,-
 justify,haklý çýkarmak,justify,justified,justified
 keen,hevesli,-,-,-
-keep,"tutmak, saklamak",keep,kept,kept
+"keep,""tutmak, saklamak"",keep,kept,kept"
 key,anahtar,key,keyed,keyed
 keyboard,klavye,-,-,-
 kick,tekmelemek,kick,kicked,kicked
@@ -1454,24 +1454,24 @@ kill,öldürmek,kill,killed,killed
 killing,öldürme,-,-,-
 kilometre,kilometre,-,-,-
 kind (caring),nazik,-,-,-
-kind (type),"tür, çeþit",-,-,-
+"kind (type),""tür, çeþit"",-,-,-"
 king,kral,-,-,-
-kiss,"öpmek, öpücük",kiss,kissed,kissed
+"kiss,""öpmek, öpücük"",kiss,kissed,kissed"
 kitchen,mutfak,-,-,-
 knee,diz,-,-,-
 knife,býçak,-,-,-
-knock,"kapýyý çalmak, vurmak",knock,knocked,knocked
+"knock,""kapýyý çalmak, vurmak"",knock,knocked,knocked"
 know,bilmek,know,knew,known
 knowledge,bilgi,-,-,-
 lab,laboratuvar,-,-,-
-label,"etiket, etiketlemek",label,labelled,labelled
+"label,""etiket, etiketlemek"",label,labelled,labelled"
 laboratory,laboratuvar,-,-,-
-labour,"emek, iþçilik",-,-,-
-lack,"eksiklik, yoksun olmak",lack,lacked,lacked
+"labour,""emek, iþçilik"",-,-,-"
+"lack,""eksiklik, yoksun olmak"",lack,lacked,lacked"
 lady,hanýmefendi,-,-,-
 lake,göl,-,-,-
 lamp,lamba,-,-,-
-land,"kara, arazi, konmak",land,landed,landed
+"land,""kara, arazi, konmak"",land,landed,landed"
 landscape,manzara,-,-,-
 language,dil,-,-,-
 laptop,dizüstü bilgisayar,-,-,-
@@ -1483,26 +1483,26 @@ late,geç,-,-,-
 later,daha sonra,-,-,-
 latest,en son,-,-,-
 laugh,gülmek,laugh,laughed,laughed
-laughter,"gülme, kahkaha",-,-,-
-launch,"baþlatmak, piyasaya sürmek",launch,launched,launched
+"laughter,""gülme, kahkaha"",-,-,-"
+"launch,""baþlatmak, piyasaya sürmek"",launch,launched,launched"
 law,kanun,-,-,-
 lawyer,avukat,-,-,-
-lay,"koymak, yatýrmak",lay,laid,laid
+"lay,""koymak, yatýrmak"",lay,laid,laid"
 layer,katman,-,-,-
 lazy,tembel,-,-,-
-lead1,"yönetmek, önderlik etmek",lead,led,led
+"lead1,""yönetmek, önderlik etmek"",lead,led,led"
 leader,lider,-,-,-
 leadership,liderlik,-,-,-
 leading,önde gelen,-,-,-
 leaf,yaprak,-,-,-
 league,lig,-,-,-
-lean,"yaslanmak, zayýf",lean,leaned/leant,leaned/leant
+"lean,""yaslanmak, zayýf"",lean,leaned/leant,leaned/leant"
 learn,öðrenmek,learn,learned/learnt,learned/learnt
 learning,öðrenme,-,-,-
 least,en az,-,-,-
 leather,deri,-,-,-
-leave,"ayrýlmak, býrakmak",leave,left,left
-lecture,"ders, konferans",lecture,lectured,lectured
+"leave,""ayrýlmak, býrakmak"",leave,left,left"
+"lecture,""ders, konferans"",lecture,lectured,lectured"
 left,sol,-,-,-
 leg,bacak,-,-,-
 legal,yasal,-,-,-
@@ -1512,51 +1512,51 @@ lend,ödünç vermek,lend,lent,lent
 length,uzunluk,-,-,-
 less,daha az,-,-,-
 lesson,ders,-,-,-
-let,"izin vermek, býrakmak",let,let,let
-letter,"mektup, harf",-,-,-
+"let,""izin vermek, býrakmak"",let,let,let"
+"letter,""mektup, harf"",-,-,-"
 level,seviye,level,levelled,levelled
 library,kütüphane,-,-,-
-licence,"lisans, ruhsat",-,-,-
-lie1,"yatmak, uzanmak",lie,lay,lain
+"licence,""lisans, ruhsat"",-,-,-"
+"lie1,""yatmak, uzanmak"",lie,lay,lain"
 lie2,yalan söylemek,lie,lied,lied
 life,hayat,-,-,-
 lifestyle,yaþam tarzý,-,-,-
-lift,"kaldýrmak, asansör",lift,lifted,lifted
+"lift,""kaldýrmak, asansör"",lift,lifted,lifted"
 light (not heavy),hafif,-,-,-
-light (sun/lamp),"ýþýk, aydýnlatmak",light,lit/lighted,lit/lighted
-like (find pleasant),"hoþlanmak, sevmek",like,liked,liked
+"light (sun/lamp),""ýþýk, aydýnlatmak"",light,lit/lighted,lit/lighted"
+"like (find pleasant),""hoþlanmak, sevmek"",like,liked,liked"
 like (similar),gibi,-,-,-
 likely,muhtemel,-,-,-
-limit,"sýnýr, sýnýrlamak",limit,limited,limited
+"limit,""sýnýr, sýnýrlamak"",limit,limited,limited"
 limited,sýnýrlý,-,-,-
-line,"çizgi, sýra",line,lined,lined
-link,"baðlantý, baðlamak",link,linked,linked
+"line,""çizgi, sýra"",line,lined,lined"
+"link,""baðlantý, baðlamak"",link,linked,linked"
 lion,aslan,-,-,-
 lip,dudak,-,-,-
 liquid,sývý,-,-,-
-list,"liste, listelemek",list,listed,listed
+"list,""liste, listelemek"",list,listed,listed"
 listen,dinlemek,listen,listened,listened
 listener,dinleyici,-,-,-
 literature,edebiyat,-,-,-
-little,"küçük, az",-,-,-
+"little,""küçük, az"",-,-,-"
 live1,yaþamak,live,lived,lived
 live2,canlý yayýnda,-,-,-
-lively,"canlý, hareketli",-,-,-
-living,"yaþayan, geçim",-,-,-
-load,"yük, yüklemek",load,loaded,loaded
-loan,"kredi, borç",loan,loaned,loaned
+"lively,""canlý, hareketli"",-,-,-"
+"living,""yaþayan, geçim"",-,-,-"
+"load,""yük, yüklemek"",load,loaded,loaded"
+"loan,""kredi, borç"",loan,loaned,loaned"
 local,yerel,-,-,-
-locate,"bulmak, konumlandýrmak",locate,located,located
+"locate,""bulmak, konumlandýrmak"",locate,located,located"
 located,konumlanmýþ,-,-,-
 location,konum,-,-,-
-lock,"kilit, kilitlemek",lock,locked,locked
+"lock,""kilit, kilitlemek"",lock,locked,locked"
 logical,mantýklý,-,-,-
 lonely,yalnýz,-,-,-
 long-term,uzun vadeli,-,-,-
 long1,uzun,-,-,-
-look,"bakmak, görünmek",look,looked,looked
+"look,""bakmak, görünmek"",look,looked,looked"
 loose,gevþek,-,-,-
-lord,"lord, efendi",-,-,-
+"lord,""lord, efendi"",-,-,-"
 lorry,kamyon,-,-,-
 lose,kaybetmek,lose,lost,lost
 loss,kayýp,-,-,-
@@ -1564,73 +1564,73 @@ lost,kaybolmuþ,-,-,-
 lot,çok (miktar),-,-,-
 loud,yüksek sesli,-,-,-
 loudly,yüksek sesle,-,-,-
-love,"aþk, sevmek",love,loved,loved
-lovely,"güzel, hoþ",-,-,-
-low,"düþük, alçak",-,-,-
-lower,"indirmek, alçaltmak",lower,lowered,lowered
+"love,""aþk, sevmek"",love,loved,loved"
+"lovely,""güzel, hoþ"",-,-,-"
+"low,""düþük, alçak"",-,-,-"
+"lower,""indirmek, alçaltmak"",lower,lowered,lowered"
 luck,þans,-,-,-
 lucky,þanslý,-,-,-
 lunch,öðle yemeði,-,-,-
 lung,akciðer,-,-,-
 luxury,lüks,-,-,-
 machine,makine,-,-,-
-mad,"çýlgýn, deli",-,-,-
+"mad,""çýlgýn, deli"",-,-,-"
 magazine,dergi,-,-,-
 magic,sihir,-,-,-
-mail,"posta, postalamak",mail,mailed,mailed
-main,"ana, baþlýca",-,-,-
+"mail,""posta, postalamak"",mail,mailed,mailed"
+"main,""ana, baþlýca"",-,-,-"
 mainly,çoðunlukla,-,-,-
-maintain,"sürdürmek, bakýmýný yapmak",maintain,maintained,maintained
-major,"büyük, önemli",-,-,-
+"maintain,""sürdürmek, bakýmýný yapmak"",maintain,maintained,maintained"
+"major,""büyük, önemli"",-,-,-"
 majority,çoðunluk,-,-,-
 make,yapmak,make,made,made
 male,erkek,-,-,-
 mall,alýþveriþ merkezi,-,-,-
 man,adam,-,-,-
-manage,"yönetmek, baþarmak",manage,managed,managed
+"manage,""yönetmek, baþarmak"",manage,managed,managed"
 management,yönetim,-,-,-
-manager,"müdür, yönetici",-,-,-
-manner,"tavýr, biçim",-,-,-
+"manager,""müdür, yönetici"",-,-,-"
+"manner,""tavýr, biçim"",-,-,-"
 many,çok (sayýlabilir),-,-,-
 map,harita,map,mapped,mapped
 March,Mart,-,-,-
-mark,"iþaret, iþaretlemek",mark,marked,marked
-market,"pazar, piyasa",market,marketed,marketed
+"mark,""iþaret, iþaretlemek"",mark,marked,marked"
+"market,""pazar, piyasa"",market,marketed,marketed"
 marketing,pazarlama,-,-,-
 marriage,evlilik,-,-,-
 married,evli,-,-,-
 marry,evlenmek,marry,married,married
-mass,"kütle, kitle",-,-,-
+"mass,""kütle, kitle"",-,-,-"
 massive,çok büyük,-,-,-
-master,"usta, ustalaþmak",master,mastered,mastered
-match,"maç, eþleþmek",match,matched,matched
-matching,"uyumlu, eþleþen",-,-,-
+"master,""usta, ustalaþmak"",master,mastered,mastered"
+"match,""maç, eþleþmek"",match,matched,matched"
+"matching,""uyumlu, eþleþen"",-,-,-"
 material,malzeme,-,-,-
 mathematics,matematik,-,-,-
 maths,matematik,-,-,-
-matter,"mesele, önemli olmak",matter,mattered,mattered
+"matter,""mesele, önemli olmak"",matter,mattered,mattered"
 maximum,maksimum,-,-,-
 May,Mayýs,-,-,-
 may,-ebilir (izin/olasýlýk),-,-,-
 maybe,belki,-,-,-
-me,"beni, bana",-,-,-
+"me,""beni, bana"",-,-,-"
 meal,yemek (öðün),-,-,-
 mean,anlamýna gelmek,mean,meant,meant
 meaning,anlam,-,-,-
-means,"araç, yol",-,-,-
+"means,""araç, yol"",-,-,-"
 meanwhile,bu arada,-,-,-
-measure,"ölçmek, önlem",measure,measured,measured
+"measure,""ölçmek, önlem"",measure,measured,measured"
 measurement,ölçüm,-,-,-
 meat,et,-,-,-
 media,medya,-,-,-
 medical,týbbi,-,-,-
-medicine,"ilaç, týp",-,-,-
-medium,"orta, ortam",-,-,-
-meet,"buluþmak, tanýþmak",meet,met,met
+"medicine,""ilaç, týp"",-,-,-"
+"medium,""orta, ortam"",-,-,-"
+"meet,""buluþmak, tanýþmak"",meet,met,met"
 meeting,toplantý,-,-,-
 melt,erimek,melt,melted,melted
 member,üye,-,-,-
-memory,"hafýza, aný",-,-,-
+"memory,""hafýza, aný"",-,-,-"
 mental,zihinsel,-,-,-
 mention,bahsetmek,mention,mentioned,mentioned
 menu,menü,-,-,-
@@ -1642,36 +1642,36 @@ metre,metre,-,-,-
 middle,orta,-,-,-
 midnight,gece yarýsý,-,-,-
 might,-ebilir (olasýlýk),-,-,-
-mild,"hafif, ýlýman",-,-,-
+"mild,""hafif, ýlýman"",-,-,-"
 mile,mil,-,-,-
 military,askeri,-,-,-
 milk,süt,-,-,-
 million,milyon,-,-,-
-mind,"zihin, aldýrmak",mind,minded,minded
+"mind,""zihin, aldýrmak"",mind,minded,minded"
 mine (belongs to me),benimki,-,-,-
 mine (hole in ground),maden,-,-,-
 mineral,mineral,-,-,-
 minimum,minimum,-,-,-
 minister,bakan,-,-,-
-minor,"küçük, önemsiz",-,-,-
+"minor,""küçük, önemsiz"",-,-,-"
 minority,azýnlýk,-,-,-
 minute1,dakika,-,-,-
 mirror,ayna,-,-,-
-miss,"özlemek, kaçýrmak",miss,missed,missed
-missing,"kayýp, eksik",-,-,-
+"miss,""özlemek, kaçýrmak"",miss,missed,missed"
+"missing,""kayýp, eksik"",-,-,-"
 mission,görev,-,-,-
 mistake,hata,mistake,mistook,mistaken
 mix,karýþtýrmak,mix,mixed,mixed
 mixed,karýþýk,-,-,-
 mixture,karýþým,-,-,-
-mobile,"mobil, taþýnabilir",-,-,-
+"mobile,""mobil, taþýnabilir"",-,-,-"
 model,model,model,modelled,modelled
 modern,modern,-,-,-
 modify,deðiþtirmek,modify,modified,modified
 moment,an,-,-,-
 Monday,Pazartesi,-,-,-
 money,para,-,-,-
-monitor,"monitör, izlemek",monitor,monitored,monitored
+"monitor,""monitör, izlemek"",monitor,monitored,monitored"
 monkey,maymun,-,-,-
 month,ay,-,-,-
 mood,ruh hali,-,-,-
@@ -1679,16 +1679,16 @@ moon,ay (gökyüzü),-,-,-
 moral,ahlaki,-,-,-
 more,daha fazla,-,-,-
 morning,sabah,-,-,-
-most,"en fazla, çoðu",-,-,-
+"most,""en fazla, çoðu"",-,-,-"
 mostly,çoðunlukla,-,-,-
 mother,anne,-,-,-
 motor,motor,-,-,-
 motorcycle,motosiklet,-,-,-
-mount,"dað, monte etmek",mount,mounted,mounted
+"mount,""dað, monte etmek"",mount,mounted,mounted"
 mountain,dað,-,-,-
 mouse,fare,-,-,-
 mouth,aðýz,-,-,-
-move,"hareket etmek, taþýnmak",move,moved,moved
+"move,""hareket etmek, taþýnmak"",move,moved,moved"
 movement,hareket,-,-,-
 movie,film,-,-,-
 much,çok (miktar),-,-,-
@@ -1696,24 +1696,24 @@ mud,çamur,-,-,-
 multiple,çoklu,-,-,-
 multiply,çarpmak,multiply,multiplied,multiplied
 mum,anne,-,-,-
-murder,"cinayet, öldürmek",murder,murdered,murdered
+"murder,""cinayet, öldürmek"",murder,murdered,murdered"
 muscle,kas,-,-,-
 museum,müze,-,-,-
 music,müzik,-,-,-
 musical,müzikal,-,-,-
 musician,müzisyen,-,-,-
-must,"-meli, zorunda",-,-,-
+"must,""-meli, zorunda"",-,-,-"
 my,benim,-,-,-
 myself,kendim,-,-,-
 mysterious,gizemli,-,-,-
 mystery,gizem,-,-,-
-nail,"týrnak, çivi",-,-,-
-name,"isim, adlandýrmak",name,named,named
+"nail,""týrnak, çivi"",-,-,-"
+"name,""isim, adlandýrmak"",name,named,named"
 narrative,anlatý,-,-,-
 narrow,dar,narrow,narrowed,narrowed
 nation,ulus,-,-,-
 national,ulusal,-,-,-
-native,"yerli, ana (dil)",-,-,-
+"native,""yerli, ana (dil)"",-,-,-"
 natural,doðal,-,-,-
 naturally,doðal olarak,-,-,-
 nature,doða,-,-,-
@@ -1723,7 +1723,7 @@ neat,düzenli,-,-,-
 necessarily,zorunlu olarak,-,-,-
 necessary,gerekli,-,-,-
 neck,boyun,-,-,-
-need,"ihtiyaç, ihtiyaç duymak",need,needed,needed
+"need,""ihtiyaç, ihtiyaç duymak"",need,needed,needed"
 needle,iðne,-,-,-
 negative,olumsuz,-,-,-
 neighbour,komþu,-,-,-
@@ -1731,7 +1731,7 @@ neighbourhood,mahalle,-,-,-
 neither,hiçbiri,-,-,-
 nerve,sinir,-,-,-
 nervous,gergin,-,-,-
-net,"að, net (kazanç)",-,-,-
+"net,""að, net (kazanç)"",-,-,-"
 network,að (baðlantý),-,-,-
 never,asla,-,-,-
 nevertheless,yine de,-,-,-
@@ -1740,7 +1740,7 @@ news,haber,-,-,-
 newspaper,gazete,-,-,-
 next,sonraki,-,-,-
 next to,yanýnda,-,-,-
-nice,"güzel, hoþ",-,-,-
+"nice,""güzel, hoþ"",-,-,-"
 night,gece,-,-,-
 nightmare,kabus,-,-,-
 nine,dokuz,-,-,-
@@ -1759,49 +1759,49 @@ north,kuzey,-,-,-
 northern,kuzey (sýfat),-,-,-
 nose,burun,-,-,-
 not,deðil,-,-,-
-note,"not, not almak",note,noted,noted
+"note,""not, not almak"",note,noted,noted"
 nothing,hiçbir þey,-,-,-
-notice,"fark etmek, uyarý",notice,noticed,noticed
-notion,"kavram, fikir",-,-,-
+"notice,""fark etmek, uyarý"",notice,noticed,noticed"
+"notion,""kavram, fikir"",-,-,-"
 novel,roman,-,-,-
 November,Kasým,-,-,-
 now,þimdi,-,-,-
 nowhere,hiçbir yer,-,-,-
 nuclear,nükleer,-,-,-
-number,"sayý, numaralandýrmak",number,numbered,numbered
+"number,""sayý, numaralandýrmak"",number,numbered,numbered"
 numerous,çok sayýda,-,-,-
 nurse,hemþire,-,-,-
-nut,"kuruyemiþ, somun",-,-,-
+"nut,""kuruyemiþ, somun"",-,-,-"
 o'clock,saat (tam),-,-,-
 obey,itaat etmek,obey,obeyed,obeyed
-object,"nesne, itiraz etmek",object,objected,objected
-objective,"hedef, amaç",-,-,-
+"object,""nesne, itiraz etmek"",object,objected,objected"
+"objective,""hedef, amaç"",-,-,-"
 obligation,yükümlülük,-,-,-
 observation,gözlem,-,-,-
 observe,gözlemlemek,observe,observed,observed
 obtain,elde etmek,obtain,obtained,obtained
-obvious,"açýk, bariz",-,-,-
+"obvious,""açýk, bariz"",-,-,-"
 obviously,açýkça,-,-,-
-occasion,"özel gün, olay",-,-,-
+"occasion,""özel gün, olay"",-,-,-"
 occasionally,ara sýra,-,-,-
 occur,meydana gelmek,occur,occurred,occurred
 ocean,okyanus,-,-,-
 October,Ekim,-,-,-
-odd,"garip, tuhaf",-,-,-
-of,"-in, -nin (aitlik)",-,-,-
-off,"kapalý, uzakta",-,-,-
-offence,"suç, gücenme",-,-,-
+"odd,""garip, tuhaf"",-,-,-"
+"of,""-in, -nin (aitlik)"",-,-,-"
+"off,""kapalý, uzakta"",-,-,-"
+"offence,""suç, gücenme"",-,-,-"
 offend,gücendirmek,offend,offended,offended
-offensive,"saldýrgan, rahatsýz edici",-,-,-
+"offensive,""saldýrgan, rahatsýz edici"",-,-,-"
 offer,teklif etmek,offer,offered,offered
 office,ofis,-,-,-
-officer,"memur, subay",-,-,-
-official,"resmi, yetkili",-,-,-
+"officer,""memur, subay"",-,-,-"
+"official,""resmi, yetkili"",-,-,-"
 often,sýk sýk,-,-,-
-oh,"ah, ay",-,-,-
-oil,"yað, petrol",-,-,-
+"oh,""ah, ay"",-,-,-"
+"oil,""yað, petrol"",-,-,-"
 OK,tamam,-,-,-
-old,"yaþlý, eski",-,-,-
+"old,""yaþlý, eski"",-,-,-"
 old-fashioned,eski moda,-,-,-
 on,üzerinde,-,-,-
 once,bir kez,-,-,-
@@ -1810,26 +1810,26 @@ onion,soðan,-,-,-
 online,çevrimiçi,-,-,-
 only,sadece,-,-,-
 onto,üzerine,-,-,-
-open,"açýk, açmak",open,opened,opened
+"open,""açýk, açmak"",open,opened,opened"
 opening,açýlýþ,-,-,-
-operate,"çalýþtýrmak, ameliyat etmek",operate,operated,operated
-operation,"operasyon, ameliyat",-,-,-
-opinion,"görüþ, fikir",-,-,-
+"operate,""çalýþtýrmak, ameliyat etmek"",operate,operated,operated"
+"operation,""operasyon, ameliyat"",-,-,-"
+"opinion,""görüþ, fikir"",-,-,-"
 opponent,rakip,-,-,-
 opportunity,fýrsat,-,-,-
 oppose,karþý çýkmak,oppose,opposed,opposed
 opposed,karþýt,-,-,-
-opposite,"karþý, zýt",-,-,-
+"opposite,""karþý, zýt"",-,-,-"
 opposition,muhalefet,-,-,-
 option,seçenek,-,-,-
 or,veya,-,-,-
-orange,"portakal, turuncu",-,-,-
-order,"sipariþ, emir, sýralamak",order,ordered,ordered
+"orange,""portakal, turuncu"",-,-,-"
+"order,""sipariþ, emir, sýralamak"",order,ordered,ordered"
 ordinary,sýradan,-,-,-
 organ,organ,-,-,-
 organization,organizasyon,-,-,-
-organize,"düzenlemek, organize etmek",organize,organized,organized
-organized,"düzenli, organize",-,-,-
+"organize,""düzenlemek, organize etmek"",organize,organized,organized"
+"organized,""düzenli, organize"",-,-,-"
 organizer,organizatör,-,-,-
 origin,köken,-,-,-
 original,orijinal,-,-,-
@@ -1845,23 +1845,23 @@ outcome,sonuç,-,-,-
 outdoor,açýk hava (sýfat),-,-,-
 outdoors,açýk havada,-,-,-
 outer,dýþ,-,-,-
-outline,"taslak, ana hatlarýyla belirtmek",outline,outlined,outlined
-outside,"dýþarýda, dýþ",-,-,-
+"outline,""taslak, ana hatlarýyla belirtmek"",outline,outlined,outlined"
+"outside,""dýþarýda, dýþ"",-,-,-"
 oven,fýrýn,-,-,-
-over,"üzerinde, bitmiþ",-,-,-
+"over,""üzerinde, bitmiþ"",-,-,-"
 overall,genel olarak,-,-,-
 owe,borçlu olmak,owe,owed,owed
-own,"sahip olmak, kendi",own,owned,owned
+"own,""sahip olmak, kendi"",own,owned,owned"
 owner,sahip,-,-,-
-pace,"hýz, tempo",pace,paced,paced
-pack,"paket, paketlemek",pack,packed,packed
+"pace,""hýz, tempo"",pace,paced,paced"
+"pack,""paket, paketlemek"",pack,packed,packed"
 package,paket,package,packaged,packaged
 page,sayfa,-,-,-
 pain,aðrý,-,-,-
 painful,acý verici,-,-,-
-paint,"boya, boyamak",paint,painted,painted
+"paint,""boya, boyamak"",paint,painted,painted"
 painter,ressam,-,-,-
-painting,"resim, tablo",-,-,-
+"painting,""resim, tablo"",-,-,-"
 pair,çift,-,-,-
 palace,saray,-,-,-
 pale,solgun,-,-,-
@@ -1871,26 +1871,26 @@ pants,pantolon,-,-,-
 paper,kaðýt,-,-,-
 paragraph,paragraf,-,-,-
 parent,ebeveyn,-,-,-
-park,"park, park etmek",park,parked,parked
+"park,""park, park etmek"",park,parked,parked"
 parking,park etme,-,-,-
 parliament,parlamento,-,-,-
-part,"parça, bölüm",-,-,-
+"part,""parça, bölüm"",-,-,-"
 participant,katýlýmcý,-,-,-
 participate,katýlmak,participate,participated,participated
-particular,"belirli, özel",-,-,-
+"particular,""belirli, özel"",-,-,-"
 particularly,özellikle,-,-,-
 partly,kýsmen,-,-,-
-partner,"ortak, eþ",-,-,-
+"partner,""ortak, eþ"",-,-,-"
 party,parti,-,-,-
 pass,geçmek,pass,passed,passed
-passage,"geçit, pasaj",-,-,-
+"passage,""geçit, pasaj"",-,-,-"
 passenger,yolcu,-,-,-
 passion,tutku,-,-,-
 passport,pasaport,-,-,-
 past,geçmiþ,-,-,-
-path,"yol, patika",-,-,-
-patient,"hasta, sabýrlý",-,-,-
-pattern,"desen, model",-,-,-
+"path,""yol, patika"",-,-,-"
+"patient,""hasta, sabýrlý"",-,-,-"
+"pattern,""desen, model"",-,-,-"
 pay,ödemek,pay,paid,paid
 payment,ödeme,-,-,-
 peace,barýþ,-,-,-
@@ -1906,13 +1906,13 @@ per cent,yüzde,-,-,-
 percentage,yüzde oraný,-,-,-
 perfect,mükemmel,perfect,perfected,perfected
 perfectly,mükemmel bir þekilde,-,-,-
-perform,"gerçekleþtirmek, performans sergilemek",perform,performed,performed
+"perform,""gerçekleþtirmek, performans sergilemek"",perform,performed,performed"
 performance,performans,-,-,-
 perhaps,belki,-,-,-
 period,dönem,-,-,-
 permanent,kalýcý,-,-,-
 permission,izin,-,-,-
-permit,"izin vermek, izin belgesi",permit,permitted,permitted
+"permit,""izin vermek, izin belgesi"",permit,permitted,permitted"
 person,kiþi,-,-,-
 personal,kiþisel,-,-,-
 personality,kiþilik,-,-,-
@@ -1924,51 +1924,51 @@ petrol,benzin,-,-,-
 phase,aþama,-,-,-
 phenomenon,olgu,-,-,-
 philosophy,felsefe,-,-,-
-phone,"telefon, telefon etmek",phone,phoned,phoned
+"phone,""telefon, telefon etmek"",phone,phoned,phoned"
 photo,fotoðraf,-,-,-
-photograph,"fotoðraf, fotoðraflamak",photograph,photographed,photographed
+"photograph,""fotoðraf, fotoðraflamak"",photograph,photographed,photographed"
 photographer,fotoðrafçý,-,-,-
 photography,fotoðrafçýlýk,-,-,-
-phrase,"deyim, ifade",-,-,-
+"phrase,""deyim, ifade"",-,-,-"
 physical,fiziksel,-,-,-
 physics,fizik,-,-,-
 piano,piyano,-,-,-
-pick,"seçmek, toplamak",pick,picked,picked
-picture,"resim, fotoðraf",picture,pictured,pictured
+"pick,""seçmek, toplamak"",pick,picked,picked"
+"picture,""resim, fotoðraf"",picture,pictured,pictured"
 piece,parça,-,-,-
 pig,domuz,-,-,-
-pile,"yýðýn, yýðmak",pile,piled,piled
+"pile,""yýðýn, yýðmak"",pile,piled,piled"
 pilot,pilot,-,-,-
-pin,"toplu iðne, iðnelemek",pin,pinned,pinned
+"pin,""toplu iðne, iðnelemek"",pin,pinned,pinned"
 pink,pembe,-,-,-
 pipe,boru,-,-,-
-pitch,"saha, ton",-,-,-
-place,"yer, yerleþtirmek",place,placed,placed
-plain,"sade, düz",-,-,-
-plan,"plan, planlamak",plan,planned,planned
+"pitch,""saha, ton"",-,-,-"
+"place,""yer, yerleþtirmek"",place,placed,placed"
+"plain,""sade, düz"",-,-,-"
+"plan,""plan, planlamak"",plan,planned,planned"
 plane,uçak,-,-,-
 planet,gezegen,-,-,-
 planning,planlama,-,-,-
-plant,"bitki, ekmek (dikmek)",plant,planted,planted
+"plant,""bitki, ekmek (dikmek)"",plant,planted,planted"
 plastic,plastik,-,-,-
 plate,tabak,-,-,-
-platform,"platform, peron",-,-,-
+"platform,""platform, peron"",-,-,-"
 play,oynamak,play,played,played
 player,oyuncu,-,-,-
 pleasant,hoþ,-,-,-
-please,"lütfen, memnun etmek",please,pleased,pleased
+"please,""lütfen, memnun etmek"",please,pleased,pleased"
 pleased,memnun,-,-,-
-pleasure,"zevk, memnuniyet",-,-,-
-plenty,"bolluk, bol miktarda",-,-,-
-plot,"olay örgüsü, komplo kurmak",plot,plotted,plotted
+"pleasure,""zevk, memnuniyet"",-,-,-"
+"plenty,""bolluk, bol miktarda"",-,-,-"
+"plot,""olay örgüsü, komplo kurmak"",plot,plotted,plotted"
 plus1,artý,-,-,-
 pocket,cep,-,-,-
 poem,þiir,-,-,-
 poet,þair,-,-,-
 poetry,þiir sanatý,-,-,-
-point,"nokta, iþaret etmek",point,pointed,pointed
+"point,""nokta, iþaret etmek"",point,pointed,pointed"
 pointed,sivri,-,-,-
-poison,"zehir, zehirlemek",poison,poisoned,poisoned
+"poison,""zehir, zehirlemek"",poison,poisoned,poisoned"
 poisonous,zehirli,-,-,-
 police,polis,-,-,-
 policeman,polis memuru,-,-,-
@@ -1979,36 +1979,36 @@ politician,politikacý,-,-,-
 politics,siyaset,-,-,-
 pollution,kirlilik,-,-,-
 pool,havuz,-,-,-
-poor,"fakir, zavallý",-,-,-
+"poor,""fakir, zavallý"",-,-,-"
 pop,pop müzik,-,-,-
 popular,popüler,-,-,-
 popularity,popülerlik,-,-,-
 population,nüfus,-,-,-
 port,liman,-,-,-
 portrait,portre,-,-,-
-pose,"poz vermek, oluþturmak (sorun)",pose,posed,posed
-position,"konum, pozisyon",position,positioned,positioned
+"pose,""poz vermek, oluþturmak (sorun)"",pose,posed,posed"
+"position,""konum, pozisyon"",position,positioned,positioned"
 positive,olumlu,-,-,-
 possess,sahip olmak,possess,possessed,possessed
-possession,"sahiplik, mal",-,-,-
+"possession,""sahiplik, mal"",-,-,-"
 possibility,olasýlýk,-,-,-
 possible,mümkün,-,-,-
-possibly,"belki, mümkün olduðunca",-,-,-
-post,"posta, göndermek",post,posted,posted
+"possibly,""belki, mümkün olduðunca"",-,-,-"
+"post,""posta, göndermek"",post,posted,posted"
 poster,poster,-,-,-
-pot,"tencere, saksý",-,-,-
+"pot,""tencere, saksý"",-,-,-"
 potato,patates,-,-,-
 potential,potansiyel,-,-,-
 pound,pound (para/aðýrlýk),-,-,-
 pour,dökmek,pour,poured,poured
 poverty,yoksulluk,-,-,-
 powder,toz,-,-,-
-power,"güç, iktidar",power,powered,powered
+"power,""güç, iktidar"",power,powered,powered"
 powerful,güçlü,-,-,-
 practical,pratik,-,-,-
-practice,"pratik, uygulama",-,-,-
+"practice,""pratik, uygulama"",-,-,-"
 practise,pratik yapmak,practise,practised,practised
-praise,"övmek, övgü",praise,praised,praised
+"praise,""övmek, övgü"",praise,praised,praised"
 pray,dua etmek,pray,prayed,prayed
 prayer,dua,-,-,-
 predict,tahmin etmek,predict,predicted,predicted
@@ -2018,28 +2018,28 @@ pregnant,hamile,-,-,-
 preparation,hazýrlýk,-,-,-
 prepare,hazýrlamak,prepare,prepared,prepared
 prepared,hazýr,-,-,-
-presence,"varlýk, huzur",-,-,-
-present,"hediye, mevcut, sunmak",present,presented,presented
+"presence,""varlýk, huzur"",-,-,-"
+"present,""hediye, mevcut, sunmak"",present,presented,presented"
 presentation,sunum,-,-,-
 preserve,korumak,preserve,preserved,preserved
 president,baþkan,-,-,-
-press,"basýn, basmak",press,pressed,pressed
+"press,""basýn, basmak"",press,pressed,pressed"
 pressure,baský,-,-,-
 pretend,numara yapmak,pretend,pretended,pretended
-pretty,"güzel, oldukça",-,-,-
+"pretty,""güzel, oldukça"",-,-,-"
 prevent,önlemek,prevent,prevented,prevented
 previous,önceki,-,-,-
 previously,önceden,-,-,-
-price,"fiyat, fiyatlandýrmak",price,priced,priced
+"price,""fiyat, fiyatlandýrmak"",price,priced,priced"
 priest,rahip,-,-,-
-primary,"birincil, ilköðretim",-,-,-
-prime,"baþlýca, birinci",-,-,-
+"primary,""birincil, ilköðretim"",-,-,-"
+"prime,""baþlýca, birinci"",-,-,-"
 prince,prens,-,-,-
 princess,prenses,-,-,-
 principle,ilke,-,-,-
-print,"yazdýrmak, baský",print,printed,printed
+"print,""yazdýrmak, baský"",print,printed,printed"
 printer,yazýcý,-,-,-
-printing,"baský, matbaacýlýk",-,-,-
+"printing,""baský, matbaacýlýk"",-,-,-"
 priority,öncelik,-,-,-
 prison,hapishane,-,-,-
 prisoner,mahkum,-,-,-
@@ -2048,8 +2048,8 @@ private,özel,-,-,-
 prize,ödül,-,-,-
 probably,muhtemelen,-,-,-
 problem,sorun,-,-,-
-procedure,"prosedür, iþlem",-,-,-
-process,"süreç, iþlemek",process,processed,processed
+"procedure,""prosedür, iþlem"",-,-,-"
+"process,""süreç, iþlemek"",process,processed,processed"
 produce,üretmek,produce,produced,produced
 producer,yapýmcý,-,-,-
 product,ürün,-,-,-
@@ -2059,76 +2059,76 @@ professional,profesyonel,-,-,-
 professor,profesör,-,-,-
 profile,profil,-,-,-
 profit,kar,-,-,-
-program,"program, programlamak",program,programmed,programmed
+"program,""program, programlamak"",program,programmed,programmed"
 programme,program (TV/plan),-,-,-
-progress,"ilerleme, ilerlemek",progress,progressed,progressed
-project,"proje, projelendirmek",project,projected,projected
-promise,"söz vermek, söz",promise,promised,promised
-promote,"terfi ettirmek, tanýtmak",promote,promoted,promoted
+"progress,""ilerleme, ilerlemek"",progress,progressed,progressed"
+"project,""proje, projelendirmek"",project,projected,projected"
+"promise,""söz vermek, söz"",promise,promised,promised"
+"promote,""terfi ettirmek, tanýtmak"",promote,promoted,promoted"
 pronounce,telaffuz etmek,pronounce,pronounced,pronounced
 proof,kanýt,-,-,-
-proper,"uygun, düzgün",-,-,-
+"proper,""uygun, düzgün"",-,-,-"
 properly,düzgün bir þekilde,-,-,-
-property,"mülk, özellik",-,-,-
+"property,""mülk, özellik"",-,-,-"
 proposal,teklif,-,-,-
 propose,teklif etmek,propose,proposed,proposed
-prospect,"olasýlýk, gelecek beklentisi",-,-,-
+"prospect,""olasýlýk, gelecek beklentisi"",-,-,-"
 protect,korumak,protect,protected,protected
 protection,koruma,-,-,-
-protest,"protesto, protesto etmek",protest,protested,protested
+"protest,""protesto, protesto etmek"",protest,protested,protested"
 proud,gururlu,-,-,-
 prove,kanýtlamak,prove,proved,proved/proven
 provide,saðlamak,provide,provided,provided
 psychologist,psikolog,-,-,-
 psychology,psikoloji,-,-,-
-pub,"pub, bar",-,-,-
-public,"halk, kamu",-,-,-
+"pub,""pub, bar"",-,-,-"
+"public,""halk, kamu"",-,-,-"
 publication,yayýn,-,-,-
 publish,yayýnlamak,publish,published,published
 pull,çekmek,pull,pulled,pulled
 punish,cezalandýrmak,punish,punished,punished
 punishment,ceza,-,-,-
 pupil,öðrenci,-,-,-
-purchase,"satýn almak, satýn alma",purchase,purchased,purchased
+"purchase,""satýn almak, satýn alma"",purchase,purchased,purchased"
 pure,saf,-,-,-
 purple,mor,-,-,-
 purpose,amaç,-,-,-
-pursue,"sürdürmek, peþinden gitmek",pursue,pursued,pursued
+"pursue,""sürdürmek, peþinden gitmek"",pursue,pursued,pursued"
 push,itmek,push,pushed,pushed
 put,koymak,put,put,put
-qualification,"nitelik, yeterlilik",-,-,-
+"qualification,""nitelik, yeterlilik"",-,-,-"
 qualified,nitelikli,-,-,-
-qualify,"hak kazanmak, nitelemek",qualify,qualified,qualified
+"qualify,""hak kazanmak, nitelemek"",qualify,qualified,qualified"
 quality,kalite,-,-,-
 quantity,miktar,-,-,-
 quarter,çeyrek,-,-,-
 queen,kraliçe,-,-,-
-question,"soru, sorgulamak",question,questioned,questioned
-queue,"sýra, sýraya girmek",queue,queued,queued
+"question,""soru, sorgulamak"",question,questioned,questioned"
+"queue,""sýra, sýraya girmek"",queue,queued,queued"
 quick,hýzlý,-,-,-
 quickly,hýzlýca,-,-,-
 quiet,sessiz,-,-,-
 quietly,sessizce,-,-,-
-quit,"býrakmak, terk etmek",quit,quit,quit
+"quit,""býrakmak, terk etmek"",quit,quit,quit"
 quite,oldukça,-,-,-
 quotation,alýntý,-,-,-
 quote,alýntý yapmak,quote,quoted,quoted
-race (competition),"yarýþ, yarýþmak",race,raced,raced
+"race (competition),""yarýþ, yarýþmak"",race,raced,raced"
 race (people),ýrk,-,-,-
 racing,yarýþ (spor),-,-,-
 radio,radyo,-,-,-
 railway,demiryolu,-,-,-
-rain,"yaðmur, yaðmak",rain,rained,rained
-raise,"kaldýrmak, artýrmak",raise,raised,raised
-range,"aralýk, çeþit",range,ranged,ranged
-rank,"rütbe, sýralamak",rank,ranked,ranked
+"rain,""yaðmur, yaðmak"",rain,rained,rained"
+"raise,""kaldýrmak, artýrmak"",raise,raised,raised"
+"range,""aralýk, çeþit"",range,ranged,ranged"
+"rank,""rütbe, sýralamak"",rank,ranked,ranked"
 rapid,hýzlý,-,-,-
 rapidly,hýzlý bir þekilde,-,-,-
 rare,nadir,-,-,-
 rarely,nadiren,-,-,-
-rate,"oran, deðerlendirmek",rate,rated,rated
-rather,"oldukça, tercihen",-,-,-
-raw,"çið, ham",-,-,-
+"rate,""oran, deðerlendirmek"",rate,rated,rated"
+"rather,""oldukça, tercihen"",-,-,-"
+"raw,""çið, ham"",-,-,-"
 reach,ulaþmak,reach,reached,reached
 react,tepki vermek,react,reacted,reacted
 reaction,tepki,-,-,-
@@ -2139,87 +2139,87 @@ ready,hazýr,-,-,-
 real,gerçek,-,-,-
 realistic,gerçekçi,-,-,-
 reality,gerçeklik,-,-,-
-realize,"fark etmek, gerçekleþtirmek",realize,realized,realized
+"realize,""fark etmek, gerçekleþtirmek"",realize,realized,realized"
 really,gerçekten,-,-,-
-reason,"neden, sebep",-,-,-
+"reason,""neden, sebep"",-,-,-"
 reasonable,makul,-,-,-
 recall,hatýrlamak,recall,recalled,recalled
-receipt,"fiþ, makbuz",-,-,-
+"receipt,""fiþ, makbuz"",-,-,-"
 receive,almak (teslim),receive,received,received
-recent,"son, yakýn zamanlý",-,-,-
+"recent,""son, yakýn zamanlý"",-,-,-"
 recently,son zamanlarda,-,-,-
 reception,resepsiyon,-,-,-
 recipe,tarif (yemek),-,-,-
 recognize,tanýmak,recognize,recognized,recognized
 recommend,önermek,recommend,recommended,recommended
 recommendation,tavsiye,-,-,-
-record,"kayýt, kaydetmek",record,recorded,recorded
+"record,""kayýt, kaydetmek"",record,recorded,recorded"
 recording,kayýt (ses/görüntü),-,-,-
-recover,"iyileþmek, geri almak",recover,recovered,recovered
+"recover,""iyileþmek, geri almak"",recover,recovered,recovered"
 recycle,geri dönüþtürmek,recycle,recycled,recycled
 red,kýrmýzý,-,-,-
 reduce,azaltmak,reduce,reduced,reduced
 reduction,azalma,-,-,-
-refer,"atýfta bulunmak, baþvurmak",refer,referred,referred
+"refer,""atýfta bulunmak, baþvurmak"",refer,referred,referred"
 reference,referans,-,-,-
 reflect,yansýtmak,reflect,reflected,reflected
 refuse1,reddetmek,refuse,refused,refused
-regard,"kabul etmek, saygý",regard,regarded,regarded
+"regard,""kabul etmek, saygý"",regard,regarded,regarded"
 region,bölge,-,-,-
 regional,bölgesel,-,-,-
-register,"kayýt olmak, kayýt",register,registered,registered
+"register,""kayýt olmak, kayýt"",register,registered,registered"
 regret,piþman olmak,regret,regretted,regretted
 regular,düzenli,-,-,-
 regularly,düzenli olarak,-,-,-
-regulation,"düzenleme, yönetmelik",-,-,-
+"regulation,""düzenleme, yönetmelik"",-,-,-"
 reject,reddetmek,reject,rejected,rejected
 relate,iliþkilendirmek,relate,related,related
 related,iliþkili,-,-,-
 relation,iliþki,-,-,-
 relationship,iliþki,-,-,-
-relative,"akraba, göreceli",-,-,-
+"relative,""akraba, göreceli"",-,-,-"
 relatively,nispeten,-,-,-
 relax,rahatlamak,relax,relaxed,relaxed
 relaxed,rahat,-,-,-
 relaxing,rahatlatýcý,-,-,-
-release,"yayýnlamak, serbest býrakmak",release,released,released
-relevant,"ilgili, alakalý",-,-,-
+"release,""yayýnlamak, serbest býrakmak"",release,released,released"
+"relevant,""ilgili, alakalý"",-,-,-"
 reliable,güvenilir,-,-,-
 relief,rahatlama,-,-,-
 religion,din,-,-,-
 religious,dini,-,-,-
 rely,güvenmek,rely,relied,relied
 remain,kalmak,remain,remained,remained
-remark,"yorum, dile getirmek",remark,remarked,remarked
+"remark,""yorum, dile getirmek"",remark,remarked,remarked"
 remember,hatýrlamak,remember,remembered,remembered
 remind,hatýrlatmak,remind,reminded,reminded
 remote,uzak,-,-,-
-remove,"kaldýrmak, çýkarmak",remove,removed,removed
-rent,"kira, kiralamak",rent,rented,rented
+"remove,""kaldýrmak, çýkarmak"",remove,removed,removed"
+"rent,""kira, kiralamak"",rent,rented,rented"
 repair,onarmak,repair,repaired,repaired
 repeat,tekrarlamak,repeat,repeated,repeated
 repeated,tekrarlanan,-,-,-
-replace,"deðiþtirmek, yerine koymak",replace,replaced,replaced
-reply,"yanýtlamak, yanýt",reply,replied,replied
-report,"rapor, rapor etmek",report,reported,reported
+"replace,""deðiþtirmek, yerine koymak"",replace,replaced,replaced"
+"reply,""yanýtlamak, yanýt"",reply,replied,replied"
+"report,""rapor, rapor etmek"",report,reported,reported"
 reporter,muhabir,-,-,-
 represent,temsil etmek,represent,represented,represented
 representative,temsilci,-,-,-
 reputation,itibar,-,-,-
-request,"talep, talep etmek",request,requested,requested
+"request,""talep, talep etmek"",request,requested,requested"
 require,gerektirmek,require,required,required
 requirement,gereklilik,-,-,-
 rescue,kurtarmak,rescue,rescued,rescued
-research,"araþtýrma, araþtýrmak",research,researched,researched
+"research,""araþtýrma, araþtýrmak"",research,researched,researched"
 researcher,araþtýrmacý,-,-,-
 reservation,rezervasyon,-,-,-
-reserve,"ayýrmak, rezerv",reserve,reserved,reserved
+"reserve,""ayýrmak, rezerv"",reserve,reserved,reserved"
 resident,sakin,-,-,-
 resist,direnmek,resist,resisted,resisted
 resolve,çözmek,resolve,resolved,resolved
-resort,"tatil beldesi, baþvurmak",resort,resorted,resorted
+"resort,""tatil beldesi, baþvurmak"",resort,resorted,resorted"
 resource,kaynak,-,-,-
-respect,"saygý, saygý duymak",respect,respected,respected
+"respect,""saygý, saygý duymak"",respect,respected,respected"
 respond,yanýt vermek,respond,responded,responded
 response,yanýt,-,-,-
 responsibility,sorumluluk,-,-,-
@@ -2227,55 +2227,55 @@ responsible,sorumlu,-,-,-
 rest (remaining),geri kalan,-,-,-
 rest (sleep/relax),dinlenmek,rest,rested,rested
 restaurant,restoran,-,-,-
-result,"sonuç, sonuçlanmak",result,resulted,resulted
+"result,""sonuç, sonuçlanmak"",result,resulted,resulted"
 retain,elinde tutmak,retain,retained,retained
 retire,emekli olmak,retire,retired,retired
 retired,emekli,-,-,-
 return,geri dönmek,return,returned,returned
 reveal,ortaya çýkarmak,reveal,revealed,revealed
-review,"inceleme, incelemek",review,reviewed,reviewed
+"review,""inceleme, incelemek"",review,reviewed,reviewed"
 revise,gözden geçirmek,revise,revised,revised
 revolution,devrim,-,-,-
-reward,"ödül, ödüllendirmek",reward,rewarded,rewarded
+"reward,""ödül, ödüllendirmek"",reward,rewarded,rewarded"
 rhythm,ritim,-,-,-
 rice,pirinç,-,-,-
 rich,zengin,-,-,-
 rid,kurtulmak,rid,rid,rid
 ride,binmek (araç/hayvan),ride,rode,ridden
-right,"doðru, sað",-,-,-
+"right,""doðru, sað"",-,-,-"
 ring1,yüzük,-,-,-
-ring2,"çalmak (zil), aramak",ring,rang,rung
+"ring2,""çalmak (zil), aramak"",ring,rang,rung"
 rise,yükselmek,rise,rose,risen
-risk,"risk, riske atmak",risk,risked,risked
+"risk,""risk, riske atmak"",risk,risked,risked"
 river,nehir,-,-,-
 road,yol,-,-,-
 robot,robot,-,-,-
 rock (music),rock müzik,-,-,-
 rock (stone),kaya,-,-,-
 role,rol,-,-,-
-roll,"yuvarlanmak, rulo",roll,rolled,rolled
+"roll,""yuvarlanmak, rulo"",roll,rolled,rolled"
 romantic,romantik,-,-,-
 roof,çatý,-,-,-
 room,oda,-,-,-
 root,kök,-,-,-
 rope,halat,-,-,-
-rough,"kaba, pürüzlü",-,-,-
+"rough,""kaba, pürüzlü"",-,-,-"
 round,yuvarlak,-,-,-
-route,"güzergah, rota",-,-,-
+"route,""güzergah, rota"",-,-,-"
 routine,rutin,-,-,-
 row1,sýra,-,-,-
 royal,kraliyet ile ilgili,-,-,-
-rub,"ovmak, sürtmek",rub,rubbed,rubbed
-rubber,"lastik, kauçuk",-,-,-
+"rub,""ovmak, sürtmek"",rub,rubbed,rubbed"
+"rubber,""lastik, kauçuk"",-,-,-"
 rubbish,çöp,-,-,-
 rude,kaba (davranýþ),-,-,-
 rugby,ragbi,-,-,-
-rule,"kural, yönetmek",rule,ruled,ruled
+"rule,""kural, yönetmek"",rule,ruled,ruled"
 run,koþmak,run,ran,run
 runner,koþucu,-,-,-
 running,koþu,-,-,-
 rural,kýrsal,-,-,-
-rush,"acele etmek, koþuþturma",rush,rushed,rushed
+"rush,""acele etmek, koþuþturma"",rush,rushed,rushed"
 sad,üzgün,-,-,-
 sadly,üzücü bir þekilde,-,-,-
 safe,güvenli,-,-,-
@@ -2288,7 +2288,7 @@ salary,maaþ,-,-,-
 sale,satýþ,-,-,-
 salt,tuz,-,-,-
 same,ayný,-,-,-
-sample,"örnek, örneklemek",sample,sampled,sampled
+"sample,""örnek, örneklemek"",sample,sampled,sampled"
 sand,kum,-,-,-
 sandwich,sandviç,-,-,-
 satellite,uydu,-,-,-
@@ -2296,56 +2296,56 @@ satisfied,memnun,-,-,-
 satisfy,tatmin etmek,satisfy,satisfied,satisfied
 Saturday,Cumartesi,-,-,-
 sauce,sos,-,-,-
-save,"kurtarmak, biriktirmek",save,saved,saved
+"save,""kurtarmak, biriktirmek"",save,saved,saved"
 saving,tasarruf,-,-,-
 say,söylemek,say,said,said
-scale,"ölçek, terazi",scale,scaled,scaled
+"scale,""ölçek, terazi"",scale,scaled,scaled"
 scan,taramak,scan,scanned,scanned
 scared,korkmuþ,-,-,-
 scary,korkutucu,-,-,-
 scene,sahne,-,-,-
-schedule,"program, planlamak",schedule,scheduled,scheduled
-scheme,"plan, düzen",-,-,-
+"schedule,""program, planlamak"",schedule,scheduled,scheduled"
+"scheme,""plan, düzen"",-,-,-"
 school,okul,-,-,-
 science,bilim,-,-,-
 scientific,bilimsel,-,-,-
 scientist,bilim insaný,-,-,-
-score,"skor, gol atmak",score,scored,scored
+"score,""skor, gol atmak"",score,scored,scored"
 scream,çýðlýk atmak,scream,screamed,screamed
 screen,ekran,screen,screened,screened
 script,senaryo,-,-,-
 sculpture,heykel,-,-,-
 sea,deniz,-,-,-
 search,aramak,search,searched,searched
-season,"mevsim, sezon",-,-,-
-seat,"koltuk, oturtmak",seat,seated,seated
+"season,""mevsim, sezon"",-,-,-"
+"seat,""koltuk, oturtmak"",seat,seated,seated"
 second1 (order),ikinci,-,-,-
 second1 (time),saniye,-,-,-
-secondary,"ikincil, ortaokul",-,-,-
+"secondary,""ikincil, ortaokul"",-,-,-"
 secondly,ikinci olarak,-,-,-
-secret,"sýr, gizli",-,-,-
+"secret,""sýr, gizli"",-,-,-"
 secretary,sekreter,-,-,-
-section,"bölüm, kýsým",-,-,-
+"section,""bölüm, kýsým"",-,-,-"
 sector,sektör,-,-,-
-secure,"güvenli, güvence altýna almak",secure,secured,secured
+"secure,""güvenli, güvence altýna almak"",secure,secured,secured"
 security,güvenlik,-,-,-
 see,görmek,see,saw,seen
 seed,tohum,-,-,-
-seek,"aramak, çabalamak",seek,sought,sought
+"seek,""aramak, çabalamak"",seek,sought,sought"
 seem,gibi görünmek,seem,seemed,seemed
 select,seçmek,select,selected,selected
-selection,"seçki, seçim",-,-,-
-self,"kendilik, benlik",-,-,-
+"selection,""seçki, seçim"",-,-,-"
+"self,""kendilik, benlik"",-,-,-"
 sell,satmak,sell,sold,sold
 send,göndermek,send,sent,sent
 senior,kýdemli,-,-,-
-sense,"duyu, anlam",sense,sensed,sensed
+"sense,""duyu, anlam"",sense,sensed,sensed"
 sensible,mantýklý,-,-,-
 sensitive,hassas,-,-,-
-sentence,"cümle, hüküm giydirmek",sentence,sentenced,sentenced
-separate,"ayrý, ayýrmak",separate,separated,separated
+"sentence,""cümle, hüküm giydirmek"",sentence,sentenced,sentenced"
+"separate,""ayrý, ayýrmak"",separate,separated,separated"
 September,Eylül,-,-,-
-sequence,"dizi, sýralama",-,-,-
+"sequence,""dizi, sýralama"",-,-,-"
 series,seri,-,-,-
 serious,ciddi,-,-,-
 seriously,ciddi olarak,-,-,-
@@ -2353,10 +2353,10 @@ servant,hizmetçi,-,-,-
 serve,hizmet etmek,serve,served,served
 service,hizmet,-,-,-
 session,oturum,-,-,-
-set (group),"takým, set",-,-,-
-set (put),"koymak, ayarlamak",set,set,set
-setting,"ortam, ayar",-,-,-
-settle,"yerleþmek, çözmek",settle,settled,settled
+"set (group),""takým, set"",-,-,-"
+"set (put),""koymak, ayarlamak"",set,set,set"
+"setting,""ortam, ayar"",-,-,-"
+"settle,""yerleþmek, çözmek"",settle,settled,settled"
 seven,yedi,-,-,-
 seventeen,on yedi,-,-,-
 seventy,yetmiþ,-,-,-
@@ -2369,29 +2369,29 @@ shadow,gölge (nesne),-,-,-
 shake,sallamak,shake,shook,shaken
 shallow,sýð,-,-,-
 shame,utanç,-,-,-
-shape,"þekil, þekillendirmek",shape,shaped,shaped
-share,"paylaþmak, hisse",share,shared,shared
+"shape,""þekil, þekillendirmek"",shape,shaped,shaped"
+"share,""paylaþmak, hisse"",share,shared,shared"
 sharp,keskin,-,-,-
 she,o (kadýn),-,-,-
 sheep,koyun,-,-,-
-sheet,"çarþaf, kaðýt yapraðý",-,-,-
+"sheet,""çarþaf, kaðýt yapraðý"",-,-,-"
 shelf,raf,-,-,-
 shell,kabuk,-,-,-
-shelter,"barýnak, sýðýnmak",shelter,sheltered,sheltered
-shift,"vardiya, deðiþtirmek",shift,shifted,shifted
+"shelter,""barýnak, sýðýnmak"",shelter,sheltered,sheltered"
+"shift,""vardiya, deðiþtirmek"",shift,shifted,shifted"
 shine,parlamak,shine,shone,shone
 shiny,parlak,-,-,-
 ship,gemi,ship,shipped,shipped
 shirt,gömlek,-,-,-
-shock,"þok, þok etmek",shock,shocked,shocked
+"shock,""þok, þok etmek"",shock,shocked,shocked"
 shocked,þok olmuþ,-,-,-
 shoe,ayakkabý,-,-,-
-shoot,"ateþ etmek, çekim yapmak",shoot,shot,shot
-shooting,"ateþ etme, çekim",-,-,-
-shop,"dükkan, alýþveriþ yapmak",shop,shopped,shopped
+"shoot,""ateþ etmek, çekim yapmak"",shoot,shot,shot"
+"shooting,""ateþ etme, çekim"",-,-,-"
+"shop,""dükkan, alýþveriþ yapmak"",shop,shopped,shopped"
 shopping,alýþveriþ,-,-,-
 short,kýsa,-,-,-
-shot,"atýþ, çekim",-,-,-
+"shot,""atýþ, çekim"",-,-,-"
 should,-meli,-,-,-
 shoulder,omuz,-,-,-
 shout,baðýrmak,shout,shouted,shouted
@@ -2400,10 +2400,10 @@ shower,duþ,-,-,-
 shut,kapatmak,shut,shut,shut
 shy,utangaç,-,-,-
 sick,hasta,-,-,-
-side,"taraf, yan",-,-,-
-sight,"görüþ, manzara",-,-,-
-sign,"iþaret, imzalamak",sign,signed,signed
-signal,"sinyal, iþaret vermek",signal,signalled,signalled
+"side,""taraf, yan"",-,-,-"
+"sight,""görüþ, manzara"",-,-,-"
+"sign,""iþaret, imzalamak"",sign,signed,signed"
+"signal,""sinyal, iþaret vermek"",signal,signalled,signalled"
 significant,önemli,-,-,-
 significantly,önemli ölçüde,-,-,-
 silence,sessizlik,-,-,-
@@ -2421,12 +2421,12 @@ sincere,samimi,-,-,-
 sing,þarký söylemek,sing,sang,sung
 singer,þarkýcý,-,-,-
 singing,þarký söyleme,-,-,-
-single,"tek, bekar",-,-,-
-sink,"batmak, lavabo",sink,sank,sunk
-sir,"efendim, bay",-,-,-
+"single,""tek, bekar"",-,-,-"
+"sink,""batmak, lavabo"",sink,sank,sunk"
+"sir,""efendim, bay"",-,-,-"
 sister,kýz kardeþ,-,-,-
 sit,oturmak,sit,sat,sat
-site,"alan, site",-,-,-
+"site,""alan, site"",-,-,-"
 situation,durum,-,-,-
 six,altý,-,-,-
 sixteen,on altý,-,-,-
@@ -2435,30 +2435,30 @@ size,boyut,-,-,-
 ski,kayak yapmak,ski,skied,skied
 skiing,kayak (spor),-,-,-
 skill,beceri,-,-,-
-skin,"deri, cilt",-,-,-
+"skin,""deri, cilt"",-,-,-"
 skirt,etek,-,-,-
 sky,gökyüzü,-,-,-
 slave,köle,-,-,-
 sleep,uyumak,sleep,slept,slept
-slice,"dilim, dilimlemek",slice,sliced,sliced
-slide,"kaymak, kaydýrak",slide,slid,slid
-slight,"hafif, önemsiz",-,-,-
+"slice,""dilim, dilimlemek"",slice,sliced,sliced"
+"slide,""kaymak, kaydýrak"",slide,slid,slid"
+"slight,""hafif, önemsiz"",-,-,-"
 slightly,hafifçe,-,-,-
 slip,kaymak (ayak),slip,slipped,slipped
-slope,"eðim, yamaç",slope,sloped,sloped
-slow,"yavaþ, yavaþlatmak",slow,slowed,slowed
+"slope,""eðim, yamaç"",slope,sloped,sloped"
+"slow,""yavaþ, yavaþlatmak"",slow,slowed,slowed"
 slowly,yavaþça,-,-,-
 small,küçük,-,-,-
-smart,"akýllý, þýk",-,-,-
+"smart,""akýllý, þýk"",-,-,-"
 smartphone,akýllý telefon,-,-,-
-smell,"koku, koklamak",smell,smelled/smelt,smelled/smelt
+"smell,""koku, koklamak"",smell,smelled/smelt,smelled/smelt"
 smile,gülümsemek,smile,smiled,smiled
-smoke,"duman, sigara içmek",smoke,smoked,smoked
+"smoke,""duman, sigara içmek"",smoke,smoked,smoked"
 smoking,sigara içme,-,-,-
 smooth,pürüzsüz,-,-,-
 snake,yýlan,-,-,-
-snow,"kar, kar yaðmak",snow,snowed,snowed
-so,"bu yüzden, çok",-,-,-
+"snow,""kar, kar yaðmak"",snow,snowed,snowed"
+"so,""bu yüzden, çok"",-,-,-"
 soap,sabun,-,-,-
 soccer,futbol,-,-,-
 social,sosyal,-,-,-
@@ -2469,7 +2469,7 @@ software,yazýlým,-,-,-
 soil,toprak,-,-,-
 solar,güneþ ile ilgili,-,-,-
 soldier,asker,-,-,-
-solid,"katý, saðlam",-,-,-
+"solid,""katý, saðlam"",-,-,-"
 solution,çözüm,-,-,-
 solve,çözmek,solve,solved,solved
 some,bazý,-,-,-
@@ -2482,113 +2482,113 @@ somewhere,bir yerde,-,-,-
 son,erkek evlat,-,-,-
 song,þarký,-,-,-
 soon,yakýnda,-,-,-
-sorry,"üzgün, özür dilerim",-,-,-
-sort,"tür, sýnýflandýrmak",sort,sorted,sorted
+"sorry,""üzgün, özür dilerim"",-,-,-"
+"sort,""tür, sýnýflandýrmak"",sort,sorted,sorted"
 soul,ruh,-,-,-
-sound,"ses, kulaða gelmek",sound,sounded,sounded
+"sound,""ses, kulaða gelmek"",sound,sounded,sounded"
 soup,çorba,-,-,-
 source,kaynak,-,-,-
 south,güney,-,-,-
 southern,güney (sýfat),-,-,-
-space,"uzay, boþluk",-,-,-
+"space,""uzay, boþluk"",-,-,-"
 speak,konuþmak,speak,spoke,spoken
 speaker,konuþmacý,-,-,-
 special,özel,-,-,-
 specialist,uzman,-,-,-
 species,tür (biyolojik),-,-,-
-specific,"belirli, özgül",-,-,-
-specifically,"özellikle, açýkça",-,-,-
+"specific,""belirli, özgül"",-,-,-"
+"specifically,""özellikle, açýkça"",-,-,-"
 speech,konuþma (nutuk),-,-,-
-speed,"hýz, hýzlanmak",speed,sped,sped
+"speed,""hýz, hýzlanmak"",speed,sped,sped"
 spell,hecelemek,spell,spelled/spelt,spelled/spelt
-spelling,"heceleme, yazým",-,-,-
+"spelling,""heceleme, yazým"",-,-,-"
 spend,harcamak,spend,spent,spent
 spending,harcama,-,-,-
 spicy,baharatlý,-,-,-
 spider,örümcek,-,-,-
-spirit,"ruh, tin",-,-,-
+"spirit,""ruh, tin"",-,-,-"
 spiritual,manevi,-,-,-
-split,"bölmek, ayýrmak",split,split,split
+"split,""bölmek, ayýrmak"",split,split,split"
 spoken,sözlü,-,-,-
-sponsor,"sponsor, sponsor olmak",sponsor,sponsored,sponsored
+"sponsor,""sponsor, sponsor olmak"",sponsor,sponsored,sponsored"
 spoon,kaþýk,-,-,-
 sport,spor,-,-,-
-spot,"nokta, leke, fark etmek",spot,spotted,spotted
+"spot,""nokta, leke, fark etmek"",spot,spotted,spotted"
 spread,yaymak,spread,spread,spread
-spring,"bahar, yay, fýrlamak",spring,sprang,sprung
-square,"kare, meydan",-,-,-
-stable,"kararlý, ahýr",-,-,-
+"spring,""bahar, yay, fýrlamak"",spring,sprang,sprung"
+"square,""kare, meydan"",-,-,-"
+"stable,""kararlý, ahýr"",-,-,-"
 stadium,stadyum,-,-,-
 staff,personel,-,-,-
-stage,"sahne, aþama",stage,staged,staged
+"stage,""sahne, aþama"",stage,staged,staged"
 stair,merdiven basamaðý,-,-,-
-stamp,"pul, damga",-,-,-
+"stamp,""pul, damga"",-,-,-"
 stand,ayakta durmak,stand,stood,stood
 standard,standart,-,-,-
-star,"yýldýz, baþrol oynamak",star,starred,starred
+"star,""yýldýz, baþrol oynamak"",star,starred,starred"
 stare,dik dik bakmak,stare,stared,stared
 start,baþlamak,start,started,started
-state,"eyalet, devlet, belirtmek",state,stated,stated
-statement,"ifade, açýklama",-,-,-
+"state,""eyalet, devlet, belirtmek"",state,stated,stated"
+"statement,""ifade, açýklama"",-,-,-"
 station,istasyon,-,-,-
 statistic,istatistik,-,-,-
 statue,heykel,-,-,-
-status,"statü, durum",-,-,-
+"status,""statü, durum"",-,-,-"
 stay,kalmak,stay,stayed,stayed
-steady,"sabit, istikrarlý",-,-,-
+"steady,""sabit, istikrarlý"",-,-,-"
 steal,çalmak (hýrsýzlýk),steal,stole,stolen
 steel,çelik,-,-,-
 steep,dik (eðim),-,-,-
-step,"adým, adým atmak",step,stepped,stepped
-stick (attach),"yapýþtýrmak, sokmak",stick,stuck,stuck
+"step,""adým, adým atmak"",step,stepped,stepped"
+"stick (attach),""yapýþtýrmak, sokmak"",stick,stuck,stuck"
 stick (wood),deðnek,-,-,-
 sticky,yapýþkan,-,-,-
-stiff,"katý, sert (kas)",-,-,-
-still,"hala, durgun",-,-,-
-stock,"stok, hisse senedi",stock,stocked,stocked
+"stiff,""katý, sert (kas)"",-,-,-"
+"still,""hala, durgun"",-,-,-"
+"stock,""stok, hisse senedi"",stock,stocked,stocked"
 stomach,mide,-,-,-
 stone,taþ,-,-,-
-stop,"durmak, durdurmak",stop,stopped,stopped
-store,"maðaza, depolamak",store,stored,stored
+"stop,""durmak, durdurmak"",stop,stopped,stopped"
+"store,""maðaza, depolamak"",store,stored,stored"
 storm,fýrtýna,-,-,-
 story,hikaye,-,-,-
 straight,düz,-,-,-
 strange,garip,-,-,-
 stranger,yabancý (kiþi),-,-,-
 strategy,strateji,-,-,-
-stream,"dere, akýþ",-,-,-
+"stream,""dere, akýþ"",-,-,-"
 street,sokak,-,-,-
-strength,"güç, kuvvet",-,-,-
-stress,"stres, vurgulamak",stress,stressed,stressed
-stretch,"germek, uzanmak",stretch,stretched,stretched
-strict,"katý, sýký",-,-,-
-strike,"grev, vurmak",strike,struck,struck
-string,"ip, sicim",-,-,-
+"strength,""güç, kuvvet"",-,-,-"
+"stress,""stres, vurgulamak"",stress,stressed,stressed"
+"stretch,""germek, uzanmak"",stretch,stretched,stretched"
+"strict,""katý, sýký"",-,-,-"
+"strike,""grev, vurmak"",strike,struck,struck"
+"string,""ip, sicim"",-,-,-"
 strong,güçlü,-,-,-
 strongly,güçlü bir þekilde,-,-,-
 structure,yapý,structure,structured,structured
 struggle,mücadele etmek,struggle,struggled,struggled
 student,öðrenci,-,-,-
 studio,stüdyo,-,-,-
-study,"çalýþmak, ders çalýþmak",study,studied,studied
-stuff,"eþya, þeyler",stuff,stuffed,stuffed
+"study,""çalýþmak, ders çalýþmak"",study,studied,studied"
+"stuff,""eþya, þeyler"",stuff,stuffed,stuffed"
 stupid,aptal,-,-,-
 style,stil,-,-,-
-subject,"konu, ders",-,-,-
-submit,"sunmak, teslim etmek",submit,submitted,submitted
+"subject,""konu, ders"",-,-,-"
+"submit,""sunmak, teslim etmek"",submit,submitted,submitted"
 substance,madde,-,-,-
 succeed,baþarmak,succeed,succeeded,succeeded
 success,baþarý,-,-,-
 successful,baþarýlý,-,-,-
 successfully,baþarýlý bir þekilde,-,-,-
-such,"böyle, öyle",-,-,-
+"such,""böyle, öyle"",-,-,-"
 sudden,ani,-,-,-
 suddenly,aniden,-,-,-
 suffer,acý çekmek,suffer,suffered,suffered
 sugar,þeker,-,-,-
 suggest,önermek,suggest,suggested,suggested
 suggestion,öneri,-,-,-
-suit,"takým elbise, uymak",suit,suited,suited
+"suit,""takým elbise, uymak"",suit,suited,suited"
 suitable,uygun,-,-,-
 sum,toplam,sum,summed,summed
 summarize,özetlemek,summarize,summarized,summarized
@@ -2597,49 +2597,49 @@ summer,yaz,-,-,-
 sun,güneþ,-,-,-
 Sunday,Pazar,-,-,-
 supermarket,süpermarket,-,-,-
-supply,"tedarik, tedarik etmek",supply,supplied,supplied
-support,"destek, desteklemek",support,supported,supported
-supporter,"destekçi, taraftar",-,-,-
-suppose,"varsaymak, sanmak",suppose,supposed,supposed
+"supply,""tedarik, tedarik etmek"",supply,supplied,supplied"
+"support,""destek, desteklemek"",support,supported,supported"
+"supporter,""destekçi, taraftar"",-,-,-"
+"suppose,""varsaymak, sanmak"",suppose,supposed,supposed"
 sure,emin,-,-,-
 surely,kesinlikle,-,-,-
 surface,yüzey,-,-,-
 surgery,ameliyat,-,-,-
-surprise,"sürpriz, þaþýrtmak",surprise,surprised,surprised
+"surprise,""sürpriz, þaþýrtmak"",surprise,surprised,surprised"
 surprised,þaþýrmýþ,-,-,-
 surprising,þaþýrtýcý,-,-,-
 surround,çevrelemek,surround,surrounded,surrounded
 surrounding,çevreleyen,-,-,-
-survey,"anket, incelemek",survey,surveyed,surveyed
+"survey,""anket, incelemek"",survey,surveyed,surveyed"
 survive,hayatta kalmak,survive,survived,survived
-suspect,"þüphelenmek, þüpheli",suspect,suspected,suspected
-swear,"yemin etmek, küfretmek",swear,swore,sworn
+"suspect,""þüphelenmek, þüpheli"",suspect,suspected,suspected"
+"swear,""yemin etmek, küfretmek"",swear,swore,sworn"
 sweater,kazak,-,-,-
 sweep,süpürmek,sweep,swept,swept
 sweet,tatlý,-,-,-
 swim,yüzmek,swim,swam,swum
 swimming,yüzme,-,-,-
-switch,"anahtar (elektrik), deðiþtirmek",switch,switched,switched
+"switch,""anahtar (elektrik), deðiþtirmek"",switch,switched,switched"
 symbol,sembol,-,-,-
-sympathy,"sempati, üzüntü paylaþma",-,-,-
+"sympathy,""sempati, üzüntü paylaþma"",-,-,-"
 symptom,belirti,-,-,-
 system,sistem,-,-,-
 T-shirt,tiþört,-,-,-
 table,masa,-,-,-
-tablet,"tablet, hap",-,-,-
+"tablet,""tablet, hap"",-,-,-"
 tail,kuyruk,-,-,-
 take,almak,take,took,taken
-tale,"masal, hikaye",-,-,-
+"tale,""masal, hikaye"",-,-,-"
 talent,yetenek,-,-,-
 talented,yetenekli,-,-,-
 talk,konuþmak,talk,talked,talked
 tall,uzun boylu,-,-,-
-tank,"tank, depo",-,-,-
-tape,"bant, kayýt yapmak",tape,taped,taped
-target,"hedef, hedeflemek",target,targeted,targeted
+"tank,""tank, depo"",-,-,-"
+"tape,""bant, kayýt yapmak"",tape,taped,taped"
+"target,""hedef, hedeflemek"",target,targeted,targeted"
 task,görev,-,-,-
-taste,"tat, tatmak",taste,tasted,tasted
-tax,"vergi, vergilendirmek",tax,taxed,taxed
+"taste,""tat, tatmak"",taste,tasted,tasted"
+"tax,""vergi, vergilendirmek"",tax,taxed,taxed"
 taxi,taksi,-,-,-
 tea,çay,-,-,-
 teach,öðretmek,teach,taught,taught
@@ -2652,24 +2652,24 @@ technical,teknik,-,-,-
 technique,teknik (yöntem),-,-,-
 technology,teknoloji,-,-,-
 teenage,genç (ergen),-,-,-
-teenager,"genç, ergen",-,-,-
-telephone,"telefon, telefon etmek",telephone,telephoned,telephoned
+"teenager,""genç, ergen"",-,-,-"
+"telephone,""telefon, telefon etmek"",telephone,telephoned,telephoned"
 television,televizyon,-,-,-
-tell,"söylemek, anlatmak",tell,told,told
+"tell,""söylemek, anlatmak"",tell,told,told"
 temperature,sýcaklýk,-,-,-
 temporary,geçici,-,-,-
 ten,on,-,-,-
 tend,eðiliminde olmak,tend,tended,tended
 tennis,tenis,-,-,-
 tent,çadýr,-,-,-
-term,"dönem, terim",term,termed,termed
-terrible,"korkunç, berbat",-,-,-
-test,"test, sýnamak",test,tested,tested
-text,"metin, mesaj atmak",text,texted,texted
+"term,""dönem, terim"",term,termed,termed"
+"terrible,""korkunç, berbat"",-,-,-"
+"test,""test, sýnamak"",test,tested,tested"
+"text,""metin, mesaj atmak"",text,texted,texted"
 than,-den,-,-,-
 thank,teþekkür etmek,thank,thanked,thanked
 thanks,teþekkürler,-,-,-
-that,"o, þu",-,-,-
+"that,""o, þu"",-,-,-"
 the,belirli taným edatý,-,-,-
 theatre,tiyatro,-,-,-
 their,onlarýn,-,-,-
@@ -2677,7 +2677,7 @@ theirs,onlarýnki,-,-,-
 them,onlarý,-,-,-
 theme,tema,-,-,-
 themselves,kendileri,-,-,-
-then,"sonra, o zaman",-,-,-
+"then,""sonra, o zaman"",-,-,-"
 theory,teori,-,-,-
 therapy,terapi,-,-,-
 there,orada,-,-,-
@@ -2685,7 +2685,7 @@ therefore,bu nedenle,-,-,-
 they,onlar,-,-,-
 thick,kalýn,-,-,-
 thief,hýrsýz,-,-,-
-thin,"ince, zayýf",-,-,-
+"thin,""ince, zayýf"",-,-,-"
 thing,þey,-,-,-
 think,düþünmek,think,thought,thought
 thinking,düþünme,-,-,-
@@ -2694,30 +2694,30 @@ thirsty,susamýþ,-,-,-
 thirteen,on üç,-,-,-
 thirty,otuz,-,-,-
 this,bu,-,-,-
-though,"-e raðmen, ama",-,-,-
+"though,""-e raðmen, ama"",-,-,-"
 thought,düþünce,-,-,-
 thousand,bin,-,-,-
 threat,tehdit,-,-,-
 threaten,tehdit etmek,threaten,threatened,threatened
 three,üç,-,-,-
 throat,boðaz,-,-,-
-through,"-den geçerek, boyunca",-,-,-
-throughout,"boyunca, her yerinde",-,-,-
+"through,""-den geçerek, boyunca"",-,-,-"
+"throughout,""boyunca, her yerinde"",-,-,-"
 throw,atmak,throw,threw,thrown
 Thursday,Perþembe,-,-,-
 thus,böylece,-,-,-
 ticket,bilet,-,-,-
-tidy,"düzenli, düzenlemek",tidy,tidied,tidied
-tie,"baðlamak, kravat",tie,tied,tied
-tight,"sýký, dar",-,-,-
+"tidy,""düzenli, düzenlemek"",tidy,tidied,tidied"
+"tie,""baðlamak, kravat"",tie,tied,tied"
+"tight,""sýký, dar"",-,-,-"
 till,-e kadar,-,-,-
-time,"zaman, zamanlamak",time,timed,timed
+"time,""zaman, zamanlamak"",time,timed,timed"
 tin,teneke,-,-,-
 tiny,minik,-,-,-
-tip,"bahþiþ, uç, ipucu",tip,tipped,tipped
+"tip,""bahþiþ, uç, ipucu"",tip,tipped,tipped"
 tired,yorgun,-,-,-
-title,"baþlýk, unvan",title,titled,titled
-to,"-e, -a",-,-,-
+"title,""baþlýk, unvan"",title,titled,titled"
+"to,""-e, -a"",-,-,-"
 today,bugün,-,-,-
 toe,ayak parmaðý,-,-,-
 together,birlikte,-,-,-
@@ -2727,67 +2727,67 @@ tomorrow,yarýn,-,-,-
 tone,ton (ses/renk),-,-,-
 tongue,dil (organ),-,-,-
 tonight,bu gece,-,-,-
-too,"de, da, çok fazla",-,-,-
+"too,""de, da, çok fazla"",-,-,-"
 tool,alet,-,-,-
 tooth,diþ,-,-,-
-top,"üst, tepe",-,-,-
+"top,""üst, tepe"",-,-,-"
 topic,konu,-,-,-
 total,toplam,-,-,-
 totally,tamamen,-,-,-
 touch,dokunmak,touch,touched,touched
-tough,"zorlu, sert",-,-,-
-tour,"tur, gezi",tour,toured,toured
+"tough,""zorlu, sert"",-,-,-"
+"tour,""tur, gezi"",tour,toured,toured"
 tourism,turizm,-,-,-
 tourist,turist,-,-,-
 towards,-e doðru,-,-,-
 towel,havlu,-,-,-
 tower,kule,-,-,-
-town,"kasaba, þehir",-,-,-
+"town,""kasaba, þehir"",-,-,-"
 toy,oyuncak,-,-,-
-track,"iz, parça (müzik)",track,tracked,tracked
-trade,"ticaret, ticaret yapmak",trade,traded,traded
+"track,""iz, parça (müzik)"",track,tracked,tracked"
+"trade,""ticaret, ticaret yapmak"",trade,traded,traded"
 tradition,gelenek,-,-,-
 traditional,geleneksel,-,-,-
 traffic,trafik,-,-,-
-train,"tren, eðitmek",train,trained,trained
-trainer,"antrenör, eðitmen",-,-,-
-training,"eðitim, antrenman",-,-,-
-transfer,"transfer etmek, aktarmak",transfer,transferred,transferred
+"train,""tren, eðitmek"",train,trained,trained"
+"trainer,""antrenör, eðitmen"",-,-,-"
+"training,""eðitim, antrenman"",-,-,-"
+"transfer,""transfer etmek, aktarmak"",transfer,transferred,transferred"
 transform,dönüþtürmek,transform,transformed,transformed
 transition,geçiþ,-,-,-
 translate,çevirmek,translate,translated,translated
 translation,çeviri,-,-,-
-transport,"ulaþým, taþýmak",transport,transported,transported
+"transport,""ulaþým, taþýmak"",transport,transported,transported"
 travel,seyahat etmek,travel,travelled,travelled
 traveller,gezgin,-,-,-
-treat,"davranmak, tedavi etmek",treat,treated,treated
+"treat,""davranmak, tedavi etmek"",treat,treated,treated"
 treatment,tedavi,-,-,-
 tree,aðaç,-,-,-
-trend,"eðilim, trend",-,-,-
-trial,"deneme, dava",-,-,-
-trick,"numara, hile yapmak",trick,tricked,tricked
-trip,"gezi, seyahat",trip,tripped,tripped
+"trend,""eðilim, trend"",-,-,-"
+"trial,""deneme, dava"",-,-,-"
+"trick,""numara, hile yapmak"",trick,tricked,tricked"
+"trip,""gezi, seyahat"",trip,tripped,tripped"
 tropical,tropikal,-,-,-
-trouble,"sorun, dert",trouble,troubled,troubled
+"trouble,""sorun, dert"",trouble,troubled,troubled"
 trousers,pantolon,-,-,-
 truck,kamyon,-,-,-
-true,"doðru, gerçek",-,-,-
+"true,""doðru, gerçek"",-,-,-"
 truly,gerçekten,-,-,-
-trust,"güven, güvenmek",trust,trusted,trusted
+"trust,""güven, güvenmek"",trust,trusted,trusted"
 truth,gerçek,-,-,-
 try,denemek,try,tried,tried
 tube,tüp,-,-,-
 Tuesday,Salý,-,-,-
 tune,melodi,-,-,-
 tunnel,tünel,-,-,-
-turn,"dönmek, döndürmek",turn,turned,turned
+"turn,""dönmek, döndürmek"",turn,turned,turned"
 TV,televizyon,-,-,-
 twelve,on iki,-,-,-
 twenty,yirmi,-,-,-
 twice,iki kez,-,-,-
 twin,ikiz,-,-,-
 two,iki,-,-,-
-type,"tür, yazmak (klavye)",type,typed,typed
+"type,""tür, yazmak (klavye)"",type,typed,typed"
 typical,tipik,-,-,-
 typically,tipik olarak,-,-,-
 tyre,lastik (araba),-,-,-
@@ -2795,7 +2795,7 @@ ugly,çirkin,-,-,-
 ultimately,nihayetinde,-,-,-
 umbrella,þemsiye,-,-,-
 unable,yapamayan,-,-,-
-uncle,"amca, dayý",-,-,-
+"uncle,""amca, dayý"",-,-,-"
 uncomfortable,rahatsýz,-,-,-
 unconscious,bilinçsiz,-,-,-
 under,altýnda,-,-,-
@@ -2810,7 +2810,7 @@ unfair,adaletsiz,-,-,-
 unfortunately,maalesef,-,-,-
 unhappy,mutsuz,-,-,-
 uniform,üniforma,-,-,-
-union,"sendika, birlik",-,-,-
+"union,""sendika, birlik"",-,-,-"
 unique,eþsiz,-,-,-
 unit,birim,-,-,-
 united,birleþik,-,-,-
@@ -2825,27 +2825,27 @@ unpleasant,nahoþ,-,-,-
 until,-e kadar,-,-,-
 unusual,olaðandýþý,-,-,-
 up,yukarý,-,-,-
-update,"güncellemek, güncelleme",update,updated,updated
+"update,""güncellemek, güncelleme"",update,updated,updated"
 upon,üzerine,-,-,-
 upper,üst (kýsým),-,-,-
-upset,"üzgün, üzmek",upset,upset,upset
+"upset,""üzgün, üzmek"",upset,upset,upset"
 upstairs,üst kat,-,-,-
 upwards,yukarý doðru,-,-,-
 urban,kentsel,-,-,-
-urge,"ýsrar etmek, teþvik etmek",urge,urged,urged
-us,"bizi, bize",-,-,-
+"urge,""ýsrar etmek, teþvik etmek"",urge,urged,urged"
+"us,""bizi, bize"",-,-,-"
 use,kullanmak,use,used,used
 used to,eskiden ... -irdi,-,-,-
 used1,kullanýlmýþ,-,-,-
 used2,alýþkýn,-,-,-
 useful,faydalý,-,-,-
 user,kullanýcý,-,-,-
-usual,"olaðan, her zamanki",-,-,-
+"usual,""olaðan, her zamanki"",-,-,-"
 usually,genellikle,-,-,-
 vacation,tatil,-,-,-
 valley,vadi,-,-,-
 valuable,deðerli,-,-,-
-value,"deðer, deðer vermek",value,valued,valued
+"value,""deðer, deðer vermek"",value,valued,valued"
 van,kamyonet,-,-,-
 variety,çeþitlilik,-,-,-
 various,çeþitli,-,-,-
@@ -2860,23 +2860,23 @@ via,üzerinden,-,-,-
 victim,kurban,-,-,-
 victory,zafer,-,-,-
 video,video,-,-,-
-view,"görünüm, görüþ",view,viewed,viewed
+"view,""görünüm, görüþ"",view,viewed,viewed"
 viewer,izleyici,-,-,-
 village,köy,-,-,-
 violence,þiddet,-,-,-
 violent,þiddetli,-,-,-
 virtual,sanal,-,-,-
 virus,virüs,-,-,-
-vision,"görü, vizyon",-,-,-
+"vision,""görü, vizyon"",-,-,-"
 visit,ziyaret etmek,visit,visited,visited
 visitor,ziyaretçi,-,-,-
 visual,görsel,-,-,-
 vital,hayati,-,-,-
 vitamin,vitamin,-,-,-
 voice,ses,-,-,-
-volume,"hacim, ses düzeyi",-,-,-
-volunteer,"gönüllü, gönüllü olmak",volunteer,volunteered,volunteered
-vote,"oy vermek, oy",vote,voted,voted
+"volume,""hacim, ses düzeyi"",-,-,-"
+"volunteer,""gönüllü, gönüllü olmak"",volunteer,volunteered,volunteered"
+"vote,""oy vermek, oy"",vote,voted,voted"
 wage,ücret (maaþ),-,-,-
 wait,beklemek,wait,waited,waited
 waiter,garson,-,-,-
@@ -2885,16 +2885,16 @@ walk,yürümek,walk,walked,walked
 wall,duvar,-,-,-
 want,istemek,want,wanted,wanted
 war,savaþ,-,-,-
-warm,"ýlýk, sýcak",warm,warmed,warmed
+"warm,""ýlýk, sýcak"",warm,warmed,warmed"
 warn,uyarmak,warn,warned,warned
 warning,uyarý,-,-,-
 wash,yýkamak,wash,washed,washed
 washing,çamaþýr,-,-,-
-waste,"israf, israf etmek",waste,wasted,wasted
-watch,"izlemek, saat",watch,watched,watched
-water,"su, sulamak",water,watered,watered
-wave,"dalga, sallamak (el)",wave,waved,waved
-way,"yol, tarz",-,-,-
+"waste,""israf, israf etmek"",waste,wasted,wasted"
+"watch,""izlemek, saat"",watch,watched,watched"
+"water,""su, sulamak"",water,watered,watered"
+"wave,""dalga, sallamak (el)"",wave,waved,waved"
+"way,""yol, tarz"",-,-,-"
 we,biz,-,-,-
 weak,zayýf,-,-,-
 weakness,zayýflýk,-,-,-
@@ -2903,7 +2903,7 @@ wealthy,zengin,-,-,-
 weapon,silah,-,-,-
 wear,giymek,wear,wore,worn
 weather,hava durumu,-,-,-
-web,"að, örümcek aðý",-,-,-
+"web,""að, örümcek aðý"",-,-,-"
 website,web sitesi,-,-,-
 wedding,düðün,-,-,-
 Wednesday,Çarþamba,-,-,-
@@ -2911,7 +2911,7 @@ week,hafta,-,-,-
 weekend,hafta sonu,-,-,-
 weigh,tartmak,weigh,weighed,weighed
 weight,aðýrlýk,-,-,-
-welcome,"hoþ geldin, karþýlamak",welcome,welcomed,welcomed
+"welcome,""hoþ geldin, karþýlamak"",welcome,welcomed,welcomed"
 well,iyi,-,-,-
 west,batý,-,-,-
 western,batý (sýfat),-,-,-
@@ -2943,27 +2943,27 @@ will,-ecek (gelecek),-,-,-
 willing,istekli,-,-,-
 win,kazanmak,win,won,won
 wind1,rüzgar,-,-,-
-wind2,"kývrýlmak, sarmak",wind,wound,wound
+"wind2,""kývrýlmak, sarmak"",wind,wound,wound"
 window,pencere,-,-,-
 wine,þarap,-,-,-
 wing,kanat,-,-,-
 winner,kazanan,-,-,-
 winter,kýþ,-,-,-
-wire,"tel, kablo",-,-,-
+"wire,""tel, kablo"",-,-,-"
 wise,bilge,-,-,-
-wish,"dilemek, dilek",wish,wished,wished
+"wish,""dilemek, dilek"",wish,wished,wished"
 with,ile,-,-,-
 within,içinde,-,-,-
 without,olmadan,-,-,-
-witness,"tanýk, tanýk olmak",witness,witnessed,witnessed
+"witness,""tanýk, tanýk olmak"",witness,witnessed,witnessed"
 woman,kadýn,-,-,-
 wonder,merak etmek,wonder,wondered,wondered
 wonderful,harika,-,-,-
-wood,"odun, ahþap",-,-,-
+"wood,""odun, ahþap"",-,-,-"
 wooden,ahþap (sýfat),-,-,-
 wool,yün,-,-,-
 word,kelime,-,-,-
-work,"çalýþmak, iþ",work,worked,worked
+"work,""çalýþmak, iþ"",work,worked,worked"
 worker,iþçi,-,-,-
 working,çalýþan,-,-,-
 world,dünya,-,-,-
@@ -2974,25 +2974,25 @@ worse,daha kötü,-,-,-
 worst,en kötü,-,-,-
 worth,deðerinde,-,-,-
 would,-erdi,-,-,-
-wound,"yara, yaralamak",wound,wounded,wounded
+"wound,""yara, yaralamak"",wound,wounded,wounded"
 wow,vay canýna,-,-,-
-wrap,"sarmak, paketlemek",wrap,wrapped,wrapped
+"wrap,""sarmak, paketlemek"",wrap,wrapped,wrapped"
 write,yazmak,write,wrote,written
 writer,yazar,-,-,-
-writing,"yazý, yazma",-,-,-
+"writing,""yazý, yazma"",-,-,-"
 written,yazýlý,-,-,-
 wrong,yanlýþ,-,-,-
-yard,"avlu, yarda",-,-,-
+"yard,""avlu, yarda"",-,-,-"
 yeah,evet,-,-,-
 year,yýl,-,-,-
 yellow,sarý,-,-,-
 yes,evet,-,-,-
 yesterday,dün,-,-,-
 yet,henüz,-,-,-
-you,"sen, siz",-,-,-
+"you,""sen, siz"",-,-,-"
 young,genç,-,-,-
-your,"senin, sizin",-,-,-
-yours,"seninki, sizinki",-,-,-
+"your,""senin, sizin"",-,-,-"
+"yours,""seninki, sizinki"",-,-,-"
 yourself,kendin,-,-,-
 youth,gençlik,-,-,-
 zero,sýfýr,-,-,-
