@@ -26,7 +26,7 @@ const API_BASE_URL = 'http://localhost:7047/api';
 // ── SERVICE WORKER & OFFLINE YÖNETİMİ ──
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('./service-worker.js')
             .then(reg => console.log('Service Worker registered!', reg))
             .catch(err => console.error('Service Worker registration failed:', err));
     });
@@ -274,7 +274,7 @@ function parseAlmancaCsv(csvText) {
     for (let i = 1; i < lines.length; i++) {
         const line = lines[i].trim();
         if (!line) continue;
-        const parts = line.split(',');
+        const parts = line.split(';');
         if (parts.length < 4) continue;
         const wordItem = {
             id: parsed.length + 1,
@@ -296,7 +296,7 @@ function parseFransizcaCsv(csvText) {
     for (let i = 1; i < lines.length; i++) {
         const line = lines[i].trim();
         if (!line) continue;
-        const parts = line.split(',');
+        const parts = line.split(';');
         if (parts.length < 4) continue;
         const wordItem = {
             id: parsed.length + 1,
@@ -325,7 +325,7 @@ function parseIsvecceCsv(csvText) {
         for (let j = 0; j < line.length; j++) {
             if (line[j] === '"') {
                 inQuotes = !inQuotes;
-            } else if (line[j] === ',' && !inQuotes) {
+            } else if (line[j] === ';' && !inQuotes) {
                 parts.push(currentPart);
                 currentPart = "";
             } else {
