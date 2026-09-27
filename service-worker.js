@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lumina-cache-v5';
+const CACHE_NAME = 'lumina-cache-v7';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -6,7 +6,6 @@ const STATIC_ASSETS = [
   '/script.js',
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'
 ];
-
 
 // Install Event: Cache static assets
 self.addEventListener('install', (event) => {
@@ -36,25 +35,42 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Fetch Event: Cache First for static assets, Network for others
+// Fetch Event: Network First for HTML/JS/CSS, Cache First for others
 self.addEventListener('fetch', (event) => {
-  // Sadece GET isteklerini yönet
   if (event.request.method !== 'GET') return;
 
   const url = new URL(event.request.url);
 
-  // Kendi domain'imizden gelen veya font olan statik dosyalar için Cache First stratejisi
-  if (
-    STATIC_ASSETS.some(asset => url.pathname === asset || url.href === asset) ||
-    url.origin === location.origin
-  ) {
+  // HTML, JS ve CSS dosyaları için NETWORK FIRST — her zaman güncel kodu al
+  const isHtmlJsCss = /\.(html|js|css)(\?.*)?$/.test(url.pathname) || url.pathname === '/';
+  
+  if (url.origin === location.origin && isHtmlJsCss) {
+    // Network First: önce ağdan çek, başarısız olursa cache'e bak
+    event.respondWith(
+      fetch(event.request)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseToCache = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
+          }
+          return networkResponse;
+        })
+        .catch(() => {
+          // Ağ yoksa cache'den sun
+          return caches.match(event.request).then((cached) => {
+            if (cached) return cached;
+            return new Response('Offline - cached version not available', { status: 503 });
+          });
+        })
+    );
+  } else if (url.origin === location.origin) {
+    // Diğer kaynaklar için Cache First
     event.respondWith(
       caches.match(event.request).then((cachedResponse) => {
-        if (cachedResponse) {
-          return cachedResponse;
-        }
+        if (cachedResponse) return cachedResponse;
         return fetch(event.request).then((networkResponse) => {
-          // Dinamik önbellekleme (opsiyonel) - Sadece başarılı olanları ekle
           if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
             const responseToCache = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
@@ -63,8 +79,7 @@ self.addEventListener('fetch', (event) => {
           }
           return networkResponse;
         }).catch(() => {
-          // Hem cache hem network yoksa (örneğin offline iken API çağrısı)
-          return new Response(JSON.stringify({ error: 'Offline', message: 'Şu an çevrimdışısınız. Lütfen internet bağlantınızı kontrol edin.' }), {
+          return new Response(JSON.stringify({ error: 'Offline' }), {
             status: 503,
             headers: { 'Content-Type': 'application/json' }
           });

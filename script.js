@@ -12,6 +12,7 @@ const LS_KEY_DE = 'lumina_progress_de';
 const LS_KEY_FR = 'lumina_progress_fr';
 const LS_KEY_NO = 'lumina_progress_no';
 const LS_KEY_SV = 'lumina_progress_sv';
+const LS_KEY_FUTBOL = 'lumina_progress_futbol';
 
 let TOTAL_GROUPS = 30;    // İngilizce varsayılan grup sayısı
 let TOTAL_GROUPS_ES = 9;  // İspanyolca grup sayısı
@@ -19,6 +20,7 @@ let TOTAL_GROUPS_DE = 306; // Almanca grup sayısı
 let TOTAL_GROUPS_FR = 58; // Fransızca grup sayısı
 let TOTAL_GROUPS_NO = 5;  // Norveççe grup sayısı
 let TOTAL_GROUPS_SV = 58;  // İsveççe grup sayısı
+let TOTAL_GROUPS_FUTBOL = 5; // Futbol grup sayısı
 
 // ── C# API ADRESİ ──
 const API_BASE_URL = 'http://localhost:7047/api';
@@ -219,7 +221,491 @@ const FALLBACK_DATA = {
             { id: gId * 10 + 5, groupId: gId, english: 'Hus', turkish: 'Ev' },
             { id: gId * 10 + 6, groupId: gId, english: 'Tid', turkish: 'Zaman' }
         ];
-    }).flat()
+    }).flat(),
+    Futbol: (function() {
+        const raw = `0;football;n;futbol
+1;soccer;n;futbol (Amerikan İngilizcesi)
+2;match;n;maç
+3;game;n;oyun, maç
+4;team;n;takım
+5;player;n;oyuncu
+6;coach;n;antrenör
+7;manager;n;teknik direktör
+8;referee;n;hakem
+9;linesman;n;yan hakem
+10;assistant referee;n;yardımcı hakem
+11;fourth official;n;dördüncü hakem
+12;VAR;n;video yardımcı hakem sistemi
+13;goal;n;gol
+14;goalkeeper;n;kaleci
+15;defender;n;defans oyuncusu
+16;midfielder;n;orta saha oyuncusu
+17;forward;n;forvet
+18;striker;n;forvet, golcü
+19;winger;n;kanat oyuncusu
+20;captain;n;kaptan
+21;substitute;n;yedek oyuncu
+22;substitution;n;oyuncu değişikliği
+23;bench;n;yedek kulübesi
+24;squad;n;kadro
+25;lineup;n;ilk on bir
+26;formation;n;diziliş
+27;tactics;n;taktik
+28;strategy;n;strateji
+29;pitch;n;saha
+30;field;n;saha, alan
+31;stadium;n;stadyum
+32;stands;n;tribün
+33;terraces;n;tribün (ayakta)
+34;crowd;n;seyirci kalabalığı
+35;fans;n;taraftarlar
+36;supporters;n;taraftarlar
+37;spectators;n;izleyiciler
+38;goal post;n;kale direği
+39;crossbar;n;üst direk
+40;net;n;file
+41;penalty area;n;ceza sahası
+42;penalty box;n;ceza sahası
+43;goal area;n;kale sahası
+44;six-yard box;n;kale sahası
+45;centre circle;n;orta yuvarlak
+46;halfway line;n;orta saha çizgisi
+47;touchline;n;yan çizgi
+48;goal line;n;kale çizgisi
+49;corner flag;n;korner bayrağı
+50;corner kick;n;korner atışı
+51;corner;n;korner
+52;throw-in;n;taç atışı
+53;free kick;n;serbest vuruş
+54;direct free kick;n;doğrudan serbest vuruş
+55;indirect free kick;n;dolaylı serbest vuruş
+56;penalty kick;n;penaltı vuruşu
+57;penalty;n;penaltı
+58;spot kick;n;penaltı noktası vuruşu
+59;kick-off;n;başlama vuruşu
+60;goal kick;n;kale vuruşu
+61;offside;n;ofsayt
+62;foul;n;faul
+63;handball;n;elle oynama
+64;tackle;n;müdahale
+65;sliding tackle;n;kayarak müdahale
+66;yellow card;n;sarı kart
+67;red card;n;kırmızı kart
+68;booking;n;kart görme
+69;sending off;n;oyundan atılma
+70;dismissal;n;ihraç edilme
+71;suspension;n;ceza (maç yasağı)
+72;injury time;n;uzatma dakikası
+73;stoppage time;n;uzatma süresi
+74;added time;n;eklenen süre
+75;extra time;n;uzatma (devre)
+76;half-time;n;devre arası
+77;full-time;n;maç sonu
+78;first half;n;ilk yarı
+79;second half;n;ikinci yarı
+80;kick-off time;n;başlama saati
+81;whistle;n;düdük
+82;referee's whistle;n;hakem düdüğü
+83;score;n;skor
+84;scoreline;n;skor
+85;result;n;sonuç
+86;draw;n;beraberlik
+87;tie;n;berabere kalma
+88;win;n;galibiyet
+89;victory;n;zafer
+90;defeat;n;yenilgi
+91;loss;n;kayıp, mağlubiyet
+92;clean sheet;n;gol yememe
+93;own goal;n;kendi kalesine gol
+94;equalizer;n;beraberlik golü
+95;winning goal;n;galibiyet golü
+96;opener;n;ilk gol
+97;brace;n;iki gol (bir oyuncudan)
+98;hat-trick;n;hat-trick (üç gol)
+99;assist;n;asist
+100;cross;n;orta (top)
+101;pass;n;pas
+102;through ball;n;ara pas
+103;long ball;n;uzun top
+104;short pass;n;kısa pas
+105;backpass;n;geri pas
+106;one-two;n;duvar pası
+107;dribble;n;çalım
+108;shot;n;şut
+109;header;n;kafa vuruşu
+110;volley;n;vole vuruşu
+111;chip;n;lob vuruşu
+112;curve shot;n;falso vuruş
+113;save;n;kurtarış
+114;block;n;blok, kesme
+115;clearance;n;uzaklaştırma
+116;interception;n;top çalma
+117;possession;n;top kontrolü
+118;counter-attack;n;kontra atak
+119;attack;n;atak, hücum
+120;defence;n;defans, savunma
+121;marking;n;markaj
+122;man-marking;n;adam adama markaj
+123;zonal marking;n;bölgesel markaj
+124;pressing;n;pres yapma
+125;high press;n;yüksek pres
+126;build-up play;n;oyun kurma
+127;set piece;n;duran top
+128;wall;n;duvar (serbest vuruşta)
+129;shootout;n;penaltı atışları
+130;penalty shootout;n;penaltı atışları
+131;extra man;n;sayısal üstünlük
+132;transfer;n;transfer
+133;transfer window;n;transfer dönemi
+134;signing;n;transfer edilen oyuncu
+135;contract;n;sözleşme
+136;loan;n;kiralık transfer
+137;release clause;n;fesih bedeli maddesi
+138;market value;n;piyasa değeri
+139;fee;n;bonservis bedeli
+140;agent;n;menajer
+141;scout;n;yetenek avcısı
+142;academy;n;altyapı
+143;youth team;n;genç takım
+144;reserve team;n;rezerv takım
+145;first team;n;ilk takım
+146;club;n;kulüp
+147;league;n;lig
+148;division;n;lig kademesi
+149;tier;n;kademe (lig)
+150;table;n;puan durumu
+151;standings;n;puan durumu
+152;points;n;puan
+153;rank;n;sıralama
+154;promotion;n;ligde yükselme
+155;relegation;n;ligden düşme
+156;title;n;şampiyonluk
+157;championship;n;şampiyona
+158;trophy;n;kupa
+159;cup;n;kupa
+160;final;n;final
+161;semi-final;n;yarı final
+162;quarter-final;n;çeyrek final
+163;round of 16;n;son 16
+164;group stage;n;grup aşaması
+165;knockout stage;n;eleme aşaması
+166;play-off;n;play-off
+167;friendly match;n;hazırlık maçı
+168;derby;n;derbi
+169;rivalry;n;rekabet
+170;home game;n;iç saha maçı
+171;away game;n;deplasman maçı
+172;neutral venue;n;tarafsız saha
+173;season;n;sezon
+174;pre-season;n;sezon öncesi
+175;fixture;n;maç programı
+176;schedule;n;program
+177;ball;n;top
+178;boots;n;krampon
+179;cleats;n;krampon (Amerikan)
+180;shin guards;n;tekmelik
+181;jersey;n;forma
+182;kit;n;forma takımı
+183;home kit;n;iç saha forması
+184;away kit;n;deplasman forması
+185;shorts;n;şort
+186;socks;n;çorap (futbol)
+187;goalkeeper gloves;n;kaleci eldiveni
+188;armband;n;kaptan kolluğu
+189;whistle (referee);n;hakem düdüğü
+190;flag;n;bayrak (yan hakem)
+191;training;n;antrenman
+192;training ground;n;antrenman sahası
+193;warm-up;n;ısınma
+194;stretching;n;esneme hareketleri
+195;fitness;n;fiziksel kondisyon
+196;stamina;n;dayanıklılık
+197;speed;n;hız
+198;agility;n;çeviklik
+199;strength;n;güç
+200;technique;n;teknik
+201;skill;n;yetenek
+202;ball control;n;top kontrolü
+203;first touch;n;ilk dokunuş
+204;finishing;n;bitiricilik
+205;composure;n;soğukkanlılık
+206;vision;n;oyun görüşü
+207;awareness;n;farkındalık
+208;positioning;n;pozisyon alma
+209;movement;n;hareket (oyunda)
+210;timing;n;zamanlama
+211;reaction;n;refleks
+212;reflexes;n;refleksler
+213;anticipation;n;öngörü
+214;decision-making;n;karar verme
+215;leadership;n;liderlik
+216;team spirit;n;takım ruhu
+217;morale;n;moral
+218;confidence;n;özgüven
+219;pressure;n;baskı
+220;performance;n;performans
+221;form;n;form durumu
+222;consistency;n;istikrar
+223;momentum;n;ivme
+224;comeback;n;geri dönüş
+225;turnaround;n;tersine çevirme
+226;upset;n;sürpriz sonuç
+227;underdog;n;favori dışı takım
+228;favourite;n;favori (takım)
+229;champion;n;şampiyon
+230;runner-up;n;ikincilik
+231;top scorer;n;gol kralı
+232;golden boot;n;altın ayakkabı
+233;best player;n;en iyi oyuncu
+234;man of the match;n;maçın adamı
+235;player of the season;n;sezonun oyuncusu
+236;injury;n;sakatlık
+237;recovery;n;iyileşme
+238;rehabilitation;n;rehabilitasyon
+239;physiotherapist;n;fizyoterapist
+240;medical team;n;sağlık ekibi
+241;doping;n;doping
+242;drug test;n;doping testi
+243;commentator;n;spiker
+244;pundit;n;yorumcu
+245;broadcast;n;yayın
+246;live broadcast;n;canlı yayın
+247;highlights;n;maç özeti
+248;replay;n;tekrar (görüntü)
+249;slow motion;n;ağır çekim
+250;camera angle;n;kamera açısı
+251;press conference;n;basın toplantısı
+252;interview;n;röportaj
+253;statement;n;açıklama
+254;rumour;n;söylenti
+255;gossip;n;dedikodu
+256;fixture list;n;fikstür
+257;kick-off whistle;n;başlama düdüğü
+258;final whistle;n;bitiş düdüğü
+259;added minutes;n;eklenen dakikalar
+260;stalemate;n;çıkmaz, berabere durum
+261;deadlock;n;çıkmaz
+262;nil-nil;n;sıfır sıfır
+263;scoreless draw;n;golsüz beraberlik
+264;goal difference;n;averaj
+265;goal average;n;averaj
+266;head-to-head;n;ikili averaj
+267;aggregate score;n;toplam skor
+268;extra-time goal;n;uzatma golü
+269;golden goal;n;altın gol
+270;silver goal;n;gümüş gol
+271;sudden death;n;ani ölüm
+272;shootout kick;n;penaltı atışı
+273;spot-kick taker;n;penaltı kullanıcısı
+274;wall (free kick);n;duvar
+275;curled shot;n;falso şut
+276;bicycle kick;n;makaslı vuruş
+277;overhead kick;n;makaslı vuruş
+278;nutmeg;n;paçalar arasından top geçirme
+279;rainbow flick;n;gökkuşağı çalımı
+280;step-over;n;çalım (adım üstü)
+281;feint;n;yanıltma hareketi
+282;trick;n;numara, çalım
+283;flair;n;yaratıcılık, gösteriş
+284;creativity;n;yaratıcılık
+285;playmaker;n;oyun kurucu
+286;deep-lying playmaker;n;geride oynayan oyun kurucu
+287;box-to-box midfielder;n;tüm sahayı kullanan orta saha
+288;holding midfielder;n;tutucu orta saha
+289;defensive midfielder;n;defansif orta saha
+290;attacking midfielder;n;ofansif orta saha
+291;centre-back;n;stoper
+292;full-back;n;bek
+293;left-back;n;sol bek
+294;right-back;n;sağ bek
+295;wing-back;n;kanat beki
+296;sweeper;n;libero
+297;libero;n;libero
+298;lone striker;n;tek forvet
+299;target man;n;hedef forvet
+300;poacher;n;fırsatçı golcü
+301;false nine;n;sahte santrfor
+302;number ten;n;on numara
+303;trequartista;n;trequartista (İtalyanca on numara)
+304;utility player;n;çok yönlü oyuncu
+305;to kick;v;tekmelemek, vurmak
+306;to score;v;gol atmak
+307;to shoot;v;şut çekmek
+308;to pass;v;pas vermek
+309;to dribble;v;çalım atmak
+310;to tackle;v;müdahale etmek
+311;to defend;v;savunmak
+312;to attack;v;hücum etmek
+313;to save (goalkeeper);v;kurtarış yapmak
+314;to block;v;bloklamak
+315;to head the ball;v;kafayla vurmak
+316;to cross;v;orta çekmek
+317;to mark;v;markaj yapmak
+318;to press;v;pres yapmak
+319;to counter-attack;v;kontra atak yapmak
+320;to substitute;v;oyuncu değiştirmek
+321;to warm up;v;ısınmak
+322;to train;v;antrenman yapmak
+323;to qualify;v;elenmek dışında kalmak, hak kazanmak
+324;to eliminate;v;elemek
+325;to advance;v;ilerlemek (turda)
+326;to relegate;v;ligden düşürmek
+327;to promote;v;ligde yükseltmek
+328;to captain;v;kaptanlık yapmak
+329;to referee;v;hakemlik yapmak
+330;to whistle;v;düdük çalmak
+331;to award a penalty;v;penaltı vermek
+332;to book;v;kart göstermek
+333;to send off;v;oyundan atmak
+334;to appeal;v;itiraz etmek
+335;to protest;v;protesto etmek
+336;to celebrate;v;kutlamak
+337;to equalize;v;beraberlik golünü atmak
+338;to level the score;v;skoru eşitlemek
+339;to take the lead;v;öne geçmek
+340;to trail;v;geride olmak
+341;to concede;v;gol yemek
+342;to clear the ball;v;topu uzaklaştırmak
+343;to intercept;v;topu kesmek
+344;to control the ball;v;topa hakim olmak
+345;to trap the ball;v;topu durdurmak
+346;to volley;v;vole vurmak
+347;to chip;v;lobla vurmak
+348;to curl the ball;v;topa falso vermek
+349;to nutmeg;v;paçalar arasından geçirmek
+350;to sign (a player);v;transfer etmek
+351;to loan out;v;kiralık göndermek
+352;to recall;v;geri çağırmak (kiralık)
+353;to release;v;sözleşmeyi feshetmek
+354;to scout;v;yetenek avcılığı yapmak
+355;to recruit;v;oyuncu bulmak, transfer etmek
+356;to renew a contract;v;sözleşmeyi yenilemek
+357;to extend;v;uzatmak (sözleşme)
+358;to terminate;v;feshetmek
+359;to injure;v;sakatlamak
+360;to get injured;v;sakatlanmak
+361;to recover;v;iyileşmek
+362;to rehabilitate;v;rehabilite etmek
+363;to suspend;v;cezalı yapmak
+364;to ban;v;yasaklamak
+365;to fine;v;para cezası vermek
+366;to disqualify;v;diskalifiye etmek
+367;to draw (match);v;berabere kalmak
+368;to tie;v;berabere kalmak
+369;to lose;v;kaybetmek
+370;to win;v;kazanmak
+371;to beat;v;yenmek
+372;to defeat;v;mağlup etmek
+373;to thrash;v;farklı yenmek
+374;to hammer;v;farklı yenmek (argo)
+375;to demolish;v;ezip geçmek
+376;to crush;v;ezmek
+377;to knock out;v;elemek (turnuvadan)
+378;to top the table;v;puan durumunda ilk sırada olmak
+379;to finish (position);v;sırada bitirmek
+380;to clinch the title;v;şampiyonluğu kesinleştirmek
+381;to secure promotion;v;ligi yükselmeyi garantilemek
+382;to face relegation;v;düşme tehlikesi yaşamak
+383;to avoid relegation;v;düşmeyi önlemek
+384;to line up;v;dizilmek (saha)
+385;to start (lineup);v;ilk on birde başlamak
+386;to warm the bench;v;yedek kalmak
+387;to come off the bench;v;oyuna yedekten girmek
+388;to be subbed off;v;oyundan alınmak
+389;to come on;v;oyuna girmek
+390;to go off;v;oyundan çıkmak
+391;to be offside;v;ofsayt olmak
+392;to appeal for offside;v;ofsayt itirazında bulunmak
+393;World Cup;n;Dünya Kupası
+394;European Championship;n;Avrupa Şampiyonası
+395;Champions League;n;Şampiyonlar Ligi
+396;Europa League;n;Avrupa Ligi
+397;Conference League;n;Konferans Ligi
+398;Premier League;n;Premier Lig
+399;La Liga;n;La Liga
+400;Serie A;n;Serie A
+401;Bundesliga;n;Bundesliga
+402;Ligue 1;n;Ligue 1
+403;Super Lig;n;Süper Lig
+404;FA Cup;n;FA Kupası
+405;League Cup;n;Lig Kupası
+406;Copa America;n;Copa America
+407;AFCON;n;Afrika Uluslar Kupası
+408;Club World Cup;n;Kulüpler Dünya Kupası
+409;national team;n;milli takım
+410;international match;n;milli maç
+411;friendly international;n;hazırlık milli maçı
+412;qualifier;n;eleme maçı
+413;qualifying round;n;eleme turu
+414;seeding;n;kura eşleştirmesi
+415;draw (fixture);n;kura çekimi
+416;pot;n;kura potu
+417;bracket;n;turnuva ağacı
+418;wildcard;n;joker takım
+419;host nation;n;ev sahibi ülke
+420;host city;n;ev sahibi şehir
+421;venue;n;maç sahası
+422;opening ceremony;n;açılış töreni
+423;closing ceremony;n;kapanış töreni
+424;mascot;n;maskot
+425;anthem;n;marş
+426;flag bearer;n;bayrak taşıyıcı
+427;medal;n;madalya
+428;podium;n;podyum
+429;trophy presentation;n;kupa töreni
+430;lap of honour;n;onur turu
+431;parade;n;şampiyonluk kutlaması
+432;open-top bus;n;üstü açık otobüs turu
+433;academy player;n;altyapı oyuncusu
+434;homegrown player;n;yerli yetişme oyuncusu
+435;foreign player;n;yabancı oyuncu
+436;naturalized player;n;vatandaşlığa geçmiş oyuncu
+437;veteran;n;tecrübeli oyuncu
+438;rookie;n;yeni oyuncu, çaylak
+439;prodigy;n;yetenekli genç oyuncu
+440;wonderkid;n;harika çocuk
+441;legend;n;efsane
+442;icon;n;ikon
+443;ballon d'or;n;altın top
+444;golden ball;n;altın top (turnuva)
+445;best young player award;n;en iyi genç oyuncu ödülü
+446;team of the season;n;sezonun on birisi
+447;all-star team;n;yıldızlar takımı
+448;fantasy football;n;fantezi futbol
+449;betting odds;n;bahis oranları
+450;bookmaker;n;bahis şirketi
+451;gambling;n;kumar, bahis
+452;match-fixing;n;şike
+453;corruption (football);n;yolsuzluk (futbol)
+454;scandal;n;skandal
+455;racism in football;n;futbolda ırkçılık
+456;discrimination;n;ayrımcılık
+457;fair play;n;fair play, centilmenlik
+458;sportsmanship;n;sportmenlik
+459;rivalry match;n;rekabet maçı
+460;classic (match);n;klasik (maç)
+461;El Clasico;n;El Clasico
+462;local derby;n;şehir derbisi
+463;title decider;n;şampiyonluk maçı
+464;six-pointer;n;kritik puan maçı
+465;must-win game;n;kazanılması zorunlu maç
+466;dead rubber;n;sonucu belirsiz olmayan maç
+467;dead heat;n;başa baş yarış
+468;nail-biter;n;heyecanlı, gerilimli maç
+469;thriller;n;heyecanlı maç
+470;blowout;n;farklı sonuçlanan maç
+471;rout;n;ağır mağlubiyet
+472;comeback win;n;geriden gelme galibiyeti`;
+        return raw.split('\n').filter(l => l.trim()).map((line, i) => {
+            const parts = line.split(';');
+            return {
+                id: i + 1,
+                groupId: Math.floor(i / 100) + 1,
+                english: parts[1] ? parts[1].trim() : '',
+                turkish: parts[3] ? parts[3].trim() : ''
+            };
+        });
+    })()
 };
 
 // ── DATA LOADING FUNCTIONS ──
@@ -456,6 +942,9 @@ async function loadLanguageData(langName) {
                 }
             } catch(e2) { wordsData = []; }
         }
+    } else if (langName === 'Futbol') {
+        wordsData = FALLBACK_DATA.Futbol;
+        TOTAL_GROUPS_FUTBOL = Math.ceil(wordsData.length / 100);
     } else {
         try {
             const controller = new AbortController();
@@ -510,7 +999,8 @@ function updateAppTitle(langName) {
         'German': 'ALMANCA',
         'French': 'FRANSIZCA',
         'Norwegian': 'NORVEÇÇE',
-        'Swedish': 'İSVEÇÇE'
+        'Swedish': 'İSVEÇÇE',
+        'Futbol': 'FUTBOL'
     };
     const trName = titleMap[langName] || '3000';
     document.querySelectorAll('.logo-title').forEach(el => {
@@ -983,7 +1473,8 @@ function migrateProgressToUser(email) {
         { base: 'lumina_progress_es', suffix: '_es' },
         { base: 'lumina_progress_de', suffix: '_de' },
         { base: 'lumina_progress_fr', suffix: '_fr' },
-        { base: 'lumina_progress_no', suffix: '_no' }
+        { base: 'lumina_progress_no', suffix: '_no' },
+        { base: 'lumina_progress_futbol', suffix: '_futbol' }
     ];
 
     langKeys.forEach(({ base }) => {
@@ -1034,6 +1525,7 @@ function activeTotalGroups() {
     if (state.lang === 'de') return TOTAL_GROUPS_DE;
     if (state.lang === 'fr') return TOTAL_GROUPS_FR;
     if (state.lang === 'no') return TOTAL_GROUPS_NO;
+    if (state.lang === 'futbol') return TOTAL_GROUPS_FUTBOL;
 
     if (wordsData && wordsData.length > 0) {
         const groups = wordsData.map(w => w.groupId || 1);
@@ -1048,6 +1540,7 @@ function activeLSKey() {
     else if (state.lang === 'de') baseKey = LS_KEY_DE;
     else if (state.lang === 'fr') baseKey = LS_KEY_FR;
     else if (state.lang === 'no') baseKey = LS_KEY_NO;
+    else if (state.lang === 'futbol') baseKey = LS_KEY_FUTBOL;
 
     // Kullanıcıya özel anahtar: lumina_progress_en_user@email.com
     const session = AuthManager.getSession();
@@ -1200,6 +1693,8 @@ async function fetchAndShowLangCounts() {
     if (pEs) pEs.textContent = `900 Kelime • 9 Grup`; // Fallback data
     const pNo = document.getElementById('langDescNo');
     if (pNo) pNo.textContent = `500 Kelime • 5 Grup`; // Fallback data
+    const pFutbol = document.getElementById('langDescFutbol');
+    if (pFutbol) pFutbol.textContent = `${FALLBACK_DATA.Futbol.length} Kelime • ${Math.ceil(FALLBACK_DATA.Futbol.length / 100)} Grup`; // Fallback data
 }
 
 // ── DASHBOARD RENDER ──
@@ -1325,7 +1820,8 @@ function renderDashboard() {
             'de': 'ALMANCA',
             'fr': 'FRANSIZCA',
             'no': 'NORVEÇÇE',
-            'sv': 'İSVEÇÇE'
+            'sv': 'İSVEÇÇE',
+            'futbol': 'FUTBOL'
         };
         const langNameUpper = langMapTitle[state.lang] || 'İNGİLİZCE';
         dashLogoTitle.innerHTML = `LUMINA <span class="accent">${langNameUpper}</span>`;
@@ -1343,6 +1839,8 @@ function renderDashboard() {
             dashLogoSub.textContent = `Kişisel Norveççe Kelime Sistemi · ${totalGrp} Grup · ${totalWords} Kelime`;
         } else if (state.lang === 'sv') {
             dashLogoSub.textContent = `Kişisel İsveççe Kelime Sistemi · ${totalGrp} Grup · ${totalWords} Kelime`;
+        } else if (state.lang === 'futbol') {
+            dashLogoSub.textContent = `Futbol Kelimeleri · ${totalGrp} Grup · ${totalWords} Kelime`;
         } else {
             dashLogoSub.textContent = `Kişisel İngilizce Kelime Sistemi · ${totalGrp} Grup · ${totalWords} Kelime`;
         }
@@ -1967,7 +2465,7 @@ function updateUserUI(session) {
 function updateTopBarFlag() {
     const flagEl = document.getElementById('topUserLangFlag');
     if (!flagEl) return;
-    const flags = { 'en': '🇬🇧', 'es': '🇪🇸', 'de': '🇩🇪', 'fr': '🇫🇷', 'no': '🇳🇴' };
+    const flags = { 'en': '🇬🇧', 'es': '🇪🇸', 'de': '🇩🇪', 'fr': '🇫🇷', 'no': '🇳🇴', 'futbol': '⚽' };
     flagEl.textContent = flags[state.lang] || '🇬🇧';
 }
 
@@ -2094,11 +2592,33 @@ window.executeSignOut = function () {
         google.accounts.id.disableAutoSelect();
     }
 
+    // Tüm aktif yarış timer'larını temizle
+    if (typeof TypingRace !== 'undefined') TypingRace.cleanup();
+    if (typeof QuickQuiz !== 'undefined') QuickQuiz.cleanup();
+    if (typeof SpeedMatch !== 'undefined') SpeedMatch.cleanup();
+
     AuthManager.signOut();
     document.body.classList.remove('google-user');
+
+    // UI sıfırlama
     const topBar = document.getElementById('globalTopBar');
     if (topBar) topBar.classList.add('hidden');
     document.getElementById('userDropdownMenu')?.classList.add('hidden');
+    document.querySelector('.user-dropdown-wrapper')?.classList.remove('active');
+    document.getElementById('notifPopover')?.classList.add('hidden');
+
+    // Auth form inputlarını temizle
+    ['siEmail', 'siPassword', 'suEmail', 'suPassword', 'suName', 'fpEmail'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = '';
+    });
+    ['siError', 'suError', 'suSuccess', 'fpError', 'fpSuccess'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+    });
+
+    // Giriş panelini göster
+    authShowPanel('signin');
     showScreen('authScreen');
 };
 
@@ -2309,9 +2829,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangSv) {
         btnLangSv.addEventListener('click', async () => {
             state.lang = 'sv';
-            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-futbol');
             document.body.classList.add('theme-sv');
             await loadLanguageData('Swedish');
+            renderDashboard();
+        });
+    }
+
+    const btnLangFutbol = document.getElementById('btnLangFutbol');
+    if (btnLangFutbol) {
+        btnLangFutbol.addEventListener('click', async () => {
+            state.lang = 'futbol';
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv');
+            document.body.classList.add('theme-futbol');
+            await loadLanguageData('Futbol');
             renderDashboard();
         });
     }
@@ -3039,3 +3570,884 @@ function startCustomReview(timeframe) {
     showScreen('flashcardScreen');
     renderCard();
 }
+
+/* ============================================================
+   RACE ARENA — COMPLETE GAME SYSTEM
+   Yarış Arenası: Hızlı Yazma, Hızlı Şık, Hızlı Eşleştirme
+   Puan sistemi localStorage'da lumina_race_stats key'inde saklanır.
+============================================================ */
+
+// ── RACE STATS MANAGER ──
+const RaceStatsManager = (() => {
+    const LS_KEY = 'lumina_race_stats';
+
+    function getStats() {
+        try {
+            const raw = localStorage.getItem(LS_KEY);
+            return raw ? JSON.parse(raw) : getDefault();
+        } catch { return getDefault(); }
+    }
+
+    function getDefault() {
+        return {
+            totalScore: 0,
+            highScore: 0,
+            gamesPlayed: 0,
+            gamesWon: 0,
+            totalCorrect: 0,
+            totalWrong: 0,
+            bestTime: null,
+            streak: 0,
+            maxStreak: 0,
+            lastPlayDate: null,
+            dailyHighScore: 0,
+            dailyDate: null,
+            typing: { played: 0, totalScore: 0, highScore: 0 },
+            quiz: { played: 0, totalScore: 0, highScore: 0 },
+            match: { played: 0, totalScore: 0, highScore: 0 }
+        };
+    }
+
+    function saveStats(stats) {
+        localStorage.setItem(LS_KEY, JSON.stringify(stats));
+    }
+
+    function recordGame(gameType, score, correct, wrong, timeSec) {
+        const stats = getStats();
+        stats.totalScore += score;
+        stats.gamesPlayed++;
+        stats.totalCorrect += correct;
+        stats.totalWrong += wrong;
+
+        if (score > stats.highScore) stats.highScore = score;
+        if (timeSec && (!stats.bestTime || timeSec < stats.bestTime)) stats.bestTime = timeSec;
+
+        // Streak
+        const today = new Date().toDateString();
+        if (stats.lastPlayDate !== today) {
+            const yesterday = new Date(Date.now() - 86400000).toDateString();
+            stats.streak = (stats.lastPlayDate === yesterday) ? stats.streak + 1 : 1;
+        }
+        if (stats.streak > stats.maxStreak) stats.maxStreak = stats.streak;
+        stats.lastPlayDate = today;
+
+        // Daily high score
+        if (stats.dailyDate !== today) {
+            stats.dailyDate = today;
+            stats.dailyHighScore = score;
+        } else if (score > stats.dailyHighScore) {
+            stats.dailyHighScore = score;
+        }
+
+        // Won if >50% correct
+        if (correct > wrong) stats.gamesWon++;
+
+        // Per-game stats
+        const gk = stats[gameType] || { played: 0, totalScore: 0, highScore: 0 };
+        gk.played++;
+        gk.totalScore += score;
+        if (score > gk.highScore) gk.highScore = score;
+        stats[gameType] = gk;
+
+        saveStats(stats);
+        return stats;
+    }
+
+    function reset() {
+        localStorage.removeItem(LS_KEY);
+    }
+
+    return { getStats, recordGame, reset };
+})();
+
+// ── RANK SYSTEM ──
+const RACE_RANKS = [
+    { title: 'Çaylak', icon: '🥉', minScore: 0 },
+    { title: 'Acemi', icon: '🥈', minScore: 500 },
+    { title: 'Çırak', icon: '🥇', minScore: 1500 },
+    { title: 'Orta', icon: '⭐', minScore: 3000 },
+    { title: 'Yetenekli', icon: '🌟', minScore: 5000 },
+    { title: 'Uzman', icon: '💎', minScore: 8000 },
+    { title: 'Usta', icon: '👑', minScore: 12000 },
+    { title: 'Efsane', icon: '🏆', minScore: 20000 }
+];
+
+function getRaceRank(totalScore) {
+    let rank = RACE_RANKS[0];
+    let nextRank = RACE_RANKS[1];
+    for (let i = RACE_RANKS.length - 1; i >= 0; i--) {
+        if (totalScore >= RACE_RANKS[i].minScore) {
+            rank = RACE_RANKS[i];
+            nextRank = RACE_RANKS[i + 1] || null;
+            break;
+        }
+    }
+    return { rank, nextRank, level: RACE_RANKS.indexOf(rank) + 1 };
+}
+
+// ── RACE HUB ──
+function openRaceHub() {
+    refreshRaceHubUI();
+    showScreen('raceHubScreen');
+}
+
+function refreshRaceHubUI() {
+    const stats = RaceStatsManager.getStats();
+    document.getElementById('rsTotalScore').textContent = stats.totalScore.toLocaleString();
+    document.getElementById('rsGamesPlayed').textContent = stats.gamesPlayed;
+    document.getElementById('rsHighScore').textContent = stats.highScore.toLocaleString();
+    document.getElementById('rsStreak').textContent = stats.streak;
+
+    // Rank
+    const { rank, nextRank, level } = getRaceRank(stats.totalScore);
+    document.getElementById('raceRankTitle').textContent = rank.title;
+    document.querySelector('.rank-icon').textContent = rank.icon;
+
+    const fill = document.getElementById('raceRankFill');
+    const text = document.getElementById('raceRankText');
+    if (nextRank) {
+        const progress = (stats.totalScore - rank.minScore) / (nextRank.minScore - rank.minScore) * 100;
+        fill.style.width = Math.min(progress, 100) + '%';
+        text.textContent = `Seviye ${level} • ${stats.totalScore}/${nextRank.minScore} puan`;
+    } else {
+        fill.style.width = '100%';
+        text.textContent = `Seviye ${level} • Maksimum rütbe! 🏆`;
+    }
+}
+
+function showRaceStatsModal() {
+    const stats = RaceStatsManager.getStats();
+    const el = document.getElementById('raceFullStats');
+    el.innerHTML = `
+        <div class="race-full-stat"><span class="fs-icon">🏆</span><span class="fs-val">${stats.totalScore.toLocaleString()}</span><span class="fs-lbl">Toplam Puan</span></div>
+        <div class="race-full-stat"><span class="fs-icon">⭐</span><span class="fs-val">${stats.highScore.toLocaleString()}</span><span class="fs-lbl">En Yüksek Puan</span></div>
+        <div class="race-full-stat"><span class="fs-icon">🎮</span><span class="fs-val">${stats.gamesPlayed}</span><span class="fs-lbl">Oynanan Oyun</span></div>
+        <div class="race-full-stat"><span class="fs-icon">🏅</span><span class="fs-val">${stats.gamesWon}</span><span class="fs-lbl">Kazanılan</span></div>
+        <div class="race-full-stat"><span class="fs-icon">✅</span><span class="fs-val">${stats.totalCorrect}</span><span class="fs-lbl">Doğru Cevap</span></div>
+        <div class="race-full-stat"><span class="fs-icon">❌</span><span class="fs-val">${stats.totalWrong}</span><span class="fs-lbl">Yanlış Cevap</span></div>
+        <div class="race-full-stat"><span class="fs-icon">🔥</span><span class="fs-val">${stats.streak} / ${stats.maxStreak}</span><span class="fs-lbl">Seri / En İyi Seri</span></div>
+        <div class="race-full-stat"><span class="fs-icon">📅</span><span class="fs-val">${stats.dailyHighScore}</span><span class="fs-lbl">Günlük En Yüksek</span></div>
+        <div class="race-full-stat"><span class="fs-icon">⌨️</span><span class="fs-val">${stats.typing.played} (${stats.typing.highScore})</span><span class="fs-lbl">Yazma (En Yüksek)</span></div>
+        <div class="race-full-stat"><span class="fs-icon">⚡</span><span class="fs-val">${stats.quiz.played} (${stats.quiz.highScore})</span><span class="fs-lbl">Şık (En Yüksek)</span></div>
+        <div class="race-full-stat"><span class="fs-icon">🔗</span><span class="fs-val">${stats.match.played} (${stats.match.highScore})</span><span class="fs-lbl">Eşleştirme (En Yüksek)</span></div>
+        <div class="race-full-stat"><span class="fs-icon">⏱️</span><span class="fs-val">${stats.bestTime ? stats.bestTime.toFixed(1) + 's' : '—'}</span><span class="fs-lbl">En Hızlı Süre</span></div>
+    `;
+    openModal('raceStatsModal');
+}
+
+window.resetRaceStats = function () {
+    if (confirm('Tüm yarış istatistiklerin silinecek. Emin misin?')) {
+        RaceStatsManager.reset();
+        closeModal('raceStatsModal');
+        refreshRaceHubUI();
+        if (typeof NotificationManager !== 'undefined') {
+            NotificationManager.addNotification('İstatistikler Sıfırlandı', 'Yarış istatistiklerin temizlendi.', '🗑️');
+        }
+    }
+};
+
+// ── HELPER: Gather all words from allWords into flat array ──
+function getAllWordsFlat() {
+    const words = [];
+    const aw = activeWords();
+    for (const key of Object.keys(aw)) {
+        const group = aw[key];
+        if (Array.isArray(group)) {
+            for (const w of group) {
+                if (w && w.en && w.tr) words.push({ en: w.en, tr: w.tr });
+            }
+        }
+    }
+    return words;
+}
+
+function shuffleArray(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function getRandomWords(count) {
+    const all = getAllWordsFlat();
+    if (all.length === 0) return [];
+    const shuffled = shuffleArray(all);
+    return shuffled.slice(0, Math.min(count, shuffled.length));
+}
+
+// ── SCORE POP ANIMATION ──
+function showScorePop(x, y, text, negative) {
+    const pop = document.createElement('div');
+    pop.className = 'score-pop' + (negative ? ' negative' : '');
+    pop.textContent = text;
+    pop.style.left = x + 'px';
+    pop.style.top = y + 'px';
+    document.body.appendChild(pop);
+    setTimeout(() => pop.remove(), 800);
+}
+
+// ── COUNTDOWN HELPER ──
+function runCountdown(countdownId, numId, callback) {
+    const overlay = document.getElementById(countdownId);
+    const numEl = document.getElementById(numId);
+    overlay.classList.remove('hidden');
+    let count = 3;
+    numEl.textContent = count;
+
+    const interval = setInterval(() => {
+        count--;
+        if (count > 0) {
+            numEl.textContent = count;
+        } else {
+            numEl.textContent = 'GO!';
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+                callback();
+            }, 400);
+            clearInterval(interval);
+        }
+    }, 700);
+}
+
+/* ══════════════════════════════════════════════════════════
+   A) HIZLI YAZMA YARIŞI
+══════════════════════════════════════════════════════════ */
+const TypingRace = (() => {
+    let words = [];
+    let currentIndex = 0;
+    let score = 0;
+    let combo = 0;
+    let totalCorrect = 0;
+    let totalWrong = 0;
+    let timer = null;
+    let timeLeft = 0;
+    const TIME_PER_WORD = 8; // seconds per word
+    const TOTAL_WORDS = 10;
+
+    function start() {
+        words = getRandomWords(TOTAL_WORDS);
+        if (words.length === 0) {
+            alert('Kelime bulunamadı. Lütfen önce bir dil seçin ve kelime yükleyin.');
+            return;
+        }
+        currentIndex = 0;
+        score = 0;
+        combo = 0;
+        totalCorrect = 0;
+        totalWrong = 0;
+
+        document.getElementById('typingResults').classList.add('hidden');
+        document.getElementById('typingGameArea').style.display = '';
+        document.getElementById('typingCurrentScore').textContent = '0';
+        document.getElementById('typingCombo').textContent = '';
+        document.getElementById('typingFeedback').textContent = '';
+        document.getElementById('typingFeedback').className = 'typing-feedback';
+
+        showScreen('typingRaceScreen');
+
+        runCountdown('typingCountdown', 'typingCountdownNum', () => {
+            showWord();
+            document.getElementById('typingInput').focus();
+        });
+    }
+
+    function showWord() {
+        if (currentIndex >= words.length) {
+            endGame();
+            return;
+        }
+
+        const word = words[currentIndex];
+        document.getElementById('typingTargetWord').textContent = word.en;
+        document.getElementById('typingHintWord').textContent = word.tr;
+        document.getElementById('typingProgressText').textContent = `${currentIndex + 1} / ${words.length}`;
+        document.getElementById('typingInput').value = '';
+        document.getElementById('typingInput').className = 'typing-race-input';
+        document.getElementById('typingFeedback').textContent = '';
+        document.getElementById('typingFeedback').className = 'typing-feedback';
+
+        // Char feedback indicators
+        const charFb = document.getElementById('typingCharFeedback');
+        charFb.innerHTML = word.en.split('').map(() => '<span class="char pending"></span>').join('');
+
+        // Timer
+        timeLeft = TIME_PER_WORD;
+        updateTimerBar();
+        clearInterval(timer);
+        timer = setInterval(() => {
+            timeLeft -= 0.1;
+            updateTimerBar();
+            if (timeLeft <= 0) {
+                handleTimeout();
+            }
+        }, 100);
+    }
+
+    function updateTimerBar() {
+        const fill = document.getElementById('typingTimerFill');
+        const pct = Math.max(0, (timeLeft / TIME_PER_WORD) * 100);
+        fill.style.width = pct + '%';
+        fill.classList.toggle('warning', pct < 30);
+    }
+
+    function handleInput() {
+        const input = document.getElementById('typingInput');
+        const target = words[currentIndex].en.toLowerCase();
+        const typed = input.value.toLowerCase();
+
+        // Update char feedback
+        const chars = document.querySelectorAll('#typingCharFeedback .char');
+        for (let i = 0; i < chars.length; i++) {
+            if (i < typed.length) {
+                chars[i].className = 'char ' + (typed[i] === target[i] ? 'ok' : 'err');
+            } else {
+                chars[i].className = 'char pending';
+            }
+        }
+
+        // Check if complete
+        if (typed === target) {
+            clearInterval(timer);
+            handleCorrect();
+        }
+    }
+
+    function handleCorrect() {
+        totalCorrect++;
+        combo++;
+        const timeBonus = Math.round(timeLeft * 10);
+        const comboBonus = Math.min(combo - 1, 5) * 5;
+        const wordScore = 50 + timeBonus + comboBonus;
+        score += wordScore;
+
+        document.getElementById('typingCurrentScore').textContent = score;
+        document.getElementById('typingCombo').textContent = combo > 1 ? `🔥 x${combo}` : '';
+        document.getElementById('typingInput').className = 'typing-race-input correct';
+
+        const fb = document.getElementById('typingFeedback');
+        fb.textContent = `✅ Doğru! +${wordScore} puan`;
+        fb.className = 'typing-feedback success';
+
+        setTimeout(() => {
+            currentIndex++;
+            showWord();
+        }, 600);
+    }
+
+    function handleTimeout() {
+        clearInterval(timer);
+        totalWrong++;
+        combo = 0;
+
+        document.getElementById('typingCombo').textContent = '';
+        document.getElementById('typingInput').className = 'typing-race-input wrong';
+
+        const fb = document.getElementById('typingFeedback');
+        fb.textContent = `⏰ Süre doldu! Doğru: ${words[currentIndex].en}`;
+        fb.className = 'typing-feedback error';
+
+        setTimeout(() => {
+            currentIndex++;
+            showWord();
+        }, 1200);
+    }
+
+    function endGame() {
+        clearInterval(timer);
+        document.getElementById('typingGameArea').style.display = 'none';
+
+        const stats = RaceStatsManager.recordGame('typing', score, totalCorrect, totalWrong, null);
+
+        document.getElementById('typingFinalScore').textContent = score;
+        document.getElementById('typingResultsStats').innerHTML = `
+            <div class="race-result-stat"><span class="stat-val">${totalCorrect}</span><span class="stat-lbl">Doğru</span></div>
+            <div class="race-result-stat"><span class="stat-val">${totalWrong}</span><span class="stat-lbl">Yanlış</span></div>
+            <div class="race-result-stat"><span class="stat-val">${words.length}</span><span class="stat-lbl">Toplam Kelime</span></div>
+            <div class="race-result-stat"><span class="stat-val">${Math.round((totalCorrect / words.length) * 100)}%</span><span class="stat-lbl">Başarı Oranı</span></div>
+        `;
+        document.getElementById('typingResults').classList.remove('hidden');
+    }
+
+    function cleanup() {
+        clearInterval(timer);
+    }
+
+    return { start, handleInput, cleanup };
+})();
+
+/* ══════════════════════════════════════════════════════════
+   B) HIZLI DOĞRU ŞIK YARIŞI
+══════════════════════════════════════════════════════════ */
+const QuickQuiz = (() => {
+    let words = [];
+    let allPool = [];
+    let currentIndex = 0;
+    let score = 0;
+    let combo = 0;
+    let totalCorrect = 0;
+    let totalWrong = 0;
+    let timer = null;
+    let timeLeft = 0;
+    let questionStartTime = 0;
+    const TIME_PER_Q = 10;
+    const TOTAL_QS = 10;
+
+    function start() {
+        allPool = getAllWordsFlat();
+        if (allPool.length < 4) {
+            alert('En az 4 kelime gerekli. Lütfen önce bir dil seçin ve kelime yükleyin.');
+            return;
+        }
+        words = shuffleArray(allPool).slice(0, Math.min(TOTAL_QS, allPool.length));
+        currentIndex = 0;
+        score = 0;
+        combo = 0;
+        totalCorrect = 0;
+        totalWrong = 0;
+
+        document.getElementById('quizResults').classList.add('hidden');
+        document.getElementById('quizGameArea').style.display = '';
+        document.getElementById('quizCurrentScore').textContent = '0';
+        document.getElementById('quizCombo').textContent = '';
+        document.getElementById('quizFeedback').textContent = '';
+
+        showScreen('quickQuizScreen');
+
+        runCountdown('quizCountdown', 'quizCountdownNum', () => {
+            showQuestion();
+        });
+    }
+
+    function showQuestion() {
+        if (currentIndex >= words.length) {
+            endGame();
+            return;
+        }
+
+        const word = words[currentIndex];
+        document.getElementById('quizQuestionWord').textContent = word.en;
+        document.getElementById('quizQuestionHint').textContent = 'Bu kelimenin Türkçe karşılığı nedir?';
+        document.getElementById('quizProgressText').textContent = `${currentIndex + 1} / ${words.length}`;
+        document.getElementById('quizFeedback').textContent = '';
+
+        // Generate options (1 correct + 3 wrong, shuffled)
+        const correctAnswer = word.tr;
+        const wrongOptions = shuffleArray(allPool.filter(w => w.tr !== correctAnswer))
+            .slice(0, 3)
+            .map(w => w.tr);
+        const options = shuffleArray([correctAnswer, ...wrongOptions]);
+
+        const optionsEl = document.getElementById('quizOptions');
+        optionsEl.innerHTML = options.map(opt => `
+            <button class="quiz-option-btn" data-answer="${opt}">${opt}</button>
+        `).join('');
+
+        // Add click handlers
+        optionsEl.querySelectorAll('.quiz-option-btn').forEach(btn => {
+            btn.addEventListener('click', () => handleAnswer(btn, correctAnswer));
+        });
+
+        // Timer
+        timeLeft = TIME_PER_Q;
+        questionStartTime = Date.now();
+        updateQuizTimer();
+        clearInterval(timer);
+        timer = setInterval(() => {
+            timeLeft -= 0.1;
+            updateQuizTimer();
+            if (timeLeft <= 0) {
+                handleQuizTimeout(correctAnswer);
+            }
+        }, 100);
+    }
+
+    function updateQuizTimer() {
+        const fill = document.getElementById('quizTimerFill');
+        const pct = Math.max(0, (timeLeft / TIME_PER_Q) * 100);
+        fill.style.width = pct + '%';
+        fill.classList.toggle('warning', pct < 30);
+    }
+
+    function handleAnswer(btn, correctAnswer) {
+        clearInterval(timer);
+        const chosen = btn.dataset.answer;
+        const isCorrect = chosen === correctAnswer;
+        const responseTime = (Date.now() - questionStartTime) / 1000;
+
+        // Disable all buttons
+        document.querySelectorAll('.quiz-option-btn').forEach(b => b.classList.add('disabled'));
+
+        if (isCorrect) {
+            btn.classList.add('correct');
+            totalCorrect++;
+            combo++;
+            const speedBonus = Math.round(Math.max(0, timeLeft) * 8);
+            const comboBonus = Math.min(combo - 1, 5) * 8;
+            const qScore = 60 + speedBonus + comboBonus;
+            score += qScore;
+
+            document.getElementById('quizCurrentScore').textContent = score;
+            document.getElementById('quizCombo').textContent = combo > 1 ? `🔥 x${combo}` : '';
+            document.getElementById('quizFeedback').textContent = `✅ Doğru! +${qScore} puan (${responseTime.toFixed(1)}s)`;
+            document.getElementById('quizFeedback').style.color = 'var(--accent-ok)';
+        } else {
+            btn.classList.add('wrong');
+            totalWrong++;
+            combo = 0;
+
+            // Highlight correct
+            document.querySelectorAll('.quiz-option-btn').forEach(b => {
+                if (b.dataset.answer === correctAnswer) b.classList.add('correct');
+            });
+
+            const penalty = Math.max(0, score > 10 ? -10 : 0);
+            score = Math.max(0, score + penalty);
+
+            document.getElementById('quizCurrentScore').textContent = score;
+            document.getElementById('quizCombo').textContent = '';
+            document.getElementById('quizFeedback').textContent = `❌ Yanlış! Doğru: ${correctAnswer}`;
+            document.getElementById('quizFeedback').style.color = 'var(--accent-3)';
+        }
+
+        setTimeout(() => {
+            currentIndex++;
+            showQuestion();
+        }, 1000);
+    }
+
+    function handleQuizTimeout(correctAnswer) {
+        clearInterval(timer);
+        totalWrong++;
+        combo = 0;
+
+        document.querySelectorAll('.quiz-option-btn').forEach(b => {
+            b.classList.add('disabled');
+            if (b.dataset.answer === correctAnswer) b.classList.add('correct');
+        });
+
+        document.getElementById('quizCombo').textContent = '';
+        document.getElementById('quizFeedback').textContent = `⏰ Süre doldu! Doğru: ${correctAnswer}`;
+        document.getElementById('quizFeedback').style.color = 'var(--accent-3)';
+
+        setTimeout(() => {
+            currentIndex++;
+            showQuestion();
+        }, 1200);
+    }
+
+    function endGame() {
+        clearInterval(timer);
+        document.getElementById('quizGameArea').style.display = 'none';
+
+        RaceStatsManager.recordGame('quiz', score, totalCorrect, totalWrong, null);
+
+        document.getElementById('quizFinalScore').textContent = score;
+        document.getElementById('quizResultsStats').innerHTML = `
+            <div class="race-result-stat"><span class="stat-val">${totalCorrect}</span><span class="stat-lbl">Doğru</span></div>
+            <div class="race-result-stat"><span class="stat-val">${totalWrong}</span><span class="stat-lbl">Yanlış</span></div>
+            <div class="race-result-stat"><span class="stat-val">${words.length}</span><span class="stat-lbl">Toplam Soru</span></div>
+            <div class="race-result-stat"><span class="stat-val">${Math.round((totalCorrect / words.length) * 100)}%</span><span class="stat-lbl">Başarı Oranı</span></div>
+        `;
+        document.getElementById('quizResults').classList.remove('hidden');
+    }
+
+    function cleanup() {
+        clearInterval(timer);
+    }
+
+    return { start, cleanup };
+})();
+
+/* ══════════════════════════════════════════════════════════
+   C) HIZLI EŞLEŞTİRME OYUNU
+══════════════════════════════════════════════════════════ */
+const SpeedMatch = (() => {
+    let pairs = [];
+    let matched = 0;
+    let score = 0;
+    let combo = 0;
+    let totalCorrect = 0;
+    let totalWrong = 0;
+    let selectedEn = null;
+    let selectedTr = null;
+    let timer = null;
+    let timeLeft = 0;
+    let startTime = 0;
+    const PAIR_COUNT = 6;
+    const GAME_TIME = 45;
+
+    function start() {
+        const allWords = getAllWordsFlat();
+        if (allWords.length < PAIR_COUNT) {
+            alert('En az 6 kelime gerekli. Lütfen önce bir dil seçin ve kelime yükleyin.');
+            return;
+        }
+        pairs = shuffleArray(allWords).slice(0, PAIR_COUNT);
+        matched = 0;
+        score = 0;
+        combo = 0;
+        totalCorrect = 0;
+        totalWrong = 0;
+        selectedEn = null;
+        selectedTr = null;
+
+        document.getElementById('matchResults').classList.add('hidden');
+        document.getElementById('matchGameArea').style.display = '';
+        document.getElementById('matchCurrentScore').textContent = '0';
+        document.getElementById('matchCombo').textContent = '';
+
+        showScreen('speedMatchScreen');
+
+        runCountdown('matchCountdown', 'matchCountdownNum', () => {
+            renderBoard();
+            startTimer();
+        });
+    }
+
+    function renderBoard() {
+        const enCol = document.getElementById('speedMatchColEn');
+        const trCol = document.getElementById('speedMatchColTr');
+
+        const enItems = shuffleArray(pairs.map((p, i) => ({ text: p.en, idx: i })));
+        const trItems = shuffleArray(pairs.map((p, i) => ({ text: p.tr, idx: i })));
+
+        enCol.innerHTML = enItems.map(item =>
+            `<div class="speed-match-item en-item" data-idx="${item.idx}" data-side="en">${item.text}</div>`
+        ).join('');
+
+        trCol.innerHTML = trItems.map(item =>
+            `<div class="speed-match-item tr-item" data-idx="${item.idx}" data-side="tr">${item.text}</div>`
+        ).join('');
+
+        // Add click handlers
+        document.querySelectorAll('.speed-match-item').forEach(item => {
+            item.addEventListener('click', () => handleItemClick(item));
+        });
+    }
+
+    function handleItemClick(item) {
+        if (item.classList.contains('matched')) return;
+
+        const side = item.dataset.side;
+        const idx = parseInt(item.dataset.idx);
+
+        if (side === 'en') {
+            // Deselect previous EN
+            document.querySelectorAll('.en-item.selected').forEach(el => el.classList.remove('selected'));
+            item.classList.add('selected');
+            selectedEn = idx;
+        } else {
+            // Deselect previous TR
+            document.querySelectorAll('.tr-item.selected').forEach(el => el.classList.remove('selected'));
+            item.classList.add('selected');
+            selectedTr = idx;
+        }
+
+        // Check match if both selected
+        if (selectedEn !== null && selectedTr !== null) {
+            checkMatch();
+        }
+    }
+
+    function checkMatch() {
+        if (selectedEn === selectedTr) {
+            // Correct match!
+            totalCorrect++;
+            combo++;
+            const comboBonus = Math.min(combo - 1, 4) * 10;
+            const matchScore = 80 + comboBonus;
+            score += matchScore;
+            matched++;
+
+            document.getElementById('matchCurrentScore').textContent = score;
+            document.getElementById('matchCombo').textContent = combo > 1 ? `🔥 x${combo}` : '';
+
+            // Mark as matched
+            document.querySelectorAll(`.speed-match-item[data-idx="${selectedEn}"]`).forEach(el => {
+                el.classList.remove('selected');
+                el.classList.add('matched');
+            });
+
+            selectedEn = null;
+            selectedTr = null;
+
+            // Check if all matched
+            if (matched >= pairs.length) {
+                endGame();
+            }
+        } else {
+            // Wrong match
+            totalWrong++;
+            combo = 0;
+            score = Math.max(0, score - 5);
+
+            document.getElementById('matchCurrentScore').textContent = score;
+            document.getElementById('matchCombo').textContent = '';
+
+            // Flash wrong
+            const enItem = document.querySelector(`.en-item.selected`);
+            const trItem = document.querySelector(`.tr-item.selected`);
+
+            [enItem, trItem].forEach(el => {
+                if (el) {
+                    el.classList.add('wrong-flash');
+                    el.classList.remove('selected');
+                }
+            });
+
+            setTimeout(() => {
+                document.querySelectorAll('.wrong-flash').forEach(el => el.classList.remove('wrong-flash'));
+            }, 400);
+
+            selectedEn = null;
+            selectedTr = null;
+        }
+    }
+
+    function startTimer() {
+        timeLeft = GAME_TIME;
+        startTime = Date.now();
+        updateMatchTimer();
+        clearInterval(timer);
+        timer = setInterval(() => {
+            timeLeft -= 0.1;
+            updateMatchTimer();
+            if (timeLeft <= 0) {
+                endGame();
+            }
+        }, 100);
+    }
+
+    function updateMatchTimer() {
+        const fill = document.getElementById('matchTimerFill');
+        const pct = Math.max(0, (timeLeft / GAME_TIME) * 100);
+        fill.style.width = pct + '%';
+        fill.classList.toggle('warning', pct < 25);
+    }
+
+    function endGame() {
+        clearInterval(timer);
+        const elapsed = (Date.now() - startTime) / 1000;
+
+        // Bonus for finishing early
+        if (matched >= pairs.length && timeLeft > 0) {
+            const timeBonus = Math.round(timeLeft * 5);
+            score += timeBonus;
+        }
+
+        document.getElementById('matchGameArea').style.display = 'none';
+
+        RaceStatsManager.recordGame('match', score, totalCorrect, totalWrong, elapsed);
+
+        document.getElementById('matchFinalScore').textContent = score;
+        document.getElementById('matchResultsStats').innerHTML = `
+            <div class="race-result-stat"><span class="stat-val">${totalCorrect}</span><span class="stat-lbl">Doğru Eşleşme</span></div>
+            <div class="race-result-stat"><span class="stat-val">${totalWrong}</span><span class="stat-lbl">Yanlış Deneme</span></div>
+            <div class="race-result-stat"><span class="stat-val">${elapsed.toFixed(1)}s</span><span class="stat-lbl">Geçen Süre</span></div>
+            <div class="race-result-stat"><span class="stat-val">${matched}/${pairs.length}</span><span class="stat-lbl">Eşleşen Çift</span></div>
+        `;
+        document.getElementById('matchResults').classList.remove('hidden');
+    }
+
+    function cleanup() {
+        clearInterval(timer);
+    }
+
+    return { start, cleanup };
+})();
+
+/* ══════════════════════════════════════════════════════════
+   USER DROPDOWN — GLOBAL FONKSİYONLAR
+══════════════════════════════════════════════════════════ */
+function toggleUserDropdown(event) {
+    if (event) event.stopPropagation();
+    const menu = document.getElementById('userDropdownMenu');
+    if (!menu) return;
+    menu.classList.toggle('hidden');
+
+    // Dışarı tıklayınca kapat (bir kez bağla)
+    if (!menu.classList.contains('hidden')) {
+        setTimeout(() => {
+            document.addEventListener('click', closeUserDropdownOutside);
+        }, 0);
+    }
+}
+
+function closeUserDropdownOutside(e) {
+    const menu = document.getElementById('userDropdownMenu');
+    const trigger = document.getElementById('userDropdownTrigger');
+    if (menu && !menu.contains(e.target) && trigger && !trigger.contains(e.target)) {
+        menu.classList.add('hidden');
+        document.removeEventListener('click', closeUserDropdownOutside);
+    }
+}
+
+function openManageAccountModal() {
+    const menu = document.getElementById('userDropdownMenu');
+    if (menu) menu.classList.add('hidden');
+    document.removeEventListener('click', closeUserDropdownOutside);
+
+    const sess = AuthManager.getSession();
+    if (sess) {
+        const nameInput = document.getElementById('maNameInput');
+        const emailInput = document.getElementById('maEmailInput');
+        if (nameInput) nameInput.value = sess.name || '';
+        if (emailInput) emailInput.value = sess.email || '';
+    }
+    openModal('manageAccountModal');
+}
+
+function openChangePasswordModal() {
+    const menu = document.getElementById('userDropdownMenu');
+    if (menu) menu.classList.add('hidden');
+    document.removeEventListener('click', closeUserDropdownOutside);
+    openModal('changePasswordModal');
+}
+
+/* ══════════════════════════════════════════════════════════
+   RACE ARENA — EVENT LISTENERS
+══════════════════════════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('btnGoRace')?.addEventListener('click', openRaceHub);
+    document.getElementById('btnBackRaceHub')?.addEventListener('click', renderDashboard);
+    document.getElementById('btnRaceStats')?.addEventListener('click', showRaceStatsModal);
+
+    // Typing Race
+    document.getElementById('btnStartTypingRace')?.addEventListener('click', () => TypingRace.start());
+    document.getElementById('btnBackTypingRace')?.addEventListener('click', () => {
+        TypingRace.cleanup();
+        openRaceHub();
+    });
+    document.getElementById('typingInput')?.addEventListener('input', () => TypingRace.handleInput());
+    document.getElementById('btnTypingReplay')?.addEventListener('click', () => TypingRace.start());
+    document.getElementById('btnTypingBackHub')?.addEventListener('click', () => {
+        TypingRace.cleanup();
+        openRaceHub();
+    });
+
+    // Quick Quiz
+    document.getElementById('btnStartQuickQuiz')?.addEventListener('click', () => QuickQuiz.start());
+    document.getElementById('btnBackQuickQuiz')?.addEventListener('click', () => {
+        QuickQuiz.cleanup();
+        openRaceHub();
+    });
+    document.getElementById('btnQuizReplay')?.addEventListener('click', () => QuickQuiz.start());
+    document.getElementById('btnQuizBackHub')?.addEventListener('click', () => {
+        QuickQuiz.cleanup();
+        openRaceHub();
+    });
+
+    // Speed Match
+    document.getElementById('btnStartSpeedMatch')?.addEventListener('click', () => SpeedMatch.start());
+    document.getElementById('btnBackSpeedMatch')?.addEventListener('click', () => {
+        SpeedMatch.cleanup();
+        openRaceHub();
+    });
+    document.getElementById('btnMatchReplay')?.addEventListener('click', () => SpeedMatch.start());
+    document.getElementById('btnMatchBackHub')?.addEventListener('click', () => {
+        SpeedMatch.cleanup();
+        openRaceHub();
+    });
+});

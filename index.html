@@ -10,8 +10,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
   <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <!-- Cache temizleyici: eski SW cache'lerini sil -->
+  <script>
+    if ('caches' in window) {
+      caches.keys().then(keys => {
+        keys.forEach(key => {
+          if (key !== 'lumina-cache-v7') {
+            caches.delete(key);
+          }
+        });
+      });
+    }
+  </script>
 </head>
 
 <body>
@@ -81,14 +93,14 @@
               </div>
             </div>
             <div class="dropdown-divider"></div>
-            <button id="btnOpenManageAccount" class="dropdown-item">
+            <button id="btnOpenManageAccount" class="dropdown-item" onclick="openManageAccountModal()">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                 <circle cx="12" cy="7" r="4" />
               </svg>
               <span>Hesabı Yönet</span>
             </button>
-            <button id="btnOpenChangePassword" class="dropdown-item change-password-item">
+            <button id="btnOpenChangePassword" class="dropdown-item change-password-item" onclick="openChangePasswordModal()">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="3" y="11" width="18" height="11" rx="2" />
                 <path d="M7 11V7a5 5 0 0 1 10 0v4" />
@@ -359,6 +371,17 @@
         </div>
       </button>
 
+      <button class="lang-btn futbol-theme" id="btnLangFutbol">
+        <div class="lang-icon-wrap futbol">
+          <span class="flag-emoji">⚽</span>
+          <span class="flag-code">FUT</span>
+        </div>
+        <div class="lang-info">
+          <h3>Futbol</h3>
+          <p id="langDescFutbol">Yükleniyor...</p>
+        </div>
+      </button>
+
     </div>
   </div>
 
@@ -450,6 +473,13 @@
           <div class="mod-info">
             <h4>Sandbox Pekiştirme</h4>
             <p>Bilmiyorum dediklerin, baskı yok!</p>
+          </div>
+        </button>
+        <button class="module-card race" id="btnGoRace">
+          <span class="mod-icon">🏁</span>
+          <div class="mod-info">
+            <h4>Yarış Arenası</h4>
+            <p>Hız ve doğruluk yarışı, puan kazan!</p>
           </div>
         </button>
       </div>
@@ -943,6 +973,285 @@
     </div>
   </div>
 
+  <!-- ══════════════ RACE ARENA HUB ══════════════ -->
+  <div id="raceHubScreen" class="screen">
+    <div class="race-hub-container">
+      <div class="fc-header" style="margin-bottom: 24px;">
+        <button class="btn-back" id="btnBackRaceHub" aria-label="Dashboard'a dön">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+          Dashboard
+        </button>
+        <h2 style="margin:0; font-size: 1.4rem; color: var(--accent-3);">🏁 Yarış Arenası</h2>
+        <button class="top-bar-btn" id="btnRaceStats" title="İstatistiklerini Gör" style="margin-left:auto;">📊</button>
+      </div>
+
+      <!-- Race Stats Overview -->
+      <div class="race-stats-bar" id="raceStatsBar">
+        <div class="race-stat-item">
+          <span class="race-stat-value" id="rsTotalScore">0</span>
+          <span class="race-stat-label">Toplam Puan</span>
+        </div>
+        <div class="race-stat-item">
+          <span class="race-stat-value" id="rsGamesPlayed">0</span>
+          <span class="race-stat-label">Oynanan</span>
+        </div>
+        <div class="race-stat-item">
+          <span class="race-stat-value" id="rsHighScore">0</span>
+          <span class="race-stat-label">En Yüksek</span>
+        </div>
+        <div class="race-stat-item">
+          <span class="race-stat-value" id="rsStreak">0</span>
+          <span class="race-stat-label">🔥 Seri</span>
+        </div>
+      </div>
+
+      <!-- Mini Games Selection -->
+      <div class="race-games-grid">
+        <button class="race-game-card typing" id="btnStartTypingRace">
+          <div class="race-game-icon">⌨️</div>
+          <div class="race-game-info">
+            <h3>Hızlı Yazma Yarışı</h3>
+            <p>Kelimeyi hızlıca yaz, puan kazan!</p>
+          </div>
+          <div class="race-game-badge">Hız + Doğruluk</div>
+        </button>
+
+        <button class="race-game-card quiz" id="btnStartQuickQuiz">
+          <div class="race-game-icon">⚡</div>
+          <div class="race-game-info">
+            <h3>Hızlı Doğru Şık</h3>
+            <p>Süreli sorular, hızlı cevaplar!</p>
+          </div>
+          <div class="race-game-badge">Hız + Bilgi</div>
+        </button>
+
+        <button class="race-game-card matchgame" id="btnStartSpeedMatch">
+          <div class="race-game-icon">🔗</div>
+          <div class="race-game-info">
+            <h3>Hızlı Eşleştirme</h3>
+            <p>Doğru çiftleri en hızlı bul!</p>
+          </div>
+          <div class="race-game-badge">Hız + Eşleştirme</div>
+        </button>
+      </div>
+
+      <!-- Level / Rank Badge -->
+      <div class="race-rank-section" id="raceRankSection">
+        <div class="race-rank-badge" id="raceRankBadge">
+          <span class="rank-icon">🥉</span>
+          <span class="rank-title" id="raceRankTitle">Çaylak</span>
+        </div>
+        <div class="race-rank-progress">
+          <div class="race-rank-bar">
+            <div class="race-rank-fill" id="raceRankFill" style="width: 0%"></div>
+          </div>
+          <span class="race-rank-text" id="raceRankText">Seviye 1 • 0/500 puan</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ TYPING RACE SCREEN ══════════════ -->
+  <div id="typingRaceScreen" class="screen">
+    <div class="race-screen-container">
+      <div class="fc-header">
+        <button class="btn-back" id="btnBackTypingRace">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+          Yarış Arenası
+        </button>
+        <span class="fc-mode-badge race-badge">⌨️ HIZLI YAZMA</span>
+      </div>
+
+      <!-- Countdown Overlay -->
+      <div class="race-countdown-overlay hidden" id="typingCountdown">
+        <div class="race-countdown-num" id="typingCountdownNum">3</div>
+      </div>
+
+      <!-- Game Area -->
+      <div class="race-game-area" id="typingGameArea">
+        <div class="race-timer-bar">
+          <div class="race-timer-fill" id="typingTimerFill"></div>
+        </div>
+        <div class="race-score-display">
+          <span id="typingCurrentScore">0</span> puan
+          <span class="race-combo" id="typingCombo"></span>
+        </div>
+
+        <div class="race-progress-text" id="typingProgressText">1 / 10</div>
+
+        <div class="typing-race-card">
+          <div class="typing-word-display">
+            <span class="typing-lang-tag">EN</span>
+            <p class="typing-target-word" id="typingTargetWord">hello</p>
+          </div>
+          <div class="typing-hint-display">
+            <span class="typing-lang-tag tr">TR</span>
+            <p class="typing-hint-word" id="typingHintWord">merhaba</p>
+          </div>
+          <div class="typing-input-area">
+            <input type="text" id="typingInput" class="typing-race-input" placeholder="Kelimeyi yaz..." autocomplete="off" autocapitalize="off" spellcheck="false" />
+            <div class="typing-char-feedback" id="typingCharFeedback"></div>
+          </div>
+        </div>
+
+        <div class="typing-feedback" id="typingFeedback"></div>
+      </div>
+
+      <!-- Results -->
+      <div class="race-results hidden" id="typingResults">
+        <div class="race-results-card">
+          <div class="race-results-icon">⌨️</div>
+          <h3>Hızlı Yazma Sonuçları</h3>
+          <div class="race-results-stats" id="typingResultsStats"></div>
+          <div class="race-results-score">
+            <span class="results-score-label">Kazanılan Puan</span>
+            <span class="results-score-value" id="typingFinalScore">0</span>
+          </div>
+          <div class="race-results-actions">
+            <button class="btn-primary" id="btnTypingReplay">🔄 Tekrar Oyna</button>
+            <button class="btn-secondary" id="btnTypingBackHub">🏠 Yarış Arenası</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ QUICK QUIZ SCREEN ══════════════ -->
+  <div id="quickQuizScreen" class="screen">
+    <div class="race-screen-container">
+      <div class="fc-header">
+        <button class="btn-back" id="btnBackQuickQuiz">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+          Yarış Arenası
+        </button>
+        <span class="fc-mode-badge race-badge">⚡ HIZLI ŞIK</span>
+      </div>
+
+      <div class="race-countdown-overlay hidden" id="quizCountdown">
+        <div class="race-countdown-num" id="quizCountdownNum">3</div>
+      </div>
+
+      <div class="race-game-area" id="quizGameArea">
+        <div class="race-timer-bar">
+          <div class="race-timer-fill" id="quizTimerFill"></div>
+        </div>
+        <div class="race-score-display">
+          <span id="quizCurrentScore">0</span> puan
+          <span class="race-combo" id="quizCombo"></span>
+        </div>
+
+        <div class="race-progress-text" id="quizProgressText">1 / 10</div>
+
+        <div class="quiz-race-card">
+          <div class="quiz-question-box">
+            <p class="quiz-question-word" id="quizQuestionWord">hello</p>
+            <p class="quiz-question-hint" id="quizQuestionHint">Bu kelimenin Türkçe karşılığı nedir?</p>
+          </div>
+          <div class="quiz-options-grid" id="quizOptions">
+            <!-- Options injected -->
+          </div>
+        </div>
+
+        <div class="quiz-feedback" id="quizFeedback"></div>
+      </div>
+
+      <div class="race-results hidden" id="quizResults">
+        <div class="race-results-card">
+          <div class="race-results-icon">⚡</div>
+          <h3>Hızlı Şık Sonuçları</h3>
+          <div class="race-results-stats" id="quizResultsStats"></div>
+          <div class="race-results-score">
+            <span class="results-score-label">Kazanılan Puan</span>
+            <span class="results-score-value" id="quizFinalScore">0</span>
+          </div>
+          <div class="race-results-actions">
+            <button class="btn-primary" id="btnQuizReplay">🔄 Tekrar Oyna</button>
+            <button class="btn-secondary" id="btnQuizBackHub">🏠 Yarış Arenası</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ SPEED MATCH SCREEN ══════════════ -->
+  <div id="speedMatchScreen" class="screen">
+    <div class="race-screen-container">
+      <div class="fc-header">
+        <button class="btn-back" id="btnBackSpeedMatch">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+          Yarış Arenası
+        </button>
+        <span class="fc-mode-badge race-badge">🔗 HIZLI EŞLEŞTİRME</span>
+      </div>
+
+      <div class="race-countdown-overlay hidden" id="matchCountdown">
+        <div class="race-countdown-num" id="matchCountdownNum">3</div>
+      </div>
+
+      <div class="race-game-area" id="matchGameArea">
+        <div class="race-timer-bar">
+          <div class="race-timer-fill" id="matchTimerFill"></div>
+        </div>
+        <div class="race-score-display">
+          <span id="matchCurrentScore">0</span> puan
+          <span class="race-combo" id="matchCombo"></span>
+        </div>
+
+        <div class="speed-match-board" id="speedMatchBoard">
+          <div class="speed-match-col" id="speedMatchColEn">
+            <!-- EN words -->
+          </div>
+          <div class="speed-match-col" id="speedMatchColTr">
+            <!-- TR words -->
+          </div>
+        </div>
+      </div>
+
+      <div class="race-results hidden" id="matchResults">
+        <div class="race-results-card">
+          <div class="race-results-icon">🔗</div>
+          <h3>Hızlı Eşleştirme Sonuçları</h3>
+          <div class="race-results-stats" id="matchResultsStats"></div>
+          <div class="race-results-score">
+            <span class="results-score-label">Kazanılan Puan</span>
+            <span class="results-score-value" id="matchFinalScore">0</span>
+          </div>
+          <div class="race-results-actions">
+            <button class="btn-primary" id="btnMatchReplay">🔄 Tekrar Oyna</button>
+            <button class="btn-secondary" id="btnMatchBackHub">🏠 Yarış Arenası</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ RACE STATS MODAL ══════════════ -->
+  <div id="raceStatsModal" class="modal-overlay hidden">
+    <div class="modal-card race-stats-modal">
+      <div class="modal-header">
+        <h3>📊 Yarış İstatistikleri</h3>
+        <button class="modal-close-btn" onclick="closeModal('raceStatsModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="race-full-stats" id="raceFullStats">
+          <!-- Stats injected by JS -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeModal('raceStatsModal')">Kapat</button>
+        <button class="btn-primary" style="background: var(--accent-3);" onclick="resetRaceStats()">🗑️ İstatistikleri Sıfırla</button>
+      </div>
+    </div>
+  </div>
+
   <!-- ══════════════ ÇIKIŞ ONAY MODALI ══════════════ -->
   <div id="logoutConfirmModal" class="modal-overlay hidden">
     <div class="modal-card logout-confirm-card">
@@ -959,7 +1268,7 @@
   </div>
 
   <!-- JAVASCRIPT -->
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
 </body>
 
 </html>
