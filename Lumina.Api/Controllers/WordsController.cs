@@ -4,293 +4,114 @@ using Microsoft.Data.SqlClient;
 
 namespace Lumina.Api.Controllers
 {
+    /// <summary>
+    /// Kelime listelerini SQL Server'dan döndürür. Tüm diller tek bir kod yolundan geçer;
+    /// yeni dil eklemek için <see cref="Languages"/> sözlüğüne bir satır eklemek yeterlidir.
+    /// </summary>
     [EnableCors("AllowAll")]
     [Route("api/[controller]")]
     [ApiController]
     public class WordsController : ControllerBase
     {
-        private readonly string connectionString = "Server=.;Database=LuminaDB;Trusted_Connection=True;TrustServerCertificate=True;";
+        private const int GroupSize = 100;
 
-        // ── İngilizce: GET /api/words ──
-        // Words tablosundan LanguageId=1 olanları çeker, groupId de döndürür
+        /// <param name="Sql">Sırası belli (ORDER BY) iki sütun döndüren sorgu: önce hedef dil kelimesi, sonra Türkçe anlam.</param>
+        private sealed record LanguageSource(string Sql, int? LanguageId = null);
+
+        private static readonly Dictionary<string, LanguageSource> Languages = new(StringComparer.OrdinalIgnoreCase)
+        {
+            // Modern şema: dbo.Words(Id, LanguageId, OriginalWord, TranslatedWord) — bkz. Database/schema.sql
+            ["english"]   = new("SELECT OriginalWord, TranslatedWord FROM dbo.Words WHERE LanguageId = @lang ORDER BY Id", 1),
+
+            // Excel'den içe aktarılan tablolar — bkz. Database/import_words.sql (RowId = dosyadaki sıra)
+            ["german"]    = new("SELECT [Almanca Kelime], [Türkçe Anlamı] FROM dbo.[Almanca] ORDER BY RowId"),
+            ["french"]    = new("SELECT [Fransızca Kelime], [Türkçe Anlamı] FROM dbo.[Fransızca] ORDER BY RowId"),
+            ["swedish"]   = new("SELECT [İsveççe Anlamı], [Türkçe Anlamı] FROM dbo.[Isvecce] ORDER BY RowId"),
+            ["spanish"]   = new("SELECT [İspanyolca Kelime], [Türkçe Anlamı] FROM dbo.[Ispanyolca] ORDER BY RowId"),
+            ["norwegian"] = new("SELECT [Norveççe Kelime], [Türkçe Anlamı] FROM dbo.[Norvecce] ORDER BY RowId"),
+        };
+
+        private readonly string _connectionString;
+        private readonly ILogger<WordsController> _logger;
+
+        public WordsController(IConfiguration configuration, ILogger<WordsController> logger)
+        {
+            _connectionString = configuration.GetConnectionString("Lumina")
+                ?? throw new InvalidOperationException("ConnectionStrings:Lumina ayarı eksik (appsettings.json).");
+            _logger = logger;
+        }
+
+        // GET /api/words  (İngilizce)
         [HttpGet]
-        public IActionResult GetWords()
-        {
-            var wordsList = new List<object>();
+        public Task<IActionResult> GetEnglish() => GetWordsAsync("english");
 
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    // ROW_NUMBER ile sıra no üretiyoruz, Id sütunu olmasa bile çalışır
-                    string query = @"SELECT 
-                        ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS RowNum,
-                        OriginalWord, TranslatedWord 
-                        FROM Words WHERE LanguageId = 1";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            int index = 0;
-                            while (reader.Read())
-                            {
-                                index++;
-                                wordsList.Add(new
-                                {
-                                    id = index,
-                                    groupId = (int)Math.Ceiling((double)index / 100),
-                                    english = reader["OriginalWord"]?.ToString()?.Trim() ?? "",
-                                    turkish = reader["TranslatedWord"]?.ToString()?.Trim() ?? ""
-                                });
-                            }
-                        }
-                    }
-                }
-
-                return Ok(wordsList);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { error = "İngilizce kelimeler yüklenemedi.", detail = ex.Message });
-            }
-        }
-
-        // ── İngilizce kelime sayısı: GET /api/words/count ──
+        // GET /api/words/count
         [HttpGet("count")]
-        public IActionResult GetEnglishCount()
-        {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    string query = "SELECT COUNT(*) FROM Words WHERE LanguageId = 1";
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        int count = (int)command.ExecuteScalar();
-                        return Ok(new { count });
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { error = ex.Message });
-            }
-        }
+        public Task<IActionResult> GetEnglishCount() => GetCountAsync("english");
 
-        // ── Almanca: GET /api/words/german ──
-        [HttpGet("german")]
-        public IActionResult GetGermanWords()
+        // GET /api/words/{english|german|french|swedish|spanish|norwegian}
+        [HttpGet("{lang}")]
+        public Task<IActionResult> GetByLanguage(string lang) => GetWordsAsync(lang);
+
+        // GET /api/words/{lang}/count
+        [HttpGet("{lang}/count")]
+        public Task<IActionResult> GetCountByLanguage(string lang) => GetCountAsync(lang);
+
+        private async Task<IActionResult> GetWordsAsync(string lang)
         {
-            var wordsList = new List<object>();
+            if (!Languages.TryGetValue(lang, out var source))
+                return NotFound(new { error = $"Bilinmeyen dil: {lang}" });
 
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                var rows = new List<(string Word, string Turkish)>();
+
+                await using var connection = new SqlConnection(_connectionString);
+                await connection.OpenAsync();
+                await using var command = new SqlCommand(source.Sql, connection);
+                if (source.LanguageId.HasValue) command.Parameters.AddWithValue("@lang", source.LanguageId.Value);
+
+                await using var reader = await command.ExecuteReaderAsync();
+                while (await reader.ReadAsync())
                 {
-                    connection.Open();
-                    // Almanca tablosu: Sıra | Kelime | Anlamı | Türkçe Anlamı
-                    string query = "SELECT * FROM Almanca";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            int index = 0;
-                            while (reader.Read())
-                            {
-                                index++;
-                                var kelime = reader[1] is DBNull ? "" : reader[1].ToString()?.Trim() ?? "";
-                                var turkce = reader[3] is DBNull ? "" : reader[3].ToString()?.Trim() ?? "";
-
-                                if (!string.IsNullOrEmpty(kelime) && !string.IsNullOrEmpty(turkce))
-                                {
-                                    wordsList.Add(new
-                                    {
-                                        id = index,
-                                        groupId = (int)Math.Ceiling((double)index / 100),
-                                        english = kelime,
-                                        turkish = turkce
-                                    });
-                                }
-                            }
-                        }
-                    }
+                    var word = Read(reader, 0);
+                    var turkish = Read(reader, 1);
+                    // Çevirisi henüz girilmemiş satırlar listeye alınmaz
+                    if (word.Length == 0 || turkish.Length == 0) continue;
+                    rows.Add((word, turkish));
                 }
 
-                return Ok(wordsList);
+                // Sıra SQL'deki ORDER BY ile sabittir; grup = her 100 kelime
+                var result = rows
+                    .Select((r, i) => new
+                    {
+                        id = i + 1,
+                        groupId = i / GroupSize + 1,
+                        english = r.Word,
+                        turkish = r.Turkish
+                    })
+                    .ToList();
+
+                Response.Headers.CacheControl = "public, max-age=3600";
+                return Ok(result);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "Almanca kelimeler yüklenemedi.", detail = ex.Message });
+                _logger.LogError(ex, "{Lang} kelimeleri okunamadı", lang);
+                return StatusCode(500, new { error = "Kelimeler yüklenemedi." });
             }
         }
 
-        // ── Almanca kelime sayısı: GET /api/words/german/count ──
-        [HttpGet("german/count")]
-        public IActionResult GetGermanCount()
+        private async Task<IActionResult> GetCountAsync(string lang)
         {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    string query = "SELECT COUNT(*) FROM Almanca";
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        int count = (int)command.ExecuteScalar();
-                        return Ok(new { count });
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { error = ex.Message });
-            }
+            // Sayı, listeyle birebir aynı filtreyle hesaplanır (boş satırlar sayılmaz).
+            var response = await GetWordsAsync(lang);
+            if (response is OkObjectResult ok && ok.Value is System.Collections.ICollection items)
+                return Ok(new { count = items.Count });
+            return response;
         }
 
-        // ── Fransızca: GET /api/words/french ──
-        [HttpGet("french")]
-        public IActionResult GetFrenchWords()
-        {
-            var wordsList = new List<object>();
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    // Fransızca tablosu: [Sıra] | [Fransızca Kelime] | [Tür] | [Türkçe Anlamı]
-                    string query = "SELECT [Sıra], [Fransızca Kelime], [Tür], [Türkçe Anlamı] FROM dbo.[Fransızca]";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            int index = 0;
-                            while (reader.Read())
-                            {
-                                index++;
-                                var kelime = reader["Fransızca Kelime"] is DBNull ? "" : reader["Fransızca Kelime"].ToString()?.Trim() ?? "";
-                                var turkce = reader["Türkçe Anlamı"] is DBNull ? "" : reader["Türkçe Anlamı"].ToString()?.Trim() ?? "";
-
-                                if (!string.IsNullOrEmpty(kelime) && !string.IsNullOrEmpty(turkce))
-                                {
-                                    wordsList.Add(new
-                                    {
-                                        id = index,
-                                        groupId = (int)Math.Ceiling((double)index / 100),
-                                        english = kelime,
-                                        turkish = turkce
-                                    });
-                                }
-                            }
-                        }
-                    }
-                }
-
-                return Ok(wordsList);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { error = ex.Message, stack = ex.StackTrace });
-            }
-        }
-
-        // ── Fransızca kelime sayısı: GET /api/words/french/count ──
-        [HttpGet("french/count")]
-        public IActionResult GetFrenchCount()
-        {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    string query = "SELECT COUNT(*) FROM dbo.[Fransızca]";
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        int count = (int)command.ExecuteScalar();
-                        return Ok(new { count });
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { error = ex.Message });
-            }
-        }
-
-        // ── İsveççe: GET /api/words/swedish ──
-        [HttpGet("swedish")]
-        public IActionResult GetSwedishWords()
-        {
-            var wordsList = new List<object>();
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    // Isvecce tablosu: Sıra | Kelime | Anlamı | Türkçe Anlamı
-                    string query = "SELECT * FROM dbo.[Isvecce]";
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            int index = 0;
-                            while (reader.Read())
-                            {
-                                index++;
-                                var kelime = reader[1] is DBNull ? "" : reader[1].ToString()?.Trim() ?? "";
-                                var turkce = reader[3] is DBNull ? "" : reader[3].ToString()?.Trim() ?? "";
-
-                                if (!string.IsNullOrEmpty(kelime) && !string.IsNullOrEmpty(turkce))
-                                {
-                                    wordsList.Add(new
-                                    {
-                                        id = index,
-                                        groupId = (int)Math.Ceiling((double)index / 100),
-                                        english = kelime,
-                                        turkish = turkce
-                                    });
-                                }
-                            }
-                        }
-                    }
-                }
-
-                return Ok(wordsList);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { error = "İsveççe kelimeler yüklenemedi.", detail = ex.Message });
-            }
-        }
-
-        // ── İsveççe kelime sayısı: GET /api/words/swedish/count ──
-        [HttpGet("swedish/count")]
-        public IActionResult GetSwedishCount()
-        {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    string query = "SELECT COUNT(*) FROM dbo.[Isvecce]";
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        int count = (int)command.ExecuteScalar();
-                        return Ok(new { count });
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { error = ex.Message });
-            }
-        }
+        private static string Read(SqlDataReader reader, int ordinal) =>
+            reader.IsDBNull(ordinal) ? "" : (reader.GetValue(ordinal)?.ToString() ?? "").Trim();
     }
 }

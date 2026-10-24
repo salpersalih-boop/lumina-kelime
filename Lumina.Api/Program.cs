@@ -1,4 +1,4 @@
-﻿namespace Lumina.Api
+namespace Lumina.Api
 {
     public class Program
     {
@@ -6,39 +6,34 @@
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
             builder.Services.AddControllers();
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
-            // 1. CORS İzin Politikasını Tanımlıyoruz
+            // CORS: appsettings.json → "Cors:AllowedOrigins": ["https://siteniz.com"]
+            // Liste boşsa yalnızca geliştirme ortamında herkese izin verilir.
+            var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? Array.Empty<string>();
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll",
-                    policy =>
-                    {
-                        policy.AllowAnyOrigin()
-                              .AllowAnyMethod()
-                              .AllowAnyHeader();
-                    });
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    if (allowedOrigins.Length > 0)
+                        policy.WithOrigins(allowedOrigins).AllowAnyMethod().AllowAnyHeader();
+                    else if (builder.Environment.IsDevelopment())
+                        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
             });
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
             }
 
-            // HTTPS redirection kaldirildi - HTTP uzerinden calisiyoruz
+            // HTTPS yönlendirmesi barındırma ortamına (reverse proxy) bırakıldı.
 
-            // 2. CORS politikasını aktif hale getiriyoruz (UseAuthorization'dan ÖNCE olmalı)
             app.UseCors("AllowAll");
-
             app.UseAuthorization();
-
             app.MapControllers();
 
             app.Run();

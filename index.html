@@ -3,27 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumina 3000 – İngilizce Çalışma Sistemi</title>
+  <title>Lumina</title>
   <meta name="description" content="3000 kelimelik, 30 gruba bölünmüş kişisel İngilizce kelime çalışma sistemi." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=3" />
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <!-- Cache temizleyici: eski SW cache'lerini sil -->
-  <script>
-    if ('caches' in window) {
-      caches.keys().then(keys => {
-        keys.forEach(key => {
-          if (key !== 'lumina-cache-v7') {
-            caches.delete(key);
-          }
-        });
-      });
-    }
-  </script>
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 
 <body>
@@ -75,7 +63,7 @@
           <button id="userDropdownTrigger" class="user-dropdown-btn">
             <span id="topUserLangFlag" class="user-lang-flag">🇬🇧</span>
             <div id="topUserAvatar" class="top-user-avatar">A</div>
-            <span id="topUserName" class="top-user-name">a@l.com</span>
+            <span id="topUserName" class="top-user-name"></span>
             <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2.5">
               <path d="M6 9l6 6 6-6" />
@@ -87,9 +75,9 @@
             <div class="dropdown-user-header">
               <div id="menuUserAvatar" class="dropdown-avatar">A</div>
               <div class="dropdown-user-info">
-                <div id="menuUserName" class="dropdown-name">Admin User</div>
-                <div id="menuUserEmail" class="dropdown-email">a@l.com</div>
-                <span id="menuUserRoleBadge" class="user-role-badge admin">⚡ Admin</span>
+                <div id="menuUserName" class="dropdown-name"></div>
+                <div id="menuUserEmail" class="dropdown-email"></div>
+                <span id="menuUserRoleBadge" class="user-role-badge user">👤 Kullanıcı</span>
               </div>
             </div>
             <div class="dropdown-divider"></div>
@@ -133,9 +121,19 @@
     <div class="auth-container">
       <!-- Logo -->
       <div class="auth-logo">
-        <span class="logo-icon">✦</span>
-        <h1 class="logo-title">Lumina <span class="accent">3000</span></h1>
-        <p class="auth-tagline">Kişisel İngilizce Kelime Sistemi</p>
+        <svg class="lumina-mark" viewBox="0 0 120 120" width="108" height="108" aria-label="Lumina" role="img">
+          <defs>
+            <linearGradient id="lmBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1d3a"/><stop offset="1" stop-color="#07080f"/></linearGradient>
+            <linearGradient id="lmG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".55" stop-color="#a78bfa"/><stop offset="1" stop-color="#fb923c"/></linearGradient>
+          </defs>
+          <rect x="4" y="4" width="112" height="112" rx="30" fill="url(#lmBg)" stroke="#2c3160" stroke-width="2"/>
+          <rect x="16" y="16" width="88" height="88" rx="22" fill="none" stroke="url(#lmG)" stroke-width="2" opacity=".35"/>
+          <path d="M42 32 V78 Q42 88 52 88 H80" fill="none" stroke="url(#lmG)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M42 56 H60" stroke="url(#lmG)" stroke-width="6" stroke-linecap="round" opacity=".6"/>
+          <path d="M86 22 L89 32 L99 35 L89 38 L86 48 L83 38 L73 35 L83 32 Z" fill="#fde68a"/>
+        </svg>
+        <h1 class="logo-title">Lumina ✨</h1>
+        <p class="auth-tagline">Kelimelerin, ilerlemen, hepsi hesabında</p>
       </div>
 
       <!-- Auth Card -->
@@ -194,11 +192,11 @@
           </button>
           <button class="auth-forgot-link" onclick="authShowPanel('forgot')">Şifremi Unuttum</button>
 
-          <!-- Quick Admin Login -->
-          <div class="auth-divider"><span>veya hızlı giriş</span></div>
-          <button class="auth-admin-btn" onclick="authQuickAdmin()">
-            <span class="admin-badge">⚡ Admin</span>
-            <span>a@l.com ile hızlı giriş</span>
+          <!-- Misafir -->
+          <div class="auth-divider"><span>veya</span></div>
+          <button class="auth-admin-btn" type="button" onclick="authGuest()">
+            <span class="admin-badge">👤 Misafir</span>
+            <span>Hesap açmadan dene (ilerleme sadece bu cihazda kalır)</span>
           </button>
         </div>
 
@@ -271,7 +269,7 @@
               Geri Dön
             </button>
           </div>
-          <p class="auth-forgot-desc">E-posta adresinizi girin, şifrenizi gösterelim.</p>
+          <p class="auth-forgot-desc">E-posta adresinizi girin, size şifre sıfırlama bağlantısı gönderelim.</p>
           <div class="auth-field-group">
             <label class="auth-label" for="fpEmail">E-posta</label>
             <div class="auth-input-wrap">
@@ -285,7 +283,7 @@
           <div id="fpError" class="auth-error hidden"></div>
           <div id="fpSuccess" class="auth-success hidden"></div>
           <button class="auth-submit-btn" id="btnForgot" onclick="authForgotPassword()">
-            <span>Şifremi Göster</span>
+            <span>Sıfırlama Bağlantısı Gönder</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
@@ -299,8 +297,7 @@
   <!-- ══════════════ LANGUAGE SCREEN ══════════════ -->
   <div id="languageScreen" class="screen" style="justify-content: center; align-items: center; min-height: 100dvh; padding: 24px 16px;">
     <div style="text-align: center; margin-bottom: 2rem; max-width: 100%;">
-      <h1 class="logo-title" style="font-size: clamp(1.8rem, 6vw, 4rem); margin-bottom: 1rem;">Lumina <span
-          class="accent">3000</span></h1>
+      <h1 class="logo-title" style="font-size: clamp(1.8rem, 6vw, 4rem); margin-bottom: 1rem;">Lumina</h1>
       <p class="logo-sub" style="font-size: clamp(0.85rem, 2.5vw, 1.1rem); color: var(--text-muted);">Choose Your Journey / Yolculuğunu Seç</p>
     </div>
     <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; padding: 0 8px; width: 100%; max-width: 900px;">
@@ -390,13 +387,13 @@
     <header class="dash-header">
       <div class="logo-wrap">
         <span class="logo-icon">✦</span>
-        <h1 class="logo-title">Lumina <span class="accent">3000</span></h1>
+        <h1 class="logo-title">Lumina</h1>
       </div>
       <p class="logo-sub" style="max-width: 100%; overflow-wrap: break-word;">Kişisel İngilizce Kelime Sistemi · 30 Grup · 3000 Kelime</p>
       <!-- User Info + Logout -->
       <div class="dash-user-row" id="dashUserRow">
         <div class="dash-user-avatar" id="dashUserAvatar">A</div>
-        <span class="dash-user-email" id="dashUserEmail">a@l.com</span>
+        <span class="dash-user-email" id="dashUserEmail"></span>
         <button class="dash-logout-btn" id="btnLogout" onclick="authSignOut()" title="Çıkış Yap">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16">
             <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
@@ -783,7 +780,7 @@
         <div class="auth-field-group">
           <label class="auth-label">Kullanıcı Rolü</label>
           <div class="role-badge-box">
-            <span id="maRoleBadge" class="user-role-badge admin">⚡ Admin</span>
+            <span id="maRoleBadge" class="user-role-badge user">👤 Kullanıcı</span>
           </div>
         </div>
 
@@ -1268,7 +1265,13 @@
   </div>
 
   <!-- JAVASCRIPT -->
-  <script src="script.js?v=6"></script>
+  <!-- Firebase (compat SDK) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="auth.js?v=2"></script>
+  <script src="script.js?v=9"></script>
 </body>
 
 </html>

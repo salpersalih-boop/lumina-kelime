@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+*.user
+temp_extracted/
+node_modules/
+*.xlsx
+.firebase/
+Lumina.Api.New/
+update_script.*
+SQLQuery1.sql
+SQLQuery2.sql
+"Lumına Sistemi.txt"
+"Lumına Kelime/"
