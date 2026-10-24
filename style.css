@@ -4102,7 +4102,8 @@ body.light-theme .auth-google-btn:hover {
 ======================================= */
 body.google-user .change-password-item {
     display: none !important;
-}
+}
+
 /* SV Theme (Swedish) */
 .lang-btn.sv-theme {
     border-color: rgba(77, 163, 255, 0.4);
@@ -5048,3 +5049,27 @@ body.theme-sv .group-card {
     .race-results-card { padding: 24px 16px; }
     .race-full-stats { grid-template-columns: 1fr 1fr; }
 }
+
+/* ===== LUMINA × PLANOVA ortak görünüm (giriş ekranı) ===== */
+#authScreen { background: linear-gradient(135deg,#d9f3fa 0%,#f3fafc 45%,#fdeee4 100%) !important; color:#1e293b; }
+#authScreen .auth-bg-orbs { display:none; }
+#authScreen .auth-logo { text-align:center; }
+#authScreen .lumina-mark { display:block; margin:0 auto 14px; filter: drop-shadow(0 8px 24px rgba(167,139,250,.45)); border-radius:30px; }
+#authScreen .auth-logo .logo-title { color:#1e293b !important; -webkit-text-fill-color:#1e293b; background:none !important; font-weight:800; letter-spacing:-.02em; }
+#authScreen .auth-tagline { color:#64748b !important; }
+#authScreen .auth-card { background:#fff !important; border:1px solid #e2e8f0 !important; border-radius:32px !important; box-shadow:0 20px 60px rgba(30,41,59,.10) !important; }
+#authScreen .auth-tabs { background:#f1f5f9 !important; border-radius:14px; }
+#authScreen .auth-tab { color:#64748b !important; }
+#authScreen .auth-tab.active { background:#fff !important; color:#1e293b !important; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+#authScreen .auth-label { color:#334155 !important; font-weight:700; }
+#authScreen .auth-input { background:#fff !important; color:#1e293b !important; border:1px solid #e2e8f0 !important; border-radius:16px !important; }
+#authScreen .auth-input::placeholder { color:#94a3b8; }
+#authScreen .auth-input:focus { border-color:#fb923c !important; box-shadow:0 0 0 3px rgba(251,146,60,.2) !important; }
+#authScreen .auth-input-icon, #authScreen .auth-eye-btn { color:#94a3b8 !important; }
+#authScreen .auth-submit-btn { background:linear-gradient(135deg,#f97316,#fb923c) !important; color:#fff !important; border:none !important; border-radius:16px !important; box-shadow:0 10px 24px rgba(249,115,22,.35) !important; font-weight:800; }
+#authScreen .auth-google-btn { background:#fff !important; color:#1e293b !important; border:1px solid #dbe3ee !important; border-radius:16px !important; font-weight:700; }
+#authScreen .auth-divider { color:#94a3b8 !important; }
+#authScreen .auth-divider::before, #authScreen .auth-divider::after { background:#e2e8f0 !important; }
+#authScreen .auth-forgot-link, #authScreen .auth-back-link { color:#06b6d4 !important; font-weight:700; }
+#authScreen .auth-admin-btn { background:#f8fafc !important; border:1px solid #e2e8f0 !important; color:#475569 !important; border-radius:16px !important; }
+#authScreen .auth-forgot-desc { color:#64748b !important; }

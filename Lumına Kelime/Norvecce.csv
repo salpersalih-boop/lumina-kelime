@@ -1,0 +1,1987 @@
+Sıra;Norveççe Kelime;Tür;Türkçe Anlamı
+0;jeg;pron;ben
+1;du;pron;sen
+2;han;pron;o (erkek)
+3;hun;pron;o (kadın)
+4;den;pron;o (nesne)
+5;det;pron;o (nötr)
+6;vi;pron;biz
+7;dere;pron;siz
+8;de;pron;onlar
+9;meg;pron;beni, bana
+10;deg;pron;seni, sana
+11;ham;pron;onu (erkek)
+12;henne;pron;onu (kadın)
+13;oss;pron;bizi, bize
+14;dem;pron;onları, onlara
+15;min;pron;benim
+16;din;pron;senin
+17;hans;pron;onun (erkek)
+18;hennes;pron;onun (kadın)
+19;vår;pron;bizim
+20;deres;pron;sizin, onların
+21;denne;pron;bu
+22;dette;pron;bu (nötr)
+23;disse;pron;bunlar
+24;den der;pron;şu
+25;som;conj;ki, gibi
+26;hva;pron;ne
+27;hvem;pron;kim
+28;hvilken;pron;hangi
+29;hvordan;adv;nasıl
+30;når;adv;ne zaman
+31;hvor;adv;nerede
+32;hvorfor;adv;neden
+33;og;conj;ve
+34;eller;conj;veya
+35;men;conj;ama
+36;hvis;conj;eğer
+37;fordi;conj;çünkü
+38;selv om;conj;her ne kadar
+39;da;conj;o zaman, iken
+40;mens;conj;iken
+41;så;adv;o zaman, öyle
+42;også;adv;ayrıca
+43;heller ikke;adv;ne de
+44;ikke;adv;değil
+45;ja;adv;evet
+46;nei;adv;hayır
+47;veldig;adv;çok
+48;mer;adv;daha
+49;mindre;adv;daha az
+50;bra;adv;iyi
+51;dårlig;adv;kötü
+52;allerede;adv;çoktan
+53;fortsatt;adv;hâlâ
+54;alltid;adv;her zaman
+55;aldri;adv;asla
+56;noen ganger;adv;bazen
+57;her;adv;burada
+58;der;adv;orada
+59;nær;adv;yakın
+60;langt;adv;uzak
+61;opp;adv;yukarı
+62;ned;adv;aşağı
+63;inne;adv;içeride
+64;ute;adv;dışarıda
+65;nå;adv;şimdi
+66;i dag;adv;bugün
+67;i går;adv;dün
+68;i morgen;adv;yarın
+69;senere;adv;sonra
+70;snart;adv;yakında
+71;sent;adv;geç
+72;tidlig;adv;erken
+73;i;prep;içinde
+74;på;prep;üzerinde
+75;til;prep;-e, -a
+76;med;prep;ile
+77;uten;prep;-siz
+78;for;prep;için
+79;av;prep;-den
+80;om;prep;hakkında
+81;mellom;prep;arasında
+82;fra;prep;-den beri
+83;mot;prep;karşı
+84;under;prep;altında
+85;over;prep;üstünde
+86;gjennom;prep;içinden, aracılığıyla
+87;etter;prep;sonra
+88;før;prep;önce
+89;være;v;olmak
+90;ha;v;sahip olmak
+91;bli;v;olmak, dönüşmek
+92;gjøre;v;yapmak
+93;si;v;söylemek
+94;gå;v;gitmek, yürümek
+95;kunne;v;yapabilmek
+96;skulle;v;yapacak olmak
+97;ville;v;istemek
+98;måtte;v;zorunda olmak
+99;sette;v;koymak
+100;gi;v;vermek
+101;se;v;görmek
+102;vite;v;bilmek
+103;komme;v;gelmek
+104;finne;v;bulmak
+105;tro;v;inanmak
+106;snakke;v;konuşmak
+107;ta;v;almak
+108;la;v;bırakmak
+109;følge;v;izlemek
+110;kalle;v;çağırmak
+111;tenke;v;düşünmek
+112;legge;v;koymak, yatırmak
+113;mene;v;düşünmek, kastetmek
+114;sitte;v;oturmak
+115;stå;v;ayakta durmak
+116;spørre;v;sormak
+117;bruke;v;kullanmak
+118;arbeide;v;çalışmak
+119;skrive;v;yazmak
+120;lese;v;okumak
+121;miste;v;kaybetmek
+122;vise;v;göstermek
+123;leve;v;yaşamak
+124;like;v;beğenmek
+125;spille;v;oynamak
+126;høre;v;duymak, dinlemek
+127;lære;v;öğrenmek
+128;kjøpe;v;satın almak
+129;selge;v;satmak
+130;betale;v;ödemek
+131;vinne;v;kazanmak
+132;tape;v;kaybetmek (oyunda)
+133;vente;v;beklemek
+134;håpe;v;ummak
+135;huske;v;hatırlamak
+136;glemme;v;unutmak
+137;elske;v;sevmek
+138;hate;v;nefret etmek
+139;begynne;v;başlamak
+140;slutte;v;bitirmek
+141;åpne;v;açmak
+142;lukke;v;kapatmak
+143;starte;v;başlatmak
+144;stoppe;v;durdurmak
+145;forstå;v;anlamak
+146;forklare;v;açıklamak
+147;svare;v;cevap vermek
+148;møte;v;buluşmak
+149;besøke;v;ziyaret etmek
+150;reise;v;seyahat etmek
+151;kjøre;v;sürmek
+152;fly;v;uçmak
+153;gå til fots;v;yürüyerek gitmek
+154;løpe;v;koşmak
+155;svømme;v;yüzmek
+156;hoppe;v;zıplamak
+157;spise;v;yemek
+158;drikke;v;içmek
+159;sove;v;uyumak
+160;våkne;v;uyanmak
+161;lage mat;v;yemek pişirmek
+162;vaske;v;yıkamak
+163;mannen;n;adam
+164;kvinnen;n;kadın
+165;gutten;n;erkek çocuk
+166;jenta;n;kız çocuk
+167;barnet;n;çocuk (bebek)
+168;personen;n;kişi
+169;folk;n;insanlar
+170;familien;n;aile
+171;faren;n;baba
+172;moren;n;anne
+173;sønnen;n;oğul
+174;datteren;n;kız evlat
+175;broren;n;erkek kardeş
+176;søsteren;n;kız kardeş
+177;bestefaren;n;büyükbaba
+178;bestemoren;n;büyükanne
+179;onkelen;n;amca, dayı
+180;tanten;n;teyze, hala
+181;fetteren;n;erkek kuzen
+182;kusinen;n;kız kuzen
+183;mannen (ektemann);n;koca
+184;kona;n;eş (kadın)
+185;kjæresten;n;sevgili
+186;vennen;n;arkadaş (erkek)
+187;venninnen;n;arkadaş (kadın)
+188;naboen;n;komşu
+189;sjefen;n;patron
+190;den ansatte;n;çalışan
+191;arbeideren;n;işçi
+192;studenten;n;öğrenci
+193;læreren;n;öğretmen
+194;professoren;n;profesör
+195;legen;n;doktor
+196;sykepleieren;n;hemşire
+197;advokaten;n;avukat
+198;ingeniøren;n;mühendis
+199;politiet;n;polis
+200;soldaten;n;asker
+201;kokken;n;aşçı
+202;kelneren;n;garson
+203;sjåføren;n;şoför
+204;piloten;n;pilot
+205;kunstneren;n;sanatçı
+206;musikeren;n;müzisyen
+207;forfatteren;n;yazar
+208;maleren;n;ressam
+209;skuespilleren;n;aktör
+210;sangeren;n;şarkıcı
+211;presidenten;n;başkan
+212;kongen;n;kral
+213;dronningen;n;kraliçe
+214;regjeringen;n;hükümet
+215;landet;n;ülke
+216;byen;n;şehir
+217;landsbyen;n;kasaba, köy
+218;staten;n;devlet
+219;nasjonen;n;ulus
+220;verden;n;dünya
+221;huset;n;ev
+222;hjemmet;n;yuva
+223;leiligheten;n;apartman dairesi
+224;rommet;n;oda
+225;kjøkkenet;n;mutfak
+226;badet;n;banyo
+227;stuen;n;oturma odası
+228;soverommet;n;yatak odası
+229;døren;n;kapı
+230;vinduet;n;pencere
+231;veggen;n;duvar
+232;taket;n;tavan, çatı
+233;gulvet;n;zemin
+234;trappen;n;merdiven
+235;hagen;n;bahçe
+236;bordet;n;masa
+237;stolen;n;sandalye
+238;sengen;n;yatak
+239;sofaen;n;koltuk
+240;skapet;n;dolap
+241;speilet;n;ayna
+242;lampen;n;lamba
+243;maten;n;yemek
+244;drikken;n;içecek
+245;vannet;n;su
+246;brødet;n;ekmek
+247;melken;n;süt
+248;osten;n;peynir
+249;kjøttet;n;et
+250;kyllingen;n;tavuk
+251;fisken;n;balık
+252;egget;n;yumurta
+253;risen;n;pirinç
+254;frukten;n;meyve
+255;eplet;n;elma
+256;appelsinen;n;portakal
+257;bananen;n;muz
+258;druen;n;üzüm
+259;grønnsaken;n;sebze
+260;poteten;n;patates
+261;løken;n;soğan
+262;tomaten;n;domates
+263;sukkeret;n;şeker
+264;saltet;n;tuz
+265;oljen;n;yağ
+266;kaffen;n;kahve
+267;teen;n;çay
+268;vinen;n;şarap
+269;ølet;n;bira
+270;frokosten;n;kahvaltı
+271;lunsjen;n;öğle yemeği
+272;middagen;n;akşam yemeği
+273;restauranten;n;restoran
+274;markedet;n;pazar
+275;butikken;n;dükkan
+276;pengene;n;para
+277;prisen;n;fiyat
+278;jobben;n;iş
+279;firmaet;n;şirket
+280;kontoret;n;ofis
+281;skolen;n;okul
+282;universitetet;n;üniversite
+283;boken;n;kitap
+284;papiret;n;kağıt
+285;blyanten;n;kalem
+286;pennen;n;tükenmez kalem
+287;klassen;n;sınıf
+288;leksjonen;n;ders
+289;eksamen;n;sınav
+290;spørsmålet;n;soru
+291;svaret;n;cevap
+292;problemet;n;sorun
+293;løsningen;n;çözüm
+294;ideen;n;fikir
+295;tanken;n;düşünce
+296;ordet;n;kelime
+297;språket;n;dil
+298;tungen;n;dil (organ)
+299;bokstaven;n;harf
+300;navnet;n;isim
+301;nummeret;n;sayı
+302;datoen;n;tarih
+303;året;n;yıl
+304;måneden;n;ay
+305;uken;n;hafta
+306;dagen;n;gün
+307;timen;n;saat (süre)
+308;minuttet;n;dakika
+309;sekundet;n;saniye
+310;tiden;n;zaman
+311;øyeblikket;n;an
+312;morgenen;n;sabah
+313;ettermiddagen;n;öğleden sonra
+314;kvelden;n;akşam
+315;god;adj;iyi
+316;stor;adj;büyük
+317;liten;adj;küçük
+318;høy;adj;uzun, yüksek
+319;lav;adj;kısa, alçak
+320;lang;adj;uzun
+321;kort;adj;kısa
+322;bred;adj;geniş
+323;smal;adj;dar
+324;ny;adj;yeni
+325;gammel;adj;eski, yaşlı
+326;ung;adj;genç
+327;rik;adj;zengin
+328;fattig;adj;fakir
+329;lykkelig;adj;mutlu
+330;trist;adj;üzgün
+331;fornøyd;adj;memnun
+332;sint;adj;kızgın
+333;trøtt;adj;yorgun
+334;syk;adj;hasta
+335;frisk;adj;sağlıklı
+336;sterk;adj;güçlü
+337;svak;adj;zayıf
+338;rask;adj;hızlı
+339;sakte;adj;yavaş
+340;lett;adj;kolay, hafif
+341;vanskelig;adj;zor
+342;viktig;adj;önemli
+343;nødvendig;adj;gerekli
+344;mulig;adj;mümkün
+345;umulig;adj;imkansız
+346;klar;adj;açık, net
+347;mørk;adj;karanlık
+348;ren;adj;temiz
+349;skitten;adj;kirli
+350;full;adj;dolu
+351;tom;adj;boş
+352;åpen;adj;açık
+353;lukket;adj;kapalı
+354;varm;adj;sıcak
+355;kald;adj;soğuk
+356;dyr;adj;pahalı
+357;billig;adj;ucuz
+358;pen;adj;güzel
+359;vakker;adj;güzel (görünüş)
+360;stygg;adj;çirkin
+361;kjekk;adj;yakışıklı
+362;tykk;adj;şişman, kalın
+363;tynn;adj;zayıf, ince
+364;søt;adj;tatlı, sevimli
+365;bitter;adj;acı
+366;salt;adj;tuzlu
+367;deilig;adj;lezzetli, hoş
+368;fri;adj;özgür
+369;opptatt;adj;meşgul
+370;rolig;adj;sakin
+371;nervøs;adj;sinirli
+372;trygg;adj;güvenli
+373;farlig;adj;tehlikeli
+374;riktig;adj;doğru
+375;feil;adj;yanlış
+376;sann;adj;doğru, gerçek
+377;falsk;adj;sahte
+378;komplett;adj;tam
+379;ufullstendig;adj;eksik
+380;lik;adj;eşit, aynı
+381;forskjellig;adj;farklı
+382;samme;adj;aynı
+383;annen;adj;başka
+384;all;adj;tüm
+385;ingen;adj;hiçbir
+386;hver;adj;her
+387;flere;adj;çeşitli, daha fazla
+388;mye;adj;çok
+389;lite;adj;az
+390;nok;adj;yeterli
+391;for mye;adj;fazla
+392;tilstrekkelig;adj;yeterli
+393;først;adj;birinci
+394;andre;adj;ikinci
+395;tredje;adj;üçüncü
+396;siste;adj;son
+397;neste;adj;sonraki
+398;forrige;adj;önceki
+399;følgende;adj;sonraki
+400;nåværende;adj;şu anki
+401;nasjonal;adj;ulusal
+402;internasjonal;adj;uluslararası
+403;offentlig;adj;kamusal
+404;privat;adj;özel
+405;generell;adj;genel
+406;spesiell;adj;özel
+407;normal;adj;normal
+408;rar;adj;tuhaf
+409;sjelden;adj;nadir
+410;vanlig;adj;yaygın
+411;typisk;adj;tipik
+412;alvorlig;adj;ciddi
+413;morsom;adj;komik, eğlenceli
+414;kjedelig;adj;sıkıcı
+415;interessant;adj;ilginç
+416;smart;adj;zeki
+417;dum;adj;aptal
+418;klok;adj;bilge
+419;modig;adj;cesur
+420;feig;adj;korkak
+421;snill;adj;nazik
+422;slem;adj;kötü, yaramaz
+423;ærlig;adj;dürüst
+424;sjenerøs;adj;cömert
+425;grådig;adj;açgözlü
+426;hyggelig;adj;hoş, sempatik
+427;høflig;adj;kibar
+428;uhøflig;adj;kaba
+429;tålmodig;adj;sabırlı
+430;utålmodig;adj;sabırsız
+431;nysgjerrig;adj;meraklı
+432;lat;adj;tembel
+433;flittig;adj;çalışkan
+434;ansvarlig;adj;sorumlu
+435;uansvarlig;adj;sorumsuz
+436;lojal;adj;sadık
+437;religiøs;adj;dindar
+438;politisk;adj;siyasi
+439;økonomisk;adj;ekonomik
+440;sosial;adj;sosyal
+441;kulturell;adj;kültürel
+442;historisk;adj;tarihi
+443;vitenskapelig;adj;bilimsel
+444;teknisk;adj;teknik
+445;lovlig;adj;yasal
+446;ulovlig;adj;yasadışı
+447;moralsk;adj;ahlaki
+448;fysisk;adj;fiziksel
+449;mental;adj;zihinsel
+450;følelsesmessig;adj;duygusal
+451;åndelig;adj;ruhsal
+452;naturlig;adj;doğal
+453;kunstig;adj;yapay
+454;digital;adj;dijital
+455;global;adj;küresel
+456;lokal;adj;yerel
+457;moderne;adj;modern
+458;gammeldags;adj;eski moda
+459;tradisjonell;adj;geleneksel
+460;rød;adj;kırmızı
+461;blå;adj;mavi
+462;grønn;adj;yeşil
+463;gul;adj;sarı
+464;hvit;adj;beyaz
+465;svart;adj;siyah
+466;grå;adj;gri
+467;brun;adj;kahverengi
+468;rosa;adj;pembe
+469;lilla;adj;mor
+470;oransje;adj;turuncu
+471;en;num;bir
+472;to;num;iki
+473;tre;num;üç
+474;fire;num;dört
+475;fem;num;beş
+476;seks;num;altı
+477;sju;num;yedi
+478;åtte;num;sekiz
+479;ni;num;dokuz
+480;ti;num;on
+481;elleve;num;on bir
+482;tolv;num;on iki
+483;tjue;num;yirmi
+484;tretti;num;otuz
+485;førti;num;kırk
+486;femti;num;elli
+487;hundre;num;yüz
+488;tusen;num;bin
+489;eksempelet;n;örnek
+490;grunnen;n;sebep
+491;resultatet;n;sonuç
+492;effekten;n;etki
+493;årsaken;n;neden
+494;konsekvensen;n;sonuç
+495;målet;n;hedef
+496;planen;n;plan
+497;prosjektet;n;proje
+498;prosessen;n;süreç
+499;metoden;n;yöntem
+500;systemet;n;sistem
+501;strukturen;n;yapı
+502;elementet;n;öğe
+503;faktoren;n;etken
+504;aspektet;n;husus
+505;egenskapen;n;özellik
+506;tilstanden;n;durum
+507;situasjonen;n;durum
+508;nivået;n;seviye
+509;graden;n;derece
+510;mengden;n;miktar
+511;kvaliteten;n;kalite
+512;størrelsen;n;boyut
+513;vekten;n;ağırlık
+514;formen;n;şekil
+515;typen;n;tür
+516;kategorien;n;kategori
+517;gruppen;n;grup
+518;delen;n;kısım
+519;helheten;n;bütün
+520;resten;n;geri kalan
+521;flertallet;n;çoğunluk
+522;mindretallet;n;azınlık
+523;totalen;n;toplam
+524;forskjellen;n;fark
+525;likheten;n;benzerlik
+526;forholdet;n;ilişki
+527;kontakten;n;temas
+528;kommunikasjonen;n;iletişim
+529;samtalen;n;sohbet
+530;møtet;n;toplantı
+531;avtalen;n;randevu, anlaşma
+532;muligheten;n;fırsat
+533;utfordringen;n;meydan okuma
+534;vanskeligheten;n;zorluk
+535;hindringen;n;engel
+536;risikoen;n;risk
+537;fordelen;n;avantaj
+538;ulempen;n;dezavantaj
+539;suksessen;n;başarı
+540;feilen;n;başarısızlık, hata
+541;skylden;n;suç, kabahat
+542;straffen;n;ceza
+543;belønningen;n;ödül
+544;innsatsen;n;çaba
+545;kampen;n;mücadele, maç
+546;seieren;n;zafer
+547;nederlaget;n;yenilgi
+548;konflikten;n;çatışma
+549;krisen;n;kriz
+550;endringen;n;değişim
+551;forbedringen;n;iyileşme
+552;fremgangen;n;ilerleme
+553;utviklingen;n;gelişim
+554;veksten;n;büyüme
+555;revolusjonen;n;devrim
+556;reformen;n;reform
+557;bevegelsen;n;hareket
+558;handlingen;n;eylem
+559;aktiviteten;n;faaliyet
+560;hendelsen;n;olay
+561;erfaringen;n;deneyim
+562;kunnskapen;n;bilgi
+563;vitenskapen;n;bilim
+564;teknikken;n;teknik
+565;teknologien;n;teknoloji
+566;forskningen;n;araştırma
+567;studien;n;çalışma, araştırma
+568;analysen;n;analiz
+569;teorien;n;teori
+570;praksisen;n;pratik
+571;øvelsen;n;egzersiz
+572;ferdigheten;n;yetenek
+573;kapasiteten;n;kapasite
+574;talentet;n;yetenek
+575;minnet;n;hafıza, anı
+576;sinnet;n;zihin
+577;sjelen;n;ruh
+578;samvittigheten;n;vicdan
+579;sansen;n;duyu, anlam
+580;betydningen;n;anlam
+581;definisjonen;n;tanım
+582;beskrivelsen;n;betimleme
+583;forklaringen;n;açıklama
+584;detaljen;n;ayrıntı
+585;punktet;n;nokta
+586;linjen;n;çizgi
+587;sirkelen;n;daire
+588;kvadratet;n;kare
+589;trekanten;n;üçgen
+590;figuren;n;şekil, figür
+591;modellen;n;model
+592;designet;n;tasarım
+593;bildet;n;görüntü, resim
+594;fotografiet;n;fotoğraf
+595;tegningen;n;çizim
+596;kunsten;n;sanat
+597;kulturen;n;kültür
+598;tradisjonen;n;gelenek
+599;skikken;n;adet
+600;religionen;n;din
+601;festen;n;parti, bayram
+602;feiringen;n;kutlama
+603;gaven;n;hediye
+604;overraskelsen;n;sürpriz
+605;invitasjonen;n;davet
+606;idretten;n;spor
+607;spillet;n;oyun
+608;laget;n;takım
+609;spilleren;n;oyuncu
+610;kampen (sport);n;maç
+611;konkurransen;n;yarışma
+612;mesteren;n;şampiyon
+613;rekorden;n;rekor
+614;fotball;n;futbol
+615;basketball;n;basketbol
+616;tennis;n;tenis
+617;svømming;n;yüzme
+618;løpingen;n;koşu
+619;treningsstudioet;n;spor salonu
+620;helsen;n;sağlık
+621;sykdommen;n;hastalık
+622;sykehuset;n;hastane
+623;medisinen;n;ilaç, tıp
+624;behandlingen;n;tedavi
+625;operasjonen;n;ameliyat
+626;pasienten;n;hasta
+627;symptomet;n;belirti
+628;diagnosen;n;teşhis
+629;vaksinen;n;aşı
+630;feberen;n;ateş (hastalık)
+631;hosten;n;öksürük
+632;hodepinen;n;baş ağrısı
+633;ulykken;n;kaza
+634;såret;n;yara
+635;flyet;n;uçak
+636;toget;n;tren
+637;båten;n;gemi
+638;bilen;n;araba
+639;sykkelen;n;bisiklet
+640;motorsykkelen;n;motosiklet
+641;bussen;n;otobüs
+642;taxien;n;taksi
+643;t-banen;n;metro
+644;stasjonen;n;istasyon
+645;flyplassen;n;havaalanı
+646;havnen;n;liman
+647;reisen;n;yolculuk
+648;kofferten;n;bavul
+649;bagasjen;n;bagaj
+650;passet;n;pasaport
+651;billetten;n;bilet
+652;reservasjonen;n;rezervasyon
+653;hotellet;n;otel
+654;turisten;n;turist
+655;turismen;n;turizm
+656;grensen;n;sınır
+657;kartet;n;harita
+658;adressen;n;adres
+659;destinasjonen;n;varış yeri
+660;klærne;n;giysi
+661;skjorten;n;gömlek
+662;buksen;n;pantolon
+663;skjørtet;n;etek
+664;kjolen;n;elbise
+665;jakken;n;ceket
+666;frakken;n;palto
+667;hatten;n;şapka
+668;skoen;n;ayakkabı
+669;støvelen;n;çizme
+670;sokken;n;çorap
+671;hansken;n;eldiven
+672;skjerfet;n;atkı
+673;beltet;n;kemer
+674;vesken;n;çanta
+675;ryggsekken;n;sırt çantası
+676;klokken;n;saat
+677;ringen;n;yüzük
+678;halskjedet;n;kolye
+679;brillene;n;gözlük
+680;paraplyen;n;şemsiye
+681;materialet;n;malzeme
+682;treet (materiale);n;ahşap
+683;metallet;n;metal
+684;jernet;n;demir
+685;gullet;n;altın
+686;sølvet;n;gümüş
+687;glasset;n;cam
+688;plasten;n;plastik
+689;steinen;n;taş
+690;sanden;n;kum
+691;støvet;n;toz
+692;røyken;n;duman
+693;asken;n;kül
+694;søppelet;n;çöp
+695;flasken;n;şişe
+696;boksen;n;kutu
+697;pakken;n;paket
+698;posen;n;çanta, torba
+699;beholderen;n;kap
+700;glasset (drikke);n;bardak
+701;koppen;n;fincan
+702;tallerkenen;n;tabak
+703;gaffelen;n;çatal
+704;kniven;n;bıçak
+705;skjeen;n;kaşık
+706;servietten;n;peçete
+707;duken;n;masa örtüsü
+708;ovnen;n;fırın
+709;kjøleskapet;n;buzdolabı
+710;vaskemaskinen;n;çamaşır makinesi
+711;støvsugeren;n;elektrikli süpürge
+712;maskinen;n;makine
+713;motoren;n;motor
+714;verktøyet;n;alet
+715;hammeren;n;çekiç
+716;spikeren;n;çivi
+717;skruen;n;vida
+718;fabrikken;n;fabrika
+719;industrien;n;sanayi
+720;jordbruket;n;tarım
+721;gården;n;çiftlik
+722;bonden;n;çiftçi
+723;avlingen;n;hasat
+724;frøet;n;tohum
+725;energien;n;enerji
+726;elektrisiteten;n;elektrik
+727;oljen (petroleum);n;petrol
+728;gassen;n;gaz
+729;kullet;n;kömür
+730;drivstoffet;n;yakıt
+731;økonomien;n;ekonomi
+732;markedet (økonomi);n;pazar
+733;handelen;n;ticaret
+734;produktet;n;ürün
+735;tjenesten;n;hizmet
+736;tilbudet;n;arz, teklif
+737;etterspørselen;n;talep
+738;skatten;n;vergi
+739;budsjettet;n;bütçe
+740;banken;n;banka
+741;kontoen;n;hesap
+742;kreditten;n;kredi
+743;gjelden;n;borç
+744;lånet;n;kredi, ödünç
+745;lønnen;n;maaş
+746;inntekten;n;gelir
+747;utgiften;n;harcama
+748;sparingen;n;tasarruf
+749;investeringen;n;yatırım
+750;børsen;n;borsa
+751;aksjen;n;hisse senedi
+752;kapitalen;n;sermaye
+753;valutaen;n;para birimi
+754;euroen;n;euro
+755;dollaren;n;dolar
+756;bygningen;n;bina
+757;konstruksjonen;n;inşaat
+758;etasjen;n;kat
+759;gulvet (etasje);n;zemin
+760;heisen;n;asansör
+761;balkongen;n;balkon
+762;garasjen;n;garaj
+763;kjelleren;n;bodrum
+764;loftet;n;çatı katı
+765;fasaden;n;cephe
+766;tårnet;n;kule
+767;slottet;n;şato, saray
+768;palasset;n;saray
+769;tempelet;n;tapınak
+770;museet;n;müze
+771;biblioteket;n;kütüphane
+772;teatret;n;tiyatro
+773;kinoen;n;sinema
+774;dessuten;adv;ayrıca
+775;likevel;adv;yine de
+776;derfor;adv;bu nedenle
+777;i stedet;adv;bunun yerine
+778;plutselig;adv;aniden
+779;gradvis;adv;yavaş yavaş
+780;ofte;adv;sık sık
+781;igjen;adv;tekrar
+782;med det samme;adv;hemen
+783;til slutt;adv;sonunda
+784;i begynnelsen;adv;başlangıçta
+785;generelt;adv;genel olarak
+786;egentlig;adv;aslında
+787;virkelig;adv;gerçekten
+788;kanskje;adv;belki
+789;sannsynligvis;adv;muhtemelen
+790;sikkert;adv;kesinlikle
+791;nøyaktig;adv;tam olarak
+792;spesielt;adv;özellikle
+793;vanligvis;adv;genellikle
+794;endelig;adv;sonunda
+795;bare;adv;sadece
+796;kun;adv;yalnızca
+797;fullstendig;adv;tamamen
+798;helt;adv;tamamen
+799;perfekt;adv;mükemmel şekilde
+800;absolutt;adv;kesinlikle
+801;relativt;adv;nispeten
+802;omtrent;adv;yaklaşık olarak
+803;for tiden;adv;şu anda
+804;nylig;adv;yakın zamanda
+805;tidligere;adv;daha önce
+806;umiddelbart;adv;hemen
+807;sakte (adv);adv;yavaşça
+808;raskt;adv;hızlıca
+809;lett (adv);adv;kolayca
+810;klart;adv;açıkça
+811;direkte;adv;doğrudan
+812;personlig;adv;şahsen
+813;naturligvis;adv;doğal olarak
+814;heldigvis;adv;neyse ki
+815;dessverre;adv;maalesef
+816;likeledes;adv;aynı şekilde
+817;i tillegg til;prep;-e ek olarak
+818;til tross for;prep;-e rağmen
+819;på grunn av;prep;yüzünden
+820;takket være;prep;sayesinde
+821;i stedet for;prep;yerine
+822;rundt;prep;etrafında
+823;gjennom (prep);prep;aracılığıyla
+824;inni;prep;içinde
+825;utenfor;prep;dışında
+826;oppå;prep;üstünde
+827;under (prep);prep;altında
+828;foran;prep;önünde
+829;bak;prep;arkasında
+830;ved siden av;prep;yanında
+831;overfor;prep;karşısında
+832;nær (prep);prep;yakınında
+833;langt fra;prep;uzağında
+834;før (prep);prep;önce
+835;etter (prep);prep;sonra
+836;gå opp;v;çıkmak, yükselmek
+837;gå ned;v;inmek
+838;gå inn;v;girmek
+839;gå ut;v;çıkmak
+840;ankomme;v;ulaşmak
+841;dra;v;ayrılmak, gitmek
+842;returnere;v;geri dönmek
+843;nærme seg;v;yaklaşmak
+844;fjerne seg;v;uzaklaşmak
+845;flytte;v;hareket ettirmek, taşınmak
+846;bevege seg;v;hareket etmek
+847;skyve;v;itmek
+848;trekke;v;çekmek
+849;kaste;v;fırlatmak, atmak
+850;gripe;v;tutmak, yakalamak
+851;holde;v;tutmak
+852;slippe;v;bırakmak
+853;fange;v;yakalamak
+854;gjemme;v;saklamak
+855;vise (verb);v;göstermek
+856;undervise;v;öğretmek
+857;lære (undervise);v;öğretmek
+858;øve;v;pratik yapmak
+859;trene;v;antrenman yapmak
+860;smake;v;tatmak
+861;lukte;v;koklamak
+862;berøre;v;dokunmak
+863;klappe;v;okşamak
+864;slå;v;vurmak
+865;dytte;v;itmek
+866;rive;v;yırtmak
+867;bøye;v;bükmek
+868;binde;v;bağlamak
+869;løsne;v;çözmek
+870;henge;v;asmak
+871;lime;v;yapıştırmak
+872;fjerne;v;çıkarmak, almak
+873;sette (plassere);v;koymak
+874;ta ut;v;çıkarmak
+875;putte inn;v;sokmak
+876;fylle;v;doldurmak
+877;tømme;v;boşaltmak
+878;laste;v;yüklemek
+879;losse;v;boşaltmak (yük)
+880;sende;v;göndermek
+881;motta;v;almak
+882;levere;v;teslim etmek
+883;returnere (gi tilbake);v;geri vermek
+884;låne;v;ödünç vermek
+885;låne (motta);v;ödünç almak
+886;gi bort;v;hediye etmek
+887;stjele;v;çalmak
+888;finne (oppdage);v;bulmak
+889;miste (verb);v;kaybetmek
+890;lete etter;v;aramak
+891;oppdage;v;keşfetmek
+892;finne opp;v;icat etmek
+893;skape;v;yaratmak
+894;ødelegge;v;yok etmek
+895;reparere;v;onarmak
+896;bryte;v;kırmak
+897;bygge;v;inşa etmek
+898;rive ned;v;yıkmak
+899;plante;v;dikmek
+900;dyrke;v;yetiştirmek
+901;høste;v;hasat etmek
+902;vanne;v;sulamak
+903;kutte;v;kesmek
+904;koke;v;kaynatmak
+905;steke;v;kızartmak
+906;bake;v;fırında pişirmek
+907;blande;v;karıştırmak
+908;røre;v;karıştırmak (hareket)
+909;skrelle;v;soymak (kabuk)
+910;fryse;v;dondurmak
+911;smelte;v;eritmek
+912;brenne;v;yakmak
+913;slukke;v;söndürmek
+914;mandag;n;pazartesi
+915;tirsdag;n;salı
+916;onsdag;n;çarşamba
+917;torsdag;n;perşembe
+918;fredag;n;cuma
+919;lørdag;n;cumartesi
+920;søndag;n;pazar
+921;januar;n;ocak
+922;februar;n;şubat
+923;mars;n;mart
+924;april;n;nisan
+925;mai;n;mayıs
+926;juni;n;haziran
+927;juli;n;temmuz
+928;august;n;ağustos
+929;september;n;eylül
+930;oktober;n;ekim
+931;november;n;kasım
+932;desember;n;aralık
+933;våren;n;ilkbahar
+934;sommeren;n;yaz
+935;høsten;n;sonbahar
+936;vinteren;n;kış
+937;årstiden;n;mevsim
+938;nord;n;kuzey
+939;sør;n;güney
+940;øst;n;doğu
+941;vest;n;batı
+942;kontinentet;n;kıta
+943;havet;n;okyanus, deniz
+944;sjøen;n;göl, deniz
+945;øya;n;ada
+946;dalen;n;vadi
+947;ørkenen;n;çöl
+948;skogen;n;orman
+949;kysten;n;kıyı
+950;bredden;n;kıyı, kenar
+951;fjellet;n;dağ
+952;fjellene;n;dağlar
+953;hulen;n;mağara
+954;vulkanen;n;yanardağ
+955;jordskjelvet;n;deprem
+956;stormen;n;fırtına
+957;orkanen;n;kasırga
+958;tordenen;n;gök gürültüsü
+959;lynet;n;şimşek
+960;tåken;n;sis
+961;isen;n;buz
+962;temperaturen;n;sıcaklık
+963;klimaet;n;iklim
+964;myggen;n;sivrisinek
+965;fluen;n;sinek
+966;edderkoppen;n;örümcek
+967;mauren;n;karınca
+968;bien;n;arı
+969;sommerfuglen;n;kelebek
+970;insektet;n;böcek
+971;slangen;n;yılan
+972;løven;n;aslan
+973;tigeren;n;kaplan
+974;elefanten;n;fil
+975;bjørnen;n;ayı
+976;ulven;n;kurt
+977;reven;n;tilki
+978;kaninen;n;tavşan
+979;musen;n;fare
+980;rotten;n;sıçan
+981;sauen;n;koyun
+982;geiten;n;keçi
+983;grisen;n;domuz
+984;kyllingen (levende);n;tavuk (yavru)
+985;hanen;n;horoz
+986;høna;n;tavuk
+987;anden;n;ördek
+988;apen;n;maymun
+989;frosken;n;kurbağa
+990;skilpadden;n;kaplumbağa
+991;haien;n;köpekbalığı
+992;hvalen;n;balina
+993;delfinen;n;yunus
+994;kristendommen;n;hristiyanlık
+995;islam;n;islam
+996;jødedommen;n;yahudilik
+997;buddhismen;n;budizm
+998;bibelen;n;incil
+999;koranen;n;kuran
+1000;bønnen;n;dua
+1001;kirken;n;kilise
+1002;moskeen;n;cami
+1003;synagogen;n;sinagog
+1004;presten;n;papaz
+1005;synden;n;günah
+1006;himmelen;n;cennet, gökyüzü
+1007;helvete;n;cehennem
+1008;sjelen (religiøs);n;ruh
+1009;engelen;n;melek
+1010;djevelen;n;şeytan
+1011;mirakelet;n;mucize
+1012;skjebnen;n;kader
+1013;universet;n;evren
+1014;planeten;n;gezegen
+1015;jorden;n;dünya, toprak
+1016;rommet (verdensrom);n;uzay
+1017;satellitten;n;uydu
+1018;raketten;n;roket
+1019;atomet;n;atom
+1020;molekylet;n;molekül
+1021;genet;n;gen
+1022;cellen;n;hücre
+1023;viruset;n;virüs
+1024;bakterien;n;bakteri
+1025;mikroskopet;n;mikroskop
+1026;teleskopet;n;teleskop
+1027;eksperimentet;n;deney
+1028;laboratoriet;n;laboratuvar
+1029;formelen;n;formül
+1030;ligningen;n;denklem
+1031;matematikk;n;matematik
+1032;fysikk;n;fizik
+1033;kjemi;n;kimya
+1034;biologi;n;biyoloji
+1035;geografi;n;coğrafya
+1036;filosofi;n;felsefe
+1037;psykologi;n;psikoloji
+1038;sosiologi;n;sosyoloji
+1039;litteraturen;n;edebiyat
+1040;poesien;n;şiir
+1041;romanen;n;roman
+1042;historien (fortelling);n;öykü
+1043;kapittelet;n;bölüm
+1044;siden (side);n;sayfa
+1045;tittelen;n;başlık
+1046;forfatteren (bok);n;yazar
+1047;forlaget;n;yayınevi
+1048;magasinet;n;dergi
+1049;avisen;n;gazete
+1050;nyheten;n;haber
+1051;artikkelen;n;makale
+1052;politikeren;n;politikacı
+1053;partiet;n;parti
+1054;valgkampen;n;seçim kampanyası
+1055;avstemningen;n;oylama
+1056;stemmen (valg);n;oy
+1057;valget;n;seçim
+1058;kandidaten;n;aday
+1059;senatoren;n;senatör
+1060;representanten;n;milletvekili
+1061;ministeren;n;bakan
+1062;ordføreren;n;belediye başkanı
+1063;parlamentet;n;parlamento
+1064;grunnloven;n;anayasa
+1065;borgeren;n;vatandaş
+1066;demokratiet;n;demokrasi
+1067;diktaturet;n;diktatörlük
+1068;imperiet;n;imparatorluk
+1069;kolonien;n;koloni
+1070;uavhengigheten;n;bağımsızlık
+1071;revolusjonen (politikk);n;devrim
+1072;traktaten;n;antlaşma
+1073;ambassaden;n;büyükelçilik
+1074;ambassadøren;n;büyükelçi
+1075;grensen (land);n;sınır
+1076;immigrasjonen;n;göç
+1077;immigranten;n;göçmen
+1078;flyktningen;n;mülteci
+1079;asylet;n;sığınma
+1080;samfunnet;n;toplum
+1081;fellesskapet;n;topluluk
+1082;befolkningen;n;nüfus
+1083;generasjonen;n;nesil
+1084;barndommen;n;çocukluk
+1085;ungdommen;n;gençlik
+1086;alderdommen;n;yaşlılık
+1087;ekteskapet;n;evlilik
+1088;skilsmissen;n;boşanma
+1089;begravelsen;n;cenaze
+1090;graven;n;mezar
+1091;kirkegården;n;mezarlık
+1092;fødselen;n;doğum
+1093;graviditeten;n;hamilelik
+1094;fødselen (hendelse);n;doğum (eylem)
+1095;arven;n;miras
+1096;testamentet;n;vasiyet
+1097;eiendommen;n;mülkiyet
+1098;tomten;n;arazi
+1099;gården (eiendom);n;çiftlik, mülk
+1100;leien;n;kira
+1101;leieboeren;n;kiracı
+1102;eieren;n;mülk sahibi
+1103;flyttingen;n;taşınma
+1104;boligen;n;konut
+1105;nabolaget;n;mahalle
+1106;landsbygda;n;kırsal
+1107;hovedstaden;n;başkent
+1108;regionen;n;bölge
+1109;territoriet;n;bölge, toprak
+1110;landskapet;n;manzara
+1111;utsikten;n;manzara, görüş
+1112;horisonten;n;ufuk
+1113;høyden (mål);n;yükseklik
+1114;dybden;n;derinlik
+1115;bredden (mål);n;genişlik
+1116;lengden;n;uzunluk
+1117;avstanden;n;mesafe
+1118;overflaten;n;yüzey
+1119;volumet;n;hacim
+1120;tettheten;n;yoğunluk
+1121;hastigheten;n;hız
+1122;akselerasjonen;n;ivme
+1123;tyngdekraften;n;yerçekimi
+1124;trykket;n;basınç
+1125;temperaturen (fysikk);n;sıcaklık
+1126;dampen;n;buhar
+1127;væsken;n;sıvı
+1128;det faste stoffet;n;katı
+1129;gassen (fysikk);n;gaz
+1130;blandingen;n;karışım
+1131;stoffet;n;madde
+1132;grunnstoffet;n;element
+1133;forbindelsen (kjemi);n;bileşik
+1134;reaksjonen;n;tepkime
+1135;tallet;n;sayı
+1136;prosenten;n;yüzde
+1137;brøken;n;kesir
+1138;gjennomsnittet;n;ortalama
+1139;statistikken;n;istatistik
+1140;grafen;n;grafik
+1141;tabellen;n;tablo
+1142;dataen;n;veri
+1143;databasen;n;veritabanı
+1144;filen;n;dosya
+1145;mappen;n;klasör
+1146;programmet;n;program
+1147;applikasjonen;n;uygulama
+1148;programvaren;n;yazılım
+1149;maskinvaren;n;donanım
+1150;skjermen;n;ekran
+1151;tastaturet;n;klavye
+1152;musen (data);n;fare (bilgisayar)
+1153;skriveren;n;yazıcı
+1154;nettverket;n;ağ
+1155;tilkoblingen;n;bağlantı
+1156;passordet;n;şifre
+1157;brukeren;n;kullanıcı
+1158;kontoen (data);n;hesap
+1159;e-posten;n;e-posta
+1160;nettsiden;n;web sayfası
+1161;lenken;n;bağlantı, link
+1162;videoen;n;video
+1163;kameraet;n;kamera
+1164;mikrofonen;n;mikrofon
+1165;høyttaleren;n;hoparlör
+1166;batteriet;n;pil
+1167;laderen;n;şarj cihazı
+1168;kabelen;n;kablo
+1169;støpselet;n;fiş, priz
+1170;antennen;n;anten
+1171;signalet;n;sinyal
+1172;frekvensen;n;frekans
+1173;bølgen;n;dalga
+1174;roboten;n;robot
+1175;kunstig intelligens;n;yapay zeka
+1176;lykkes;v;başarılı olmak
+1177;lykkes med;v;başarmak
+1178;ta hensyn til;v;dikkate almak
+1179;gi opp;v;pes etmek
+1180;legge merke til;v;fark etmek
+1181;utføre;v;gerçekleştirmek
+1182;sette i gang;v;harekete geçirmek
+1183;anta;v;varsaymak
+1184;savne;v;özlemek
+1185;ha lyst til;v;canı istemek
+1186;ha rett;v;haklı olmak
+1187;være enig;v;aynı fikirde olmak
+1188;ombestemme seg;v;fikir değiştirmek
+1189;trenge;v;ihtiyaç duymak
+1190;være verdt;v;değmek
+1191;bety noe;v;önemli olmak
+1192;bety lite;v;önemsememek
+1193;komme overens;v;anlaşmaya varmak
+1194;bli klar over;v;fark etmek
+1195;huske på;v;hatırlamak
+1196;glemme bort;v;unutmak
+1197;ta seg av;v;ilgilenmek
+1198;bry seg om;v;önemsemek
+1199;handle om;v;ile ilgili olmak
+1200;avhenge av;v;bağlı olmak
+1201;stole på;v;güvenmek
+1202;insistere på;v;ısrar etmek
+1203;nekte å;v;reddetmek
+1204;tørre å;v;cesaret etmek
+1205;venne seg til;v;alışmak
+1206;vie seg til;v;kendini adamak
+1207;henvende seg til;v;yönelmek
+1208;referere til;v;atıfta bulunmak
+1209;ligne på;v;benzemek
+1210;møte (utfordring);v;yüzleşmek
+1211;være imot;v;karşı çıkmak
+1212;gi opp (avstå);v;vazgeçmek
+1213;gå med på;v;kabul etmek
+1214;avslå;v;reddetmek
+1215;bekrefte;v;onaylamak
+1216;be om;v;talep etmek
+1217;foreslå;v;önermek
+1218;anbefale;v;tavsiye etmek
+1219;advare;v;uyarmak
+1220;true;v;tehdit etmek
+1221;love;v;söz vermek
+1222;garantere;v;garanti etmek
+1223;tillate;v;izin vermek
+1224;forby;v;yasaklamak
+1225;kreve;v;talep etmek, gerektirmek
+1226;skylde;v;borçlu olmak
+1227;betale tilbake;v;geri ödemek
+1228;spare (penger);v;tasarruf etmek
+1229;bruke (penger);v;harcamak
+1230;investere;v;yatırım yapmak
+1231;tjene;v;kazanmak (para)
+1232;miste (penger);v;kaybetmek (para)
+1233;vokse;v;büyümek
+1234;krympe;v;küçülmek
+1235;øke;v;artmak
+1236;redusere;v;azaltmak
+1237;doble;v;ikiye katlamak
+1238;halvere;v;yarıya indirmek
+1239;dele;v;bölmek, paylaşmak
+1240;samle;v;toplamak
+1241;separere;v;ayırmak
+1242;forene;v;birleştirmek
+1243;koble;v;bağlamak
+1244;koble fra;v;bağlantıyı kesmek
+1245;installere;v;kurmak (yazılım)
+1246;avinstallere;v;kaldırmak (yazılım)
+1247;laste ned;v;indirmek
+1248;laste opp;v;yüklemek
+1249;lagre;v;kaydetmek
+1250;slette;v;silmek
+1251;redigere;v;düzenlemek
+1252;skrive ut;v;yazdırmak
+1253;skanne;v;taramak
+1254;kopiere;v;kopyalamak
+1255;lime inn;v;yapıştırmak
+1256;klippe (data);v;kesmek (dosya)
+1257;velge;v;seçmek
+1258;bla;v;kaydırmak
+1259;zoome inn;v;yakınlaştırmak
+1260;zoome ut;v;uzaklaştırmak
+1261;fokusere;v;odaklamak
+1262;publisere;v;yayınlamak
+1263;dele (sosiale medier);v;paylaşmak
+1264;abonnere;v;abone olmak
+1265;avbestille;v;iptal etmek
+1266;bekrefte (avtale);v;onaylamak
+1267;avslå (tilbud);v;reddetmek
+1268;godta;v;kabul etmek
+1269;be om (forespørre);v;talep etmek
+1270;reservere;v;rezerve etmek
+1271;fornye;v;yenilemek
+1272;oppdatere;v;güncellemek
+1273;verifisere;v;doğrulamak
+1274;validere;v;onaylamak, geçerli kılmak
+1275;registrere;v;kaydetmek
+1276;melde seg på;v;kaydolmak
+1277;ta eksamen;v;sınava girmek
+1278;bestå;v;geçmek (sınav)
+1279;stryke (eksamen);v;kalmak (sınav)
+1280;gå glipp av;v;kaçırmak
+1281;delta;v;katılmak
+1282;hodet;n;kafa
+1283;ansiktet;n;yüz
+1284;øyet;n;göz
+1285;nesen;n;burun
+1286;munnen;n;ağız
+1287;øret;n;kulak
+1288;håret;n;saç
+1289;armen;n;kol
+1290;hånden;n;el
+1291;fingeren;n;parmak
+1292;beinet;n;bacak, kemik
+1293;foten;n;ayak
+1294;hjertet;n;kalp
+1295;blodet;n;kan
+1296;kroppen;n;vücut
+1297;magen;n;mide, karın
+1298;ryggen;n;sırt
+1299;skulderen;n;omuz
+1300;nakken;n;boyun
+1301;kneet;n;diz
+1302;ankelen;n;ayak bileği
+1303;håndleddet;n;bilek
+1304;albuen;n;dirsek
+1305;hoften;n;kalça
+1306;brystet;n;göğüs
+1307;hjernen;n;beyin
+1308;nerven;n;sinir
+1309;muskelen;n;kas
+1310;leddet;n;eklem
+1311;huden;n;deri
+1312;neglen;n;tırnak
+1313;leppen;n;dudak
+1314;tannen;n;diş
+1315;tungen (anatomi);n;dil (organ)
+1316;halsen;n;boğaz
+1317;kinnet;n;yanak
+1318;haken;n;çene
+1319;pannen;n;alın
+1320;øyenbrynet;n;kaş
+1321;øyenvippene;n;kirpik
+1322;øyelokket;n;göz kapağı
+1323;pupillen;n;göz bebeği
+1324;lungen;n;akciğer
+1325;leveren;n;karaciğer
+1326;nyren;n;böbrek
+1327;tarmen;n;bağırsak
+1328;skjelettet;n;iskelet
+1329;kraniet;n;kafatası
+1330;ryggraden;n;omurga
+1331;sansen (organ);n;duyu organı
+1332;pulsen;n;nabız
+1333;pusten;n;soluk
+1334;fordøyelsen;n;sindirim
+1335;sirkulasjonen;n;dolaşım (kan)
+1336;immunforsvaret;n;bağışıklık sistemi
+1337;hormonet;n;hormon
+1338;metabolismen;n;metabolizma
+1339;kalorien;n;kalori
+1340;proteinet;n;protein
+1341;fettet;n;yağ
+1342;fiberet;n;lif
+1343;karbohydratet;n;karbonhidrat
+1344;vitaminen;n;vitamin
+1345;kostholdet;n;beslenme, diyet
+1346;appetitten;n;iştah
+1347;tørsten;n;susuzluk
+1348;sulten (substantiv);n;açlık
+1349;allergien;n;alerji
+1350;stresset;n;stres
+1351;angsten;n;kaygı
+1352;depresjonen;n;depresyon
+1353;kreften;n;kanser
+1354;diabetesen;n;şeker hastalığı
+1355;infeksjonen;n;enfeksiyon
+1356;betennelsen;n;iltihap
+1357;bruddet (bein);n;kırık
+1358;forstuingen;n;burkulma
+1359;brannsåret;n;yanık
+1360;operasjonen (kirurgi);n;ameliyat
+1361;bedøvelsen;n;anestezi
+1362;rekonvalesensen;n;iyileşme dönemi
+1363;rehabiliteringen;n;rehabilitasyon
+1364;fysioterapien;n;fizyoterapi
+1365;massasjen;n;masaj
+1366;legekontoret;n;doktor muayenehanesi
+1367;apoteket;n;eczane
+1368;resepten;n;reçete
+1369;pillen;n;hap
+1370;sprøyten;n;iğne (enjeksiyon)
+1371;ambulansen;n;ambulans
+1372;akuttmottaket;n;acil servis
+1373;operasjonssalen;n;ameliyathane
+1374;sengen (sykehus);n;hastane yatağı
+1375;rullestolen;n;tekerlekli sandalye
+1376;krykken;n;koltuk değneği
+1377;bandasjen;n;sargı bezi
+1378;hilsen;interj;selam
+1379;hei;interj;merhaba
+1380;ha det;interj;hoşça kal
+1381;takk;interj;teşekkürler
+1382;vær så god;interj;buyrun, rica ederim
+1383;unnskyld;interj;affedersiniz
+1384;beklager;interj;özür dilerim
+1385;gratulerer;interj;tebrikler
+1386;lykke til;interj;iyi şanslar
+1387;forsiktig;interj;dikkat
+1388;hjelp;interj;yardım, imdat
+1389;ok;interj;tamam
+1390;greit;interj;tamam, uygun
+1391;selvfølgelig;interj;tabii ki
+1392;kanskje (interj);interj;belki
+1393;for en skam;interj;ne yazık
+1394;utrolig (interj);interj;inanılmaz
+1395;fantastisk;interj;harika
+1396;flott;interj;muhteşem
+1397;kom igjen;interj;hadi
+1398;vent;interj;bekle
+1399;hør;interj;dinle
+1400;vær stille;interj;sus
+1401;god morgen;interj;günaydın
+1402;god ettermiddag;interj;iyi öğleden sonralar
+1403;god kveld;interj;iyi akşamlar
+1404;god natt;interj;iyi geceler
+1405;ha det bra;interj;iyi günler dilerim
+1406;vi sees;interj;görüşürüz
+1407;ta vare på deg;interj;kendine iyi bak
+1408;gratulerer med dagen;interj;doğum günün kutlu olsun
+1409;god jul;interj;mutlu noeller
+1410;godt nytt år;interj;mutlu yıllar
+1411;vel bekomme;interj;afiyet olsun
+1412;skål;interj;şerefe
+1413;hyggelig å møte deg;interj;memnun oldum
+1414;i like måte;interj;ben de
+1415;hvordan går det;interj;nasılsın?
+1416;bare bra, takk;interj;iyiyim, teşekkürler
+1417;sånn passe;interj;şöyle böyle
+1418;det gjør ingenting;interj;önemli değil
+1419;ro deg ned;interj;sakinleş
+1420;tålmodighet;interj;sabret
+1421;grønnsaken (mat);n;sebze
+1422;agurken;n;salatalık
+1423;gulroten;n;havuç
+1424;paprikaen;n;biber
+1425;salaten;n;marul, salata
+1426;spinaten;n;ıspanak
+1427;maisen;n;mısır
+1428;sitronen;n;limon
+1429;ananasen;n;ananas
+1430;vannmelonen;n;karpuz
+1431;melonen;n;kavun
+1432;jordbæret;n;çilek
+1433;kirsebæret;n;kiraz
+1434;fersken;n;şeftali
+1435;pæren;n;armut
+1436;avokadoen;n;avokado
+1437;mandelen;n;badem
+1438;valnøtten;n;ceviz
+1439;peanøtten;n;yer fıstığı
+1440;havren;n;yulaf
+1441;kornet (frokost);n;tahıl, mısır gevreği
+1442;salaten (rett);n;salata
+1443;menyen;n;menü
+1444;tipset (drikkepenger);n;bahşiş
+1445;regningen;n;hesap
+1446;oppskriften;n;tarif
+1447;ingrediensen;n;malzeme
+1448;porsjonen;n;porsiyon
+1449;smaken;n;tat
+1450;aromaen;n;koku, aroma
+1451;teksturen;n;doku (yemek)
+1452;rå;adj;çiğ
+1453;kokt;adj;pişmiş
+1454;stekt;adj;kızarmış
+1455;grillet;adj;ızgara
+1456;vegetarianer;n;vejetaryen
+1457;veganer;n;vegan
+1458;teppet;n;battaniye, halı
+1459;lakenet;n;çarşaf
+1460;puten;n;yastık
+1461;håndkleet;n;havlu
+1462;såpen;n;sabun
+1463;sjampoen;n;şampuan
+1464;børsten;n;fırça
+1465;kammen;n;tarak
+1466;kremen;n;krem
+1467;parfymen;n;parfüm
+1468;sminken;n;makyaj
+1469;saksen;n;makas
+1470;nålen;n;iğne
+1471;tråden;n;iplik
+1472;knappen;n;düğme
+1473;glidelåsen;n;fermuar
+1474;stoffet (tekstil);n;kumaş
+1475;bomullen;n;pamuk
+1476;ullen;n;yün
+1477;silken;n;ipek
+1478;skinnet (lær);n;deri
+1479;leketøyet;n;oyuncak
+1480;dukken;n;bebek (oyuncak)
+1481;ballen;n;top
+1482;ballongen;n;balon
+1483;puslespillet;n;yapboz
+1484;huskestativet;n;salıncak
+1485;sklien;n;kaydırak
+1486;gjerdet;n;çit
+1487;muren;n;duvar (dış)
+1488;brønnen;n;kuyu
+1489;fontenen;n;çeşme
+1490;dammen;n;gölet
+1491;svømmebassenget;n;havuz
+1492;dusjen;n;duş
+1493;badekaret;n;küvet
+1494;vannkranen;n;musluk
+1495;rørene;n;borular
+1496;søppelbøtten;n;çöp kutusu
+1497;kosten;n;süpürge
+1498;kluten;n;bez
+1499;vaskemidlet;n;deterjan
+1500;stikkontakten;n;priz
+1501;bryteren;n;anahtar (elektrik)
+1502;lyspæren;n;ampul
+1503;viften;n;vantilatör
+1504;klimaanlegget;n;klima
+1505;oppvarmingen;n;ısıtma
+1506;fjorden;n;fiyort
+1507;breen;n;buzul
+1508;nordlyset;n;kuzey ışıkları
+1509;midnattssolen;n;gece yarısı güneşi
+1510;polarnatten;n;kutup gecesi
+1511;reinsdyret;n;ren geyiği
+1512;elgen;n;geyik (Amerika)
+1513;villreinen;n;yabani ren geyiği
+1514;laksen;n;somon
+1515;torsken;n;morina balığı
+1516;sildine;n;ringa balığı
+1517;reken;n;karides
+1518;krabben;n;yengeç
+1519;hummeren;n;ıstakoz
+1520;musling;n;midye
+1521;østers;n;istiridye
+1522;fiskeriet;n;balıkçılık
+1523;fiskeren;n;balıkçı
+1524;fiskebåten;n;balıkçı teknesi
+1525;oljeplattformen;n;petrol platformu
+1526;offshoreindustrien;n;açık deniz sanayii
+1527;petroleum;n;petrol
+1528;skiføret;n;kayak koşulları
+1529;skiene;n;kayaklar
+1530;skiheisen;n;kayak asansörü
+1531;slalåm;n;slalom
+1532;langrenn;n;kayaklı koşu
+1533;hopprenn;n;kayakla atlama
+1534;akebrett;n;kızak
+1535;skøyter;n;patenler
+1536;skøytebanen;n;buz pateni pisti
+1537;hytta;n;dağ kulübesi
+1538;turen (fottur);n;yürüyüş
+1539;fottur;n;doğa yürüyüşü
+1540;turstien;n;yürüyüş patikası
+1541;rucksekken;n;sırt çantası (dağcılık)
+1542;teltet;n;çadır
+1543;soveposen;n;uyku tulumu
+1544;kompasset;n;pusula
+1545;bålet;n;kamp ateşi
+1546;vandringen;n;yürüyüş (göç)
+1547;allemannsretten;n;herkesin doğaya erişim hakkı
+1548;dugnaden;n;gönüllü toplum çalışması
+1549;koselig;adj;sıcak ve rahat (hygge)
+1550;friluftsliv;n;doğa yaşamı, açık hava yaşamı
+1551;russefeiring;n;lise mezuniyet kutlaması
+1552;nasjonaldagen;n;ulusal bayram
+1553;grunnlovsdagen;n;anayasa günü
+1554;17. mai;n;17 Mayıs (Norveç ulusal günü)
+1555;bunad;n;geleneksel Norveç kıyafeti
+1556;julenissen;n;noel baba
+1557;julebord;n;yılbaşı yemeği (iş)
+1558;adventskalenderen;n;advent takvimi
+1559;påsken;n;paskalya
+1560;pinsen;n;pentekost
+1561;konfirmasjonen;n;konfirmasyon töreni
+1562;bilnøkkelen;n;araba anahtarı
+1563;rattet;n;direksiyon
+1564;bremsen;n;fren
+1565;gasspedalen;n;gaz pedalı
+1566;clutchen;n;debriyaj
+1567;hjulet;n;tekerlek
+1568;dekket;n;lastik
+1569;bagasjerommet;n;bagaj
+1570;panseret;n;kaput
+1571;frontruten;n;ön cam
+1572;speilet (bil);n;dikiz aynası
+1573;hornet (bil);n;korna
+1574;sikkerhetsbeltet;n;emniyet kemeri
+1575;bilskiltet;n;plaka
+1576;bensinstasjonen;n;benzin istasyonu
+1577;bensinen;n;benzin
+1578;dieselen;n;dizel
+1579;verkstedet;n;tamirhane
+1580;mekanikeren;n;tamirci
+1581;trafikkorken;n;trafik sıkışıklığı
+1582;trafikklyset;n;trafik ışığı
+1583;veikrysset;n;kavşak
+1584;rundkjøringen;n;kavşak (dönel)
+1585;motorveien;n;otoyol
+1586;bomstasjonen;n;geçiş ücreti istasyonu
+1587;parkeringsplassen;n;otopark
+1588;parkeringsboten;n;park cezası
+1589;førerkortet;n;ehliyet
+1590;fotgjengeren;n;yaya
+1591;fotgjengerovergangen;n;yaya geçidi
+1592;fortauet;n;kaldırım
+1593;perrongen;n;peron
+1594;sporet (jernbane);n;ray, hat
+1595;togvognen;n;vagon
+1596;lokomotivet;n;lokomotif
+1597;konduktøren;n;biletçi
+1598;flybesetningen;n;uçak mürettebatı
+1599;flyvertinnen;n;hostes
+1600;avgangen;n;kalkış (uçak)
+1601;landingen;n;iniş (uçak)
+1602;turbulensen;n;türbülans
+1603;flyturen;n;uçuş
+1604;mellomlandingen;n;aktarma
+1605;terminalen;n;terminal
+1606;tollen;n;gümrük
+1607;sikkerhetskontrollen;n;güvenlik kontrolü
+1608;gaten (utgang);n;biniş kapısı
+1609;setet;n;koltuk
+1610;økonomiklassen;n;ekonomi sınıfı
+1611;ankeret;n;çapa
+1612;roret;n;dümen
+1613;dekket (skip);n;güverte
+1614;masten;n;direk (gemi)
+1615;seilet;n;yelken
+1616;åren (ro);n;kürek
+1617;bryggen;n;iskele
+1618;cruiseskipet;n;yolcu gemisi
+1619;mannskapet;n;mürettebat
+1620;kapteinen;n;kaptan
+1621;rektangelet;n;dikdörtgen
+1622;sirkelen (form);n;çember
+1623;kuben;n;küp
+1624;sylinderen;n;silindir
+1625;pyramiden;n;piramit
+1626;vinkelen;n;açı
+1627;omkretsen;n;çevre
+1628;arealet;n;alan
+1629;radiusen;n;yarıçap
+1630;diameteren;n;çap
+1631;symmetrien;n;simetri
+1632;parallell;adj;paralel
+1633;vinkelrett;adj;dik
+1634;horisontal;adj;yatay
+1635;vertikal;adj;dikey
+1636;rett (linje);adj;düz
+1637;flat;adj;düz
+1638;rund;adj;yuvarlak
+1639;summen;n;toplam
+1640;subtraksjonen;n;çıkarma
+1641;multiplikasjonen;n;çarpma
+1642;divisjonen;n;bölme
+1643;kvadratroten;n;karekök
+1644;variabelen;n;değişken
+1645;konstanten;n;sabit
+1646;settet;n;küme
+1647;vektoren;n;vektör
+1648;grafen (matte);n;grafik
+1649;koordinaten;n;koordinat
+1650;uendeligheten;n;sonsuzluk
+1651;null;n;sıfır
+1652;positiv;adj;pozitif
+1653;negativ;adj;negatif
+1654;partall;n;çift sayı
+1655;oddetall;n;tek sayı
+1656;kilometeren;n;kilometre
+1657;meteren;n;metre
+1658;centimeteren;n;santimetre
+1659;millimeteren;n;milimetre
+1660;kilogrammet;n;kilogram
+1661;grammet;n;gram
+1662;tonnet;n;ton
+1663;literen;n;litre
+1664;tommen;n;inç
+1665;mila;n;mil
+1666;dusinet;n;düzine
+1667;enheten;n;birim
+1668;skalaen;n;ölçek
+1669;proporsjonen;n;oran
+1670;indeksen;n;endeks
+1671;maksimumet;n;maksimum
+1672;minimumet;n;minimum
+1673;grensen (matte);n;sınır, limit
+1674;funksjonen;n;fonksiyon
+1675;geometrien;n;geometri
+1676;algebraen;n;cebir
+1677;skjolden (dyr);n;kabuk (hayvan)
+1678;bjørnen (dyr);n;ayı
+1679;gaupa;n;vaşak
+1680;jerven;n;kokarca (kuzey hayvanı)
+1681;oteren;n;su samuru
+1682;bever;n;kunduz
+1683;egernet;n;sincap
+1684;pinnsvinet;n;kirpi
+1685;muldvarpen;n;köstebek
+1686;flaggermusen;n;yarasa
+1687;uglen;n;baykuş
+1688;ørnen;n;kartal
+1689;falken;n;şahin
+1690;kråka;n;karga
+1691;duen;n;güvercin
+1692;spurven;n;serçe
+1693;svalen;n;kırlangıç
+1694;svanen;n;kuğu
+1695;påfuglen;n;tavus kuşu
+1696;pingvinen;n;penguen
+1697;struts;n;devekuşu
+1698;storken;n;leylek
+1699;måken;n;martı
+1700;puffinen;n;deniz papağanı kuşu
+1701;spetten;n;ağaçkakan
+1702;kongeørnen;n;kaya kartalı
+1703;havørnen;n;deniz kartalı
+1704;lomvi;n;deniz kırlangıcı türü
+1705;edderkoppen (arachnid);n;örümcek
+1706;skorpionen;n;akrep
+1707;krypdyret;n;sürüngen
+1708;øglen;n;kertenkele
+1709;krokodillen;n;timsah
+1710;kameleon;n;bukalemun
+1711;padden;n;kara kurbağası
+1712;salamander;n;semender
+1713;pattedyret;n;memeli
+1714;fuglen (art);n;kuş (tür)
+1715;gullfisken;n;japon balığı
+1716;haien (hvit);n;beyaz köpekbalığı
+1717;spekkhoggeren;n;katil balina
+1718;selen;n;fok
+1719;bisonoksen;n;bizon
+1720;bøffelen;n;manda
+1721;hjorten;n;geyik
+1722;villsvinet;n;yaban domuzu
+1723;pumaen;n;puma
+1724;leoparden;n;leopar
+1725;geparden;n;çita
+1726;panteren;n;panter
+1727;sjakalen;n;çakal
+1728;hyenen;n;sırtlan
+1729;vaskebjørnen;n;rakun
+1730;hamsteren;n;hamster
+1731;papegøyen;n;papağan
+1732;kanarifuglen;n;kanarya
+1733;fasanen;n;sülün
+1734;sjefen (bedrift);n;patron (şirket)
+1735;avdelingen;n;departman
+1736;personalavdelingen;n;insan kaynakları
+1737;regnskapet;n;muhasebe
+1738;finansene;n;finans
+1739;markedsføringen;n;pazarlama
+1740;salget;n;satış
+1741;logistikken;n;lojistik
+1742;lageret;n;depo
+1743;lagerbeholdningen;n;envanter
+1744;bestillingen;n;sipariş
+1745;leverandøren;n;tedarikçi
+1746;distributøren;n;dağıtıcı
+1747;grossisten;n;toptancı
+1748;forbrukeren;n;tüketici
+1749;kunden;n;müşteri
+1750;klagen;n;şikayet
+1751;garantien;n;garanti
+1752;refusjonen;n;geri ödeme
+1753;tilbudet (pris);n;fiyat teklifi
+1754;fakturaen;n;fatura
+1755;balansen (regnskap);n;bilanço
+1756;kontantstrømmen;n;nakit akışı
+1757;lønnsomheten;n;karlılık
+1758;overskuddet;n;kar
+1759;omsetningen;n;ciro
+1760;bruttoinntekten;n;brüt gelir
+1761;nettoinntekten;n;net gelir
+1762;eiendelen;n;varlık
+1763;gjelden (bedrift);n;borç (mali)
+1764;egenkapitalen;n;özkaynak
+1765;revisjonen;n;denetim
+1766;revisoren;n;denetçi
+1767;kontrakten;n;sözleşme
+1768;avtalen (kontrakt);n;anlaşma
+1769;lisensen;n;lisans
+1770;tillatelsen;n;izin
+1771;sertifikatet;n;sertifika
+1772;diplomet;n;diploma
+1773;vitnemålet;n;diploma (okul)
+1774;karakteren (skole);n;not (sınav)
+1775;karrieren;n;kariyer
+1776;yrket;n;meslek
+1777;stillingen;n;pozisyon
+1778;ansettelsen;n;işe alım
+1779;oppsigelsen;n;işten çıkarma, istifa
+1780;pensjonen;n;emeklilik
+1781;pensjonisten;n;emekli
+1782;arbeidsledigheten;n;işsizlik
+1783;den arbeidsledige;n;işsiz
+1784;streiken;n;grev
+1785;fiolinen;n;keman
+1786;gitaren;n;gitar
+1787;pianoet;n;piyano
+1788;trommen;n;davul
+1789;fløyten;n;flüt
+1790;trompeten;n;trompet
+1791;orkesteret;n;orkestra
+1792;konserten;n;konser
+1793;scenen;n;sahne
+1794;publikummet;n;seyirci
+1795;regissøren;n;yönetmen
+1796;manuset;n;senaryo
+1797;handlingen (film);n;olay örgüsü
+1798;karakteren (rolle);n;karakter
+1799;rollen;n;rol
+1800;kostymet;n;kostüm
+1801;masken (teater);n;maske
+1802;sminken (teater);n;makyaj
+1803;billetten (kino);n;bilet
+1804;festivalen;n;festival
+1805;sirkuset;n;sirk
+1806;klovnen;n;palyaço
+1807;tryllekunstneren;n;sihirbaz
+1808;trikset;n;numara, hile
+1809;magien;n;sihir
+1810;eventyret;n;peri masalı
+1811;helten;n;kahraman
+1812;skurken;n;kötü karakter
+1813;monsteret;n;canavar
+1814;spøkelset;n;hayalet
+1815;heksen;n;cadı
+1816;vampyren;n;vampir
+1817;dragen;n;ejderha
+1818;kjempen;n;dev
+1819;dvergen;n;cüce
+1820;prinsessen;n;prenses
+1821;prinsen;n;prens
+1822;slottet (fantasi);n;şato
+1823;ridderen;n;şövalye
+1824;sverdet;n;kılıç
+1825;skjoldet;n;kalkan
+1826;rustningen;n;zırh
+1827;kronen;n;taç
+1828;tronen;n;taht
+1829;kongeriket;n;krallık
+1830;eventyret (opplevelse);n;macera
+1831;mysteriet;n;gizem
+1832;hemmeligheten;n;sır
+1833;gåten;n;bilmece
+1834;sporet (ledetråd);n;ipucu
+1835;mistanken;n;şüphe
+1836;detektiven;n;dedektif
+1837;spionen;n;casus
+1838;etterforskningen;n;soruşturma
+1839;beviset;n;kanıt
+1840;vitnet;n;tanık
+1841;mistenkte;n;şüpheli
+1842;offeret;n;kurban
+1843;den skyldige;n;suçlu
+1844;den uskyldige;n;masum
+1845;tilståelsen;n;itiraf
+1846;dommen (rett);n;karar (mahkeme)
+1847;rettssaken;n;duruşma
+1848;aktoren;n;savcı
+1849;forsvaret (rett);n;savunma
+1850;anklagen;n;suçlama
+1851;vitnesbyrdet;n;tanıklık
+1852;læreplanen;n;müfredat
+1853;timeplanen;n;ders programı
+1854;leksen;n;ödev
+1855;oppgaven;n;görev, ödev
+1856;karakteren (vurdering);n;değerlendirme, not
+1857;friminuttet;n;teneffüs
+1858;ferien;n;tatil
+1859;semesteret;n;dönem
+1860;faget;n;ders (konu)
+1861;forelesningen;n;ders (üniversite)
+1862;seminaret;n;seminer
+1863;rektoren;n;müdür
+1864;klassekameraten;n;sınıf arkadaşı
+1865;eleven;n;öğrenci (okul)
+1866;læringen;n;öğrenme
+1867;undervisningen;n;öğretim
+1868;essayet;n;deneme (yazı)
+1869;sammendraget;n;özet
+1870;oversettelsen;n;çeviri
+1871;grammatikken;n;dilbilgisi
+1872;ordforrådet;n;kelime hazinesi
+1873;uttalen;n;telaffuz
+1874;aksenten;n;aksan
+1875;ordboken;n;sözlük
+1876;leksikonet;n;ansiklopedi
+1877;setningen;n;cümle
+1878;avsnittet;n;paragraf
+1879;teksten;n;metin
+1880;utkastet;n;taslak
+1881;revisjonen (tekst);n;gözden geçirme
+1882;korrigeringen;n;düzeltme
+1883;oppfinnelsen;n;icat
+1884;oppdagelsen;n;keşif
+1885;patentet;n;patent
+1886;opphavsretten;n;telif hakkı
+1887;sitatet;n;alıntı
+1888;fotnoten;n;dipnot
+1889;vedlegget;n;ek (belge)
+1890;forkortelsen;n;kısaltma
+1891;synonymet;n;eşanlamlı
+1892;antonymet;n;zıt anlamlı
+1893;stavelsen;n;hece
+1894;substantivet;n;isim (dilbilgisi)
+1895;verbet;n;fiil (dilbilgisi)
+1896;adjektivet;n;sıfat (dilbilgisi)
+1897;adverbet;n;zarf (dilbilgisi)
+1898;preposisjonen;n;edat
+1899;konjunksjonen;n;bağlaç
+1900;sjalusien;n;kıskançlık
+1901;misunnelsen;n;haset
+1902;stoltheten;n;gurur
+1903;skammen;n;utanç
+1904;ydmykelsen;n;aşağılanma
+1905;fornærmelsen;n;hakaret
+1906;unnskyldningen;n;özür
+1907;tilgivelsen;n;af
+1908;hevnen;n;intikam
+1909;sjenerøsiteten;n;cömertlik
+1910;grådigheten;n;açgözlülük
+1911;medfølelsen;n;şefkat
+1912;grusomheten;n;zulüm
+1913;vennligheten;n;nezaket
+1914;høfligheten;n;nezaket, kibarlık
+1915;respekten;n;saygı
+1916;tilliten;n;güven
+1917;lojaliteten;n;sadakat
+1918;sviket;n;ihanet
+1919;oppriktigheten;n;samimiyet
+1920;hykleriet;n;ikiyüzlülük
+1921;motivasjonen;n;motivasyon
+1922;entusiasmen;n;coşku
+1923;lidenskapen;n;tutku
+1924;interessen (følelse);n;ilgi
+1925;nysgjerrigheten;n;merak
+1926;oppmerksomheten;n;dikkat
+1927;konsentrasjonen;n;konsantrasyon
+1928;perspektivet;n;bakış açısı
+1929;meningen (oppfatning);n;fikir, görüş
+1930;kritikken;n;eleştiri
+1931;vurderingen (bedømmelse);n;değerlendirme
+1932;anerkjennelsen;n;tanıma, takdir
+1933;fortreffeligheten;n;mükemmellik
+1934;svakheten;n;zayıflık
+1935;styrken;n;güç
+1936;potensialet;n;potansiyel
+1937;muligheten (sannsynlighet);n;olasılık
+1938;sikkerheten (visshet);n;kesinlik
+1939;usikkerheten;n;belirsizlik
+1940;tvilen;n;şüphe
+1941;hypotesen;n;hipotez
+1942;antagelsen;n;varsayım
+1943;konklusjonen;n;sonuç
+1944;logikken;n;mantık
+1945;sjakkspilleren;n;satranç oyuncusu
+1946;bonden (sjakk);n;piyon
+1947;kongen (sjakk);n;şah
+1948;sjakkbrettet;n;satranç tahtası
+1949;kortstokken;n;iskambil destesi
+1950;pokeren;n;poker
+1951;bingo;n;tombala
+1952;lotteriet;n;piyango
+1953;kasinoet;n;kumarhane
+1954;rouletten;n;rulet
+1955;innsatsen (spill);n;bahis
+1956;kryssordet;n;çapraz bulmaca
+1957;labyrinten;n;labirent
+1958;dataspillet;n;video oyunu
+1959;konsollen;n;konsol (oyun)
+1960;kontrolleren (spill);n;kumanda
+1961;poengsummen;n;puan
+1962;rekorden (spill);n;rekor
+1963;hobbyen;n;hobi
+1964;samlingen;n;koleksiyon
+1965;broderiet;n;nakış
+1966;strikkingen;n;örgü
+1967;keramikk;n;seramik
+1968;skulpturen;n;heykel
+1969;origami;n;origami
+1970;kalligrafien;n;hat sanatı
+1971;graveringen;n;gravür
+1972;mosaikken;n;mozaik
+1973;gatekunsten;n;sokak sanatı
+1974;utstillingen;n;sergi
+1975;kunstgalleriet;n;sanat galerisi
+1976;katalogen (kunst);n;katalog
+1977;mesterverket;n;başyapıt
+1978;lerretet;n;tuval
+1979;oljemaleriet;n;yağlıboya
+1980;akvarellen;n;suluboya
+1981;staffeliet;n;şövale
+1982;paletten;n;palet (resim)
+1983;portrettet;n;portre
+1984;selvportrettet;n;özportre
+1985;naturmaleriet;n;manzara resmi

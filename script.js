@@ -1,18 +1,10 @@
 /* ============================================================
-   LUMINA 3000 — MAIN APP & AUTH MANAGER & OFFLINE DATA
-   Kullanıcı verileri: lumina_users (JSON array)
-   Oturum verisi:     lumina_session (JSON object)
-   Admin hesabı:      a@l.com / 123456
+   LUMINA 3000 — ANA UYGULAMA & ÇEVRİMDIŞI VERİ
+   Kimlik doğrulama / senkron: auth.js (Firebase)
+   Ayarlar: firebase-config.js
 ============================================================ */
 
 // ── SABİT TANIMLAMALARI (LOCAL STORAGE KEYS & GROUPS) ──
-const LS_KEY = 'lumina_progress_en';
-const LS_KEY_ES = 'lumina_progress_es';
-const LS_KEY_DE = 'lumina_progress_de';
-const LS_KEY_FR = 'lumina_progress_fr';
-const LS_KEY_NO = 'lumina_progress_no';
-const LS_KEY_SV = 'lumina_progress_sv';
-const LS_KEY_FUTBOL = 'lumina_progress_futbol';
 
 let TOTAL_GROUPS = 30;    // İngilizce varsayılan grup sayısı
 let TOTAL_GROUPS_ES = 9;  // İspanyolca grup sayısı
@@ -22,8 +14,9 @@ let TOTAL_GROUPS_NO = 5;  // Norveççe grup sayısı
 let TOTAL_GROUPS_SV = 58;  // İsveççe grup sayısı
 let TOTAL_GROUPS_FUTBOL = 5; // Futbol grup sayısı
 
-// ── C# API ADRESİ ──
-const API_BASE_URL = 'http://localhost:7047/api';
+// ── C# API ADRESİ (isteğe bağlı) ──
+// Boşsa kelimeler doğrudan CSV dosyalarından okunur. Ayar: firebase-config.js → apiBaseUrl
+const API_BASE_URL = String((window.LUMINA_CONFIG && window.LUMINA_CONFIG.apiBaseUrl) || '').replace(/\/+$/, '');
 
 // ── SERVICE WORKER & OFFLINE YÖNETİMİ ──
 if ('serviceWorker' in navigator) {
@@ -59,10 +52,6 @@ window.addEventListener('online', () => showOfflineBanner(false));
 if (!navigator.onLine) {
     showOfflineBanner(true);
 }
-
-// ── GOOGLE OAUTH CLIENT ID ──
-// Google Cloud Console'dan alınan Client ID'nizi buraya yazın
-const GOOGLE_CLIENT_ID = '1035406332647-50tntld2uiphj58kn5r1od3o4rjo2aof.apps.googleusercontent.com';
 
 // ── GLOBAL DEĞİŞKENLER ──
 let currentLanguage = 'English';
@@ -709,270 +698,194 @@ const FALLBACK_DATA = {
 };
 
 // ── DATA LOADING FUNCTIONS ──
+// Tırnaklı alanları ("a; b") ve "" kaçışını destekleyen ';' ayraçlı CSV ayrıştırıcı
+function parseDelimited(text, delimiter = ';') {
+    const rows = [];
+    let row = [], field = '', inQuotes = false;
+    for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        if (inQuotes) {
+            if (ch === '"') {
+                if (text[i + 1] === '"') { field += '"'; i++; }
+                else inQuotes = false;
+            } else field += ch;
+        } else if (ch === '"') inQuotes = true;
+        else if (ch === delimiter) { row.push(field); field = ''; }
+        else if (ch === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+        else if (ch !== '\r') field += ch;
+    }
+    if (field.length > 0 || row.length > 0) { row.push(field); rows.push(row); }
+    return rows;
+}
+
+// Başlık satırından sonraki satırlardan (kelime, anlam) çiftleri üretir; boş anlamlılar atlanır.
+function buildWordList(csvText, wordCol, turkishCol) {
+    const rows = parseDelimited(csvText).slice(1);
+    const parsed = [];
+    for (const parts of rows) {
+        const english = (parts[wordCol] || '').trim();
+        const turkish = (parts[turkishCol] || '').trim();
+        if (!english || !turkish) continue;
+        parsed.push({
+            id: parsed.length + 1,
+            groupId: Math.floor(parsed.length / 100) + 1,
+            english,
+            turkish
+        });
+    }
+    return { words: parsed, verbs: [] };
+}
+
 function parseCsvText(csvText) {
-    const lines = csvText.split(/\r?\n/);
+    const rows = parseDelimited(csvText).slice(1);
     const parsed = [];
     const extractedVerbs = [];
 
-    for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        const parts = line.split(';');
-        if (parts.length < 2) continue;
-
-        const english = parts[0]?.trim();
-        const turkish = parts[1]?.trim();
-        let v1 = parts[2]?.trim();
-        let v2 = parts[3]?.trim();
-        let v3 = parts[4]?.trim();
-
+    for (const parts of rows) {
+        const english = (parts[0] || '').trim();
+        const turkish = (parts[1] || '').trim();
         if (!english || !turkish) continue;
 
-        if (v1 === '-' || !v1) v1 = null;
-        if (v2 === '-' || !v2) v2 = null;
-        if (v3 === '-' || !v3) v3 = null;
+        const clean = v => { v = (v || '').trim(); return v === '-' || !v ? null : v; };
+        const v1 = clean(parts[2]), v2 = clean(parts[3]), v3 = clean(parts[4]);
 
-        // Group size: ~100 words per group
-        const groupId = Math.floor(parsed.length / 100) + 1;
-
-        const wordItem = {
+        parsed.push({
             id: parsed.length + 1,
-            groupId,
-            english,
-            turkish,
-            v1,
-            v2,
-            v3
-        };
-        parsed.push(wordItem);
-
-        if (v1 && v2 && v3) {
-            extractedVerbs.push({ v1, v2, v3, tr: turkish });
-        }
+            groupId: Math.floor(parsed.length / 100) + 1,   // grup başına 100 kelime
+            english, turkish, v1, v2, v3
+        });
+        if (v1 && v2 && v3) extractedVerbs.push({ v1, v2, v3, tr: turkish });
     }
-
     return { words: parsed, verbs: extractedVerbs };
 }
 
-function parseAlmancaCsv(csvText) {
-    const lines = csvText.split(/\r?\n/);
-    const parsed = [];
-    for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        const parts = line.split(';');
-        if (parts.length < 4) continue;
-        const wordItem = {
-            id: parsed.length + 1,
-            groupId: Math.floor(parsed.length / 100) + 1,
-            english: parts[1]?.trim() || '', // target word
-            turkish: parts[3]?.trim() || ''
-        };
-        if (wordItem.english && wordItem.turkish) {
-            parsed.push(wordItem);
-        }
+// Sütunlar: Almanca [ID;Kelime;Frekans;Türkçe] · Fransızca [Sıra;Kelime;Tür;Türkçe]
+//           İsveççe [Sıra;Fransızca;İsveççe;Türkçe] · İspanyolca/Norveççe [Sıra;Kelime;Tür;Türkçe]
+const parseAlmancaCsv    = text => buildWordList(text, 1, 3);
+const parseFransizcaCsv  = text => buildWordList(text, 1, 3);
+const parseIsvecceCsv    = text => buildWordList(text, 2, 3);
+const parseIspanyolcaCsv = text => buildWordList(text, 1, 3);
+const parseNorvecceCsv   = text => buildWordList(text, 1, 3);
+
+// ── VERİ KATMANI ──
+// Öncelik: (1) API (yalnızca apiBaseUrl ayarlıysa) → (2) CSV dosyası → (3) gömülü FALLBACK_DATA
+const CSV_DIR = './data/';
+
+const LANGUAGE_SOURCES = {
+    English: { api: 'words',         csv: 'english.csv', parse: parseCsvText,       setGroups: n => { TOTAL_GROUPS = n; } },
+    German:  { api: 'words/german',  csv: 'german.csv',   parse: parseAlmancaCsv,    setGroups: n => { TOTAL_GROUPS_DE = n; } },
+    French:  { api: 'words/french',  csv: 'french.csv', parse: parseFransizcaCsv,  setGroups: n => { TOTAL_GROUPS_FR = n; } },
+    Swedish: { api: 'words/swedish', csv: 'swedish.csv',   parse: parseIsvecceCsv,    setGroups: n => { TOTAL_GROUPS_SV = n; } },
+    Spanish: { api: 'words/spanish', csv: 'spanish.csv', parse: parseIspanyolcaCsv, setGroups: n => { TOTAL_GROUPS_ES = n; } },
+    Norwegian: { api: 'words/norwegian', csv: 'norwegian.csv', parse: parseNorvecceCsv, setGroups: n => { TOTAL_GROUPS_NO = n; } }
+};
+
+// API'si/CSV'si olmayan diller: gömülü veri
+const STATIC_LANGUAGES = {
+    Futbol:    { key: 'Futbol',    setGroups: n => { TOTAL_GROUPS_FUTBOL = n; } }
+};
+
+const wordCache = {};   // { Dil: { words, verbs } }
+
+// CSV dosyaları UTF-8 veya Windows-1254 (Excel "ANSI") olabilir: ikisini de doğru çöz
+async function fetchCsvText(fileName) {
+    const response = await fetch(CSV_DIR + fileName);
+    if (!response.ok) throw new Error(`CSV HTTP ${response.status} (${fileName})`);
+    const buffer = await response.arrayBuffer();
+    let text;
+    try {
+        text = new TextDecoder('utf-8', { fatal: true }).decode(buffer);
+    } catch {
+        text = new TextDecoder('windows-1254').decode(buffer);
     }
-    TOTAL_GROUPS_DE = Math.max(1, Math.floor(parsed.length / 100) + (parsed.length % 100 > 0 ? 1 : 0));
-    return { words: parsed, verbs: [] };
+    return text.replace(/^﻿/, '');
 }
 
-function parseFransizcaCsv(csvText) {
-    const lines = csvText.split(/\r?\n/);
-    const parsed = [];
-    for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        const parts = line.split(';');
-        if (parts.length < 4) continue;
-        const wordItem = {
-            id: parsed.length + 1,
-            groupId: Math.floor(parsed.length / 100) + 1,
-            english: parts[1]?.trim() || '', // target word
-            turkish: parts[3]?.trim() || ''
-        };
-        if (wordItem.english && wordItem.turkish) {
-            parsed.push(wordItem);
-        }
+async function fetchJson(url, timeoutMs) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+        const response = await fetch(url, { signal: controller.signal });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return await response.json();
+    } finally {
+        clearTimeout(timer);
     }
-    TOTAL_GROUPS_FR = Math.max(1, Math.floor(parsed.length / 100) + (parsed.length % 100 > 0 ? 1 : 0));
-    return { words: parsed, verbs: [] };
 }
 
-function parseIsvecceCsv(csvText) {
-    const lines = csvText.split(/\r?\n/);
-    const parsed = [];
-    for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        
-        let inQuotes = false;
-        let currentPart = "";
-        let parts = [];
-        for (let j = 0; j < line.length; j++) {
-            if (line[j] === '"') {
-                inQuotes = !inQuotes;
-            } else if (line[j] === ';' && !inQuotes) {
-                parts.push(currentPart);
-                currentPart = "";
-            } else {
-                currentPart += line[j];
+function normalizeApiWords(list) {
+    return list.map((w, idx) => ({
+        id: w.id || idx + 1,
+        groupId: w.groupId || Math.floor(idx / 100) + 1,
+        english: w.english || w.original || w.word || w.en || '',
+        turkish: w.turkish || w.translated || w.tr || '',
+        v1: w.v1 || null,
+        v2: w.v2 || null,
+        v3: w.v3 || null
+    })).filter(w => w.english && w.turkish);
+}
+
+async function fetchLanguageWords(langName) {
+    if (wordCache[langName]) return wordCache[langName];
+
+    let result = null;
+    const src = LANGUAGE_SOURCES[langName];
+
+    if (src) {
+        // 1) API
+        if (API_BASE_URL) {
+            try {
+                const apiList = await fetchJson(`${API_BASE_URL}/${src.api}`, 4000);
+                const words = Array.isArray(apiList) ? normalizeApiWords(apiList) : [];
+                if (words.length > 0) {
+                    result = { words, verbs: [] };
+                    // API fiil çekimlerini (V1/V2/V3) taşımaz: İngilizce için CSV'den tamamla
+                    if (langName === 'English' && !words.some(w => w.v1)) {
+                        try { result.verbs = src.parse(await fetchCsvText(src.csv)).verbs; } catch { /* yoksay */ }
+                    }
+                }
+            } catch (e) {
+                console.warn(`⚠️ ${langName} API başarısız, CSV'ye geçiliyor:`, e.message);
             }
         }
-        parts.push(currentPart);
-
-        if (parts.length < 4) continue;
-        const wordItem = {
-            id: parsed.length + 1,
-            groupId: Math.floor(parsed.length / 100) + 1,
-            english: parts[2]?.trim() || '', // target word (İsveççe Anlamı)
-            turkish: parts[3]?.trim() || ''
-        };
-        if (wordItem.english && wordItem.turkish) {
-            parsed.push(wordItem);
+        // 2) CSV
+        if (!result) {
+            try {
+                const parsed = src.parse(await fetchCsvText(src.csv));
+                if (parsed.words.length > 0) result = parsed;
+            } catch (e) {
+                console.warn(`⚠️ ${langName} CSV okunamadı:`, e.message);
+            }
         }
+        // 3) Gömülü veri (yalnızca İngilizce için anlamlı)
+        if (!result) {
+            // Gömülü örnek veri yalnızca İngilizce için var; diğer dillerde boş liste (sahte veri gösterme)
+            result = { words: langName === 'English' ? FALLBACK_DATA.English : [], verbs: [] };
+        }
+    } else {
+        const fb = FALLBACK_DATA[langName] || [];
+        result = { words: fb, verbs: [] };
     }
-    TOTAL_GROUPS_SV = Math.max(1, Math.floor(parsed.length / 100) + (parsed.length % 100 > 0 ? 1 : 0));
-    return { words: parsed, verbs: [] };
+
+    wordCache[langName] = result;
+    return result;
 }
 
-async function fetchLocalCsvData() {
-    try {
-        const response = await fetch('./Lumına Kelime/İngilizce.csv');
-        if (!response.ok) throw new Error(`CSV HTTP Hatası: ${response.status}`);
-        const csvText = await response.text();
-        return parseCsvText(csvText);
-    } catch (err) {
-        console.warn("⚠️ Oxford 3000 CSV okunamadı:", err.message);
-        return null;
-    }
+function groupCountFor(wordCount) {
+    return Math.max(1, Math.ceil(wordCount / 100));
 }
 
 async function loadLanguageData(langName) {
     currentLanguage = langName;
 
-    // İngilizce için önce /api/words endpoint'ini dene
-    if (langName === 'English') {
-        const apiWordsLoaded = await loadWordsFromApi();
-        if (apiWordsLoaded) {
-            console.log(`✅ English kelimeleri /api/words endpoint'inden başarıyla yüklendi.`);
-            return; // allWords zaten loadWordsFromApi() içinde dolduruldu
-        }
-        console.warn('⚠️ /api/words başarısız, /api/English endpoint\'i deneniyor...');
-    }
+    const result = await fetchLanguageWords(langName);
+    wordsData = result.words;
+    if (result.verbs && result.verbs.length > 0) verbsLabData = result.verbs;
 
-    // Almanca: Önce SQL API'den çek, başarısız olursa CSV'ye düş
-    if (langName === 'German') {
-        try {
-            console.log('🔄 Almanca kelimeler SQL API\'den çekiliyor...');
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 5000);
-            const response = await fetch(`${API_BASE_URL}/words/german`, { signal: controller.signal });
-            clearTimeout(timeoutId);
-            if (response.ok) {
-                const apiData = await response.json();
-                if (apiData && apiData.length > 0) {
-                    wordsData = apiData;
-                    TOTAL_GROUPS_DE = Math.max(1, Math.ceil(apiData.length / 100));
-                    console.log(`✅ Almanca: ${apiData.length} kelime SQL'den yüklendi, ${TOTAL_GROUPS_DE} grup.`);
-                } else { throw new Error('API boş veri döndü'); }
-            } else { throw new Error(`HTTP ${response.status}`); }
-        } catch(e) {
-            console.warn('⚠️ Almanca API başarısız, CSV\'ye geçiliyor:', e.message);
-            try {
-                const response = await fetch('./Lumına Kelime/Almanca.csv');
-                if (response.ok) {
-                    const text = await response.text();
-                    const res = parseAlmancaCsv(text);
-                    wordsData = res.words;
-                } else { wordsData = FALLBACK_DATA.German; }
-            } catch(e2) { wordsData = FALLBACK_DATA.German; }
-        }
-    // Fransızca: Önce SQL API'den çek, başarısız olursa CSV'ye düş
-    } else if (langName === 'French') {
-        try {
-            console.log('🔄 Fransızca kelimeler SQL API\'den çekiliyor...');
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 5000);
-            const response = await fetch(`${API_BASE_URL}/words/french`, { signal: controller.signal });
-            clearTimeout(timeoutId);
-            if (response.ok) {
-                const apiData = await response.json();
-                if (apiData && apiData.length > 0) {
-                    wordsData = apiData;
-                    TOTAL_GROUPS_FR = Math.max(1, Math.ceil(apiData.length / 100));
-                    console.log(`✅ Fransızca: ${apiData.length} kelime SQL'den yüklendi, ${TOTAL_GROUPS_FR} grup.`);
-                } else { throw new Error('API boş veri döndü'); }
-            } else { throw new Error(`HTTP ${response.status}`); }
-        } catch(e) {
-            console.warn('⚠️ Fransızca API başarısız, CSV\'ye geçiliyor:', e.message);
-            try {
-                const response = await fetch('./Lumına Kelime/Fransızca.csv');
-                if (response.ok) {
-                    const text = await response.text();
-                    const res = parseFransizcaCsv(text);
-                    wordsData = res.words;
-                } else { wordsData = FALLBACK_DATA.French; }
-            } catch(e2) { wordsData = FALLBACK_DATA.French; }
-        }
-    } else if (langName === 'Swedish') {
-        try {
-            console.log('🔄 İsveççe kelimeler SQL API\'den çekiliyor...');
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 5000);
-            const response = await fetch(`${API_BASE_URL}/words/swedish`, { signal: controller.signal });
-            clearTimeout(timeoutId);
-            if (response.ok) {
-                const apiData = await response.json();
-                if (apiData && apiData.length > 0) {
-                    wordsData = apiData;
-                    TOTAL_GROUPS_SV = Math.max(1, Math.ceil(apiData.length / 100));
-                    console.log(`✅ İsveççe: ${apiData.length} kelime SQL'den yüklendi, ${TOTAL_GROUPS_SV} grup.`);
-                } else { throw new Error('API boş veri döndü'); }
-            } else { throw new Error(`HTTP ${response.status}`); }
-        } catch(e) {
-            console.warn('⚠️ İsveççe API başarısız, CSV\'ye geçiliyor:', e.message);
-            try {
-                const response = await fetch('./Lumına Kelime/Isvecce.csv');
-                if (response.ok) {
-                    const text = await response.text();
-                    const res = parseIsvecceCsv(text);
-                    wordsData = res.words;
-                } else {
-                    wordsData = FALLBACK_DATA.Norwegian || []; // Fallback boş veya norwegian
-                }
-            } catch(e2) { wordsData = []; }
-        }
-    } else if (langName === 'Futbol') {
-        wordsData = FALLBACK_DATA.Futbol;
-        TOTAL_GROUPS_FUTBOL = Math.ceil(wordsData.length / 100);
-    } else {
-        try {
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 1500);
-            const response = await fetch(`${API_BASE_URL}/${langName}`, { signal: controller.signal });
-            clearTimeout(timeoutId);
-
-            if (!response.ok) throw new Error(`HTTP Hatası: ${response.status}`);
-            wordsData = await response.json();
-            console.log(`✅ ${langName} sunucudan yüklendi:`, wordsData.length);
-        } catch (error) {
-            console.warn(`⚠️ ${langName} sunucudan alınamadı, yerel verisetine geçiliyor:`, error.message);
-
-            if (langName === 'English') {
-                const csvResult = await fetchLocalCsvData();
-                if (csvResult && csvResult.words.length > 0) {
-                    wordsData = csvResult.words;
-                    if (csvResult.verbs.length > 0) {
-                        verbsLabData = csvResult.verbs;
-                    }
-                    console.log(`✅ English (Oxford 3000) yerel CSV dosyasından yüklendi:`, wordsData.length);
-                } else {
-                    wordsData = FALLBACK_DATA[langName] || FALLBACK_DATA.English;
-                }
-            } else {
-                wordsData = FALLBACK_DATA[langName] || FALLBACK_DATA.English;
-            }
-        }
+    const cfg = LANGUAGE_SOURCES[langName] || STATIC_LANGUAGES[langName];
+    if (cfg) {
+        const maxGroup = wordsData.reduce((m, w) => Math.max(m, w.groupId || 1), 1);
+        cfg.setGroups(Math.max(groupCountFor(wordsData.length), maxGroup));
     }
 
     allWords = {};
@@ -1004,520 +917,23 @@ function updateAppTitle(langName) {
     };
     const trName = titleMap[langName] || '3000';
     document.querySelectorAll('.logo-title').forEach(el => {
+        if (el.closest('#authScreen')) return;
         el.innerHTML = `LUMINA <span class="accent">${trName}</span>`;
     });
 }
 
-// ── /api/words ENDPOINT'İNDEN İNGİLİZCE KELİMELERİ ÇEK ──
-// Bu fonksiyon C# API'nizin /api/words endpoint'inden tüm kelimeleri çeker
-// ve mevcut Lumina sistemiyle entegre eder.
-async function loadWordsFromApi() {
-    try {
-        console.log('🔄 /api/words endpoint\'inden kelimeler çekiliyor...');
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 3000);
-        const response = await fetch(`${API_BASE_URL}/words`, { signal: controller.signal });
-        clearTimeout(timeoutId);
-
-        if (!response.ok) {
-            throw new Error(`Kelimeler sunucudan alınamadı! HTTP: ${response.status}`);
-        }
-
-        const apiWords = await response.json();
-        console.log('✅ Veritabanından gelen kelimeler (/api/words):', apiWords);
-        console.log(`📊 Toplam ${apiWords.length} kelime alındı.`);
-
-        // API'den gelen kelimeleri Lumina formatına dönüştür
-        // Yeni API: { id, groupId, english, turkish } formatında döner
-        if (apiWords && apiWords.length > 0) {
-            wordsData = apiWords.map((w, idx) => ({
-                id: w.id || idx + 1,
-                groupId: w.groupId || Math.min(30, Math.floor(idx / 100) + 1),
-                english: w.english || w.original || w.word || w.en || '',
-                turkish: w.turkish || w.translated || w.tr || '',
-                v1: w.v1 || null,
-                v2: w.v2 || null,
-                v3: w.v3 || null
-            }));
-
-            // allWords nesnesini güncelle (grup bazlı)
-            allWords = {};
-            wordsData.forEach(word => {
-                const key = `group${word.groupId}`;
-                if (!allWords[key]) allWords[key] = [];
-                allWords[key].push({
-                    id: word.id,
-                    en: word.english,
-                    tr: word.turkish,
-                    v1: word.v1,
-                    v2: word.v2,
-                    v3: word.v3
-                });
-            });
-
-            TOTAL_GROUPS = Object.keys(allWords).length;
-            console.log(`✅ İngilizce: ${wordsData.length} kelime SQL'den yüklendi, ${TOTAL_GROUPS} grup.`);
-            return true;
-        }
-
-        return false;
-    } catch (error) {
-        console.warn('⚠️ /api/words bağlantı hatası (yerel veriseti kullanılacak):', error.message);
-        return false;
-    }
-}
-
 async function loadVerbsLabData() {
-    if (verbsLabData.length > 0) return; // Zaten CSV veya API'den yüklendi
-    try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 1500);
-        const response = await fetch(`${API_BASE_URL}/VerbsLab`, { signal: controller.signal });
-        clearTimeout(timeoutId);
-
-        if (!response.ok) throw new Error(`HTTP Hatası: ${response.status}`);
-        verbsLabData = await response.json();
-        console.log("✅ VerbsLab sunucudan yüklendi:", verbsLabData.length);
-    } catch (error) {
-        console.warn("⚠️ VerbsLab sunucudan alınamadı, yerel fiiller kullanılıyor:", error.message);
-        if (verbsLabData.length === 0) {
-            verbsLabData = DEFAULT_VERBS_LAB;
-        }
-    }
-}
-
-// ── AUTH MANAGER ──
-const AuthManager = (() => {
-    const LS_USERS = 'lumina_users';
-    const LS_SESSION = 'lumina_session';
-
-    function simpleHash(str) {
-        let hash = 0;
-        for (let i = 0; i < str.length; i++) {
-            const char = str.charCodeAt(i);
-            hash = ((hash << 5) - hash) + char;
-            hash = hash & hash;
-        }
-        return hash.toString(36);
-    }
-
-    function getUsers() {
+    if (verbsLabData.length > 0) return; // CSV'den zaten yüklendi
+    if (API_BASE_URL) {
         try {
-            return JSON.parse(localStorage.getItem(LS_USERS) || '[]');
-        } catch { return []; }
-    }
-
-    function saveUsers(users) {
-        localStorage.setItem(LS_USERS, JSON.stringify(users));
-    }
-
-    function ensureAdminExists() {
-        const users = getUsers();
-        const adminExists = users.some(u => u.email === 'a@l.com');
-        if (!adminExists) {
-            users.push({
-                email: 'a@l.com',
-                name: 'Admin',
-                passwordHash: simpleHash('123456'),
-                role: 'admin',
-                createdAt: new Date().toISOString()
-            });
-            saveUsers(users);
+            const list = await fetchJson(`${API_BASE_URL}/VerbsLab`, 1500);
+            if (Array.isArray(list) && list.length > 0) { verbsLabData = list; return; }
+        } catch (e) {
+            console.warn('⚠️ VerbsLab API alınamadı:', e.message);
         }
     }
-
-    function signUp(email, password, name) {
-        email = email.trim().toLowerCase();
-        if (!email || !password) return { ok: false, error: 'E-posta ve şifre zorunludur.' };
-        if (password.length < 6) return { ok: false, error: 'Şifre en az 6 karakter olmalıdır.' };
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return { ok: false, error: 'Geçerli bir e-posta adresi girin.' };
-
-        const users = getUsers();
-        if (users.some(u => u.email === email)) {
-            return { ok: false, error: 'Bu e-posta adresi zaten kayıtlı.' };
-        }
-
-        const newUser = {
-            email,
-            name: name ? name.trim() : email.split('@')[0],
-            passwordHash: simpleHash(password),
-            role: 'user',
-            createdAt: new Date().toISOString()
-        };
-        users.push(newUser);
-        saveUsers(users);
-        return { ok: true, user: newUser };
-    }
-
-    function signIn(email, password) {
-        email = email.trim().toLowerCase();
-        const users = getUsers();
-        const user = users.find(u => u.email === email);
-        if (!user) return { ok: false, error: 'Bu e-posta adresi ile kayıtlı hesap bulunamadı.' };
-        if (user.passwordHash !== simpleHash(password)) {
-            return { ok: false, error: 'Şifre hatalı. Lütfen tekrar deneyin.' };
-        }
-
-        const session = { email: user.email, name: user.name, role: user.role, loginAt: new Date().toISOString() };
-        localStorage.setItem(LS_SESSION, JSON.stringify(session));
-        return { ok: true, user: session };
-    }
-
-    function signOut() {
-        localStorage.removeItem(LS_SESSION);
-    }
-
-    function recoverPassword(email) {
-        email = email.trim().toLowerCase();
-        const users = getUsers();
-        const user = users.find(u => u.email === email);
-        if (!user) return { ok: false, error: 'Bu e-posta ile kayıtlı hesap bulunamadı.' };
-
-        return {
-            ok: true,
-            message: `✅ Hesabınız bulundu! Doğrudan giriş yapabilirsiniz.\nE-posta: ${user.email}`
-        };
-    }
-
-    function getSession() {
-        try {
-            return JSON.parse(localStorage.getItem(LS_SESSION) || 'null');
-        } catch { return null; }
-    }
-
-    function isLoggedIn() { return getSession() !== null; }
-
-    ensureAdminExists();
-
-    return { signUp, signIn, signOut, recoverPassword, getSession, isLoggedIn, simpleHash };
-})();
-
-// ── AUTH UI FUNCTIONS ──
-function authShowPanel(panel) {
-    document.querySelectorAll('.auth-panel').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
-
-    ['siError', 'suError', 'suSuccess', 'fpError', 'fpSuccess'].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) { el.classList.add('hidden'); el.textContent = ''; }
-    });
-
-    if (panel === 'signin') {
-        document.getElementById('panelSignIn').classList.add('active');
-        document.getElementById('tabSignIn').classList.add('active');
-        document.getElementById('siEmail').focus();
-    } else if (panel === 'signup') {
-        document.getElementById('panelSignUp').classList.add('active');
-        document.getElementById('tabSignUp').classList.add('active');
-        document.getElementById('suName').focus();
-    } else if (panel === 'forgot') {
-        document.getElementById('panelForgot').classList.add('active');
-        document.getElementById('fpEmail').focus();
-    }
+    if (verbsLabData.length === 0) verbsLabData = DEFAULT_VERBS_LAB;
 }
-
-function authSetLoading(btnId, loading) {
-    const btn = document.getElementById(btnId);
-    if (!btn) return;
-    btn.disabled = loading;
-    btn.style.opacity = loading ? '0.7' : '1';
-}
-
-function authShowMsg(id, msg, isError) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.textContent = msg;
-    el.classList.remove('hidden');
-}
-
-function authSignIn() {
-    const email = document.getElementById('siEmail').value;
-    const password = document.getElementById('siPassword').value;
-    const errEl = document.getElementById('siError');
-
-    errEl.classList.add('hidden');
-
-    if (!email || !password) {
-        authShowMsg('siError', '⚠️ Lütfen tüm alanları doldurun.', true);
-        return;
-    }
-
-    authSetLoading('btnSignIn', true);
-    setTimeout(() => {
-        const result = AuthManager.signIn(email, password);
-        authSetLoading('btnSignIn', false);
-        if (result.ok) {
-            authGoToDashboard(result.user);
-        } else {
-            authShowMsg('siError', '⚠️ ' + result.error, true);
-        }
-    }, 200);
-}
-
-function authSignUp() {
-    const name = document.getElementById('suName').value;
-    const email = document.getElementById('suEmail').value;
-    const password = document.getElementById('suPassword').value;
-
-    document.getElementById('suError').classList.add('hidden');
-    document.getElementById('suSuccess').classList.add('hidden');
-
-    if (!email || !password) {
-        authShowMsg('suError', '⚠️ E-posta ve şifre zorunludur.', true);
-        return;
-    }
-
-    authSetLoading('btnSignUp', true);
-    setTimeout(() => {
-        const result = AuthManager.signUp(email, password, name);
-        authSetLoading('btnSignUp', false);
-        if (result.ok) {
-            authShowMsg('suSuccess', '✅ Hesabınız oluşturuldu! Giriş yapılıyor…', false);
-            setTimeout(() => {
-                const loginResult = AuthManager.signIn(email, password);
-                if (loginResult.ok) authGoToDashboard(loginResult.user);
-            }, 600);
-        } else {
-            authShowMsg('suError', '⚠️ ' + result.error, true);
-        }
-    }, 200);
-}
-
-function authForgotPassword() {
-    const email = document.getElementById('fpEmail').value;
-    document.getElementById('fpError').classList.add('hidden');
-    document.getElementById('fpSuccess').classList.add('hidden');
-
-    if (!email) {
-        authShowMsg('fpError', '⚠️ Lütfen e-posta adresinizi girin.', true);
-        return;
-    }
-
-    authSetLoading('btnForgot', true);
-    setTimeout(() => {
-        const result = AuthManager.recoverPassword(email);
-        authSetLoading('btnForgot', false);
-        if (result.ok) {
-            authShowMsg('fpSuccess', result.message, false);
-        } else {
-            authShowMsg('fpError', '⚠️ ' + result.error, true);
-        }
-    }, 200);
-}
-
-function authQuickAdmin() {
-    document.getElementById('siEmail').value = 'a@l.com';
-    document.getElementById('siPassword').value = '123456';
-    authShowPanel('signin');
-    authSignIn();
-}
-
-// ── GOOGLE SIGN-IN FUNCTIONS ──
-function initGoogleSignIn() {
-    // Google Identity Services API'nin yüklenmesini bekle
-    if (typeof google === 'undefined' || !google.accounts) {
-        // API henüz yüklenmedi, biraz bekleyip tekrar dene
-        setTimeout(initGoogleSignIn, 200);
-        return;
-    }
-    google.accounts.id.initialize({
-        client_id: GOOGLE_CLIENT_ID,
-        callback: handleGoogleCredentialResponse,
-        auto_select: false,
-        cancel_on_tap_outside: true
-    });
-}
-
-function decodeJwtPayload(token) {
-    try {
-        const base64Url = token.split('.')[1];
-        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-        const jsonPayload = decodeURIComponent(
-            atob(base64).split('').map(c =>
-                '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
-            ).join('')
-        );
-        return JSON.parse(jsonPayload);
-    } catch (e) {
-        console.error('JWT decode hatası:', e);
-        return null;
-    }
-}
-
-function handleGoogleCredentialResponse(response) {
-    const payload = decodeJwtPayload(response.credential);
-    if (!payload) {
-        authShowMsg('siError', '⚠️ Google girişi başarısız oldu. Lütfen tekrar deneyin.', true);
-        return;
-    }
-
-    const email = payload.email;
-    const name = payload.name || email.split('@')[0];
-    const picture = payload.picture || '';
-
-    // Kullanıcıyı lumina_users listesine ekle/güncelle
-    const LS_USERS = 'lumina_users';
-    let users = [];
-    try { users = JSON.parse(localStorage.getItem(LS_USERS) || '[]'); } catch { users = []; }
-
-    const existingIndex = users.findIndex(u => u.email === email);
-    const userData = {
-        email,
-        name,
-        picture,
-        authProvider: 'google',
-        role: 'user',
-        createdAt: existingIndex >= 0 ? users[existingIndex].createdAt : new Date().toISOString()
-    };
-
-    if (existingIndex >= 0) {
-        // Mevcut kullanıcıyı güncelle ama rolünü koru
-        userData.role = users[existingIndex].role || 'user';
-        users[existingIndex] = { ...users[existingIndex], ...userData };
-    } else {
-        users.push(userData);
-    }
-    localStorage.setItem(LS_USERS, JSON.stringify(users));
-
-    // Session oluştur
-    const session = {
-        email,
-        name,
-        picture,
-        role: userData.role,
-        authProvider: 'google',
-        loginAt: new Date().toISOString()
-    };
-    localStorage.setItem('lumina_session', JSON.stringify(session));
-
-    // İlerleme verisi migration: eski genel anahtarı kullanıcıya özel anahtara taşı
-    migrateProgressToUser(email);
-
-    // Dashboard'a yönlendir
-    authGoToDashboard(session);
-}
-
-function googleSignIn() {
-    if (typeof google === 'undefined' || !google.accounts) {
-        authShowMsg('siError', '⚠️ Google servisi henüz yüklenemedi. Sayfayı yenileyip tekrar deneyin.', true);
-        return;
-    }
-    google.accounts.id.prompt((notification) => {
-        if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
-            // One Tap görüntülenemedi, fallback: popup modunda aç
-            const client = google.accounts.oauth2.initTokenClient({
-                client_id: GOOGLE_CLIENT_ID,
-                scope: 'email profile',
-                callback: (tokenResponse) => {
-                    // Token ile kullanıcı bilgilerini al
-                    fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
-                        headers: { 'Authorization': 'Bearer ' + tokenResponse.access_token }
-                    })
-                        .then(res => res.json())
-                        .then(userInfo => {
-                            const fakeCredentialPayload = {
-                                email: userInfo.email,
-                                name: userInfo.name,
-                                picture: userInfo.picture
-                            };
-                            // Doğrudan handleGoogleCredentialResponse benzeri işlem yap
-                            const email = fakeCredentialPayload.email;
-                            const name = fakeCredentialPayload.name || email.split('@')[0];
-                            const picture = fakeCredentialPayload.picture || '';
-
-                            const LS_USERS = 'lumina_users';
-                            let users = [];
-                            try { users = JSON.parse(localStorage.getItem(LS_USERS) || '[]'); } catch { users = []; }
-
-                            const existingIndex = users.findIndex(u => u.email === email);
-                            const userData = {
-                                email, name, picture,
-                                authProvider: 'google',
-                                role: 'user',
-                                createdAt: existingIndex >= 0 ? users[existingIndex].createdAt : new Date().toISOString()
-                            };
-
-                            if (existingIndex >= 0) {
-                                userData.role = users[existingIndex].role || 'user';
-                                users[existingIndex] = { ...users[existingIndex], ...userData };
-                            } else {
-                                users.push(userData);
-                            }
-                            localStorage.setItem(LS_USERS, JSON.stringify(users));
-
-                            const session = {
-                                email, name, picture,
-                                role: userData.role,
-                                authProvider: 'google',
-                                loginAt: new Date().toISOString()
-                            };
-                            localStorage.setItem('lumina_session', JSON.stringify(session));
-                            migrateProgressToUser(email);
-                            authGoToDashboard(session);
-                        })
-                        .catch(err => {
-                            console.error('Google userinfo hatası:', err);
-                            authShowMsg('siError', '⚠️ Google girişi sırasında bir hata oluştu.', true);
-                        });
-                }
-            });
-            client.requestAccessToken();
-        }
-    });
-}
-
-function migrateProgressToUser(email) {
-    if (!email) return;
-    const langKeys = [
-        { base: 'lumina_progress_en', suffix: '_en' },
-        { base: 'lumina_progress_es', suffix: '_es' },
-        { base: 'lumina_progress_de', suffix: '_de' },
-        { base: 'lumina_progress_fr', suffix: '_fr' },
-        { base: 'lumina_progress_no', suffix: '_no' },
-        { base: 'lumina_progress_futbol', suffix: '_futbol' }
-    ];
-
-    langKeys.forEach(({ base }) => {
-        const userKey = base + '_' + email;
-        // Eğer kullanıcıya özel anahtar henüz yoksa ve genel anahtar varsa, taşı
-        if (!localStorage.getItem(userKey)) {
-            const oldData = localStorage.getItem(base);
-            if (oldData) {
-                localStorage.setItem(userKey, oldData);
-            }
-        }
-    });
-}
-
-function authToggleEye(inputId, btnId) {
-    const input = document.getElementById(inputId);
-    const btn = typeof btnId === 'string' ? document.getElementById(btnId) : btnId;
-    if (input.type === 'password') {
-        input.type = 'text';
-        if (btn) btn.textContent = '🙈';
-    } else {
-        input.type = 'password';
-        if (btn) btn.textContent = '👁';
-    }
-}
-
-function authGoToDashboard(user) {
-    updateUserUI(user);
-    const topBar = document.getElementById('globalTopBar');
-    if (topBar) topBar.classList.remove('hidden');
-    NotificationManager.addNotification('Hoş Geldiniz', `${user.name || user.email} ile oturum açıldı.`, '👋');
-    showScreen('languageScreen');
-}
-
-// ── ENTER KEY IN AUTH FORMS ──
-document.addEventListener('keydown', function (e) {
-    if (e.key !== 'Enter') return;
-    const activePanel = document.querySelector('.auth-panel.active');
-    if (!activePanel) return;
-    if (activePanel.id === 'panelSignIn') { authSignIn(); e.preventDefault(); }
-    if (activePanel.id === 'panelSignUp') { authSignUp(); e.preventDefault(); }
-    if (activePanel.id === 'panelForgot') { authForgotPassword(); e.preventDefault(); }
-});
 
 // ── DYNAMIC HELPERS ──
 function activeTotalGroups() {
@@ -1525,6 +941,7 @@ function activeTotalGroups() {
     if (state.lang === 'de') return TOTAL_GROUPS_DE;
     if (state.lang === 'fr') return TOTAL_GROUPS_FR;
     if (state.lang === 'no') return TOTAL_GROUPS_NO;
+    if (state.lang === 'sv') return TOTAL_GROUPS_SV;
     if (state.lang === 'futbol') return TOTAL_GROUPS_FUTBOL;
 
     if (wordsData && wordsData.length > 0) {
@@ -1535,19 +952,8 @@ function activeTotalGroups() {
 }
 
 function activeLSKey() {
-    let baseKey = LS_KEY;
-    if (state.lang === 'es') baseKey = LS_KEY_ES;
-    else if (state.lang === 'de') baseKey = LS_KEY_DE;
-    else if (state.lang === 'fr') baseKey = LS_KEY_FR;
-    else if (state.lang === 'no') baseKey = LS_KEY_NO;
-    else if (state.lang === 'futbol') baseKey = LS_KEY_FUTBOL;
-
-    // Kullanıcıya özel anahtar: lumina_progress_en_user@email.com
-    const session = AuthManager.getSession();
-    if (session && session.email) {
-        return baseKey + '_' + session.email;
-    }
-    return baseKey;
+    // Kullanıcıya özel anahtar: lumina_progress_<dil>_<uid> (misafir: kullanıcısız anahtar)
+    return AuthManager.progressKey(state.lang);
 }
 
 function activeGroupName(i) {
@@ -1576,7 +982,17 @@ function buildEmptyProgress() {
 }
 
 function saveProgress(progress) {
-    localStorage.setItem(activeLSKey(), JSON.stringify(progress));
+    const key = activeLSKey();
+    localStorage.setItem(key, JSON.stringify(progress));
+    SyncManager.touch(key);
+    SyncManager.schedulePush(state.lang);
+}
+
+function resetActiveProgress() {
+    const key = activeLSKey();
+    localStorage.removeItem(key);
+    localStorage.removeItem('lumina_ts_' + key);
+    SyncManager.remove(state.lang);
 }
 
 function getGroupProgress(progress, groupNum) {
@@ -1620,81 +1036,39 @@ function showScreen(id) {
         }
     }
 
-    // Dil seçim ekranı açılınca kelime sayılarını SQL API'den çek
+    // Dil seçim ekranı açılınca kelime sayılarını güncelle
     if (id === 'languageScreen') {
         fetchAndShowLangCounts();
     }
 }
 
-// Dil butonlarındaki kelime sayılarını SQL API'den dinamik olarak günceller
+// Dil butonlarındaki kelime sayılarını (API veya CSV'den) günceller
 async function fetchAndShowLangCounts() {
-    // İngilizce sayısını çek
-    try {
-        const ctrlEn = new AbortController();
-        setTimeout(() => ctrlEn.abort(), 3000);
-        const resEn = await fetch(`${API_BASE_URL}/words/count`, { signal: ctrlEn.signal });
-        if (resEn.ok) {
-            const dataEn = await resEn.json();
-            const countEn = dataEn.count || 0;
-            const grupsEn = Math.max(1, Math.ceil(countEn / 100));
-            const p = document.getElementById('langDescEn');
-            if (p) p.textContent = `${countEn.toLocaleString('tr-TR')} Kelime • ${grupsEn} Grup`;
-            TOTAL_GROUPS = grupsEn;
-        }
-    } catch(e) { /* sessizce geç */ }
+    const targets = [
+        { lang: 'English',   el: 'langDescEn' },
+        { lang: 'Spanish',   el: 'langDescEs' },
+        { lang: 'German',    el: 'langDescDe' },
+        { lang: 'French',    el: 'langDescFr' },
+        { lang: 'Norwegian', el: 'langDescNo' },
+        { lang: 'Swedish',   el: 'langDescSv' },
+        { lang: 'Futbol',    el: 'langDescFutbol' }
+    ];
 
-    // Almanca sayısını çek
-    try {
-        const ctrlDe = new AbortController();
-        setTimeout(() => ctrlDe.abort(), 3000);
-        const resDe = await fetch(`${API_BASE_URL}/words/german/count`, { signal: ctrlDe.signal });
-        if (resDe.ok) {
-            const dataDe = await resDe.json();
-            const countDe = dataDe.count || 0;
-            const grupsDe = Math.max(1, Math.ceil(countDe / 100));
-            const p = document.getElementById('langDescDe');
-            if (p) p.textContent = `${countDe.toLocaleString('tr-TR')} Kelime • ${grupsDe} Grup`;
-            TOTAL_GROUPS_DE = grupsDe;
+    await Promise.all(targets.map(async ({ lang, el }) => {
+        const p = document.getElementById(el);
+        if (!p) return;
+        try {
+            const { words } = await fetchLanguageWords(lang);
+            const cfg = LANGUAGE_SOURCES[lang] || STATIC_LANGUAGES[lang];
+            const groups = groupCountFor(words.length);
+            if (cfg && words.length > 0) cfg.setGroups(groups);
+            p.textContent = words.length > 0
+                ? `${words.length.toLocaleString('tr-TR')} Kelime • ${groups} Grup`
+                : 'Veri yüklenemedi';
+        } catch (e) {
+            p.textContent = 'Veri yüklenemedi';
         }
-    } catch(e) { /* sessizce geç */ }
-
-    // Fransızca sayısını çek
-    try {
-        const ctrlFr = new AbortController();
-        setTimeout(() => ctrlFr.abort(), 3000);
-        const resFr = await fetch(`${API_BASE_URL}/words/french/count`, { signal: ctrlFr.signal });
-        if (resFr.ok) {
-            const dataFr = await resFr.json();
-            const countFr = dataFr.count || 0;
-            const grupsFr = Math.max(1, Math.ceil(countFr / 100));
-            const p = document.getElementById('langDescFr');
-            if (p) p.textContent = `${countFr.toLocaleString('tr-TR')} Kelime • ${grupsFr} Grup`;
-            TOTAL_GROUPS_FR = grupsFr;
-        }
-    } catch(e) { /* sessizce geç */ }
-
-    // İsveççe sayısını çek
-    try {
-        const ctrlSv = new AbortController();
-        setTimeout(() => ctrlSv.abort(), 3000);
-        const resSv = await fetch(`${API_BASE_URL}/words/swedish/count`, { signal: ctrlSv.signal });
-        if (resSv.ok) {
-            const dataSv = await resSv.json();
-            const countSv = dataSv.count || 0;
-            const grupsSv = Math.max(1, Math.ceil(countSv / 100));
-            const p = document.getElementById('langDescSv');
-            if (p) p.textContent = `${countSv.toLocaleString('tr-TR')} Kelime • ${grupsSv} Grup`;
-            TOTAL_GROUPS_SV = grupsSv;
-        }
-    } catch(e) { /* sessizce geç */ }
-
-    // İspanyolca ve Norveççe (şu an API yok, yerel veriyle kalıyor)
-    const pEs = document.getElementById('langDescEs');
-    if (pEs) pEs.textContent = `900 Kelime • 9 Grup`; // Fallback data
-    const pNo = document.getElementById('langDescNo');
-    if (pNo) pNo.textContent = `500 Kelime • 5 Grup`; // Fallback data
-    const pFutbol = document.getElementById('langDescFutbol');
-    if (pFutbol) pFutbol.textContent = `${FALLBACK_DATA.Futbol.length} Kelime • ${Math.ceil(FALLBACK_DATA.Futbol.length / 100)} Grup`; // Fallback data
+    }));
 }
 
 // ── DASHBOARD RENDER ──
@@ -2272,7 +1646,7 @@ function startSandbox() {
 // ── UTILITIES ──
 function playAudio(text, lang) {
     if (!window.speechSynthesis || !text) return;
-    const langMap = { en: 'en-US', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', no: 'nb-NO' };
+    const langMap = { en: 'en-US', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', no: 'nb-NO', sv: 'sv-SE', futbol: 'en-US' };
     const targetLang = lang || langMap[state.lang] || 'en-US';
     const safeText = text.toString().replace(/\//g, ' or ');
 
@@ -2347,11 +1721,11 @@ const NotificationManager = (() => {
             } else {
                 listEl.innerHTML = list.map(n => `
                     <div class="notif-item">
-                        <span class="notif-item-icon">${n.icon}</span>
+                        <span class="notif-item-icon">${escapeHtml(n.icon)}</span>
                         <div class="notif-item-text">
-                            <strong>${n.title}</strong>
-                            <div>${n.message}</div>
-                            <div class="notif-item-time">${n.time}</div>
+                            <strong>${escapeHtml(n.title)}</strong>
+                            <div>${escapeHtml(n.message)}</div>
+                            <div class="notif-item-time">${escapeHtml(n.time)}</div>
                         </div>
                     </div>
                 `).join('');
@@ -2362,63 +1736,19 @@ const NotificationManager = (() => {
     return { addNotification, clearNotifications, renderNotifs, getNotifs };
 })();
 
-// ── USER PROFILE & PASSWORD MANAGER EXTENSIONS ──
-AuthManager.updateProfile = function (newName) {
-    const session = AuthManager.getSession();
-    if (!session) return { ok: false, error: 'Oturum bulunamadı.' };
-
-    const users = JSON.parse(localStorage.getItem('lumina_users') || '[]');
-    const userIndex = users.findIndex(u => u.email === session.email);
-    if (userIndex === -1) return { ok: false, error: 'Kullanıcı bulunamadı.' };
-
-    const trimmedName = newName.trim() || session.email.split('@')[0];
-    users[userIndex].name = trimmedName;
-    localStorage.setItem('lumina_users', JSON.stringify(users));
-
-    session.name = trimmedName;
-    localStorage.setItem('lumina_session', JSON.stringify(session));
-
-    updateUserUI(session);
-    NotificationManager.addNotification('Profil Güncellendi', 'İsminiz başarıyla güncellendi.', '✏️');
-    return { ok: true, user: session };
-};
-
-AuthManager.changePassword = function (oldPassword, newPassword) {
-    const session = AuthManager.getSession();
-    if (!session) return { ok: false, error: 'Oturum bulunamadı.' };
-
-    if (!oldPassword || !newPassword) return { ok: false, error: 'Lütfen tüm alanları doldurun.' };
-    if (newPassword.length < 6) return { ok: false, error: 'Yeni şifre en az 6 karakter olmalıdır.' };
-
-    const users = JSON.parse(localStorage.getItem('lumina_users') || '[]');
-    const user = users.find(u => u.email === session.email);
-    if (!user) return { ok: false, error: 'Kullanıcı bulunamadı.' };
-
-    if (user.passwordHash !== AuthManager.simpleHash(oldPassword)) {
-        return { ok: false, error: 'Mevcut şifreniz hatalı.' };
-    }
-
-    user.passwordHash = AuthManager.simpleHash(newPassword);
-
-    localStorage.setItem('lumina_users', JSON.stringify(users));
-    NotificationManager.addNotification('Şifre Değiştirildi', 'Şifreniz başarıyla güncellendi.', '🔑');
-    return { ok: true };
-};
-
 function updateUserUI(session) {
     if (!session) return;
 
-    const initial = (session.name || session.email).charAt(0).toUpperCase();
-    const displayName = session.name || session.email.split('@')[0];
-    const isGoogleUser = session.authProvider === 'google';
-    const hasPhoto = isGoogleUser && session.picture;
+    const isGuest = !!session.guest;
+    const displayName = session.name || (session.email ? session.email.split('@')[0] : 'Misafir');
+    const initial = displayName.charAt(0).toUpperCase();
 
-    // Google kullanıcısı için body class ekle (şifre değiştir gizleme için)
-    if (isGoogleUser) {
-        document.body.classList.add('google-user');
-    } else {
-        document.body.classList.remove('google-user');
-    }
+    // Şifre değiştir: yalnızca e-posta/şifre ile girenlerde görünür
+    document.body.classList.toggle('google-user', session.authProvider !== 'password');
+    const btnManage = document.getElementById('btnOpenManageAccount');
+    const btnPass = document.getElementById('btnOpenChangePassword');
+    if (btnManage) btnManage.style.display = isGuest ? 'none' : '';
+    if (btnPass) btnPass.style.display = session.authProvider === 'password' ? '' : 'none';
 
     const avatarEls = [
         document.getElementById('topUserAvatar'),
@@ -2429,8 +1759,13 @@ function updateUserUI(session) {
 
     avatarEls.forEach(el => {
         if (!el) return;
-        if (hasPhoto) {
-            el.innerHTML = `<img src="${session.picture}" alt="${displayName}" referrerpolicy="no-referrer" />`;
+        el.textContent = '';
+        if (session.picture) {
+            const img = document.createElement('img');
+            img.src = session.picture;
+            img.alt = displayName;
+            img.referrerPolicy = 'no-referrer';
+            el.appendChild(img);
             el.classList.add('has-photo');
         } else {
             el.textContent = initial;
@@ -2438,25 +1773,18 @@ function updateUserUI(session) {
         }
     });
 
-    const topName = document.getElementById('topUserName');
-    const menuName = document.getElementById('menuUserName');
-    const menuEmail = document.getElementById('menuUserEmail');
-    const dashEmail = document.getElementById('dashUserEmail');
+    const setText = (id, text) => { const el = document.getElementById(id); if (el) el.textContent = text; };
+    setText('topUserName', displayName);
+    setText('menuUserName', displayName);
+    setText('menuUserEmail', isGuest ? 'Misafir (yalnızca bu cihaz)' : session.email);
+    setText('dashUserEmail', isGuest ? 'Misafir' : session.email);
 
-    if (topName) topName.textContent = displayName;
-    if (menuName) menuName.textContent = displayName;
-    if (menuEmail) menuEmail.textContent = session.email;
-    if (dashEmail) dashEmail.textContent = session.email;
-
-    const roleBadge = document.getElementById('menuUserRoleBadge');
-    const maBadge = document.getElementById('maRoleBadge');
     const isAdmin = session.role === 'admin';
-
-    [roleBadge, maBadge].forEach(b => {
-        if (b) {
-            b.textContent = isAdmin ? '⚡ Admin' : '👤 Kullanıcı';
-            b.className = 'user-role-badge ' + (isAdmin ? 'admin' : 'user');
-        }
+    ['menuUserRoleBadge', 'maRoleBadge'].forEach(id => {
+        const b = document.getElementById(id);
+        if (!b) return;
+        b.textContent = isGuest ? '👤 Misafir' : (isAdmin ? '⚡ Admin' : '👤 Kullanıcı');
+        b.className = 'user-role-badge ' + (isAdmin ? 'admin' : 'user');
     });
 
     updateTopBarFlag();
@@ -2465,7 +1793,7 @@ function updateUserUI(session) {
 function updateTopBarFlag() {
     const flagEl = document.getElementById('topUserLangFlag');
     if (!flagEl) return;
-    const flags = { 'en': '🇬🇧', 'es': '🇪🇸', 'de': '🇩🇪', 'fr': '🇫🇷', 'no': '🇳🇴', 'futbol': '⚽' };
+    const flags = { 'en': '🇬🇧', 'es': '🇪🇸', 'de': '🇩🇪', 'fr': '🇫🇷', 'no': '🇳🇴', 'sv': '🇸🇪', 'futbol': '⚽' };
     flagEl.textContent = flags[state.lang] || '🇬🇧';
 }
 
@@ -2533,111 +1861,31 @@ function closeModal(modalId) {
     if (modal) modal.classList.add('hidden');
 }
 
-function saveProfileChanges() {
-    const newName = document.getElementById('maNameInput').value;
-    const errEl = document.getElementById('maError');
-    const succEl = document.getElementById('maSuccess');
-
-    errEl.classList.add('hidden');
-    succEl.classList.add('hidden');
-
-    const result = AuthManager.updateProfile(newName);
-    if (result.ok) {
-        succEl.textContent = '✅ Profil bilgileriniz kaydedildi!';
-        succEl.classList.remove('hidden');
-        setTimeout(() => closeModal('manageAccountModal'), 1000);
-    } else {
-        errEl.textContent = '⚠️ ' + result.error;
-        errEl.classList.remove('hidden');
-    }
-}
-
-function savePasswordChanges() {
-    const oldPass = document.getElementById('cpOldPassword').value;
-    const newPass = document.getElementById('cpNewPassword').value;
-    const confPass = document.getElementById('cpConfirmPassword').value;
-
-    const errEl = document.getElementById('cpError');
-    const succEl = document.getElementById('cpSuccess');
-
-    errEl.classList.add('hidden');
-    succEl.classList.add('hidden');
-
-    if (newPass !== confPass) {
-        errEl.textContent = '⚠️ Yeni şifreler birbiriyle eşleşmiyor.';
-        errEl.classList.remove('hidden');
-        return;
-    }
-
-    const result = AuthManager.changePassword(oldPass, newPass);
-    if (result.ok) {
-        succEl.textContent = '✅ Şifreniz başarıyla değiştirildi!';
-        succEl.classList.remove('hidden');
-        setTimeout(() => closeModal('changePasswordModal'), 1000);
-    } else {
-        errEl.textContent = '⚠️ ' + result.error;
-        errEl.classList.remove('hidden');
-    }
-}
-
-window.authSignOut = function () {
-    openModal('logoutConfirmModal');
-};
-
-window.executeSignOut = function () {
-    closeModal('logoutConfirmModal');
-
-    // Google oturumunu kapat
-    if (typeof google !== 'undefined' && google.accounts && google.accounts.id) {
-        google.accounts.id.disableAutoSelect();
-    }
-
-    // Tüm aktif yarış timer'larını temizle
-    if (typeof TypingRace !== 'undefined') TypingRace.cleanup();
-    if (typeof QuickQuiz !== 'undefined') QuickQuiz.cleanup();
-    if (typeof SpeedMatch !== 'undefined') SpeedMatch.cleanup();
-
-    AuthManager.signOut();
-    document.body.classList.remove('google-user');
-
-    // UI sıfırlama
-    const topBar = document.getElementById('globalTopBar');
-    if (topBar) topBar.classList.add('hidden');
-    document.getElementById('userDropdownMenu')?.classList.add('hidden');
-    document.querySelector('.user-dropdown-wrapper')?.classList.remove('active');
-    document.getElementById('notifPopover')?.classList.add('hidden');
-
-    // Auth form inputlarını temizle
-    ['siEmail', 'siPassword', 'suEmail', 'suPassword', 'suName', 'fpEmail'].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.value = '';
-    });
-    ['siError', 'suError', 'suSuccess', 'fpError', 'fpSuccess'].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.classList.add('hidden');
-    });
-
-    // Giriş panelini göster
-    authShowPanel('signin');
-    showScreen('authScreen');
-};
-
 // ── INITIALIZATION ──
 document.addEventListener('DOMContentLoaded', async () => {
     loadSavedTheme();
     NotificationManager.renderNotifs();
 
-    // Google Sign-In başlat
-    initGoogleSignIn();
+    // index.html çift tıklanarak (file://) açıldıysa tarayıcı CSV'leri okutmaz → kelimeler eksik görünür
+    if (location.protocol === 'file:') {
+        const b = document.createElement('div');
+        b.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:10000;background:#e53935;color:#fff;padding:10px 14px;text-align:center;font:600 14px Inter,sans-serif';
+        b.textContent = '⚠️ Sayfa dosya olarak açıldı: kelime dosyaları okunamaz. Klasörde "npx serve ." ile açın (http://localhost:3000).';
+        document.body.appendChild(b);
+    }
 
-    // Initial language load
-    await loadLanguageData('English');
-    await loadVerbsLabData();
+    // Başlangıç dil verisi (hata olsa bile arayüz çalışmaya devam etsin)
+    try {
+        await loadLanguageData('English');
+        await loadVerbsLabData();
+    } catch (e) {
+        console.error('Başlangıç verisi yüklenemedi:', e);
+    }
 
     // Reset Progress Button
     document.getElementById('btnResetProgress')?.addEventListener('click', () => {
         if (confirm('Tüm ilerlemeniz kalıcı olarak silinecek. Emin misiniz?')) {
-            localStorage.removeItem(activeLSKey());
+            resetActiveProgress();
             renderDashboard();
         }
     });
@@ -2779,7 +2027,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangEn) {
         btnLangEn.addEventListener('click', async () => {
             state.lang = 'en';
-            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv', 'theme-futbol');
             await loadLanguageData('English');
             renderDashboard();
         });
@@ -2788,7 +2036,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangEs) {
         btnLangEs.addEventListener('click', async () => {
             state.lang = 'es';
-            document.body.classList.remove('theme-de', 'theme-fr', 'theme-no', 'theme-sv');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv', 'theme-futbol');
             document.body.classList.add('theme-es');
             await loadLanguageData('Spanish');
             renderDashboard();
@@ -2798,7 +2046,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangDe) {
         btnLangDe.addEventListener('click', async () => {
             state.lang = 'de';
-            document.body.classList.remove('theme-es', 'theme-fr', 'theme-no', 'theme-sv');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv', 'theme-futbol');
             document.body.classList.add('theme-de');
             await loadLanguageData('German');
             renderDashboard();
@@ -2808,7 +2056,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangFr) {
         btnLangFr.addEventListener('click', async () => {
             state.lang = 'fr';
-            document.body.classList.remove('theme-es', 'theme-de', 'theme-no', 'theme-sv');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv', 'theme-futbol');
             document.body.classList.add('theme-fr');
             await loadLanguageData('French');
             renderDashboard();
@@ -2818,7 +2066,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangNo) {
         btnLangNo.addEventListener('click', async () => {
             state.lang = 'no';
-            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-sv');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv', 'theme-futbol');
             document.body.classList.add('theme-no');
             await loadLanguageData('Norwegian');
             renderDashboard();
@@ -2829,7 +2077,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangSv) {
         btnLangSv.addEventListener('click', async () => {
             state.lang = 'sv';
-            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-futbol');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv', 'theme-futbol');
             document.body.classList.add('theme-sv');
             await loadLanguageData('Swedish');
             renderDashboard();
@@ -2840,7 +2088,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (btnLangFutbol) {
         btnLangFutbol.addEventListener('click', async () => {
             state.lang = 'futbol';
-            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv');
+            document.body.classList.remove('theme-es', 'theme-de', 'theme-fr', 'theme-no', 'theme-sv', 'theme-futbol');
             document.body.classList.add('theme-futbol');
             await loadLanguageData('Futbol');
             renderDashboard();
@@ -2897,8 +2145,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // Check existing session
-    const session = AuthManager.getSession();
+    // Oturum durumunu bekle (Firebase kayıtlı oturumu geri yükler)
+    const session = await AuthManager.ready;
     if (session) {
         updateUserUI(session);
         showScreen('languageScreen');
@@ -3579,11 +2827,15 @@ function startCustomReview(timeframe) {
 
 // ── RACE STATS MANAGER ──
 const RaceStatsManager = (() => {
-    const LS_KEY = 'lumina_race_stats';
+    const LS_BASE = 'lumina_race_stats';
+    const statsKey = () => {
+        const sess = AuthManager.getSession();
+        return sess && !sess.guest && sess.uid ? `${LS_BASE}_${sess.uid}` : LS_BASE;
+    };
 
     function getStats() {
         try {
-            const raw = localStorage.getItem(LS_KEY);
+            const raw = localStorage.getItem(statsKey());
             return raw ? JSON.parse(raw) : getDefault();
         } catch { return getDefault(); }
     }
