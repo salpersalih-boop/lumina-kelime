@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lumina</title>
   <meta name="description" content="Lumina — çok dilli kişisel kelime çalışma uygulaması." />
@@ -124,17 +125,7 @@
     <div class="auth-container">
       <!-- Logo -->
       <div class="auth-logo">
-        <svg class="lumina-mark" viewBox="0 0 120 120" width="108" height="108" aria-label="Lumina" role="img">
-          <defs>
-            <linearGradient id="lmBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1d3a"/><stop offset="1" stop-color="#07080f"/></linearGradient>
-            <linearGradient id="lmG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".55" stop-color="#a78bfa"/><stop offset="1" stop-color="#fb923c"/></linearGradient>
-          </defs>
-          <rect x="4" y="4" width="112" height="112" rx="30" fill="url(#lmBg)" stroke="#2c3160" stroke-width="2"/>
-          <rect x="16" y="16" width="88" height="88" rx="22" fill="none" stroke="url(#lmG)" stroke-width="2" opacity=".35"/>
-          <path d="M42 32 V78 Q42 88 52 88 H80" fill="none" stroke="url(#lmG)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M42 56 H60" stroke="url(#lmG)" stroke-width="6" stroke-linecap="round" opacity=".6"/>
-          <path d="M86 22 L89 32 L99 35 L89 38 L86 48 L83 38 L73 35 L83 32 Z" fill="#fde68a"/>
-        </svg>
+        <img class="lumina-mark" src="img/logo.png" width="108" height="108" alt="Lumina" />
         <h1 class="logo-title">Lumina ✨</h1>
         <p class="auth-tagline">Kelimelerin, ilerlemen, hepsi hesabında</p>
       </div>
@@ -314,7 +305,7 @@
   <div id="dashboard" class="screen">
     <header class="dash-header">
       <div class="logo-wrap">
-        <span class="logo-icon">✦</span>
+        <img class="logo-icon-img" src="img/logo.png" width="44" height="44" alt="" />
         <h1 class="logo-title">Lumina</h1>
       </div>
       <p class="logo-sub" style="max-width: 100%; overflow-wrap: break-word;">Kişisel İngilizce Kelime Sistemi · 30 Grup · 3000 Kelime</p>
@@ -1198,21 +1189,21 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
   <script src="js/firebase-config.js"></script>
-  <script src="js/utils.js?v=13"></script>
-  <script src="js/auth.js?v=13"></script>
+  <script src="js/utils.js?v=14"></script>
+  <script src="js/auth.js?v=14"></script>
   <!-- Uygulama (sıra önemli: aynı global kapsamı paylaşırlar) -->
-  <script src="js/app/nav.js?v=13"></script>
-  <script src="js/app/state.js?v=13"></script>
-  <script src="js/app/data.js?v=13"></script>
-  <script src="js/app/progress.js?v=13"></script>
-  <script src="js/app/dashboard.js?v=13"></script>
-  <script src="js/app/study.js?v=13"></script>
-  <script src="js/app/lab.js?v=13"></script>
-  <script src="js/app/ui.js?v=13"></script>
-  <script src="js/app/main.js?v=13"></script>
-  <script src="js/app/test-write.js?v=13"></script>
-  <script src="js/app/race.js?v=13"></script>
-  <script src="js/app/account.js?v=13"></script>
+  <script src="js/app/nav.js?v=14"></script>
+  <script src="js/app/state.js?v=14"></script>
+  <script src="js/app/data.js?v=14"></script>
+  <script src="js/app/progress.js?v=14"></script>
+  <script src="js/app/dashboard.js?v=14"></script>
+  <script src="js/app/study.js?v=14"></script>
+  <script src="js/app/lab.js?v=14"></script>
+  <script src="js/app/ui.js?v=14"></script>
+  <script src="js/app/main.js?v=14"></script>
+  <script src="js/app/test-write.js?v=14"></script>
+  <script src="js/app/race.js?v=14"></script>
+  <script src="js/app/account.js?v=14"></script>
 </body>
 
 </html>
