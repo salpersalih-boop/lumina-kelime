@@ -5265,3 +5265,13 @@ body.theme-tomer {
 body.light-theme .lang-btn[class*="-theme"] {
     background: var(--bg-card);
 }
+
+/* Lumina logosu (img/logo.png) */
+.logo-icon-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    object-fit: cover;
+    filter: drop-shadow(0 0 12px rgba(124, 110, 247, 0.45));
+}
+#authScreen .lumina-mark { object-fit: cover; }

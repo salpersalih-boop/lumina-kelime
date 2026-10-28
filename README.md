@@ -8,6 +8,7 @@ Düz HTML/CSS/JS arayüzü + Firebase (giriş ve ilerleme senkronu) + isteğe ba
 index.html             Tek sayfa uygulama
 service-worker.js      Çevrimdışı önbellek (kökte olmalı)
 css/style.css          Tüm stiller
+img/                   Logo ve simgeler (logo.png, favicon.png, apple-touch-icon.png)
 js/
   firebase-config.js   Firebase ve API ayarları
   utils.js             Ortak yardımcılar (escapeHtml)
