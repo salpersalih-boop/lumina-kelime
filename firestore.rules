@@ -16,7 +16,7 @@ service cloud.firestore {
       match /progress/{lang} {
         allow read, delete: if request.auth != null && request.auth.uid == uid;
         allow create, update: if request.auth != null && request.auth.uid == uid
-                              && lang in ['en', 'es', 'de', 'fr', 'no', 'sv', 'futbol']
+                              && lang.matches('^[a-z]{2,10}$')
                               && request.resource.data.keys().hasOnly(['json', 'updatedAt'])
                               && request.resource.data.json is string
                               && request.resource.data.json.size() < 900000
