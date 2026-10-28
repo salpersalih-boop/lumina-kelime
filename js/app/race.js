@@ -220,24 +220,39 @@ function showScorePop(x, y, text, negative) {
 }
 
 // ── COUNTDOWN HELPER ──
+// Geri sayım iptal edilebilir: oyundan çıkılırsa (geri tuşu/hareketi) oyun arka planda başlamasın
+let activeCountdown = null;
+
+function cancelRaceCountdown() {
+    if (!activeCountdown) return;
+    clearInterval(activeCountdown.interval);
+    clearTimeout(activeCountdown.timeout);
+    activeCountdown.overlay.classList.add('hidden');
+    activeCountdown = null;
+}
+
 function runCountdown(countdownId, numId, callback) {
+    cancelRaceCountdown();
     const overlay = document.getElementById(countdownId);
     const numEl = document.getElementById(numId);
     overlay.classList.remove('hidden');
     let count = 3;
     numEl.textContent = count;
 
-    const interval = setInterval(() => {
+    const cd = { overlay, interval: null, timeout: null };
+    activeCountdown = cd;
+    cd.interval = setInterval(() => {
         count--;
         if (count > 0) {
             numEl.textContent = count;
         } else {
             numEl.textContent = 'GO!';
-            setTimeout(() => {
+            clearInterval(cd.interval);
+            cd.timeout = setTimeout(() => {
                 overlay.classList.add('hidden');
+                if (activeCountdown === cd) activeCountdown = null;
                 callback();
             }, 400);
-            clearInterval(interval);
         }
     }, 700);
 }
@@ -403,6 +418,7 @@ const TypingRace = (() => {
 
     function cleanup() {
         clearInterval(timer);
+        cancelRaceCountdown();
     }
 
     return { start, handleInput, cleanup };
@@ -586,6 +602,7 @@ const QuickQuiz = (() => {
 
     function cleanup() {
         clearInterval(timer);
+        cancelRaceCountdown();
     }
 
     return { start, cleanup };
@@ -784,6 +801,7 @@ const SpeedMatch = (() => {
 
     function cleanup() {
         clearInterval(timer);
+        cancelRaceCountdown();
     }
 
     return { start, cleanup };

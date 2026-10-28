@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lumina-cache-v15';
+const CACHE_NAME = 'lumina-cache-v16';
 // index.html'deki ?v= sürümü değiştiğinde CACHE_NAME'i de artırın
 const STATIC_ASSETS = [
   './',
@@ -7,6 +7,7 @@ const STATIC_ASSETS = [
   './js/firebase-config.js',
   './js/utils.js',
   './js/auth.js',
+  './js/app/nav.js',
   './js/app/state.js',
   './js/app/data.js',
   './js/app/progress.js',

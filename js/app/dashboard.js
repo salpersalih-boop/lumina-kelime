@@ -8,6 +8,7 @@ function showScreen(id) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     const el = document.getElementById(id);
     if (!el) return;
+    Nav.recordScreen(id);   // geri hareketi / fare geri tuşu için (js/app/nav.js)
     el.classList.add('active');
     el.style.animation = 'none';
     requestAnimationFrame(() => { el.style.animation = ''; });
