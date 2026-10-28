@@ -1,14 +1,22 @@
+# .NET derleme çıktıları
 bin/
 obj/
 .vs/
 *.user
-temp_extracted/
+
+# Node / Firebase
 node_modules/
-*.xlsx
 .firebase/
+
+# Kaynak Excel ve kişisel notlar (depoya girmez)
+*.xlsx
+"Lumına Kelime/"
+"Lumına Sistemi.txt"
+
+# Eski/geçici dosyalar (Temizle.bat siler)
+temp_extracted/
 Lumina.Api.New/
 update_script.*
+futbol_words.js
 SQLQuery1.sql
 SQLQuery2.sql
-"Lumına Sistemi.txt"
-"Lumına Kelime/"

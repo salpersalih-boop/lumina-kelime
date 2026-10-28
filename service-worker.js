@@ -1,11 +1,23 @@
-const CACHE_NAME = 'lumina-cache-v10';
+const CACHE_NAME = 'lumina-cache-v15';
+// index.html'deki ?v= sürümü değiştiğinde CACHE_NAME'i de artırın
 const STATIC_ASSETS = [
   './',
   './index.html',
-  './style.css',
-  './script.js',
-  './auth.js',
-  './firebase-config.js'
+  './css/style.css',
+  './js/firebase-config.js',
+  './js/utils.js',
+  './js/auth.js',
+  './js/app/state.js',
+  './js/app/data.js',
+  './js/app/progress.js',
+  './js/app/dashboard.js',
+  './js/app/study.js',
+  './js/app/lab.js',
+  './js/app/ui.js',
+  './js/app/main.js',
+  './js/app/test-write.js',
+  './js/app/race.js',
+  './js/app/account.js'
 ];
 
 // Install: tek bir dosya hata verse bile kurulum bozulmasın
@@ -40,7 +52,7 @@ function putInCache(request, response) {
 function networkFirst(request) {
   return fetch(request)
     .then((response) => { putInCache(request, response); return response; })
-    .catch(() => caches.match(request).then((cached) =>
+    .catch(() => caches.match(request, { ignoreSearch: true }).then((cached) =>
       cached || new Response('Offline - cached version not available', { status: 503 })
     ));
 }

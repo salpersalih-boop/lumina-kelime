@@ -2,9 +2,9 @@
   "hosting": {
     "public": ".",
     "ignore": [
-      "firebase.json", "firestore.rules", "README.md", "**/.*", "**/node_modules/**",
-      "Lumina.Api/**", "Lumina.Api.New/**", "Database/**", "temp_extracted/**", ".github/**",
-      "**/*.xlsx", "**/*.sql", "**/*.txt", "**/*.py", "update_script.js", "**/*.cs", "**/*.csproj"
+      "firebase.json", "firestore.rules", "README.md", "Baslat.bat", "Temizle.bat",
+      "**/.*", "**/node_modules/**", "server/**", "Lumina.Api/**", "Database/**", "Lum*/**",
+      "**/*.xlsx", "**/*.sql", "**/*.txt", "**/*.cs", "**/*.csproj"
     ],
     "headers": [
       { "source": "**/*.@(html|js|css|csv)", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] },
