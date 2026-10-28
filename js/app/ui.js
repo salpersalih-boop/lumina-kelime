@@ -187,9 +187,11 @@ function openModal(modalId) {
     }
 
     modal.classList.remove('hidden');
+    Nav.recordModalOpen(modalId);
 }
 
 function closeModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) modal.classList.add('hidden');
+    Nav.recordModalClose(modalId);
 }
