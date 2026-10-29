@@ -146,6 +146,20 @@ const parseNorvecceCsv   = text => buildWordList(text, 1, 3);
 const parseFutbolCsv     = text => buildWordList(text, 1, 3);   // [Sıra;Kelime;Tür;Türkçe]
 const parseSimpleCsv     = text => buildWordList(text, 1, 3);   // İtalyanca/Portekizce/Rusça/Felemenkçe [Sıra;Kelime;Tür;Türkçe]
 
+// TÖMER kelime dosyaları: [Ünite;Kelime;Tür;Türkçe] — grup = ünite numarası
+function parseUnitCsv(csvText) {
+    const rows = parseDelimited(csvText).slice(1);
+    const parsed = [];
+    for (const parts of rows) {
+        const unit = parseInt(parts[0], 10);
+        const english = (parts[1] || '').trim();
+        const turkish = (parts[3] || '').trim();
+        if (!unit || !english || !turkish) continue;
+        parsed.push({ id: parsed.length + 1, groupId: unit, english, turkish });
+    }
+    return { words: parsed, verbs: [] };
+}
+
 // ── VERİ KATMANI ──
 // Öncelik: (1) API (yalnızca apiBaseUrl ayarlıysa ve dilin API'si varsa) → (2) CSV dosyası → (3) gömülü FALLBACK_ENGLISH
 const CSV_DIR = './data/';
@@ -160,7 +174,8 @@ const CSV_DIR = './data/';
 const LANGUAGES = [
     { code: 'en',     key: 'English',    label: 'İngilizce',  upper: 'İNGİLİZCE',  flag: '🇬🇧', short: 'EN',  tts: 'en-US', theme: '',       csv: 'english.csv',    api: 'words',           parse: parseCsvText,       defaultGroups: 30,  sub: 'Kişisel İngilizce Kelime Sistemi' },
     { code: 'futbol', key: 'Futbol',     label: 'Futbol',     upper: 'FUTBOL',     flag: '⚽',  short: 'FUT', tts: 'en-US', theme: 'futbol', csv: 'futbol.csv',     api: null,              parse: parseFutbolCsv,     defaultGroups: 5,   sub: 'Futbol Kelimeleri' },
-    { code: 'tomer',  key: 'Tomer',      label: 'TÖMER',      upper: 'TÖMER',      flag: '🇹🇷', short: 'TR',  tts: 'tr-TR', theme: 'tomer',  csv: null,             api: null,              parse: null,               defaultGroups: 1,   sub: 'TÖMER', soon: true },
+    // TÖMER: kişisel çalışma alanı (js/app/tomer.js). data/tomer/ yoksa "Yakında" görünür.
+    { code: 'tomer',  key: 'Tomer',      label: 'TÖMER',      upper: 'TÖMER',      flag: '🇹🇷', short: 'TR',  tts: 'en-US', theme: 'tomer',  csv: null,             api: null,              parse: null,               defaultGroups: 1,   sub: 'TÖMER', soon: true, module: true },
     { code: 'es',     key: 'Spanish',    label: 'İspanyolca', upper: 'İSPANYOLCA', flag: '🇪🇸', short: 'ES',  tts: 'es-ES', theme: 'es',     csv: 'spanish.csv',    api: 'words/spanish',   parse: parseIspanyolcaCsv, defaultGroups: 40,  sub: 'Kişisel İspanyolca Kelime Sistemi' },
     { code: 'de',     key: 'German',     label: 'Almanca',    upper: 'ALMANCA',    flag: '🇩🇪', short: 'DE',  tts: 'de-DE', theme: 'de',     csv: 'german.csv',     api: 'words/german',    parse: parseAlmancaCsv,    defaultGroups: 39,  sub: 'Kişisel Almanca Kelime Sistemi' },
     { code: 'fr',     key: 'French',     label: 'Fransızca',  upper: 'FRANSIZCA',  flag: '🇫🇷', short: 'FR',  tts: 'fr-FR', theme: 'fr',     csv: 'french.csv',     api: 'words/french',    parse: parseFransizcaCsv,  defaultGroups: 58,  sub: 'Kişisel Fransızca Kelime Sistemi' },
@@ -171,6 +186,13 @@ const LANGUAGES = [
     { code: 'sv',     key: 'Swedish',    label: 'İsveççe',    upper: 'İSVEÇÇE',    flag: '🇸🇪', short: 'SV',  tts: 'sv-SE', theme: 'sv',     csv: 'swedish.csv',    api: 'words/swedish',   parse: parseIsvecceCsv,    defaultGroups: 58,  sub: 'Kişisel İsveççe Kelime Sistemi' },
     { code: 'no',     key: 'Norwegian',  label: 'Norveççe',   upper: 'NORVEÇÇE',   flag: '🇳🇴', short: 'NO',  tts: 'nb-NO', theme: 'no',     csv: 'norwegian.csv',  api: 'words/norwegian', parse: parseNorvecceCsv,   defaultGroups: 20,  sub: 'Kişisel Norveççe Kelime Sistemi' }
 ];
+// TÖMER seviyelerinin kelime kartları (dil ekranında görünmez, TÖMER → seviye → Kelime ile açılır)
+['a1', 'a2', 'b1', 'b2'].forEach(lv => LANGUAGES.push({
+    code: 'tomer' + lv, key: 'Tomer' + lv.toUpperCase(), label: `TÖMER ${lv.toUpperCase()}`, upper: `TÖMER ${lv.toUpperCase()}`,
+    flag: '🇬🇧', short: lv.toUpperCase(), tts: 'en-US', theme: 'tomer', csv: `tomer/${lv}/words.csv`, api: null,
+    parse: parseUnitCsv, defaultGroups: 12, sub: `TÖMER ${lv.toUpperCase()} · Kelimeler`, groupLabel: 'Ünite', hidden: true,
+    loader: () => TomerModule.wordsCsv(lv)   // yerel dosya ya da hesaba özel bulut kopyası
+}));
 const LANGUAGE_BY_CODE = Object.fromEntries(LANGUAGES.map(l => [l.code, l]));
 const LANGUAGE_BY_KEY  = Object.fromEntries(LANGUAGES.map(l => [l.key, l]));
 const groupCounts = {};   // { code: grup sayısı } — kelimeler yüklenince dolar
@@ -244,7 +266,7 @@ async function fetchLanguageWords(langName) {
         // 2) CSV
         if (!result) {
             try {
-                const parsed = src.parse(await fetchCsvText(src.csv));
+                const parsed = src.parse(src.loader ? await src.loader() : await fetchCsvText(src.csv));
                 if (parsed.words.length > 0) result = parsed;
             } catch (e) {
                 console.warn(`⚠️ ${langName} CSV okunamadı:`, e.message);

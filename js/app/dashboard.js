@@ -42,7 +42,7 @@ function showScreen(id) {
 
 // Dil butonlarındaki kelime sayılarını (API veya CSV'den) günceller
 async function fetchAndShowLangCounts() {
-    const targets = LANGUAGES.filter(l => !l.soon).map(l => ({ lang: l.key, el: 'langDesc' + langIdSuffix(l.code) }));
+    const targets = LANGUAGES.filter(l => !l.soon && !l.hidden && !l.module).map(l => ({ lang: l.key, el: 'langDesc' + langIdSuffix(l.code) }));
 
     await Promise.all(targets.map(async ({ lang, el }) => {
         const p = document.getElementById(el);
@@ -66,7 +66,9 @@ async function fetchAndShowLangCounts() {
 function renderLanguageCards() {
     const grid = document.getElementById('langGrid');
     if (!grid) return;
-    grid.innerHTML = LANGUAGES.map(l => {
+    const tomerReady = typeof TomerModule !== 'undefined' && TomerModule.isAvailable();
+    grid.innerHTML = LANGUAGES.filter(l => !l.hidden).map(lang => {
+        const l = lang.code === 'tomer' ? { ...lang, soon: !tomerReady } : lang;
         const sfx = langIdSuffix(l.code);
         const cls = ['lang-btn', l.theme ? `${l.theme}-theme` : '', l.soon ? 'is-soon' : ''].filter(Boolean).join(' ');
         return `
@@ -77,7 +79,7 @@ function renderLanguageCards() {
         </div>
         <div class="lang-info">
           <h3>${escapeHtml(l.label)}</h3>
-          <p id="langDesc${sfx}">${l.soon ? 'İçerik hazırlanıyor' : 'Yükleniyor...'}</p>
+          <p id="langDesc${sfx}">${l.soon ? 'İçerik hazırlanıyor' : l.module ? 'Kelime + Gramer · kişisel çalışma' : 'Yükleniyor...'}</p>
         </div>
         ${l.soon ? '<span class="soon-badge">Yakında</span>' : ''}
       </button>`;
@@ -86,7 +88,9 @@ function renderLanguageCards() {
     grid.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const lang = LANGUAGE_BY_CODE[btn.dataset.lang];
-            if (lang && !lang.soon) selectLanguage(lang.code);
+            if (!lang || btn.classList.contains('is-soon')) return;
+            if (lang.code === 'tomer') TomerModule.open();
+            else selectLanguage(lang.code);
         });
     });
 }

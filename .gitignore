@@ -13,6 +13,9 @@ node_modules/
 "Lumına Kelime/"
 "Lumına Sistemi.txt"
 
+# TÖMER kişisel çalışma içeriği (telifli kitap içeriği — asla GitHub'a gönderme)
+data/tomer/
+
 # Eski/geçici dosyalar (Temizle.bat siler)
 temp_extracted/
 Lumina.Api.New/

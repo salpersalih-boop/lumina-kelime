@@ -14,6 +14,7 @@ js/
   utils.js             Ortak yardımcılar (escapeHtml)
   auth.js              Giriş (Firebase Auth) + ilerleme senkronu (Firestore)
   app/                 Uygulama — index.html'deki sırayla yüklenir
+    tomer.js           TÖMER modülü: seviye → Kelime/Gramer, konu testleri, analiz ve grafikler
     theme.js           Görünüm & renk teması (açık/koyu/sistem, paletler, kendi renkleri)
     nav.js             Geri gitme: ekranları tarayıcı geçmişine yazar (kaydırma / fare geri tuşu)
     state.js           Sabitler, global durum, çevrimdışı bildirimi
@@ -86,3 +87,15 @@ Tüm diller `js/app/data.js` → `LANGUAGES` listesinde tanımlıdır; dil seçi
 3. `cd server/Lumina.Api && dotnet run`, ardından `js/firebase-config.js` → `apiBaseUrl: 'http://localhost:7047/api'`.
 
 Uç noktalar: `GET /api/words`, `/api/words/{german|french|swedish|spanish|norwegian}`, her biri için `/count`. Futbol listesi yalnızca CSV'den okunur.
+
+## TÖMER (kişisel çalışma alanı)
+İçerik `data/tomer/` klasöründedir ve **.gitignore ile GitHub'a gönderilmez** (telifli kitap içeriği). Canlı sitede kullanmak için TÖMER ekranındaki **☁️ Hesabıma Yükle** düğmesiyle Firestore'a (`tomer` koleksiyonu) yüklenir; `firestore.rules` gereği yalnızca `salpersalih@gmail.com` hesabı okuyup yazabilir. İçerik ne yerelde ne bulutta varsa TÖMER kartı "Yakında" görünür. **🗑 Buluttan Sil** ile kaldırılır.
+
+```
+data/tomer/index.json         seviyeler (A1–B2) ve hangilerinin hazır olduğu
+data/tomer/a1/grammar.json    üniteler, gramer konuları (Türkçe özet/notlar) ve konu soruları
+data/tomer/a1/words.csv       kelimeler: Ünite;Kelime;Tür;Türkçe Anlamı
+```
+
+Yeni seviye eklemek: `data/tomer/a2/` klasörünü aynı düzenle oluşturup `index.json`'da `available: true` yapmak yeterli.
+İlerleme (doğruluk, konu/beceri hataları, test geçmişi) `progress/tomergr` olarak hesaba senkronlanır; bunun için güncel `firestore.rules` dosyasının yayınlanmış olması gerekir.

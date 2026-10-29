@@ -15,7 +15,8 @@ function activeLSKey() {
 }
 
 function activeGroupName(i) {
-    return `Grup ${i}`;
+    const lang = LANGUAGE_BY_CODE[state.lang];
+    return `${(lang && lang.groupLabel) || 'Grup'} ${i}`;
 }
 
 // ── LOCALSTORAGE HELPERS ──

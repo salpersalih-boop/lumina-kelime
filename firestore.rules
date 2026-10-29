@@ -16,12 +16,20 @@ service cloud.firestore {
       match /progress/{lang} {
         allow read, delete: if request.auth != null && request.auth.uid == uid;
         allow create, update: if request.auth != null && request.auth.uid == uid
-                              && lang.matches('^[a-z]{2,10}$')
+                              && lang.matches('^[a-z0-9]{2,12}$')
                               && request.resource.data.keys().hasOnly(['json', 'updatedAt'])
                               && request.resource.data.json is string
                               && request.resource.data.json.size() < 900000
                               && request.resource.data.updatedAt is number;
       }
+    }
+
+    // TÖMER kişisel çalışma içeriği (telifli kitap içeriği): yalnızca sahibinin hesabı okur/yazar.
+    // Doğrulanmış e-posta şart (Google ile giriş otomatik doğrulanmış sayılır).
+    match /tomer/{docId} {
+      allow read, write: if request.auth != null
+                         && request.auth.token.email == 'salpersalih@gmail.com'
+                         && request.auth.token.email_verified == true;
     }
 
     match /{document=**} {

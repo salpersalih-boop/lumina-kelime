@@ -18,6 +18,11 @@ const PROGRESS_BASE_KEYS = {
     ru: 'lumina_progress_ru',
     nl: 'lumina_progress_nl',
     tomer: 'lumina_progress_tomer',
+    tomergr: 'lumina_progress_tomergr',
+    tomera1: 'lumina_progress_tomera1',
+    tomera2: 'lumina_progress_tomera2',
+    tomerb1: 'lumina_progress_tomerb1',
+    tomerb2: 'lumina_progress_tomerb2',
     futbol: 'lumina_progress_futbol'
 };
 

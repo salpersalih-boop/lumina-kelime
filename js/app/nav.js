@@ -92,7 +92,9 @@ const Nav = (() => {
             case 'testHubScreen':  openTestHub(); break;
             case 'writeHubScreen': openWriteHub(); break;
             case 'raceHubScreen':  openRaceHub(); break;
-            default:               showScreen(id);
+            default:
+                if (typeof TomerModule !== 'undefined' && TomerModule.refresh(id)) break;
+                showScreen(id);
         }
     }
 
