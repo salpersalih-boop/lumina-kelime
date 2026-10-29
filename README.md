@@ -14,6 +14,7 @@ js/
   utils.js             Ortak yardımcılar (escapeHtml)
   auth.js              Giriş (Firebase Auth) + ilerleme senkronu (Firestore)
   app/                 Uygulama — index.html'deki sırayla yüklenir
+    theme.js           Görünüm & renk teması (açık/koyu/sistem, paletler, kendi renkleri)
     nav.js             Geri gitme: ekranları tarayıcı geçmişine yazar (kaydırma / fare geri tuşu)
     state.js           Sabitler, global durum, çevrimdışı bildirimi
     data.js            CSV/API okuma, dil kaynakları

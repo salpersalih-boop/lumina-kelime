@@ -130,36 +130,13 @@ function updateTopBarFlag() {
     flagEl.textContent = (LANGUAGE_BY_CODE[state.lang] || LANGUAGE_BY_CODE.en).flag;
 }
 
-// ── THEME MANAGER ──
+// ── TEMA ──  (görünüm ayarları: js/app/theme.js → ThemeManager)
 function toggleTheme() {
-    const isLight = document.body.classList.toggle('light-theme');
-    localStorage.setItem('lumina_theme', isLight ? 'light' : 'dark');
-
-    const iconDark = document.querySelector('.theme-icon-dark');
-    const iconLight = document.querySelector('.theme-icon-light');
-
-    if (iconDark && iconLight) {
-        if (isLight) {
-            iconDark.classList.add('hidden');
-            iconLight.classList.remove('hidden');
-        } else {
-            iconDark.classList.remove('hidden');
-            iconLight.classList.add('hidden');
-        }
-    }
+    ThemeManager.setMode(ThemeManager.isLight() ? 'dark' : 'light');
 }
 
 function loadSavedTheme() {
-    const saved = localStorage.getItem('lumina_theme');
-    if (saved === 'light') {
-        document.body.classList.add('light-theme');
-        const iconDark = document.querySelector('.theme-icon-dark');
-        const iconLight = document.querySelector('.theme-icon-light');
-        if (iconDark && iconLight) {
-            iconDark.classList.add('hidden');
-            iconLight.classList.remove('hidden');
-        }
-    }
+    ThemeManager.init();
 }
 
 // ── MODALS MANAGER ──
