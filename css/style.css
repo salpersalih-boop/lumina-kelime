@@ -2,26 +2,27 @@
    LUMINA 3000 — Global Design Tokens
 ═══════════════════════════════════════ */
 :root {
-    --bg-base: #0d0f18;
-    --bg-surface: #13162a;
-    --bg-card: #1a1e35;
-    --bg-elevated: #20253f;
+    /* Koyu tema paleti: #6366F1 (indigo) ve #3B82F6 (mavi) tonları; saf siyah yok */
+    --bg-base: #161c42;
+    --bg-surface: #1d2552;
+    --bg-card: #252f68;
+    --bg-elevated: #2e3a7c;
 
-    --accent-1: #7c6ef7;
-    /* violet */
-    --accent-2: #5ec4f5;
-    /* cyan */
+    --accent-1: #6366f1;
+    /* indigo */
+    --accent-2: #3b82f6;
+    /* blue */
     --accent-3: #f57c6e;
     /* coral/red */
     --accent-ok: #4ee8a0;
     /* green */
 
-    --text-primary: #e8eaf5;
-    --text-muted: #6b7280;
-    --text-dim: #9ca3af;
+    --text-primary: #eef1ff;
+    --text-muted: #9aa6d6;
+    --text-dim: #bcc6ee;
 
-    --border: rgba(124, 110, 247, 0.18);
-    --border-hover: rgba(124, 110, 247, 0.45);
+    --border: rgba(129, 140, 248, 0.32);
+    --border-hover: rgba(129, 140, 248, 0.7);
 
     --radius-sm: 10px;
     --radius-md: 16px;
@@ -30,7 +31,7 @@
 
     --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.4);
     --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.5);
-    --shadow-glow: 0 0 24px rgba(124, 110, 247, 0.2);
+    --shadow-glow: 0 0 24px rgba(99, 102, 241, 0.35);
 
     --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     --spring: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -74,8 +75,8 @@ body {
     min-height: 100dvh;
     overflow-x: hidden;
     background-image:
-        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124, 110, 247, 0.12) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 40% at 90% 90%, rgba(94, 196, 245, 0.07) 0%, transparent 60%);
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(99, 102, 241, 0.45) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 90% 90%, rgba(59, 130, 246, 0.35) 0%, transparent 60%);
 }
 
 /* Spanish Theme Override for the whole app */
@@ -1780,7 +1781,7 @@ body.theme-es .group-card {
 .session-complete {
     position: fixed;
     inset: 0;
-    background: rgba(13, 15, 24, 0.85);
+    background: rgba(22, 28, 66, 0.85);
     backdrop-filter: blur(12px);
     display: flex;
     align-items: center;
@@ -3132,10 +3133,10 @@ body.light-theme .user-dropdown-btn:hover {
     left: 0;
     right: 0;
     z-index: 100;
-    background: rgba(19, 22, 42, 0.85);
+    background: rgba(29, 37, 82, 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(124, 110, 247, 0.18);
+    border-bottom: 1px solid rgba(129, 140, 248, 0.3);
     padding: 8px 12px;
     transition: var(--transition);
 }
@@ -5275,3 +5276,83 @@ body.light-theme .lang-btn[class*="-theme"] {
     filter: drop-shadow(0 0 12px rgba(124, 110, 247, 0.45));
 }
 #authScreen .lumina-mark { object-fit: cover; }
+
+/* Dil kartları: ekran genişledikçe yan yana daha çok kart (telefon 1–2, tablet 2–3, geniş ekran 4 sütun) */
+#langGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 16px;
+    margin: 0 auto;
+    justify-content: center;
+}
+#langGrid .lang-btn {
+    width: 100%;
+    padding: 2rem 1.25rem;
+}
+@media (max-width: 520px) {
+    #langGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; padding: 0 10px; }
+    #langGrid .lang-btn { padding: 1.25rem 0.75rem; gap: 1rem; }
+}
+@media (min-width: 521px) and (max-width: 779px) {
+    #langGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 780px) and (max-width: 1099px) {
+    #langGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1100px) {
+    #langGrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* ═══════════════════════════════════════
+   GÖRÜNÜM & RENK TEMASI penceresi
+═══════════════════════════════════════ */
+.modal-card.th-card-wide { max-width: 720px; max-height: calc(100dvh - 40px); overflow-y: auto; }
+.th-body { gap: 10px; }
+.th-lead, .th-hint { color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; }
+.th-title { margin-top: 10px; font-size: 0.98rem; font-weight: 700; color: var(--text-primary); }
+.th-title span { font-weight: 500; font-size: 0.8rem; color: var(--text-muted); }
+.th-modes { display: flex; flex-wrap: wrap; gap: 10px; }
+.th-modes button {
+    flex: 1 1 120px; padding: 12px 14px; border-radius: 14px; cursor: pointer;
+    font: inherit; font-weight: 600; color: var(--text-dim);
+    background: var(--bg-surface); border: 1px solid var(--border); transition: var(--transition);
+}
+.th-modes button:hover { border-color: var(--border-hover); color: var(--text-primary); }
+.th-modes button.active { color: #fff; border-color: transparent; background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); box-shadow: var(--shadow-glow); }
+.th-presets { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
+.th-card {
+    display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 14px 8px;
+    border-radius: 14px; cursor: pointer; font: inherit; font-size: 0.82rem; font-weight: 600;
+    color: var(--text-primary); background: var(--bg-surface); border: 2px solid var(--border); transition: var(--transition);
+}
+.th-card:hover { border-color: var(--border-hover); transform: translateY(-2px); }
+.th-card.active { border-color: var(--accent-2); box-shadow: var(--shadow-glow); }
+.th-dots { display: inline-flex; }
+.th-dots i { width: 22px; height: 22px; border-radius: 50%; border: 2px solid rgba(255,255,255,.55); display: block; }
+.th-dots i + i { margin-left: -7px; }
+.th-custom { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding: 14px; border-radius: 14px; background: var(--bg-surface); border: 1px solid var(--border); }
+.th-custom label { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; font-weight: 600; color: var(--text-dim); flex-wrap: wrap; }
+.th-pick { display: inline-flex; align-items: center; gap: 8px; padding: 5px 10px 5px 6px; border-radius: 999px; background: var(--bg-card); border: 1px solid var(--border); }
+.th-pick input[type="color"] { width: 30px; height: 30px; padding: 0; border: none; border-radius: 50%; background: none; cursor: pointer; }
+.th-pick input[type="text"], .th-add input {
+    font: inherit; font-family: ui-monospace, Consolas, monospace; font-size: 0.85rem; color: var(--text-primary);
+    background: transparent; border: none; outline: none; width: 78px;
+}
+.th-add input { width: auto; flex: 1; min-width: 0; font-family: inherit; padding: 11px 14px; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; }
+.th-pick input.invalid, .th-add input.invalid { color: #ef4444; border-color: #ef4444; }
+.th-reset { font: inherit; font-size: 0.85rem; font-weight: 600; padding: 9px 14px; border-radius: 999px; cursor: pointer; color: var(--text-dim); background: var(--bg-card); border: 1px solid var(--border); }
+.th-reset:hover { color: var(--text-primary); border-color: var(--border-hover); }
+.th-add { display: flex; gap: 10px; align-items: stretch; }
+.th-add .btn-primary { flex: 0 0 auto; padding: 11px 18px; }
+.th-collection { display: flex; flex-wrap: wrap; gap: 10px; }
+.th-item { display: inline-flex; align-items: center; border-radius: 999px; background: var(--bg-surface); border: 1px solid var(--border); overflow: hidden; }
+.th-item-apply { display: inline-flex; align-items: center; gap: 8px; padding: 7px 8px 7px 12px; font: inherit; font-size: 0.85rem; font-weight: 600; color: var(--text-primary); background: none; border: none; cursor: pointer; }
+.th-item-apply:hover { background: var(--bg-elevated); }
+.th-item-del { padding: 7px 12px 7px 8px; font: inherit; color: var(--text-muted); background: none; border: none; cursor: pointer; }
+.th-item-del:hover { color: #ef4444; }
+.th-empty { color: var(--text-muted); font-size: 0.85rem; }
+body.light-theme .th-dots i { border-color: rgba(30, 35, 56, .25); }
+@media (max-width: 520px) { .th-add { flex-direction: column; } .th-add .btn-primary { width: 100%; } }
