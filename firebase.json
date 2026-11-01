@@ -3,7 +3,7 @@
     "public": ".",
     "ignore": [
       "firebase.json", "firestore.rules", "README.md", "Baslat.bat", "Temizle.bat",
-      "**/.*", "**/node_modules/**", "server/**", "Lumina.Api/**", "Database/**", "Lum*/**", "data/tomer/**",
+      "**/.*", "**/node_modules/**", "server/**", "Lumina.Api/**", "Database/**", "Lum*/**", "data/tomer/**", "data/dersler/**",
       "**/*.xlsx", "**/*.sql", "**/*.txt", "**/*.cs", "**/*.csproj"
     ],
     "headers": [

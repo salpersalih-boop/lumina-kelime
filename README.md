@@ -15,6 +15,7 @@ js/
   auth.js              Giriş (Firebase Auth) + ilerleme senkronu (Firestore)
   app/                 Uygulama — index.html'deki sırayla yüklenir
     tomer.js           TÖMER modülü: seviye → Kelime/Gramer, konu testleri, analiz ve grafikler
+    dersler.js         Derslerim: kişiye özel ders notları, normal + klasik sorular (yalnızca yetkili hesap)
     theme.js           Görünüm & renk teması (açık/koyu/sistem, paletler, kendi renkleri)
     nav.js             Geri gitme: ekranları tarayıcı geçmişine yazar (kaydırma / fare geri tuşu)
     state.js           Sabitler, global durum, çevrimdışı bildirimi
@@ -99,3 +100,14 @@ data/tomer/a1/words.csv       kelimeler: Ünite;Kelime;Tür;Türkçe Anlamı
 
 Yeni seviye eklemek: `data/tomer/a2/` klasörünü aynı düzenle oluşturup `index.json`'da `available: true` yapmak yeterli.
 İlerleme (doğruluk, konu/beceri hataları, test geçmişi) `progress/tomergr` olarak hesaba senkronlanır; bunun için güncel `firestore.rules` dosyasının yayınlanmış olması gerekir.
+
+## Derslerim (kişiye özel ders çalışma)
+Yalnızca `salpersalih@gmail.com` hesabında görünür; başka hesaplarda ve misafir modunda kart hiç çizilmez. Asıl koruma `firestore.rules` içindeki `dersler/{docId}` kuralıdır (yalnızca bu e-posta okuyup yazabilir).
+İçerik ders PDF'lerinden hazırlanmıştır ve `data/dersler/` klasöründedir; **.gitignore ile GitHub'a gönderilmez**. Canlı sitede kullanmak için Derslerim ekranındaki **☁️ Hesabıma Yükle** düğmesiyle Firestore'a (`dersler` koleksiyonu) yüklenir; **🗑 Buluttan Sil** ile kaldırılır.
+
+```
+data/dersler/index.json       dersler ve konu başlıkları (kaynağı olmayan dersler boş listelenir)
+data/dersler/<ders>.json      konu notları (markdown benzeri), normal sorular (mc/tf/fill), klasik sorular (open/code/calc)
+```
+Akış: ders → konu listesi → konu notları → normal sorular (anında geri bildirim + açıklama) → klasik sorular (önce kendi cevabın, sonra model cevap + kontrol listesi + öz değerlendirme) → sonuç / Yanlışlarım.
+İlerleme `progress/dersgr` olarak hesaba senkronlanır.

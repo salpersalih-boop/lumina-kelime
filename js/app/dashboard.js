@@ -67,7 +67,9 @@ function renderLanguageCards() {
     const grid = document.getElementById('langGrid');
     if (!grid) return;
     const tomerReady = typeof TomerModule !== 'undefined' && TomerModule.isAvailable();
-    grid.innerHTML = LANGUAGES.filter(l => !l.hidden).map(lang => {
+    const derslerReady = typeof DerslerModule !== 'undefined' && DerslerModule.isAvailable();
+    // ownerOnly kartlar (Derslerim) yetkili hesap + içerik yoksa hiç çizilmez
+    grid.innerHTML = LANGUAGES.filter(l => !l.hidden && !(l.ownerOnly && !derslerReady)).map(lang => {
         const l = lang.code === 'tomer' ? { ...lang, soon: !tomerReady } : lang;
         const sfx = langIdSuffix(l.code);
         const cls = ['lang-btn', l.theme ? `${l.theme}-theme` : '', l.soon ? 'is-soon' : ''].filter(Boolean).join(' ');
@@ -79,7 +81,7 @@ function renderLanguageCards() {
         </div>
         <div class="lang-info">
           <h3>${escapeHtml(l.label)}</h3>
-          <p id="langDesc${sfx}">${l.soon ? 'İçerik hazırlanıyor' : l.module ? 'Kelime + Gramer · kişisel çalışma' : 'Yükleniyor...'}</p>
+          <p id="langDesc${sfx}">${l.soon ? 'İçerik hazırlanıyor' : l.code === 'dersler' ? 'Ders notları + normal ve klasik sorular' : l.module ? 'Kelime + Gramer · kişisel çalışma' : 'Yükleniyor...'}</p>
         </div>
         ${l.soon ? '<span class="soon-badge">Yakında</span>' : ''}
       </button>`;
@@ -90,6 +92,7 @@ function renderLanguageCards() {
             const lang = LANGUAGE_BY_CODE[btn.dataset.lang];
             if (!lang || btn.classList.contains('is-soon')) return;
             if (lang.code === 'tomer') TomerModule.open();
+            else if (lang.code === 'dersler') DerslerModule.open();
             else selectLanguage(lang.code);
         });
     });

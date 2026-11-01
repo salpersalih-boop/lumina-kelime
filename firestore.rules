@@ -32,6 +32,13 @@ service cloud.firestore {
                          && request.auth.token.email_verified == true;
     }
 
+    // Derslerim: kişiye özel ders notları ve sorular (ders materyallerinden). Yalnızca sahibinin hesabı okur/yazar.
+    match /dersler/{docId} {
+      allow read, write: if request.auth != null
+                         && request.auth.token.email == 'salpersalih@gmail.com'
+                         && request.auth.token.email_verified == true;
+    }
+
     match /{document=**} {
       allow read, write: if false;
     }

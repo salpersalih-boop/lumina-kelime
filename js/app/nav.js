@@ -94,6 +94,7 @@ const Nav = (() => {
             case 'raceHubScreen':  openRaceHub(); break;
             default:
                 if (typeof TomerModule !== 'undefined' && TomerModule.refresh(id)) break;
+                if (typeof DerslerModule !== 'undefined' && DerslerModule.refresh(id)) break;
                 showScreen(id);
         }
     }
