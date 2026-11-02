@@ -615,12 +615,12 @@ const TomerModule = (() => {
 // İçerik var mı? (yerel klasör ya da hesaba özel bulut) Varsa TÖMER kartını aktif et.
 // Oturum değişince (giriş/çıkış) yeniden kontrol edilir.
 function tomerRefreshCard() {
-    const before = TomerModule.isAvailable();
-    TomerModule.checkAvailability().then(ok => {
-        if (ok === before || typeof renderLanguageCards !== 'function') return;
+    TomerModule.checkAvailability().then(() => {
         renderLanguageCards();
         if (document.getElementById('languageScreen')?.classList.contains('active')) fetchAndShowLangCounts();
-    });
+    }).catch(() => {});
 }
 tomerRefreshCard();
+setTimeout(tomerRefreshCard, 1500);
+setTimeout(tomerRefreshCard, 4000);
 AuthManager.onChange(() => tomerRefreshCard());
