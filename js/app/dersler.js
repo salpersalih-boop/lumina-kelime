@@ -723,12 +723,12 @@ const DerslerModule = (() => {
 // Oturum değişince (giriş/çıkış/hesap değişimi) Derslerim kartını yeniden kontrol et.
 // Yalnızca yetkili hesapta ve içerik varsa kart görünür; diğer herkes için hiç çizilmez.
 function derslerRefreshCard() {
-    const before = DerslerModule.isAvailable();
     DerslerModule.checkAvailability().then(ok => {
-        if (ok !== before) DerslerModule.refreshCard();
-        // yetki kalktıysa açık Derslerim ekranından çık
+        DerslerModule.refreshCard();
         if (!ok && document.querySelector('.screen.active')?.id.startsWith('dersler')) showScreen('languageScreen');
-    });
+    }).catch(() => {});
 }
 derslerRefreshCard();
+setTimeout(derslerRefreshCard, 1500);
+setTimeout(derslerRefreshCard, 4000);
 AuthManager.onChange(() => derslerRefreshCard());
