@@ -23,6 +23,12 @@ const DerslerModule = (() => {
     let topicId = null;
     let quiz = null;           // { kind, items:[{q, topic}], i, answers:[] }
     let classic = null;        // { kind, items:[{q, topic}], i, shown, drafts:[], checks:[] }
+    // Zorluk seçimi: 0 = tümü, 1 = temel, 2 = orta, 3 = zor (soruların lv alanı; yoksa temel sayılır)
+    const LV_NAME = { 1: 'Temel', 2: 'Orta', 3: 'Zor' };
+    let level = (() => { try { return +localStorage.getItem('lumina_dr_level') || 0; } catch { return 0; } })();
+    const lvOf = q => q.lv || 1;
+    const byLevel = arr => level ? arr.filter(q => lvOf(q) === level) : arr;
+    const lvCount = (arr, l) => arr.filter(q => lvOf(q) === l).length;
 
     const $ = id => document.getElementById(id);
     const wrap = id => $(id)?.querySelector('.tm-wrap');
@@ -223,6 +229,12 @@ const DerslerModule = (() => {
         return a;
     }
     const norm = s => String(s).toLocaleLowerCase('tr-TR').replace(/[−–—]/g, '-').replace(/×/g, '*').replace(/\s+/g, '').replace(/[.;,!]+$/, '');
+    function levelBar(t) {
+        const list = t ? t.normal.concat(t.classic) : course.topics.flatMap(x => x.normal.concat(x.classic));
+        const chip = (l, label) => `<button type="button" class="dr-lv${level === l ? ' active' : ''}" data-lv="${l}">${label}<small>${l ? lvCount(list, l) : list.length}</small></button>`;
+        return `<div class="dr-lvbar" role="group" aria-label="Zorluk seviyesi"><span>Seviye</span>${chip(0, 'Tümü')}${chip(1, 'Temel')}${chip(2, 'Orta')}${chip(3, 'Zor')}</div>`;
+    }
+    const lvChip = q => `<span class="dr-lvchip lv${lvOf(q)}">${LV_NAME[lvOf(q)]}</span>`;
     const backBtn = (label, act) => `<button type="button" class="tm-back" data-act="${act}">← ${escapeHtml(label)}</button>`;
     const topicOf = id => course.topics.find(t => t.id === id);
     const metaLine = (topic, extra) => `<p class="tm-qmeta dr-meta"><span class="dr-chip">${escapeHtml(course.code)}</span> Konu ${escapeHtml(topic.id)}: ${escapeHtml(topic.title)}${extra ? ' · ' + extra : ''}</p>`;
@@ -299,9 +311,10 @@ const DerslerModule = (() => {
             <div class="tm-kpi"><b>${cs.solved}</b><span>Çözülen soru</span></div>
             <div class="tm-kpi"><b>${mistakes.normal.length + mistakes.classic.length}</b><span>Tekrar edilecek</span></div>
           </div>
+          ${levelBar(null)}
           <div class="tm-actions">
             <button type="button" class="btn-primary" data-act="mistakes">🎯 Yanlışlarım</button>
-            <button type="button" class="btn-secondary" data-act="mixed">🔀 Karışık Test (tüm konular)</button>
+            <button type="button" class="btn-secondary" data-act="mixed">🔀 Karışık Test${level ? ' · ' + LV_NAME[level] : ''} (tüm konular)</button>
           </div>
           <section class="dr-topics">
             ${course.topics.map(t => {
@@ -310,7 +323,7 @@ const DerslerModule = (() => {
                 <button type="button" class="tm-topic dr-topic" data-topic="${escapeHtml(t.id)}">
                   <span class="tm-topic-code">${escapeHtml(t.id)}</span>
                   <span class="tm-topic-name"><strong>${escapeHtml(t.title)}</strong>
-                    <small>${escapeHtml(t.src)} · ${t.normal.length} normal + ${t.classic.length} klasik soru</small></span>
+                    <small>${escapeHtml(t.src)} · ${byLevel(t.normal).length} normal + ${byLevel(t.classic).length} klasik soru</small></span>
                   <span class="dr-topic-pills">
                     <span class="tm-pill ${s.read ? 'good' : ''}" title="Not">${s.read ? '📖 ✓' : '📖'}</span>
                     <span class="tm-pill ${accClass(s.acc)}" title="Normal sorular">${s.acc === null ? 'Yeni' : '%' + s.acc}</span>
@@ -339,9 +352,10 @@ const DerslerModule = (() => {
           ${s.acc !== null || s.graded ? `<div class="tm-topic-stat">
               ${s.acc !== null ? `<span class="tm-pill ${accClass(s.acc)}">Normal %${s.acc}</span><span>${s.att} deneme · en iyi %${s.best}</span>` : ''}
               ${s.graded ? `<span class="tm-pill ${accClass(s.cacc)}">Klasik ${s.graded}/${t.classic.length} değerlendirildi</span>` : ''}</div>` : ''}
+          ${levelBar(t)}
           <div class="tm-actions dr-sticky">
-            <button type="button" class="btn-primary" data-act="quiz">✅ Normal Sorular (${t.normal.length})</button>
-            <button type="button" class="btn-secondary" data-act="classic">✍ Klasik Sorular (${t.classic.length})</button>
+            <button type="button" class="btn-primary" data-act="quiz">✅ Normal Sorular (${byLevel(t.normal).length})</button>
+            <button type="button" class="btn-secondary" data-act="classic">✍ Klasik Sorular (${byLevel(t.classic).length})</button>
           </div>
           <article class="tm-notes dr-notes">${renderRich(t.notes)}</article>
           <div class="tm-actions">
@@ -363,11 +377,11 @@ const DerslerModule = (() => {
         renderQuizQ();
         showScreen('derslerQuizScreen');
     }
-    const topicItems = t => t.normal.map(q => ({ q, topic: t.id }));
+    const topicItems = t => byLevel(t.normal).map(q => ({ q, topic: t.id }));
     function startTopicQuiz() { startQuiz('topic', shuffle(topicItems(topicOf(topicId)))); }
     function startMixed() {
-        const all = course.topics.flatMap(t => shuffle(topicItems(t)).slice(0, 4));
-        startQuiz('mixed', shuffle(all).slice(0, 20));
+        const all = course.topics.flatMap(t => shuffle(topicItems(t)).slice(0, 5));
+        startQuiz('mixed', shuffle(all).slice(0, 25));
     }
     function startMistakeQuiz() {
         const m = collectMistakes(loadProgress());
@@ -407,7 +421,7 @@ const DerslerModule = (() => {
         wrap('derslerQuizScreen').innerHTML = `
           ${backBtn(quiz.kind === 'topic' ? 'Konu notları' : 'Konular', quiz.kind === 'topic' ? 'topic' : 'course')}
           <div class="tm-progress"><div style="width:${Math.round(quiz.i / n * 100)}%"></div></div>
-          ${metaLine(t, `${TYPE_LABEL[q.t]} · Soru ${quiz.i + 1}/${n}`)}
+          ${metaLine(t, `${lvChip(q)} ${TYPE_LABEL[q.t]} · Soru ${quiz.i + 1}/${n}`)}
           <h2 class="tm-question dr-question">${qText(q.q)}</h2>
           ${body}
           ${ans ? `
@@ -514,7 +528,7 @@ const DerslerModule = (() => {
         renderClassicQ();
         showScreen('derslerClassicScreen');
     }
-    function startTopicClassic() { const t = topicOf(topicId); startClassic('topic', t.classic.map(q => ({ q, topic: t.id }))); }
+    function startTopicClassic() { const t = topicOf(topicId); startClassic('topic', byLevel(t.classic).map(q => ({ q, topic: t.id }))); }
 
     function renderClassicQ() {
         const it = classic.items[classic.i];
@@ -526,7 +540,7 @@ const DerslerModule = (() => {
         wrap('derslerClassicScreen').innerHTML = `
           ${backBtn(classic.kind === 'topic' ? 'Konu notları' : 'Yanlışlarım', classic.kind === 'topic' ? 'topic' : 'mistakes')}
           <div class="tm-progress"><div style="width:${Math.round(classic.i / n * 100)}%"></div></div>
-          ${metaLine(t, `Klasik · ${TYPE_LABEL[q.t]} · Soru ${classic.i + 1}/${n}${g ? ` · önceki değerlendirmen: ${gradeLabel(g.g)}` : ''}`)}
+          ${metaLine(t, `${lvChip(q)} Klasik · ${TYPE_LABEL[q.t]} · Soru ${classic.i + 1}/${n}${g ? ` · önceki değerlendirmen: ${gradeLabel(g.g)}` : ''}`)}
           <section class="tm-card dr-classic-q"><div class="dr-rich">${rich(q.q)}</div></section>
           <label class="dr-label" for="drClassicInput">Cevabın ${q.t === 'code' ? '(kodu buraya yaz)' : q.t === 'calc' ? '(adım adım çözüm)' : ''}</label>
           <textarea id="drClassicInput" class="dr-textarea${q.t === 'code' ? ' is-code' : ''}" rows="${q.t === 'code' ? 10 : 6}" spellcheck="${q.t === 'code' ? 'false' : 'true'}" placeholder="Önce kendi cevabını yaz, sonra model cevapla karşılaştır.">${escapeHtml(classic.drafts[classic.i] || '')}</textarea>
@@ -646,6 +660,14 @@ const DerslerModule = (() => {
         if (op && !op.disabled) { answer(+op.dataset.opt); return; }
         const tf = e.target.closest('[data-tf]');
         if (tf && !tf.disabled) { answer(tf.dataset.tf === '1'); return; }
+        const lvb = e.target.closest('[data-lv]');
+        if (lvb) {
+            level = +lvb.dataset.lv;
+            try { localStorage.setItem('lumina_dr_level', String(level)); } catch { }
+            const cur = document.querySelector('.screen.active')?.id;
+            if (cur === 'derslerTopicScreen' && topicId) showTopic(topicId); else showCourse();
+            return;
+        }
         const gr = e.target.closest('[data-grade]');
         if (gr) { grade(gr.dataset.grade); return; }
         const cg = e.target.closest('[data-cgo]');
@@ -723,12 +745,16 @@ const DerslerModule = (() => {
 // Oturum değişince (giriş/çıkış/hesap değişimi) Derslerim kartını yeniden kontrol et.
 // Yalnızca yetkili hesapta ve içerik varsa kart görünür; diğer herkes için hiç çizilmez.
 function derslerRefreshCard() {
-    DerslerModule.checkAvailability().then(ok => {
-        DerslerModule.refreshCard();
-        if (!ok && document.querySelector('.screen.active')?.id.startsWith('dersler')) showScreen('languageScreen');
-    }).catch(() => {});
+    // Oturum ve bulut bağlantısı açılışta geç hazır olabiliyor: sonuç çıkana kadar birkaç kez dene
+    let tries = 0;
+    const tick = () => {
+        DerslerModule.checkAvailability().then(ok => {
+            DerslerModule.refreshCard();
+            if (!ok && document.querySelector('.screen.active')?.id.startsWith('dersler')) showScreen('languageScreen');
+            if (!ok && tries++ < 10) setTimeout(tick, 2000);
+        }).catch(() => { if (tries++ < 10) setTimeout(tick, 2000); });
+    };
+    tick();
 }
 derslerRefreshCard();
-setTimeout(derslerRefreshCard, 1500);
-setTimeout(derslerRefreshCard, 4000);
 AuthManager.onChange(() => derslerRefreshCard());

@@ -5579,3 +5579,15 @@ body.light-theme .dr-code code { color: #1f2328; }
     .dr-code code { font-size: .8rem; }
     .dr-table { font-size: .8rem; }
 }
+
+/* Derslerim: zorluk seçimi */
+.dr-lvbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.dr-lvbar > span { font-size: .8rem; font-weight: 700; color: var(--text-muted); margin-right: 2px; }
+.dr-lv { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; font: inherit; font-size: .88rem; font-weight: 700; cursor: pointer; color: var(--text-dim); background: var(--bg-surface); border: 2px solid var(--border); transition: var(--transition); }
+.dr-lv small { font-size: .72rem; font-weight: 700; padding: 1px 7px; border-radius: 999px; background: var(--bg-elevated); color: var(--text-muted); }
+.dr-lv:hover { border-color: var(--border-hover); color: var(--text-primary); }
+.dr-lv.active { color: #fff; border-color: transparent; background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); }
+.dr-lv.active small { background: rgba(255,255,255,.25); color: #fff; }
+.dr-lvchip { display: inline-block; padding: 2px 8px; border-radius: 999px; font-weight: 800; font-size: .72rem; background: var(--bg-elevated); }
+.dr-lvchip.lv1 { color: #4ade80; } .dr-lvchip.lv2 { color: #facc15; } .dr-lvchip.lv3 { color: #f87171; }
+body.light-theme .dr-lvchip.lv1 { color: #15803d; } body.light-theme .dr-lvchip.lv2 { color: #a16207; } body.light-theme .dr-lvchip.lv3 { color: #b91c1c; }
