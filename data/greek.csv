@@ -1,0 +1,998 @@
+Sıra;Kelime;Tür;Türkçe Anlamı
+1;εγώ (egó);pron;ben
+2;εσύ (esý);pron;sen
+3;αυτός (aftós);pron;o (erkek)
+4;αυτή (aftí);pron;o (kadın)
+5;εμείς (emeís);pron;biz
+6;εσείς (eseís);pron;siz
+7;αυτοί (aftoí);pron;onlar
+8;αυτό (aftó);pron;bu
+9;εκείνο (ekeíno);pron;şu, o
+10;ποιος (poios);pron;kim
+11;τι (ti);pron;ne
+12;πού (poú);adv;nerede
+13;πότε (póte);adv;ne zaman
+14;γιατί (giatí);adv;neden, niçin
+15;πώς (pós);adv;nasıl
+16;ποιο (poio);pron;hangi
+17;πόσο (póso);adv;ne kadar
+18;ναι (nai);int;evet
+19;όχι (óchi);int;hayır
+20;δεν (den);adv;değil
+21;και (kai);conj;ve
+22;ή (í);conj;veya, ya da
+23;αλλά (allá);conj;ama, fakat
+24;επειδή (epeidí);conj;çünkü
+25;αν (an);conj;eğer
+26;ότι (óti);conj;ki
+27;με (me);prep;ile, birlikte
+28;χωρίς (chorís);prep;-sız, olmadan
+29;για (gia);prep;için
+30;σε (se);prep;-de, içinde
+31;πάνω σε (páno se);prep;üzerinde
+32;κάτω από (káto apó);prep;altında
+33;από (apó);prep;-den, -dan
+34;προς (pros);prep;-e doğru, -e
+35;ανάμεσα (anámesa);prep;arasında
+36;πριν (prin);prep;önce
+37;μετά (metá);prep;sonra
+38;δίπλα (dípla);prep;yanında
+39;εναντίον (enantíon);prep;karşı
+40;σχετικά με (schetiká me);prep;hakkında
+41;εδώ (edó);adv;burada
+42;εκεί (ekeí);adv;orada
+43;τώρα (tóra);adv;şimdi
+44;σήμερα (símera);adv;bugün
+45;αύριο (ávrio);adv;yarın
+46;χθες (chthes);adv;dün
+47;πάντα (pánta);adv;her zaman
+48;ποτέ (poté);adv;asla, hiç
+49;μερικές φορές (merikés forés);adv;bazen
+50;συχνά (sychná);adv;sık sık
+51;πολύ (polý);adv;çok
+52;λίγο (lígo);adv;biraz
+53;περισσότερο (perissótero);adv;daha
+54;λιγότερο (ligótero);adv;daha az
+55;επίσης (epísis);adv;de, da, ayrıca
+56;μόνο (móno);adv;sadece / yalnızca, sırf
+57;ήδη (ídi);adv;zaten, çoktan
+58;ακόμα (akóma);adv;hâlâ, henüz
+59;αμέσως (amésos);adv;hemen
+60;ίσως (ísos);adv;belki
+61;καλά (kalá);adv;iyi (şekilde)
+62;άσχημα (áschima);adv;kötü (şekilde)
+63;μαζί (mazí);adv;birlikte
+64;νωρίς (norís);adv;erken
+65;αργά (argá);adv;geç
+66;ξανά (xaná);adv;yine, tekrar
+67;γρήγορα (grígora);adv;çabuk, hızlıca
+68;σιγά (sigá);adv;yavaşça
+69;σύντομα (sýntoma);adv;yakında
+70;μακριά (makriá);adv;uzakta
+71;κοντά (kontá);adv;yakında (mesafe)
+72;μέσα (mésa);adv;içeride
+73;έξω (éxo);adv;dışarıda
+74;πάνω (páno);adv;yukarıda
+75;κάτω (káto);adv;aşağıda
+76;μπροστά (brostá);adv;ileride, önde
+77;πίσω (píso);adv;geride, arkada
+78;όλα (óla);pron;her şey
+79;τίποτα (típota);pron;hiçbir şey
+80;κάτι (káti);pron;bir şey
+81;όλοι (óloi);pron;herkes
+82;κανείς (kaneís);pron;kimse, hiç kimse
+83;κάποιος (kápoios);pron;biri, birisi
+84;κάθε (káthe);pron;her
+85;όλος (ólos);pron;bütün, tüm
+86;άλλος (állos);pron;başka
+87;ίδιος (ídios);pron;aynı
+88;μερικοί (merikoí);pron;birkaç
+89;πολλοί (polloí);pron;çok (sayıca)
+90;λίγοι (lígoi);pron;az (sayıca)
+91;γεια σου (geia sou);int;merhaba
+92;καλημέρα (kaliméra);int;günaydın
+93;καλησπέρα (kalispéra);int;iyi akşamlar
+94;καληνύχτα (kalinýchta);int;iyi geceler
+95;αντίο (antío);int;hoşça kal
+96;ευχαριστώ (efcharistó);int;teşekkürler / teşekkür etmek
+97;παρακαλώ (parakaló);int;lütfen
+98;συγγνώμη (syngnómi);int;özür dilerim
+99;εντάξει (entáxei);int;tamam
+100;καλώς ήρθατε (kalós írthate);int;hoş geldiniz
+101;είμαι (eímai);v;olmak
+102;έχω (écho);v;sahip olmak
+103;κάνω (káno);v;yapmak
+104;πηγαίνω (pigaíno);v;gitmek
+105;έρχομαι (érchomai);v;gelmek
+106;λέω (léo);v;söylemek, demek
+107;μιλάω (miláo);v;konuşmak
+108;βλέπω (vlépo);v;görmek
+109;κοιτάζω (koitázo);v;bakmak
+110;ακούω (akoúo);v;duymak / dinlemek
+111;ξέρω (xéro);v;bilmek
+112;γνωρίζω (gnorízo);v;tanımak
+113;σκέφτομαι (skéftomai);v;düşünmek
+114;πιστεύω (pistévo);v;inanmak
+115;θέλω (thélo);v;istemek
+116;μπορώ (boró);v;-ebilmek, yapabilmek
+117;πρέπει (prépei);v;-meli, zorunda olmak
+118;δίνω (díno);v;vermek
+119;παίρνω (paírno);v;almak
+120;βάζω (vázo);v;koymak
+121;βρίσκω (vrísko);v;bulmak
+122;ψάχνω (psáchno);v;aramak
+123;χάνω (cháno);v;kaybetmek / kaçırmak
+124;κερδίζω (kerdízo);v;kazanmak (yarış) / kazanmak (para)
+125;δουλεύω (doulévo);v;çalışmak (iş)
+126;μελετάω (meletáo);v;ders çalışmak
+127;μαθαίνω (mathaíno);v;öğrenmek
+128;διδάσκω (didásko);v;öğretmek
+129;διαβάζω (diavázo);v;okumak
+130;γράφω (gráfo);v;yazmak
+131;καταλαβαίνω (katalavaíno);v;anlamak
+132;ρωτάω (rotáo);v;sormak
+133;απαντάω (apantáo);v;cevap vermek
+134;βοηθάω (voitháo);v;yardım etmek
+135;περιμένω (periméno);v;beklemek
+136;μένω (méno);v;kalmak / oturmak, ikamet etmek
+137;ζω (zo);v;yaşamak
+138;πεθαίνω (pethaíno);v;ölmek
+139;γεννιέμαι (genniémai);v;doğmak
+140;αγαπάω (agapáo);v;sevmek
+141;μου αρέσει (mou arései);v;hoşlanmak
+142;μισώ (misó);v;nefret etmek
+143;τρώω (tróo);v;yemek
+144;πίνω (píno);v;içmek
+145;κοιμάμαι (koimámai);v;uyumak
+146;ξυπνάω (xypnáo);v;uyanmak / uyandırmak
+147;σηκώνομαι (sikónomai);v;kalkmak
+148;κάθομαι (káthomai);v;oturmak (sandalye)
+149;στέκομαι (stékomai);v;ayakta durmak
+150;περπατάω (perpatáo);v;yürümek
+151;τρέχω (trécho);v;koşmak
+152;κολυμπάω (kolympáo);v;yüzmek
+153;πετάω (petáo);v;uçmak
+154;οδηγώ (odigó);v;sürmek (araç) / yol göstermek, yönetmek
+155;ταξιδεύω (taxidévo);v;seyahat etmek
+156;φτάνω (ftáno);v;varmak
+157;φεύγω (févgo);v;ayrılmak, gitmek
+158;μπαίνω (baíno);v;girmek
+159;βγαίνω (vgaíno);v;çıkmak
+160;επιστρέφω (epistréfo);v;dönmek, geri gelmek
+161;ανοίγω (anoígo);v;açmak
+162;κλείνω (kleíno);v;kapatmak
+163;αρχίζω (archízo);v;başlamak
+164;τελειώνω (teleióno);v;bitirmek
+165;σταματάω (stamatáo);v;durmak
+166;συνεχίζω (synechízo);v;devam etmek
+167;αλλάζω (allázo);v;değiştirmek
+168;χρησιμοποιώ (chrisimopoió);v;kullanmak
+169;αγοράζω (agorázo);v;satın almak
+170;πουλάω (pouláo);v;satmak
+171;πληρώνω (pliróno);v;ödemek
+172;κοστίζει (kostízei);v;maliyeti olmak, tutmak
+173;φέρνω (férno);v;getirmek
+174;στέλνω (stélno);v;göndermek
+175;λαμβάνω (lamváno);v;almak (teslim)
+176;κρατάω (kratáo);v;tutmak
+177;κουβαλάω (kouvaláo);v;taşımak
+178;ρίχνω (ríchno);v;atmak
+179;πέφτω (péfto);v;düşmek
+180;σπάω (spáo);v;kırmak
+181;χτίζω (chtízo);v;yapmak, inşa etmek
+182;δημιουργώ (dimiourgó);v;yaratmak
+183;ζωγραφίζω (zografízo);v;çizmek
+184;παίζω (paízo);v;oynamak
+185;τραγουδάω (tragoudáo);v;şarkı söylemek
+186;χορεύω (chorévo);v;dans etmek
+187;γελάω (geláo);v;gülmek
+188;κλαίω (klaío);v;ağlamak
+189;χαμογελάω (chamogeláo);v;gülümsemek
+190;νιώθω (niótho);v;hissetmek
+191;αγγίζω (angízo);v;dokunmak
+192;δείχνω (deíchno);v;göstermek
+193;κρύβω (krývo);v;saklamak
+194;θυμάμαι (thymámai);v;hatırlamak
+195;ξεχνάω (xechnáo);v;unutmak
+196;δοκιμάζω (dokimázo);v;denemek / tatmak
+197;διαλέγω (dialégo);v;seçmek
+198;αποφασίζω (apofasízo);v;karar vermek
+199;σχεδιάζω (schediázo);v;planlamak
+200;ετοιμάζω (etoimázo);v;hazırlamak
+201;μαγειρεύω (mageirévo);v;pişirmek
+202;πλένω (pléno);v;yıkamak
+203;καθαρίζω (katharízo);v;temizlemek
+204;φοράω (foráo);v;giymek
+205;ντύνομαι (ntýnomai);v;giyinmek
+206;τηλεφωνώ (tilefonó);v;aramak (telefon)
+207;συναντάω (synantáo);v;buluşmak
+208;επισκέπτομαι (episképtomai);v;ziyaret etmek
+209;προσκαλώ (proskaló);v;davet etmek
+210;συγχωρώ (synchoró);v;affetmek
+211;επιτρέπω (epitrépo);v;izin vermek
+212;απαγορεύω (apagorévo);v;yasaklamak
+213;ακολουθώ (akolouthó);v;takip etmek
+214;αποκτώ (apoktó);v;kazanmak, elde etmek
+215;συμβαίνει (symvaínei);v;olmak, meydana gelmek
+216;φαίνεται (faínetai);v;görünmek
+217;γίνομαι (gínomai);v;olmak, haline gelmek
+218;μεγαλώνω (megalóno);v;büyümek
+219;προστατεύω (prostatévo);v;korumak
+220;σώζω (sózo);v;kurtarmak
+221;σκοτώνω (skotóno);v;öldürmek
+222;πολεμάω (polemáo);v;savaşmak
+223;νικάω (nikáo);v;kazanmak, galip gelmek
+224;χρειάζομαι (chreiázomai);v;ihtiyaç duymak
+225;προτιμάω (protimáo);v;tercih etmek
+226;ελπίζω (elpízo);v;ummak
+227;φοβάμαι (fovámai);v;korkmak
+228;ανησυχώ (anisychó);v;endişelenmek
+229;ξεκουράζομαι (xekourázomai);v;dinlenmek
+230;καπνίζω (kapnízo);v;sigara içmek
+231;νοικιάζω (noikiázo);v;kiralamak
+232;κάνω κράτηση (káno krátisi);v;rezervasyon yapmak
+233;μεταφράζω (metafrázo);v;çevirmek (dil)
+234;εξηγώ (exigó);v;açıklamak
+235;επαναλαμβάνω (epanalamváno);v;tekrarlamak
+236;μετράω (metráo);v;saymak / ölçmek
+237;ελέγχω (elégcho);v;kontrol etmek / denetlemek
+238;επισκευάζω (episkevázo);v;düzeltmek, tamir etmek
+239;κόβω (kóvo);v;kesmek
+240;σπρώχνω (spróchno);v;itmek
+241;τραβάω (traváo);v;çekmek
+242;σηκώνω (sikóno);v;kaldırmak
+243;γυρίζω (gyrízo);v;dönmek, çevirmek
+244;περνάω (pernáo);v;geçmek
+245;διασχίζω (diaschízo);v;geçmek, karşıya geçmek
+246;ανεβαίνω (anevaíno);v;tırmanmak
+247;κατεβαίνω (katevaíno);v;inmek
+248;ο άνθρωπος (o ánthropos);n;insan, kişi
+249;οι άνθρωποι (oi ánthropoi);n;insanlar
+250;ο άντρας (o ántras);n;adam, erkek
+251;η γυναίκα (i gynaíka);n;kadın
+252;το παιδί (to paidí);n;çocuk
+253;το αγόρι (to agóri);n;erkek çocuk
+254;το κορίτσι (to korítsi);n;kız çocuk
+255;το μωρό (to moró);n;bebek
+256;η οικογένεια (i oikogéneia);n;aile
+257;η μητέρα (i mitéra);n;anne
+258;ο πατέρας (o patéras);n;baba
+259;οι γονείς (oi goneís);n;anne baba, ebeveynler
+260;ο γιος (o gios);n;oğul
+261;η κόρη (i kóri);n;kız evlat
+262;ο αδερφός (o aderfós);n;erkek kardeş
+263;η αδερφή (i aderfí);n;kız kardeş
+264;ο παππούς (o pappoús);n;büyükbaba
+265;η γιαγιά (i giagiá);n;büyükanne
+266;ο θείος (o theíos);n;amca, dayı
+267;η θεία (i theía);n;teyze, hala
+268;ο ξάδερφος (o xáderfos);n;kuzen
+269;ο σύζυγος (o sýzygos);n;koca, eş
+270;η σύζυγος (i sýzygos);n;karı, eş
+271;ο φίλος (o fílos);n;arkadaş
+272;ο γείτονας (o geítonas);n;komşu
+273;ο επισκέπτης (o episképtis);n;misafir
+274;το όνομα (to ónoma);n;isim, ad
+275;το επώνυμο (to epónymo);n;soyadı
+276;η ηλικία (i ilikía);n;yaş
+277;η ζωή (i zoí);n;hayat
+278;ο θάνατος (o thánatos);n;ölüm
+279;η αγάπη (i agápi);n;aşk, sevgi
+280;το σώμα (to sóma);n;vücut
+281;το κεφάλι (to kefáli);n;baş, kafa
+282;τα μαλλιά (ta malliá);n;saç
+283;το πρόσωπο (to prósopo);n;yüz
+284;το μάτι (to máti);n;göz
+285;το αυτί (to aftí);n;kulak
+286;η μύτη (i mýti);n;burun
+287;το στόμα (to stóma);n;ağız
+288;το δόντι (to dónti);n;diş
+289;η γλώσσα (i glóssa);n;dil (organ) / dil (lisan)
+290;ο λαιμός (o laimós);n;boyun
+291;ο ώμος (o ómos);n;omuz
+292;ο βραχίονας (o vrachíonas);n;kol
+293;το χέρι (to chéri);n;el
+294;το δάχτυλο (to dáchtylo);n;parmak
+295;το στήθος (to stíthos);n;göğüs
+296;η πλάτη (i pláti);n;sırt
+297;η κοιλιά (i koiliá);n;karın, mide
+298;το πόδι (to pódi);n;bacak
+299;το πέλμα (to pélma);n;ayak
+300;το γόνατο (to gónato);n;diz
+301;η καρδιά (i kardiá);n;kalp
+302;το αίμα (to aíma);n;kan
+303;το δέρμα (to dérma);n;deri, cilt
+304;το κόκαλο (to kókalo);n;kemik
+305;η υγεία (i ygeía);n;sağlık
+306;η αρρώστια (i arróstia);n;hastalık
+307;ο πόνος (o pónos);n;ağrı, acı
+308;ο γιατρός (o giatrós);n;doktor
+309;η νοσοκόμα (i nosokóma);n;hemşire
+310;το νοσοκομείο (to nosokomeío);n;hastane
+311;το φάρμακο (to fármako);n;ilaç
+312;το φαρμακείο (to farmakeío);n;eczane
+313;το σπίτι (to spíti);n;ev
+314;το διαμέρισμα (to diamérisma);n;daire
+315;το δωμάτιο (to domátio);n;oda
+316;η κουζίνα (i kouzína);n;mutfak
+317;το μπάνιο (to bánio);n;banyo
+318;η κρεβατοκάμαρα (i krevatokámara);n;yatak odası
+319;το σαλόνι (to salóni);n;oturma odası
+320;η πόρτα (i pórta);n;kapı
+321;το παράθυρο (to paráthyro);n;pencere
+322;ο τοίχος (o toíchos);n;duvar
+323;το πάτωμα (to pátoma);n;zemin, yer
+324;το ταβάνι (to taváni);n;tavan
+325;η σκάλα (i skála);n;merdiven
+326;ο κήπος (o kípos);n;bahçe
+327;η στέγη (i stégi);n;çatı
+328;το κλειδί (to kleidí);n;anahtar
+329;το τραπέζι (to trapézi);n;masa
+330;η καρέκλα (i karékla);n;sandalye
+331;το κρεβάτι (to kreváti);n;yatak
+332;ο καναπές (o kanapés);n;kanepe
+333;η ντουλάπα (i ntoulápa);n;dolap
+334;ο καθρέφτης (o kathréftis);n;ayna
+335;η λάμπα (i lámpa);n;lamba
+336;το ψυγείο (to psygeío);n;buzdolabı
+337;ο φούρνος (o foúrnos);n;fırın
+338;η τηλεόραση (i tileórasi);n;televizyon
+339;ο υπολογιστής (o ypologistís);n;bilgisayar
+340;το τηλέφωνο (to tiléfono);n;telefon
+341;το ρολόι (to rolói);n;saat (alet)
+342;ο πίνακας (o pínakas);n;resim, tablo
+343;το χαλί (to chalí);n;halı
+344;η κουρτίνα (i kourtína);n;perde
+345;η πετσέτα (i petséta);n;havlu
+346;το σαπούνι (to sapoúni);n;sabun
+347;η οδοντόβουρτσα (i odontóvourtsa);n;diş fırçası
+348;η τσάντα (i tsánta);n;çanta
+349;το κουτί (to koutí);n;kutu
+350;το μπουκάλι (to boukáli);n;şişe
+351;το ποτήρι (to potíri);n;bardak
+352;το φλιτζάνι (to flitzáni);n;fincan
+353;το πιάτο (to piáto);n;tabak
+354;το πιρούνι (to piroúni);n;çatal
+355;το μαχαίρι (to machaíri);n;bıçak
+356;το κουτάλι (to koutáli);n;kaşık
+357;η κατσαρόλα (i katsaróla);n;tencere
+358;το γεύμα (to gévma);n;yemek (öğün)
+359;το φαγητό (to fagitó);n;yiyecek
+360;το πρωινό (to proinó);n;kahvaltı
+361;το μεσημεριανό (to mesimerianó);n;öğle yemeği
+362;το βραδινό (to vradinó);n;akşam yemeği
+363;το νερό (to neró);n;su
+364;το ψωμί (to psomí);n;ekmek
+365;το γάλα (to gála);n;süt
+366;ο καφές (o kafés);n;kahve
+367;το τσάι (to tsái);n;çay
+368;ο χυμός (o chymós);n;meyve suyu
+369;η μπίρα (i bíra);n;bira
+370;το κρασί (to krasí);n;şarap
+371;το κρέας (to kréas);n;et
+372;το κοτόπουλο (to kotópoulo);n;tavuk
+373;το ψάρι (to psári);n;balık
+374;το αυγό (to avgó);n;yumurta
+375;το τυρί (to tyrí);n;peynir
+376;το βούτυρο (to voútyro);n;tereyağı
+377;το ρύζι (to rýzi);n;pirinç
+378;τα ζυμαρικά (ta zymariká);n;makarna
+379;η πατάτα (i patáta);n;patates
+380;τα λαχανικά (ta lachaniká);n;sebze
+381;τα φρούτα (ta froúta);n;meyve
+382;το μήλο (to mílo);n;elma
+383;το πορτοκάλι (to portokáli);n;portakal
+384;η μπανάνα (i banána);n;muz
+385;το σταφύλι (to stafýli);n;üzüm
+386;η φράουλα (i fráoula);n;çilek
+387;το λεμόνι (to lemóni);n;limon
+388;η ντομάτα (i ntomáta);n;domates
+389;το κρεμμύδι (to kremmýdi);n;soğan
+390;το σκόρδο (to skórdo);n;sarımsak
+391;το καρότο (to karóto);n;havuç
+392;το αγγούρι (to angoúri);n;salatalık
+393;η σαλάτα (i saláta);n;salata
+394;η σούπα (i soúpa);n;çorba
+395;το αλάτι (to aláti);n;tuz
+396;η ζάχαρη (i záchari);n;şeker
+397;το πιπέρι (to pipéri);n;biber
+398;το λάδι (to ládi);n;yağ (sıvı)
+399;το μέλι (to méli);n;bal
+400;το κέικ (to kéik);n;pasta, kek
+401;το παγωτό (to pagotó);n;dondurma
+402;η σοκολάτα (i sokoláta);n;çikolata
+403;το εστιατόριο (to estiatório);n;restoran
+404;η καφετέρια (i kafetéria);n;kafe
+405;το μενού (to menoú);n;menü
+406;ο σερβιτόρος (o servitóros);n;garson
+407;ο λογαριασμός (o logariasmós);n;hesap (restoran)
+408;το φιλοδώρημα (to filodórima);n;bahşiş
+409;η πείνα (i peína);n;açlık
+410;η δίψα (i dípsa);n;susuzluk
+411;η πόλη (i póli);n;şehir
+412;το χωριό (to chorió);n;köy
+413;η χώρα (i chóra);n;ülke
+414;ο δρόμος (o drómos);n;sokak
+415;η πλατεία (i plateía);n;meydan
+416;η οδός (i odós);n;yol
+417;η γέφυρα (i géfyra);n;köprü
+418;το κτίριο (to ktírio);n;bina
+419;το μαγαζί (to magazí);n;dükkan, mağaza
+420;το σούπερ μάρκετ (to soúper márket);n;market
+421;η αγορά (i agorá);n;pazar, çarşı
+422;η τράπεζα (i trápeza);n;banka
+423;το ταχυδρομείο (to tachydromeío);n;postane
+424;το σχολείο (to scholeío);n;okul
+425;το πανεπιστήμιο (to panepistímio);n;üniversite
+426;η βιβλιοθήκη (i vivliothíki);n;kütüphane
+427;το μουσείο (to mouseío);n;müze
+428;η εκκλησία (i ekklisía);n;kilise
+429;το τζαμί (to tzamí);n;cami
+430;το πάρκο (to párko);n;park
+431;το ξενοδοχείο (to xenodocheío);n;otel
+432;το αεροδρόμιο (to aerodrómio);n;havaalanı
+433;ο σταθμός (o stathmós);n;istasyon
+434;η στάση (i stási);n;durak
+435;το λιμάνι (to limáni);n;liman
+436;ο κινηματογράφος (o kinimatográfos);n;sinema
+437;το θέατρο (to théatro);n;tiyatro
+438;η αστυνομία (i astynomía);n;polis
+439;το αυτοκίνητο (to aftokínito);n;araba
+440;το λεωφορείο (to leoforeío);n;otobüs
+441;το τρένο (to tréno);n;tren
+442;το αεροπλάνο (to aeropláno);n;uçak
+443;το πλοίο (to ploío);n;gemi
+444;το ποδήλατο (to podílato);n;bisiklet
+445;το ταξί (to taxí);n;taksi
+446;το μετρό (to metró);n;metro
+447;το εισιτήριο (to eisitírio);n;bilet
+448;η βαλίτσα (i valítsa);n;bavul
+449;το διαβατήριο (to diavatírio);n;pasaport
+450;ο χάρτης (o chártis);n;harita
+451;το ταξίδι (to taxídi);n;yolculuk, seyahat
+452;οι διακοπές (oi diakopés);n;tatil
+453;ο τουρίστας (o tourístas);n;turist
+454;η κίνηση (i kínisi);n;trafik
+455;το ατύχημα (to atýchima);n;kaza
+456;τα δεξιά (ta dexiá);n;sağ
+457;τα αριστερά (ta aristerá);n;sol
+458;ο βορράς (o vorrás);n;kuzey
+459;ο νότος (o nótos);n;güney
+460;η ανατολή (i anatolí);n;doğu
+461;η δύση (i dýsi);n;batı
+462;η γωνία (i gonía);n;köşe
+463;το κέντρο (to kéntro);n;merkez
+464;το μέρος (to méros);n;yer, mekan / kısım, bölüm
+465;η διεύθυνση (i diéfthynsi);n;adres
+466;ο χρόνος (o chrónos);n;zaman / yıl
+467;η ώρα (i óra);n;saat (süre)
+468;το λεπτό (to leptó);n;dakika
+469;το δευτερόλεπτο (to defterólepto);n;saniye
+470;η μέρα (i méra);n;gün
+471;η εβδομάδα (i evdomáda);n;hafta
+472;ο μήνας (o mínas);n;ay (takvim)
+473;ο αιώνας (o aiónas);n;yüzyıl
+474;το πρωί (to proí);n;sabah
+475;το μεσημέρι (to mesiméri);n;öğle
+476;το απόγευμα (to apógevma);n;öğleden sonra
+477;το βράδυ (to vrádi);n;akşam
+478;η νύχτα (i nýchta);n;gece
+479;το σαββατοκύριακο (to savvatokýriako);n;hafta sonu
+480;η Δευτέρα (i Deftéra);n;pazartesi
+481;η Τρίτη (i Tríti);n;salı
+482;η Τετάρτη (i Tetárti);n;çarşamba
+483;η Πέμπτη (i Pémpti);n;perşembe
+484;η Παρασκευή (i Paraskeví);n;cuma
+485;το Σάββατο (to Sávvato);n;cumartesi
+486;η Κυριακή (i Kyriakí);n;pazar (gün)
+487;ο Ιανουάριος (o Ianouários);n;ocak
+488;ο Φεβρουάριος (o Fevrouários);n;şubat
+489;ο Μάρτιος (o Mártios);n;mart
+490;ο Απρίλιος (o Aprílios);n;nisan
+491;ο Μάιος (o Máios);n;mayıs
+492;ο Ιούνιος (o Ioúnios);n;haziran
+493;ο Ιούλιος (o Ioúlios);n;temmuz
+494;ο Αύγουστος (o Ávgoustos);n;ağustos
+495;ο Σεπτέμβριος (o Septémvrios);n;eylül
+496;ο Οκτώβριος (o Októvrios);n;ekim
+497;ο Νοέμβριος (o Noémvrios);n;kasım
+498;ο Δεκέμβριος (o Dekémvrios);n;aralık
+499;η εποχή (i epochí);n;mevsim
+500;η άνοιξη (i ánoixi);n;ilkbahar
+501;το καλοκαίρι (to kalokaíri);n;yaz
+502;το φθινόπωρο (to fthinóporo);n;sonbahar
+503;ο χειμώνας (o cheimónas);n;kış
+504;ο καιρός (o kairós);n;hava (durumu)
+505;ο ήλιος (o ílios);n;güneş
+506;το φεγγάρι (to fengári);n;ay (gökyüzü)
+507;το αστέρι (to astéri);n;yıldız
+508;ο ουρανός (o ouranós);n;gökyüzü
+509;το σύννεφο (to sýnnefo);n;bulut
+510;η βροχή (i vrochí);n;yağmur
+511;το χιόνι (to chióni);n;kar
+512;ο άνεμος (o ánemos);n;rüzgar
+513;η καταιγίδα (i kataigída);n;fırtına
+514;η θερμοκρασία (i thermokrasía);n;sıcaklık
+515;ο αέρας (o aéras);n;hava (soluduğumuz)
+516;η φωτιά (i fotiá);n;ateş
+517;η γη (i gi);n;toprak, dünya
+518;ο κόσμος (o kósmos);n;dünya
+519;η φύση (i fýsi);n;doğa
+520;η θάλασσα (i thálassa);n;deniz
+521;ο ωκεανός (o okeanós);n;okyanus
+522;το ποτάμι (to potámi);n;nehir
+523;η λίμνη (i límni);n;göl
+524;το βουνό (to vounó);n;dağ
+525;ο λόφος (o lófos);n;tepe
+526;το δάσος (to dásos);n;orman
+527;το δέντρο (to déntro);n;ağaç
+528;το λουλούδι (to louloúdi);n;çiçek
+529;το γρασίδι (to grasídi);n;çimen
+530;το φύλλο (to fýllo);n;yaprak
+531;η πέτρα (i pétra);n;taş
+532;η άμμος (i ámmos);n;kum
+533;η παραλία (i paralía);n;plaj
+534;το νησί (to nisí);n;ada
+535;το χωράφι (to choráfi);n;tarla
+536;το ζώο (to zóo);n;hayvan
+537;ο σκύλος (o skýlos);n;köpek
+538;η γάτα (i gáta);n;kedi
+539;το άλογο (to álogo);n;at
+540;η αγελάδα (i ageláda);n;inek
+541;το γουρούνι (to gouroúni);n;domuz
+542;το πρόβατο (to próvato);n;koyun
+543;το πουλί (to poulí);n;kuş
+544;το ποντίκι (to pontíki);n;fare
+545;το κουνέλι (to kounéli);n;tavşan
+546;η αρκούδα (i arkoúda);n;ayı
+547;ο λύκος (o lýkos);n;kurt
+548;το λιοντάρι (to liontári);n;aslan
+549;το φίδι (to fídi);n;yılan
+550;το έντομο (to éntomo);n;böcek
+551;η μέλισσα (i mélissa);n;arı
+552;η μύγα (i mýga);n;sinek
+553;η πάπια (i pápia);n;ördek
+554;η αλεπού (i alepoú);n;tilki
+555;η μαϊμού (i maïmoú);n;maymun
+556;ο ελέφαντας (o eléfantas);n;fil
+557;η πεταλούδα (i petaloúda);n;kelebek
+558;η δουλειά (i douleiá);n;iş
+559;το επάγγελμα (to epángelma);n;meslek
+560;η εταιρεία (i etaireía);n;şirket
+561;το γραφείο (to grafeío);n;ofis
+562;το αφεντικό (to afentikó);n;patron
+563;ο συνάδελφος (o synádelfos);n;meslektaş
+564;η συνάντηση (i synántisi);n;toplantı
+565;τα χρήματα (ta chrímata);n;para
+566;η τιμή (i timí);n;fiyat
+567;ο μισθός (o misthós);n;maaş
+568;ο φόρος (o fóros);n;vergi
+569;η κάρτα (i kárta);n;kart
+570;ο δάσκαλος (o dáskalos);n;öğretmen
+571;ο μαθητής (o mathitís);n;öğrenci
+572;το μάθημα (to máthima);n;ders
+573;η τάξη (i táxi);n;sınıf
+574;η εξέταση (i exétasi);n;sınav
+575;η ερώτηση (i erótisi);n;soru
+576;η απάντηση (i apántisi);n;cevap
+577;το βιβλίο (to vivlío);n;kitap
+578;το τετράδιο (to tetrádio);n;defter
+579;το στυλό (to styló);n;kalem
+580;το μολύβι (to molývi);n;kurşun kalem
+581;το χαρτί (to chartí);n;kağıt
+582;η σελίδα (i selída);n;sayfa
+583;η λέξη (i léxi);n;kelime
+584;η πρόταση (i prótasi);n;cümle
+585;το γράμμα (to grámma);n;harf
+586;η επιστολή (i epistolí);n;mektup
+587;η ιστορία (i istoría);n;hikaye / tarih (geçmiş)
+588;η ημερομηνία (i imerominía);n;tarih (gün)
+589;η είδηση (i eídisi);n;haber
+590;η εφημερίδα (i efimerída);n;gazete
+591;το περιοδικό (to periodikó);n;dergi
+592;η ταινία (i tainía);n;film
+593;η μουσική (i mousikí);n;müzik
+594;το τραγούδι (to tragoúdi);n;şarkı
+595;το παιχνίδι (to paichnídi);n;oyun
+596;ο αθλητισμός (o athlitismós);n;spor
+597;το ποδόσφαιρο (to podósfairo);n;futbol
+598;η μπάλα (i bála);n;top
+599;η ομάδα (i omáda);n;takım / grup
+600;ο αγώνας (o agónas);n;maç
+601;το πάρτι (to párti);n;parti, eğlence
+602;το δώρο (to dóro);n;hediye
+603;τα γενέθλια (ta genéthlia);n;doğum günü
+604;η φωτογραφία (i fotografía);n;fotoğraf
+605;η τέχνη (i téchni);n;sanat
+606;το διαδίκτυο (to diadíktyo);n;internet
+607;το ηλεκτρονικό ταχυδρομείο (to ilektronikó tachydromeío);n;e-posta
+608;το μήνυμα (to mínyma);n;mesaj
+609;ο αριθμός (o arithmós);n;numara, sayı
+610;τα ρούχα (ta roúcha);n;kıyafet, giysi
+611;το πουκάμισο (to poukámiso);n;gömlek
+612;το μπλουζάκι (to blouzáki);n;tişört
+613;το παντελόνι (to pantelóni);n;pantolon
+614;η φούστα (i foústa);n;etek
+615;το φόρεμα (to fórema);n;elbise
+616;το μπουφάν (to boufán);n;ceket
+617;τα παπούτσια (ta papoútsia);n;ayakkabı
+618;το καπέλο (to kapélo);n;şapka
+619;οι κάλτσες (oi káltses);n;çorap
+620;τα γυαλιά (ta gyaliá);n;gözlük
+621;το πορτοφόλι (to portofóli);n;cüzdan
+622;το δαχτυλίδι (to dachtylídi);n;yüzük
+623;το χρώμα (to chróma);n;renk
+624;το πράγμα (to prágma);n;şey, nesne
+625;το κομμάτι (to kommáti);n;parça
+626;το μισό (to misó);n;yarım, yarı
+627;το τέλος (to télos);n;son
+628;η αρχή (i archí);n;başlangıç
+629;ο τρόπος (o trópos);n;yol, yöntem
+630;ο λόγος (o lógos);n;neden, sebep
+631;το πρόβλημα (to próvlima);n;sorun
+632;η ιδέα (i idéa);n;fikir
+633;η αλήθεια (i alítheia);n;gerçek, hakikat
+634;το ψέμα (to pséma);n;yalan
+635;το λάθος (to láthos);n;hata
+636;η τύχη (i týchi);n;şans
+637;η ευτυχία (i eftychía);n;mutluluk
+638;ο φόβος (o fóvos);n;korku
+639;η ελπίδα (i elpída);n;umut
+640;το όνειρο (to óneiro);n;rüya, hayal
+641;η δύναμη (i dýnami);n;güç, kuvvet
+642;ο πόλεμος (o pólemos);n;savaş
+643;η ειρήνη (i eiríni);n;barış
+644;η κυβέρνηση (i kyvérnisi);n;devlet, hükümet
+645;ο νόμος (o nómos);n;kanun, yasa
+646;το δικαίωμα (to dikaíoma);n;hak
+647;η ελευθερία (i elefthería);n;özgürlük
+648;ο λαός (o laós);n;halk
+649;ο βασιλιάς (o vasiliás);n;kral
+650;ο Θεός (o Theós);n;tanrı
+651;η θρησκεία (i thriskeía);n;din
+652;ο πολιτισμός (o politismós);n;kültür
+653;η επιστήμη (i epistími);n;bilim
+654;η παράδοση (i parádosi);n;gelenek
+655;καλός (kalós);adj;iyi
+656;κακός (kakós);adj;kötü
+657;μεγάλος (megálos);adj;büyük
+658;μικρός (mikrós);adj;küçük
+659;μακρύς (makrýs);adj;uzun
+660;κοντός (kontós);adj;kısa
+661;ψηλός (psilós);adj;uzun boylu, yüksek
+662;χαμηλός (chamilós);adj;alçak, kısa boylu
+663;φαρδύς (fardýs);adj;geniş
+664;στενός (stenós);adj;dar
+665;καινούργιος (kainoúrgios);adj;yeni
+666;παλιός (paliós);adj;eski, yaşlı
+667;νέος (néos);adj;genç
+668;ωραίος (oraíos);adj;güzel
+669;άσχημος (áschimos);adj;çirkin
+670;ζεστός (zestós);adj;sıcak
+671;κρύος (krýos);adj;soğuk
+672;χλιαρός (chliarós);adj;ılık
+673;δροσερός (droserós);adj;serin
+674;γρήγορος (grígoros);adj;hızlı
+675;αργός (argós);adj;yavaş
+676;εύκολος (éfkolos);adj;kolay
+677;δύσκολος (dýskolos);adj;zor
+678;βαρύς (varýs);adj;ağır
+679;ελαφρύς (elafrýs);adj;hafif
+680;γεμάτος (gemátos);adj;dolu
+681;άδειος (ádeios);adj;boş
+682;καθαρός (katharós);adj;temiz
+683;βρόμικος (vrómikos);adj;kirli
+684;πλούσιος (ploúsios);adj;zengin
+685;φτωχός (ftochós);adj;fakir
+686;φτηνός (ftinós);adj;ucuz
+687;ακριβός (akrivós);adj;pahalı
+688;ευτυχισμένος (eftychisménos);adj;mutlu
+689;λυπημένος (lypiménos);adj;üzgün
+690;θυμωμένος (thymoménos);adj;kızgın
+691;κουρασμένος (kourasménos);adj;yorgun
+692;άρρωστος (árrostos);adj;hasta
+693;υγιής (ygiís);adj;sağlıklı
+694;πεινασμένος (peinasménos);adj;aç
+695;δυνατός (dynatós);adj;güçlü / mümkün
+696;αδύναμος (adýnamos);adj;zayıf, güçsüz
+697;χοντρός (chontrós);adj;şişman / kalın
+698;αδύνατος (adýnatos);adj;ince, zayıf / imkansız
+699;έξυπνος (éxypnos);adj;akıllı
+700;χαζός (chazós);adj;aptal
+701;ευγενικός (evgenikós);adj;nazik
+702;αγενής (agenís);adj;kaba
+703;ειλικρινής (eilikrinís);adj;dürüst
+704;γενναίος (gennaíos);adj;cesur
+705;τεμπέλης (tembélis);adj;tembel
+706;απασχολημένος (apascholiménos);adj;meşgul
+707;ελεύθερος (eléftheros);adj;serbest, özgür / bekar
+708;έτοιμος (étoimos);adj;hazır
+709;σωστός (sostós);adj;doğru
+710;λάθος (láthos);adj;yanlış
+711;αληθινός (alithinós);adj;gerçek
+712;ψεύτικος (pséftikos);adj;yanlış, sahte
+713;σημαντικός (simantikós);adj;önemli
+714;ενδιαφέρων (endiaféron);adj;ilginç
+715;βαρετός (varetós);adj;sıkıcı
+716;επικίνδυνος (epikíndynos);adj;tehlikeli
+717;ασφαλής (asfalís);adj;güvenli
+718;απαραίτητος (aparaítitos);adj;gerekli
+719;κανονικός (kanonikós);adj;normal
+720;παράξενος (paráxenos);adj;garip, tuhaf
+721;διαφορετικός (diaforetikós);adj;farklı
+722;παρόμοιος (parómoios);adj;benzer
+723;απλός (aplós);adj;kolay, basit
+724;περίπλοκος (períplokos);adj;karmaşık
+725;ήσυχος (ísychos);adj;sessiz
+726;θορυβώδης (thoryvódis);adj;gürültülü
+727;σκοτεινός (skoteinós);adj;karanlık
+728;φωτεινός (foteinós);adj;aydınlık
+729;μαλακός (malakós);adj;yumuşak
+730;σκληρός (sklirós);adj;sert
+731;γλυκός (glykós);adj;tatlı
+732;ξινός (xinós);adj;ekşi
+733;πικρός (pikrós);adj;acı
+734;αλμυρός (almyrós);adj;tuzlu
+735;νόστιμος (nóstimos);adj;lezzetli
+736;φρέσκος (fréskos);adj;taze
+737;βρεγμένος (vregménos);adj;ıslak
+738;στεγνός (stegnós);adj;kuru
+739;ανοιχτός (anoichtós);adj;açık
+740;κλειστός (kleistós);adj;kapalı
+741;κοντινός (kontinós);adj;yakın
+742;μακρινός (makrinós);adj;uzak
+743;πρώτος (prótos);adj;ilk
+744;τελευταίος (teleftaíos);adj;son
+745;επόμενος (epómenos);adj;sonraki
+746;μόνος (mónos);adj;tek, yalnız
+747;ολόκληρος (olókliros);adj;bütün, tam
+748;τέλειος (téleios);adj;mükemmel
+749;διάσημος (diásimos);adj;ünlü
+750;τοπικός (topikós);adj;yerel
+751;ξένος (xénos);adj;yabancı
+752;ειδικός (eidikós);adj;özel
+753;γενικός (genikós);adj;genel
+754;δημόσιος (dimósios);adj;kamu, halka açık
+755;ιδιωτικός (idiotikós);adj;özel, kişisel
+756;κόκκινος (kókkinos);adj;kırmızı
+757;μπλε (ble);adj;mavi
+758;πράσινος (prásinos);adj;yeşil
+759;κίτρινος (kítrinos);adj;sarı
+760;μαύρος (mávros);adj;siyah
+761;άσπρος (áspros);adj;beyaz
+762;γκρίζος (gkrízos);adj;gri
+763;καφέ (kafé);adj;kahverengi
+764;πορτοκαλί (portokalí);adj;turuncu
+765;ροζ (roz);adj;pembe
+766;μωβ (mov);adj;mor
+767;γαλάζιος (galázios);adj;açık mavi
+768;μηδέν (midén);num;sıfır
+769;ένα (éna);num;bir
+770;δύο (dýo);num;iki
+771;τρία (tría);num;üç
+772;τέσσερα (téssera);num;dört
+773;πέντε (pénte);num;beş
+774;έξι (éxi);num;altı
+775;επτά (eptá);num;yedi
+776;οκτώ (októ);num;sekiz
+777;εννέα (ennéa);num;dokuz
+778;δέκα (déka);num;on
+779;έντεκα (énteka);num;on bir
+780;δώδεκα (dódeka);num;on iki
+781;δεκατρία (dekatría);num;on üç
+782;δεκατέσσερα (dekatéssera);num;on dört
+783;δεκαπέντε (dekapénte);num;on beş
+784;δεκαέξι (dekaéxi);num;on altı
+785;δεκαεπτά (dekaeptá);num;on yedi
+786;δεκαοκτώ (dekaoktó);num;on sekiz
+787;δεκαεννέα (dekaennéa);num;on dokuz
+788;είκοσι (eíkosi);num;yirmi
+789;τριάντα (triánta);num;otuz
+790;σαράντα (saránta);num;kırk
+791;πενήντα (penínta);num;elli
+792;εξήντα (exínta);num;altmış
+793;εβδομήντα (evdomínta);num;yetmiş
+794;ογδόντα (ogdónta);num;seksen
+795;ενενήντα (enenínta);num;doksan
+796;εκατό (ekató);num;yüz
+797;χίλια (chília);num;bin
+798;εκατομμύριο (ekatommýrio);num;milyon
+799;δεύτερος (défteros);num;ikinci
+800;τρίτος (trítos);num;üçüncü
+801;η οικονομία (i oikonomía);n;ekonomi
+802;η πολιτική (i politikí);n;politika
+803;οι εκλογές (oi eklogés);n;seçim
+804;ο πρόεδρος (o próedros);n;başkan
+805;ο στρατιώτης (o stratiótis);n;asker
+806;ο στρατός (o stratós);n;ordu
+807;το όπλο (to óplo);n;silah
+808;το έγκλημα (to énklima);n;suç
+809;ο κλέφτης (o kléftis);n;hırsız
+810;το δικαστήριο (to dikastírio);n;mahkeme
+811;ο δικηγόρος (o dikigóros);n;avukat
+812;ο δικαστής (o dikastís);n;hakim
+813;ο μηχανικός (o michanikós);n;mühendis
+814;ο συγγραφέας (o syngraféas);n;yazar
+815;ο καλλιτέχνης (o kallitéchnis);n;sanatçı
+816;ο μάγειρας (o mágeiras);n;aşçı
+817;ο οδηγός (o odigós);n;şoför
+818;ο αγρότης (o agrótis);n;çiftçi
+819;ο πωλητής (o polítis);n;satıcı
+820;ο πελάτης (o pelátis);n;müşteri
+821;ο εργάτης (o ergátis);n;işçi
+822;ο αστυνομικός (o astynomikós);n;polis memuru
+823;ο πυροσβέστης (o pyrosvéstis);n;itfaiyeci
+824;ο οδοντίατρος (o odontíatros);n;diş hekimi
+825;η μηχανή (i michaní);n;makine
+826;το εργαλείο (to ergaleío);n;alet
+827;το κουδούνι (to koudoúni);n;kapı zili
+828;η ενέργεια (i enérgeia);n;enerji
+829;ο ηλεκτρισμός (o ilektrismós);n;elektrik
+830;το φως (to fos);n;ışık
+831;η φωνή (i foní);n;ses
+832;ο θόρυβος (o thóryvos);n;gürültü
+833;η μυρωδιά (i myrodiá);n;koku
+834;η γεύση (i géfsi);n;tat
+835;το σχήμα (to schíma);n;biçim, şekil
+836;το μέγεθος (to mégethos);n;boyut
+837;το βάρος (to város);n;ağırlık
+838;το μήκος (to míkos);n;uzunluk
+839;το μέτρο (to métro);n;metre
+840;το κιλό (to kiló);n;kilo
+841;το λίτρο (to lítro);n;litre
+842;το ποσοστό (to posostó);n;yüzde
+843;η λίστα (i lísta);n;liste
+844;το παράδειγμα (to parádeigma);n;örnek
+845;ο κανόνας (o kanónas);n;kural
+846;η επιλογή (i epilogí);n;seçenek
+847;η απόφαση (i apófasi);n;karar
+848;το σχέδιο (to schédio);n;plan
+849;ο στόχος (o stóchos);n;amaç, hedef
+850;το αποτέλεσμα (to apotélesma);n;sonuç
+851;η επιτυχία (i epitychía);n;başarı
+852;η εμπειρία (i empeiría);n;deneyim
+853;η πληροφορία (i pliroforía);n;bilgi
+854;η αντίδραση (i antídrasi);n;cevap, tepki
+855;η βοήθεια (i voítheia);n;yardım
+856;ο κίνδυνος (o kíndynos);n;tehlike
+857;η ασφάλεια (i asfáleia);n;güvenlik
+858;η ποιότητα (i poiótita);n;kalite
+859;η ποσότητα (i posótita);n;miktar
+860;η διαφορά (i diaforá);n;fark
+861;η σχέση (i schési);n;ilişki
+862;η ανάγκη (i anánki);n;ihtiyaç
+863;το συναίσθημα (to synaísthima);n;duygu
+864;η σκέψη (i sképsi);n;düşünce
+865;η ανάμνηση (i anámnisi);n;anı, hatıra
+866;το μέλλον (to méllon);n;gelecek
+867;το παρελθόν (to parelthón);n;geçmiş
+868;το παρόν (to parón);n;şimdiki zaman, an
+869;η στιγμή (i stigmí);n;an
+870;το γεγονός (to gegonós);n;olay
+871;η κατάσταση (i katástasi);n;durum
+872;το είδος (to eídos);n;tür, çeşit
+873;το επίπεδο (to epípedo);n;seviye
+874;το βήμα (to víma);n;adım
+875;η είσοδος (i eísodos);n;giriş
+876;η έξοδος (i éxodos);n;çıkış
+877;η ουρά (i ourá);n;sıra, kuyruk
+878;η άδεια (i ádeia);n;izin
+879;η πληρωμή (i pliromí);n;ödeme
+880;το τιμολόγιο (to timológio);n;fatura
+881;η έκπτωση (i ékptosi);n;indirim
+882;το προϊόν (to proïón);n;ürün
+883;η υπηρεσία (i ypiresía);n;hizmet
+884;η διαφήμιση (i diafímisi);n;reklam
+885;συμμετέχω (symmetécho);v;katılmak
+886;συμφωνώ (symfonó);v;katılıyorum, hemfikir olmak
+887;αρνούμαι (arnoúmai);v;reddetmek
+888;δέχομαι (déchomai);v;kabul etmek
+889;υπόσχομαι (ypóschomai);v;söz vermek
+890;παντρεύομαι (pantrévomai);v;evlenmek
+891;χωρίζω (chorízo);v;boşanmak / ayırmak
+892;μετακομίζω (metakomízo);v;taşınmak
+893;αναπτύσσω (anaptýsso);v;geliştirmek
+894;αυξάνω (afxáno);v;artırmak
+895;μειώνω (meióno);v;azaltmak
+896;συγκρίνω (synkríno);v;karşılaştırmak
+897;περιγράφω (perigráfo);v;tarif etmek, betimlemek
+898;προτείνω (proteíno);v;önermek
+899;συστήνω (systíno);v;tavsiye etmek
+900;συζητάω (syzitáo);v;tartışmak
+901;μαλώνω (malóno);v;kavga etmek
+902;παραπονιέμαι (paraponiémai);v;şikayet etmek
+903;παράγω (parágo);v;üretmek
+904;οργανώνω (organóno);v;organize etmek
+905;διαχειρίζομαι (diacheirízomai);v;yönetmek
+906;ιδρύω (idrýo);v;kurmak
+907;υποστηρίζω (ypostirízo);v;desteklemek
+908;δένω (déno);v;bağlamak
+909;μοιράζομαι (moirázomai);v;paylaşmak
+910;αποταμιεύω (apotamiévo);v;biriktirmek, tasarruf etmek
+911;ξοδεύω (xodévo);v;harcamak
+912;δανείζω (daneízo);v;ödünç vermek
+913;πιάνω (piáno);v;yakalamak
+914;αγκαλιάζω (ankaliázo);v;sarılmak
+915;φιλάω (filáo);v;öpmek
+916;χτυπάω (chtypáo);v;vurmak
+917;σκάβω (skávo);v;kazmak
+918;σπέρνω (spérno);v;ekmek (tohum)
+919;μαζεύω (mazévo);v;toplamak
+920;γεμίζω (gemízo);v;doldurmak
+921;αδειάζω (adeiázo);v;boşaltmak
+922;ζεσταίνω (zestaíno);v;ısıtmak
+923;κουνάω (kounáo);v;sallamak
+924;κρεμάω (kremáo);v;asmak
+925;φωνάζω (fonázo);v;bağırmak
+926;ψιθυρίζω (psithyrízo);v;fısıldamak
+927;μυρίζω (myrízo);v;koklamak
+928;αναπνέω (anapnéo);v;nefes almak
+929;ιδρώνω (idróno);v;terlemek
+930;πονάω (ponáo);v;acıtmak, ağrımak
+931;γίνομαι καλά (gínomai kalá);v;iyileşmek
+932;προσεύχομαι (proséfchomai);v;dua etmek
+933;γιορτάζω (giortázo);v;kutlamak
+934;συγχαίρω (syncháiro);v;tebrik etmek
+935;διασκεδάζω (diaskedázo);v;eğlenmek
+936;βαριέμαι (variémai);v;sıkılmak
+937;εκπλήσσομαι (ekplíssomai);v;şaşırmak
+938;ενδιαφέρομαι (endiaféromai);v;ilgilenmek
+939;φροντίζω (frontízo);v;bakmak (birine)
+940;τυπώνω (typóno);v;yazdırmak
+941;κατεβάζω (katevázo);v;indirmek (dosya)
+942;ανεβάζω (anevázo);v;yüklemek (dosya)
+943;αποθηκεύω (apothikévo);v;kaydetmek
+944;διαγράφω (diagráfo);v;silmek
+945;κάνω κλικ (káno klik);v;tıklamak
+946;δυστυχώς (dystychós);adv;maalesef
+947;βέβαια (vévaia);adv;elbette
+948;πραγματικά (pragmatiká);adv;gerçekten
+949;σχεδόν (schedón);adv;neredeyse
+950;ειδικά (eidiká);adv;özellikle
+951;συνήθως (syníthos);adv;genellikle
+952;στην πραγματικότητα (stin pragmatikótita);adv;aslında
+953;επιτέλους (epitélous);adv;sonunda
+954;ξαφνικά (xafniká);adv;aniden
+955;απολύτως (apolýtos);adv;kesinlikle
+956;πιθανώς (pithanós);adv;muhtemelen
+957;αρκετά (arketá);adv;yeterince
+958;υπερβολικά (ypervoliká);adv;fazla, çok fazla
+959;παντού (pantoú);adv;her yerde
+960;πουθενά (pouthená);adv;hiçbir yerde
+961;κάπου (kápou);adv;bir yerde
+962;έτσι (étsi);adv;böyle, öyle
+963;περίπου (perípou);adv;yaklaşık
+964;ακριβώς (akrivós);adv;tam olarak
+965;βιαστικά (viastiká);adv;hızla
+966;προσεκτικά (prosektiká);adv;dikkatlice
+967;προηγουμένως (proigouménos);adv;önceden
+968;στο μεταξύ (sto metaxý);adv;bu arada
+969;επιπλέον (epipléon);adv;ayrıca, üstelik
+970;γι' αυτό (gi' aftó);adv;bu yüzden
+971;ωστόσο (ostóso);adv;yine de
+972;ικανοποιημένος (ikanopoiiménos);adj;memnun
+973;παντρεμένος (pantreménos);adj;evli
+974;νεκρός (nekrós);adj;ölü
+975;ζωντανός (zontanós);adj;canlı
+976;ήρεμος (íremos);adj;sakin
+977;νευρικός (nevrikós);adj;gergin
+978;ζηλιάρης (ziliáris);adj;kıskanç
+979;ντροπαλός (ntropalós);adj;utangaç
+980;αστείος (asteíos);adj;komik
+981;σοβαρός (sovarós);adj;ciddi
+982;μοντέρνος (montérnos);adj;modern
+983;αρχαίος (archaíos);adj;antik, eski çağ
+984;βαθύς (vathýs);adj;derin
+985;στρογγυλός (strongylós);adj;yuvarlak
+986;επίπεδος (epípedos);adj;düz
+987;κοφτερός (kofterós);adj;keskin
+988;τυφλός (tyflós);adj;kör
+989;κουφός (koufós);adj;sağır
+990;διεθνής (diethnís);adj;uluslararası
+991;εθνικός (ethnikós);adj;ulusal
+992;καθημερινός (kathimerinós);adj;günlük
+993;εβδομαδιαίος (evdomadiaíos);adj;haftalık
+994;τρέχων (tréchon);adj;mevcut, şu anki
+995;προηγούμενος (proigoúmenos);adj;eski, önceki
+996;πιθανός (pithanós);adj;olası
+997;σαφής (safís);adj;açık, net

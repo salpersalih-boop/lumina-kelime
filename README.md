@@ -64,8 +64,12 @@ Kaynak Excel: `Lumına Kelime/Lumina_Kelimeler (3).xlsx` (depoda yok, yedeğini 
 | french.csv, spanish.csv, norwegian.csv, futbol.csv | Sıra; Kelime; Tür; Türkçe |
 | swedish.csv | Sıra; Fransızca; İsveççe; Türkçe |
 | italian.csv, portuguese.csv, russian.csv, dutch.csv | Sıra; Kelime; Tür; Türkçe |
+| polish.csv, greek.csv, japanese.csv, korean.csv, arabic.csv | Sıra; Kelime; Tür; Türkçe |
+| chinese.csv, hindi.csv, ukrainian.csv, danish.csv, indonesian.csv | Sıra; Kelime; Tür; Türkçe |
 
 İtalyanca, Portekizce (Avrupa Portekizcesi), Rusça ve Felemenkçe listeleri ~1.000 temel kelimeden oluşur; isimler artikelleriyle yazılmıştır (il/la, o/a, de/het). Excel'de karşılığı yoktur, doğrudan bu CSV'ler düzenlenir.
+
+Lehçe, Yunanca, Japonca, Korece ve Arapça listeleri de ~1.000 temel kelimedir. Yunanca isimler artikelleriyle yazılır; Yunanca, Japonca, Korece ve Arapça kelimelerin yanında parantez içinde Latin harfli okunuşu bulunur, örn. `水 (mizu)`. Çince (pinyin) ve Hintçe de aynı şekilde okunuşludur; Danca isimler en/et artikeliyle yazılır. Sesli okumada parantez içi okunmaz.
 
 ## Dil ekleme / sıralama
 Tüm diller `js/app/data.js` → `LANGUAGES` listesinde tanımlıdır; dil seçim ekranındaki kartlar, başlıklar, bayraklar, sesli okuma dili ve grup sayıları buradan üretilir. Listedeki sıra ekrandaki sıradır.

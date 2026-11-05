@@ -1,0 +1,992 @@
+Sıra;Kelime;Tür;Türkçe Anlamı
+1;我 (wǒ);pron;ben
+2;你 (nǐ);pron;sen
+3;他 (tā);pron;o (erkek)
+4;她 (tā);pron;o (kadın)
+5;我们 (wǒmen);pron;biz
+6;你们 (nǐmen);pron;siz
+7;他们 (tāmen);pron;onlar
+8;这个 (zhège);pron;bu
+9;那个 (nàge);pron;şu, o
+10;谁 (shéi);pron;kim
+11;什么 (shénme);pron;ne
+12;哪里 (nǎlǐ);adv;nerede
+13;什么时候 (shénme shíhou);adv;ne zaman
+14;为什么 (wèishénme);adv;neden, niçin
+15;怎么 (zěnme);adv;nasıl
+16;哪个 (nǎge);pron;hangi
+17;多少 (duōshao);adv;ne kadar
+18;是 (shì);int;evet / olmak
+19;不 (bù);int;hayır
+20;没有 (méiyǒu);adv;değil
+21;和 (hé);conj;ve
+22;或者 (huòzhě);conj;veya, ya da
+23;但是 (dànshì);conj;ama, fakat
+24;因为 (yīnwèi);conj;çünkü
+25;如果 (rúguǒ);conj;eğer
+26;跟 (gēn);prep;ile, birlikte
+27;无 (wú);prep;-sız, olmadan
+28;为了 (wèile);prep;için
+29;在 (zài);prep;-de, içinde
+30;上 (shàng);prep;üzerinde
+31;下 (xià);prep;altında
+32;从 (cóng);prep;-den, -dan
+33;向 (xiàng);prep;-e doğru, -e
+34;之间 (zhījiān);prep;arasında
+35;以前 (yǐqián);prep;önce / eski, önceki
+36;以后 (yǐhòu);prep;sonra
+37;旁边 (pángbiān);prep;yanında
+38;反对 (fǎnduì);prep;karşı
+39;关于 (guānyú);prep;hakkında
+40;这里 (zhèlǐ);adv;burada
+41;那里 (nàlǐ);adv;orada
+42;现在 (xiànzài);adv;şimdi / şimdiki zaman, an
+43;今天 (jīntiān);adv;bugün
+44;明天 (míngtiān);adv;yarın
+45;昨天 (zuótiān);adv;dün
+46;总是 (zǒngshì);adv;her zaman
+47;从不 (cóngbù);adv;asla, hiç
+48;有时 (yǒushí);adv;bazen
+49;经常 (jīngcháng);adv;sık sık
+50;很 (hěn);adv;çok
+51;一点 (yīdiǎn);adv;biraz
+52;更 (gèng);adv;daha
+53;更少 (gèng shǎo);adv;daha az
+54;也 (yě);adv;de, da, ayrıca
+55;只 (zhǐ);adv;sadece
+56;已经 (yǐjīng);adv;zaten, çoktan
+57;还 (hái);adv;hâlâ, henüz
+58;马上 (mǎshàng);adv;hemen
+59;也许 (yěxǔ);adv;belki
+60;好 (hǎo);adv;iyi (şekilde) / iyi
+61;不好 (bù hǎo);adv;kötü (şekilde)
+62;一起 (yīqǐ);adv;birlikte
+63;早 (zǎo);adv;erken
+64;晚 (wǎn);adv;geç
+65;再 (zài);adv;yine, tekrar
+66;快 (kuài);adv;çabuk, hızlıca / hızlı
+67;慢慢地 (mànmàn de);adv;yavaşça
+68;很快 (hěn kuài);adv;yakında
+69;远 (yuǎn);adv;uzakta / uzak
+70;近 (jìn);adv;yakında (mesafe) / yakın
+71;里面 (lǐmiàn);adv;içeride
+72;外面 (wàimiàn);adv;dışarıda
+73;上面 (shàngmiàn);adv;yukarıda
+74;下面 (xiàmiàn);adv;aşağıda
+75;前面 (qiánmiàn);adv;ileride, önde
+76;后面 (hòumiàn);adv;geride, arkada
+77;一切 (yīqiè);pron;her şey
+78;什么都没有 (shénme dōu méiyǒu);pron;hiçbir şey
+79;某事 (mǒushì);pron;bir şey
+80;大家 (dàjiā);pron;herkes
+81;没有人 (méiyǒu rén);pron;kimse, hiç kimse
+82;有人 (yǒurén);pron;biri, birisi
+83;每 (měi);pron;her
+84;全部 (quánbù);pron;bütün, tüm
+85;别的 (biéde);pron;başka
+86;一样 (yīyàng);pron;aynı
+87;几个 (jǐ ge);pron;birkaç
+88;很多 (hěn duō);pron;çok (sayıca)
+89;很少 (hěn shǎo);pron;az (sayıca)
+90;你好 (nǐ hǎo);int;merhaba
+91;早上好 (zǎoshang hǎo);int;günaydın
+92;晚上好 (wǎnshang hǎo);int;iyi akşamlar
+93;晚安 (wǎn'ān);int;iyi geceler
+94;再见 (zàijiàn);int;hoşça kal
+95;谢谢 (xièxie);int;teşekkürler
+96;请 (qǐng);int;lütfen
+97;对不起 (duìbuqǐ);int;özür dilerim
+98;好的 (hǎo de);int;tamam
+99;欢迎 (huānyíng);int;hoş geldiniz
+100;有 (yǒu);v;sahip olmak
+101;做 (zuò);v;yapmak
+102;去 (qù);v;gitmek
+103;来 (lái);v;gelmek
+104;说 (shuō);v;söylemek, demek
+105;讲 (jiǎng);v;konuşmak
+106;看见 (kànjiàn);v;görmek
+107;看 (kàn);v;bakmak
+108;听见 (tīngjiàn);v;duymak
+109;听 (tīng);v;dinlemek
+110;知道 (zhīdào);v;bilmek
+111;认识 (rènshi);v;tanımak
+112;想 (xiǎng);v;düşünmek
+113;相信 (xiāngxìn);v;inanmak
+114;要 (yào);v;istemek
+115;能 (néng);v;-ebilmek, yapabilmek
+116;必须 (bìxū);v;-meli, zorunda olmak
+117;给 (gěi);v;vermek
+118;拿 (ná);v;almak
+119;放 (fàng);v;koymak
+120;找到 (zhǎodào);v;bulmak
+121;找 (zhǎo);v;aramak
+122;丢 (diū);v;kaybetmek
+123;赢 (yíng);v;kazanmak (yarış)
+124;赚 (zhuàn);v;kazanmak (para)
+125;工作 (gōngzuò);v;çalışmak (iş) / iş
+126;学习 (xuéxí);v;ders çalışmak
+127;学 (xué);v;öğrenmek
+128;教 (jiāo);v;öğretmek
+129;读 (dú);v;okumak
+130;写 (xiě);v;yazmak
+131;懂 (dǒng);v;anlamak
+132;问 (wèn);v;sormak
+133;回答 (huídá);v;cevap vermek
+134;帮助 (bāngzhù);v;yardım etmek / yardım
+135;等 (děng);v;beklemek
+136;留 (liú);v;kalmak
+137;生活 (shēnghuó);v;yaşamak
+138;住 (zhù);v;oturmak, ikamet etmek
+139;死 (sǐ);v;ölmek
+140;出生 (chūshēng);v;doğmak
+141;爱 (ài);v;sevmek
+142;喜欢 (xǐhuan);v;hoşlanmak
+143;恨 (hèn);v;nefret etmek
+144;吃 (chī);v;yemek
+145;喝 (hē);v;içmek
+146;睡觉 (shuìjiào);v;uyumak
+147;醒 (xǐng);v;uyanmak
+148;起床 (qǐchuáng);v;kalkmak
+149;坐 (zuò);v;oturmak (sandalye)
+150;站 (zhàn);v;ayakta durmak
+151;走路 (zǒulù);v;yürümek
+152;跑 (pǎo);v;koşmak
+153;游泳 (yóuyǒng);v;yüzmek
+154;飞 (fēi);v;uçmak
+155;开车 (kāichē);v;sürmek (araç)
+156;旅行 (lǚxíng);v;seyahat etmek / yolculuk, seyahat
+157;到达 (dàodá);v;varmak
+158;离开 (líkāi);v;ayrılmak, gitmek
+159;进 (jìn);v;girmek
+160;出 (chū);v;çıkmak
+161;回来 (huílái);v;dönmek, geri gelmek
+162;打开 (dǎkāi);v;açmak
+163;关 (guān);v;kapatmak
+164;开始 (kāishǐ);v;başlamak
+165;完成 (wánchéng);v;bitirmek
+166;停 (tíng);v;durmak
+167;继续 (jìxù);v;devam etmek
+168;改变 (gǎibiàn);v;değiştirmek
+169;用 (yòng);v;kullanmak
+170;买 (mǎi);v;satın almak
+171;卖 (mài);v;satmak
+172;付钱 (fùqián);v;ödemek
+173;花费 (huāfèi);v;maliyeti olmak, tutmak
+174;带来 (dàilái);v;getirmek
+175;寄 (jì);v;göndermek
+176;收到 (shōudào);v;almak (teslim)
+177;拿着 (názhe);v;tutmak
+178;搬 (bān);v;taşımak
+179;扔 (rēng);v;atmak
+180;掉 (diào);v;düşmek
+181;打破 (dǎpò);v;kırmak
+182;建 (jiàn);v;yapmak, inşa etmek
+183;创造 (chuàngzào);v;yaratmak
+184;画 (huà);v;çizmek / resim, tablo
+185;玩 (wán);v;oynamak
+186;唱歌 (chànggē);v;şarkı söylemek
+187;跳舞 (tiàowǔ);v;dans etmek
+188;笑 (xiào);v;gülmek
+189;哭 (kū);v;ağlamak
+190;微笑 (wēixiào);v;gülümsemek
+191;感觉 (gǎnjué);v;hissetmek
+192;摸 (mō);v;dokunmak
+193;展示 (zhǎnshì);v;göstermek
+194;藏 (cáng);v;saklamak
+195;记得 (jìde);v;hatırlamak
+196;忘记 (wàngjì);v;unutmak
+197;试 (shì);v;denemek
+198;选择 (xuǎnzé);v;seçmek / seçenek
+199;决定 (juédìng);v;karar vermek / karar
+200;计划 (jìhuà);v;planlamak / plan
+201;准备 (zhǔnbèi);v;hazırlamak
+202;做饭 (zuòfàn);v;pişirmek
+203;洗 (xǐ);v;yıkamak
+204;打扫 (dǎsǎo);v;temizlemek
+205;穿 (chuān);v;giymek
+206;穿衣服 (chuān yīfu);v;giyinmek
+207;叫醒 (jiàoxǐng);v;uyandırmak
+208;打电话 (dǎ diànhuà);v;aramak (telefon)
+209;见面 (jiànmiàn);v;buluşmak
+210;拜访 (bàifǎng);v;ziyaret etmek
+211;邀请 (yāoqǐng);v;davet etmek
+212;感谢 (gǎnxiè);v;teşekkür etmek
+213;原谅 (yuánliàng);v;affetmek
+214;允许 (yǔnxǔ);v;izin vermek
+215;禁止 (jìnzhǐ);v;yasaklamak
+216;跟随 (gēnsuí);v;takip etmek
+217;领导 (lǐngdǎo);v;yol göstermek, yönetmek
+218;获得 (huòdé);v;kazanmak, elde etmek
+219;发生 (fāshēng);v;olmak, meydana gelmek
+220;好像 (hǎoxiàng);v;görünmek
+221;变成 (biànchéng);v;olmak, haline gelmek
+222;长大 (zhǎngdà);v;büyümek
+223;保护 (bǎohù);v;korumak
+224;救 (jiù);v;kurtarmak
+225;杀 (shā);v;öldürmek
+226;战斗 (zhàndòu);v;savaşmak
+227;打败 (dǎbài);v;kazanmak, galip gelmek
+228;需要 (xūyào);v;ihtiyaç duymak / ihtiyaç
+229;更喜欢 (gèng xǐhuan);v;tercih etmek
+230;希望 (xīwàng);v;ummak / umut
+231;害怕 (hàipà);v;korkmak
+232;担心 (dānxīn);v;endişelenmek
+233;休息 (xiūxi);v;dinlenmek
+234;抽烟 (chōuyān);v;sigara içmek
+235;租 (zū);v;kiralamak
+236;预订 (yùdìng);v;rezervasyon yapmak
+237;翻译 (fānyì);v;çevirmek (dil)
+238;解释 (jiěshì);v;açıklamak
+239;重复 (chóngfù);v;tekrarlamak
+240;数 (shǔ);v;saymak
+241;量 (liáng);v;ölçmek
+242;检查 (jiǎnchá);v;kontrol etmek
+243;修理 (xiūlǐ);v;düzeltmek, tamir etmek
+244;切 (qiē);v;kesmek
+245;推 (tuī);v;itmek
+246;拉 (lā);v;çekmek
+247;举起 (jǔqǐ);v;kaldırmak
+248;转 (zhuǎn);v;dönmek, çevirmek
+249;经过 (jīngguò);v;geçmek
+250;穿过 (chuānguò);v;geçmek, karşıya geçmek
+251;爬 (pá);v;tırmanmak
+252;下去 (xiàqù);v;inmek
+253;人 (rén);n;insan, kişi
+254;人们 (rénmen);n;insanlar
+255;男人 (nánrén);n;adam, erkek
+256;女人 (nǚrén);n;kadın
+257;孩子 (háizi);n;çocuk
+258;男孩 (nánhái);n;erkek çocuk
+259;女孩 (nǚhái);n;kız çocuk
+260;婴儿 (yīng'ér);n;bebek
+261;家庭 (jiātíng);n;aile
+262;母亲 (mǔqīn);n;anne
+263;父亲 (fùqīn);n;baba
+264;父母 (fùmǔ);n;anne baba, ebeveynler
+265;儿子 (érzi);n;oğul
+266;女儿 (nǚ'ér);n;kız evlat
+267;兄弟 (xiōngdì);n;erkek kardeş
+268;姐妹 (jiěmèi);n;kız kardeş
+269;祖父 (zǔfù);n;büyükbaba
+270;祖母 (zǔmǔ);n;büyükanne
+271;叔叔 (shūshu);n;amca, dayı
+272;阿姨 (āyí);n;teyze, hala
+273;表兄弟 (biǎoxiōngdì);n;kuzen
+274;丈夫 (zhàngfu);n;koca, eş
+275;妻子 (qīzi);n;karı, eş
+276;朋友 (péngyou);n;arkadaş
+277;邻居 (línjū);n;komşu
+278;客人 (kèrén);n;misafir
+279;名字 (míngzi);n;isim, ad
+280;姓 (xìng);n;soyadı
+281;年龄 (niánlíng);n;yaş
+282;生命 (shēngmìng);n;hayat
+283;死亡 (sǐwáng);n;ölüm
+284;爱情 (àiqíng);n;aşk, sevgi
+285;身体 (shēntǐ);n;vücut
+286;头 (tóu);n;baş, kafa
+287;头发 (tóufa);n;saç
+288;脸 (liǎn);n;yüz
+289;眼睛 (yǎnjing);n;göz
+290;耳朵 (ěrduo);n;kulak
+291;鼻子 (bízi);n;burun
+292;嘴 (zuǐ);n;ağız
+293;牙 (yá);n;diş
+294;舌头 (shétou);n;dil (organ)
+295;脖子 (bózi);n;boyun
+296;肩膀 (jiānbǎng);n;omuz
+297;胳膊 (gēbo);n;kol
+298;手 (shǒu);n;el
+299;手指 (shǒuzhǐ);n;parmak
+300;胸 (xiōng);n;göğüs
+301;背 (bèi);n;sırt
+302;肚子 (dùzi);n;karın, mide
+303;腿 (tuǐ);n;bacak
+304;脚 (jiǎo);n;ayak
+305;膝盖 (xīgài);n;diz
+306;心脏 (xīnzàng);n;kalp
+307;血 (xuè);n;kan
+308;皮肤 (pífū);n;deri, cilt
+309;骨头 (gǔtou);n;kemik
+310;健康 (jiànkāng);n;sağlık / sağlıklı
+311;疾病 (jíbìng);n;hastalık
+312;疼痛 (téngtòng);n;ağrı, acı
+313;医生 (yīshēng);n;doktor
+314;护士 (hùshi);n;hemşire
+315;医院 (yīyuàn);n;hastane
+316;药 (yào);n;ilaç
+317;药店 (yàodiàn);n;eczane
+318;房子 (fángzi);n;ev
+319;公寓 (gōngyù);n;daire
+320;房间 (fángjiān);n;oda
+321;厨房 (chúfáng);n;mutfak
+322;浴室 (yùshì);n;banyo
+323;卧室 (wòshì);n;yatak odası
+324;客厅 (kètīng);n;oturma odası
+325;门 (mén);n;kapı
+326;窗户 (chuānghu);n;pencere
+327;墙 (qiáng);n;duvar
+328;地板 (dìbǎn);n;zemin, yer
+329;天花板 (tiānhuābǎn);n;tavan
+330;楼梯 (lóutī);n;merdiven
+331;花园 (huāyuán);n;bahçe
+332;屋顶 (wūdǐng);n;çatı
+333;钥匙 (yàoshi);n;anahtar
+334;桌子 (zhuōzi);n;masa
+335;椅子 (yǐzi);n;sandalye
+336;床 (chuáng);n;yatak
+337;沙发 (shāfā);n;kanepe
+338;衣柜 (yīguì);n;dolap
+339;镜子 (jìngzi);n;ayna
+340;灯 (dēng);n;lamba
+341;冰箱 (bīngxiāng);n;buzdolabı
+342;烤箱 (kǎoxiāng);n;fırın
+343;电视 (diànshì);n;televizyon
+344;电脑 (diànnǎo);n;bilgisayar
+345;电话 (diànhuà);n;telefon
+346;钟 (zhōng);n;saat (alet)
+347;地毯 (dìtǎn);n;halı
+348;窗帘 (chuānglián);n;perde
+349;毛巾 (máojīn);n;havlu
+350;肥皂 (féizào);n;sabun
+351;牙刷 (yáshuā);n;diş fırçası
+352;包 (bāo);n;çanta
+353;盒子 (hézi);n;kutu
+354;瓶子 (píngzi);n;şişe
+355;杯子 (bēizi);n;bardak
+356;茶杯 (chábēi);n;fincan
+357;盘子 (pánzi);n;tabak
+358;叉子 (chāzi);n;çatal
+359;刀 (dāo);n;bıçak
+360;勺子 (sháozi);n;kaşık
+361;锅 (guō);n;tencere
+362;饭 (fàn);n;yemek (öğün)
+363;食物 (shíwù);n;yiyecek
+364;早饭 (zǎofàn);n;kahvaltı
+365;午饭 (wǔfàn);n;öğle yemeği
+366;晚饭 (wǎnfàn);n;akşam yemeği
+367;水 (shuǐ);n;su
+368;面包 (miànbāo);n;ekmek
+369;牛奶 (niúnǎi);n;süt
+370;咖啡 (kāfēi);n;kahve
+371;茶 (chá);n;çay
+372;果汁 (guǒzhī);n;meyve suyu
+373;啤酒 (píjiǔ);n;bira
+374;葡萄酒 (pútáojiǔ);n;şarap
+375;肉 (ròu);n;et
+376;鸡肉 (jīròu);n;tavuk
+377;鱼 (yú);n;balık
+378;鸡蛋 (jīdàn);n;yumurta
+379;奶酪 (nǎilào);n;peynir
+380;黄油 (huángyóu);n;tereyağı
+381;米饭 (mǐfàn);n;pirinç
+382;意大利面 (yìdàlì miàn);n;makarna
+383;土豆 (tǔdòu);n;patates
+384;蔬菜 (shūcài);n;sebze
+385;水果 (shuǐguǒ);n;meyve
+386;苹果 (píngguǒ);n;elma
+387;橙子 (chéngzi);n;portakal
+388;香蕉 (xiāngjiāo);n;muz
+389;葡萄 (pútao);n;üzüm
+390;草莓 (cǎoméi);n;çilek
+391;柠檬 (níngméng);n;limon
+392;西红柿 (xīhóngshì);n;domates
+393;洋葱 (yángcōng);n;soğan
+394;大蒜 (dàsuàn);n;sarımsak
+395;胡萝卜 (húluóbo);n;havuç
+396;黄瓜 (huángguā);n;salatalık
+397;沙拉 (shālā);n;salata
+398;汤 (tāng);n;çorba
+399;盐 (yán);n;tuz
+400;糖 (táng);n;şeker
+401;胡椒 (hújiāo);n;biber
+402;油 (yóu);n;yağ (sıvı)
+403;蜂蜜 (fēngmì);n;bal
+404;蛋糕 (dàngāo);n;pasta, kek
+405;冰淇淋 (bīngqílín);n;dondurma
+406;巧克力 (qiǎokèlì);n;çikolata
+407;饭馆 (fànguǎn);n;restoran
+408;咖啡馆 (kāfēiguǎn);n;kafe
+409;菜单 (càidān);n;menü
+410;服务员 (fúwùyuán);n;garson
+411;账单 (zhàngdān);n;hesap (restoran)
+412;小费 (xiǎofèi);n;bahşiş
+413;饥饿 (jī'è);n;açlık
+414;口渴 (kǒukě);n;susuzluk
+415;城市 (chéngshì);n;şehir
+416;村子 (cūnzi);n;köy
+417;国家 (guójiā);n;ülke / ulusal
+418;街 (jiē);n;sokak
+419;广场 (guǎngchǎng);n;meydan
+420;路 (lù);n;yol
+421;桥 (qiáo);n;köprü
+422;大楼 (dàlóu);n;bina
+423;商店 (shāngdiàn);n;dükkan, mağaza
+424;超市 (chāoshì);n;market
+425;市场 (shìchǎng);n;pazar, çarşı
+426;银行 (yínháng);n;banka
+427;邮局 (yóujú);n;postane
+428;学校 (xuéxiào);n;okul
+429;大学 (dàxué);n;üniversite
+430;图书馆 (túshūguǎn);n;kütüphane
+431;博物馆 (bówùguǎn);n;müze
+432;教堂 (jiàotáng);n;kilise
+433;清真寺 (qīngzhēnsì);n;cami
+434;公园 (gōngyuán);n;park
+435;酒店 (jiǔdiàn);n;otel
+436;机场 (jīchǎng);n;havaalanı
+437;车站 (chēzhàn);n;istasyon
+438;公交站 (gōngjiāozhàn);n;durak
+439;港口 (gǎngkǒu);n;liman
+440;电影院 (diànyǐngyuàn);n;sinema
+441;剧院 (jùyuàn);n;tiyatro
+442;警察 (jǐngchá);n;polis / polis memuru
+443;汽车 (qìchē);n;araba
+444;公共汽车 (gōnggòng qìchē);n;otobüs
+445;火车 (huǒchē);n;tren
+446;飞机 (fēijī);n;uçak
+447;船 (chuán);n;gemi
+448;自行车 (zìxíngchē);n;bisiklet
+449;出租车 (chūzūchē);n;taksi
+450;地铁 (dìtiě);n;metro
+451;票 (piào);n;bilet
+452;行李箱 (xínglixiāng);n;bavul
+453;护照 (hùzhào);n;pasaport
+454;地图 (dìtú);n;harita
+455;假期 (jiàqī);n;tatil
+456;游客 (yóukè);n;turist
+457;交通 (jiāotōng);n;trafik
+458;事故 (shìgù);n;kaza
+459;右 (yòu);n;sağ
+460;左 (zuǒ);n;sol
+461;北 (běi);n;kuzey
+462;南 (nán);n;güney
+463;东 (dōng);n;doğu
+464;西 (xī);n;batı
+465;角落 (jiǎoluò);n;köşe
+466;中心 (zhōngxīn);n;merkez
+467;地方 (dìfang);n;yer, mekan
+468;地址 (dìzhǐ);n;adres
+469;时间 (shíjiān);n;zaman
+470;小时 (xiǎoshí);n;saat (süre)
+471;分钟 (fēnzhōng);n;dakika
+472;秒 (miǎo);n;saniye
+473;天 (tiān);n;gün
+474;星期 (xīngqī);n;hafta
+475;月 (yuè);n;ay (takvim)
+476;年 (nián);n;yıl
+477;世纪 (shìjì);n;yüzyıl
+478;早上 (zǎoshang);n;sabah
+479;中午 (zhōngwǔ);n;öğle
+480;下午 (xiàwǔ);n;öğleden sonra
+481;晚上 (wǎnshang);n;akşam
+482;夜 (yè);n;gece
+483;周末 (zhōumò);n;hafta sonu
+484;星期一 (xīngqīyī);n;pazartesi
+485;星期二 (xīngqī'èr);n;salı
+486;星期三 (xīngqīsān);n;çarşamba
+487;星期四 (xīngqīsì);n;perşembe
+488;星期五 (xīngqīwǔ);n;cuma
+489;星期六 (xīngqīliù);n;cumartesi
+490;星期天 (xīngqītiān);n;pazar (gün)
+491;一月 (yīyuè);n;ocak
+492;二月 (èryuè);n;şubat
+493;三月 (sānyuè);n;mart
+494;四月 (sìyuè);n;nisan
+495;五月 (wǔyuè);n;mayıs
+496;六月 (liùyuè);n;haziran
+497;七月 (qīyuè);n;temmuz
+498;八月 (bāyuè);n;ağustos
+499;九月 (jiǔyuè);n;eylül
+500;十月 (shíyuè);n;ekim
+501;十一月 (shíyīyuè);n;kasım
+502;十二月 (shí'èryuè);n;aralık
+503;季节 (jìjié);n;mevsim
+504;春天 (chūntiān);n;ilkbahar
+505;夏天 (xiàtiān);n;yaz
+506;秋天 (qiūtiān);n;sonbahar
+507;冬天 (dōngtiān);n;kış
+508;天气 (tiānqì);n;hava (durumu)
+509;太阳 (tàiyáng);n;güneş
+510;月亮 (yuèliang);n;ay (gökyüzü)
+511;星星 (xīngxing);n;yıldız
+512;天空 (tiānkōng);n;gökyüzü
+513;云 (yún);n;bulut
+514;雨 (yǔ);n;yağmur
+515;雪 (xuě);n;kar
+516;风 (fēng);n;rüzgar
+517;暴风雨 (bàofēngyǔ);n;fırtına
+518;温度 (wēndù);n;sıcaklık
+519;空气 (kōngqì);n;hava (soluduğumuz)
+520;火 (huǒ);n;ateş
+521;土地 (tǔdì);n;toprak, dünya
+522;世界 (shìjiè);n;dünya
+523;自然 (zìrán);n;doğa
+524;海 (hǎi);n;deniz
+525;海洋 (hǎiyáng);n;okyanus
+526;河 (hé);n;nehir
+527;湖 (hú);n;göl
+528;山 (shān);n;dağ
+529;小山 (xiǎoshān);n;tepe
+530;森林 (sēnlín);n;orman
+531;树 (shù);n;ağaç
+532;花 (huā);n;çiçek / harcamak
+533;草 (cǎo);n;çimen
+534;叶子 (yèzi);n;yaprak
+535;石头 (shítou);n;taş
+536;沙子 (shāzi);n;kum
+537;海滩 (hǎitān);n;plaj
+538;岛 (dǎo);n;ada
+539;田地 (tiándì);n;tarla
+540;动物 (dòngwù);n;hayvan
+541;狗 (gǒu);n;köpek
+542;猫 (māo);n;kedi
+543;马 (mǎ);n;at
+544;牛 (niú);n;inek
+545;猪 (zhū);n;domuz
+546;羊 (yáng);n;koyun
+547;鸟 (niǎo);n;kuş
+548;老鼠 (lǎoshǔ);n;fare
+549;兔子 (tùzi);n;tavşan
+550;熊 (xióng);n;ayı
+551;狼 (láng);n;kurt
+552;狮子 (shīzi);n;aslan
+553;蛇 (shé);n;yılan
+554;昆虫 (kūnchóng);n;böcek
+555;蜜蜂 (mìfēng);n;arı
+556;苍蝇 (cāngying);n;sinek
+557;鸭子 (yāzi);n;ördek
+558;狐狸 (húli);n;tilki
+559;猴子 (hóuzi);n;maymun
+560;大象 (dàxiàng);n;fil
+561;蝴蝶 (húdié);n;kelebek
+562;职业 (zhíyè);n;meslek
+563;公司 (gōngsī);n;şirket
+564;办公室 (bàngōngshì);n;ofis
+565;老板 (lǎobǎn);n;patron
+566;同事 (tóngshì);n;meslektaş
+567;会议 (huìyì);n;toplantı
+568;钱 (qián);n;para
+569;价格 (jiàgé);n;fiyat
+570;工资 (gōngzī);n;maaş
+571;税 (shuì);n;vergi
+572;卡 (kǎ);n;kart
+573;老师 (lǎoshī);n;öğretmen
+574;学生 (xuésheng);n;öğrenci
+575;课 (kè);n;ders
+576;教室 (jiàoshì);n;sınıf
+577;考试 (kǎoshì);n;sınav
+578;问题 (wèntí);n;soru / sorun
+579;答案 (dá'àn);n;cevap
+580;书 (shū);n;kitap
+581;笔记本 (bǐjìběn);n;defter
+582;笔 (bǐ);n;kalem
+583;铅笔 (qiānbǐ);n;kurşun kalem
+584;纸 (zhǐ);n;kağıt
+585;页 (yè);n;sayfa
+586;词 (cí);n;kelime
+587;句子 (jùzi);n;cümle
+588;语言 (yǔyán);n;dil (lisan)
+589;字母 (zìmǔ);n;harf
+590;信 (xìn);n;mektup
+591;故事 (gùshi);n;hikaye
+592;历史 (lìshǐ);n;tarih (geçmiş)
+593;日期 (rìqī);n;tarih (gün)
+594;新闻 (xīnwén);n;haber
+595;报纸 (bàozhǐ);n;gazete
+596;杂志 (zázhì);n;dergi
+597;电影 (diànyǐng);n;film
+598;音乐 (yīnyuè);n;müzik
+599;歌 (gē);n;şarkı
+600;游戏 (yóuxì);n;oyun
+601;运动 (yùndòng);n;spor
+602;足球 (zúqiú);n;futbol
+603;球 (qiú);n;top
+604;队 (duì);n;takım
+605;比赛 (bǐsài);n;maç
+606;派对 (pàiduì);n;parti, eğlence
+607;礼物 (lǐwù);n;hediye
+608;生日 (shēngrì);n;doğum günü
+609;照片 (zhàopiàn);n;fotoğraf
+610;艺术 (yìshù);n;sanat
+611;互联网 (hùliánwǎng);n;internet
+612;电子邮件 (diànzǐ yóujiàn);n;e-posta
+613;消息 (xiāoxi);n;mesaj
+614;号码 (hàomǎ);n;numara, sayı
+615;衣服 (yīfu);n;kıyafet, giysi
+616;衬衫 (chènshān);n;gömlek
+617;短袖衫 (duǎnxiù shān);n;tişört
+618;裤子 (kùzi);n;pantolon
+619;裙子 (qúnzi);n;etek
+620;连衣裙 (liányīqún);n;elbise
+621;夹克 (jiākè);n;ceket
+622;鞋 (xié);n;ayakkabı
+623;帽子 (màozi);n;şapka
+624;袜子 (wàzi);n;çorap
+625;眼镜 (yǎnjìng);n;gözlük
+626;钱包 (qiánbāo);n;cüzdan
+627;戒指 (jièzhi);n;yüzük
+628;颜色 (yánsè);n;renk
+629;东西 (dōngxi);n;şey, nesne
+630;块 (kuài);n;parça
+631;部分 (bùfen);n;kısım, bölüm
+632;一半 (yībàn);n;yarım, yarı
+633;结束 (jiéshù);n;son
+634;开头 (kāitóu);n;başlangıç
+635;方法 (fāngfǎ);n;yol, yöntem
+636;原因 (yuányīn);n;neden, sebep
+637;主意 (zhǔyi);n;fikir
+638;真相 (zhēnxiàng);n;gerçek, hakikat
+639;谎言 (huǎngyán);n;yalan
+640;错误 (cuòwù);n;hata
+641;运气 (yùnqi);n;şans
+642;幸福 (xìngfú);n;mutluluk
+643;恐惧 (kǒngjù);n;korku
+644;梦 (mèng);n;rüya, hayal
+645;力量 (lìliang);n;güç, kuvvet
+646;战争 (zhànzhēng);n;savaş
+647;和平 (hépíng);n;barış
+648;政府 (zhèngfǔ);n;devlet, hükümet
+649;法律 (fǎlǜ);n;kanun, yasa
+650;权利 (quánlì);n;hak
+651;自由 (zìyóu);n;özgürlük / serbest, özgür
+652;人民 (rénmín);n;halk
+653;国王 (guówáng);n;kral
+654;神 (shén);n;tanrı
+655;宗教 (zōngjiào);n;din
+656;文化 (wénhuà);n;kültür
+657;科学 (kēxué);n;bilim
+658;传统 (chuántǒng);n;gelenek
+659;坏 (huài);adj;kötü
+660;大 (dà);adj;büyük
+661;小 (xiǎo);adj;küçük
+662;长 (cháng);adj;uzun
+663;短 (duǎn);adj;kısa
+664;高 (gāo);adj;uzun boylu, yüksek
+665;低 (dī);adj;alçak, kısa boylu
+666;宽 (kuān);adj;geniş
+667;窄 (zhǎi);adj;dar
+668;新 (xīn);adj;yeni
+669;旧 (jiù);adj;eski, yaşlı
+670;年轻 (niánqīng);adj;genç
+671;漂亮 (piàoliang);adj;güzel
+672;丑 (chǒu);adj;çirkin
+673;热 (rè);adj;sıcak
+674;冷 (lěng);adj;soğuk
+675;温 (wēn);adj;ılık
+676;凉快 (liángkuai);adj;serin
+677;慢 (màn);adj;yavaş
+678;容易 (róngyì);adj;kolay
+679;难 (nán);adj;zor
+680;重 (zhòng);adj;ağır
+681;轻 (qīng);adj;hafif
+682;满 (mǎn);adj;dolu
+683;空 (kōng);adj;boş
+684;干净 (gānjìng);adj;temiz
+685;脏 (zāng);adj;kirli
+686;有钱 (yǒuqián);adj;zengin
+687;穷 (qióng);adj;fakir
+688;便宜 (piányi);adj;ucuz
+689;贵 (guì);adj;pahalı
+690;高兴 (gāoxìng);adj;mutlu
+691;难过 (nánguò);adj;üzgün
+692;生气 (shēngqì);adj;kızgın
+693;累 (lèi);adj;yorgun
+694;生病 (shēngbìng);adj;hasta
+695;饿 (è);adj;aç
+696;强 (qiáng);adj;güçlü
+697;弱 (ruò);adj;zayıf, güçsüz
+698;胖 (pàng);adj;şişman
+699;瘦 (shòu);adj;ince, zayıf
+700;聪明 (cōngming);adj;akıllı
+701;笨 (bèn);adj;aptal
+702;友好 (yǒuhǎo);adj;nazik
+703;粗鲁 (cūlǔ);adj;kaba
+704;诚实 (chéngshí);adj;dürüst
+705;勇敢 (yǒnggǎn);adj;cesur
+706;懒 (lǎn);adj;tembel
+707;忙 (máng);adj;meşgul
+708;准备好 (zhǔnbèi hǎo);adj;hazır
+709;对 (duì);adj;doğru
+710;错 (cuò);adj;yanlış
+711;真 (zhēn);adj;gerçek
+712;假 (jiǎ);adj;yanlış, sahte
+713;重要 (zhòngyào);adj;önemli
+714;有意思 (yǒu yìsi);adj;ilginç
+715;无聊 (wúliáo);adj;sıkıcı
+716;危险 (wēixiǎn);adj;tehlikeli / tehlike
+717;安全 (ānquán);adj;güvenli / güvenlik
+718;可能 (kěnéng);adj;mümkün / olası
+719;不可能 (bù kěnéng);adj;imkansız
+720;必要 (bìyào);adj;gerekli
+721;正常 (zhèngcháng);adj;normal
+722;奇怪 (qíguài);adj;garip, tuhaf
+723;不同 (bùtóng);adj;farklı
+724;相似 (xiāngsì);adj;benzer
+725;简单 (jiǎndān);adj;kolay, basit
+726;复杂 (fùzá);adj;karmaşık
+727;安静 (ānjìng);adj;sessiz
+728;吵 (chǎo);adj;gürültülü
+729;黑暗 (hēi'àn);adj;karanlık
+730;明亮 (míngliàng);adj;aydınlık
+731;软 (ruǎn);adj;yumuşak
+732;硬 (yìng);adj;sert
+733;甜 (tián);adj;tatlı
+734;酸 (suān);adj;ekşi
+735;苦 (kǔ);adj;acı
+736;咸 (xián);adj;tuzlu
+737;好吃 (hǎochī);adj;lezzetli
+738;新鲜 (xīnxiān);adj;taze
+739;湿 (shī);adj;ıslak
+740;干 (gān);adj;kuru
+741;开着 (kāizhe);adj;açık
+742;关着 (guānzhe);adj;kapalı
+743;第一 (dì yī);adj;ilk
+744;最后 (zuìhòu);adj;son
+745;下一个 (xià yī ge);adj;sonraki
+746;孤单 (gūdān);adj;tek, yalnız
+747;整个 (zhěnggè);adj;bütün, tam
+748;完美 (wánměi);adj;mükemmel
+749;有名 (yǒumíng);adj;ünlü
+750;当地 (dāngdì);adj;yerel
+751;外国 (wàiguó);adj;yabancı
+752;特别 (tèbié);adj;özel / özellikle
+753;一般 (yībān);adj;genel
+754;公共 (gōnggòng);adj;kamu, halka açık
+755;私人 (sīrén);adj;özel, kişisel
+756;红色 (hóngsè);adj;kırmızı
+757;蓝色 (lánsè);adj;mavi
+758;绿色 (lǜsè);adj;yeşil
+759;黄色 (huángsè);adj;sarı
+760;黑色 (hēisè);adj;siyah
+761;白色 (báisè);adj;beyaz
+762;灰色 (huīsè);adj;gri
+763;棕色 (zōngsè);adj;kahverengi
+764;橙色 (chéngsè);adj;turuncu
+765;粉色 (fěnsè);adj;pembe
+766;紫色 (zǐsè);adj;mor
+767;浅蓝色 (qiǎnlánsè);adj;açık mavi
+768;零 (líng);num;sıfır
+769;一 (yī);num;bir
+770;二 (èr);num;iki
+771;三 (sān);num;üç
+772;四 (sì);num;dört
+773;五 (wǔ);num;beş
+774;六 (liù);num;altı
+775;七 (qī);num;yedi
+776;八 (bā);num;sekiz
+777;九 (jiǔ);num;dokuz
+778;十 (shí);num;on
+779;十一 (shíyī);num;on bir
+780;十二 (shí'èr);num;on iki
+781;十三 (shísān);num;on üç
+782;十四 (shísì);num;on dört
+783;十五 (shíwǔ);num;on beş
+784;十六 (shíliù);num;on altı
+785;十七 (shíqī);num;on yedi
+786;十八 (shíbā);num;on sekiz
+787;十九 (shíjiǔ);num;on dokuz
+788;二十 (èrshí);num;yirmi
+789;三十 (sānshí);num;otuz
+790;四十 (sìshí);num;kırk
+791;五十 (wǔshí);num;elli
+792;六十 (liùshí);num;altmış
+793;七十 (qīshí);num;yetmiş
+794;八十 (bāshí);num;seksen
+795;九十 (jiǔshí);num;doksan
+796;一百 (yībǎi);num;yüz
+797;一千 (yīqiān);num;bin
+798;一百万 (yībǎiwàn);num;milyon
+799;第二 (dì èr);num;ikinci
+800;第三 (dì sān);num;üçüncü
+801;经济 (jīngjì);n;ekonomi
+802;政治 (zhèngzhì);n;politika
+803;选举 (xuǎnjǔ);n;seçim
+804;总统 (zǒngtǒng);n;başkan
+805;士兵 (shìbīng);n;asker
+806;军队 (jūnduì);n;ordu
+807;武器 (wǔqì);n;silah
+808;犯罪 (fànzuì);n;suç
+809;小偷 (xiǎotōu);n;hırsız
+810;法院 (fǎyuàn);n;mahkeme
+811;律师 (lǜshī);n;avukat
+812;法官 (fǎguān);n;hakim
+813;工程师 (gōngchéngshī);n;mühendis
+814;作家 (zuòjiā);n;yazar
+815;艺术家 (yìshùjiā);n;sanatçı
+816;厨师 (chúshī);n;aşçı
+817;司机 (sījī);n;şoför
+818;农民 (nóngmín);n;çiftçi
+819;售货员 (shòuhuòyuán);n;satıcı
+820;顾客 (gùkè);n;müşteri
+821;工人 (gōngrén);n;işçi
+822;消防员 (xiāofángyuán);n;itfaiyeci
+823;牙医 (yáyī);n;diş hekimi
+824;机器 (jīqì);n;makine
+825;工具 (gōngjù);n;alet
+826;门铃 (ménlíng);n;kapı zili
+827;能源 (néngyuán);n;enerji
+828;电 (diàn);n;elektrik
+829;光 (guāng);n;ışık
+830;声音 (shēngyīn);n;ses
+831;噪音 (zàoyīn);n;gürültü
+832;气味 (qìwèi);n;koku
+833;味道 (wèidao);n;tat
+834;形状 (xíngzhuàng);n;biçim, şekil
+835;大小 (dàxiǎo);n;boyut
+836;重量 (zhòngliàng);n;ağırlık
+837;长度 (chángdù);n;uzunluk
+838;米 (mǐ);n;metre
+839;公斤 (gōngjīn);n;kilo
+840;升 (shēng);n;litre
+841;百分比 (bǎifēnbǐ);n;yüzde
+842;组 (zǔ);n;grup
+843;清单 (qīngdān);n;liste
+844;例子 (lìzi);n;örnek
+845;规则 (guīzé);n;kural
+846;目标 (mùbiāo);n;amaç, hedef
+847;结果 (jiéguǒ);n;sonuç
+848;成功 (chénggōng);n;başarı
+849;经验 (jīngyàn);n;deneyim
+850;信息 (xìnxī);n;bilgi
+851;反应 (fǎnyìng);n;cevap, tepki
+852;质量 (zhìliàng);n;kalite
+853;数量 (shùliàng);n;miktar
+854;区别 (qūbié);n;fark
+855;关系 (guānxi);n;ilişki
+856;感情 (gǎnqíng);n;duygu
+857;想法 (xiǎngfǎ);n;düşünce
+858;回忆 (huíyì);n;anı, hatıra
+859;未来 (wèilái);n;gelecek
+860;过去 (guòqù);n;geçmiş
+861;时刻 (shíkè);n;an
+862;事件 (shìjiàn);n;olay
+863;情况 (qíngkuàng);n;durum
+864;种类 (zhǒnglèi);n;tür, çeşit
+865;水平 (shuǐpíng);n;seviye
+866;步 (bù);n;adım
+867;入口 (rùkǒu);n;giriş
+868;出口 (chūkǒu);n;çıkış
+869;队伍 (duìwu);n;sıra, kuyruk
+870;许可 (xǔkě);n;izin
+871;付款 (fùkuǎn);n;ödeme
+872;发票 (fāpiào);n;fatura
+873;折扣 (zhékòu);n;indirim
+874;产品 (chǎnpǐn);n;ürün
+875;服务 (fúwù);n;hizmet
+876;广告 (guǎnggào);n;reklam
+877;参加 (cānjiā);v;katılmak
+878;同意 (tóngyì);v;katılıyorum, hemfikir olmak
+879;拒绝 (jùjué);v;reddetmek
+880;接受 (jiēshòu);v;kabul etmek
+881;答应 (dāying);v;söz vermek
+882;结婚 (jiéhūn);v;evlenmek
+883;离婚 (líhūn);v;boşanmak
+884;搬家 (bānjiā);v;taşınmak
+885;发展 (fāzhǎn);v;geliştirmek
+886;增加 (zēngjiā);v;artırmak
+887;减少 (jiǎnshǎo);v;azaltmak
+888;比较 (bǐjiào);v;karşılaştırmak
+889;描述 (miáoshù);v;tarif etmek, betimlemek
+890;建议 (jiànyì);v;önermek
+891;推荐 (tuījiàn);v;tavsiye etmek
+892;讨论 (tǎolùn);v;tartışmak
+893;吵架 (chǎojià);v;kavga etmek
+894;抱怨 (bàoyuàn);v;şikayet etmek
+895;生产 (shēngchǎn);v;üretmek
+896;组织 (zǔzhī);v;organize etmek
+897;管理 (guǎnlǐ);v;yönetmek
+898;建立 (jiànlì);v;kurmak
+899;支持 (zhīchí);v;desteklemek
+900;绑 (bǎng);v;bağlamak
+901;分开 (fēnkāi);v;ayırmak
+902;分享 (fēnxiǎng);v;paylaşmak
+903;节省 (jiéshěng);v;biriktirmek, tasarruf etmek
+904;借 (jiè);v;ödünç vermek
+905;错过 (cuòguò);v;kaçırmak
+906;抓 (zhuā);v;yakalamak
+907;拥抱 (yōngbào);v;sarılmak
+908;亲 (qīn);v;öpmek
+909;打 (dǎ);v;vurmak
+910;挖 (wā);v;kazmak
+911;播种 (bōzhǒng);v;ekmek (tohum)
+912;收集 (shōují);v;toplamak
+913;装满 (zhuāngmǎn);v;doldurmak
+914;倒空 (dàokōng);v;boşaltmak
+915;加热 (jiārè);v;ısıtmak
+916;摇 (yáo);v;sallamak
+917;挂 (guà);v;asmak
+918;喊 (hǎn);v;bağırmak
+919;耳语 (ěryǔ);v;fısıldamak
+920;尝 (cháng);v;tatmak
+921;闻 (wén);v;koklamak
+922;呼吸 (hūxī);v;nefes almak
+923;出汗 (chūhàn);v;terlemek
+924;疼 (téng);v;acıtmak, ağrımak
+925;痊愈 (quányù);v;iyileşmek
+926;祈祷 (qídǎo);v;dua etmek
+927;庆祝 (qìngzhù);v;kutlamak
+928;祝贺 (zhùhè);v;tebrik etmek
+929;玩得开心 (wán de kāixīn);v;eğlenmek
+930;觉得无聊 (juéde wúliáo);v;sıkılmak
+931;吃惊 (chījīng);v;şaşırmak
+932;感兴趣 (gǎn xìngqù);v;ilgilenmek
+933;照顾 (zhàogù);v;bakmak (birine)
+934;监督 (jiāndū);v;denetlemek
+935;打印 (dǎyìn);v;yazdırmak
+936;下载 (xiàzài);v;indirmek (dosya)
+937;上传 (shàngchuán);v;yüklemek (dosya)
+938;保存 (bǎocún);v;kaydetmek
+939;删除 (shānchú);v;silmek
+940;点击 (diǎnjī);v;tıklamak
+941;可惜 (kěxī);adv;maalesef
+942;当然 (dāngrán);adv;elbette
+943;真的 (zhēn de);adv;gerçekten
+944;几乎 (jīhū);adv;neredeyse
+945;通常 (tōngcháng);adv;genellikle
+946;其实 (qíshí);adv;aslında
+947;终于 (zhōngyú);adv;sonunda
+948;突然 (tūrán);adv;aniden
+949;绝对 (juéduì);adv;kesinlikle
+950;大概 (dàgài);adv;muhtemelen
+951;足够 (zúgòu);adv;yeterince
+952;太 (tài);adv;fazla, çok fazla
+953;到处 (dàochù);adv;her yerde
+954;哪儿都不 (nǎr dōu bù);adv;hiçbir yerde
+955;某处 (mǒuchù);adv;bir yerde
+956;这样 (zhèyàng);adv;böyle, öyle
+957;大约 (dàyuē);adv;yaklaşık
+958;正好 (zhènghǎo);adv;tam olarak
+959;匆忙 (cōngmáng);adv;hızla
+960;仔细 (zǐxì);adv;dikkatlice
+961;仅仅 (jǐnjǐn);adv;yalnızca, sırf
+962;事先 (shìxiān);adv;önceden
+963;同时 (tóngshí);adv;bu arada
+964;此外 (cǐwài);adv;ayrıca, üstelik
+965;所以 (suǒyǐ);adv;bu yüzden
+966;不过 (bùguò);adv;yine de
+967;满意 (mǎnyì);adj;memnun
+968;已婚 (yǐhūn);adj;evli
+969;单身 (dānshēn);adj;bekar
+970;死的 (sǐ de);adj;ölü
+971;活的 (huó de);adj;canlı
+972;平静 (píngjìng);adj;sakin
+973;紧张 (jǐnzhāng);adj;gergin
+974;嫉妒 (jídù);adj;kıskanç
+975;害羞 (hàixiū);adj;utangaç
+976;好笑 (hǎoxiào);adj;komik
+977;严肃 (yánsù);adj;ciddi
+978;现代 (xiàndài);adj;modern
+979;古代 (gǔdài);adj;antik, eski çağ
+980;深 (shēn);adj;derin
+981;圆 (yuán);adj;yuvarlak
+982;平 (píng);adj;düz
+983;厚 (hòu);adj;kalın
+984;锋利 (fēnglì);adj;keskin
+985;瞎 (xiā);adj;kör
+986;聋 (lóng);adj;sağır
+987;国际 (guójì);adj;uluslararası
+988;每天 (měitiān);adj;günlük
+989;每周 (měizhōu);adj;haftalık
+990;当前 (dāngqián);adj;mevcut, şu anki
+991;清楚 (qīngchu);adj;açık, net

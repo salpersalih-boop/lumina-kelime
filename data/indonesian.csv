@@ -1,0 +1,988 @@
+Sıra;Kelime;Tür;Türkçe Anlamı
+1;saya;pron;ben
+2;kamu;pron;sen
+3;dia;pron;o (erkek) / o (kadın)
+4;kami;pron;biz
+5;kalian;pron;siz
+6;mereka;pron;onlar
+7;ini;pron;bu
+8;itu;pron;şu, o
+9;siapa;pron;kim
+10;apa;pron;ne
+11;di mana;adv;nerede
+12;kapan;adv;ne zaman
+13;mengapa;adv;neden, niçin
+14;bagaimana;adv;nasıl
+15;yang mana;pron;hangi
+16;berapa;adv;ne kadar
+17;ya;int;evet
+18;tidak;int;hayır
+19;bukan;adv;değil
+20;dan;conj;ve
+21;atau;conj;veya, ya da
+22;tetapi;conj;ama, fakat
+23;karena;conj;çünkü
+24;jika;conj;eğer
+25;bahwa;conj;ki
+26;dengan;prep;ile, birlikte
+27;tanpa;prep;-sız, olmadan
+28;untuk;prep;için
+29;di;prep;-de, içinde
+30;di atas;prep;üzerinde / yukarıda
+31;di bawah;prep;altında / aşağıda
+32;dari;prep;-den, -dan
+33;ke;prep;-e doğru, -e
+34;antara;prep;arasında
+35;sebelum;prep;önce
+36;sesudah;prep;sonra
+37;di samping;prep;yanında
+38;melawan;prep;karşı
+39;tentang;prep;hakkında
+40;di sini;adv;burada
+41;di sana;adv;orada
+42;sekarang;adv;şimdi
+43;hari ini;adv;bugün
+44;besok;adv;yarın
+45;kemarin;adv;dün
+46;selalu;adv;her zaman
+47;tidak pernah;adv;asla, hiç
+48;kadang-kadang;adv;bazen
+49;sering;adv;sık sık
+50;sangat;adv;çok
+51;sedikit;adv;biraz / az (sayıca)
+52;lebih;adv;daha
+53;kurang;adv;daha az
+54;juga;adv;de, da, ayrıca
+55;hanya;adv;sadece
+56;sudah;adv;zaten, çoktan
+57;masih;adv;hâlâ, henüz
+58;segera;adv;hemen
+59;mungkin;adv;belki / mümkün / olası
+60;baik;adv;iyi (şekilde) / iyi
+61;buruk;adv;kötü (şekilde) / kötü
+62;bersama;adv;birlikte
+63;dini;adv;erken
+64;terlambat;adv;geç
+65;lagi;adv;yine, tekrar
+66;cepat;adv;çabuk, hızlıca / hızlı
+67;pelan-pelan;adv;yavaşça
+68;sebentar lagi;adv;yakında
+69;jauh;adv;uzakta / uzak
+70;dekat;adv;yakında (mesafe) / yakın
+71;di dalam;adv;içeride
+72;di luar;adv;dışarıda
+73;di depan;adv;ileride, önde
+74;di belakang;adv;geride, arkada
+75;semuanya;pron;her şey
+76;tidak ada apa-apa;pron;hiçbir şey
+77;sesuatu;pron;bir şey
+78;semua orang;pron;herkes
+79;tidak ada orang;pron;kimse, hiç kimse
+80;seseorang;pron;biri, birisi
+81;setiap;pron;her
+82;seluruh;pron;bütün, tüm
+83;lain;pron;başka
+84;sama;pron;aynı
+85;beberapa;pron;birkaç
+86;banyak;pron;çok (sayıca)
+87;halo;int;merhaba
+88;selamat pagi;int;günaydın
+89;selamat sore;int;iyi akşamlar
+90;selamat tidur;int;iyi geceler
+91;selamat tinggal;int;hoşça kal
+92;terima kasih;int;teşekkürler
+93;tolong;int;lütfen
+94;maaf;int;özür dilerim
+95;oke;int;tamam
+96;selamat datang;int;hoş geldiniz
+97;adalah;v;olmak
+98;punya;v;sahip olmak
+99;melakukan;v;yapmak
+100;pergi;v;gitmek
+101;datang;v;gelmek
+102;berkata;v;söylemek, demek
+103;berbicara;v;konuşmak
+104;melihat;v;görmek
+105;memandang;v;bakmak
+106;mendengar;v;duymak
+107;mendengarkan;v;dinlemek
+108;tahu;v;bilmek
+109;kenal;v;tanımak
+110;berpikir;v;düşünmek
+111;percaya;v;inanmak
+112;mau;v;istemek
+113;bisa;v;-ebilmek, yapabilmek
+114;harus;v;-meli, zorunda olmak
+115;memberi;v;vermek
+116;mengambil;v;almak
+117;menaruh;v;koymak
+118;menemukan;v;bulmak
+119;mencari;v;aramak
+120;kehilangan;v;kaybetmek
+121;menang;v;kazanmak (yarış)
+122;menghasilkan;v;kazanmak (para)
+123;bekerja;v;çalışmak (iş)
+124;belajar;v;ders çalışmak
+125;mempelajari;v;öğrenmek
+126;mengajar;v;öğretmek
+127;membaca;v;okumak
+128;menulis;v;yazmak
+129;mengerti;v;anlamak
+130;bertanya;v;sormak
+131;menjawab;v;cevap vermek
+132;membantu;v;yardım etmek
+133;menunggu;v;beklemek
+134;tinggal;v;kalmak / oturmak, ikamet etmek
+135;hidup;v;yaşamak / canlı
+136;mati;v;ölmek / ölü
+137;lahir;v;doğmak
+138;mencintai;v;sevmek
+139;suka;v;hoşlanmak
+140;membenci;v;nefret etmek
+141;makan;v;yemek
+142;minum;v;içmek
+143;tidur;v;uyumak
+144;bangun;v;uyanmak
+145;bangkit;v;kalkmak
+146;duduk;v;oturmak (sandalye)
+147;berdiri;v;ayakta durmak
+148;berjalan;v;yürümek
+149;berlari;v;koşmak
+150;berenang;v;yüzmek
+151;terbang;v;uçmak
+152;menyetir;v;sürmek (araç)
+153;bepergian;v;seyahat etmek
+154;tiba;v;varmak
+155;berangkat;v;ayrılmak, gitmek
+156;masuk;v;girmek
+157;keluar;v;çıkmak
+158;kembali;v;dönmek, geri gelmek
+159;membuka;v;açmak
+160;menutup;v;kapatmak
+161;mulai;v;başlamak
+162;menyelesaikan;v;bitirmek
+163;berhenti;v;durmak
+164;melanjutkan;v;devam etmek
+165;mengubah;v;değiştirmek
+166;memakai;v;kullanmak / giymek
+167;membeli;v;satın almak
+168;menjual;v;satmak
+169;membayar;v;ödemek
+170;berharga;v;maliyeti olmak, tutmak
+171;membawa;v;getirmek / taşımak
+172;mengirim;v;göndermek
+173;menerima;v;almak (teslim) / kabul etmek
+174;memegang;v;tutmak
+175;melempar;v;atmak
+176;jatuh;v;düşmek
+177;memecahkan;v;kırmak
+178;membangun;v;yapmak, inşa etmek
+179;menciptakan;v;yaratmak
+180;menggambar;v;çizmek
+181;bermain;v;oynamak
+182;bernyanyi;v;şarkı söylemek
+183;menari;v;dans etmek
+184;tertawa;v;gülmek
+185;menangis;v;ağlamak
+186;tersenyum;v;gülümsemek
+187;merasa;v;hissetmek
+188;menyentuh;v;dokunmak
+189;menunjukkan;v;göstermek
+190;menyembunyikan;v;saklamak
+191;mengingat;v;hatırlamak
+192;lupa;v;unutmak
+193;mencoba;v;denemek
+194;memilih;v;seçmek
+195;memutuskan;v;karar vermek
+196;merencanakan;v;planlamak
+197;menyiapkan;v;hazırlamak
+198;memasak;v;pişirmek
+199;mencuci;v;yıkamak
+200;membersihkan;v;temizlemek
+201;berpakaian;v;giyinmek
+202;membangunkan;v;uyandırmak
+203;menelepon;v;aramak (telefon)
+204;bertemu;v;buluşmak
+205;mengunjungi;v;ziyaret etmek
+206;mengundang;v;davet etmek
+207;berterima kasih;v;teşekkür etmek
+208;memaafkan;v;affetmek
+209;mengizinkan;v;izin vermek
+210;melarang;v;yasaklamak
+211;mengikuti;v;takip etmek
+212;memimpin;v;yol göstermek, yönetmek
+213;memperoleh;v;kazanmak, elde etmek
+214;terjadi;v;olmak, meydana gelmek
+215;tampaknya;v;görünmek
+216;menjadi;v;olmak, haline gelmek
+217;tumbuh;v;büyümek
+218;melindungi;v;korumak
+219;menyelamatkan;v;kurtarmak
+220;membunuh;v;öldürmek
+221;berperang;v;savaşmak
+222;mengalahkan;v;kazanmak, galip gelmek
+223;membutuhkan;v;ihtiyaç duymak
+224;lebih suka;v;tercih etmek
+225;berharap;v;ummak
+226;takut;v;korkmak
+227;khawatir;v;endişelenmek
+228;beristirahat;v;dinlenmek
+229;merokok;v;sigara içmek
+230;menyewa;v;kiralamak
+231;memesan;v;rezervasyon yapmak
+232;menerjemahkan;v;çevirmek (dil)
+233;menjelaskan;v;açıklamak
+234;mengulang;v;tekrarlamak
+235;menghitung;v;saymak
+236;mengukur;v;ölçmek
+237;memeriksa;v;kontrol etmek
+238;memperbaiki;v;düzeltmek, tamir etmek
+239;memotong;v;kesmek
+240;mendorong;v;itmek
+241;menarik;v;çekmek / ilginç
+242;mengangkat;v;kaldırmak
+243;memutar;v;dönmek, çevirmek
+244;melewati;v;geçmek
+245;menyeberang;v;geçmek, karşıya geçmek
+246;memanjat;v;tırmanmak
+247;turun;v;inmek
+248;orang;n;insan, kişi
+249;orang-orang;n;insanlar
+250;pria;n;adam, erkek
+251;wanita;n;kadın
+252;anak;n;çocuk
+253;anak laki-laki;n;erkek çocuk
+254;anak perempuan;n;kız çocuk
+255;bayi;n;bebek
+256;keluarga;n;aile
+257;ibu;n;anne
+258;ayah;n;baba
+259;orang tua;n;anne baba, ebeveynler
+260;putra;n;oğul
+261;putri;n;kız evlat
+262;saudara laki-laki;n;erkek kardeş
+263;saudara perempuan;n;kız kardeş
+264;kakek;n;büyükbaba
+265;nenek;n;büyükanne
+266;paman;n;amca, dayı
+267;bibi;n;teyze, hala
+268;sepupu;n;kuzen
+269;suami;n;koca, eş
+270;istri;n;karı, eş
+271;teman;n;arkadaş
+272;tetangga;n;komşu
+273;tamu;n;misafir
+274;nama;n;isim, ad
+275;nama keluarga;n;soyadı
+276;umur;n;yaş
+277;kehidupan;n;hayat
+278;kematian;n;ölüm
+279;cinta;n;aşk, sevgi
+280;tubuh;n;vücut
+281;kepala;n;baş, kafa
+282;rambut;n;saç
+283;wajah;n;yüz
+284;mata;n;göz
+285;telinga;n;kulak
+286;hidung;n;burun
+287;mulut;n;ağız
+288;gigi;n;diş
+289;lidah;n;dil (organ)
+290;leher;n;boyun
+291;bahu;n;omuz
+292;lengan;n;kol
+293;tangan;n;el
+294;jari;n;parmak
+295;dada;n;göğüs
+296;punggung;n;sırt
+297;perut;n;karın, mide
+298;kaki;n;bacak / ayak
+299;lutut;n;diz
+300;jantung;n;kalp
+301;darah;n;kan
+302;kulit;n;deri, cilt
+303;tulang;n;kemik
+304;kesehatan;n;sağlık
+305;penyakit;n;hastalık
+306;rasa sakit;n;ağrı, acı
+307;dokter;n;doktor
+308;perawat;n;hemşire
+309;rumah sakit;n;hastane
+310;obat;n;ilaç
+311;apotek;n;eczane
+312;rumah;n;ev
+313;apartemen;n;daire
+314;kamar;n;oda
+315;dapur;n;mutfak
+316;kamar mandi;n;banyo
+317;kamar tidur;n;yatak odası
+318;ruang tamu;n;oturma odası
+319;pintu;n;kapı
+320;jendela;n;pencere
+321;dinding;n;duvar
+322;lantai;n;zemin, yer
+323;langit-langit;n;tavan
+324;tangga;n;merdiven
+325;kebun;n;bahçe
+326;atap;n;çatı
+327;kunci;n;anahtar
+328;meja;n;masa
+329;kursi;n;sandalye
+330;tempat tidur;n;yatak
+331;sofa;n;kanepe
+332;lemari;n;dolap
+333;cermin;n;ayna
+334;lampu;n;lamba
+335;kulkas;n;buzdolabı
+336;oven;n;fırın
+337;televisi;n;televizyon
+338;komputer;n;bilgisayar
+339;telepon;n;telefon
+340;jam;n;saat (alet) / saat (süre)
+341;lukisan;n;resim, tablo
+342;karpet;n;halı
+343;tirai;n;perde
+344;handuk;n;havlu
+345;sabun;n;sabun
+346;sikat gigi;n;diş fırçası
+347;tas;n;çanta
+348;kotak;n;kutu
+349;botol;n;şişe
+350;gelas;n;bardak
+351;cangkir;n;fincan
+352;piring;n;tabak
+353;garpu;n;çatal
+354;pisau;n;bıçak
+355;sendok;n;kaşık
+356;panci;n;tencere
+357;hidangan;n;yemek (öğün)
+358;makanan;n;yiyecek
+359;sarapan;n;kahvaltı
+360;makan siang;n;öğle yemeği
+361;makan malam;n;akşam yemeği
+362;air;n;su
+363;roti;n;ekmek
+364;susu;n;süt
+365;kopi;n;kahve
+366;teh;n;çay
+367;jus;n;meyve suyu
+368;bir;n;bira
+369;anggur;n;şarap / üzüm
+370;daging;n;et
+371;ayam;n;tavuk
+372;ikan;n;balık
+373;telur;n;yumurta
+374;keju;n;peynir
+375;mentega;n;tereyağı
+376;nasi;n;pirinç
+377;pasta;n;makarna
+378;kentang;n;patates
+379;sayuran;n;sebze
+380;buah;n;meyve
+381;apel;n;elma
+382;jeruk;n;portakal
+383;pisang;n;muz
+384;stroberi;n;çilek
+385;lemon;n;limon
+386;tomat;n;domates
+387;bawang;n;soğan
+388;bawang putih;n;sarımsak
+389;wortel;n;havuç
+390;mentimun;n;salatalık
+391;salad;n;salata
+392;sup;n;çorba
+393;garam;n;tuz
+394;gula;n;şeker
+395;merica;n;biber
+396;minyak;n;yağ (sıvı)
+397;madu;n;bal
+398;kue;n;pasta, kek
+399;es krim;n;dondurma
+400;cokelat;n;çikolata / kahverengi
+401;restoran;n;restoran
+402;kafe;n;kafe
+403;menu;n;menü
+404;pelayan;n;garson
+405;tagihan;n;hesap (restoran)
+406;tip;n;bahşiş
+407;kelaparan;n;açlık
+408;haus;n;susuzluk
+409;kota;n;şehir
+410;desa;n;köy
+411;negara;n;ülke
+412;jalan;n;sokak / yol
+413;alun-alun;n;meydan
+414;jembatan;n;köprü
+415;gedung;n;bina
+416;toko;n;dükkan, mağaza
+417;supermarket;n;market
+418;pasar;n;pazar, çarşı
+419;bank;n;banka
+420;kantor pos;n;postane
+421;sekolah;n;okul
+422;universitas;n;üniversite
+423;perpustakaan;n;kütüphane
+424;museum;n;müze
+425;gereja;n;kilise
+426;masjid;n;cami
+427;taman;n;park
+428;hotel;n;otel
+429;bandara;n;havaalanı
+430;stasiun;n;istasyon
+431;halte;n;durak
+432;pelabuhan;n;liman
+433;bioskop;n;sinema
+434;teater;n;tiyatro
+435;polisi;n;polis / polis memuru
+436;mobil;n;araba
+437;bus;n;otobüs
+438;kereta api;n;tren
+439;pesawat;n;uçak
+440;kapal;n;gemi
+441;sepeda;n;bisiklet
+442;taksi;n;taksi
+443;kereta bawah tanah;n;metro
+444;tiket;n;bilet
+445;koper;n;bavul
+446;paspor;n;pasaport
+447;peta;n;harita
+448;perjalanan;n;yolculuk, seyahat
+449;liburan;n;tatil
+450;turis;n;turist
+451;lalu lintas;n;trafik
+452;kecelakaan;n;kaza
+453;kanan;n;sağ
+454;kiri;n;sol
+455;utara;n;kuzey
+456;selatan;n;güney
+457;timur;n;doğu
+458;barat;n;batı
+459;sudut;n;köşe
+460;pusat;n;merkez
+461;tempat;n;yer, mekan
+462;alamat;n;adres
+463;waktu;n;zaman
+464;menit;n;dakika
+465;detik;n;saniye
+466;hari;n;gün
+467;minggu;n;hafta
+468;bulan;n;ay (takvim) / ay (gökyüzü)
+469;tahun;n;yıl
+470;abad;n;yüzyıl
+471;pagi;n;sabah
+472;siang;n;öğle
+473;sore;n;öğleden sonra
+474;petang;n;akşam
+475;malam;n;gece
+476;akhir pekan;n;hafta sonu
+477;Senin;n;pazartesi
+478;Selasa;n;salı
+479;Rabu;n;çarşamba
+480;Kamis;n;perşembe
+481;Jumat;n;cuma
+482;Sabtu;n;cumartesi
+483;Minggu;n;pazar (gün)
+484;Januari;n;ocak
+485;Februari;n;şubat
+486;Maret;n;mart
+487;April;n;nisan
+488;Mei;n;mayıs
+489;Juni;n;haziran
+490;Juli;n;temmuz
+491;Agustus;n;ağustos
+492;September;n;eylül
+493;Oktober;n;ekim
+494;November;n;kasım
+495;Desember;n;aralık
+496;musim;n;mevsim
+497;musim semi;n;ilkbahar
+498;musim panas;n;yaz
+499;musim gugur;n;sonbahar
+500;musim dingin;n;kış
+501;cuaca;n;hava (durumu)
+502;matahari;n;güneş
+503;bintang;n;yıldız
+504;langit;n;gökyüzü
+505;awan;n;bulut
+506;hujan;n;yağmur
+507;salju;n;kar
+508;angin;n;rüzgar
+509;badai;n;fırtına
+510;suhu;n;sıcaklık
+511;udara;n;hava (soluduğumuz)
+512;api;n;ateş
+513;tanah;n;toprak, dünya
+514;dunia;n;dünya
+515;alam;n;doğa
+516;laut;n;deniz
+517;samudra;n;okyanus
+518;sungai;n;nehir
+519;danau;n;göl
+520;gunung;n;dağ
+521;bukit;n;tepe
+522;hutan;n;orman
+523;pohon;n;ağaç
+524;bunga;n;çiçek
+525;rumput;n;çimen
+526;daun;n;yaprak
+527;batu;n;taş
+528;pasir;n;kum
+529;pantai;n;plaj
+530;pulau;n;ada
+531;ladang;n;tarla
+532;hewan;n;hayvan
+533;anjing;n;köpek
+534;kucing;n;kedi
+535;kuda;n;at
+536;sapi;n;inek
+537;babi;n;domuz
+538;domba;n;koyun
+539;burung;n;kuş
+540;tikus;n;fare
+541;kelinci;n;tavşan
+542;beruang;n;ayı
+543;serigala;n;kurt
+544;singa;n;aslan
+545;ular;n;yılan
+546;serangga;n;böcek
+547;lebah;n;arı
+548;lalat;n;sinek
+549;bebek;n;ördek
+550;rubah;n;tilki
+551;monyet;n;maymun
+552;gajah;n;fil
+553;kupu-kupu;n;kelebek
+554;pekerjaan;n;iş
+555;profesi;n;meslek
+556;perusahaan;n;şirket
+557;kantor;n;ofis
+558;bos;n;patron
+559;rekan kerja;n;meslektaş
+560;rapat;n;toplantı
+561;uang;n;para
+562;harga;n;fiyat
+563;gaji;n;maaş
+564;pajak;n;vergi
+565;kartu;n;kart
+566;guru;n;öğretmen
+567;murid;n;öğrenci
+568;pelajaran;n;ders
+569;kelas;n;sınıf
+570;ujian;n;sınav
+571;pertanyaan;n;soru
+572;jawaban;n;cevap
+573;buku;n;kitap
+574;buku tulis;n;defter
+575;pena;n;kalem
+576;pensil;n;kurşun kalem
+577;kertas;n;kağıt
+578;halaman;n;sayfa
+579;kata;n;kelime
+580;kalimat;n;cümle
+581;bahasa;n;dil (lisan)
+582;huruf;n;harf
+583;surat;n;mektup
+584;cerita;n;hikaye
+585;sejarah;n;tarih (geçmiş)
+586;tanggal;n;tarih (gün)
+587;berita;n;haber
+588;koran;n;gazete
+589;majalah;n;dergi
+590;film;n;film
+591;musik;n;müzik
+592;lagu;n;şarkı
+593;permainan;n;oyun
+594;olahraga;n;spor
+595;sepak bola;n;futbol
+596;bola;n;top
+597;tim;n;takım
+598;pertandingan;n;maç
+599;pesta;n;parti, eğlence
+600;hadiah;n;hediye
+601;ulang tahun;n;doğum günü
+602;foto;n;fotoğraf
+603;seni;n;sanat
+604;internet;n;internet
+605;surel;n;e-posta
+606;pesan;n;mesaj
+607;nomor;n;numara, sayı
+608;pakaian;n;kıyafet, giysi
+609;kemeja;n;gömlek
+610;kaus;n;tişört
+611;celana;n;pantolon
+612;rok;n;etek
+613;gaun;n;elbise
+614;jaket;n;ceket
+615;sepatu;n;ayakkabı
+616;topi;n;şapka
+617;kaus kaki;n;çorap
+618;kacamata;n;gözlük
+619;dompet;n;cüzdan
+620;cincin;n;yüzük
+621;warna;n;renk
+622;barang;n;şey, nesne
+623;potongan;n;parça
+624;bagian;n;kısım, bölüm
+625;setengah;n;yarım, yarı
+626;akhir;n;son
+627;awal;n;başlangıç
+628;cara;n;yol, yöntem
+629;alasan;n;neden, sebep
+630;masalah;n;sorun
+631;ide;n;fikir
+632;kebenaran;n;gerçek, hakikat
+633;kebohongan;n;yalan
+634;kesalahan;n;hata
+635;keberuntungan;n;şans
+636;kebahagiaan;n;mutluluk
+637;ketakutan;n;korku
+638;harapan;n;umut
+639;mimpi;n;rüya, hayal
+640;kekuatan;n;güç, kuvvet
+641;perang;n;savaş
+642;perdamaian;n;barış
+643;pemerintah;n;devlet, hükümet
+644;hukum;n;kanun, yasa
+645;hak;n;hak
+646;kebebasan;n;özgürlük
+647;rakyat;n;halk
+648;raja;n;kral
+649;Tuhan;n;tanrı
+650;agama;n;din
+651;budaya;n;kültür
+652;ilmu pengetahuan;n;bilim
+653;tradisi;n;gelenek
+654;besar;adj;büyük
+655;kecil;adj;küçük
+656;panjang;adj;uzun / uzunluk
+657;pendek;adj;kısa
+658;tinggi;adj;uzun boylu, yüksek
+659;rendah;adj;alçak, kısa boylu
+660;lebar;adj;geniş
+661;sempit;adj;dar
+662;baru;adj;yeni
+663;tua;adj;eski, yaşlı
+664;muda;adj;genç
+665;cantik;adj;güzel
+666;jelek;adj;çirkin
+667;panas;adj;sıcak
+668;dingin;adj;soğuk
+669;hangat;adj;ılık
+670;sejuk;adj;serin
+671;lambat;adj;yavaş
+672;mudah;adj;kolay
+673;sulit;adj;zor
+674;berat;adj;ağır / ağırlık
+675;ringan;adj;hafif
+676;penuh;adj;dolu
+677;kosong;adj;boş
+678;bersih;adj;temiz
+679;kotor;adj;kirli
+680;kaya;adj;zengin
+681;miskin;adj;fakir
+682;murah;adj;ucuz
+683;mahal;adj;pahalı
+684;bahagia;adj;mutlu
+685;sedih;adj;üzgün
+686;marah;adj;kızgın
+687;lelah;adj;yorgun
+688;sakit;adj;hasta / acıtmak, ağrımak
+689;sehat;adj;sağlıklı
+690;lapar;adj;aç
+691;kuat;adj;güçlü
+692;lemah;adj;zayıf, güçsüz
+693;gemuk;adj;şişman
+694;kurus;adj;ince, zayıf
+695;pintar;adj;akıllı
+696;bodoh;adj;aptal
+697;ramah;adj;nazik
+698;kasar;adj;kaba
+699;jujur;adj;dürüst
+700;berani;adj;cesur
+701;malas;adj;tembel
+702;sibuk;adj;meşgul
+703;bebas;adj;serbest, özgür
+704;siap;adj;hazır
+705;benar;adj;doğru
+706;salah;adj;yanlış
+707;nyata;adj;gerçek
+708;palsu;adj;yanlış, sahte
+709;penting;adj;önemli
+710;membosankan;adj;sıkıcı
+711;berbahaya;adj;tehlikeli
+712;aman;adj;güvenli
+713;mustahil;adj;imkansız
+714;perlu;adj;gerekli
+715;normal;adj;normal
+716;aneh;adj;garip, tuhaf
+717;berbeda;adj;farklı
+718;mirip;adj;benzer
+719;sederhana;adj;kolay, basit
+720;rumit;adj;karmaşık
+721;sunyi;adj;sessiz
+722;berisik;adj;gürültülü
+723;gelap;adj;karanlık
+724;terang;adj;aydınlık
+725;lembut;adj;yumuşak
+726;keras;adj;sert
+727;manis;adj;tatlı
+728;asam;adj;ekşi
+729;pahit;adj;acı
+730;asin;adj;tuzlu
+731;enak;adj;lezzetli
+732;segar;adj;taze
+733;basah;adj;ıslak
+734;kering;adj;kuru
+735;terbuka;adj;açık
+736;tertutup;adj;kapalı
+737;pertama;adj;ilk
+738;terakhir;adj;son
+739;berikutnya;adj;sonraki
+740;sendiri;adj;tek, yalnız
+741;utuh;adj;bütün, tam
+742;sempurna;adj;mükemmel
+743;terkenal;adj;ünlü
+744;lokal;adj;yerel
+745;asing;adj;yabancı
+746;khusus;adj;özel
+747;umum;adj;genel
+748;publik;adj;kamu, halka açık
+749;pribadi;adj;özel, kişisel
+750;merah;adj;kırmızı
+751;biru;adj;mavi
+752;hijau;adj;yeşil
+753;kuning;adj;sarı
+754;hitam;adj;siyah
+755;putih;adj;beyaz
+756;abu-abu;adj;gri
+757;oranye;adj;turuncu
+758;merah muda;adj;pembe
+759;ungu;adj;mor
+760;biru muda;adj;açık mavi
+761;nol;num;sıfır
+762;satu;num;bir
+763;dua;num;iki
+764;tiga;num;üç
+765;empat;num;dört
+766;lima;num;beş
+767;enam;num;altı
+768;tujuh;num;yedi
+769;delapan;num;sekiz
+770;sembilan;num;dokuz
+771;sepuluh;num;on
+772;sebelas;num;on bir
+773;dua belas;num;on iki
+774;tiga belas;num;on üç
+775;empat belas;num;on dört
+776;lima belas;num;on beş
+777;enam belas;num;on altı
+778;tujuh belas;num;on yedi
+779;delapan belas;num;on sekiz
+780;sembilan belas;num;on dokuz
+781;dua puluh;num;yirmi
+782;tiga puluh;num;otuz
+783;empat puluh;num;kırk
+784;lima puluh;num;elli
+785;enam puluh;num;altmış
+786;tujuh puluh;num;yetmiş
+787;delapan puluh;num;seksen
+788;sembilan puluh;num;doksan
+789;seratus;num;yüz
+790;seribu;num;bin
+791;sejuta;num;milyon
+792;kedua;num;ikinci
+793;ketiga;num;üçüncü
+794;ekonomi;n;ekonomi
+795;politik;n;politika
+796;pemilihan;n;seçim
+797;presiden;n;başkan
+798;tentara;n;asker
+799;angkatan darat;n;ordu
+800;senjata;n;silah
+801;kejahatan;n;suç
+802;pencuri;n;hırsız
+803;pengadilan;n;mahkeme
+804;pengacara;n;avukat
+805;hakim;n;hakim
+806;insinyur;n;mühendis
+807;penulis;n;yazar
+808;seniman;n;sanatçı
+809;koki;n;aşçı
+810;sopir;n;şoför
+811;petani;n;çiftçi
+812;penjual;n;satıcı
+813;pelanggan;n;müşteri
+814;buruh;n;işçi
+815;pemadam kebakaran;n;itfaiyeci
+816;dokter gigi;n;diş hekimi
+817;mesin;n;makine
+818;alat;n;alet
+819;bel pintu;n;kapı zili
+820;energi;n;enerji
+821;listrik;n;elektrik
+822;cahaya;n;ışık
+823;suara;n;ses
+824;kebisingan;n;gürültü
+825;bau;n;koku
+826;rasa;n;tat
+827;bentuk;n;biçim, şekil
+828;ukuran;n;boyut
+829;meter;n;metre
+830;kilogram;n;kilo
+831;liter;n;litre
+832;persen;n;yüzde
+833;kelompok;n;grup
+834;daftar;n;liste
+835;contoh;n;örnek
+836;aturan;n;kural
+837;pilihan;n;seçenek
+838;keputusan;n;karar
+839;rencana;n;plan
+840;tujuan;n;amaç, hedef
+841;hasil;n;sonuç
+842;keberhasilan;n;başarı
+843;pengalaman;n;deneyim
+844;informasi;n;bilgi
+845;reaksi;n;cevap, tepki
+846;bantuan;n;yardım
+847;bahaya;n;tehlike
+848;keamanan;n;güvenlik
+849;kualitas;n;kalite
+850;jumlah;n;miktar
+851;perbedaan;n;fark
+852;hubungan;n;ilişki
+853;kebutuhan;n;ihtiyaç
+854;perasaan;n;duygu
+855;pikiran;n;düşünce
+856;kenangan;n;anı, hatıra
+857;masa depan;n;gelecek
+858;masa lalu;n;geçmiş
+859;masa kini;n;şimdiki zaman, an
+860;saat;n;an
+861;peristiwa;n;olay
+862;situasi;n;durum
+863;jenis;n;tür, çeşit
+864;tingkat;n;seviye
+865;langkah;n;adım
+866;pintu masuk;n;giriş
+867;pintu keluar;n;çıkış
+868;antrean;n;sıra, kuyruk
+869;izin;n;izin
+870;pembayaran;n;ödeme
+871;faktur;n;fatura
+872;diskon;n;indirim
+873;produk;n;ürün
+874;layanan;n;hizmet
+875;iklan;n;reklam
+876;ikut serta;v;katılmak
+877;setuju;v;katılıyorum, hemfikir olmak
+878;menolak;v;reddetmek
+879;berjanji;v;söz vermek
+880;menikah;v;evlenmek / evli
+881;bercerai;v;boşanmak
+882;pindah;v;taşınmak
+883;mengembangkan;v;geliştirmek
+884;menambah;v;artırmak
+885;mengurangi;v;azaltmak
+886;membandingkan;v;karşılaştırmak
+887;menggambarkan;v;tarif etmek, betimlemek
+888;menyarankan;v;önermek
+889;merekomendasikan;v;tavsiye etmek
+890;mendiskusikan;v;tartışmak
+891;bertengkar;v;kavga etmek
+892;mengeluh;v;şikayet etmek
+893;memproduksi;v;üretmek
+894;mengorganisir;v;organize etmek
+895;mengelola;v;yönetmek
+896;mendirikan;v;kurmak
+897;mendukung;v;desteklemek
+898;mengikat;v;bağlamak
+899;memisahkan;v;ayırmak
+900;berbagi;v;paylaşmak
+901;menabung;v;biriktirmek, tasarruf etmek
+902;menghabiskan;v;harcamak
+903;meminjamkan;v;ödünç vermek
+904;ketinggalan;v;kaçırmak
+905;menangkap;v;yakalamak
+906;memeluk;v;sarılmak
+907;mencium;v;öpmek / koklamak
+908;memukul;v;vurmak
+909;menggali;v;kazmak
+910;menabur;v;ekmek (tohum)
+911;mengumpulkan;v;toplamak
+912;mengisi;v;doldurmak
+913;mengosongkan;v;boşaltmak
+914;memanaskan;v;ısıtmak
+915;mengguncang;v;sallamak
+916;menggantung;v;asmak
+917;berteriak;v;bağırmak
+918;berbisik;v;fısıldamak
+919;mencicipi;v;tatmak
+920;bernapas;v;nefes almak
+921;berkeringat;v;terlemek
+922;sembuh;v;iyileşmek
+923;berdoa;v;dua etmek
+924;merayakan;v;kutlamak
+925;mengucapkan selamat;v;tebrik etmek
+926;bersenang-senang;v;eğlenmek
+927;bosan;v;sıkılmak
+928;terkejut;v;şaşırmak
+929;tertarik;v;ilgilenmek
+930;merawat;v;bakmak (birine)
+931;mengawasi;v;denetlemek
+932;mencetak;v;yazdırmak
+933;mengunduh;v;indirmek (dosya)
+934;mengunggah;v;yüklemek (dosya)
+935;menyimpan;v;kaydetmek
+936;menghapus;v;silmek
+937;mengeklik;v;tıklamak
+938;sayangnya;adv;maalesef
+939;tentu saja;adv;elbette
+940;benar-benar;adv;gerçekten
+941;hampir;adv;neredeyse
+942;terutama;adv;özellikle
+943;biasanya;adv;genellikle
+944;sebenarnya;adv;aslında
+945;akhirnya;adv;sonunda
+946;tiba-tiba;adv;aniden
+947;mutlak;adv;kesinlikle
+948;barangkali;adv;muhtemelen
+949;cukup;adv;yeterince
+950;terlalu;adv;fazla, çok fazla
+951;di mana-mana;adv;her yerde
+952;tidak di mana pun;adv;hiçbir yerde
+953;di suatu tempat;adv;bir yerde
+954;begitu;adv;böyle, öyle
+955;kira-kira;adv;yaklaşık
+956;tepat;adv;tam olarak
+957;dengan tergesa-gesa;adv;hızla
+958;dengan hati-hati;adv;dikkatlice
+959;semata-mata;adv;yalnızca, sırf
+960;sebelumnya;adv;önceden / eski, önceki
+961;sementara itu;adv;bu arada
+962;selain itu;adv;ayrıca, üstelik
+963;jadi;adv;bu yüzden
+964;namun;adv;yine de
+965;puas;adj;memnun
+966;lajang;adj;bekar
+967;tenang;adj;sakin
+968;gugup;adj;gergin
+969;cemburu;adj;kıskanç
+970;pemalu;adj;utangaç
+971;lucu;adj;komik
+972;serius;adj;ciddi
+973;modern;adj;modern
+974;kuno;adj;antik, eski çağ
+975;dalam;adj;derin
+976;bulat;adj;yuvarlak
+977;datar;adj;düz
+978;tebal;adj;kalın
+979;tajam;adj;keskin
+980;buta;adj;kör
+981;tuli;adj;sağır
+982;internasional;adj;uluslararası
+983;nasional;adj;ulusal
+984;harian;adj;günlük
+985;mingguan;adj;haftalık
+986;saat ini;adj;mevcut, şu anki
+987;jelas;adj;açık, net

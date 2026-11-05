@@ -1,0 +1,1005 @@
+Sıra;Kelime;Tür;Türkçe Anlamı
+1;я;pron;ben
+2;ти;pron;sen
+3;він;pron;o (erkek)
+4;вона;pron;o (kadın)
+5;ми;pron;biz
+6;ви;pron;siz
+7;вони;pron;onlar
+8;це;pron;bu
+9;те;pron;şu, o
+10;хто;pron;kim
+11;що;pron;ne / ki
+12;де;adv;nerede
+13;коли;adv;ne zaman
+14;чому;adv;neden, niçin
+15;як;adv;nasıl
+16;який;pron;hangi
+17;скільки;adv;ne kadar
+18;так;int;evet / böyle, öyle
+19;ні;int;hayır
+20;не;adv;değil
+21;і;conj;ve
+22;або;conj;veya, ya da
+23;але;conj;ama, fakat
+24;тому що;conj;çünkü
+25;якщо;conj;eğer
+26;з;prep;ile, birlikte
+27;без;prep;-sız, olmadan
+28;для;prep;için
+29;в;prep;-de, içinde
+30;на;prep;üzerinde
+31;під;prep;altında
+32;від;prep;-den, -dan
+33;до;prep;-e doğru, -e
+34;між;prep;arasında
+35;перед;prep;önce
+36;після;prep;sonra
+37;біля;prep;yanında
+38;проти;prep;karşı
+39;про;prep;hakkında
+40;тут;adv;burada
+41;там;adv;orada
+42;зараз;adv;şimdi
+43;сьогодні;adv;bugün
+44;завтра;adv;yarın
+45;вчора;adv;dün
+46;завжди;adv;her zaman
+47;ніколи;adv;asla, hiç
+48;іноді;adv;bazen
+49;часто;adv;sık sık
+50;дуже;adv;çok
+51;трохи;adv;biraz
+52;більше;adv;daha
+53;менше;adv;daha az
+54;також;adv;de, da, ayrıca
+55;тільки;adv;sadece
+56;вже;adv;zaten, çoktan
+57;ще;adv;hâlâ, henüz
+58;одразу;adv;hemen
+59;можливо;adv;belki
+60;добре;adv;iyi (şekilde)
+61;погано;adv;kötü (şekilde)
+62;разом;adv;birlikte
+63;рано;adv;erken
+64;пізно;adv;geç
+65;знову;adv;yine, tekrar
+66;швидко;adv;çabuk, hızlıca
+67;повільно;adv;yavaşça
+68;скоро;adv;yakında
+69;далеко;adv;uzakta
+70;близько;adv;yakında (mesafe)
+71;всередині;adv;içeride
+72;надворі;adv;dışarıda
+73;нагорі;adv;yukarıda
+74;внизу;adv;aşağıda
+75;попереду;adv;ileride, önde
+76;позаду;adv;geride, arkada
+77;все;pron;her şey
+78;нічого;pron;hiçbir şey
+79;щось;pron;bir şey
+80;усі;pron;herkes
+81;ніхто;pron;kimse, hiç kimse
+82;хтось;pron;biri, birisi
+83;кожен;pron;her
+84;весь;pron;bütün, tüm
+85;інший;pron;başka
+86;той самий;pron;aynı
+87;кілька;pron;birkaç
+88;багато;pron;çok (sayıca)
+89;мало;pron;az (sayıca)
+90;привіт;int;merhaba
+91;доброго ранку;int;günaydın
+92;добрий вечір;int;iyi akşamlar
+93;на добраніч;int;iyi geceler
+94;до побачення;int;hoşça kal
+95;дякую;int;teşekkürler
+96;будь ласка;int;lütfen
+97;вибачте;int;özür dilerim
+98;гаразд;int;tamam
+99;ласкаво просимо;int;hoş geldiniz
+100;бути;v;olmak
+101;мати;v;sahip olmak / anne
+102;робити;v;yapmak
+103;йти;v;gitmek
+104;приходити;v;gelmek
+105;сказати;v;söylemek, demek
+106;говорити;v;konuşmak
+107;бачити;v;görmek
+108;дивитися;v;bakmak
+109;чути;v;duymak
+110;слухати;v;dinlemek
+111;знати;v;bilmek / tanımak
+112;думати;v;düşünmek
+113;вірити;v;inanmak
+114;хотіти;v;istemek
+115;могти;v;-ebilmek, yapabilmek
+116;мусити;v;-meli, zorunda olmak
+117;давати;v;vermek
+118;брати;v;almak
+119;класти;v;koymak
+120;знайти;v;bulmak
+121;шукати;v;aramak
+122;губити;v;kaybetmek
+123;вигравати;v;kazanmak (yarış)
+124;заробляти;v;kazanmak (para)
+125;працювати;v;çalışmak (iş)
+126;вчитися;v;ders çalışmak
+127;вивчати;v;öğrenmek
+128;навчати;v;öğretmek
+129;читати;v;okumak
+130;писати;v;yazmak
+131;розуміти;v;anlamak
+132;питати;v;sormak
+133;відповідати;v;cevap vermek
+134;допомагати;v;yardım etmek
+135;чекати;v;beklemek
+136;залишатися;v;kalmak
+137;жити;v;yaşamak
+138;проживати;v;oturmak, ikamet etmek
+139;помирати;v;ölmek
+140;народитися;v;doğmak
+141;кохати;v;sevmek
+142;подобатися;v;hoşlanmak
+143;ненавидіти;v;nefret etmek
+144;їсти;v;yemek
+145;пити;v;içmek
+146;спати;v;uyumak
+147;прокидатися;v;uyanmak
+148;вставати;v;kalkmak
+149;сідати;v;oturmak (sandalye)
+150;стояти;v;ayakta durmak
+151;ходити;v;yürümek
+152;бігати;v;koşmak
+153;плавати;v;yüzmek
+154;літати;v;uçmak
+155;водити;v;sürmek (araç)
+156;подорожувати;v;seyahat etmek
+157;прибувати;v;varmak
+158;від'їжджати;v;ayrılmak, gitmek
+159;входити;v;girmek
+160;виходити;v;çıkmak
+161;повертатися;v;dönmek, geri gelmek
+162;відкривати;v;açmak
+163;закривати;v;kapatmak
+164;починати;v;başlamak
+165;закінчувати;v;bitirmek
+166;зупинятися;v;durmak
+167;продовжувати;v;devam etmek
+168;змінювати;v;değiştirmek
+169;використовувати;v;kullanmak
+170;купувати;v;satın almak
+171;продавати;v;satmak
+172;платити;v;ödemek
+173;коштувати;v;maliyeti olmak, tutmak
+174;приносити;v;getirmek
+175;надсилати;v;göndermek
+176;отримувати;v;almak (teslim)
+177;тримати;v;tutmak
+178;носити;v;taşımak / giymek
+179;кидати;v;atmak
+180;падати;v;düşmek
+181;ламати;v;kırmak
+182;будувати;v;yapmak, inşa etmek
+183;створювати;v;yaratmak
+184;малювати;v;çizmek
+185;грати;v;oynamak
+186;співати;v;şarkı söylemek
+187;танцювати;v;dans etmek
+188;сміятися;v;gülmek
+189;плакати;v;ağlamak
+190;усміхатися;v;gülümsemek
+191;відчувати;v;hissetmek
+192;торкатися;v;dokunmak
+193;показувати;v;göstermek
+194;ховати;v;saklamak
+195;пам'ятати;v;hatırlamak
+196;забувати;v;unutmak
+197;пробувати;v;denemek
+198;вибирати;v;seçmek
+199;вирішувати;v;karar vermek
+200;планувати;v;planlamak
+201;готувати;v;hazırlamak
+202;варити;v;pişirmek
+203;мити;v;yıkamak
+204;прибирати;v;temizlemek
+205;одягатися;v;giyinmek
+206;будити;v;uyandırmak
+207;дзвонити;v;aramak (telefon)
+208;зустрічати;v;buluşmak
+209;відвідувати;v;ziyaret etmek
+210;запрошувати;v;davet etmek
+211;дякувати;v;teşekkür etmek
+212;прощати;v;affetmek
+213;дозволяти;v;izin vermek
+214;забороняти;v;yasaklamak
+215;слідувати;v;takip etmek
+216;керувати;v;yol göstermek, yönetmek / yönetmek
+217;здобувати;v;kazanmak, elde etmek
+218;траплятися;v;olmak, meydana gelmek
+219;здаватися;v;görünmek
+220;ставати;v;olmak, haline gelmek
+221;рости;v;büyümek
+222;захищати;v;korumak
+223;рятувати;v;kurtarmak
+224;вбивати;v;öldürmek
+225;боротися;v;savaşmak
+226;перемагати;v;kazanmak, galip gelmek
+227;потребувати;v;ihtiyaç duymak
+228;віддавати перевагу;v;tercih etmek
+229;сподіватися;v;ummak
+230;боятися;v;korkmak
+231;хвилюватися;v;endişelenmek
+232;відпочивати;v;dinlenmek
+233;курити;v;sigara içmek
+234;орендувати;v;kiralamak
+235;бронювати;v;rezervasyon yapmak
+236;перекладати;v;çevirmek (dil)
+237;пояснювати;v;açıklamak
+238;повторювати;v;tekrarlamak
+239;рахувати;v;saymak
+240;вимірювати;v;ölçmek
+241;перевіряти;v;kontrol etmek
+242;ремонтувати;v;düzeltmek, tamir etmek
+243;різати;v;kesmek
+244;штовхати;v;itmek
+245;тягнути;v;çekmek
+246;піднімати;v;kaldırmak
+247;повертати;v;dönmek, çevirmek
+248;проходити;v;geçmek
+249;переходити;v;geçmek, karşıya geçmek
+250;підніматися;v;tırmanmak
+251;спускатися;v;inmek
+252;людина;n;insan, kişi
+253;люди;n;insanlar
+254;чоловік;n;adam, erkek / koca, eş
+255;жінка;n;kadın
+256;дитина;n;çocuk
+257;хлопчик;n;erkek çocuk
+258;дівчинка;n;kız çocuk
+259;немовля;n;bebek
+260;сім'я;n;aile
+261;батько;n;baba
+262;батьки;n;anne baba, ebeveynler
+263;син;n;oğul
+264;донька;n;kız evlat
+265;брат;n;erkek kardeş
+266;сестра;n;kız kardeş
+267;дідусь;n;büyükbaba
+268;бабуся;n;büyükanne
+269;дядько;n;amca, dayı
+270;тітка;n;teyze, hala
+271;двоюрідний брат;n;kuzen
+272;дружина;n;karı, eş
+273;друг;n;arkadaş
+274;сусід;n;komşu
+275;гість;n;misafir
+276;ім'я;n;isim, ad
+277;прізвище;n;soyadı
+278;вік;n;yaş
+279;життя;n;hayat
+280;смерть;n;ölüm
+281;любов;n;aşk, sevgi
+282;тіло;n;vücut
+283;голова;n;baş, kafa
+284;волосся;n;saç
+285;обличчя;n;yüz
+286;око;n;göz
+287;вухо;n;kulak
+288;ніс;n;burun
+289;рот;n;ağız
+290;зуб;n;diş
+291;язик;n;dil (organ)
+292;шия;n;boyun
+293;плече;n;omuz
+294;рука;n;kol / el
+295;палець;n;parmak
+296;груди;n;göğüs
+297;спина;n;sırt
+298;живіт;n;karın, mide
+299;нога;n;bacak
+300;стопа;n;ayak
+301;коліно;n;diz
+302;серце;n;kalp
+303;кров;n;kan
+304;шкіра;n;deri, cilt
+305;кістка;n;kemik
+306;здоров'я;n;sağlık
+307;хвороба;n;hastalık
+308;біль;n;ağrı, acı
+309;лікар;n;doktor
+310;медсестра;n;hemşire
+311;лікарня;n;hastane
+312;ліки;n;ilaç
+313;аптека;n;eczane
+314;дім;n;ev
+315;квартира;n;daire
+316;кімната;n;oda
+317;кухня;n;mutfak
+318;ванна кімната;n;banyo
+319;спальня;n;yatak odası
+320;вітальня;n;oturma odası
+321;двері;n;kapı
+322;вікно;n;pencere
+323;стіна;n;duvar
+324;підлога;n;zemin, yer
+325;стеля;n;tavan
+326;сходи;n;merdiven
+327;сад;n;bahçe
+328;дах;n;çatı
+329;ключ;n;anahtar
+330;стіл;n;masa
+331;стілець;n;sandalye
+332;ліжко;n;yatak
+333;диван;n;kanepe
+334;шафа;n;dolap
+335;дзеркало;n;ayna
+336;лампа;n;lamba
+337;холодильник;n;buzdolabı
+338;духовка;n;fırın
+339;телевізор;n;televizyon
+340;комп'ютер;n;bilgisayar
+341;телефон;n;telefon
+342;годинник;n;saat (alet)
+343;картина;n;resim, tablo
+344;килим;n;halı
+345;штора;n;perde
+346;рушник;n;havlu
+347;мило;n;sabun
+348;зубна щітка;n;diş fırçası
+349;сумка;n;çanta
+350;коробка;n;kutu
+351;пляшка;n;şişe
+352;склянка;n;bardak
+353;чашка;n;fincan
+354;тарілка;n;tabak
+355;виделка;n;çatal
+356;ніж;n;bıçak
+357;ложка;n;kaşık
+358;каструля;n;tencere
+359;прийом їжі;n;yemek (öğün)
+360;їжа;n;yiyecek
+361;сніданок;n;kahvaltı
+362;обід;n;öğle yemeği
+363;вечеря;n;akşam yemeği
+364;вода;n;su
+365;хліб;n;ekmek
+366;молоко;n;süt
+367;кава;n;kahve
+368;чай;n;çay
+369;сік;n;meyve suyu
+370;пиво;n;bira
+371;вино;n;şarap
+372;м'ясо;n;et
+373;курка;n;tavuk
+374;риба;n;balık
+375;яйце;n;yumurta
+376;сир;n;peynir
+377;масло;n;tereyağı
+378;рис;n;pirinç
+379;макарони;n;makarna
+380;картопля;n;patates
+381;овочі;n;sebze
+382;фрукти;n;meyve
+383;яблуко;n;elma
+384;апельсин;n;portakal
+385;банан;n;muz
+386;виноград;n;üzüm
+387;полуниця;n;çilek
+388;лимон;n;limon
+389;помідор;n;domates
+390;цибуля;n;soğan
+391;часник;n;sarımsak
+392;морква;n;havuç
+393;огірок;n;salatalık
+394;салат;n;salata
+395;суп;n;çorba
+396;сіль;n;tuz
+397;цукор;n;şeker
+398;перець;n;biber
+399;олія;n;yağ (sıvı)
+400;мед;n;bal
+401;торт;n;pasta, kek
+402;морозиво;n;dondurma
+403;шоколад;n;çikolata
+404;ресторан;n;restoran
+405;кафе;n;kafe
+406;меню;n;menü
+407;офіціант;n;garson
+408;рахунок;n;hesap (restoran) / fatura
+409;чайові;n;bahşiş
+410;голод;n;açlık
+411;спрага;n;susuzluk
+412;місто;n;şehir
+413;село;n;köy
+414;країна;n;ülke
+415;вулиця;n;sokak
+416;площа;n;meydan
+417;дорога;n;yol
+418;міст;n;köprü
+419;будівля;n;bina
+420;магазин;n;dükkan, mağaza
+421;супермаркет;n;market
+422;ринок;n;pazar, çarşı
+423;банк;n;banka
+424;пошта;n;postane
+425;школа;n;okul
+426;університет;n;üniversite
+427;бібліотека;n;kütüphane
+428;музей;n;müze
+429;церква;n;kilise
+430;мечеть;n;cami
+431;парк;n;park
+432;готель;n;otel
+433;аеропорт;n;havaalanı
+434;вокзал;n;istasyon
+435;зупинка;n;durak
+436;порт;n;liman
+437;кінотеатр;n;sinema
+438;театр;n;tiyatro
+439;поліція;n;polis
+440;автомобіль;n;araba
+441;автобус;n;otobüs
+442;поїзд;n;tren
+443;літак;n;uçak
+444;корабель;n;gemi
+445;велосипед;n;bisiklet
+446;таксі;n;taksi
+447;метро;n;metro
+448;квиток;n;bilet
+449;валіза;n;bavul
+450;паспорт;n;pasaport
+451;карта;n;harita
+452;подорож;n;yolculuk, seyahat
+453;відпустка;n;tatil
+454;турист;n;turist
+455;рух;n;trafik
+456;аварія;n;kaza
+457;праворуч;n;sağ
+458;ліворуч;n;sol
+459;північ;n;kuzey
+460;південь;n;güney
+461;схід;n;doğu
+462;захід;n;batı
+463;кут;n;köşe
+464;центр;n;merkez
+465;місце;n;yer, mekan
+466;адреса;n;adres
+467;час;n;zaman
+468;година;n;saat (süre)
+469;хвилина;n;dakika
+470;секунда;n;saniye
+471;день;n;gün
+472;тиждень;n;hafta
+473;місяць;n;ay (takvim) / ay (gökyüzü)
+474;рік;n;yıl
+475;століття;n;yüzyıl
+476;ранок;n;sabah
+477;полудень;n;öğle
+478;після обіду;n;öğleden sonra
+479;вечір;n;akşam
+480;ніч;n;gece
+481;вихідні;n;hafta sonu
+482;понеділок;n;pazartesi
+483;вівторок;n;salı
+484;середа;n;çarşamba
+485;четвер;n;perşembe
+486;п'ятниця;n;cuma
+487;субота;n;cumartesi
+488;неділя;n;pazar (gün)
+489;січень;n;ocak
+490;лютий;n;şubat
+491;березень;n;mart
+492;квітень;n;nisan
+493;травень;n;mayıs
+494;червень;n;haziran
+495;липень;n;temmuz
+496;серпень;n;ağustos
+497;вересень;n;eylül
+498;жовтень;n;ekim
+499;листопад;n;kasım
+500;грудень;n;aralık
+501;пора року;n;mevsim
+502;весна;n;ilkbahar
+503;літо;n;yaz
+504;осінь;n;sonbahar
+505;зима;n;kış
+506;погода;n;hava (durumu)
+507;сонце;n;güneş
+508;зірка;n;yıldız
+509;небо;n;gökyüzü
+510;хмара;n;bulut
+511;дощ;n;yağmur
+512;сніг;n;kar
+513;вітер;n;rüzgar
+514;буря;n;fırtına
+515;температура;n;sıcaklık
+516;повітря;n;hava (soluduğumuz)
+517;вогонь;n;ateş
+518;земля;n;toprak, dünya
+519;світ;n;dünya
+520;природа;n;doğa
+521;море;n;deniz
+522;океан;n;okyanus
+523;річка;n;nehir
+524;озеро;n;göl
+525;гора;n;dağ
+526;пагорб;n;tepe
+527;ліс;n;orman
+528;дерево;n;ağaç
+529;квітка;n;çiçek
+530;трава;n;çimen
+531;листок;n;yaprak
+532;камінь;n;taş
+533;пісок;n;kum
+534;пляж;n;plaj
+535;острів;n;ada
+536;поле;n;tarla
+537;тварина;n;hayvan
+538;собака;n;köpek
+539;кіт;n;kedi
+540;кінь;n;at
+541;корова;n;inek
+542;свиня;n;domuz
+543;вівця;n;koyun
+544;птах;n;kuş
+545;миша;n;fare
+546;кролик;n;tavşan
+547;ведмідь;n;ayı
+548;вовк;n;kurt
+549;лев;n;aslan
+550;змія;n;yılan
+551;комаха;n;böcek
+552;бджола;n;arı
+553;муха;n;sinek
+554;качка;n;ördek
+555;лисиця;n;tilki
+556;мавпа;n;maymun
+557;слон;n;fil
+558;метелик;n;kelebek
+559;робота;n;iş
+560;професія;n;meslek
+561;компанія;n;şirket
+562;офіс;n;ofis
+563;начальник;n;patron
+564;колега;n;meslektaş
+565;нарада;n;toplantı
+566;гроші;n;para
+567;ціна;n;fiyat
+568;зарплата;n;maaş
+569;податок;n;vergi
+570;картка;n;kart
+571;вчитель;n;öğretmen
+572;учень;n;öğrenci
+573;урок;n;ders
+574;клас;n;sınıf
+575;іспит;n;sınav
+576;питання;n;soru
+577;відповідь;n;cevap
+578;книга;n;kitap
+579;зошит;n;defter
+580;ручка;n;kalem
+581;олівець;n;kurşun kalem
+582;папір;n;kağıt
+583;сторінка;n;sayfa
+584;слово;n;kelime
+585;речення;n;cümle
+586;мова;n;dil (lisan)
+587;літера;n;harf
+588;лист;n;mektup
+589;історія;n;hikaye / tarih (geçmiş)
+590;дата;n;tarih (gün)
+591;новина;n;haber
+592;газета;n;gazete
+593;журнал;n;dergi
+594;фільм;n;film
+595;музика;n;müzik
+596;пісня;n;şarkı
+597;гра;n;oyun
+598;спорт;n;spor
+599;футбол;n;futbol
+600;м'яч;n;top
+601;команда;n;takım
+602;матч;n;maç
+603;вечірка;n;parti, eğlence
+604;подарунок;n;hediye
+605;день народження;n;doğum günü
+606;фото;n;fotoğraf
+607;мистецтво;n;sanat
+608;інтернет;n;internet
+609;електронна пошта;n;e-posta
+610;повідомлення;n;mesaj
+611;номер;n;numara, sayı
+612;одяг;n;kıyafet, giysi
+613;сорочка;n;gömlek
+614;футболка;n;tişört
+615;штани;n;pantolon
+616;спідниця;n;etek
+617;сукня;n;elbise
+618;куртка;n;ceket
+619;взуття;n;ayakkabı
+620;капелюх;n;şapka
+621;шкарпетки;n;çorap
+622;окуляри;n;gözlük
+623;гаманець;n;cüzdan
+624;каблучка;n;yüzük
+625;колір;n;renk
+626;річ;n;şey, nesne
+627;шматок;n;parça
+628;частина;n;kısım, bölüm
+629;половина;n;yarım, yarı
+630;кінець;n;son
+631;початок;n;başlangıç
+632;спосіб;n;yol, yöntem
+633;причина;n;neden, sebep
+634;проблема;n;sorun
+635;ідея;n;fikir
+636;правда;n;gerçek, hakikat
+637;брехня;n;yalan
+638;помилка;n;hata
+639;удача;n;şans
+640;щастя;n;mutluluk
+641;страх;n;korku
+642;надія;n;umut
+643;мрія;n;rüya, hayal
+644;сила;n;güç, kuvvet
+645;війна;n;savaş
+646;мир;n;barış
+647;уряд;n;devlet, hükümet
+648;закон;n;kanun, yasa
+649;право;n;hak
+650;свобода;n;özgürlük
+651;народ;n;halk
+652;король;n;kral
+653;Бог;n;tanrı
+654;релігія;n;din
+655;культура;n;kültür
+656;наука;n;bilim
+657;традиція;n;gelenek
+658;добрий;adj;iyi
+659;поганий;adj;kötü
+660;великий;adj;büyük
+661;малий;adj;küçük
+662;довгий;adj;uzun
+663;короткий;adj;kısa
+664;високий;adj;uzun boylu, yüksek
+665;низький;adj;alçak, kısa boylu
+666;широкий;adj;geniş
+667;вузький;adj;dar
+668;новий;adj;yeni
+669;старий;adj;eski, yaşlı
+670;молодий;adj;genç
+671;гарний;adj;güzel
+672;потворний;adj;çirkin
+673;гарячий;adj;sıcak
+674;холодний;adj;soğuk
+675;теплий;adj;ılık
+676;прохолодний;adj;serin
+677;швидкий;adj;hızlı
+678;повільний;adj;yavaş
+679;легкий;adj;kolay / hafif
+680;важкий;adj;zor / ağır
+681;повний;adj;dolu
+682;порожній;adj;boş
+683;чистий;adj;temiz
+684;брудний;adj;kirli
+685;багатий;adj;zengin
+686;бідний;adj;fakir
+687;дешевий;adj;ucuz
+688;дорогий;adj;pahalı
+689;щасливий;adj;mutlu
+690;сумний;adj;üzgün
+691;сердитий;adj;kızgın
+692;втомлений;adj;yorgun
+693;хворий;adj;hasta
+694;здоровий;adj;sağlıklı
+695;голодний;adj;aç
+696;сильний;adj;güçlü
+697;слабкий;adj;zayıf, güçsüz
+698;товстий;adj;şişman / kalın
+699;худий;adj;ince, zayıf
+700;розумний;adj;akıllı
+701;дурний;adj;aptal
+702;ввічливий;adj;nazik
+703;грубий;adj;kaba
+704;чесний;adj;dürüst
+705;сміливий;adj;cesur
+706;лінивий;adj;tembel
+707;зайнятий;adj;meşgul
+708;вільний;adj;serbest, özgür
+709;готовий;adj;hazır
+710;правильний;adj;doğru
+711;неправильний;adj;yanlış
+712;справжній;adj;gerçek
+713;фальшивий;adj;yanlış, sahte
+714;важливий;adj;önemli
+715;цікавий;adj;ilginç
+716;нудний;adj;sıkıcı
+717;небезпечний;adj;tehlikeli
+718;безпечний;adj;güvenli
+719;можливий;adj;mümkün
+720;неможливий;adj;imkansız
+721;необхідний;adj;gerekli
+722;нормальний;adj;normal
+723;дивний;adj;garip, tuhaf
+724;різний;adj;farklı
+725;схожий;adj;benzer
+726;простий;adj;kolay, basit
+727;складний;adj;karmaşık
+728;тихий;adj;sessiz
+729;гучний;adj;gürültülü
+730;темний;adj;karanlık
+731;світлий;adj;aydınlık
+732;м'який;adj;yumuşak
+733;твердий;adj;sert
+734;солодкий;adj;tatlı
+735;кислий;adj;ekşi
+736;гіркий;adj;acı
+737;солоний;adj;tuzlu
+738;смачний;adj;lezzetli
+739;свіжий;adj;taze
+740;мокрий;adj;ıslak
+741;сухий;adj;kuru
+742;відкритий;adj;açık
+743;закритий;adj;kapalı
+744;близький;adj;yakın
+745;далекий;adj;uzak
+746;перший;adj;ilk
+747;останній;adj;son
+748;наступний;adj;sonraki
+749;самотній;adj;tek, yalnız
+750;цілий;adj;bütün, tam
+751;ідеальний;adj;mükemmel
+752;відомий;adj;ünlü
+753;місцевий;adj;yerel
+754;іноземний;adj;yabancı
+755;особливий;adj;özel
+756;загальний;adj;genel
+757;громадський;adj;kamu, halka açık
+758;приватний;adj;özel, kişisel
+759;червоний;adj;kırmızı
+760;синій;adj;mavi
+761;зелений;adj;yeşil
+762;жовтий;adj;sarı
+763;чорний;adj;siyah
+764;білий;adj;beyaz
+765;сірий;adj;gri
+766;коричневий;adj;kahverengi
+767;помаранчевий;adj;turuncu
+768;рожевий;adj;pembe
+769;фіолетовий;adj;mor
+770;блакитний;adj;açık mavi
+771;нуль;num;sıfır
+772;один;num;bir
+773;два;num;iki
+774;три;num;üç
+775;чотири;num;dört
+776;п'ять;num;beş
+777;шість;num;altı
+778;сім;num;yedi
+779;вісім;num;sekiz
+780;дев'ять;num;dokuz
+781;десять;num;on
+782;одинадцять;num;on bir
+783;дванадцять;num;on iki
+784;тринадцять;num;on üç
+785;чотирнадцять;num;on dört
+786;п'ятнадцять;num;on beş
+787;шістнадцять;num;on altı
+788;сімнадцять;num;on yedi
+789;вісімнадцять;num;on sekiz
+790;дев'ятнадцять;num;on dokuz
+791;двадцять;num;yirmi
+792;тридцять;num;otuz
+793;сорок;num;kırk
+794;п'ятдесят;num;elli
+795;шістдесят;num;altmış
+796;сімдесят;num;yetmiş
+797;вісімдесят;num;seksen
+798;дев'яносто;num;doksan
+799;сто;num;yüz
+800;тисяча;num;bin
+801;мільйон;num;milyon
+802;другий;num;ikinci
+803;третій;num;üçüncü
+804;економіка;n;ekonomi
+805;політика;n;politika
+806;вибори;n;seçim
+807;президент;n;başkan
+808;солдат;n;asker
+809;армія;n;ordu
+810;зброя;n;silah
+811;злочин;n;suç
+812;злодій;n;hırsız
+813;суд;n;mahkeme
+814;адвокат;n;avukat
+815;суддя;n;hakim
+816;інженер;n;mühendis
+817;письменник;n;yazar
+818;художник;n;sanatçı
+819;кухар;n;aşçı
+820;водій;n;şoför
+821;фермер;n;çiftçi
+822;продавець;n;satıcı
+823;клієнт;n;müşteri
+824;робітник;n;işçi
+825;поліцейський;n;polis memuru
+826;пожежник;n;itfaiyeci
+827;стоматолог;n;diş hekimi
+828;машина;n;makine
+829;інструмент;n;alet
+830;дверний дзвінок;n;kapı zili
+831;енергія;n;enerji
+832;електрика;n;elektrik
+833;світло;n;ışık
+834;голос;n;ses
+835;шум;n;gürültü
+836;запах;n;koku
+837;смак;n;tat
+838;форма;n;biçim, şekil
+839;розмір;n;boyut
+840;вага;n;ağırlık
+841;довжина;n;uzunluk
+842;метр;n;metre
+843;кілограм;n;kilo
+844;літр;n;litre
+845;відсоток;n;yüzde
+846;група;n;grup
+847;список;n;liste
+848;приклад;n;örnek
+849;правило;n;kural
+850;вибір;n;seçenek
+851;рішення;n;karar
+852;план;n;plan
+853;мета;n;amaç, hedef
+854;результат;n;sonuç
+855;успіх;n;başarı
+856;досвід;n;deneyim
+857;інформація;n;bilgi
+858;реакція;n;cevap, tepki
+859;допомога;n;yardım
+860;небезпека;n;tehlike
+861;безпека;n;güvenlik
+862;якість;n;kalite
+863;кількість;n;miktar
+864;різниця;n;fark
+865;стосунки;n;ilişki
+866;потреба;n;ihtiyaç
+867;почуття;n;duygu
+868;думка;n;düşünce
+869;спогад;n;anı, hatıra
+870;майбутнє;n;gelecek
+871;минуле;n;geçmiş
+872;теперішнє;n;şimdiki zaman, an
+873;мить;n;an
+874;подія;n;olay
+875;ситуація;n;durum
+876;тип;n;tür, çeşit
+877;рівень;n;seviye
+878;крок;n;adım
+879;вхід;n;giriş
+880;вихід;n;çıkış
+881;черга;n;sıra, kuyruk
+882;дозвіл;n;izin
+883;оплата;n;ödeme
+884;знижка;n;indirim
+885;продукт;n;ürün
+886;послуга;n;hizmet
+887;реклама;n;reklam
+888;брати участь;v;katılmak
+889;погоджуватися;v;katılıyorum, hemfikir olmak
+890;відмовлятися;v;reddetmek
+891;приймати;v;kabul etmek
+892;обіцяти;v;söz vermek
+893;одружуватися;v;evlenmek
+894;розлучатися;v;boşanmak
+895;переїжджати;v;taşınmak
+896;розвивати;v;geliştirmek
+897;збільшувати;v;artırmak
+898;зменшувати;v;azaltmak
+899;порівнювати;v;karşılaştırmak
+900;описувати;v;tarif etmek, betimlemek
+901;пропонувати;v;önermek
+902;радити;v;tavsiye etmek
+903;обговорювати;v;tartışmak
+904;сваритися;v;kavga etmek
+905;скаржитися;v;şikayet etmek
+906;виробляти;v;üretmek
+907;організовувати;v;organize etmek
+908;засновувати;v;kurmak
+909;підтримувати;v;desteklemek
+910;зв'язувати;v;bağlamak
+911;розділяти;v;ayırmak
+912;ділитися;v;paylaşmak
+913;заощаджувати;v;biriktirmek, tasarruf etmek
+914;витрачати;v;harcamak
+915;позичати;v;ödünç vermek
+916;пропускати;v;kaçırmak
+917;ловити;v;yakalamak
+918;обіймати;v;sarılmak
+919;цілувати;v;öpmek
+920;бити;v;vurmak
+921;копати;v;kazmak
+922;сіяти;v;ekmek (tohum)
+923;збирати;v;toplamak
+924;наповнювати;v;doldurmak
+925;спорожняти;v;boşaltmak
+926;гріти;v;ısıtmak
+927;трясти;v;sallamak
+928;вішати;v;asmak
+929;кричати;v;bağırmak
+930;шепотіти;v;fısıldamak
+931;куштувати;v;tatmak
+932;нюхати;v;koklamak
+933;дихати;v;nefes almak
+934;пітніти;v;terlemek
+935;боліти;v;acıtmak, ağrımak
+936;одужувати;v;iyileşmek
+937;молитися;v;dua etmek
+938;святкувати;v;kutlamak
+939;вітати;v;tebrik etmek
+940;розважатися;v;eğlenmek
+941;нудьгувати;v;sıkılmak
+942;дивуватися;v;şaşırmak
+943;цікавитися;v;ilgilenmek
+944;доглядати;v;bakmak (birine)
+945;контролювати;v;denetlemek
+946;друкувати;v;yazdırmak
+947;завантажувати;v;indirmek (dosya)
+948;вивантажувати;v;yüklemek (dosya)
+949;зберігати;v;kaydetmek
+950;видаляти;v;silmek
+951;клацати;v;tıklamak
+952;на жаль;adv;maalesef
+953;звичайно;adv;elbette
+954;справді;adv;gerçekten
+955;майже;adv;neredeyse
+956;особливо;adv;özellikle
+957;зазвичай;adv;genellikle
+958;насправді;adv;aslında
+959;нарешті;adv;sonunda
+960;раптом;adv;aniden
+961;абсолютно;adv;kesinlikle
+962;мабуть;adv;muhtemelen
+963;достатньо;adv;yeterince
+964;занадто;adv;fazla, çok fazla
+965;скрізь;adv;her yerde
+966;ніде;adv;hiçbir yerde
+967;десь;adv;bir yerde
+968;приблизно;adv;yaklaşık
+969;точно;adv;tam olarak
+970;поспіхом;adv;hızla
+971;уважно;adv;dikkatlice
+972;лише;adv;yalnızca, sırf
+973;заздалегідь;adv;önceden
+974;тим часом;adv;bu arada
+975;крім того;adv;ayrıca, üstelik
+976;тому;adv;bu yüzden
+977;все одно;adv;yine de
+978;задоволений;adj;memnun
+979;одружений;adj;evli
+980;неодружений;adj;bekar
+981;мертвий;adj;ölü
+982;живий;adj;canlı
+983;спокійний;adj;sakin
+984;нервовий;adj;gergin
+985;ревнивий;adj;kıskanç
+986;сором'язливий;adj;utangaç
+987;смішний;adj;komik
+988;серйозний;adj;ciddi
+989;сучасний;adj;modern
+990;стародавній;adj;antik, eski çağ
+991;глибокий;adj;derin
+992;круглий;adj;yuvarlak
+993;плаский;adj;düz
+994;гострий;adj;keskin
+995;сліпий;adj;kör
+996;глухий;adj;sağır
+997;міжнародний;adj;uluslararası
+998;національний;adj;ulusal
+999;щоденний;adj;günlük
+1000;щотижневий;adj;haftalık
+1001;поточний;adj;mevcut, şu anki
+1002;попередній;adj;eski, önceki
+1003;імовірний;adj;olası
+1004;ясний;adj;açık, net

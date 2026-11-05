@@ -182,7 +182,7 @@ function startSandbox() {
 function playAudio(text, lang) {
     if (!window.speechSynthesis || !text) return;
     const targetLang = lang || (LANGUAGE_BY_CODE[state.lang] || LANGUAGE_BY_CODE.en).tts;
-    const safeText = text.toString().replace(/\//g, ' or ');
+    const safeText = text.toString().replace(/\s*\([^)]*\)/g, '').replace(/\//g, ' or ');   // (okunuş) kısmı okunmaz
 
     try {
         window.speechSynthesis.cancel();

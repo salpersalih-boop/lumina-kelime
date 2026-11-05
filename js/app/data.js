@@ -144,7 +144,7 @@ const parseIsvecceCsv    = text => buildWordList(text, 2, 3);
 const parseIspanyolcaCsv = text => buildWordList(text, 1, 3);
 const parseNorvecceCsv   = text => buildWordList(text, 1, 3);
 const parseFutbolCsv     = text => buildWordList(text, 1, 3);   // [Sıra;Kelime;Tür;Türkçe]
-const parseSimpleCsv     = text => buildWordList(text, 1, 3);   // İtalyanca/Portekizce/Rusça/Felemenkçe [Sıra;Kelime;Tür;Türkçe]
+const parseSimpleCsv     = text => buildWordList(text, 1, 3);   // Basit listeler (İtalyanca … Arapça, Çince, Hintçe, Ukraynaca, Danca, Endonezce) [Sıra;Kelime;Tür;Türkçe]
 
 // TÖMER kelime dosyaları: [Ünite;Kelime;Tür;Türkçe] — grup = ünite numarası
 function parseUnitCsv(csvText) {
@@ -186,7 +186,19 @@ const LANGUAGES = [
     { code: 'ru',     key: 'Russian',    label: 'Rusça',      upper: 'RUSÇA',      flag: '🇷🇺', short: 'RU',  tts: 'ru-RU', theme: 'ru',     csv: 'russian.csv',    api: null,              parse: parseSimpleCsv,     defaultGroups: 11,  sub: 'Kişisel Rusça Kelime Sistemi' },
     { code: 'nl',     key: 'Dutch',      label: 'Felemenkçe', upper: 'FELEMENKÇE', flag: '🇳🇱', short: 'NL',  tts: 'nl-NL', theme: 'nl',     csv: 'dutch.csv',      api: null,              parse: parseSimpleCsv,     defaultGroups: 10,  sub: 'Kişisel Felemenkçe Kelime Sistemi' },
     { code: 'sv',     key: 'Swedish',    label: 'İsveççe',    upper: 'İSVEÇÇE',    flag: '🇸🇪', short: 'SV',  tts: 'sv-SE', theme: 'sv',     csv: 'swedish.csv',    api: 'words/swedish',   parse: parseIsvecceCsv,    defaultGroups: 58,  sub: 'Kişisel İsveççe Kelime Sistemi' },
-    { code: 'no',     key: 'Norwegian',  label: 'Norveççe',   upper: 'NORVEÇÇE',   flag: '🇳🇴', short: 'NO',  tts: 'nb-NO', theme: 'no',     csv: 'norwegian.csv',  api: 'words/norwegian', parse: parseNorvecceCsv,   defaultGroups: 20,  sub: 'Kişisel Norveççe Kelime Sistemi' }
+    { code: 'no',     key: 'Norwegian',  label: 'Norveççe',   upper: 'NORVEÇÇE',   flag: '🇳🇴', short: 'NO',  tts: 'nb-NO', theme: 'no',     csv: 'norwegian.csv',  api: 'words/norwegian', parse: parseNorvecceCsv,   defaultGroups: 20,  sub: 'Kişisel Norveççe Kelime Sistemi' },
+    // Yunanca/Japonca/Korece/Arapça kelimelerin yanında parantez içinde okunuşu (Latin harfleriyle) yazar; sesli okumada parantez okunmaz.
+    { code: 'pl',     key: 'Polish',     label: 'Lehçe',      upper: 'LEHÇE',      flag: '🇵🇱', short: 'PL',  tts: 'pl-PL', theme: 'pl',     csv: 'polish.csv',        api: null,              parse: parseSimpleCsv,     defaultGroups: 11,  sub: 'Kişisel Lehçe Kelime Sistemi' },
+    { code: 'el',     key: 'Greek',      label: 'Yunanca',    upper: 'YUNANCA',    flag: '🇬🇷', short: 'EL',  tts: 'el-GR', theme: 'el',     csv: 'greek.csv',         api: null,              parse: parseSimpleCsv,     defaultGroups: 10,  sub: 'Kişisel Yunanca Kelime Sistemi' },
+    { code: 'ja',     key: 'Japanese',   label: 'Japonca',    upper: 'JAPONCA',    flag: '🇯🇵', short: 'JA',  tts: 'ja-JP', theme: 'ja',     csv: 'japanese.csv',      api: null,              parse: parseSimpleCsv,     defaultGroups: 11,  sub: 'Kişisel Japonca Kelime Sistemi' },
+    { code: 'ko',     key: 'Korean',     label: 'Korece',     upper: 'KORECE',     flag: '🇰🇷', short: 'KO',  tts: 'ko-KR', theme: 'ko',     csv: 'korean.csv',        api: null,              parse: parseSimpleCsv,     defaultGroups: 10,  sub: 'Kişisel Korece Kelime Sistemi' },
+    { code: 'ar',     key: 'Arabic',     label: 'Arapça',     upper: 'ARAPÇA',     flag: '🇸🇦', short: 'AR',  tts: 'ar-SA', theme: 'ar',     csv: 'arabic.csv',        api: null,              parse: parseSimpleCsv,     defaultGroups: 11,  sub: 'Kişisel Arapça Kelime Sistemi' },
+    // Çince (pinyin) ve Hintçe kelimelerin yanında da okunuş yazar.
+    { code: 'zh',     key: 'Chinese',    label: 'Çince',      upper: 'ÇİNCE',      flag: '🇨🇳', short: 'ZH',  tts: 'zh-CN', theme: 'zh',     csv: 'chinese.csv',       api: null,              parse: parseSimpleCsv,     defaultGroups: 10,  sub: 'Kişisel Çince Kelime Sistemi' },
+    { code: 'hi',     key: 'Hindi',      label: 'Hintçe',     upper: 'HİNTÇE',     flag: '🇮🇳', short: 'HI',  tts: 'hi-IN', theme: 'hi',     csv: 'hindi.csv',         api: null,              parse: parseSimpleCsv,     defaultGroups: 10,  sub: 'Kişisel Hintçe Kelime Sistemi' },
+    { code: 'uk',     key: 'Ukrainian',  label: 'Ukraynaca',  upper: 'UKRAYNACA',  flag: '🇺🇦', short: 'UK',  tts: 'uk-UA', theme: 'uk',     csv: 'ukrainian.csv',     api: null,              parse: parseSimpleCsv,     defaultGroups: 11,  sub: 'Kişisel Ukraynaca Kelime Sistemi' },
+    { code: 'da',     key: 'Danish',     label: 'Danca',      upper: 'DANCA',      flag: '🇩🇰', short: 'DA',  tts: 'da-DK', theme: 'da',     csv: 'danish.csv',        api: null,              parse: parseSimpleCsv,     defaultGroups: 11,  sub: 'Kişisel Danca Kelime Sistemi' },
+    { code: 'id',     key: 'Indonesian', label: 'Endonezce',  upper: 'ENDONEZCE',  flag: '🇮🇩', short: 'ID',  tts: 'id-ID', theme: 'id',     csv: 'indonesian.csv',    api: null,              parse: parseSimpleCsv,     defaultGroups: 10,  sub: 'Kişisel Endonezce Kelime Sistemi' },
 ];
 // TÖMER seviyelerinin kelime kartları (dil ekranında görünmez, TÖMER → seviye → Kelime ile açılır)
 ['a1', 'a2', 'b1', 'b2'].forEach(lv => LANGUAGES.push({
@@ -328,6 +340,8 @@ function updateAppTitle(langName) {
         el.textContent = 'Lumina';
     });
     document.title = lang ? `Lumina · ${lang.label}` : 'Lumina';
+    // Kart ve hızlı yazma üzerindeki dil etiketi (önceden her dilde "EN" yazıyordu)
+    document.querySelectorAll('.card-lang-tag:not(.tr), .typing-lang-tag:not(.tr)').forEach(el => { el.textContent = lang ? lang.short : 'EN'; });
 }
 
 async function loadVerbsLabData() {
