@@ -72,6 +72,8 @@ Kaynak Excel: `Lumına Kelime/Lumina_Kelimeler (3).xlsx` (depoda yok, yedeğini 
 
 Lehçe, Yunanca, Japonca, Korece ve Arapça listeleri de ~1.000 temel kelimedir. Yunanca isimler artikelleriyle yazılır; Yunanca, Japonca, Korece ve Arapça kelimelerin yanında parantez içinde Latin harfli okunuşu bulunur, örn. `水 (mizu)`. Çince (pinyin) ve Hintçe de aynı şekilde okunuşludur; Danca isimler en/et artikeliyle yazılır. Farsça okunuşludur, Katalanca isimler artikellidir; Latince için tarayıcılarda ses olmadığından İtalyanca ses kullanılır. Sesli okumada parantez içi okunmaz.
 
+Çince, Hintçe, Arapça, Portekizce ve Rusça ikinci 1.000'lik listeyle ~2.000 kelimeye çıkarıldı (vücut, ev, yemek, şehir/seyahat, doğa, iş/okul/teknoloji, fiiller, sıfatlar, kalıp ifadeler, toplum). Diğer diller sırayla aynı listeyle büyütülecek.
+
 ## Dil ekleme / sıralama
 Tüm diller `js/app/data.js` → `LANGUAGES` listesinde tanımlıdır; dil seçim ekranındaki kartlar, başlıklar, bayraklar, sesli okuma dili ve grup sayıları buradan üretilir. Listedeki sıra ekrandaki sıradır.
 
