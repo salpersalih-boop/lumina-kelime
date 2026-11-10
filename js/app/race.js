@@ -272,6 +272,13 @@ const TypingRace = (() => {
     const TIME_PER_WORD = 8; // seconds per word
     const TOTAL_WORDS = 10;
 
+    // "水 (mizu)" gibi okunuşlu kelimelerde okunuş yazılır; aksan ve ʿ işaretleri aranmaz (ō→o, ά→a).
+    const plain = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[ʿ']/g, '');
+    function typeTarget(w) {
+        const m = (w.en || '').match(/^(.*\S)\s*\(([^)]+)\)$/);
+        return m && /[^\u0000-\u024F]/.test(m[1]) ? plain(m[2]).toLowerCase() : null;
+    }
+
     function start() {
         words = getRandomWords(TOTAL_WORDS);
         if (words.length === 0) {
@@ -316,7 +323,7 @@ const TypingRace = (() => {
 
         // Char feedback indicators
         const charFb = document.getElementById('typingCharFeedback');
-        charFb.innerHTML = word.en.split('').map(() => '<span class="char pending"></span>').join('');
+        charFb.innerHTML = (typeTarget(word) || word.en).split('').map(() => '<span class="char pending"></span>').join('');
 
         // Timer
         timeLeft = TIME_PER_WORD;
@@ -340,8 +347,9 @@ const TypingRace = (() => {
 
     function handleInput() {
         const input = document.getElementById('typingInput');
-        const target = words[currentIndex].en.toLowerCase();
-        const typed = input.value.toLowerCase();
+        const rom = typeTarget(words[currentIndex]);
+        const target = rom || words[currentIndex].en.toLowerCase();
+        const typed = rom ? plain(input.value.toLowerCase()) : input.value.toLowerCase();
 
         // Update char feedback
         const chars = document.querySelectorAll('#typingCharFeedback .char');

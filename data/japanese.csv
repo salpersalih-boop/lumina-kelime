@@ -1,0 +1,1011 @@
+Sıra;Kelime;Tür;Türkçe Anlamı
+1;私 (watashi);pron;ben
+2;あなた (anata);pron;sen
+3;彼 (kare);pron;o (erkek)
+4;彼女 (kanojo);pron;o (kadın)
+5;私たち (watashitachi);pron;biz
+6;あなたたち (anatatachi);pron;siz
+7;彼ら (karera);pron;onlar
+8;これ (kore);pron;bu
+9;あれ (are);pron;şu, o
+10;誰 (dare);pron;kim
+11;何 (nani);pron;ne
+12;どこ (doko);adv;nerede
+13;いつ (itsu);adv;ne zaman
+14;なぜ (naze);adv;neden, niçin
+15;どう (dō);adv;nasıl
+16;どの (dono);pron;hangi
+17;いくら (ikura);adv;ne kadar
+18;はい (hai);int;evet
+19;いいえ (iie);int;hayır
+20;ない (nai);adv;değil
+21;と (to);conj;ve
+22;または (mata wa);conj;veya, ya da
+23;でも (demo);conj;ama, fakat
+24;なぜなら (nazenara);conj;çünkü
+25;もし (moshi);conj;eğer
+26;ということ (to iu koto);conj;ki
+27;一緒に (issho ni);prep;ile, birlikte / birlikte
+28;なしで (nashi de);prep;-sız, olmadan
+29;ために (tame ni);prep;için
+30;中で (naka de);prep;-de, içinde
+31;上に (ue ni);prep;üzerinde
+32;下に (shita ni);prep;altında
+33;から (kara);prep;-den, -dan
+34;へ (e);prep;-e doğru, -e
+35;間に (aida ni);prep;arasında
+36;前に (mae ni);prep;önce
+37;後で (ato de);prep;sonra
+38;隣に (tonari ni);prep;yanında
+39;反対に (hantai ni);prep;karşı
+40;について (ni tsuite);prep;hakkında
+41;ここ (koko);adv;burada
+42;そこ (soko);adv;orada
+43;今 (ima);adv;şimdi
+44;今日 (kyō);adv;bugün
+45;明日 (ashita);adv;yarın
+46;昨日 (kinō);adv;dün
+47;いつも (itsumo);adv;her zaman
+48;決して (kesshite);adv;asla, hiç
+49;時々 (tokidoki);adv;bazen
+50;よく (yoku);adv;sık sık
+51;とても (totemo);adv;çok
+52;少し (sukoshi);adv;biraz
+53;もっと (motto);adv;daha
+54;より少なく (yori sukunaku);adv;daha az
+55;も (mo);adv;de, da, ayrıca
+56;だけ (dake);adv;sadece
+57;もう (mō);adv;zaten, çoktan
+58;まだ (mada);adv;hâlâ, henüz
+59;すぐに (sugu ni);adv;hemen
+60;たぶん (tabun);adv;belki
+61;上手に (jōzu ni);adv;iyi (şekilde)
+62;下手に (heta ni);adv;kötü (şekilde)
+63;早く (hayaku);adv;erken
+64;遅く (osoku);adv;geç
+65;また (mata);adv;yine, tekrar
+66;速く (hayaku);adv;çabuk, hızlıca
+67;ゆっくり (yukkuri);adv;yavaşça
+68;もうすぐ (mō sugu);adv;yakında
+69;遠く (tōku);adv;uzakta
+70;近く (chikaku);adv;yakında (mesafe)
+71;中 (naka);adv;içeride
+72;外 (soto);adv;dışarıda
+73;上 (ue);adv;yukarıda
+74;下 (shita);adv;aşağıda
+75;前 (mae);adv;ileride, önde
+76;後ろ (ushiro);adv;geride, arkada
+77;全部 (zenbu);pron;her şey
+78;何も (nanimo);pron;hiçbir şey
+79;何か (nanika);pron;bir şey
+80;みんな (minna);pron;herkes
+81;誰も (daremo);pron;kimse, hiç kimse
+82;誰か (dareka);pron;biri, birisi
+83;毎 (mai);pron;her
+84;すべて (subete);pron;bütün, tüm
+85;他の (hoka no);pron;başka
+86;同じ (onaji);pron;aynı
+87;いくつか (ikutsuka);pron;birkaç
+88;たくさん (takusan);pron;çok (sayıca)
+89;少ない (sukunai);pron;az (sayıca)
+90;こんにちは (konnichiwa);int;merhaba
+91;おはよう (ohayō);int;günaydın
+92;こんばんは (konbanwa);int;iyi akşamlar
+93;おやすみ (oyasumi);int;iyi geceler
+94;さようなら (sayōnara);int;hoşça kal
+95;ありがとう (arigatō);int;teşekkürler
+96;お願いします (onegaishimasu);int;lütfen
+97;すみません (sumimasen);int;özür dilerim
+98;大丈夫 (daijōbu);int;tamam
+99;ようこそ (yōkoso);int;hoş geldiniz
+100;ある (aru);v;olmak
+101;持つ (motsu);v;sahip olmak / tutmak
+102;する (suru);v;yapmak
+103;行く (iku);v;gitmek
+104;来る (kuru);v;gelmek
+105;言う (iu);v;söylemek, demek
+106;話す (hanasu);v;konuşmak
+107;見る (miru);v;görmek
+108;眺める (nagameru);v;bakmak
+109;聞こえる (kikoeru);v;duymak
+110;聴く (kiku);v;dinlemek
+111;知る (shiru);v;bilmek
+112;知り合う (shiriau);v;tanımak
+113;考える (kangaeru);v;düşünmek
+114;信じる (shinjiru);v;inanmak
+115;欲しい (hoshii);v;istemek
+116;できる (dekiru);v;-ebilmek, yapabilmek
+117;しなければならない (shinakereba naranai);v;-meli, zorunda olmak
+118;あげる (ageru);v;vermek
+119;取る (toru);v;almak
+120;置く (oku);v;koymak
+121;見つける (mitsukeru);v;bulmak
+122;探す (sagasu);v;aramak
+123;なくす (nakusu);v;kaybetmek
+124;勝つ (katsu);v;kazanmak (yarış)
+125;稼ぐ (kasegu);v;kazanmak (para)
+126;働く (hataraku);v;çalışmak (iş)
+127;勉強する (benkyō suru);v;ders çalışmak
+128;学ぶ (manabu);v;öğrenmek
+129;教える (oshieru);v;öğretmek
+130;読む (yomu);v;okumak
+131;書く (kaku);v;yazmak
+132;分かる (wakaru);v;anlamak
+133;尋ねる (tazuneru);v;sormak
+134;答える (kotaeru);v;cevap vermek
+135;手伝う (tetsudau);v;yardım etmek
+136;待つ (matsu);v;beklemek
+137;残る (nokoru);v;kalmak
+138;生きる (ikiru);v;yaşamak
+139;住む (sumu);v;oturmak, ikamet etmek
+140;死ぬ (shinu);v;ölmek
+141;生まれる (umareru);v;doğmak
+142;愛する (aisuru);v;sevmek
+143;好む (konomu);v;hoşlanmak
+144;憎む (nikumu);v;nefret etmek
+145;食べる (taberu);v;yemek
+146;飲む (nomu);v;içmek
+147;寝る (neru);v;uyumak
+148;目が覚める (me ga sameru);v;uyanmak
+149;起きる (okiru);v;kalkmak
+150;座る (suwaru);v;oturmak (sandalye)
+151;立つ (tatsu);v;ayakta durmak
+152;歩く (aruku);v;yürümek
+153;走る (hashiru);v;koşmak
+154;泳ぐ (oyogu);v;yüzmek
+155;飛ぶ (tobu);v;uçmak
+156;運転する (unten suru);v;sürmek (araç)
+157;旅行する (ryokō suru);v;seyahat etmek
+158;着く (tsuku);v;varmak
+159;出発する (shuppatsu suru);v;ayrılmak, gitmek
+160;入る (hairu);v;girmek
+161;出る (deru);v;çıkmak
+162;戻る (modoru);v;dönmek, geri gelmek
+163;開ける (akeru);v;açmak
+164;閉める (shimeru);v;kapatmak
+165;始める (hajimeru);v;başlamak
+166;終える (oeru);v;bitirmek
+167;止まる (tomaru);v;durmak
+168;続ける (tsuzukeru);v;devam etmek
+169;変える (kaeru);v;değiştirmek
+170;使う (tsukau);v;kullanmak / harcamak
+171;買う (kau);v;satın almak
+172;売る (uru);v;satmak
+173;払う (harau);v;ödemek
+174;かかる (kakaru);v;maliyeti olmak, tutmak
+175;持ってくる (motte kuru);v;getirmek
+176;送る (okuru);v;göndermek
+177;受け取る (uketoru);v;almak (teslim)
+178;運ぶ (hakobu);v;taşımak
+179;投げる (nageru);v;atmak
+180;落ちる (ochiru);v;düşmek
+181;壊す (kowasu);v;kırmak
+182;建てる (tateru);v;yapmak, inşa etmek
+183;作る (tsukuru);v;yaratmak
+184;描く (kaku);v;çizmek
+185;遊ぶ (asobu);v;oynamak
+186;歌う (utau);v;şarkı söylemek
+187;踊る (odoru);v;dans etmek
+188;笑う (warau);v;gülmek
+189;泣く (naku);v;ağlamak
+190;微笑む (hohoemu);v;gülümsemek
+191;感じる (kanjiru);v;hissetmek
+192;触る (sawaru);v;dokunmak
+193;見せる (miseru);v;göstermek
+194;隠す (kakusu);v;saklamak
+195;覚える (oboeru);v;hatırlamak
+196;忘れる (wasureru);v;unutmak
+197;試す (tamesu);v;denemek
+198;選ぶ (erabu);v;seçmek
+199;決める (kimeru);v;karar vermek
+200;計画する (keikaku suru);v;planlamak
+201;準備する (junbi suru);v;hazırlamak
+202;料理する (ryōri suru);v;pişirmek
+203;洗う (arau);v;yıkamak
+204;掃除する (sōji suru);v;temizlemek
+205;着る (kiru);v;giymek
+206;服を着る (fuku o kiru);v;giyinmek
+207;起こす (okosu);v;uyandırmak
+208;電話する (denwa suru);v;aramak (telefon)
+209;会う (au);v;buluşmak
+210;訪ねる (tazuneru);v;ziyaret etmek
+211;招待する (shōtai suru);v;davet etmek
+212;感謝する (kansha suru);v;teşekkür etmek
+213;許す (yurusu);v;affetmek
+214;許可する (kyoka suru);v;izin vermek
+215;禁止する (kinshi suru);v;yasaklamak
+216;ついていく (tsuite iku);v;takip etmek
+217;導く (michibiku);v;yol göstermek, yönetmek
+218;得る (eru);v;kazanmak, elde etmek
+219;起こる (okoru);v;olmak, meydana gelmek
+220;見える (mieru);v;görünmek
+221;なる (naru);v;olmak, haline gelmek
+222;育つ (sodatsu);v;büyümek
+223;守る (mamoru);v;korumak
+224;救う (sukuu);v;kurtarmak
+225;殺す (korosu);v;öldürmek
+226;戦う (tatakau);v;savaşmak
+227;倒す (taosu);v;kazanmak, galip gelmek
+228;必要とする (hitsuyō to suru);v;ihtiyaç duymak
+229;より好む (yori konomu);v;tercih etmek
+230;望む (nozomu);v;ummak
+231;怖がる (kowagaru);v;korkmak
+232;心配する (shinpai suru);v;endişelenmek
+233;休む (yasumu);v;dinlenmek
+234;たばこを吸う (tabako o suu);v;sigara içmek
+235;借りる (kariru);v;kiralamak
+236;予約する (yoyaku suru);v;rezervasyon yapmak
+237;翻訳する (hon'yaku suru);v;çevirmek (dil)
+238;説明する (setsumei suru);v;açıklamak
+239;繰り返す (kurikaesu);v;tekrarlamak
+240;数える (kazoeru);v;saymak
+241;測る (hakaru);v;ölçmek
+242;確認する (kakunin suru);v;kontrol etmek
+243;直す (naosu);v;düzeltmek, tamir etmek
+244;切る (kiru);v;kesmek
+245;押す (osu);v;itmek
+246;引く (hiku);v;çekmek
+247;持ち上げる (mochiageru);v;kaldırmak
+248;回す (mawasu);v;dönmek, çevirmek
+249;通る (tōru);v;geçmek
+250;渡る (wataru);v;geçmek, karşıya geçmek
+251;登る (noboru);v;tırmanmak
+252;降りる (oriru);v;inmek
+253;人 (hito);n;insan, kişi
+254;人々 (hitobito);n;insanlar
+255;男 (otoko);n;adam, erkek
+256;女 (onna);n;kadın
+257;子供 (kodomo);n;çocuk
+258;男の子 (otoko no ko);n;erkek çocuk
+259;女の子 (onna no ko);n;kız çocuk
+260;赤ちゃん (akachan);n;bebek
+261;家族 (kazoku);n;aile
+262;母 (haha);n;anne
+263;父 (chichi);n;baba
+264;両親 (ryōshin);n;anne baba, ebeveynler
+265;息子 (musuko);n;oğul
+266;娘 (musume);n;kız evlat
+267;兄弟 (kyōdai);n;erkek kardeş
+268;姉妹 (shimai);n;kız kardeş
+269;祖父 (sofu);n;büyükbaba
+270;祖母 (sobo);n;büyükanne
+271;おじ (oji);n;amca, dayı
+272;おば (oba);n;teyze, hala
+273;いとこ (itoko);n;kuzen
+274;夫 (otto);n;koca, eş
+275;妻 (tsuma);n;karı, eş
+276;友達 (tomodachi);n;arkadaş
+277;隣人 (rinjin);n;komşu
+278;客 (kyaku);n;misafir / müşteri
+279;名前 (namae);n;isim, ad
+280;名字 (myōji);n;soyadı
+281;年齢 (nenrei);n;yaş
+282;人生 (jinsei);n;hayat
+283;死 (shi);n;ölüm
+284;愛 (ai);n;aşk, sevgi
+285;体 (karada);n;vücut
+286;頭 (atama);n;baş, kafa
+287;髪 (kami);n;saç
+288;顔 (kao);n;yüz
+289;目 (me);n;göz
+290;耳 (mimi);n;kulak
+291;鼻 (hana);n;burun
+292;口 (kuchi);n;ağız
+293;歯 (ha);n;diş
+294;舌 (shita);n;dil (organ)
+295;首 (kubi);n;boyun
+296;肩 (kata);n;omuz
+297;腕 (ude);n;kol
+298;手 (te);n;el
+299;指 (yubi);n;parmak
+300;胸 (mune);n;göğüs
+301;背中 (senaka);n;sırt
+302;お腹 (onaka);n;karın, mide
+303;脚 (ashi);n;bacak
+304;足 (ashi);n;ayak
+305;膝 (hiza);n;diz
+306;心臓 (shinzō);n;kalp
+307;血 (chi);n;kan
+308;肌 (hada);n;deri, cilt
+309;骨 (hone);n;kemik
+310;健康 (kenkō);n;sağlık
+311;病気 (byōki);n;hastalık
+312;痛み (itami);n;ağrı, acı
+313;医者 (isha);n;doktor
+314;看護師 (kangoshi);n;hemşire
+315;病院 (byōin);n;hastane
+316;薬 (kusuri);n;ilaç
+317;薬局 (yakkyoku);n;eczane
+318;家 (ie);n;ev
+319;アパート (apāto);n;daire
+320;部屋 (heya);n;oda
+321;台所 (daidokoro);n;mutfak
+322;浴室 (yokushitsu);n;banyo
+323;寝室 (shinshitsu);n;yatak odası
+324;居間 (ima);n;oturma odası
+325;ドア (doa);n;kapı
+326;窓 (mado);n;pencere
+327;壁 (kabe);n;duvar
+328;床 (yuka);n;zemin, yer
+329;天井 (tenjō);n;tavan
+330;階段 (kaidan);n;merdiven
+331;庭 (niwa);n;bahçe
+332;屋根 (yane);n;çatı
+333;鍵 (kagi);n;anahtar
+334;テーブル (tēburu);n;masa
+335;椅子 (isu);n;sandalye
+336;ベッド (beddo);n;yatak
+337;ソファー (sofā);n;kanepe
+338;クローゼット (kurōzetto);n;dolap
+339;鏡 (kagami);n;ayna
+340;ランプ (ranpu);n;lamba
+341;冷蔵庫 (reizōko);n;buzdolabı
+342;オーブン (ōbun);n;fırın
+343;テレビ (terebi);n;televizyon
+344;コンピューター (konpyūtā);n;bilgisayar
+345;電話 (denwa);n;telefon
+346;時計 (tokei);n;saat (alet)
+347;絵 (e);n;resim, tablo
+348;じゅうたん (jūtan);n;halı
+349;カーテン (kāten);n;perde
+350;タオル (taoru);n;havlu
+351;石けん (sekken);n;sabun
+352;歯ブラシ (haburashi);n;diş fırçası
+353;かばん (kaban);n;çanta
+354;箱 (hako);n;kutu
+355;瓶 (bin);n;şişe
+356;コップ (koppu);n;bardak
+357;カップ (kappu);n;fincan
+358;皿 (sara);n;tabak
+359;フォーク (fōku);n;çatal
+360;ナイフ (naifu);n;bıçak
+361;スプーン (supūn);n;kaşık
+362;鍋 (nabe);n;tencere
+363;食事 (shokuji);n;yemek (öğün)
+364;食べ物 (tabemono);n;yiyecek
+365;朝ご飯 (asagohan);n;kahvaltı
+366;昼ご飯 (hirugohan);n;öğle yemeği
+367;晩ご飯 (bangohan);n;akşam yemeği
+368;水 (mizu);n;su
+369;パン (pan);n;ekmek
+370;牛乳 (gyūnyū);n;süt
+371;コーヒー (kōhī);n;kahve
+372;お茶 (ocha);n;çay
+373;ジュース (jūsu);n;meyve suyu
+374;ビール (bīru);n;bira
+375;ワイン (wain);n;şarap
+376;肉 (niku);n;et
+377;鶏肉 (toriniku);n;tavuk
+378;魚 (sakana);n;balık
+379;卵 (tamago);n;yumurta
+380;チーズ (chīzu);n;peynir
+381;バター (batā);n;tereyağı
+382;ご飯 (gohan);n;pirinç
+383;パスタ (pasuta);n;makarna
+384;じゃがいも (jagaimo);n;patates
+385;野菜 (yasai);n;sebze
+386;果物 (kudamono);n;meyve
+387;りんご (ringo);n;elma
+388;オレンジ (orenji);n;portakal
+389;バナナ (banana);n;muz
+390;ぶどう (budō);n;üzüm
+391;いちご (ichigo);n;çilek
+392;レモン (remon);n;limon
+393;トマト (tomato);n;domates
+394;玉ねぎ (tamanegi);n;soğan
+395;にんにく (ninniku);n;sarımsak
+396;にんじん (ninjin);n;havuç
+397;きゅうり (kyūri);n;salatalık
+398;サラダ (sarada);n;salata
+399;スープ (sūpu);n;çorba
+400;塩 (shio);n;tuz
+401;砂糖 (satō);n;şeker
+402;こしょう (koshō);n;biber
+403;油 (abura);n;yağ (sıvı)
+404;はちみつ (hachimitsu);n;bal
+405;ケーキ (kēki);n;pasta, kek
+406;アイスクリーム (aisukurīmu);n;dondurma
+407;チョコレート (chokorēto);n;çikolata
+408;レストラン (resutoran);n;restoran
+409;カフェ (kafe);n;kafe
+410;メニュー (menyū);n;menü
+411;ウェイター (weitā);n;garson
+412;お会計 (okaikei);n;hesap (restoran)
+413;チップ (chippu);n;bahşiş
+414;空腹 (kūfuku);n;açlık
+415;のどの渇き (nodo no kawaki);n;susuzluk
+416;都市 (toshi);n;şehir
+417;村 (mura);n;köy
+418;国 (kuni);n;ülke
+419;通り (tōri);n;sokak
+420;広場 (hiroba);n;meydan
+421;道 (michi);n;yol
+422;橋 (hashi);n;köprü
+423;建物 (tatemono);n;bina
+424;店 (mise);n;dükkan, mağaza
+425;スーパー (sūpā);n;market
+426;市場 (ichiba);n;pazar, çarşı
+427;銀行 (ginkō);n;banka
+428;郵便局 (yūbinkyoku);n;postane
+429;学校 (gakkō);n;okul
+430;大学 (daigaku);n;üniversite
+431;図書館 (toshokan);n;kütüphane
+432;博物館 (hakubutsukan);n;müze
+433;教会 (kyōkai);n;kilise
+434;モスク (mosuku);n;cami
+435;公園 (kōen);n;park
+436;ホテル (hoteru);n;otel
+437;空港 (kūkō);n;havaalanı
+438;駅 (eki);n;istasyon
+439;停留所 (teiryūjo);n;durak
+440;港 (minato);n;liman
+441;映画館 (eigakan);n;sinema
+442;劇場 (gekijō);n;tiyatro
+443;警察 (keisatsu);n;polis
+444;車 (kuruma);n;araba
+445;バス (basu);n;otobüs
+446;電車 (densha);n;tren
+447;飛行機 (hikōki);n;uçak
+448;船 (fune);n;gemi
+449;自転車 (jitensha);n;bisiklet
+450;タクシー (takushī);n;taksi
+451;地下鉄 (chikatetsu);n;metro
+452;切符 (kippu);n;bilet
+453;スーツケース (sūtsukēsu);n;bavul
+454;パスポート (pasupōto);n;pasaport
+455;地図 (chizu);n;harita
+456;旅 (tabi);n;yolculuk, seyahat
+457;休暇 (kyūka);n;tatil
+458;観光客 (kankōkyaku);n;turist
+459;交通 (kōtsū);n;trafik
+460;事故 (jiko);n;kaza
+461;右 (migi);n;sağ
+462;左 (hidari);n;sol
+463;北 (kita);n;kuzey
+464;南 (minami);n;güney
+465;東 (higashi);n;doğu
+466;西 (nishi);n;batı
+467;角 (kado);n;köşe
+468;中心 (chūshin);n;merkez
+469;場所 (basho);n;yer, mekan
+470;住所 (jūsho);n;adres
+471;時間 (jikan);n;zaman
+472;一時間 (ichijikan);n;saat (süre)
+473;分 (fun);n;dakika
+474;秒 (byō);n;saniye
+475;日 (hi);n;gün
+476;週 (shū);n;hafta
+477;月 (tsuki);n;ay (takvim) / ay (gökyüzü)
+478;年 (toshi);n;yıl
+479;世紀 (seiki);n;yüzyıl
+480;朝 (asa);n;sabah
+481;正午 (shōgo);n;öğle
+482;午後 (gogo);n;öğleden sonra
+483;夕方 (yūgata);n;akşam
+484;夜 (yoru);n;gece
+485;週末 (shūmatsu);n;hafta sonu
+486;月曜日 (getsuyōbi);n;pazartesi
+487;火曜日 (kayōbi);n;salı
+488;水曜日 (suiyōbi);n;çarşamba
+489;木曜日 (mokuyōbi);n;perşembe
+490;金曜日 (kin'yōbi);n;cuma
+491;土曜日 (doyōbi);n;cumartesi
+492;日曜日 (nichiyōbi);n;pazar (gün)
+493;一月 (ichigatsu);n;ocak
+494;二月 (nigatsu);n;şubat
+495;三月 (sangatsu);n;mart
+496;四月 (shigatsu);n;nisan
+497;五月 (gogatsu);n;mayıs
+498;六月 (rokugatsu);n;haziran
+499;七月 (shichigatsu);n;temmuz
+500;八月 (hachigatsu);n;ağustos
+501;九月 (kugatsu);n;eylül
+502;十月 (jūgatsu);n;ekim
+503;十一月 (jūichigatsu);n;kasım
+504;十二月 (jūnigatsu);n;aralık
+505;季節 (kisetsu);n;mevsim
+506;春 (haru);n;ilkbahar
+507;夏 (natsu);n;yaz
+508;秋 (aki);n;sonbahar
+509;冬 (fuyu);n;kış
+510;天気 (tenki);n;hava (durumu)
+511;太陽 (taiyō);n;güneş
+512;星 (hoshi);n;yıldız
+513;空 (sora);n;gökyüzü
+514;雲 (kumo);n;bulut
+515;雨 (ame);n;yağmur
+516;雪 (yuki);n;kar
+517;風 (kaze);n;rüzgar
+518;嵐 (arashi);n;fırtına
+519;温度 (ondo);n;sıcaklık
+520;空気 (kūki);n;hava (soluduğumuz)
+521;火 (hi);n;ateş
+522;土 (tsuchi);n;toprak, dünya
+523;世界 (sekai);n;dünya
+524;自然 (shizen);n;doğa
+525;海 (umi);n;deniz
+526;大洋 (taiyō);n;okyanus
+527;川 (kawa);n;nehir
+528;湖 (mizuumi);n;göl
+529;山 (yama);n;dağ
+530;丘 (oka);n;tepe
+531;森 (mori);n;orman
+532;木 (ki);n;ağaç
+533;花 (hana);n;çiçek
+534;草 (kusa);n;çimen
+535;葉 (ha);n;yaprak
+536;石 (ishi);n;taş
+537;砂 (suna);n;kum
+538;浜辺 (hamabe);n;plaj
+539;島 (shima);n;ada
+540;畑 (hatake);n;tarla
+541;動物 (dōbutsu);n;hayvan
+542;犬 (inu);n;köpek
+543;猫 (neko);n;kedi
+544;馬 (uma);n;at
+545;牛 (ushi);n;inek
+546;豚 (buta);n;domuz
+547;羊 (hitsuji);n;koyun
+548;鳥 (tori);n;kuş
+549;ねずみ (nezumi);n;fare
+550;うさぎ (usagi);n;tavşan
+551;熊 (kuma);n;ayı
+552;狼 (ōkami);n;kurt
+553;ライオン (raion);n;aslan
+554;蛇 (hebi);n;yılan
+555;虫 (mushi);n;böcek
+556;蜂 (hachi);n;arı
+557;ハエ (hae);n;sinek
+558;アヒル (ahiru);n;ördek
+559;狐 (kitsune);n;tilki
+560;猿 (saru);n;maymun
+561;象 (zō);n;fil
+562;蝶 (chō);n;kelebek
+563;仕事 (shigoto);n;iş
+564;職業 (shokugyō);n;meslek
+565;会社 (kaisha);n;şirket
+566;事務所 (jimusho);n;ofis
+567;上司 (jōshi);n;patron
+568;同僚 (dōryō);n;meslektaş
+569;会議 (kaigi);n;toplantı
+570;お金 (okane);n;para
+571;値段 (nedan);n;fiyat
+572;給料 (kyūryō);n;maaş
+573;税金 (zeikin);n;vergi
+574;カード (kādo);n;kart
+575;先生 (sensei);n;öğretmen
+576;学生 (gakusei);n;öğrenci
+577;授業 (jugyō);n;ders
+578;教室 (kyōshitsu);n;sınıf
+579;試験 (shiken);n;sınav
+580;質問 (shitsumon);n;soru
+581;答え (kotae);n;cevap
+582;本 (hon);n;kitap
+583;ノート (nōto);n;defter
+584;ペン (pen);n;kalem
+585;鉛筆 (enpitsu);n;kurşun kalem
+586;紙 (kami);n;kağıt
+587;ページ (pēji);n;sayfa
+588;単語 (tango);n;kelime
+589;文 (bun);n;cümle
+590;言語 (gengo);n;dil (lisan)
+591;文字 (moji);n;harf
+592;手紙 (tegami);n;mektup
+593;物語 (monogatari);n;hikaye
+594;歴史 (rekishi);n;tarih (geçmiş)
+595;日付 (hizuke);n;tarih (gün)
+596;ニュース (nyūsu);n;haber
+597;新聞 (shinbun);n;gazete
+598;雑誌 (zasshi);n;dergi
+599;映画 (eiga);n;film
+600;音楽 (ongaku);n;müzik
+601;歌 (uta);n;şarkı
+602;ゲーム (gēmu);n;oyun
+603;スポーツ (supōtsu);n;spor
+604;サッカー (sakkā);n;futbol
+605;ボール (bōru);n;top
+606;チーム (chīmu);n;takım
+607;試合 (shiai);n;maç
+608;パーティー (pātī);n;parti, eğlence
+609;プレゼント (purezento);n;hediye
+610;誕生日 (tanjōbi);n;doğum günü
+611;写真 (shashin);n;fotoğraf
+612;芸術 (geijutsu);n;sanat
+613;インターネット (intānetto);n;internet
+614;メール (mēru);n;e-posta
+615;メッセージ (messēji);n;mesaj
+616;番号 (bangō);n;numara, sayı
+617;服 (fuku);n;kıyafet, giysi
+618;シャツ (shatsu);n;gömlek
+619;Tシャツ (tīshatsu);n;tişört
+620;ズボン (zubon);n;pantolon
+621;スカート (sukāto);n;etek
+622;ドレス (doresu);n;elbise
+623;ジャケット (jaketto);n;ceket
+624;靴 (kutsu);n;ayakkabı
+625;帽子 (bōshi);n;şapka
+626;靴下 (kutsushita);n;çorap
+627;眼鏡 (megane);n;gözlük
+628;財布 (saifu);n;cüzdan
+629;指輪 (yubiwa);n;yüzük
+630;色 (iro);n;renk
+631;物 (mono);n;şey, nesne
+632;一切れ (hitokire);n;parça
+633;部分 (bubun);n;kısım, bölüm
+634;半分 (hanbun);n;yarım, yarı
+635;終わり (owari);n;son
+636;始まり (hajimari);n;başlangıç
+637;方法 (hōhō);n;yol, yöntem
+638;理由 (riyū);n;neden, sebep
+639;問題 (mondai);n;sorun
+640;考え (kangae);n;fikir
+641;真実 (shinjitsu);n;gerçek, hakikat
+642;嘘 (uso);n;yalan
+643;間違い (machigai);n;hata
+644;運 (un);n;şans
+645;幸せ (shiawase);n;mutluluk
+646;恐怖 (kyōfu);n;korku
+647;希望 (kibō);n;umut
+648;夢 (yume);n;rüya, hayal
+649;力 (chikara);n;güç, kuvvet
+650;戦争 (sensō);n;savaş
+651;平和 (heiwa);n;barış
+652;政府 (seifu);n;devlet, hükümet
+653;法律 (hōritsu);n;kanun, yasa
+654;権利 (kenri);n;hak
+655;自由 (jiyū);n;özgürlük
+656;国民 (kokumin);n;halk
+657;王 (ō);n;kral
+658;神 (kami);n;tanrı
+659;宗教 (shūkyō);n;din
+660;文化 (bunka);n;kültür
+661;科学 (kagaku);n;bilim
+662;伝統 (dentō);n;gelenek
+663;良い (yoi);adj;iyi
+664;悪い (warui);adj;kötü
+665;大きい (ōkii);adj;büyük
+666;小さい (chiisai);adj;küçük
+667;長い (nagai);adj;uzun
+668;短い (mijikai);adj;kısa
+669;高い (takai);adj;uzun boylu, yüksek
+670;低い (hikui);adj;alçak, kısa boylu
+671;広い (hiroi);adj;geniş
+672;狭い (semai);adj;dar
+673;新しい (atarashii);adj;yeni
+674;古い (furui);adj;eski, yaşlı
+675;若い (wakai);adj;genç
+676;美しい (utsukushii);adj;güzel
+677;醜い (minikui);adj;çirkin
+678;暑い (atsui);adj;sıcak
+679;寒い (samui);adj;soğuk
+680;ぬるい (nurui);adj;ılık
+681;涼しい (suzushii);adj;serin
+682;速い (hayai);adj;hızlı
+683;遅い (osoi);adj;yavaş
+684;易しい (yasashii);adj;kolay
+685;難しい (muzukashii);adj;zor
+686;重い (omoi);adj;ağır
+687;軽い (karui);adj;hafif
+688;いっぱい (ippai);adj;dolu
+689;空っぽ (karappo);adj;boş
+690;きれい (kirei);adj;temiz
+691;汚い (kitanai);adj;kirli
+692;金持ち (kanemochi);adj;zengin
+693;貧しい (mazushii);adj;fakir
+694;安い (yasui);adj;ucuz
+695;高価 (kōka);adj;pahalı
+696;幸せな (shiawase na);adj;mutlu
+697;悲しい (kanashii);adj;üzgün
+698;怒った (okotta);adj;kızgın
+699;疲れた (tsukareta);adj;yorgun
+700;病気の (byōki no);adj;hasta
+701;健康な (kenkō na);adj;sağlıklı
+702;お腹が空いた (onaka ga suita);adj;aç
+703;強い (tsuyoi);adj;güçlü
+704;弱い (yowai);adj;zayıf, güçsüz
+705;太った (futotta);adj;şişman
+706;痩せた (yaseta);adj;ince, zayıf
+707;賢い (kashikoi);adj;akıllı
+708;ばか (baka);adj;aptal
+709;親切 (shinsetsu);adj;nazik
+710;失礼 (shitsurei);adj;kaba
+711;正直 (shōjiki);adj;dürüst
+712;勇敢 (yūkan);adj;cesur
+713;怠惰 (taida);adj;tembel
+714;忙しい (isogashii);adj;meşgul
+715;自由な (jiyū na);adj;serbest, özgür
+716;準備ができた (junbi ga dekita);adj;hazır
+717;正しい (tadashii);adj;doğru
+718;間違った (machigatta);adj;yanlış
+719;本当 (hontō);adj;gerçek
+720;偽の (nise no);adj;yanlış, sahte
+721;大切 (taisetsu);adj;önemli
+722;面白い (omoshiroi);adj;ilginç / komik
+723;つまらない (tsumaranai);adj;sıkıcı
+724;危ない (abunai);adj;tehlikeli
+725;安全 (anzen);adj;güvenli / güvenlik
+726;可能 (kanō);adj;mümkün
+727;不可能 (fukanō);adj;imkansız
+728;必要 (hitsuyō);adj;gerekli / ihtiyaç
+729;普通 (futsū);adj;normal
+730;変 (hen);adj;garip, tuhaf
+731;違う (chigau);adj;farklı
+732;似ている (nite iru);adj;benzer
+733;簡単 (kantan);adj;kolay, basit
+734;複雑 (fukuzatsu);adj;karmaşık
+735;静か (shizuka);adj;sessiz
+736;うるさい (urusai);adj;gürültülü
+737;暗い (kurai);adj;karanlık
+738;明るい (akarui);adj;aydınlık
+739;柔らかい (yawarakai);adj;yumuşak
+740;硬い (katai);adj;sert
+741;甘い (amai);adj;tatlı
+742;酸っぱい (suppai);adj;ekşi
+743;苦い (nigai);adj;acı
+744;しょっぱい (shoppai);adj;tuzlu
+745;おいしい (oishii);adj;lezzetli
+746;新鮮 (shinsen);adj;taze
+747;濡れた (nureta);adj;ıslak
+748;乾いた (kawaita);adj;kuru
+749;開いた (aita);adj;açık
+750;閉まった (shimatta);adj;kapalı
+751;近い (chikai);adj;yakın
+752;遠い (tōi);adj;uzak
+753;最初 (saisho);adj;ilk
+754;最後 (saigo);adj;son
+755;次 (tsugi);adj;sonraki
+756;一人 (hitori);adj;tek, yalnız
+757;全体 (zentai);adj;bütün, tam
+758;完璧 (kanpeki);adj;mükemmel
+759;有名 (yūmei);adj;ünlü
+760;地元の (jimoto no);adj;yerel
+761;外国の (gaikoku no);adj;yabancı
+762;特別 (tokubetsu);adj;özel
+763;一般的 (ippanteki);adj;genel
+764;公共の (kōkyō no);adj;kamu, halka açık
+765;私的 (shiteki);adj;özel, kişisel
+766;赤い (akai);adj;kırmızı
+767;青い (aoi);adj;mavi
+768;緑の (midori no);adj;yeşil
+769;黄色い (kiiroi);adj;sarı
+770;黒い (kuroi);adj;siyah
+771;白い (shiroi);adj;beyaz
+772;灰色 (haiiro);adj;gri
+773;茶色 (chairo);adj;kahverengi
+774;オレンジ色 (orenji iro);adj;turuncu
+775;ピンク (pinku);adj;pembe
+776;紫 (murasaki);adj;mor
+777;水色 (mizuiro);adj;açık mavi
+778;ゼロ (zero);num;sıfır
+779;一 (ichi);num;bir
+780;二 (ni);num;iki
+781;三 (san);num;üç
+782;四 (yon);num;dört
+783;五 (go);num;beş
+784;六 (roku);num;altı
+785;七 (nana);num;yedi
+786;八 (hachi);num;sekiz
+787;九 (kyū);num;dokuz
+788;十 (jū);num;on
+789;十一 (jūichi);num;on bir
+790;十二 (jūni);num;on iki
+791;十三 (jūsan);num;on üç
+792;十四 (jūyon);num;on dört
+793;十五 (jūgo);num;on beş
+794;十六 (jūroku);num;on altı
+795;十七 (jūnana);num;on yedi
+796;十八 (jūhachi);num;on sekiz
+797;十九 (jūkyū);num;on dokuz
+798;二十 (nijū);num;yirmi
+799;三十 (sanjū);num;otuz
+800;四十 (yonjū);num;kırk
+801;五十 (gojū);num;elli
+802;六十 (rokujū);num;altmış
+803;七十 (nanajū);num;yetmiş
+804;八十 (hachijū);num;seksen
+805;九十 (kyūjū);num;doksan
+806;百 (hyaku);num;yüz
+807;千 (sen);num;bin
+808;百万 (hyakuman);num;milyon
+809;二番目 (nibanme);num;ikinci
+810;三番目 (sanbanme);num;üçüncü
+811;経済 (keizai);n;ekonomi
+812;政治 (seiji);n;politika
+813;選挙 (senkyo);n;seçim
+814;大統領 (daitōryō);n;başkan
+815;兵士 (heishi);n;asker
+816;軍隊 (guntai);n;ordu
+817;武器 (buki);n;silah
+818;犯罪 (hanzai);n;suç
+819;泥棒 (dorobō);n;hırsız
+820;裁判所 (saibansho);n;mahkeme
+821;弁護士 (bengoshi);n;avukat
+822;裁判官 (saibankan);n;hakim
+823;技術者 (gijutsusha);n;mühendis
+824;作家 (sakka);n;yazar
+825;芸術家 (geijutsuka);n;sanatçı
+826;料理人 (ryōrinin);n;aşçı
+827;運転手 (untenshu);n;şoför
+828;農家 (nōka);n;çiftçi
+829;店員 (ten'in);n;satıcı
+830;労働者 (rōdōsha);n;işçi
+831;警察官 (keisatsukan);n;polis memuru
+832;消防士 (shōbōshi);n;itfaiyeci
+833;歯医者 (haisha);n;diş hekimi
+834;機械 (kikai);n;makine
+835;道具 (dōgu);n;alet
+836;ベル (beru);n;kapı zili
+837;エネルギー (enerugī);n;enerji
+838;電気 (denki);n;elektrik
+839;光 (hikari);n;ışık
+840;声 (koe);n;ses
+841;騒音 (sōon);n;gürültü
+842;匂い (nioi);n;koku
+843;味 (aji);n;tat
+844;形 (katachi);n;biçim, şekil
+845;大きさ (ōkisa);n;boyut
+846;重さ (omosa);n;ağırlık
+847;長さ (nagasa);n;uzunluk
+848;メートル (mētoru);n;metre
+849;キロ (kiro);n;kilo
+850;リットル (rittoru);n;litre
+851;パーセント (pāsento);n;yüzde
+852;グループ (gurūpu);n;grup
+853;リスト (risuto);n;liste
+854;例 (rei);n;örnek
+855;規則 (kisoku);n;kural
+856;選択 (sentaku);n;seçenek
+857;決定 (kettei);n;karar
+858;計画 (keikaku);n;plan
+859;目標 (mokuhyō);n;amaç, hedef
+860;結果 (kekka);n;sonuç
+861;成功 (seikō);n;başarı
+862;経験 (keiken);n;deneyim
+863;情報 (jōhō);n;bilgi
+864;反応 (hannō);n;cevap, tepki
+865;助け (tasuke);n;yardım
+866;危険 (kiken);n;tehlike
+867;品質 (hinshitsu);n;kalite
+868;量 (ryō);n;miktar
+869;違い (chigai);n;fark
+870;関係 (kankei);n;ilişki
+871;感情 (kanjō);n;duygu
+872;思考 (shikō);n;düşünce
+873;思い出 (omoide);n;anı, hatıra
+874;未来 (mirai);n;gelecek
+875;過去 (kako);n;geçmiş
+876;現在 (genzai);n;şimdiki zaman, an
+877;瞬間 (shunkan);n;an
+878;出来事 (dekigoto);n;olay
+879;状況 (jōkyō);n;durum
+880;種類 (shurui);n;tür, çeşit
+881;レベル (reberu);n;seviye
+882;一歩 (ippo);n;adım
+883;入口 (iriguchi);n;giriş
+884;出口 (deguchi);n;çıkış
+885;列 (retsu);n;sıra, kuyruk
+886;許可 (kyoka);n;izin
+887;支払い (shiharai);n;ödeme
+888;請求書 (seikyūsho);n;fatura
+889;割引 (waribiki);n;indirim
+890;製品 (seihin);n;ürün
+891;サービス (sābisu);n;hizmet
+892;広告 (kōkoku);n;reklam
+893;参加する (sanka suru);v;katılmak
+894;賛成する (sansei suru);v;katılıyorum, hemfikir olmak
+895;断る (kotowaru);v;reddetmek
+896;受け入れる (ukeireru);v;kabul etmek
+897;約束する (yakusoku suru);v;söz vermek
+898;結婚する (kekkon suru);v;evlenmek
+899;離婚する (rikon suru);v;boşanmak
+900;引っ越す (hikkosu);v;taşınmak
+901;発展させる (hatten saseru);v;geliştirmek
+902;増やす (fuyasu);v;artırmak
+903;減らす (herasu);v;azaltmak
+904;比べる (kuraberu);v;karşılaştırmak
+905;描写する (byōsha suru);v;tarif etmek, betimlemek
+906;提案する (teian suru);v;önermek
+907;勧める (susumeru);v;tavsiye etmek
+908;話し合う (hanashiau);v;tartışmak
+909;喧嘩する (kenka suru);v;kavga etmek
+910;文句を言う (monku o iu);v;şikayet etmek
+911;生産する (seisan suru);v;üretmek
+912;企画する (kikaku suru);v;organize etmek
+913;管理する (kanri suru);v;yönetmek
+914;設立する (setsuritsu suru);v;kurmak
+915;支える (sasaeru);v;desteklemek
+916;結ぶ (musubu);v;bağlamak
+917;分ける (wakeru);v;ayırmak
+918;共有する (kyōyū suru);v;paylaşmak
+919;貯める (tameru);v;biriktirmek, tasarruf etmek
+920;貸す (kasu);v;ödünç vermek
+921;逃す (nogasu);v;kaçırmak
+922;捕まえる (tsukamaeru);v;yakalamak
+923;抱きしめる (dakishimeru);v;sarılmak
+924;キスする (kisu suru);v;öpmek
+925;打つ (utsu);v;vurmak
+926;掘る (horu);v;kazmak
+927;種をまく (tane o maku);v;ekmek (tohum)
+928;集める (atsumeru);v;toplamak
+929;満たす (mitasu);v;doldurmak
+930;空にする (kara ni suru);v;boşaltmak
+931;温める (atatameru);v;ısıtmak
+932;振る (furu);v;sallamak
+933;掛ける (kakeru);v;asmak
+934;叫ぶ (sakebu);v;bağırmak
+935;ささやく (sasayaku);v;fısıldamak
+936;味見する (ajimi suru);v;tatmak
+937;嗅ぐ (kagu);v;koklamak
+938;呼吸する (kokyū suru);v;nefes almak
+939;汗をかく (ase o kaku);v;terlemek
+940;痛む (itamu);v;acıtmak, ağrımak
+941;治る (naoru);v;iyileşmek
+942;祈る (inoru);v;dua etmek
+943;祝う (iwau);v;kutlamak
+944;おめでとうと言う (omedetō to iu);v;tebrik etmek
+945;楽しむ (tanoshimu);v;eğlenmek
+946;退屈する (taikutsu suru);v;sıkılmak
+947;驚く (odoroku);v;şaşırmak
+948;興味を持つ (kyōmi o motsu);v;ilgilenmek
+949;世話をする (sewa o suru);v;bakmak (birine)
+950;監督する (kantoku suru);v;denetlemek
+951;印刷する (insatsu suru);v;yazdırmak
+952;ダウンロードする (daunrōdo suru);v;indirmek (dosya)
+953;アップロードする (appurōdo suru);v;yüklemek (dosya)
+954;保存する (hozon suru);v;kaydetmek
+955;削除する (sakujo suru);v;silmek
+956;クリックする (kurikku suru);v;tıklamak
+957;残念ながら (zannen nagara);adv;maalesef
+958;もちろん (mochiron);adv;elbette
+959;本当に (hontō ni);adv;gerçekten
+960;ほとんど (hotondo);adv;neredeyse
+961;特に (toku ni);adv;özellikle
+962;普通は (futsū wa);adv;genellikle
+963;実は (jitsu wa);adv;aslında
+964;ついに (tsui ni);adv;sonunda
+965;突然 (totsuzen);adv;aniden
+966;絶対に (zettai ni);adv;kesinlikle
+967;おそらく (osoraku);adv;muhtemelen
+968;十分 (jūbun);adv;yeterince
+969;あまりにも (amari ni mo);adv;fazla, çok fazla
+970;どこでも (doko demo);adv;her yerde
+971;どこにも (doko ni mo);adv;hiçbir yerde
+972;どこか (dokoka);adv;bir yerde
+973;そう (sō);adv;böyle, öyle
+974;約 (yaku);adv;yaklaşık
+975;ちょうど (chōdo);adv;tam olarak
+976;急いで (isoide);adv;hızla
+977;注意深く (chūibukaku);adv;dikkatlice
+978;ただ (tada);adv;yalnızca, sırf
+979;前もって (mae motte);adv;önceden
+980;その間 (sono aida);adv;bu arada
+981;さらに (sara ni);adv;ayrıca, üstelik
+982;だから (dakara);adv;bu yüzden
+983;それでも (soredemo);adv;yine de
+984;満足な (manzoku na);adj;memnun
+985;既婚 (kikon);adj;evli
+986;独身 (dokushin);adj;bekar
+987;死んだ (shinda);adj;ölü
+988;生きている (ikite iru);adj;canlı
+989;穏やか (odayaka);adj;sakin
+990;緊張した (kinchō shita);adj;gergin
+991;嫉妬深い (shittobukai);adj;kıskanç
+992;恥ずかしがり (hazukashigari);adj;utangaç
+993;真面目 (majime);adj;ciddi
+994;現代的 (gendaiteki);adj;modern
+995;古代の (kodai no);adj;antik, eski çağ
+996;深い (fukai);adj;derin
+997;丸い (marui);adj;yuvarlak
+998;平らな (taira na);adj;düz
+999;厚い (atsui);adj;kalın
+1000;鋭い (surudoi);adj;keskin
+1001;目の見えない (me no mienai);adj;kör
+1002;耳の聞こえない (mimi no kikoenai);adj;sağır
+1003;国際的 (kokusaiteki);adj;uluslararası
+1004;国の (kuni no);adj;ulusal
+1005;毎日の (mainichi no);adj;günlük
+1006;毎週の (maishū no);adj;haftalık
+1007;現在の (genzai no);adj;mevcut, şu anki
+1008;前の (mae no);adj;eski, önceki
+1009;ありそうな (arisō na);adj;olası
+1010;明らか (akiraka);adj;açık, net

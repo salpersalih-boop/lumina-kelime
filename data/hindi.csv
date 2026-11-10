@@ -1,0 +1,994 @@
+Sıra;Kelime;Tür;Türkçe Anlamı
+1;मैं (main);pron;ben
+2;तुम (tum);pron;sen
+3;वह (vah);pron;o (erkek) / o (kadın) / şu, o
+4;हम (ham);pron;biz
+5;आप (āp);pron;siz
+6;वे (ve);pron;onlar
+7;यह (yah);pron;bu
+8;कौन (kaun);pron;kim
+9;क्या (kyā);pron;ne
+10;कहाँ (kahān);adv;nerede
+11;कब (kab);adv;ne zaman
+12;क्यों (kyon);adv;neden, niçin
+13;कैसे (kaise);adv;nasıl
+14;कौन सा (kaun sā);pron;hangi
+15;कितना (kitnā);adv;ne kadar
+16;हाँ (hān);int;evet
+17;नहीं (nahīn);int;hayır
+18;न (na);adv;değil
+19;और (aur);conj;ve
+20;या (yā);conj;veya, ya da
+21;लेकिन (lekin);conj;ama, fakat
+22;क्योंकि (kyonki);conj;çünkü
+23;अगर (agar);conj;eğer
+24;कि (ki);conj;ki
+25;के साथ (ke sāth);prep;ile, birlikte
+26;बिना (binā);prep;-sız, olmadan
+27;के लिए (ke lie);prep;için
+28;में (men);prep;-de, içinde
+29;पर (par);prep;üzerinde
+30;के नीचे (ke nīche);prep;altında
+31;से (se);prep;-den, -dan
+32;की ओर (kī or);prep;-e doğru, -e
+33;के बीच (ke bīch);prep;arasında
+34;से पहले (se pahle);prep;önce
+35;के बाद (ke bād);prep;sonra
+36;के पास (ke pās);prep;yanında
+37;के विरुद्ध (ke viruddh);prep;karşı
+38;के बारे में (ke bāre men);prep;hakkında
+39;यहाँ (yahān);adv;burada
+40;वहाँ (vahān);adv;orada
+41;अब (ab);adv;şimdi
+42;आज (āj);adv;bugün
+43;कल (kal);adv;yarın / dün
+44;हमेशा (hameshā);adv;her zaman
+45;कभी नहीं (kabhī nahīn);adv;asla, hiç
+46;कभी कभी (kabhī kabhī);adv;bazen
+47;अक्सर (aksar);adv;sık sık
+48;बहुत (bahut);adv;çok
+49;थोड़ा (thoṛā);adv;biraz
+50;ज़्यादा (zyādā);adv;daha
+51;कम (kam);adv;daha az
+52;भी (bhī);adv;de, da, ayrıca
+53;सिर्फ़ (sirf);adv;sadece
+54;पहले से (pahle se);adv;zaten, çoktan / önceden
+55;अभी भी (abhī bhī);adv;hâlâ, henüz
+56;तुरंत (turant);adv;hemen
+57;शायद (shāyad);adv;belki / muhtemelen
+58;अच्छी तरह (acchī tarah);adv;iyi (şekilde)
+59;बुरी तरह (burī tarah);adv;kötü (şekilde)
+60;साथ में (sāth men);adv;birlikte
+61;जल्दी (jaldī);adv;erken
+62;देर से (der se);adv;geç
+63;फिर से (phir se);adv;yine, tekrar
+64;जल्दी से (jaldī se);adv;çabuk, hızlıca
+65;धीरे (dhīre);adv;yavaşça
+66;जल्द ही (jald hī);adv;yakında
+67;दूर (dūr);adv;uzakta / uzak
+68;पास (pās);adv;yakında (mesafe)
+69;अंदर (andar);adv;içeride
+70;बाहर (bāhar);adv;dışarıda
+71;ऊपर (ūpar);adv;yukarıda
+72;नीचे (nīche);adv;aşağıda
+73;आगे (āge);adv;ileride, önde
+74;पीछे (pīche);adv;geride, arkada
+75;सब कुछ (sab kuch);pron;her şey
+76;कुछ नहीं (kuch nahīn);pron;hiçbir şey
+77;कुछ (kuch);pron;bir şey / birkaç
+78;सब लोग (sab log);pron;herkes
+79;कोई नहीं (koī nahīn);pron;kimse, hiç kimse
+80;कोई (koī);pron;biri, birisi
+81;हर (har);pron;her
+82;पूरा (pūrā);pron;bütün, tüm
+83;दूसरा (dūsrā);pron;başka / ikinci
+84;वही (vahī);pron;aynı
+85;बहुत सारे (bahut sāre);pron;çok (sayıca)
+86;थोड़े (thoṛe);pron;az (sayıca)
+87;नमस्ते (namaste);int;merhaba
+88;सुप्रभात (suprabhāt);int;günaydın
+89;शुभ संध्या (shubh sandhyā);int;iyi akşamlar
+90;शुभ रात्रि (shubh rātri);int;iyi geceler
+91;अलविदा (alvidā);int;hoşça kal
+92;धन्यवाद (dhanyavād);int;teşekkürler
+93;कृपया (kṛpayā);int;lütfen
+94;माफ़ कीजिए (māf kījie);int;özür dilerim
+95;ठीक है (ṭhīk hai);int;tamam
+96;स्वागत है (svāgat hai);int;hoş geldiniz
+97;होना (honā);v;olmak
+98;पास होना (pās honā);v;sahip olmak
+99;करना (karnā);v;yapmak
+100;जाना (jānā);v;gitmek
+101;आना (ānā);v;gelmek
+102;कहना (kahnā);v;söylemek, demek
+103;बोलना (bolnā);v;konuşmak
+104;देखना (dekhnā);v;görmek
+105;ताकना (tāknā);v;bakmak
+106;सुनना (sunnā);v;duymak / dinlemek
+107;जानना (jānnā);v;bilmek
+108;पहचानना (pahchānnā);v;tanımak
+109;सोचना (sochnā);v;düşünmek
+110;विश्वास करना (vishvās karnā);v;inanmak
+111;चाहना (chāhnā);v;istemek
+112;सकना (saknā);v;-ebilmek, yapabilmek
+113;चाहिए (chāhie);v;-meli, zorunda olmak
+114;देना (denā);v;vermek
+115;लेना (lenā);v;almak
+116;रखना (rakhnā);v;koymak
+117;पाना (pānā);v;bulmak
+118;ढूँढना (ḍhūnḍhnā);v;aramak
+119;खोना (khonā);v;kaybetmek
+120;जीतना (jītnā);v;kazanmak (yarış)
+121;कमाना (kamānā);v;kazanmak (para)
+122;काम करना (kām karnā);v;çalışmak (iş)
+123;पढ़ाई करना (paṛhāī karnā);v;ders çalışmak
+124;सीखना (sīkhnā);v;öğrenmek
+125;सिखाना (sikhānā);v;öğretmek
+126;पढ़ना (paṛhnā);v;okumak
+127;लिखना (likhnā);v;yazmak
+128;समझना (samajhnā);v;anlamak
+129;पूछना (pūchnā);v;sormak
+130;जवाब देना (javāb denā);v;cevap vermek
+131;मदद करना (madad karnā);v;yardım etmek
+132;इंतज़ार करना (intazār karnā);v;beklemek
+133;रहना (rahnā);v;kalmak / oturmak, ikamet etmek
+134;जीना (jīnā);v;yaşamak
+135;मरना (marnā);v;ölmek
+136;पैदा होना (paidā honā);v;doğmak
+137;प्यार करना (pyār karnā);v;sevmek
+138;पसंद करना (pasand karnā);v;hoşlanmak
+139;नफ़रत करना (nafrat karnā);v;nefret etmek
+140;खाना (khānā);v;yemek / yiyecek
+141;पीना (pīnā);v;içmek
+142;सोना (sonā);v;uyumak
+143;जागना (jāgnā);v;uyanmak
+144;उठना (uṭhnā);v;kalkmak
+145;बैठना (baiṭhnā);v;oturmak (sandalye)
+146;खड़ा होना (khaṛā honā);v;ayakta durmak
+147;चलना (chalnā);v;yürümek
+148;दौड़ना (dauṛnā);v;koşmak
+149;तैरना (tairnā);v;yüzmek
+150;उड़ना (uṛnā);v;uçmak
+151;गाड़ी चलाना (gāṛī chalānā);v;sürmek (araç)
+152;यात्रा करना (yātrā karnā);v;seyahat etmek
+153;पहुँचना (pahunchnā);v;varmak
+154;रवाना होना (ravānā honā);v;ayrılmak, gitmek
+155;अंदर आना (andar ānā);v;girmek
+156;बाहर जाना (bāhar jānā);v;çıkmak
+157;लौटना (lauṭnā);v;dönmek, geri gelmek
+158;खोलना (kholnā);v;açmak
+159;बंद करना (band karnā);v;kapatmak
+160;शुरू करना (shurū karnā);v;başlamak
+161;ख़त्म करना (khatm karnā);v;bitirmek
+162;रुकना (ruknā);v;durmak
+163;जारी रखना (jārī rakhnā);v;devam etmek
+164;बदलना (badalnā);v;değiştirmek
+165;इस्तेमाल करना (istemāl karnā);v;kullanmak
+166;ख़रीदना (kharīdnā);v;satın almak
+167;बेचना (bechnā);v;satmak
+168;भुगतान करना (bhugtān karnā);v;ödemek
+169;क़ीमत होना (qīmat honā);v;maliyeti olmak, tutmak
+170;लाना (lānā);v;getirmek
+171;भेजना (bhejnā);v;göndermek
+172;प्राप्त करना (prāpt karnā);v;almak (teslim)
+173;पकड़ना (pakaṛnā);v;tutmak / yakalamak
+174;उठाकर ले जाना (uṭhākar le jānā);v;taşımak
+175;फेंकना (phenknā);v;atmak
+176;गिरना (girnā);v;düşmek
+177;तोड़ना (toṛnā);v;kırmak
+178;बनाना (banānā);v;yapmak, inşa etmek
+179;रचना करना (rachnā karnā);v;yaratmak
+180;चित्र बनाना (chitra banānā);v;çizmek
+181;खेलना (khelnā);v;oynamak
+182;गाना (gānā);v;şarkı söylemek / şarkı
+183;नाचना (nāchnā);v;dans etmek
+184;हँसना (hansnā);v;gülmek
+185;रोना (ronā);v;ağlamak
+186;मुस्कुराना (muskurānā);v;gülümsemek
+187;महसूस करना (mahsūs karnā);v;hissetmek
+188;छूना (chūnā);v;dokunmak
+189;दिखाना (dikhānā);v;göstermek
+190;छिपाना (chhipānā);v;saklamak
+191;याद करना (yād karnā);v;hatırlamak
+192;भूलना (bhūlnā);v;unutmak
+193;कोशिश करना (koshish karnā);v;denemek
+194;चुनना (chunnā);v;seçmek
+195;फ़ैसला करना (faislā karnā);v;karar vermek
+196;योजना बनाना (yojnā banānā);v;planlamak
+197;तैयार करना (taiyār karnā);v;hazırlamak
+198;पकाना (pakānā);v;pişirmek
+199;धोना (dhonā);v;yıkamak
+200;साफ़ करना (sāf karnā);v;temizlemek
+201;पहनना (pahannā);v;giymek
+202;कपड़े पहनना (kapṛe pahannā);v;giyinmek
+203;जगाना (jagānā);v;uyandırmak
+204;फ़ोन करना (fon karnā);v;aramak (telefon)
+205;मिलना (milnā);v;buluşmak
+206;मिलने जाना (milne jānā);v;ziyaret etmek
+207;आमंत्रित करना (āmantrit karnā);v;davet etmek
+208;धन्यवाद देना (dhanyavād denā);v;teşekkür etmek
+209;माफ़ करना (māf karnā);v;affetmek
+210;अनुमति देना (anumati denā);v;izin vermek
+211;मना करना (manā karnā);v;yasaklamak
+212;पीछा करना (pīchā karnā);v;takip etmek
+213;नेतृत्व करना (netṛtva karnā);v;yol göstermek, yönetmek
+214;हासिल करना (hāsil karnā);v;kazanmak, elde etmek
+215;घटना (ghaṭnā);v;olmak, meydana gelmek / olay
+216;लगना (lagnā);v;görünmek
+217;बनना (bannā);v;olmak, haline gelmek
+218;बढ़ना (baṛhnā);v;büyümek
+219;रक्षा करना (rakṣā karnā);v;korumak
+220;बचाना (bachānā);v;kurtarmak
+221;मारना (mārnā);v;öldürmek / vurmak
+222;लड़ना (laṛnā);v;savaşmak
+223;हराना (harānā);v;kazanmak, galip gelmek
+224;ज़रूरत होना (zarūrat honā);v;ihtiyaç duymak
+225;तरजीह देना (tarjīh denā);v;tercih etmek
+226;उम्मीद करना (ummīd karnā);v;ummak
+227;डरना (ḍarnā);v;korkmak
+228;चिंता करना (chintā karnā);v;endişelenmek
+229;आराम करना (ārām karnā);v;dinlenmek
+230;धूम्रपान करना (dhūmrapān karnā);v;sigara içmek
+231;किराए पर लेना (kirāe par lenā);v;kiralamak
+232;बुक करना (buk karnā);v;rezervasyon yapmak
+233;अनुवाद करना (anuvād karnā);v;çevirmek (dil)
+234;समझाना (samjhānā);v;açıklamak
+235;दोहराना (dohrānā);v;tekrarlamak
+236;गिनना (ginnā);v;saymak
+237;नापना (nāpnā);v;ölçmek
+238;जाँचना (jānchnā);v;kontrol etmek
+239;ठीक करना (ṭhīk karnā);v;düzeltmek, tamir etmek
+240;काटना (kāṭnā);v;kesmek
+241;धक्का देना (dhakkā denā);v;itmek
+242;खींचना (khīnchnā);v;çekmek
+243;उठाना (uṭhānā);v;kaldırmak
+244;घुमाना (ghumānā);v;dönmek, çevirmek
+245;गुज़रना (guzarnā);v;geçmek
+246;पार करना (pār karnā);v;geçmek, karşıya geçmek
+247;चढ़ना (chaṛhnā);v;tırmanmak
+248;उतरना (utarnā);v;inmek
+249;व्यक्ति (vyakti);n;insan, kişi
+250;लोग (log);n;insanlar
+251;आदमी (ādmī);n;adam, erkek
+252;औरत (aurat);n;kadın
+253;बच्चा (bacchā);n;çocuk
+254;लड़का (laṛkā);n;erkek çocuk
+255;लड़की (laṛkī);n;kız çocuk
+256;शिशु (shishu);n;bebek
+257;परिवार (parivār);n;aile
+258;माँ (mān);n;anne
+259;पिता (pitā);n;baba
+260;माता-पिता (mātā-pitā);n;anne baba, ebeveynler
+261;बेटा (beṭā);n;oğul
+262;बेटी (beṭī);n;kız evlat
+263;भाई (bhāī);n;erkek kardeş
+264;बहन (bahan);n;kız kardeş
+265;दादा (dādā);n;büyükbaba
+266;दादी (dādī);n;büyükanne
+267;चाचा (chāchā);n;amca, dayı
+268;चाची (chāchī);n;teyze, hala
+269;चचेरा भाई (chacherā bhāī);n;kuzen
+270;पति (pati);n;koca, eş
+271;पत्नी (patnī);n;karı, eş
+272;दोस्त (dost);n;arkadaş
+273;पड़ोसी (paṛosī);n;komşu
+274;मेहमान (mehmān);n;misafir
+275;नाम (nām);n;isim, ad
+276;उपनाम (upnām);n;soyadı
+277;उम्र (umra);n;yaş
+278;जीवन (jīvan);n;hayat
+279;मृत्यु (mṛtyu);n;ölüm
+280;प्यार (pyār);n;aşk, sevgi
+281;शरीर (sharīr);n;vücut
+282;सिर (sir);n;baş, kafa
+283;बाल (bāl);n;saç
+284;चेहरा (chehrā);n;yüz
+285;आँख (ānkh);n;göz
+286;कान (kān);n;kulak
+287;नाक (nāk);n;burun
+288;मुँह (munh);n;ağız
+289;दाँत (dānt);n;diş
+290;जीभ (jībh);n;dil (organ)
+291;गर्दन (gardan);n;boyun
+292;कंधा (kandhā);n;omuz
+293;बाँह (bānh);n;kol
+294;हाथ (hāth);n;el
+295;उँगली (unglī);n;parmak
+296;छाती (chhātī);n;göğüs
+297;पीठ (pīṭh);n;sırt
+298;पेट (peṭ);n;karın, mide
+299;टाँग (ṭāng);n;bacak
+300;पैर (pair);n;ayak
+301;घुटना (ghuṭnā);n;diz
+302;दिल (dil);n;kalp
+303;ख़ून (khūn);n;kan
+304;त्वचा (tvachā);n;deri, cilt
+305;हड्डी (haḍḍī);n;kemik
+306;स्वास्थ्य (svāsthya);n;sağlık
+307;बीमारी (bīmārī);n;hastalık
+308;दर्द (dard);n;ağrı, acı
+309;डॉक्टर (ḍākṭar);n;doktor
+310;नर्स (nars);n;hemşire
+311;अस्पताल (aspatāl);n;hastane
+312;दवा (davā);n;ilaç
+313;दवाखाना (davākhānā);n;eczane
+314;घर (ghar);n;ev
+315;फ़्लैट (flaiṭ);n;daire
+316;कमरा (kamrā);n;oda
+317;रसोई (rasoī);n;mutfak
+318;स्नानघर (snānghar);n;banyo
+319;शयनकक्ष (shayankakṣ);n;yatak odası
+320;बैठक (baiṭhak);n;oturma odası
+321;दरवाज़ा (darvāzā);n;kapı
+322;खिड़की (khiṛkī);n;pencere
+323;दीवार (dīvār);n;duvar
+324;फ़र्श (farsh);n;zemin, yer
+325;छत (chhat);n;tavan / çatı
+326;सीढ़ी (sīṛhī);n;merdiven
+327;बगीचा (bagīchā);n;bahçe
+328;चाबी (chābī);n;anahtar
+329;मेज़ (mez);n;masa
+330;कुर्सी (kursī);n;sandalye
+331;बिस्तर (bistar);n;yatak
+332;सोफ़ा (sofā);n;kanepe
+333;अलमारी (almārī);n;dolap
+334;आईना (āīnā);n;ayna
+335;लैंप (laimp);n;lamba
+336;फ़्रिज (frij);n;buzdolabı
+337;ओवन (ovan);n;fırın
+338;टीवी (ṭīvī);n;televizyon
+339;कंप्यूटर (kampyūṭar);n;bilgisayar
+340;फ़ोन (fon);n;telefon
+341;घड़ी (ghaṛī);n;saat (alet)
+342;तस्वीर (tasvīr);n;resim, tablo
+343;क़ालीन (qālīn);n;halı
+344;पर्दा (pardā);n;perde
+345;तौलिया (tauliyā);n;havlu
+346;साबुन (sābun);n;sabun
+347;टूथब्रश (ṭūthbrash);n;diş fırçası
+348;थैला (thailā);n;çanta
+349;डिब्बा (ḍibbā);n;kutu
+350;बोतल (botal);n;şişe
+351;गिलास (gilās);n;bardak
+352;प्याला (pyālā);n;fincan
+353;थाली (thālī);n;tabak
+354;काँटा (kānṭā);n;çatal
+355;चाकू (chākū);n;bıçak
+356;चम्मच (chammach);n;kaşık
+357;पतीला (patīlā);n;tencere
+358;भोजन (bhojan);n;yemek (öğün)
+359;नाश्ता (nāshtā);n;kahvaltı
+360;दोपहर का खाना (dopahar kā khānā);n;öğle yemeği
+361;रात का खाना (rāt kā khānā);n;akşam yemeği
+362;पानी (pānī);n;su
+363;रोटी (roṭī);n;ekmek
+364;दूध (dūdh);n;süt
+365;कॉफ़ी (kofī);n;kahve
+366;चाय (chāy);n;çay
+367;जूस (jūs);n;meyve suyu
+368;बियर (biyar);n;bira
+369;शराब (sharāb);n;şarap
+370;मांस (māns);n;et
+371;मुर्गा (murgā);n;tavuk
+372;मछली (machhlī);n;balık
+373;अंडा (anḍā);n;yumurta
+374;पनीर (panīr);n;peynir
+375;मक्खन (makkhan);n;tereyağı
+376;चावल (chāval);n;pirinç
+377;पास्ता (pāstā);n;makarna
+378;आलू (ālū);n;patates
+379;सब्ज़ी (sabzī);n;sebze
+380;फल (phal);n;meyve
+381;सेब (seb);n;elma
+382;संतरा (santrā);n;portakal
+383;केला (kelā);n;muz
+384;अंगूर (angūr);n;üzüm
+385;स्ट्रॉबेरी (sṭrāberī);n;çilek
+386;नींबू (nīmbū);n;limon
+387;टमाटर (ṭamāṭar);n;domates
+388;प्याज़ (pyāz);n;soğan
+389;लहसुन (lahsun);n;sarımsak
+390;गाजर (gājar);n;havuç
+391;खीरा (khīrā);n;salatalık
+392;सलाद (salād);n;salata
+393;सूप (sūp);n;çorba
+394;नमक (namak);n;tuz
+395;चीनी (chīnī);n;şeker
+396;काली मिर्च (kālī mirch);n;biber
+397;तेल (tel);n;yağ (sıvı)
+398;शहद (shahad);n;bal
+399;केक (kek);n;pasta, kek
+400;आइसक्रीम (āiskrīm);n;dondurma
+401;चॉकलेट (chāklet);n;çikolata
+402;रेस्तराँ (restarān);n;restoran
+403;कैफ़े (kaife);n;kafe
+404;मेन्यू (menyū);n;menü
+405;वेटर (veṭar);n;garson
+406;बिल (bil);n;hesap (restoran)
+407;टिप (ṭip);n;bahşiş
+408;भूख (bhūkh);n;açlık
+409;प्यास (pyās);n;susuzluk
+410;शहर (shahar);n;şehir
+411;गाँव (gānv);n;köy
+412;देश (desh);n;ülke
+413;गली (galī);n;sokak
+414;चौक (chauk);n;meydan
+415;सड़क (saṛak);n;yol
+416;पुल (pul);n;köprü
+417;इमारत (imārat);n;bina
+418;दुकान (dukān);n;dükkan, mağaza
+419;सुपरमार्केट (suparmārkeṭ);n;market
+420;बाज़ार (bāzār);n;pazar, çarşı
+421;बैंक (baink);n;banka
+422;डाकघर (ḍākghar);n;postane
+423;स्कूल (skūl);n;okul
+424;विश्वविद्यालय (vishvavidyālay);n;üniversite
+425;पुस्तकालय (pustakālay);n;kütüphane
+426;संग्रहालय (sangrahālay);n;müze
+427;गिरजाघर (girjāghar);n;kilise
+428;मस्जिद (masjid);n;cami
+429;उद्यान (udyān);n;park
+430;होटल (hoṭal);n;otel
+431;हवाई अड्डा (havāī aḍḍā);n;havaalanı
+432;स्टेशन (sṭeshan);n;istasyon
+433;पड़ाव (paṛāv);n;durak
+434;बंदरगाह (bandargāh);n;liman
+435;सिनेमाघर (sinemāghar);n;sinema
+436;रंगमंच (rangmanch);n;tiyatro
+437;पुलिस (pulis);n;polis
+438;कार (kār);n;araba
+439;बस (bas);n;otobüs
+440;रेलगाड़ी (relgāṛī);n;tren
+441;हवाई जहाज़ (havāī jahāz);n;uçak
+442;जहाज़ (jahāz);n;gemi
+443;साइकिल (sāikil);n;bisiklet
+444;टैक्सी (ṭaiksī);n;taksi
+445;मेट्रो (meṭro);n;metro
+446;टिकट (ṭikaṭ);n;bilet
+447;सूटकेस (sūṭkes);n;bavul
+448;पासपोर्ट (pāsporṭ);n;pasaport
+449;नक्शा (nakshā);n;harita
+450;यात्रा (yātrā);n;yolculuk, seyahat
+451;छुट्टी (chhuṭṭī);n;tatil
+452;पर्यटक (paryaṭak);n;turist
+453;यातायात (yātāyāt);n;trafik
+454;दुर्घटना (durghaṭnā);n;kaza
+455;दायाँ (dāyān);n;sağ
+456;बायाँ (bāyān);n;sol
+457;उत्तर (uttar);n;kuzey
+458;दक्षिण (dakṣiṇ);n;güney
+459;पूर्व (pūrva);n;doğu
+460;पश्चिम (pashchim);n;batı
+461;कोना (konā);n;köşe
+462;केंद्र (kendra);n;merkez
+463;जगह (jagah);n;yer, mekan
+464;पता (patā);n;adres
+465;समय (samay);n;zaman
+466;घंटा (ghanṭā);n;saat (süre)
+467;मिनट (minaṭ);n;dakika
+468;सेकंड (sekanḍ);n;saniye
+469;दिन (din);n;gün
+470;हफ़्ता (haftā);n;hafta
+471;महीना (mahīnā);n;ay (takvim)
+472;साल (sāl);n;yıl
+473;सदी (sadī);n;yüzyıl
+474;सुबह (subah);n;sabah
+475;दोपहर (dopahar);n;öğle
+476;तीसरा पहर (tīsrā pahar);n;öğleden sonra
+477;शाम (shām);n;akşam
+478;रात (rāt);n;gece
+479;सप्ताहांत (saptāhānt);n;hafta sonu
+480;सोमवार (somvār);n;pazartesi
+481;मंगलवार (mangalvār);n;salı
+482;बुधवार (budhvār);n;çarşamba
+483;गुरुवार (guruvār);n;perşembe
+484;शुक्रवार (shukravār);n;cuma
+485;शनिवार (shanivār);n;cumartesi
+486;रविवार (ravivār);n;pazar (gün)
+487;जनवरी (janavarī);n;ocak
+488;फ़रवरी (faravarī);n;şubat
+489;मार्च (mārch);n;mart
+490;अप्रैल (aprail);n;nisan
+491;मई (maī);n;mayıs
+492;जून (jūn);n;haziran
+493;जुलाई (julāī);n;temmuz
+494;अगस्त (agast);n;ağustos
+495;सितंबर (sitambar);n;eylül
+496;अक्टूबर (akṭūbar);n;ekim
+497;नवंबर (navambar);n;kasım
+498;दिसंबर (disambar);n;aralık
+499;मौसम (mausam);n;mevsim / hava (durumu)
+500;वसंत (vasant);n;ilkbahar
+501;गर्मी (garmī);n;yaz
+502;पतझड़ (patjhaṛ);n;sonbahar
+503;सर्दी (sardī);n;kış
+504;सूरज (sūraj);n;güneş
+505;चाँद (chānd);n;ay (gökyüzü)
+506;तारा (tārā);n;yıldız
+507;आसमान (āsmān);n;gökyüzü
+508;बादल (bādal);n;bulut
+509;बारिश (bārish);n;yağmur
+510;बर्फ़ (barf);n;kar
+511;हवा (havā);n;rüzgar / hava (soluduğumuz)
+512;तूफ़ान (tūfān);n;fırtına
+513;तापमान (tāpmān);n;sıcaklık
+514;आग (āg);n;ateş
+515;मिट्टी (miṭṭī);n;toprak, dünya
+516;दुनिया (duniyā);n;dünya
+517;प्रकृति (prakṛti);n;doğa
+518;समुद्र (samudra);n;deniz
+519;महासागर (mahāsāgar);n;okyanus
+520;नदी (nadī);n;nehir
+521;झील (jhīl);n;göl
+522;पहाड़ (pahāṛ);n;dağ
+523;पहाड़ी (pahāṛī);n;tepe
+524;जंगल (jangal);n;orman
+525;पेड़ (peṛ);n;ağaç
+526;फूल (phūl);n;çiçek
+527;घास (ghās);n;çimen
+528;पत्ता (pattā);n;yaprak
+529;पत्थर (patthar);n;taş
+530;रेत (ret);n;kum
+531;समुद्र तट (samudra taṭ);n;plaj
+532;द्वीप (dvīp);n;ada
+533;खेत (khet);n;tarla
+534;जानवर (jānvar);n;hayvan
+535;कुत्ता (kuttā);n;köpek
+536;बिल्ली (billī);n;kedi
+537;घोड़ा (ghoṛā);n;at
+538;गाय (gāy);n;inek
+539;सूअर (sūar);n;domuz
+540;भेड़ (bheṛ);n;koyun
+541;पक्षी (pakṣī);n;kuş
+542;चूहा (chūhā);n;fare
+543;ख़रगोश (khargosh);n;tavşan
+544;भालू (bhālū);n;ayı
+545;भेड़िया (bheṛiyā);n;kurt
+546;शेर (sher);n;aslan
+547;साँप (sānp);n;yılan
+548;कीड़ा (kīṛā);n;böcek
+549;मधुमक्खी (madhumakkhī);n;arı
+550;मक्खी (makkhī);n;sinek
+551;बत्तख (battakh);n;ördek
+552;लोमड़ी (lomṛī);n;tilki
+553;बंदर (bandar);n;maymun
+554;हाथी (hāthī);n;fil
+555;तितली (titlī);n;kelebek
+556;काम (kām);n;iş
+557;पेशा (peshā);n;meslek
+558;कंपनी (kampanī);n;şirket
+559;दफ़्तर (daftar);n;ofis
+560;मालिक (mālik);n;patron
+561;सहकर्मी (sahkarmī);n;meslektaş
+562;मीटिंग (mīṭing);n;toplantı
+563;पैसा (paisā);n;para
+564;क़ीमत (qīmat);n;fiyat
+565;वेतन (vetan);n;maaş
+566;कर (kar);n;vergi
+567;कार्ड (kārḍ);n;kart
+568;शिक्षक (shikṣak);n;öğretmen
+569;छात्र (chhātra);n;öğrenci
+570;पाठ (pāṭh);n;ders
+571;कक्षा (kakṣā);n;sınıf
+572;परीक्षा (parīkṣā);n;sınav
+573;सवाल (savāl);n;soru
+574;जवाब (javāb);n;cevap
+575;किताब (kitāb);n;kitap
+576;कॉपी (kāpī);n;defter
+577;कलम (kalam);n;kalem
+578;पेंसिल (pensil);n;kurşun kalem
+579;काग़ज़ (kāgaz);n;kağıt
+580;पन्ना (pannā);n;sayfa
+581;शब्द (shabd);n;kelime
+582;वाक्य (vākya);n;cümle
+583;भाषा (bhāṣā);n;dil (lisan)
+584;अक्षर (akṣar);n;harf
+585;चिट्ठी (chiṭṭhī);n;mektup
+586;कहानी (kahānī);n;hikaye
+587;इतिहास (itihās);n;tarih (geçmiş)
+588;तारीख़ (tārīkh);n;tarih (gün)
+589;ख़बर (khabar);n;haber
+590;अख़बार (akhbār);n;gazete
+591;पत्रिका (patrikā);n;dergi
+592;फ़िल्म (film);n;film
+593;संगीत (sangīt);n;müzik
+594;खेल (khel);n;oyun
+595;खेलकूद (khelkūd);n;spor
+596;फ़ुटबॉल (fuṭbāl);n;futbol
+597;गेंद (gend);n;top
+598;टीम (ṭīm);n;takım
+599;मैच (maich);n;maç
+600;पार्टी (pārṭī);n;parti, eğlence
+601;उपहार (uphār);n;hediye
+602;जन्मदिन (janmadin);n;doğum günü
+603;फ़ोटो (foṭo);n;fotoğraf
+604;कला (kalā);n;sanat
+605;इंटरनेट (inṭarneṭ);n;internet
+606;ईमेल (īmel);n;e-posta
+607;संदेश (sandesh);n;mesaj
+608;संख्या (sankhyā);n;numara, sayı
+609;कपड़े (kapṛe);n;kıyafet, giysi
+610;क़मीज़ (qamīz);n;gömlek
+611;टी-शर्ट (ṭī-sharṭ);n;tişört
+612;पतलून (patlūn);n;pantolon
+613;स्कर्ट (skarṭ);n;etek
+614;पोशाक (poshāk);n;elbise
+615;जैकेट (jaikeṭ);n;ceket
+616;जूते (jūte);n;ayakkabı
+617;टोपी (ṭopī);n;şapka
+618;मोज़े (moze);n;çorap
+619;चश्मा (chashmā);n;gözlük
+620;बटुआ (baṭuā);n;cüzdan
+621;अंगूठी (angūṭhī);n;yüzük
+622;रंग (rang);n;renk
+623;चीज़ (chīz);n;şey, nesne
+624;टुकड़ा (ṭukṛā);n;parça
+625;हिस्सा (hissā);n;kısım, bölüm
+626;आधा (ādhā);n;yarım, yarı
+627;अंत (ant);n;son
+628;शुरुआत (shuruāt);n;başlangıç
+629;तरीक़ा (tarīqā);n;yol, yöntem
+630;कारण (kāraṇ);n;neden, sebep
+631;समस्या (samasyā);n;sorun
+632;विचार (vichār);n;fikir / düşünce
+633;सच (sach);n;gerçek, hakikat
+634;झूठ (jhūṭh);n;yalan
+635;ग़लती (galtī);n;hata
+636;क़िस्मत (qismat);n;şans
+637;ख़ुशी (khushī);n;mutluluk
+638;डर (ḍar);n;korku
+639;आशा (āshā);n;umut
+640;सपना (sapnā);n;rüya, hayal
+641;ताक़त (tāqat);n;güç, kuvvet
+642;युद्ध (yuddh);n;savaş
+643;शांति (shānti);n;barış
+644;सरकार (sarkār);n;devlet, hükümet
+645;क़ानून (qānūn);n;kanun, yasa
+646;अधिकार (adhikār);n;hak
+647;आज़ादी (āzādī);n;özgürlük
+648;जनता (jantā);n;halk
+649;राजा (rājā);n;kral
+650;भगवान (bhagvān);n;tanrı
+651;धर्म (dharm);n;din
+652;संस्कृति (sanskṛti);n;kültür
+653;विज्ञान (vigyān);n;bilim
+654;परंपरा (paramparā);n;gelenek
+655;अच्छा (acchā);adj;iyi
+656;बुरा (burā);adj;kötü
+657;बड़ा (baṛā);adj;büyük
+658;छोटा (chhoṭā);adj;küçük / kısa
+659;लंबा (lambā);adj;uzun
+660;ऊँचा (ūnchā);adj;uzun boylu, yüksek
+661;नीचा (nīchā);adj;alçak, kısa boylu
+662;चौड़ा (chauṛā);adj;geniş
+663;तंग (tang);adj;dar
+664;नया (nayā);adj;yeni
+665;पुराना (purānā);adj;eski, yaşlı
+666;जवान (javān);adj;genç
+667;सुंदर (sundar);adj;güzel
+668;बदसूरत (badsūrat);adj;çirkin
+669;गरम (garam);adj;sıcak
+670;ठंडा (ṭhanḍā);adj;soğuk
+671;गुनगुना (gungunā);adj;ılık
+672;शीतल (shītal);adj;serin
+673;तेज़ (tez);adj;hızlı / keskin
+674;धीमा (dhīmā);adj;yavaş
+675;आसान (āsān);adj;kolay
+676;मुश्किल (mushkil);adj;zor
+677;भारी (bhārī);adj;ağır
+678;हल्का (halkā);adj;hafif
+679;भरा (bharā);adj;dolu
+680;ख़ाली (khālī);adj;boş
+681;साफ़ (sāf);adj;temiz
+682;गंदा (gandā);adj;kirli
+683;अमीर (amīr);adj;zengin
+684;ग़रीब (garīb);adj;fakir
+685;सस्ता (sastā);adj;ucuz
+686;महँगा (mahangā);adj;pahalı
+687;ख़ुश (khush);adj;mutlu
+688;उदास (udās);adj;üzgün
+689;नाराज़ (nārāz);adj;kızgın
+690;थका (thakā);adj;yorgun
+691;बीमार (bīmār);adj;hasta
+692;स्वस्थ (svasth);adj;sağlıklı
+693;भूखा (bhūkhā);adj;aç
+694;मज़बूत (mazbūt);adj;güçlü
+695;कमज़ोर (kamzor);adj;zayıf, güçsüz
+696;मोटा (moṭā);adj;şişman / kalın
+697;पतला (patlā);adj;ince, zayıf
+698;होशियार (hoshiyār);adj;akıllı
+699;मूर्ख (mūrkh);adj;aptal
+700;दयालु (dayālu);adj;nazik
+701;असभ्य (asabhya);adj;kaba
+702;ईमानदार (īmāndār);adj;dürüst
+703;बहादुर (bahādur);adj;cesur
+704;आलसी (ālsī);adj;tembel
+705;व्यस्त (vyast);adj;meşgul
+706;आज़ाद (āzād);adj;serbest, özgür
+707;तैयार (taiyār);adj;hazır
+708;सही (sahī);adj;doğru
+709;ग़लत (galat);adj;yanlış
+710;असली (aslī);adj;gerçek
+711;नक़ली (naqlī);adj;yanlış, sahte
+712;ज़रूरी (zarūrī);adj;önemli
+713;दिलचस्प (dilchasp);adj;ilginç
+714;उबाऊ (ubāū);adj;sıkıcı
+715;ख़तरनाक (khatarnāk);adj;tehlikeli
+716;सुरक्षित (surakṣit);adj;güvenli
+717;संभव (sambhav);adj;mümkün
+718;असंभव (asambhav);adj;imkansız
+719;आवश्यक (āvashyak);adj;gerekli
+720;सामान्य (sāmānya);adj;normal / genel
+721;अजीब (ajīb);adj;garip, tuhaf
+722;अलग (alag);adj;farklı
+723;समान (samān);adj;benzer
+724;सरल (saral);adj;kolay, basit
+725;जटिल (jaṭil);adj;karmaşık
+726;शांत (shānt);adj;sessiz / sakin
+727;शोरगुल वाला (shorgul vālā);adj;gürültülü
+728;अँधेरा (andherā);adj;karanlık
+729;उजला (ujlā);adj;aydınlık
+730;नरम (naram);adj;yumuşak
+731;सख़्त (sakht);adj;sert
+732;मीठा (mīṭhā);adj;tatlı
+733;खट्टा (khaṭṭā);adj;ekşi
+734;कड़वा (kaṛvā);adj;acı
+735;नमकीन (namkīn);adj;tuzlu
+736;स्वादिष्ट (svādiṣṭ);adj;lezzetli
+737;ताज़ा (tāzā);adj;taze
+738;गीला (gīlā);adj;ıslak
+739;सूखा (sūkhā);adj;kuru
+740;खुला (khulā);adj;açık
+741;बंद (band);adj;kapalı
+742;नज़दीक (nazdīk);adj;yakın
+743;पहला (pahlā);adj;ilk
+744;आख़िरी (ākhirī);adj;son
+745;अगला (aglā);adj;sonraki
+746;अकेला (akelā);adj;tek, yalnız
+747;संपूर्ण (sampūrṇ);adj;bütün, tam
+748;उत्तम (uttam);adj;mükemmel
+749;प्रसिद्ध (prasiddh);adj;ünlü
+750;स्थानीय (sthānīya);adj;yerel
+751;विदेशी (videshī);adj;yabancı
+752;ख़ास (khās);adj;özel
+753;सार्वजनिक (sārvajanik);adj;kamu, halka açık
+754;निजी (nijī);adj;özel, kişisel
+755;लाल (lāl);adj;kırmızı
+756;नीला (nīlā);adj;mavi
+757;हरा (harā);adj;yeşil
+758;पीला (pīlā);adj;sarı
+759;काला (kālā);adj;siyah
+760;सफ़ेद (safed);adj;beyaz
+761;स्लेटी (sleṭī);adj;gri
+762;भूरा (bhūrā);adj;kahverengi
+763;नारंगी (nārangī);adj;turuncu
+764;गुलाबी (gulābī);adj;pembe
+765;बैंगनी (baingnī);adj;mor
+766;आसमानी (āsmānī);adj;açık mavi
+767;शून्य (shūnya);num;sıfır
+768;एक (ek);num;bir
+769;दो (do);num;iki
+770;तीन (tīn);num;üç
+771;चार (chār);num;dört
+772;पाँच (pānch);num;beş
+773;छह (chhah);num;altı
+774;सात (sāt);num;yedi
+775;आठ (āṭh);num;sekiz
+776;नौ (nau);num;dokuz
+777;दस (das);num;on
+778;ग्यारह (gyārah);num;on bir
+779;बारह (bārah);num;on iki
+780;तेरह (terah);num;on üç
+781;चौदह (chaudah);num;on dört
+782;पंद्रह (pandrah);num;on beş
+783;सोलह (solah);num;on altı
+784;सत्रह (satrah);num;on yedi
+785;अठारह (aṭhārah);num;on sekiz
+786;उन्नीस (unnīs);num;on dokuz
+787;बीस (bīs);num;yirmi
+788;तीस (tīs);num;otuz
+789;चालीस (chālīs);num;kırk
+790;पचास (pachās);num;elli
+791;साठ (sāṭh);num;altmış
+792;सत्तर (sattar);num;yetmiş
+793;अस्सी (assī);num;seksen
+794;नब्बे (nabbe);num;doksan
+795;सौ (sau);num;yüz
+796;हज़ार (hazār);num;bin
+797;दस लाख (das lākh);num;milyon
+798;तीसरा (tīsrā);num;üçüncü
+799;अर्थव्यवस्था (arthvyavasthā);n;ekonomi
+800;राजनीति (rājnīti);n;politika
+801;चुनाव (chunāv);n;seçim
+802;राष्ट्रपति (rāṣṭrapati);n;başkan
+803;सैनिक (sainik);n;asker
+804;सेना (senā);n;ordu
+805;हथियार (hathiyār);n;silah
+806;अपराध (aparādh);n;suç
+807;चोर (chor);n;hırsız
+808;अदालत (adālat);n;mahkeme
+809;वकील (vakīl);n;avukat
+810;न्यायाधीश (nyāyādhīsh);n;hakim
+811;इंजीनियर (injīniyar);n;mühendis
+812;लेखक (lekhak);n;yazar
+813;कलाकार (kalākār);n;sanatçı
+814;रसोइया (rasoiyā);n;aşçı
+815;चालक (chālak);n;şoför
+816;किसान (kisān);n;çiftçi
+817;विक्रेता (vikretā);n;satıcı
+818;ग्राहक (grāhak);n;müşteri
+819;मज़दूर (mazdūr);n;işçi
+820;पुलिसवाला (pulisvālā);n;polis memuru
+821;अग्निशामक (agnishāmak);n;itfaiyeci
+822;दंत चिकित्सक (dant chikitsak);n;diş hekimi
+823;मशीन (mashīn);n;makine
+824;औज़ार (auzār);n;alet
+825;घंटी (ghanṭī);n;kapı zili
+826;ऊर्जा (ūrjā);n;enerji
+827;बिजली (bijlī);n;elektrik
+828;रोशनी (roshnī);n;ışık
+829;आवाज़ (āvāz);n;ses
+830;शोर (shor);n;gürültü
+831;गंध (gandh);n;koku
+832;स्वाद (svād);n;tat
+833;आकार (ākār);n;biçim, şekil
+834;माप (māp);n;boyut
+835;वज़न (vazan);n;ağırlık
+836;लंबाई (lambāī);n;uzunluk
+837;मीटर (mīṭar);n;metre
+838;किलो (kilo);n;kilo
+839;लीटर (līṭar);n;litre
+840;प्रतिशत (pratishat);n;yüzde
+841;समूह (samūh);n;grup
+842;सूची (sūchī);n;liste
+843;उदाहरण (udāharaṇ);n;örnek
+844;नियम (niyam);n;kural
+845;विकल्प (vikalp);n;seçenek
+846;फ़ैसला (faislā);n;karar
+847;योजना (yojnā);n;plan
+848;लक्ष्य (lakṣya);n;amaç, hedef
+849;परिणाम (pariṇām);n;sonuç
+850;सफलता (saphaltā);n;başarı
+851;अनुभव (anubhav);n;deneyim
+852;जानकारी (jānkārī);n;bilgi
+853;प्रतिक्रिया (pratikriyā);n;cevap, tepki
+854;मदद (madad);n;yardım
+855;ख़तरा (khatrā);n;tehlike
+856;सुरक्षा (surakṣā);n;güvenlik
+857;गुणवत्ता (guṇvattā);n;kalite
+858;मात्रा (mātrā);n;miktar
+859;अंतर (antar);n;fark
+860;रिश्ता (rishtā);n;ilişki
+861;ज़रूरत (zarūrat);n;ihtiyaç
+862;भावना (bhāvnā);n;duygu
+863;याद (yād);n;anı, hatıra
+864;भविष्य (bhaviṣya);n;gelecek
+865;अतीत (atīt);n;geçmiş
+866;वर्तमान (vartamān);n;şimdiki zaman, an
+867;पल (pal);n;an
+868;स्थिति (sthiti);n;durum
+869;प्रकार (prakār);n;tür, çeşit
+870;स्तर (star);n;seviye
+871;क़दम (qadam);n;adım
+872;प्रवेश (pravesh);n;giriş
+873;निकास (nikās);n;çıkış
+874;क़तार (qatār);n;sıra, kuyruk
+875;अनुमति (anumati);n;izin
+876;भुगतान (bhugtān);n;ödeme
+877;चालान (chālān);n;fatura
+878;छूट (chhūṭ);n;indirim
+879;उत्पाद (utpād);n;ürün
+880;सेवा (sevā);n;hizmet
+881;विज्ञापन (vigyāpan);n;reklam
+882;भाग लेना (bhāg lenā);v;katılmak
+883;सहमत होना (sahmat honā);v;katılıyorum, hemfikir olmak
+884;इनकार करना (inkār karnā);v;reddetmek
+885;स्वीकार करना (svīkār karnā);v;kabul etmek
+886;वादा करना (vādā karnā);v;söz vermek
+887;शादी करना (shādī karnā);v;evlenmek
+888;तलाक़ लेना (talāq lenā);v;boşanmak
+889;घर बदलना (ghar badalnā);v;taşınmak
+890;विकसित करना (vikasit karnā);v;geliştirmek
+891;बढ़ाना (baṛhānā);v;artırmak
+892;घटाना (ghaṭānā);v;azaltmak
+893;तुलना करना (tulnā karnā);v;karşılaştırmak
+894;वर्णन करना (varṇan karnā);v;tarif etmek, betimlemek
+895;सुझाव देना (sujhāv denā);v;önermek
+896;सलाह देना (salāh denā);v;tavsiye etmek
+897;चर्चा करना (charchā karnā);v;tartışmak
+898;झगड़ना (jhagaṛnā);v;kavga etmek
+899;शिकायत करना (shikāyat karnā);v;şikayet etmek
+900;उत्पादन करना (utpādan karnā);v;üretmek
+901;आयोजित करना (āyojit karnā);v;organize etmek
+902;प्रबंधन करना (prabandhan karnā);v;yönetmek
+903;स्थापित करना (sthāpit karnā);v;kurmak
+904;समर्थन करना (samarthan karnā);v;desteklemek
+905;बाँधना (bāndhnā);v;bağlamak
+906;अलग करना (alag karnā);v;ayırmak
+907;बाँटना (bānṭnā);v;paylaşmak
+908;बचत करना (bachat karnā);v;biriktirmek, tasarruf etmek
+909;ख़र्च करना (kharch karnā);v;harcamak
+910;उधार देना (udhār denā);v;ödünç vermek
+911;चूकना (chūknā);v;kaçırmak
+912;गले लगाना (gale lagānā);v;sarılmak
+913;चूमना (chūmnā);v;öpmek
+914;खोदना (khodnā);v;kazmak
+915;बोना (bonā);v;ekmek (tohum)
+916;इकट्ठा करना (ikaṭṭhā karnā);v;toplamak
+917;भरना (bharnā);v;doldurmak
+918;ख़ाली करना (khālī karnā);v;boşaltmak
+919;गरम करना (garam karnā);v;ısıtmak
+920;हिलाना (hilānā);v;sallamak
+921;टाँगना (ṭāngnā);v;asmak
+922;चिल्लाना (chillānā);v;bağırmak
+923;फुसफुसाना (phusphusānā);v;fısıldamak
+924;चखना (chakhnā);v;tatmak
+925;सूँघना (sūnghnā);v;koklamak
+926;साँस लेना (sāns lenā);v;nefes almak
+927;पसीना आना (pasīnā ānā);v;terlemek
+928;दर्द होना (dard honā);v;acıtmak, ağrımak
+929;ठीक होना (ṭhīk honā);v;iyileşmek
+930;प्रार्थना करना (prārthnā karnā);v;dua etmek
+931;जश्न मनाना (jashn manānā);v;kutlamak
+932;बधाई देना (badhāī denā);v;tebrik etmek
+933;मज़े करना (maze karnā);v;eğlenmek
+934;ऊबना (ūbnā);v;sıkılmak
+935;हैरान होना (hairān honā);v;şaşırmak
+936;रुचि लेना (ruchi lenā);v;ilgilenmek
+937;देखभाल करना (dekhbhāl karnā);v;bakmak (birine)
+938;निगरानी करना (nigrānī karnā);v;denetlemek
+939;छापना (chhāpnā);v;yazdırmak
+940;डाउनलोड करना (ḍāunloḍ karnā);v;indirmek (dosya)
+941;अपलोड करना (aplod karnā);v;yüklemek (dosya)
+942;सहेजना (sahejnā);v;kaydetmek
+943;मिटाना (miṭānā);v;silmek
+944;क्लिक करना (klik karnā);v;tıklamak
+945;दुर्भाग्य से (durbhāgya se);adv;maalesef
+946;बेशक (beshak);adv;elbette
+947;सचमुच (sachmuch);adv;gerçekten
+948;लगभग (lagbhag);adv;neredeyse / yaklaşık
+949;ख़ासकर (khāskar);adv;özellikle
+950;आमतौर पर (āmtaur par);adv;genellikle
+951;असल में (asal men);adv;aslında
+952;आख़िरकार (ākhirkār);adv;sonunda
+953;अचानक (achānak);adv;aniden
+954;बिल्कुल (bilkul);adv;kesinlikle
+955;काफ़ी (kāfī);adv;yeterince
+956;बहुत ज़्यादा (bahut zyādā);adv;fazla, çok fazla
+957;हर जगह (har jagah);adv;her yerde
+958;कहीं नहीं (kahīn nahīn);adv;hiçbir yerde
+959;कहीं (kahīn);adv;bir yerde
+960;ऐसे (aise);adv;böyle, öyle
+961;ठीक (ṭhīk);adv;tam olarak
+962;जल्दबाज़ी में (jaldbāzī men);adv;hızla
+963;ध्यान से (dhyān se);adv;dikkatlice
+964;केवल (keval);adv;yalnızca, sırf
+965;इस बीच (is bīch);adv;bu arada
+966;इसके अलावा (iske alāvā);adv;ayrıca, üstelik
+967;इसलिए (islie);adv;bu yüzden
+968;फिर भी (phir bhī);adv;yine de
+969;संतुष्ट (santuṣṭ);adj;memnun
+970;शादीशुदा (shādīshudā);adj;evli
+971;अविवाहित (avivāhit);adj;bekar
+972;मृत (mṛt);adj;ölü
+973;जीवित (jīvit);adj;canlı
+974;घबराया (ghabrāyā);adj;gergin
+975;ईर्ष्यालु (īrṣyālu);adj;kıskanç
+976;शर्मीला (sharmīlā);adj;utangaç
+977;मज़ेदार (mazedār);adj;komik
+978;गंभीर (gambhīr);adj;ciddi
+979;आधुनिक (ādhunik);adj;modern
+980;प्राचीन (prāchīn);adj;antik, eski çağ
+981;गहरा (gahrā);adj;derin
+982;गोल (gol);adj;yuvarlak
+983;चपटा (chapṭā);adj;düz
+984;अंधा (andhā);adj;kör
+985;बहरा (bahrā);adj;sağır
+986;अंतरराष्ट्रीय (antarrāṣṭrīya);adj;uluslararası
+987;राष्ट्रीय (rāṣṭrīya);adj;ulusal
+988;दैनिक (dainik);adj;günlük
+989;साप्ताहिक (sāptāhik);adj;haftalık
+990;मौजूदा (maujūdā);adj;mevcut, şu anki
+991;पिछला (pichhlā);adj;eski, önceki
+992;संभावित (sambhāvit);adj;olası
+993;स्पष्ट (spaṣṭ);adj;açık, net

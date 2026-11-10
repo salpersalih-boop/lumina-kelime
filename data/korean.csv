@@ -1,0 +1,998 @@
+Sıra;Kelime;Tür;Türkçe Anlamı
+1;나 (na);pron;ben
+2;너 (neo);pron;sen
+3;그 (geu);pron;o (erkek)
+4;그녀 (geunyeo);pron;o (kadın)
+5;우리 (uri);pron;biz
+6;너희 (neohui);pron;siz
+7;그들 (geudeul);pron;onlar
+8;이것 (igeot);pron;bu
+9;저것 (jeogeot);pron;şu, o
+10;누구 (nugu);pron;kim
+11;무엇 (mueot);pron;ne
+12;어디 (eodi);adv;nerede
+13;언제 (eonje);adv;ne zaman
+14;왜 (wae);adv;neden, niçin
+15;어떻게 (eotteoke);adv;nasıl
+16;어느 (eoneu);pron;hangi
+17;얼마나 (eolmana);adv;ne kadar
+18;네 (ne);int;evet
+19;아니요 (aniyo);int;hayır
+20;안 (an);adv;değil
+21;그리고 (geurigo);conj;ve
+22;또는 (ttoneun);conj;veya, ya da
+23;하지만 (hajiman);conj;ama, fakat
+24;왜냐하면 (waenyahamyeon);conj;çünkü
+25;만약 (manyak);conj;eğer
+26;라고 (rago);conj;ki
+27;함께 (hamkke);prep;ile, birlikte / birlikte
+28;없이 (eopsi);prep;-sız, olmadan
+29;위해 (wihae);prep;için
+30;안에 (ane);prep;-de, içinde
+31;위에 (wie);prep;üzerinde
+32;아래에 (araee);prep;altında
+33;부터 (buteo);prep;-den, -dan
+34;에게 (ege);prep;-e doğru, -e
+35;사이에 (saie);prep;arasında
+36;전에 (jeone);prep;önce
+37;후에 (hue);prep;sonra
+38;옆에 (yeope);prep;yanında
+39;반대하여 (bandaehayeo);prep;karşı
+40;대해 (daehae);prep;hakkında
+41;여기 (yeogi);adv;burada
+42;거기 (geogi);adv;orada
+43;지금 (jigeum);adv;şimdi
+44;오늘 (oneul);adv;bugün
+45;내일 (naeil);adv;yarın
+46;어제 (eoje);adv;dün
+47;항상 (hangsang);adv;her zaman
+48;절대 (jeoldae);adv;asla, hiç
+49;가끔 (gakkeum);adv;bazen
+50;자주 (jaju);adv;sık sık
+51;아주 (aju);adv;çok
+52;조금 (jogeum);adv;biraz
+53;더 (deo);adv;daha
+54;덜 (deol);adv;daha az
+55;또한 (ttohan);adv;de, da, ayrıca
+56;오직 (ojik);adv;sadece
+57;이미 (imi);adv;zaten, çoktan
+58;아직 (ajik);adv;hâlâ, henüz
+59;즉시 (jeuksi);adv;hemen
+60;아마 (ama);adv;belki
+61;잘 (jal);adv;iyi (şekilde)
+62;나쁘게 (nappeuge);adv;kötü (şekilde)
+63;일찍 (iljjik);adv;erken
+64;늦게 (neutge);adv;geç
+65;다시 (dasi);adv;yine, tekrar
+66;빨리 (ppalli);adv;çabuk, hızlıca
+67;천천히 (cheoncheonhi);adv;yavaşça
+68;곧 (got);adv;yakında
+69;멀리 (meolli);adv;uzakta
+70;가까이 (gakkai);adv;yakında (mesafe)
+71;안쪽 (anjjok);adv;içeride
+72;밖 (bak);adv;dışarıda
+73;위 (wi);adv;yukarıda
+74;아래 (arae);adv;aşağıda
+75;앞 (ap);adv;ileride, önde
+76;뒤 (dwi);adv;geride, arkada
+77;모든 것 (modeun geot);pron;her şey
+78;아무것도 (amugeotdo);pron;hiçbir şey
+79;무언가 (mueonga);pron;bir şey
+80;모두 (modu);pron;herkes
+81;아무도 (amudo);pron;kimse, hiç kimse
+82;누군가 (nugunga);pron;biri, birisi
+83;매 (mae);pron;her
+84;전부 (jeonbu);pron;bütün, tüm
+85;다른 (dareun);pron;başka
+86;같은 (gateun);pron;aynı
+87;몇몇 (myeonmyeot);pron;birkaç
+88;많은 (maneun);pron;çok (sayıca)
+89;적은 (jeogeun);pron;az (sayıca)
+90;안녕하세요 (annyeonghaseyo);int;merhaba
+91;좋은 아침 (joeun achim);int;günaydın
+92;좋은 저녁 (joeun jeonyeok);int;iyi akşamlar
+93;잘 자요 (jal jayo);int;iyi geceler
+94;안녕히 가세요 (annyeonghi gaseyo);int;hoşça kal
+95;감사합니다 (gamsahamnida);int;teşekkürler
+96;제발 (jebal);int;lütfen
+97;미안합니다 (mianhamnida);int;özür dilerim
+98;괜찮아요 (gwaenchanayo);int;tamam
+99;환영합니다 (hwanyeonghamnida);int;hoş geldiniz
+100;이다 (ida);v;olmak
+101;가지다 (gajida);v;sahip olmak
+102;하다 (hada);v;yapmak
+103;가다 (gada);v;gitmek
+104;오다 (oda);v;gelmek
+105;말하다 (malhada);v;söylemek, demek
+106;이야기하다 (iyagihada);v;konuşmak
+107;보다 (boda);v;görmek
+108;바라보다 (baraboda);v;bakmak
+109;듣다 (deutda);v;duymak
+110;귀 기울이다 (gwi giurida);v;dinlemek
+111;알다 (alda);v;bilmek / tanımak
+112;생각하다 (saenggakhada);v;düşünmek
+113;믿다 (mitda);v;inanmak
+114;원하다 (wonhada);v;istemek
+115;할 수 있다 (hal su itda);v;-ebilmek, yapabilmek
+116;해야 하다 (haeya hada);v;-meli, zorunda olmak
+117;주다 (juda);v;vermek
+118;가져가다 (gajyeogada);v;almak
+119;놓다 (nota);v;koymak
+120;찾다 (chatda);v;bulmak / aramak
+121;잃다 (ilta);v;kaybetmek
+122;이기다 (igida);v;kazanmak (yarış)
+123;벌다 (beolda);v;kazanmak (para)
+124;일하다 (ilhada);v;çalışmak (iş)
+125;공부하다 (gongbuhada);v;ders çalışmak
+126;배우다 (baeuda);v;öğrenmek
+127;가르치다 (gareuchida);v;öğretmek
+128;읽다 (ikda);v;okumak
+129;쓰다 (sseuda);v;yazmak / acı / harcamak
+130;이해하다 (ihaehada);v;anlamak
+131;묻다 (mutda);v;sormak
+132;대답하다 (daedaphada);v;cevap vermek
+133;돕다 (dopda);v;yardım etmek
+134;기다리다 (gidarida);v;beklemek
+135;머무르다 (meomureuda);v;kalmak
+136;살다 (salda);v;yaşamak / oturmak, ikamet etmek
+137;죽다 (jukda);v;ölmek
+138;태어나다 (taeeonada);v;doğmak
+139;사랑하다 (saranghada);v;sevmek
+140;좋아하다 (joahada);v;hoşlanmak
+141;미워하다 (miwohada);v;nefret etmek
+142;먹다 (meokda);v;yemek
+143;마시다 (masida);v;içmek
+144;자다 (jada);v;uyumak
+145;깨다 (kkaeda);v;uyanmak
+146;일어나다 (ireonada);v;kalkmak / olmak, meydana gelmek
+147;앉다 (anda);v;oturmak (sandalye)
+148;서다 (seoda);v;ayakta durmak
+149;걷다 (geotda);v;yürümek
+150;달리다 (dallida);v;koşmak
+151;수영하다 (suyeonghada);v;yüzmek
+152;날다 (nalda);v;uçmak
+153;운전하다 (unjeonhada);v;sürmek (araç)
+154;여행하다 (yeohaenghada);v;seyahat etmek
+155;도착하다 (dochakhada);v;varmak
+156;떠나다 (tteonada);v;ayrılmak, gitmek
+157;들어가다 (deureogada);v;girmek
+158;나가다 (nagada);v;çıkmak
+159;돌아오다 (doraoda);v;dönmek, geri gelmek
+160;열다 (yeolda);v;açmak
+161;닫다 (datda);v;kapatmak
+162;시작하다 (sijakhada);v;başlamak
+163;끝내다 (kkeunnaeda);v;bitirmek
+164;멈추다 (meomchuda);v;durmak
+165;계속하다 (gyesokhada);v;devam etmek
+166;바꾸다 (bakkuda);v;değiştirmek
+167;사용하다 (sayonghada);v;kullanmak
+168;사다 (sada);v;satın almak
+169;팔다 (palda);v;satmak
+170;지불하다 (jibulhada);v;ödemek
+171;비용이 들다 (biyongi deulda);v;maliyeti olmak, tutmak
+172;가져오다 (gajyeooda);v;getirmek
+173;보내다 (bonaeda);v;göndermek
+174;받다 (batda);v;almak (teslim)
+175;잡다 (japda);v;tutmak / yakalamak
+176;나르다 (nareuda);v;taşımak
+177;던지다 (deonjida);v;atmak
+178;떨어지다 (tteoreojida);v;düşmek
+179;부수다 (busuda);v;kırmak
+180;짓다 (jitda);v;yapmak, inşa etmek
+181;만들다 (mandeulda);v;yaratmak
+182;그리다 (geurida);v;çizmek
+183;놀다 (nolda);v;oynamak
+184;노래하다 (noraehada);v;şarkı söylemek
+185;춤추다 (chumchuda);v;dans etmek
+186;웃다 (utda);v;gülmek
+187;울다 (ulda);v;ağlamak
+188;미소 짓다 (miso jitda);v;gülümsemek
+189;느끼다 (neukkida);v;hissetmek
+190;만지다 (manjida);v;dokunmak
+191;보여주다 (boyeojuda);v;göstermek
+192;숨기다 (sumgida);v;saklamak
+193;기억하다 (gieokhada);v;hatırlamak
+194;잊다 (itda);v;unutmak
+195;시도하다 (sidohada);v;denemek
+196;고르다 (goreuda);v;seçmek
+197;결정하다 (gyeoljeonghada);v;karar vermek
+198;계획하다 (gyehoekhada);v;planlamak
+199;준비하다 (junbihada);v;hazırlamak
+200;요리하다 (yorihada);v;pişirmek
+201;씻다 (ssitda);v;yıkamak
+202;청소하다 (cheongsohada);v;temizlemek
+203;입다 (ipda);v;giymek
+204;옷을 입다 (oseul ipda);v;giyinmek
+205;깨우다 (kkaeuda);v;uyandırmak
+206;전화하다 (jeonhwahada);v;aramak (telefon)
+207;만나다 (mannada);v;buluşmak
+208;방문하다 (bangmunhada);v;ziyaret etmek
+209;초대하다 (chodaehada);v;davet etmek
+210;감사하다 (gamsahada);v;teşekkür etmek
+211;용서하다 (yongseohada);v;affetmek
+212;허락하다 (heorakhada);v;izin vermek
+213;금지하다 (geumjihada);v;yasaklamak
+214;따르다 (ttareuda);v;takip etmek
+215;이끌다 (ikkeulda);v;yol göstermek, yönetmek
+216;얻다 (eotda);v;kazanmak, elde etmek
+217;보이다 (boida);v;görünmek
+218;되다 (doeda);v;olmak, haline gelmek
+219;자라다 (jarada);v;büyümek
+220;보호하다 (bohohada);v;korumak
+221;구하다 (guhada);v;kurtarmak
+222;죽이다 (jugida);v;öldürmek
+223;싸우다 (ssauda);v;savaşmak / kavga etmek
+224;물리치다 (mullichida);v;kazanmak, galip gelmek
+225;필요하다 (piryohada);v;ihtiyaç duymak / gerekli
+226;선호하다 (seonhohada);v;tercih etmek
+227;바라다 (barada);v;ummak
+228;두려워하다 (duryeowohada);v;korkmak
+229;걱정하다 (geokjeonghada);v;endişelenmek
+230;쉬다 (swida);v;dinlenmek
+231;담배를 피우다 (dambaereul piuda);v;sigara içmek
+232;빌리다 (billida);v;kiralamak
+233;예약하다 (yeyakhada);v;rezervasyon yapmak
+234;번역하다 (beonyeokhada);v;çevirmek (dil)
+235;설명하다 (seolmyeonghada);v;açıklamak
+236;반복하다 (banbokhada);v;tekrarlamak
+237;세다 (seda);v;saymak
+238;재다 (jaeda);v;ölçmek
+239;확인하다 (hwaginhada);v;kontrol etmek
+240;고치다 (gochida);v;düzeltmek, tamir etmek
+241;자르다 (jareuda);v;kesmek
+242;밀다 (milda);v;itmek
+243;당기다 (danggida);v;çekmek
+244;들어 올리다 (deureo ollida);v;kaldırmak
+245;돌리다 (dollida);v;dönmek, çevirmek
+246;지나가다 (jinagada);v;geçmek
+247;건너다 (geonneoda);v;geçmek, karşıya geçmek
+248;오르다 (oreuda);v;tırmanmak
+249;내려가다 (naeryeogada);v;inmek
+250;사람 (saram);n;insan, kişi
+251;사람들 (saramdeul);n;insanlar
+252;남자 (namja);n;adam, erkek
+253;여자 (yeoja);n;kadın
+254;아이 (ai);n;çocuk
+255;소년 (sonyeon);n;erkek çocuk
+256;소녀 (sonyeo);n;kız çocuk
+257;아기 (agi);n;bebek
+258;가족 (gajok);n;aile
+259;어머니 (eomeoni);n;anne
+260;아버지 (abeoji);n;baba
+261;부모 (bumo);n;anne baba, ebeveynler
+262;아들 (adeul);n;oğul
+263;딸 (ttal);n;kız evlat
+264;형제 (hyeongje);n;erkek kardeş
+265;자매 (jamae);n;kız kardeş
+266;할아버지 (harabeoji);n;büyükbaba
+267;할머니 (halmeoni);n;büyükanne
+268;삼촌 (samchon);n;amca, dayı
+269;이모 (imo);n;teyze, hala
+270;사촌 (sachon);n;kuzen
+271;남편 (nampyeon);n;koca, eş
+272;아내 (anae);n;karı, eş
+273;친구 (chingu);n;arkadaş
+274;이웃 (iut);n;komşu
+275;손님 (sonnim);n;misafir
+276;이름 (ireum);n;isim, ad
+277;성 (seong);n;soyadı
+278;나이 (nai);n;yaş
+279;삶 (sam);n;hayat
+280;죽음 (jugeum);n;ölüm
+281;사랑 (sarang);n;aşk, sevgi
+282;몸 (mom);n;vücut
+283;머리 (meori);n;baş, kafa
+284;머리카락 (meorikarak);n;saç
+285;얼굴 (eolgul);n;yüz
+286;눈 (nun);n;göz / kar
+287;귀 (gwi);n;kulak
+288;코 (ko);n;burun
+289;입 (ip);n;ağız
+290;이 (i);n;diş
+291;혀 (hyeo);n;dil (organ)
+292;목 (mok);n;boyun
+293;어깨 (eokkae);n;omuz
+294;팔 (pal);n;kol
+295;손 (son);n;el
+296;손가락 (songarak);n;parmak
+297;가슴 (gaseum);n;göğüs
+298;등 (deung);n;sırt
+299;배 (bae);n;karın, mide / gemi
+300;다리 (dari);n;bacak / köprü
+301;발 (bal);n;ayak
+302;무릎 (mureup);n;diz
+303;심장 (simjang);n;kalp
+304;피 (pi);n;kan
+305;피부 (pibu);n;deri, cilt
+306;뼈 (ppyeo);n;kemik
+307;건강 (geongang);n;sağlık
+308;병 (byeong);n;hastalık / şişe
+309;통증 (tongjeung);n;ağrı, acı
+310;의사 (uisa);n;doktor
+311;간호사 (ganhosa);n;hemşire
+312;병원 (byeongwon);n;hastane
+313;약 (yak);n;ilaç / yaklaşık
+314;약국 (yakguk);n;eczane
+315;집 (jip);n;ev
+316;아파트 (apateu);n;daire
+317;방 (bang);n;oda
+318;부엌 (bueok);n;mutfak
+319;욕실 (yoksil);n;banyo
+320;침실 (chimsil);n;yatak odası
+321;거실 (geosil);n;oturma odası
+322;문 (mun);n;kapı
+323;창문 (changmun);n;pencere
+324;벽 (byeok);n;duvar
+325;바닥 (badak);n;zemin, yer
+326;천장 (cheonjang);n;tavan
+327;계단 (gyedan);n;merdiven
+328;정원 (jeongwon);n;bahçe
+329;지붕 (jibung);n;çatı
+330;열쇠 (yeolsoe);n;anahtar
+331;탁자 (takja);n;masa
+332;의자 (uija);n;sandalye
+333;침대 (chimdae);n;yatak
+334;소파 (sopa);n;kanepe
+335;옷장 (otjang);n;dolap
+336;거울 (geoul);n;ayna
+337;램프 (laempeu);n;lamba
+338;냉장고 (naengjanggo);n;buzdolabı
+339;오븐 (obeun);n;fırın
+340;텔레비전 (tellebijeon);n;televizyon
+341;컴퓨터 (keompyuteo);n;bilgisayar
+342;전화 (jeonhwa);n;telefon
+343;시계 (sigye);n;saat (alet)
+344;그림 (geurim);n;resim, tablo
+345;카펫 (kapet);n;halı
+346;커튼 (keoteun);n;perde
+347;수건 (sugeon);n;havlu
+348;비누 (binu);n;sabun
+349;칫솔 (chitsol);n;diş fırçası
+350;가방 (gabang);n;çanta
+351;상자 (sangja);n;kutu
+352;유리잔 (yurijan);n;bardak
+353;컵 (keop);n;fincan
+354;접시 (jeopsi);n;tabak
+355;포크 (pokeu);n;çatal
+356;칼 (kal);n;bıçak
+357;숟가락 (sutgarak);n;kaşık
+358;냄비 (naembi);n;tencere
+359;식사 (siksa);n;yemek (öğün)
+360;음식 (eumsik);n;yiyecek
+361;아침 식사 (achim siksa);n;kahvaltı
+362;점심 (jeomsim);n;öğle yemeği
+363;저녁 식사 (jeonyeok siksa);n;akşam yemeği
+364;물 (mul);n;su
+365;빵 (ppang);n;ekmek
+366;우유 (uyu);n;süt
+367;커피 (keopi);n;kahve
+368;차 (cha);n;çay
+369;주스 (juseu);n;meyve suyu
+370;맥주 (maekju);n;bira
+371;와인 (wain);n;şarap
+372;고기 (gogi);n;et
+373;닭고기 (dakgogi);n;tavuk
+374;생선 (saengseon);n;balık
+375;달걀 (dalgyal);n;yumurta
+376;치즈 (chijeu);n;peynir
+377;버터 (beoteo);n;tereyağı
+378;쌀 (ssal);n;pirinç
+379;파스타 (paseuta);n;makarna
+380;감자 (gamja);n;patates
+381;채소 (chaeso);n;sebze
+382;과일 (gwail);n;meyve
+383;사과 (sagwa);n;elma
+384;오렌지 (orenji);n;portakal
+385;바나나 (banana);n;muz
+386;포도 (podo);n;üzüm
+387;딸기 (ttalgi);n;çilek
+388;레몬 (remon);n;limon
+389;토마토 (tomato);n;domates
+390;양파 (yangpa);n;soğan
+391;마늘 (maneul);n;sarımsak
+392;당근 (danggeun);n;havuç
+393;오이 (oi);n;salatalık
+394;샐러드 (saelleodeu);n;salata
+395;수프 (supeu);n;çorba
+396;소금 (sogeum);n;tuz
+397;설탕 (seoltang);n;şeker
+398;후추 (huchu);n;biber
+399;기름 (gireum);n;yağ (sıvı)
+400;꿀 (kkul);n;bal
+401;케이크 (keikeu);n;pasta, kek
+402;아이스크림 (aiseukeurim);n;dondurma
+403;초콜릿 (chokollit);n;çikolata
+404;식당 (sikdang);n;restoran
+405;카페 (kape);n;kafe
+406;메뉴 (menyu);n;menü
+407;웨이터 (weiteo);n;garson
+408;계산서 (gyesanseo);n;hesap (restoran)
+409;팁 (tip);n;bahşiş
+410;배고픔 (baegopeum);n;açlık
+411;갈증 (galjeung);n;susuzluk
+412;도시 (dosi);n;şehir
+413;마을 (maeul);n;köy
+414;나라 (nara);n;ülke
+415;거리 (geori);n;sokak
+416;광장 (gwangjang);n;meydan
+417;길 (gil);n;yol
+418;건물 (geonmul);n;bina
+419;가게 (gage);n;dükkan, mağaza
+420;슈퍼마켓 (syupeomaket);n;market
+421;시장 (sijang);n;pazar, çarşı
+422;은행 (eunhaeng);n;banka
+423;우체국 (ucheguk);n;postane
+424;학교 (hakgyo);n;okul
+425;대학교 (daehakgyo);n;üniversite
+426;도서관 (doseogwan);n;kütüphane
+427;박물관 (bangmulgwan);n;müze
+428;교회 (gyohoe);n;kilise
+429;모스크 (moseukeu);n;cami
+430;공원 (gongwon);n;park
+431;호텔 (hotel);n;otel
+432;공항 (gonghang);n;havaalanı
+433;역 (yeok);n;istasyon
+434;정류장 (jeongnyujang);n;durak
+435;항구 (hanggu);n;liman
+436;영화관 (yeonghwagwan);n;sinema
+437;극장 (geukjang);n;tiyatro
+438;경찰 (gyeongchal);n;polis
+439;자동차 (jadongcha);n;araba
+440;버스 (beoseu);n;otobüs
+441;기차 (gicha);n;tren
+442;비행기 (bihaenggi);n;uçak
+443;자전거 (jajeongeo);n;bisiklet
+444;택시 (taeksi);n;taksi
+445;지하철 (jihacheol);n;metro
+446;표 (pyo);n;bilet
+447;여행 가방 (yeohaeng gabang);n;bavul
+448;여권 (yeogwon);n;pasaport
+449;지도 (jido);n;harita
+450;여행 (yeohaeng);n;yolculuk, seyahat
+451;휴가 (hyuga);n;tatil
+452;관광객 (gwangwanggaek);n;turist
+453;교통 (gyotong);n;trafik
+454;사고 (sago);n;kaza
+455;오른쪽 (oreunjjok);n;sağ
+456;왼쪽 (oenjjok);n;sol
+457;북쪽 (bukjjok);n;kuzey
+458;남쪽 (namjjok);n;güney
+459;동쪽 (dongjjok);n;doğu
+460;서쪽 (seojjok);n;batı
+461;모퉁이 (motungi);n;köşe
+462;중심 (jungsim);n;merkez
+463;장소 (jangso);n;yer, mekan
+464;주소 (juso);n;adres
+465;시간 (sigan);n;zaman
+466;한 시간 (han sigan);n;saat (süre)
+467;분 (bun);n;dakika
+468;초 (cho);n;saniye
+469;날 (nal);n;gün
+470;주 (ju);n;hafta
+471;달 (dal);n;ay (takvim) / ay (gökyüzü)
+472;해 (hae);n;yıl
+473;세기 (segi);n;yüzyıl
+474;아침 (achim);n;sabah
+475;정오 (jeongo);n;öğle
+476;오후 (ohu);n;öğleden sonra
+477;저녁 (jeonyeok);n;akşam
+478;밤 (bam);n;gece
+479;주말 (jumal);n;hafta sonu
+480;월요일 (woryoil);n;pazartesi
+481;화요일 (hwayoil);n;salı
+482;수요일 (suyoil);n;çarşamba
+483;목요일 (mogyoil);n;perşembe
+484;금요일 (geumyoil);n;cuma
+485;토요일 (toyoil);n;cumartesi
+486;일요일 (iryoil);n;pazar (gün)
+487;일월 (irwol);n;ocak
+488;이월 (iwol);n;şubat
+489;삼월 (samwol);n;mart
+490;사월 (sawol);n;nisan
+491;오월 (owol);n;mayıs
+492;유월 (yuwol);n;haziran
+493;칠월 (chirwol);n;temmuz
+494;팔월 (parwol);n;ağustos
+495;구월 (guwol);n;eylül
+496;시월 (siwol);n;ekim
+497;십일월 (sibirwol);n;kasım
+498;십이월 (sibiwol);n;aralık
+499;계절 (gyejeol);n;mevsim
+500;봄 (bom);n;ilkbahar
+501;여름 (yeoreum);n;yaz
+502;가을 (gaeul);n;sonbahar
+503;겨울 (gyeoul);n;kış
+504;날씨 (nalssi);n;hava (durumu)
+505;태양 (taeyang);n;güneş
+506;별 (byeol);n;yıldız
+507;하늘 (haneul);n;gökyüzü
+508;구름 (gureum);n;bulut
+509;비 (bi);n;yağmur
+510;바람 (baram);n;rüzgar
+511;폭풍 (pokpung);n;fırtına
+512;온도 (ondo);n;sıcaklık
+513;공기 (gonggi);n;hava (soluduğumuz)
+514;불 (bul);n;ateş
+515;땅 (ttang);n;toprak, dünya
+516;세계 (segye);n;dünya
+517;자연 (jayeon);n;doğa
+518;바다 (bada);n;deniz
+519;대양 (daeyang);n;okyanus
+520;강 (gang);n;nehir
+521;호수 (hosu);n;göl
+522;산 (san);n;dağ
+523;언덕 (eondeok);n;tepe
+524;숲 (sup);n;orman
+525;나무 (namu);n;ağaç
+526;꽃 (kkot);n;çiçek
+527;풀 (pul);n;çimen
+528;잎 (ip);n;yaprak
+529;돌 (dol);n;taş
+530;모래 (morae);n;kum
+531;해변 (haebyeon);n;plaj
+532;섬 (seom);n;ada
+533;밭 (bat);n;tarla
+534;동물 (dongmul);n;hayvan
+535;개 (gae);n;köpek
+536;고양이 (goyangi);n;kedi
+537;말 (mal);n;at
+538;소 (so);n;inek
+539;돼지 (dwaeji);n;domuz
+540;양 (yang);n;koyun / miktar
+541;새 (sae);n;kuş
+542;쥐 (jwi);n;fare
+543;토끼 (tokki);n;tavşan
+544;곰 (gom);n;ayı
+545;늑대 (neukdae);n;kurt
+546;사자 (saja);n;aslan
+547;뱀 (baem);n;yılan
+548;곤충 (gonchung);n;böcek
+549;벌 (beol);n;arı
+550;파리 (pari);n;sinek
+551;오리 (ori);n;ördek
+552;여우 (yeou);n;tilki
+553;원숭이 (wonsungi);n;maymun
+554;코끼리 (kokkiri);n;fil
+555;나비 (nabi);n;kelebek
+556;일 (il);n;iş
+557;직업 (jigeop);n;meslek
+558;회사 (hoesa);n;şirket
+559;사무실 (samusil);n;ofis
+560;상사 (sangsa);n;patron
+561;동료 (dongnyo);n;meslektaş
+562;회의 (hoeui);n;toplantı
+563;돈 (don);n;para
+564;가격 (gagyeok);n;fiyat
+565;월급 (wolgeup);n;maaş
+566;세금 (segeum);n;vergi
+567;카드 (kadeu);n;kart
+568;선생님 (seonsaengnim);n;öğretmen
+569;학생 (haksaeng);n;öğrenci
+570;수업 (sueop);n;ders
+571;교실 (gyosil);n;sınıf
+572;시험 (siheom);n;sınav
+573;질문 (jilmun);n;soru
+574;대답 (daedap);n;cevap
+575;책 (chaek);n;kitap
+576;공책 (gongchaek);n;defter
+577;펜 (pen);n;kalem
+578;연필 (yeonpil);n;kurşun kalem
+579;종이 (jongi);n;kağıt
+580;페이지 (peiji);n;sayfa
+581;단어 (daneo);n;kelime
+582;문장 (munjang);n;cümle
+583;언어 (eoneo);n;dil (lisan)
+584;글자 (geulja);n;harf
+585;편지 (pyeonji);n;mektup
+586;이야기 (iyagi);n;hikaye
+587;역사 (yeoksa);n;tarih (geçmiş)
+588;날짜 (naljja);n;tarih (gün)
+589;뉴스 (nyuseu);n;haber
+590;신문 (sinmun);n;gazete
+591;잡지 (japji);n;dergi
+592;영화 (yeonghwa);n;film
+593;음악 (eumak);n;müzik
+594;노래 (norae);n;şarkı
+595;게임 (geim);n;oyun
+596;스포츠 (seupocheu);n;spor
+597;축구 (chukgu);n;futbol
+598;공 (gong);n;top
+599;팀 (tim);n;takım
+600;경기 (gyeonggi);n;maç
+601;파티 (pati);n;parti, eğlence
+602;선물 (seonmul);n;hediye
+603;생일 (saengil);n;doğum günü
+604;사진 (sajin);n;fotoğraf
+605;예술 (yesul);n;sanat
+606;인터넷 (inteonet);n;internet
+607;이메일 (imeil);n;e-posta
+608;메시지 (mesiji);n;mesaj
+609;번호 (beonho);n;numara, sayı
+610;옷 (ot);n;kıyafet, giysi
+611;셔츠 (syeocheu);n;gömlek
+612;티셔츠 (tisyeocheu);n;tişört
+613;바지 (baji);n;pantolon
+614;치마 (chima);n;etek
+615;원피스 (wonpiseu);n;elbise
+616;재킷 (jaekit);n;ceket
+617;신발 (sinbal);n;ayakkabı
+618;모자 (moja);n;şapka
+619;양말 (yangmal);n;çorap
+620;안경 (angyeong);n;gözlük
+621;지갑 (jigap);n;cüzdan
+622;반지 (banji);n;yüzük
+623;색 (saek);n;renk
+624;물건 (mulgeon);n;şey, nesne
+625;조각 (jogak);n;parça
+626;부분 (bubun);n;kısım, bölüm
+627;절반 (jeolban);n;yarım, yarı
+628;끝 (kkeut);n;son
+629;시작 (sijak);n;başlangıç
+630;방법 (bangbeop);n;yol, yöntem
+631;이유 (iyu);n;neden, sebep
+632;문제 (munje);n;sorun
+633;생각 (saenggak);n;fikir / düşünce
+634;진실 (jinsil);n;gerçek, hakikat
+635;거짓말 (geojinmal);n;yalan
+636;실수 (silsu);n;hata
+637;운 (un);n;şans
+638;행복 (haengbok);n;mutluluk
+639;두려움 (duryeoum);n;korku
+640;희망 (huimang);n;umut
+641;꿈 (kkum);n;rüya, hayal
+642;힘 (him);n;güç, kuvvet
+643;전쟁 (jeonjaeng);n;savaş
+644;평화 (pyeonghwa);n;barış
+645;정부 (jeongbu);n;devlet, hükümet
+646;법 (beop);n;kanun, yasa
+647;권리 (gwolli);n;hak
+648;자유 (jayu);n;özgürlük
+649;국민 (gungmin);n;halk
+650;왕 (wang);n;kral
+651;신 (sin);n;tanrı
+652;종교 (jonggyo);n;din
+653;문화 (munhwa);n;kültür
+654;과학 (gwahak);n;bilim
+655;전통 (jeontong);n;gelenek
+656;좋다 (jota);adj;iyi
+657;나쁘다 (nappeuda);adj;kötü
+658;크다 (keuda);adj;büyük
+659;작다 (jakda);adj;küçük
+660;길다 (gilda);adj;uzun
+661;짧다 (jjalda);adj;kısa
+662;높다 (nopda);adj;uzun boylu, yüksek
+663;낮다 (natda);adj;alçak, kısa boylu
+664;넓다 (neolda);adj;geniş
+665;좁다 (jopda);adj;dar
+666;새롭다 (saeropda);adj;yeni
+667;오래되다 (oraedoeda);adj;eski, yaşlı
+668;젊다 (jeomda);adj;genç
+669;아름답다 (areumdapda);adj;güzel
+670;못생기다 (motsaenggida);adj;çirkin
+671;덥다 (deopda);adj;sıcak
+672;춥다 (chupda);adj;soğuk
+673;미지근하다 (mijigeunhada);adj;ılık
+674;시원하다 (siwonhada);adj;serin
+675;빠르다 (ppareuda);adj;hızlı
+676;느리다 (neurida);adj;yavaş
+677;쉽다 (swipda);adj;kolay
+678;어렵다 (eoryeopda);adj;zor
+679;무겁다 (mugeopda);adj;ağır
+680;가볍다 (gabyeopda);adj;hafif
+681;가득하다 (gadeukhada);adj;dolu
+682;비다 (bida);adj;boş
+683;깨끗하다 (kkaekkeutada);adj;temiz
+684;더럽다 (deoreopda);adj;kirli
+685;부유하다 (buyuhada);adj;zengin
+686;가난하다 (gananhada);adj;fakir
+687;싸다 (ssada);adj;ucuz
+688;비싸다 (bissada);adj;pahalı
+689;행복하다 (haengbokhada);adj;mutlu
+690;슬프다 (seulpeuda);adj;üzgün
+691;화나다 (hwanada);adj;kızgın
+692;피곤하다 (pigonhada);adj;yorgun
+693;아프다 (apeuda);adj;hasta / acıtmak, ağrımak
+694;건강하다 (geonganghada);adj;sağlıklı
+695;배고프다 (baegopeuda);adj;aç
+696;강하다 (ganghada);adj;güçlü
+697;약하다 (yakhada);adj;zayıf, güçsüz
+698;뚱뚱하다 (ttungttunghada);adj;şişman
+699;마르다 (mareuda);adj;ince, zayıf / kuru
+700;똑똑하다 (ttokttokhada);adj;akıllı
+701;어리석다 (eoriseokda);adj;aptal
+702;친절하다 (chinjeolhada);adj;nazik
+703;무례하다 (muryehada);adj;kaba
+704;정직하다 (jeongjikhada);adj;dürüst
+705;용감하다 (yonggamhada);adj;cesur
+706;게으르다 (geeureuda);adj;tembel
+707;바쁘다 (bappeuda);adj;meşgul
+708;자유롭다 (jayuropda);adj;serbest, özgür
+709;준비되다 (junbidoeda);adj;hazır
+710;옳다 (olta);adj;doğru
+711;틀리다 (teullida);adj;yanlış
+712;진짜 (jinjja);adj;gerçek
+713;가짜 (gajja);adj;yanlış, sahte
+714;중요하다 (jungyohada);adj;önemli
+715;재미있다 (jaemiitda);adj;ilginç
+716;지루하다 (jiruhada);adj;sıkıcı
+717;위험하다 (wiheomhada);adj;tehlikeli
+718;안전하다 (anjeonhada);adj;güvenli
+719;가능하다 (ganeunghada);adj;mümkün
+720;불가능하다 (bulganeunghada);adj;imkansız
+721;보통이다 (botongida);adj;normal
+722;이상하다 (isanghada);adj;garip, tuhaf
+723;다르다 (dareuda);adj;farklı
+724;비슷하다 (biseuthada);adj;benzer
+725;간단하다 (gandanhada);adj;kolay, basit
+726;복잡하다 (bokjaphada);adj;karmaşık
+727;조용하다 (joyonghada);adj;sessiz
+728;시끄럽다 (sikkeureopda);adj;gürültülü
+729;어둡다 (eodupda);adj;karanlık
+730;밝다 (bakda);adj;aydınlık
+731;부드럽다 (budeureopda);adj;yumuşak
+732;딱딱하다 (ttakttakhada);adj;sert
+733;달다 (dalda);adj;tatlı
+734;시다 (sida);adj;ekşi
+735;짜다 (jjada);adj;tuzlu
+736;맛있다 (masitda);adj;lezzetli
+737;신선하다 (sinseonhada);adj;taze
+738;젖다 (jeotda);adj;ıslak
+739;열리다 (yeollida);adj;açık
+740;닫히다 (dachida);adj;kapalı
+741;가깝다 (gakkapda);adj;yakın
+742;멀다 (meolda);adj;uzak
+743;첫째 (cheotjjae);adj;ilk
+744;마지막 (majimak);adj;son
+745;다음 (daeum);adj;sonraki
+746;혼자 (honja);adj;tek, yalnız
+747;전체 (jeonche);adj;bütün, tam
+748;완벽하다 (wanbyeokhada);adj;mükemmel
+749;유명하다 (yumyeonghada);adj;ünlü
+750;지역의 (jiyeogui);adj;yerel
+751;외국의 (oegugui);adj;yabancı
+752;특별하다 (teukbyeolhada);adj;özel
+753;일반적이다 (ilbanjeogida);adj;genel
+754;공공의 (gonggongui);adj;kamu, halka açık
+755;개인적이다 (gaeinjeogida);adj;özel, kişisel
+756;빨갛다 (ppalgata);adj;kırmızı
+757;파랗다 (parata);adj;mavi
+758;초록색 (choroksaek);adj;yeşil
+759;노랗다 (norata);adj;sarı
+760;검다 (geomda);adj;siyah
+761;하얗다 (hayata);adj;beyaz
+762;회색 (hoesaek);adj;gri
+763;갈색 (galsaek);adj;kahverengi
+764;주황색 (juhwangsaek);adj;turuncu
+765;분홍색 (bunhongsaek);adj;pembe
+766;보라색 (borasaek);adj;mor
+767;하늘색 (haneulsaek);adj;açık mavi
+768;영 (yeong);num;sıfır
+769;하나 (hana);num;bir
+770;둘 (dul);num;iki
+771;셋 (set);num;üç
+772;넷 (net);num;dört
+773;다섯 (daseot);num;beş
+774;여섯 (yeoseot);num;altı
+775;일곱 (ilgop);num;yedi
+776;여덟 (yeodeol);num;sekiz
+777;아홉 (ahop);num;dokuz
+778;열 (yeol);num;on
+779;열하나 (yeolhana);num;on bir
+780;열둘 (yeoldul);num;on iki
+781;열셋 (yeolset);num;on üç
+782;열넷 (yeollet);num;on dört
+783;열다섯 (yeoldaseot);num;on beş
+784;열여섯 (yeoryeoseot);num;on altı
+785;열일곱 (yeorilgop);num;on yedi
+786;열여덟 (yeoryeodeol);num;on sekiz
+787;열아홉 (yeorahop);num;on dokuz
+788;스물 (seumul);num;yirmi
+789;서른 (seoreun);num;otuz
+790;마흔 (maheun);num;kırk
+791;쉰 (swin);num;elli
+792;예순 (yesun);num;altmış
+793;일흔 (ilheun);num;yetmiş
+794;여든 (yeodeun);num;seksen
+795;아흔 (aheun);num;doksan
+796;백 (baek);num;yüz
+797;천 (cheon);num;bin
+798;백만 (baengman);num;milyon
+799;둘째 (duljjae);num;ikinci
+800;셋째 (setjjae);num;üçüncü
+801;경제 (gyeongje);n;ekonomi
+802;정치 (jeongchi);n;politika
+803;선거 (seongeo);n;seçim
+804;대통령 (daetongnyeong);n;başkan
+805;군인 (gunin);n;asker
+806;군대 (gundae);n;ordu
+807;무기 (mugi);n;silah
+808;범죄 (beomjoe);n;suç
+809;도둑 (doduk);n;hırsız
+810;법원 (beobwon);n;mahkeme
+811;변호사 (byeonhosa);n;avukat
+812;판사 (pansa);n;hakim
+813;기술자 (gisulja);n;mühendis
+814;작가 (jakga);n;yazar
+815;예술가 (yesulga);n;sanatçı
+816;요리사 (yorisa);n;aşçı
+817;운전사 (unjeonsa);n;şoför
+818;농부 (nongbu);n;çiftçi
+819;판매원 (panmaewon);n;satıcı
+820;고객 (gogaek);n;müşteri
+821;노동자 (nodongja);n;işçi
+822;경찰관 (gyeongchalgwan);n;polis memuru
+823;소방관 (sobanggwan);n;itfaiyeci
+824;치과의사 (chigwauisa);n;diş hekimi
+825;기계 (gigye);n;makine
+826;도구 (dogu);n;alet
+827;초인종 (choinjong);n;kapı zili
+828;에너지 (eneoji);n;enerji
+829;전기 (jeongi);n;elektrik
+830;빛 (bit);n;ışık
+831;목소리 (moksori);n;ses
+832;소음 (soeum);n;gürültü
+833;냄새 (naemsae);n;koku
+834;맛 (mat);n;tat
+835;모양 (moyang);n;biçim, şekil
+836;크기 (keugi);n;boyut
+837;무게 (muge);n;ağırlık
+838;길이 (giri);n;uzunluk
+839;미터 (miteo);n;metre
+840;킬로그램 (killogeuraem);n;kilo
+841;리터 (riteo);n;litre
+842;퍼센트 (peosenteu);n;yüzde
+843;그룹 (geurup);n;grup
+844;목록 (mongnok);n;liste
+845;예 (ye);n;örnek
+846;규칙 (gyuchik);n;kural
+847;선택 (seontaek);n;seçenek
+848;결정 (gyeoljeong);n;karar
+849;계획 (gyehoek);n;plan
+850;목표 (mokpyo);n;amaç, hedef
+851;결과 (gyeolgwa);n;sonuç
+852;성공 (seonggong);n;başarı
+853;경험 (gyeongheom);n;deneyim
+854;정보 (jeongbo);n;bilgi
+855;반응 (baneung);n;cevap, tepki
+856;도움 (doum);n;yardım
+857;위험 (wiheom);n;tehlike
+858;안전 (anjeon);n;güvenlik
+859;품질 (pumjil);n;kalite
+860;차이 (chai);n;fark
+861;관계 (gwangye);n;ilişki
+862;필요 (piryo);n;ihtiyaç
+863;감정 (gamjeong);n;duygu
+864;추억 (chueok);n;anı, hatıra
+865;미래 (mirae);n;gelecek
+866;과거 (gwageo);n;geçmiş
+867;현재 (hyeonjae);n;şimdiki zaman, an
+868;순간 (sungan);n;an
+869;사건 (sageon);n;olay
+870;상황 (sanghwang);n;durum
+871;종류 (jongnyu);n;tür, çeşit
+872;수준 (sujun);n;seviye
+873;걸음 (georeum);n;adım
+874;입구 (ipgu);n;giriş
+875;출구 (chulgu);n;çıkış
+876;줄 (jul);n;sıra, kuyruk
+877;허가 (heoga);n;izin
+878;지불 (jibul);n;ödeme
+879;청구서 (cheongguseo);n;fatura
+880;할인 (harin);n;indirim
+881;제품 (jepum);n;ürün
+882;서비스 (seobiseu);n;hizmet
+883;광고 (gwanggo);n;reklam
+884;참가하다 (chamgahada);v;katılmak
+885;동의하다 (donguihada);v;katılıyorum, hemfikir olmak
+886;거절하다 (geojeolhada);v;reddetmek
+887;받아들이다 (badadeurida);v;kabul etmek
+888;약속하다 (yaksokhada);v;söz vermek
+889;결혼하다 (gyeolhonhada);v;evlenmek
+890;이혼하다 (ihonhada);v;boşanmak
+891;이사하다 (isahada);v;taşınmak
+892;발전시키다 (baljeonsikida);v;geliştirmek
+893;늘리다 (neullida);v;artırmak
+894;줄이다 (jurida);v;azaltmak
+895;비교하다 (bigyohada);v;karşılaştırmak
+896;묘사하다 (myosahada);v;tarif etmek, betimlemek
+897;제안하다 (jeanhada);v;önermek
+898;추천하다 (chucheonhada);v;tavsiye etmek
+899;토론하다 (toronhada);v;tartışmak
+900;불평하다 (bulpyeonghada);v;şikayet etmek
+901;생산하다 (saengsanhada);v;üretmek
+902;조직하다 (jojikhada);v;organize etmek
+903;관리하다 (gwallihada);v;yönetmek
+904;설립하다 (seollipada);v;kurmak
+905;지지하다 (jijihada);v;desteklemek
+906;묶다 (mukda);v;bağlamak
+907;나누다 (nanuda);v;ayırmak
+908;공유하다 (gongyuhada);v;paylaşmak
+909;저축하다 (jeochukhada);v;biriktirmek, tasarruf etmek
+910;빌려주다 (billyeojuda);v;ödünç vermek
+911;놓치다 (nochida);v;kaçırmak
+912;안다 (anda);v;sarılmak
+913;키스하다 (kiseuhada);v;öpmek
+914;때리다 (ttaerida);v;vurmak
+915;파다 (pada);v;kazmak
+916;씨를 뿌리다 (ssireul ppurida);v;ekmek (tohum)
+917;모으다 (moeuda);v;toplamak
+918;채우다 (chaeuda);v;doldurmak
+919;비우다 (biuda);v;boşaltmak
+920;데우다 (deuda);v;ısıtmak
+921;흔들다 (heundeulda);v;sallamak
+922;걸다 (geolda);v;asmak
+923;소리치다 (sorichida);v;bağırmak
+924;속삭이다 (soksagida);v;fısıldamak
+925;맛보다 (matboda);v;tatmak
+926;냄새 맡다 (naemsae matda);v;koklamak
+927;숨쉬다 (sumswida);v;nefes almak
+928;땀을 흘리다 (ttameul heullida);v;terlemek
+929;낫다 (natda);v;iyileşmek
+930;기도하다 (gidohada);v;dua etmek
+931;축하하다 (chukhahada);v;kutlamak / tebrik etmek
+932;즐기다 (jeulgida);v;eğlenmek
+933;지루해하다 (jiruhaehada);v;sıkılmak
+934;놀라다 (nollada);v;şaşırmak
+935;관심을 갖다 (gwansimeul gatda);v;ilgilenmek
+936;돌보다 (dolboda);v;bakmak (birine)
+937;감독하다 (gamdokhada);v;denetlemek
+938;인쇄하다 (inswaehada);v;yazdırmak
+939;다운로드하다 (daunrodeuhada);v;indirmek (dosya)
+940;업로드하다 (eomnodeuhada);v;yüklemek (dosya)
+941;저장하다 (jeojanghada);v;kaydetmek
+942;삭제하다 (sakjehada);v;silmek
+943;클릭하다 (keullikhada);v;tıklamak
+944;유감스럽게도 (yugamseureopgedo);adv;maalesef
+945;물론 (mullon);adv;elbette
+946;정말 (jeongmal);adv;gerçekten
+947;거의 (geoui);adv;neredeyse
+948;특히 (teukhi);adv;özellikle
+949;보통 (botong);adv;genellikle
+950;사실은 (sasireun);adv;aslında
+951;마침내 (machimnae);adv;sonunda
+952;갑자기 (gapjagi);adv;aniden
+953;절대적으로 (jeoldaejeogeuro);adv;kesinlikle
+954;아마도 (amado);adv;muhtemelen
+955;충분히 (chungbunhi);adv;yeterince
+956;너무 (neomu);adv;fazla, çok fazla
+957;어디에나 (eodiena);adv;her yerde
+958;아무 데도 (amu dedo);adv;hiçbir yerde
+959;어딘가 (eodinga);adv;bir yerde
+960;그렇게 (geureoke);adv;böyle, öyle
+961;정확히 (jeonghwakhi);adv;tam olarak
+962;서둘러 (seodulleo);adv;hızla
+963;주의 깊게 (juui gipge);adv;dikkatlice
+964;단지 (danji);adv;yalnızca, sırf
+965;미리 (miri);adv;önceden
+966;그 사이에 (geu saie);adv;bu arada
+967;게다가 (gedaga);adv;ayrıca, üstelik
+968;그래서 (geuraeseo);adv;bu yüzden
+969;그래도 (geuraedo);adv;yine de
+970;만족하다 (manjokhada);adj;memnun
+971;결혼한 (gyeolhonhan);adj;evli
+972;미혼 (mihon);adj;bekar
+973;죽은 (jugeun);adj;ölü
+974;살아 있는 (sara inneun);adj;canlı
+975;차분하다 (chabunhada);adj;sakin
+976;긴장하다 (ginjanghada);adj;gergin
+977;질투하다 (jiltuhada);adj;kıskanç
+978;수줍다 (sujupda);adj;utangaç
+979;웃기다 (utgida);adj;komik
+980;진지하다 (jinjihada);adj;ciddi
+981;현대적이다 (hyeondaejeogida);adj;modern
+982;고대의 (godaeui);adj;antik, eski çağ
+983;깊다 (gipda);adj;derin
+984;둥글다 (dunggeulda);adj;yuvarlak
+985;평평하다 (pyeongpyeonghada);adj;düz
+986;두껍다 (dukkeopda);adj;kalın
+987;날카롭다 (nalkaropda);adj;keskin
+988;눈이 멀다 (nuni meolda);adj;kör
+989;귀가 먹다 (gwiga meokda);adj;sağır
+990;국제적이다 (gukjejeogida);adj;uluslararası
+991;국가의 (gukgaui);adj;ulusal
+992;매일의 (maeirui);adj;günlük
+993;매주의 (maejuui);adj;haftalık
+994;현재의 (hyeonjaeui);adj;mevcut, şu anki
+995;이전의 (ijeonui);adj;eski, önceki
+996;그럴듯하다 (geureoldeutada);adj;olası
+997;분명하다 (bunmyeonghada);adj;açık, net

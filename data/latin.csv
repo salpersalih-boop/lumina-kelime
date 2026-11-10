@@ -1,0 +1,985 @@
+Sıra;Kelime;Tür;Türkçe Anlamı
+1;ego;pron;ben
+2;tu;pron;sen
+3;is;pron;o (erkek)
+4;ea;pron;o (kadın)
+5;nos;pron;biz
+6;vos;pron;siz
+7;ei;pron;onlar
+8;hic;pron;bu / burada
+9;ille;pron;şu, o
+10;quis;pron;kim
+11;quid;pron;ne
+12;ubi;adv;nerede
+13;quando;adv;ne zaman
+14;cur;adv;neden, niçin
+15;quomodo;adv;nasıl
+16;qui;pron;hangi
+17;quantum;adv;ne kadar
+18;ita;int;evet
+19;non;int;hayır / değil
+20;et;conj;ve
+21;aut;conj;veya, ya da
+22;sed;conj;ama, fakat
+23;quia;conj;çünkü
+24;si;conj;eğer
+25;quod;conj;ki
+26;cum;prep;ile, birlikte
+27;sine;prep;-sız, olmadan
+28;pro;prep;için
+29;in;prep;-de, içinde
+30;super;prep;üzerinde
+31;sub;prep;altında
+32;ab;prep;-den, -dan
+33;ad;prep;-e doğru, -e
+34;inter;prep;arasında
+35;ante;prep;önce / ileride, önde
+36;post;prep;sonra
+37;iuxta;prep;yanında
+38;contra;prep;karşı
+39;de;prep;hakkında
+40;ibi;adv;orada
+41;nunc;adv;şimdi
+42;hodie;adv;bugün
+43;cras;adv;yarın
+44;heri;adv;dün
+45;semper;adv;her zaman
+46;numquam;adv;asla, hiç
+47;interdum;adv;bazen
+48;saepe;adv;sık sık
+49;valde;adv;çok
+50;paulum;adv;biraz
+51;plus;adv;daha
+52;minus;adv;daha az
+53;etiam;adv;de, da, ayrıca
+54;solum;adv;sadece
+55;iam;adv;zaten, çoktan
+56;adhuc;adv;hâlâ, henüz
+57;statim;adv;hemen
+58;fortasse;adv;belki
+59;bene;adv;iyi (şekilde) / tamam
+60;male;adv;kötü (şekilde)
+61;una;adv;birlikte
+62;mature;adv;erken
+63;sero;adv;geç / ekmek (tohum)
+64;iterum;adv;yine, tekrar
+65;celeriter;adv;çabuk, hızlıca
+66;lente;adv;yavaşça
+67;mox;adv;yakında
+68;procul;adv;uzakta
+69;prope;adv;yakında (mesafe)
+70;intus;adv;içeride
+71;foris;adv;dışarıda
+72;supra;adv;yukarıda
+73;infra;adv;aşağıda
+74;retro;adv;geride, arkada
+75;omnia;pron;her şey
+76;nihil;pron;hiçbir şey / sıfır
+77;aliquid;pron;bir şey
+78;omnes;pron;herkes
+79;nemo;pron;kimse, hiç kimse
+80;aliquis;pron;biri, birisi
+81;quisque;pron;her
+82;totus;pron;bütün, tüm
+83;alius;pron;başka
+84;idem;pron;aynı
+85;aliquot;pron;birkaç
+86;multi;pron;çok (sayıca)
+87;pauci;pron;az (sayıca)
+88;salve;int;merhaba
+89;bonum mane;int;günaydın
+90;bonum vesperum;int;iyi akşamlar
+91;bonam noctem;int;iyi geceler
+92;vale;int;hoşça kal
+93;gratias;int;teşekkürler
+94;quaeso;int;lütfen
+95;ignosce mihi;int;özür dilerim
+96;bene venisti;int;hoş geldiniz
+97;sum;v;olmak
+98;habeo;v;sahip olmak
+99;facio;v;yapmak
+100;eo;v;gitmek
+101;venio;v;gelmek
+102;dico;v;söylemek, demek
+103;loquor;v;konuşmak
+104;video;v;görmek
+105;specto;v;bakmak
+106;audio;v;duymak
+107;ausculto;v;dinlemek
+108;scio;v;bilmek
+109;nosco;v;tanımak
+110;cogito;v;düşünmek
+111;credo;v;inanmak
+112;volo;v;istemek / uçmak
+113;possum;v;-ebilmek, yapabilmek
+114;debeo;v;-meli, zorunda olmak
+115;do;v;vermek
+116;capio;v;almak / yakalamak
+117;pono;v;koymak
+118;invenio;v;bulmak
+119;quaero;v;aramak
+120;amitto;v;kaybetmek
+121;vinco;v;kazanmak (yarış)
+122;lucror;v;kazanmak (para)
+123;laboro;v;çalışmak (iş)
+124;studeo;v;ders çalışmak / ilgilenmek
+125;disco;v;öğrenmek
+126;doceo;v;öğretmek
+127;lego;v;okumak
+128;scribo;v;yazmak
+129;intellego;v;anlamak
+130;rogo;v;sormak
+131;respondeo;v;cevap vermek
+132;adiuvo;v;yardım etmek
+133;exspecto;v;beklemek
+134;maneo;v;kalmak
+135;vivo;v;yaşamak
+136;habito;v;oturmak, ikamet etmek
+137;morior;v;ölmek
+138;nascor;v;doğmak
+139;amo;v;sevmek
+140;placeo;v;hoşlanmak
+141;odi;v;nefret etmek
+142;edo;v;yemek
+143;bibo;v;içmek
+144;dormio;v;uyumak
+145;expergiscor;v;uyanmak
+146;surgo;v;kalkmak
+147;sedeo;v;oturmak (sandalye)
+148;sto;v;ayakta durmak
+149;ambulo;v;yürümek
+150;curro;v;koşmak
+151;nato;v;yüzmek
+152;aurigo;v;sürmek (araç)
+153;iter facio;v;seyahat etmek
+154;advenio;v;varmak
+155;discedo;v;ayrılmak, gitmek
+156;intro;v;girmek
+157;exeo;v;çıkmak
+158;redeo;v;dönmek, geri gelmek
+159;aperio;v;açmak
+160;claudo;v;kapatmak
+161;incipio;v;başlamak
+162;finio;v;bitirmek
+163;consisto;v;durmak
+164;pergo;v;devam etmek
+165;muto;v;değiştirmek
+166;utor;v;kullanmak
+167;emo;v;satın almak
+168;vendo;v;satmak
+169;solvo;v;ödemek
+170;consto;v;maliyeti olmak, tutmak
+171;affero;v;getirmek
+172;mitto;v;göndermek
+173;accipio;v;almak (teslim) / kabul etmek
+174;teneo;v;tutmak
+175;porto;v;taşımak
+176;iacio;v;atmak
+177;cado;v;düşmek
+178;frango;v;kırmak
+179;aedifico;v;yapmak, inşa etmek
+180;creo;v;yaratmak
+181;pingo;v;çizmek
+182;ludo;v;oynamak
+183;canto;v;şarkı söylemek
+184;salto;v;dans etmek
+185;rideo;v;gülmek
+186;lacrimo;v;ağlamak
+187;subrideo;v;gülümsemek
+188;sentio;v;hissetmek
+189;tango;v;dokunmak
+190;ostendo;v;göstermek
+191;celo;v;saklamak
+192;memini;v;hatırlamak
+193;obliviscor;v;unutmak
+194;tempto;v;denemek
+195;eligo;v;seçmek
+196;decerno;v;karar vermek
+197;consilium capio;v;planlamak
+198;paro;v;hazırlamak
+199;coquo;v;pişirmek
+200;lavo;v;yıkamak
+201;purgo;v;temizlemek
+202;gero;v;giymek
+203;induor;v;giyinmek
+204;excito;v;uyandırmak
+205;voco;v;aramak (telefon)
+206;convenio;v;buluşmak
+207;viso;v;ziyaret etmek
+208;invito;v;davet etmek
+209;gratias ago;v;teşekkür etmek
+210;ignosco;v;affetmek
+211;permitto;v;izin vermek
+212;veto;v;yasaklamak
+213;sequor;v;takip etmek
+214;duco;v;yol göstermek, yönetmek
+215;adipiscor;v;kazanmak, elde etmek
+216;accido;v;olmak, meydana gelmek
+217;videor;v;görünmek
+218;fio;v;olmak, haline gelmek
+219;cresco;v;büyümek
+220;protego;v;korumak
+221;servo;v;kurtarmak / kaydetmek
+222;neco;v;öldürmek
+223;pugno;v;savaşmak
+224;supero;v;kazanmak, galip gelmek
+225;egeo;v;ihtiyaç duymak
+226;praefero;v;tercih etmek
+227;spero;v;ummak
+228;timeo;v;korkmak
+229;sollicitus sum;v;endişelenmek
+230;quiesco;v;dinlenmek
+231;fumo;v;sigara içmek
+232;conduco;v;kiralamak
+233;reservo;v;rezervasyon yapmak
+234;verto;v;çevirmek (dil) / dönmek, çevirmek
+235;explico;v;açıklamak
+236;repeto;v;tekrarlamak
+237;numero;v;saymak
+238;metior;v;ölçmek
+239;inspicio;v;kontrol etmek
+240;reficio;v;düzeltmek, tamir etmek
+241;seco;v;kesmek
+242;pello;v;itmek
+243;traho;v;çekmek
+244;tollo;v;kaldırmak
+245;transeo;v;geçmek
+246;traicio;v;geçmek, karşıya geçmek
+247;scando;v;tırmanmak
+248;descendo;v;inmek
+249;persona;n;insan, kişi
+250;homines;n;insanlar
+251;vir;n;adam, erkek
+252;femina;n;kadın
+253;infans;n;çocuk
+254;puer;n;erkek çocuk
+255;puella;n;kız çocuk
+256;infantulus;n;bebek
+257;familia;n;aile
+258;mater;n;anne
+259;pater;n;baba
+260;parentes;n;anne baba, ebeveynler
+261;filius;n;oğul
+262;filia;n;kız evlat
+263;frater;n;erkek kardeş
+264;soror;n;kız kardeş
+265;avus;n;büyükbaba
+266;avia;n;büyükanne
+267;patruus;n;amca, dayı
+268;matertera;n;teyze, hala
+269;consobrinus;n;kuzen
+270;maritus;n;koca, eş
+271;uxor;n;karı, eş
+272;amicus;n;arkadaş
+273;vicinus;n;komşu
+274;hospes;n;misafir
+275;nomen;n;isim, ad
+276;cognomen;n;soyadı
+277;aetas;n;yaş
+278;vita;n;hayat
+279;mors;n;ölüm
+280;amor;n;aşk, sevgi
+281;corpus;n;vücut
+282;caput;n;baş, kafa
+283;capilli;n;saç
+284;facies;n;yüz
+285;oculus;n;göz
+286;auris;n;kulak
+287;nasus;n;burun
+288;os;n;ağız / kemik
+289;dens;n;diş
+290;lingua;n;dil (organ) / dil (lisan)
+291;collum;n;boyun
+292;umerus;n;omuz
+293;bracchium;n;kol
+294;manus;n;el
+295;digitus;n;parmak
+296;pectus;n;göğüs
+297;tergum;n;sırt
+298;venter;n;karın, mide
+299;crus;n;bacak
+300;pes;n;ayak
+301;genu;n;diz
+302;cor;n;kalp
+303;sanguis;n;kan
+304;cutis;n;deri, cilt
+305;salus;n;sağlık
+306;morbus;n;hastalık
+307;dolor;n;ağrı, acı
+308;medicus;n;doktor
+309;nutrix;n;hemşire
+310;valetudinarium;n;hastane
+311;medicamentum;n;ilaç
+312;taberna medicamentaria;n;eczane
+313;domus;n;ev
+314;diaeta;n;daire
+315;cubiculum;n;oda
+316;culina;n;mutfak
+317;balneum;n;banyo
+318;dormitorium;n;yatak odası
+319;atrium;n;oturma odası
+320;ianua;n;kapı
+321;fenestra;n;pencere
+322;murus;n;duvar
+323;pavimentum;n;zemin, yer
+324;lacunar;n;tavan
+325;scalae;n;merdiven
+326;hortus;n;bahçe
+327;tectum;n;çatı
+328;clavis;n;anahtar
+329;mensa;n;masa
+330;sella;n;sandalye
+331;lectus;n;yatak
+332;lectulus;n;kanepe
+333;armarium;n;dolap
+334;speculum;n;ayna
+335;lucerna;n;lamba
+336;frigidarium;n;buzdolabı
+337;furnus;n;fırın
+338;televisio;n;televizyon
+339;computatrum;n;bilgisayar
+340;telephonum;n;telefon
+341;horologium;n;saat (alet)
+342;pictura;n;resim, tablo
+343;tapete;n;halı
+344;velum;n;perde
+345;mantele;n;havlu
+346;sapo;n;sabun
+347;peniculus dentium;n;diş fırçası
+348;sacculus;n;çanta
+349;capsa;n;kutu
+350;lagoena;n;şişe
+351;poculum;n;bardak
+352;calix;n;fincan
+353;patina;n;tabak
+354;furca;n;çatal
+355;culter;n;bıçak
+356;cochlear;n;kaşık
+357;olla;n;tencere
+358;epulum;n;yemek (öğün)
+359;cibus;n;yiyecek
+360;ientaculum;n;kahvaltı
+361;prandium;n;öğle yemeği
+362;cena;n;akşam yemeği
+363;aqua;n;su
+364;panis;n;ekmek
+365;lac;n;süt
+366;coffea;n;kahve
+367;thea;n;çay
+368;sucus;n;meyve suyu
+369;cervisia;n;bira
+370;vinum;n;şarap
+371;caro;n;et
+372;gallina;n;tavuk
+373;piscis;n;balık
+374;ovum;n;yumurta
+375;caseus;n;peynir
+376;butyrum;n;tereyağı
+377;oryza;n;pirinç
+378;pasta;n;makarna
+379;solanum;n;patates
+380;holera;n;sebze
+381;fructus;n;meyve
+382;malum;n;elma
+383;aurantium;n;portakal
+384;musa;n;muz
+385;uva;n;üzüm
+386;fragum;n;çilek
+387;citrus;n;limon
+388;lycopersicum;n;domates
+389;cepa;n;soğan
+390;allium;n;sarımsak
+391;carota;n;havuç
+392;cucumis;n;salatalık
+393;acetaria;n;salata
+394;ius;n;çorba / hak
+395;sal;n;tuz
+396;saccharum;n;şeker
+397;piper;n;biber
+398;oleum;n;yağ (sıvı)
+399;mel;n;bal
+400;placenta;n;pasta, kek
+401;gelatum;n;dondurma
+402;socolata;n;çikolata
+403;caupona;n;restoran
+404;taberna coffearia;n;kafe
+405;index ciborum;n;menü
+406;minister;n;garson
+407;ratio;n;hesap (restoran)
+408;stips;n;bahşiş
+409;fames;n;açlık
+410;sitis;n;susuzluk
+411;urbs;n;şehir
+412;vicus;n;köy
+413;patria;n;ülke
+414;via;n;sokak / yol
+415;forum;n;meydan
+416;pons;n;köprü
+417;aedificium;n;bina
+418;taberna;n;dükkan, mağaza
+419;macellum;n;market
+420;mercatus;n;pazar, çarşı
+421;argentaria;n;banka
+422;tabellarium;n;postane
+423;schola;n;okul
+424;universitas;n;üniversite
+425;bibliotheca;n;kütüphane
+426;museum;n;müze
+427;ecclesia;n;kilise
+428;meschita;n;cami
+429;hortus publicus;n;park
+430;deversorium;n;otel
+431;aeroportus;n;havaalanı
+432;statio;n;istasyon / durak
+433;portus;n;liman
+434;cinematheatrum;n;sinema
+435;theatrum;n;tiyatro
+436;vigiles;n;polis
+437;autocinetum;n;araba
+438;laophorum;n;otobüs
+439;hamaxostichus;n;tren
+440;aeroplanum;n;uçak
+441;navis;n;gemi
+442;birota;n;bisiklet
+443;autocinetum meritorium;n;taksi
+444;ferrivia subterranea;n;metro
+445;tessera;n;bilet
+446;vidulus;n;bavul
+447;diploma;n;pasaport
+448;charta;n;harita / kart
+449;iter;n;yolculuk, seyahat
+450;feriae;n;tatil
+451;peregrinator;n;turist
+452;commeatus;n;trafik
+453;casus;n;kaza
+454;dextra;n;sağ
+455;sinistra;n;sol
+456;septentrio;n;kuzey
+457;meridies;n;güney / öğle
+458;oriens;n;doğu
+459;occidens;n;batı
+460;angulus;n;köşe
+461;centrum;n;merkez
+462;locus;n;yer, mekan
+463;inscriptio;n;adres
+464;tempus;n;zaman
+465;hora;n;saat (süre)
+466;minutum;n;dakika
+467;secundum;n;saniye
+468;dies;n;gün / tarih (gün)
+469;hebdomas;n;hafta
+470;mensis;n;ay (takvim)
+471;annus;n;yıl
+472;saeculum;n;yüzyıl
+473;mane;n;sabah
+474;post meridiem;n;öğleden sonra
+475;vesper;n;akşam
+476;nox;n;gece
+477;finis hebdomadis;n;hafta sonu
+478;dies Lunae;n;pazartesi
+479;dies Martis;n;salı
+480;dies Mercurii;n;çarşamba
+481;dies Iovis;n;perşembe
+482;dies Veneris;n;cuma
+483;dies Saturni;n;cumartesi
+484;dies Solis;n;pazar (gün)
+485;Ianuarius;n;ocak
+486;Februarius;n;şubat
+487;Martius;n;mart
+488;Aprilis;n;nisan
+489;Maius;n;mayıs
+490;Iunius;n;haziran
+491;Iulius;n;temmuz
+492;Augustus;n;ağustos
+493;September;n;eylül
+494;October;n;ekim
+495;November;n;kasım
+496;December;n;aralık
+497;tempus anni;n;mevsim
+498;ver;n;ilkbahar
+499;aestas;n;yaz
+500;autumnus;n;sonbahar
+501;hiems;n;kış
+502;tempestas;n;hava (durumu) / fırtına
+503;sol;n;güneş
+504;luna;n;ay (gökyüzü)
+505;stella;n;yıldız
+506;caelum;n;gökyüzü
+507;nubes;n;bulut
+508;pluvia;n;yağmur
+509;nix;n;kar
+510;ventus;n;rüzgar
+511;temperatura;n;sıcaklık
+512;aer;n;hava (soluduğumuz)
+513;ignis;n;ateş
+514;terra;n;toprak, dünya
+515;mundus;n;dünya / temiz
+516;natura;n;doğa
+517;mare;n;deniz
+518;oceanus;n;okyanus
+519;flumen;n;nehir
+520;lacus;n;göl
+521;mons;n;dağ
+522;collis;n;tepe
+523;silva;n;orman
+524;arbor;n;ağaç
+525;flos;n;çiçek
+526;herba;n;çimen
+527;folium;n;yaprak
+528;lapis;n;taş
+529;harena;n;kum
+530;litus;n;plaj
+531;insula;n;ada
+532;ager;n;tarla
+533;animal;n;hayvan
+534;canis;n;köpek
+535;feles;n;kedi
+536;equus;n;at
+537;vacca;n;inek
+538;porcus;n;domuz
+539;ovis;n;koyun
+540;avis;n;kuş
+541;mus;n;fare
+542;cuniculus;n;tavşan
+543;ursus;n;ayı
+544;lupus;n;kurt
+545;leo;n;aslan
+546;serpens;n;yılan
+547;insectum;n;böcek
+548;apis;n;arı
+549;musca;n;sinek
+550;anas;n;ördek
+551;vulpes;n;tilki
+552;simia;n;maymun
+553;elephantus;n;fil
+554;papilio;n;kelebek
+555;labor;n;iş
+556;professio;n;meslek
+557;societas;n;şirket
+558;officium;n;ofis
+559;dominus;n;patron
+560;collega;n;meslektaş
+561;conventus;n;toplantı
+562;pecunia;n;para
+563;pretium;n;fiyat
+564;salarium;n;maaş
+565;vectigal;n;vergi
+566;magister;n;öğretmen
+567;discipulus;n;öğrenci
+568;lectio;n;ders
+569;classis;n;sınıf
+570;examen;n;sınav
+571;quaestio;n;soru
+572;responsum;n;cevap
+573;liber;n;kitap / serbest, özgür
+574;libellus;n;defter
+575;calamus;n;kalem
+576;stilus;n;kurşun kalem
+577;papyrus;n;kağıt
+578;pagina;n;sayfa
+579;verbum;n;kelime
+580;sententia;n;cümle
+581;littera;n;harf
+582;epistula;n;mektup
+583;fabula;n;hikaye
+584;historia;n;tarih (geçmiş)
+585;nuntius;n;haber / mesaj
+586;diurnum;n;gazete
+587;commentarius;n;dergi
+588;pellicula;n;film
+589;musica;n;müzik
+590;carmen;n;şarkı
+591;ludus;n;oyun
+592;athletica;n;spor
+593;pediludium;n;futbol
+594;pila;n;top
+595;turma;n;takım
+596;certamen;n;maç
+597;convivium;n;parti, eğlence
+598;donum;n;hediye
+599;dies natalis;n;doğum günü
+600;photographia;n;fotoğraf
+601;ars;n;sanat
+602;interrete;n;internet
+603;epistula electronica;n;e-posta
+604;numerus;n;numara, sayı
+605;vestis;n;kıyafet, giysi
+606;camisia;n;gömlek
+607;tunicula;n;tişört
+608;bracae;n;pantolon
+609;castula;n;etek
+610;stola;n;elbise
+611;lacerna;n;ceket
+612;calcei;n;ayakkabı
+613;pileus;n;şapka
+614;tibialia;n;çorap
+615;perspicilla;n;gözlük
+616;crumena;n;cüzdan
+617;anulus;n;yüzük
+618;color;n;renk
+619;res;n;şey, nesne
+620;frustum;n;parça
+621;pars;n;kısım, bölüm
+622;dimidium;n;yarım, yarı
+623;finis;n;son / amaç, hedef
+624;initium;n;başlangıç
+625;modus;n;yol, yöntem
+626;causa;n;neden, sebep
+627;difficultas;n;sorun
+628;idea;n;fikir
+629;veritas;n;gerçek, hakikat
+630;mendacium;n;yalan
+631;error;n;hata
+632;fortuna;n;şans
+633;felicitas;n;mutluluk
+634;timor;n;korku
+635;spes;n;umut
+636;somnium;n;rüya, hayal
+637;vis;n;güç, kuvvet
+638;bellum;n;savaş
+639;pax;n;barış
+640;gubernium;n;devlet, hükümet
+641;lex;n;kanun, yasa
+642;libertas;n;özgürlük
+643;populus;n;halk
+644;rex;n;kral
+645;Deus;n;tanrı
+646;religio;n;din
+647;cultura;n;kültür
+648;scientia;n;bilim
+649;traditio;n;gelenek
+650;bonus;adj;iyi
+651;malus;adj;kötü
+652;magnus;adj;büyük
+653;parvus;adj;küçük
+654;longus;adj;uzun
+655;brevis;adj;kısa
+656;altus;adj;uzun boylu, yüksek / derin
+657;humilis;adj;alçak, kısa boylu
+658;latus;adj;geniş
+659;angustus;adj;dar
+660;novus;adj;yeni
+661;vetus;adj;eski, yaşlı
+662;iuvenis;adj;genç
+663;pulcher;adj;güzel
+664;turpis;adj;çirkin
+665;calidus;adj;sıcak
+666;frigidus;adj;soğuk
+667;tepidus;adj;ılık
+668;frigidulus;adj;serin
+669;celer;adj;hızlı
+670;lentus;adj;yavaş
+671;facilis;adj;kolay
+672;difficilis;adj;zor
+673;gravis;adj;ağır / önemli
+674;levis;adj;hafif
+675;plenus;adj;dolu
+676;vacuus;adj;boş
+677;sordidus;adj;kirli
+678;dives;adj;zengin
+679;pauper;adj;fakir
+680;vilis;adj;ucuz
+681;carus;adj;pahalı
+682;laetus;adj;mutlu
+683;tristis;adj;üzgün
+684;iratus;adj;kızgın
+685;fessus;adj;yorgun
+686;aeger;adj;hasta
+687;sanus;adj;sağlıklı
+688;esuriens;adj;aç
+689;fortis;adj;güçlü / cesur
+690;infirmus;adj;zayıf, güçsüz
+691;pinguis;adj;şişman
+692;macer;adj;ince, zayıf
+693;sapiens;adj;akıllı
+694;stultus;adj;aptal
+695;comis;adj;nazik
+696;rudis;adj;kaba
+697;honestus;adj;dürüst
+698;piger;adj;tembel
+699;occupatus;adj;meşgul
+700;paratus;adj;hazır
+701;rectus;adj;doğru
+702;falsus;adj;yanlış
+703;verus;adj;gerçek
+704;fictus;adj;yanlış, sahte
+705;iucundus;adj;ilginç
+706;molestus;adj;sıkıcı
+707;periculosus;adj;tehlikeli
+708;tutus;adj;güvenli
+709;possibilis;adj;mümkün
+710;impossibilis;adj;imkansız
+711;necessarius;adj;gerekli
+712;communis;adj;normal
+713;mirus;adj;garip, tuhaf
+714;diversus;adj;farklı
+715;similis;adj;benzer
+716;simplex;adj;kolay, basit
+717;implicatus;adj;karmaşık
+718;tacitus;adj;sessiz
+719;strepens;adj;gürültülü
+720;obscurus;adj;karanlık
+721;clarus;adj;aydınlık / ünlü / açık, net
+722;mollis;adj;yumuşak
+723;durus;adj;sert
+724;dulcis;adj;tatlı
+725;acidus;adj;ekşi
+726;amarus;adj;acı
+727;salsus;adj;tuzlu
+728;sapidus;adj;lezzetli
+729;recens;adj;taze / modern
+730;umidus;adj;ıslak
+731;siccus;adj;kuru
+732;apertus;adj;açık
+733;clausus;adj;kapalı
+734;propinquus;adj;yakın
+735;longinquus;adj;uzak
+736;primus;adj;ilk
+737;ultimus;adj;son
+738;proximus;adj;sonraki
+739;solus;adj;tek, yalnız
+740;integer;adj;bütün, tam
+741;perfectus;adj;mükemmel
+742;localis;adj;yerel
+743;peregrinus;adj;yabancı
+744;specialis;adj;özel
+745;generalis;adj;genel
+746;publicus;adj;kamu, halka açık
+747;privatus;adj;özel, kişisel
+748;ruber;adj;kırmızı
+749;caeruleus;adj;mavi
+750;viridis;adj;yeşil
+751;flavus;adj;sarı
+752;niger;adj;siyah
+753;albus;adj;beyaz
+754;cinereus;adj;gri
+755;fuscus;adj;kahverengi
+756;aurantius;adj;turuncu
+757;roseus;adj;pembe
+758;purpureus;adj;mor
+759;caesius;adj;açık mavi
+760;unus;num;bir
+761;duo;num;iki
+762;tres;num;üç
+763;quattuor;num;dört
+764;quinque;num;beş
+765;sex;num;altı
+766;septem;num;yedi
+767;octo;num;sekiz
+768;novem;num;dokuz
+769;decem;num;on
+770;undecim;num;on bir
+771;duodecim;num;on iki
+772;tredecim;num;on üç
+773;quattuordecim;num;on dört
+774;quindecim;num;on beş
+775;sedecim;num;on altı
+776;septendecim;num;on yedi
+777;duodeviginti;num;on sekiz
+778;undeviginti;num;on dokuz
+779;viginti;num;yirmi
+780;triginta;num;otuz
+781;quadraginta;num;kırk
+782;quinquaginta;num;elli
+783;sexaginta;num;altmış
+784;septuaginta;num;yetmiş
+785;octoginta;num;seksen
+786;nonaginta;num;doksan
+787;centum;num;yüz
+788;mille;num;bin
+789;decies centena milia;num;milyon
+790;secundus;num;ikinci
+791;tertius;num;üçüncü
+792;oeconomia;n;ekonomi
+793;res publica;n;politika
+794;comitia;n;seçim
+795;praeses;n;başkan
+796;miles;n;asker
+797;exercitus;n;ordu
+798;arma;n;silah
+799;crimen;n;suç
+800;fur;n;hırsız
+801;iudicium;n;mahkeme
+802;advocatus;n;avukat
+803;iudex;n;hakim
+804;machinator;n;mühendis
+805;scriptor;n;yazar
+806;artifex;n;sanatçı
+807;coquus;n;aşçı
+808;auriga;n;şoför
+809;agricola;n;çiftçi
+810;venditor;n;satıcı
+811;emptor;n;müşteri
+812;operarius;n;işçi
+813;vigil;n;polis memuru
+814;vigil incendiorum;n;itfaiyeci
+815;medicus dentium;n;diş hekimi
+816;machina;n;makine
+817;instrumentum;n;alet
+818;tintinnabulum;n;kapı zili
+819;energia;n;enerji
+820;electricitas;n;elektrik
+821;lux;n;ışık
+822;vox;n;ses
+823;strepitus;n;gürültü
+824;odor;n;koku
+825;sapor;n;tat
+826;forma;n;biçim, şekil
+827;magnitudo;n;boyut
+828;pondus;n;ağırlık
+829;longitudo;n;uzunluk
+830;metrum;n;metre
+831;chiliogramma;n;kilo
+832;litra;n;litre
+833;centesima;n;yüzde
+834;grex;n;grup
+835;index;n;liste
+836;exemplum;n;örnek
+837;regula;n;kural
+838;optio;n;seçenek
+839;decretum;n;karar
+840;consilium;n;plan
+841;exitus;n;sonuç / çıkış
+842;successus;n;başarı
+843;experientia;n;deneyim
+844;notitia;n;bilgi
+845;responsio;n;cevap, tepki
+846;auxilium;n;yardım
+847;periculum;n;tehlike
+848;securitas;n;güvenlik
+849;qualitas;n;kalite
+850;quantitas;n;miktar
+851;differentia;n;fark
+852;relatio;n;ilişki
+853;necessitas;n;ihtiyaç
+854;affectus;n;duygu
+855;cogitatio;n;düşünce
+856;memoria;n;anı, hatıra
+857;futurum;n;gelecek
+858;praeteritum;n;geçmiş
+859;praesens;n;şimdiki zaman, an / mevcut, şu anki
+860;momentum;n;an
+861;eventus;n;olay
+862;condicio;n;durum
+863;genus;n;tür, çeşit
+864;gradus;n;seviye / adım
+865;introitus;n;giriş
+866;ordo;n;sıra, kuyruk
+867;licentia;n;izin
+868;solutio;n;ödeme
+869;syngrapha;n;fatura
+870;deductio;n;indirim
+871;productum;n;ürün
+872;ministerium;n;hizmet
+873;praeconium;n;reklam
+874;intersum;v;katılmak
+875;consentio;v;katılıyorum, hemfikir olmak
+876;recuso;v;reddetmek
+877;promitto;v;söz vermek
+878;nubo;v;evlenmek
+879;divortium facio;v;boşanmak
+880;migro;v;taşınmak
+881;excolo;v;geliştirmek
+882;augeo;v;artırmak
+883;minuo;v;azaltmak
+884;comparo;v;karşılaştırmak
+885;describo;v;tarif etmek, betimlemek
+886;suadeo;v;önermek
+887;commendo;v;tavsiye etmek
+888;disputo;v;tartışmak
+889;rixor;v;kavga etmek
+890;queror;v;şikayet etmek
+891;produco;v;üretmek
+892;ordino;v;organize etmek
+893;administro;v;yönetmek
+894;condo;v;kurmak
+895;sustineo;v;desteklemek
+896;ligo;v;bağlamak
+897;separo;v;ayırmak
+898;communico;v;paylaşmak
+899;parco;v;biriktirmek, tasarruf etmek
+900;impendo;v;harcamak
+901;mutuo do;v;ödünç vermek
+902;omitto;v;kaçırmak
+903;amplector;v;sarılmak
+904;osculor;v;öpmek
+905;ferio;v;vurmak
+906;fodio;v;kazmak
+907;colligo;v;toplamak
+908;impleo;v;doldurmak
+909;vacuefacio;v;boşaltmak
+910;calefacio;v;ısıtmak
+911;quatio;v;sallamak
+912;suspendo;v;asmak
+913;clamo;v;bağırmak
+914;susurro;v;fısıldamak
+915;gusto;v;tatmak
+916;olfacio;v;koklamak
+917;spiro;v;nefes almak
+918;sudo;v;terlemek
+919;doleo;v;acıtmak, ağrımak
+920;convalesco;v;iyileşmek
+921;oro;v;dua etmek
+922;celebro;v;kutlamak
+923;gratulor;v;tebrik etmek
+924;oblecto me;v;eğlenmek
+925;taedet;v;sıkılmak
+926;miror;v;şaşırmak
+927;curo;v;bakmak (birine)
+928;moderor;v;denetlemek
+929;imprimo;v;yazdırmak
+930;demitto;v;indirmek (dosya)
+931;sursum mitto;v;yüklemek (dosya)
+932;deleo;v;silmek
+933;premo;v;tıklamak
+934;infeliciter;adv;maalesef
+935;certe;adv;elbette
+936;vere;adv;gerçekten
+937;paene;adv;neredeyse
+938;praesertim;adv;özellikle
+939;plerumque;adv;genellikle
+940;revera;adv;aslında
+941;tandem;adv;sonunda
+942;subito;adv;aniden
+943;omnino;adv;kesinlikle
+944;probabiliter;adv;muhtemelen
+945;satis;adv;yeterince
+946;nimis;adv;fazla, çok fazla
+947;ubique;adv;her yerde
+948;nusquam;adv;hiçbir yerde
+949;alicubi;adv;bir yerde
+950;sic;adv;böyle, öyle
+951;circiter;adv;yaklaşık
+952;prorsus;adv;tam olarak
+953;festinanter;adv;hızla
+954;diligenter;adv;dikkatlice
+955;tantum;adv;yalnızca, sırf
+956;antea;adv;önceden
+957;interea;adv;bu arada
+958;praeterea;adv;ayrıca, üstelik
+959;itaque;adv;bu yüzden
+960;tamen;adv;yine de
+961;contentus;adj;memnun
+962;maritatus;adj;evli
+963;caelebs;adj;bekar
+964;mortuus;adj;ölü
+965;vivus;adj;canlı
+966;tranquillus;adj;sakin
+967;anxius;adj;gergin
+968;invidus;adj;kıskanç
+969;verecundus;adj;utangaç
+970;ridiculus;adj;komik
+971;serius;adj;ciddi
+972;antiquus;adj;antik, eski çağ
+973;rotundus;adj;yuvarlak
+974;planus;adj;düz
+975;crassus;adj;kalın
+976;acutus;adj;keskin
+977;caecus;adj;kör
+978;surdus;adj;sağır
+979;internationalis;adj;uluslararası
+980;nationalis;adj;ulusal
+981;cotidianus;adj;günlük
+982;hebdomadalis;adj;haftalık
+983;prior;adj;eski, önceki
+984;probabilis;adj;olası

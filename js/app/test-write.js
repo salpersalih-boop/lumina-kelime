@@ -536,6 +536,19 @@ function showNextWriteWord() {
     document.getElementById('writeProgressText').textContent = `${state.writeIndex} / ${state.writeQueue.length}`;
 }
 
+// "水 (mizu)" / "το νερό (to neró)" gibi okunuşlu kelimelerde asıl yazı da, okunuş da kabul edilir.
+// Okunuşta aksan ve ʿ işaretleri aranmaz (kyō = kyo); Yunancada artikel yazılmasa da olur.
+function writeAnswerOk(input, en) {
+    const full = en.trim().toLowerCase();
+    if (input === full) return true;
+    const m = en.trim().match(/^(.*\S)\s*\(([^)]+)\)$/);
+    if (!m || !/[^\u0000-\u024F]/.test(m[1])) return false;
+    const plain = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[ʿ']/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+    const greekArt = /^(ο|η|το|οι|τα) /.test(m[1]);
+    const noArt = t => greekArt ? t.replace(/^(ο|η|το|οι|τα|o|i|to|oi|ta) /i, '') : t;
+    return [m[1], m[2]].some(o => plain(input) === plain(o) || plain(noArt(input)) === plain(noArt(o)));
+}
+
 function checkWriteAnswer() {
     if (state.writeIndex >= state.writeQueue.length) return;
     
@@ -548,7 +561,7 @@ function checkWriteAnswer() {
     const p = loadProgress();
     const gp = getGroupProgress(p, state.currentGroup);
     
-    if (userInput === correctAnswer) {
+    if (writeAnswerOk(userInput, wordObj.en)) {
         state.writeCorrect++;
         feedbackEl.style.color = "var(--accent-ok)";
         feedbackEl.textContent = "✅ Doğru!";

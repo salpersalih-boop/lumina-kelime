@@ -170,7 +170,9 @@ const TomerModule = (() => {
     }
     function topicTitle(id) {
         const t = grammar.topics.find(x => x.id === id);
-        return t ? `${t.id} ${t.tr}` : id;
+        if (t) return `${t.id} ${t.tr}`;
+        const k = (grammar.tests || []).find(x => x.id === id);
+        return k ? k.title : id;
     }
     const backBtn = (label, fn) => `<button type="button" class="tm-back" data-act="${fn}">← ${escapeHtml(label)}</button>`;
 
@@ -237,6 +239,10 @@ const TomerModule = (() => {
               <span>${grammar.topics.length} konu · özet, notlar ve konu testleri</span>
               ${totals.t ? `<span class="tm-pill ${accClass(totals.acc)}">Doğruluk %${totals.acc}</span>` : ''}
             </button>
+            ${(grammar.tests || []).length ? `<button type="button" class="tm-choice-card" data-act="tests">
+              <span class="tm-choice-icon">🧾</span><strong>Testler</strong>
+              <span>${grammar.tests.length} kitap testi · ${grammar.tests.reduce((a, t) => a + t.questions.length, 0)} soru</span>
+            </button>` : ''}
           </div>`;
         showScreen('tomerLevelScreen');
     }
@@ -278,6 +284,34 @@ const TomerModule = (() => {
           </div>
           ${units}`;
         showScreen('tomerGrammarScreen');
+    }
+
+    // ── testler (kitaptaki Elementary testleri, kitaptaki sırayla) ──
+    function showTests() {
+        const p = loadProgress();
+        wrap('tomerTestsScreen').innerHTML = `
+          ${backBtn('TÖMER ' + level.label, 'level')}
+          <header class="tm-head"><h1>Testler · ${escapeHtml(level.label)}</h1><p>Kitaptaki Elementary testleri; sorular kitaptaki sırayla gelir.</p></header>
+          ${grammar.tests.map(t => {
+              const s = topicStats(p, t.id);
+              const tags = [...new Set(t.questions.map(q => q.tag))];
+              return `<button type="button" class="tm-topic" data-test="${escapeHtml(t.id)}">
+                <span class="tm-topic-code">${escapeHtml(t.id)}</span>
+                <span class="tm-topic-name"><strong>${escapeHtml(t.title)}</strong>
+                  <small>${escapeHtml(t.konu)} · ${t.questions.length} soru (${escapeHtml(t.range)})</small>
+                  <small>Konular: ${escapeHtml(tags.join(', '))}</small></span>
+                <span class="tm-pill ${accClass(s && s.acc)}">${s ? '%' + s.acc + (s.best ? ' · en iyi %' + s.best : '') : 'Yeni'}</span>
+              </button>`;
+          }).join('')}`;
+        showScreen('tomerTestsScreen');
+    }
+    function startBookTest(id) {
+        const t = (grammar.tests || []).find(x => x.id === id);
+        if (!t) return;
+        topicId = id;
+        test = { kind: 'book', topics: [id], questions: t.questions.map(q => ({ ...q, topic: id, opts: q.book.slice() })), i: 0, answers: [] };
+        renderQuestion();
+        showScreen('tomerTestScreen');
     }
 
     // ── ekran 4: konu özeti ──
@@ -346,15 +380,15 @@ const TomerModule = (() => {
         const answered = test.answers[test.i];
         const correct = q.o[0];
         wrap('tomerTestScreen').innerHTML = `
-          ${backBtn(test.kind === 'topic' ? 'Konuya dön' : 'Konular', test.kind === 'topic' ? 'topic' : 'grammar')}
+          ${test.kind === 'book' ? backBtn('Testler', 'tests') : backBtn(test.kind === 'topic' ? 'Konuya dön' : 'Konular', test.kind === 'topic' ? 'topic' : 'grammar')}
           <div class="tm-progress"><div style="width:${Math.round(test.i / n * 100)}%"></div></div>
-          <p class="tm-qmeta">Soru ${test.i + 1} / ${n} · ${escapeHtml(topicTitle(q.topic))}${q.src === 'kitap' ? ' · <span class="tm-src">kitaptan</span>' : ''}</p>
+          <p class="tm-qmeta">Soru ${test.i + 1} / ${n}${q.no ? ' (kitapta ' + q.no + '. soru)' : ''} · ${escapeHtml(topicTitle(q.topic))}${q.tag && test.kind === 'book' ? ' · ' + escapeHtml(q.tag) : ''}${q.src === 'kitap' ? ' · <span class="tm-src">kitaptan</span>' : ''}</p>
           <h2 class="tm-question">${inline(q.q).replace(/___/g, '<span class="tm-blank">____</span>')}</h2>
           <div class="tm-options">
             ${q.opts.map((o, k) => {
                 let cls = '';
                 if (answered) cls = o === correct ? ' correct' : (o === answered.choice ? ' wrong' : ' dim');
-                return `<button type="button" class="tm-option${cls}" data-opt="${k}"${answered ? ' disabled' : ''}>${escapeHtml(optLabel(o))}</button>`;
+                return `<button type="button" class="tm-option${cls}" data-opt="${k}"${answered ? ' disabled' : ''}>${test.kind === 'book' ? 'ABCD'[k] + ') ' : ''}${escapeHtml(optLabel(o))}</button>`;
             }).join('')}
           </div>
           ${answered ? `
@@ -441,7 +475,8 @@ const TomerModule = (() => {
                 </div>`).join('')}
             </section>` : ''}
           <div class="tm-actions">
-            <button type="button" class="btn-primary" data-act="${test.kind === 'topic' ? 'start' : 'weak'}">🔁 Tekrar Çöz</button>
+            <button type="button" class="btn-primary" data-act="${test.kind === 'topic' ? 'start' : test.kind === 'book' ? 'retest' : 'weak'}">🔁 Tekrar Çöz</button>
+            ${test.kind === 'book' ? '<button type="button" class="btn-secondary" data-act="tests">🧾 Testler</button>' : ''}
             ${test.kind === 'topic' ? '<button type="button" class="btn-secondary" data-act="topic">📖 Konu Notları</button>' : ''}
             <button type="button" class="btn-secondary" data-act="stats">📊 Analiz</button>
             <button type="button" class="btn-secondary" data-act="grammar">Konular</button>
@@ -566,6 +601,8 @@ const TomerModule = (() => {
     function onClick(e) {
         const lv = e.target.closest('[data-level]');
         if (lv && !lv.disabled) { openLevel(lv.dataset.level); return; }
+        const bt = e.target.closest('[data-test]');
+        if (bt) { startBookTest(bt.dataset.test); return; }
         const tp = e.target.closest('[data-topic]');
         if (tp) { showTopic(tp.dataset.topic); return; }
         const op = e.target.closest('[data-opt]');
@@ -577,6 +614,8 @@ const TomerModule = (() => {
             case 'level': showLevel(); break;
             case 'words': openWords(); break;
             case 'grammar': showGrammar(); break;
+            case 'tests': showTests(); break;
+            case 'retest': startBookTest(topicId); break;
             case 'topic': showTopic(topicId); break;
             case 'start': startTopicTest(); break;
             case 'weak': startWeakTest(); break;
@@ -587,7 +626,7 @@ const TomerModule = (() => {
         }
     }
     function bind() {
-        ['tomerScreen', 'tomerLevelScreen', 'tomerGrammarScreen', 'tomerTopicScreen', 'tomerTestScreen', 'tomerStatsScreen']
+        ['tomerScreen', 'tomerLevelScreen', 'tomerGrammarScreen', 'tomerTopicScreen', 'tomerTestScreen', 'tomerStatsScreen', 'tomerTestsScreen']
             .forEach(id => $(id)?.addEventListener('click', onClick));
         // Klavye: test sırasında 1-4 ile şık, Enter ile sonraki
         document.addEventListener('keydown', e => {
@@ -606,6 +645,7 @@ const TomerModule = (() => {
             if (id === 'tomerLevelScreen') { showLevel(); return true; }
             if (id === 'tomerGrammarScreen') { showGrammar(); return true; }
             if (id === 'tomerStatsScreen') { showStats(); return true; }
+            if (id === 'tomerTestsScreen' && grammar.tests) { showTests(); return true; }
             if (id === 'tomerTopicScreen' && topicId) { showTopic(topicId); return true; }
             return false;
         }
