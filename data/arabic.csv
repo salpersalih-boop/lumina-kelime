@@ -69,7 +69,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 68;ببطء (bi-buṭ');adv;yavaşça
 69;قريبا (qarīban);adv;yakında
 70;بعيدا (baʿīdan);adv;uzakta
-71;قريب (qarīb);adv;yakında (mesafe) / yakın
+71;قريب (qarīb);adv;yakında (mesafe) / yakın / akraba
 72;داخل (dākhil);adv;içeride
 73;خارج (khārij);adv;dışarıda
 74;فوق (fawqa);adv;yukarıda
@@ -121,7 +121,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 120;أخذ (akhadha);v;almak
 121;وضع (waḍaʿa);v;koymak
 122;وجد (wajada);v;bulmak
-123;بحث (baḥatha);v;aramak
+123;بحث (baḥatha);v;aramak / araştırmak / internette aramak
 124;فقد (faqada);v;kaybetmek
 125;فاز (fāza);v;kazanmak (yarış)
 126;كسب (kasaba);v;kazanmak (para)
@@ -142,7 +142,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 141;مات (māta);v;ölmek
 142;وُلد (wulida);v;doğmak
 143;أحب (aḥabba);v;sevmek
-144;أعجب (aʿjaba);v;hoşlanmak
+144;أعجب (aʿjaba);v;hoşlanmak / beğenmek (sosyal medya)
 145;كره (kariha);v;nefret etmek
 146;أكل (akala);v;yemek
 147;شرب (shariba);v;içmek
@@ -215,7 +215,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 214;شكر (shakara);v;teşekkür etmek
 215;سامح (sāmaḥa);v;affetmek
 216;سمح (samaḥa);v;izin vermek
-217;منع (manaʿa);v;yasaklamak
+217;منع (manaʿa);v;yasaklamak / önlemek
 218;تبع (tabiʿa);v;takip etmek
 219;حصل على (ḥaṣala ʿalā);v;kazanmak, elde etmek
 220;حدث (ḥadatha);v;olmak, meydana gelmek
@@ -306,7 +306,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 305;ركبة (rukba);n;diz
 306;قلب (qalb);n;kalp
 307;دم (dam);n;kan
-308;جلد (jild);n;deri, cilt
+308;جلد (jild);n;deri, cilt / deri (malzeme)
 309;عظم (ʿaẓm);n;kemik
 310;صحة (ṣiḥḥa);n;sağlık
 311;مرض (maraḍ);n;hastalık
@@ -468,7 +468,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 467;زاوية (zāwiya);n;köşe
 468;مركز (markaz);n;merkez
 469;مكان (makān);n;yer, mekan
-470;عنوان (ʿunwān);n;adres
+470;عنوان (ʿunwān);n;adres / başlık
 471;وقت (waqt);n;zaman
 472;دقيقة (daqīqa);n;dakika
 473;ثانية (thāniya);n;saniye
@@ -476,7 +476,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 475;أسبوع (usbūʿ);n;hafta
 476;شهر (shahr);n;ay (takvim)
 477;سنة (sana);n;yıl
-478;قرن (qarn);n;yüzyıl
+478;قرن (qarn);n;yüzyıl / boynuz
 479;صباح (ṣabāḥ);n;sabah
 480;ظهر (ẓuhr);n;öğle
 481;بعد الظهر (baʿd aẓ-ẓuhr);n;öğleden sonra
@@ -514,7 +514,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 513;سماء (samā');n;gökyüzü
 514;سحابة (saḥāba);n;bulut
 515;مطر (maṭar);n;yağmur
-516;ثلج (thalj);n;kar
+516;ثلج (thalj);n;kar / buz
 517;ريح (rīḥ);n;rüzgar
 518;عاصفة (ʿāṣifa);n;fırtına
 519;درجة الحرارة (darajat al-ḥarāra);n;sıcaklık
@@ -565,7 +565,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 564;مهنة (mihna);n;meslek
 565;شركة (sharika);n;şirket
 566;مكتب (maktab);n;ofis
-567;مدير (mudīr);n;patron
+567;مدير (mudīr);n;patron / müdür
 568;زميل (zamīl);n;meslektaş
 569;اجتماع (ijtimāʿ);n;toplantı
 570;مال (māl);n;para
@@ -681,7 +681,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 680;منعش (munʿish);adj;serin
 681;سريع (sarīʿ);adj;hızlı
 682;بطيء (baṭī');adj;yavaş
-683;سهل (sahl);adj;kolay
+683;سهل (sahl);adj;kolay / ova
 684;صعب (ṣaʿb);adj;zor
 685;ثقيل (thaqīl);adj;ağır
 686;خفيف (khafīf);adj;hafif
@@ -697,7 +697,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 696;حزين (ḥazīn);adj;üzgün
 697;غاضب (ghāḍib);adj;kızgın
 698;متعب (mutʿab);adj;yorgun
-699;مريض (marīḍ);adj;hasta
+699;مريض (marīḍ);adj;hasta / hasta (kişi)
 700;صحي (ṣiḥḥī);adj;sağlıklı
 701;جائع (jā'iʿ);adj;aç
 702;قوي (qawiyy);adj;güçlü
@@ -726,11 +726,11 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 725;ممكن (mumkin);adj;mümkün
 726;مستحيل (mustaḥīl);adj;imkansız
 727;ضروري (ḍarūrī);adj;gerekli
-728;عادي (ʿādī);adj;normal
+728;عادي (ʿādī);adj;normal / sıradan
 729;غريب (gharīb);adj;garip, tuhaf
 730;مختلف (mukhtalif);adj;farklı
 731;مشابه (mushābih);adj;benzer
-732;بسيط (basīṭ);adj;kolay, basit
+732;بسيط (basīṭ);adj;kolay, basit / sade
 733;معقد (muʿaqqad);adj;karmaşık
 734;هادئ (hādi');adj;sessiz / sakin
 735;صاخب (ṣākhib);adj;gürültülü
@@ -752,7 +752,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 751;أول (awwal);adj;ilk
 752;أخير (akhīr);adj;son
 753;تال (tālin);adj;sonraki
-754;وحيد (waḥīd);adj;tek, yalnız
+754;وحيد (waḥīd);adj;tek, yalnız / yalnız (duygusal)
 755;كامل (kāmil);adj;bütün, tam
 756;مثالي (mithālī);adj;mükemmel
 757;مشهور (mashhūr);adj;ünlü
@@ -856,8 +856,8 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 855;اختيار (ikhtiyār);n;seçenek
 856;قرار (qarār);n;karar
 857;خطة (khiṭṭa);n;plan
-858;هدف (hadaf);n;amaç, hedef
-859;نتيجة (natīja);n;sonuç
+858;هدف (hadaf);n;amaç, hedef / gol
+859;نتيجة (natīja);n;sonuç / skor
 860;نجاح (najāḥ);n;başarı
 861;خبرة (khibra);n;deneyim
 862;معلومات (maʿlūmāt);n;bilgi
@@ -914,7 +914,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 913;أسس (assasa);v;kurmak
 914;دعم (daʿama);v;desteklemek
 915;ربط (rabaṭa);v;bağlamak
-916;فصل (faṣala);v;ayırmak
+916;فصل (faṣala);v;ayırmak / işten çıkarmak
 917;ادّخر (iddakhara);v;biriktirmek, tasarruf etmek
 918;أنفق (anfaqa);v;harcamak
 919;أقرض (aqraḍa);v;ödünç vermek
@@ -949,7 +949,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 948;راقب (rāqaba);v;denetlemek
 949;طبع (ṭabaʿa);v;yazdırmak
 950;حمّل (ḥammala);v;indirmek (dosya)
-951;حفظ (ḥafiẓa);v;kaydetmek
+951;حفظ (ḥafiẓa);v;kaydetmek / ezberlemek
 952;حذف (ḥadhafa);v;silmek
 953;نقر (naqara);v;tıklamak
 954;للأسف (lil-asaf);adv;maalesef
@@ -983,7 +983,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 982;متزوج (mutazawwij);adj;evli
 983;أعزب (aʿzab);adj;bekar
 984;ميت (mayyit);adj;ölü
-985;حي (ḥayy);adj;canlı
+985;حي (ḥayy);adj;canlı / mahalle
 986;متوتر (mutawattir);adj;gergin
 987;غيور (ghayūr);adj;kıskanç
 988;خجول (khajūl);adj;utangaç
@@ -1005,3 +1005,1040 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 1004;سابق (sābiq);adj;eski, önceki
 1005;محتمل (muḥtamal);adj;olası
 1006;واضح (wāḍiḥ);adj;açık, net
+1007;جبهة (jabha);n;alın
+1008;خد (khadd);n;yanak
+1009;ذقن (dhaqn);n;çene
+1010;شفة (shafa);n;dudak
+1011;حاجب (ḥājib);n;kaş
+1012;رمش (rimsh);n;kirpik
+1013;لحية (liḥya);n;sakal
+1014;شارب (shārib);n;bıyık
+1015;حلق (ḥalq);n;boğaz
+1016;معصم (miʿṣam);n;bilek
+1017;مرفق (mirfaq);n;dirsek
+1018;ظفر (ẓufr);n;tırnak
+1019;إبهام (ibhām);n;başparmak
+1020;خصر (khaṣr);n;bel
+1021;ورك (wirk);n;kalça
+1022;كاحل (kāḥil);n;ayak bileği
+1023;كعب (kaʿb);n;topuk
+1024;دماغ (dimāgh);n;beyin
+1025;رئة (ri'a);n;akciğer
+1026;كبد (kabid);n;karaciğer
+1027;كلية (kulya);n;böbrek
+1028;عضلة (ʿaḍala);n;kas
+1029;وريد (warīd);n;damar
+1030;نبض (nabḍ);n;kalp atışı
+1031;نفس (nafas);n;nefes
+1032;دمعة (damʿa);n;gözyaşı
+1033;عرق (ʿaraq);n;ter
+1034;حمى (ḥummā);n;ateş (hastalık)
+1035;سعال (suʿāl);n;öksürük
+1036;زكام (zukām);n;soğuk algınlığı
+1037;إنفلونزا (inflūwanzā);n;grip
+1038;صداع (ṣudāʿ);n;baş ağrısı
+1039;جرح (jurḥ);n;yara
+1040;عملية جراحية (ʿamaliyya jirāḥiyya);n;ameliyat
+1041;علاج (ʿilāj);n;tedavi
+1042;وصفة طبية (waṣfa ṭibbiyya);n;reçete
+1043;حبة (ḥabba);n;hap
+1044;لقاح (liqāḥ);n;aşı
+1045;سيارة إسعاف (sayyārat isʿāf);n;ambulans
+1046;حالة طوارئ (ḥālat ṭawāri');n;acil durum
+1047;نوم (nawm);n;uyku
+1048;تعب (taʿab);n;yorgunluk
+1049;ضغط نفسي (ḍaghṭ nafsī);n;stres
+1050;حمية (ḥimya);n;diyet
+1051;تمرين (tamrīn);n;egzersiz
+1052;طول القامة (ṭūl al-qāma);n;boy (uzunluk)
+1053;فرح (faraḥ);n;sevinç
+1054;حزن (ḥuzn);n;üzüntü
+1055;غضب (ghaḍab);n;öfke
+1056;غيرة (ghīra);n;kıskançlık
+1057;خجل (khajal);n;utanç
+1058;فخر (fakhr);n;gurur
+1059;فضول (fuḍūl);n;merak
+1060;صبر (ṣabr);n;sabır
+1061;ثقة (thiqa);n;güven
+1062;قلق (qalaq);n;endişe
+1063;وحدة (waḥda);n;yalnızlık
+1064;شجاعة (shajāʿa);n;cesaret
+1065;كراهية (karāhiya);n;nefret
+1066;دهشة (dahsha);n;şaşkınlık
+1067;متعة (mutʿa);n;keyif, zevk
+1068;ندم (nadam);n;pişmanlık
+1069;امتنان (imtinān);n;minnettarlık
+1070;احترام (iḥtirām);n;saygı
+1071;شخصية (shakhṣiyya);n;kişilik
+1072;عادة (ʿāda);n;alışkanlık
+1073;سلوك (sulūk);n;davranış
+1074;مزاج (mizāj);n;ruh hali
+1075;ضحكة (ḍaḥka);n;kahkaha
+1076;ابتسامة (ibtisāma);n;gülümseme
+1077;قبلة (qubla);n;öpücük
+1078;عناق (ʿināq);n;sarılma
+1079;روح (rūḥ);n;ruh
+1080;عقل (ʿaql);n;zihin
+1081;ذاكرة (dhākira);n;hafıza
+1082;ذكاء (dhakā');n;zeka
+1083;حكمة (ḥikma);n;bilgelik
+1084;موهبة (mawhiba);n;yetenek
+1085;مهارة (mahāra);n;beceri
+1086;جمال (jamāl);n;güzellik
+1087;شباب (shabāb);n;gençlik
+1088;شيخوخة (shaykhūkha);n;yaşlılık
+1089;طفولة (ṭufūla);n;çocukluk
+1090;ولادة (wilāda);n;doğum
+1091;زفاف (zifāf);n;düğün
+1092;جنازة (janāza);n;cenaze
+1093;خطيب (khaṭīb);n;nişanlı (erkek)
+1094;عروس (ʿarūs);n;gelin
+1095;أرملة (armala);n;dul (kadın)
+1096;بالغ (bāligh);n;yetişkin
+1097;مراهق (murāhiq);n;ergen
+1098;مسن (musinn);n;yaşlı (kişi)
+1099;حفيد (ḥafīd);n;torun
+1100;ابن الأخ (ibn al-akh);n;yeğen
+1101;حماة (ḥamāh);n;kayınvalide
+1102;توأم (taw'am);n;ikiz
+1103;حبيب (ḥabīb);n;sevgili
+1104;عدو (ʿaduww);n;düşman
+1105;وسادة (wisāda);n;yastık
+1106;بطانية (baṭṭāniyya);n;battaniye
+1107;شرشف (sharshaf);n;çarşaf
+1108;رف (raff);n;raf
+1109;درج (durj);n;çekmece
+1110;قفل (qifl);n;kilit
+1111;مقبس (miqbas);n;priz
+1112;مصباح كهربائي (miṣbāḥ kahrabā'ī);n;ampul
+1113;مكيف (mukayyif);n;klima
+1114;مدفأة (midfa'a);n;kalorifer
+1115;غسالة (ghassāla);n;çamaşır makinesi
+1116;غسالة صحون (ghassālat ṣuḥūn);n;bulaşık makinesi
+1117;مكنسة كهربائية (miknasa kahrabā'iyya);n;elektrikli süpürge
+1118;مكواة (mikwāh);n;ütü
+1119;ميكروويف (mīkrūwayf);n;mikrodalga fırın
+1120;موقد (mawqid);n;ocak (mutfak)
+1121;مقلاة (miqlāh);n;tava
+1122;غلاية (ghallāya);n;çaydanlık
+1123;وعاء (wiʿā');n;kase
+1124;منديل (mandīl);n;peçete
+1125;صينية (ṣīniyya);n;tepsi
+1126;قمامة (qumāma);n;çöp
+1127;سلة المهملات (sallat al-muhmalāt);n;çöp kutusu
+1128;دلو (dalw);n;kova
+1129;مكنسة (miknasa);n;süpürge
+1130;فرشاة (furshāh);n;fırça
+1131;مشط (mushṭ);n;tarak
+1132;معجون أسنان (maʿjūn asnān);n;diş macunu
+1133;شامبو (shāmbū);n;şampuan
+1134;دش (dush);n;duş
+1135;حوض الاستحمام (ḥawḍ al-istiḥmām);n;küvet
+1136;مغسلة (maghsala);n;lavabo
+1137;مرحاض (mirḥāḍ);n;klozet
+1138;صنبور (ṣunbūr);n;musluk
+1139;ورق التواليت (waraq at-tuwālīt);n;tuvalet kağıdı
+1140;شمعة (shamʿa);n;mum
+1141;كبريت (kibrīt);n;kibrit
+1142;ولاعة (wallāʿa);n;çakmak
+1143;مقص (miqaṣṣ);n;makas
+1144;إبرة (ibra);n;iğne
+1145;خيط (khayṭ);n;iplik
+1146;زر (zirr);n;düğme
+1147;سحاب (saḥḥāb);n;fermuar
+1148;جيب (jayb);n;cep
+1149;حزام (ḥizām);n;kemer
+1150;ربطة عنق (rabṭat ʿunuq);n;kravat
+1151;قفازات (quffāzāt);n;eldiven
+1152;وشاح (wishāḥ);n;atkı
+1153;معطف (miʿṭaf);n;palto
+1154;سترة صوفية (sutra ṣūfiyya);n;kazak
+1155;شورت (shūrt);n;şort
+1156;ملابس داخلية (malābis dākhiliyya);n;iç çamaşırı
+1157;بيجامة (bījāma);n;pijama
+1158;شبشب (shibshib);n;terlik
+1159;حذاء طويل (ḥidhā' ṭawīl);n;çizme
+1160;حقيبة ظهر (ḥaqībat ẓahr);n;sırt çantası
+1161;مظلة (miẓalla);n;şemsiye
+1162;قلادة (qilāda);n;kolye
+1163;قرط (qirṭ);n;küpe
+1164;ساعة يد (sāʿat yad);n;kol saati
+1165;عطر (ʿiṭr);n;parfüm
+1166;مكياج (mikyāj);n;makyaj
+1167;كاميرا (kāmīrā);n;fotoğraf makinesi
+1168;بطارية (baṭṭāriyya);n;pil
+1169;شاحن (shāḥin);n;şarj aleti
+1170;سماعة (sammāʿa);n;kulaklık
+1171;سلك (silk);n;kablo
+1172;شاشة (shāsha);n;ekran
+1173;لوحة المفاتيح (lawḥat al-mafātīḥ);n;klavye
+1174;فأرة (fa'ra);n;fare (bilgisayar)
+1175;طابعة (ṭābiʿa);n;yazıcı
+1176;راديو (rādyū);n;radyo
+1177;جهاز تحكم (jihāz taḥakkum);n;kumanda
+1178;تقويم (taqwīm);n;takvim
+1179;ظرف (ẓarf);n;zarf
+1180;طابع بريدي (ṭābiʿ barīdī);n;pul
+1181;طرد (ṭard);n;koli
+1182;حبل (ḥabl);n;ip
+1183;مسمار (mismār);n;çivi
+1184;مطرقة (miṭraqa);n;çekiç
+1185;مفك (mifakk);n;tornavida
+1186;سلم (sullam);n;el merdiveni
+1187;طوب (ṭūb);n;tuğla
+1188;خشب (khashab);n;tahta (malzeme)
+1189;زجاج (zujāj);n;cam
+1190;حديد (ḥadīd);n;demir
+1191;ذهب (dhahab);n;altın
+1192;فضة (fiḍḍa);n;gümüş
+1193;بلاستيك (blāstīk);n;plastik
+1194;معدن (maʿdin);n;metal
+1195;قماش (qumāsh);n;kumaş
+1196;قطن (quṭn);n;pamuk
+1197;حرير (ḥarīr);n;ipek
+1198;صوف (ṣūf);n;yün
+1199;أثاث (athāth);n;mobilya
+1200;مقبض (miqbaḍ);n;kapı kolu
+1201;شرفة (shurfa);n;balkon
+1202;قبو (qabw);n;bodrum
+1203;مرآب (mir'āb);n;garaj
+1204;مصعد (miṣʿad);n;asansör
+1205;طابق (ṭābiq);n;kat
+1206;ممر (mamarr);n;koridor
+1207;سياج (siyāj);n;çit
+1208;إيجار (ījār);n;kira
+1209;طحين (ṭaḥīn);n;un
+1210;عجين (ʿajīn);n;hamur
+1211;زيتون (zaytūn);n;zeytin
+1212;زيت الزيتون (zayt az-zaytūn);n;zeytinyağı
+1213;خل (khall);n;sirke
+1214;صلصة (ṣalṣa);n;sos
+1215;بهارات (bahārāt);n;baharat
+1216;نعناع (naʿnāʿ);n;nane
+1217;بقدونس (baqdūnis);n;maydanoz
+1218;قرفة (qirfa);n;tarçın
+1219;زنجبيل (zanjabīl);n;zencefil
+1220;فلفل حار (filfil ḥārr);n;acı biber
+1221;فاصوليا (fāṣūliyā);n;fasulye
+1222;حمص (ḥummuṣ);n;nohut
+1223;عدس (ʿadas);n;mercimek
+1224;بازلاء (bāzillā');n;bezelye
+1225;ذرة (dhura);n;mısır
+1226;قمح (qamḥ);n;buğday
+1227;ملفوف (malfūf);n;lahana
+1228;خس (khass);n;marul
+1229;باذنجان (bādhinjān);n;patlıcan
+1230;سبانخ (sabānikh);n;ıspanak
+1231;فطر (fuṭr);n;mantar
+1232;قرع (qarʿ);n;bal kabağı
+1233;بطيخ (baṭṭīkh);n;karpuz
+1234;شمام (shammām);n;kavun
+1235;كمثرى (kummathrā);n;armut
+1236;خوخ (khawkh);n;şeftali
+1237;كرز (karaz);n;kiraz
+1238;برقوق (barqūq);n;erik
+1239;أناناس (anānās);n;ananas
+1240;مانجو (mānjū);n;mango
+1241;تين (tīn);n;incir
+1242;تمر (tamr);n;hurma
+1243;رمان (rummān);n;nar
+1244;بندق (bunduq);n;fındık
+1245;جوز (jawz);n;ceviz
+1246;لوز (lawz);n;badem
+1247;فول سوداني (fūl sūdānī);n;yer fıstığı
+1248;زبيب (zabīb);n;kuru üzüm
+1249;لحم ضأن (laḥm ḍa'n);n;kuzu eti
+1250;لحم بقر (laḥm baqar);n;dana eti
+1251;نقانق (naqāniq);n;sosis
+1252;كفتة (kufta);n;köfte
+1253;لحم مفروم (laḥm mafrūm);n;kıyma
+1254;روبيان (rūbiyān);n;karides
+1255;تونة (tūna);n;ton balığı
+1256;زبادي (zabādī);n;yoğurt
+1257;قشدة (qishda);n;krema
+1258;مربى (murabbā);n;reçel
+1259;بسكويت (baskawīt);n;kurabiye
+1260;حلوى (ḥalwā);n;şekerleme
+1261;حلويات (ḥalawiyyāt);n;tatlı (yemek)
+1262;شطيرة (shaṭīra);n;sandviç
+1263;بيتزا (bītzā);n;pizza
+1264;برغر (barghar);n;hamburger
+1265;بطاطس مقلية (baṭāṭis maqliyya);n;patates kızartması
+1266;عجة (ʿijja);n;omlet
+1267;كباب (kabāb);n;kebap
+1268;مياه معدنية (miyāh maʿdaniyya);n;maden suyu
+1269;مشروب غازي (mashrūb ghāzī);n;gazoz
+1270;شريحة (sharīḥa);n;dilim
+1271;وصفة (waṣfa);n;yemek tarifi
+1272;مكونات (mukawwināt);n;malzeme
+1273;حصة (ḥiṣṣa);n;porsiyon
+1274;مخبز (makhbaz);n;fırın (ekmek)
+1275;جزار (jazzār);n;kasap
+1276;بائع الخضار (bā'iʿ al-khuḍār);n;manav
+1277;أفوكادو (afūkādū);n;avokado
+1278;جوز الهند (jawz al-hind);n;hindistan cevizi
+1279;مشمش (mishmish);n;kayısı
+1280;توت العليق (tūt al-ʿullayq);n;ahududu
+1281;فجل (fujl);n;turp
+1282;كرفس (karafs);n;kereviz
+1283;بروكلي (brūkulī);n;brokoli
+1284;قرنبيط (qarnabīṭ);n;karnabahar
+1285;حبوب (ḥubūb);n;tahıl
+1286;شوفان (shūfān);n;yulaf
+1287;خميرة (khamīra);n;maya
+1288;فانيليا (fānīliyā);n;vanilya
+1289;جناح (janāḥ);n;kanat
+1290;لوح التقطيع (lawḥ at-taqṭīʿ);n;kesme tahtası
+1291;غطاء (ghiṭā');n;kapak
+1292;برطمان (barṭamān);n;kavanoz
+1293;علبة (ʿulba);n;konserve kutusu
+1294;كيس (kīs);n;poşet
+1295;مفرش (mafrash);n;masa örtüsü
+1296;إبريق (ibrīq);n;sürahi
+1297;وجبة خفيفة (wajba khafīfa);n;atıştırmalık
+1298;مشروب (mashrūb);n;içecek
+1299;كحول (kuḥūl);n;alkol
+1300;نباتي (nabātī);n;vejetaryen
+1301;لقمة (luqma);n;lokma
+1302;خبز محمص (khubz muḥammaṣ);n;kızarmış ekmek
+1303;فطيرة (faṭīra);n;krep
+1304;ليمونادة (līmūnāda);n;limonata
+1305;كاكاو (kākāw);n;kakao
+1306;بذرة (bidhra);n;tohum
+1307;قشرة (qishra);n;kabuk
+1308;بلدة (balda);n;kasaba
+1309;عاصمة (ʿāṣima);n;başkent
+1310;حدود (ḥudūd);n;sınır
+1311;رصيف (raṣīf);n;kaldırım
+1312;تقاطع (taqāṭuʿ);n;kavşak
+1313;إشارة المرور (ishārat al-murūr);n;trafik ışığı
+1314;ممر المشاة (mamarr al-mushāh);n;yaya geçidi
+1315;موقف سيارات (mawqif sayyārāt);n;otopark
+1316;محطة وقود (maḥaṭṭat waqūd);n;benzin istasyonu
+1317;بنزين (banzīn);n;benzin
+1318;عجلة (ʿajala);n;tekerlek
+1319;محرك (muḥarrik);n;motor
+1320;فرامل (farāmil);n;fren
+1321;رخصة قيادة (rukhṣat qiyāda);n;ehliyet
+1322;دراجة نارية (darrāja nāriyya);n;motosiklet
+1323;شاحنة (shāḥina);n;kamyon
+1324;قارب (qārib);n;tekne
+1325;مروحية (marwaḥiyya);n;helikopter
+1326;ترام (trām);n;tramvay
+1327;رصيف المحطة (raṣīf al-maḥaṭṭa);n;peron
+1328;راكب (rākib);n;yolcu
+1329;طيار (ṭayyār);n;pilot
+1330;مضيفة (muḍīfa);n;hostes
+1331;هبوط (hubūṭ);n;iniş (uçak)
+1332;رحلة جوية (riḥla jawwiyya);n;uçuş
+1333;أمتعة (amtiʿa);n;bagaj
+1334;جمارك (jamārik);n;gümrük
+1335;تأشيرة (ta'shīra);n;vize
+1336;مرشد (murshid);n;rehber (kişi)
+1337;مخيم (mukhayyam);n;kamp
+1338;خيمة (khayma);n;çadır
+1339;منظر (manẓar);n;manzara
+1340;نصب تذكاري (naṣb tidhkārī);n;anıt
+1341;قصر (qaṣr);n;saray
+1342;قلعة (qalʿa);n;kale
+1343;برج (burj);n;kule
+1344;معبد (maʿbad);n;tapınak
+1345;تمثال (timthāl);n;heykel
+1346;نافورة (nāfūra);n;çeşme
+1347;حديقة حيوانات (ḥadīqat ḥayawānāt);n;hayvanat bahçesi
+1348;مركز تسوق (markaz tasawwuq);n;alışveriş merkezi
+1349;صندوق الدفع (ṣundūq ad-dafʿ);n;kasa (ödeme)
+1350;إيصال (īṣāl);n;fiş
+1351;نقد (naqd);n;nakit
+1352;بطاقة ائتمان (biṭāqat i'timān);n;kredi kartı
+1353;عملة معدنية (ʿumla maʿdiniyya);n;bozuk para
+1354;عملة (ʿumla);n;para birimi
+1355;صيدلي (ṣaydalī);n;eczacı
+1356;حلاق (ḥallāq);n;kuaför
+1357;خياط (khayyāṭ);n;terzi
+1358;متجر كتب (matjar kutub);n;kitapçı
+1359;واجهة (wājiha);n;vitrin
+1360;مقاس (maqās);n;beden (giysi)
+1361;تخفيضات (takhfīḍāt);n;indirimli satış
+1362;علامة تجارية (ʿalāma tijāriyya);n;marka
+1363;سلة (salla);n;sepet
+1364;عربة التسوق (ʿarabat at-tasawwuq);n;alışveriş arabası
+1365;لافتة (lāfita);n;tabela
+1366;دورة مياه (dawrat miyāh);n;umumi tuvalet
+1367;مستأجر (musta'jir);n;kiracı
+1368;مالك (mālik);n;ev sahibi
+1369;سجن (sijn);n;hapishane
+1370;بلدية (baladiyya);n;belediye
+1371;سفارة (sifāra);n;elçilik
+1372;مصنع (maṣnaʿ);n;fabrika
+1373;مستودع (mustawdaʿ);n;depo
+1374;مزرعة (mazraʿa);n;çiftlik
+1375;ملعب (malʿab);n;stadyum
+1376;نادي رياضي (nādī riyāḍī);n;spor salonu
+1377;مسبح (masbaḥ);n;yüzme havuzu
+1378;مقبرة (maqbara);n;mezarlık
+1379;نفق (nafaq);n;tünel
+1380;طريق سريع (ṭarīq sarīʿ);n;otoyol
+1381;مسافة (masāfa);n;mesafe
+1382;كيلومتر (kīlūmitr);n;kilometre
+1383;اتجاه (ittijāh);n;yön
+1384;سرعة (surʿa);n;hız
+1385;وصول (wuṣūl);n;varış
+1386;مغادرة (mughādara);n;kalkış
+1387;تأخير (ta'khīr);n;gecikme
+1388;جدول المواعيد (jadwal al-mawāʿīd);n;tarife (saatler)
+1389;حجز (ḥajz);n;rezervasyon
+1390;استقبال (istiqbāl);n;resepsiyon
+1391;تذكار (tidhkār);n;hediyelik eşya
+1392;جولة (jawla);n;tur
+1393;ساحل (sāḥil);n;kıyı
+1394;منارة (manāra);n;deniz feneri
+1395;أطلال (aṭlāl);n;harabe
+1396;ناطحة سحاب (nāṭiḥat saḥāb);n;gökdelen
+1397;مقعد (maqʿad);n;bank (oturma)
+1398;صندوق بريد (ṣundūq barīd);n;posta kutusu
+1399;بطاقة بريدية (biṭāqa barīdiyya);n;kartpostal
+1400;قبطان (qubṭān);n;kaptan
+1401;واقي الشمس (wāqī ash-shams);n;güneş kremi
+1402;نظارة شمسية (naẓẓāra shamsiyya);n;güneş gözlüğü
+1403;سياحة (siyāḥa);n;turizm
+1404;الخارج (al-khārij);n;yurt dışı
+1405;مهاجر (muhājir);n;göçmen
+1406;مواطن (muwāṭin);n;vatandaş
+1407;كوكب (kawkab);n;gezegen
+1408;الكون (al-kawn);n;evren
+1409;الفضاء (al-faḍā');n;uzay
+1410;قوس قزح (qaws quzaḥ);n;gökkuşağı
+1411;برق (barq);n;şimşek
+1412;رعد (raʿd);n;gök gürültüsü
+1413;ضباب (ḍabāb);n;sis
+1414;برد (barad);n;dolu (yağış)
+1415;زلزال (zilzāl);n;deprem
+1416;فيضان (fayaḍān);n;sel
+1417;جفاف (jafāf);n;kuraklık
+1418;بركان (burkān);n;volkan
+1419;صحراء (ṣaḥrā');n;çöl
+1420;وادي (wādī);n;vadi
+1421;كهف (kahf);n;mağara
+1422;شلال (shallāl);n;şelale
+1423;موجة (mawja);n;dalga
+1424;صخرة (ṣakhra);n;kaya
+1425;غبار (ghubār);n;toz
+1426;طين (ṭīn);n;çamur
+1427;قارة (qārra);n;kıta
+1428;أفق (ufuq);n;ufuk
+1429;شروق الشمس (shurūq ash-shams);n;gün doğumu
+1430;غروب الشمس (ghurūb ash-shams);n;gün batımı
+1431;ظل (ẓill);n;gölge
+1432;مناخ (munākh);n;iklim
+1433;بيئة (bī'a);n;çevre
+1434;تلوث (talawwuth);n;kirlilik
+1435;نبات (nabāt);n;bitki
+1436;جذر (jidhr);n;kök
+1437;غصن (ghuṣn);n;dal
+1438;وردة (warda);n;gül
+1439;خزامى (khuzāmā);n;lale
+1440;صنوبر (ṣanawbar);n;çam
+1441;بلوط (ballūṭ);n;meşe
+1442;نخلة (nakhla);n;palmiye
+1443;صبار (ṣabbār);n;kaktüs
+1444;طحلب (ṭuḥlub);n;yosun
+1445;عش (ʿushsh);n;kuş yuvası
+1446;ريشة (rīsha);n;tüy
+1447;ذيل (dhayl);n;kuyruk (hayvan)
+1448;مخلب (mikhlab);n;pençe
+1449;منقار (minqār);n;gaga
+1450;ماعز (māʿiz);n;keçi
+1451;حمار (ḥimār);n;eşek
+1452;جمل (jamal);n;deve
+1453;نمر (namir);n;kaplan
+1454;زرافة (zarāfa);n;zürafa
+1455;حمار وحشي (ḥimār waḥshī);n;zebra
+1456;غزال (ghazāl);n;geyik
+1457;سنجاب (sinjāb);n;sincap
+1458;قنفذ (qunfudh);n;kirpi
+1459;سلحفاة (sulaḥfāh);n;kaplumbağa
+1460;ضفدع (ḍifdaʿ);n;kurbağa
+1461;تمساح (timsāḥ);n;timsah
+1462;قرش (qirsh);n;köpekbalığı
+1463;حوت (ḥūt);n;balina
+1464;دلفين (dulfīn);n;yunus
+1465;أخطبوط (ukhṭubūṭ);n;ahtapot
+1466;سلطعون (salṭaʿūn);n;yengeç
+1467;نملة (namla);n;karınca
+1468;عنكبوت (ʿankabūt);n;örümcek
+1469;بعوضة (baʿūḍa);n;sivrisinek
+1470;دودة (dūda);n;solucan
+1471;نسر (nasr);n;kartal
+1472;بومة (būma);n;baykuş
+1473;حمامة (ḥamāma);n;güvercin
+1474;غراب (ghurāb);n;karga
+1475;ببغاء (babbaghā');n;papağan
+1476;ديك (dīk);n;horoz
+1477;حمل (ḥamal);n;kuzu
+1478;جرو (jarw);n;köpek yavrusu
+1479;هريرة (hurayra);n;kedi yavrusu
+1480;حيوان أليف (ḥayawān alīf);n;evcil hayvan
+1481;نبع (nabʿ);n;kaynak (su)
+1482;مستنقع (mustanqaʿ);n;bataklık
+1483;خليج (khalīj);n;körfez
+1484;قمة (qimma);n;zirve
+1485;نهر جليدي (nahr jalīdī);n;buzul
+1486;قطب (quṭb);n;kutup
+1487;فحم (faḥm);n;kömür
+1488;نفط (nafṭ);n;petrol
+1489;غاز (ghāz);n;gaz
+1490;دخان (dukhān);n;duman
+1491;لهب (lahab);n;alev
+1492;بخار (bukhār);n;buhar
+1493;قطرة (qaṭra);n;damla
+1494;ضوء الشمس (ḍaw' ash-shams);n;güneş ışığı
+1495;فصيلة (faṣīla);n;tür (canlı)
+1496;رطوبة (ruṭūba);n;nem
+1497;درجة (daraja);n;derece
+1498;توقعات (tawaqquʿāt);n;hava tahmini
+1499;شجيرة (shujayra);n;çalı
+1500;حطب (ḥaṭab);n;odun
+1501;مرجان (marjān);n;mercan
+1502;لؤلؤ (lu'lu');n;inci
+1503;ألماس (almās);n;elmas
+1504;مغناطيس (maghnāṭīs);n;mıknatıs
+1505;مقابلة عمل (muqābalat ʿamal);n;iş görüşmesi
+1506;سيرة ذاتية (sīra dhātiyya);n;özgeçmiş
+1507;عقد (ʿaqd);n;sözleşme
+1508;توقيع (tawqīʿ);n;imza
+1509;وثيقة (wathīqa);n;belge
+1510;ملف (milaff);n;dosya
+1511;تقرير (taqrīr);n;rapor
+1512;مشروع (mashrūʿ);n;proje
+1513;مهمة (mahamma);n;görev
+1514;موعد نهائي (mawʿid nihā'ī);n;son tarih
+1515;موظف (muwaẓẓaf);n;çalışan
+1516;بطالة (baṭāla);n;işsizlik
+1517;تقاعد (taqāʿud);n;emeklilik
+1518;مسيرة مهنية (masīra mihniyya);n;kariyer
+1519;ترقية (tarqiya);n;terfi
+1520;ربح (ribḥ);n;kâr
+1521;خسارة (khasāra);n;zarar
+1522;دين (dayn);n;borç
+1523;قرض (qarḍ);n;banka kredisi
+1524;استثمار (istithmār);n;yatırım
+1525;ميزانية (mīzāniyya);n;bütçe
+1526;سهم (sahm);n;hisse senedi
+1527;صناعة (ṣināʿa);n;sanayi
+1528;تجارة (tijāra);n;ticaret
+1529;تصدير (taṣdīr);n;ihracat
+1530;استيراد (istīrād);n;ithalat
+1531;طالب جامعي (ṭālib jāmiʿī);n;üniversite öğrencisi
+1532;أستاذ (ustādh);n;profesör
+1533;واجب (wājib);n;ödev
+1534;علامة (ʿalāma);n;not (sınav)
+1535;شهادة (shahāda);n;diploma
+1536;قسم (qism);n;bölüm (üniversite)
+1537;مادة (mādda);n;ders konusu
+1538;رياضيات (riyāḍiyyāt);n;matematik
+1539;فيزياء (fīzyā');n;fizik
+1540;كيمياء (kīmiyā');n;kimya
+1541;أحياء (aḥyā');n;biyoloji
+1542;جغرافيا (jughrāfiyā);n;coğrafya
+1543;أدب (adab);n;edebiyat
+1544;فلسفة (falsafa);n;felsefe
+1545;طب (ṭibb);n;tıp
+1546;هندسة (handasa);n;mühendislik
+1547;بحث (baḥth);n;araştırma
+1548;تجربة (tajriba);n;deney
+1549;نظرية (naẓariyya);n;teori
+1550;صيغة (ṣīgha);n;formül
+1551;حساب (ḥisāb);n;hesaplama / hesap (internet)
+1552;جمع (jamʿ);n;toplama (matematik)
+1553;برنامج (barnāmaj);n;program (bilgisayar) / televizyon programı
+1554;تطبيق (taṭbīq);n;uygulama (mobil)
+1555;برمجيات (barmajiyyāt);n;yazılım
+1556;عتاد (ʿatād);n;donanım
+1557;بيانات (bayānāt);n;veri
+1558;كلمة السر (kalimat as-sirr);n;şifre
+1559;مستخدم (mustakhdim);n;kullanıcı
+1560;موقع إلكتروني (mawqiʿ iliktrūnī);n;web sitesi
+1561;شبكة (shabaka);n;ağ
+1562;رابط (rābiṭ);n;bağlantı (link)
+1563;وسائل التواصل (wasā'il at-tawāṣul);n;sosyal medya
+1564;فيديو (fīdyū);n;video
+1565;هاتف ذكي (hātif dhakī);n;akıllı telefon
+1566;روبوت (rūbūt);n;robot
+1567;ذكاء اصطناعي (dhakā' iṣṭināʿī);n;yapay zeka
+1568;تكنولوجيا (tiknūlūjiyā);n;teknoloji
+1569;اختراع (ikhtirāʿ);n;icat
+1570;صحفي (ṣaḥafī);n;gazeteci
+1571;مقابلة (muqābala);n;röportaj
+1572;مقالة (maqāla);n;makale
+1573;قناة (qanāh);n;kanal
+1574;مشاهد (mushāhid);n;izleyici
+1575;شاعر (shāʿir);n;şair
+1576;قصيدة (qaṣīda);n;şiir
+1577;رواية (riwāya);n;roman
+1578;رسام (rassām);n;ressam
+1579;موسيقي (mūsīqī);n;müzisyen
+1580;مغني (mughannī);n;şarkıcı
+1581;ممثل (mumaththil);n;oyuncu (film)
+1582;مخرج (mukhrij);n;yönetmen
+1583;خشبة المسرح (khashabat al-masraḥ);n;sahne
+1584;حفلة موسيقية (ḥafla mūsīqiyya);n;konser
+1585;معرض (maʿraḍ);n;sergi
+1586;آلة موسيقية (āla mūsīqiyya);n;müzik aleti
+1587;غيتار (ghītār);n;gitar
+1588;بيانو (byānū);n;piyano
+1589;طبل (ṭabl);n;davul
+1590;كمان (kamān);n;keman
+1591;لحن (laḥn);n;melodi
+1592;رقص (raqṣ);n;dans
+1593;رسم (rasm);n;çizim
+1594;هواية (hiwāya);n;hobi
+1595;لغز (lughz);n;bulmaca
+1596;شطرنج (shaṭranj);n;satranç
+1597;دمية (dumya);n;oyuncak
+1598;قاموس (qāmūs);n;sözlük
+1599;قواعد (qawāʿid);n;dil bilgisi
+1600;ترجمة (tarjama);n;çeviri
+1601;حذر (ḥadhdhara);v;uyarmak
+1602;غار (ghāra);v;kıskanmak
+1603;وثق (wathiqa);v;güvenmek
+1604;شك (shakka);v;şüphelenmek
+1605;خمن (khammana);v;tahmin etmek
+1606;تخيل (takhayyala);v;hayal etmek
+1607;حلم (ḥalama);v;rüya görmek
+1608;روى (rawā);v;anlatmak
+1609;دردش (dardasha);v;sohbet etmek
+1610;أقنع (aqnaʿa);v;ikna etmek
+1611;أصر (aṣarra);v;ısrar etmek
+1612;اعترف (iʿtarafa);v;itiraf etmek
+1613;أنكر (ankara);v;inkar etmek
+1614;اتهم (ittahama);v;suçlamak
+1615;اعتذر (iʿtadhara);v;özür dilemek
+1616;حيا (ḥayyā);v;selamlamak
+1617;ودع (waddaʿa);v;veda etmek
+1618;عرف (ʿarrafa);v;tanıştırmak
+1619;شجع (shajjaʿa);v;cesaretlendirmek
+1620;مدح (madaḥa);v;övmek
+1621;انتقد (intaqada);v;eleştirmek
+1622;سخر (sakhira);v;alay etmek
+1623;مزح (mazaḥa);v;şaka yapmak
+1624;كذب (kadhaba);v;yalan söylemek
+1625;خدع (khadaʿa);v;aldatmak
+1626;هدد (haddada);v;tehdit etmek
+1627;هاجم (hājama);v;saldırmak
+1628;دافع (dāfaʿa);v;savunmak
+1629;هرب (haraba);v;kaçmak
+1630;اختبأ (ikhtaba'a);v;saklanmak
+1631;طارد (ṭārada);v;kovalamak
+1632;قفز (qafaza);v;zıplamak
+1633;انحنى (inḥanā);v;eğilmek
+1634;استلقى (istalqā);v;uzanmak (yatmak)
+1635;زحف (zaḥafa);v;sürünmek
+1636;انزلق (inzalaqa);v;kaymak
+1637;غرق (ghariqa);v;batmak
+1638;طفا (ṭafā);v;su üstünde durmak
+1639;هب (habba);v;esmek (rüzgar)
+1640;أمطر (amṭara);v;yağmur yağmak
+1641;لمع (lamaʿa);v;parlamak
+1642;احترق (iḥtaraqa);v;yanmak
+1643;ذاب (dhāba);v;erimek
+1644;تجمد (tajammada);v;donmak
+1645;غلى (ghalā);v;kaynamak
+1646;قلى (qalā);v;kızartmak
+1647;خبز (khabaza);v;fırında pişirmek
+1648;خلط (khalaṭa);v;karıştırmak
+1649;فرم (farama);v;doğramak
+1650;قشر (qashshara);v;soymak (kabuk)
+1651;صب (ṣabba);v;dökmek
+1652;قدم (qaddama);v;servis etmek
+1653;عض (ʿaḍḍa);v;ısırmak
+1654;مضغ (maḍagha);v;çiğnemek
+1655;بلع (balaʿa);v;yutmak
+1656;شعر بالبرد (shaʿara bil-bard);v;üşümek
+1657;مرض (mariḍa);v;hastalanmak
+1658;أصيب (uṣība);v;yaralanmak
+1659;نزف (nazafa);v;kanamak
+1660;سعل (saʿala);v;öksürmek
+1661;عطس (ʿaṭasa);v;hapşırmak
+1662;تثاءب (tathā'aba);v;esnemek
+1663;شخر (shakhara);v;horlamak
+1664;ارتجف (irtajafa);v;titremek
+1665;أغمي عليه (ughmiya ʿalayhi);v;bayılmak
+1666;أطعم (aṭʿama);v;beslemek
+1667;ربى (rabbā);v;yetiştirmek (çocuk)
+1668;درب (darraba);v;eğitmek
+1669;دون (dawwana);v;not almak
+1670;سطر (saṭṭara);v;altını çizmek
+1671;صحح (ṣaḥḥaḥa);v;düzeltmek (hata)
+1672;أثبت (athbata);v;kanıtlamak
+1673;اكتشف (iktashafa);v;keşfetmek
+1674;اخترع (ikhtaraʿa);v;icat etmek
+1675;حلل (ḥallala);v;analiz etmek
+1676;حسب (ḥasaba);v;hesaplamak
+1677;صنف (ṣannafa);v;sınıflandırmak
+1678;صوت (ṣawwata);v;oy vermek
+1679;تقدم (taqaddama);v;başvurmak
+1680;وظف (waẓẓafa);v;işe almak
+1681;استقال (istaqāla);v;istifa etmek
+1682;تقاعد (taqāʿada);v;emekli olmak
+1683;استثمر (istathmara);v;yatırım yapmak
+1684;اقترض (iqtaraḍa);v;borç almak
+1685;سدد (saddada);v;geri ödemek
+1686;وقع (waqqaʿa);v;imzalamak
+1687;صادق (ṣādaqa);v;onaylamak
+1688;ألغى (alghā);v;iptal etmek
+1689;أجل (ajjala);v;ertelemek
+1690;سلم (sallama);v;teslim etmek
+1691;أكمل (akmala);v;tamamlamak
+1692;نجح (najaḥa);v;başarmak
+1693;فشل (fashila);v;başarısız olmak
+1694;استسلم (istaslama);v;vazgeçmek
+1695;تحمل (taḥammala);v;katlanmak
+1696;استعجل (istaʿjala);v;acele etmek
+1697;تأخر (ta'akhkhara);v;geç kalmak
+1698;ضل (ḍalla);v;yolunu kaybetmek
+1699;ظهر (ẓahara);v;ortaya çıkmak
+1700;اختفى (ikhtafā);v;kaybolmak (gözden)
+1701;وجد (wujida);v;var olmak
+1702;انتمى (intamā);v;ait olmak
+1703;احتوى (iḥtawā);v;içermek
+1704;اعتمد (iʿtamada);v;bağlı olmak
+1705;أثر (aththara);v;etkilemek
+1706;سبب (sabbaba);v;neden olmak
+1707;حل (ḥalla);v;çözmek
+1708;طبق (ṭabbaqa);v;uygulamak
+1709;ثبت (thabbata);v;kurmak (program)
+1710;شغل (shaghghala);v;açmak (cihaz)
+1711;أطفأ (aṭfa'a);v;kapatmak (cihaz)
+1712;شحن (shaḥana);v;şarj etmek
+1713;سجل (sajjala);v;kaydolmak / kayıt yapmak (ses, video)
+1714;سجل الدخول (sajjala ad-dukhūl);v;giriş yapmak (hesap)
+1715;حدث (ḥaddatha);v;güncellemek
+1716;نسخ (nasakha);v;kopyalamak
+1717;لصق (laṣaqa);v;yapıştırmak
+1718;كتب على الحاسوب (kataba ʿalā al-ḥāsūb);v;klavyede yazmak
+1719;شاهد (shāhada);v;izlemek
+1720;صور (ṣawwara);v;fotoğraf çekmek
+1721;دهن (dahana);v;boyamak
+1722;خاط (khāṭa);v;dikiş dikmek
+1723;حاك (ḥāka);v;örmek
+1724;تبرع (tabarraʿa);v;bağışlamak (para)
+1725;طلب (ṭalaba);v;sipariş vermek
+1726;ساوم (sāwama);v;pazarlık yapmak
+1727;أرجع (arjaʿa);v;iade etmek
+1728;جرب (jarraba);v;giyip denemek
+1729;ركن (rakana);v;park etmek
+1730;ركب (rakiba);v;binmek
+1731;نزل من السيارة (nazala min as-sayyāra);v;araçtan inmek
+1732;بدل (baddala);v;aktarma yapmak
+1733;تجول (tajawwala);v;gezmek
+1734;حزم (ḥazama);v;paketlemek
+1735;استضاف (istaḍāfa);v;ağırlamak
+1736;استقر (istaqarra);v;yerleşmek
+1737;هاجر (hājara);v;göç etmek
+1738;تكيف (takayyafa);v;uyum sağlamak
+1739;اعتاد (iʿtāda);v;alışmak
+1740;اشتاق (ishtāqa);v;özlemek
+1741;استحق (istaḥaqqa);v;hak etmek
+1742;التزم (iltazama);v;uymak (kurala)
+1743;خالف (khālafa);v;ihlal etmek
+1744;مزدحم (muzdaḥim);adj;kalabalık
+1745;مهجور (mahjūr);adj;ıssız
+1746;مريح (murīḥ);adj;rahat
+1747;غير مريح (ghayr murīḥ);adj;rahatsız
+1748;كريم (karīm);adj;cömert
+1749;بخيل (bakhīl);adj;cimri
+1750;مخلص (mukhliṣ);adj;sadık
+1751;أناني (anānī);adj;bencil
+1752;متكبر (mutakabbir);adj;kibirli
+1753;متواضع (mutawāḍiʿ);adj;alçakgönüllü
+1754;مجتهد (mujtahid);adj;çalışkan
+1755;صبور (ṣabūr);adj;sabırlı
+1756;نافد الصبر (nāfid aṣ-ṣabr);adj;sabırsız
+1757;حذر (ḥadhir);adj;dikkatli
+1758;مهمل (muhmil);adj;dikkatsiz
+1759;مرح (mariḥ);adj;neşeli
+1760;قلق (qaliq);adj;endişeli
+1761;خائف (khā'if);adj;korkmuş
+1762;متحمس (mutaḥammis);adj;heyecanlı
+1763;مندهش (mundahish);adj;şaşırmış
+1764;محبط (muḥbaṭ);adj;hayal kırıklığına uğramış
+1765;فخور (fakhūr);adj;gururlu
+1766;ممتن (mumtann);adj;minnettar
+1767;عاشق (ʿāshiq);adj;aşık
+1768;سكران (sakrān);adj;sarhoş
+1769;نعسان (naʿsān);adj;uykulu
+1770;عطشان (ʿaṭshān);adj;susamış
+1771;شبعان (shabʿān);adj;tok
+1772;مؤلم (mu'lim);adj;ağrılı
+1773;جريح (jarīḥ);adj;yaralı
+1774;أصلع (aṣlaʿ);adj;kel
+1775;أشقر (ashqar);adj;sarışın
+1776;أسمر (asmar);adj;esmer
+1777;حامل (ḥāmil);adj;hamile
+1778;شائع (shā'iʿ);adj;popüler
+1779;نادر (nādir);adj;nadir
+1780;منتشر (muntashir);adj;yaygın
+1781;نموذجي (namūdhajī);adj;tipik
+1782;رسمي (rasmī);adj;resmi
+1783;ودود (wadūd);adj;samimi
+1784;فريد (farīd);adj;eşsiz
+1785;رئيسي (ra'īsī);adj;ana, başlıca
+1786;أساسي (asāsī);adj;temel
+1787;متقدم (mutaqaddim);adj;ileri (seviye)
+1788;متأكد (muta'akkid);adj;emin
+1789;غير مؤكد (ghayr mu'akkad);adj;belirsiz
+1790;سري (sirrī);adj;gizli
+1791;قانوني (qānūnī);adj;yasal
+1792;غير قانوني (ghayr qānūnī);adj;yasadışı
+1793;عادل (ʿādil);adj;adil
+1794;ظالم (ẓālim);adj;haksız
+1795;مقدس (muqaddas);adj;kutsal
+1796;تاريخي (tārīkhī);adj;tarihi
+1797;سياسي (siyāsī);adj;siyasi
+1798;اقتصادي (iqtiṣādī);adj;ekonomik
+1799;اجتماعي (ijtimāʿī);adj;sosyal
+1800;ثقافي (thaqāfī);adj;kültürel
+1801;علمي (ʿilmī);adj;bilimsel
+1802;طبيعي (ṭabīʿī);adj;doğal
+1803;اصطناعي (iṣṭināʿī);adj;yapay
+1804;رقمي (raqmī);adj;dijital
+1805;إلكتروني (iliktrūnī);adj;elektronik
+1806;تلقائي (tilqā'ī);adj;otomatik
+1807;مجاني (majjānī);adj;ücretsiz
+1808;متاح (mutāḥ);adj;mevcut (elde var)
+1809;ناقص (nāqiṣ);adj;eksik
+1810;زائد (zā'id);adj;fazladan
+1811;مفقود (mafqūd);adj;kayıp
+1812;مكسور (maksūr);adj;kırık
+1813;متين (matīn);adj;sağlam
+1814;موثوق (mawthūq);adj;güvenilir
+1815;مفيد (mufīd);adj;faydalı
+1816;عديم الفائدة (ʿadīm al-fā'ida);adj;faydasız
+1817;ضار (ḍārr);adj;zararlı
+1818;فعال (faʿʿāl);adj;etkili
+1819;ناجح (nājiḥ);adj;başarılı
+1820;فاخر (fākhir);adj;lüks
+1821;ملون (mulawwan);adj;renkli
+1822;لامع (lāmiʿ);adj;parlak
+1823;شاحب (shāḥib);adj;soluk
+1824;شفاف (shaffāf);adj;şeffaf
+1825;رقيق (raqīq);adj;ince (kalınlık)
+1826;محكم (muḥkam);adj;sıkı
+1827;فضفاض (faḍfāḍ);adj;gevşek
+1828;مدبب (mudabbab);adj;sivri
+1829;أملس (amlas);adj;pürüzsüz
+1830;خشن (khashin);adj;pürüzlü
+1831;مربع (murabbaʿ);adj;kare
+1832;مناسب (munāsib);adj;uygun
+1833;غير مناسب (ghayr munāsib);adj;uygunsuz
+1834;إلزامي (ilzāmī);adj;zorunlu
+1835;اختياري (ikhtiyārī);adj;isteğe bağlı
+1836;عاجل (ʿājil);adj;acil
+1837;متوحش (mutawaḥḥish);adj;vahşi
+1838;أليف (alīf);adj;evcil
+1839;سام (sāmm);adj;zehirli
+1840;عار (ʿārin);adj;çıplak
+1841;مستيقظ (mustayqiẓ);adj;uyanık
+1842;معروف (maʿrūf);adj;bilinen
+1843;مجهول (majhūl);adj;bilinmeyen
+1844;واقعي (wāqiʿī);adj;gerçekçi
+1845;إيجابي (ījābī);adj;olumlu
+1846;سلبي (salbī);adj;olumsuz
+1847;متساو (mutasāwin);adj;eşit
+1848;مستقل (mustaqill);adj;bağımsız
+1849;نشيط (nashīṭ);adj;aktif
+1850;خامل (khāmil);adj;pasif
+1851;مؤقت (mu'aqqat);adj;geçici
+1852;دائم (dā'im);adj;kalıcı
+1853;لانهائي (lānihā'ī);adj;sonsuz
+1854;كاف (kāfin);adj;yeterli
+1855;مفرط (mufriṭ);adj;aşırı
+1856;محظوظ (maḥẓūẓ);adj;şanslı
+1857;سيئ الحظ (sayyi' al-ḥaẓẓ);adj;şanssız
+1858;بريء (barī');adj;masum
+1859;مذنب (mudhnib);adj;suçlu
+1860;موهوب (mawhūb);adj;yetenekli
+1861;ليلة أمس (laylat ams);adv;dün gece
+1862;الليلة (al-layla);adv;bu gece
+1863;غدا صباحا (ghadan ṣabāḥan);adv;yarın sabah
+1864;بعد غد (baʿd ghad);adv;öbür gün
+1865;أول أمس (awwal ams);adv;evvelsi gün
+1866;الأسبوع الماضي (al-usbūʿ al-māḍī);adv;geçen hafta
+1867;الأسبوع القادم (al-usbūʿ al-qādim);adv;gelecek hafta
+1868;العام الماضي (al-ʿām al-māḍī);adv;geçen yıl
+1869;العام القادم (al-ʿām al-qādim);adv;gelecek yıl
+1870;حاليا (ḥāliyyan);adv;şu anda
+1871;حينئذ (ḥīna'idhin);adv;o zaman
+1872;مرة (marra);adv;bir kez
+1873;مرتين (marratayn);adv;iki kez
+1874;نادرا (nādiran);adv;nadiren
+1875;كل يوم (kull yawm);adv;her gün
+1876;ليس بعد (laysa baʿdu);adv;henüz değil
+1877;لم يعد (lam yaʿud);adv;artık değil
+1878;أولا (awwalan);adv;ilk önce
+1879;ثم (thumma);adv;ardından
+1880;في النهاية (fī an-nihāya);adv;en son
+1881;باستمرار (bi-stimrār);adv;sürekli
+1882;تدريجيا (tadrījiyyan);adv;yavaş yavaş
+1883;بهدوء (bi-hudū');adv;sessizce
+1884;بصوت عال (bi-ṣawt ʿālin);adv;yüksek sesle
+1885;بسهولة (bi-suhūla);adv;kolayca
+1886;بصعوبة (bi-ṣuʿūba);adv;zorlukla
+1887;لحسن الحظ (li-ḥusn al-ḥaẓẓ);adv;neyse ki
+1888;بوضوح (bi-wuḍūḥ);adv;açıkça
+1889;كليا (kulliyyan);adv;tamamen
+1890;جزئيا (juz'iyyan);adv;kısmen
+1891;في الغالب (fī al-ghālib);adv;çoğunlukla
+1892;من قبل (min qabl);adv;daha önce
+1893;لاحقا (lāḥiqan);adv;daha sonra
+1894;منذ ذلك الحين (mundhu dhālika al-ḥīn);adv;o zamandan beri
+1895;حتى الآن (ḥattā al-ān);adv;şimdiye kadar
+1896;إلى الداخل (ilā ad-dākhil);adv;içeri (yön)
+1897;إلى الخارج (ilā al-khārij);adv;dışarı (yön)
+1898;إلى الأعلى (ilā al-aʿlā);adv;yukarı (yön)
+1899;إلى الأسفل (ilā al-asfal);adv;aşağı (yön)
+1900;إلى الوراء (ilā al-warā');adv;geri (yön)
+1901;إلى الأمام (ilā al-amām);adv;ileri (yön)
+1902;مقابل (muqābil);adv;karşısında
+1903;حول (ḥawla);adv;etrafında
+1904;على طول (ʿalā ṭūl);prep;boyunca
+1905;حتى (ḥattā);prep;-e kadar
+1906;منذ (mundhu);prep;-den beri
+1907;خلال (khilāl);prep;sırasında
+1908;رغم (raghma);prep;-e rağmen
+1909;بدلا من (badalan min);prep;yerine
+1910;ما عدا (mā ʿadā);prep;hariç
+1911;وفقا ل (wafqan li);prep;-e göre
+1912;بفضل (bi-faḍl);prep;sayesinde
+1913;بينما (baynamā);conj;-ken
+1914;كأن (ka'anna);conj;sanki
+1915;حتى لو (ḥattā law);conj;-sa bile
+1916;وإلا (wa-illā);conj;aksi halde
+1917;لكي (likay);conj;-sın diye
+1918;أحسنت (aḥsanta);int;aferin
+1919;مبروك (mabrūk);int;tebrikler
+1920;حظا سعيدا (ḥaẓẓan saʿīdan);int;iyi şanslar
+1921;بالهناء والشفاء (bil-hanā' wash-shifā');int;afiyet olsun
+1922;سلامتك (salāmtak);int;geçmiş olsun
+1923;انتبه (intabih);int;dikkat et
+1924;النجدة (an-najda);int;imdat
+1925;في صحتك (fī ṣiḥḥatik);int;şerefe
+1926;الله يعطيك العافية (allāh yaʿṭīk al-ʿāfiya);int;kolay gelsin
+1927;أراك لاحقا (arāka lāḥiqan);int;görüşürüz
+1928;كيف حالك (kayfa ḥāluk);int;nasılsın
+1929;أنا بخير (anā bi-khayr);int;iyiyim
+1930;عفوا (ʿafwan);int;rica ederim
+1931;لا أفهم (lā afham);int;anlamıyorum
+1932;أعد من فضلك (aʿid min faḍlik);int;tekrar eder misiniz
+1933;ما أجمل (mā ajmal);int;ne güzel
+1934;رائع (rā'iʿ);int;harika
+1935;يا للأسف (yā lil-asaf);int;ne yazık
+1936;هيا (hayyā);int;hadi
+1937;قف (qif);int;dur
+1938;عدد زوجي (ʿadad zawjī);num;çift sayı
+1939;عدد فردي (ʿadad fardī);num;tek sayı
+1940;دزينة (duzzīna);num;düzine
+1941;ربع (rubʿ);num;çeyrek
+1942;واحد ونصف (wāḥid wa-niṣf);num;bir buçuk
+1943;رابع (rābiʿ);num;dördüncü
+1944;خامس (khāmis);num;beşinci
+1945;عاشر (ʿāshir);num;onuncu
+1946;مليار (milyār);num;milyar
+1947;مجتمع (mujtamaʿ);n;toplum
+1948;سكان (sukkān);n;nüfus
+1949;ديمقراطية (dīmuqrāṭiyya);n;demokrasi
+1950;جمهورية (jumhūriyya);n;cumhuriyet
+1951;حزب (ḥizb);n;siyasi parti
+1952;صوت انتخابي (ṣawt intikhābī);n;oy
+1953;وزير (wazīr);n;bakan
+1954;برلمان (barlamān);n;meclis
+1955;دستور (dustūr);n;anayasa
+1956;علم (ʿalam);n;bayrak
+1957;إمبراطورية (imbarāṭūriyya);n;imparatorluk
+1958;ثورة (thawra);n;devrim
+1959;استقلال (istiqlāl);n;bağımsızlık
+1960;نصر (naṣr);n;zafer
+1961;هزيمة (hazīma);n;yenilgi
+1962;بطل (baṭal);n;kahraman / şampiyon
+1963;قائد (qā'id);n;lider
+1964;حارس (ḥāris);n;güvenlik görevlisi
+1965;شاهد (shāhid);n;tanık
+1966;دليل (dalīl);n;kanıt
+1967;عقوبة (ʿuqūba);n;ceza
+1968;غرامة (gharāma);n;para cezası
+1969;جائزة (jā'iza);n;ödül
+1970;ميدالية (mīdāliyya);n;madalya
+1971;سباق (sibāq);n;yarış
+1972;لاعب (lāʿib);n;oyuncu (spor)
+1973;حكم (ḥakam);n;hakem
+1974;مدرب (mudarrib);n;antrenör
+1975;كرة السلة (kurat as-salla);n;basketbol
+1976;الكرة الطائرة (al-kura aṭ-ṭā'ira);n;voleybol
+1977;التنس (at-tinis);n;tenis
+1978;سباحة (sibāḥa);n;yüzme (spor)
+1979;جري (jary);n;koşu
+1980;مصارعة (muṣāraʿa);n;güreş
+1981;ملاكمة (mulākama);n;boks
+1982;تزلج (tazalluj);n;kayak
+1983;الألعاب الأولمبية (al-alʿāb al-ūlimbiyya);n;olimpiyatlar
+1984;بطولة (buṭūla);n;turnuva
+1985;مشجع (mushajjiʿ);n;taraftar
+1986;صلاة (ṣalāh);n;dua
+1987;إيمان (īmān);n;inanç
+1988;جنة (janna);n;cennet
+1989;جهنم (jahannam);n;cehennem
+1990;ملاك (malāk);n;melek
+1991;شيطان (shayṭān);n;şeytan
+1992;عيد (ʿīd);n;bayram
+1993;رأس السنة (ra's as-sana);n;yılbaşı
+1994;أخلاق (akhlāq);n;ahlak
+1995;عدالة (ʿadāla);n;adalet
+1996;مساواة (musāwāh);n;eşitlik
+1997;مسؤولية (mas'ūliyya);n;sorumluluk
+1998;التزام (iltizām);n;yükümlülük
+1999;هوية (huwiyya);n;kimlik
+2000;بطاقة هوية (biṭāqat huwiyya);n;kimlik kartı
+2001;دخل (dakhl);n;gelir
+2002;مصروف (maṣrūf);n;gider
+2003;ثروة (tharwa);n;zenginlik
+2004;فقر (faqr);n;yoksulluk
+2005;تأمين (ta'mīn);n;sigorta
+2006;كدح (kadḥ);n;emek
+2007;إضراب (iḍrāb);n;grev
+2008;منظمة (munaẓẓama);n;örgüt
+2009;مؤسسة (mu'assasa);n;kurum
+2010;نظام (niẓām);n;sistem
+2011;بنية (binya);n;yapı
+2012;عملية (ʿamaliyya);n;süreç
+2013;استراتيجية (istirātījiyya);n;strateji
+2014;فرصة (furṣa);n;fırsat
+2015;مخاطرة (mukhāṭara);n;risk
+2016;أزمة (azma);n;kriz
+2017;صراع (ṣirāʿ);n;çatışma
+2018;اتفاق (ittifāq);n;anlaşma
+2019;نقاش (niqāsh);n;münakaşa
+2020;رأي (ra'y);n;görüş
+2021;نصيحة (naṣīḥa);n;öğüt
+2022;انتقاد (intiqād);n;eleştiri
+2023;شكوى (shakwā);n;şikayet (dilekçe)
+2024;حل (ḥall);n;çözüm
+2025;نية (niyya);n;niyet
+2026;أمنية (umniya);n;dilek
+2027;تفضيل (tafḍīl);n;tercih
+2028;واقعة (wāqiʿa);n;olgu
+2029;سر (sirr);n;sır
+2030;وعد (waʿd);n;vaat
+2031;نكتة (nukta);n;şaka
+2032;تهديد (tahdīd);n;tehdit
+2033;هجوم (hujūm);n;saldırı
+2034;عنف (ʿunf);n;şiddet
+2035;ضحية (ḍaḥiyya);n;kurban
+2036;لاجئ (lāji');n;mülteci
+2037;متطوع (mutaṭawwiʿ);n;gönüllü
+2038;تبرع (tabarruʿ);n;bağış
+2039;حفل (ḥafl);n;tören
+2040;تراث (turāth);n;miras
+2041;حضارة (ḥaḍāra);n;medeniyet
+2042;جيل (jīl);n;nesil
+2043;إنسانية (insāniyya);n;insanlık
