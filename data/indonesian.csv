@@ -62,7 +62,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 61;buruk;adv;kötü (şekilde) / kötü
 62;bersama;adv;birlikte
 63;dini;adv;erken
-64;terlambat;adv;geç
+64;terlambat;adv;geç / geç kalmak
 65;lagi;adv;yine, tekrar
 66;cepat;adv;çabuk, hızlıca / hızlı
 67;pelan-pelan;adv;yavaşça
@@ -91,7 +91,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 90;selamat tidur;int;iyi geceler
 91;selamat tinggal;int;hoşça kal
 92;terima kasih;int;teşekkürler
-93;tolong;int;lütfen
+93;tolong;int;lütfen / imdat
 94;maaf;int;özür dilerim
 95;oke;int;tamam
 96;selamat datang;int;hoş geldiniz
@@ -116,7 +116,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 115;memberi;v;vermek
 116;mengambil;v;almak
 117;menaruh;v;koymak
-118;menemukan;v;bulmak
+118;menemukan;v;bulmak / keşfetmek
 119;mencari;v;aramak
 120;kehilangan;v;kaybetmek
 121;menang;v;kazanmak (yarış)
@@ -141,7 +141,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 140;membenci;v;nefret etmek
 141;makan;v;yemek
 142;minum;v;içmek
-143;tidur;v;uyumak
+143;tidur;v;uyumak / uyku
 144;bangun;v;uyanmak
 145;bangkit;v;kalkmak
 146;duduk;v;oturmak (sandalye)
@@ -160,8 +160,8 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 159;membuka;v;açmak
 160;menutup;v;kapatmak
 161;mulai;v;başlamak
-162;menyelesaikan;v;bitirmek
-163;berhenti;v;durmak
+162;menyelesaikan;v;bitirmek / tamamlamak
+163;berhenti;v;durmak / dur
 164;melanjutkan;v;devam etmek
 165;mengubah;v;değiştirmek
 166;memakai;v;kullanmak / giymek
@@ -175,9 +175,9 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 174;memegang;v;tutmak
 175;melempar;v;atmak
 176;jatuh;v;düşmek
-177;memecahkan;v;kırmak
+177;memecahkan;v;kırmak / çözmek
 178;membangun;v;yapmak, inşa etmek
-179;menciptakan;v;yaratmak
+179;menciptakan;v;yaratmak / icat etmek
 180;menggambar;v;çizmek
 181;bermain;v;oynamak
 182;bernyanyi;v;şarkı söylemek
@@ -224,19 +224,19 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 223;membutuhkan;v;ihtiyaç duymak
 224;lebih suka;v;tercih etmek
 225;berharap;v;ummak
-226;takut;v;korkmak
-227;khawatir;v;endişelenmek
+226;takut;v;korkmak / korkmuş
+227;khawatir;v;endişelenmek / endişeli
 228;beristirahat;v;dinlenmek
 229;merokok;v;sigara içmek
 230;menyewa;v;kiralamak
-231;memesan;v;rezervasyon yapmak
+231;memesan;v;rezervasyon yapmak / sipariş vermek
 232;menerjemahkan;v;çevirmek (dil)
 233;menjelaskan;v;açıklamak
 234;mengulang;v;tekrarlamak
-235;menghitung;v;saymak
+235;menghitung;v;saymak / hesaplamak
 236;mengukur;v;ölçmek
 237;memeriksa;v;kontrol etmek
-238;memperbaiki;v;düzeltmek, tamir etmek
+238;memperbaiki;v;düzeltmek, tamir etmek / düzeltmek (hata)
 239;memotong;v;kesmek
 240;mendorong;v;itmek
 241;menarik;v;çekmek / ilginç
@@ -245,7 +245,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 244;melewati;v;geçmek
 245;menyeberang;v;geçmek, karşıya geçmek
 246;memanjat;v;tırmanmak
-247;turun;v;inmek
+247;turun;v;inmek / araçtan inmek
 248;orang;n;insan, kişi
 249;orang-orang;n;insanlar
 250;pria;n;adam, erkek
@@ -300,7 +300,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 299;lutut;n;diz
 300;jantung;n;kalp
 301;darah;n;kan
-302;kulit;n;deri, cilt
+302;kulit;n;deri, cilt / deri (malzeme)
 303;tulang;n;kemik
 304;kesehatan;n;sağlık
 305;penyakit;n;hastalık
@@ -320,7 +320,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 319;pintu;n;kapı
 320;jendela;n;pencere
 321;dinding;n;duvar
-322;lantai;n;zemin, yer
+322;lantai;n;zemin, yer / kat
 323;langit-langit;n;tavan
 324;tangga;n;merdiven
 325;kebun;n;bahçe
@@ -406,7 +406,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 405;tagihan;n;hesap (restoran)
 406;tip;n;bahşiş
 407;kelaparan;n;açlık
-408;haus;n;susuzluk
+408;haus;n;susuzluk / susamış
 409;kota;n;şehir
 410;desa;n;köy
 411;negara;n;ülke
@@ -696,7 +696,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 695;pintar;adj;akıllı
 696;bodoh;adj;aptal
 697;ramah;adj;nazik
-698;kasar;adj;kaba
+698;kasar;adj;kaba / pürüzlü
 699;jujur;adj;dürüst
 700;berani;adj;cesur
 701;malas;adj;tembel
@@ -717,7 +717,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 716;aneh;adj;garip, tuhaf
 717;berbeda;adj;farklı
 718;mirip;adj;benzer
-719;sederhana;adj;kolay, basit
+719;sederhana;adj;kolay, basit / sade
 720;rumit;adj;karmaşık
 721;sunyi;adj;sessiz
 722;berisik;adj;gürültülü
@@ -736,16 +736,16 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 735;terbuka;adj;açık
 736;tertutup;adj;kapalı
 737;pertama;adj;ilk
-738;terakhir;adj;son
+738;terakhir;adj;son / en son
 739;berikutnya;adj;sonraki
 740;sendiri;adj;tek, yalnız
 741;utuh;adj;bütün, tam
 742;sempurna;adj;mükemmel
-743;terkenal;adj;ünlü
+743;terkenal;adj;ünlü / bilinen
 744;lokal;adj;yerel
 745;asing;adj;yabancı
 746;khusus;adj;özel
-747;umum;adj;genel
+747;umum;adj;genel / yaygın
 748;publik;adj;kamu, halka açık
 749;pribadi;adj;özel, kişisel
 750;merah;adj;kırmızı
@@ -815,7 +815,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 814;buruh;n;işçi
 815;pemadam kebakaran;n;itfaiyeci
 816;dokter gigi;n;diş hekimi
-817;mesin;n;makine
+817;mesin;n;makine / motor
 818;alat;n;alet
 819;bel pintu;n;kapı zili
 820;energi;n;enerji
@@ -826,7 +826,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 825;bau;n;koku
 826;rasa;n;tat
 827;bentuk;n;biçim, şekil
-828;ukuran;n;boyut
+828;ukuran;n;boyut / beden (giysi)
 829;meter;n;metre
 830;kilogram;n;kilo
 831;liter;n;litre
@@ -853,7 +853,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 852;hubungan;n;ilişki
 853;kebutuhan;n;ihtiyaç
 854;perasaan;n;duygu
-855;pikiran;n;düşünce
+855;pikiran;n;düşünce / zihin
 856;kenangan;n;anı, hatıra
 857;masa depan;n;gelecek
 858;masa lalu;n;geçmiş
@@ -926,7 +926,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 925;mengucapkan selamat;v;tebrik etmek
 926;bersenang-senang;v;eğlenmek
 927;bosan;v;sıkılmak
-928;terkejut;v;şaşırmak
+928;terkejut;v;şaşırmak / şaşırmış
 929;tertarik;v;ilgilenmek
 930;merawat;v;bakmak (birine)
 931;mengawasi;v;denetlemek
@@ -947,7 +947,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 946;tiba-tiba;adv;aniden
 947;mutlak;adv;kesinlikle
 948;barangkali;adv;muhtemelen
-949;cukup;adv;yeterince
+949;cukup;adv;yeterince / yeterli
 950;terlalu;adv;fazla, çok fazla
 951;di mana-mana;adv;her yerde
 952;tidak di mana pun;adv;hiçbir yerde
@@ -958,7 +958,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 957;dengan tergesa-gesa;adv;hızla
 958;dengan hati-hati;adv;dikkatlice
 959;semata-mata;adv;yalnızca, sırf
-960;sebelumnya;adv;önceden / eski, önceki
+960;sebelumnya;adv;önceden / eski, önceki / daha önce
 961;sementara itu;adv;bu arada
 962;selain itu;adv;ayrıca, üstelik
 963;jadi;adv;bu yüzden
@@ -967,7 +967,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 966;lajang;adj;bekar
 967;tenang;adj;sakin
 968;gugup;adj;gergin
-969;cemburu;adj;kıskanç
+969;cemburu;adj;kıskanç / kıskanmak
 970;pemalu;adj;utangaç
 971;lucu;adj;komik
 972;serius;adj;ciddi
@@ -984,5 +984,1034 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 983;nasional;adj;ulusal
 984;harian;adj;günlük
 985;mingguan;adj;haftalık
-986;saat ini;adj;mevcut, şu anki
+986;saat ini;adj;mevcut, şu anki / şu anda
 987;jelas;adj;açık, net
+988;dahi;n;alın
+989;pipi;n;yanak
+990;dagu;n;çene
+991;bibir;n;dudak
+992;alis;n;kaş
+993;bulu mata;n;kirpik
+994;janggut;n;sakal
+995;kumis;n;bıyık
+996;tenggorokan;n;boğaz
+997;pergelangan tangan;n;bilek
+998;siku;n;dirsek
+999;kuku;n;tırnak
+1000;ibu jari;n;başparmak
+1001;pinggang;n;bel
+1002;pinggul;n;kalça
+1003;pergelangan kaki;n;ayak bileği
+1004;tumit;n;topuk
+1005;otak;n;beyin
+1006;paru-paru;n;akciğer
+1007;hati;n;karaciğer
+1008;ginjal;n;böbrek
+1009;otot;n;kas
+1010;pembuluh darah;n;damar
+1011;detak jantung;n;kalp atışı
+1012;napas;n;nefes
+1013;air mata;n;gözyaşı
+1014;keringat;n;ter
+1015;demam;n;ateş (hastalık)
+1016;batuk;n;öksürük
+1017;pilek;n;soğuk algınlığı
+1018;flu;n;grip
+1019;sakit kepala;n;baş ağrısı
+1020;luka;n;yara
+1021;operasi;n;ameliyat
+1022;pasien;n;hasta (kişi)
+1023;pengobatan;n;tedavi
+1024;resep;n;reçete
+1025;pil;n;hap
+1026;vaksin;n;aşı
+1027;ambulans;n;ambulans
+1028;keadaan darurat;n;acil durum
+1029;kelelahan;n;yorgunluk
+1030;stres;n;stres
+1031;diet;n;diyet
+1032;latihan;n;egzersiz
+1033;tinggi badan;n;boy (uzunluk)
+1034;kegembiraan;n;sevinç
+1035;kesedihan;n;üzüntü
+1036;kemarahan;n;öfke
+1037;kecemburuan;n;kıskançlık
+1038;rasa malu;n;utanç
+1039;kebanggaan;n;gurur
+1040;rasa ingin tahu;n;merak
+1041;kesabaran;n;sabır
+1042;kepercayaan;n;güven
+1043;kekhawatiran;n;endişe
+1044;kesepian;n;yalnızlık
+1045;keberanian;n;cesaret
+1046;kebencian;n;nefret
+1047;keterkejutan;n;şaşkınlık
+1048;kesenangan;n;keyif, zevk
+1049;penyesalan;n;pişmanlık
+1050;rasa syukur;n;minnettarlık
+1051;rasa hormat;n;saygı
+1052;kepribadian;n;kişilik
+1053;kebiasaan;n;alışkanlık
+1054;perilaku;n;davranış
+1055;suasana hati;n;ruh hali
+1056;tawa;n;kahkaha
+1057;senyuman;n;gülümseme
+1058;ciuman;n;öpücük
+1059;pelukan;n;sarılma
+1060;jiwa;n;ruh
+1061;ingatan;n;hafıza
+1062;kecerdasan;n;zeka
+1063;kebijaksanaan;n;bilgelik
+1064;bakat;n;yetenek
+1065;keterampilan;n;beceri
+1066;kecantikan;n;güzellik
+1067;masa muda;n;gençlik
+1068;usia tua;n;yaşlılık
+1069;masa kecil;n;çocukluk
+1070;kelahiran;n;doğum
+1071;pernikahan;n;düğün
+1072;pemakaman;n;cenaze
+1073;tunangan;n;nişanlı (erkek)
+1074;pengantin perempuan;n;gelin
+1075;janda;n;dul (kadın)
+1076;orang dewasa;n;yetişkin
+1077;remaja;n;ergen
+1078;lansia;n;yaşlı (kişi)
+1079;cucu;n;torun
+1080;keponakan;n;yeğen
+1081;ibu mertua;n;kayınvalide
+1082;kembar;n;ikiz
+1083;kerabat;n;akraba
+1084;pacar;n;sevgili
+1085;musuh;n;düşman
+1086;bantal;n;yastık
+1087;selimut;n;battaniye
+1088;seprai;n;çarşaf
+1089;rak;n;raf
+1090;laci;n;çekmece
+1091;gembok;n;kilit
+1092;stopkontak;n;priz
+1093;bola lampu;n;ampul
+1094;pendingin ruangan;n;klima
+1095;pemanas;n;kalorifer
+1096;mesin cuci;n;çamaşır makinesi
+1097;mesin pencuci piring;n;bulaşık makinesi
+1098;penyedot debu;n;elektrikli süpürge
+1099;setrika;n;ütü
+1100;microwave;n;mikrodalga fırın
+1101;kompor;n;ocak (mutfak)
+1102;wajan;n;tava
+1103;ketel;n;çaydanlık
+1104;mangkuk;n;kase
+1105;serbet;n;peçete
+1106;nampan;n;tepsi
+1107;sampah;n;çöp
+1108;tempat sampah;n;çöp kutusu
+1109;ember;n;kova
+1110;sapu;n;süpürge
+1111;sikat;n;fırça
+1112;sisir;n;tarak
+1113;pasta gigi;n;diş macunu
+1114;sampo;n;şampuan
+1115;pancuran;n;duş
+1116;bak mandi;n;küvet
+1117;wastafel;n;lavabo
+1118;kloset;n;klozet
+1119;keran;n;musluk
+1120;tisu toilet;n;tuvalet kağıdı
+1121;lilin;n;mum
+1122;korek api;n;kibrit
+1123;pemantik;n;çakmak
+1124;gunting;n;makas
+1125;jarum;n;iğne
+1126;benang;n;iplik
+1127;kancing;n;düğme
+1128;ritsleting;n;fermuar
+1129;saku;n;cep
+1130;ikat pinggang;n;kemer
+1131;dasi;n;kravat
+1132;sarung tangan;n;eldiven
+1133;syal;n;atkı
+1134;mantel;n;palto
+1135;sweter;n;kazak
+1136;celana pendek;n;şort
+1137;pakaian dalam;n;iç çamaşırı
+1138;piyama;n;pijama
+1139;sandal jepit;n;terlik
+1140;sepatu bot;n;çizme
+1141;ransel;n;sırt çantası
+1142;payung;n;şemsiye
+1143;kalung;n;kolye
+1144;anting;n;küpe
+1145;jam tangan;n;kol saati
+1146;parfum;n;parfüm
+1147;riasan;n;makyaj
+1148;kamera;n;fotoğraf makinesi
+1149;baterai;n;pil
+1150;pengisi daya;n;şarj aleti
+1151;earphone;n;kulaklık
+1152;kabel;n;kablo
+1153;layar;n;ekran
+1154;papan ketik;n;klavye
+1155;tetikus;n;fare (bilgisayar)
+1156;printer;n;yazıcı
+1157;radio;n;radyo
+1158;remote;n;kumanda
+1159;kalender;n;takvim
+1160;amplop;n;zarf
+1161;perangko;n;pul
+1162;paket;n;koli
+1163;tali;n;ip
+1164;paku;n;çivi
+1165;palu;n;çekiç
+1166;obeng;n;tornavida
+1167;tangga lipat;n;el merdiveni
+1168;batu bata;n;tuğla
+1169;kayu;n;tahta (malzeme)
+1170;kaca;n;cam
+1171;besi;n;demir
+1172;emas;n;altın
+1173;perak;n;gümüş
+1174;plastik;n;plastik
+1175;logam;n;metal
+1176;kain;n;kumaş
+1177;kapas;n;pamuk
+1178;sutra;n;ipek
+1179;wol;n;yün
+1180;perabot;n;mobilya
+1181;gagang pintu;n;kapı kolu
+1182;balkon;n;balkon
+1183;ruang bawah tanah;n;bodrum
+1184;garasi;n;garaj
+1185;lift;n;asansör
+1186;lorong;n;koridor
+1187;pagar;n;çit
+1188;sewa;n;kira
+1189;tepung;n;un
+1190;adonan;n;hamur
+1191;zaitun;n;zeytin
+1192;minyak zaitun;n;zeytinyağı
+1193;cuka;n;sirke
+1194;saus;n;sos
+1195;rempah;n;baharat
+1196;daun mint;n;nane
+1197;peterseli;n;maydanoz
+1198;kayu manis;n;tarçın
+1199;jahe;n;zencefil
+1200;cabai;n;acı biber
+1201;kacang merah;n;fasulye
+1202;kacang arab;n;nohut
+1203;kacang lentil;n;mercimek
+1204;kacang polong;n;bezelye
+1205;jagung;n;mısır
+1206;gandum;n;buğday
+1207;kubis;n;lahana
+1208;selada;n;marul
+1209;terong;n;patlıcan
+1210;bayam;n;ıspanak
+1211;jamur;n;mantar
+1212;labu;n;bal kabağı
+1213;semangka;n;karpuz
+1214;melon;n;kavun
+1215;pir;n;armut
+1216;persik;n;şeftali
+1217;ceri;n;kiraz
+1218;plum;n;erik
+1219;nanas;n;ananas
+1220;mangga;n;mango
+1221;buah ara;n;incir
+1222;kurma;n;hurma
+1223;delima;n;nar
+1224;kacang hazel;n;fındık
+1225;kacang kenari;n;ceviz
+1226;almond;n;badem
+1227;kacang tanah;n;yer fıstığı
+1228;kismis;n;kuru üzüm
+1229;daging domba;n;kuzu eti
+1230;daging sapi;n;dana eti
+1231;sosis;n;sosis
+1232;bakso;n;köfte
+1233;daging cincang;n;kıyma
+1234;udang;n;karides
+1235;tuna;n;ton balığı
+1236;yogurt;n;yoğurt
+1237;krim;n;krema
+1238;selai;n;reçel
+1239;kue kering;n;kurabiye
+1240;permen;n;şekerleme
+1241;hidangan penutup;n;tatlı (yemek)
+1242;roti lapis;n;sandviç
+1243;pizza;n;pizza
+1244;hamburger;n;hamburger
+1245;kentang goreng;n;patates kızartması
+1246;telur dadar;n;omlet
+1247;sate;n;kebap
+1248;air mineral;n;maden suyu
+1249;minuman bersoda;n;gazoz
+1250;es;n;buz
+1251;irisan;n;dilim
+1252;resep masakan;n;yemek tarifi
+1253;bahan;n;malzeme
+1254;porsi;n;porsiyon
+1255;toko roti;n;fırın (ekmek)
+1256;toko daging;n;kasap
+1257;toko buah;n;manav
+1258;alpukat;n;avokado
+1259;kelapa;n;hindistan cevizi
+1260;aprikot;n;kayısı
+1261;rasberi;n;ahududu
+1262;lobak;n;turp
+1263;seledri;n;kereviz
+1264;brokoli;n;brokoli
+1265;kembang kol;n;karnabahar
+1266;sereal;n;tahıl
+1267;oat;n;yulaf
+1268;ragi;n;maya
+1269;vanili;n;vanilya
+1270;sayap;n;kanat
+1271;talenan;n;kesme tahtası
+1272;tutup;n;kapak
+1273;toples;n;kavanoz
+1274;kaleng;n;konserve kutusu
+1275;kantong plastik;n;poşet
+1276;taplak meja;n;masa örtüsü
+1277;teko;n;sürahi
+1278;camilan;n;atıştırmalık
+1279;minuman;n;içecek
+1280;alkohol;n;alkol
+1281;vegetarian;n;vejetaryen
+1282;suapan;n;lokma
+1283;roti panggang;n;kızarmış ekmek
+1284;panekuk;n;krep
+1285;limun;n;limonata
+1286;kakao;n;kakao
+1287;biji;n;tohum
+1288;kulit buah;n;kabuk
+1289;lingkungan;n;mahalle
+1290;kota kecil;n;kasaba
+1291;ibu kota;n;başkent
+1292;perbatasan;n;sınır
+1293;trotoar;n;kaldırım
+1294;persimpangan;n;kavşak
+1295;lampu lalu lintas;n;trafik ışığı
+1296;penyeberangan;n;yaya geçidi
+1297;tempat parkir;n;otopark
+1298;pom bensin;n;benzin istasyonu
+1299;bensin;n;benzin
+1300;roda;n;tekerlek
+1301;rem;n;fren
+1302;surat izin mengemudi;n;ehliyet
+1303;sepeda motor;n;motosiklet
+1304;truk;n;kamyon
+1305;perahu;n;tekne
+1306;helikopter;n;helikopter
+1307;trem;n;tramvay
+1308;peron;n;peron
+1309;penumpang;n;yolcu
+1310;pilot;n;pilot
+1311;pramugari;n;hostes
+1312;pendaratan;n;iniş (uçak)
+1313;penerbangan;n;uçuş
+1314;bagasi;n;bagaj
+1315;bea cukai;n;gümrük
+1316;visa;n;vize
+1317;pemandu;n;rehber (kişi)
+1318;perkemahan;n;kamp
+1319;tenda;n;çadır
+1320;pemandangan;n;manzara
+1321;monumen;n;anıt
+1322;istana;n;saray
+1323;benteng;n;kale
+1324;menara;n;kule
+1325;kuil;n;tapınak
+1326;patung;n;heykel
+1327;air mancur;n;çeşme
+1328;kebun binatang;n;hayvanat bahçesi
+1329;pusat perbelanjaan;n;alışveriş merkezi
+1330;kasir;n;kasa (ödeme)
+1331;struk;n;fiş
+1332;uang tunai;n;nakit
+1333;kartu kredit;n;kredi kartı
+1334;uang logam;n;bozuk para
+1335;mata uang;n;para birimi
+1336;apoteker;n;eczacı
+1337;penata rambut;n;kuaför
+1338;penjahit;n;terzi
+1339;toko buku;n;kitapçı
+1340;etalase;n;vitrin
+1341;obral;n;indirimli satış
+1342;merek;n;marka
+1343;keranjang;n;sepet
+1344;troli belanja;n;alışveriş arabası
+1345;papan nama;n;tabela
+1346;toilet umum;n;umumi tuvalet
+1347;penyewa;n;kiracı
+1348;pemilik rumah;n;ev sahibi
+1349;penjara;n;hapishane
+1350;balai kota;n;belediye
+1351;kedutaan;n;elçilik
+1352;pabrik;n;fabrika
+1353;gudang;n;depo
+1354;peternakan;n;çiftlik
+1355;stadion;n;stadyum
+1356;pusat kebugaran;n;spor salonu
+1357;kolam renang;n;yüzme havuzu
+1358;kuburan;n;mezarlık
+1359;terowongan;n;tünel
+1360;jalan tol;n;otoyol
+1361;jarak;n;mesafe
+1362;kilometer;n;kilometre
+1363;arah;n;yön
+1364;kecepatan;n;hız
+1365;kedatangan;n;varış
+1366;keberangkatan;n;kalkış
+1367;keterlambatan;n;gecikme
+1368;jadwal;n;tarife (saatler)
+1369;pemesanan;n;rezervasyon
+1370;resepsi;n;resepsiyon
+1371;suvenir;n;hediyelik eşya
+1372;tur;n;tur
+1373;pesisir;n;kıyı
+1374;mercusuar;n;deniz feneri
+1375;reruntuhan;n;harabe
+1376;pencakar langit;n;gökdelen
+1377;bangku;n;bank (oturma)
+1378;kotak pos;n;posta kutusu
+1379;kartu pos;n;kartpostal
+1380;kapten;n;kaptan
+1381;tabir surya;n;güneş kremi
+1382;kacamata hitam;n;güneş gözlüğü
+1383;pariwisata;n;turizm
+1384;luar negeri;n;yurt dışı
+1385;imigran;n;göçmen
+1386;warga negara;n;vatandaş
+1387;planet;n;gezegen
+1388;alam semesta;n;evren
+1389;luar angkasa;n;uzay
+1390;pelangi;n;gökkuşağı
+1391;kilat;n;şimşek
+1392;guntur;n;gök gürültüsü
+1393;kabut;n;sis
+1394;hujan es;n;dolu (yağış)
+1395;gempa bumi;n;deprem
+1396;banjir;n;sel
+1397;kekeringan;n;kuraklık
+1398;gunung berapi;n;volkan
+1399;gurun;n;çöl
+1400;lembah;n;vadi
+1401;gua;n;mağara
+1402;air terjun;n;şelale
+1403;ombak;n;dalga
+1404;batu karang;n;kaya
+1405;debu;n;toz
+1406;lumpur;n;çamur
+1407;benua;n;kıta
+1408;cakrawala;n;ufuk
+1409;matahari terbit;n;gün doğumu
+1410;matahari terbenam;n;gün batımı
+1411;bayangan;n;gölge
+1412;iklim;n;iklim
+1413;lingkungan hidup;n;çevre
+1414;polusi;n;kirlilik
+1415;tumbuhan;n;bitki
+1416;akar;n;kök
+1417;dahan;n;dal
+1418;mawar;n;gül
+1419;tulip;n;lale
+1420;pinus;n;çam
+1421;pohon ek;n;meşe
+1422;pohon palem;n;palmiye
+1423;kaktus;n;kaktüs
+1424;lumut;n;yosun
+1425;sarang burung;n;kuş yuvası
+1426;bulu;n;tüy
+1427;ekor;n;kuyruk (hayvan)
+1428;tanduk;n;boynuz
+1429;cakar;n;pençe
+1430;paruh;n;gaga
+1431;kambing;n;keçi
+1432;keledai;n;eşek
+1433;unta;n;deve
+1434;harimau;n;kaplan
+1435;jerapah;n;zürafa
+1436;zebra;n;zebra
+1437;rusa;n;geyik
+1438;tupai;n;sincap
+1439;landak;n;kirpi
+1440;kura-kura;n;kaplumbağa
+1441;katak;n;kurbağa
+1442;buaya;n;timsah
+1443;hiu;n;köpekbalığı
+1444;paus;n;balina
+1445;lumba-lumba;n;yunus
+1446;gurita;n;ahtapot
+1447;kepiting;n;yengeç
+1448;semut;n;karınca
+1449;laba-laba;n;örümcek
+1450;nyamuk;n;sivrisinek
+1451;cacing;n;solucan
+1452;elang;n;kartal
+1453;burung hantu;n;baykuş
+1454;merpati;n;güvercin
+1455;gagak;n;karga
+1456;burung beo;n;papağan
+1457;ayam jantan;n;horoz
+1458;anak domba;n;kuzu
+1459;anak anjing;n;köpek yavrusu
+1460;anak kucing;n;kedi yavrusu
+1461;hewan peliharaan;n;evcil hayvan
+1462;mata air;n;kaynak (su)
+1463;rawa;n;bataklık
+1464;teluk;n;körfez
+1465;puncak;n;zirve
+1466;dataran;n;ova
+1467;gletser;n;buzul
+1468;kutub;n;kutup
+1469;batu bara;n;kömür
+1470;minyak bumi;n;petrol
+1471;gas;n;gaz
+1472;asap;n;duman
+1473;nyala api;n;alev
+1474;uap;n;buhar
+1475;tetes;n;damla
+1476;sinar matahari;n;güneş ışığı
+1477;spesies;n;tür (canlı)
+1478;kelembapan;n;nem
+1479;derajat;n;derece
+1480;prakiraan cuaca;n;hava tahmini
+1481;semak;n;çalı
+1482;kayu bakar;n;odun
+1483;karang;n;mercan
+1484;mutiara;n;inci
+1485;berlian;n;elmas
+1486;magnet;n;mıknatıs
+1487;wawancara kerja;n;iş görüşmesi
+1488;riwayat hidup;n;özgeçmiş
+1489;kontrak;n;sözleşme
+1490;tanda tangan;n;imza
+1491;dokumen;n;belge
+1492;berkas;n;dosya
+1493;laporan;n;rapor
+1494;proyek;n;proje
+1495;tugas;n;görev
+1496;tenggat waktu;n;son tarih
+1497;manajer;n;müdür
+1498;karyawan;n;çalışan
+1499;pengangguran;n;işsizlik
+1500;pensiun;n;emeklilik
+1501;karier;n;kariyer
+1502;promosi;n;terfi
+1503;keuntungan;n;kâr
+1504;kerugian;n;zarar
+1505;utang;n;borç
+1506;pinjaman;n;banka kredisi
+1507;investasi;n;yatırım
+1508;anggaran;n;bütçe
+1509;saham;n;hisse senedi
+1510;industri;n;sanayi
+1511;perdagangan;n;ticaret
+1512;ekspor;n;ihracat
+1513;impor;n;ithalat
+1514;mahasiswa;n;üniversite öğrencisi
+1515;profesor;n;profesör
+1516;pekerjaan rumah;n;ödev
+1517;nilai;n;not (sınav)
+1518;ijazah;n;diploma
+1519;jurusan;n;bölüm (üniversite)
+1520;mata pelajaran;n;ders konusu
+1521;matematika;n;matematik
+1522;fisika;n;fizik
+1523;kimia;n;kimya
+1524;biologi;n;biyoloji
+1525;geografi;n;coğrafya
+1526;sastra;n;edebiyat
+1527;filsafat;n;felsefe
+1528;kedokteran;n;tıp
+1529;rekayasa;n;mühendislik
+1530;penelitian;n;araştırma
+1531;percobaan;n;deney
+1532;teori;n;teori
+1533;rumus;n;formül
+1534;perhitungan;n;hesaplama
+1535;penjumlahan;n;toplama (matematik)
+1536;program;n;program (bilgisayar)
+1537;aplikasi;n;uygulama (mobil)
+1538;perangkat lunak;n;yazılım
+1539;perangkat keras;n;donanım
+1540;data;n;veri
+1541;kata sandi;n;şifre
+1542;pengguna;n;kullanıcı
+1543;akun;n;hesap (internet)
+1544;situs web;n;web sitesi
+1545;jaringan;n;ağ
+1546;tautan;n;bağlantı (link)
+1547;media sosial;n;sosyal medya
+1548;video;n;video
+1549;ponsel pintar;n;akıllı telefon
+1550;robot;n;robot
+1551;kecerdasan buatan;n;yapay zeka
+1552;teknologi;n;teknoloji
+1553;penemuan;n;icat
+1554;wartawan;n;gazeteci
+1555;wawancara;n;röportaj
+1556;artikel;n;makale
+1557;judul;n;başlık
+1558;acara televisi;n;televizyon programı
+1559;saluran;n;kanal
+1560;penonton;n;izleyici
+1561;penyair;n;şair
+1562;puisi;n;şiir
+1563;novel;n;roman
+1564;pelukis;n;ressam
+1565;musisi;n;müzisyen
+1566;penyanyi;n;şarkıcı
+1567;aktor;n;oyuncu (film)
+1568;sutradara;n;yönetmen
+1569;panggung;n;sahne
+1570;konser;n;konser
+1571;pameran;n;sergi
+1572;alat musik;n;müzik aleti
+1573;gitar;n;gitar
+1574;piano;n;piyano
+1575;drum;n;davul
+1576;biola;n;keman
+1577;melodi;n;melodi
+1578;tarian;n;dans
+1579;gambar;n;çizim
+1580;hobi;n;hobi
+1581;teka-teki;n;bulmaca
+1582;catur;n;satranç
+1583;mainan;n;oyuncak
+1584;kamus;n;sözlük
+1585;tata bahasa;n;dil bilgisi
+1586;terjemahan;n;çeviri
+1587;memperingatkan;v;uyarmak
+1588;memercayai;v;güvenmek
+1589;mencurigai;v;şüphelenmek
+1590;menebak;v;tahmin etmek
+1591;membayangkan;v;hayal etmek
+1592;bermimpi;v;rüya görmek
+1593;menceritakan;v;anlatmak
+1594;mengobrol;v;sohbet etmek
+1595;meyakinkan;v;ikna etmek
+1596;bersikeras;v;ısrar etmek
+1597;mengaku;v;itiraf etmek
+1598;menyangkal;v;inkar etmek
+1599;menuduh;v;suçlamak
+1600;meminta maaf;v;özür dilemek
+1601;menyapa;v;selamlamak
+1602;berpamitan;v;veda etmek
+1603;memperkenalkan;v;tanıştırmak
+1604;menyemangati;v;cesaretlendirmek
+1605;memuji;v;övmek
+1606;mengkritik;v;eleştirmek
+1607;mengejek;v;alay etmek
+1608;bercanda;v;şaka yapmak
+1609;berbohong;v;yalan söylemek
+1610;menipu;v;aldatmak
+1611;mengancam;v;tehdit etmek
+1612;menyerang;v;saldırmak
+1613;membela;v;savunmak
+1614;melarikan diri;v;kaçmak
+1615;bersembunyi;v;saklanmak
+1616;mengejar;v;kovalamak
+1617;melompat;v;zıplamak
+1618;membungkuk;v;eğilmek
+1619;berbaring;v;uzanmak (yatmak)
+1620;merangkak;v;sürünmek
+1621;tergelincir;v;kaymak
+1622;tenggelam;v;batmak
+1623;mengapung;v;su üstünde durmak
+1624;bertiup;v;esmek (rüzgar)
+1625;hujan turun;v;yağmur yağmak
+1626;bersinar;v;parlamak
+1627;terbakar;v;yanmak
+1628;meleleh;v;erimek
+1629;membeku;v;donmak
+1630;mendidih;v;kaynamak
+1631;menggoreng;v;kızartmak
+1632;memanggang;v;fırında pişirmek
+1633;mencampur;v;karıştırmak
+1634;mencincang;v;doğramak
+1635;mengupas;v;soymak (kabuk)
+1636;menumpahkan;v;dökmek
+1637;menyajikan;v;servis etmek
+1638;menggigit;v;ısırmak
+1639;mengunyah;v;çiğnemek
+1640;menelan;v;yutmak
+1641;kedinginan;v;üşümek
+1642;jatuh sakit;v;hastalanmak
+1643;mengalami cedera;v;yaralanmak
+1644;berdarah;v;kanamak
+1645;terbatuk;v;öksürmek
+1646;bersin;v;hapşırmak
+1647;menguap;v;esnemek
+1648;mendengkur;v;horlamak
+1649;gemetar;v;titremek
+1650;pingsan;v;bayılmak
+1651;memberi makan;v;beslemek
+1652;membesarkan;v;yetiştirmek (çocuk)
+1653;melatih;v;eğitmek
+1654;menghafal;v;ezberlemek
+1655;mencatat;v;not almak
+1656;menggarisbawahi;v;altını çizmek
+1657;membuktikan;v;kanıtlamak
+1658;meneliti;v;araştırmak
+1659;menganalisis;v;analiz etmek
+1660;mengelompokkan;v;sınıflandırmak
+1661;memberikan suara;v;oy vermek
+1662;melamar;v;başvurmak
+1663;mempekerjakan;v;işe almak
+1664;memecat;v;işten çıkarmak
+1665;mengundurkan diri;v;istifa etmek
+1666;memasuki masa pensiun;v;emekli olmak
+1667;berinvestasi;v;yatırım yapmak
+1668;meminjam;v;borç almak
+1669;membayar kembali;v;geri ödemek
+1670;menandatangani;v;imzalamak
+1671;menyetujui;v;onaylamak
+1672;membatalkan;v;iptal etmek
+1673;menunda;v;ertelemek
+1674;menyerahkan;v;teslim etmek
+1675;berhasil;v;başarmak
+1676;gagal;v;başarısız olmak
+1677;menyerah;v;vazgeçmek
+1678;menahan;v;katlanmak
+1679;bergegas;v;acele etmek
+1680;tersesat;v;yolunu kaybetmek
+1681;muncul;v;ortaya çıkmak
+1682;menghilang;v;kaybolmak (gözden)
+1683;eksis;v;var olmak
+1684;menjadi milik;v;ait olmak
+1685;mengandung;v;içermek
+1686;bergantung;v;bağlı olmak
+1687;memengaruhi;v;etkilemek
+1688;menyebabkan;v;neden olmak
+1689;mencegah;v;önlemek
+1690;menerapkan;v;uygulamak
+1691;memasang;v;kurmak (program)
+1692;menyalakan;v;açmak (cihaz)
+1693;mematikan;v;kapatmak (cihaz)
+1694;mengisi daya;v;şarj etmek
+1695;mencari di internet;v;internette aramak
+1696;menyukai;v;beğenmek (sosyal medya)
+1697;mendaftar;v;kaydolmak
+1698;masuk akun;v;giriş yapmak (hesap)
+1699;memperbarui;v;güncellemek
+1700;menyalin;v;kopyalamak
+1701;menempel;v;yapıştırmak
+1702;mengetik;v;klavyede yazmak
+1703;merekam;v;kayıt yapmak (ses, video)
+1704;menonton;v;izlemek
+1705;memotret;v;fotoğraf çekmek
+1706;mengecat;v;boyamak
+1707;menjahit;v;dikiş dikmek
+1708;merajut;v;örmek
+1709;menyumbang;v;bağışlamak (para)
+1710;menawar;v;pazarlık yapmak
+1711;mengembalikan;v;iade etmek
+1712;mencoba pakaian;v;giyip denemek
+1713;memarkir;v;park etmek
+1714;naik;v;binmek
+1715;transit;v;aktarma yapmak
+1716;berjalan-jalan;v;gezmek
+1717;mengemas;v;paketlemek
+1718;menjamu;v;ağırlamak
+1719;menetap;v;yerleşmek
+1720;beremigrasi;v;göç etmek
+1721;beradaptasi;v;uyum sağlamak
+1722;terbiasa;v;alışmak
+1723;merindukan;v;özlemek
+1724;layak mendapat;v;hak etmek
+1725;mematuhi;v;uymak (kurala)
+1726;melanggar;v;ihlal etmek
+1727;ramai;adj;kalabalık
+1728;sepi;adj;ıssız
+1729;nyaman;adj;rahat
+1730;tidak nyaman;adj;rahatsız
+1731;murah hati;adj;cömert
+1732;pelit;adj;cimri
+1733;setia;adj;sadık
+1734;egois;adj;bencil
+1735;sombong;adj;kibirli
+1736;rendah hati;adj;alçakgönüllü
+1737;rajin;adj;çalışkan
+1738;sabar;adj;sabırlı
+1739;tidak sabar;adj;sabırsız
+1740;hati-hati;adj;dikkatli
+1741;ceroboh;adj;dikkatsiz
+1742;ceria;adj;neşeli
+1743;bersemangat;adj;heyecanlı
+1744;kecewa;adj;hayal kırıklığına uğramış
+1745;bangga;adj;gururlu
+1746;bersyukur;adj;minnettar
+1747;merasa kesepian;adj;yalnız (duygusal)
+1748;jatuh cinta;adj;aşık
+1749;mabuk;adj;sarhoş
+1750;mengantuk;adj;uykulu
+1751;kenyang;adj;tok
+1752;nyeri;adj;ağrılı
+1753;terluka;adj;yaralı
+1754;botak;adj;kel
+1755;pirang;adj;sarışın
+1756;sawo matang;adj;esmer
+1757;hamil;adj;hamile
+1758;populer;adj;popüler
+1759;langka;adj;nadir
+1760;khas;adj;tipik
+1761;resmi;adj;resmi
+1762;akrab;adj;samimi
+1763;biasa;adj;sıradan
+1764;unik;adj;eşsiz
+1765;utama;adj;ana, başlıca
+1766;dasar;adj;temel
+1767;lanjutan;adj;ileri (seviye)
+1768;yakin;adj;emin
+1769;tidak pasti;adj;belirsiz
+1770;rahasia;adj;gizli / sır
+1771;sah;adj;yasal
+1772;ilegal;adj;yasadışı
+1773;adil;adj;adil
+1774;tidak adil;adj;haksız
+1775;suci;adj;kutsal
+1776;bersejarah;adj;tarihi
+1777;politis;adj;siyasi
+1778;ekonomis;adj;ekonomik
+1779;sosial;adj;sosyal
+1780;kultural;adj;kültürel
+1781;ilmiah;adj;bilimsel
+1782;alami;adj;doğal
+1783;buatan;adj;yapay
+1784;digital;adj;dijital
+1785;elektronik;adj;elektronik
+1786;otomatis;adj;otomatik
+1787;gratis;adj;ücretsiz
+1788;tersedia;adj;mevcut (elde var)
+1789;tidak lengkap;adj;eksik
+1790;ekstra;adj;fazladan
+1791;hilang;adj;kayıp
+1792;rusak;adj;kırık
+1793;kokoh;adj;sağlam
+1794;dapat dipercaya;adj;güvenilir
+1795;berguna;adj;faydalı
+1796;tidak berguna;adj;faydasız
+1797;merugikan;adj;zararlı
+1798;efektif;adj;etkili
+1799;sukses;adj;başarılı
+1800;mewah;adj;lüks
+1801;berwarna-warni;adj;renkli
+1802;cerah;adj;parlak
+1803;pucat;adj;soluk
+1804;transparan;adj;şeffaf
+1805;tipis;adj;ince (kalınlık)
+1806;ketat;adj;sıkı
+1807;longgar;adj;gevşek
+1808;runcing;adj;sivri
+1809;halus;adj;pürüzsüz
+1810;persegi;adj;kare
+1811;cocok;adj;uygun
+1812;tidak pantas;adj;uygunsuz
+1813;wajib;adj;zorunlu
+1814;opsional;adj;isteğe bağlı
+1815;mendesak;adj;acil
+1816;liar;adj;vahşi
+1817;jinak;adj;evcil
+1818;beracun;adj;zehirli
+1819;telanjang;adj;çıplak
+1820;terjaga;adj;uyanık
+1821;tidak dikenal;adj;bilinmeyen
+1822;realistis;adj;gerçekçi
+1823;positif;adj;olumlu
+1824;negatif;adj;olumsuz
+1825;setara;adj;eşit
+1826;mandiri;adj;bağımsız
+1827;aktif;adj;aktif
+1828;pasif;adj;pasif
+1829;sementara;adj;geçici / -ken
+1830;permanen;adj;kalıcı
+1831;tak terbatas;adj;sonsuz
+1832;berlebihan;adj;aşırı
+1833;beruntung;adj;şanslı
+1834;sial;adj;şanssız
+1835;tidak bersalah;adj;masum
+1836;bersalah;adj;suçlu
+1837;berbakat;adj;yetenekli
+1838;tadi malam;adv;dün gece
+1839;malam ini;adv;bu gece
+1840;besok pagi;adv;yarın sabah
+1841;lusa;adv;öbür gün
+1842;kemarin lusa;adv;evvelsi gün
+1843;minggu lalu;adv;geçen hafta
+1844;minggu depan;adv;gelecek hafta
+1845;tahun lalu;adv;geçen yıl
+1846;tahun depan;adv;gelecek yıl
+1847;kalau begitu;adv;o zaman
+1848;sekali;adv;bir kez
+1849;dua kali;adv;iki kez
+1850;jarang;adv;nadiren
+1851;setiap hari;adv;her gün
+1852;belum;adv;henüz değil
+1853;tidak lagi;adv;artık değil
+1854;pertama-tama;adv;ilk önce
+1855;kemudian;adv;ardından
+1856;terus-menerus;adv;sürekli
+1857;perlahan-lahan;adv;yavaş yavaş
+1858;diam-diam;adv;sessizce
+1859;dengan keras;adv;yüksek sesle
+1860;dengan mudah;adv;kolayca
+1861;dengan susah payah;adv;zorlukla
+1862;untungnya;adv;neyse ki
+1863;dengan jelas;adv;açıkça
+1864;sepenuhnya;adv;tamamen
+1865;sebagian;adv;kısmen
+1866;kebanyakan;adv;çoğunlukla
+1867;nanti;adv;daha sonra
+1868;sejak itu;adv;o zamandan beri
+1869;sejauh ini;adv;şimdiye kadar
+1870;ke dalam;adv;içeri (yön)
+1871;ke luar;adv;dışarı (yön)
+1872;ke atas;adv;yukarı (yön)
+1873;ke bawah;adv;aşağı (yön)
+1874;ke belakang;adv;geri (yön)
+1875;ke depan;adv;ileri (yön)
+1876;di seberang;adv;karşısında
+1877;di sekitar;adv;etrafında
+1878;sepanjang;prep;boyunca
+1879;sampai;prep;-e kadar
+1880;sejak;prep;-den beri
+1881;selama;prep;sırasında
+1882;meskipun;prep;-e rağmen
+1883;alih-alih;prep;yerine
+1884;kecuali;prep;hariç
+1885;menurut;prep;-e göre
+1886;berkat;prep;sayesinde
+1887;seolah-olah;conj;sanki
+1888;walaupun;conj;-sa bile
+1889;kalau tidak;conj;aksi halde
+1890;supaya;conj;-sın diye
+1891;bagus sekali;int;aferin
+1892;selamat;int;tebrikler
+1893;semoga beruntung;int;iyi şanslar
+1894;selamat makan;int;afiyet olsun
+1895;semoga lekas sembuh;int;geçmiş olsun
+1896;awas;int;dikkat et
+1897;bersulang;int;şerefe
+1898;semangat kerjanya;int;kolay gelsin
+1899;sampai jumpa;int;görüşürüz
+1900;apa kabar;int;nasılsın
+1901;saya baik;int;iyiyim
+1902;sama-sama;int;rica ederim
+1903;saya tidak mengerti;int;anlamıyorum
+1904;bisa diulang;int;tekrar eder misiniz
+1905;indah sekali;int;ne güzel
+1906;luar biasa;int;harika
+1907;sayang sekali;int;ne yazık
+1908;ayo;int;hadi
+1909;bilangan genap;num;çift sayı
+1910;bilangan ganjil;num;tek sayı
+1911;lusin;num;düzine
+1912;seperempat;num;çeyrek
+1913;satu setengah;num;bir buçuk
+1914;keempat;num;dördüncü
+1915;kelima;num;beşinci
+1916;kesepuluh;num;onuncu
+1917;miliar;num;milyar
+1918;masyarakat;n;toplum
+1919;penduduk;n;nüfus
+1920;demokrasi;n;demokrasi
+1921;republik;n;cumhuriyet
+1922;partai politik;n;siyasi parti
+1923;pemungutan suara;n;oy
+1924;menteri;n;bakan
+1925;parlemen;n;meclis
+1926;konstitusi;n;anayasa
+1927;bendera;n;bayrak
+1928;kekaisaran;n;imparatorluk
+1929;revolusi;n;devrim
+1930;kemerdekaan;n;bağımsızlık
+1931;kemenangan;n;zafer
+1932;kekalahan;n;yenilgi
+1933;pahlawan;n;kahraman
+1934;pemimpin;n;lider
+1935;satpam;n;güvenlik görevlisi
+1936;saksi;n;tanık
+1937;bukti;n;kanıt
+1938;hukuman;n;ceza
+1939;denda;n;para cezası
+1940;penghargaan;n;ödül
+1941;medali;n;madalya
+1942;juara;n;şampiyon
+1943;perlombaan;n;yarış
+1944;pemain;n;oyuncu (spor)
+1945;wasit;n;hakem
+1946;pelatih;n;antrenör
+1947;gol;n;gol
+1948;skor;n;skor
+1949;bola basket;n;basketbol
+1950;bola voli;n;voleybol
+1951;tenis;n;tenis
+1952;renang;n;yüzme (spor)
+1953;lari;n;koşu
+1954;gulat;n;güreş
+1955;tinju;n;boks
+1956;ski;n;kayak
+1957;olimpiade;n;olimpiyatlar
+1958;turnamen;n;turnuva
+1959;penggemar;n;taraftar
+1960;doa;n;dua
+1961;keyakinan;n;inanç
+1962;surga;n;cennet
+1963;neraka;n;cehennem
+1964;malaikat;n;melek
+1965;setan;n;şeytan
+1966;hari raya;n;bayram
+1967;tahun baru;n;yılbaşı
+1968;moral;n;ahlak
+1969;keadilan;n;adalet
+1970;kesetaraan;n;eşitlik
+1971;tanggung jawab;n;sorumluluk
+1972;kewajiban;n;yükümlülük
+1973;identitas;n;kimlik
+1974;kartu identitas;n;kimlik kartı
+1975;pendapatan;n;gelir
+1976;pengeluaran;n;gider
+1977;kekayaan;n;zenginlik
+1978;kemiskinan;n;yoksulluk
+1979;asuransi;n;sigorta
+1980;tenaga kerja;n;emek
+1981;mogok kerja;n;grev
+1982;organisasi;n;örgüt
+1983;lembaga;n;kurum
+1984;sistem;n;sistem
+1985;struktur;n;yapı
+1986;proses;n;süreç
+1987;strategi;n;strateji
+1988;kesempatan;n;fırsat
+1989;risiko;n;risk
+1990;krisis;n;kriz
+1991;konflik;n;çatışma
+1992;kesepakatan;n;anlaşma
+1993;pertengkaran;n;münakaşa
+1994;pendapat;n;görüş
+1995;nasihat;n;öğüt
+1996;kritik;n;eleştiri
+1997;keluhan;n;şikayet (dilekçe)
+1998;solusi;n;çözüm
+1999;niat;n;niyet
+2000;keinginan;n;dilek
+2001;preferensi;n;tercih
+2002;fakta;n;olgu
+2003;janji;n;vaat
+2004;lelucon;n;şaka
+2005;ancaman;n;tehdit
+2006;serangan;n;saldırı
+2007;kekerasan;n;şiddet
+2008;korban;n;kurban
+2009;pengungsi;n;mülteci
+2010;sukarelawan;n;gönüllü
+2011;sumbangan;n;bağış
+2012;upacara;n;tören
+2013;warisan;n;miras
+2014;peradaban;n;medeniyet
+2015;generasi;n;nesil
+2016;kemanusiaan;n;insanlık

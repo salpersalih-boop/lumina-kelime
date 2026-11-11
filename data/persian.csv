@@ -30,7 +30,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 29;در (dar);prep;-de, içinde / kapı
 30;روی (ru-ye);prep;üzerinde
 31;زیر (zir);prep;altında
-32;از (az);prep;-den, -dan
+32;از (az);prep;-den, -dan / -den beri
 33;به (be);prep;-e doğru, -e
 34;بین (beyn);prep;arasında
 35;قبل از (ghabl az);prep;önce
@@ -50,7 +50,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 49;اغلب (aghlab);adv;sık sık
 50;خیلی (kheyli);adv;çok
 51;کمی (kami);adv;biraz
-52;بیشتر (bishtar);adv;daha
+52;بیشتر (bishtar);adv;daha / çoğunlukla
 53;کمتر (kamtar);adv;daha az
 54;هم (ham);adv;de, da, ayrıca
 55;فقط (faghat);adv;sadece
@@ -120,7 +120,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 119;گرفتن (gereftan);v;almak / yakalamak
 120;گذاشتن (gozāshtan);v;koymak
 121;پیدا کردن (peydā kardan);v;bulmak
-122;جستجو کردن (jostoju kardan);v;aramak
+122;جستجو کردن (jostoju kardan);v;aramak / internette aramak
 123;گم کردن (gom kardan);v;kaybetmek
 124;بردن (bordan);v;kazanmak (yarış)
 125;درآمد داشتن (darāmad dāshtan);v;kazanmak (para)
@@ -158,7 +158,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 157;سفر کردن (safar kardan);v;seyahat etmek
 158;رسیدن (residan);v;varmak
 159;ترک کردن (tark kardan);v;ayrılmak, gitmek
-160;وارد شدن (vāred shodan);v;girmek
+160;وارد شدن (vāred shodan);v;girmek / giriş yapmak (hesap)
 161;بیرون رفتن (birun raftan);v;çıkmak
 162;برگشتن (bargashtan);v;dönmek, geri gelmek
 163;باز کردن (bāz kardan);v;açmak
@@ -215,7 +215,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 214;بخشیدن (bakhshidan);v;affetmek
 215;اجازه دادن (ejāze dādan);v;izin vermek
 216;ممنوع کردن (mamnu' kardan);v;yasaklamak
-217;دنبال کردن (donbāl kardan);v;takip etmek
+217;دنبال کردن (donbāl kardan);v;takip etmek / kovalamak
 218;رهبری کردن (rahbari kardan);v;yol göstermek, yönetmek
 219;به دست آوردن (be dast āvardan);v;kazanmak, elde etmek
 220;اتفاق افتادن (ettefāgh oftādan);v;olmak, meydana gelmek
@@ -292,7 +292,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 291;دندان (dandān);n;diş
 292;زبان (zabān);n;dil (organ) / dil (lisan)
 293;گردن (gardan);n;boyun
-294;شانه (shāne);n;omuz
+294;شانه (shāne);n;omuz / tarak
 295;بازو (bāzu);n;kol
 296;دست (dast);n;el
 297;انگشت (angosht);n;parmak
@@ -303,7 +303,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 302;زانو (zānu);n;diz
 303;قلب (ghalb);n;kalp
 304;خون (khun);n;kan
-305;پوست (pust);n;deri, cilt
+305;پوست (pust);n;deri, cilt / kabuk
 306;استخوان (ostokhān);n;kemik
 307;سلامتی (salāmati);n;sağlık
 308;بیماری (bimāri);n;hastalık
@@ -353,7 +353,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 352;لیوان (livān);n;bardak
 353;فنجان (fenjān);n;fincan
 354;بشقاب (boshghāb);n;tabak
-355;چنگال (changāl);n;çatal
+355;چنگال (changāl);n;çatal / pençe
 356;چاقو (chāghu);n;bıçak
 357;قاشق (ghāshogh);n;kaşık
 358;قابلمه (ghāblame);n;tencere
@@ -389,7 +389,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 388;لیمو (limu);n;limon
 389;گوجه فرنگی (gowje farangi);n;domates
 390;پیاز (piyāz);n;soğan
-391;سیر (sir);n;sarımsak
+391;سیر (sir);n;sarımsak / tok
 392;هویج (havij);n;havuç
 393;خیار (khiyār);n;salatalık
 394;سالاد (sālād);n;salata
@@ -515,7 +515,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 514;دما (damā);n;sıcaklık
 515;آتش (ātash);n;ateş
 516;خاک (khāk);n;toprak, dünya
-517;جهان (jahān);n;dünya
+517;جهان (jahān);n;dünya / evren
 518;طبیعت (tabi'at);n;doğa
 519;دریا (daryā);n;deniz
 520;اقیانوس (oghyānus);n;okyanus
@@ -525,12 +525,12 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 524;تپه (tappe);n;tepe
 525;جنگل (jangal);n;orman
 526;درخت (derakht);n;ağaç
-527;گل (gol);n;çiçek
+527;گل (gol);n;çiçek / gol
 528;چمن (chaman);n;çimen
 529;برگ (barg);n;yaprak
 530;سنگ (sang);n;taş
 531;شن (shen);n;kum
-532;ساحل (sāhel);n;plaj
+532;ساحل (sāhel);n;plaj / kıyı
 533;جزیره (jazire);n;ada
 534;مزرعه (mazra'e);n;tarla
 535;حیوان (heyvān);n;hayvan
@@ -575,7 +575,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 574;جواب (javāb);n;cevap
 575;کتاب (ketāb);n;kitap
 576;دفترچه (daftarche);n;defter
-577;خودکار (khodkār);n;kalem
+577;خودکار (khodkār);n;kalem / otomatik
 578;مداد (medād);n;kurşun kalem
 579;کاغذ (kāghaz);n;kağıt
 580;صفحه (safhe);n;sayfa
@@ -592,14 +592,14 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 591;موسیقی (musighi);n;müzik
 592;آهنگ (āhang);n;şarkı
 593;بازی (bāzi);n;oyun
-594;ورزش (varzesh);n;spor
+594;ورزش (varzesh);n;spor / egzersiz
 595;فوتبال (futbāl);n;futbol
 596;توپ (tup);n;top
 597;تیم (tim);n;takım
 598;مسابقه (mosābeghe);n;maç
 599;مهمانی (mehmāni);n;parti, eğlence
 600;هدیه (hediye);n;hediye
-601;تولد (tavallod);n;doğum günü
+601;تولد (tavallod);n;doğum günü / doğum
 602;عکس ('aks);n;fotoğraf
 603;هنر (honar);n;sanat
 604;اینترنت (internet);n;internet
@@ -627,7 +627,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 626;پایان (pāyān);n;son
 627;آغاز (āghāz);n;başlangıç
 628;روش (ravesh);n;yol, yöntem
-629;دلیل (dalil);n;neden, sebep
+629;دلیل (dalil);n;neden, sebep / kanıt
 630;مشکل (moshkel);n;sorun
 631;ایده (ide);n;fikir
 632;حقیقت (haghighat);n;gerçek, hakikat
@@ -686,7 +686,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 685;غمگین (ghamgin);adj;üzgün
 686;عصبانی ('asabāni);adj;kızgın
 687;خسته (khaste);adj;yorgun
-688;بیمار (bimār);adj;hasta
+688;بیمار (bimār);adj;hasta / hasta (kişi)
 689;سالم (sālem);adj;sağlıklı
 690;گرسنه (gorosne);adj;aç
 691;قوی (ghavi);adj;güçlü
@@ -719,7 +719,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 718;عجیب ('ajib);adj;garip, tuhaf
 719;متفاوت (motafāvet);adj;farklı
 720;مشابه (moshābeh);adj;benzer
-721;ساده (sāde);adj;kolay, basit
+721;ساده (sāde);adj;kolay, basit / sade
 722;پیچیده (pichide);adj;karmaşık
 723;ساکت (sāket);adj;sessiz
 724;پر سر و صدا (por sar o sedā);adj;gürültülü
@@ -736,11 +736,11 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 735;خیس (khis);adj;ıslak
 736;خشک (khoshk);adj;kuru
 737;باز (bāz);adj;açık
-738;بسته (baste);adj;kapalı
-739;اول (avval);adj;ilk
+738;بسته (baste);adj;kapalı / koli
+739;اول (avval);adj;ilk / ilk önce
 740;آخر (ākhar);adj;son
 741;بعدی (ba'di);adj;sonraki
-742;تنها (tanhā);adj;tek, yalnız
+742;تنها (tanhā);adj;tek, yalnız / yalnız (duygusal)
 743;کامل (kāmel);adj;bütün, tam
 744;عالی ('āli);adj;mükemmel
 745;معروف (ma'ruf);adj;ünlü
@@ -843,7 +843,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 842;قاعده (ghā'ede);n;kural
 843;گزینه (gozine);n;seçenek
 844;تصمیم (tasmim);n;karar
-845;برنامه (barnāme);n;plan
+845;برنامه (barnāme);n;plan / program (bilgisayar)
 846;هدف (hadaf);n;amaç, hedef
 847;نتیجه (natije);n;sonuç
 848;موفقیت (movaffaghiyat);n;başarı
@@ -863,7 +863,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 862;خاطره (khātere);n;anı, hatıra
 863;آینده (āyande);n;gelecek
 864;گذشته (gozashte);n;geçmiş
-865;حال (hāl);n;şimdiki zaman, an
+865;حال (hāl);n;şimdiki zaman, an / ruh hali
 866;لحظه (lahze);n;an
 867;رویداد (ruydād);n;olay
 868;وضعیت (vaz'iyat);n;durum
@@ -952,10 +952,10 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 951;در واقع (dar vāghe');adv;aslında
 952;بالاخره (bel-akhare);adv;sonunda
 953;ناگهان (nāgahān);adv;aniden
-954;کاملاً (kāmelan);adv;kesinlikle
+954;کاملاً (kāmelan);adv;kesinlikle / tamamen
 955;احتمالاً (ehtemālan);adv;muhtemelen
-956;کافی (kāfi);adv;yeterince
-957;بیش از حد (bish az hadd);adv;fazla, çok fazla
+956;کافی (kāfi);adv;yeterince / yeterli
+957;بیش از حد (bish az hadd);adv;fazla, çok fazla / aşırı
 958;همه جا (hame jā);adv;her yerde
 959;هیچ جا (hich jā);adv;hiçbir yerde
 960;جایی (jāyi);adv;bir yerde
@@ -985,7 +985,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 984;باستانی (bāstāni);adj;antik, eski çağ
 985;عمیق ('amigh);adj;derin
 986;گرد (gerd);adj;yuvarlak
-987;صاف (sāf);adj;düz
+987;صاف (sāf);adj;düz / pürüzsüz
 988;ضخیم (zakhim);adj;kalın
 989;تیز (tiz);adj;keskin
 990;کور (kur);adj;kör
@@ -998,3 +998,1035 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 997;قبلی (ghabli);adj;eski, önceki
 998;محتمل (mohtamel);adj;olası
 999;واضح (vāzeh);adj;açık, net
+1000;پیشانی (pishāni);n;alın
+1001;گونه (gune);n;yanak / tür (canlı)
+1002;چانه (chāne);n;çene
+1003;لب (lab);n;dudak
+1004;ابرو (abru);n;kaş
+1005;مژه (mozhe);n;kirpik
+1006;ریش (rish);n;sakal
+1007;سبیل (sebil);n;bıyık
+1008;گلو (galu);n;boğaz
+1009;مچ دست (moch-e dast);n;bilek
+1010;آرنج (āranj);n;dirsek
+1011;ناخن (nākhon);n;tırnak
+1012;شست (shast);n;başparmak
+1013;کمر (kamar);n;bel
+1014;باسن (bāsan);n;kalça
+1015;مچ پا (moch-e pā);n;ayak bileği
+1016;پاشنه (pāshne);n;topuk
+1017;مغز (maghz);n;beyin
+1018;ریه (rie);n;akciğer
+1019;کبد (kabed);n;karaciğer
+1020;کلیه (kolie);n;böbrek
+1021;عضله (ʿazole);n;kas
+1022;رگ (rag);n;damar
+1023;ضربان قلب (zarabān-e qalb);n;kalp atışı
+1024;نفس (nafas);n;nefes
+1025;اشک (ashk);n;gözyaşı
+1026;عرق (ʿaraq);n;ter
+1027;تب (tab);n;ateş (hastalık)
+1028;سرفه (sorfe);n;öksürük
+1029;سرماخوردگی (sarmākhordegi);n;soğuk algınlığı
+1030;آنفولانزا (ānfulānzā);n;grip
+1031;سردرد (sardard);n;baş ağrısı
+1032;زخم (zakhm);n;yara
+1033;جراحی (jarrāhi);n;ameliyat
+1034;درمان (darmān);n;tedavi
+1035;نسخه (noskhe);n;reçete
+1036;قرص (qors);n;hap
+1037;واکسن (vāksan);n;aşı
+1038;آمبولانس (āmbulāns);n;ambulans
+1039;اورژانس (urzhāns);n;acil durum
+1040;خواب (khāb);n;uyku
+1041;خستگی (khastegi);n;yorgunluk
+1042;استرس (esteres);n;stres
+1043;رژیم (rezhim);n;diyet
+1044;قد (qad);n;boy (uzunluk)
+1045;شادی (shādi);n;sevinç
+1046;غم (gham);n;üzüntü
+1047;خشم (khashm);n;öfke
+1048;حسادت (hesādat);n;kıskançlık
+1049;شرم (sharm);n;utanç
+1050;غرور (ghorur);n;gurur
+1051;کنجکاوی (konjkāvi);n;merak
+1052;صبر (sabr);n;sabır
+1053;اعتماد (eʿtemād);n;güven
+1054;نگرانی (negarāni);n;endişe
+1055;تنهایی (tanhāyi);n;yalnızlık
+1056;شجاعت (shojāʿat);n;cesaret
+1057;نفرت (nefrat);n;nefret
+1058;تعجب (taʿajjob);n;şaşkınlık
+1059;لذت (lezzat);n;keyif, zevk
+1060;پشیمانی (pashimāni);n;pişmanlık
+1061;سپاسگزاری (sepāsgozāri);n;minnettarlık
+1062;احترام (ehterām);n;saygı
+1063;شخصیت (shakhsiyat);n;kişilik
+1064;عادت (ʿādat);n;alışkanlık
+1065;رفتار (raftār);n;davranış
+1066;خنده (khande);n;kahkaha
+1067;لبخند (labkhand);n;gülümseme
+1068;بوسه (buse);n;öpücük
+1069;آغوش (āghush);n;sarılma
+1070;روح (ruh);n;ruh
+1071;ذهن (zehn);n;zihin
+1072;حافظه (hāfeze);n;hafıza
+1073;هوش (hush);n;zeka
+1074;خرد (kherad);n;bilgelik
+1075;استعداد (esteʿdād);n;yetenek
+1076;مهارت (mahārat);n;beceri
+1077;زیبایی (zibāyi);n;güzellik
+1078;جوانی (javāni);n;gençlik
+1079;پیری (piri);n;yaşlılık
+1080;کودکی (kudaki);n;çocukluk
+1081;عروسی (ʿarusi);n;düğün
+1082;تشییع جنازه (tashyiʿ-e jenāze);n;cenaze
+1083;نامزد (nāmzad);n;nişanlı (erkek)
+1084;عروس (ʿarus);n;gelin
+1085;بیوه (bive);n;dul (kadın)
+1086;بزرگسال (bozorgsāl);n;yetişkin
+1087;نوجوان (nojavān);n;ergen
+1088;سالمند (sālmand);n;yaşlı (kişi)
+1089;نوه (nave);n;torun
+1090;برادرزاده (barādarzāde);n;yeğen
+1091;مادرشوهر (mādarshohar);n;kayınvalide
+1092;دوقلو (doqolu);n;ikiz
+1093;خویشاوند (khishāvand);n;akraba
+1094;معشوق (maʿshuq);n;sevgili
+1095;دشمن (doshman);n;düşman
+1096;بالش (bālesh);n;yastık
+1097;پتو (patu);n;battaniye
+1098;ملافه (malāfe);n;çarşaf
+1099;قفسه (qafase);n;raf
+1100;کشو (kesho);n;çekmece
+1101;قفل (qofl);n;kilit
+1102;پریز (periz);n;priz
+1103;لامپ (lāmp);n;ampul
+1104;کولر (kuler);n;klima
+1105;بخاری (bokhāri);n;kalorifer
+1106;ماشین لباسشویی (māshin-e lebāsshuyi);n;çamaşır makinesi
+1107;ماشین ظرفشویی (māshin-e zarfshuyi);n;bulaşık makinesi
+1108;جاروبرقی (jārubarqi);n;elektrikli süpürge
+1109;اتو (otu);n;ütü
+1110;مایکروویو (māykroveyv);n;mikrodalga fırın
+1111;اجاق گاز (ojāq gāz);n;ocak (mutfak)
+1112;ماهیتابه (māhitābe);n;tava
+1113;کتری (ketri);n;çaydanlık
+1114;کاسه (kāse);n;kase
+1115;دستمال سفره (dastmāl sofre);n;peçete
+1116;سینی (sini);n;tepsi
+1117;زباله (zobāle);n;çöp
+1118;سطل زباله (satl-e zobāle);n;çöp kutusu
+1119;سطل (satl);n;kova
+1120;جارو (jāru);n;süpürge
+1121;برس (bores);n;fırça
+1122;خمیر دندان (khamir dandān);n;diş macunu
+1123;شامپو (shāmpu);n;şampuan
+1124;دوش (dush);n;duş
+1125;وان (vān);n;küvet
+1126;روشویی (rushuyi);n;lavabo
+1127;توالت فرنگی (tuālet farangi);n;klozet
+1128;شیر آب (shir-e āb);n;musluk
+1129;دستمال توالت (dastmāl tuālet);n;tuvalet kağıdı
+1130;شمع (shamʿ);n;mum
+1131;کبریت (kebrit);n;kibrit
+1132;فندک (fandak);n;çakmak
+1133;قیچی (qeychi);n;makas
+1134;سوزن (suzan);n;iğne
+1135;نخ (nakh);n;iplik
+1136;دکمه (dokme);n;düğme
+1137;زیپ (zip);n;fermuar
+1138;جیب (jib);n;cep
+1139;کمربند (kamarband);n;kemer
+1140;کراوات (kerāvāt);n;kravat
+1141;دستکش (dastkesh);n;eldiven
+1142;شال گردن (shāl gardan);n;atkı
+1143;پالتو (pālto);n;palto
+1144;ژاکت (zhāket);n;kazak
+1145;شلوارک (shalvārak);n;şort
+1146;لباس زیر (lebās-e zir);n;iç çamaşırı
+1147;پیژامه (pizhāme);n;pijama
+1148;دمپایی (dampāyi);n;terlik
+1149;چکمه (chakme);n;çizme
+1150;کوله‌پشتی (kule-poshti);n;sırt çantası
+1151;چتر (chatr);n;şemsiye
+1152;گردنبند (gardanband);n;kolye
+1153;گوشواره (gushvāre);n;küpe
+1154;ساعت مچی (sāʿat-e mochi);n;kol saati
+1155;عطر (ʿatr);n;parfüm
+1156;آرایش (ārāyesh);n;makyaj
+1157;دوربین عکاسی (durbin-e ʿakkāsi);n;fotoğraf makinesi
+1158;باتری (bātri);n;pil
+1159;شارژر (shārzher);n;şarj aleti
+1160;هدفون (hedfon);n;kulaklık
+1161;کابل (kābl);n;kablo
+1162;صفحه نمایش (safhe-ye namāyesh);n;ekran
+1163;صفحه کلید (safhe-kelid);n;klavye
+1164;ماوس (māus);n;fare (bilgisayar)
+1165;چاپگر (chāpgar);n;yazıcı
+1166;رادیو (rādio);n;radyo
+1167;کنترل (kontorol);n;kumanda
+1168;تقویم (taqvim);n;takvim
+1169;پاکت نامه (pākat-e nāme);n;zarf
+1170;تمبر (tambr);n;pul
+1171;طناب (tanāb);n;ip
+1172;میخ (mikh);n;çivi
+1173;چکش (chakosh);n;çekiç
+1174;پیچ‌گوشتی (pich-gushti);n;tornavida
+1175;نردبان (nardebān);n;el merdiveni
+1176;آجر (ājor);n;tuğla
+1177;چوب (chub);n;tahta (malzeme)
+1178;شیشه (shishe);n;cam
+1179;آهن (āhan);n;demir
+1180;طلا (talā);n;altın
+1181;نقره (noqre);n;gümüş
+1182;پلاستیک (plāstik);n;plastik
+1183;فلز (felez);n;metal
+1184;پارچه (pārche);n;kumaş
+1185;پنبه (panbe);n;pamuk
+1186;چرم (charm);n;deri (malzeme)
+1187;ابریشم (abrisham);n;ipek
+1188;پشم (pashm);n;yün
+1189;مبلمان (mobleman);n;mobilya
+1190;دستگیره در (dastgire-ye dar);n;kapı kolu
+1191;بالکن (bālkon);n;balkon
+1192;زیرزمین (zirzamin);n;bodrum
+1193;پارکینگ (pārking);n;garaj
+1194;آسانسور (āsānsor);n;asansör
+1195;طبقه (tabaqe);n;kat
+1196;راهرو (rāhro);n;koridor
+1197;حصار (hesār);n;çit
+1198;اجاره (ejāre);n;kira
+1199;آرد (ārd);n;un
+1200;خمیر (khamir);n;hamur
+1201;زیتون (zeytun);n;zeytin
+1202;روغن زیتون (roghan-e zeytun);n;zeytinyağı
+1203;سرکه (serke);n;sirke
+1204;سس (sos);n;sos
+1205;ادویه (advie);n;baharat
+1206;نعناع (naʿnāʿ);n;nane
+1207;جعفری (jaʿfari);n;maydanoz
+1208;دارچین (dārchin);n;tarçın
+1209;زنجبیل (zanjabil);n;zencefil
+1210;فلفل تند (felfel-e tond);n;acı biber
+1211;لوبیا (lubiā);n;fasulye
+1212;نخود (nokhod);n;nohut
+1213;عدس (ʿadas);n;mercimek
+1214;نخود فرنگی (nokhod farangi);n;bezelye
+1215;ذرت (zorrat);n;mısır
+1216;گندم (gandom);n;buğday
+1217;کلم (kalam);n;lahana
+1218;کاهو (kāhu);n;marul
+1219;بادمجان (bādemjān);n;patlıcan
+1220;اسفناج (esfenāj);n;ıspanak
+1221;قارچ (qārch);n;mantar
+1222;کدو حلوایی (kadu halvāyi);n;bal kabağı
+1223;هندوانه (hendevāne);n;karpuz
+1224;خربزه (kharboze);n;kavun
+1225;گلابی (golābi);n;armut
+1226;هلو (holu);n;şeftali
+1227;گیلاس (gilās);n;kiraz
+1228;آلو (ālu);n;erik
+1229;آناناس (ānānās);n;ananas
+1230;انبه (anbe);n;mango
+1231;انجیر (anjir);n;incir
+1232;خرما (khormā);n;hurma
+1233;انار (anār);n;nar
+1234;فندق (fandoq);n;fındık
+1235;گردو (gerdu);n;ceviz
+1236;بادام (bādām);n;badem
+1237;بادام زمینی (bādām zamini);n;yer fıstığı
+1238;کشمش (keshmesh);n;kuru üzüm
+1239;گوشت بره (gusht-e barre);n;kuzu eti
+1240;گوشت گوساله (gusht-e gusāle);n;dana eti
+1241;سوسیس (sosis);n;sosis
+1242;کوفته (kufte);n;köfte
+1243;گوشت چرخ‌کرده (gusht-e charkh-karde);n;kıyma
+1244;میگو (meygu);n;karides
+1245;ماهی تن (māhi-ye ton);n;ton balığı
+1246;ماست (māst);n;yoğurt
+1247;خامه (khāme);n;krema
+1248;مربا (morabbā);n;reçel
+1249;کلوچه (kuluche);n;kurabiye
+1250;آب‌نبات (ābnabāt);n;şekerleme
+1251;دسر (deser);n;tatlı (yemek)
+1252;ساندویچ (sāndevich);n;sandviç
+1253;پیتزا (pitzā);n;pizza
+1254;همبرگر (hamberger);n;hamburger
+1255;سیب‌زمینی سرخ‌کرده (sibzamini-ye sorkh-karde);n;patates kızartması
+1256;املت (omlet);n;omlet
+1257;کباب (kabāb);n;kebap
+1258;آب معدنی (āb-e maʿdani);n;maden suyu
+1259;نوشابه (nushābe);n;gazoz
+1260;یخ (yakh);n;buz
+1261;برش (boresh);n;dilim
+1262;دستور پخت (dastur-e pokht);n;yemek tarifi
+1263;مواد (mavād);n;malzeme
+1264;پرس (pors);n;porsiyon
+1265;نانوایی (nānvāyi);n;fırın (ekmek)
+1266;قصابی (qassābi);n;kasap
+1267;میوه‌فروشی (mive-forushi);n;manav
+1268;آووکادو (āvokādo);n;avokado
+1269;نارگیل (nārgil);n;hindistan cevizi
+1270;زردآلو (zardālu);n;kayısı
+1271;تمشک (tameshk);n;ahududu
+1272;تربچه (torobche);n;turp
+1273;کرفس (karafs);n;kereviz
+1274;کلم بروکلی (kalam brokoli);n;brokoli
+1275;گل کلم (gol kalam);n;karnabahar
+1276;غلات (ghallāt);n;tahıl
+1277;جو دوسر (jo-ye dosar);n;yulaf
+1278;مخمر (mokhammar);n;maya
+1279;وانیل (vānil);n;vanilya
+1280;بال (bāl);n;kanat
+1281;تخته برش (takhte boresh);n;kesme tahtası
+1282;درپوش (darpush);n;kapak
+1283;ظرف شیشه‌ای (zarf-e shishe-i);n;kavanoz
+1284;قوطی کنسرو (quti-ye konserv);n;konserve kutusu
+1285;کیسه (kise);n;poşet
+1286;رومیزی (rumizi);n;masa örtüsü
+1287;پارچ (pārch);n;sürahi
+1288;تنقلات (tanaqqolāt);n;atıştırmalık
+1289;نوشیدنی (nushidani);n;içecek
+1290;الکل (alkol);n;alkol
+1291;گیاه‌خوار (giyāh-khār);n;vejetaryen
+1292;لقمه (loqme);n;lokma
+1293;نان تست (nān-e tost);n;kızarmış ekmek
+1294;کرپ (krep);n;krep
+1295;لیموناد (limunād);n;limonata
+1296;کاکائو (kākāo);n;kakao
+1297;دانه (dāne);n;tohum
+1298;محله (mahalle);n;mahalle
+1299;شهرک (shahrak);n;kasaba
+1300;پایتخت (pāytakht);n;başkent
+1301;مرز (marz);n;sınır
+1302;پیاده‌رو (piyāde-ro);n;kaldırım
+1303;چهارراه (chahārrāh);n;kavşak
+1304;چراغ راهنمایی (cherāgh-e rāhnamāyi);n;trafik ışığı
+1305;خط عابر پیاده (khatt-e ʿāber-e piyāde);n;yaya geçidi
+1306;پارکینگ عمومی (pārking-e ʿomumi);n;otopark
+1307;پمپ بنزین (pomp-e benzin);n;benzin istasyonu
+1308;بنزین (benzin);n;benzin
+1309;چرخ (charkh);n;tekerlek
+1310;موتور (motor);n;motor
+1311;ترمز (tormoz);n;fren
+1312;گواهینامه (govāhināme);n;ehliyet
+1313;موتورسیکلت (motorsiklet);n;motosiklet
+1314;کامیون (kāmiyon);n;kamyon
+1315;قایق (qāyeq);n;tekne
+1316;هلیکوپتر (helikopter);n;helikopter
+1317;تراموا (terāmvā);n;tramvay
+1318;سکو (saku);n;peron
+1319;مسافر (mosāfer);n;yolcu
+1320;خلبان (khalabān);n;pilot
+1321;مهماندار (mehmāndār);n;hostes
+1322;فرود (forud);n;iniş (uçak)
+1323;پرواز (parvāz);n;uçuş
+1324;بار (bār);n;bagaj
+1325;گمرک (gomrok);n;gümrük
+1326;ویزا (vizā);n;vize
+1327;راهنما (rāhnamā);n;rehber (kişi)
+1328;اردو (ordu);n;kamp
+1329;چادر (chādor);n;çadır
+1330;منظره (manzare);n;manzara
+1331;بنای یادبود (banā-ye yādbud);n;anıt
+1332;کاخ (kākh);n;saray
+1333;قلعه (qalʿe);n;kale
+1334;برج (borj);n;kule
+1335;معبد (maʿbad);n;tapınak
+1336;مجسمه (mojassame);n;heykel
+1337;فواره (favvāre);n;çeşme
+1338;باغ وحش (bāgh-e vahsh);n;hayvanat bahçesi
+1339;مرکز خرید (markaz-e kharid);n;alışveriş merkezi
+1340;صندوق (sanduq);n;kasa (ödeme)
+1341;رسید (resid);n;fiş
+1342;پول نقد (pul-e naqd);n;nakit
+1343;کارت اعتباری (kārt-e eʿtebāri);n;kredi kartı
+1344;سکه (sekke);n;bozuk para
+1345;واحد پول (vāhed-e pul);n;para birimi
+1346;داروساز (dārusāz);n;eczacı
+1347;آرایشگر (ārāyeshgar);n;kuaför
+1348;خیاط (khayyāt);n;terzi
+1349;کتاب‌فروشی (ketāb-forushi);n;kitapçı
+1350;ویترین (vitrin);n;vitrin
+1351;سایز (sāyz);n;beden (giysi)
+1352;حراج (harāj);n;indirimli satış
+1353;برند (berand);n;marka
+1354;سبد (sabad);n;sepet
+1355;چرخ خرید (charkh-e kharid);n;alışveriş arabası
+1356;تابلو (tāblo);n;tabela
+1357;توالت عمومی (tuālet-e ʿomumi);n;umumi tuvalet
+1358;مستأجر (mostajer);n;kiracı
+1359;صاحبخانه (sāhebkhāne);n;ev sahibi
+1360;زندان (zendān);n;hapishane
+1361;شهرداری (shahrdāri);n;belediye
+1362;سفارت (sefārat);n;elçilik
+1363;کارخانه (kārkhāne);n;fabrika
+1364;انبار (anbār);n;depo
+1365;مزرعه (mazraʿe);n;çiftlik
+1366;ورزشگاه (varzeshgāh);n;stadyum
+1367;باشگاه (bāshgāh);n;spor salonu
+1368;استخر (estakhr);n;yüzme havuzu
+1369;قبرستان (qabrestān);n;mezarlık
+1370;تونل (tunel);n;tünel
+1371;بزرگراه (bozorgrāh);n;otoyol
+1372;فاصله (fāsele);n;mesafe
+1373;کیلومتر (kilometr);n;kilometre
+1374;جهت (jahat);n;yön
+1375;سرعت (sorʿat);n;hız
+1376;ورود (vorud);n;varış
+1377;حرکت (harekat);n;kalkış
+1378;تأخیر (takhir);n;gecikme
+1379;جدول زمانی (jadval-e zamāni);n;tarife (saatler)
+1380;رزرو (rezerv);n;rezervasyon
+1381;پذیرش (paziresh);n;resepsiyon
+1382;سوغاتی (sowghāti);n;hediyelik eşya
+1383;تور (tur);n;tur
+1384;فانوس دریایی (fānus-e daryāyi);n;deniz feneri
+1385;ویرانه (virāne);n;harabe
+1386;آسمان‌خراش (āsemān-kharāsh);n;gökdelen
+1387;نیمکت (nimkat);n;bank (oturma)
+1388;صندوق پست (sanduq-e post);n;posta kutusu
+1389;کارت پستال (kārt postāl);n;kartpostal
+1390;ناخدا (nākhodā);n;kaptan
+1391;کرم ضد آفتاب (kerem-e zedd-e āftāb);n;güneş kremi
+1392;عینک آفتابی (ʿeynak-e āftābi);n;güneş gözlüğü
+1393;گردشگری (gardeshgari);n;turizm
+1394;خارج (khārej);n;yurt dışı
+1395;مهاجر (mohājer);n;göçmen
+1396;شهروند (shahrvand);n;vatandaş
+1397;سیاره (sayyāre);n;gezegen
+1398;فضا (fazā);n;uzay
+1399;رنگین‌کمان (rangin-kamān);n;gökkuşağı
+1400;آذرخش (āzarakhsh);n;şimşek
+1401;رعد (raʿd);n;gök gürültüsü
+1402;مه (meh);n;sis
+1403;تگرگ (tagarg);n;dolu (yağış)
+1404;زلزله (zelzele);n;deprem
+1405;سیل (seyl);n;sel
+1406;خشکسالی (khoshksāli);n;kuraklık
+1407;آتشفشان (ātashfeshān);n;volkan
+1408;بیابان (biyābān);n;çöl
+1409;دره (darre);n;vadi
+1410;غار (ghār);n;mağara
+1411;آبشار (ābshār);n;şelale
+1412;موج (mowj);n;dalga
+1413;صخره (sakhre);n;kaya
+1414;گرد و غبار (gard o ghobār);n;toz
+1415;گل (gel);n;çamur
+1416;قاره (qārre);n;kıta
+1417;افق (ofoq);n;ufuk
+1418;طلوع آفتاب (toluʿ-e āftāb);n;gün doğumu
+1419;غروب آفتاب (ghorub-e āftāb);n;gün batımı
+1420;سایه (sāye);n;gölge
+1421;آب و هوا (āb o havā);n;iklim
+1422;محیط زیست (mohit-e zist);n;çevre
+1423;آلودگی (āludegi);n;kirlilik
+1424;گیاه (giyāh);n;bitki
+1425;ریشه (rishe);n;kök
+1426;شاخه (shākhe);n;dal
+1427;رز (roz);n;gül
+1428;لاله (lāle);n;lale
+1429;کاج (kāj);n;çam
+1430;بلوط (balut);n;meşe
+1431;نخل (nakhl);n;palmiye
+1432;کاکتوس (kāktus);n;kaktüs
+1433;خزه (khaze);n;yosun
+1434;لانه (lāne);n;kuş yuvası
+1435;پر (par);n;tüy
+1436;دم (dom);n;kuyruk (hayvan)
+1437;شاخ (shākh);n;boynuz
+1438;منقار (menqār);n;gaga
+1439;بز (boz);n;keçi
+1440;الاغ (olāgh);n;eşek
+1441;شتر (shotor);n;deve
+1442;ببر (babr);n;kaplan
+1443;زرافه (zarāfe);n;zürafa
+1444;گورخر (gurkhar);n;zebra
+1445;گوزن (gavazn);n;geyik
+1446;سنجاب (sanjāb);n;sincap
+1447;جوجه‌تیغی (juje-tighi);n;kirpi
+1448;لاک‌پشت (lāk-posht);n;kaplumbağa
+1449;قورباغه (qurbāghe);n;kurbağa
+1450;تمساح (temsāh);n;timsah
+1451;کوسه (kuse);n;köpekbalığı
+1452;نهنگ (nahang);n;balina
+1453;دلفین (dolfin);n;yunus
+1454;هشت‌پا (hasht-pā);n;ahtapot
+1455;خرچنگ (kharchang);n;yengeç
+1456;مورچه (murche);n;karınca
+1457;عنکبوت (ʿankabut);n;örümcek
+1458;پشه (pashe);n;sivrisinek
+1459;کرم خاکی (kerm-e khāki);n;solucan
+1460;عقاب (ʿoqāb);n;kartal
+1461;جغد (joghd);n;baykuş
+1462;کبوتر (kabutar);n;güvercin
+1463;کلاغ (kalāgh);n;karga
+1464;طوطی (tuti);n;papağan
+1465;خروس (khorus);n;horoz
+1466;بره (barre);n;kuzu
+1467;توله‌سگ (tule-sag);n;köpek yavrusu
+1468;بچه‌گربه (bachche-gorbe);n;kedi yavrusu
+1469;حیوان خانگی (heyvān-e khānegi);n;evcil hayvan
+1470;چشمه (cheshme);n;kaynak (su)
+1471;مرداب (mordāb);n;bataklık
+1472;خلیج (khalij);n;körfez
+1473;قله (qolle);n;zirve
+1474;دشت (dasht);n;ova
+1475;یخچال طبیعی (yakhchāl-e tabiʿi);n;buzul
+1476;قطب (qotb);n;kutup
+1477;زغال سنگ (zoghāl sang);n;kömür
+1478;نفت (naft);n;petrol
+1479;گاز (gāz);n;gaz
+1480;دود (dud);n;duman
+1481;شعله (shoʿle);n;alev
+1482;بخار (bokhār);n;buhar
+1483;قطره (qatre);n;damla
+1484;نور خورشید (nur-e khorshid);n;güneş ışığı
+1485;رطوبت (rotubat);n;nem
+1486;درجه (daraje);n;derece
+1487;پیش‌بینی هوا (pishbini-ye havā);n;hava tahmini
+1488;بوته (bute);n;çalı
+1489;هیزم (hizom);n;odun
+1490;مرجان (marjān);n;mercan
+1491;مروارید (morvārid);n;inci
+1492;الماس (almās);n;elmas
+1493;آهن‌ربا (āhan-robā);n;mıknatıs
+1494;مصاحبه کاری (mosāhebe-ye kāri);n;iş görüşmesi
+1495;رزومه (rezume);n;özgeçmiş
+1496;قرارداد (qarārdād);n;sözleşme
+1497;امضا (emzā);n;imza
+1498;سند (sanad);n;belge
+1499;پرونده (parvande);n;dosya
+1500;گزارش (gozāresh);n;rapor
+1501;پروژه (porozhe);n;proje
+1502;وظیفه (vazife);n;görev
+1503;مهلت (mohlat);n;son tarih
+1504;مدیر (modir);n;müdür
+1505;کارمند (kārmand);n;çalışan
+1506;بیکاری (bikāri);n;işsizlik
+1507;بازنشستگی (bāzneshastegi);n;emeklilik
+1508;حرفه (herfe);n;kariyer
+1509;ترفیع (tarfiʿ);n;terfi
+1510;سود (sud);n;kâr
+1511;زیان (ziyān);n;zarar
+1512;بدهی (bedehi);n;borç
+1513;وام (vām);n;banka kredisi
+1514;سرمایه‌گذاری (sarmāye-gozāri);n;yatırım
+1515;بودجه (budje);n;bütçe
+1516;سهام (sahām);n;hisse senedi
+1517;صنعت (sanʿat);n;sanayi
+1518;تجارت (tejārat);n;ticaret
+1519;صادرات (sāderāt);n;ihracat
+1520;واردات (vāredāt);n;ithalat
+1521;دانشجو (dāneshju);n;üniversite öğrencisi
+1522;استاد (ostād);n;profesör
+1523;تکلیف (taklif);n;ödev
+1524;نمره (nomre);n;not (sınav)
+1525;مدرک (madrak);n;diploma
+1526;رشته (reshte);n;bölüm (üniversite)
+1527;موضوع درسی (mowzuʿ-e darsi);n;ders konusu
+1528;ریاضی (riyāzi);n;matematik
+1529;فیزیک (fizik);n;fizik
+1530;شیمی (shimi);n;kimya
+1531;زیست‌شناسی (zist-shenāsi);n;biyoloji
+1532;جغرافیا (joghrāfiyā);n;coğrafya
+1533;ادبیات (adabiyāt);n;edebiyat
+1534;فلسفه (falsafe);n;felsefe
+1535;پزشکی (pezeshki);n;tıp
+1536;مهندسی (mohandesi);n;mühendislik
+1537;پژوهش (pazhuhesh);n;araştırma
+1538;آزمایش (āzmāyesh);n;deney
+1539;نظریه (nazariye);n;teori
+1540;فرمول (formul);n;formül
+1541;محاسبه (mohāsebe);n;hesaplama
+1542;جمع (jamʿ);n;toplama (matematik)
+1543;اپلیکیشن (aplikeyshen);n;uygulama (mobil)
+1544;نرم‌افزار (narm-afzār);n;yazılım
+1545;سخت‌افزار (sakht-afzār);n;donanım
+1546;داده (dāde);n;veri
+1547;رمز عبور (ramz-e ʿobur);n;şifre
+1548;کاربر (kārbar);n;kullanıcı
+1549;حساب کاربری (hesāb-e kārbari);n;hesap (internet)
+1550;وب‌سایت (vebsāyt);n;web sitesi
+1551;شبکه (shabake);n;ağ
+1552;پیوند (peyvand);n;bağlantı (link)
+1553;شبکه‌های اجتماعی (shabake-hā-ye ejtemāʿi);n;sosyal medya
+1554;ویدیو (vidiyo);n;video
+1555;گوشی هوشمند (gushi-ye hushmand);n;akıllı telefon
+1556;ربات (robāt);n;robot
+1557;هوش مصنوعی (hush-e masnuʿi);n;yapay zeka
+1558;فناوری (fanāvari);n;teknoloji
+1559;اختراع (ekhterāʿ);n;icat
+1560;روزنامه‌نگار (ruznāme-negār);n;gazeteci
+1561;مصاحبه (mosāhebe);n;röportaj
+1562;مقاله (maqāle);n;makale
+1563;عنوان (ʿonvān);n;başlık
+1564;برنامه تلویزیونی (barnāme-ye televiziyoni);n;televizyon programı
+1565;کانال (kānāl);n;kanal
+1566;بیننده (binande);n;izleyici
+1567;شاعر (shāʿer);n;şair
+1568;شعر (sheʿr);n;şiir
+1569;رمان (romān);n;roman
+1570;نقاش (naqqāsh);n;ressam
+1571;نوازنده (navāzande);n;müzisyen
+1572;خواننده (khānande);n;şarkıcı
+1573;بازیگر (bāzigar);n;oyuncu (film)
+1574;کارگردان (kārgardān);n;yönetmen
+1575;صحنه (sahne);n;sahne
+1576;کنسرت (konsert);n;konser
+1577;نمایشگاه (namāyeshgāh);n;sergi
+1578;ساز (sāz);n;müzik aleti
+1579;گیتار (gitār);n;gitar
+1580;پیانو (piyāno);n;piyano
+1581;طبل (tabl);n;davul
+1582;ویولن (violon);n;keman
+1583;ملودی (melodi);n;melodi
+1584;رقص (raqs);n;dans
+1585;نقاشی (naqqāshi);n;çizim
+1586;سرگرمی (sargarmi);n;hobi
+1587;معما (moʿammā);n;bulmaca
+1588;شطرنج (shatranj);n;satranç
+1589;اسباب‌بازی (asbāb-bāzi);n;oyuncak
+1590;فرهنگ لغت (farhang-e loghat);n;sözlük
+1591;دستور زبان (dastur-e zabān);n;dil bilgisi
+1592;ترجمه (tarjome);n;çeviri
+1593;هشدار دادن (hoshdār dādan);v;uyarmak
+1594;حسادت کردن (hesādat kardan);v;kıskanmak
+1595;اعتماد کردن (eʿtemād kardan);v;güvenmek
+1596;مشکوک شدن (mashkuk shodan);v;şüphelenmek
+1597;حدس زدن (hads zadan);v;tahmin etmek
+1598;تصور کردن (tasavvor kardan);v;hayal etmek
+1599;خواب دیدن (khāb didan);v;rüya görmek
+1600;تعریف کردن (taʿrif kardan);v;anlatmak
+1601;گپ زدن (gap zadan);v;sohbet etmek
+1602;متقاعد کردن (motaqāʿed kardan);v;ikna etmek
+1603;اصرار کردن (esrār kardan);v;ısrar etmek
+1604;اعتراف کردن (eʿterāf kardan);v;itiraf etmek
+1605;انکار کردن (enkār kardan);v;inkar etmek
+1606;متهم کردن (mottaham kardan);v;suçlamak
+1607;عذرخواهی کردن (ʿozrkhāhi kardan);v;özür dilemek
+1608;سلام کردن (salām kardan);v;selamlamak
+1609;خداحافظی کردن (khodāhāfezi kardan);v;veda etmek
+1610;معرفی کردن (moʿarrefi kardan);v;tanıştırmak
+1611;تشویق کردن (tashviq kardan);v;cesaretlendirmek
+1612;ستایش کردن (setāyesh kardan);v;övmek
+1613;انتقاد کردن (enteqād kardan);v;eleştirmek
+1614;مسخره کردن (maskhare kardan);v;alay etmek
+1615;شوخی کردن (shukhi kardan);v;şaka yapmak
+1616;دروغ گفتن (dorugh goftan);v;yalan söylemek
+1617;فریب دادن (farib dādan);v;aldatmak
+1618;تهدید کردن (tahdid kardan);v;tehdit etmek
+1619;حمله کردن (hamle kardan);v;saldırmak
+1620;دفاع کردن (defāʿ kardan);v;savunmak
+1621;فرار کردن (farār kardan);v;kaçmak
+1622;پنهان شدن (penhān shodan);v;saklanmak
+1623;پریدن (paridan);v;zıplamak
+1624;خم شدن (kham shodan);v;eğilmek
+1625;دراز کشیدن (derāz keshidan);v;uzanmak (yatmak)
+1626;خزیدن (khazidan);v;sürünmek
+1627;لیز خوردن (liz khordan);v;kaymak
+1628;غرق شدن (gharq shodan);v;batmak
+1629;شناور بودن (shenāvar budan);v;su üstünde durmak
+1630;وزیدن (vazidan);v;esmek (rüzgar)
+1631;باران باریدن (bārān bāridan);v;yağmur yağmak
+1632;درخشیدن (derakhshidan);v;parlamak
+1633;سوختن (sukhtan);v;yanmak
+1634;ذوب شدن (zowb shodan);v;erimek
+1635;یخ زدن (yakh zadan);v;donmak
+1636;جوشیدن (jushidan);v;kaynamak
+1637;سرخ کردن (sorkh kardan);v;kızartmak
+1638;پختن در فر (pokhtan dar fer);v;fırında pişirmek
+1639;مخلوط کردن (makhlut kardan);v;karıştırmak
+1640;خرد کردن (khord kardan);v;doğramak
+1641;پوست کندن (pust kandan);v;soymak (kabuk)
+1642;ریختن (rikhtan);v;dökmek
+1643;سرو کردن (serv kardan);v;servis etmek
+1644;گاز گرفتن (gāz gereftan);v;ısırmak
+1645;جویدن (javidan);v;çiğnemek
+1646;قورت دادن (qurt dādan);v;yutmak
+1647;احساس سرما کردن (ehsās-e sarmā kardan);v;üşümek
+1648;بیمار شدن (bimār shodan);v;hastalanmak
+1649;زخمی شدن (zakhmi shodan);v;yaralanmak
+1650;خونریزی کردن (khunrizi kardan);v;kanamak
+1651;سرفه کردن (sorfe kardan);v;öksürmek
+1652;عطسه کردن (ʿatse kardan);v;hapşırmak
+1653;خمیازه کشیدن (khamyāze keshidan);v;esnemek
+1654;خروپف کردن (khoropof kardan);v;horlamak
+1655;لرزیدن (larzidan);v;titremek
+1656;غش کردن (ghash kardan);v;bayılmak
+1657;غذا دادن (ghazā dādan);v;beslemek
+1658;بزرگ کردن (bozorg kardan);v;yetiştirmek (çocuk)
+1659;آموزش دادن (āmuzesh dādan);v;eğitmek
+1660;حفظ کردن (hefz kardan);v;ezberlemek
+1661;یادداشت برداشتن (yāddāsht bardāshtan);v;not almak
+1662;زیرخط کشیدن (zirkhatt keshidan);v;altını çizmek
+1663;تصحیح کردن (tashih kardan);v;düzeltmek (hata)
+1664;ثابت کردن (sābet kardan);v;kanıtlamak
+1665;کشف کردن (kashf kardan);v;keşfetmek
+1666;اختراع کردن (ekhterāʿ kardan);v;icat etmek
+1667;پژوهش کردن (pazhuhesh kardan);v;araştırmak
+1668;تحلیل کردن (tahlil kardan);v;analiz etmek
+1669;حساب کردن (hesāb kardan);v;hesaplamak
+1670;طبقه‌بندی کردن (tabaqe-bandi kardan);v;sınıflandırmak
+1671;رای دادن (rāy dādan);v;oy vermek
+1672;درخواست دادن (darkhāst dādan);v;başvurmak
+1673;استخدام کردن (estekhdām kardan);v;işe almak
+1674;اخراج کردن (ekhrāj kardan);v;işten çıkarmak
+1675;استعفا دادن (esteʿfā dādan);v;istifa etmek
+1676;بازنشسته شدن (bāzneshaste shodan);v;emekli olmak
+1677;سرمایه‌گذاری کردن (sarmāye-gozāri kardan);v;yatırım yapmak
+1678;قرض گرفتن (qarz gereftan);v;borç almak
+1679;بازپرداخت کردن (bāzpardākht kardan);v;geri ödemek
+1680;امضا کردن (emzā kardan);v;imzalamak
+1681;تأیید کردن (ta'yid kardan);v;onaylamak
+1682;لغو کردن (laghv kardan);v;iptal etmek
+1683;به تعویق انداختن (be taʿviq andākhtan);v;ertelemek
+1684;تحویل دادن (tahvil dādan);v;teslim etmek
+1685;تکمیل کردن (takmil kardan);v;tamamlamak
+1686;موفق شدن (movaffaq shodan);v;başarmak
+1687;شکست خوردن (shekast khordan);v;başarısız olmak
+1688;منصرف شدن (monsaref shodan);v;vazgeçmek
+1689;تحمل کردن (tahammol kardan);v;katlanmak
+1690;عجله کردن (ʿajale kardan);v;acele etmek
+1691;دیر کردن (dir kardan);v;geç kalmak
+1692;گم شدن (gom shodan);v;yolunu kaybetmek
+1693;ظاهر شدن (zāher shodan);v;ortaya çıkmak
+1694;ناپدید شدن (nāpadid shodan);v;kaybolmak (gözden)
+1695;وجود داشتن (vojud dāshtan);v;var olmak
+1696;تعلق داشتن (taʿalloq dāshtan);v;ait olmak
+1697;شامل بودن (shāmel budan);v;içermek
+1698;بستگی داشتن (bastegi dāshtan);v;bağlı olmak
+1699;تأثیر گذاشتن (ta'sir gozāshtan);v;etkilemek
+1700;باعث شدن (bāʿes shodan);v;neden olmak
+1701;جلوگیری کردن (jelowgiri kardan);v;önlemek
+1702;حل کردن (hall kardan);v;çözmek
+1703;اعمال کردن (eʿmāl kardan);v;uygulamak
+1704;نصب کردن (nasb kardan);v;kurmak (program)
+1705;روشن کردن (rowshan kardan);v;açmak (cihaz)
+1706;خاموش کردن (khāmush kardan);v;kapatmak (cihaz)
+1707;شارژ کردن (shārzh kardan);v;şarj etmek
+1708;لایک کردن (lāyk kardan);v;beğenmek (sosyal medya)
+1709;ثبت‌نام کردن (sabt-nām kardan);v;kaydolmak
+1710;به‌روز کردن (be-ruz kardan);v;güncellemek
+1711;کپی کردن (kopi kardan);v;kopyalamak
+1712;چسباندن (chasbāndan);v;yapıştırmak
+1713;تایپ کردن (tāyp kardan);v;klavyede yazmak
+1714;ضبط کردن (zabt kardan);v;kayıt yapmak (ses, video)
+1715;تماشا کردن (tamāshā kardan);v;izlemek
+1716;عکس گرفتن (ʿaks gereftan);v;fotoğraf çekmek
+1717;رنگ کردن (rang kardan);v;boyamak
+1718;دوختن (dukhtan);v;dikiş dikmek
+1719;بافتن (bāftan);v;örmek
+1720;اهدا کردن (ehdā kardan);v;bağışlamak (para)
+1721;سفارش دادن (sefāresh dādan);v;sipariş vermek
+1722;چانه زدن (chāne zadan);v;pazarlık yapmak
+1723;پس دادن (pas dādan);v;iade etmek
+1724;پرو کردن (porov kardan);v;giyip denemek
+1725;پارک کردن (pārk kardan);v;park etmek
+1726;سوار شدن (savār shodan);v;binmek
+1727;پیاده شدن (piyāde shodan);v;araçtan inmek
+1728;مسیر عوض کردن (masir ʿavaz kardan);v;aktarma yapmak
+1729;گردش کردن (gardesh kardan);v;gezmek
+1730;بسته‌بندی کردن (baste-bandi kardan);v;paketlemek
+1731;پذیرایی کردن (pazirāyi kardan);v;ağırlamak
+1732;ساکن شدن (sāken shodan);v;yerleşmek
+1733;مهاجرت کردن (mohājerat kardan);v;göç etmek
+1734;سازگار شدن (sāzgār shodan);v;uyum sağlamak
+1735;عادت کردن (ʿādat kardan);v;alışmak
+1736;دلتنگ شدن (deltang shodan);v;özlemek
+1737;سزاوار بودن (sezāvār budan);v;hak etmek
+1738;رعایت کردن (reʿāyat kardan);v;uymak (kurala)
+1739;نقض کردن (naqz kardan);v;ihlal etmek
+1740;شلوغ (sholugh);adj;kalabalık
+1741;خلوت (khalvat);adj;ıssız
+1742;راحت (rāhat);adj;rahat
+1743;ناراحت (nārāhat);adj;rahatsız
+1744;سخاوتمند (sakhāvatmand);adj;cömert
+1745;خسیس (khasis);adj;cimri
+1746;وفادار (vafādār);adj;sadık
+1747;خودخواه (khodkhāh);adj;bencil
+1748;مغرور (maghrur);adj;kibirli
+1749;فروتن (forutan);adj;alçakgönüllü
+1750;سخت‌کوش (sakht-kush);adj;çalışkan
+1751;صبور (sabur);adj;sabırlı
+1752;بی‌صبر (bi-sabr);adj;sabırsız
+1753;محتاط (mohtāt);adj;dikkatli
+1754;بی‌دقت (bi-deqqat);adj;dikkatsiz
+1755;شاد (shād);adj;neşeli
+1756;نگران (negarān);adj;endişeli
+1757;ترسیده (tarside);adj;korkmuş
+1758;هیجان‌زده (hayajān-zade);adj;heyecanlı
+1759;متعجب (motaʿajjeb);adj;şaşırmış
+1760;ناامید (nāomid);adj;hayal kırıklığına uğramış
+1761;مفتخر (moftakhar);adj;gururlu
+1762;سپاسگزار (sepāsgozār);adj;minnettar
+1763;عاشق (ʿāsheq);adj;aşık
+1764;مست (mast);adj;sarhoş
+1765;خواب‌آلود (khāb-ālud);adj;uykulu
+1766;تشنه (teshne);adj;susamış
+1767;دردناک (dardnāk);adj;ağrılı
+1768;زخمی (zakhmi);adj;yaralı
+1769;کچل (kachal);adj;kel
+1770;بور (bur);adj;sarışın
+1771;سبزه (sabze);adj;esmer
+1772;باردار (bārdār);adj;hamile
+1773;محبوب (mahbub);adj;popüler
+1774;نادر (nāder);adj;nadir
+1775;رایج (rāyej);adj;yaygın
+1776;معمول (maʿmul);adj;tipik
+1777;رسمی (rasmi);adj;resmi
+1778;صمیمی (samimi);adj;samimi
+1779;معمولی (maʿmuli);adj;sıradan
+1780;بی‌نظیر (bi-nazir);adj;eşsiz
+1781;اصلی (asli);adj;ana, başlıca
+1782;پایه‌ای (pāye-i);adj;temel
+1783;پیشرفته (pishrafte);adj;ileri (seviye)
+1784;مطمئن (motma'en);adj;emin
+1785;نامعلوم (nāmaʿlum);adj;belirsiz
+1786;مخفی (makhfi);adj;gizli
+1787;قانونی (qānuni);adj;yasal
+1788;غیرقانونی (gheyr-e qānuni);adj;yasadışı
+1789;عادلانه (ʿādelāne);adj;adil
+1790;ناعادلانه (nāʿādelāne);adj;haksız
+1791;مقدس (moqaddas);adj;kutsal
+1792;تاریخی (tārikhi);adj;tarihi
+1793;سیاسی (siyāsi);adj;siyasi
+1794;اقتصادی (eqtesādi);adj;ekonomik
+1795;اجتماعی (ejtemāʿi);adj;sosyal
+1796;فرهنگی (farhangi);adj;kültürel
+1797;علمی (ʿelmi);adj;bilimsel
+1798;طبیعی (tabiʿi);adj;doğal
+1799;مصنوعی (masnuʿi);adj;yapay
+1800;دیجیتال (dijitāl);adj;dijital
+1801;الکترونیکی (elektroniki);adj;elektronik
+1802;رایگان (rāygān);adj;ücretsiz
+1803;موجود (mowjud);adj;mevcut (elde var)
+1804;ناقص (nāqes);adj;eksik
+1805;اضافی (ezāfi);adj;fazladan
+1806;گمشده (gomshode);adj;kayıp
+1807;شکسته (shekaste);adj;kırık
+1808;محکم (mohkam);adj;sağlam
+1809;قابل اعتماد (qābel-e eʿtemād);adj;güvenilir
+1810;مفید (mofid);adj;faydalı
+1811;بی‌فایده (bi-fāyde);adj;faydasız
+1812;مضر (mozerr);adj;zararlı
+1813;مؤثر (mo'asser);adj;etkili
+1814;موفق (movaffaq);adj;başarılı
+1815;لوکس (luks);adj;lüks
+1816;رنگارنگ (rangārang);adj;renkli
+1817;درخشان (derakhshān);adj;parlak
+1818;رنگ‌پریده (rang-paride);adj;soluk
+1819;شفاف (shaffāf);adj;şeffaf
+1820;نازک (nāzok);adj;ince (kalınlık)
+1821;تنگ (tang);adj;sıkı
+1822;گشاد (goshād);adj;gevşek
+1823;نوک‌تیز (nok-tiz);adj;sivri
+1824;زبر (zebr);adj;pürüzlü
+1825;مربع (morabbaʿ);adj;kare
+1826;مناسب (monāseb);adj;uygun
+1827;نامناسب (nāmonāseb);adj;uygunsuz
+1828;اجباری (ejbāri);adj;zorunlu
+1829;اختیاری (ekhtiyāri);adj;isteğe bağlı
+1830;فوری (fowri);adj;acil
+1831;وحشی (vahshi);adj;vahşi
+1832;اهلی (ahli);adj;evcil
+1833;سمی (sammi);adj;zehirli
+1834;برهنه (berahne);adj;çıplak
+1835;بیدار (bidār);adj;uyanık
+1836;شناخته‌شده (shenākhte-shode);adj;bilinen
+1837;ناشناخته (nāshenākhte);adj;bilinmeyen
+1838;واقع‌بینانه (vāqeʿ-bināne);adj;gerçekçi
+1839;مثبت (mosbat);adj;olumlu
+1840;منفی (manfi);adj;olumsuz
+1841;برابر (barābar);adj;eşit
+1842;مستقل (mostaqel);adj;bağımsız
+1843;فعال (faʿʿāl);adj;aktif
+1844;منفعل (monfaʿel);adj;pasif
+1845;موقت (movaqqat);adj;geçici
+1846;دائمی (dā'emi);adj;kalıcı
+1847;بی‌نهایت (bi-nahāyat);adj;sonsuz
+1848;خوش‌شانس (khosh-shāns);adj;şanslı
+1849;بدشانس (bad-shāns);adj;şanssız
+1850;بی‌گناه (bi-gonāh);adj;masum
+1851;مقصر (moqasser);adj;suçlu
+1852;با استعداد (bā esteʿdād);adj;yetenekli
+1853;دیشب (dishab);adv;dün gece
+1854;امشب (emshab);adv;bu gece
+1855;فردا صبح (fardā sobh);adv;yarın sabah
+1856;پس‌فردا (pas-fardā);adv;öbür gün
+1857;پریروز (pariruz);adv;evvelsi gün
+1858;هفته گذشته (hafte-ye gozashte);adv;geçen hafta
+1859;هفته آینده (hafte-ye āyande);adv;gelecek hafta
+1860;پارسال (pārsāl);adv;geçen yıl
+1861;سال آینده (sāl-e āyande);adv;gelecek yıl
+1862;در حال حاضر (dar hāl-e hāzer);adv;şu anda
+1863;پس (pas);adv;o zaman
+1864;یک بار (yek bār);adv;bir kez
+1865;دو بار (do bār);adv;iki kez
+1866;به‌ندرت (be-nodrat);adv;nadiren
+1867;هر روز (har ruz);adv;her gün
+1868;هنوز نه (hanuz na);adv;henüz değil
+1869;دیگر نه (digar na);adv;artık değil
+1870;سپس (sepas);adv;ardından
+1871;در آخر (dar ākhar);adv;en son
+1872;مدام (modām);adv;sürekli
+1873;کم‌کم (kam-kam);adv;yavaş yavaş
+1874;بی‌صدا (bi-sedā);adv;sessizce
+1875;با صدای بلند (bā sedā-ye boland);adv;yüksek sesle
+1876;به‌آسانی (be-āsāni);adv;kolayca
+1877;به‌سختی (be-sakhti);adv;zorlukla
+1878;خوشبختانه (khoshbakhtāne);adv;neyse ki
+1879;به‌وضوح (be-vozuh);adv;açıkça
+1880;تا حدی (tā haddi);adv;kısmen
+1881;قبلاً (qablan);adv;daha önce
+1882;بعداً (baʿdan);adv;daha sonra
+1883;از آن زمان (az ān zamān);adv;o zamandan beri
+1884;تا حالا (tā hālā);adv;şimdiye kadar
+1885;به داخل (be dākhel);adv;içeri (yön)
+1886;به بیرون (be birun);adv;dışarı (yön)
+1887;به بالا (be bālā);adv;yukarı (yön)
+1888;به پایین (be pāyin);adv;aşağı (yön)
+1889;به عقب (be ʿaqab);adv;geri (yön)
+1890;به جلو (be jelow);adv;ileri (yön)
+1891;روبه‌روی (rubaru-ye);adv;karşısında
+1892;اطراف (atrāf);adv;etrafında
+1893;در طول (dar tul);prep;boyunca
+1894;تا (tā);prep;-e kadar
+1895;هنگام (hengām);prep;sırasında
+1896;با وجود (bā vojud);prep;-e rağmen
+1897;به جای (be jā-ye);prep;yerine
+1898;به جز (be joz);prep;hariç
+1899;طبق (tebq);prep;-e göre
+1900;به لطف (be lotf);prep;sayesinde
+1901;در حالی که (dar hāli ke);conj;-ken
+1902;انگار (engār);conj;sanki
+1903;حتی اگر (hattā agar);conj;-sa bile
+1904;وگرنه (vagarna);conj;aksi halde
+1905;تا اینکه (tā inke);conj;-sın diye
+1906;آفرین (āfarin);int;aferin
+1907;تبریک (tabrik);int;tebrikler
+1908;موفق باشی (movaffaq bāshi);int;iyi şanslar
+1909;نوش جان (nush-e jān);int;afiyet olsun
+1910;بلا دور باشد (balā dur bāshad);int;geçmiş olsun
+1911;مراقب باش (morāqeb bāsh);int;dikkat et
+1912;کمک کنید (komak konid);int;imdat
+1913;به سلامتی (be salāmati);int;şerefe
+1914;خسته نباشی (khaste nabāshi);int;kolay gelsin
+1915;می‌بینمت (mi-binamat);int;görüşürüz
+1916;حالت چطوره (hālet chetore);int;nasılsın
+1917;خوبم (khubam);int;iyiyim
+1918;خواهش می‌کنم (khāhesh mikonam);int;rica ederim
+1919;نمی‌فهمم (nemifahmam);int;anlamıyorum
+1920;می‌شود تکرار کنید (mishavad tekrār konid);int;tekrar eder misiniz
+1921;چه قشنگ (che qashang);int;ne güzel
+1922;عالی (ʿāli);int;harika
+1923;حیف (heyf);int;ne yazık
+1924;بیا (biyā);int;hadi
+1925;ایست (ist);int;dur
+1926;عدد زوج (ʿadad-e zowj);num;çift sayı
+1927;عدد فرد (ʿadad-e fard);num;tek sayı
+1928;دوجین (dojin);num;düzine
+1929;یک چهارم (yek chahārom);num;çeyrek
+1930;یک و نیم (yek o nim);num;bir buçuk
+1931;چهارم (chahārom);num;dördüncü
+1932;پنجم (panjom);num;beşinci
+1933;دهم (dahom);num;onuncu
+1934;میلیارد (milyārd);num;milyar
+1935;جامعه (jāmeʿe);n;toplum
+1936;جمعیت (jamʿiyat);n;nüfus
+1937;دموکراسی (demokrāsi);n;demokrasi
+1938;جمهوری (jomhuri);n;cumhuriyet
+1939;حزب (hezb);n;siyasi parti
+1940;رأی (ra'y);n;oy
+1941;وزیر (vazir);n;bakan
+1942;مجلس (majles);n;meclis
+1943;قانون اساسی (qānun-e asāsi);n;anayasa
+1944;پرچم (parcham);n;bayrak
+1945;امپراتوری (emperāturi);n;imparatorluk
+1946;انقلاب (enqelāb);n;devrim
+1947;استقلال (esteqlāl);n;bağımsızlık
+1948;پیروزی (piruzi);n;zafer
+1949;شکست (shekast);n;yenilgi
+1950;قهرمان (qahremān);n;kahraman / şampiyon
+1951;رهبر (rahbar);n;lider
+1952;نگهبان (negahbān);n;güvenlik görevlisi
+1953;شاهد (shāhed);n;tanık
+1954;مجازات (mojāzāt);n;ceza
+1955;جریمه (jarime);n;para cezası
+1956;جایزه (jāyeze);n;ödül
+1957;مدال (medāl);n;madalya
+1958;مسابقه (mosābeqe);n;yarış
+1959;بازیکن (bāzikon);n;oyuncu (spor)
+1960;داور (dāvar);n;hakem
+1961;مربی (morabbi);n;antrenör
+1962;امتیاز (emtiyāz);n;skor
+1963;بسکتبال (basketbāl);n;basketbol
+1964;والیبال (vālibāl);n;voleybol
+1965;تنیس (tenis);n;tenis
+1966;شنا (shenā);n;yüzme (spor)
+1967;دو (dow);n;koşu
+1968;کشتی (koshti);n;güreş
+1969;بوکس (boks);n;boks
+1970;اسکی (eski);n;kayak
+1971;المپیک (olampik);n;olimpiyatlar
+1972;مسابقات (mosābeqāt);n;turnuva
+1973;هوادار (havādār);n;taraftar
+1974;دعا (doʿā);n;dua
+1975;ایمان (imān);n;inanç
+1976;بهشت (behesht);n;cennet
+1977;جهنم (jahannam);n;cehennem
+1978;فرشته (fereshte);n;melek
+1979;شیطان (sheytān);n;şeytan
+1980;عید (ʿeyd);n;bayram
+1981;سال نو (sāl-e now);n;yılbaşı
+1982;اخلاق (akhlāq);n;ahlak
+1983;عدالت (ʿedālat);n;adalet
+1984;برابری (barābari);n;eşitlik
+1985;مسئولیت (mas'uliyat);n;sorumluluk
+1986;تعهد (taʿahhod);n;yükümlülük
+1987;هویت (hoviyat);n;kimlik
+1988;کارت شناسایی (kārt-e shenāsāyi);n;kimlik kartı
+1989;درآمد (darāmad);n;gelir
+1990;هزینه (hazine);n;gider
+1991;ثروت (servat);n;zenginlik
+1992;فقر (faqr);n;yoksulluk
+1993;بیمه (bime);n;sigorta
+1994;زحمت (zahmat);n;emek
+1995;اعتصاب (eʿtesāb);n;grev
+1996;سازمان (sāzmān);n;örgüt
+1997;نهاد (nahād);n;kurum
+1998;سیستم (sistem);n;sistem
+1999;ساختار (sākhtār);n;yapı
+2000;فرایند (farāyand);n;süreç
+2001;راهبرد (rāhbord);n;strateji
+2002;فرصت (forsat);n;fırsat
+2003;ریسک (risk);n;risk
+2004;بحران (bohrān);n;kriz
+2005;درگیری (dargiri);n;çatışma
+2006;توافق (tavāfoq);n;anlaşma
+2007;بحث (bahs);n;münakaşa
+2008;نظر (nazar);n;görüş
+2009;نصیحت (nasihat);n;öğüt
+2010;انتقاد (enteqād);n;eleştiri
+2011;شکایت (shekāyat);n;şikayet (dilekçe)
+2012;راه‌حل (rāh-hall);n;çözüm
+2013;نیت (niyyat);n;niyet
+2014;آرزو (ārezu);n;dilek
+2015;ترجیح (tarjih);n;tercih
+2016;واقعیت (vāqeʿiyat);n;olgu
+2017;راز (rāz);n;sır
+2018;قول (qowl);n;vaat
+2019;شوخی (shukhi);n;şaka
+2020;تهدید (tahdid);n;tehdit
+2021;حمله (hamle);n;saldırı
+2022;خشونت (khoshunat);n;şiddet
+2023;قربانی (qorbāni);n;kurban
+2024;پناهنده (panāhande);n;mülteci
+2025;داوطلب (dāvtalab);n;gönüllü
+2026;کمک مالی (komak-e māli);n;bağış
+2027;مراسم (marāsem);n;tören
+2028;ارث (ers);n;miras
+2029;تمدن (tamaddon);n;medeniyet
+2030;نسل (nasl);n;nesil
+2031;بشریت (bashariyat);n;insanlık

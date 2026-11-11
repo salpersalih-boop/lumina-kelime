@@ -74,6 +74,8 @@ Lehçe, Yunanca, Japonca, Korece ve Arapça listeleri de ~1.000 temel kelimedir.
 
 Çince, Hintçe, Arapça, Portekizce ve Rusça ikinci 1.000'lik listeyle ~2.000 kelimeye çıkarıldı (vücut, ev, yemek, şehir/seyahat, doğa, iş/okul/teknoloji, fiiller, sıfatlar, kalıp ifadeler, toplum). Diğer diller sırayla aynı listeyle büyütülecek.
 
+Endonezce, Japonca, Farsça, Korece ve İtalyanca da aynı listeyle ~2.000 kelimeye çıkarıldı.
+
 ## Dil ekleme / sıralama
 Tüm diller `js/app/data.js` → `LANGUAGES` listesinde tanımlıdır; dil seçim ekranındaki kartlar, başlıklar, bayraklar, sesli okuma dili ve grup sayıları buradan üretilir. Listedeki sıra ekrandaki sıradır.
 
