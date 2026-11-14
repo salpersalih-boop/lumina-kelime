@@ -1,0 +1,47 @@
+/*
+  VOICE   Sakin, odaklı bir dil laboratuvarı: az renk, bol hava, net durumlar.
+  IDEA    Dil laboratuvarındaki kulaklıklı dinleme kabini ve onun ses bandı.
+  PICTURE Seçili metnin dalga formu oynatıcının kendisi; ilerledikçe dolar.
+  COLOUR  Derin petrol yeşili alan (baskın), açık su yeşili (destek), mercan vurgu.
+          Doğru = yeşil, yanlış = kırmızı — yalnızca cevap durumlarında.
+  TYPE    Lexend (okunabilirlik için tasarlandı), dört boyut.
+  LAYOUT  Üstte petrol yeşili seviye bandı; altında solda yapışkan oynatıcı + metin,
+          sağda sorular. 860px altında tek sütun.
+*/
+:root {
+  color-scheme: light dark;
+
+  --bg:        light-dark(#f4f7f6, #0d1413);
+  --surface:   light-dark(#ffffff, #152120);
+  --surface-2: light-dark(#e9f1ef, #1b2a28);
+  --ink:       light-dark(#14211f, #e6efed);
+  --ink-soft:  light-dark(#4d5f5c, #9db3ae);
+  --line:      light-dark(#d5e1de, #26403c);
+
+  --brand:      light-dark(#0e5a55, #0c4743);   /* seviye bandı */
+  --brand-ink:  #f2fbf9;
+  --brand-strong: light-dark(#0e5a55, #5cc2b6); /* koyu temada da okunur vurgu */
+  --brand-soft: light-dark(#cfe6e2, #1f3b38);
+  --accent:     light-dark(#d9532b, #ff7a52);   /* oynat düğmesi, ilerleme */
+  --accent-ink: #ffffff;
+
+  --ok:       light-dark(#1e7f4f, #4fd18b);
+  --ok-bg:    light-dark(#e3f5ea, #12301f);
+  --bad:      light-dark(#c3332b, #ff6b62);
+  --bad-bg:   light-dark(#fdeaea, #3a1716);
+  --warn-bg:  light-dark(#fff4dc, #33290f);
+
+  --radius:    14px;
+  --radius-sm: 10px;
+  --shadow:    0 1px 2px rgb(10 30 28 / .06), 0 8px 24px rgb(10 30 28 / .06);
+
+  --fs-1: 14px;   /* etiket */
+  --fs-2: 16px;   /* gövde */
+  --fs-3: 20px;   /* bölüm başlığı */
+  --fs-4: clamp(28px, 4vw, 40px); /* ders başlığı */
+
+  --font: 'Lexend', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"]  { color-scheme: dark; }

@@ -1,0 +1,16 @@
+{
+  "name": "tomer-listening",
+  "version": "1.0.0",
+  "description": "TÖMER İngilizce Dinleme ve Anlama modülü — seviye (A1–C2) × alt zorluk (Kolay/Orta/Zor)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node --test tests/*.test.js",
+    "validate": "node tools/validate-content.js",
+    "check": "npm run validate && npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
