@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "levels": [
+    { "id": "A1", "name": "Başlangıç",   "sets": { "kolay": "a1/kolay.json", "orta": "a1/orta.json", "zor": "a1/zor.json" } },
+    { "id": "A2", "name": "Temel",       "sets": { "kolay": null, "orta": null, "zor": null } },
+    { "id": "B1", "name": "Orta",        "sets": { "kolay": null, "orta": null, "zor": null } },
+    { "id": "B2", "name": "Orta üstü",   "sets": { "kolay": null, "orta": null, "zor": null } },
+    { "id": "C1", "name": "İleri",       "sets": { "kolay": null, "orta": null, "zor": null } },
+    { "id": "C2", "name": "Ustalık",     "sets": { "kolay": null, "orta": null, "zor": null } }
+  ]
+}
