@@ -21,13 +21,13 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 20;de;conj;ama, fakat
 21;mert;conj;çünkü
 22;ha;conj;eğer
-23;hogy;conj;ki
+23;hogy;conj;ki / -sın diye
 24;-val;prep;ile, birlikte
 25;nélkül;prep;-sız, olmadan
 26;számára;prep;için
 27;-ban;prep;-de, içinde
 28;-on;prep;üzerinde
-29;alatt;prep;altında
+29;alatt;prep;altında / sırasında
 30;-tól;prep;-den, -dan
 31;felé;prep;-e doğru, -e
 32;között;prep;arasında
@@ -103,7 +103,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 102;mondani;v;söylemek, demek
 103;beszélni;v;konuşmak
 104;látni;v;görmek
-105;nézni;v;bakmak
+105;nézni;v;bakmak / izlemek
 106;hallani;v;duymak
 107;hallgatni;v;dinlemek
 108;tudni;v;bilmek / -ebilmek, yapabilmek
@@ -145,7 +145,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 144;felkelni;v;kalkmak
 145;ülni;v;oturmak (sandalye)
 146;állni;v;ayakta durmak
-147;sétálni;v;yürümek
+147;sétálni;v;yürümek / gezmek
 148;futni;v;koşmak
 149;úszni;v;yüzmek
 150;repülni;v;uçmak
@@ -159,7 +159,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 158;kinyitni;v;açmak
 159;becsukni;v;kapatmak
 160;kezdeni;v;başlamak
-161;befejezni;v;bitirmek
+161;befejezni;v;bitirmek / tamamlamak
 162;megállni;v;durmak
 163;folytatni;v;devam etmek
 164;változtatni;v;değiştirmek
@@ -174,7 +174,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 173;tartani;v;tutmak
 174;vinni;v;taşımak
 175;dobni;v;atmak
-176;esni;v;düşmek
+176;esni;v;düşmek / yağmur yağmak
 177;eltörni;v;kırmak
 178;építeni;v;yapmak, inşa etmek
 179;teremteni;v;yaratmak
@@ -298,7 +298,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 297;térd;n;diz
 298;szív;n;kalp
 299;vér;n;kan
-300;bőr;n;deri, cilt
+300;bőr;n;deri, cilt / deri (malzeme)
 301;csont;n;kemik
 302;egészség;n;sağlık
 303;betegség;n;hastalık
@@ -345,7 +345,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 344;fogkefe;n;diş fırçası
 345;táska;n;çanta
 346;doboz;n;kutu
-347;üveg;n;şişe
+347;üveg;n;şişe / cam
 348;pohár;n;bardak
 349;csésze;n;fincan
 350;tányér;n;tabak
@@ -373,7 +373,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 372;sajt;n;peynir
 373;vaj;n;tereyağı
 374;rizs;n;pirinç
-375;tészta;n;makarna
+375;tészta;n;makarna / hamur
 376;burgonya;n;patates
 377;zöldség;n;sebze
 378;gyümölcs;n;meyve
@@ -388,7 +388,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 387;fokhagyma;n;sarımsak
 388;sárgarépa;n;havuç
 389;uborka;n;salatalık
-390;saláta;n;salata
+390;saláta;n;salata / marul
 391;leves;n;çorba
 392;só;n;tuz
 393;cukor;n;şeker
@@ -423,7 +423,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 422;egyetem;n;üniversite
 423;könyvtár;n;kütüphane
 424;múzeum;n;müze
-425;templom;n;kilise
+425;templom;n;kilise / tapınak
 426;mecset;n;cami
 427;park;n;park
 428;szálloda;n;otel
@@ -457,10 +457,10 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 456;dél;n;güney / öğle
 457;kelet;n;doğu
 458;nyugat;n;batı
-459;sarok;n;köşe
+459;sarok;n;köşe / topuk
 460;központ;n;merkez
 461;hely;n;yer, mekan
-462;cím;n;adres
+462;cím;n;adres / başlık
 463;idő;n;zaman
 464;perc;n;dakika
 465;másodperc;n;saniye
@@ -537,7 +537,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 536;disznó;n;domuz
 537;juh;n;koyun
 538;madár;n;kuş
-539;egér;n;fare
+539;egér;n;fare / fare (bilgisayar)
 540;nyúl;n;tavşan
 541;medve;n;ayı
 542;farkas;n;kurt
@@ -551,7 +551,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 550;majom;n;maymun
 551;elefánt;n;fil
 552;pillangó;n;kelebek
-553;munka;n;iş
+553;munka;n;iş / emek
 554;szakma;n;meslek
 555;cég;n;şirket
 556;iroda;n;ofis
@@ -572,7 +572,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 571;válasz;n;cevap
 572;könyv;n;kitap
 573;füzet;n;defter
-574;toll;n;kalem
+574;toll;n;kalem / tüy
 575;ceruza;n;kurşun kalem
 576;papír;n;kağıt
 577;oldal;n;sayfa
@@ -588,7 +588,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 587;film;n;film
 588;zene;n;müzik
 589;dal;n;şarkı
-590;játék;n;oyun
+590;játék;n;oyun / oyuncak
 591;sport;n;spor
 592;labdarúgás;n;futbol
 593;labda;n;top
@@ -608,7 +608,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 607;póló;n;tişört
 608;nadrág;n;pantolon
 609;szoknya;n;etek
-610;kabát;n;ceket
+610;kabát;n;ceket / palto
 611;cipő;n;ayakkabı
 612;kalap;n;şapka
 613;zokni;n;çorap
@@ -682,7 +682,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 681;szomorú;adj;üzgün
 682;dühös;adj;kızgın
 683;fáradt;adj;yorgun
-684;beteg;adj;hasta
+684;beteg;adj;hasta / hasta (kişi)
 685;egészséges;adj;sağlıklı
 686;éhes;adj;aç
 687;erős;adj;güçlü
@@ -691,7 +691,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 690;sovány;adj;ince, zayıf
 691;okos;adj;akıllı
 692;buta;adj;aptal
-693;kedves;adj;nazik
+693;kedves;adj;nazik / sevgili
 694;durva;adj;kaba
 695;becsületes;adj;dürüst
 696;bátor;adj;cesur
@@ -715,7 +715,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 714;furcsa;adj;garip, tuhaf
 715;különböző;adj;farklı
 716;hasonló;adj;benzer
-717;egyszerű;adj;kolay, basit
+717;egyszerű;adj;kolay, basit / sade
 718;bonyolult;adj;karmaşık
 719;csendes;adj;sessiz
 720;hangos;adj;gürültülü
@@ -754,7 +754,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 753;fekete;adj;siyah
 754;fehér;adj;beyaz
 755;szürke;adj;gri
-756;barna;adj;kahverengi
+756;barna;adj;kahverengi / esmer
 757;narancssárga;adj;turuncu
 758;rózsaszín;adj;pembe
 759;lila;adj;mor
@@ -826,7 +826,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 825;szag;n;koku
 826;íz;n;tat
 827;forma;n;biçim, şekil
-828;méret;n;boyut
+828;méret;n;boyut / beden (giysi)
 829;súly;n;ağırlık
 830;hossz;n;uzunluk
 831;méter;n;metre
@@ -840,12 +840,12 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 839;döntés;n;karar
 840;terv;n;plan
 841;cél;n;amaç, hedef
-842;eredmény;n;sonuç
+842;eredmény;n;sonuç / skor
 843;siker;n;başarı
 844;tapasztalat;n;deneyim
 845;információ;n;bilgi
 846;reakció;n;cevap, tepki
-847;segítség;n;yardım
+847;segítség;n;yardım / imdat
 848;veszély;n;tehlike
 849;biztonság;n;güvenlik
 850;minőség;n;kalite
@@ -896,7 +896,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 895;irányítani;v;yönetmek
 896;alapítani;v;kurmak
 897;támogatni;v;desteklemek
-898;kötni;v;bağlamak
+898;kötni;v;bağlamak / örmek
 899;elválasztani;v;ayırmak
 900;megosztani;v;paylaşmak
 901;spórolni;v;biriktirmek, tasarruf etmek
@@ -946,7 +946,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 945;valójában;adv;aslında
 946;végre;adv;sonunda
 947;hirtelen;adv;aniden
-948;teljesen;adv;kesinlikle
+948;teljesen;adv;kesinlikle / tamamen
 949;valószínűleg;adv;muhtemelen
 950;elég;adv;yeterince
 951;túl;adv;fazla, çok fazla
@@ -959,14 +959,14 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 958;sietve;adv;hızla
 959;figyelmesen;adv;dikkatlice
 960;pusztán;adv;yalnızca, sırf
-961;előre;adv;önceden
+961;előre;adv;önceden / ileri (yön)
 962;közben;adv;bu arada
 963;ezenkívül;adv;ayrıca, üstelik
 964;ezért;adv;bu yüzden
 965;mégis;adv;yine de
 966;elégedett;adj;memnun
 967;házas;adj;evli
-968;egyedülálló;adj;bekar
+968;egyedülálló;adj;bekar / eşsiz
 969;halott;adj;ölü
 970;élő;adj;canlı
 971;nyugodt;adj;sakin
@@ -991,3 +991,1029 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 990;jelenlegi;adj;mevcut, şu anki
 991;előző;adj;eski, önceki
 992;valószínű;adj;olası
+993;homlok;n;alın
+994;orca;n;yanak
+995;áll;n;çene
+996;ajak;n;dudak
+997;szemöldök;n;kaş
+998;szempilla;n;kirpik
+999;szakáll;n;sakal
+1000;bajusz;n;bıyık
+1001;torok;n;boğaz
+1002;csukló;n;bilek
+1003;könyök;n;dirsek
+1004;köröm;n;tırnak
+1005;hüvelykujj;n;başparmak
+1006;derék;n;bel
+1007;csípő;n;kalça
+1008;boka;n;ayak bileği
+1009;agy;n;beyin
+1010;tüdő;n;akciğer
+1011;máj;n;karaciğer
+1012;vese;n;böbrek
+1013;izom;n;kas
+1014;ér;n;damar
+1015;szívverés;n;kalp atışı
+1016;lélegzet;n;nefes
+1017;könnycsepp;n;gözyaşı
+1018;izzadság;n;ter
+1019;láz;n;ateş (hastalık)
+1020;köhögés;n;öksürük
+1021;megfázás;n;soğuk algınlığı
+1022;influenza;n;grip
+1023;fejfájás;n;baş ağrısı
+1024;seb;n;yara
+1025;műtét;n;ameliyat
+1026;kezelés;n;tedavi
+1027;recept;n;reçete / yemek tarifi
+1028;tabletta;n;hap
+1029;oltás;n;aşı
+1030;mentőautó;n;ambulans
+1031;vészhelyzet;n;acil durum
+1032;alvás;n;uyku
+1033;fáradtság;n;yorgunluk
+1034;stressz;n;stres
+1035;diéta;n;diyet
+1036;testmozgás;n;egzersiz
+1037;magasság;n;boy (uzunluk)
+1038;öröm;n;sevinç
+1039;szomorúság;n;üzüntü
+1040;düh;n;öfke
+1041;féltékenység;n;kıskançlık
+1042;szégyen;n;utanç
+1043;büszkeség;n;gurur
+1044;kíváncsiság;n;merak
+1045;türelem;n;sabır
+1046;bizalom;n;güven
+1047;aggodalom;n;endişe
+1048;magány;n;yalnızlık
+1049;bátorság;n;cesaret
+1050;gyűlölet;n;nefret
+1051;meglepetés;n;şaşkınlık
+1052;élvezet;n;keyif, zevk
+1053;megbánás;n;pişmanlık
+1054;hála;n;minnettarlık
+1055;tisztelet;n;saygı
+1056;személyiség;n;kişilik
+1057;szokás;n;alışkanlık
+1058;viselkedés;n;davranış
+1059;hangulat;n;ruh hali
+1060;nevetés;n;kahkaha
+1061;mosoly;n;gülümseme
+1062;csók;n;öpücük
+1063;ölelés;n;sarılma
+1064;lélek;n;ruh
+1065;elme;n;zihin
+1066;memória;n;hafıza
+1067;intelligencia;n;zeka
+1068;bölcsesség;n;bilgelik
+1069;tehetség;n;yetenek
+1070;készség;n;beceri
+1071;szépség;n;güzellik
+1072;ifjúság;n;gençlik
+1073;öregség;n;yaşlılık
+1074;gyermekkor;n;çocukluk
+1075;születés;n;doğum
+1076;esküvő;n;düğün
+1077;temetés;n;cenaze
+1078;vőlegény;n;nişanlı (erkek)
+1079;menyasszony;n;gelin
+1080;özvegy;n;dul (kadın)
+1081;felnőtt;n;yetişkin
+1082;kamasz;n;ergen
+1083;idős ember;n;yaşlı (kişi)
+1084;unoka;n;torun
+1085;unokaöcs;n;yeğen
+1086;anyós;n;kayınvalide
+1087;iker;n;ikiz
+1088;rokon;n;akraba
+1089;ellenség;n;düşman
+1090;párna;n;yastık
+1091;takaró;n;battaniye
+1092;lepedő;n;çarşaf
+1093;polc;n;raf
+1094;fiók;n;çekmece / hesap (internet)
+1095;zár;n;kilit
+1096;konnektor;n;priz
+1097;villanykörte;n;ampul
+1098;légkondi;n;klima
+1099;radiátor;n;kalorifer
+1100;mosógép;n;çamaşır makinesi
+1101;mosogatógép;n;bulaşık makinesi
+1102;porszívó;n;elektrikli süpürge
+1103;vasaló;n;ütü
+1104;mikrohullámú sütő;n;mikrodalga fırın
+1105;tűzhely;n;ocak (mutfak)
+1106;serpenyő;n;tava
+1107;vízforraló;n;çaydanlık
+1108;tál;n;kase
+1109;szalvéta;n;peçete
+1110;tálca;n;tepsi
+1111;szemét;n;çöp
+1112;szemetes;n;çöp kutusu
+1113;vödör;n;kova
+1114;seprű;n;süpürge
+1115;kefe;n;fırça
+1116;fésű;n;tarak
+1117;fogkrém;n;diş macunu
+1118;sampon;n;şampuan
+1119;zuhany;n;duş
+1120;kád;n;küvet
+1121;mosdó;n;lavabo
+1122;vécécsésze;n;klozet
+1123;csap;n;musluk
+1124;vécépapír;n;tuvalet kağıdı
+1125;gyertya;n;mum
+1126;gyufa;n;kibrit
+1127;öngyújtó;n;çakmak
+1128;olló;n;makas
+1129;tű;n;iğne
+1130;cérna;n;iplik
+1131;gomb;n;düğme
+1132;cipzár;n;fermuar
+1133;zseb;n;cep
+1134;öv;n;kemer
+1135;nyakkendő;n;kravat
+1136;kesztyű;n;eldiven
+1137;sál;n;atkı
+1138;pulóver;n;kazak
+1139;rövidnadrág;n;şort
+1140;fehérnemű;n;iç çamaşırı
+1141;pizsama;n;pijama
+1142;papucs;n;terlik
+1143;csizma;n;çizme
+1144;hátizsák;n;sırt çantası
+1145;esernyő;n;şemsiye
+1146;nyaklánc;n;kolye
+1147;fülbevaló;n;küpe
+1148;karóra;n;kol saati
+1149;parfüm;n;parfüm
+1150;smink;n;makyaj
+1151;fényképezőgép;n;fotoğraf makinesi
+1152;elem;n;pil
+1153;töltő;n;şarj aleti
+1154;fülhallgató;n;kulaklık
+1155;kábel;n;kablo
+1156;képernyő;n;ekran
+1157;billentyűzet;n;klavye
+1158;nyomtató;n;yazıcı
+1159;rádió;n;radyo
+1160;távirányító;n;kumanda
+1161;naptár;n;takvim
+1162;boríték;n;zarf
+1163;bélyeg;n;pul
+1164;csomag;n;koli
+1165;kötél;n;ip
+1166;szög;n;çivi
+1167;kalapács;n;çekiç
+1168;csavarhúzó;n;tornavida
+1169;létra;n;el merdiveni
+1170;tégla;n;tuğla
+1171;faanyag;n;tahta (malzeme)
+1172;vas;n;demir
+1173;arany;n;altın
+1174;ezüst;n;gümüş
+1175;műanyag;n;plastik
+1176;fém;n;metal
+1177;anyag;n;kumaş
+1178;pamut;n;pamuk
+1179;selyem;n;ipek
+1180;gyapjú;n;yün
+1181;bútor;n;mobilya
+1182;kilincs;n;kapı kolu
+1183;erkély;n;balkon
+1184;pince;n;bodrum
+1185;garázs;n;garaj
+1186;lift;n;asansör
+1187;emelet;n;kat
+1188;folyosó;n;koridor
+1189;kerítés;n;çit
+1190;bérleti díj;n;kira
+1191;liszt;n;un
+1192;olajbogyó;n;zeytin
+1193;olívaolaj;n;zeytinyağı
+1194;ecet;n;sirke
+1195;szósz;n;sos
+1196;fűszer;n;baharat
+1197;menta;n;nane
+1198;petrezselyem;n;maydanoz
+1199;fahéj;n;tarçın
+1200;gyömbér;n;zencefil
+1201;csípős paprika;n;acı biber
+1202;bab;n;fasulye
+1203;csicseriborsó;n;nohut
+1204;lencse;n;mercimek
+1205;borsó;n;bezelye
+1206;kukorica;n;mısır
+1207;búza;n;buğday
+1208;káposzta;n;lahana
+1209;padlizsán;n;patlıcan
+1210;spenót;n;ıspanak
+1211;gomba;n;mantar
+1212;sütőtök;n;bal kabağı
+1213;görögdinnye;n;karpuz
+1214;sárgadinnye;n;kavun
+1215;körte;n;armut
+1216;őszibarack;n;şeftali
+1217;cseresznye;n;kiraz
+1218;szilva;n;erik
+1219;ananász;n;ananas
+1220;mangó;n;mango
+1221;füge;n;incir
+1222;datolya;n;hurma
+1223;gránátalma;n;nar
+1224;mogyoró;n;fındık
+1225;dió;n;ceviz
+1226;mandula;n;badem
+1227;földimogyoró;n;yer fıstığı
+1228;mazsola;n;kuru üzüm
+1229;bárányhús;n;kuzu eti
+1230;marhahús;n;dana eti
+1231;kolbász;n;sosis
+1232;fasírt;n;köfte
+1233;darált hús;n;kıyma
+1234;garnélarák;n;karides
+1235;tonhal;n;ton balığı
+1236;joghurt;n;yoğurt
+1237;tejszín;n;krema
+1238;lekvár;n;reçel
+1239;keksz;n;kurabiye
+1240;cukorka;n;şekerleme
+1241;desszert;n;tatlı (yemek)
+1242;szendvics;n;sandviç
+1243;pizza;n;pizza
+1244;hamburger;n;hamburger
+1245;sült krumpli;n;patates kızartması
+1246;omlett;n;omlet
+1247;kebab;n;kebap
+1248;ásványvíz;n;maden suyu
+1249;üdítő;n;gazoz
+1250;jég;n;buz
+1251;szelet;n;dilim
+1252;hozzávaló;n;malzeme
+1253;adag;n;porsiyon
+1254;pékség;n;fırın (ekmek)
+1255;hentesbolt;n;kasap
+1256;zöldséges;n;manav
+1257;avokádó;n;avokado
+1258;kókuszdió;n;hindistan cevizi
+1259;sárgabarack;n;kayısı
+1260;málna;n;ahududu
+1261;retek;n;turp
+1262;zeller;n;kereviz
+1263;brokkoli;n;brokoli
+1264;karfiol;n;karnabahar
+1265;gabona;n;tahıl
+1266;zab;n;yulaf
+1267;élesztő;n;maya
+1268;vanília;n;vanilya
+1269;szárny;n;kanat
+1270;vágódeszka;n;kesme tahtası
+1271;fedő;n;kapak
+1272;befőttesüveg;n;kavanoz
+1273;konzervdoboz;n;konserve kutusu
+1274;zacskó;n;poşet
+1275;abrosz;n;masa örtüsü
+1276;kancsó;n;sürahi
+1277;rágcsálnivaló;n;atıştırmalık
+1278;ital;n;içecek
+1279;alkohol;n;alkol
+1280;vegetáriánus;n;vejetaryen
+1281;falat;n;lokma
+1282;pirítós;n;kızarmış ekmek
+1283;palacsinta;n;krep
+1284;limonádé;n;limonata
+1285;kakaó;n;kakao
+1286;mag;n;tohum
+1287;héj;n;kabuk
+1288;környék;n;mahalle
+1289;kisváros;n;kasaba
+1290;főváros;n;başkent
+1291;határ;n;sınır
+1292;járda;n;kaldırım
+1293;kereszteződés;n;kavşak
+1294;közlekedési lámpa;n;trafik ışığı
+1295;zebra;n;yaya geçidi / zebra
+1296;parkoló;n;otopark
+1297;benzinkút;n;benzin istasyonu
+1298;benzin;n;benzin
+1299;kerék;n;tekerlek
+1300;motor;n;motor
+1301;fék;n;fren
+1302;jogosítvány;n;ehliyet
+1303;motorkerékpár;n;motosiklet
+1304;teherautó;n;kamyon
+1305;csónak;n;tekne
+1306;helikopter;n;helikopter
+1307;villamos;n;tramvay
+1308;peron;n;peron
+1309;utas;n;yolcu
+1310;pilóta;n;pilot
+1311;légiutas-kísérő;n;hostes
+1312;leszállás;n;iniş (uçak)
+1313;repülés;n;uçuş
+1314;poggyász;n;bagaj
+1315;vám;n;gümrük
+1316;vízum;n;vize
+1317;idegenvezető;n;rehber (kişi)
+1318;kemping;n;kamp
+1319;sátor;n;çadır
+1320;táj;n;manzara
+1321;emlékmű;n;anıt
+1322;palota;n;saray
+1323;vár;n;kale
+1324;torony;n;kule
+1325;szobor;n;heykel
+1326;szökőkút;n;çeşme
+1327;állatkert;n;hayvanat bahçesi
+1328;bevásárlóközpont;n;alışveriş merkezi
+1329;kassza;n;kasa (ödeme)
+1330;blokk;n;fiş
+1331;készpénz;n;nakit
+1332;hitelkártya;n;kredi kartı
+1333;érme;n;bozuk para
+1334;pénznem;n;para birimi
+1335;gyógyszerész;n;eczacı
+1336;fodrász;n;kuaför
+1337;szabó;n;terzi
+1338;könyvesbolt;n;kitapçı
+1339;kirakat;n;vitrin
+1340;kiárusítás;n;indirimli satış
+1341;márka;n;marka
+1342;kosár;n;sepet
+1343;bevásárlókocsi;n;alışveriş arabası
+1344;tábla;n;tabela
+1345;nyilvános vécé;n;umumi tuvalet
+1346;bérlő;n;kiracı
+1347;háztulajdonos;n;ev sahibi
+1348;börtön;n;hapishane
+1349;városháza;n;belediye
+1350;nagykövetség;n;elçilik
+1351;gyár;n;fabrika
+1352;raktár;n;depo
+1353;tanya;n;çiftlik
+1354;stadion;n;stadyum
+1355;edzőterem;n;spor salonu
+1356;uszoda;n;yüzme havuzu
+1357;temető;n;mezarlık
+1358;alagút;n;tünel
+1359;autópálya;n;otoyol
+1360;távolság;n;mesafe
+1361;kilométer;n;kilometre
+1362;irány;n;yön
+1363;sebesség;n;hız
+1364;érkezés;n;varış
+1365;indulás;n;kalkış
+1366;késés;n;gecikme
+1367;menetrend;n;tarife (saatler)
+1368;foglalás;n;rezervasyon
+1369;recepció;n;resepsiyon
+1370;ajándéktárgy;n;hediyelik eşya
+1371;túra;n;tur
+1372;part;n;kıyı
+1373;világítótorony;n;deniz feneri
+1374;romok;n;harabe
+1375;felhőkarcoló;n;gökdelen
+1376;pad;n;bank (oturma)
+1377;postaláda;n;posta kutusu
+1378;képeslap;n;kartpostal
+1379;kapitány;n;kaptan
+1380;naptej;n;güneş kremi
+1381;napszemüveg;n;güneş gözlüğü
+1382;turizmus;n;turizm
+1383;külföld;n;yurt dışı
+1384;bevándorló;n;göçmen
+1385;állampolgár;n;vatandaş
+1386;bolygó;n;gezegen
+1387;világegyetem;n;evren
+1388;világűr;n;uzay
+1389;szivárvány;n;gökkuşağı
+1390;villám;n;şimşek
+1391;mennydörgés;n;gök gürültüsü
+1392;köd;n;sis
+1393;jégeső;n;dolu (yağış)
+1394;földrengés;n;deprem
+1395;árvíz;n;sel
+1396;aszály;n;kuraklık
+1397;vulkán;n;volkan
+1398;sivatag;n;çöl
+1399;völgy;n;vadi
+1400;barlang;n;mağara
+1401;vízesés;n;şelale
+1402;hullám;n;dalga
+1403;szikla;n;kaya
+1404;por;n;toz
+1405;sár;n;çamur
+1406;kontinens;n;kıta
+1407;látóhatár;n;ufuk
+1408;napkelte;n;gün doğumu
+1409;naplemente;n;gün batımı
+1410;árnyék;n;gölge
+1411;éghajlat;n;iklim
+1412;környezet;n;çevre
+1413;szennyezés;n;kirlilik
+1414;növény;n;bitki
+1415;gyökér;n;kök
+1416;ág;n;dal
+1417;rózsa;n;gül
+1418;tulipán;n;lale
+1419;fenyő;n;çam
+1420;tölgy;n;meşe
+1421;pálmafa;n;palmiye
+1422;kaktusz;n;kaktüs
+1423;moha;n;yosun
+1424;fészek;n;kuş yuvası
+1425;farok;n;kuyruk (hayvan)
+1426;szarv;n;boynuz
+1427;karom;n;pençe
+1428;csőr;n;gaga
+1429;kecske;n;keçi
+1430;szamár;n;eşek
+1431;teve;n;deve
+1432;tigris;n;kaplan
+1433;zsiráf;n;zürafa
+1434;szarvas;n;geyik
+1435;mókus;n;sincap
+1436;sün;n;kirpi
+1437;teknős;n;kaplumbağa
+1438;béka;n;kurbağa
+1439;krokodil;n;timsah
+1440;cápa;n;köpekbalığı
+1441;bálna;n;balina
+1442;delfin;n;yunus
+1443;polip;n;ahtapot
+1444;rák;n;yengeç
+1445;hangya;n;karınca
+1446;pók;n;örümcek
+1447;szúnyog;n;sivrisinek
+1448;giliszta;n;solucan
+1449;sas;n;kartal
+1450;bagoly;n;baykuş
+1451;galamb;n;güvercin
+1452;varjú;n;karga
+1453;papagáj;n;papağan
+1454;kakas;n;horoz
+1455;bárány;n;kuzu
+1456;kölyökkutya;n;köpek yavrusu
+1457;kiscica;n;kedi yavrusu
+1458;háziállat;n;evcil hayvan
+1459;forrás;n;kaynak (su)
+1460;mocsár;n;bataklık
+1461;öböl;n;körfez
+1462;csúcs;n;zirve
+1463;síkság;n;ova
+1464;gleccser;n;buzul
+1465;sark;n;kutup
+1466;szén;n;kömür
+1467;kőolaj;n;petrol
+1468;gáz;n;gaz
+1469;füst;n;duman
+1470;láng;n;alev
+1471;gőz;n;buhar
+1472;csepp;n;damla
+1473;napfény;n;güneş ışığı
+1474;faj;n;tür (canlı)
+1475;páratartalom;n;nem
+1476;fok;n;derece
+1477;időjárás-előrejelzés;n;hava tahmini
+1478;bokor;n;çalı
+1479;tűzifa;n;odun
+1480;korall;n;mercan
+1481;gyöngy;n;inci
+1482;gyémánt;n;elmas
+1483;mágnes;n;mıknatıs
+1484;állásinterjú;n;iş görüşmesi
+1485;önéletrajz;n;özgeçmiş
+1486;szerződés;n;sözleşme
+1487;aláírás;n;imza
+1488;dokumentum;n;belge
+1489;fájl;n;dosya
+1490;jelentés;n;rapor
+1491;projekt;n;proje
+1492;feladat;n;görev
+1493;határidő;n;son tarih
+1494;vezető;n;müdür / lider
+1495;alkalmazott;n;çalışan
+1496;munkanélküliség;n;işsizlik
+1497;nyugdíj;n;emeklilik
+1498;karrier;n;kariyer
+1499;előléptetés;n;terfi
+1500;nyereség;n;kâr
+1501;veszteség;n;zarar
+1502;adósság;n;borç
+1503;kölcsön;n;banka kredisi
+1504;befektetés;n;yatırım
+1505;költségvetés;n;bütçe
+1506;részvény;n;hisse senedi
+1507;ipar;n;sanayi
+1508;kereskedelem;n;ticaret
+1509;export;n;ihracat
+1510;import;n;ithalat
+1511;egyetemista;n;üniversite öğrencisi
+1512;professzor;n;profesör
+1513;házi feladat;n;ödev
+1514;osztályzat;n;not (sınav)
+1515;diploma;n;diploma
+1516;tanszék;n;bölüm (üniversite)
+1517;tantárgy;n;ders konusu
+1518;matematika;n;matematik
+1519;fizika;n;fizik
+1520;kémia;n;kimya
+1521;biológia;n;biyoloji
+1522;földrajz;n;coğrafya
+1523;irodalom;n;edebiyat
+1524;filozófia;n;felsefe
+1525;orvostudomány;n;tıp
+1526;mérnöki tudomány;n;mühendislik
+1527;kutatás;n;araştırma
+1528;kísérlet;n;deney
+1529;elmélet;n;teori
+1530;képlet;n;formül
+1531;számítás;n;hesaplama
+1532;összeadás;n;toplama (matematik)
+1533;program;n;program (bilgisayar)
+1534;alkalmazás;n;uygulama (mobil)
+1535;szoftver;n;yazılım
+1536;hardver;n;donanım
+1537;adat;n;veri
+1538;jelszó;n;şifre
+1539;felhasználó;n;kullanıcı
+1540;weboldal;n;web sitesi
+1541;hálózat;n;ağ
+1542;hivatkozás;n;bağlantı (link)
+1543;közösségi média;n;sosyal medya
+1544;videó;n;video
+1545;okostelefon;n;akıllı telefon
+1546;robot;n;robot
+1547;mesterséges intelligencia;n;yapay zeka
+1548;technológia;n;teknoloji
+1549;találmány;n;icat
+1550;újságíró;n;gazeteci
+1551;interjú;n;röportaj
+1552;cikk;n;makale
+1553;tévéműsor;n;televizyon programı
+1554;csatorna;n;kanal
+1555;néző;n;izleyici
+1556;költő;n;şair
+1557;vers;n;şiir
+1558;regény;n;roman
+1559;festő;n;ressam
+1560;zenész;n;müzisyen
+1561;énekes;n;şarkıcı
+1562;színész;n;oyuncu (film)
+1563;rendező;n;yönetmen
+1564;színpad;n;sahne
+1565;koncert;n;konser
+1566;kiállítás;n;sergi
+1567;hangszer;n;müzik aleti
+1568;gitár;n;gitar
+1569;zongora;n;piyano
+1570;dob;n;davul
+1571;hegedű;n;keman
+1572;dallam;n;melodi
+1573;tánc;n;dans
+1574;rajz;n;çizim
+1575;hobbi;n;hobi
+1576;rejtvény;n;bulmaca
+1577;sakk;n;satranç
+1578;szótár;n;sözlük
+1579;nyelvtan;n;dil bilgisi
+1580;fordítás;n;çeviri
+1581;figyelmeztetni;v;uyarmak
+1582;irigyelni;v;kıskanmak
+1583;bízni;v;güvenmek
+1584;gyanakodni;v;şüphelenmek
+1585;kitalálni;v;tahmin etmek
+1586;elképzelni;v;hayal etmek
+1587;álmodni;v;rüya görmek
+1588;elmesélni;v;anlatmak
+1589;beszélgetni;v;sohbet etmek
+1590;meggyőzni;v;ikna etmek
+1591;ragaszkodni;v;ısrar etmek
+1592;bevallani;v;itiraf etmek
+1593;tagadni;v;inkar etmek
+1594;vádolni;v;suçlamak
+1595;bocsánatot kérni;v;özür dilemek
+1596;üdvözölni;v;selamlamak
+1597;elbúcsúzni;v;veda etmek
+1598;bemutatni;v;tanıştırmak
+1599;bátorítani;v;cesaretlendirmek
+1600;dicsérni;v;övmek
+1601;kritizálni;v;eleştirmek
+1602;kigúnyolni;v;alay etmek
+1603;viccelni;v;şaka yapmak
+1604;hazudni;v;yalan söylemek
+1605;becsapni;v;aldatmak
+1606;fenyegetni;v;tehdit etmek
+1607;megtámadni;v;saldırmak
+1608;megvédeni;v;savunmak
+1609;elmenekülni;v;kaçmak
+1610;elbújni;v;saklanmak
+1611;üldözni;v;kovalamak
+1612;ugrálni;v;zıplamak
+1613;lehajolni;v;eğilmek
+1614;lefeküdni;v;uzanmak (yatmak)
+1615;kúszni;v;sürünmek
+1616;megcsúszni;v;kaymak
+1617;elsüllyedni;v;batmak
+1618;lebegni;v;su üstünde durmak
+1619;fújni;v;esmek (rüzgar)
+1620;ragyogni;v;parlamak
+1621;égni;v;yanmak
+1622;olvadni;v;erimek
+1623;megfagyni;v;donmak
+1624;forrni;v;kaynamak
+1625;sütni;v;kızartmak
+1626;kisütni;v;fırında pişirmek
+1627;keverni;v;karıştırmak
+1628;felaprítani;v;doğramak
+1629;hámozni;v;soymak (kabuk)
+1630;kiönteni;v;dökmek
+1631;tálalni;v;servis etmek
+1632;harapni;v;ısırmak
+1633;rágni;v;çiğnemek
+1634;lenyelni;v;yutmak
+1635;fázni;v;üşümek
+1636;megbetegedni;v;hastalanmak
+1637;megsérülni;v;yaralanmak
+1638;vérezni;v;kanamak
+1639;köhögni;v;öksürmek
+1640;tüsszenteni;v;hapşırmak
+1641;ásítani;v;esnemek
+1642;horkolni;v;horlamak
+1643;remegni;v;titremek
+1644;elájulni;v;bayılmak
+1645;etetni;v;beslemek
+1646;felnevelni;v;yetiştirmek (çocuk)
+1647;edzeni;v;eğitmek
+1648;bemagolni;v;ezberlemek
+1649;jegyzetelni;v;not almak
+1650;aláhúzni;v;altını çizmek
+1651;kijavítani;v;düzeltmek (hata)
+1652;bizonyítani;v;kanıtlamak
+1653;felfedezni;v;keşfetmek
+1654;feltalálni;v;icat etmek
+1655;kutatni;v;araştırmak
+1656;elemezni;v;analiz etmek
+1657;kiszámítani;v;hesaplamak
+1658;osztályozni;v;sınıflandırmak
+1659;szavazni;v;oy vermek
+1660;jelentkezni;v;başvurmak
+1661;felvenni;v;işe almak / kayıt yapmak (ses, video)
+1662;elbocsátani;v;işten çıkarmak
+1663;lemondani;v;istifa etmek / iptal etmek
+1664;nyugdíjba menni;v;emekli olmak
+1665;befektetni;v;yatırım yapmak
+1666;kölcsönkérni;v;borç almak
+1667;visszafizetni;v;geri ödemek
+1668;aláírni;v;imzalamak
+1669;jóváhagyni;v;onaylamak
+1670;elhalasztani;v;ertelemek
+1671;átadni;v;teslim etmek
+1672;sikerülni;v;başarmak
+1673;kudarcot vallani;v;başarısız olmak
+1674;feladni;v;vazgeçmek
+1675;elviselni;v;katlanmak
+1676;sietni;v;acele etmek
+1677;késni;v;geç kalmak
+1678;eltévedni;v;yolunu kaybetmek
+1679;megjelenni;v;ortaya çıkmak
+1680;eltűnni;v;kaybolmak (gözden)
+1681;létezni;v;var olmak
+1682;tartozni;v;ait olmak
+1683;tartalmazni;v;içermek
+1684;függeni;v;bağlı olmak
+1685;befolyásolni;v;etkilemek
+1686;okozni;v;neden olmak
+1687;megelőzni;v;önlemek
+1688;megoldani;v;çözmek
+1689;alkalmazni;v;uygulamak
+1690;telepíteni;v;kurmak (program)
+1691;bekapcsolni;v;açmak (cihaz)
+1692;kikapcsolni;v;kapatmak (cihaz)
+1693;tölteni;v;şarj etmek
+1694;rákeresni;v;internette aramak
+1695;lájkolni;v;beğenmek (sosyal medya)
+1696;regisztrálni;v;kaydolmak
+1697;bejelentkezni;v;giriş yapmak (hesap)
+1698;frissíteni;v;güncellemek
+1699;másolni;v;kopyalamak
+1700;beilleszteni;v;yapıştırmak
+1701;gépelni;v;klavyede yazmak
+1702;fényképezni;v;fotoğraf çekmek
+1703;festeni;v;boyamak
+1704;varrni;v;dikiş dikmek
+1705;adományozni;v;bağışlamak (para)
+1706;rendelni;v;sipariş vermek
+1707;alkudni;v;pazarlık yapmak
+1708;visszavinni;v;iade etmek
+1709;felpróbálni;v;giyip denemek
+1710;parkolni;v;park etmek
+1711;felszállni;v;binmek
+1712;leszállni;v;araçtan inmek
+1713;átszállni;v;aktarma yapmak
+1714;becsomagolni;v;paketlemek
+1715;vendégül látni;v;ağırlamak
+1716;letelepedni;v;yerleşmek
+1717;kivándorolni;v;göç etmek
+1718;alkalmazkodni;v;uyum sağlamak
+1719;megszokni;v;alışmak
+1720;hiányolni;v;özlemek
+1721;megérdemelni;v;hak etmek
+1722;betartani;v;uymak (kurala)
+1723;megszegni;v;ihlal etmek
+1724;zsúfolt;adj;kalabalık
+1725;elhagyatott;adj;ıssız
+1726;kényelmes;adj;rahat
+1727;kényelmetlen;adj;rahatsız
+1728;nagylelkű;adj;cömert
+1729;fösvény;adj;cimri
+1730;hűséges;adj;sadık
+1731;önző;adj;bencil
+1732;arrogáns;adj;kibirli
+1733;szerény;adj;alçakgönüllü
+1734;szorgalmas;adj;çalışkan
+1735;türelmes;adj;sabırlı
+1736;türelmetlen;adj;sabırsız
+1737;óvatos;adj;dikkatli
+1738;figyelmetlen;adj;dikkatsiz
+1739;vidám;adj;neşeli
+1740;aggódó;adj;endişeli
+1741;ijedt;adj;korkmuş
+1742;izgatott;adj;heyecanlı
+1743;meglepett;adj;şaşırmış
+1744;csalódott;adj;hayal kırıklığına uğramış
+1745;büszke;adj;gururlu
+1746;hálás;adj;minnettar
+1747;magányos;adj;yalnız (duygusal)
+1748;szerelmes;adj;aşık
+1749;részeg;adj;sarhoş
+1750;álmos;adj;uykulu
+1751;szomjas;adj;susamış
+1752;jóllakott;adj;tok
+1753;fájós;adj;ağrılı
+1754;sérült;adj;yaralı
+1755;kopasz;adj;kel
+1756;szőke;adj;sarışın
+1757;terhes;adj;hamile
+1758;népszerű;adj;popüler
+1759;ritka;adj;nadir
+1760;elterjedt;adj;yaygın
+1761;tipikus;adj;tipik
+1762;hivatalos;adj;resmi
+1763;szívélyes;adj;samimi
+1764;hétköznapi;adj;sıradan
+1765;fő;adj;ana, başlıca
+1766;alapvető;adj;temel
+1767;haladó;adj;ileri (seviye)
+1768;biztos;adj;emin
+1769;bizonytalan;adj;belirsiz
+1770;titkos;adj;gizli
+1771;legális;adj;yasal
+1772;illegális;adj;yasadışı
+1773;igazságos;adj;adil
+1774;igazságtalan;adj;haksız
+1775;szent;adj;kutsal
+1776;történelmi;adj;tarihi
+1777;politikai;adj;siyasi
+1778;gazdasági;adj;ekonomik
+1779;társadalmi;adj;sosyal
+1780;kulturális;adj;kültürel
+1781;tudományos;adj;bilimsel
+1782;természetes;adj;doğal
+1783;mesterséges;adj;yapay
+1784;digitális;adj;dijital
+1785;elektronikus;adj;elektronik
+1786;automatikus;adj;otomatik
+1787;ingyenes;adj;ücretsiz
+1788;elérhető;adj;mevcut (elde var)
+1789;hiányos;adj;eksik
+1790;extra;adj;fazladan
+1791;elveszett;adj;kayıp
+1792;törött;adj;kırık
+1793;strapabíró;adj;sağlam
+1794;megbízható;adj;güvenilir
+1795;hasznos;adj;faydalı
+1796;haszontalan;adj;faydasız
+1797;káros;adj;zararlı
+1798;hatékony;adj;etkili
+1799;sikeres;adj;başarılı
+1800;luxus;adj;lüks
+1801;színes;adj;renkli
+1802;fényes;adj;parlak
+1803;sápadt;adj;soluk
+1804;átlátszó;adj;şeffaf
+1805;vékony;adj;ince (kalınlık)
+1806;szoros;adj;sıkı
+1807;laza;adj;gevşek
+1808;hegyes;adj;sivri
+1809;sima;adj;pürüzsüz
+1810;érdes;adj;pürüzlü
+1811;négyzet alakú;adj;kare
+1812;megfelelő;adj;uygun
+1813;alkalmatlan;adj;uygunsuz
+1814;kötelező;adj;zorunlu
+1815;választható;adj;isteğe bağlı
+1816;sürgős;adj;acil
+1817;vad;adj;vahşi
+1818;szelíd;adj;evcil
+1819;mérgező;adj;zehirli
+1820;meztelen;adj;çıplak
+1821;ébren lévő;adj;uyanık
+1822;ismert;adj;bilinen
+1823;ismeretlen;adj;bilinmeyen
+1824;reális;adj;gerçekçi
+1825;pozitív;adj;olumlu
+1826;negatív;adj;olumsuz
+1827;egyenlő;adj;eşit
+1828;független;adj;bağımsız
+1829;aktív;adj;aktif
+1830;passzív;adj;pasif
+1831;ideiglenes;adj;geçici
+1832;állandó;adj;kalıcı
+1833;végtelen;adj;sonsuz
+1834;elegendő;adj;yeterli
+1835;túlzott;adj;aşırı
+1836;szerencsés;adj;şanslı
+1837;szerencsétlen;adj;şanssız
+1838;ártatlan;adj;masum
+1839;bűnös;adj;suçlu
+1840;tehetséges;adj;yetenekli
+1841;tegnap este;adv;dün gece
+1842;ma este;adv;bu gece
+1843;holnap reggel;adv;yarın sabah
+1844;holnapután;adv;öbür gün
+1845;tegnapelőtt;adv;evvelsi gün
+1846;múlt héten;adv;geçen hafta
+1847;jövő héten;adv;gelecek hafta
+1848;tavaly;adv;geçen yıl
+1849;jövőre;adv;gelecek yıl
+1850;jelenleg;adv;şu anda
+1851;akkor;adv;o zaman
+1852;egyszer;adv;bir kez
+1853;kétszer;adv;iki kez
+1854;ritkán;adv;nadiren
+1855;minden nap;adv;her gün
+1856;még nem;adv;henüz değil
+1857;már nem;adv;artık değil
+1858;először;adv;ilk önce
+1859;ezután;adv;ardından
+1860;végül;adv;en son
+1861;folyamatosan;adv;sürekli
+1862;fokozatosan;adv;yavaş yavaş
+1863;csendben;adv;sessizce
+1864;hangosan;adv;yüksek sesle
+1865;könnyen;adv;kolayca
+1866;nehezen;adv;zorlukla
+1867;szerencsére;adv;neyse ki
+1868;világosan;adv;açıkça
+1869;részben;adv;kısmen
+1870;főleg;adv;çoğunlukla
+1871;korábban;adv;daha önce
+1872;később;adv;daha sonra
+1873;azóta;adv;o zamandan beri
+1874;eddig;adv;şimdiye kadar
+1875;befelé;adv;içeri (yön)
+1876;kifelé;adv;dışarı (yön)
+1877;felfelé;adv;yukarı (yön)
+1878;lefelé;adv;aşağı (yön)
+1879;hátra;adv;geri (yön)
+1880;szemben;adv;karşısında
+1881;körül;adv;etrafında
+1882;mentén;prep;boyunca
+1883;-ig;prep;-e kadar
+1884;óta;prep;-den beri
+1885;ellenére;prep;-e rağmen
+1886;helyett;prep;yerine
+1887;kivéve;prep;hariç
+1888;szerint;prep;-e göre
+1889;köszönhetően;prep;sayesinde
+1890;miközben;conj;-ken
+1891;mintha;conj;sanki
+1892;még ha;conj;-sa bile
+1893;különben;conj;aksi halde
+1894;ügyes;int;aferin
+1895;gratulálok;int;tebrikler
+1896;sok sikert;int;iyi şanslar
+1897;jó étvágyat;int;afiyet olsun
+1898;jobbulást;int;geçmiş olsun
+1899;vigyázz;int;dikkat et
+1900;egészségedre;int;şerefe
+1901;jó munkát;int;kolay gelsin
+1902;viszlát;int;görüşürüz
+1903;hogy vagy;int;nasılsın
+1904;jól vagyok;int;iyiyim
+1905;szívesen;int;rica ederim
+1906;nem értem;int;anlamıyorum
+1907;megismételné;int;tekrar eder misiniz
+1908;milyen szép;int;ne güzel
+1909;nagyszerű;int;harika
+1910;kár;int;ne yazık
+1911;gyerünk;int;hadi
+1912;állj;int;dur
+1913;páros szám;num;çift sayı
+1914;páratlan szám;num;tek sayı
+1915;tucat;num;düzine
+1916;negyed;num;çeyrek
+1917;másfél;num;bir buçuk
+1918;negyedik;num;dördüncü
+1919;ötödik;num;beşinci
+1920;tizedik;num;onuncu
+1921;milliárd;num;milyar
+1922;társadalom;n;toplum
+1923;népesség;n;nüfus
+1924;demokrácia;n;demokrasi
+1925;köztársaság;n;cumhuriyet
+1926;párt;n;siyasi parti
+1927;szavazat;n;oy
+1928;miniszter;n;bakan
+1929;parlament;n;meclis
+1930;alkotmány;n;anayasa
+1931;zászló;n;bayrak
+1932;birodalom;n;imparatorluk
+1933;forradalom;n;devrim
+1934;függetlenség;n;bağımsızlık
+1935;győzelem;n;zafer
+1936;vereség;n;yenilgi
+1937;hős;n;kahraman
+1938;biztonsági őr;n;güvenlik görevlisi
+1939;tanú;n;tanık
+1940;bizonyíték;n;kanıt
+1941;büntetés;n;ceza
+1942;bírság;n;para cezası
+1943;díj;n;ödül
+1944;érem;n;madalya
+1945;bajnok;n;şampiyon
+1946;verseny;n;yarış
+1947;játékos;n;oyuncu (spor)
+1948;játékvezető;n;hakem
+1949;edző;n;antrenör
+1950;gól;n;gol
+1951;kosárlabda;n;basketbol
+1952;röplabda;n;voleybol
+1953;tenisz;n;tenis
+1954;úszás;n;yüzme (spor)
+1955;futás;n;koşu
+1956;birkózás;n;güreş
+1957;boksz;n;boks
+1958;síelés;n;kayak
+1959;olimpia;n;olimpiyatlar
+1960;bajnokság;n;turnuva
+1961;szurkoló;n;taraftar
+1962;ima;n;dua
+1963;hit;n;inanç
+1964;mennyország;n;cennet
+1965;pokol;n;cehennem
+1966;angyal;n;melek
+1967;ördög;n;şeytan
+1968;ünnep;n;bayram
+1969;újév;n;yılbaşı
+1970;erkölcs;n;ahlak
+1971;igazságosság;n;adalet
+1972;egyenlőség;n;eşitlik
+1973;felelősség;n;sorumluluk
+1974;kötelesség;n;yükümlülük
+1975;identitás;n;kimlik
+1976;személyi igazolvány;n;kimlik kartı
+1977;jövedelem;n;gelir
+1978;kiadás;n;gider
+1979;gazdagság;n;zenginlik
+1980;szegénység;n;yoksulluk
+1981;biztosítás;n;sigorta
+1982;sztrájk;n;grev
+1983;szervezet;n;örgüt
+1984;intézmény;n;kurum
+1985;rendszer;n;sistem
+1986;szerkezet;n;yapı
+1987;folyamat;n;süreç
+1988;stratégia;n;strateji
+1989;lehetőség;n;fırsat
+1990;kockázat;n;risk
+1991;válság;n;kriz
+1992;konfliktus;n;çatışma
+1993;megállapodás;n;anlaşma
+1994;veszekedés;n;münakaşa
+1995;vélemény;n;görüş
+1996;tanács;n;öğüt
+1997;kritika;n;eleştiri
+1998;panasz;n;şikayet (dilekçe)
+1999;megoldás;n;çözüm
+2000;szándék;n;niyet
+2001;kívánság;n;dilek
+2002;preferencia;n;tercih
+2003;tény;n;olgu
+2004;titok;n;sır
+2005;ígéret;n;vaat
+2006;vicc;n;şaka
+2007;fenyegetés;n;tehdit
+2008;támadás;n;saldırı
+2009;erőszak;n;şiddet
+2010;áldozat;n;kurban
+2011;menekült;n;mülteci
+2012;önkéntes;n;gönüllü
+2013;adomány;n;bağış
+2014;ünnepség;n;tören
+2015;örökség;n;miras
+2016;civilizáció;n;medeniyet
+2017;nemzedék;n;nesil
+2018;emberiség;n;insanlık
