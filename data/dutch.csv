@@ -71,7 +71,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 70;buiten;adv;dışarıda
 71;boven;adv;yukarıda
 72;beneden;adv;aşağıda
-73;vooruit;adv;ileride, önde
+73;vooruit;adv;ileride, önde / ileri (yön)
 74;achter;adv;geride, arkada
 75;alles;pron;her şey
 76;niets;pron;hiçbir şey
@@ -90,7 +90,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 89;goedemorgen;int;günaydın
 90;goedenavond;int;iyi akşamlar
 91;goedenacht;int;iyi geceler
-92;tot ziens;int;hoşça kal
+92;tot ziens;int;hoşça kal / görüşürüz
 93;dank je;int;teşekkürler
 94;alsjeblieft;int;lütfen
 95;sorry;int;özür dilerim
@@ -104,7 +104,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 103;zeggen;v;söylemek, demek
 104;praten;v;konuşmak
 105;zien;v;görmek
-106;kijken;v;bakmak
+106;kijken;v;bakmak / izlemek
 107;horen;v;duymak
 108;luisteren;v;dinlemek
 109;weten;v;bilmek
@@ -121,7 +121,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 120;zoeken;v;aramak
 121;verliezen;v;kaybetmek
 122;winnen;v;kazanmak (yarış)
-123;verdienen;v;kazanmak (para)
+123;verdienen;v;kazanmak (para) / hak etmek
 124;werken;v;çalışmak (iş)
 125;studeren;v;ders çalışmak
 126;leren;v;öğrenmek
@@ -173,7 +173,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 172;kosten;v;maliyeti olmak, tutmak
 173;brengen;v;getirmek
 174;sturen;v;göndermek
-175;ontvangen;v;almak (teslim)
+175;ontvangen;v;almak (teslim) / ağırlamak
 176;houden;v;tutmak
 177;dragen;v;taşımak / giymek
 178;gooien;v;atmak
@@ -199,7 +199,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 198;beslissen;v;karar vermek
 199;plannen;v;planlamak
 200;voorbereiden;v;hazırlamak
-201;koken;v;pişirmek
+201;koken;v;pişirmek / kaynamak
 202;wassen;v;yıkamak
 203;schoonmaken;v;temizlemek
 204;zich aankleden;v;giyinmek
@@ -269,7 +269,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 268;de oma;n;büyükanne
 269;de oom;n;amca, dayı
 270;de tante;n;teyze, hala
-271;de neef;n;kuzen
+271;de neef;n;kuzen / yeğen
 272;de vriend;n;arkadaş
 273;de buurman;n;komşu
 274;de gast;n;misafir
@@ -350,9 +350,9 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 349;de tas;n;çanta
 350;de doos;n;kutu
 351;de fles;n;şişe
-352;het glas;n;bardak
+352;het glas;n;bardak / cam
 353;de kop;n;fincan
-354;het bord;n;tabak
+354;het bord;n;tabak / tabela
 355;de vork;n;çatal
 356;het mes;n;bıçak
 357;de lepel;n;kaşık
@@ -390,7 +390,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 389;de tomaat;n;domates
 390;de ui;n;soğan
 391;de knoflook;n;sarımsak
-392;de wortel;n;havuç
+392;de wortel;n;havuç / kök
 393;de komkommer;n;salatalık
 394;de salade;n;salata
 395;de soep;n;çorba
@@ -564,11 +564,11 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 563;de collega;n;meslektaş
 564;de vergadering;n;toplantı
 565;het geld;n;para
-566;de prijs;n;fiyat
+566;de prijs;n;fiyat / ödül
 567;het salaris;n;maaş
 568;de belasting;n;vergi
 569;de leraar;n;öğretmen
-570;de student;n;öğrenci
+570;de student;n;öğrenci / üniversite öğrencisi
 571;de les;n;ders
 572;de klas;n;sınıf
 573;het examen;n;sınav
@@ -615,7 +615,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 614;de broek;n;pantolon
 615;de rok;n;etek
 616;de jurk;n;elbise
-617;de jas;n;ceket
+617;de jas;n;ceket / palto
 618;de schoenen;n;ayakkabı
 619;de hoed;n;şapka
 620;de sokken;n;çorap
@@ -683,7 +683,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 682;arm;adj;fakir
 683;goedkoop;adj;ucuz
 684;duur;adj;pahalı
-685;gelukkig;adj;mutlu
+685;gelukkig;adj;mutlu / şanslı / neyse ki
 686;verdrietig;adj;üzgün
 687;boos;adj;kızgın
 688;moe;adj;yorgun
@@ -693,15 +693,15 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 692;sterk;adj;güçlü
 693;zwak;adj;zayıf, güçsüz
 694;dik;adj;şişman / kalın
-695;dun;adj;ince, zayıf
+695;dun;adj;ince, zayıf / ince (kalınlık)
 696;slim;adj;akıllı
 697;dom;adj;aptal
 698;aardig;adj;nazik
 699;onbeleefd;adj;kaba
-700;eerlijk;adj;dürüst
+700;eerlijk;adj;dürüst / adil
 701;dapper;adj;cesur
 702;lui;adj;tembel
-703;druk;adj;meşgul
+703;druk;adj;meşgul / kalabalık
 704;vrij;adj;serbest, özgür
 705;klaar;adj;hazır
 706;juist;adj;doğru
@@ -719,13 +719,13 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 718;normaal;adj;normal
 719;vreemd;adj;garip, tuhaf
 720;verschillend;adj;farklı
-721;gelijk;adj;benzer
-722;eenvoudig;adj;kolay, basit
+721;gelijk;adj;benzer / eşit
+722;eenvoudig;adj;kolay, basit / sade
 723;ingewikkeld;adj;karmaşık
-724;stil;adj;sessiz
+724;stil;adj;sessiz / sessizce
 725;luid;adj;gürültülü
-726;donker;adj;karanlık
-727;helder;adj;aydınlık
+726;donker;adj;karanlık / esmer
+727;helder;adj;aydınlık / parlak
 728;zacht;adj;yumuşak
 729;hard;adj;sert
 730;zoet;adj;tatlı
@@ -824,14 +824,14 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 823;de energie;n;enerji
 824;de elektriciteit;n;elektrik
 825;het licht;n;ışık
-826;de stem;n;ses
+826;de stem;n;ses / oy
 827;het lawaai;n;gürültü
 828;de geur;n;koku
 829;de smaak;n;tat
 830;de vorm;n;biçim, şekil
-831;de maat;n;boyut
+831;de maat;n;boyut / beden (giysi)
 832;het gewicht;n;ağırlık
-833;de lengte;n;uzunluk
+833;de lengte;n;uzunluk / boy (uzunluk)
 834;de meter;n;metre
 835;de kilo;n;kilo
 836;de liter;n;litre
@@ -866,7 +866,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 865;het moment;n;an
 866;de gebeurtenis;n;olay
 867;de situatie;n;durum
-868;de soort;n;tür, çeşit
+868;de soort;n;tür, çeşit / tür (canlı)
 869;het niveau;n;seviye
 870;de stap;n;adım
 871;de ingang;n;giriş
@@ -892,7 +892,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 891;verminderen;v;azaltmak
 892;vergelijken;v;karşılaştırmak
 893;beschrijven;v;tarif etmek, betimlemek
-894;voorstellen;v;önermek
+894;voorstellen;v;önermek / tanıştırmak
 895;aanraden;v;tavsiye etmek
 896;bespreken;v;tartışmak
 897;ruziën;v;kavga etmek
@@ -906,8 +906,8 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 905;delen;v;paylaşmak
 906;sparen;v;biriktirmek, tasarruf etmek
 907;uitgeven;v;harcamak
-908;lenen;v;ödünç vermek
-909;missen;v;kaçırmak
+908;lenen;v;ödünç vermek / borç almak
+909;missen;v;kaçırmak / özlemek
 910;vangen;v;yakalamak
 911;knuffelen;v;sarılmak
 912;kussen;v;öpmek
@@ -944,7 +944,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 943;verwijderen;v;silmek
 944;klikken;v;tıklamak
 945;helaas;adv;maalesef
-946;natuurlijk;adv;elbette
+946;natuurlijk;adv;elbette / doğal
 947;bijna;adv;neredeyse
 948;vooral;adv;özellikle
 949;meestal;adv;genellikle
@@ -962,7 +962,7 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 961;ongeveer;adv;yaklaşık
 962;precies;adv;tam olarak
 963;haastig;adv;hızla
-964;voorzichtig;adv;dikkatlice
+964;voorzichtig;adv;dikkatlice / dikkatli
 965;slechts;adv;yalnızca, sırf
 966;vroeger;adv;önceden
 967;ondertussen;adv;bu arada
@@ -994,4 +994,1030 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 993;wekelijks;adj;haftalık
 994;huidig;adj;mevcut, şu anki
 995;vorig;adj;eski, önceki
-996;duidelijk;adj;açık, net
+996;duidelijk;adj;açık, net / açıkça
+997;het voorhoofd;n;alın
+998;de wang;n;yanak
+999;de kin;n;çene
+1000;de lip;n;dudak
+1001;de wenkbrauw;n;kaş
+1002;de wimper;n;kirpik
+1003;de baard;n;sakal
+1004;de snor;n;bıyık
+1005;de keel;n;boğaz
+1006;de pols;n;bilek
+1007;de elleboog;n;dirsek
+1008;de nagel;n;tırnak
+1009;de duim;n;başparmak
+1010;de taille;n;bel
+1011;de heup;n;kalça
+1012;de enkel;n;ayak bileği
+1013;de hiel;n;topuk
+1014;de hersenen;n;beyin
+1015;de long;n;akciğer
+1016;de lever;n;karaciğer
+1017;de nier;n;böbrek
+1018;de spier;n;kas
+1019;de ader;n;damar
+1020;de hartslag;n;kalp atışı
+1021;de adem;n;nefes
+1022;de traan;n;gözyaşı
+1023;het zweet;n;ter
+1024;de koorts;n;ateş (hastalık)
+1025;de hoest;n;öksürük
+1026;de verkoudheid;n;soğuk algınlığı
+1027;de griep;n;grip
+1028;de hoofdpijn;n;baş ağrısı
+1029;de wond;n;yara
+1030;de operatie;n;ameliyat
+1031;de patiënt;n;hasta (kişi)
+1032;de behandeling;n;tedavi
+1033;het recept;n;reçete / yemek tarifi
+1034;de pil;n;hap
+1035;het vaccin;n;aşı
+1036;de ambulance;n;ambulans
+1037;de noodsituatie;n;acil durum
+1038;de slaap;n;uyku
+1039;de vermoeidheid;n;yorgunluk
+1040;de stress;n;stres
+1041;het dieet;n;diyet
+1042;de oefening;n;egzersiz
+1043;de vreugde;n;sevinç
+1044;het verdriet;n;üzüntü
+1045;de woede;n;öfke
+1046;de jaloezie;n;kıskançlık
+1047;de schaamte;n;utanç
+1048;de trots;n;gurur
+1049;de nieuwsgierigheid;n;merak
+1050;het geduld;n;sabır
+1051;het vertrouwen;n;güven
+1052;de zorg;n;endişe
+1053;de eenzaamheid;n;yalnızlık
+1054;de moed;n;cesaret
+1055;de haat;n;nefret
+1056;de verbazing;n;şaşkınlık
+1057;het plezier;n;keyif, zevk
+1058;de spijt;n;pişmanlık
+1059;de dankbaarheid;n;minnettarlık
+1060;het respect;n;saygı
+1061;de persoonlijkheid;n;kişilik
+1062;de gewoonte;n;alışkanlık
+1063;het gedrag;n;davranış
+1064;de stemming;n;ruh hali
+1065;het gelach;n;kahkaha
+1066;de glimlach;n;gülümseme
+1067;de kus;n;öpücük
+1068;de knuffel;n;sarılma
+1069;de ziel;n;ruh
+1070;de geest;n;zihin
+1071;het geheugen;n;hafıza
+1072;de intelligentie;n;zeka
+1073;de wijsheid;n;bilgelik
+1074;het talent;n;yetenek
+1075;de vaardigheid;n;beceri
+1076;de schoonheid;n;güzellik
+1077;de jeugd;n;gençlik
+1078;de ouderdom;n;yaşlılık
+1079;de kindertijd;n;çocukluk
+1080;de geboorte;n;doğum
+1081;de bruiloft;n;düğün
+1082;de begrafenis;n;cenaze
+1083;de verloofde;n;nişanlı (erkek)
+1084;de bruid;n;gelin
+1085;de weduwe;n;dul (kadın)
+1086;de volwassene;n;yetişkin
+1087;de tiener;n;ergen
+1088;de bejaarde;n;yaşlı (kişi)
+1089;het kleinkind;n;torun
+1090;de schoonmoeder;n;kayınvalide
+1091;de tweeling;n;ikiz
+1092;het familielid;n;akraba
+1093;de geliefde;n;sevgili
+1094;de vijand;n;düşman
+1095;het kussen;n;yastık
+1096;de deken;n;battaniye
+1097;het laken;n;çarşaf
+1098;de plank;n;raf
+1099;de lade;n;çekmece
+1100;het slot;n;kilit
+1101;het stopcontact;n;priz
+1102;de gloeilamp;n;ampul
+1103;de airco;n;klima
+1104;de verwarming;n;kalorifer
+1105;de wasmachine;n;çamaşır makinesi
+1106;de vaatwasser;n;bulaşık makinesi
+1107;de stofzuiger;n;elektrikli süpürge
+1108;het strijkijzer;n;ütü
+1109;de magnetron;n;mikrodalga fırın
+1110;het fornuis;n;ocak (mutfak)
+1111;de koekenpan;n;tava
+1112;de waterkoker;n;çaydanlık
+1113;de kom;n;kase
+1114;het servet;n;peçete
+1115;het dienblad;n;tepsi
+1116;het afval;n;çöp
+1117;de vuilnisbak;n;çöp kutusu
+1118;de emmer;n;kova
+1119;de bezem;n;süpürge
+1120;de borstel;n;fırça
+1121;de kam;n;tarak
+1122;de tandpasta;n;diş macunu
+1123;de shampoo;n;şampuan
+1124;de douche;n;duş
+1125;het bad;n;küvet
+1126;de wastafel;n;lavabo
+1127;de wc-pot;n;klozet
+1128;de kraan;n;musluk
+1129;het toiletpapier;n;tuvalet kağıdı
+1130;de kaars;n;mum
+1131;de lucifer;n;kibrit
+1132;de aansteker;n;çakmak
+1133;de schaar;n;makas
+1134;de naald;n;iğne
+1135;de draad;n;iplik
+1136;de knoop;n;düğme
+1137;de rits;n;fermuar
+1138;de zak;n;cep
+1139;de riem;n;kemer
+1140;de stropdas;n;kravat
+1141;de handschoenen;n;eldiven
+1142;de sjaal;n;atkı
+1143;de trui;n;kazak
+1144;de korte broek;n;şort
+1145;het ondergoed;n;iç çamaşırı
+1146;de pyjama;n;pijama
+1147;de pantoffels;n;terlik
+1148;de laarzen;n;çizme
+1149;de rugzak;n;sırt çantası
+1150;de paraplu;n;şemsiye
+1151;de ketting;n;kolye
+1152;de oorbel;n;küpe
+1153;het horloge;n;kol saati
+1154;het parfum;n;parfüm
+1155;de make-up;n;makyaj
+1156;de camera;n;fotoğraf makinesi
+1157;de batterij;n;pil
+1158;de oplader;n;şarj aleti
+1159;de koptelefoon;n;kulaklık
+1160;de kabel;n;kablo
+1161;het scherm;n;ekran
+1162;het toetsenbord;n;klavye
+1163;de computermuis;n;fare (bilgisayar)
+1164;de printer;n;yazıcı
+1165;de radio;n;radyo
+1166;de afstandsbediening;n;kumanda
+1167;de kalender;n;takvim
+1168;de envelop;n;zarf
+1169;de postzegel;n;pul
+1170;het pakket;n;koli
+1171;het touw;n;ip
+1172;de spijker;n;çivi
+1173;de hamer;n;çekiç
+1174;de schroevendraaier;n;tornavida
+1175;de ladder;n;el merdiveni
+1176;de baksteen;n;tuğla
+1177;het hout;n;tahta (malzeme)
+1178;het ijzer;n;demir
+1179;het goud;n;altın
+1180;het zilver;n;gümüş
+1181;het plastic;n;plastik
+1182;het metaal;n;metal
+1183;de stof;n;kumaş
+1184;het katoen;n;pamuk
+1185;het leer;n;deri (malzeme)
+1186;de zijde;n;ipek
+1187;de wol;n;yün
+1188;de meubels;n;mobilya
+1189;de deurklink;n;kapı kolu
+1190;het balkon;n;balkon
+1191;de kelder;n;bodrum
+1192;de garage;n;garaj
+1193;de lift;n;asansör
+1194;de verdieping;n;kat
+1195;de gang;n;koridor
+1196;het hek;n;çit
+1197;de huur;n;kira
+1198;het meel;n;un
+1199;het deeg;n;hamur
+1200;de olijf;n;zeytin
+1201;de olijfolie;n;zeytinyağı
+1202;de azijn;n;sirke
+1203;de saus;n;sos
+1204;de specerij;n;baharat
+1205;de munt;n;nane / bozuk para
+1206;de peterselie;n;maydanoz
+1207;de kaneel;n;tarçın
+1208;de gember;n;zencefil
+1209;de chilipeper;n;acı biber
+1210;de bonen;n;fasulye
+1211;de kikkererwten;n;nohut
+1212;de linzen;n;mercimek
+1213;de erwten;n;bezelye
+1214;de maïs;n;mısır
+1215;de tarwe;n;buğday
+1216;de kool;n;lahana
+1217;de sla;n;marul
+1218;de aubergine;n;patlıcan
+1219;de spinazie;n;ıspanak
+1220;de paddenstoel;n;mantar
+1221;de pompoen;n;bal kabağı
+1222;de watermeloen;n;karpuz
+1223;de meloen;n;kavun
+1224;de peer;n;armut
+1225;de perzik;n;şeftali
+1226;de kers;n;kiraz
+1227;de pruim;n;erik
+1228;de ananas;n;ananas
+1229;de mango;n;mango
+1230;de vijg;n;incir
+1231;de dadel;n;hurma
+1232;de granaatappel;n;nar
+1233;de hazelnoot;n;fındık
+1234;de walnoot;n;ceviz
+1235;de amandel;n;badem
+1236;de pinda;n;yer fıstığı
+1237;de rozijn;n;kuru üzüm
+1238;het lamsvlees;n;kuzu eti
+1239;het rundvlees;n;dana eti
+1240;de worst;n;sosis
+1241;de gehaktbal;n;köfte
+1242;het gehakt;n;kıyma
+1243;de garnaal;n;karides
+1244;de tonijn;n;ton balığı
+1245;de yoghurt;n;yoğurt
+1246;de room;n;krema
+1247;de jam;n;reçel
+1248;het koekje;n;kurabiye
+1249;het snoepje;n;şekerleme
+1250;het dessert;n;tatlı (yemek)
+1251;de boterham;n;sandviç
+1252;de pizza;n;pizza
+1253;de hamburger;n;hamburger
+1254;de friet;n;patates kızartması
+1255;de omelet;n;omlet
+1256;de kebab;n;kebap
+1257;het mineraalwater;n;maden suyu
+1258;de frisdrank;n;gazoz
+1259;het ijsblokje;n;buz
+1260;de plak;n;dilim
+1261;het ingrediënt;n;malzeme
+1262;de portie;n;porsiyon
+1263;de bakkerij;n;fırın (ekmek)
+1264;de slagerij;n;kasap
+1265;de groenteboer;n;manav
+1266;de avocado;n;avokado
+1267;de kokosnoot;n;hindistan cevizi
+1268;de abrikoos;n;kayısı
+1269;de framboos;n;ahududu
+1270;de radijs;n;turp
+1271;de selderij;n;kereviz
+1272;de broccoli;n;brokoli
+1273;de bloemkool;n;karnabahar
+1274;het graan;n;tahıl
+1275;de haver;n;yulaf
+1276;de gist;n;maya
+1277;de vanille;n;vanilya
+1278;de vleugel;n;kanat
+1279;de snijplank;n;kesme tahtası
+1280;het deksel;n;kapak
+1281;de pot;n;kavanoz
+1282;het blik;n;konserve kutusu
+1283;het zakje;n;poşet
+1284;het tafelkleed;n;masa örtüsü
+1285;de kan;n;sürahi
+1286;de snack;n;atıştırmalık
+1287;de drank;n;içecek
+1288;de alcohol;n;alkol
+1289;de vegetariër;n;vejetaryen
+1290;de hap;n;lokma
+1291;de toast;n;kızarmış ekmek
+1292;de pannenkoek;n;krep
+1293;de limonade;n;limonata
+1294;de cacao;n;kakao
+1295;het zaad;n;tohum
+1296;de schil;n;kabuk
+1297;de buurt;n;mahalle
+1298;het stadje;n;kasaba
+1299;de hoofdstad;n;başkent
+1300;de grens;n;sınır
+1301;de stoep;n;kaldırım
+1302;het kruispunt;n;kavşak
+1303;het verkeerslicht;n;trafik ışığı
+1304;het zebrapad;n;yaya geçidi
+1305;de parkeerplaats;n;otopark
+1306;het tankstation;n;benzin istasyonu
+1307;de benzine;n;benzin
+1308;het wiel;n;tekerlek
+1309;de motor;n;motor
+1310;de rem;n;fren
+1311;het rijbewijs;n;ehliyet
+1312;de motorfiets;n;motosiklet
+1313;de vrachtwagen;n;kamyon
+1314;de boot;n;tekne
+1315;de helikopter;n;helikopter
+1316;de tram;n;tramvay
+1317;het perron;n;peron
+1318;de passagier;n;yolcu
+1319;de piloot;n;pilot
+1320;de stewardess;n;hostes
+1321;de landing;n;iniş (uçak)
+1322;de vlucht;n;uçuş
+1323;de bagage;n;bagaj
+1324;de douane;n;gümrük
+1325;het visum;n;vize
+1326;de gids;n;rehber (kişi)
+1327;de camping;n;kamp
+1328;de tent;n;çadır
+1329;het landschap;n;manzara
+1330;het monument;n;anıt
+1331;het paleis;n;saray
+1332;het kasteel;n;kale
+1333;de toren;n;kule
+1334;de tempel;n;tapınak
+1335;het standbeeld;n;heykel
+1336;de fontein;n;çeşme
+1337;de dierentuin;n;hayvanat bahçesi
+1338;het winkelcentrum;n;alışveriş merkezi
+1339;de kassa;n;kasa (ödeme)
+1340;de kassabon;n;fiş
+1341;het contant geld;n;nakit
+1342;de creditcard;n;kredi kartı
+1343;de valuta;n;para birimi
+1344;de apotheker;n;eczacı
+1345;de kapper;n;kuaför
+1346;de kleermaker;n;terzi
+1347;de boekhandel;n;kitapçı
+1348;de etalage;n;vitrin
+1349;de uitverkoop;n;indirimli satış
+1350;het merk;n;marka
+1351;de mand;n;sepet
+1352;het winkelwagentje;n;alışveriş arabası
+1353;het openbaar toilet;n;umumi tuvalet
+1354;de huurder;n;kiracı
+1355;de huisbaas;n;ev sahibi
+1356;de gevangenis;n;hapishane
+1357;het stadhuis;n;belediye
+1358;de ambassade;n;elçilik
+1359;de fabriek;n;fabrika
+1360;het magazijn;n;depo
+1361;de boerderij;n;çiftlik
+1362;het stadion;n;stadyum
+1363;de sportschool;n;spor salonu
+1364;het zwembad;n;yüzme havuzu
+1365;de begraafplaats;n;mezarlık
+1366;de tunnel;n;tünel
+1367;de snelweg;n;otoyol
+1368;de afstand;n;mesafe
+1369;de kilometer;n;kilometre
+1370;de richting;n;yön
+1371;de snelheid;n;hız
+1372;de aankomst;n;varış
+1373;het vertrek;n;kalkış
+1374;de vertraging;n;gecikme
+1375;de dienstregeling;n;tarife (saatler)
+1376;de reservering;n;rezervasyon
+1377;de receptie;n;resepsiyon
+1378;het souvenir;n;hediyelik eşya
+1379;de rondleiding;n;tur
+1380;de kust;n;kıyı
+1381;de vuurtoren;n;deniz feneri
+1382;de ruïnes;n;harabe
+1383;de wolkenkrabber;n;gökdelen
+1384;het bankje;n;bank (oturma)
+1385;de brievenbus;n;posta kutusu
+1386;de ansichtkaart;n;kartpostal
+1387;de kapitein;n;kaptan
+1388;de zonnebrand;n;güneş kremi
+1389;de zonnebril;n;güneş gözlüğü
+1390;het toerisme;n;turizm
+1391;het buitenland;n;yurt dışı
+1392;de immigrant;n;göçmen
+1393;de burger;n;vatandaş
+1394;de planeet;n;gezegen
+1395;het heelal;n;evren
+1396;de ruimte;n;uzay
+1397;de regenboog;n;gökkuşağı
+1398;de bliksem;n;şimşek
+1399;de donder;n;gök gürültüsü
+1400;de mist;n;sis
+1401;de hagel;n;dolu (yağış)
+1402;de aardbeving;n;deprem
+1403;de overstroming;n;sel
+1404;de droogte;n;kuraklık
+1405;de vulkaan;n;volkan
+1406;de woestijn;n;çöl
+1407;het dal;n;vadi
+1408;de grot;n;mağara
+1409;de waterval;n;şelale
+1410;de golf;n;dalga
+1411;de rots;n;kaya
+1412;het stof;n;toz
+1413;de modder;n;çamur
+1414;het continent;n;kıta
+1415;de horizon;n;ufuk
+1416;de zonsopgang;n;gün doğumu
+1417;de zonsondergang;n;gün batımı
+1418;de schaduw;n;gölge
+1419;het klimaat;n;iklim
+1420;het milieu;n;çevre
+1421;de vervuiling;n;kirlilik
+1422;de plant;n;bitki
+1423;de tak;n;dal
+1424;de roos;n;gül
+1425;de tulp;n;lale
+1426;de den;n;çam
+1427;de eik;n;meşe
+1428;de palmboom;n;palmiye
+1429;de cactus;n;kaktüs
+1430;het mos;n;yosun
+1431;het nest;n;kuş yuvası
+1432;de veer;n;tüy
+1433;de staart;n;kuyruk (hayvan)
+1434;de hoorn;n;boynuz
+1435;de klauw;n;pençe
+1436;de snavel;n;gaga
+1437;de geit;n;keçi
+1438;de ezel;n;eşek
+1439;de kameel;n;deve
+1440;de tijger;n;kaplan
+1441;de giraf;n;zürafa
+1442;de zebra;n;zebra
+1443;het hert;n;geyik
+1444;de eekhoorn;n;sincap
+1445;de egel;n;kirpi
+1446;de schildpad;n;kaplumbağa
+1447;de kikker;n;kurbağa
+1448;de krokodil;n;timsah
+1449;de haai;n;köpekbalığı
+1450;de walvis;n;balina
+1451;de dolfijn;n;yunus
+1452;de octopus;n;ahtapot
+1453;de krab;n;yengeç
+1454;de mier;n;karınca
+1455;de spin;n;örümcek
+1456;de mug;n;sivrisinek
+1457;de worm;n;solucan
+1458;de adelaar;n;kartal
+1459;de uil;n;baykuş
+1460;de duif;n;güvercin
+1461;de kraai;n;karga
+1462;de papegaai;n;papağan
+1463;de haan;n;horoz
+1464;het lam;n;kuzu
+1465;de puppy;n;köpek yavrusu
+1466;het katje;n;kedi yavrusu
+1467;het huisdier;n;evcil hayvan
+1468;de bron;n;kaynak (su)
+1469;het moeras;n;bataklık
+1470;de baai;n;körfez
+1471;de top;n;zirve
+1472;de vlakte;n;ova
+1473;de gletsjer;n;buzul
+1474;de pool;n;kutup
+1475;de steenkool;n;kömür
+1476;de aardolie;n;petrol
+1477;het gas;n;gaz
+1478;de rook;n;duman
+1479;de vlam;n;alev
+1480;de stoom;n;buhar
+1481;de druppel;n;damla
+1482;het zonlicht;n;güneş ışığı
+1483;de vochtigheid;n;nem
+1484;de graad;n;derece
+1485;de weersvoorspelling;n;hava tahmini
+1486;de struik;n;çalı
+1487;het brandhout;n;odun
+1488;het koraal;n;mercan
+1489;de parel;n;inci
+1490;de diamant;n;elmas
+1491;de magneet;n;mıknatıs
+1492;het sollicitatiegesprek;n;iş görüşmesi
+1493;het cv;n;özgeçmiş
+1494;het contract;n;sözleşme
+1495;de handtekening;n;imza
+1496;het document;n;belge
+1497;het bestand;n;dosya
+1498;het rapport;n;rapor
+1499;het project;n;proje
+1500;de taak;n;görev
+1501;de deadline;n;son tarih
+1502;de manager;n;müdür
+1503;de werknemer;n;çalışan
+1504;de werkloosheid;n;işsizlik
+1505;het pensioen;n;emeklilik
+1506;de carrière;n;kariyer
+1507;de promotie;n;terfi
+1508;de winst;n;kâr
+1509;het verlies;n;zarar
+1510;de schuld;n;borç
+1511;de lening;n;banka kredisi
+1512;de investering;n;yatırım
+1513;het budget;n;bütçe
+1514;het aandeel;n;hisse senedi
+1515;de industrie;n;sanayi
+1516;de handel;n;ticaret
+1517;de export;n;ihracat
+1518;de import;n;ithalat
+1519;de professor;n;profesör
+1520;het huiswerk;n;ödev
+1521;het cijfer;n;not (sınav)
+1522;het diploma;n;diploma
+1523;de faculteit;n;bölüm (üniversite)
+1524;het vak;n;ders konusu
+1525;de wiskunde;n;matematik
+1526;de natuurkunde;n;fizik
+1527;de scheikunde;n;kimya
+1528;de biologie;n;biyoloji
+1529;de aardrijkskunde;n;coğrafya
+1530;de literatuur;n;edebiyat
+1531;de filosofie;n;felsefe
+1532;de geneeskunde;n;tıp
+1533;de techniek;n;mühendislik
+1534;het onderzoek;n;araştırma
+1535;het experiment;n;deney
+1536;de theorie;n;teori
+1537;de formule;n;formül
+1538;de berekening;n;hesaplama
+1539;de optelling;n;toplama (matematik)
+1540;het programma;n;program (bilgisayar)
+1541;de app;n;uygulama (mobil)
+1542;de software;n;yazılım
+1543;de hardware;n;donanım
+1544;de gegevens;n;veri
+1545;het wachtwoord;n;şifre
+1546;de gebruiker;n;kullanıcı
+1547;het account;n;hesap (internet)
+1548;de website;n;web sitesi
+1549;het netwerk;n;ağ
+1550;de link;n;bağlantı (link)
+1551;de sociale media;n;sosyal medya
+1552;de video;n;video
+1553;de smartphone;n;akıllı telefon
+1554;de robot;n;robot
+1555;de kunstmatige intelligentie;n;yapay zeka
+1556;de technologie;n;teknoloji
+1557;de uitvinding;n;icat
+1558;de journalist;n;gazeteci
+1559;het interview;n;röportaj
+1560;het artikel;n;makale
+1561;de titel;n;başlık
+1562;het tv-programma;n;televizyon programı
+1563;het kanaal;n;kanal
+1564;de kijker;n;izleyici
+1565;de dichter;n;şair
+1566;het gedicht;n;şiir
+1567;de roman;n;roman
+1568;de schilder;n;ressam
+1569;de muzikant;n;müzisyen
+1570;de zanger;n;şarkıcı
+1571;de acteur;n;oyuncu (film)
+1572;de regisseur;n;yönetmen
+1573;het podium;n;sahne
+1574;het concert;n;konser
+1575;de tentoonstelling;n;sergi
+1576;het muziekinstrument;n;müzik aleti
+1577;de gitaar;n;gitar
+1578;de piano;n;piyano
+1579;de trommel;n;davul
+1580;de viool;n;keman
+1581;de melodie;n;melodi
+1582;de dans;n;dans
+1583;de tekening;n;çizim
+1584;de hobby;n;hobi
+1585;de puzzel;n;bulmaca
+1586;het schaak;n;satranç
+1587;het speelgoed;n;oyuncak
+1588;het woordenboek;n;sözlük
+1589;de grammatica;n;dil bilgisi
+1590;de vertaling;n;çeviri
+1591;waarschuwen;v;uyarmak
+1592;jaloers zijn;v;kıskanmak
+1593;vertrouwen;v;güvenmek
+1594;vermoeden;v;şüphelenmek
+1595;raden;v;tahmin etmek
+1596;zich voorstellen;v;hayal etmek
+1597;dromen;v;rüya görmek
+1598;vertellen;v;anlatmak
+1599;kletsen;v;sohbet etmek
+1600;overtuigen;v;ikna etmek
+1601;aandringen;v;ısrar etmek
+1602;bekennen;v;itiraf etmek
+1603;ontkennen;v;inkar etmek
+1604;beschuldigen;v;suçlamak
+1605;zich verontschuldigen;v;özür dilemek
+1606;begroeten;v;selamlamak
+1607;afscheid nemen;v;veda etmek
+1608;aanmoedigen;v;cesaretlendirmek
+1609;prijzen;v;övmek
+1610;bekritiseren;v;eleştirmek
+1611;bespotten;v;alay etmek
+1612;grappen maken;v;şaka yapmak
+1613;liegen;v;yalan söylemek
+1614;bedriegen;v;aldatmak
+1615;bedreigen;v;tehdit etmek
+1616;aanvallen;v;saldırmak
+1617;verdedigen;v;savunmak
+1618;vluchten;v;kaçmak
+1619;zich verstoppen;v;saklanmak
+1620;achtervolgen;v;kovalamak
+1621;springen;v;zıplamak
+1622;bukken;v;eğilmek
+1623;gaan liggen;v;uzanmak (yatmak)
+1624;kruipen;v;sürünmek
+1625;uitglijden;v;kaymak
+1626;zinken;v;batmak
+1627;drijven;v;su üstünde durmak
+1628;waaien;v;esmek (rüzgar)
+1629;regenen;v;yağmur yağmak
+1630;schijnen;v;parlamak
+1631;branden;v;yanmak
+1632;smelten;v;erimek
+1633;bevriezen;v;donmak
+1634;bakken;v;kızartmak
+1635;in de oven bakken;v;fırında pişirmek
+1636;mengen;v;karıştırmak
+1637;hakken;v;doğramak
+1638;schillen;v;soymak (kabuk)
+1639;morsen;v;dökmek
+1640;opdienen;v;servis etmek
+1641;bijten;v;ısırmak
+1642;kauwen;v;çiğnemek
+1643;slikken;v;yutmak
+1644;het koud hebben;v;üşümek
+1645;ziek worden;v;hastalanmak
+1646;gewond raken;v;yaralanmak
+1647;bloeden;v;kanamak
+1648;hoesten;v;öksürmek
+1649;niezen;v;hapşırmak
+1650;gapen;v;esnemek
+1651;snurken;v;horlamak
+1652;trillen;v;titremek
+1653;flauwvallen;v;bayılmak
+1654;voeden;v;beslemek
+1655;opvoeden;v;yetiştirmek (çocuk)
+1656;trainen;v;eğitmek
+1657;uit het hoofd leren;v;ezberlemek
+1658;noteren;v;not almak
+1659;onderstrepen;v;altını çizmek
+1660;verbeteren;v;düzeltmek (hata)
+1661;bewijzen;v;kanıtlamak
+1662;ontdekken;v;keşfetmek
+1663;uitvinden;v;icat etmek
+1664;onderzoeken;v;araştırmak
+1665;analyseren;v;analiz etmek
+1666;berekenen;v;hesaplamak
+1667;indelen;v;sınıflandırmak
+1668;stemmen;v;oy vermek
+1669;solliciteren;v;başvurmak
+1670;aannemen;v;işe almak
+1671;ontslaan;v;işten çıkarmak
+1672;ontslag nemen;v;istifa etmek
+1673;met pensioen gaan;v;emekli olmak
+1674;investeren;v;yatırım yapmak
+1675;terugbetalen;v;geri ödemek
+1676;ondertekenen;v;imzalamak
+1677;goedkeuren;v;onaylamak
+1678;annuleren;v;iptal etmek
+1679;uitstellen;v;ertelemek
+1680;afleveren;v;teslim etmek
+1681;voltooien;v;tamamlamak
+1682;slagen;v;başarmak
+1683;mislukken;v;başarısız olmak
+1684;opgeven;v;vazgeçmek
+1685;verdragen;v;katlanmak
+1686;zich haasten;v;acele etmek
+1687;te laat komen;v;geç kalmak
+1688;verdwalen;v;yolunu kaybetmek
+1689;verschijnen;v;ortaya çıkmak
+1690;verdwijnen;v;kaybolmak (gözden)
+1691;bestaan;v;var olmak
+1692;toebehoren;v;ait olmak
+1693;bevatten;v;içermek
+1694;afhangen;v;bağlı olmak
+1695;beïnvloeden;v;etkilemek
+1696;veroorzaken;v;neden olmak
+1697;voorkomen;v;önlemek
+1698;oplossen;v;çözmek
+1699;toepassen;v;uygulamak
+1700;installeren;v;kurmak (program)
+1701;aanzetten;v;açmak (cihaz)
+1702;uitzetten;v;kapatmak (cihaz)
+1703;opladen;v;şarj etmek
+1704;opzoeken;v;internette aramak
+1705;liken;v;beğenmek (sosyal medya)
+1706;zich registreren;v;kaydolmak
+1707;inloggen;v;giriş yapmak (hesap)
+1708;bijwerken;v;güncellemek
+1709;kopiëren;v;kopyalamak
+1710;plakken;v;yapıştırmak
+1711;typen;v;klavyede yazmak
+1712;opnemen;v;kayıt yapmak (ses, video)
+1713;fotograferen;v;fotoğraf çekmek
+1714;schilderen;v;boyamak
+1715;naaien;v;dikiş dikmek
+1716;breien;v;örmek
+1717;doneren;v;bağışlamak (para)
+1718;bestellen;v;sipariş vermek
+1719;onderhandelen;v;pazarlık yapmak
+1720;terugbrengen;v;iade etmek
+1721;passen;v;giyip denemek
+1722;parkeren;v;park etmek
+1723;instappen;v;binmek
+1724;uitstappen;v;araçtan inmek
+1725;overstappen;v;aktarma yapmak
+1726;wandelen;v;gezmek
+1727;inpakken;v;paketlemek
+1728;zich vestigen;v;yerleşmek
+1729;emigreren;v;göç etmek
+1730;zich aanpassen;v;uyum sağlamak
+1731;wennen;v;alışmak
+1732;naleven;v;uymak (kurala)
+1733;overtreden;v;ihlal etmek
+1734;verlaten;adj;ıssız
+1735;comfortabel;adj;rahat
+1736;oncomfortabel;adj;rahatsız
+1737;vrijgevig;adj;cömert
+1738;gierig;adj;cimri
+1739;trouw;adj;sadık
+1740;egoïstisch;adj;bencil
+1741;arrogant;adj;kibirli
+1742;bescheiden;adj;alçakgönüllü
+1743;ijverig;adj;çalışkan
+1744;geduldig;adj;sabırlı
+1745;ongeduldig;adj;sabırsız
+1746;onvoorzichtig;adj;dikkatsiz
+1747;vrolijk;adj;neşeli
+1748;bezorgd;adj;endişeli
+1749;bang;adj;korkmuş
+1750;opgewonden;adj;heyecanlı
+1751;verrast;adj;şaşırmış
+1752;teleurgesteld;adj;hayal kırıklığına uğramış
+1753;trots;adj;gururlu
+1754;dankbaar;adj;minnettar
+1755;eenzaam;adj;yalnız (duygusal)
+1756;verliefd;adj;aşık
+1757;dronken;adj;sarhoş
+1758;slaperig;adj;uykulu
+1759;dorstig;adj;susamış
+1760;verzadigd;adj;tok
+1761;pijnlijk;adj;ağrılı
+1762;gewond;adj;yaralı
+1763;kaal;adj;kel
+1764;blond;adj;sarışın
+1765;zwanger;adj;hamile
+1766;populair;adj;popüler
+1767;zeldzaam;adj;nadir
+1768;wijdverbreid;adj;yaygın
+1769;typisch;adj;tipik
+1770;formeel;adj;resmi
+1771;hartelijk;adj;samimi
+1772;gewoon;adj;sıradan
+1773;uniek;adj;eşsiz
+1774;voornaamste;adj;ana, başlıca
+1775;fundamenteel;adj;temel
+1776;gevorderd;adj;ileri (seviye)
+1777;zeker;adj;emin
+1778;onzeker;adj;belirsiz
+1779;geheim;adj;gizli
+1780;legaal;adj;yasal
+1781;illegaal;adj;yasadışı
+1782;oneerlijk;adj;haksız
+1783;heilig;adj;kutsal
+1784;historisch;adj;tarihi
+1785;politiek;adj;siyasi
+1786;economisch;adj;ekonomik
+1787;sociaal;adj;sosyal
+1788;cultureel;adj;kültürel
+1789;wetenschappelijk;adj;bilimsel
+1790;kunstmatig;adj;yapay
+1791;digitaal;adj;dijital
+1792;elektronisch;adj;elektronik
+1793;automatisch;adj;otomatik
+1794;gratis;adj;ücretsiz
+1795;beschikbaar;adj;mevcut (elde var)
+1796;onvolledig;adj;eksik
+1797;extra;adj;fazladan
+1798;verloren;adj;kayıp
+1799;kapot;adj;kırık
+1800;stevig;adj;sağlam
+1801;betrouwbaar;adj;güvenilir
+1802;nuttig;adj;faydalı
+1803;nutteloos;adj;faydasız
+1804;schadelijk;adj;zararlı
+1805;effectief;adj;etkili
+1806;succesvol;adj;başarılı
+1807;luxueus;adj;lüks
+1808;kleurrijk;adj;renkli
+1809;bleek;adj;soluk
+1810;doorzichtig;adj;şeffaf
+1811;strak;adj;sıkı
+1812;los;adj;gevşek
+1813;puntig;adj;sivri
+1814;glad;adj;pürüzsüz
+1815;ruw;adj;pürüzlü
+1816;vierkant;adj;kare
+1817;geschikt;adj;uygun
+1818;ongeschikt;adj;uygunsuz
+1819;verplicht;adj;zorunlu
+1820;optioneel;adj;isteğe bağlı
+1821;dringend;adj;acil
+1822;wild;adj;vahşi
+1823;tam;adj;evcil
+1824;giftig;adj;zehirli
+1825;naakt;adj;çıplak
+1826;wakker;adj;uyanık
+1827;bekend;adj;bilinen
+1828;onbekend;adj;bilinmeyen
+1829;realistisch;adj;gerçekçi
+1830;positief;adj;olumlu
+1831;negatief;adj;olumsuz
+1832;onafhankelijk;adj;bağımsız
+1833;actief;adj;aktif
+1834;passief;adj;pasif
+1835;tijdelijk;adj;geçici
+1836;permanent;adj;kalıcı
+1837;oneindig;adj;sonsuz
+1838;voldoende;adj;yeterli
+1839;overdreven;adj;aşırı
+1840;ongelukkig;adj;şanssız
+1841;onschuldig;adj;masum
+1842;schuldig;adj;suçlu
+1843;getalenteerd;adj;yetenekli
+1844;gisteravond;adv;dün gece
+1845;vanavond;adv;bu gece
+1846;morgenochtend;adv;yarın sabah
+1847;overmorgen;adv;öbür gün
+1848;eergisteren;adv;evvelsi gün
+1849;vorige week;adv;geçen hafta
+1850;volgende week;adv;gelecek hafta
+1851;vorig jaar;adv;geçen yıl
+1852;volgend jaar;adv;gelecek yıl
+1853;momenteel;adv;şu anda
+1854;dan;adv;o zaman
+1855;een keer;adv;bir kez
+1856;twee keer;adv;iki kez
+1857;zelden;adv;nadiren
+1858;elke dag;adv;her gün
+1859;nog niet;adv;henüz değil
+1860;niet meer;adv;artık değil
+1861;eerst;adv;ilk önce
+1862;daarna;adv;ardından
+1863;als laatste;adv;en son
+1864;voortdurend;adv;sürekli
+1865;geleidelijk;adv;yavaş yavaş
+1866;hardop;adv;yüksek sesle
+1867;gemakkelijk;adv;kolayca
+1868;met moeite;adv;zorlukla
+1869;helemaal;adv;tamamen
+1870;gedeeltelijk;adv;kısmen
+1871;voornamelijk;adv;çoğunlukla
+1872;eerder;adv;daha önce
+1873;later;adv;daha sonra
+1874;sindsdien;adv;o zamandan beri
+1875;tot nu toe;adv;şimdiye kadar
+1876;naar binnen;adv;içeri (yön)
+1877;naar buiten;adv;dışarı (yön)
+1878;omhoog;adv;yukarı (yön)
+1879;omlaag;adv;aşağı (yön)
+1880;achteruit;adv;geri (yön)
+1881;tegenover;adv;karşısında
+1882;rondom;adv;etrafında
+1883;langs;prep;boyunca
+1884;tot;prep;-e kadar
+1885;sinds;prep;-den beri
+1886;tijdens;prep;sırasında
+1887;ondanks;prep;-e rağmen
+1888;in plaats van;prep;yerine
+1889;behalve;prep;hariç
+1890;volgens;prep;-e göre
+1891;dankzij;prep;sayesinde
+1892;terwijl;conj;-ken
+1893;alsof;conj;sanki
+1894;zelfs als;conj;-sa bile
+1895;anders;conj;aksi halde
+1896;zodat;conj;-sın diye
+1897;goed zo;int;aferin
+1898;gefeliciteerd;int;tebrikler
+1899;veel succes;int;iyi şanslar
+1900;eet smakelijk;int;afiyet olsun
+1901;beterschap;int;geçmiş olsun
+1902;pas op;int;dikkat et
+1903;help;int;imdat
+1904;proost;int;şerefe
+1905;succes met je werk;int;kolay gelsin
+1906;hoe gaat het;int;nasılsın
+1907;het gaat goed;int;iyiyim
+1908;graag gedaan;int;rica ederim
+1909;ik begrijp het niet;int;anlamıyorum
+1910;kunt u dat herhalen;int;tekrar eder misiniz
+1911;wat mooi;int;ne güzel
+1912;geweldig;int;harika
+1913;jammer;int;ne yazık
+1914;kom op;int;hadi
+1915;stop;int;dur
+1916;het even getal;num;çift sayı
+1917;het oneven getal;num;tek sayı
+1918;het dozijn;num;düzine
+1919;het kwart;num;çeyrek
+1920;anderhalf;num;bir buçuk
+1921;vierde;num;dördüncü
+1922;vijfde;num;beşinci
+1923;tiende;num;onuncu
+1924;het miljard;num;milyar
+1925;de samenleving;n;toplum
+1926;de bevolking;n;nüfus
+1927;de democratie;n;demokrasi
+1928;de republiek;n;cumhuriyet
+1929;de partij;n;siyasi parti
+1930;de minister;n;bakan
+1931;het parlement;n;meclis
+1932;de grondwet;n;anayasa
+1933;de vlag;n;bayrak
+1934;het rijk;n;imparatorluk
+1935;de revolutie;n;devrim
+1936;de onafhankelijkheid;n;bağımsızlık
+1937;de overwinning;n;zafer
+1938;de nederlaag;n;yenilgi
+1939;de held;n;kahraman
+1940;de leider;n;lider
+1941;de bewaker;n;güvenlik görevlisi
+1942;de getuige;n;tanık
+1943;het bewijs;n;kanıt
+1944;de straf;n;ceza
+1945;de boete;n;para cezası
+1946;de medaille;n;madalya
+1947;de kampioen;n;şampiyon
+1948;de race;n;yarış
+1949;de speler;n;oyuncu (spor)
+1950;de scheidsrechter;n;hakem
+1951;de trainer;n;antrenör
+1952;het doelpunt;n;gol
+1953;de stand;n;skor
+1954;het basketbal;n;basketbol
+1955;het volleybal;n;voleybol
+1956;het tennis;n;tenis
+1957;het zwemmen;n;yüzme (spor)
+1958;het hardlopen;n;koşu
+1959;het worstelen;n;güreş
+1960;het boksen;n;boks
+1961;het skiën;n;kayak
+1962;de Olympische Spelen;n;olimpiyatlar
+1963;het toernooi;n;turnuva
+1964;de supporter;n;taraftar
+1965;het gebed;n;dua
+1966;het geloof;n;inanç
+1967;de hemel;n;cennet
+1968;de hel;n;cehennem
+1969;de engel;n;melek
+1970;de duivel;n;şeytan
+1971;de feestdag;n;bayram
+1972;het nieuwjaar;n;yılbaşı
+1973;de moraal;n;ahlak
+1974;de rechtvaardigheid;n;adalet
+1975;de gelijkheid;n;eşitlik
+1976;de verantwoordelijkheid;n;sorumluluk
+1977;de plicht;n;yükümlülük
+1978;de identiteit;n;kimlik
+1979;de identiteitskaart;n;kimlik kartı
+1980;het inkomen;n;gelir
+1981;de uitgave;n;gider
+1982;de rijkdom;n;zenginlik
+1983;de armoede;n;yoksulluk
+1984;de verzekering;n;sigorta
+1985;de arbeid;n;emek
+1986;de staking;n;grev
+1987;de organisatie;n;örgüt
+1988;de instelling;n;kurum
+1989;het systeem;n;sistem
+1990;de structuur;n;yapı
+1991;het proces;n;süreç
+1992;de strategie;n;strateji
+1993;de kans;n;fırsat
+1994;het risico;n;risk
+1995;de crisis;n;kriz
+1996;het conflict;n;çatışma
+1997;de overeenkomst;n;anlaşma
+1998;de ruzie;n;münakaşa
+1999;de mening;n;görüş
+2000;het advies;n;öğüt
+2001;de kritiek;n;eleştiri
+2002;de klacht;n;şikayet (dilekçe)
+2003;de oplossing;n;çözüm
+2004;de bedoeling;n;niyet
+2005;de wens;n;dilek
+2006;de voorkeur;n;tercih
+2007;het feit;n;olgu
+2008;het geheim;n;sır
+2009;de belofte;n;vaat
+2010;de grap;n;şaka
+2011;de bedreiging;n;tehdit
+2012;de aanval;n;saldırı
+2013;het geweld;n;şiddet
+2014;het slachtoffer;n;kurban
+2015;de vluchteling;n;mülteci
+2016;de vrijwilliger;n;gönüllü
+2017;de donatie;n;bağış
+2018;de ceremonie;n;tören
+2019;de erfenis;n;miras
+2020;de beschaving;n;medeniyet
+2021;de generatie;n;nesil
+2022;de mensheid;n;insanlık
