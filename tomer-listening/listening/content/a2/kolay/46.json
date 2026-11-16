@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-46",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My first flight",
+  "topic": "Anı (geçmiş zaman)",
+  "instructions": "Ali ilk uçak yolculuğunu anlatıyor. Nereye gittiğine ve nasıl hissettiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Ali",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I took my first flight when I was twenty."
+    },
+    {
+      "speaker": "s",
+      "text": "I flew from Istanbul to London for a job interview."
+    },
+    {
+      "speaker": "s",
+      "text": "I was very nervous at first, especially when the plane took off."
+    },
+    {
+      "speaker": "s",
+      "text": "But the flight attendants were friendly, and I watched two films."
+    },
+    {
+      "speaker": "s",
+      "text": "When we landed, I wasn't scared any more. Now I love flying!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old was Ali on his first flight?",
+      "options": [
+        "eighteen",
+        "twenty",
+        "twelve",
+        "twenty-two"
+      ],
+      "answer": 1,
+      "feedback": "İlk uçuşunda yirmi yaşındaydı.",
+      "evidence": "I took my first flight when I was twenty."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why did he fly to London?",
+      "options": [
+        "for a holiday",
+        "to visit family",
+        "for a job interview",
+        "to study"
+      ],
+      "answer": 2,
+      "feedback": "Bir iş görüşmesi için.",
+      "evidence": "for a job interview."
+    },
+    {
+      "id": "q3",
+      "prompt": "How does Ali feel about flying now?",
+      "options": [
+        "He loves it.",
+        "He is still scared.",
+        "He hates it.",
+        "He never flies."
+      ],
+      "answer": 0,
+      "feedback": "Artık uçmayı çok seviyor.",
+      "evidence": "Now I love flying!"
+    }
+  ]
+}

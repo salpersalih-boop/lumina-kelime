@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-19",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My little brother",
+  "topic": "Aile",
+  "instructions": "Sara küçük kardeşini anlatıyor. Yaş, sevdiği ve sevmediği şeylere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sara": {
+      "name": "Sara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sara",
+      "text": "I have a little brother. His name is Jack."
+    },
+    {
+      "speaker": "sara",
+      "text": "He is four years old."
+    },
+    {
+      "speaker": "sara",
+      "text": "He loves cars and trains. He has twenty toy cars!"
+    },
+    {
+      "speaker": "sara",
+      "text": "He doesn't like vegetables, but he loves pizza."
+    },
+    {
+      "speaker": "sara",
+      "text": "He goes to bed at eight o'clock."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is Jack?",
+      "options": [
+        "two",
+        "four",
+        "eight",
+        "fourteen"
+      ],
+      "answer": 1,
+      "feedback": "Jack dört (four) yaşında. Sekiz, yatma saati.",
+      "evidence": "He is four years old."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Jack love?",
+      "options": [
+        "books and music",
+        "dogs and cats",
+        "football",
+        "cars and trains"
+      ],
+      "answer": 3,
+      "feedback": "Arabaları ve trenleri seviyor.",
+      "evidence": "He loves cars and trains."
+    },
+    {
+      "id": "q3",
+      "prompt": "What food doesn't Jack like?",
+      "options": [
+        "pizza",
+        "vegetables",
+        "fruit",
+        "chicken"
+      ],
+      "answer": 1,
+      "feedback": "Sebzeyi (vegetables) sevmiyor; pizzayı seviyor.",
+      "evidence": "He doesn't like vegetables"
+    }
+  ]
+}

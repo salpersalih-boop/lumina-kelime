@@ -1,0 +1,116 @@
+{
+  "id": "a2-orta-23",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Too much noise",
+  "topic": "Komşuyla şikâyet",
+  "instructions": "Anna gürültü yapan komşusuyla konuşuyor. Sorunu ve uzlaşmayı takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "anna": {
+      "name": "Anna",
+      "voice": "female"
+    },
+    "ryan": {
+      "name": "Ryan",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "anna",
+      "text": "Hi, I'm Anna from the flat downstairs. Sorry to bother you."
+    },
+    {
+      "speaker": "ryan",
+      "text": "Hi Anna. Is everything OK?"
+    },
+    {
+      "speaker": "anna",
+      "text": "Well, last night the music was very loud until two in the morning. I couldn't sleep."
+    },
+    {
+      "speaker": "ryan",
+      "text": "Oh, I'm really sorry. It was my birthday party."
+    },
+    {
+      "speaker": "anna",
+      "text": "Happy birthday! It's fine once, but it also happens at the weekends."
+    },
+    {
+      "speaker": "ryan",
+      "text": "You're right. I'll keep the music quieter after eleven."
+    },
+    {
+      "speaker": "anna",
+      "text": "Thank you. That would be great. I start work at six on Saturdays."
+    },
+    {
+      "speaker": "ryan",
+      "text": "I didn't know that. Next time I have a party, I'll tell you first."
+    },
+    {
+      "speaker": "anna",
+      "text": "Thanks, Ryan."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does Anna live?",
+      "options": [
+        "upstairs",
+        "in the flat downstairs",
+        "next door",
+        "across the street"
+      ],
+      "answer": 1,
+      "feedback": "Anna alt kattaki dairede oturuyor.",
+      "evidence": "I'm Anna from the flat downstairs."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why was there loud music last night?",
+      "options": [
+        "Ryan was cleaning.",
+        "It was a football match.",
+        "It was Ryan's birthday party.",
+        "Ryan was learning the guitar."
+      ],
+      "answer": 2,
+      "feedback": "Ryan'ın doğum günü partisiydi.",
+      "evidence": "It was my birthday party."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Ryan promise?",
+      "options": [
+        "to stop having parties",
+        "to keep the music quieter after eleven",
+        "to move house",
+        "to buy Anna a present"
+      ],
+      "answer": 1,
+      "feedback": "Saat on birden sonra müziği kısacak.",
+      "evidence": "I'll keep the music quieter after eleven."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time does Anna start work on Saturdays?",
+      "options": [
+        "at six",
+        "at eleven",
+        "at two",
+        "at eight"
+      ],
+      "answer": 0,
+      "feedback": "Cumartesi işe altıda başlıyor.",
+      "evidence": "I start work at six on Saturdays."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "a1-orta-25",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Buying new shoes",
+  "topic": "Ayakkabı alışverişi",
+  "instructions": "Paul ayakkabı alıyor. Numara, renk ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Shop assistant",
+      "voice": "female"
+    },
+    "paul": {
+      "name": "Paul",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "paul",
+      "text": "Hello. I'm looking for some running shoes."
+    },
+    {
+      "speaker": "staff",
+      "text": "What size are you?"
+    },
+    {
+      "speaker": "paul",
+      "text": "I'm a forty-three."
+    },
+    {
+      "speaker": "staff",
+      "text": "We have these in black or in blue."
+    },
+    {
+      "speaker": "paul",
+      "text": "Can I try the blue ones?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Sure. Here you are."
+    },
+    {
+      "speaker": "paul",
+      "text": "They're a bit small. Do you have a forty-four?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, but only in black."
+    },
+    {
+      "speaker": "paul",
+      "text": "OK, black is fine. How much are they?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Sixty pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What kind of shoes does Paul want?",
+      "options": [
+        "running shoes",
+        "football boots",
+        "smart shoes",
+        "sandals"
+      ],
+      "answer": 0,
+      "feedback": "Koşu ayakkabısı (running shoes) arıyor.",
+      "evidence": "I'm looking for some running shoes."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem with the first shoes?",
+      "options": [
+        "They're too big.",
+        "They're the wrong colour.",
+        "They're a bit small.",
+        "They're expensive."
+      ],
+      "answer": 2,
+      "feedback": "İlk ayakkabılar biraz küçük.",
+      "evidence": "They're a bit small."
+    },
+    {
+      "id": "q3",
+      "prompt": "What size does Paul buy?",
+      "options": [
+        "forty-three",
+        "forty-four",
+        "thirty-four",
+        "forty"
+      ],
+      "answer": 1,
+      "feedback": "Kırk dört (forty-four) numara alıyor.",
+      "evidence": "Do you have a forty-four?"
+    },
+    {
+      "id": "q4",
+      "prompt": "What colour are the shoes he buys?",
+      "options": [
+        "blue",
+        "white",
+        "grey",
+        "black"
+      ],
+      "answer": 3,
+      "feedback": "44 numara sadece siyahta var; siyah alıyor.",
+      "evidence": "OK, black is fine."
+    }
+  ]
+}

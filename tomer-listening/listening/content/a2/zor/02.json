@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-02",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "How to sleep better",
+  "topic": "Podcast: uyku",
+  "instructions": "Bir sağlık podcast'inde uyku hakkında öneriler. Uzun bir metin; sayılara ve \"yap / yapma\" önerilerine dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Podcast host",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Hello and welcome to Healthy Life. Today we're talking about sleep."
+    },
+    {
+      "speaker": "host",
+      "text": "Most adults need seven to nine hours of sleep every night, but many people only sleep five or six."
+    },
+    {
+      "speaker": "host",
+      "text": "So, how can you sleep better? Here are some ideas."
+    },
+    {
+      "speaker": "host",
+      "text": "First, go to bed and get up at the same time every day, even at the weekend."
+    },
+    {
+      "speaker": "host",
+      "text": "Second, don't drink coffee or tea after four o'clock in the afternoon."
+    },
+    {
+      "speaker": "host",
+      "text": "Third, stop using your phone one hour before bed. The light from the screen keeps your brain awake."
+    },
+    {
+      "speaker": "host",
+      "text": "Some people read a book instead. That is a much better idea."
+    },
+    {
+      "speaker": "host",
+      "text": "Exercise is good for sleep too, but don't do sport late in the evening."
+    },
+    {
+      "speaker": "host",
+      "text": "And finally, keep your bedroom cool and dark. Eighteen degrees is perfect."
+    },
+    {
+      "speaker": "host",
+      "text": "Next week, we will talk about healthy breakfasts. Sleep well!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many hours of sleep do most adults need?",
+      "options": [
+        "five or six",
+        "six to eight",
+        "seven to nine",
+        "nine to ten"
+      ],
+      "answer": 2,
+      "feedback": "Çoğu yetişkinin yedi ile dokuz saat (seven to nine) uykuya ihtiyacı var. Beş-altı, birçok insanın uyuduğu süre.",
+      "evidence": "Most adults need seven to nine hours of sleep every night"
+    },
+    {
+      "id": "q2",
+      "prompt": "When should you stop drinking coffee?",
+      "options": [
+        "after four o'clock",
+        "after lunch",
+        "one hour before bed",
+        "in the evening"
+      ],
+      "answer": 0,
+      "feedback": "Öğleden sonra dörtten sonra (after four o'clock) kahve ve çay içme.",
+      "evidence": "don't drink coffee or tea after four o'clock in the afternoon."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is a phone bad before bed?",
+      "options": [
+        "It's noisy.",
+        "The light keeps your brain awake.",
+        "You stay up late talking.",
+        "It makes your eyes tired."
+      ],
+      "answer": 1,
+      "feedback": "Ekranın ışığı beyni uyanık tutuyor.",
+      "evidence": "The light from the screen keeps your brain awake."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the host say about exercise?",
+      "options": [
+        "It's bad for sleep.",
+        "Do it late in the evening.",
+        "It doesn't change sleep.",
+        "It's good, but not late in the evening."
+      ],
+      "answer": 3,
+      "feedback": "Spor uykuya iyi gelir ama akşam geç saatte yapma.",
+      "evidence": "but don't do sport late in the evening."
+    },
+    {
+      "id": "q5",
+      "prompt": "What temperature is best for a bedroom?",
+      "options": [
+        "eight degrees",
+        "eighteen degrees",
+        "twenty-eight degrees",
+        "twenty degrees"
+      ],
+      "answer": 1,
+      "feedback": "On sekiz derece (eighteen degrees) ideal.",
+      "evidence": "Eighteen degrees is perfect."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "a1-kolay-05",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My favourite food",
+  "topic": "Yemek ve içecek",
+  "instructions": "Carlos sevdiği ve sevmediği yiyecekleri anlatıyor. \"but\" ve \"don't\" kelimelerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "carlos": {
+      "name": "Carlos",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "carlos",
+      "text": "Hi, I'm Carlos. I'm from Spain, but I live in London now."
+    },
+    {
+      "speaker": "carlos",
+      "text": "I love food!"
+    },
+    {
+      "speaker": "carlos",
+      "text": "My favourite food is pizza. I eat pizza every Friday."
+    },
+    {
+      "speaker": "carlos",
+      "text": "I like fish, but I don't like meat."
+    },
+    {
+      "speaker": "carlos",
+      "text": "For breakfast, I usually have bread and cheese."
+    },
+    {
+      "speaker": "carlos",
+      "text": "I drink orange juice in the morning."
+    },
+    {
+      "speaker": "carlos",
+      "text": "My mother is a very good cook."
+    },
+    {
+      "speaker": "carlos",
+      "text": "She makes great soup."
+    },
+    {
+      "speaker": "carlos",
+      "text": "On Sundays, we eat lunch together at home."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does Carlos live now?",
+      "options": [
+        "in Spain",
+        "in London",
+        "in Paris",
+        "in Rome"
+      ],
+      "answer": 1,
+      "feedback": "Carlos İspanyalı (from Spain) ama şimdi (now) Londra'da yaşıyor.",
+      "evidence": "but I live in London now."
+    },
+    {
+      "id": "q2",
+      "prompt": "What doesn't Carlos like?",
+      "options": [
+        "fish",
+        "pizza",
+        "meat",
+        "cheese"
+      ],
+      "answer": 2,
+      "feedback": "Balığı seviyor ama eti sevmiyor (don't like meat).",
+      "evidence": "I like fish, but I don't like meat."
+    },
+    {
+      "id": "q3",
+      "prompt": "When does Carlos eat pizza?",
+      "options": [
+        "every day",
+        "every Friday",
+        "on Sundays",
+        "in the morning"
+      ],
+      "answer": 1,
+      "feedback": "Her cuma (every Friday) pizza yiyor. Pazar günleri ailesiyle evde öğle yemeği yiyor.",
+      "evidence": "I eat pizza every Friday."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-58",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Starting university",
+  "topic": "Üniversite hayatı",
+  "instructions": "Defne üniversitedeki ilk haftasını anlatıyor. Duygularına ve yaşadıklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Defne",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last week was my first week at university."
+    },
+    {
+      "speaker": "s",
+      "text": "I'm studying architecture in a city three hours from my home."
+    },
+    {
+      "speaker": "s",
+      "text": "I live in a student flat with three other girls. They are all very friendly."
+    },
+    {
+      "speaker": "s",
+      "text": "The lessons are difficult, and there is a lot of reading."
+    },
+    {
+      "speaker": "s",
+      "text": "I miss my family, but I call them every evening."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Defne studying?",
+      "options": [
+        "art",
+        "architecture",
+        "engineering",
+        "medicine"
+      ],
+      "answer": 1,
+      "feedback": "Mimarlık okuyor.",
+      "evidence": "I'm studying architecture"
+    },
+    {
+      "id": "q2",
+      "prompt": "Who does she live with?",
+      "options": [
+        "her family",
+        "alone",
+        "three other girls",
+        "one friend"
+      ],
+      "answer": 2,
+      "feedback": "Bir öğrenci dairesinde üç kızla birlikte yaşıyor.",
+      "evidence": "I live in a student flat with three other girls."
+    },
+    {
+      "id": "q3",
+      "prompt": "How often does she call her family?",
+      "options": [
+        "every evening",
+        "every week",
+        "every weekend",
+        "once a month"
+      ],
+      "answer": 0,
+      "feedback": "Her akşam ailesini arıyor.",
+      "evidence": "I call them every evening."
+    }
+  ]
+}

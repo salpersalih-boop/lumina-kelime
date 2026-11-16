@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-64",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Rainy day",
+  "topic": "Hava ve aktiviteler",
+  "instructions": "Can yağmurlu bir günü anlatıyor. Kısa bir metin; ne yaptıklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Can",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "It's raining today, so we can't go to the park."
+    },
+    {
+      "speaker": "s",
+      "text": "My sister and I are playing cards in the living room."
+    },
+    {
+      "speaker": "s",
+      "text": "Mum is making hot soup."
+    },
+    {
+      "speaker": "s",
+      "text": "I like rainy days at home!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why can't they go to the park?",
+      "options": [
+        "It's raining.",
+        "It's closed.",
+        "They're ill.",
+        "It's late."
+      ],
+      "answer": 0,
+      "feedback": "Yağmur yağıyor.",
+      "evidence": "It's raining today"
+    },
+    {
+      "id": "q2",
+      "prompt": "What are Can and his sister doing?",
+      "options": [
+        "watching TV",
+        "reading",
+        "playing cards",
+        "cooking"
+      ],
+      "answer": 2,
+      "feedback": "Oturma odasında kâğıt oynuyorlar.",
+      "evidence": "My sister and I are playing cards"
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Mum making?",
+      "options": [
+        "a cake",
+        "tea",
+        "pizza",
+        "hot soup"
+      ],
+      "answer": 3,
+      "feedback": "Annesi sıcak çorba yapıyor.",
+      "evidence": "Mum is making hot soup."
+    }
+  ]
+}

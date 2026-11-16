@@ -1,0 +1,132 @@
+{
+  "id": "a1-orta-12",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "A new classmate",
+  "topic": "Tanışma",
+  "instructions": "Elif ve Marco dil kursunda tanışıyor. Uzun bir diyalog; ülke, dil ve hobilere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "elif": {
+      "name": "Elif",
+      "voice": "female"
+    },
+    "marco": {
+      "name": "Marco",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "elif",
+      "text": "Hi! Are you new in this class? I'm Elif."
+    },
+    {
+      "speaker": "marco",
+      "text": "Hi, Elif. Yes, it's my first day. My name is Marco."
+    },
+    {
+      "speaker": "elif",
+      "text": "Nice to meet you, Marco. Where are you from?"
+    },
+    {
+      "speaker": "marco",
+      "text": "I'm from Brazil, from a city called Recife. And you?"
+    },
+    {
+      "speaker": "elif",
+      "text": "I'm from Turkey. I live in Ankara with my parents."
+    },
+    {
+      "speaker": "marco",
+      "text": "What languages do you speak?"
+    },
+    {
+      "speaker": "elif",
+      "text": "Turkish, of course, and a little German. Now I want to learn English."
+    },
+    {
+      "speaker": "marco",
+      "text": "Me too. I speak Portuguese and Spanish."
+    },
+    {
+      "speaker": "elif",
+      "text": "Wow, that's great! What do you do in your free time?"
+    },
+    {
+      "speaker": "marco",
+      "text": "I play football and I cook. I love cooking Brazilian food."
+    },
+    {
+      "speaker": "elif",
+      "text": "I don't cook, but I love eating! I play the guitar and I read a lot."
+    },
+    {
+      "speaker": "marco",
+      "text": "Maybe you can come to my house for dinner one day."
+    },
+    {
+      "speaker": "elif",
+      "text": "That sounds lovely. Thank you!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Marco from?",
+      "options": [
+        "Spain",
+        "Portugal",
+        "Brazil",
+        "Turkey"
+      ],
+      "answer": 2,
+      "feedback": "Marco Brezilya'dan (Brazil), Recife şehrinden.",
+      "evidence": "I'm from Brazil, from a city called Recife."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who does Elif live with?",
+      "options": [
+        "her parents",
+        "her sister",
+        "a friend",
+        "alone"
+      ],
+      "answer": 0,
+      "feedback": "Elif Ankara'da ailesiyle (with my parents) yaşıyor.",
+      "evidence": "I live in Ankara with my parents."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which language does Elif speak a little?",
+      "options": [
+        "Spanish",
+        "German",
+        "Portuguese",
+        "English"
+      ],
+      "answer": 1,
+      "feedback": "Elif biraz Almanca (a little German) konuşuyor. İspanyolca ve Portekizce Marco'nun dilleri.",
+      "evidence": "Turkish, of course, and a little German."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Elif do in her free time?",
+      "options": [
+        "She cooks.",
+        "She plays football.",
+        "She plays the guitar and reads.",
+        "She watches films."
+      ],
+      "answer": 2,
+      "feedback": "Elif gitar çalıyor ve çok kitap okuyor. Yemek yapmıyor (I don't cook); futbol ve yemek Marco'nun hobileri.",
+      "evidence": "I play the guitar and I read a lot."
+    }
+  ]
+}

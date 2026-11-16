@@ -1,0 +1,137 @@
+{
+  "id": "a2-zor-41",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Interview for a hotel job",
+  "topic": "İş görüşmesi",
+  "instructions": "Kemal bir otelde resepsiyonist işi için görüşmede. Uzun bir diyalog; deneyimi, çalışma koşullarını ve maaşı takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "manager": {
+      "name": "Hotel manager",
+      "voice": "female"
+    },
+    "kemal": {
+      "name": "Kemal",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "manager",
+      "text": "Thank you for coming, Kemal. Can you tell me about your experience?"
+    },
+    {
+      "speaker": "kemal",
+      "text": "Yes. I worked in a café for two years, and then in a small hotel in Antalya for one summer."
+    },
+    {
+      "speaker": "manager",
+      "text": "What languages do you speak?"
+    },
+    {
+      "speaker": "kemal",
+      "text": "Turkish, English and a little German. I'm learning Russian at the moment."
+    },
+    {
+      "speaker": "manager",
+      "text": "That's useful. We have a lot of Russian guests. Can you work at night?"
+    },
+    {
+      "speaker": "kemal",
+      "text": "Yes, I don't mind night shifts. But I can't work on Sundays because I have classes."
+    },
+    {
+      "speaker": "manager",
+      "text": "That's OK. The job is five days a week, eight hours a day. Some weeks you work in the morning, some weeks at night."
+    },
+    {
+      "speaker": "kemal",
+      "text": "What is the salary?"
+    },
+    {
+      "speaker": "manager",
+      "text": "Eighteen hundred pounds a month. Night shifts pay more. And you get free meals at the hotel."
+    },
+    {
+      "speaker": "kemal",
+      "text": "That sounds great. When would I start?"
+    },
+    {
+      "speaker": "manager",
+      "text": "On the first of June. We'll call you by Friday with our decision."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where did Kemal work for one summer?",
+      "options": [
+        "in a café",
+        "in a small hotel in Antalya",
+        "in a restaurant",
+        "in a big hotel in Istanbul"
+      ],
+      "answer": 1,
+      "feedback": "Bir yaz Antalya'da küçük bir otelde çalıştı. İki yıl kafedeydi.",
+      "evidence": "then in a small hotel in Antalya for one summer."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which language is Kemal learning now?",
+      "options": [
+        "German",
+        "English",
+        "Russian",
+        "French"
+      ],
+      "answer": 2,
+      "feedback": "Şu an Rusça öğreniyor.",
+      "evidence": "I'm learning Russian at the moment."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why can't Kemal work on Sundays?",
+      "options": [
+        "He has classes.",
+        "He visits his family.",
+        "He has another job.",
+        "He plays football."
+      ],
+      "answer": 0,
+      "feedback": "Pazar günleri dersleri var.",
+      "evidence": "because I have classes."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the monthly salary?",
+      "options": [
+        "eight hundred pounds",
+        "fifteen hundred pounds",
+        "eighteen thousand pounds",
+        "eighteen hundred pounds"
+      ],
+      "answer": 3,
+      "feedback": "Aylık bin sekiz yüz pound; gece vardiyası daha fazla ödüyor.",
+      "evidence": "Eighteen hundred pounds a month."
+    },
+    {
+      "id": "q5",
+      "prompt": "When will the manager call Kemal?",
+      "options": [
+        "on the first of June",
+        "by Friday",
+        "tomorrow",
+        "next month"
+      ],
+      "answer": 1,
+      "feedback": "Kararı cumaya kadar bildirecek.",
+      "evidence": "We'll call you by Friday with our decision."
+    }
+  ]
+}

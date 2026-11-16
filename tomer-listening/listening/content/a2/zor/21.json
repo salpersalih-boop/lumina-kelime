@@ -1,0 +1,125 @@
+{
+  "id": "a2-zor-21",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Summer music festival",
+  "topic": "Festival bilgilendirmesi",
+  "instructions": "Radyoda bir müzik festivalinin tanıtımı. Uzun bir metin; günler, fiyatlar ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Radio host",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Good news for music fans! The Riverside Music Festival is back this summer, from Friday the eleventh to Sunday the thirteenth of July."
+    },
+    {
+      "speaker": "host",
+      "text": "This year, there are more than forty bands on three stages."
+    },
+    {
+      "speaker": "host",
+      "text": "The biggest name, The Moonlights, will play on Saturday night, not Friday as planned."
+    },
+    {
+      "speaker": "host",
+      "text": "A ticket for one day is forty-five pounds. A weekend ticket for all three days is one hundred pounds."
+    },
+    {
+      "speaker": "host",
+      "text": "Children under twelve are free, but they must be with an adult."
+    },
+    {
+      "speaker": "host",
+      "text": "You can camp at the festival, but you need to bring your own tent. There are showers, but there's often a long queue!"
+    },
+    {
+      "speaker": "host",
+      "text": "You can't bring glass bottles or your own alcohol. There are food stalls from many countries."
+    },
+    {
+      "speaker": "host",
+      "text": "There will be free buses from the train station every twenty minutes."
+    },
+    {
+      "speaker": "host",
+      "text": "Tickets go on sale this Monday at ten a.m. on the festival website."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When does the festival start?",
+      "options": [
+        "Friday the eleventh of July",
+        "Saturday the twelfth of July",
+        "Sunday the thirteenth of July",
+        "Friday the eleventh of June"
+      ],
+      "answer": 0,
+      "feedback": "Festival 11 temmuz cuma başlıyor.",
+      "evidence": "from Friday the eleventh"
+    },
+    {
+      "id": "q2",
+      "prompt": "When will The Moonlights play?",
+      "options": [
+        "on Friday night",
+        "on Saturday night",
+        "on Sunday afternoon",
+        "on Saturday afternoon"
+      ],
+      "answer": 1,
+      "feedback": "Planlandığı gibi cuma değil, cumartesi gecesi çalacaklar.",
+      "evidence": "will play on Saturday night, not Friday as planned."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is a weekend ticket?",
+      "options": [
+        "forty-five pounds",
+        "ninety pounds",
+        "one hundred and thirty-five pounds",
+        "one hundred pounds"
+      ],
+      "answer": 3,
+      "feedback": "Üç günlük hafta sonu bileti yüz pound; günlük kırk beş.",
+      "evidence": "A weekend ticket for all three days is one hundred pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "What must campers bring?",
+      "options": [
+        "their own food",
+        "their own tent",
+        "glass bottles",
+        "a shower"
+      ],
+      "answer": 1,
+      "feedback": "Kamp yapacaklar kendi çadırlarını getirmeli.",
+      "evidence": "you need to bring your own tent."
+    },
+    {
+      "id": "q5",
+      "prompt": "When can people buy tickets?",
+      "options": [
+        "from today",
+        "at the festival",
+        "this Monday at ten a.m.",
+        "next Friday"
+      ],
+      "answer": 2,
+      "feedback": "Biletler bu pazartesi sabah onda web sitesinde satışa çıkıyor.",
+      "evidence": "Tickets go on sale this Monday at ten a.m."
+    }
+  ]
+}

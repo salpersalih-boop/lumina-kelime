@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-44",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Visiting a castle",
+  "topic": "Gezi",
+  "instructions": "Tom ailesiyle bir kaleyi ziyaret ettiği günü anlatıyor. Kalenin yaşına ve olanlara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tom": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tom",
+      "text": "Last month, we visited an old castle in Scotland."
+    },
+    {
+      "speaker": "tom",
+      "text": "It was built more than eight hundred years ago."
+    },
+    {
+      "speaker": "tom",
+      "text": "We climbed to the top of the tower. There were two hundred steps!"
+    },
+    {
+      "speaker": "tom",
+      "text": "From the top, we could see the sea and the mountains."
+    },
+    {
+      "speaker": "tom",
+      "text": "My little sister was scared because the guide told us a story about a ghost."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is the castle?",
+      "options": [
+        "about eighty years",
+        "more than eight hundred years",
+        "two hundred years",
+        "eighteen hundred years"
+      ],
+      "answer": 1,
+      "feedback": "Kale sekiz yüz yıldan daha önce yapıldı.",
+      "evidence": "It was built more than eight hundred years ago."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many steps were there?",
+      "options": [
+        "two hundred",
+        "eight hundred",
+        "one hundred",
+        "twenty"
+      ],
+      "answer": 0,
+      "feedback": "Kulede iki yüz basamak vardı.",
+      "evidence": "There were two hundred steps!"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why was his sister scared?",
+      "options": [
+        "The tower was very high.",
+        "It was dark.",
+        "She got lost.",
+        "The guide told a ghost story."
+      ],
+      "answer": 3,
+      "feedback": "Rehber bir hayalet hikâyesi anlattı.",
+      "evidence": "the guide told us a story about a ghost."
+    }
+  ]
+}

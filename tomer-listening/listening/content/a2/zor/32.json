@@ -1,0 +1,137 @@
+{
+  "id": "a2-zor-32",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Which job should I take?",
+  "topic": "İş teklifi karşılaştırma",
+  "instructions": "Ayşe iki iş teklifini arkadaşıyla konuşuyor. Uzun bir diyalog; hangi bilginin hangi işe ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "ayse": {
+      "name": "Ayşe",
+      "voice": "female"
+    },
+    "mark": {
+      "name": "Mark",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ayse",
+      "text": "Mark, I need some advice. I've got two job offers, and I can't decide."
+    },
+    {
+      "speaker": "mark",
+      "text": "Congratulations! Tell me about them."
+    },
+    {
+      "speaker": "ayse",
+      "text": "The first one is at a big bank in the city centre. The salary is very good, about forty thousand a year."
+    },
+    {
+      "speaker": "mark",
+      "text": "Sounds great. And the second?"
+    },
+    {
+      "speaker": "ayse",
+      "text": "It's at a small design company. The salary is lower, thirty-two thousand, but the work is more interesting."
+    },
+    {
+      "speaker": "mark",
+      "text": "What about the hours?"
+    },
+    {
+      "speaker": "ayse",
+      "text": "At the bank, I would work from eight to six, sometimes later. At the design company, it's nine to five, and I can work from home on Fridays."
+    },
+    {
+      "speaker": "mark",
+      "text": "How far are they from your flat?"
+    },
+    {
+      "speaker": "ayse",
+      "text": "The bank is an hour by train. The design company is only fifteen minutes by bike."
+    },
+    {
+      "speaker": "mark",
+      "text": "Honestly, money isn't everything. You'd have more free time with the second job."
+    },
+    {
+      "speaker": "ayse",
+      "text": "You're right. I think I'll take the design job."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much is the salary at the bank?",
+      "options": [
+        "thirty-two thousand",
+        "forty thousand",
+        "fourteen thousand",
+        "fifty thousand"
+      ],
+      "answer": 1,
+      "feedback": "Bankadaki maaş yaklaşık kırk bin; tasarım şirketi otuz iki bin.",
+      "evidence": "about forty thousand a year."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is better about the design company?",
+      "options": [
+        "the salary",
+        "the work is more interesting",
+        "it's bigger",
+        "it's in the city centre"
+      ],
+      "answer": 1,
+      "feedback": "Maaş daha düşük ama iş daha ilginç.",
+      "evidence": "but the work is more interesting."
+    },
+    {
+      "id": "q3",
+      "prompt": "When can Ayşe work from home at the design company?",
+      "options": [
+        "on Mondays",
+        "every day",
+        "on Fridays",
+        "never"
+      ],
+      "answer": 2,
+      "feedback": "Tasarım şirketinde cuma günleri evden çalışabilir.",
+      "evidence": "I can work from home on Fridays."
+    },
+    {
+      "id": "q4",
+      "prompt": "How does Ayşe get to the design company?",
+      "options": [
+        "by train",
+        "by car",
+        "on foot",
+        "by bike"
+      ],
+      "answer": 3,
+      "feedback": "Tasarım şirketi bisikletle on beş dakika; banka trenle bir saat.",
+      "evidence": "The design company is only fifteen minutes by bike."
+    },
+    {
+      "id": "q5",
+      "prompt": "Which job does Ayşe choose?",
+      "options": [
+        "the design job",
+        "the bank job",
+        "neither",
+        "She doesn't decide."
+      ],
+      "answer": 0,
+      "feedback": "Tasarım işini seçiyor.",
+      "evidence": "I think I'll take the design job."
+    }
+  ]
+}

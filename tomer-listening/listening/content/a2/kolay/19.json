@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-19",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A message from Ben",
+  "topic": "Telefon mesajı",
+  "instructions": "Ben arkadaşına kısa bir mesaj bırakıyor. Ne istediğine ve saate dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ben": {
+      "name": "Ben",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ben",
+      "text": "Hi Ollie, it's Ben. Can I borrow your camera this weekend?"
+    },
+    {
+      "speaker": "ben",
+      "text": "I'm going to my cousin's wedding on Saturday."
+    },
+    {
+      "speaker": "ben",
+      "text": "I can collect it on Friday after work, at about six. Thanks!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Ben want to borrow?",
+      "options": [
+        "a camera",
+        "a car",
+        "a suit",
+        "a phone"
+      ],
+      "answer": 0,
+      "feedback": "Ben fotoğraf makinesi (camera) ödünç istiyor.",
+      "evidence": "Can I borrow your camera this weekend?"
+    },
+    {
+      "id": "q2",
+      "prompt": "Why does Ben need it?",
+      "options": [
+        "for a holiday",
+        "for his cousin's wedding",
+        "for a birthday party",
+        "for work"
+      ],
+      "answer": 1,
+      "feedback": "Cumartesi kuzeninin düğününe gidiyor.",
+      "evidence": "I'm going to my cousin's wedding on Saturday."
+    },
+    {
+      "id": "q3",
+      "prompt": "When will Ben collect it?",
+      "options": [
+        "on Saturday morning",
+        "on Friday at about six",
+        "tonight",
+        "on Friday morning"
+      ],
+      "answer": 1,
+      "feedback": "Cuma işten sonra, yaklaşık altıda alacak.",
+      "evidence": "I can collect it on Friday after work, at about six."
+    }
+  ]
+}

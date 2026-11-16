@@ -1,0 +1,96 @@
+{
+  "id": "a1-orta-52",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Buying stamps",
+  "topic": "Postane",
+  "instructions": "Bir turist postanede pul alıyor. Kısa bir diyalog; ülke, sayı ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Tourist",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Clerk",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello. I want to send four postcards to Spain."
+    },
+    {
+      "speaker": "b",
+      "text": "OK. That's one pound fifty for each stamp."
+    },
+    {
+      "speaker": "a",
+      "text": "So, six pounds?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, that's right."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does the tourist want to send?",
+      "options": [
+        "letters",
+        "a parcel",
+        "postcards",
+        "photos"
+      ],
+      "answer": 2,
+      "feedback": "Kartpostal göndermek istiyor.",
+      "evidence": "I want to send four postcards"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where are they going?",
+      "options": [
+        "to Spain",
+        "to Italy",
+        "to France",
+        "to Portugal"
+      ],
+      "answer": 0,
+      "feedback": "İspanya'ya.",
+      "evidence": "to Spain."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is one stamp?",
+      "options": [
+        "one pound",
+        "one pound fifty",
+        "fifty pence",
+        "six pounds"
+      ],
+      "answer": 1,
+      "feedback": "Bir pul bir pound elli.",
+      "evidence": "That's one pound fifty for each stamp."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does he pay?",
+      "options": [
+        "four pounds",
+        "one pound fifty",
+        "five pounds",
+        "six pounds"
+      ],
+      "answer": 3,
+      "feedback": "Dört pul: altı pound.",
+      "evidence": "So, six pounds?"
+    }
+  ]
+}

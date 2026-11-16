@@ -1,0 +1,141 @@
+{
+  "id": "a2-zor-19",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Interview with a chef",
+  "topic": "Radyo röportajı",
+  "instructions": "Radyoda bir aşçıyla röportaj. Uzun bir diyalog; geçmişi, bugünü ve planları ayırt et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Radio host",
+      "voice": "female"
+    },
+    "chef": {
+      "name": "Chef Marco",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Today I'm talking to Marco Bianchi, the chef at Bella Cucina. Welcome, Marco."
+    },
+    {
+      "speaker": "chef",
+      "text": "Thank you for having me."
+    },
+    {
+      "speaker": "host",
+      "text": "When did you start cooking?"
+    },
+    {
+      "speaker": "chef",
+      "text": "When I was ten. My grandmother taught me to make pasta in her kitchen in Naples."
+    },
+    {
+      "speaker": "host",
+      "text": "And you came to London when?"
+    },
+    {
+      "speaker": "chef",
+      "text": "Fifteen years ago. At first I washed dishes in a hotel. It was hard work, and my English was terrible!"
+    },
+    {
+      "speaker": "host",
+      "text": "Now you have your own restaurant. What is the most popular dish?"
+    },
+    {
+      "speaker": "chef",
+      "text": "People think it's the pizza, but actually it's our seafood pasta."
+    },
+    {
+      "speaker": "host",
+      "text": "What do you cook at home?"
+    },
+    {
+      "speaker": "chef",
+      "text": "Honestly? Very simple food. Eggs, salad, bread. I'm tired of cooking after work!"
+    },
+    {
+      "speaker": "host",
+      "text": "And what's next for you?"
+    },
+    {
+      "speaker": "chef",
+      "text": "Next spring, I'm opening a cooking school for children. I want them to learn that cooking is fun."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who taught Marco to cook?",
+      "options": [
+        "his mother",
+        "his grandmother",
+        "a chef in a hotel",
+        "his father"
+      ],
+      "answer": 1,
+      "feedback": "Ona makarna yapmayı büyükannesi öğretti.",
+      "evidence": "My grandmother taught me to make pasta"
+    },
+    {
+      "id": "q2",
+      "prompt": "What was Marco's first job in London?",
+      "options": [
+        "chef",
+        "waiter",
+        "washing dishes",
+        "teacher"
+      ],
+      "answer": 2,
+      "feedback": "İlk başta bir otelde bulaşık yıkadı.",
+      "evidence": "At first I washed dishes in a hotel."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the most popular dish at his restaurant?",
+      "options": [
+        "the seafood pasta",
+        "the pizza",
+        "the salad",
+        "the eggs"
+      ],
+      "answer": 0,
+      "feedback": "İnsanlar pizza sanıyor ama en popüleri deniz ürünlü makarna.",
+      "evidence": "but actually it's our seafood pasta."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Marco cook at home?",
+      "options": [
+        "pizza",
+        "seafood",
+        "pasta",
+        "simple food like eggs and salad"
+      ],
+      "answer": 3,
+      "feedback": "Evde çok basit yemekler: yumurta, salata, ekmek.",
+      "evidence": "Very simple food. Eggs, salad, bread."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is Marco going to do next spring?",
+      "options": [
+        "open a new restaurant",
+        "open a cooking school for children",
+        "go back to Naples",
+        "write a cookbook"
+      ],
+      "answer": 1,
+      "feedback": "Gelecek ilkbahar çocuklar için bir yemek okulu açacak.",
+      "evidence": "Next spring, I'm opening a cooking school for children."
+    }
+  ]
+}

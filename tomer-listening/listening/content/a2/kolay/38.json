@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-38",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Running late",
+  "topic": "Telefon mesajı",
+  "instructions": "Sara iş arkadaşına kısa bir mesaj bırakıyor. Gecikmenin sebebine ve ne istediğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sara": {
+      "name": "Sara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sara",
+      "text": "Hi Tom, it's Sara. I'm going to be about forty minutes late."
+    },
+    {
+      "speaker": "sara",
+      "text": "There's been an accident on the motorway."
+    },
+    {
+      "speaker": "sara",
+      "text": "Can you start the meeting without me? Thanks!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How late is Sara going to be?",
+      "options": [
+        "about fourteen minutes",
+        "about four minutes",
+        "about forty minutes",
+        "about an hour"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık kırk dakika gecikecek.",
+      "evidence": "I'm going to be about forty minutes late."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why is she late?",
+      "options": [
+        "There's been an accident.",
+        "She missed the train.",
+        "She is ill.",
+        "Her car is broken."
+      ],
+      "answer": 0,
+      "feedback": "Otoyolda bir kaza olmuş.",
+      "evidence": "There's been an accident on the motorway."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Sara ask Tom to do?",
+      "options": [
+        "wait for her",
+        "cancel the meeting",
+        "call her back",
+        "start the meeting without her"
+      ],
+      "answer": 3,
+      "feedback": "Toplantıya onsuz başlamasını istiyor.",
+      "evidence": "Can you start the meeting without me?"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "a1-orta-02",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "On the phone",
+  "topic": "Buluşma ayarlama",
+  "instructions": "Sara ve Tom telefonda buluşma planlıyor. Kısa bir diyalog; gün, yer ve buluşma noktasına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sara": {
+      "name": "Sara",
+      "voice": "female"
+    },
+    "tom": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sara",
+      "text": "Hi Tom, it's Sara. Are you free on Friday?"
+    },
+    {
+      "speaker": "tom",
+      "text": "Friday? Sorry, I work on Friday. What about Saturday?"
+    },
+    {
+      "speaker": "sara",
+      "text": "Saturday is fine. Let's go to the new pizza restaurant."
+    },
+    {
+      "speaker": "tom",
+      "text": "Great idea. What time?"
+    },
+    {
+      "speaker": "sara",
+      "text": "Let's meet at seven, outside the cinema."
+    },
+    {
+      "speaker": "tom",
+      "text": "OK. See you on Saturday!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why can't Tom meet on Friday?",
+      "options": [
+        "He is ill.",
+        "He works.",
+        "He has a lesson.",
+        "He is on holiday."
+      ],
+      "answer": 1,
+      "feedback": "Tom cuma günü çalışıyor (I work on Friday).",
+      "evidence": "Sorry, I work on Friday."
+    },
+    {
+      "id": "q2",
+      "prompt": "When are they going to meet?",
+      "options": [
+        "on Friday",
+        "on Sunday",
+        "on Saturday",
+        "tonight"
+      ],
+      "answer": 2,
+      "feedback": "Sara cumayı önerir ama Tom çalışıyor. Cumartesinde anlaşıyorlar.",
+      "evidence": "Saturday is fine."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where are they going to eat?",
+      "options": [
+        "at a café",
+        "at a pizza restaurant",
+        "at home",
+        "at a burger place"
+      ],
+      "answer": 1,
+      "feedback": "Yeni pizza restoranına (pizza restaurant) gidecekler.",
+      "evidence": "Let's go to the new pizza restaurant."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where are they going to meet?",
+      "options": [
+        "outside the cinema",
+        "at the restaurant",
+        "at Sara's house",
+        "at the station"
+      ],
+      "answer": 0,
+      "feedback": "Yemek restoranda ama buluşma noktası sinemanın önü (outside the cinema).",
+      "evidence": "Let's meet at seven, outside the cinema."
+    }
+  ]
+}

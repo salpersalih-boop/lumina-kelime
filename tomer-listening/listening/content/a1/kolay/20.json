@@ -1,0 +1,91 @@
+{
+  "id": "a1-kolay-20",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "A day at the beach",
+  "topic": "Tatil ve serbest zaman",
+  "instructions": "Ben sahilde geçirdiği bir günü anlatıyor. Uzun bir metin; sıraya ve ayrıntılara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ben": {
+      "name": "Ben",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ben",
+      "text": "Today is Sunday, and I am at the beach with my friends."
+    },
+    {
+      "speaker": "ben",
+      "text": "It is very hot and sunny."
+    },
+    {
+      "speaker": "ben",
+      "text": "In the morning, we swim in the sea. The water is warm."
+    },
+    {
+      "speaker": "ben",
+      "text": "At one o'clock, we have lunch at a small restaurant. I eat fish and chips."
+    },
+    {
+      "speaker": "ben",
+      "text": "In the afternoon, we play volleyball on the sand."
+    },
+    {
+      "speaker": "ben",
+      "text": "My friend Ana sits under an umbrella and reads a book. She doesn't like the sun."
+    },
+    {
+      "speaker": "ben",
+      "text": "We go home at six o'clock. We are tired but happy."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What do they do in the morning?",
+      "options": [
+        "play volleyball",
+        "swim in the sea",
+        "have lunch",
+        "read books"
+      ],
+      "answer": 1,
+      "feedback": "Sabah denizde yüzüyorlar.",
+      "evidence": "In the morning, we swim in the sea."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Ben eat for lunch?",
+      "options": [
+        "fish and chips",
+        "pizza",
+        "a sandwich",
+        "salad"
+      ],
+      "answer": 0,
+      "feedback": "Öğle yemeğinde balık ve patates kızartması yiyor.",
+      "evidence": "I eat fish and chips."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why does Ana sit under an umbrella?",
+      "options": [
+        "She is tired.",
+        "She can't swim.",
+        "She doesn't like the sun.",
+        "She is cold."
+      ],
+      "answer": 2,
+      "feedback": "Ana güneşi sevmiyor.",
+      "evidence": "She doesn't like the sun."
+    }
+  ]
+}

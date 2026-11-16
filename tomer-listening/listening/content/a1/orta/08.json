@@ -1,0 +1,128 @@
+{
+  "id": "a1-orta-08",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the clothes shop",
+  "topic": "Kıyafet alışverişi",
+  "instructions": "Ana bir mağazada kazak alıyor. Renk, beden ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "assistant": {
+      "name": "Shop assistant",
+      "voice": "male"
+    },
+    "ana": {
+      "name": "Ana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "assistant",
+      "text": "Hello. Can I help you?"
+    },
+    {
+      "speaker": "ana",
+      "text": "Yes, please. I'm looking for a jumper."
+    },
+    {
+      "speaker": "assistant",
+      "text": "What colour would you like?"
+    },
+    {
+      "speaker": "ana",
+      "text": "Green, please. I don't like black."
+    },
+    {
+      "speaker": "assistant",
+      "text": "What size are you?"
+    },
+    {
+      "speaker": "ana",
+      "text": "I'm a medium."
+    },
+    {
+      "speaker": "assistant",
+      "text": "Here you are. This green jumper is a medium."
+    },
+    {
+      "speaker": "ana",
+      "text": "Can I try it on?"
+    },
+    {
+      "speaker": "assistant",
+      "text": "Of course. The changing room is over there."
+    },
+    {
+      "speaker": "ana",
+      "text": "It's perfect. How much is it?"
+    },
+    {
+      "speaker": "assistant",
+      "text": "It's twenty-five pounds."
+    },
+    {
+      "speaker": "ana",
+      "text": "Great. I'll take it."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Ana looking for?",
+      "options": [
+        "a jacket",
+        "a jumper",
+        "a T-shirt",
+        "a dress"
+      ],
+      "answer": 1,
+      "feedback": "Ana bir kazak (jumper) arıyor.",
+      "evidence": "I'm looking for a jumper."
+    },
+    {
+      "id": "q2",
+      "prompt": "What colour does Ana want?",
+      "options": [
+        "black",
+        "blue",
+        "green",
+        "white"
+      ],
+      "answer": 2,
+      "feedback": "Yeşil (green) istiyor. Siyahı sevmiyor (I don't like black).",
+      "evidence": "Green, please. I don't like black."
+    },
+    {
+      "id": "q3",
+      "prompt": "What size is Ana?",
+      "options": [
+        "small",
+        "large",
+        "extra large",
+        "medium"
+      ],
+      "answer": 3,
+      "feedback": "Ana orta beden (medium).",
+      "evidence": "I'm a medium."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the jumper?",
+      "options": [
+        "twenty-five pounds",
+        "fifteen pounds",
+        "twenty pounds",
+        "thirty-five pounds"
+      ],
+      "answer": 0,
+      "feedback": "Kazak yirmi beş pound (twenty-five pounds).",
+      "evidence": "It's twenty-five pounds."
+    }
+  ]
+}

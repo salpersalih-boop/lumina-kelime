@@ -1,0 +1,120 @@
+{
+  "id": "a2-orta-17",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Joining a gym",
+  "topic": "Spor salonu üyeliği",
+  "instructions": "Kerem bir spor salonuna üye olmak istiyor. Üyelik türlerine ve fiyatlara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Receptionist",
+      "voice": "female"
+    },
+    "kerem": {
+      "name": "Kerem",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "kerem",
+      "text": "Hi. I'd like some information about joining the gym."
+    },
+    {
+      "speaker": "staff",
+      "text": "Sure. We have two types of membership. The full membership is forty pounds a month."
+    },
+    {
+      "speaker": "kerem",
+      "text": "And the other one?"
+    },
+    {
+      "speaker": "staff",
+      "text": "The day membership is twenty-five pounds, but you can only come before four in the afternoon."
+    },
+    {
+      "speaker": "kerem",
+      "text": "I work until five, so I need the full one."
+    },
+    {
+      "speaker": "staff",
+      "text": "OK. With full membership you can also use the swimming pool and join the classes."
+    },
+    {
+      "speaker": "kerem",
+      "text": "Great. I'd like to try a yoga class. When are they?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Every Monday and Wednesday at seven in the evening."
+    },
+    {
+      "speaker": "kerem",
+      "text": "Perfect. Can I start today?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes. I just need a photo and your bank details."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much is the full membership?",
+      "options": [
+        "twenty-five pounds a month",
+        "forty pounds a month",
+        "fourteen pounds a month",
+        "forty pounds a year"
+      ],
+      "answer": 1,
+      "feedback": "Tam üyelik ayda kırk pound (forty pounds).",
+      "evidence": "The full membership is forty pounds a month."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't Kerem have the day membership?",
+      "options": [
+        "He works until five.",
+        "It's too expensive.",
+        "He wants to swim.",
+        "It's only for students."
+      ],
+      "answer": 0,
+      "feedback": "Günlük üyelik sadece saat dörtten önce geçerli; Kerem beşe kadar çalışıyor.",
+      "evidence": "I work until five, so I need the full one."
+    },
+    {
+      "id": "q3",
+      "prompt": "When are the yoga classes?",
+      "options": [
+        "Tuesday and Thursday at seven",
+        "Monday and Wednesday at five",
+        "every evening at seven",
+        "Monday and Wednesday at seven"
+      ],
+      "answer": 3,
+      "feedback": "Yoga her pazartesi ve çarşamba akşam yedide.",
+      "evidence": "Every Monday and Wednesday at seven in the evening."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the receptionist need?",
+      "options": [
+        "his passport",
+        "a photo and his bank details",
+        "his ID card and his address",
+        "cash"
+      ],
+      "answer": 1,
+      "feedback": "Bir fotoğraf ve banka bilgileri gerekiyor.",
+      "evidence": "I just need a photo and your bank details."
+    }
+  ]
+}

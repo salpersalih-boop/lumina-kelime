@@ -1,0 +1,133 @@
+{
+  "id": "a2-zor-61",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Interview with a young chef",
+  "topic": "Radyo röportajı",
+  "instructions": "Radyoda genç bir aşçıyla röportaj. Uzun bir diyalog; geçmişini, bugününü ve planlarını ayırt et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Host",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Can",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Today I'm talking to Can Demir, who won a big cooking competition last month. He's only twenty-two! Can, how did you start cooking?"
+    },
+    {
+      "speaker": "b",
+      "text": "My grandmother taught me when I was eight. Every Sunday, we made bread and soup together."
+    },
+    {
+      "speaker": "a",
+      "text": "Did you study cooking?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. After school, I went to a cooking school in Istanbul for two years. Then I worked in a hotel kitchen in Bodrum."
+    },
+    {
+      "speaker": "a",
+      "text": "What did you cook in the competition?"
+    },
+    {
+      "speaker": "b",
+      "text": "Fish with lemon and herbs, and for dessert, a pumpkin pudding. It's my grandmother's recipe!"
+    },
+    {
+      "speaker": "a",
+      "text": "What was the prize?"
+    },
+    {
+      "speaker": "b",
+      "text": "Ten thousand pounds and a month working in a famous restaurant in London."
+    },
+    {
+      "speaker": "a",
+      "text": "What's next for you?"
+    },
+    {
+      "speaker": "b",
+      "text": "After London, I want to open a small restaurant in my home town, with simple, fresh food."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is Can?",
+      "options": [
+        "eighteen",
+        "twenty",
+        "twenty-two",
+        "twenty-eight"
+      ],
+      "answer": 2,
+      "feedback": "Can yirmi iki yaşında.",
+      "evidence": "He's only twenty-two!"
+    },
+    {
+      "id": "q2",
+      "prompt": "Who taught Can to cook?",
+      "options": [
+        "his mother",
+        "his grandmother",
+        "a teacher",
+        "his father"
+      ],
+      "answer": 1,
+      "feedback": "Sekiz yaşındayken büyükannesi öğretti.",
+      "evidence": "My grandmother taught me when I was eight."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where did he work after cooking school?",
+      "options": [
+        "in a hotel kitchen in Bodrum",
+        "in a restaurant in London",
+        "in Istanbul",
+        "in his home town"
+      ],
+      "answer": 0,
+      "feedback": "Bodrum'da bir otel mutfağında çalıştı.",
+      "evidence": "Then I worked in a hotel kitchen in Bodrum."
+    },
+    {
+      "id": "q4",
+      "prompt": "What was the dessert?",
+      "options": [
+        "fish with lemon",
+        "bread and soup",
+        "chocolate cake",
+        "pumpkin pudding"
+      ],
+      "answer": 3,
+      "feedback": "Tatlı balkabağı pudingi; büyükannesinin tarifi.",
+      "evidence": "a pumpkin pudding."
+    },
+    {
+      "id": "q5",
+      "prompt": "What does Can want to do after London?",
+      "options": [
+        "work in Istanbul",
+        "open a restaurant in his home town",
+        "enter another competition",
+        "teach cooking"
+      ],
+      "answer": 1,
+      "feedback": "Memleketinde küçük bir restoran açmak istiyor.",
+      "evidence": "I want to open a small restaurant in my home town"
+    }
+  ]
+}

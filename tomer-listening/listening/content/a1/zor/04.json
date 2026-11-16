@@ -1,0 +1,125 @@
+{
+  "id": "a1-zor-04",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Two flats",
+  "topic": "Ev arama ve karşılaştırma",
+  "instructions": "Nina iki daireyi karşılaştırıyor. Hangi bilginin hangi daireye ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "nina": {
+      "name": "Nina",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "nina",
+      "text": "I'm looking for a new flat, and today I saw two."
+    },
+    {
+      "speaker": "nina",
+      "text": "The first flat is in the city centre. It's near my office, so I can walk to work."
+    },
+    {
+      "speaker": "nina",
+      "text": "It's small, with one bedroom, and it's on the fifth floor. There's no lift!"
+    },
+    {
+      "speaker": "nina",
+      "text": "The rent is nine hundred pounds a month."
+    },
+    {
+      "speaker": "nina",
+      "text": "The second flat is bigger. It has two bedrooms and a garden."
+    },
+    {
+      "speaker": "nina",
+      "text": "It's cheaper too, only seven hundred pounds, but it's far from my office."
+    },
+    {
+      "speaker": "nina",
+      "text": "I need forty minutes by train."
+    },
+    {
+      "speaker": "nina",
+      "text": "I don't have a car, and I hate trains in the morning."
+    },
+    {
+      "speaker": "nina",
+      "text": "So I think I'm going to take the small one."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why is the first flat good for Nina?",
+      "options": [
+        "It's cheap.",
+        "It's near her office.",
+        "It has a garden.",
+        "It has a lift."
+      ],
+      "answer": 1,
+      "feedback": "Birinci daire ofisine yakın (near my office), işe yürüyebilir. Ucuz ve bahçeli olan ikinci daire; asansör yok.",
+      "evidence": "It's near my office, so I can walk to work."
+    },
+    {
+      "id": "q2",
+      "prompt": "What floor is the first flat on?",
+      "options": [
+        "the first",
+        "the third",
+        "the fifth",
+        "the ninth"
+      ],
+      "answer": 2,
+      "feedback": "Beşinci katta (fifth floor) ve asansör yok. \"First\" dairenin sırası, kat değil.",
+      "evidence": "it's on the fifth floor."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is the second flat?",
+      "options": [
+        "seven hundred pounds",
+        "nine hundred pounds",
+        "seventy pounds",
+        "nine hundred and seventy pounds"
+      ],
+      "answer": 0,
+      "feedback": "İkinci daire yedi yüz pound (seven hundred). Dokuz yüz birinci dairenin kirası.",
+      "evidence": "only seven hundred pounds"
+    },
+    {
+      "id": "q4",
+      "prompt": "How long does it take to go to work from the second flat?",
+      "options": [
+        "ten minutes on foot",
+        "forty minutes by train",
+        "forty minutes by car",
+        "fourteen minutes by bus"
+      ],
+      "answer": 1,
+      "feedback": "Trenle kırk dakika (forty minutes by train). Arabası yok, bu yüzden \"by car\" olamaz.",
+      "evidence": "I need forty minutes by train."
+    },
+    {
+      "id": "q5",
+      "prompt": "Which flat is Nina going to take?",
+      "options": [
+        "the second one",
+        "the small one in the city centre",
+        "the one with a garden",
+        "She doesn't know yet."
+      ],
+      "answer": 1,
+      "feedback": "Küçük olanı (the small one) tutacak; o da şehir merkezindeki birinci daire.",
+      "evidence": "So I think I'm going to take the small one."
+    }
+  ]
+}

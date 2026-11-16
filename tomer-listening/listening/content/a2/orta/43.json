@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-43",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Can you help me?",
+  "topic": "Komşudan yardım",
+  "instructions": "Emma komşusundan yardım istiyor. Kısa bir diyalog; ne istediğine ve ne zaman olduğuna dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "emma": {
+      "name": "Emma",
+      "voice": "female"
+    },
+    "neighbour": {
+      "name": "Neighbour",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "emma",
+      "text": "Hi, David. I'm going away for the weekend. Could you water my plants?"
+    },
+    {
+      "speaker": "neighbour",
+      "text": "Sure, no problem. When are you leaving?"
+    },
+    {
+      "speaker": "emma",
+      "text": "On Friday evening. I'll leave the key under the mat."
+    },
+    {
+      "speaker": "neighbour",
+      "text": "Don't do that. Just give it to me on Friday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Emma ask David to do?",
+      "options": [
+        "feed her cat",
+        "water her plants",
+        "collect her post",
+        "look after her children"
+      ],
+      "answer": 1,
+      "feedback": "Bitkilerini sulamasını istiyor.",
+      "evidence": "Could you water my plants?"
+    },
+    {
+      "id": "q2",
+      "prompt": "When is Emma leaving?",
+      "options": [
+        "on Friday evening",
+        "on Saturday morning",
+        "tonight",
+        "on Thursday"
+      ],
+      "answer": 0,
+      "feedback": "Cuma akşamı gidiyor.",
+      "evidence": "On Friday evening."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where does Emma want to leave the key?",
+      "options": [
+        "in the letterbox",
+        "with another neighbour",
+        "under the mat",
+        "in a plant pot"
+      ],
+      "answer": 2,
+      "feedback": "Anahtarı paspasın altına bırakmak istiyor.",
+      "evidence": "I'll leave the key under the mat."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does David suggest?",
+      "options": [
+        "leaving the key under the mat",
+        "calling him",
+        "leaving the door open",
+        "giving him the key on Friday"
+      ],
+      "answer": 3,
+      "feedback": "Paspasın altına bırakmasın; cuma günü ona versin.",
+      "evidence": "Just give it to me on Friday."
+    }
+  ]
+}

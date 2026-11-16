@@ -1,0 +1,137 @@
+{
+  "id": "a2-zor-44",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Choosing a university",
+  "topic": "Üniversite seçimi",
+  "instructions": "Leo ve annesi iki üniversite arasında karar vermeye çalışıyor. Uzun bir diyalog; hangi bilginin hangi üniversiteye ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    },
+    "mum": {
+      "name": "Mum",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mum",
+      "text": "So, Leo, have you decided? Northfield or Westbridge?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Not yet. Northfield is a better university for engineering. It's number three in the country."
+    },
+    {
+      "speaker": "mum",
+      "text": "And Westbridge?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Westbridge is number twelve. But it's only an hour from home, and Northfield is five hours away."
+    },
+    {
+      "speaker": "mum",
+      "text": "What about the cost of living?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Northfield is a big city, so rent is expensive. At Westbridge, I could live in student rooms for less than half the price."
+    },
+    {
+      "speaker": "mum",
+      "text": "Did you like the campuses when you visited?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Westbridge was beautiful, with a lake. Northfield was in the city centre, so it was a bit noisy. But Northfield has a great sports centre."
+    },
+    {
+      "speaker": "mum",
+      "text": "It's your decision. What's most important to you?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Honestly, my future job. A degree from Northfield will help me more."
+    },
+    {
+      "speaker": "mum",
+      "text": "Then I think you know the answer. We'll visit you, even if it's five hours away!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which university is better for engineering?",
+      "options": [
+        "Westbridge",
+        "Northfield",
+        "both are the same",
+        "neither"
+      ],
+      "answer": 1,
+      "feedback": "Mühendislik için Northfield daha iyi; ülkede üçüncü.",
+      "evidence": "Northfield is a better university for engineering."
+    },
+    {
+      "id": "q2",
+      "prompt": "How far is Westbridge from Leo's home?",
+      "options": [
+        "one hour",
+        "five hours",
+        "twelve hours",
+        "three hours"
+      ],
+      "answer": 0,
+      "feedback": "Westbridge evden sadece bir saat; Northfield beş saat.",
+      "evidence": "But it's only an hour from home"
+    },
+    {
+      "id": "q3",
+      "prompt": "What is good about living at Westbridge?",
+      "options": [
+        "It's in a big city.",
+        "It has a great sports centre.",
+        "Student rooms are much cheaper.",
+        "It's near his friends."
+      ],
+      "answer": 2,
+      "feedback": "Westbridge'deki öğrenci odaları yarı fiyattan daha ucuz.",
+      "evidence": "I could live in student rooms for less than half the price."
+    },
+    {
+      "id": "q4",
+      "prompt": "What did Leo NOT like about the Northfield campus?",
+      "options": [
+        "It was far from the city.",
+        "It didn't have a lake.",
+        "It had no sports centre.",
+        "It was a bit noisy."
+      ],
+      "answer": 3,
+      "feedback": "Northfield şehir merkezinde olduğu için biraz gürültülüydü.",
+      "evidence": "so it was a bit noisy."
+    },
+    {
+      "id": "q5",
+      "prompt": "Which university will Leo probably choose?",
+      "options": [
+        "Northfield",
+        "Westbridge",
+        "a third university",
+        "He won't go to university."
+      ],
+      "answer": 0,
+      "feedback": "Gelecekteki işi için Northfield diploması daha faydalı; büyük ihtimalle orayı seçecek.",
+      "evidence": "A degree from Northfield will help me more."
+    }
+  ]
+}

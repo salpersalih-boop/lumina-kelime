@@ -1,0 +1,145 @@
+{
+  "id": "a2-zor-24",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Returning a laptop",
+  "topic": "Ürün iadesi ve şikâyet",
+  "instructions": "Bay Kaya bozuk dizüstü bilgisayarını mağazaya geri getiriyor. Uzun bir diyalog; sorunu, kuralları ve sonucu takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "kaya": {
+      "name": "Mr Kaya",
+      "voice": "male"
+    },
+    "staff": {
+      "name": "Shop assistant",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "kaya",
+      "text": "Hello. I bought this laptop here three weeks ago, and it's not working properly."
+    },
+    {
+      "speaker": "staff",
+      "text": "I'm sorry to hear that. What's the problem?"
+    },
+    {
+      "speaker": "kaya",
+      "text": "The battery only lasts one hour. The box says ten hours."
+    },
+    {
+      "speaker": "staff",
+      "text": "Do you have the receipt?"
+    },
+    {
+      "speaker": "kaya",
+      "text": "Yes, here it is. Can I have my money back?"
+    },
+    {
+      "speaker": "staff",
+      "text": "I'm afraid we only give money back in the first fourteen days. After that, we can repair it or change it."
+    },
+    {
+      "speaker": "kaya",
+      "text": "How long does a repair take?"
+    },
+    {
+      "speaker": "staff",
+      "text": "About two weeks."
+    },
+    {
+      "speaker": "kaya",
+      "text": "Two weeks? I need it for work. I can't wait that long."
+    },
+    {
+      "speaker": "staff",
+      "text": "Then we can give you a new laptop, the same model, today."
+    },
+    {
+      "speaker": "kaya",
+      "text": "But what if the new one has the same problem?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Then you can choose a different model, and I'll give you a ten percent discount."
+    },
+    {
+      "speaker": "kaya",
+      "text": "OK. I'll take a new one today. Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did Mr Kaya buy the laptop?",
+      "options": [
+        "two weeks ago",
+        "three weeks ago",
+        "ten days ago",
+        "fourteen days ago"
+      ],
+      "answer": 1,
+      "feedback": "Bilgisayarı üç hafta önce aldı.",
+      "evidence": "I bought this laptop here three weeks ago"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem with the laptop?",
+      "options": [
+        "The screen is broken.",
+        "It doesn't turn on.",
+        "The battery only lasts one hour.",
+        "It's very slow."
+      ],
+      "answer": 2,
+      "feedback": "Pil sadece bir saat dayanıyor; kutuda on saat yazıyor.",
+      "evidence": "The battery only lasts one hour."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why can't he get his money back?",
+      "options": [
+        "He doesn't have the receipt.",
+        "The laptop is broken.",
+        "The shop never gives money back.",
+        "It's more than fourteen days."
+      ],
+      "answer": 3,
+      "feedback": "Para iadesi sadece ilk on dört günde; üç hafta geçti.",
+      "evidence": "we only give money back in the first fourteen days."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why doesn't he want a repair?",
+      "options": [
+        "It takes two weeks and he needs it for work.",
+        "It's expensive.",
+        "He doesn't trust the shop.",
+        "The repair centre is far."
+      ],
+      "answer": 0,
+      "feedback": "Tamir iki hafta sürüyor; iş için bilgisayara ihtiyacı var.",
+      "evidence": "I need it for work. I can't wait that long."
+    },
+    {
+      "id": "q5",
+      "prompt": "What does Mr Kaya get in the end?",
+      "options": [
+        "his money back",
+        "a new laptop of the same model",
+        "a different model with a discount",
+        "a repair"
+      ],
+      "answer": 1,
+      "feedback": "Bugün aynı modelden yeni bir bilgisayar alıyor. İndirim sadece yeni bilgisayar da bozuk çıkarsa geçerli.",
+      "evidence": "I'll take a new one today."
+    }
+  ]
+}

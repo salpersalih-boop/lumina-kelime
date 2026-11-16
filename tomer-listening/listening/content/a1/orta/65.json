@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-65",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Dinner at home",
+  "topic": "Ev ve yemek",
+  "instructions": "Anne ve oğlu akşam yemeğini konuşuyor. Yemekleri ve görevleri takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Mum",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Sam",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Sam, dinner is at seven. Can you help me?"
+    },
+    {
+      "speaker": "b",
+      "text": "Sure, Mum. What are we having?"
+    },
+    {
+      "speaker": "a",
+      "text": "Chicken, rice and salad."
+    },
+    {
+      "speaker": "b",
+      "text": "Great! What can I do?"
+    },
+    {
+      "speaker": "a",
+      "text": "Can you make the salad and put the plates on the table?"
+    },
+    {
+      "speaker": "b",
+      "text": "OK. How many plates?"
+    },
+    {
+      "speaker": "a",
+      "text": "Five. Grandpa is coming too."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time is dinner?",
+      "options": [
+        "at six",
+        "at seven",
+        "at eight",
+        "at half past seven"
+      ],
+      "answer": 1,
+      "feedback": "Akşam yemeği yedide.",
+      "evidence": "dinner is at seven."
+    },
+    {
+      "id": "q2",
+      "prompt": "What are they having?",
+      "options": [
+        "chicken, rice and salad",
+        "fish and chips",
+        "pasta and salad",
+        "soup and bread"
+      ],
+      "answer": 0,
+      "feedback": "Tavuk, pilav ve salata.",
+      "evidence": "Chicken, rice and salad."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Sam make?",
+      "options": [
+        "the rice",
+        "the chicken",
+        "a cake",
+        "the salad"
+      ],
+      "answer": 3,
+      "feedback": "Sam salata yapacak ve tabakları koyacak.",
+      "evidence": "Can you make the salad"
+    },
+    {
+      "id": "q4",
+      "prompt": "Why do they need five plates?",
+      "options": [
+        "Grandpa is coming too.",
+        "Sam has four brothers.",
+        "They're having a party.",
+        "Two friends are coming."
+      ],
+      "answer": 0,
+      "feedback": "Dedesi de geliyor.",
+      "evidence": "Grandpa is coming too."
+    }
+  ]
+}

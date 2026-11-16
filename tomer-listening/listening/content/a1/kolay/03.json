@@ -1,0 +1,119 @@
+{
+  "id": "a1-kolay-03",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "A day at my school",
+  "topic": "Okul ve dersler",
+  "instructions": "Sofia okuldaki bir gününü anlatıyor. Uzun bir metin; saatlere ve derslere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sofia": {
+      "name": "Sofia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sofia",
+      "text": "Hello! My name is Sofia and I am eleven years old."
+    },
+    {
+      "speaker": "sofia",
+      "text": "I go to Green Park School."
+    },
+    {
+      "speaker": "sofia",
+      "text": "It is a big school with three hundred students."
+    },
+    {
+      "speaker": "sofia",
+      "text": "My school starts at half past eight."
+    },
+    {
+      "speaker": "sofia",
+      "text": "I walk to school with my brother, Leo."
+    },
+    {
+      "speaker": "sofia",
+      "text": "My first lesson is maths. I don't like maths very much."
+    },
+    {
+      "speaker": "sofia",
+      "text": "My favourite lesson is art. I love drawing and painting."
+    },
+    {
+      "speaker": "sofia",
+      "text": "Our art teacher is Mister Brown. He is very funny."
+    },
+    {
+      "speaker": "sofia",
+      "text": "At eleven o'clock, we have a break."
+    },
+    {
+      "speaker": "sofia",
+      "text": "I eat a sandwich and drink some water."
+    },
+    {
+      "speaker": "sofia",
+      "text": "We have lunch at one o'clock in the big dining room."
+    },
+    {
+      "speaker": "sofia",
+      "text": "After lunch, we have English and music."
+    },
+    {
+      "speaker": "sofia",
+      "text": "School finishes at half past three."
+    },
+    {
+      "speaker": "sofia",
+      "text": "Then I go home and do my homework."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How does Sofia go to school?",
+      "options": [
+        "by bus",
+        "by car",
+        "on foot",
+        "by bike"
+      ],
+      "answer": 2,
+      "feedback": "\"Walk\" yürümek demek. Sofia okula kardeşi Leo ile yürüyerek (on foot) gidiyor.",
+      "evidence": "I walk to school with my brother, Leo."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is Sofia's favourite lesson?",
+      "options": [
+        "maths",
+        "art",
+        "English",
+        "music"
+      ],
+      "answer": 1,
+      "feedback": "En sevdiği ders resim (art). Matematik ilk dersi ama onu pek sevmiyor (don't like).",
+      "evidence": "My favourite lesson is art."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time does school finish?",
+      "options": [
+        "at half past eight",
+        "at eleven o'clock",
+        "at one o'clock",
+        "at half past three"
+      ],
+      "answer": 3,
+      "feedback": "Okul üç buçukta (half past three) bitiyor. Sekiz buçuk başlama, on bir teneffüs, bir öğle yemeği saati.",
+      "evidence": "School finishes at half past three."
+    }
+  ]
+}

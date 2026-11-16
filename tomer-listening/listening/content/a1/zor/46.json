@@ -1,0 +1,105 @@
+{
+  "id": "a1-zor-46",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Late train to Manchester",
+  "topic": "İstasyon anonsu",
+  "instructions": "İstasyonda kısa bir anons. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Station",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Attention, please. The train to Manchester is late."
+    },
+    {
+      "speaker": "s",
+      "text": "It will leave at four twenty, not four o'clock."
+    },
+    {
+      "speaker": "s",
+      "text": "It will leave from platform six, not platform two."
+    },
+    {
+      "speaker": "s",
+      "text": "There is no café on this train."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the train going?",
+      "options": [
+        "to London",
+        "to Manchester",
+        "to Leeds",
+        "to Liverpool"
+      ],
+      "answer": 1,
+      "feedback": "Tren Manchester'a gidiyor.",
+      "evidence": "The train to Manchester is late."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time will the train leave?",
+      "options": [
+        "at four o'clock",
+        "at four twenty",
+        "at two twenty",
+        "at four forty"
+      ],
+      "answer": 1,
+      "feedback": "Tren dördü yirmi geçe kalkacak.",
+      "evidence": "It will leave at four twenty"
+    },
+    {
+      "id": "q3",
+      "prompt": "How late is the train?",
+      "options": [
+        "ten minutes",
+        "twenty minutes",
+        "forty minutes",
+        "two hours"
+      ],
+      "answer": 1,
+      "feedback": "16:00 yerine 16:20: yirmi dakika geç.",
+      "evidence": "not four o'clock."
+    },
+    {
+      "id": "q4",
+      "prompt": "Which platform does it leave from now?",
+      "options": [
+        "platform two",
+        "platform four",
+        "platform six",
+        "platform twenty"
+      ],
+      "answer": 2,
+      "feedback": "Artık altı numaralı perondan.",
+      "evidence": "It will leave from platform six, not platform two."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is NOT on the train?",
+      "options": [
+        "a café",
+        "toilets",
+        "seats",
+        "a driver"
+      ],
+      "answer": 0,
+      "feedback": "Bu trende kafe yok.",
+      "evidence": "There is no café on this train."
+    }
+  ]
+}

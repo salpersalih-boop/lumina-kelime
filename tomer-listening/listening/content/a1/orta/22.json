@@ -1,0 +1,96 @@
+{
+  "id": "a1-orta-22",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the museum",
+  "topic": "Bilet alma",
+  "instructions": "Bir baba müzede bilet alıyor. Kısa bir diyalog; fiyat ve saate dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Museum",
+      "voice": "female"
+    },
+    "dad": {
+      "name": "Dad",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "dad",
+      "text": "Two tickets, please. One adult and one child."
+    },
+    {
+      "speaker": "staff",
+      "text": "Children are free. So that's eight pounds."
+    },
+    {
+      "speaker": "dad",
+      "text": "What time do you close?"
+    },
+    {
+      "speaker": "staff",
+      "text": "At five. The café is on the second floor."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many tickets does the man want?",
+      "options": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "answer": 1,
+      "feedback": "İki bilet istiyor: bir yetişkin, bir çocuk.",
+      "evidence": "Two tickets, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much does a child ticket cost?",
+      "options": [
+        "nothing",
+        "four pounds",
+        "eight pounds",
+        "two pounds"
+      ],
+      "answer": 0,
+      "feedback": "Çocuklar ücretsiz (free).",
+      "evidence": "Children are free."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much does the man pay?",
+      "options": [
+        "sixteen pounds",
+        "four pounds",
+        "five pounds",
+        "eight pounds"
+      ],
+      "answer": 3,
+      "feedback": "Sadece yetişkin bileti; sekiz pound.",
+      "evidence": "So that's eight pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the café?",
+      "options": [
+        "on the first floor",
+        "on the ground floor",
+        "on the second floor",
+        "outside"
+      ],
+      "answer": 2,
+      "feedback": "Kafe ikinci katta.",
+      "evidence": "The café is on the second floor."
+    }
+  ]
+}

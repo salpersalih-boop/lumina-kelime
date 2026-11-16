@@ -1,0 +1,153 @@
+{
+  "id": "a1-zor-08",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Booking a table",
+  "topic": "Restoran rezervasyonu",
+  "instructions": "Paul telefonda masa ayırtıyor ama bazı bilgileri değiştiriyor. Uzun bir diyalog; son kararlara dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "waiter": {
+      "name": "Restaurant",
+      "voice": "female"
+    },
+    "paul": {
+      "name": "Paul",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "waiter",
+      "text": "Good afternoon, Luigi's Restaurant."
+    },
+    {
+      "speaker": "paul",
+      "text": "Hello. I want to book a table for Friday evening, please."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Of course. For how many people?"
+    },
+    {
+      "speaker": "paul",
+      "text": "For four people. Oh, wait. My brother can come too, so five."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Five people on Friday. What time?"
+    },
+    {
+      "speaker": "paul",
+      "text": "At eight o'clock, please."
+    },
+    {
+      "speaker": "waiter",
+      "text": "I'm sorry, we're full at eight. We have a table at seven or at nine."
+    },
+    {
+      "speaker": "paul",
+      "text": "Hmm. Nine is late for my mother. Seven, please."
+    },
+    {
+      "speaker": "waiter",
+      "text": "OK. Do you want a table inside or in the garden?"
+    },
+    {
+      "speaker": "paul",
+      "text": "In the garden, please. My father smokes. No, sorry, inside. It's cold in the evening."
+    },
+    {
+      "speaker": "waiter",
+      "text": "No problem. Inside. Can I have your name?"
+    },
+    {
+      "speaker": "paul",
+      "text": "Paul Green. G-R-E-E-N."
+    },
+    {
+      "speaker": "waiter",
+      "text": "And your phone number?"
+    },
+    {
+      "speaker": "paul",
+      "text": "It's oh seven nine three, four five six, two one eight."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Thank you, Mister Green. See you on Friday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many people is the table for?",
+      "options": [
+        "four",
+        "five",
+        "six",
+        "three"
+      ],
+      "answer": 1,
+      "feedback": "Önce dört der, sonra kardeşi de gelebildiği için beş (so five) olur.",
+      "evidence": "My brother can come too, so five."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't Paul have a table at eight?",
+      "options": [
+        "It's too late.",
+        "The restaurant is closed.",
+        "The restaurant is full.",
+        "His mother doesn't want it."
+      ],
+      "answer": 2,
+      "feedback": "Saat sekizde restoran dolu (we're full at eight).",
+      "evidence": "we're full at eight."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time is the booking?",
+      "options": [
+        "at seven o'clock",
+        "at eight o'clock",
+        "at nine o'clock",
+        "at half past seven"
+      ],
+      "answer": 0,
+      "feedback": "Dokuz annesi için geç olduğundan yedide (Seven, please) anlaşıyorlar.",
+      "evidence": "Seven, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where are they going to sit?",
+      "options": [
+        "in the garden",
+        "near the window",
+        "outside",
+        "inside"
+      ],
+      "answer": 3,
+      "feedback": "Önce bahçe der, sonra düzeltir: içeride (inside), çünkü akşam soğuk.",
+      "evidence": "No, sorry, inside. It's cold in the evening."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why does Paul change his mind about the garden?",
+      "options": [
+        "His father smokes.",
+        "It's cold in the evening.",
+        "It's full.",
+        "It's noisy."
+      ],
+      "answer": 1,
+      "feedback": "Akşamları soğuk olduğu için (It's cold in the evening) içeriyi seçiyor. Babasının sigara içmesi bahçeyi isteme sebebiydi.",
+      "evidence": "It's cold in the evening."
+    }
+  ]
+}

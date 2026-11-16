@@ -1,0 +1,145 @@
+{
+  "id": "a1-zor-53",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Finding a flat",
+  "topic": "Ev kiralama",
+  "instructions": "Bir öğrenci kiralık daire hakkında telefonla bilgi alıyor. Uzun bir diyalog; oda, fiyat ve kurallara dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Student",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Mr Jones",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello. I'm calling about the flat on Park Street."
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, it's still free."
+    },
+    {
+      "speaker": "a",
+      "text": "How many bedrooms does it have?"
+    },
+    {
+      "speaker": "b",
+      "text": "One bedroom, a small kitchen and a bathroom."
+    },
+    {
+      "speaker": "a",
+      "text": "How much is it?"
+    },
+    {
+      "speaker": "b",
+      "text": "Four hundred pounds a month."
+    },
+    {
+      "speaker": "a",
+      "text": "Is it near the university?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, it's a ten-minute walk."
+    },
+    {
+      "speaker": "a",
+      "text": "Can I have a cat?"
+    },
+    {
+      "speaker": "b",
+      "text": "No, I'm sorry. No animals."
+    },
+    {
+      "speaker": "a",
+      "text": "That's OK. I don't have a cat now. Can I see the flat tomorrow?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. Tomorrow at five?"
+    },
+    {
+      "speaker": "a",
+      "text": "Perfect."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many bedrooms does the flat have?",
+      "options": [
+        "one",
+        "two",
+        "three",
+        "none"
+      ],
+      "answer": 0,
+      "feedback": "Bir yatak odası var.",
+      "evidence": "One bedroom"
+    },
+    {
+      "id": "q2",
+      "prompt": "How much is the flat?",
+      "options": [
+        "forty pounds a month",
+        "four hundred pounds a week",
+        "four hundred pounds a month",
+        "fourteen hundred pounds a month"
+      ],
+      "answer": 2,
+      "feedback": "Aylık dört yüz pound.",
+      "evidence": "Four hundred pounds a month."
+    },
+    {
+      "id": "q3",
+      "prompt": "How far is the university?",
+      "options": [
+        "a ten-minute walk",
+        "a ten-minute bus ride",
+        "one hour",
+        "next door"
+      ],
+      "answer": 0,
+      "feedback": "Üniversite yürüyerek on dakika.",
+      "evidence": "it's a ten-minute walk."
+    },
+    {
+      "id": "q4",
+      "prompt": "Does the student have a cat now?",
+      "options": [
+        "Yes, she does.",
+        "She has a dog.",
+        "She has two cats.",
+        "No, she doesn't."
+      ],
+      "answer": 3,
+      "feedback": "Şu an kedisi yok.",
+      "evidence": "I don't have a cat now."
+    },
+    {
+      "id": "q5",
+      "prompt": "When will she see the flat?",
+      "options": [
+        "today at five",
+        "tomorrow at five",
+        "tomorrow morning",
+        "on Saturday"
+      ],
+      "answer": 1,
+      "feedback": "Yarın saat beşte görecek.",
+      "evidence": "Tomorrow at five?"
+    }
+  ]
+}

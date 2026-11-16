@@ -1,0 +1,121 @@
+{
+  "id": "a2-zor-50",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Opening my own café",
+  "topic": "İş kurma hikâyesi",
+  "instructions": "Mehmet kendi kafesini nasıl açtığını anlatıyor. Uzun bir metin; sayıları ve olayların sırasını karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Mehmet",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Five years ago, I decided to open my own café. Before that, I worked in an office for ten years, and I was bored."
+    },
+    {
+      "speaker": "s",
+      "text": "Finding the right place was difficult. I looked at more than twenty buildings before I found a small shop near the university."
+    },
+    {
+      "speaker": "s",
+      "text": "At first, business was slow. Some days, only ten customers came in."
+    },
+    {
+      "speaker": "s",
+      "text": "Then I had an idea. I started selling cheap breakfast for students, and I put free Wi-Fi in the café."
+    },
+    {
+      "speaker": "s",
+      "text": "Soon, students started coming every day to study and meet friends."
+    },
+    {
+      "speaker": "s",
+      "text": "Now I have six people working for me, and last year I opened a second café in the city centre."
+    },
+    {
+      "speaker": "s",
+      "text": "It's hard work. I often work twelve hours a day. But I've never been happier."
+    },
+    {
+      "speaker": "s",
+      "text": "My advice? Don't be afraid to try something new."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long did Mehmet work in an office?",
+      "options": [
+        "five years",
+        "ten years",
+        "twelve years",
+        "twenty years"
+      ],
+      "answer": 1,
+      "feedback": "Ofiste on yıl çalıştı. Beş yıl önce kafe açtı.",
+      "evidence": "I worked in an office for ten years"
+    },
+    {
+      "id": "q2",
+      "prompt": "How many buildings did he look at?",
+      "options": [
+        "about ten",
+        "six",
+        "more than twenty",
+        "two"
+      ],
+      "answer": 2,
+      "feedback": "Yirmiden fazla bina gezdi.",
+      "evidence": "I looked at more than twenty buildings"
+    },
+    {
+      "id": "q3",
+      "prompt": "What helped his business grow?",
+      "options": [
+        "cheap breakfast and free Wi-Fi for students",
+        "a new menu",
+        "a bigger café",
+        "advertising on TV"
+      ],
+      "answer": 0,
+      "feedback": "Öğrencilere ucuz kahvaltı ve ücretsiz Wi-Fi.",
+      "evidence": "I started selling cheap breakfast for students"
+    },
+    {
+      "id": "q4",
+      "prompt": "How many people work for him now?",
+      "options": [
+        "two",
+        "ten",
+        "twelve",
+        "six"
+      ],
+      "answer": 3,
+      "feedback": "Şu an altı çalışanı var.",
+      "evidence": "Now I have six people working for me"
+    },
+    {
+      "id": "q5",
+      "prompt": "What did he do last year?",
+      "options": [
+        "He sold his café.",
+        "He opened a second café.",
+        "He went back to the office.",
+        "He moved to the university."
+      ],
+      "answer": 1,
+      "feedback": "Geçen yıl şehir merkezinde ikinci bir kafe açtı.",
+      "evidence": "last year I opened a second café in the city centre."
+    }
+  ]
+}

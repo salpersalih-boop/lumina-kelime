@@ -1,0 +1,141 @@
+{
+  "id": "a1-zor-38",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Changing a hotel booking",
+  "topic": "Otel rezervasyonu değişikliği",
+  "instructions": "Bayan Lee telefonda otel rezervasyonunu değiştiriyor. Uzun bir diyalog; eski ve yeni bilgileri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "rec": {
+      "name": "Receptionist",
+      "voice": "male"
+    },
+    "lee": {
+      "name": "Mrs Lee",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "rec",
+      "text": "Good afternoon, Sunshine Hotel."
+    },
+    {
+      "speaker": "lee",
+      "text": "Hello. I have a booking for next week, but I want to change it. My name is Anna Lee."
+    },
+    {
+      "speaker": "rec",
+      "text": "Let me see. A single room for two nights, from Monday the fifth?"
+    },
+    {
+      "speaker": "lee",
+      "text": "Yes. Now my husband is coming too. Can I have a double room?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Of course. And the same dates?"
+    },
+    {
+      "speaker": "lee",
+      "text": "No. We want to arrive on Tuesday the sixth, and stay for three nights."
+    },
+    {
+      "speaker": "rec",
+      "text": "OK. A double room from Tuesday the sixth to Friday the ninth."
+    },
+    {
+      "speaker": "lee",
+      "text": "How much is it?"
+    },
+    {
+      "speaker": "rec",
+      "text": "It's eighty pounds a night, with breakfast."
+    },
+    {
+      "speaker": "lee",
+      "text": "Is there parking?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Yes, it's free for hotel guests."
+    },
+    {
+      "speaker": "lee",
+      "text": "Great. Thank you very much."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What room did Mrs Lee book first?",
+      "options": [
+        "a double room",
+        "a single room",
+        "a family room",
+        "two rooms"
+      ],
+      "answer": 1,
+      "feedback": "İlk rezervasyon tek kişilik odaydı.",
+      "evidence": "A single room for two nights"
+    },
+    {
+      "id": "q2",
+      "prompt": "Why does she want to change the room?",
+      "options": [
+        "Her husband is coming too.",
+        "She wants a cheaper room.",
+        "She wants a sea view.",
+        "Her children are coming."
+      ],
+      "answer": 0,
+      "feedback": "Eşi de geliyor; çift kişilik oda istiyor.",
+      "evidence": "Now my husband is coming too."
+    },
+    {
+      "id": "q3",
+      "prompt": "When will she arrive now?",
+      "options": [
+        "Monday the fifth",
+        "Friday the ninth",
+        "Wednesday the seventh",
+        "Tuesday the sixth"
+      ],
+      "answer": 3,
+      "feedback": "Artık altısı salı günü gelecek.",
+      "evidence": "We want to arrive on Tuesday the sixth"
+    },
+    {
+      "id": "q4",
+      "prompt": "How many nights will she stay now?",
+      "options": [
+        "two",
+        "four",
+        "three",
+        "five"
+      ],
+      "answer": 2,
+      "feedback": "Üç gece kalacak.",
+      "evidence": "and stay for three nights."
+    },
+    {
+      "id": "q5",
+      "prompt": "How much is parking?",
+      "options": [
+        "eighty pounds",
+        "nothing",
+        "ten pounds a night",
+        "five pounds"
+      ],
+      "answer": 1,
+      "feedback": "Otel misafirleri için otopark ücretsiz.",
+      "evidence": "Yes, it's free for hotel guests."
+    }
+  ]
+}

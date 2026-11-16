@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-16",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My English teacher",
+  "topic": "İnsanları tanımlama",
+  "instructions": "Pia İngilizce öğretmenini anlatıyor. Kısa bir metin; dış görünüş ve ülkeye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "pia": {
+      "name": "Pia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "pia",
+      "text": "My English teacher is Mr Jones."
+    },
+    {
+      "speaker": "pia",
+      "text": "He is from Scotland."
+    },
+    {
+      "speaker": "pia",
+      "text": "He is tall and he has short brown hair."
+    },
+    {
+      "speaker": "pia",
+      "text": "He is very kind and his lessons are fun."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Mr Jones from?",
+      "options": [
+        "England",
+        "Ireland",
+        "Scotland",
+        "Wales"
+      ],
+      "answer": 2,
+      "feedback": "Bay Jones İskoçya'dan (from Scotland).",
+      "evidence": "He is from Scotland."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Mr Jones look like?",
+      "options": [
+        "short with long hair",
+        "tall with short brown hair",
+        "tall with black hair",
+        "short with brown hair"
+      ],
+      "answer": 1,
+      "feedback": "Uzun boylu ve kısa kahverengi saçlı.",
+      "evidence": "He is tall and he has short brown hair."
+    },
+    {
+      "id": "q3",
+      "prompt": "What are his lessons like?",
+      "options": [
+        "fun",
+        "boring",
+        "long",
+        "difficult"
+      ],
+      "answer": 0,
+      "feedback": "Dersleri eğlenceli (fun).",
+      "evidence": "his lessons are fun."
+    }
+  ]
+}

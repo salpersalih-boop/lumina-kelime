@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-33",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Welcome to the zoo",
+  "topic": "Hayvanat bahçesi anonsu",
+  "instructions": "Hayvanat bahçesinde bir anons. Uzun bir metin; saatler, yerler ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Zoo",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Welcome to City Zoo! Here is some information for your visit today."
+    },
+    {
+      "speaker": "voice",
+      "text": "You can see the lions feed at eleven o'clock, near the main gate."
+    },
+    {
+      "speaker": "voice",
+      "text": "The penguins eat at two o'clock. The penguin house is next to the café."
+    },
+    {
+      "speaker": "voice",
+      "text": "Today the monkey house is closed, because the monkeys are getting a new home."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please do not give food to the animals. It can make them ill."
+    },
+    {
+      "speaker": "voice",
+      "text": "The children's farm is open from ten to four. Children can touch the rabbits and goats there."
+    },
+    {
+      "speaker": "voice",
+      "text": "The zoo closes at six, but the last ticket is at five."
+    },
+    {
+      "speaker": "voice",
+      "text": "Have a great day!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time can visitors see the lions eat?",
+      "options": [
+        "at ten o'clock",
+        "at two o'clock",
+        "at eleven o'clock",
+        "at four o'clock"
+      ],
+      "answer": 2,
+      "feedback": "Aslanlar saat on birde, ana kapının yanında besleniyor.",
+      "evidence": "You can see the lions feed at eleven o'clock"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is the penguin house?",
+      "options": [
+        "next to the café",
+        "near the main gate",
+        "next to the children's farm",
+        "next to the monkey house"
+      ],
+      "answer": 0,
+      "feedback": "Penguen evi kafenin yanında.",
+      "evidence": "The penguin house is next to the café."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is the monkey house closed?",
+      "options": [
+        "The monkeys are ill.",
+        "It's too cold.",
+        "The monkeys are getting a new home.",
+        "It's cleaning day."
+      ],
+      "answer": 2,
+      "feedback": "Maymunlara yeni bir ev yapılıyor.",
+      "evidence": "because the monkeys are getting a new home."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why shouldn't visitors give food to the animals?",
+      "options": [
+        "It is expensive.",
+        "It can make them ill.",
+        "The animals are not hungry.",
+        "The animals can bite."
+      ],
+      "answer": 1,
+      "feedback": "Hayvanları hasta edebilir.",
+      "evidence": "It can make them ill."
+    },
+    {
+      "id": "q5",
+      "prompt": "What time is the last ticket?",
+      "options": [
+        "at six",
+        "at four",
+        "at ten",
+        "at five"
+      ],
+      "answer": 3,
+      "feedback": "Bahçe altıda kapanıyor ama son bilet beşte.",
+      "evidence": "but the last ticket is at five."
+    }
+  ]
+}

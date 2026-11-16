@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-32",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My favourite café",
+  "topic": "Mekânlar",
+  "instructions": "Paul en sevdiği kafeyi anlatıyor. Neden sevdiğine ve ne zaman gittiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "paul": {
+      "name": "Paul",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "paul",
+      "text": "My favourite café is a small place called Bean There, near my office."
+    },
+    {
+      "speaker": "paul",
+      "text": "I go there almost every morning before work."
+    },
+    {
+      "speaker": "paul",
+      "text": "The coffee is excellent, and it's cheaper than the big chain cafés."
+    },
+    {
+      "speaker": "paul",
+      "text": "The owner, Maria, knows my name and always remembers my order."
+    },
+    {
+      "speaker": "paul",
+      "text": "The only problem is that it's very small. At lunchtime, you can never find a seat."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the café?",
+      "options": [
+        "near Paul's house",
+        "near Paul's office",
+        "in the station",
+        "in a shopping centre"
+      ],
+      "answer": 1,
+      "feedback": "Kafe ofisinin yakınında.",
+      "evidence": "near my office."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Paul say about the price?",
+      "options": [
+        "It's more expensive than chain cafés.",
+        "It's free for him.",
+        "It's cheaper than the big chain cafés.",
+        "It's the same as other cafés."
+      ],
+      "answer": 2,
+      "feedback": "Büyük zincir kafelerden daha ucuz.",
+      "evidence": "it's cheaper than the big chain cafés."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the problem with the café?",
+      "options": [
+        "It's very small.",
+        "The coffee is bad.",
+        "It's far away.",
+        "It's closed in the morning."
+      ],
+      "answer": 0,
+      "feedback": "Çok küçük; öğle saatinde yer bulunmuyor.",
+      "evidence": "it's very small."
+    }
+  ]
+}

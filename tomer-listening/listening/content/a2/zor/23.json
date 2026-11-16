@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-23",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A pilot's life",
+  "topic": "Meslek anlatımı",
+  "instructions": "Pilot Clara mesleğini anlatıyor. Uzun bir metin; sayıları, sıklıkları ve sevdiği/sevmediği şeyleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "clara": {
+      "name": "Captain Clara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "clara",
+      "text": "I'm Clara, and I've been a pilot for twelve years. Now I'm a captain."
+    },
+    {
+      "speaker": "clara",
+      "text": "I wanted to fly since I was a little girl. My father worked at an airport, and I loved watching the planes."
+    },
+    {
+      "speaker": "clara",
+      "text": "Training was long and expensive. It took nearly three years."
+    },
+    {
+      "speaker": "clara",
+      "text": "Now I mostly fly short flights in Europe, to cities like Paris, Rome and Lisbon."
+    },
+    {
+      "speaker": "clara",
+      "text": "On a normal day, I fly four flights and come home in the evening."
+    },
+    {
+      "speaker": "clara",
+      "text": "I usually work five days, then I have four days off."
+    },
+    {
+      "speaker": "clara",
+      "text": "The best part is the view. Sunrises above the clouds are amazing."
+    },
+    {
+      "speaker": "clara",
+      "text": "The worst part is getting up early. Sometimes I start work at four in the morning!"
+    },
+    {
+      "speaker": "clara",
+      "text": "People think pilots visit lots of cities, but usually I only see the airport."
+    },
+    {
+      "speaker": "clara",
+      "text": "Next year, I hope to fly long flights to Asia."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long has Clara been a pilot?",
+      "options": [
+        "three years",
+        "twelve years",
+        "twenty years",
+        "five years"
+      ],
+      "answer": 1,
+      "feedback": "On iki yıldır pilot. Üç yıl eğitim süresi.",
+      "evidence": "I've been a pilot for twelve years."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why did Clara want to be a pilot?",
+      "options": [
+        "Her mother was a pilot.",
+        "She loved watching planes at the airport.",
+        "She wanted to see the world.",
+        "Pilots earn a lot of money."
+      ],
+      "answer": 1,
+      "feedback": "Babası havalimanında çalışıyordu; uçakları izlemeyi severdi.",
+      "evidence": "and I loved watching the planes."
+    },
+    {
+      "id": "q3",
+      "prompt": "How many days off does she usually have?",
+      "options": [
+        "five",
+        "two",
+        "four",
+        "three"
+      ],
+      "answer": 2,
+      "feedback": "Genelde beş gün çalışıp dört gün izin yapıyor.",
+      "evidence": "then I have four days off."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is the worst part of her job?",
+      "options": [
+        "the view",
+        "long flights",
+        "small airports",
+        "getting up early"
+      ],
+      "answer": 3,
+      "feedback": "En kötü yanı erken kalkmak.",
+      "evidence": "The worst part is getting up early."
+    },
+    {
+      "id": "q5",
+      "prompt": "What does Clara hope to do next year?",
+      "options": [
+        "fly long flights to Asia",
+        "stop working",
+        "visit Paris",
+        "train new pilots"
+      ],
+      "answer": 0,
+      "feedback": "Gelecek yıl Asya'ya uzun uçuşlar yapmayı umuyor.",
+      "evidence": "Next year, I hope to fly long flights to Asia."
+    }
+  ]
+}

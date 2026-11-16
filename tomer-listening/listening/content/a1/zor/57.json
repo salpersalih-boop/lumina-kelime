@@ -1,0 +1,105 @@
+{
+  "id": "a1-zor-57",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Swimming practice",
+  "topic": "Antrenör mesajı",
+  "instructions": "Antrenörden kısa bir sesli mesaj. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Coach",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Hi everyone, it's Coach Anna."
+    },
+    {
+      "speaker": "s",
+      "text": "This week, swimming practice is on Tuesday, not Monday."
+    },
+    {
+      "speaker": "s",
+      "text": "It starts at five thirty, so please come at five fifteen."
+    },
+    {
+      "speaker": "s",
+      "text": "Don't forget your swimming cap!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is the message from?",
+      "options": [
+        "a teacher",
+        "Coach Anna",
+        "a parent",
+        "the pool"
+      ],
+      "answer": 1,
+      "feedback": "Mesaj antrenör Anna'dan.",
+      "evidence": "it's Coach Anna."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which day is practice this week?",
+      "options": [
+        "Monday",
+        "Wednesday",
+        "Tuesday",
+        "Thursday"
+      ],
+      "answer": 2,
+      "feedback": "Bu hafta pazartesi değil, salı.",
+      "evidence": "swimming practice is on Tuesday, not Monday."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time does practice start?",
+      "options": [
+        "at five fifteen",
+        "at five thirty",
+        "at five",
+        "at six"
+      ],
+      "answer": 1,
+      "feedback": "Antrenman beş buçukta başlıyor.",
+      "evidence": "It starts at five thirty"
+    },
+    {
+      "id": "q4",
+      "prompt": "What time should swimmers come?",
+      "options": [
+        "at five fifteen",
+        "at five thirty",
+        "at five",
+        "at quarter to six"
+      ],
+      "answer": 0,
+      "feedback": "Beşi çeyrek geçe gelmeliler.",
+      "evidence": "please come at five fifteen."
+    },
+    {
+      "id": "q5",
+      "prompt": "What should they bring?",
+      "options": [
+        "a towel",
+        "water",
+        "money",
+        "a swimming cap"
+      ],
+      "answer": 3,
+      "feedback": "Bonelerini unutmasınlar.",
+      "evidence": "Don't forget your swimming cap!"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "a1-zor-09",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My new job",
+  "topic": "İş ve günlük düzen",
+  "instructions": "Laura yeni işini anlatıyor. Uzun bir metin; eskiyle yeniyi ve \"but\" ile gelen bilgileri ayırt et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "laura": {
+      "name": "Laura",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "laura",
+      "text": "Hi, I'm Laura. Last month I started a new job."
+    },
+    {
+      "speaker": "laura",
+      "text": "Before, I was a teacher in a primary school. Now I work in a bookshop in the city centre."
+    },
+    {
+      "speaker": "laura",
+      "text": "I love books, so it's a great job for me."
+    },
+    {
+      "speaker": "laura",
+      "text": "I start work at nine thirty, but I get up early, at seven, because I go to work by train."
+    },
+    {
+      "speaker": "laura",
+      "text": "The train takes forty-five minutes."
+    },
+    {
+      "speaker": "laura",
+      "text": "I work from Tuesday to Saturday. My free days are Sunday and Monday."
+    },
+    {
+      "speaker": "laura",
+      "text": "In the morning, I put new books on the shelves and answer the phone."
+    },
+    {
+      "speaker": "laura",
+      "text": "In the afternoon, I help customers. Many children come with their parents."
+    },
+    {
+      "speaker": "laura",
+      "text": "My manager, Sam, is very kind. He is younger than me, but he knows a lot about books."
+    },
+    {
+      "speaker": "laura",
+      "text": "The money isn't very good, but I'm happy."
+    },
+    {
+      "speaker": "laura",
+      "text": "On Saturdays, there's a story hour for children, and I read to them. It's my favourite part of the week."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What was Laura's job before?",
+      "options": [
+        "a bookseller",
+        "a manager",
+        "a teacher",
+        "a writer"
+      ],
+      "answer": 2,
+      "feedback": "Laura önceden ilkokulda öğretmendi (I was a teacher).",
+      "evidence": "Before, I was a teacher in a primary school."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does Laura get up?",
+      "options": [
+        "at seven",
+        "at nine thirty",
+        "at six",
+        "at forty-five past seven"
+      ],
+      "answer": 0,
+      "feedback": "Yedide (at seven) kalkıyor. Dokuz buçuk işe başlama saati.",
+      "evidence": "I get up early, at seven"
+    },
+    {
+      "id": "q3",
+      "prompt": "Which day does Laura NOT work?",
+      "options": [
+        "Tuesday",
+        "Saturday",
+        "Wednesday",
+        "Monday"
+      ],
+      "answer": 3,
+      "feedback": "Salıdan cumartesiye çalışıyor; boş günleri pazar ve pazartesi (Monday).",
+      "evidence": "My free days are Sunday and Monday."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Laura say about Sam?",
+      "options": [
+        "He is older than her.",
+        "He is younger than her.",
+        "He doesn't like books.",
+        "He is not very kind."
+      ],
+      "answer": 1,
+      "feedback": "Sam ondan genç (younger than me) ama kitaplar hakkında çok şey biliyor.",
+      "evidence": "He is younger than me, but he knows a lot about books."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is Laura's favourite part of the week?",
+      "options": [
+        "her free days",
+        "answering the phone",
+        "the story hour on Saturdays",
+        "the train journey"
+      ],
+      "answer": 2,
+      "feedback": "En sevdiği kısım cumartesi çocuklara kitap okuduğu hikâye saati (story hour).",
+      "evidence": "It's my favourite part of the week."
+    }
+  ]
+}

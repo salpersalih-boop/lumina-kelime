@@ -1,0 +1,128 @@
+{
+  "id": "a1-orta-01",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the café",
+  "topic": "Kafede sipariş verme",
+  "instructions": "Mark bir kafede sipariş veriyor. Fiyat, saat ve isim gibi ayrıntılara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "waiter": {
+      "name": "Garson",
+      "voice": "female"
+    },
+    "mark": {
+      "name": "Mark",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "waiter",
+      "text": "Good morning! Welcome to Sunny Café. What would you like?"
+    },
+    {
+      "speaker": "mark",
+      "text": "Good morning. Can I have a coffee, please?"
+    },
+    {
+      "speaker": "waiter",
+      "text": "Sure. Small or large?"
+    },
+    {
+      "speaker": "mark",
+      "text": "Large, please. And a cheese sandwich."
+    },
+    {
+      "speaker": "waiter",
+      "text": "OK. A large coffee and a cheese sandwich. Anything else?"
+    },
+    {
+      "speaker": "mark",
+      "text": "No, thank you. How much is it?"
+    },
+    {
+      "speaker": "waiter",
+      "text": "That's seven dollars and fifty cents."
+    },
+    {
+      "speaker": "mark",
+      "text": "Here you are. What time do you close today?"
+    },
+    {
+      "speaker": "waiter",
+      "text": "We close at six o'clock."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Can I have your name for the order?"
+    },
+    {
+      "speaker": "mark",
+      "text": "Yes, it's Mark."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Thank you, Mark. Your coffee is ready in five minutes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Mark order to drink?",
+      "options": [
+        "a small coffee",
+        "a large coffee",
+        "a large tea",
+        "an orange juice"
+      ],
+      "answer": 1,
+      "feedback": "Garson \"Small or large?\" diye soruyor, Mark \"Large\" diyor. İçecek kahve.",
+      "evidence": "A large coffee and a cheese sandwich."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much is the order?",
+      "options": [
+        "$5.70",
+        "$7.15",
+        "$7.50",
+        "$17.50"
+      ],
+      "answer": 2,
+      "feedback": "\"Seven dollars and fifty cents\" = 7,50 dolar. \"Fifty\" (50) ile \"fifteen\" (15) karıştırılmamalı.",
+      "evidence": "That's seven dollars and fifty cents."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time does the café close today?",
+      "options": [
+        "at five o'clock",
+        "at six o'clock",
+        "at seven o'clock",
+        "at eight o'clock"
+      ],
+      "answer": 1,
+      "feedback": "Kafe saat altıda kapanıyor. Sonda geçen \"five minutes\" kahvenin hazırlanma süresi, kapanış saati değil.",
+      "evidence": "We close at six o'clock."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is the name of the café?",
+      "options": [
+        "Sun Café",
+        "Sunny Café",
+        "Happy Café",
+        "Mark's Café"
+      ],
+      "answer": 1,
+      "feedback": "Garson ilk cümlede kafenin adını söylüyor: Sunny Café.",
+      "evidence": "Welcome to Sunny Café."
+    }
+  ]
+}

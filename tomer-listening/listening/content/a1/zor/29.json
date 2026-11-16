@@ -1,0 +1,113 @@
+{
+  "id": "a1-zor-29",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "City news",
+  "topic": "Radyo: şehir haberleri",
+  "instructions": "Yerel radyoda şehir haberleri. Yerleri, günleri ve sayıları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Radio",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Good evening. Here is the city news."
+    },
+    {
+      "speaker": "host",
+      "text": "The new swimming pool in North Park opens on Saturday. It is free for everyone on the first day."
+    },
+    {
+      "speaker": "host",
+      "text": "The city library is closed for two weeks because of building work. It opens again on the first of June."
+    },
+    {
+      "speaker": "host",
+      "text": "There is a big market in the old town every Sunday this month, from nine to three."
+    },
+    {
+      "speaker": "host",
+      "text": "And finally, the zoo has a new baby elephant! Her name is Lulu, and she is ten days old."
+    },
+    {
+      "speaker": "host",
+      "text": "Good night."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the new swimming pool?",
+      "options": [
+        "in the old town",
+        "in North Park",
+        "next to the zoo",
+        "near the library"
+      ],
+      "answer": 1,
+      "feedback": "Yeni havuz North Park'ta.",
+      "evidence": "The new swimming pool in North Park opens on Saturday."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much is the pool on the first day?",
+      "options": [
+        "nothing",
+        "two pounds",
+        "ten pounds",
+        "five pounds"
+      ],
+      "answer": 0,
+      "feedback": "İlk gün herkese ücretsiz.",
+      "evidence": "It is free for everyone on the first day."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is the library closed?",
+      "options": [
+        "It is a holiday.",
+        "because of building work",
+        "There are no books.",
+        "because of the market"
+      ],
+      "answer": 1,
+      "feedback": "İnşaat çalışması nedeniyle iki hafta kapalı.",
+      "evidence": "because of building work."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is the market?",
+      "options": [
+        "every Saturday",
+        "every day",
+        "on the first of June",
+        "every Sunday this month"
+      ],
+      "answer": 3,
+      "feedback": "Bu ay her pazar eski şehirde pazar kuruluyor.",
+      "evidence": "every Sunday this month"
+    },
+    {
+      "id": "q5",
+      "prompt": "How old is the baby elephant?",
+      "options": [
+        "ten weeks old",
+        "two weeks old",
+        "ten days old",
+        "one month old"
+      ],
+      "answer": 2,
+      "feedback": "Yavru fil on günlük.",
+      "evidence": "and she is ten days old."
+    }
+  ]
+}

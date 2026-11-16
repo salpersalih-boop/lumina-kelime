@@ -1,0 +1,116 @@
+{
+  "id": "a2-orta-44",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "No reservation",
+  "topic": "Restorana gelme",
+  "instructions": "Bir çift rezervasyonsuz bir restorana geliyor. Bekleme süresine ve seçeneklere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "host": {
+      "name": "Restaurant host",
+      "voice": "female"
+    },
+    "mark": {
+      "name": "Mark",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mark",
+      "text": "Good evening. A table for two, please."
+    },
+    {
+      "speaker": "host",
+      "text": "Do you have a reservation?"
+    },
+    {
+      "speaker": "mark",
+      "text": "No, I'm afraid not."
+    },
+    {
+      "speaker": "host",
+      "text": "We're very busy tonight. There's a forty-minute wait for a table inside."
+    },
+    {
+      "speaker": "mark",
+      "text": "Forty minutes? That's a long time. Is there anything outside?"
+    },
+    {
+      "speaker": "host",
+      "text": "Yes, we have a table on the terrace now, but it's a bit cold this evening."
+    },
+    {
+      "speaker": "mark",
+      "text": "We'll take it. Can we have some blankets?"
+    },
+    {
+      "speaker": "host",
+      "text": "Of course. And there are heaters outside too."
+    },
+    {
+      "speaker": "mark",
+      "text": "Perfect. Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many people are in Mark's group?",
+      "options": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "answer": 1,
+      "feedback": "İki kişilik masa istiyor.",
+      "evidence": "A table for two, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long is the wait for a table inside?",
+      "options": [
+        "four minutes",
+        "fourteen minutes",
+        "forty minutes",
+        "an hour"
+      ],
+      "answer": 2,
+      "feedback": "İçeride masa için kırk dakika bekleme var.",
+      "evidence": "There's a forty-minute wait for a table inside."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where do they sit?",
+      "options": [
+        "on the terrace",
+        "inside",
+        "at the bar",
+        "in another restaurant"
+      ],
+      "answer": 0,
+      "feedback": "Terasta oturuyorlar.",
+      "evidence": "We'll take it."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Mark ask for?",
+      "options": [
+        "a heater",
+        "menus",
+        "some water",
+        "some blankets"
+      ],
+      "answer": 3,
+      "feedback": "Battaniye istiyor; dışarıda ısıtıcılar da var.",
+      "evidence": "Can we have some blankets?"
+    }
+  ]
+}

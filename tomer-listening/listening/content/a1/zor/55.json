@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-55",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Working in a hotel",
+  "topic": "Meslek",
+  "instructions": "Daniel oteldeki işini anlatıyor. Uzun bir metin; saatleri, dilleri ve sevmediği şeyi karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Daniel",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I am Daniel, and I work in a hotel in Rome."
+    },
+    {
+      "speaker": "s",
+      "text": "I am a receptionist. I start work at seven in the morning and finish at three."
+    },
+    {
+      "speaker": "s",
+      "text": "I speak Italian, English and a little Spanish."
+    },
+    {
+      "speaker": "s",
+      "text": "Every day, I help guests with their rooms, taxis and restaurants."
+    },
+    {
+      "speaker": "s",
+      "text": "Many guests are from America and Japan."
+    },
+    {
+      "speaker": "s",
+      "text": "I like my job because I meet people from different countries."
+    },
+    {
+      "speaker": "s",
+      "text": "But I don't like working at the weekend. My friends are free, and I am at work!"
+    },
+    {
+      "speaker": "s",
+      "text": "Next year, I want to study tourism at university."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does Daniel work?",
+      "options": [
+        "in a restaurant in Rome",
+        "in a hotel in Rome",
+        "in a hotel in Madrid",
+        "at an airport"
+      ],
+      "answer": 1,
+      "feedback": "Roma'da bir otelde çalışıyor.",
+      "evidence": "I work in a hotel in Rome."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does he finish work?",
+      "options": [
+        "at seven",
+        "at five",
+        "at three",
+        "at one"
+      ],
+      "answer": 2,
+      "feedback": "Yedide başlayıp üçte bitiriyor.",
+      "evidence": "finish at three."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which language does he speak a little?",
+      "options": [
+        "Spanish",
+        "English",
+        "Italian",
+        "Japanese"
+      ],
+      "answer": 0,
+      "feedback": "Biraz İspanyolca konuşuyor.",
+      "evidence": "and a little Spanish."
+    },
+    {
+      "id": "q4",
+      "prompt": "What doesn't Daniel like about his job?",
+      "options": [
+        "the guests",
+        "the hotel",
+        "working early",
+        "working at the weekend"
+      ],
+      "answer": 3,
+      "feedback": "Hafta sonu çalışmayı sevmiyor.",
+      "evidence": "But I don't like working at the weekend."
+    },
+    {
+      "id": "q5",
+      "prompt": "What does he want to do next year?",
+      "options": [
+        "study tourism",
+        "move to America",
+        "work in Japan",
+        "open a hotel"
+      ],
+      "answer": 0,
+      "feedback": "Gelecek yıl üniversitede turizm okumak istiyor.",
+      "evidence": "Next year, I want to study tourism at university."
+    }
+  ]
+}

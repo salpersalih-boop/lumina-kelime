@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-37",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Buying a bus ticket",
+  "topic": "Otobüs bileti",
+  "instructions": "Bir kadın otobüs şoföründen bilet alıyor. Gideceği yer, fiyat ve süreye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "woman": {
+      "name": "Woman",
+      "voice": "female"
+    },
+    "driver": {
+      "name": "Bus driver",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "woman",
+      "text": "Hello. Does this bus go to the train station?"
+    },
+    {
+      "speaker": "driver",
+      "text": "Yes, it does."
+    },
+    {
+      "speaker": "woman",
+      "text": "One ticket, please. How much is it?"
+    },
+    {
+      "speaker": "driver",
+      "text": "It's one pound eighty."
+    },
+    {
+      "speaker": "woman",
+      "text": "Here you are. How long does it take?"
+    },
+    {
+      "speaker": "driver",
+      "text": "About fifteen minutes. The station is the last stop."
+    },
+    {
+      "speaker": "woman",
+      "text": "Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does the woman want to go?",
+      "options": [
+        "to the airport",
+        "to the train station",
+        "to the city centre",
+        "to the hospital"
+      ],
+      "answer": 1,
+      "feedback": "Tren istasyonuna gitmek istiyor.",
+      "evidence": "Does this bus go to the train station?"
+    },
+    {
+      "id": "q2",
+      "prompt": "How much is the ticket?",
+      "options": [
+        "one pound eighteen",
+        "eighty pence",
+        "one pound eighty",
+        "eight pounds"
+      ],
+      "answer": 2,
+      "feedback": "Bilet bir pound seksen.",
+      "evidence": "It's one pound eighty."
+    },
+    {
+      "id": "q3",
+      "prompt": "How long does the journey take?",
+      "options": [
+        "about fifteen minutes",
+        "about fifty minutes",
+        "about five minutes",
+        "one hour"
+      ],
+      "answer": 0,
+      "feedback": "Yaklaşık on beş dakika sürüyor.",
+      "evidence": "About fifteen minutes."
+    },
+    {
+      "id": "q4",
+      "prompt": "Which stop is the station?",
+      "options": [
+        "the first stop",
+        "the next stop",
+        "the second stop",
+        "the last stop"
+      ],
+      "answer": 3,
+      "feedback": "İstasyon son durak.",
+      "evidence": "The station is the last stop."
+    }
+  ]
+}

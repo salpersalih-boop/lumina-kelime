@@ -1,0 +1,111 @@
+{
+  "id": "a1-kolay-06",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My house",
+  "topic": "Ev ve odalar",
+  "instructions": "Anna evini anlatıyor. Uzun bir metin; sayılara ve odalara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "anna": {
+      "name": "Anna",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "anna",
+      "text": "Hello, my name is Anna. I live in a small town."
+    },
+    {
+      "speaker": "anna",
+      "text": "My house is not very big, but I love it."
+    },
+    {
+      "speaker": "anna",
+      "text": "It has two floors."
+    },
+    {
+      "speaker": "anna",
+      "text": "Downstairs, there is a kitchen and a living room."
+    },
+    {
+      "speaker": "anna",
+      "text": "The kitchen is yellow. It is my favourite room."
+    },
+    {
+      "speaker": "anna",
+      "text": "In the living room, there is a big sofa and a TV."
+    },
+    {
+      "speaker": "anna",
+      "text": "Upstairs, there are three bedrooms and a bathroom."
+    },
+    {
+      "speaker": "anna",
+      "text": "My bedroom is small. It has a bed, a desk and a window."
+    },
+    {
+      "speaker": "anna",
+      "text": "From my window, I can see the park."
+    },
+    {
+      "speaker": "anna",
+      "text": "We don't have a garage, but we have a nice garden."
+    },
+    {
+      "speaker": "anna",
+      "text": "There are many flowers in the garden."
+    },
+    {
+      "speaker": "anna",
+      "text": "My cat, Snow, sleeps in the garden every afternoon."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Anna's favourite room?",
+      "options": [
+        "the living room",
+        "her bedroom",
+        "the kitchen",
+        "the bathroom"
+      ],
+      "answer": 2,
+      "feedback": "Sarı mutfak (kitchen) en sevdiği oda. Kendi yatak odası küçük, onu en sevdiğim demiyor.",
+      "evidence": "The kitchen is yellow. It is my favourite room."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many bedrooms are there?",
+      "options": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "answer": 2,
+      "feedback": "Üst katta üç (three) yatak odası var. \"Two\" evin kat sayısı, çeldirici bu.",
+      "evidence": "Upstairs, there are three bedrooms and a bathroom."
+    },
+    {
+      "id": "q3",
+      "prompt": "What can Anna see from her window?",
+      "options": [
+        "the sea",
+        "the park",
+        "the garden",
+        "a garage"
+      ],
+      "answer": 1,
+      "feedback": "Penceresinden parkı (the park) görüyor. Bahçe evin bir parçası; garajları yok.",
+      "evidence": "From my window, I can see the park."
+    }
+  ]
+}

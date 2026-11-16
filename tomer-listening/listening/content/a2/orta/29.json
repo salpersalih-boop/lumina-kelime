@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-29",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "A quick question",
+  "topic": "İş arkadaşına soru",
+  "instructions": "İki iş arkadaşı kısa bir konuşma yapıyor. Kısa bir diyalog; ödünç istenen şeye ve zamana dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "amy": {
+      "name": "Amy",
+      "voice": "female"
+    },
+    "joe": {
+      "name": "Joe",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "amy",
+      "text": "Joe, can I use your charger? My phone is almost dead."
+    },
+    {
+      "speaker": "joe",
+      "text": "Sure, but I need it back before four. I'm leaving early today."
+    },
+    {
+      "speaker": "amy",
+      "text": "No problem. Thanks! Are you going to the dentist?"
+    },
+    {
+      "speaker": "joe",
+      "text": "No, my son's school play is at half past four."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Amy want to borrow?",
+      "options": [
+        "a phone",
+        "a charger",
+        "a pen",
+        "a laptop"
+      ],
+      "answer": 1,
+      "feedback": "Telefonu bitmek üzere; şarj aletini istiyor.",
+      "evidence": "can I use your charger?"
+    },
+    {
+      "id": "q2",
+      "prompt": "When does Joe need it back?",
+      "options": [
+        "before four",
+        "at half past four",
+        "tomorrow",
+        "after lunch"
+      ],
+      "answer": 0,
+      "feedback": "Dörtten önce geri istiyor.",
+      "evidence": "I need it back before four."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is Joe leaving early?",
+      "options": [
+        "He is going to the dentist.",
+        "He is ill.",
+        "His son has a school play.",
+        "He has a meeting."
+      ],
+      "answer": 2,
+      "feedback": "Dişçiye değil; oğlunun okul oyununa gidiyor.",
+      "evidence": "No, my son's school play is at half past four."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time is the school play?",
+      "options": [
+        "at four",
+        "at half past three",
+        "at five",
+        "at half past four"
+      ],
+      "answer": 3,
+      "feedback": "Okul oyunu dört buçukta.",
+      "evidence": "is at half past four."
+    }
+  ]
+}

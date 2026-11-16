@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-26",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My goldfish",
+  "topic": "Evcil hayvanlar",
+  "instructions": "Tom balığını anlatıyor. Kısa bir metin; isim, renk ve bakımına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tom": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tom",
+      "text": "I have a goldfish. His name is Bubbles."
+    },
+    {
+      "speaker": "tom",
+      "text": "He is orange and very small."
+    },
+    {
+      "speaker": "tom",
+      "text": "He lives in a bowl in my bedroom."
+    },
+    {
+      "speaker": "tom",
+      "text": "I give him food every morning."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the fish's name?",
+      "options": [
+        "Goldie",
+        "Bubbles",
+        "Tom",
+        "Orange"
+      ],
+      "answer": 1,
+      "feedback": "Balığın adı Bubbles.",
+      "evidence": "His name is Bubbles."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where does the fish live?",
+      "options": [
+        "in the kitchen",
+        "in the garden",
+        "in Tom's bedroom",
+        "in the living room"
+      ],
+      "answer": 2,
+      "feedback": "Tom'un yatak odasında bir kavanozda yaşıyor.",
+      "evidence": "He lives in a bowl in my bedroom."
+    },
+    {
+      "id": "q3",
+      "prompt": "When does Tom feed the fish?",
+      "options": [
+        "every morning",
+        "every evening",
+        "twice a day",
+        "at the weekend"
+      ],
+      "answer": 0,
+      "feedback": "Her sabah yem veriyor.",
+      "evidence": "I give him food every morning."
+    }
+  ]
+}

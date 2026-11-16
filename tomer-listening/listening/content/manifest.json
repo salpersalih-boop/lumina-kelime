@@ -1,11 +1,53 @@
 {
-  "version": 1,
+  "version": 2,
   "levels": [
-    { "id": "A1", "name": "Başlangıç",   "sets": { "kolay": "a1/kolay.json", "orta": "a1/orta.json", "zor": "a1/zor.json" } },
-    { "id": "A2", "name": "Temel",       "sets": { "kolay": null, "orta": null, "zor": null } },
-    { "id": "B1", "name": "Orta",        "sets": { "kolay": null, "orta": null, "zor": null } },
-    { "id": "B2", "name": "Orta üstü",   "sets": { "kolay": null, "orta": null, "zor": null } },
-    { "id": "C1", "name": "İleri",       "sets": { "kolay": null, "orta": null, "zor": null } },
-    { "id": "C2", "name": "Ustalık",     "sets": { "kolay": null, "orta": null, "zor": null } }
+    {
+      "id": "A1", "name": "Başlangıç",
+      "sets": {
+        "kolay": ["a1/kolay/01.json", "a1/kolay/02.json", "a1/kolay/03.json", "a1/kolay/04.json", "a1/kolay/05.json", "a1/kolay/06.json", "a1/kolay/07.json", "a1/kolay/08.json", "a1/kolay/09.json", "a1/kolay/10.json", "a1/kolay/11.json", "a1/kolay/12.json", "a1/kolay/13.json", "a1/kolay/14.json", "a1/kolay/15.json", "a1/kolay/16.json", "a1/kolay/17.json", "a1/kolay/18.json", "a1/kolay/19.json", "a1/kolay/20.json", "a1/kolay/21.json", "a1/kolay/22.json", "a1/kolay/23.json", "a1/kolay/24.json", "a1/kolay/25.json", "a1/kolay/26.json", "a1/kolay/27.json", "a1/kolay/28.json", "a1/kolay/29.json", "a1/kolay/30.json", "a1/kolay/31.json", "a1/kolay/32.json", "a1/kolay/33.json", "a1/kolay/34.json", "a1/kolay/35.json", "a1/kolay/36.json", "a1/kolay/37.json", "a1/kolay/38.json", "a1/kolay/39.json", "a1/kolay/40.json", "a1/kolay/41.json", "a1/kolay/42.json", "a1/kolay/43.json", "a1/kolay/44.json", "a1/kolay/45.json", "a1/kolay/46.json", "a1/kolay/47.json", "a1/kolay/48.json", "a1/kolay/49.json", "a1/kolay/50.json", "a1/kolay/51.json", "a1/kolay/52.json", "a1/kolay/53.json", "a1/kolay/54.json", "a1/kolay/55.json", "a1/kolay/56.json", "a1/kolay/57.json", "a1/kolay/58.json", "a1/kolay/59.json", "a1/kolay/60.json", "a1/kolay/61.json", "a1/kolay/62.json", "a1/kolay/63.json", "a1/kolay/64.json", "a1/kolay/65.json"],
+        "orta": ["a1/orta/01.json", "a1/orta/02.json", "a1/orta/03.json", "a1/orta/04.json", "a1/orta/05.json", "a1/orta/06.json", "a1/orta/07.json", "a1/orta/08.json", "a1/orta/09.json", "a1/orta/10.json", "a1/orta/11.json", "a1/orta/12.json", "a1/orta/13.json", "a1/orta/14.json", "a1/orta/15.json", "a1/orta/16.json", "a1/orta/17.json", "a1/orta/18.json", "a1/orta/19.json", "a1/orta/20.json", "a1/orta/21.json", "a1/orta/22.json", "a1/orta/23.json", "a1/orta/24.json", "a1/orta/25.json", "a1/orta/26.json", "a1/orta/27.json", "a1/orta/28.json", "a1/orta/29.json", "a1/orta/30.json", "a1/orta/31.json", "a1/orta/32.json", "a1/orta/33.json", "a1/orta/34.json", "a1/orta/35.json", "a1/orta/36.json", "a1/orta/37.json", "a1/orta/38.json", "a1/orta/39.json", "a1/orta/40.json", "a1/orta/41.json", "a1/orta/42.json", "a1/orta/43.json", "a1/orta/44.json", "a1/orta/45.json", "a1/orta/46.json", "a1/orta/47.json", "a1/orta/48.json", "a1/orta/49.json", "a1/orta/50.json", "a1/orta/51.json", "a1/orta/52.json", "a1/orta/53.json", "a1/orta/54.json", "a1/orta/55.json", "a1/orta/56.json", "a1/orta/57.json", "a1/orta/58.json", "a1/orta/59.json", "a1/orta/60.json", "a1/orta/61.json", "a1/orta/62.json", "a1/orta/63.json", "a1/orta/64.json", "a1/orta/65.json", "a1/orta/66.json", "a1/orta/67.json", "a1/orta/68.json", "a1/orta/69.json", "a1/orta/70.json"],
+        "zor": ["a1/zor/01.json", "a1/zor/02.json", "a1/zor/03.json", "a1/zor/04.json", "a1/zor/05.json", "a1/zor/06.json", "a1/zor/07.json", "a1/zor/08.json", "a1/zor/09.json", "a1/zor/10.json", "a1/zor/11.json", "a1/zor/12.json", "a1/zor/13.json", "a1/zor/14.json", "a1/zor/15.json", "a1/zor/16.json", "a1/zor/17.json", "a1/zor/18.json", "a1/zor/19.json", "a1/zor/20.json", "a1/zor/21.json", "a1/zor/22.json", "a1/zor/23.json", "a1/zor/24.json", "a1/zor/25.json", "a1/zor/26.json", "a1/zor/27.json", "a1/zor/28.json", "a1/zor/29.json", "a1/zor/30.json", "a1/zor/31.json", "a1/zor/32.json", "a1/zor/33.json", "a1/zor/34.json", "a1/zor/35.json", "a1/zor/36.json", "a1/zor/37.json", "a1/zor/38.json", "a1/zor/39.json", "a1/zor/40.json", "a1/zor/41.json", "a1/zor/42.json", "a1/zor/43.json", "a1/zor/44.json", "a1/zor/45.json", "a1/zor/46.json", "a1/zor/47.json", "a1/zor/48.json", "a1/zor/49.json", "a1/zor/50.json", "a1/zor/51.json", "a1/zor/52.json", "a1/zor/53.json", "a1/zor/54.json", "a1/zor/55.json", "a1/zor/56.json", "a1/zor/57.json", "a1/zor/58.json", "a1/zor/59.json", "a1/zor/60.json", "a1/zor/61.json", "a1/zor/62.json", "a1/zor/63.json", "a1/zor/64.json", "a1/zor/65.json"]
+      }
+    },
+    {
+      "id": "A2", "name": "Temel",
+      "sets": {
+        "kolay": ["a2/kolay/01.json", "a2/kolay/02.json", "a2/kolay/03.json", "a2/kolay/04.json", "a2/kolay/05.json", "a2/kolay/06.json", "a2/kolay/07.json", "a2/kolay/08.json", "a2/kolay/09.json", "a2/kolay/10.json", "a2/kolay/11.json", "a2/kolay/12.json", "a2/kolay/13.json", "a2/kolay/14.json", "a2/kolay/15.json", "a2/kolay/16.json", "a2/kolay/17.json", "a2/kolay/18.json", "a2/kolay/19.json", "a2/kolay/20.json", "a2/kolay/21.json", "a2/kolay/22.json", "a2/kolay/23.json", "a2/kolay/24.json", "a2/kolay/25.json", "a2/kolay/26.json", "a2/kolay/27.json", "a2/kolay/28.json", "a2/kolay/29.json", "a2/kolay/30.json", "a2/kolay/31.json", "a2/kolay/32.json", "a2/kolay/33.json", "a2/kolay/34.json", "a2/kolay/35.json", "a2/kolay/36.json", "a2/kolay/37.json", "a2/kolay/38.json", "a2/kolay/39.json", "a2/kolay/40.json", "a2/kolay/41.json", "a2/kolay/42.json", "a2/kolay/43.json", "a2/kolay/44.json", "a2/kolay/45.json", "a2/kolay/46.json", "a2/kolay/47.json", "a2/kolay/48.json", "a2/kolay/49.json", "a2/kolay/50.json", "a2/kolay/51.json", "a2/kolay/52.json", "a2/kolay/53.json", "a2/kolay/54.json", "a2/kolay/55.json", "a2/kolay/56.json", "a2/kolay/57.json", "a2/kolay/58.json", "a2/kolay/59.json", "a2/kolay/60.json", "a2/kolay/61.json", "a2/kolay/62.json", "a2/kolay/63.json", "a2/kolay/64.json", "a2/kolay/65.json"],
+        "orta": ["a2/orta/01.json", "a2/orta/02.json", "a2/orta/03.json", "a2/orta/04.json", "a2/orta/05.json", "a2/orta/06.json", "a2/orta/07.json", "a2/orta/08.json", "a2/orta/09.json", "a2/orta/10.json", "a2/orta/11.json", "a2/orta/12.json", "a2/orta/13.json", "a2/orta/14.json", "a2/orta/15.json", "a2/orta/16.json", "a2/orta/17.json", "a2/orta/18.json", "a2/orta/19.json", "a2/orta/20.json", "a2/orta/21.json", "a2/orta/22.json", "a2/orta/23.json", "a2/orta/24.json", "a2/orta/25.json", "a2/orta/26.json", "a2/orta/27.json", "a2/orta/28.json", "a2/orta/29.json", "a2/orta/30.json", "a2/orta/31.json", "a2/orta/32.json", "a2/orta/33.json", "a2/orta/34.json", "a2/orta/35.json", "a2/orta/36.json", "a2/orta/37.json", "a2/orta/38.json", "a2/orta/39.json", "a2/orta/40.json", "a2/orta/41.json", "a2/orta/42.json", "a2/orta/43.json", "a2/orta/44.json", "a2/orta/45.json", "a2/orta/46.json", "a2/orta/47.json", "a2/orta/48.json", "a2/orta/49.json", "a2/orta/50.json", "a2/orta/51.json", "a2/orta/52.json", "a2/orta/53.json", "a2/orta/54.json", "a2/orta/55.json", "a2/orta/56.json", "a2/orta/57.json", "a2/orta/58.json", "a2/orta/59.json", "a2/orta/60.json", "a2/orta/61.json", "a2/orta/62.json", "a2/orta/63.json", "a2/orta/64.json", "a2/orta/65.json", "a2/orta/66.json", "a2/orta/67.json", "a2/orta/68.json", "a2/orta/69.json", "a2/orta/70.json"],
+        "zor": ["a2/zor/01.json", "a2/zor/02.json", "a2/zor/03.json", "a2/zor/04.json", "a2/zor/05.json", "a2/zor/06.json", "a2/zor/07.json", "a2/zor/08.json", "a2/zor/09.json", "a2/zor/10.json", "a2/zor/11.json", "a2/zor/12.json", "a2/zor/13.json", "a2/zor/14.json", "a2/zor/15.json", "a2/zor/16.json", "a2/zor/17.json", "a2/zor/18.json", "a2/zor/19.json", "a2/zor/20.json", "a2/zor/21.json", "a2/zor/22.json", "a2/zor/23.json", "a2/zor/24.json", "a2/zor/25.json", "a2/zor/26.json", "a2/zor/27.json", "a2/zor/28.json", "a2/zor/29.json", "a2/zor/30.json", "a2/zor/31.json", "a2/zor/32.json", "a2/zor/33.json", "a2/zor/34.json", "a2/zor/35.json", "a2/zor/36.json", "a2/zor/37.json", "a2/zor/38.json", "a2/zor/39.json", "a2/zor/40.json", "a2/zor/41.json", "a2/zor/42.json", "a2/zor/43.json", "a2/zor/44.json", "a2/zor/45.json", "a2/zor/46.json", "a2/zor/47.json", "a2/zor/48.json", "a2/zor/49.json", "a2/zor/50.json", "a2/zor/51.json", "a2/zor/52.json", "a2/zor/53.json", "a2/zor/54.json", "a2/zor/55.json", "a2/zor/56.json", "a2/zor/57.json", "a2/zor/58.json", "a2/zor/59.json", "a2/zor/60.json", "a2/zor/61.json", "a2/zor/62.json", "a2/zor/63.json", "a2/zor/64.json", "a2/zor/65.json"]
+      }
+    },
+    {
+      "id": "B1", "name": "Orta",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "B2", "name": "Orta üstü",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "C1", "name": "İleri",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "C2", "name": "Ustalık",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    }
   ]
 }

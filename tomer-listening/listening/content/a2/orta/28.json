@@ -1,0 +1,116 @@
+{
+  "id": "a2-orta-28",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the optician's",
+  "topic": "Göz doktoru",
+  "instructions": "Lucy gözlükçüde göz muayenesi oluyor. Sorunu, sonucu ve seçimini takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "optician": {
+      "name": "Optician",
+      "voice": "male"
+    },
+    "lucy": {
+      "name": "Lucy",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "optician",
+      "text": "So, what's the problem?"
+    },
+    {
+      "speaker": "lucy",
+      "text": "I can't see the board well at university, and I often get headaches."
+    },
+    {
+      "speaker": "optician",
+      "text": "OK, let's test your eyes. Can you read the letters on the wall?"
+    },
+    {
+      "speaker": "lucy",
+      "text": "The big ones, yes. The small ones at the bottom, no."
+    },
+    {
+      "speaker": "optician",
+      "text": "You need glasses for distance. You don't need them for reading."
+    },
+    {
+      "speaker": "lucy",
+      "text": "Do I have to wear them all the time?"
+    },
+    {
+      "speaker": "optician",
+      "text": "No, only in class, for driving and for watching TV."
+    },
+    {
+      "speaker": "lucy",
+      "text": "OK. I like these black frames."
+    },
+    {
+      "speaker": "optician",
+      "text": "Good choice. They'll be ready on Thursday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Lucy's problem?",
+      "options": [
+        "She can't read books.",
+        "She can't see the board well.",
+        "Her eyes hurt in the sun.",
+        "She broke her glasses."
+      ],
+      "answer": 1,
+      "feedback": "Üniversitede tahtayı iyi göremiyor ve sık sık başı ağrıyor.",
+      "evidence": "I can't see the board well at university"
+    },
+    {
+      "id": "q2",
+      "prompt": "What can't Lucy read on the wall?",
+      "options": [
+        "the big letters",
+        "any letters",
+        "the small letters at the bottom",
+        "the numbers"
+      ],
+      "answer": 2,
+      "feedback": "Büyük harfleri okuyabiliyor; alttaki küçük harfleri okuyamıyor.",
+      "evidence": "The small ones at the bottom, no."
+    },
+    {
+      "id": "q3",
+      "prompt": "When does Lucy need to wear glasses?",
+      "options": [
+        "all the time",
+        "only for reading",
+        "only at night",
+        "in class, for driving and watching TV"
+      ],
+      "answer": 3,
+      "feedback": "Sadece derste, araba sürerken ve televizyon izlerken.",
+      "evidence": "only in class, for driving and for watching TV."
+    },
+    {
+      "id": "q4",
+      "prompt": "When will the glasses be ready?",
+      "options": [
+        "on Thursday",
+        "tomorrow",
+        "today",
+        "next week"
+      ],
+      "answer": 0,
+      "feedback": "Gözlükler perşembe hazır olacak.",
+      "evidence": "They'll be ready on Thursday."
+    }
+  ]
+}

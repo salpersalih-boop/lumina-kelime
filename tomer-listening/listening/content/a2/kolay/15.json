@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-15",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "The bus is late",
+  "topic": "Ulaşım ve gecikme",
+  "instructions": "Eva arkadaşına kısa bir mesaj bırakıyor. Gecikmeye ve yeni buluşma yerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "eva": {
+      "name": "Eva",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "eva",
+      "text": "Hi Kate, it's Eva. My bus is twenty minutes late."
+    },
+    {
+      "speaker": "eva",
+      "text": "I'll be at the cinema at ten past eight."
+    },
+    {
+      "speaker": "eva",
+      "text": "Don't wait outside. It's cold. Wait for me in the café inside."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How late is Eva's bus?",
+      "options": [
+        "ten minutes",
+        "twenty minutes",
+        "eight minutes",
+        "thirty minutes"
+      ],
+      "answer": 1,
+      "feedback": "Otobüs yirmi dakika (twenty minutes) gecikmeli.",
+      "evidence": "My bus is twenty minutes late."
+    },
+    {
+      "id": "q2",
+      "prompt": "When will Eva arrive at the cinema?",
+      "options": [
+        "at eight o'clock",
+        "at twenty past eight",
+        "at ten past eight",
+        "at ten to eight"
+      ],
+      "answer": 2,
+      "feedback": "Sinemaya sekizi on geçe (ten past eight) varacak.",
+      "evidence": "I'll be at the cinema at ten past eight."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where should Kate wait?",
+      "options": [
+        "in the café inside",
+        "outside the cinema",
+        "at the bus stop",
+        "at home"
+      ],
+      "answer": 0,
+      "feedback": "Dışarısı soğuk; içerideki kafede beklemeli.",
+      "evidence": "Wait for me in the café inside."
+    }
+  ]
+}

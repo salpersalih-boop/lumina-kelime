@@ -1,0 +1,109 @@
+{
+  "id": "a1-zor-10",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Platform change",
+  "topic": "İstasyon anonsu",
+  "instructions": "Tren istasyonunda kısa bir anons. Hızlı ve bilgi dolu; değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Station",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Attention, please."
+    },
+    {
+      "speaker": "voice",
+      "text": "The eleven twenty train to Oxford is now leaving from platform three, not platform six."
+    },
+    {
+      "speaker": "voice",
+      "text": "This train is ten minutes late."
+    },
+    {
+      "speaker": "voice",
+      "text": "There is no café on this train today."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please do not leave your bags on the platform."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the train going?",
+      "options": [
+        "to London",
+        "to Oxford",
+        "to Cambridge",
+        "to Bristol"
+      ],
+      "answer": 1,
+      "feedback": "Tren Oxford'a (to Oxford) gidiyor.",
+      "evidence": "The eleven twenty train to Oxford"
+    },
+    {
+      "id": "q2",
+      "prompt": "What platform does the train leave from now?",
+      "options": [
+        "platform six",
+        "platform eleven",
+        "platform three",
+        "platform two"
+      ],
+      "answer": 2,
+      "feedback": "Tren artık üçüncü perondan (platform three) kalkıyor, altıdan değil.",
+      "evidence": "now leaving from platform three, not platform six."
+    },
+    {
+      "id": "q3",
+      "prompt": "How late is the train?",
+      "options": [
+        "ten minutes",
+        "twenty minutes",
+        "eleven minutes",
+        "thirty minutes"
+      ],
+      "answer": 0,
+      "feedback": "Tren on dakika (ten minutes) gecikmeli.",
+      "evidence": "This train is ten minutes late."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time does the train leave now?",
+      "options": [
+        "at eleven twenty",
+        "at eleven ten",
+        "at eleven",
+        "at eleven thirty"
+      ],
+      "answer": 3,
+      "feedback": "Tren 11:20'deydi; on dakika gecikmeyle 11:30'da (eleven thirty) kalkar. İki bilgiyi birleştirmen gerek.",
+      "evidence": "This train is ten minutes late."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is NOT on the train today?",
+      "options": [
+        "a café",
+        "toilets",
+        "free seats",
+        "a driver"
+      ],
+      "answer": 0,
+      "feedback": "Bugün trende kafe yok (There is no café).",
+      "evidence": "There is no café on this train today."
+    }
+  ]
+}

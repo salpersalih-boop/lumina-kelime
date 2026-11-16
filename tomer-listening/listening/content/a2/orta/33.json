@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-33",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "When can we meet?",
+  "topic": "Toplantı ayarlama",
+  "instructions": "İki iş arkadaşı toplantı için uygun bir zaman arıyor. Kimin ne zaman müsait olduğuna dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "anna": {
+      "name": "Anna",
+      "voice": "female"
+    },
+    "rob": {
+      "name": "Rob",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "anna",
+      "text": "Rob, we need to meet about the new project. Are you free on Monday?"
+    },
+    {
+      "speaker": "rob",
+      "text": "Monday's difficult. I'm at a conference all day."
+    },
+    {
+      "speaker": "anna",
+      "text": "What about Tuesday morning?"
+    },
+    {
+      "speaker": "rob",
+      "text": "I'm free after eleven. Before that, I've got a meeting with a client."
+    },
+    {
+      "speaker": "anna",
+      "text": "I have lunch with my manager at twelve. So eleven to twelve?"
+    },
+    {
+      "speaker": "rob",
+      "text": "Perfect. Shall we meet in my office?"
+    },
+    {
+      "speaker": "anna",
+      "text": "Let's use meeting room three. Your office is very small!"
+    },
+    {
+      "speaker": "rob",
+      "text": "Ha! True. See you on Tuesday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why can't Rob meet on Monday?",
+      "options": [
+        "He is on holiday.",
+        "He is at a conference.",
+        "He is ill.",
+        "He has lunch with a client."
+      ],
+      "answer": 1,
+      "feedback": "Pazartesi bütün gün konferansta.",
+      "evidence": "I'm at a conference all day."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is Rob doing on Tuesday before eleven?",
+      "options": [
+        "meeting a client",
+        "having lunch",
+        "going to a conference",
+        "working from home"
+      ],
+      "answer": 0,
+      "feedback": "On birden önce bir müşteriyle toplantısı var.",
+      "evidence": "I've got a meeting with a client."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time will they meet?",
+      "options": [
+        "from twelve to one",
+        "from ten to eleven",
+        "from eleven to twelve",
+        "from nine to ten"
+      ],
+      "answer": 2,
+      "feedback": "On birden on ikiye; on ikide Anna'nın öğle yemeği var.",
+      "evidence": "So eleven to twelve?"
+    },
+    {
+      "id": "q4",
+      "prompt": "Where will they meet?",
+      "options": [
+        "in Rob's office",
+        "in Anna's office",
+        "in a café",
+        "in meeting room three"
+      ],
+      "answer": 3,
+      "feedback": "Rob'un ofisi küçük; üç numaralı toplantı odasını kullanacaklar.",
+      "evidence": "Let's use meeting room three."
+    }
+  ]
+}

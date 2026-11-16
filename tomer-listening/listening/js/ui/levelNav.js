@@ -30,11 +30,11 @@ export function mountLevelNav(root, { onSelect }) {
   });
 
   /**
-   * @param {{levels: {id: string, name: string, sets: Record<string, string|null>}[],
+   * @param {{levels: {id: string, name: string, sets: Record<string, string[]>}[],
    *          sublevels: {id: string, label: string, rank: number, hint: string}[],
    *          selection: {level: string, sub: string},
    *          progress: Record<string, {best: number}>,
-   *          setIdOf: (level: string, sub: string) => string}} model
+   *          setIdOf: (level: string, sub: string, n: number) => string}} model
    */
   function render({ levels, sublevels, selection, progress, setIdOf }) {
     // Yeniden çizimden sonra klavye odağını aynı sekmede tut.
@@ -44,31 +44,32 @@ export function mountLevelNav(root, { onSelect }) {
     const current = levels.find(l => l.id === selection.level);
 
     const levelTabs = levels.map(l => {
-      const ready = sublevels.filter(s => l.sets?.[s.id]).length;
+      const total = sublevels.reduce((sum, s) => sum + (l.sets[s.id]?.length ?? 0), 0);
       const active = l.id === selection.level;
       return `
         <button type="button" role="tab" class="lvl" data-level="${esc(l.id)}"
                 aria-selected="${active}" tabindex="${active ? 0 : -1}">
           <span class="lvl-code">${esc(l.id)}</span>
           <span class="lvl-name">${esc(l.name)}</span>
-          <span class="lvl-count">${ready ? `${ready}/3 set` : 'yakında'}</span>
+          <span class="lvl-count">${total ? `${total} metin` : 'yakında'}</span>
         </button>`;
     }).join('');
 
     const subTabs = sublevels.map(s => {
       const active = s.id === selection.sub;
-      const available = Boolean(current?.sets?.[s.id]);
-      const best = progress[setIdOf(selection.level, s.id)]?.best;
+      const count = current?.sets[s.id]?.length ?? 0;
+      const done = Array.from({ length: count }, (_, i) => setIdOf(selection.level, s.id, i + 1))
+        .filter(id => progress[id]).length;
       const bars = [1, 2, 3].map(n => `<i class="${n <= s.rank ? 'on' : ''}"></i>`).join('');
       return `
         <button type="button" role="tab" class="sub" data-sub="${esc(s.id)}"
-                aria-selected="${active}" tabindex="${active ? 0 : -1}" ${available ? '' : 'data-empty'}>
+                aria-selected="${active}" tabindex="${active ? 0 : -1}" ${count ? '' : 'data-empty'}>
           <span class="meter" aria-hidden="true">${bars}</span>
           <span class="sub-text">
             <span class="sub-label">${esc(s.label)}</span>
-            <span class="sub-hint">${esc(s.hint)}</span>
+            <span class="sub-hint">${count ? `${count} metin · ` : ''}${esc(s.hint)}</span>
           </span>
-          ${best != null ? `<span class="best" title="En iyi sonucun">%${best}</span>` : ''}
+          ${count ? `<span class="best ${done === count ? 'is-full' : ''}" title="Tamamlanan metin">${done}/${count}</span>` : ''}
         </button>`;
     }).join('');
 

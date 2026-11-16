@@ -1,0 +1,104 @@
+{
+  "id": "a2-orta-02",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the pharmacy",
+  "topic": "Eczane",
+  "instructions": "Sara eczanede ilaç alıyor. Kısa bir diyalog; ilacın nasıl kullanılacağına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sara": {
+      "name": "Sara",
+      "voice": "female"
+    },
+    "chemist": {
+      "name": "Pharmacist",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sara",
+      "text": "Hello. I have a sore throat. Can you give me something for it?"
+    },
+    {
+      "speaker": "chemist",
+      "text": "Sure. Take one of these sweets every four hours."
+    },
+    {
+      "speaker": "sara",
+      "text": "Can I take them with food?"
+    },
+    {
+      "speaker": "chemist",
+      "text": "Yes, that's fine. If you don't feel better in three days, see a doctor."
+    },
+    {
+      "speaker": "sara",
+      "text": "Thank you. How much are they?"
+    },
+    {
+      "speaker": "chemist",
+      "text": "Four pounds twenty."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Sara's problem?",
+      "options": [
+        "a headache",
+        "a sore throat",
+        "a stomach ache",
+        "a cold"
+      ],
+      "answer": 1,
+      "feedback": "Boğazı ağrıyor (a sore throat).",
+      "evidence": "I have a sore throat."
+    },
+    {
+      "id": "q2",
+      "prompt": "How often should she take the medicine?",
+      "options": [
+        "every four hours",
+        "four times a day",
+        "every three hours",
+        "once a day"
+      ],
+      "answer": 0,
+      "feedback": "Her dört saatte bir (every four hours) bir tane.",
+      "evidence": "Take one of these sweets every four hours."
+    },
+    {
+      "id": "q3",
+      "prompt": "When should Sara see a doctor?",
+      "options": [
+        "today",
+        "tomorrow",
+        "if she feels worse tonight",
+        "if she doesn't feel better in three days"
+      ],
+      "answer": 3,
+      "feedback": "Üç gün içinde iyileşmezse doktora gitmeli.",
+      "evidence": "If you don't feel better in three days, see a doctor."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does the medicine cost?",
+      "options": [
+        "four pounds",
+        "four pounds twenty",
+        "twenty-four pounds",
+        "fourteen pounds twenty"
+      ],
+      "answer": 1,
+      "feedback": "İlaç dört pound yirmi (four pounds twenty).",
+      "evidence": "Four pounds twenty."
+    }
+  ]
+}

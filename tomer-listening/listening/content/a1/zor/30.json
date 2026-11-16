@@ -1,0 +1,117 @@
+{
+  "id": "a1-zor-30",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My brother and me",
+  "topic": "Karşılaştırma",
+  "instructions": "Leo kendisini ikiz kardeşiyle karşılaştırıyor. Hangi bilginin kime ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "leo",
+      "text": "I have a twin brother. His name is Luca. We are fourteen."
+    },
+    {
+      "speaker": "leo",
+      "text": "We look the same, but we are very different."
+    },
+    {
+      "speaker": "leo",
+      "text": "I get up early, but Luca loves sleeping. He gets up at eleven at the weekend!"
+    },
+    {
+      "speaker": "leo",
+      "text": "I like sport. I play basketball three times a week. Luca doesn't like sport. He likes music and plays the guitar."
+    },
+    {
+      "speaker": "leo",
+      "text": "My favourite food is pizza. Luca is a vegetarian, so he doesn't eat meat."
+    },
+    {
+      "speaker": "leo",
+      "text": "At school, I am good at maths, and Luca is good at English and art."
+    },
+    {
+      "speaker": "leo",
+      "text": "We are different, but he is my best friend."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old are Leo and Luca?",
+      "options": [
+        "twelve",
+        "fourteen",
+        "eleven",
+        "fifteen"
+      ],
+      "answer": 1,
+      "feedback": "İkizler on dört yaşında. On bir, Luca'nın hafta sonu kalkış saati.",
+      "evidence": "We are fourteen."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who gets up late at the weekend?",
+      "options": [
+        "Leo",
+        "both of them",
+        "Luca",
+        "nobody"
+      ],
+      "answer": 2,
+      "feedback": "Luca uyumayı seviyor; hafta sonu on birde kalkıyor.",
+      "evidence": "He gets up at eleven at the weekend!"
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Luca play?",
+      "options": [
+        "the guitar",
+        "basketball",
+        "the piano",
+        "football"
+      ],
+      "answer": 0,
+      "feedback": "Luca gitar çalıyor; basketbol Leo'nun sporu.",
+      "evidence": "He likes music and plays the guitar."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why doesn't Luca eat meat?",
+      "options": [
+        "He doesn't like pizza.",
+        "He's ill.",
+        "He's on a diet.",
+        "He's a vegetarian."
+      ],
+      "answer": 3,
+      "feedback": "Luca vejetaryen.",
+      "evidence": "Luca is a vegetarian"
+    },
+    {
+      "id": "q5",
+      "prompt": "What is Leo good at?",
+      "options": [
+        "English",
+        "maths",
+        "art",
+        "music"
+      ],
+      "answer": 1,
+      "feedback": "Leo matematikte iyi; Luca İngilizce ve resimde.",
+      "evidence": "I am good at maths"
+    }
+  ]
+}

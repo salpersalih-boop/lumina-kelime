@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-65",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "A wrong order",
+  "topic": "Restoranda şikâyet",
+  "instructions": "Bir müşteri yanlış gelen siparişi bildiriyor. Kısa bir diyalog; sorun ve çözüme dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Customer",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Waiter",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Excuse me, I ordered the vegetable curry, but this is chicken."
+    },
+    {
+      "speaker": "b",
+      "text": "I'm so sorry. I'll bring the right one now."
+    },
+    {
+      "speaker": "a",
+      "text": "Thanks. I'm vegetarian."
+    },
+    {
+      "speaker": "b",
+      "text": "Of course. And your drinks are free tonight, because of the mistake."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What did the customer order?",
+      "options": [
+        "chicken curry",
+        "vegetable curry",
+        "fish",
+        "a salad"
+      ],
+      "answer": 1,
+      "feedback": "Sebzeli köri sipariş etmiş.",
+      "evidence": "I ordered the vegetable curry"
+    },
+    {
+      "id": "q2",
+      "prompt": "What did she get?",
+      "options": [
+        "fish",
+        "a vegetable curry",
+        "chicken",
+        "soup"
+      ],
+      "answer": 2,
+      "feedback": "Tavuk gelmiş.",
+      "evidence": "but this is chicken."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is it a problem?",
+      "options": [
+        "She's vegetarian.",
+        "She doesn't like chicken.",
+        "It's cold.",
+        "It's too spicy."
+      ],
+      "answer": 0,
+      "feedback": "Vejetaryen.",
+      "evidence": "I'm vegetarian."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the waiter give her?",
+      "options": [
+        "a free dessert",
+        "a discount",
+        "a free meal",
+        "free drinks"
+      ],
+      "answer": 3,
+      "feedback": "Hata yüzünden içecekler bedava.",
+      "evidence": "your drinks are free tonight"
+    }
+  ]
+}

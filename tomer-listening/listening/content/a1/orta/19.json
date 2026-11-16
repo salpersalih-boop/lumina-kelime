@@ -1,0 +1,112 @@
+{
+  "id": "a1-orta-19",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "In the classroom",
+  "topic": "Okul ve eşyalar",
+  "instructions": "Öğretmen ve öğrenci sınıfta konuşuyor. Eksik eşyalara ve ödeve dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "teacher": {
+      "name": "Teacher",
+      "voice": "female"
+    },
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "teacher",
+      "text": "Good morning, Leo. Where is your book?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Sorry, Miss Green. It's at home."
+    },
+    {
+      "speaker": "teacher",
+      "text": "OK. You can look at Sara's book today. Do you have a pen?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Yes, I have a pen, but I don't have a pencil."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Here is a pencil. Now, open the book at page twenty-three."
+    },
+    {
+      "speaker": "leo",
+      "text": "Page thirty-three?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "No, page twenty-three. And for homework, please do exercise four."
+    },
+    {
+      "speaker": "leo",
+      "text": "OK. Thank you, Miss Green."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Leo's book?",
+      "options": [
+        "in his bag",
+        "at home",
+        "on the desk",
+        "in Sara's bag"
+      ],
+      "answer": 1,
+      "feedback": "Kitabı evde (at home).",
+      "evidence": "It's at home."
+    },
+    {
+      "id": "q2",
+      "prompt": "What doesn't Leo have?",
+      "options": [
+        "a pen",
+        "a pencil",
+        "a bag",
+        "a notebook"
+      ],
+      "answer": 1,
+      "feedback": "Kalemi (pen) var ama kurşun kalemi (pencil) yok.",
+      "evidence": "but I don't have a pencil."
+    },
+    {
+      "id": "q3",
+      "prompt": "What page do they open?",
+      "options": [
+        "page thirty-three",
+        "page thirteen",
+        "page twenty-three",
+        "page four"
+      ],
+      "answer": 2,
+      "feedback": "Yirmi üç (twenty-three), otuz üç değil.",
+      "evidence": "No, page twenty-three."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is the homework?",
+      "options": [
+        "exercise four",
+        "page four",
+        "exercise three",
+        "reading Sara's book"
+      ],
+      "answer": 0,
+      "feedback": "Ödev dördüncü alıştırma (exercise four).",
+      "evidence": "please do exercise four."
+    }
+  ]
+}

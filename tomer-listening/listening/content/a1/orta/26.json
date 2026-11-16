@@ -1,0 +1,112 @@
+{
+  "id": "a1-orta-26",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the flower shop",
+  "topic": "Çiçekçi",
+  "instructions": "Adam annesi için çiçek alıyor. Renk, sayı ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Florist",
+      "voice": "female"
+    },
+    "adam": {
+      "name": "Adam",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "staff",
+      "text": "Hello. Can I help you?"
+    },
+    {
+      "speaker": "adam",
+      "text": "Yes, I want some flowers for my mother. It's her birthday."
+    },
+    {
+      "speaker": "staff",
+      "text": "These roses are very nice. We have red, white and yellow."
+    },
+    {
+      "speaker": "adam",
+      "text": "She doesn't like red. Yellow, please."
+    },
+    {
+      "speaker": "staff",
+      "text": "How many?"
+    },
+    {
+      "speaker": "adam",
+      "text": "Ten, please. How much are they?"
+    },
+    {
+      "speaker": "staff",
+      "text": "They're two pounds each, so twenty pounds."
+    },
+    {
+      "speaker": "adam",
+      "text": "OK. Here you are."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why is Adam buying flowers?",
+      "options": [
+        "It's his mother's birthday.",
+        "It's his wife's birthday.",
+        "His mother is ill.",
+        "It's Mother's Day."
+      ],
+      "answer": 0,
+      "feedback": "Annesinin doğum günü.",
+      "evidence": "It's her birthday."
+    },
+    {
+      "id": "q2",
+      "prompt": "What colour roses does Adam buy?",
+      "options": [
+        "red",
+        "white",
+        "pink",
+        "yellow"
+      ],
+      "answer": 3,
+      "feedback": "Annesi kırmızıyı sevmiyor; sarı alıyor.",
+      "evidence": "Yellow, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "How many roses does he buy?",
+      "options": [
+        "two",
+        "twelve",
+        "ten",
+        "twenty"
+      ],
+      "answer": 2,
+      "feedback": "On (ten) tane gül alıyor.",
+      "evidence": "Ten, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does he pay?",
+      "options": [
+        "two pounds",
+        "twenty pounds",
+        "ten pounds",
+        "twelve pounds"
+      ],
+      "answer": 1,
+      "feedback": "Tanesi iki pound; on tane yirmi pound.",
+      "evidence": "so twenty pounds."
+    }
+  ]
+}

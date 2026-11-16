@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-57",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My birthday",
+  "topic": "Kutlama",
+  "instructions": "Aya doğum gününü anlatıyor. Tarih ve hediyelere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Aya",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "My birthday is on the twelfth of March."
+    },
+    {
+      "speaker": "s",
+      "text": "I am nine years old today."
+    },
+    {
+      "speaker": "s",
+      "text": "My parents give me a new bike."
+    },
+    {
+      "speaker": "s",
+      "text": "My grandmother makes a big cake."
+    },
+    {
+      "speaker": "s",
+      "text": "My friends come to my house in the afternoon."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is Aya's birthday?",
+      "options": [
+        "the twelfth of March",
+        "the twelfth of May",
+        "the ninth of March",
+        "the twentieth of March"
+      ],
+      "answer": 0,
+      "feedback": "Doğum günü 12 mart.",
+      "evidence": "My birthday is on the twelfth of March."
+    },
+    {
+      "id": "q2",
+      "prompt": "What do her parents give her?",
+      "options": [
+        "a book",
+        "a new bike",
+        "a doll",
+        "a phone"
+      ],
+      "answer": 1,
+      "feedback": "Ailesi yeni bir bisiklet veriyor.",
+      "evidence": "My parents give me a new bike."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who makes the cake?",
+      "options": [
+        "her mum",
+        "Aya",
+        "her grandmother",
+        "her friends"
+      ],
+      "answer": 2,
+      "feedback": "Pastayı büyükannesi yapıyor.",
+      "evidence": "My grandmother makes a big cake."
+    }
+  ]
+}

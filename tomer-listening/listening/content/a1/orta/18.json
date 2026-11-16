@@ -1,0 +1,116 @@
+{
+  "id": "a1-orta-18",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the swimming pool",
+  "topic": "Spor ve kurallar",
+  "instructions": "Ella yüzme havuzunda bilgi alıyor. Fiyatlar, saatler ve kurallara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Pool staff",
+      "voice": "male"
+    },
+    "ella": {
+      "name": "Ella",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ella",
+      "text": "Hello. How much is it to swim?"
+    },
+    {
+      "speaker": "staff",
+      "text": "It's four pounds for adults and two pounds for children."
+    },
+    {
+      "speaker": "ella",
+      "text": "One adult and one child, please. My son is eight."
+    },
+    {
+      "speaker": "staff",
+      "text": "That's six pounds. Do you have swimming caps?"
+    },
+    {
+      "speaker": "ella",
+      "text": "No, we don't. Do we need them?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, you do. They are one pound each."
+    },
+    {
+      "speaker": "ella",
+      "text": "OK, two caps, please. What time does the pool close?"
+    },
+    {
+      "speaker": "staff",
+      "text": "At nine o'clock. But children can only swim until seven."
+    },
+    {
+      "speaker": "ella",
+      "text": "Thank you very much."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much is it for a child?",
+      "options": [
+        "one pound",
+        "two pounds",
+        "four pounds",
+        "six pounds"
+      ],
+      "answer": 1,
+      "feedback": "Çocuklar için iki pound (two pounds); yetişkinler dört.",
+      "evidence": "two pounds for children."
+    },
+    {
+      "id": "q2",
+      "prompt": "How old is Ella's son?",
+      "options": [
+        "six",
+        "seven",
+        "nine",
+        "eight"
+      ],
+      "answer": 3,
+      "feedback": "Oğlu sekiz (eight) yaşında.",
+      "evidence": "My son is eight."
+    },
+    {
+      "id": "q3",
+      "prompt": "What do they need to buy?",
+      "options": [
+        "two swimming caps",
+        "towels",
+        "one swimming cap",
+        "goggles"
+      ],
+      "answer": 0,
+      "feedback": "Bone zorunlu; iki bone (two caps) alıyorlar.",
+      "evidence": "OK, two caps, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "Until what time can children swim?",
+      "options": [
+        "until nine",
+        "until six",
+        "until seven",
+        "until eight"
+      ],
+      "answer": 2,
+      "feedback": "Havuz dokuzda kapanıyor ama çocuklar yediye kadar (until seven) yüzebilir.",
+      "evidence": "But children can only swim until seven."
+    }
+  ]
+}

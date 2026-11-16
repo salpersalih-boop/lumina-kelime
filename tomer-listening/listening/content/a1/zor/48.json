@@ -1,0 +1,133 @@
+{
+  "id": "a1-zor-48",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "At the clothes shop till",
+  "topic": "Alışveriş ve iade",
+  "instructions": "Bir kadın mağazada kıyafet alıyor ve bir şeyi değiştiriyor. Uzun bir diyalog; fiyatları ve değişikliği takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Shop assistant",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello. Are you ready to pay?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. This dress and these two T-shirts, please."
+    },
+    {
+      "speaker": "a",
+      "text": "The dress is thirty pounds, and the T-shirts are ten pounds each."
+    },
+    {
+      "speaker": "b",
+      "text": "Oh, wait. This T-shirt is too big. Do you have it in small?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, but only in white, not grey."
+    },
+    {
+      "speaker": "b",
+      "text": "White is OK."
+    },
+    {
+      "speaker": "a",
+      "text": "So, one dress and two T-shirts. That's fifty pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "Can I pay by card?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, of course. Do you want a bag? It's ten pence."
+    },
+    {
+      "speaker": "b",
+      "text": "No, thanks. I have one."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much is the dress?",
+      "options": [
+        "ten pounds",
+        "thirteen pounds",
+        "thirty pounds",
+        "fifty pounds"
+      ],
+      "answer": 2,
+      "feedback": "Elbise otuz pound.",
+      "evidence": "The dress is thirty pounds"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem with one T-shirt?",
+      "options": [
+        "It's too small.",
+        "It's too big.",
+        "It's the wrong colour.",
+        "It's broken."
+      ],
+      "answer": 1,
+      "feedback": "Tişörtlerden biri çok büyük.",
+      "evidence": "This T-shirt is too big."
+    },
+    {
+      "id": "q3",
+      "prompt": "What colour is the new T-shirt?",
+      "options": [
+        "grey",
+        "black",
+        "blue",
+        "white"
+      ],
+      "answer": 3,
+      "feedback": "Small sadece beyazda var.",
+      "evidence": "Yes, but only in white, not grey."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does she pay?",
+      "options": [
+        "fifty pounds",
+        "forty pounds",
+        "thirty pounds",
+        "sixty pounds"
+      ],
+      "answer": 0,
+      "feedback": "Toplam elli pound.",
+      "evidence": "That's fifty pounds."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why doesn't she want a bag?",
+      "options": [
+        "It's expensive.",
+        "She has one.",
+        "The shop has no bags.",
+        "She doesn't need one."
+      ],
+      "answer": 1,
+      "feedback": "Kendi çantası var.",
+      "evidence": "No, thanks. I have one."
+    }
+  ]
+}

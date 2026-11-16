@@ -1,0 +1,103 @@
+{
+  "id": "a1-kolay-01",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Meet Emma",
+  "topic": "Tanışma ve aile",
+  "instructions": "Emma kendini ve ailesini tanıtıyor. Metni dinle, sonra soruları cevapla.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "emma": {
+      "name": "Emma",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "emma",
+      "text": "Hi! My name is Emma."
+    },
+    {
+      "speaker": "emma",
+      "text": "I am twenty years old."
+    },
+    {
+      "speaker": "emma",
+      "text": "I am from Canada."
+    },
+    {
+      "speaker": "emma",
+      "text": "I am a student."
+    },
+    {
+      "speaker": "emma",
+      "text": "I have a small family."
+    },
+    {
+      "speaker": "emma",
+      "text": "My mother is a nurse."
+    },
+    {
+      "speaker": "emma",
+      "text": "My father is a cook."
+    },
+    {
+      "speaker": "emma",
+      "text": "I have one sister. Her name is Lily."
+    },
+    {
+      "speaker": "emma",
+      "text": "She is twelve."
+    },
+    {
+      "speaker": "emma",
+      "text": "We have a dog. His name is Max."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Emma from?",
+      "options": [
+        "England",
+        "Canada",
+        "Australia",
+        "the USA"
+      ],
+      "answer": 1,
+      "feedback": "Emma memleketini açıkça söylüyor. Diğer ülkeler metinde hiç geçmiyor.",
+      "evidence": "I am from Canada."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is Emma's mother's job?",
+      "options": [
+        "a teacher",
+        "a cook",
+        "a nurse",
+        "a doctor"
+      ],
+      "answer": 2,
+      "feedback": "Annesi hemşire (nurse). \"Cook\" babasının mesleği — çeldirici bu.",
+      "evidence": "My mother is a nurse."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who is Lily?",
+      "options": [
+        "Emma's mother",
+        "Emma's dog",
+        "Emma's friend",
+        "Emma's sister"
+      ],
+      "answer": 3,
+      "feedback": "Lily, Emma'nın kız kardeşi. Köpeğin adı Max.",
+      "evidence": "I have one sister. Her name is Lily."
+    }
+  ]
+}

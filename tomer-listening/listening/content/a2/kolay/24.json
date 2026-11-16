@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-24",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Why I love trains",
+  "topic": "Seyahat tercihi",
+  "instructions": "Peter neden trenle seyahat etmeyi sevdiğini anlatıyor. Karşılaştırmalara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "peter": {
+      "name": "Peter",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "peter",
+      "text": "I travel a lot for work, and I always go by train if I can."
+    },
+    {
+      "speaker": "peter",
+      "text": "Flying is faster, but airports are stressful and you wait for hours."
+    },
+    {
+      "speaker": "peter",
+      "text": "On the train, I can read, work on my laptop or just look out of the window."
+    },
+    {
+      "speaker": "peter",
+      "text": "Trains are also better for the environment than planes or cars."
+    },
+    {
+      "speaker": "peter",
+      "text": "Last month, I went from London to Edinburgh by train. It took four and a half hours."
+    },
+    {
+      "speaker": "peter",
+      "text": "The only problem is that train tickets can be expensive if you buy them late."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Peter say about flying?",
+      "options": [
+        "It's cheaper.",
+        "It's faster, but airports are stressful.",
+        "It's more comfortable.",
+        "It's better for the environment."
+      ],
+      "answer": 1,
+      "feedback": "Uçmak daha hızlı ama havalimanları stresli.",
+      "evidence": "Flying is faster, but airports are stressful"
+    },
+    {
+      "id": "q2",
+      "prompt": "How long did the trip to Edinburgh take?",
+      "options": [
+        "four hours",
+        "four and a half hours",
+        "five and a half hours",
+        "two and a half hours"
+      ],
+      "answer": 1,
+      "feedback": "Edinburgh yolculuğu dört buçuk saat sürdü.",
+      "evidence": "It took four and a half hours."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the problem with trains?",
+      "options": [
+        "They're slow.",
+        "They're dirty.",
+        "Tickets can be expensive if you buy them late.",
+        "There's no internet."
+      ],
+      "answer": 2,
+      "feedback": "Geç alınırsa biletler pahalı olabiliyor.",
+      "evidence": "train tickets can be expensive if you buy them late."
+    }
+  ]
+}

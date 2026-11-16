@@ -1,0 +1,132 @@
+{
+  "id": "a1-orta-06",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Hotel check-in",
+  "topic": "Otel",
+  "instructions": "David otele giriş yapıyor. Uzun bir diyalog; resepsiyonist bir bilgiyi yanlış söylüyor, düzeltmeye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "rec": {
+      "name": "Receptionist",
+      "voice": "female"
+    },
+    "david": {
+      "name": "David",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "rec",
+      "text": "Good evening, welcome to the Blue Sea Hotel."
+    },
+    {
+      "speaker": "david",
+      "text": "Good evening. I have a reservation. My name is David Clark."
+    },
+    {
+      "speaker": "rec",
+      "text": "Let me see. Yes, Mister Clark. A double room for three nights."
+    },
+    {
+      "speaker": "david",
+      "text": "No, sorry, it's for four nights. I leave on Sunday."
+    },
+    {
+      "speaker": "rec",
+      "text": "Oh, you're right. Four nights, from Wednesday to Sunday."
+    },
+    {
+      "speaker": "rec",
+      "text": "Your room is number two hundred and fifteen, on the second floor."
+    },
+    {
+      "speaker": "david",
+      "text": "Thank you. What time is breakfast?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Breakfast is from seven to ten o'clock in the restaurant, next to the lift."
+    },
+    {
+      "speaker": "david",
+      "text": "Great. Is there a swimming pool?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Yes, there is. It's open from nine in the morning to eight in the evening."
+    },
+    {
+      "speaker": "david",
+      "text": "And is there wifi in the room?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Yes. The password is on the card with your key."
+    },
+    {
+      "speaker": "david",
+      "text": "Perfect. Thank you very much."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many nights is David staying?",
+      "options": [
+        "two",
+        "three",
+        "four",
+        "five"
+      ],
+      "answer": 2,
+      "feedback": "Resepsiyonist önce üç gece (three nights) diyor ama David düzeltiyor: dört gece (four nights).",
+      "evidence": "No, sorry, it's for four nights."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is David's room number?",
+      "options": [
+        "two hundred and five",
+        "two hundred and fifteen",
+        "two hundred and fifty",
+        "three hundred and fifteen"
+      ],
+      "answer": 1,
+      "feedback": "Oda numarası 215 (two hundred and fifteen). \"Fifteen\" ile \"fifty\" karışmasın.",
+      "evidence": "Your room is number two hundred and fifteen"
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is the restaurant?",
+      "options": [
+        "next to the pool",
+        "on the second floor",
+        "opposite reception",
+        "next to the lift"
+      ],
+      "answer": 3,
+      "feedback": "Restoran asansörün yanında (next to the lift). İkinci kat David'in odasının katı.",
+      "evidence": "in the restaurant, next to the lift."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the wifi password?",
+      "options": [
+        "on the card with the key",
+        "on the door",
+        "at reception",
+        "in the restaurant"
+      ],
+      "answer": 0,
+      "feedback": "Şifre anahtarla birlikte verilen kartın üstünde.",
+      "evidence": "The password is on the card with your key."
+    }
+  ]
+}

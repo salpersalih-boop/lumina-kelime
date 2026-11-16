@@ -1,0 +1,113 @@
+{
+  "id": "a1-zor-25",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Weather around the world",
+  "topic": "Hava durumu (şehirler)",
+  "instructions": "Bir sunucu farklı şehirlerin hava durumunu veriyor. Şehirleri ve sıcaklıkları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Weather",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Here is today's weather around the world."
+    },
+    {
+      "speaker": "host",
+      "text": "In London, it's cloudy and cool, about twelve degrees."
+    },
+    {
+      "speaker": "host",
+      "text": "In Paris, it's raining, and it's thirteen degrees."
+    },
+    {
+      "speaker": "host",
+      "text": "It's very hot in Cairo today, thirty-five degrees and sunny."
+    },
+    {
+      "speaker": "host",
+      "text": "In Moscow, it's snowing! It's minus five."
+    },
+    {
+      "speaker": "host",
+      "text": "And in Tokyo, it's sunny, but it's very windy. It's twenty degrees."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the weather like in London?",
+      "options": [
+        "rainy",
+        "cloudy and cool",
+        "sunny",
+        "snowy"
+      ],
+      "answer": 1,
+      "feedback": "Londra bulutlu ve serin, yaklaşık on iki derece.",
+      "evidence": "In London, it's cloudy and cool"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is it raining?",
+      "options": [
+        "in London",
+        "in Tokyo",
+        "in Paris",
+        "in Moscow"
+      ],
+      "answer": 2,
+      "feedback": "Paris'te yağmur yağıyor.",
+      "evidence": "In Paris, it's raining"
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the temperature in Cairo?",
+      "options": [
+        "thirty-five degrees",
+        "twenty-five degrees",
+        "fifteen degrees",
+        "thirty degrees"
+      ],
+      "answer": 0,
+      "feedback": "Kahire otuz beş derece ve güneşli.",
+      "evidence": "thirty-five degrees and sunny."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is it snowing?",
+      "options": [
+        "in Paris",
+        "in London",
+        "in Tokyo",
+        "in Moscow"
+      ],
+      "answer": 3,
+      "feedback": "Moskova'da kar yağıyor, eksi beş.",
+      "evidence": "In Moscow, it's snowing!"
+    },
+    {
+      "id": "q5",
+      "prompt": "What is the problem with the weather in Tokyo?",
+      "options": [
+        "It's very cold.",
+        "It's very windy.",
+        "It's raining.",
+        "It's very hot."
+      ],
+      "answer": 1,
+      "feedback": "Tokyo güneşli ama çok rüzgârlı.",
+      "evidence": "it's sunny, but it's very windy."
+    }
+  ]
+}

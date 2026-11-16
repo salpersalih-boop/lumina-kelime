@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-10",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My new phone",
+  "topic": "Teknoloji ve alışveriş",
+  "instructions": "Leo yeni telefonunu eski telefonuyla karşılaştırıyor. Fiyat ve özelliklere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "leo",
+      "text": "Yesterday I bought a new phone."
+    },
+    {
+      "speaker": "leo",
+      "text": "My old phone was five years old and very slow."
+    },
+    {
+      "speaker": "leo",
+      "text": "The new one is bigger, and the camera is much better."
+    },
+    {
+      "speaker": "leo",
+      "text": "It cost three hundred pounds. It was expensive, but I saved money for six months."
+    },
+    {
+      "speaker": "leo",
+      "text": "I chose a black one, because the white one wasn't in the shop."
+    },
+    {
+      "speaker": "leo",
+      "text": "Now I can take great photos of my dog!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why did Leo buy a new phone?",
+      "options": [
+        "He lost his old phone.",
+        "His old phone was very slow.",
+        "His old phone was broken.",
+        "It was a present."
+      ],
+      "answer": 1,
+      "feedback": "Eski telefonu beş yaşındaydı ve çok yavaştı (very slow).",
+      "evidence": "My old phone was five years old and very slow."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much did the phone cost?",
+      "options": [
+        "three hundred pounds",
+        "six hundred pounds",
+        "thirty pounds",
+        "five hundred pounds"
+      ],
+      "answer": 0,
+      "feedback": "Telefon üç yüz pound (three hundred pounds). Altı, para biriktirdiği ay sayısı.",
+      "evidence": "It cost three hundred pounds."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why did Leo choose a black phone?",
+      "options": [
+        "It was cheaper.",
+        "Black is his favourite colour.",
+        "His dog likes it.",
+        "The white one wasn't in the shop."
+      ],
+      "answer": 3,
+      "feedback": "Beyaz olan mağazada yoktu, bu yüzden siyahı aldı.",
+      "evidence": "because the white one wasn't in the shop."
+    }
+  ]
+}

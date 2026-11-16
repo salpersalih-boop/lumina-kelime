@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-15",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A family photo",
+  "topic": "Aile ve tanımlama",
+  "instructions": "Zeynep bir aile fotoğrafını anlatıyor. Kimin kim olduğunu ve yerlerini karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "zeynep": {
+      "name": "Zeynep",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "zeynep",
+      "text": "This is a photo of my family at my grandmother's birthday."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "My grandmother is in the middle. She is wearing a purple dress. She is eighty today!"
+    },
+    {
+      "speaker": "zeynep",
+      "text": "On her left is my grandfather. He has white hair and glasses."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "The tall man behind them is my uncle Murat. He lives in Germany."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "The woman with long black hair is not my mother. She is my aunt, Selin."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "My mother is next to her. She has short hair."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "And the little boy with the cake is my cousin, Efe. He's five."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "Where am I? I'm not in the photo. I took it!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is Zeynep's grandmother?",
+      "options": [
+        "seventy",
+        "eighteen",
+        "eighty",
+        "eighty-five"
+      ],
+      "answer": 2,
+      "feedback": "Büyükannesi bugün seksen (eighty) yaşında.",
+      "evidence": "She is eighty today!"
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Zeynep's grandfather look like?",
+      "options": [
+        "He is tall.",
+        "He has white hair and glasses.",
+        "He has black hair.",
+        "He is wearing a purple shirt."
+      ],
+      "answer": 1,
+      "feedback": "Dedesinin beyaz saçları ve gözlüğü var (white hair and glasses). Mor elbise büyükannesinin.",
+      "evidence": "He has white hair and glasses."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who is the woman with long black hair?",
+      "options": [
+        "Zeynep's mother",
+        "Zeynep's grandmother",
+        "Zeynep's cousin",
+        "Zeynep's aunt"
+      ],
+      "answer": 3,
+      "feedback": "Uzun siyah saçlı kadın annesi değil (not my mother), teyzesi/halası Selin.",
+      "evidence": "She is my aunt, Selin."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where does uncle Murat live?",
+      "options": [
+        "in Germany",
+        "in Turkey",
+        "with the grandmother",
+        "next to Zeynep"
+      ],
+      "answer": 0,
+      "feedback": "Murat amca Almanya'da (in Germany) yaşıyor.",
+      "evidence": "He lives in Germany."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why isn't Zeynep in the photo?",
+      "options": [
+        "She was ill.",
+        "She was at school.",
+        "She took the photo.",
+        "She was in Germany."
+      ],
+      "answer": 2,
+      "feedback": "Fotoğrafta yok çünkü fotoğrafı o çekti (I took it).",
+      "evidence": "I took it!"
+    }
+  ]
+}

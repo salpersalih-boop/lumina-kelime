@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-62",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Sunday evening",
+  "topic": "Hafta sonu",
+  "instructions": "Omar pazar akşamını anlatıyor. Sıraya ve saatlere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Omar",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "On Sunday evening, I am at home with my family."
+    },
+    {
+      "speaker": "s",
+      "text": "We have dinner at six o'clock."
+    },
+    {
+      "speaker": "s",
+      "text": "After dinner, I do my homework."
+    },
+    {
+      "speaker": "s",
+      "text": "Then we watch a film together."
+    },
+    {
+      "speaker": "s",
+      "text": "I go to bed at nine because I have school on Monday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time is dinner?",
+      "options": [
+        "at five o'clock",
+        "at six o'clock",
+        "at seven o'clock",
+        "at nine o'clock"
+      ],
+      "answer": 1,
+      "feedback": "Akşam yemeği saat altıda.",
+      "evidence": "We have dinner at six o'clock."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Omar do after dinner?",
+      "options": [
+        "He watches a film.",
+        "He does his homework.",
+        "He goes to bed.",
+        "He plays games."
+      ],
+      "answer": 1,
+      "feedback": "Yemekten sonra ödevini yapıyor.",
+      "evidence": "After dinner, I do my homework."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why does he go to bed at nine?",
+      "options": [
+        "He has school on Monday.",
+        "He is tired.",
+        "His mum says so.",
+        "The film finishes."
+      ],
+      "answer": 0,
+      "feedback": "Pazartesi okulu olduğu için dokuzda yatıyor.",
+      "evidence": "because I have school on Monday."
+    }
+  ]
+}

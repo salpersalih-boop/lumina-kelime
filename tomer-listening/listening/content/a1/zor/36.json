@@ -1,0 +1,105 @@
+{
+  "id": "a1-zor-36",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Shopping centre announcement",
+  "topic": "Alışveriş merkezi anonsu",
+  "instructions": "Alışveriş merkezinde kısa bir anons. Kısa ama her bilgi önemli. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Shopping centre",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Hello, shoppers. The car park on level two is full."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please use level three or four."
+    },
+    {
+      "speaker": "voice",
+      "text": "The toilets on the ground floor are closed. Please use the toilets on the first floor."
+    },
+    {
+      "speaker": "voice",
+      "text": "The shopping centre closes in thirty minutes, at eight."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which car park level is full?",
+      "options": [
+        "level one",
+        "level two",
+        "level three",
+        "level four"
+      ],
+      "answer": 1,
+      "feedback": "İkinci kattaki otopark dolu.",
+      "evidence": "The car park on level two is full."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which levels can people use?",
+      "options": [
+        "one and two",
+        "two and three",
+        "three or four",
+        "only four"
+      ],
+      "answer": 2,
+      "feedback": "Üçüncü ya da dördüncü katı kullanabilirler.",
+      "evidence": "Please use level three or four."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where are the open toilets?",
+      "options": [
+        "on the ground floor",
+        "on level two",
+        "on the first floor",
+        "in the car park"
+      ],
+      "answer": 2,
+      "feedback": "Zemin kattaki tuvaletler kapalı; birinci katta açık.",
+      "evidence": "Please use the toilets on the first floor."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time does the shopping centre close?",
+      "options": [
+        "at eight",
+        "at half past eight",
+        "at seven",
+        "at nine"
+      ],
+      "answer": 0,
+      "feedback": "Otuz dakika sonra, saat sekizde kapanıyor.",
+      "evidence": "at eight."
+    },
+    {
+      "id": "q5",
+      "prompt": "What time is it now?",
+      "options": [
+        "eight o'clock",
+        "half past eight",
+        "seven o'clock",
+        "half past seven"
+      ],
+      "answer": 3,
+      "feedback": "Otuz dakika sonra sekiz olacak; şu an yedi buçuk.",
+      "evidence": "The shopping centre closes in thirty minutes"
+    }
+  ]
+}

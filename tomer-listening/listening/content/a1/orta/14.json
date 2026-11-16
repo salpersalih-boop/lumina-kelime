@@ -1,0 +1,128 @@
+{
+  "id": "a1-orta-14",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Weekend plans",
+  "topic": "Plan yapma",
+  "instructions": "Jack ve Lily hafta sonu için plan yapıyor. Uzun bir diyalog; önerilen ve seçilen planı ayırt et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jack": {
+      "name": "Jack",
+      "voice": "male"
+    },
+    "lily": {
+      "name": "Lily",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jack",
+      "text": "Lily, what do you want to do this weekend?"
+    },
+    {
+      "speaker": "lily",
+      "text": "I don't know. What about the beach on Saturday?"
+    },
+    {
+      "speaker": "jack",
+      "text": "The weather isn't good on Saturday. It's going to rain."
+    },
+    {
+      "speaker": "lily",
+      "text": "Oh no. What about the cinema, then? There is a new comedy."
+    },
+    {
+      "speaker": "jack",
+      "text": "I saw it last week. It's not very funny."
+    },
+    {
+      "speaker": "lily",
+      "text": "OK. Do you want to visit the science museum?"
+    },
+    {
+      "speaker": "jack",
+      "text": "Yes, good idea! It's open on Saturday from nine to five."
+    },
+    {
+      "speaker": "lily",
+      "text": "Great. Let's go in the morning, at ten."
+    },
+    {
+      "speaker": "jack",
+      "text": "And on Sunday?"
+    },
+    {
+      "speaker": "lily",
+      "text": "Sunday is sunny. Let's have a picnic in the park with my sister."
+    },
+    {
+      "speaker": "jack",
+      "text": "Perfect. I can make sandwiches."
+    },
+    {
+      "speaker": "lily",
+      "text": "And I can bring the drinks and some fruit."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why don't they go to the beach?",
+      "options": [
+        "It's far.",
+        "It's going to rain.",
+        "It's closed.",
+        "Jack doesn't like it."
+      ],
+      "answer": 1,
+      "feedback": "Cumartesi yağmur yağacak (It's going to rain), bu yüzden plaja gitmiyorlar.",
+      "evidence": "It's going to rain."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why doesn't Jack want to see the comedy?",
+      "options": [
+        "He saw it last week.",
+        "It's too long.",
+        "It's very expensive.",
+        "He doesn't like the cinema."
+      ],
+      "answer": 0,
+      "feedback": "Jack filmi geçen hafta izledi (I saw it last week) ve pek komik bulmadı.",
+      "evidence": "I saw it last week."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time are they going to the museum?",
+      "options": [
+        "at nine",
+        "at five",
+        "at ten",
+        "at two"
+      ],
+      "answer": 2,
+      "feedback": "Müzeye saat onda (at ten) gidecekler. Dokuz ve beş, müzenin açılış-kapanış saatleri.",
+      "evidence": "Let's go in the morning, at ten."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is Jack going to bring to the picnic?",
+      "options": [
+        "drinks",
+        "fruit",
+        "cake",
+        "sandwiches"
+      ],
+      "answer": 3,
+      "feedback": "Jack sandviç (sandwiches) yapacak. İçecek ve meyveyi Lily getirecek.",
+      "evidence": "I can make sandwiches."
+    }
+  ]
+}

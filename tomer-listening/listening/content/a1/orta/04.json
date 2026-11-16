@@ -1,0 +1,115 @@
+{
+  "id": "a1-orta-04",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the doctor's",
+  "topic": "Sağlık",
+  "instructions": "Paul doktora gidiyor. Ne zaman başladığına ve işe ne zaman dönebileceğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "doctor": {
+      "name": "Doctor",
+      "voice": "female"
+    },
+    "paul": {
+      "name": "Paul",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "doctor",
+      "text": "Hello, Paul. What's the problem?"
+    },
+    {
+      "speaker": "paul",
+      "text": "I have a headache and a sore throat."
+    },
+    {
+      "speaker": "doctor",
+      "text": "When did it start?"
+    },
+    {
+      "speaker": "paul",
+      "text": "On Monday. Today is Wednesday, so two days."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Do you have a temperature?"
+    },
+    {
+      "speaker": "paul",
+      "text": "No, I don't. But I'm very tired."
+    },
+    {
+      "speaker": "doctor",
+      "text": "OK. It's a cold. Drink lots of water and stay in bed for two days."
+    },
+    {
+      "speaker": "paul",
+      "text": "Can I go to work tomorrow?"
+    },
+    {
+      "speaker": "doctor",
+      "text": "No. Stay at home on Thursday and Friday. You can go back on Monday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Paul's problem?",
+      "options": [
+        "a stomach ache",
+        "a headache and a sore throat",
+        "a high temperature",
+        "a bad leg"
+      ],
+      "answer": 1,
+      "feedback": "Başı ağrıyor (headache) ve boğazı ağrıyor (sore throat). Ateşi yok.",
+      "evidence": "I have a headache and a sore throat."
+    },
+    {
+      "id": "q2",
+      "prompt": "When did it start?",
+      "options": [
+        "on Monday",
+        "on Tuesday",
+        "on Wednesday",
+        "on Friday"
+      ],
+      "answer": 0,
+      "feedback": "Pazartesi (Monday) başladı. \"Wednesday\" bugünün günü, çeldirici bu.",
+      "evidence": "On Monday."
+    },
+    {
+      "id": "q3",
+      "prompt": "Does Paul have a temperature?",
+      "options": [
+        "Yes, a high one.",
+        "No, he doesn't.",
+        "The doctor doesn't ask."
+      ],
+      "answer": 1,
+      "feedback": "Doktor soruyor, Paul hayır diyor (No, I don't). Sadece çok yorgun.",
+      "evidence": "No, I don't. But I'm very tired."
+    },
+    {
+      "id": "q4",
+      "prompt": "When can Paul go back to work?",
+      "options": [
+        "tomorrow",
+        "on Thursday",
+        "on Friday",
+        "on Monday"
+      ],
+      "answer": 3,
+      "feedback": "Perşembe ve cuma evde kalacak, işe pazartesi (Monday) dönebilir.",
+      "evidence": "You can go back on Monday."
+    }
+  ]
+}

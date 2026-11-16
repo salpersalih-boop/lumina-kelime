@@ -1,0 +1,120 @@
+{
+  "id": "a2-orta-14",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Ordering food by phone",
+  "topic": "Telefonla sipariş",
+  "instructions": "Nick telefonda yemek sipariş ediyor. Siparişi, değişikliği ve teslim süresini takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "shop": {
+      "name": "Restaurant",
+      "voice": "female"
+    },
+    "nick": {
+      "name": "Nick",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "shop",
+      "text": "Good evening, Golden Dragon. What would you like to order?"
+    },
+    {
+      "speaker": "nick",
+      "text": "Hi. Can I have two chicken noodles and one vegetable rice, please?"
+    },
+    {
+      "speaker": "shop",
+      "text": "Anything to drink?"
+    },
+    {
+      "speaker": "nick",
+      "text": "Three bottles of water. Oh, and change one chicken noodles to beef, please."
+    },
+    {
+      "speaker": "shop",
+      "text": "So, one chicken noodles, one beef noodles, one vegetable rice and three waters."
+    },
+    {
+      "speaker": "nick",
+      "text": "That's right. How long will it take?"
+    },
+    {
+      "speaker": "shop",
+      "text": "About forty-five minutes. We're very busy tonight."
+    },
+    {
+      "speaker": "nick",
+      "text": "OK. Can I pay by card when it arrives?"
+    },
+    {
+      "speaker": "shop",
+      "text": "Sorry, our driver only takes cash."
+    },
+    {
+      "speaker": "nick",
+      "text": "No problem. I've got cash."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many drinks does Nick order?",
+      "options": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "answer": 2,
+      "feedback": "Üç şişe su (three bottles of water) istiyor.",
+      "evidence": "Three bottles of water."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Nick change?",
+      "options": [
+        "one chicken noodles to beef",
+        "the rice to noodles",
+        "the water to juice",
+        "nothing"
+      ],
+      "answer": 0,
+      "feedback": "Bir tavuklu eriştesini dana etli (beef) yapıyor.",
+      "evidence": "change one chicken noodles to beef, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why will the food take forty-five minutes?",
+      "options": [
+        "The driver is new.",
+        "They're very busy tonight.",
+        "Nick lives far away.",
+        "The food is difficult to cook."
+      ],
+      "answer": 1,
+      "feedback": "Bu akşam çok yoğunlar (very busy tonight).",
+      "evidence": "We're very busy tonight."
+    },
+    {
+      "id": "q4",
+      "prompt": "How will Nick pay?",
+      "options": [
+        "by card",
+        "online",
+        "by phone",
+        "with cash"
+      ],
+      "answer": 3,
+      "feedback": "Kurye sadece nakit (cash) alıyor; Nick'in nakdi var.",
+      "evidence": "Sorry, our driver only takes cash."
+    }
+  ]
+}

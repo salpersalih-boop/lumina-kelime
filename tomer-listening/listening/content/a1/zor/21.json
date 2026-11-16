@@ -1,0 +1,137 @@
+{
+  "id": "a1-zor-21",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Lost in the city",
+  "topic": "Yol tarifi",
+  "instructions": "Turist Eva yolunu kaybetmiş ve bir polisten yardım istiyor. Uzun bir diyalog; yön ifadelerine ve tarifteki değişikliğe dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "eva": {
+      "name": "Eva",
+      "voice": "female"
+    },
+    "officer": {
+      "name": "Police officer",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "eva",
+      "text": "Excuse me. I'm lost. I'm looking for the Grand Hotel."
+    },
+    {
+      "speaker": "officer",
+      "text": "The Grand Hotel? Is it on King Street?"
+    },
+    {
+      "speaker": "eva",
+      "text": "No, it's on Queen Street. Sorry, I have the address here."
+    },
+    {
+      "speaker": "officer",
+      "text": "Ah, Queen Street. That's not far. Go straight on to the traffic lights."
+    },
+    {
+      "speaker": "eva",
+      "text": "Straight on to the traffic lights. OK."
+    },
+    {
+      "speaker": "officer",
+      "text": "Then turn right. Walk past the bank and the post office."
+    },
+    {
+      "speaker": "eva",
+      "text": "Past the bank and the post office."
+    },
+    {
+      "speaker": "officer",
+      "text": "Then turn left into Queen Street. The hotel is on the right, opposite the park."
+    },
+    {
+      "speaker": "eva",
+      "text": "How long does it take on foot?"
+    },
+    {
+      "speaker": "officer",
+      "text": "About ten minutes. You can take the number six bus, but walking is faster now. The traffic is very bad."
+    },
+    {
+      "speaker": "eva",
+      "text": "Thank you so much!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the name of the street of the hotel?",
+      "options": [
+        "King Street",
+        "Queen Street",
+        "Park Street",
+        "Bank Street"
+      ],
+      "answer": 1,
+      "feedback": "Önce King Street denir ama otel Queen Street'te.",
+      "evidence": "No, it's on Queen Street."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where should Eva turn right?",
+      "options": [
+        "at the traffic lights",
+        "at the bank",
+        "at the post office",
+        "at the park"
+      ],
+      "answer": 0,
+      "feedback": "Trafik ışıklarına kadar düz git, sonra sağa dön.",
+      "evidence": "Go straight on to the traffic lights."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Eva walk past?",
+      "options": [
+        "the park and the bank",
+        "the post office and a café",
+        "the bank and the post office",
+        "a school and a bank"
+      ],
+      "answer": 2,
+      "feedback": "Bankanın ve postanenin önünden geçecek.",
+      "evidence": "Walk past the bank and the post office."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the hotel?",
+      "options": [
+        "on the left, next to the bank",
+        "on the left, opposite the post office",
+        "next to the traffic lights",
+        "on the right, opposite the park"
+      ],
+      "answer": 3,
+      "feedback": "Otel sağda, parkın karşısında.",
+      "evidence": "The hotel is on the right, opposite the park."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why is walking better than the bus?",
+      "options": [
+        "The bus is expensive.",
+        "The traffic is very bad.",
+        "There's no bus.",
+        "The bus stop is far."
+      ],
+      "answer": 1,
+      "feedback": "Trafik çok kötü; yürümek daha hızlı.",
+      "evidence": "The traffic is very bad."
+    }
+  ]
+}

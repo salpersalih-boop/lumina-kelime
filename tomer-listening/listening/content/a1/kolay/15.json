@@ -1,0 +1,87 @@
+{
+  "id": "a1-kolay-15",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My morning",
+  "topic": "Günlük rutin",
+  "instructions": "Hana sabah rutinini anlatıyor. Saatlere ve sıraya dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "hana": {
+      "name": "Hana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "hana",
+      "text": "I get up at seven o'clock every day."
+    },
+    {
+      "speaker": "hana",
+      "text": "First, I have a shower."
+    },
+    {
+      "speaker": "hana",
+      "text": "Then I have breakfast with my brother. I eat eggs and bread, and I drink milk."
+    },
+    {
+      "speaker": "hana",
+      "text": "I don't drink coffee."
+    },
+    {
+      "speaker": "hana",
+      "text": "At eight o'clock, I take the bus to school."
+    },
+    {
+      "speaker": "hana",
+      "text": "The bus is always full!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time does Hana get up?",
+      "options": [
+        "at six o'clock",
+        "at seven o'clock",
+        "at eight o'clock",
+        "at half past seven"
+      ],
+      "answer": 1,
+      "feedback": "Saat yedide (at seven) kalkıyor. Sekiz, otobüs saati.",
+      "evidence": "I get up at seven o'clock every day."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Hana drink at breakfast?",
+      "options": [
+        "coffee",
+        "tea",
+        "milk",
+        "juice"
+      ],
+      "answer": 2,
+      "feedback": "Süt (milk) içiyor; kahve içmiyor.",
+      "evidence": "and I drink milk."
+    },
+    {
+      "id": "q3",
+      "prompt": "How does Hana go to school?",
+      "options": [
+        "by bus",
+        "by car",
+        "on foot",
+        "by bike"
+      ],
+      "answer": 0,
+      "feedback": "Saat sekizde otobüsle (take the bus) okula gidiyor.",
+      "evidence": "I take the bus to school."
+    }
+  ]
+}

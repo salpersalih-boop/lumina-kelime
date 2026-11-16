@@ -1,0 +1,113 @@
+{
+  "id": "a2-zor-40",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Hospital visiting hours",
+  "topic": "Hastane bilgilendirmesi",
+  "instructions": "Bir hastane ziyaret kurallarını anlatan bir kayıt. Saatleri ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Hospital",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Thank you for calling City Hospital. Here is information about visiting hours."
+    },
+    {
+      "speaker": "voice",
+      "text": "Visiting hours are from two to four in the afternoon, and from six to eight in the evening."
+    },
+    {
+      "speaker": "voice",
+      "text": "On the children's ward, parents can visit at any time."
+    },
+    {
+      "speaker": "voice",
+      "text": "Only two visitors can see a patient at the same time."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please do not bring flowers. You can bring fruit, books or magazines."
+    },
+    {
+      "speaker": "voice",
+      "text": "The hospital car park is very full. We recommend taking bus number eleven, which stops at the main entrance."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When are the afternoon visiting hours?",
+      "options": [
+        "from two to four",
+        "from six to eight",
+        "from twelve to two",
+        "from four to six"
+      ],
+      "answer": 0,
+      "feedback": "Öğleden sonra ziyaret saatleri ikiden dörde.",
+      "evidence": "Visiting hours are from two to four in the afternoon"
+    },
+    {
+      "id": "q2",
+      "prompt": "Who can visit at any time?",
+      "options": [
+        "grandparents",
+        "doctors",
+        "parents on the children's ward",
+        "everyone"
+      ],
+      "answer": 2,
+      "feedback": "Çocuk servisinde ebeveynler her zaman ziyaret edebilir.",
+      "evidence": "On the children's ward, parents can visit at any time."
+    },
+    {
+      "id": "q3",
+      "prompt": "How many visitors can see a patient at the same time?",
+      "options": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "answer": 1,
+      "feedback": "Aynı anda sadece iki ziyaretçi.",
+      "evidence": "Only two visitors can see a patient at the same time."
+    },
+    {
+      "id": "q4",
+      "prompt": "What can't visitors bring?",
+      "options": [
+        "fruit",
+        "books",
+        "magazines",
+        "flowers"
+      ],
+      "answer": 3,
+      "feedback": "Çiçek getirmeyin; meyve, kitap ve dergi olabilir.",
+      "evidence": "Please do not bring flowers."
+    },
+    {
+      "id": "q5",
+      "prompt": "How should visitors come to the hospital?",
+      "options": [
+        "by bus number eleven",
+        "by car",
+        "by taxi",
+        "by train"
+      ],
+      "answer": 0,
+      "feedback": "Otopark çok dolu; on bir numaralı otobüs öneriliyor.",
+      "evidence": "We recommend taking bus number eleven"
+    }
+  ]
+}

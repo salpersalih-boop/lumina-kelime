@@ -1,0 +1,79 @@
+{
+  "id": "a2-kolay-48",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Why I love my job",
+  "topic": "Meslek",
+  "instructions": "Hemşire Laura işini anlatıyor. İyi ve zor yanlarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Laura",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I've been a nurse at a children's hospital for six years."
+    },
+    {
+      "speaker": "s",
+      "text": "I love my job because I can help children feel better."
+    },
+    {
+      "speaker": "s",
+      "text": "The hardest part is working at night. I often work three nights a week."
+    },
+    {
+      "speaker": "s",
+      "text": "But when a child goes home healthy, it makes everything worth it."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does Laura work?",
+      "options": [
+        "at a children's hospital",
+        "at a school",
+        "at a dentist",
+        "at a big hospital for adults"
+      ],
+      "answer": 0,
+      "feedback": "Çocuk hastanesinde çalışıyor.",
+      "evidence": "I've been a nurse at a children's hospital"
+    },
+    {
+      "id": "q2",
+      "prompt": "How long has she been a nurse?",
+      "options": [
+        "two years",
+        "six years",
+        "sixteen years",
+        "three years"
+      ],
+      "answer": 1,
+      "feedback": "Altı yıldır hemşire.",
+      "evidence": "for six years."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the hardest part of her job?",
+      "options": [
+        "the children",
+        "the long journey",
+        "working at night",
+        "the doctors"
+      ],
+      "answer": 2,
+      "feedback": "En zoru gece çalışmak.",
+      "evidence": "The hardest part is working at night."
+    }
+  ]
+}

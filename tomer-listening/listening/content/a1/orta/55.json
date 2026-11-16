@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-55",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "In the taxi",
+  "topic": "Ulaşım",
+  "instructions": "Bir yolcu taksiye biniyor. Gideceği yer, süre ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Driver",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Passenger",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good evening. Where to?"
+    },
+    {
+      "speaker": "b",
+      "text": "The Grand Hotel, please."
+    },
+    {
+      "speaker": "a",
+      "text": "OK. It takes about twenty minutes."
+    },
+    {
+      "speaker": "b",
+      "text": "How much is it?"
+    },
+    {
+      "speaker": "a",
+      "text": "About eighteen pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "Can I pay by card?"
+    },
+    {
+      "speaker": "a",
+      "text": "Sorry, cash only."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the passenger going?",
+      "options": [
+        "to the station",
+        "to the Grand Hotel",
+        "to the airport",
+        "to a restaurant"
+      ],
+      "answer": 1,
+      "feedback": "Grand Hotel'e gidiyor.",
+      "evidence": "The Grand Hotel, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long does it take?",
+      "options": [
+        "about ten minutes",
+        "about twenty minutes",
+        "about an hour",
+        "about forty minutes"
+      ],
+      "answer": 1,
+      "feedback": "Yaklaşık yirmi dakika.",
+      "evidence": "It takes about twenty minutes."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is the taxi?",
+      "options": [
+        "about eighty pounds",
+        "about eight pounds",
+        "about eighteen pounds",
+        "about twenty pounds"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık on sekiz pound.",
+      "evidence": "About eighteen pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "How can she pay?",
+      "options": [
+        "by card",
+        "by phone",
+        "with cash",
+        "online"
+      ],
+      "answer": 2,
+      "feedback": "Sadece nakit kabul ediliyor.",
+      "evidence": "Sorry, cash only."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "a1-orta-21",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the restaurant",
+  "topic": "Restoranda sipariş",
+  "instructions": "Bir çift restoranda sipariş veriyor. Kim ne istiyor ve neyin kalmadığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "waiter": {
+      "name": "Waiter",
+      "voice": "male"
+    },
+    "amy": {
+      "name": "Amy",
+      "voice": "female"
+    },
+    "joe": {
+      "name": "Joe",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "waiter",
+      "text": "Good evening. Are you ready to order?"
+    },
+    {
+      "speaker": "amy",
+      "text": "Yes. I'd like the chicken soup, please."
+    },
+    {
+      "speaker": "waiter",
+      "text": "And for you, sir?"
+    },
+    {
+      "speaker": "joe",
+      "text": "The steak, please."
+    },
+    {
+      "speaker": "waiter",
+      "text": "I'm sorry, there's no steak tonight. The fish is very good."
+    },
+    {
+      "speaker": "joe",
+      "text": "OK, the fish, then."
+    },
+    {
+      "speaker": "waiter",
+      "text": "And to drink?"
+    },
+    {
+      "speaker": "amy",
+      "text": "An orange juice for me, and water for him, please."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Amy order to eat?",
+      "options": [
+        "the fish",
+        "the steak",
+        "the chicken soup",
+        "a salad"
+      ],
+      "answer": 2,
+      "feedback": "Amy tavuk çorbası istiyor.",
+      "evidence": "I'd like the chicken soup, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why doesn't Joe have the steak?",
+      "options": [
+        "He doesn't like it.",
+        "There's no steak tonight.",
+        "It's expensive.",
+        "Amy says no."
+      ],
+      "answer": 1,
+      "feedback": "Bu akşam biftek yok.",
+      "evidence": "there's no steak tonight."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Joe eat?",
+      "options": [
+        "the fish",
+        "the steak",
+        "the soup",
+        "chicken"
+      ],
+      "answer": 0,
+      "feedback": "Garsonun önerisiyle balık (the fish) alıyor.",
+      "evidence": "OK, the fish, then."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Joe drink?",
+      "options": [
+        "orange juice",
+        "coffee",
+        "cola",
+        "water"
+      ],
+      "answer": 3,
+      "feedback": "Portakal suyu Amy'nin; Joe su (water) içiyor.",
+      "evidence": "water for him"
+    }
+  ]
+}

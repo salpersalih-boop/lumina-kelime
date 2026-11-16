@@ -1,0 +1,124 @@
+{
+  "id": "a2-orta-45",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Organising the office party",
+  "topic": "Etkinlik planlama",
+  "instructions": "İki iş arkadaşı ofis partisini organize ediyor. Uzun bir diyalog; tarih, yer, bütçe ve görevleri takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jane": {
+      "name": "Jane",
+      "voice": "female"
+    },
+    "omar": {
+      "name": "Omar",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jane",
+      "text": "Omar, we need to plan the end-of-year party. Have you got any ideas?"
+    },
+    {
+      "speaker": "omar",
+      "text": "What about a restaurant? Last year we had it in the office, and it was boring."
+    },
+    {
+      "speaker": "jane",
+      "text": "Good idea. How many people are coming?"
+    },
+    {
+      "speaker": "omar",
+      "text": "About thirty-five, I think."
+    },
+    {
+      "speaker": "jane",
+      "text": "The budget is twenty-five pounds per person. Is that enough for a restaurant?"
+    },
+    {
+      "speaker": "omar",
+      "text": "Maybe for a buffet. The Turkish restaurant near the station does a good buffet for twenty-two pounds."
+    },
+    {
+      "speaker": "jane",
+      "text": "Perfect. And we can use the rest for a cake. Which date?"
+    },
+    {
+      "speaker": "omar",
+      "text": "The nineteenth of December is a Friday. Most people prefer Fridays."
+    },
+    {
+      "speaker": "jane",
+      "text": "OK. I'll call the restaurant today. Can you send an email to everyone?"
+    },
+    {
+      "speaker": "omar",
+      "text": "Sure. I'll ask them to reply by the tenth."
+    },
+    {
+      "speaker": "jane",
+      "text": "Great. And let's ask about vegetarian food too."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why don't they want the party in the office?",
+      "options": [
+        "It is too small.",
+        "Last year it was boring.",
+        "The boss doesn't allow it.",
+        "It's too far."
+      ],
+      "answer": 1,
+      "feedback": "Geçen yıl ofiste yapıldı ve sıkıcıydı.",
+      "evidence": "Last year we had it in the office, and it was boring."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many people are coming?",
+      "options": [
+        "about twenty-five",
+        "about twenty-two",
+        "about thirty-five",
+        "about nineteen"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık otuz beş kişi geliyor.",
+      "evidence": "About thirty-five, I think."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is the buffet per person?",
+      "options": [
+        "twenty-five pounds",
+        "twenty-two pounds",
+        "thirty-five pounds",
+        "nineteen pounds"
+      ],
+      "answer": 1,
+      "feedback": "İstasyonun yanındaki Türk restoranının açık büfesi kişi başı yirmi iki pound.",
+      "evidence": "does a good buffet for twenty-two pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is Omar going to do?",
+      "options": [
+        "call the restaurant",
+        "buy a cake",
+        "send an email to everyone",
+        "book a DJ"
+      ],
+      "answer": 2,
+      "feedback": "Omar herkese e-posta gönderecek; restoranı Jane arayacak.",
+      "evidence": "Sure. I'll ask them to reply by the tenth."
+    }
+  ]
+}

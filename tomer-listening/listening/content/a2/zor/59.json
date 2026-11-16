@@ -1,0 +1,137 @@
+{
+  "id": "a2-zor-59",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Choosing a course",
+  "topic": "Kurs seçimi",
+  "instructions": "Bir kadın akşam kursu seçmek için bilgi alıyor. Kursları, günleri ve fiyatları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Staff",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Linda",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "b",
+      "text": "Hi. I'd like some information about your evening courses."
+    },
+    {
+      "speaker": "a",
+      "text": "Sure. We have photography, cooking and Spanish. What are you interested in?"
+    },
+    {
+      "speaker": "b",
+      "text": "Photography or cooking. When are they?"
+    },
+    {
+      "speaker": "a",
+      "text": "Photography is on Tuesdays and cooking is on Thursdays, both from seven to nine."
+    },
+    {
+      "speaker": "b",
+      "text": "I have choir practice on Tuesdays. What about the price?"
+    },
+    {
+      "speaker": "a",
+      "text": "Cooking is a hundred and eighty pounds for ten weeks, and that includes all the food."
+    },
+    {
+      "speaker": "b",
+      "text": "Do I need to bring anything?"
+    },
+    {
+      "speaker": "a",
+      "text": "Just an apron and some boxes to take your food home."
+    },
+    {
+      "speaker": "b",
+      "text": "When does it start?"
+    },
+    {
+      "speaker": "a",
+      "text": "On the fourteenth of September. There are only three places left."
+    },
+    {
+      "speaker": "b",
+      "text": "Then I'll book now."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which courses is Linda interested in?",
+      "options": [
+        "photography and Spanish",
+        "photography and cooking",
+        "cooking and Spanish",
+        "only Spanish"
+      ],
+      "answer": 1,
+      "feedback": "Fotoğrafçılık ya da yemek kursu.",
+      "evidence": "Photography or cooking."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't she do photography?",
+      "options": [
+        "It's too expensive.",
+        "She has choir practice on Tuesdays.",
+        "It's full.",
+        "She doesn't have a camera."
+      ],
+      "answer": 1,
+      "feedback": "Salı günleri koro çalışması var.",
+      "evidence": "I have choir practice on Tuesdays."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is included in the price of the cooking course?",
+      "options": [
+        "an apron",
+        "boxes",
+        "all the food",
+        "a recipe book"
+      ],
+      "answer": 2,
+      "feedback": "Fiyata bütün malzemeler dahil.",
+      "evidence": "that includes all the food."
+    },
+    {
+      "id": "q4",
+      "prompt": "When does the course start?",
+      "options": [
+        "on the fourth of September",
+        "on the fourteenth of September",
+        "on the fourteenth of October",
+        "next week"
+      ],
+      "answer": 1,
+      "feedback": "Kurs 14 eylülde başlıyor.",
+      "evidence": "On the fourteenth of September."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why does Linda book now?",
+      "options": [
+        "There are only three places left.",
+        "It's cheaper today.",
+        "She wants to start tomorrow.",
+        "Her friend is going."
+      ],
+      "answer": 0,
+      "feedback": "Sadece üç yer kaldı.",
+      "evidence": "There are only three places left."
+    }
+  ]
+}

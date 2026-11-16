@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-67",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "A new neighbour",
+  "topic": "Komşular",
+  "instructions": "İki komşu ilk kez tanışıyor. Ev numarası, iş ve aileye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Ben",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Ana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hi! I'm Ben. I live at number eight."
+    },
+    {
+      "speaker": "b",
+      "text": "Hello, Ben. I'm Ana. I'm new here. I'm at number ten."
+    },
+    {
+      "speaker": "a",
+      "text": "Welcome! What do you do?"
+    },
+    {
+      "speaker": "b",
+      "text": "I'm a nurse at the hospital. And you?"
+    },
+    {
+      "speaker": "a",
+      "text": "I'm a teacher. Do you live alone?"
+    },
+    {
+      "speaker": "b",
+      "text": "No, I live with my sister. She is a student."
+    },
+    {
+      "speaker": "a",
+      "text": "Nice. If you need anything, just ask!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What number is Ben's house?",
+      "options": [
+        "ten",
+        "eight",
+        "eighteen",
+        "four"
+      ],
+      "answer": 1,
+      "feedback": "Ben sekiz numarada oturuyor.",
+      "evidence": "I live at number eight."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is Ana's job?",
+      "options": [
+        "a teacher",
+        "a student",
+        "a doctor",
+        "a nurse"
+      ],
+      "answer": 3,
+      "feedback": "Ana hastanede hemşire.",
+      "evidence": "I'm a nurse at the hospital."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Ben's job?",
+      "options": [
+        "a teacher",
+        "a nurse",
+        "a doctor",
+        "a student"
+      ],
+      "answer": 0,
+      "feedback": "Ben öğretmen.",
+      "evidence": "I'm a teacher."
+    },
+    {
+      "id": "q4",
+      "prompt": "Who does Ana live with?",
+      "options": [
+        "her husband",
+        "her parents",
+        "her sister",
+        "alone"
+      ],
+      "answer": 2,
+      "feedback": "Öğrenci olan kız kardeşiyle yaşıyor.",
+      "evidence": "No, I live with my sister."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "a2-orta-27",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Booking a flight",
+  "topic": "Uçak bileti",
+  "instructions": "Kemal telefonda uçak bileti ayırtıyor. Uzun bir diyalog; tarih, saat, bagaj ve fiyattaki değişikliklere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "agent": {
+      "name": "Travel agent",
+      "voice": "female"
+    },
+    "kemal": {
+      "name": "Kemal",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "agent",
+      "text": "Sky Travel, good afternoon."
+    },
+    {
+      "speaker": "kemal",
+      "text": "Hi. I'd like to book a flight to Amsterdam on the fourteenth of March."
+    },
+    {
+      "speaker": "agent",
+      "text": "One way or return?"
+    },
+    {
+      "speaker": "kemal",
+      "text": "Return, please. Coming back on the twentieth."
+    },
+    {
+      "speaker": "agent",
+      "text": "There's a flight at six fifteen in the morning for ninety euros, or one at two in the afternoon for a hundred and thirty."
+    },
+    {
+      "speaker": "kemal",
+      "text": "Six fifteen is very early. But forty euros is a big difference... OK, the morning flight."
+    },
+    {
+      "speaker": "agent",
+      "text": "Do you need to check in a bag?"
+    },
+    {
+      "speaker": "kemal",
+      "text": "Yes, one big suitcase."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's twenty-five euros extra each way."
+    },
+    {
+      "speaker": "kemal",
+      "text": "Hmm. Can I take a small bag on the plane for free?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, one small bag under the seat is free."
+    },
+    {
+      "speaker": "kemal",
+      "text": "Then I'll only take a small bag. It's just six days."
+    },
+    {
+      "speaker": "agent",
+      "text": "Fine. So that's ninety euros in total."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is Kemal coming back?",
+      "options": [
+        "on the fourteenth of March",
+        "on the twentieth of March",
+        "on the sixth of March",
+        "on the twelfth of March"
+      ],
+      "answer": 1,
+      "feedback": "Mart'ın yirmisinde (the twentieth) dönüyor. On dört gidiş tarihi.",
+      "evidence": "Coming back on the twentieth."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why does Kemal choose the morning flight?",
+      "options": [
+        "It's cheaper.",
+        "It's faster.",
+        "He likes getting up early.",
+        "The afternoon flight is full."
+      ],
+      "answer": 0,
+      "feedback": "Çok erken ama kırk euro daha ucuz.",
+      "evidence": "But forty euros is a big difference"
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is a suitcase each way?",
+      "options": [
+        "ninety euros",
+        "forty euros",
+        "twenty-five euros",
+        "nothing"
+      ],
+      "answer": 2,
+      "feedback": "Valiz her yön için yirmi beş euro ekstra.",
+      "evidence": "That's twenty-five euros extra each way."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does Kemal pay in total?",
+      "options": [
+        "one hundred and thirty euros",
+        "one hundred and forty euros",
+        "one hundred and fifteen euros",
+        "ninety euros"
+      ],
+      "answer": 3,
+      "feedback": "Valiz almadan, sadece küçük çantayla: toplam doksan euro.",
+      "evidence": "So that's ninety euros in total."
+    }
+  ]
+}

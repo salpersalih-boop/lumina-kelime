@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-50",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A busy morning",
+  "topic": "Günlük rutin (geçmiş zaman)",
+  "instructions": "Tom bu sabah işlerin nasıl ters gittiğini anlatıyor. Olayların sırasını takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "This morning, my alarm didn't ring, so I woke up at eight instead of seven."
+    },
+    {
+      "speaker": "s",
+      "text": "I didn't have time for breakfast. I just drank some water."
+    },
+    {
+      "speaker": "s",
+      "text": "Then I missed my bus, so I had to take a taxi."
+    },
+    {
+      "speaker": "s",
+      "text": "I arrived at work at nine fifteen, fifteen minutes late."
+    },
+    {
+      "speaker": "s",
+      "text": "Luckily, my boss was late too!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time did Tom wake up?",
+      "options": [
+        "at seven",
+        "at eight",
+        "at nine",
+        "at nine fifteen"
+      ],
+      "answer": 1,
+      "feedback": "Alarm çalmadı; yedi yerine sekizde uyandı.",
+      "evidence": "I woke up at eight instead of seven."
+    },
+    {
+      "id": "q2",
+      "prompt": "How did he go to work?",
+      "options": [
+        "by bus",
+        "by taxi",
+        "on foot",
+        "by car"
+      ],
+      "answer": 1,
+      "feedback": "Otobüsü kaçırdı, taksiye bindi.",
+      "evidence": "I had to take a taxi."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why was Tom lucky?",
+      "options": [
+        "His boss was late too.",
+        "The taxi was free.",
+        "He found his bus.",
+        "He had breakfast at work."
+      ],
+      "answer": 0,
+      "feedback": "Patronu da geç kalmıştı.",
+      "evidence": "Luckily, my boss was late too!"
+    }
+  ]
+}

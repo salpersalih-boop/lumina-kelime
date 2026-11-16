@@ -1,0 +1,125 @@
+{
+  "id": "a2-zor-29",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Volunteering at an animal shelter",
+  "topic": "Gönüllülük",
+  "instructions": "Daniel hayvan barınağındaki gönüllü çalışmasını anlatıyor. Uzun bir metin; günleri, sayıları ve görevleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "daniel": {
+      "name": "Daniel",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "daniel",
+      "text": "For the last eight months, I've volunteered at an animal shelter near my town."
+    },
+    {
+      "speaker": "daniel",
+      "text": "The shelter has about sixty dogs and forty cats. Most of them were found in the street."
+    },
+    {
+      "speaker": "daniel",
+      "text": "I go every Saturday morning and on Wednesday evenings after work."
+    },
+    {
+      "speaker": "daniel",
+      "text": "On Saturdays, I take the dogs for walks and clean their rooms."
+    },
+    {
+      "speaker": "daniel",
+      "text": "On Wednesdays, I help in the office. I answer phone calls and take photos of the animals for the website."
+    },
+    {
+      "speaker": "daniel",
+      "text": "Good photos are really important. People choose animals from the website."
+    },
+    {
+      "speaker": "daniel",
+      "text": "Last month, twenty animals found new homes. That was a record!"
+    },
+    {
+      "speaker": "daniel",
+      "text": "The hardest part is saying goodbye. I really wanted to take a dog called Max home, but my flat is too small."
+    },
+    {
+      "speaker": "daniel",
+      "text": "If you love animals, I really recommend volunteering. You don't need any experience."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long has Daniel volunteered at the shelter?",
+      "options": [
+        "eight weeks",
+        "eight months",
+        "eighteen months",
+        "two years"
+      ],
+      "answer": 1,
+      "feedback": "Sekiz aydır gönüllü.",
+      "evidence": "For the last eight months, I've volunteered"
+    },
+    {
+      "id": "q2",
+      "prompt": "How many cats are at the shelter?",
+      "options": [
+        "about sixty",
+        "about twenty",
+        "about forty",
+        "about eighty"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık altmış köpek ve kırk kedi var.",
+      "evidence": "about sixty dogs and forty cats."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Daniel do on Wednesdays?",
+      "options": [
+        "He walks the dogs.",
+        "He cleans the rooms.",
+        "He takes the cats to the vet.",
+        "He works in the office."
+      ],
+      "answer": 3,
+      "feedback": "Çarşamba ofiste: telefonlara bakıyor ve web sitesi için fotoğraf çekiyor.",
+      "evidence": "On Wednesdays, I help in the office."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why are good photos important?",
+      "options": [
+        "People choose animals from the website.",
+        "They help the vet.",
+        "The shelter sells them.",
+        "They win prizes."
+      ],
+      "answer": 0,
+      "feedback": "İnsanlar hayvanları web sitesinden seçiyor.",
+      "evidence": "People choose animals from the website."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why didn't Daniel take Max home?",
+      "options": [
+        "Max was ill.",
+        "His flat is too small.",
+        "Someone else took him.",
+        "He has a cat."
+      ],
+      "answer": 1,
+      "feedback": "Max'i almak istedi ama dairesi çok küçük.",
+      "evidence": "but my flat is too small."
+    }
+  ]
+}

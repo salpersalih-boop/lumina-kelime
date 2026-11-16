@@ -1,0 +1,87 @@
+{
+  "id": "a1-kolay-18",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My city",
+  "topic": "Şehir",
+  "instructions": "Lena yaşadığı şehri anlatıyor. Yerlere ve sevdiği şeylere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "lena": {
+      "name": "Lena",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lena",
+      "text": "I live in Vienna. It is the capital of Austria."
+    },
+    {
+      "speaker": "lena",
+      "text": "It is a big and beautiful city."
+    },
+    {
+      "speaker": "lena",
+      "text": "There are many museums, parks and cafés."
+    },
+    {
+      "speaker": "lena",
+      "text": "I live in a flat near the river."
+    },
+    {
+      "speaker": "lena",
+      "text": "I go to work by tram. It is fast and cheap."
+    },
+    {
+      "speaker": "lena",
+      "text": "My favourite place is a small café in the old town. The cakes there are wonderful."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does Lena live?",
+      "options": [
+        "in a house in the old town",
+        "in a flat near the river",
+        "in a flat near a park",
+        "in a house near the river"
+      ],
+      "answer": 1,
+      "feedback": "Nehrin yakınında bir dairede (a flat near the river) yaşıyor.",
+      "evidence": "I live in a flat near the river."
+    },
+    {
+      "id": "q2",
+      "prompt": "How does Lena go to work?",
+      "options": [
+        "by bus",
+        "by car",
+        "by tram",
+        "on foot"
+      ],
+      "answer": 2,
+      "feedback": "İşe tramvayla (by tram) gidiyor.",
+      "evidence": "I go to work by tram."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Lena's favourite place?",
+      "options": [
+        "a small café in the old town",
+        "a museum",
+        "a big park",
+        "the river"
+      ],
+      "answer": 0,
+      "feedback": "En sevdiği yer eski şehirdeki küçük bir kafe.",
+      "evidence": "My favourite place is a small café in the old town."
+    }
+  ]
+}

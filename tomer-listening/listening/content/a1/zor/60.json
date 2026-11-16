@@ -1,0 +1,113 @@
+{
+  "id": "a1-zor-60",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A day at Green Park Zoo",
+  "topic": "Hayvanat bahçesi",
+  "instructions": "Hayvanat bahçesinde bir anons. Saatleri ve yerleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Zoo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Good morning and welcome to Green Park Zoo."
+    },
+    {
+      "speaker": "s",
+      "text": "Today, the elephants eat at ten thirty, near the lake."
+    },
+    {
+      "speaker": "s",
+      "text": "The new baby giraffe is in the African house. You can see her from twelve to two."
+    },
+    {
+      "speaker": "s",
+      "text": "The penguin show is at three o'clock. It is free."
+    },
+    {
+      "speaker": "s",
+      "text": "Please do not give food to the animals."
+    },
+    {
+      "speaker": "s",
+      "text": "The zoo shop is next to the main gate, and the café is next to the monkeys."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When do the elephants eat?",
+      "options": [
+        "at ten thirty",
+        "at twelve",
+        "at three",
+        "at two"
+      ],
+      "answer": 0,
+      "feedback": "Filler on buçukta yemek yiyor.",
+      "evidence": "the elephants eat at ten thirty"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is the baby giraffe?",
+      "options": [
+        "near the lake",
+        "in the African house",
+        "next to the monkeys",
+        "near the main gate"
+      ],
+      "answer": 1,
+      "feedback": "Yavru zürafa Afrika evinde.",
+      "evidence": "The new baby giraffe is in the African house."
+    },
+    {
+      "id": "q3",
+      "prompt": "When can people see the baby giraffe?",
+      "options": [
+        "from ten to twelve",
+        "from twelve to two",
+        "at three",
+        "all day"
+      ],
+      "answer": 1,
+      "feedback": "On ikiden ikiye kadar görülebilir.",
+      "evidence": "You can see her from twelve to two."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the penguin show?",
+      "options": [
+        "three pounds",
+        "two pounds",
+        "ten pounds",
+        "nothing"
+      ],
+      "answer": 3,
+      "feedback": "Penguen gösterisi ücretsiz.",
+      "evidence": "It is free."
+    },
+    {
+      "id": "q5",
+      "prompt": "Where is the café?",
+      "options": [
+        "next to the main gate",
+        "near the lake",
+        "next to the monkeys",
+        "in the African house"
+      ],
+      "answer": 2,
+      "feedback": "Kafe maymunların yanında; dükkân ana kapıda.",
+      "evidence": "the café is next to the monkeys."
+    }
+  ]
+}

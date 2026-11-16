@@ -1,0 +1,105 @@
+{
+  "id": "a2-zor-54",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Appointment cancelled",
+  "topic": "Telefon mesajı",
+  "instructions": "Diş kliniğinden kısa bir sesli mesaj. Kısa ama her ayrıntı önemli. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Dentist",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Hello, this is Bright Smile Dental Clinic with a message for Mr Ali Kaya."
+    },
+    {
+      "speaker": "s",
+      "text": "Your appointment on Thursday at three is cancelled because Dr Evans is ill."
+    },
+    {
+      "speaker": "s",
+      "text": "We can offer you Friday at nine or Monday at four."
+    },
+    {
+      "speaker": "s",
+      "text": "Please call us before five today to choose a time."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is the message for?",
+      "options": [
+        "Dr Evans",
+        "Mr Ali Kaya",
+        "Mrs Kaya",
+        "the receptionist"
+      ],
+      "answer": 1,
+      "feedback": "Mesaj Bay Ali Kaya için.",
+      "evidence": "with a message for Mr Ali Kaya."
+    },
+    {
+      "id": "q2",
+      "prompt": "When was the appointment?",
+      "options": [
+        "Friday at nine",
+        "Thursday at three",
+        "Monday at four",
+        "Thursday at five"
+      ],
+      "answer": 1,
+      "feedback": "Randevu perşembe saat üçteydi.",
+      "evidence": "Your appointment on Thursday at three is cancelled"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is it cancelled?",
+      "options": [
+        "The clinic is closed.",
+        "Dr Evans is on holiday.",
+        "Dr Evans is ill.",
+        "Mr Kaya cancelled it."
+      ],
+      "answer": 2,
+      "feedback": "Dr Evans hasta.",
+      "evidence": "because Dr Evans is ill."
+    },
+    {
+      "id": "q4",
+      "prompt": "What new times are offered?",
+      "options": [
+        "Friday at nine or Monday at four",
+        "Friday at four or Monday at nine",
+        "Thursday at five",
+        "only Monday"
+      ],
+      "answer": 0,
+      "feedback": "Cuma dokuz ya da pazartesi dört.",
+      "evidence": "We can offer you Friday at nine or Monday at four."
+    },
+    {
+      "id": "q5",
+      "prompt": "When should Mr Kaya call?",
+      "options": [
+        "tomorrow",
+        "on Friday",
+        "after five",
+        "before five today"
+      ],
+      "answer": 3,
+      "feedback": "Bugün saat beşten önce aramalı.",
+      "evidence": "Please call us before five today"
+    }
+  ]
+}

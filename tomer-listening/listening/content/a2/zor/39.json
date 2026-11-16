@@ -1,0 +1,121 @@
+{
+  "id": "a2-zor-39",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A factory tour",
+  "topic": "Fabrika turu",
+  "instructions": "Bir çikolata fabrikasında tur rehberi ziyaretçilere bilgi veriyor. Uzun bir metin; sayıları ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "guide": {
+      "name": "Tour guide",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "guide",
+      "text": "Welcome to Sweet Valley, the biggest biscuit factory in the country. I'm Tom, and I'll be your guide today."
+    },
+    {
+      "speaker": "guide",
+      "text": "The factory opened in nineteen sixty-five. Today, more than four hundred people work here."
+    },
+    {
+      "speaker": "guide",
+      "text": "Every day, we make about two million biscuits!"
+    },
+    {
+      "speaker": "guide",
+      "text": "Before we start, a few rules. Please wear the white hat and coat I gave you. And don't touch any of the machines."
+    },
+    {
+      "speaker": "guide",
+      "text": "You can't take photos inside the factory, but you can take them in the shop at the end."
+    },
+    {
+      "speaker": "guide",
+      "text": "First, we'll see the room where we mix the flour, sugar and butter. Then we'll go to the ovens. It's very hot there, so drink some water."
+    },
+    {
+      "speaker": "guide",
+      "text": "The tour takes about an hour and a half."
+    },
+    {
+      "speaker": "guide",
+      "text": "At the end, everyone gets a free box of biscuits. And in the shop, everything is twenty percent cheaper than in the supermarket."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did the factory open?",
+      "options": [
+        "in nineteen fifty-six",
+        "in nineteen sixty-five",
+        "in nineteen forty",
+        "in two thousand"
+      ],
+      "answer": 1,
+      "feedback": "Fabrika 1965'te açıldı.",
+      "evidence": "The factory opened in nineteen sixty-five."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many biscuits do they make every day?",
+      "options": [
+        "about two hundred thousand",
+        "about four hundred",
+        "about two million",
+        "about twenty million"
+      ],
+      "answer": 2,
+      "feedback": "Her gün yaklaşık iki milyon bisküvi yapıyorlar.",
+      "evidence": "we make about two million biscuits!"
+    },
+    {
+      "id": "q3",
+      "prompt": "Where can visitors take photos?",
+      "options": [
+        "in the shop at the end",
+        "next to the ovens",
+        "everywhere",
+        "in the mixing room"
+      ],
+      "answer": 0,
+      "feedback": "Fabrika içinde fotoğraf yasak; sondaki dükkânda çekilebilir.",
+      "evidence": "but you can take them in the shop at the end."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why should visitors drink water near the ovens?",
+      "options": [
+        "They'll be hungry.",
+        "The biscuits are salty.",
+        "There is a lot of flour.",
+        "It's very hot there."
+      ],
+      "answer": 3,
+      "feedback": "Fırınların olduğu yer çok sıcak.",
+      "evidence": "It's very hot there, so drink some water."
+    },
+    {
+      "id": "q5",
+      "prompt": "How much cheaper is the factory shop?",
+      "options": [
+        "ten percent",
+        "twenty percent",
+        "half price",
+        "thirty percent"
+      ],
+      "answer": 1,
+      "feedback": "Dükkândaki her şey süpermarketten yüzde yirmi daha ucuz.",
+      "evidence": "everything is twenty percent cheaper than in the supermarket."
+    }
+  ]
+}

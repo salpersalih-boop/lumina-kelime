@@ -1,0 +1,132 @@
+{
+  "id": "a2-orta-13",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Moving house",
+  "topic": "Taşınma",
+  "instructions": "İki arkadaş Kate ve Jim, Kate'in yeni evini konuşuyor. Uzun bir diyalog; eski ve yeni evi karşılaştır.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jim": {
+      "name": "Jim",
+      "voice": "male"
+    },
+    "kate": {
+      "name": "Kate",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jim",
+      "text": "Hi Kate! I heard you moved house. How's the new place?"
+    },
+    {
+      "speaker": "kate",
+      "text": "It's great, thanks. We moved last Saturday. It took all day!"
+    },
+    {
+      "speaker": "jim",
+      "text": "Is it bigger than your old flat?"
+    },
+    {
+      "speaker": "kate",
+      "text": "Yes, much bigger. The old flat had one bedroom. Now we have three."
+    },
+    {
+      "speaker": "jim",
+      "text": "Wow! Is it in the city centre?"
+    },
+    {
+      "speaker": "kate",
+      "text": "No, it's about twenty minutes from the centre, but it's very quiet."
+    },
+    {
+      "speaker": "jim",
+      "text": "Do you have a garden?"
+    },
+    {
+      "speaker": "kate",
+      "text": "Yes, a small one. The children love it. They play there every afternoon."
+    },
+    {
+      "speaker": "jim",
+      "text": "And how do you get to work now?"
+    },
+    {
+      "speaker": "kate",
+      "text": "I take the train. Before, I walked to work, so that is the only bad thing."
+    },
+    {
+      "speaker": "jim",
+      "text": "Are you going to have a party?"
+    },
+    {
+      "speaker": "kate",
+      "text": "Yes! Next Saturday. You must come. Bring your wife too!"
+    },
+    {
+      "speaker": "jim",
+      "text": "We'd love to. Thanks!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did Kate move house?",
+      "options": [
+        "yesterday",
+        "last Saturday",
+        "last month",
+        "next Saturday"
+      ],
+      "answer": 1,
+      "feedback": "Geçen cumartesi (last Saturday) taşındılar. Gelecek cumartesi parti var.",
+      "evidence": "We moved last Saturday."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many bedrooms does the new house have?",
+      "options": [
+        "one",
+        "two",
+        "four",
+        "three"
+      ],
+      "answer": 3,
+      "feedback": "Eski dairede bir yatak odası vardı; yeni evde üç (three).",
+      "evidence": "Now we have three."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the bad thing about the new house?",
+      "options": [
+        "It's noisy.",
+        "There's no garden.",
+        "Kate has to take the train to work.",
+        "It's small."
+      ],
+      "answer": 2,
+      "feedback": "Önceden işe yürüyordu, şimdi trene binmesi gerekiyor; tek kötü yanı bu.",
+      "evidence": "so that is the only bad thing."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is the party?",
+      "options": [
+        "next Saturday",
+        "this evening",
+        "last Saturday",
+        "every afternoon"
+      ],
+      "answer": 0,
+      "feedback": "Parti gelecek cumartesi (next Saturday).",
+      "evidence": "Next Saturday."
+    }
+  ]
+}

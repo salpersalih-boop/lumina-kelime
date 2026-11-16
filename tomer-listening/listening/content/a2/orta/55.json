@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-55",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Making a hair appointment",
+  "topic": "Randevu alma",
+  "instructions": "Bir kadın kuaförden randevu alıyor. Gün, saat ve hizmete dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Salon",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Kate",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good morning, Style Studio."
+    },
+    {
+      "speaker": "b",
+      "text": "Hi. I'd like to book a haircut and colour, please."
+    },
+    {
+      "speaker": "a",
+      "text": "Sure. When would you like to come?"
+    },
+    {
+      "speaker": "b",
+      "text": "Is Thursday afternoon possible?"
+    },
+    {
+      "speaker": "a",
+      "text": "Thursday is fully booked. We have Friday at two or Saturday at eleven."
+    },
+    {
+      "speaker": "b",
+      "text": "I work on Fridays. Saturday at eleven, please."
+    },
+    {
+      "speaker": "a",
+      "text": "OK. A cut and colour takes about two hours. It's seventy pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "Fine. My name is Kate Wilson."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Kate want?",
+      "options": [
+        "only a haircut",
+        "a haircut and colour",
+        "only a colour",
+        "a wash"
+      ],
+      "answer": 1,
+      "feedback": "Kesim ve boya istiyor.",
+      "evidence": "I'd like to book a haircut and colour, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't she go on Thursday?",
+      "options": [
+        "It's fully booked.",
+        "She works.",
+        "The salon is closed.",
+        "She has a meeting."
+      ],
+      "answer": 0,
+      "feedback": "Perşembe tamamen dolu.",
+      "evidence": "Thursday is fully booked."
+    },
+    {
+      "id": "q3",
+      "prompt": "When is her appointment?",
+      "options": [
+        "Friday at two",
+        "Thursday afternoon",
+        "Saturday at two",
+        "Saturday at eleven"
+      ],
+      "answer": 3,
+      "feedback": "Cuma çalıştığı için cumartesi on bir.",
+      "evidence": "Saturday at eleven, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "How long will it take?",
+      "options": [
+        "about one hour",
+        "about two hours",
+        "about thirty minutes",
+        "about three hours"
+      ],
+      "answer": 1,
+      "feedback": "Yaklaşık iki saat sürecek.",
+      "evidence": "A cut and colour takes about two hours."
+    }
+  ]
+}

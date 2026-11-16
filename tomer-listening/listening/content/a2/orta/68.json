@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-68",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "A parcel for a neighbour",
+  "topic": "Kargo teslimi",
+  "instructions": "Bir kurye komşu için paket bırakmak istiyor. Kısa bir diyalog; kimin için olduğuna dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Delivery driver",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hi. I have a parcel for number twelve, but nobody is home. Could you take it?"
+    },
+    {
+      "speaker": "b",
+      "text": "Sure. That's Mr Lee. He's at work until six."
+    },
+    {
+      "speaker": "a",
+      "text": "Thanks. Can you sign here, please?"
+    },
+    {
+      "speaker": "b",
+      "text": "Of course. I'll give it to him this evening."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which house is the parcel for?",
+      "options": [
+        "number two",
+        "number twelve",
+        "number twenty",
+        "number six"
+      ],
+      "answer": 1,
+      "feedback": "Paket on iki numara için.",
+      "evidence": "I have a parcel for number twelve"
+    },
+    {
+      "id": "q2",
+      "prompt": "Who lives at number twelve?",
+      "options": [
+        "Mr Lee",
+        "the woman",
+        "the driver",
+        "Mrs Lee"
+      ],
+      "answer": 0,
+      "feedback": "On iki numarada Bay Lee oturuyor.",
+      "evidence": "That's Mr Lee."
+    },
+    {
+      "id": "q3",
+      "prompt": "When does Mr Lee come home?",
+      "options": [
+        "at twelve",
+        "at two",
+        "after six",
+        "at lunchtime"
+      ],
+      "answer": 2,
+      "feedback": "Altıya kadar işte.",
+      "evidence": "He's at work until six."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the driver ask the woman to do?",
+      "options": [
+        "call Mr Lee",
+        "pay for the parcel",
+        "open the parcel",
+        "sign"
+      ],
+      "answer": 3,
+      "feedback": "İmza atmasını istiyor.",
+      "evidence": "Can you sign here, please?"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-44",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "At my friend's house",
+  "topic": "Arkadaşlık",
+  "instructions": "Zoe arkadaşının evinde geçirdiği günü anlatıyor. Ne yaptıklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "zoe": {
+      "name": "Zoe",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "zoe",
+      "text": "Today I am at my friend Lily's house."
+    },
+    {
+      "speaker": "zoe",
+      "text": "Her house is big, and it has a swimming pool!"
+    },
+    {
+      "speaker": "zoe",
+      "text": "We swim in the pool and then we play with her cat."
+    },
+    {
+      "speaker": "zoe",
+      "text": "Lily's mum makes us sandwiches for lunch."
+    },
+    {
+      "speaker": "zoe",
+      "text": "My dad comes to get me at five o'clock."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Lily's house have?",
+      "options": [
+        "a garden with a dog",
+        "a swimming pool",
+        "a tennis court",
+        "a big kitchen"
+      ],
+      "answer": 1,
+      "feedback": "Lily'nin evinin yüzme havuzu var.",
+      "evidence": "it has a swimming pool!"
+    },
+    {
+      "id": "q2",
+      "prompt": "What animal does Lily have?",
+      "options": [
+        "a dog",
+        "a rabbit",
+        "a cat",
+        "a fish"
+      ],
+      "answer": 2,
+      "feedback": "Lily'nin kedisi var.",
+      "evidence": "we play with her cat."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who comes to get Zoe?",
+      "options": [
+        "her dad",
+        "her mum",
+        "Lily's mum",
+        "her brother"
+      ],
+      "answer": 0,
+      "feedback": "Saat beşte babası onu almaya geliyor.",
+      "evidence": "My dad comes to get me at five o'clock."
+    }
+  ]
+}

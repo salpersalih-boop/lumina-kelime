@@ -1,0 +1,125 @@
+{
+  "id": "a1-zor-24",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A school trip to the farm",
+  "topic": "Okul gezisi",
+  "instructions": "Öğretmen öğrencilere çiftlik gezisini anlatıyor. Uzun bir metin; saatler, kurallar ve gerekenleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "teacher": {
+      "name": "Teacher",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "teacher",
+      "text": "OK, class, listen, please. Tomorrow we are going to Green Hill Farm."
+    },
+    {
+      "speaker": "teacher",
+      "text": "The bus leaves at half past eight, so please be at school at eight fifteen. Don't be late!"
+    },
+    {
+      "speaker": "teacher",
+      "text": "The trip takes about forty minutes."
+    },
+    {
+      "speaker": "teacher",
+      "text": "At the farm, we are going to see cows, sheep, horses and chickens."
+    },
+    {
+      "speaker": "teacher",
+      "text": "You can feed the sheep, but please do not touch the horses. They are big and they can be dangerous."
+    },
+    {
+      "speaker": "teacher",
+      "text": "We have lunch at twelve. Bring a sandwich and a drink. Please do not bring sweets."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Wear old clothes and boots, because the farm is very dirty."
+    },
+    {
+      "speaker": "teacher",
+      "text": "We are coming back to school at three o'clock."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Any questions? No? Good. See you tomorrow!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time should students be at school?",
+      "options": [
+        "at half past eight",
+        "at eight o'clock",
+        "at eight fifteen",
+        "at a quarter to eight"
+      ],
+      "answer": 2,
+      "feedback": "Otobüs sekiz buçukta kalkıyor; öğrenciler sekizi çeyrek geçe okulda olmalı.",
+      "evidence": "please be at school at eight fifteen."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which animals can students feed?",
+      "options": [
+        "the horses",
+        "the sheep",
+        "the cows",
+        "the chickens"
+      ],
+      "answer": 1,
+      "feedback": "Koyunları besleyebilirler; atlara dokunmamalılar.",
+      "evidence": "You can feed the sheep"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why shouldn't students touch the horses?",
+      "options": [
+        "They can be dangerous.",
+        "They're sleeping.",
+        "They're dirty.",
+        "They're ill."
+      ],
+      "answer": 0,
+      "feedback": "Atlar büyük ve tehlikeli olabilir.",
+      "evidence": "They are big and they can be dangerous."
+    },
+    {
+      "id": "q4",
+      "prompt": "What should students NOT bring?",
+      "options": [
+        "a sandwich",
+        "a drink",
+        "boots",
+        "sweets"
+      ],
+      "answer": 3,
+      "feedback": "Şeker getirmemeliler.",
+      "evidence": "Please do not bring sweets."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why should they wear old clothes?",
+      "options": [
+        "It's cold.",
+        "The farm is very dirty.",
+        "It's going to rain.",
+        "They are going to work on the farm."
+      ],
+      "answer": 1,
+      "feedback": "Çiftlik çok kirli.",
+      "evidence": "because the farm is very dirty."
+    }
+  ]
+}

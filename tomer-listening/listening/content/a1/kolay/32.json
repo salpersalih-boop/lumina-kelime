@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-32",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Fruit I like",
+  "topic": "Yiyecekler",
+  "instructions": "Nadia sevdiği meyveleri anlatıyor. Kısa bir metin; sevdiği ve sevmediği meyveye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "nadia": {
+      "name": "Nadia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "nadia",
+      "text": "I love fruit."
+    },
+    {
+      "speaker": "nadia",
+      "text": "I eat an apple every morning."
+    },
+    {
+      "speaker": "nadia",
+      "text": "In summer, I eat a lot of watermelon."
+    },
+    {
+      "speaker": "nadia",
+      "text": "I don't like bananas. They are too sweet for me."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Nadia eat every morning?",
+      "options": [
+        "a banana",
+        "an orange",
+        "watermelon",
+        "an apple"
+      ],
+      "answer": 3,
+      "feedback": "Her sabah bir elma yiyor.",
+      "evidence": "I eat an apple every morning."
+    },
+    {
+      "id": "q2",
+      "prompt": "When does she eat a lot of watermelon?",
+      "options": [
+        "in winter",
+        "in summer",
+        "every day",
+        "in the evening"
+      ],
+      "answer": 1,
+      "feedback": "Yazın çok karpuz yiyor.",
+      "evidence": "In summer, I eat a lot of watermelon."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why doesn't Nadia like bananas?",
+      "options": [
+        "They are too sweet.",
+        "They are expensive.",
+        "They are too big.",
+        "They are not fresh."
+      ],
+      "answer": 0,
+      "feedback": "Muzlar ona göre fazla tatlı.",
+      "evidence": "They are too sweet for me."
+    }
+  ]
+}

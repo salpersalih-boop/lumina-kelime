@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-45",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Why I started yoga",
+  "topic": "Sağlıklı yaşam",
+  "instructions": "Nina yogaya nasıl başladığını anlatıyor. Sebebe, sıklığa ve sonuca dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "nina": {
+      "name": "Nina",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "nina",
+      "text": "Last year, I had a lot of stress at work, and I couldn't sleep well."
+    },
+    {
+      "speaker": "nina",
+      "text": "A friend told me to try yoga, so I joined a class near my house."
+    },
+    {
+      "speaker": "nina",
+      "text": "Now I go twice a week, on Monday and Thursday evenings."
+    },
+    {
+      "speaker": "nina",
+      "text": "It was difficult at first, because I'm not very flexible."
+    },
+    {
+      "speaker": "nina",
+      "text": "But now I feel calmer, and I sleep much better."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why did Nina start yoga?",
+      "options": [
+        "She wanted to lose weight.",
+        "She had stress and couldn't sleep well.",
+        "Her doctor told her to.",
+        "She was bored."
+      ],
+      "answer": 1,
+      "feedback": "İşte çok stres vardı ve iyi uyuyamıyordu.",
+      "evidence": "I had a lot of stress at work, and I couldn't sleep well."
+    },
+    {
+      "id": "q2",
+      "prompt": "How often does she go to yoga?",
+      "options": [
+        "every day",
+        "once a week",
+        "twice a week",
+        "three times a week"
+      ],
+      "answer": 2,
+      "feedback": "Haftada iki kez: pazartesi ve perşembe akşamları.",
+      "evidence": "Now I go twice a week"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why was yoga difficult at first?",
+      "options": [
+        "She isn't very flexible.",
+        "The teacher was strict.",
+        "The class was too long.",
+        "She was ill."
+      ],
+      "answer": 0,
+      "feedback": "Çok esnek değil.",
+      "evidence": "because I'm not very flexible."
+    }
+  ]
+}

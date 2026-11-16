@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-24",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Have you seen my phone?",
+  "topic": "Kayıp eşya",
+  "instructions": "Leo telefonunu arıyor. Kısa bir diyalog; en son nerede olduğuna dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    },
+    "mia": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "leo",
+      "text": "Mia, have you seen my phone? I can't find it anywhere."
+    },
+    {
+      "speaker": "mia",
+      "text": "When did you last use it?"
+    },
+    {
+      "speaker": "leo",
+      "text": "In the kitchen, when I made coffee."
+    },
+    {
+      "speaker": "mia",
+      "text": "Let me call it. Listen! It's ringing in your coat pocket."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Leo looking for?",
+      "options": [
+        "his keys",
+        "his phone",
+        "his coat",
+        "his wallet"
+      ],
+      "answer": 1,
+      "feedback": "Telefonunu arıyor.",
+      "evidence": "have you seen my phone?"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where did Leo last use it?",
+      "options": [
+        "in the kitchen",
+        "in the car",
+        "in the bedroom",
+        "at work"
+      ],
+      "answer": 0,
+      "feedback": "En son mutfakta, kahve yaparken kullandı.",
+      "evidence": "In the kitchen, when I made coffee."
+    },
+    {
+      "id": "q3",
+      "prompt": "How does Mia find the phone?",
+      "options": [
+        "She looks in the kitchen.",
+        "She asks a neighbour.",
+        "She uses a computer.",
+        "She calls it."
+      ],
+      "answer": 3,
+      "feedback": "Telefonu arıyor ve çaldığını duyuyorlar.",
+      "evidence": "Let me call it."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the phone?",
+      "options": [
+        "in the kitchen",
+        "in Leo's coat pocket",
+        "on the table",
+        "in the bathroom"
+      ],
+      "answer": 1,
+      "feedback": "Telefon montunun cebinde çalıyor.",
+      "evidence": "It's ringing in your coat pocket."
+    }
+  ]
+}

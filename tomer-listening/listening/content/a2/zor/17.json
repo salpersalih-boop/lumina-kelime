@@ -1,0 +1,113 @@
+{
+  "id": "a2-zor-17",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Closing-down sale",
+  "topic": "Mağaza anonsu",
+  "instructions": "Bir mağaza kapanış indirimini duyuruyor. İndirim oranlarını ve tarihleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Shop",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Attention, shoppers! After twenty years, Brown's Department Store is closing on the thirtieth of June."
+    },
+    {
+      "speaker": "voice",
+      "text": "Everything in the store is now thirty percent off."
+    },
+    {
+      "speaker": "voice",
+      "text": "On the ground floor, all shoes and bags are fifty percent off."
+    },
+    {
+      "speaker": "voice",
+      "text": "Electronics on the second floor are only ten percent off."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please remember: you can't return or change anything you buy in the sale."
+    },
+    {
+      "speaker": "voice",
+      "text": "From Monday, the store will open one hour earlier, at eight o'clock."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is the store closing?",
+      "options": [
+        "on the thirteenth of June",
+        "on the thirtieth of June",
+        "on the twentieth of June",
+        "on the thirtieth of July"
+      ],
+      "answer": 1,
+      "feedback": "Mağaza 30 haziranda (thirtieth of June) kapanıyor. Yirmi, kaç yıldır açık olduğu.",
+      "evidence": "is closing on the thirtieth of June."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much is everything off?",
+      "options": [
+        "ten percent",
+        "fifty percent",
+        "thirty percent",
+        "twenty percent"
+      ],
+      "answer": 2,
+      "feedback": "Mağazadaki her şey yüzde otuz indirimli.",
+      "evidence": "Everything in the store is now thirty percent off."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which things have the biggest discount?",
+      "options": [
+        "shoes and bags",
+        "electronics",
+        "clothes",
+        "books"
+      ],
+      "answer": 0,
+      "feedback": "Ayakkabı ve çantalar yüzde elli indirimli.",
+      "evidence": "all shoes and bags are fifty percent off."
+    },
+    {
+      "id": "q4",
+      "prompt": "What can't customers do?",
+      "options": [
+        "pay by card",
+        "buy electronics",
+        "go to the second floor",
+        "return things they buy"
+      ],
+      "answer": 3,
+      "feedback": "İndirimde alınan ürünler iade edilemez ya da değiştirilemez.",
+      "evidence": "you can't return or change anything you buy in the sale."
+    },
+    {
+      "id": "q5",
+      "prompt": "What time will the store open from Monday?",
+      "options": [
+        "at nine o'clock",
+        "at eight o'clock",
+        "at seven o'clock",
+        "at ten o'clock"
+      ],
+      "answer": 1,
+      "feedback": "Pazartesiden itibaren bir saat erken, sekizde açılacak.",
+      "evidence": "at eight o'clock."
+    }
+  ]
+}

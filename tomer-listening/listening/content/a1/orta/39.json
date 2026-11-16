@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-39",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Which film?",
+  "topic": "Film seçme",
+  "instructions": "İki arkadaş hangi filmi izleyeceklerini seçiyor. Film türü ve saate dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jo": {
+      "name": "Jo",
+      "voice": "female"
+    },
+    "ali": {
+      "name": "Ali",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jo",
+      "text": "Let's go to the cinema tonight. There are two new films."
+    },
+    {
+      "speaker": "ali",
+      "text": "What are they?"
+    },
+    {
+      "speaker": "jo",
+      "text": "One is a comedy, and one is a horror film."
+    },
+    {
+      "speaker": "ali",
+      "text": "I don't like horror films. They're scary!"
+    },
+    {
+      "speaker": "jo",
+      "text": "OK, the comedy. It starts at seven or at nine."
+    },
+    {
+      "speaker": "ali",
+      "text": "Seven is better. I'm tired, and I want to sleep early."
+    },
+    {
+      "speaker": "jo",
+      "text": "Great. Let's meet at the cinema at quarter to seven."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What kind of films are there?",
+      "options": [
+        "a comedy and a horror film",
+        "two comedies",
+        "a love film and a comedy",
+        "an action film and a comedy"
+      ],
+      "answer": 0,
+      "feedback": "Bir komedi ve bir korku filmi var.",
+      "evidence": "One is a comedy, and one is a horror film."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why doesn't Ali want the horror film?",
+      "options": [
+        "It's too long.",
+        "It's scary.",
+        "He saw it.",
+        "It's expensive."
+      ],
+      "answer": 1,
+      "feedback": "Korku filmlerini sevmiyor; korkutucu buluyor.",
+      "evidence": "They're scary!"
+    },
+    {
+      "id": "q3",
+      "prompt": "What time does their film start?",
+      "options": [
+        "at nine",
+        "at quarter to seven",
+        "at seven",
+        "at eight"
+      ],
+      "answer": 2,
+      "feedback": "Yorgun olduğu için saat yedideki seansı seçiyorlar.",
+      "evidence": "Seven is better."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time are they going to meet?",
+      "options": [
+        "at seven",
+        "at nine",
+        "at quarter past seven",
+        "at quarter to seven"
+      ],
+      "answer": 3,
+      "feedback": "Sinemada yediye çeyrek kala buluşacaklar.",
+      "evidence": "Let's meet at the cinema at quarter to seven."
+    }
+  ]
+}

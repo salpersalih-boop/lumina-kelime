@@ -1,0 +1,141 @@
+{
+  "id": "a2-zor-35",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Living abroad",
+  "topic": "Röportaj: yurt dışında yaşam",
+  "instructions": "Radyoda Japonya'da yaşayan bir İngilizle röportaj. Uzun bir diyalog; geçmiş, zorluklar ve planları ayırt et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Radio host",
+      "voice": "female"
+    },
+    "james": {
+      "name": "James",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Today I'm talking to James, who moved from London to Osaka. James, when did you move?"
+    },
+    {
+      "speaker": "james",
+      "text": "Five years ago. I went for one year to teach English, but I loved it, so I stayed."
+    },
+    {
+      "speaker": "host",
+      "text": "What was the most difficult thing at first?"
+    },
+    {
+      "speaker": "james",
+      "text": "The language. I couldn't read anything, not even the signs at the station. I got lost all the time!"
+    },
+    {
+      "speaker": "host",
+      "text": "And now?"
+    },
+    {
+      "speaker": "james",
+      "text": "Now I can speak quite well, but reading is still hard. There are thousands of characters."
+    },
+    {
+      "speaker": "host",
+      "text": "What do you like most about living in Japan?"
+    },
+    {
+      "speaker": "james",
+      "text": "The food, definitely. And it's very safe. I once left my wallet on a train, and someone gave it to the station."
+    },
+    {
+      "speaker": "host",
+      "text": "Do you miss anything from home?"
+    },
+    {
+      "speaker": "james",
+      "text": "My family, of course. And sometimes I miss a good English breakfast!"
+    },
+    {
+      "speaker": "host",
+      "text": "Are you going to stay in Japan?"
+    },
+    {
+      "speaker": "james",
+      "text": "For now, yes. Next year I'm starting my own language school here."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why did James first go to Osaka?",
+      "options": [
+        "to study Japanese",
+        "to teach English",
+        "to work in a bank",
+        "for a holiday"
+      ],
+      "answer": 1,
+      "feedback": "Bir yıllığına İngilizce öğretmeye gitti.",
+      "evidence": "I went for one year to teach English"
+    },
+    {
+      "id": "q2",
+      "prompt": "How long has James lived in Japan?",
+      "options": [
+        "one year",
+        "five years",
+        "fifteen years",
+        "three years"
+      ],
+      "answer": 1,
+      "feedback": "Beş yıl önce taşındı.",
+      "evidence": "Five years ago."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is still hard for James?",
+      "options": [
+        "speaking",
+        "reading",
+        "the food",
+        "making friends"
+      ],
+      "answer": 1,
+      "feedback": "Konuşması iyi ama okumak hâlâ zor.",
+      "evidence": "but reading is still hard."
+    },
+    {
+      "id": "q4",
+      "prompt": "What happened when James left his wallet on a train?",
+      "options": [
+        "Someone gave it to the station.",
+        "He never found it.",
+        "The police called him.",
+        "He found it at home."
+      ],
+      "answer": 0,
+      "feedback": "Biri cüzdanı istasyona teslim etti.",
+      "evidence": "someone gave it to the station."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is James going to do next year?",
+      "options": [
+        "move back to London",
+        "stop teaching",
+        "start his own language school",
+        "travel around Asia"
+      ],
+      "answer": 2,
+      "feedback": "Gelecek yıl kendi dil okulunu açacak.",
+      "evidence": "Next year I'm starting my own language school here."
+    }
+  ]
+}

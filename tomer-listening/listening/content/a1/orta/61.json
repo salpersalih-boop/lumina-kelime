@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-61",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the fruit juice bar",
+  "topic": "İçecek siparişi",
+  "instructions": "Bir çocuk meyve suyu barında sipariş veriyor. Kısa bir diyalog; meyvelere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Staff",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Boy",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hi! What juice would you like?"
+    },
+    {
+      "speaker": "b",
+      "text": "Orange and banana, please."
+    },
+    {
+      "speaker": "a",
+      "text": "Small or large?"
+    },
+    {
+      "speaker": "b",
+      "text": "Large, please. And no ice."
+    },
+    {
+      "speaker": "a",
+      "text": "That's three pounds fifty."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What juice does the boy want?",
+      "options": [
+        "orange and apple",
+        "orange and banana",
+        "apple and banana",
+        "only orange"
+      ],
+      "answer": 1,
+      "feedback": "Portakal ve muz suyu.",
+      "evidence": "Orange and banana, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "What size does he want?",
+      "options": [
+        "small",
+        "medium",
+        "large",
+        "two small"
+      ],
+      "answer": 2,
+      "feedback": "Büyük boy.",
+      "evidence": "Large, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "What doesn't he want?",
+      "options": [
+        "sugar",
+        "milk",
+        "a straw",
+        "ice"
+      ],
+      "answer": 3,
+      "feedback": "Buz istemiyor.",
+      "evidence": "And no ice."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does he pay?",
+      "options": [
+        "three pounds fifty",
+        "three pounds fifteen",
+        "five pounds thirty",
+        "thirty pounds"
+      ],
+      "answer": 0,
+      "feedback": "Üç pound elli.",
+      "evidence": "That's three pounds fifty."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-58",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "The supermarket",
+  "topic": "Alışveriş",
+  "instructions": "Paul süpermarkete gidiyor. Kısa bir metin; ne aldığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Paul",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I go to the supermarket on Saturday mornings."
+    },
+    {
+      "speaker": "s",
+      "text": "I buy milk, bread and vegetables."
+    },
+    {
+      "speaker": "s",
+      "text": "I always buy fish for dinner."
+    },
+    {
+      "speaker": "s",
+      "text": "I don't buy meat. I'm a vegetarian... but I eat fish!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When does Paul go to the supermarket?",
+      "options": [
+        "on Saturday mornings",
+        "on Sunday mornings",
+        "every evening",
+        "on Fridays"
+      ],
+      "answer": 0,
+      "feedback": "Cumartesi sabahları gidiyor.",
+      "evidence": "I go to the supermarket on Saturday mornings."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does he always buy for dinner?",
+      "options": [
+        "meat",
+        "chicken",
+        "pasta",
+        "fish"
+      ],
+      "answer": 3,
+      "feedback": "Akşam yemeği için hep balık alıyor.",
+      "evidence": "I always buy fish for dinner."
+    },
+    {
+      "id": "q3",
+      "prompt": "What doesn't he buy?",
+      "options": [
+        "milk",
+        "meat",
+        "bread",
+        "vegetables"
+      ],
+      "answer": 1,
+      "feedback": "Et almıyor.",
+      "evidence": "I don't buy meat."
+    }
+  ]
+}

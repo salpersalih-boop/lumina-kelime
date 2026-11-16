@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-61",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My phone",
+  "topic": "Teknoloji",
+  "instructions": "Deniz telefonunu anlatıyor. Kısa bir metin; ne için kullandığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Deniz",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I have a black phone."
+    },
+    {
+      "speaker": "s",
+      "text": "I use it to call my mum and to send messages."
+    },
+    {
+      "speaker": "s",
+      "text": "I take a lot of photos with it."
+    },
+    {
+      "speaker": "s",
+      "text": "I don't use it at school."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour is Deniz's phone?",
+      "options": [
+        "white",
+        "black",
+        "pink",
+        "blue"
+      ],
+      "answer": 1,
+      "feedback": "Telefonu siyah.",
+      "evidence": "I have a black phone."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who does she call?",
+      "options": [
+        "her dad",
+        "her friends",
+        "her mum",
+        "her teacher"
+      ],
+      "answer": 2,
+      "feedback": "Annesini arıyor.",
+      "evidence": "I use it to call my mum"
+    },
+    {
+      "id": "q3",
+      "prompt": "Where doesn't she use her phone?",
+      "options": [
+        "at home",
+        "in the park",
+        "on the bus",
+        "at school"
+      ],
+      "answer": 3,
+      "feedback": "Okulda kullanmıyor.",
+      "evidence": "I don't use it at school."
+    }
+  ]
+}

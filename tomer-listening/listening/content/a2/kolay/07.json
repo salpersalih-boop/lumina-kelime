@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-07",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A busy Saturday",
+  "topic": "Hafta sonu (geçmiş zaman)",
+  "instructions": "Tom geçen cumartesi yaptıklarını sırayla anlatıyor. Olayların sırasına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tom": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tom",
+      "text": "Last Saturday was a very busy day for me."
+    },
+    {
+      "speaker": "tom",
+      "text": "In the morning, I cleaned my room and washed my car."
+    },
+    {
+      "speaker": "tom",
+      "text": "At twelve, I met my friend Ben for lunch at an Italian restaurant."
+    },
+    {
+      "speaker": "tom",
+      "text": "After lunch, we went to a football match. Our team lost, two to one."
+    },
+    {
+      "speaker": "tom",
+      "text": "In the evening, I was very tired, so I stayed at home."
+    },
+    {
+      "speaker": "tom",
+      "text": "I ordered a pizza and watched a film. I fell asleep before the end!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What did Tom do in the morning?",
+      "options": [
+        "He played football.",
+        "He cleaned his room and washed his car.",
+        "He met Ben.",
+        "He watched a film."
+      ],
+      "answer": 1,
+      "feedback": "Sabah odasını temizledi ve arabasını yıkadı.",
+      "evidence": "In the morning, I cleaned my room and washed my car."
+    },
+    {
+      "id": "q2",
+      "prompt": "What was the result of the match?",
+      "options": [
+        "Their team won.",
+        "It was two to two.",
+        "Their team lost.",
+        "There was no match."
+      ],
+      "answer": 2,
+      "feedback": "Takımları ikiye bir kaybetti (lost).",
+      "evidence": "Our team lost, two to one."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did Tom do in the evening?",
+      "options": [
+        "He stayed at home.",
+        "He went to a restaurant.",
+        "He went to the cinema.",
+        "He met friends."
+      ],
+      "answer": 0,
+      "feedback": "Çok yorgundu, evde kaldı (stayed at home), pizza söyledi.",
+      "evidence": "so I stayed at home."
+    }
+  ]
+}

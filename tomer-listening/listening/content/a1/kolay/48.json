@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-48",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Our new house",
+  "topic": "Ev",
+  "instructions": "Lily ailesinin yeni evini anlatıyor. Oda sayısına ve bahçeye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Lily",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "We have a new house."
+    },
+    {
+      "speaker": "s",
+      "text": "It has three bedrooms and two bathrooms."
+    },
+    {
+      "speaker": "s",
+      "text": "My bedroom is small, but it has a big window."
+    },
+    {
+      "speaker": "s",
+      "text": "There is a garden with a tree."
+    },
+    {
+      "speaker": "s",
+      "text": "My dog loves the garden!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many bedrooms does the house have?",
+      "options": [
+        "two",
+        "four",
+        "three",
+        "one"
+      ],
+      "answer": 2,
+      "feedback": "Evde üç yatak odası var.",
+      "evidence": "It has three bedrooms"
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Lily's bedroom have?",
+      "options": [
+        "a big window",
+        "a big bed",
+        "a balcony",
+        "a TV"
+      ],
+      "answer": 0,
+      "feedback": "Odası küçük ama büyük bir penceresi var.",
+      "evidence": "it has a big window."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who loves the garden?",
+      "options": [
+        "Lily",
+        "her mum",
+        "her cat",
+        "her dog"
+      ],
+      "answer": 3,
+      "feedback": "Köpeği bahçeyi çok seviyor.",
+      "evidence": "My dog loves the garden!"
+    }
+  ]
+}

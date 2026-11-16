@@ -1,0 +1,117 @@
+{
+  "id": "a2-zor-55",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Old town walking tour",
+  "topic": "Rehberli tur",
+  "instructions": "Bir rehber yürüyüş turunu anlatıyor. Uzun bir metin; sırayı, sayıları ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Tour guide",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Good morning and welcome to our walking tour of the old town. My name is Daniel."
+    },
+    {
+      "speaker": "s",
+      "text": "Our tour will take about two hours, and we'll walk about three kilometres."
+    },
+    {
+      "speaker": "s",
+      "text": "First, we'll visit the cathedral. It was built more than seven hundred years ago. You can go inside, but please be quiet and don't take photos with a flash."
+    },
+    {
+      "speaker": "s",
+      "text": "Then we'll walk to the old market, where you'll have thirty minutes of free time. Try the local cheese—it's famous!"
+    },
+    {
+      "speaker": "s",
+      "text": "After that, we'll cross the river and go up to the castle. There are a hundred and twenty steps, so take your time."
+    },
+    {
+      "speaker": "s",
+      "text": "From the top, you can see the whole city."
+    },
+    {
+      "speaker": "s",
+      "text": "The tour finishes at the castle at about twelve thirty. If you have any questions, just ask me. Let's go!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long is the tour?",
+      "options": [
+        "about one hour",
+        "about two hours",
+        "about three hours",
+        "all day"
+      ],
+      "answer": 1,
+      "feedback": "Tur yaklaşık iki saat.",
+      "evidence": "Our tour will take about two hours"
+    },
+    {
+      "id": "q2",
+      "prompt": "How old is the cathedral?",
+      "options": [
+        "about two hundred years",
+        "more than seven hundred years",
+        "about seventy years",
+        "more than a thousand years"
+      ],
+      "answer": 1,
+      "feedback": "Katedral yedi yüz yıldan daha eski.",
+      "evidence": "It was built more than seven hundred years ago."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much free time is there at the market?",
+      "options": [
+        "ten minutes",
+        "an hour",
+        "thirty minutes",
+        "fifteen minutes"
+      ],
+      "answer": 2,
+      "feedback": "Pazarda otuz dakika serbest zaman var.",
+      "evidence": "you'll have thirty minutes of free time."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is the market famous for?",
+      "options": [
+        "its cheese",
+        "its bread",
+        "its flowers",
+        "its fish"
+      ],
+      "answer": 0,
+      "feedback": "Yerel peyniri ünlü.",
+      "evidence": "Try the local cheese—it's famous!"
+    },
+    {
+      "id": "q5",
+      "prompt": "Where does the tour finish?",
+      "options": [
+        "at the market",
+        "at the cathedral",
+        "by the river",
+        "at the castle"
+      ],
+      "answer": 3,
+      "feedback": "Tur saat on iki buçuk civarı kalede bitiyor.",
+      "evidence": "The tour finishes at the castle"
+    }
+  ]
+}

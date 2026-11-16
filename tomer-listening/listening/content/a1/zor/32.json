@@ -1,0 +1,137 @@
+{
+  "id": "a1-zor-32",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A present for Dad",
+  "topic": "Hediye seçme",
+  "instructions": "İki kardeş babaları için hediye seçiyor. Uzun bir diyalog; reddedilen fikirleri ve son kararı takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "eva": {
+      "name": "Eva",
+      "voice": "female"
+    },
+    "tim": {
+      "name": "Tim",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "eva",
+      "text": "Tim, it's Dad's birthday next Sunday. What can we buy him?"
+    },
+    {
+      "speaker": "tim",
+      "text": "What about a book? He likes reading."
+    },
+    {
+      "speaker": "eva",
+      "text": "We gave him a book last year. Something different."
+    },
+    {
+      "speaker": "tim",
+      "text": "A new shirt?"
+    },
+    {
+      "speaker": "eva",
+      "text": "No, Mum always buys him shirts. What about a watch? His old watch is broken."
+    },
+    {
+      "speaker": "tim",
+      "text": "Watches are very expensive. I have only twenty pounds."
+    },
+    {
+      "speaker": "eva",
+      "text": "I have thirty. So we have fifty pounds."
+    },
+    {
+      "speaker": "tim",
+      "text": "That's OK for a simple watch. Let's go to the shop on Saturday morning."
+    },
+    {
+      "speaker": "eva",
+      "text": "Good idea. And we can make a cake too. Dad loves chocolate cake."
+    },
+    {
+      "speaker": "tim",
+      "text": "Yes, but I can't cook!"
+    },
+    {
+      "speaker": "eva",
+      "text": "Don't worry. I can make it."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is Dad's birthday?",
+      "options": [
+        "next Saturday",
+        "next Sunday",
+        "today",
+        "last Sunday"
+      ],
+      "answer": 1,
+      "feedback": "Babalarının doğum günü gelecek pazar.",
+      "evidence": "it's Dad's birthday next Sunday."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why don't they buy a book?",
+      "options": [
+        "He doesn't like reading.",
+        "They gave him a book last year.",
+        "Books are expensive.",
+        "He has a lot of books."
+      ],
+      "answer": 1,
+      "feedback": "Geçen yıl kitap vermişler.",
+      "evidence": "We gave him a book last year."
+    },
+    {
+      "id": "q3",
+      "prompt": "What are they going to buy?",
+      "options": [
+        "a shirt",
+        "a book",
+        "a cake",
+        "a watch"
+      ],
+      "answer": 3,
+      "feedback": "Eski saati bozuk; saat alacaklar.",
+      "evidence": "What about a watch?"
+    },
+    {
+      "id": "q4",
+      "prompt": "How much money do they have together?",
+      "options": [
+        "twenty pounds",
+        "thirty pounds",
+        "fifty pounds",
+        "forty pounds"
+      ],
+      "answer": 2,
+      "feedback": "Tim'in yirmi, Eva'nın otuz poundu var: toplam elli.",
+      "evidence": "So we have fifty pounds."
+    },
+    {
+      "id": "q5",
+      "prompt": "Who is going to make the cake?",
+      "options": [
+        "Eva",
+        "Tim",
+        "Mum",
+        "Dad"
+      ],
+      "answer": 0,
+      "feedback": "Tim yemek yapamıyor; pastayı Eva yapacak.",
+      "evidence": "Don't worry. I can make it."
+    }
+  ]
+}

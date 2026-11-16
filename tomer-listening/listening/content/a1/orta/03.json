@@ -1,0 +1,140 @@
+{
+  "id": "a1-orta-03",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Buying a train ticket",
+  "topic": "Yolculuk ve bilet",
+  "instructions": "Lisa istasyonda bilet alıyor. Uzun bir diyalog; iki farklı tren saati ve fiyat var, dikkatli dinle.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "clerk": {
+      "name": "Ticket clerk",
+      "voice": "male"
+    },
+    "lisa": {
+      "name": "Lisa",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "clerk",
+      "text": "Good afternoon. How can I help you?"
+    },
+    {
+      "speaker": "lisa",
+      "text": "Hello. I'd like a ticket to Oxford, please."
+    },
+    {
+      "speaker": "clerk",
+      "text": "Single or return?"
+    },
+    {
+      "speaker": "lisa",
+      "text": "Return, please. I'm coming back tomorrow evening."
+    },
+    {
+      "speaker": "clerk",
+      "text": "OK. When do you want to travel?"
+    },
+    {
+      "speaker": "lisa",
+      "text": "Now, if possible. What time is the next train?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "The next train is at ten past two, but it's very busy. There's another train at twenty to three."
+    },
+    {
+      "speaker": "lisa",
+      "text": "I'll take the ten past two train. How much is the ticket?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "A return ticket is twenty-four pounds."
+    },
+    {
+      "speaker": "lisa",
+      "text": "Can I pay by card?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "Yes, of course."
+    },
+    {
+      "speaker": "lisa",
+      "text": "Which platform is it?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "Platform four. It's on the left, next to the café."
+    },
+    {
+      "speaker": "lisa",
+      "text": "Thank you very much."
+    },
+    {
+      "speaker": "clerk",
+      "text": "You're welcome. Have a nice trip!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What kind of ticket does Lisa buy?",
+      "options": [
+        "a single ticket",
+        "a return ticket",
+        "a weekly ticket",
+        "two tickets"
+      ],
+      "answer": 1,
+      "feedback": "Gidiş-dönüş (return) istiyor çünkü yarın akşam geri dönecek.",
+      "evidence": "Return, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time is Lisa's train?",
+      "options": [
+        "at twenty to three",
+        "at two o'clock",
+        "at ten to two",
+        "at ten past two"
+      ],
+      "answer": 3,
+      "feedback": "İki tren var: 2:10 ve 2:40 (twenty to three). Lisa 2:10 trenini (ten past two) seçiyor.",
+      "evidence": "I'll take the ten past two train."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is the ticket?",
+      "options": [
+        "fourteen pounds",
+        "twenty pounds",
+        "twenty-four pounds",
+        "forty pounds"
+      ],
+      "answer": 2,
+      "feedback": "Gidiş-dönüş bileti yirmi dört pound (twenty-four pounds).",
+      "evidence": "A return ticket is twenty-four pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is platform four?",
+      "options": [
+        "on the right, next to the ticket office",
+        "on the left, next to the café",
+        "on the left, next to the shop",
+        "on the right, next to the café"
+      ],
+      "answer": 1,
+      "feedback": "Peron solda (on the left) ve kafenin yanında (next to the café). İki bilginin de doğru olması gerekiyor.",
+      "evidence": "It's on the left, next to the café."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-50",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the train station café",
+  "topic": "Kafede sipariş",
+  "instructions": "Bir yolcu istasyon kafesinde sipariş veriyor. İçecek ve yiyeceklere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Café",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Passenger",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hi. What can I get you?"
+    },
+    {
+      "speaker": "b",
+      "text": "A large coffee with milk, please."
+    },
+    {
+      "speaker": "a",
+      "text": "Anything to eat?"
+    },
+    {
+      "speaker": "b",
+      "text": "Do you have sandwiches?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, cheese and tomato or chicken."
+    },
+    {
+      "speaker": "b",
+      "text": "Chicken, please. My train leaves in ten minutes. Can you be quick?"
+    },
+    {
+      "speaker": "a",
+      "text": "Of course. That's seven pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What size coffee does she want?",
+      "options": [
+        "small",
+        "medium",
+        "large",
+        "two coffees"
+      ],
+      "answer": 2,
+      "feedback": "Büyük boy sütlü kahve istiyor.",
+      "evidence": "A large coffee with milk, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "What sandwich does she buy?",
+      "options": [
+        "cheese and tomato",
+        "chicken",
+        "egg",
+        "tuna"
+      ],
+      "answer": 1,
+      "feedback": "Tavuklu sandviç alıyor.",
+      "evidence": "Chicken, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "When does her train leave?",
+      "options": [
+        "in ten minutes",
+        "in two minutes",
+        "in an hour",
+        "in twenty minutes"
+      ],
+      "answer": 0,
+      "feedback": "Treni on dakika sonra kalkıyor.",
+      "evidence": "My train leaves in ten minutes."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does she pay?",
+      "options": [
+        "ten pounds",
+        "six pounds",
+        "eleven pounds",
+        "seven pounds"
+      ],
+      "answer": 3,
+      "feedback": "Yedi pound ödüyor.",
+      "evidence": "That's seven pounds."
+    }
+  ]
+}

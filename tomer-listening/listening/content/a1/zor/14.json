@@ -1,0 +1,129 @@
+{
+  "id": "a1-zor-14",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Welcome to the sports centre",
+  "topic": "Tanıtım turu",
+  "instructions": "Bir görevli yeni üyelere spor merkezini gezdiriyor. Uzun bir metin; yerleri, kuralları ve saatleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "guide": {
+      "name": "Guide",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "guide",
+      "text": "Hello everyone, and welcome to Riverside Sports Centre. My name is Dan, and I'm going to show you around."
+    },
+    {
+      "speaker": "guide",
+      "text": "On your left is the reception. You can buy drinks and towels here."
+    },
+    {
+      "speaker": "guide",
+      "text": "The changing rooms are downstairs. Please don't leave money or phones there. Use the lockers."
+    },
+    {
+      "speaker": "guide",
+      "text": "The swimming pool is next to the changing rooms. You can't swim without a swimming cap."
+    },
+    {
+      "speaker": "guide",
+      "text": "The pool is for children only on Saturday mornings, from nine to eleven."
+    },
+    {
+      "speaker": "guide",
+      "text": "Upstairs, there are two rooms. The big room is for dance and yoga. The small room is the gym."
+    },
+    {
+      "speaker": "guide",
+      "text": "In the gym, please always bring a towel and clean the machines after you use them."
+    },
+    {
+      "speaker": "guide",
+      "text": "There are tennis courts outside. You need to book them one day before, on the phone or on our website."
+    },
+    {
+      "speaker": "guide",
+      "text": "The café is near the main door. It closes at eight, but the centre closes at ten."
+    },
+    {
+      "speaker": "guide",
+      "text": "Have you got any questions? No? Then enjoy your first day!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What can you buy at the reception?",
+      "options": [
+        "drinks and towels",
+        "swimming caps",
+        "food and drinks",
+        "tennis balls"
+      ],
+      "answer": 0,
+      "feedback": "Resepsiyonda içecek ve havlu (drinks and towels) satılıyor.",
+      "evidence": "You can buy drinks and towels here."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where should you leave your phone?",
+      "options": [
+        "in the changing rooms",
+        "at the reception",
+        "in a locker",
+        "in the café"
+      ],
+      "answer": 2,
+      "feedback": "Soyunma odasına bırakmamalısın; dolapları (lockers) kullan.",
+      "evidence": "Use the lockers."
+    },
+    {
+      "id": "q3",
+      "prompt": "When is the pool only for children?",
+      "options": [
+        "every afternoon",
+        "on Sunday mornings",
+        "every evening from nine to eleven",
+        "on Saturday mornings"
+      ],
+      "answer": 3,
+      "feedback": "Havuz cumartesi sabahları (Saturday mornings) dokuzdan on bire kadar sadece çocuklar için.",
+      "evidence": "The pool is for children only on Saturday mornings"
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the gym?",
+      "options": [
+        "downstairs",
+        "in the small room upstairs",
+        "in the big room upstairs",
+        "outside"
+      ],
+      "answer": 1,
+      "feedback": "Üst katta iki oda var; spor salonu küçük odada (The small room is the gym). Büyük oda dans ve yoga için.",
+      "evidence": "The small room is the gym."
+    },
+    {
+      "id": "q5",
+      "prompt": "What time does the café close?",
+      "options": [
+        "at ten",
+        "at nine",
+        "at eight",
+        "at eleven"
+      ],
+      "answer": 2,
+      "feedback": "Kafe sekizde (at eight) kapanıyor; on, merkezin kapanış saati.",
+      "evidence": "It closes at eight, but the centre closes at ten."
+    }
+  ]
+}

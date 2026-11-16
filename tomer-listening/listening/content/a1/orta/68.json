@@ -1,0 +1,116 @@
+{
+  "id": "a1-orta-68",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Ordering a cake for a party",
+  "topic": "Pastane",
+  "instructions": "Bir baba parti için pasta sipariş ediyor. Tür, boy ve teslim gününe dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Baker",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Dad",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello. Can I help you?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. I'd like a birthday cake for my son. He's six."
+    },
+    {
+      "speaker": "a",
+      "text": "What kind of cake?"
+    },
+    {
+      "speaker": "b",
+      "text": "Chocolate, please. With a football on top."
+    },
+    {
+      "speaker": "a",
+      "text": "For how many people?"
+    },
+    {
+      "speaker": "b",
+      "text": "Twenty children."
+    },
+    {
+      "speaker": "a",
+      "text": "OK. When do you need it?"
+    },
+    {
+      "speaker": "b",
+      "text": "On Saturday morning."
+    },
+    {
+      "speaker": "a",
+      "text": "No problem. It's twenty-five pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is the son?",
+      "options": [
+        "five",
+        "six",
+        "seven",
+        "twenty"
+      ],
+      "answer": 1,
+      "feedback": "Oğlu altı yaşında.",
+      "evidence": "He's six."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does the dad want on top of the cake?",
+      "options": [
+        "a car",
+        "a football",
+        "a dog",
+        "his name"
+      ],
+      "answer": 1,
+      "feedback": "Pastanın üstüne bir futbol topu istiyor.",
+      "evidence": "With a football on top."
+    },
+    {
+      "id": "q3",
+      "prompt": "How many children are coming?",
+      "options": [
+        "six",
+        "ten",
+        "twenty",
+        "twenty-five"
+      ],
+      "answer": 2,
+      "feedback": "Yirmi çocuk gelecek.",
+      "evidence": "Twenty children."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the cake?",
+      "options": [
+        "twenty pounds",
+        "fifteen pounds",
+        "six pounds",
+        "twenty-five pounds"
+      ],
+      "answer": 3,
+      "feedback": "Pasta yirmi beş pound.",
+      "evidence": "It's twenty-five pounds."
+    }
+  ]
+}

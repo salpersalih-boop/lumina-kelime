@@ -1,0 +1,112 @@
+{
+  "id": "a1-orta-44",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Ordering breakfast",
+  "topic": "Kafede kahvaltı",
+  "instructions": "Bir kadın kafede kahvaltı sipariş ediyor. Ne istediğine ve neyi istemediğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "waiter": {
+      "name": "Waiter",
+      "voice": "male"
+    },
+    "woman": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "waiter",
+      "text": "Good morning. What can I get you?"
+    },
+    {
+      "speaker": "woman",
+      "text": "I'd like eggs and toast, please."
+    },
+    {
+      "speaker": "waiter",
+      "text": "How would you like your eggs?"
+    },
+    {
+      "speaker": "woman",
+      "text": "Fried, please. But no butter on the toast."
+    },
+    {
+      "speaker": "waiter",
+      "text": "And to drink?"
+    },
+    {
+      "speaker": "woman",
+      "text": "A cup of tea with milk, please. No sugar."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Anything else?"
+    },
+    {
+      "speaker": "woman",
+      "text": "Yes, an orange juice too, please."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does the woman order to eat?",
+      "options": [
+        "eggs and toast",
+        "pancakes",
+        "cereal",
+        "a sandwich"
+      ],
+      "answer": 0,
+      "feedback": "Yumurta ve kızarmış ekmek istiyor.",
+      "evidence": "I'd like eggs and toast, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "How does she want her eggs?",
+      "options": [
+        "boiled",
+        "fried",
+        "scrambled",
+        "with butter"
+      ],
+      "answer": 1,
+      "feedback": "Yumurtaları sahanda (fried) istiyor.",
+      "evidence": "Fried, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "What doesn't she want on her toast?",
+      "options": [
+        "jam",
+        "cheese",
+        "butter",
+        "honey"
+      ],
+      "answer": 2,
+      "feedback": "Ekmeğe tereyağı istemiyor.",
+      "evidence": "But no butter on the toast."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does she drink?",
+      "options": [
+        "coffee with milk",
+        "only orange juice",
+        "tea with sugar",
+        "tea with milk and orange juice"
+      ],
+      "answer": 3,
+      "feedback": "Sütlü şekersiz çay ve bir portakal suyu.",
+      "evidence": "Yes, an orange juice too, please."
+    }
+  ]
+}

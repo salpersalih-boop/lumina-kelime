@@ -1,0 +1,132 @@
+{
+  "id": "a1-orta-45",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Planning a picnic",
+  "topic": "Plan yapma",
+  "instructions": "Üç arkadaş piknik planlıyor. Uzun bir diyalog; gün, yer ve kimin ne getireceğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mia": {
+      "name": "Mia",
+      "voice": "female"
+    },
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    },
+    "sara": {
+      "name": "Sara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mia",
+      "text": "Let's have a picnic this weekend!"
+    },
+    {
+      "speaker": "leo",
+      "text": "Good idea. Saturday or Sunday?"
+    },
+    {
+      "speaker": "sara",
+      "text": "I work on Saturday morning. Sunday is better for me."
+    },
+    {
+      "speaker": "mia",
+      "text": "OK, Sunday. Where shall we go?"
+    },
+    {
+      "speaker": "leo",
+      "text": "What about the park near the river? It's beautiful."
+    },
+    {
+      "speaker": "sara",
+      "text": "Yes, I love that park. What time?"
+    },
+    {
+      "speaker": "mia",
+      "text": "At twelve? We can have lunch there."
+    },
+    {
+      "speaker": "leo",
+      "text": "Perfect. I can bring sandwiches and some fruit."
+    },
+    {
+      "speaker": "sara",
+      "text": "I'll bring drinks. Water and orange juice."
+    },
+    {
+      "speaker": "mia",
+      "text": "And I'll make a chocolate cake!"
+    },
+    {
+      "speaker": "leo",
+      "text": "Great. What about the weather?"
+    },
+    {
+      "speaker": "mia",
+      "text": "It's going to be sunny on Sunday. Don't forget your hat!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why can't they go on Saturday?",
+      "options": [
+        "It's going to rain.",
+        "Sara works on Saturday morning.",
+        "Leo is busy.",
+        "The park is closed."
+      ],
+      "answer": 1,
+      "feedback": "Sara cumartesi sabahı çalışıyor.",
+      "evidence": "I work on Saturday morning."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where are they going?",
+      "options": [
+        "to the park near the river",
+        "to the beach",
+        "to Mia's garden",
+        "to the mountains"
+      ],
+      "answer": 0,
+      "feedback": "Nehrin yanındaki parka gidecekler.",
+      "evidence": "What about the park near the river?"
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Sara going to bring?",
+      "options": [
+        "sandwiches",
+        "fruit",
+        "a cake",
+        "drinks"
+      ],
+      "answer": 3,
+      "feedback": "Sara içecek getirecek: su ve portakal suyu.",
+      "evidence": "I'll bring drinks."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is Mia going to make?",
+      "options": [
+        "sandwiches",
+        "a salad",
+        "a chocolate cake",
+        "lemonade"
+      ],
+      "answer": 2,
+      "feedback": "Mia çikolatalı pasta yapacak.",
+      "evidence": "And I'll make a chocolate cake!"
+    }
+  ]
+}

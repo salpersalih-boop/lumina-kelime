@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-65",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My town market",
+  "topic": "Şehir ve alışveriş",
+  "instructions": "Ayla kasabasındaki pazarı anlatıyor. Gün, saat ve satılanlara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Ayla",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "There is a big market in my town every Friday."
+    },
+    {
+      "speaker": "s",
+      "text": "It opens at eight in the morning and closes at two."
+    },
+    {
+      "speaker": "s",
+      "text": "You can buy fruit, vegetables, cheese and clothes there."
+    },
+    {
+      "speaker": "s",
+      "text": "My mum and I go every week."
+    },
+    {
+      "speaker": "s",
+      "text": "The fruit is fresh and cheap."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is the market?",
+      "options": [
+        "every Friday",
+        "every Saturday",
+        "every day",
+        "every Sunday"
+      ],
+      "answer": 0,
+      "feedback": "Pazar her cuma kuruluyor.",
+      "evidence": "There is a big market in my town every Friday."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does it close?",
+      "options": [
+        "at eight",
+        "at twelve",
+        "at four",
+        "at two"
+      ],
+      "answer": 3,
+      "feedback": "Sabah sekizde açılıyor, ikide kapanıyor.",
+      "evidence": "closes at two."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Ayla say about the fruit?",
+      "options": [
+        "It's expensive.",
+        "It's fresh and cheap.",
+        "It's not good.",
+        "There isn't any."
+      ],
+      "answer": 1,
+      "feedback": "Meyveler taze ve ucuz.",
+      "evidence": "The fruit is fresh and cheap."
+    }
+  ]
+}

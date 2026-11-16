@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-42",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Change of plans",
+  "topic": "Telefon mesajı",
+  "instructions": "Anna arkadaşına planların değiştiğini söylüyor. Kısa bir metin; yeni gün ve yere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "anna": {
+      "name": "Anna",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "anna",
+      "text": "Hi Jo, it's Anna. The restaurant is closed on Friday, so let's meet on Saturday instead."
+    },
+    {
+      "speaker": "anna",
+      "text": "We can try the new Thai place near the park."
+    },
+    {
+      "speaker": "anna",
+      "text": "Same time, half past seven. See you then!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why are they changing their plans?",
+      "options": [
+        "Anna is busy on Friday.",
+        "The restaurant is closed on Friday.",
+        "Jo is ill.",
+        "It is going to rain."
+      ],
+      "answer": 1,
+      "feedback": "Restoran cuma kapalı.",
+      "evidence": "The restaurant is closed on Friday"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where are they going to eat now?",
+      "options": [
+        "the new Thai place",
+        "the Italian restaurant",
+        "Anna's house",
+        "a café in the park"
+      ],
+      "answer": 0,
+      "feedback": "Parkın yanındaki yeni Tayland restoranını deneyecekler.",
+      "evidence": "We can try the new Thai place near the park."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time are they meeting?",
+      "options": [
+        "at seven",
+        "at half past six",
+        "at eight",
+        "at half past seven"
+      ],
+      "answer": 3,
+      "feedback": "Saat aynı: yedi buçuk.",
+      "evidence": "Same time, half past seven."
+    }
+  ]
+}

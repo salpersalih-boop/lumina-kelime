@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-23",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "The meeting has moved",
+  "topic": "İş mesajı",
+  "instructions": "Bir yönetici ekibine kısa bir mesaj bırakıyor. Değişen oda ve saate dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "boss": {
+      "name": "Manager",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "boss",
+      "text": "Hi everyone, it's Carol. Tomorrow's meeting is in room two, not room five."
+    },
+    {
+      "speaker": "boss",
+      "text": "It starts at nine thirty, not nine."
+    },
+    {
+      "speaker": "boss",
+      "text": "Please bring your laptops."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which room is the meeting in?",
+      "options": [
+        "room five",
+        "room nine",
+        "room two",
+        "room twelve"
+      ],
+      "answer": 2,
+      "feedback": "Toplantı beş numaralı değil, iki numaralı odada.",
+      "evidence": "Tomorrow's meeting is in room two, not room five."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does the meeting start?",
+      "options": [
+        "at nine",
+        "at nine thirty",
+        "at ten",
+        "at half past ten"
+      ],
+      "answer": 1,
+      "feedback": "Dokuzda değil, dokuz buçukta başlıyor.",
+      "evidence": "It starts at nine thirty, not nine."
+    },
+    {
+      "id": "q3",
+      "prompt": "What should people bring?",
+      "options": [
+        "their laptops",
+        "their phones",
+        "some coffee",
+        "a report"
+      ],
+      "answer": 0,
+      "feedback": "Dizüstü bilgisayarlarını getirmeliler.",
+      "evidence": "Please bring your laptops."
+    }
+  ]
+}

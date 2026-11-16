@@ -1,0 +1,99 @@
+{
+  "id": "a2-kolay-04",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My town",
+  "topic": "Şehir ve karşılaştırma",
+  "instructions": "Kemal yaşadığı kasabayı eski şehriyle karşılaştırıyor. Uzun bir metin; \"-er / more / than\" karşılaştırmalarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "kemal": {
+      "name": "Kemal",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "kemal",
+      "text": "Two years ago, I moved from Istanbul to a small town near the sea."
+    },
+    {
+      "speaker": "kemal",
+      "text": "My town is much quieter than Istanbul, and the air is cleaner."
+    },
+    {
+      "speaker": "kemal",
+      "text": "There aren't many shops, but there is a nice market every Wednesday."
+    },
+    {
+      "speaker": "kemal",
+      "text": "There is one cinema, a library and a beautiful park."
+    },
+    {
+      "speaker": "kemal",
+      "text": "Houses here are cheaper, so now I have a bigger flat with a balcony."
+    },
+    {
+      "speaker": "kemal",
+      "text": "The only problem is the bus. There's a bus to the city only every two hours."
+    },
+    {
+      "speaker": "kemal",
+      "text": "In Istanbul I went everywhere by metro, but here I need a car."
+    },
+    {
+      "speaker": "kemal",
+      "text": "People here are very friendly. I know all my neighbours."
+    },
+    {
+      "speaker": "kemal",
+      "text": "Sometimes I miss the big city, but I am happier here."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is better in Kemal's town than in Istanbul?",
+      "options": [
+        "the buses",
+        "the shops",
+        "the air",
+        "the metro"
+      ],
+      "answer": 2,
+      "feedback": "Kasabası daha sessiz ve havası daha temiz (cleaner). Otobüs ve dükkânlar ise az.",
+      "evidence": "My town is much quieter than Istanbul, and the air is cleaner."
+    },
+    {
+      "id": "q2",
+      "prompt": "When is the market?",
+      "options": [
+        "every day",
+        "every Wednesday",
+        "every two hours",
+        "at the weekend"
+      ],
+      "answer": 1,
+      "feedback": "Her çarşamba (every Wednesday) pazar kuruluyor. \"Every two hours\" otobüslerin sıklığı.",
+      "evidence": "there is a nice market every Wednesday."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the problem in the town?",
+      "options": [
+        "The houses are expensive.",
+        "The people are unfriendly.",
+        "There isn't a park.",
+        "There aren't many buses."
+      ],
+      "answer": 3,
+      "feedback": "Şehre otobüs sadece iki saatte bir var; tek sorun bu.",
+      "evidence": "The only problem is the bus."
+    }
+  ]
+}

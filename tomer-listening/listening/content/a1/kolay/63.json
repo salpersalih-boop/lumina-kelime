@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-63",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My uncle Jack",
+  "topic": "Aile ve meslekler",
+  "instructions": "Ella amcasını anlatıyor. İşine ve yaşadığı yere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Ella",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "My uncle Jack is my dad's brother."
+    },
+    {
+      "speaker": "s",
+      "text": "He is a pilot."
+    },
+    {
+      "speaker": "s",
+      "text": "He lives in London, but he travels all over the world."
+    },
+    {
+      "speaker": "s",
+      "text": "He always brings me presents from different countries."
+    },
+    {
+      "speaker": "s",
+      "text": "Last month he brought me a doll from Japan."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is uncle Jack's job?",
+      "options": [
+        "a teacher",
+        "a doctor",
+        "a driver",
+        "a pilot"
+      ],
+      "answer": 3,
+      "feedback": "Amcası pilot.",
+      "evidence": "He is a pilot."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where does he live?",
+      "options": [
+        "in London",
+        "in Japan",
+        "in Paris",
+        "with Ella"
+      ],
+      "answer": 0,
+      "feedback": "Londra'da yaşıyor.",
+      "evidence": "He lives in London"
+    },
+    {
+      "id": "q3",
+      "prompt": "What did he bring last month?",
+      "options": [
+        "a book from Japan",
+        "a doll from Japan",
+        "a doll from China",
+        "a toy plane"
+      ],
+      "answer": 1,
+      "feedback": "Geçen ay Japonya'dan bir oyuncak bebek getirdi.",
+      "evidence": "Last month he brought me a doll from Japan."
+    }
+  ]
+}

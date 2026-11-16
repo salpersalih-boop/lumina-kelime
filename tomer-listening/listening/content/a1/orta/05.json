@@ -1,0 +1,104 @@
+{
+  "id": "a1-orta-05",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Asking for directions",
+  "topic": "Yol tarifi",
+  "instructions": "Bir turist postaneyi soruyor. Kısa bir diyalog; yönlere ve yerlere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "man": {
+      "name": "Tourist",
+      "voice": "male"
+    },
+    "woman": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "man",
+      "text": "Excuse me, where is the post office?"
+    },
+    {
+      "speaker": "woman",
+      "text": "Go straight on and turn right at the bank."
+    },
+    {
+      "speaker": "woman",
+      "text": "The post office is next to the supermarket."
+    },
+    {
+      "speaker": "man",
+      "text": "Is it far?"
+    },
+    {
+      "speaker": "woman",
+      "text": "No, it's about five minutes on foot."
+    },
+    {
+      "speaker": "man",
+      "text": "Thank you!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the man looking for?",
+      "options": [
+        "the bank",
+        "the supermarket",
+        "the post office",
+        "the station"
+      ],
+      "answer": 2,
+      "feedback": "Postaneyi (post office) soruyor. Banka ve süpermarket yol tarifindeki yerler.",
+      "evidence": "Excuse me, where is the post office?"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where does he turn right?",
+      "options": [
+        "at the supermarket",
+        "at the bank",
+        "at the post office",
+        "at the park"
+      ],
+      "answer": 1,
+      "feedback": "Düz gidip bankadan (at the bank) sağa dönecek.",
+      "evidence": "turn right at the bank"
+    },
+    {
+      "id": "q3",
+      "prompt": "What is next to the post office?",
+      "options": [
+        "the bank",
+        "a café",
+        "the supermarket",
+        "a school"
+      ],
+      "answer": 2,
+      "feedback": "Postane süpermarketin yanında (next to the supermarket).",
+      "evidence": "The post office is next to the supermarket."
+    },
+    {
+      "id": "q4",
+      "prompt": "How long does it take on foot?",
+      "options": [
+        "fifteen minutes",
+        "fifty minutes",
+        "two minutes",
+        "five minutes"
+      ],
+      "answer": 3,
+      "feedback": "Yürüyerek yaklaşık beş dakika (five minutes). \"Fifteen\" ve \"fifty\" ile karıştırma.",
+      "evidence": "it's about five minutes on foot."
+    }
+  ]
+}

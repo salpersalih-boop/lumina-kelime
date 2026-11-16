@@ -1,0 +1,116 @@
+{
+  "id": "a2-orta-66",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Booking a campsite",
+  "topic": "Kamp rezervasyonu",
+  "instructions": "Bir baba telefonla kamp yeri ayırtıyor. Tarih, kişi sayısı, fiyat ve kurallara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Campsite",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Dad",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Lakeside Campsite, hello."
+    },
+    {
+      "speaker": "b",
+      "text": "Hi. I'd like to book a place for a tent, from the fifth to the eighth of August."
+    },
+    {
+      "speaker": "a",
+      "text": "For how many people?"
+    },
+    {
+      "speaker": "b",
+      "text": "Two adults and three children."
+    },
+    {
+      "speaker": "a",
+      "text": "That's fifteen pounds a night for adults and five for children."
+    },
+    {
+      "speaker": "b",
+      "text": "Can we have a fire?"
+    },
+    {
+      "speaker": "a",
+      "text": "No, fires aren't allowed, but you can use a small barbecue."
+    },
+    {
+      "speaker": "b",
+      "text": "Is there a shop?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, it sells bread and milk every morning from seven."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many nights are they staying?",
+      "options": [
+        "three",
+        "four",
+        "five",
+        "eight"
+      ],
+      "answer": 0,
+      "feedback": "Beşinden sekizine: üç gece.",
+      "evidence": "from the fifth to the eighth of August."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many children are there?",
+      "options": [
+        "two",
+        "three",
+        "five",
+        "one"
+      ],
+      "answer": 1,
+      "feedback": "Üç çocuk var.",
+      "evidence": "Two adults and three children."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is it for a child per night?",
+      "options": [
+        "fifteen pounds",
+        "fifty pounds",
+        "ten pounds",
+        "five pounds"
+      ],
+      "answer": 3,
+      "feedback": "Çocuklar için gecelik beş pound.",
+      "evidence": "five for children."
+    },
+    {
+      "id": "q4",
+      "prompt": "What can't they do at the campsite?",
+      "options": [
+        "use a barbecue",
+        "buy bread",
+        "have a fire",
+        "swim in the lake"
+      ],
+      "answer": 2,
+      "feedback": "Ateş yakmak yasak; küçük mangal olur.",
+      "evidence": "No, fires aren't allowed"
+    }
+  ]
+}

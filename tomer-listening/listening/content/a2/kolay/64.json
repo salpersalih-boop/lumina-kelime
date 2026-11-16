@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-64",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Why I like working from home",
+  "topic": "İş hayatı",
+  "instructions": "Ayla evden çalışmayı anlatıyor. İyi ve kötü yanlarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Ayla",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Since last year, I have worked from home three days a week."
+    },
+    {
+      "speaker": "s",
+      "text": "I don't have to travel for an hour on a crowded train, so I have more time."
+    },
+    {
+      "speaker": "s",
+      "text": "I can also take my dog for a walk at lunchtime."
+    },
+    {
+      "speaker": "s",
+      "text": "But sometimes I feel lonely, and I miss talking to my colleagues."
+    },
+    {
+      "speaker": "s",
+      "text": "So on Tuesdays and Thursdays, I go to the office."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many days a week does Ayla work from home?",
+      "options": [
+        "two",
+        "three",
+        "five",
+        "four"
+      ],
+      "answer": 1,
+      "feedback": "Haftada üç gün evden çalışıyor.",
+      "evidence": "I have worked from home three days a week."
+    },
+    {
+      "id": "q2",
+      "prompt": "What can she do at lunchtime?",
+      "options": [
+        "go to the gym",
+        "cook a big meal",
+        "walk her dog",
+        "meet friends"
+      ],
+      "answer": 2,
+      "feedback": "Öğle arasında köpeğini gezdirebiliyor.",
+      "evidence": "I can also take my dog for a walk at lunchtime."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the bad thing about working from home?",
+      "options": [
+        "She sometimes feels lonely.",
+        "Her internet is slow.",
+        "She works more.",
+        "Her dog is noisy."
+      ],
+      "answer": 0,
+      "feedback": "Bazen yalnız hissediyor, iş arkadaşlarını özlüyor.",
+      "evidence": "But sometimes I feel lonely"
+    }
+  ]
+}

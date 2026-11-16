@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-37",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Asking for a day off",
+  "topic": "İşte izin isteme",
+  "instructions": "Can yöneticisinden izin istiyor. Neden istediğine ve anlaşmaya dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "can": {
+      "name": "Can",
+      "voice": "male"
+    },
+    "boss": {
+      "name": "Manager",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "can",
+      "text": "Excuse me, Sarah. Have you got a minute?"
+    },
+    {
+      "speaker": "boss",
+      "text": "Of course, Can. What is it?"
+    },
+    {
+      "speaker": "can",
+      "text": "Could I have next Friday off? My sister is getting married."
+    },
+    {
+      "speaker": "boss",
+      "text": "Oh, congratulations! Hmm, Friday is busy. We have the meeting with the new client."
+    },
+    {
+      "speaker": "can",
+      "text": "I know. I can prepare everything on Thursday, and Ahmet can do the meeting."
+    },
+    {
+      "speaker": "boss",
+      "text": "Is Ahmet OK with that?"
+    },
+    {
+      "speaker": "can",
+      "text": "Yes, I asked him this morning."
+    },
+    {
+      "speaker": "boss",
+      "text": "Then that's fine. Enjoy the wedding!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why does Can want a day off?",
+      "options": [
+        "He's ill.",
+        "His sister is getting married.",
+        "He's moving house.",
+        "He's going on holiday."
+      ],
+      "answer": 1,
+      "feedback": "Kız kardeşi evleniyor.",
+      "evidence": "My sister is getting married."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why is Friday a problem?",
+      "options": [
+        "There's a meeting with a new client.",
+        "Sarah is on holiday.",
+        "It's the end of the month.",
+        "Ahmet is away."
+      ],
+      "answer": 0,
+      "feedback": "Cuma yeni müşteriyle toplantı var.",
+      "evidence": "We have the meeting with the new client."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who will do the meeting?",
+      "options": [
+        "Can",
+        "Sarah",
+        "Ahmet",
+        "the client"
+      ],
+      "answer": 2,
+      "feedback": "Toplantıyı Ahmet yapacak.",
+      "evidence": "and Ahmet can do the meeting."
+    },
+    {
+      "id": "q4",
+      "prompt": "When will Can prepare everything?",
+      "options": [
+        "on Friday",
+        "on Wednesday",
+        "this morning",
+        "on Thursday"
+      ],
+      "answer": 3,
+      "feedback": "Her şeyi perşembe hazırlayacak.",
+      "evidence": "I can prepare everything on Thursday"
+    }
+  ]
+}

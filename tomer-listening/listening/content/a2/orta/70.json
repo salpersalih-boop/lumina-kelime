@@ -1,0 +1,108 @@
+{
+  "id": "a2-orta-70",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Choosing a phone for Grandpa",
+  "topic": "Teknoloji alışverişi",
+  "instructions": "Bir kadın dedesi için telefon seçiyor. İhtiyaçları ve son kararı takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Staff",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Nina",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "b",
+      "text": "Hi. I'm looking for a phone for my grandfather. He's eighty-five."
+    },
+    {
+      "speaker": "a",
+      "text": "What does he need it for?"
+    },
+    {
+      "speaker": "b",
+      "text": "Just calls and messages. He doesn't want the internet. And his eyes aren't very good."
+    },
+    {
+      "speaker": "a",
+      "text": "Then this one is perfect. It has big buttons and a big screen."
+    },
+    {
+      "speaker": "b",
+      "text": "How much is it?"
+    },
+    {
+      "speaker": "a",
+      "text": "Sixty pounds. The battery lasts about a week."
+    },
+    {
+      "speaker": "b",
+      "text": "That's good. He always forgets to charge his phone. I'll take it."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is Nina's grandfather?",
+      "options": [
+        "seventy-five",
+        "eighty",
+        "eighty-five",
+        "ninety-five"
+      ],
+      "answer": 2,
+      "feedback": "Dedesi seksen beş yaşında.",
+      "evidence": "He's eighty-five."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does he need the phone for?",
+      "options": [
+        "calls and messages",
+        "the internet",
+        "photos",
+        "games"
+      ],
+      "answer": 0,
+      "feedback": "Sadece arama ve mesaj için.",
+      "evidence": "Just calls and messages."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is the phone perfect for him?",
+      "options": [
+        "It's very cheap.",
+        "It has big buttons and a big screen.",
+        "It's very small.",
+        "It has a good camera."
+      ],
+      "answer": 1,
+      "feedback": "Büyük tuşları ve büyük ekranı var.",
+      "evidence": "It has big buttons and a big screen."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why is the long battery good?",
+      "options": [
+        "He travels a lot.",
+        "He uses the phone a lot.",
+        "He doesn't have electricity.",
+        "He always forgets to charge his phone."
+      ],
+      "answer": 3,
+      "feedback": "Telefonunu şarj etmeyi hep unutuyor.",
+      "evidence": "He always forgets to charge his phone."
+    }
+  ]
+}

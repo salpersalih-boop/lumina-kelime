@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-39",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Saturday morning",
+  "topic": "Hafta sonu",
+  "instructions": "Lucy cumartesi sabahını anlatıyor. Saatlere ve sıraya dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "lucy": {
+      "name": "Lucy",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lucy",
+      "text": "On Saturday, I don't go to school."
+    },
+    {
+      "speaker": "lucy",
+      "text": "I get up late, at nine o'clock."
+    },
+    {
+      "speaker": "lucy",
+      "text": "I have pancakes for breakfast with my family."
+    },
+    {
+      "speaker": "lucy",
+      "text": "Then I go to my dance lesson at eleven."
+    },
+    {
+      "speaker": "lucy",
+      "text": "After that, I meet my friends in the park."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time does Lucy get up on Saturday?",
+      "options": [
+        "at seven o'clock",
+        "at eight o'clock",
+        "at nine o'clock",
+        "at eleven o'clock"
+      ],
+      "answer": 2,
+      "feedback": "Cumartesi geç kalkıyor, saat dokuzda.",
+      "evidence": "I get up late, at nine o'clock."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does she have for breakfast?",
+      "options": [
+        "pancakes",
+        "eggs",
+        "cereal",
+        "toast"
+      ],
+      "answer": 0,
+      "feedback": "Kahvaltıda pankek yiyor.",
+      "evidence": "I have pancakes for breakfast"
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Lucy do at eleven?",
+      "options": [
+        "She meets friends.",
+        "She has a dance lesson.",
+        "She goes shopping.",
+        "She does homework."
+      ],
+      "answer": 1,
+      "feedback": "Saat on birde dans dersi var.",
+      "evidence": "Then I go to my dance lesson at eleven."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-04",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Museum audio guide",
+  "topic": "Müze sesli rehberi",
+  "instructions": "Bir şehir müzesinin sesli rehberi. Uzun bir metin; katları, yönleri ve yasakları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "guide": {
+      "name": "Audio guide",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "guide",
+      "text": "Welcome to the City History Museum. This guide takes about one hour."
+    },
+    {
+      "speaker": "guide",
+      "text": "You are now in the main hall, on the ground floor. Here you can see old maps of the city."
+    },
+    {
+      "speaker": "guide",
+      "text": "The oldest map is from fifteen fifty. It shows the city when only two thousand people lived here."
+    },
+    {
+      "speaker": "guide",
+      "text": "Today, more than half a million people live in the city."
+    },
+    {
+      "speaker": "guide",
+      "text": "Now, please go up the stairs to the first floor. Turn left for the Roman rooms."
+    },
+    {
+      "speaker": "guide",
+      "text": "Here you can see coins, cups and jewellery. Please do not touch anything in these rooms."
+    },
+    {
+      "speaker": "guide",
+      "text": "On the right side of the first floor is the modern history room, with photos from the last hundred years."
+    },
+    {
+      "speaker": "guide",
+      "text": "You can take photos in the museum, but please do not use a flash."
+    },
+    {
+      "speaker": "guide",
+      "text": "The museum shop and café are on the ground floor, next to the main door."
+    },
+    {
+      "speaker": "guide",
+      "text": "The museum closes at five thirty, but the café closes at five."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where are the old maps?",
+      "options": [
+        "on the first floor",
+        "in the main hall on the ground floor",
+        "in the Roman rooms",
+        "next to the café"
+      ],
+      "answer": 1,
+      "feedback": "Eski haritalar zemin kattaki ana salonda.",
+      "evidence": "You are now in the main hall, on the ground floor."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many people lived in the city in fifteen fifty?",
+      "options": [
+        "fifteen hundred",
+        "half a million",
+        "two thousand",
+        "fifty thousand"
+      ],
+      "answer": 2,
+      "feedback": "1550'de sadece iki bin (two thousand) kişi yaşıyordu. Yarım milyon bugünkü nüfus.",
+      "evidence": "only two thousand people lived here."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where are the Roman rooms?",
+      "options": [
+        "on the first floor, on the left",
+        "on the first floor, on the right",
+        "on the ground floor",
+        "on the second floor"
+      ],
+      "answer": 0,
+      "feedback": "Birinci kata çık, sola dön (Turn left). Sağda modern tarih odası var.",
+      "evidence": "Turn left for the Roman rooms."
+    },
+    {
+      "id": "q4",
+      "prompt": "What can't visitors do in the museum?",
+      "options": [
+        "take photos",
+        "go to the first floor",
+        "buy things",
+        "use a flash"
+      ],
+      "answer": 3,
+      "feedback": "Fotoğraf çekebilirsin ama flaş kullanma.",
+      "evidence": "please do not use a flash."
+    },
+    {
+      "id": "q5",
+      "prompt": "What time does the café close?",
+      "options": [
+        "at five thirty",
+        "at five",
+        "at six",
+        "at four thirty"
+      ],
+      "answer": 1,
+      "feedback": "Kafe beşte (at five), müze beş buçukta kapanıyor.",
+      "evidence": "but the café closes at five."
+    }
+  ]
+}

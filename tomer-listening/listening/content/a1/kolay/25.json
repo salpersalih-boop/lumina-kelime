@@ -1,0 +1,87 @@
+{
+  "id": "a1-kolay-25",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My piano lesson",
+  "topic": "Hobiler",
+  "instructions": "Aya piyano dersini anlatıyor. Gün, saat ve öğretmenle ilgili bilgilere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "aya": {
+      "name": "Aya",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "aya",
+      "text": "I have a piano lesson every Wednesday."
+    },
+    {
+      "speaker": "aya",
+      "text": "It starts at five o'clock and finishes at six."
+    },
+    {
+      "speaker": "aya",
+      "text": "My teacher is Mrs Kim. She is from Korea."
+    },
+    {
+      "speaker": "aya",
+      "text": "She is very good, and she plays the piano and the violin."
+    },
+    {
+      "speaker": "aya",
+      "text": "I practise at home for twenty minutes every day."
+    },
+    {
+      "speaker": "aya",
+      "text": "Next month, I am going to play in a concert at school."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is Aya's piano lesson?",
+      "options": [
+        "every Monday",
+        "every Wednesday",
+        "every Saturday",
+        "every day"
+      ],
+      "answer": 1,
+      "feedback": "Piyano dersi her çarşamba.",
+      "evidence": "I have a piano lesson every Wednesday."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long is the lesson?",
+      "options": [
+        "one hour",
+        "twenty minutes",
+        "thirty minutes",
+        "two hours"
+      ],
+      "answer": 0,
+      "feedback": "Beşte başlayıp altıda bitiyor: bir saat. Yirmi dakika evdeki çalışma süresi.",
+      "evidence": "It starts at five o'clock and finishes at six."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Aya going to do next month?",
+      "options": [
+        "start violin lessons",
+        "go to Korea",
+        "play in a concert at school",
+        "buy a piano"
+      ],
+      "answer": 2,
+      "feedback": "Gelecek ay okulda bir konserde çalacak.",
+      "evidence": "Next month, I am going to play in a concert at school."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "a1-orta-35",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Joining a club",
+  "topic": "Kulübe üyelik",
+  "instructions": "Max okulda bir kulübe katılmak istiyor. Kulüplerin günlerine ve saatlerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "max": {
+      "name": "Max",
+      "voice": "male"
+    },
+    "teacher": {
+      "name": "Teacher",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "max",
+      "text": "Miss Taylor, I want to join a club after school."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Great! We have a chess club, a drama club and a football club."
+    },
+    {
+      "speaker": "max",
+      "text": "When is the football club?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "On Mondays and Wednesdays, from four to five."
+    },
+    {
+      "speaker": "max",
+      "text": "Oh, I have piano lessons on Mondays. What about drama?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "Drama is on Thursdays, from half past three to five."
+    },
+    {
+      "speaker": "max",
+      "text": "That's good. I'm free on Thursdays."
+    },
+    {
+      "speaker": "teacher",
+      "text": "OK. Your first lesson is next Thursday, in room twelve."
+    },
+    {
+      "speaker": "max",
+      "text": "Do I need anything?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "Just bring a bottle of water."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why can't Max join the football club?",
+      "options": [
+        "He doesn't like football.",
+        "He has piano lessons on Mondays.",
+        "It's full.",
+        "It's too late."
+      ],
+      "answer": 1,
+      "feedback": "Pazartesi piyano dersi var; futbol pazartesi ve çarşamba.",
+      "evidence": "I have piano lessons on Mondays."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which club does Max choose?",
+      "options": [
+        "the chess club",
+        "the football club",
+        "the music club",
+        "the drama club"
+      ],
+      "answer": 3,
+      "feedback": "Perşembe boş olduğu için drama kulübünü seçiyor.",
+      "evidence": "That's good. I'm free on Thursdays."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time does the drama club start?",
+      "options": [
+        "at four",
+        "at half past three",
+        "at five",
+        "at half past four"
+      ],
+      "answer": 1,
+      "feedback": "Drama üç buçukta başlıyor, beşte bitiyor.",
+      "evidence": "from half past three to five."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Max need to bring?",
+      "options": [
+        "a bottle of water",
+        "a book",
+        "sports clothes",
+        "nothing"
+      ],
+      "answer": 0,
+      "feedback": "Sadece bir şişe su getirmeli.",
+      "evidence": "Just bring a bottle of water."
+    }
+  ]
+}

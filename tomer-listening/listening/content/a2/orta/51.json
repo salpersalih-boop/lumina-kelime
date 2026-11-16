@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-51",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "A problem with the internet",
+  "topic": "Teknik destek",
+  "instructions": "Bir kadın internet şirketini arıyor. Sorunu ve çözümü takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Support",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Mrs Kaya",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good morning, FastNet. How can I help?"
+    },
+    {
+      "speaker": "b",
+      "text": "Hello. My internet hasn't worked since yesterday evening."
+    },
+    {
+      "speaker": "a",
+      "text": "I'm sorry. Have you tried turning the router off and on again?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, twice. It still doesn't work."
+    },
+    {
+      "speaker": "a",
+      "text": "OK. I can see there's a problem in your area. Our engineers are working on it."
+    },
+    {
+      "speaker": "b",
+      "text": "When will it be fixed?"
+    },
+    {
+      "speaker": "a",
+      "text": "By four o'clock this afternoon. We will also take five pounds off your next bill."
+    },
+    {
+      "speaker": "b",
+      "text": "Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Since when hasn't the internet worked?",
+      "options": [
+        "since this morning",
+        "since yesterday evening",
+        "since last week",
+        "since two days ago"
+      ],
+      "answer": 1,
+      "feedback": "Dün akşamdan beri çalışmıyor.",
+      "evidence": "My internet hasn't worked since yesterday evening."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many times did she turn the router off and on?",
+      "options": [
+        "once",
+        "twice",
+        "three times",
+        "never"
+      ],
+      "answer": 1,
+      "feedback": "İki kez kapatıp açtı.",
+      "evidence": "Yes, twice."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the cause of the problem?",
+      "options": [
+        "Her router is broken.",
+        "She didn't pay the bill.",
+        "There is a problem in her area.",
+        "Her computer is old."
+      ],
+      "answer": 2,
+      "feedback": "Bölgesinde bir sorun var.",
+      "evidence": "there's a problem in your area."
+    },
+    {
+      "id": "q4",
+      "prompt": "What will the company do?",
+      "options": [
+        "send her a new router",
+        "take five pounds off her next bill",
+        "give her a free month",
+        "send an engineer to her house"
+      ],
+      "answer": 1,
+      "feedback": "Bir sonraki faturadan beş pound düşecekler.",
+      "evidence": "We will also take five pounds off your next bill."
+    }
+  ]
+}

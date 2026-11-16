@@ -1,0 +1,79 @@
+{
+  "id": "a2-kolay-05",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Can you call me back?",
+  "topic": "Telefon mesajı",
+  "instructions": "Lucy arkadaşına sesli mesaj bırakıyor. Kısa bir metin; plan ve saat değişikliğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "lucy": {
+      "name": "Lucy",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lucy",
+      "text": "Hi Sam, it's Lucy. I can't come to the cinema tonight."
+    },
+    {
+      "speaker": "lucy",
+      "text": "I have a bad cold."
+    },
+    {
+      "speaker": "lucy",
+      "text": "Can we go on Saturday instead? The film starts at eight."
+    },
+    {
+      "speaker": "lucy",
+      "text": "Please call me back after lunch. Bye!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why can't Lucy go to the cinema tonight?",
+      "options": [
+        "She has to work.",
+        "She has a cold.",
+        "She has no money.",
+        "She is on holiday."
+      ],
+      "answer": 1,
+      "feedback": "Lucy kötü bir soğuk algınlığı (a bad cold) geçiriyor.",
+      "evidence": "I have a bad cold."
+    },
+    {
+      "id": "q2",
+      "prompt": "When does Lucy want to go?",
+      "options": [
+        "tomorrow",
+        "on Friday",
+        "on Saturday",
+        "on Sunday"
+      ],
+      "answer": 2,
+      "feedback": "\"Instead\" yerine demek; cumartesi (Saturday) gitmek istiyor.",
+      "evidence": "Can we go on Saturday instead?"
+    },
+    {
+      "id": "q3",
+      "prompt": "When should Sam call Lucy?",
+      "options": [
+        "after lunch",
+        "before lunch",
+        "at eight",
+        "tonight"
+      ],
+      "answer": 0,
+      "feedback": "Öğle yemeğinden sonra (after lunch) aramasını istiyor. Sekiz film saati.",
+      "evidence": "Please call me back after lunch."
+    }
+  ]
+}

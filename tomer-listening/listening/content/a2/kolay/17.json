@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-17",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My best holiday photo",
+  "topic": "Anı anlatma",
+  "instructions": "Mert en sevdiği tatil fotoğrafını anlatıyor. Yer, zaman ve fotoğraftaki kişilere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mert": {
+      "name": "Mert",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mert",
+      "text": "This is my favourite photo. I took it in Cappadocia three years ago."
+    },
+    {
+      "speaker": "mert",
+      "text": "We got up at five in the morning to see the hot air balloons."
+    },
+    {
+      "speaker": "mert",
+      "text": "It was very cold, so I wore two jumpers!"
+    },
+    {
+      "speaker": "mert",
+      "text": "In the photo, you can see my wife and my daughter. They are smiling and looking at the sky."
+    },
+    {
+      "speaker": "mert",
+      "text": "There were more than a hundred balloons. It was the most beautiful thing I have ever seen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did Mert take the photo?",
+      "options": [
+        "last year",
+        "three years ago",
+        "five years ago",
+        "last month"
+      ],
+      "answer": 1,
+      "feedback": "Fotoğrafı üç yıl önce (three years ago) çekti. Beş, kalkış saati.",
+      "evidence": "I took it in Cappadocia three years ago."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why did Mert wear two jumpers?",
+      "options": [
+        "It was very cold.",
+        "It was raining.",
+        "He was ill.",
+        "It was windy."
+      ],
+      "answer": 0,
+      "feedback": "Hava çok soğuktu.",
+      "evidence": "It was very cold, so I wore two jumpers!"
+    },
+    {
+      "id": "q3",
+      "prompt": "Who is in the photo?",
+      "options": [
+        "Mert and his wife",
+        "Mert's parents",
+        "Mert's wife and daughter",
+        "Mert and his friends"
+      ],
+      "answer": 2,
+      "feedback": "Fotoğrafta eşi ve kızı var.",
+      "evidence": "you can see my wife and my daughter."
+    }
+  ]
+}

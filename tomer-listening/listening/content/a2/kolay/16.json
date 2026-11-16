@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-16",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A rainy Sunday",
+  "topic": "Hafta sonu (geçmiş zaman)",
+  "instructions": "Jo yağmurlu bir pazarı anlatıyor. Kısa bir metin; planın neden değiştiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jo": {
+      "name": "Jo",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jo",
+      "text": "Last Sunday, we wanted to have a picnic, but it rained all day."
+    },
+    {
+      "speaker": "jo",
+      "text": "So we stayed at home and played board games."
+    },
+    {
+      "speaker": "jo",
+      "text": "In the evening, my dad made hot chocolate. It was a lovely day."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What did they want to do?",
+      "options": [
+        "go to the cinema",
+        "have a picnic",
+        "go swimming",
+        "visit friends"
+      ],
+      "answer": 1,
+      "feedback": "Piknik yapmak istiyorlardı.",
+      "evidence": "we wanted to have a picnic"
+    },
+    {
+      "id": "q2",
+      "prompt": "What did they do instead?",
+      "options": [
+        "They played board games.",
+        "They watched a film.",
+        "They went shopping.",
+        "They cooked dinner."
+      ],
+      "answer": 0,
+      "feedback": "Evde kalıp kutu oyunları oynadılar.",
+      "evidence": "So we stayed at home and played board games."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who made hot chocolate?",
+      "options": [
+        "Jo",
+        "her mum",
+        "her dad",
+        "her brother"
+      ],
+      "answer": 2,
+      "feedback": "Akşam babası sıcak çikolata yaptı.",
+      "evidence": "my dad made hot chocolate."
+    }
+  ]
+}

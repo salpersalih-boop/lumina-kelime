@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-31",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A trip to the dentist",
+  "topic": "Sağlık (geçmiş zaman)",
+  "instructions": "Ece diş hekimine gittiği günü anlatıyor. Sorunu ve sonucu takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ece": {
+      "name": "Ece",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ece",
+      "text": "Last Tuesday, I had a terrible toothache, so I went to the dentist."
+    },
+    {
+      "speaker": "ece",
+      "text": "I was very nervous, because I hate dentists."
+    },
+    {
+      "speaker": "ece",
+      "text": "The dentist was very kind. She looked at my teeth and found a small hole."
+    },
+    {
+      "speaker": "ece",
+      "text": "She fixed it in twenty minutes, and it didn't hurt at all."
+    },
+    {
+      "speaker": "ece",
+      "text": "She told me to eat fewer sweets and to brush my teeth twice a day."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why did Ece go to the dentist?",
+      "options": [
+        "for a check-up",
+        "She had a toothache.",
+        "She broke a tooth.",
+        "She wanted white teeth."
+      ],
+      "answer": 1,
+      "feedback": "Çok kötü diş ağrısı vardı.",
+      "evidence": "I had a terrible toothache"
+    },
+    {
+      "id": "q2",
+      "prompt": "How long did the dentist take?",
+      "options": [
+        "twenty minutes",
+        "two hours",
+        "ten minutes",
+        "an hour"
+      ],
+      "answer": 0,
+      "feedback": "Diş hekimi yirmi dakikada düzeltti.",
+      "evidence": "She fixed it in twenty minutes"
+    },
+    {
+      "id": "q3",
+      "prompt": "What did the dentist tell Ece?",
+      "options": [
+        "to come back next week",
+        "to drink more milk",
+        "to eat fewer sweets",
+        "to stop eating sugar"
+      ],
+      "answer": 2,
+      "feedback": "Daha az şeker yemesini ve günde iki kez diş fırçalamasını söyledi.",
+      "evidence": "She told me to eat fewer sweets"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-43",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Summer in Spain",
+  "topic": "Tatil",
+  "instructions": "Ben ailesiyle İspanya'daki yaz tatilini anlatıyor. Kalış süresine ve yaptıklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ben": {
+      "name": "Ben",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ben",
+      "text": "Every summer, my family goes to Spain."
+    },
+    {
+      "speaker": "ben",
+      "text": "We stay in a small hotel near the sea for ten days."
+    },
+    {
+      "speaker": "ben",
+      "text": "The weather is always hot and sunny."
+    },
+    {
+      "speaker": "ben",
+      "text": "In the morning, we go to the beach. In the afternoon, we sleep because it is too hot."
+    },
+    {
+      "speaker": "ben",
+      "text": "In the evening, we eat in a restaurant and walk by the sea."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long does Ben's family stay in Spain?",
+      "options": [
+        "seven days",
+        "two weeks",
+        "ten days",
+        "a month"
+      ],
+      "answer": 2,
+      "feedback": "İspanya'da on gün kalıyorlar.",
+      "evidence": "for ten days."
+    },
+    {
+      "id": "q2",
+      "prompt": "What do they do in the afternoon?",
+      "options": [
+        "They go to the beach.",
+        "They sleep.",
+        "They go shopping.",
+        "They eat in a restaurant."
+      ],
+      "answer": 1,
+      "feedback": "Öğleden sonra çok sıcak olduğu için uyuyorlar.",
+      "evidence": "In the afternoon, we sleep because it is too hot."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where do they stay?",
+      "options": [
+        "in a small hotel near the sea",
+        "in a big hotel in the city",
+        "with friends",
+        "in a tent"
+      ],
+      "answer": 0,
+      "feedback": "Denize yakın küçük bir otelde kalıyorlar.",
+      "evidence": "We stay in a small hotel near the sea"
+    }
+  ]
+}

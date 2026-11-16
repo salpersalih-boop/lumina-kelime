@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-60",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "A day at the farm",
+  "topic": "Gezi",
+  "instructions": "Emma çiftlikteki bir günü anlatıyor. Hayvanlara ve yaptıklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Emma",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Today my class is at a farm."
+    },
+    {
+      "speaker": "s",
+      "text": "There are cows, sheep, pigs and chickens."
+    },
+    {
+      "speaker": "s",
+      "text": "We give food to the sheep."
+    },
+    {
+      "speaker": "s",
+      "text": "A small pig runs after me! It is very funny."
+    },
+    {
+      "speaker": "s",
+      "text": "We have lunch on the grass."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is Emma with?",
+      "options": [
+        "her family",
+        "her class",
+        "her friend",
+        "her grandparents"
+      ],
+      "answer": 1,
+      "feedback": "Sınıfıyla birlikte çiftlikte.",
+      "evidence": "Today my class is at a farm."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which animals do they feed?",
+      "options": [
+        "the cows",
+        "the pigs",
+        "the chickens",
+        "the sheep"
+      ],
+      "answer": 3,
+      "feedback": "Koyunlara yem veriyorlar.",
+      "evidence": "We give food to the sheep."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where do they have lunch?",
+      "options": [
+        "on the grass",
+        "in a restaurant",
+        "on the bus",
+        "in the farmhouse"
+      ],
+      "answer": 0,
+      "feedback": "Öğle yemeğini çimlerde yiyorlar.",
+      "evidence": "We have lunch on the grass."
+    }
+  ]
+}

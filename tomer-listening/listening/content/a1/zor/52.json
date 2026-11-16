@@ -1,0 +1,113 @@
+{
+  "id": "a1-zor-52",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Tomorrow's weather",
+  "topic": "Hava durumu",
+  "instructions": "Radyoda yarının hava durumu. Saatleri, bölgeleri ve sıcaklıkları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Radio",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Here is the weather for tomorrow."
+    },
+    {
+      "speaker": "s",
+      "text": "In the morning, it will be cold and cloudy, about eight degrees."
+    },
+    {
+      "speaker": "s",
+      "text": "At lunchtime, it will start to rain in the north."
+    },
+    {
+      "speaker": "s",
+      "text": "In the south, it will be sunny all day, and it will be warmer, about fifteen degrees."
+    },
+    {
+      "speaker": "s",
+      "text": "In the evening, there will be strong winds near the sea."
+    },
+    {
+      "speaker": "s",
+      "text": "On Sunday, it will be sunny everywhere."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What will the morning be like?",
+      "options": [
+        "sunny and warm",
+        "cold and cloudy",
+        "rainy",
+        "windy"
+      ],
+      "answer": 1,
+      "feedback": "Sabah soğuk ve bulutlu, yaklaşık sekiz derece.",
+      "evidence": "it will be cold and cloudy"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where will it rain at lunchtime?",
+      "options": [
+        "in the south",
+        "near the sea",
+        "in the north",
+        "everywhere"
+      ],
+      "answer": 2,
+      "feedback": "Öğle saatinde kuzeyde yağmur başlayacak.",
+      "evidence": "it will start to rain in the north."
+    },
+    {
+      "id": "q3",
+      "prompt": "What will the temperature be in the south?",
+      "options": [
+        "about eight degrees",
+        "about fifteen degrees",
+        "about five degrees",
+        "about fifty degrees"
+      ],
+      "answer": 1,
+      "feedback": "Güney daha sıcak, yaklaşık on beş derece.",
+      "evidence": "about fifteen degrees."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where will there be strong winds?",
+      "options": [
+        "in the city",
+        "in the mountains",
+        "in the south",
+        "near the sea"
+      ],
+      "answer": 3,
+      "feedback": "Akşam deniz kenarında kuvvetli rüzgâr olacak.",
+      "evidence": "there will be strong winds near the sea."
+    },
+    {
+      "id": "q5",
+      "prompt": "What will Sunday be like?",
+      "options": [
+        "sunny everywhere",
+        "rainy everywhere",
+        "cold and windy",
+        "cloudy"
+      ],
+      "answer": 0,
+      "feedback": "Pazar her yer güneşli.",
+      "evidence": "On Sunday, it will be sunny everywhere."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "a1-zor-49",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A call from school",
+  "topic": "Telefon mesajı",
+  "instructions": "Okuldan kısa bir sesli mesaj. Kısa ama her ayrıntı önemli. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Mr Brown",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Hello Sara, this is Mr Brown from school."
+    },
+    {
+      "speaker": "s",
+      "text": "Your son Ali is not at school today. Is he ill?"
+    },
+    {
+      "speaker": "s",
+      "text": "Please call the school office before twelve o'clock."
+    },
+    {
+      "speaker": "s",
+      "text": "The number is 0-1-2-3, 4-5-6-7."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is calling?",
+      "options": [
+        "Ali's teacher, Mr Brown",
+        "Sara's doctor",
+        "Ali's dad",
+        "the school nurse"
+      ],
+      "answer": 0,
+      "feedback": "Okuldan Bay Brown arıyor.",
+      "evidence": "this is Mr Brown from school."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who is Ali?",
+      "options": [
+        "Sara's brother",
+        "Sara's son",
+        "Mr Brown's son",
+        "Sara's husband"
+      ],
+      "answer": 1,
+      "feedback": "Ali, Sara'nın oğlu.",
+      "evidence": "Your son Ali is not at school today."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the problem?",
+      "options": [
+        "Ali is late.",
+        "Ali is not at school.",
+        "Ali is ill at school.",
+        "Ali lost his bag."
+      ],
+      "answer": 1,
+      "feedback": "Ali bugün okulda değil.",
+      "evidence": "is not at school today."
+    },
+    {
+      "id": "q4",
+      "prompt": "When should Sara call?",
+      "options": [
+        "after school",
+        "before twelve o'clock",
+        "tomorrow",
+        "after lunch"
+      ],
+      "answer": 1,
+      "feedback": "Saat on ikiden önce aramalı.",
+      "evidence": "before twelve o'clock."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is the phone number?",
+      "options": [
+        "0123 4567",
+        "0123 4576",
+        "0132 4567",
+        "0123 5467"
+      ],
+      "answer": 0,
+      "feedback": "Numara 0123 4567.",
+      "evidence": "The number is 0-1-2-3, 4-5-6-7."
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "a2-orta-18",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Asking about a flat",
+  "topic": "Ev kiralama",
+  "instructions": "Maria kiralık bir daire hakkında ev sahibine telefon ediyor. Uzun bir diyalog; kira, faturalar ve kurallara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "maria": {
+      "name": "Maria",
+      "voice": "female"
+    },
+    "owner": {
+      "name": "Mr Shaw",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "maria",
+      "text": "Hello, I'm calling about the flat on Green Street. Is it still available?"
+    },
+    {
+      "speaker": "owner",
+      "text": "Yes, it is. It has one bedroom, a kitchen and a small balcony."
+    },
+    {
+      "speaker": "maria",
+      "text": "How much is the rent?"
+    },
+    {
+      "speaker": "owner",
+      "text": "It's six hundred and fifty pounds a month."
+    },
+    {
+      "speaker": "maria",
+      "text": "Does that include bills?"
+    },
+    {
+      "speaker": "owner",
+      "text": "It includes water, but you pay for electricity and the internet."
+    },
+    {
+      "speaker": "maria",
+      "text": "OK. Is it near the station?"
+    },
+    {
+      "speaker": "owner",
+      "text": "Yes, it's a five-minute walk. And there's a supermarket opposite."
+    },
+    {
+      "speaker": "maria",
+      "text": "That sounds good. Can I have pets? I have a small cat."
+    },
+    {
+      "speaker": "owner",
+      "text": "Sorry, no pets in the building. And no smoking."
+    },
+    {
+      "speaker": "maria",
+      "text": "Oh. That's a problem. I can't leave my cat."
+    },
+    {
+      "speaker": "owner",
+      "text": "I understand. I have another flat on River Road. Pets are OK there, but it's a bit more expensive."
+    },
+    {
+      "speaker": "maria",
+      "text": "Can I see it on Thursday?"
+    },
+    {
+      "speaker": "owner",
+      "text": "Of course. Thursday at six?"
+    },
+    {
+      "speaker": "maria",
+      "text": "Perfect. Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much is the rent on Green Street?",
+      "options": [
+        "five hundred and fifty pounds",
+        "six hundred pounds",
+        "six hundred and fifty pounds",
+        "six hundred and fifteen pounds"
+      ],
+      "answer": 2,
+      "feedback": "Kira ayda altı yüz elli pound.",
+      "evidence": "It's six hundred and fifty pounds a month."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which bill is included in the rent?",
+      "options": [
+        "water",
+        "electricity",
+        "the internet",
+        "all bills"
+      ],
+      "answer": 0,
+      "feedback": "Kiraya sadece su (water) dahil; elektrik ve internet ayrı.",
+      "evidence": "It includes water"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is the Green Street flat a problem for Maria?",
+      "options": [
+        "It's far from the station.",
+        "It doesn't have a balcony.",
+        "It's too expensive.",
+        "She can't have her cat there."
+      ],
+      "answer": 3,
+      "feedback": "Binada evcil hayvan yasak; Maria kedisini bırakamaz.",
+      "evidence": "Sorry, no pets in the building."
+    },
+    {
+      "id": "q4",
+      "prompt": "What will Maria do on Thursday?",
+      "options": [
+        "move into the flat",
+        "see the flat on River Road",
+        "see the flat on Green Street",
+        "call Mr Shaw again"
+      ],
+      "answer": 1,
+      "feedback": "Perşembe saat altıda River Road'daki daireyi görecek.",
+      "evidence": "Can I see it on Thursday?"
+    }
+  ]
+}

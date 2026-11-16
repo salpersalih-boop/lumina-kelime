@@ -1,0 +1,137 @@
+{
+  "id": "a1-zor-13",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "At the cinema",
+  "topic": "Sinema bileti",
+  "instructions": "Sophie ve kızı sinemada bilet alıyor. Seans saatleri, fiyatlar ve koltuklar karışık; dikkatle dinle. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "clerk": {
+      "name": "Cinema",
+      "voice": "male"
+    },
+    "sophie": {
+      "name": "Sophie",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sophie",
+      "text": "Hello. Two tickets for \"The Blue Island\", please. One adult and one child."
+    },
+    {
+      "speaker": "clerk",
+      "text": "For the four o'clock show or the six thirty show?"
+    },
+    {
+      "speaker": "sophie",
+      "text": "Four o'clock, please. Six thirty is too late for my daughter."
+    },
+    {
+      "speaker": "clerk",
+      "text": "I'm sorry, the four o'clock show is full. There are only seats at six thirty."
+    },
+    {
+      "speaker": "sophie",
+      "text": "Oh. Is there another film for children at four?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "Yes, \"Space Cats\" starts at a quarter past four."
+    },
+    {
+      "speaker": "sophie",
+      "text": "OK, two tickets for \"Space Cats\", then. How much are they?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "Adults are nine pounds and children are six. So fifteen pounds."
+    },
+    {
+      "speaker": "sophie",
+      "text": "Can we sit at the back?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "The back is full. You can sit in the middle, row F."
+    },
+    {
+      "speaker": "sophie",
+      "text": "That's fine. Here you are."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why doesn't Sophie want the six thirty show?",
+      "options": [
+        "It is expensive.",
+        "It's too late for her daughter.",
+        "It's full.",
+        "She has a meeting."
+      ],
+      "answer": 1,
+      "feedback": "Altı buçuk kızı için çok geç (too late for my daughter).",
+      "evidence": "Six thirty is too late for my daughter."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which film do they watch?",
+      "options": [
+        "The Blue Island",
+        "Space Cats",
+        "both films",
+        "no film"
+      ],
+      "answer": 1,
+      "feedback": "Saat dörtteki \"The Blue Island\" dolu olduğu için \"Space Cats\" filmine bilet alıyorlar.",
+      "evidence": "two tickets for \"Space Cats\", then."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time does their film start?",
+      "options": [
+        "at four o'clock",
+        "at a quarter to four",
+        "at half past six",
+        "at a quarter past four"
+      ],
+      "answer": 3,
+      "feedback": "\"Space Cats\" dördü çeyrek geçe (a quarter past four) başlıyor.",
+      "evidence": "starts at a quarter past four."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does Sophie pay?",
+      "options": [
+        "fifteen pounds",
+        "nine pounds",
+        "eighteen pounds",
+        "fifty pounds"
+      ],
+      "answer": 0,
+      "feedback": "Yetişkin dokuz, çocuk altı pound; toplam on beş (fifteen pounds).",
+      "evidence": "So fifteen pounds."
+    },
+    {
+      "id": "q5",
+      "prompt": "Where are they going to sit?",
+      "options": [
+        "at the back",
+        "at the front",
+        "in the middle",
+        "near the door"
+      ],
+      "answer": 2,
+      "feedback": "Arkası dolu; ortada, F sırasında (in the middle, row F) oturacaklar.",
+      "evidence": "You can sit in the middle, row F."
+    }
+  ]
+}

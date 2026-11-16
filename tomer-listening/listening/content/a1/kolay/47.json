@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-47",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My lunch box",
+  "topic": "Yemek",
+  "instructions": "Ben okul için beslenme çantasını anlatıyor. Kısa bir metin; yiyeceklere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Ben",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Every day, I take a lunch box to school."
+    },
+    {
+      "speaker": "s",
+      "text": "Today I have a cheese sandwich and an apple."
+    },
+    {
+      "speaker": "s",
+      "text": "I also have a bottle of water."
+    },
+    {
+      "speaker": "s",
+      "text": "I don't have chocolate. Mum says no!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does Ben take his lunch box?",
+      "options": [
+        "to work",
+        "to school",
+        "to the park",
+        "to the gym"
+      ],
+      "answer": 1,
+      "feedback": "Beslenme çantasını okula götürüyor.",
+      "evidence": "I take a lunch box to school."
+    },
+    {
+      "id": "q2",
+      "prompt": "What sandwich does Ben have today?",
+      "options": [
+        "cheese",
+        "chicken",
+        "egg",
+        "tuna"
+      ],
+      "answer": 0,
+      "feedback": "Bugün peynirli sandviç var.",
+      "evidence": "Today I have a cheese sandwich"
+    },
+    {
+      "id": "q3",
+      "prompt": "What doesn't Ben have?",
+      "options": [
+        "water",
+        "an apple",
+        "a sandwich",
+        "chocolate"
+      ],
+      "answer": 3,
+      "feedback": "Çikolatası yok; annesi izin vermiyor.",
+      "evidence": "I don't have chocolate."
+    }
+  ]
+}

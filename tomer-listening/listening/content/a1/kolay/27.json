@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-27",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My school clothes",
+  "topic": "Kıyafetler",
+  "instructions": "Mia okul kıyafetlerini anlatıyor. Kısa bir metin; renklere ve günlere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mia": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mia",
+      "text": "At my school, we wear a uniform."
+    },
+    {
+      "speaker": "mia",
+      "text": "I wear a white shirt, a grey skirt and a blue jumper."
+    },
+    {
+      "speaker": "mia",
+      "text": "On Fridays, we can wear our own clothes."
+    },
+    {
+      "speaker": "mia",
+      "text": "I usually wear jeans and a T-shirt."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour is Mia's jumper?",
+      "options": [
+        "grey",
+        "white",
+        "blue",
+        "black"
+      ],
+      "answer": 2,
+      "feedback": "Kazağı mavi (blue). Gömlek beyaz, etek gri.",
+      "evidence": "a blue jumper."
+    },
+    {
+      "id": "q2",
+      "prompt": "When can students wear their own clothes?",
+      "options": [
+        "on Mondays",
+        "on Fridays",
+        "every day",
+        "never"
+      ],
+      "answer": 1,
+      "feedback": "Cuma günleri kendi kıyafetlerini giyebiliyorlar.",
+      "evidence": "On Fridays, we can wear our own clothes."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Mia usually wear on Fridays?",
+      "options": [
+        "jeans and a T-shirt",
+        "a dress",
+        "her uniform",
+        "a skirt and a jumper"
+      ],
+      "answer": 0,
+      "feedback": "Genelde kot pantolon ve tişört giyiyor.",
+      "evidence": "I usually wear jeans and a T-shirt."
+    }
+  ]
+}

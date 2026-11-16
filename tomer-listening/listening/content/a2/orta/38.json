@@ -1,0 +1,124 @@
+{
+  "id": "a2-orta-38",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the check-in desk",
+  "topic": "Havalimanı check-in",
+  "instructions": "Bay Demir havalimanında check-in yapıyor. Bagaj, koltuk ve kapı bilgilerini takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Check-in staff",
+      "voice": "female"
+    },
+    "demir": {
+      "name": "Mr Demir",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "staff",
+      "text": "Good morning. Where are you flying to today?"
+    },
+    {
+      "speaker": "demir",
+      "text": "To Berlin. Here is my passport."
+    },
+    {
+      "speaker": "staff",
+      "text": "Thank you. How many bags are you checking in?"
+    },
+    {
+      "speaker": "demir",
+      "text": "Just one suitcase."
+    },
+    {
+      "speaker": "staff",
+      "text": "Please put it on the scale. It's twenty-four kilos. The limit is twenty-three."
+    },
+    {
+      "speaker": "demir",
+      "text": "Oh no. Can I take something out?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, or you can pay forty euros."
+    },
+    {
+      "speaker": "demir",
+      "text": "I'll take my shoes out and put them in my small bag."
+    },
+    {
+      "speaker": "staff",
+      "text": "OK, now it's twenty-two kilos. Would you like a window or an aisle seat?"
+    },
+    {
+      "speaker": "demir",
+      "text": "A window, please."
+    },
+    {
+      "speaker": "staff",
+      "text": "Here is your boarding pass. Gate twelve. Boarding starts at ten fifteen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How heavy was the suitcase at first?",
+      "options": [
+        "twenty-two kilos",
+        "twenty-three kilos",
+        "twenty-four kilos",
+        "forty kilos"
+      ],
+      "answer": 2,
+      "feedback": "Bavul ilk başta yirmi dört kiloydu; limit yirmi üç.",
+      "evidence": "It's twenty-four kilos."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Mr Demir do about the weight?",
+      "options": [
+        "He pays forty euros.",
+        "He takes his shoes out.",
+        "He leaves the suitcase.",
+        "He buys a new bag."
+      ],
+      "answer": 1,
+      "feedback": "Ayakkabılarını çıkarıp küçük çantasına koyuyor.",
+      "evidence": "I'll take my shoes out and put them in my small bag."
+    },
+    {
+      "id": "q3",
+      "prompt": "What seat does he want?",
+      "options": [
+        "a window seat",
+        "an aisle seat",
+        "a seat at the front",
+        "a seat with more space"
+      ],
+      "answer": 0,
+      "feedback": "Cam kenarı istiyor.",
+      "evidence": "A window, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "Which gate is his flight?",
+      "options": [
+        "gate two",
+        "gate twenty",
+        "gate fifteen",
+        "gate twelve"
+      ],
+      "answer": 3,
+      "feedback": "Uçuşu on iki numaralı kapıdan.",
+      "evidence": "Gate twelve."
+    }
+  ]
+}

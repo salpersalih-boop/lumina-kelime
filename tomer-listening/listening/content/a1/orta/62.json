@@ -1,0 +1,112 @@
+{
+  "id": "a1-orta-62",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Booking a table for dinner",
+  "topic": "Restoran rezervasyonu",
+  "instructions": "Bir kadın telefonda masa ayırtıyor. Gün, saat ve kişi sayısına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Restaurant",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Mrs Green",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good afternoon, Rosa's Restaurant."
+    },
+    {
+      "speaker": "b",
+      "text": "Hello. Can I book a table for Friday, please?"
+    },
+    {
+      "speaker": "a",
+      "text": "Of course. For how many people?"
+    },
+    {
+      "speaker": "b",
+      "text": "For six people."
+    },
+    {
+      "speaker": "a",
+      "text": "What time?"
+    },
+    {
+      "speaker": "b",
+      "text": "At seven thirty."
+    },
+    {
+      "speaker": "a",
+      "text": "Sorry, we're full at seven thirty. Is eight OK?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, eight is fine. My name is Green."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which day is the booking?",
+      "options": [
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "answer": 1,
+      "feedback": "Rezervasyon cuma için.",
+      "evidence": "Can I book a table for Friday, please?"
+    },
+    {
+      "id": "q2",
+      "prompt": "How many people?",
+      "options": [
+        "four",
+        "six",
+        "seven",
+        "eight"
+      ],
+      "answer": 1,
+      "feedback": "Altı kişi.",
+      "evidence": "For six people."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why can't she have seven thirty?",
+      "options": [
+        "The restaurant is closed.",
+        "The restaurant is full.",
+        "It's too early.",
+        "The cook is ill."
+      ],
+      "answer": 1,
+      "feedback": "Yedi buçukta restoran dolu.",
+      "evidence": "Sorry, we're full at seven thirty."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time is the booking?",
+      "options": [
+        "at seven",
+        "at seven thirty",
+        "at eight",
+        "at eight thirty"
+      ],
+      "answer": 2,
+      "feedback": "Rezervasyon saat sekizde.",
+      "evidence": "Yes, eight is fine."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "a2-orta-36",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the garage",
+  "topic": "Araba tamiri",
+  "instructions": "Lisa arabasını tamirhaneye götürüyor. Sorunu, süreyi ve fiyatı takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "lisa": {
+      "name": "Lisa",
+      "voice": "female"
+    },
+    "mech": {
+      "name": "Mechanic",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lisa",
+      "text": "Hi. My car is making a strange noise when I stop."
+    },
+    {
+      "speaker": "mech",
+      "text": "That sounds like the brakes. When did it start?"
+    },
+    {
+      "speaker": "lisa",
+      "text": "About a week ago. It's getting worse."
+    },
+    {
+      "speaker": "mech",
+      "text": "Let me have a look. Yes, you need new brakes at the front."
+    },
+    {
+      "speaker": "lisa",
+      "text": "How long will it take?"
+    },
+    {
+      "speaker": "mech",
+      "text": "We're busy today. You can collect it tomorrow at about three."
+    },
+    {
+      "speaker": "lisa",
+      "text": "And how much will it cost?"
+    },
+    {
+      "speaker": "mech",
+      "text": "Around two hundred pounds, with the parts."
+    },
+    {
+      "speaker": "lisa",
+      "text": "That's more than I expected, but OK. Safety first!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the problem with the car?",
+      "options": [
+        "It won't start.",
+        "It makes a noise when she stops.",
+        "The lights are broken.",
+        "It uses too much petrol."
+      ],
+      "answer": 1,
+      "feedback": "Araba dururken garip bir ses çıkarıyor.",
+      "evidence": "My car is making a strange noise when I stop."
+    },
+    {
+      "id": "q2",
+      "prompt": "When did the problem start?",
+      "options": [
+        "yesterday",
+        "about a week ago",
+        "a month ago",
+        "this morning"
+      ],
+      "answer": 1,
+      "feedback": "Yaklaşık bir hafta önce başladı.",
+      "evidence": "About a week ago."
+    },
+    {
+      "id": "q3",
+      "prompt": "When can Lisa collect the car?",
+      "options": [
+        "today at three",
+        "tomorrow at about three",
+        "next week",
+        "this evening"
+      ],
+      "answer": 1,
+      "feedback": "Bugün yoğunlar; yarın saat üç civarı alabilir.",
+      "evidence": "You can collect it tomorrow at about three."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much will the repair cost?",
+      "options": [
+        "around two hundred pounds",
+        "around one hundred pounds",
+        "around twenty pounds",
+        "around three hundred pounds"
+      ],
+      "answer": 0,
+      "feedback": "Parçalarla birlikte yaklaşık iki yüz pound.",
+      "evidence": "Around two hundred pounds, with the parts."
+    }
+  ]
+}

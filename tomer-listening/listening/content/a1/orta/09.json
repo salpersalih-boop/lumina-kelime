@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-09",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the bus stop",
+  "topic": "Ulaşım ve saatler",
+  "instructions": "İki kişi otobüs durağında konuşuyor. Kısa bir diyalog; otobüs numarası ve saate dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "man": {
+      "name": "Man",
+      "voice": "male"
+    },
+    "woman": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "man",
+      "text": "Excuse me, does this bus go to the hospital?"
+    },
+    {
+      "speaker": "woman",
+      "text": "No, it doesn't. You need the number eight."
+    },
+    {
+      "speaker": "man",
+      "text": "When is the next one?"
+    },
+    {
+      "speaker": "woman",
+      "text": "At ten past four."
+    },
+    {
+      "speaker": "man",
+      "text": "Thank you very much."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does the man want to go?",
+      "options": [
+        "to the station",
+        "to the hospital",
+        "to the airport",
+        "to the park"
+      ],
+      "answer": 1,
+      "feedback": "Adam hastaneye (hospital) gitmek istiyor.",
+      "evidence": "does this bus go to the hospital?"
+    },
+    {
+      "id": "q2",
+      "prompt": "Does this bus go there?",
+      "options": [
+        "Yes, it does.",
+        "Only in the morning.",
+        "No, it doesn't.",
+        "The woman doesn't know."
+      ],
+      "answer": 2,
+      "feedback": "Kadın \"No, it doesn't\" diyor; bu otobüs hastaneye gitmiyor.",
+      "evidence": "No, it doesn't."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which bus does the man need?",
+      "options": [
+        "number eight",
+        "number four",
+        "number ten",
+        "number eighteen"
+      ],
+      "answer": 0,
+      "feedback": "Sekiz numaralı (number eight) otobüse binmeli.",
+      "evidence": "You need the number eight."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is the next bus?",
+      "options": [
+        "at four o'clock",
+        "at ten to four",
+        "at half past four",
+        "at ten past four"
+      ],
+      "answer": 3,
+      "feedback": "\"Ten past four\" 4:10 demek. \"Ten to four\" olsaydı 3:50 olurdu.",
+      "evidence": "At ten past four."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "a2-orta-32",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "A new phone plan",
+  "topic": "Telefon tarifesi",
+  "instructions": "Mia telefon mağazasında tarife seçiyor. Uzun bir diyalog; tarifeleri ve neyin dahil olduğunu karıştırma.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Shop assistant",
+      "voice": "male"
+    },
+    "mia": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mia",
+      "text": "Hi. I'd like to change my phone plan. I'm paying too much."
+    },
+    {
+      "speaker": "staff",
+      "text": "Sure. How do you use your phone? Do you make a lot of calls?"
+    },
+    {
+      "speaker": "mia",
+      "text": "Not really. I mostly use the internet and send messages."
+    },
+    {
+      "speaker": "staff",
+      "text": "Then we have two good plans. The Basic plan is ten pounds a month with five gigabytes of data."
+    },
+    {
+      "speaker": "mia",
+      "text": "Five isn't enough. I watch a lot of videos."
+    },
+    {
+      "speaker": "staff",
+      "text": "The Plus plan is eighteen pounds a month with unlimited data and free calls."
+    },
+    {
+      "speaker": "mia",
+      "text": "Is there a contract?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, for twelve months. But if you choose twenty-four months, it's only fifteen pounds a month."
+    },
+    {
+      "speaker": "mia",
+      "text": "Hmm, I don't want a long contract. I might move abroad next year."
+    },
+    {
+      "speaker": "staff",
+      "text": "Then twelve months is better for you."
+    },
+    {
+      "speaker": "mia",
+      "text": "OK, I'll take the Plus plan for twelve months."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How does Mia mostly use her phone?",
+      "options": [
+        "for calls",
+        "for the internet and messages",
+        "for taking photos",
+        "for games"
+      ],
+      "answer": 1,
+      "feedback": "Çoğunlukla internet ve mesaj için kullanıyor.",
+      "evidence": "I mostly use the internet and send messages."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why doesn't Mia choose the Basic plan?",
+      "options": [
+        "It's too expensive.",
+        "It has no calls.",
+        "Five gigabytes isn't enough.",
+        "It has a long contract."
+      ],
+      "answer": 2,
+      "feedback": "Çok video izliyor; beş gigabayt yetmiyor.",
+      "evidence": "Five isn't enough."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why doesn't Mia want a 24-month contract?",
+      "options": [
+        "It's more expensive.",
+        "She might move abroad.",
+        "She doesn't like contracts.",
+        "The shop doesn't have it."
+      ],
+      "answer": 1,
+      "feedback": "Gelecek yıl yurt dışına taşınabilir.",
+      "evidence": "I might move abroad next year."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much will Mia pay per month?",
+      "options": [
+        "ten pounds",
+        "fifteen pounds",
+        "twelve pounds",
+        "eighteen pounds"
+      ],
+      "answer": 3,
+      "feedback": "Plus tarifesi on iki ay için ayda on sekiz pound.",
+      "evidence": "OK, I'll take the Plus plan for twelve months."
+    }
+  ]
+}

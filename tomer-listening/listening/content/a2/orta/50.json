@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-50",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Signing up for a language course",
+  "topic": "Kursa kayıt",
+  "instructions": "Bir adam İspanyolca kursuna yazılıyor. Seviye, gün, süre ve fiyatı takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "School",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "b",
+      "text": "Hi. I'd like to join a Spanish course."
+    },
+    {
+      "speaker": "a",
+      "text": "Great. Have you studied Spanish before?"
+    },
+    {
+      "speaker": "b",
+      "text": "A little, at school, but I've forgotten most of it."
+    },
+    {
+      "speaker": "a",
+      "text": "Then the beginner course is best. It's on Monday and Wednesday evenings, from seven to nine."
+    },
+    {
+      "speaker": "b",
+      "text": "I play football on Wednesdays. Is there another day?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, Saturday mornings from ten to one."
+    },
+    {
+      "speaker": "b",
+      "text": "That's better. How long is the course?"
+    },
+    {
+      "speaker": "a",
+      "text": "Twelve weeks, and it costs two hundred and forty pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which course is best for Tom?",
+      "options": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "business"
+      ],
+      "answer": 0,
+      "feedback": "Çoğunu unuttuğu için başlangıç kursu en iyisi.",
+      "evidence": "Then the beginner course is best."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't Tom go on Wednesdays?",
+      "options": [
+        "He works late.",
+        "He plays football.",
+        "He has another class.",
+        "He visits his parents."
+      ],
+      "answer": 1,
+      "feedback": "Çarşamba futbol oynuyor.",
+      "evidence": "I play football on Wednesdays."
+    },
+    {
+      "id": "q3",
+      "prompt": "When will Tom have his classes?",
+      "options": [
+        "Monday and Wednesday evenings",
+        "Saturday afternoons",
+        "Sunday mornings",
+        "Saturday mornings"
+      ],
+      "answer": 3,
+      "feedback": "Cumartesi sabahları ondan bire.",
+      "evidence": "Saturday mornings from ten to one."
+    },
+    {
+      "id": "q4",
+      "prompt": "How long is the course?",
+      "options": [
+        "ten weeks",
+        "twelve weeks",
+        "twenty weeks",
+        "two months"
+      ],
+      "answer": 1,
+      "feedback": "Kurs on iki hafta.",
+      "evidence": "Twelve weeks"
+    }
+  ]
+}

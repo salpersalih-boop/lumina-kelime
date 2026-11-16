@@ -1,0 +1,87 @@
+{
+  "id": "a1-kolay-28",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Grandpa's garden",
+  "topic": "Bahçe ve sebzeler",
+  "instructions": "Sam dedesinin bahçesini anlatıyor. Bahçedeki sebze ve meyvelere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sam": {
+      "name": "Sam",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sam",
+      "text": "My grandpa has a big garden behind his house."
+    },
+    {
+      "speaker": "sam",
+      "text": "He grows tomatoes, potatoes and carrots."
+    },
+    {
+      "speaker": "sam",
+      "text": "There are two apple trees too."
+    },
+    {
+      "speaker": "sam",
+      "text": "In summer, I help him in the garden every Saturday."
+    },
+    {
+      "speaker": "sam",
+      "text": "I like picking the apples, but I don't like the potatoes. They are very dirty!"
+    },
+    {
+      "speaker": "sam",
+      "text": "Grandma makes apple cake with the apples."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the garden?",
+      "options": [
+        "in front of the house",
+        "behind the house",
+        "next to the school",
+        "in the park"
+      ],
+      "answer": 1,
+      "feedback": "Bahçe evin arkasında (behind his house).",
+      "evidence": "My grandpa has a big garden behind his house."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many apple trees are there?",
+      "options": [
+        "one",
+        "three",
+        "two",
+        "four"
+      ],
+      "answer": 2,
+      "feedback": "İki elma ağacı var.",
+      "evidence": "There are two apple trees too."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Grandma make?",
+      "options": [
+        "apple cake",
+        "tomato soup",
+        "potato salad",
+        "carrot cake"
+      ],
+      "answer": 0,
+      "feedback": "Büyükannesi elmalarla elmalı kek yapıyor.",
+      "evidence": "Grandma makes apple cake with the apples."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "a1-kolay-09",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My weekend",
+  "topic": "Hafta sonu",
+  "instructions": "Jack hafta sonunu anlatıyor. Uzun bir metin; cumartesi ve pazar günlerini karıştırma.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jack": {
+      "name": "Jack",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jack",
+      "text": "Hi, I'm Jack. I love weekends!"
+    },
+    {
+      "speaker": "jack",
+      "text": "On Saturday morning, I get up late, at ten o'clock."
+    },
+    {
+      "speaker": "jack",
+      "text": "I have a big breakfast with eggs and toast."
+    },
+    {
+      "speaker": "jack",
+      "text": "Then I play football in the park with my friends."
+    },
+    {
+      "speaker": "jack",
+      "text": "We play for two hours."
+    },
+    {
+      "speaker": "jack",
+      "text": "In the afternoon, I go shopping with my mum."
+    },
+    {
+      "speaker": "jack",
+      "text": "We buy food for the week."
+    },
+    {
+      "speaker": "jack",
+      "text": "On Saturday evening, my family and I watch a film at home."
+    },
+    {
+      "speaker": "jack",
+      "text": "On Sunday, we visit my grandparents."
+    },
+    {
+      "speaker": "jack",
+      "text": "They live in a village near the mountains."
+    },
+    {
+      "speaker": "jack",
+      "text": "My grandmother makes a big lunch for us."
+    },
+    {
+      "speaker": "jack",
+      "text": "After lunch, I walk in the forest with my grandfather."
+    },
+    {
+      "speaker": "jack",
+      "text": "We come home at six o'clock in the evening."
+    },
+    {
+      "speaker": "jack",
+      "text": "I'm always tired on Sunday night!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time does Jack get up on Saturday?",
+      "options": [
+        "at six o'clock",
+        "at eight o'clock",
+        "at ten o'clock",
+        "at twelve o'clock"
+      ],
+      "answer": 2,
+      "feedback": "Cumartesi geç, saat onda (ten o'clock) kalkıyor. \"Six\" pazar akşamı eve dönüş saati.",
+      "evidence": "I get up late, at ten o'clock."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who does Jack go shopping with?",
+      "options": [
+        "his friends",
+        "his mum",
+        "his grandfather",
+        "his dad"
+      ],
+      "answer": 1,
+      "feedback": "Alışverişe annesiyle (mum) gidiyor. Arkadaşlarıyla futbol oynuyor, dedesiyle yürüyüş yapıyor.",
+      "evidence": "I go shopping with my mum."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where do Jack's grandparents live?",
+      "options": [
+        "in a village near the mountains",
+        "in a big city",
+        "near the sea",
+        "next to Jack's house"
+      ],
+      "answer": 0,
+      "feedback": "Büyükanne ve büyükbabası dağların yakınındaki bir köyde (village) yaşıyor.",
+      "evidence": "They live in a village near the mountains."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-47",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A message from Dad",
+  "topic": "Telefon mesajı",
+  "instructions": "Babası kızına kısa bir mesaj bırakıyor. Ne yapması gerektiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Dad",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Hi Ece, it's Dad. I'm stuck in traffic, so I'll be home late."
+    },
+    {
+      "speaker": "s",
+      "text": "Can you take the chicken out of the freezer?"
+    },
+    {
+      "speaker": "s",
+      "text": "And please don't forget to feed the cat. Thanks, love!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why will Dad be late?",
+      "options": [
+        "He's stuck in traffic.",
+        "He has a meeting.",
+        "His car broke down.",
+        "He's at the shops."
+      ],
+      "answer": 0,
+      "feedback": "Trafikte kalmış.",
+      "evidence": "I'm stuck in traffic"
+    },
+    {
+      "id": "q2",
+      "prompt": "What should Ece take out of the freezer?",
+      "options": [
+        "fish",
+        "ice cream",
+        "the chicken",
+        "bread"
+      ],
+      "answer": 2,
+      "feedback": "Tavuğu dondurucudan çıkarmalı.",
+      "evidence": "Can you take the chicken out of the freezer?"
+    },
+    {
+      "id": "q3",
+      "prompt": "What else should she do?",
+      "options": [
+        "walk the dog",
+        "cook dinner",
+        "clean the kitchen",
+        "feed the cat"
+      ],
+      "answer": 3,
+      "feedback": "Kediyi beslemeyi unutmamalı.",
+      "evidence": "please don't forget to feed the cat."
+    }
+  ]
+}

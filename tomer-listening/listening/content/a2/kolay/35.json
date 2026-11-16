@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-35",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Last night's dinner",
+  "topic": "Yemek (geçmiş zaman)",
+  "instructions": "Can dün akşam pişirdiği yemeği anlatıyor. Ne olduğunu ve sonucu takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "can": {
+      "name": "Can",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "can",
+      "text": "Last night, I cooked dinner for my girlfriend for the first time."
+    },
+    {
+      "speaker": "can",
+      "text": "I wanted to make something special, so I tried a new fish recipe."
+    },
+    {
+      "speaker": "can",
+      "text": "Unfortunately, I left the fish in the oven for too long, and it burned."
+    },
+    {
+      "speaker": "can",
+      "text": "In the end, we ordered a pizza and laughed about it."
+    },
+    {
+      "speaker": "can",
+      "text": "Next time, I'm going to cook something easier!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who did Can cook dinner for?",
+      "options": [
+        "his mother",
+        "his friends",
+        "his girlfriend",
+        "his sister"
+      ],
+      "answer": 2,
+      "feedback": "Kız arkadaşı için ilk kez yemek yaptı.",
+      "evidence": "I cooked dinner for my girlfriend for the first time."
+    },
+    {
+      "id": "q2",
+      "prompt": "What happened to the fish?",
+      "options": [
+        "It burned.",
+        "It was delicious.",
+        "He forgot to buy it.",
+        "It was too salty."
+      ],
+      "answer": 0,
+      "feedback": "Balığı fırında çok uzun bıraktı ve yandı.",
+      "evidence": "it burned."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did they eat in the end?",
+      "options": [
+        "fish",
+        "pasta",
+        "a salad",
+        "pizza"
+      ],
+      "answer": 3,
+      "feedback": "Sonunda pizza sipariş ettiler.",
+      "evidence": "In the end, we ordered a pizza"
+    }
+  ]
+}

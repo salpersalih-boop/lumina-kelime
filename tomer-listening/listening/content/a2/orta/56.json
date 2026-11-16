@@ -1,0 +1,108 @@
+{
+  "id": "a2-orta-56",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Returning shoes",
+  "topic": "Ürün iadesi",
+  "instructions": "Bir adam aldığı ayakkabıyı geri getiriyor. Sorun ve sonucu takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Shop assistant",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Man",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "b",
+      "text": "Hello. I bought these shoes on Saturday, but they hurt my feet."
+    },
+    {
+      "speaker": "a",
+      "text": "I'm sorry. Have you worn them outside?"
+    },
+    {
+      "speaker": "b",
+      "text": "Only once, for an hour."
+    },
+    {
+      "speaker": "a",
+      "text": "Hmm. We usually only take back shoes that haven't been worn outside. But I can change them for a bigger size."
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, please. I'm a forty-two. Maybe a forty-three is better."
+    },
+    {
+      "speaker": "a",
+      "text": "Here you are. Try them on."
+    },
+    {
+      "speaker": "b",
+      "text": "These are much more comfortable. Thank you!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did he buy the shoes?",
+      "options": [
+        "on Saturday",
+        "yesterday",
+        "last week",
+        "on Sunday"
+      ],
+      "answer": 0,
+      "feedback": "Ayakkabıları cumartesi almış.",
+      "evidence": "I bought these shoes on Saturday"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem?",
+      "options": [
+        "They are the wrong colour.",
+        "They are broken.",
+        "They hurt his feet.",
+        "They are too big."
+      ],
+      "answer": 2,
+      "feedback": "Ayaklarını acıtıyor.",
+      "evidence": "but they hurt my feet."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why can't he get his money back?",
+      "options": [
+        "He lost the receipt.",
+        "He wore them outside.",
+        "It's more than two weeks.",
+        "They were in a sale."
+      ],
+      "answer": 1,
+      "feedback": "Ayakkabıları dışarıda giymiş.",
+      "evidence": "We usually only take back shoes that haven't been worn outside."
+    },
+    {
+      "id": "q4",
+      "prompt": "What size does he take?",
+      "options": [
+        "forty",
+        "forty-one",
+        "forty-two",
+        "forty-three"
+      ],
+      "answer": 3,
+      "feedback": "Kırk üç numara alıyor.",
+      "evidence": "Maybe a forty-three is better."
+    }
+  ]
+}

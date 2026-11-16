@@ -1,0 +1,125 @@
+{
+  "id": "a1-zor-27",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My week at summer camp",
+  "topic": "Kamp anlatısı",
+  "instructions": "Lily yaz kampındaki haftasını anlatıyor. Uzun bir metin; günler, etkinlikler ve sevmediği şeyleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "lily": {
+      "name": "Lily",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lily",
+      "text": "Last week, I was at a summer camp near a big lake."
+    },
+    {
+      "speaker": "lily",
+      "text": "There were forty children and eight teachers."
+    },
+    {
+      "speaker": "lily",
+      "text": "I slept in a tent with three other girls. It was fun, but at night it was cold."
+    },
+    {
+      "speaker": "lily",
+      "text": "On Monday and Tuesday, we went swimming and sailing on the lake."
+    },
+    {
+      "speaker": "lily",
+      "text": "On Wednesday, it rained all day, so we made things with wood and paper."
+    },
+    {
+      "speaker": "lily",
+      "text": "On Thursday, we walked up a mountain. It took four hours! My legs were very tired."
+    },
+    {
+      "speaker": "lily",
+      "text": "On the last night, we had a party with music and a big fire."
+    },
+    {
+      "speaker": "lily",
+      "text": "The food wasn't very good. We had pasta every day!"
+    },
+    {
+      "speaker": "lily",
+      "text": "But I made a lot of new friends, and I want to go again next year."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many children were at the camp?",
+      "options": [
+        "four",
+        "eight",
+        "fourteen",
+        "forty"
+      ],
+      "answer": 3,
+      "feedback": "Kampta kırk çocuk ve sekiz öğretmen vardı.",
+      "evidence": "There were forty children and eight teachers."
+    },
+    {
+      "id": "q2",
+      "prompt": "What was the problem with the tent?",
+      "options": [
+        "It was small.",
+        "It was cold at night.",
+        "It was wet.",
+        "It was dirty."
+      ],
+      "answer": 1,
+      "feedback": "Çadır eğlenceliydi ama geceleri soğuktu.",
+      "evidence": "at night it was cold."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did they do on Wednesday?",
+      "options": [
+        "They went swimming.",
+        "They walked up a mountain.",
+        "They made things with wood and paper.",
+        "They had a party."
+      ],
+      "answer": 2,
+      "feedback": "Çarşamba bütün gün yağmur yağdı; tahta ve kâğıtla bir şeyler yaptılar.",
+      "evidence": "so we made things with wood and paper."
+    },
+    {
+      "id": "q4",
+      "prompt": "How long did the mountain walk take?",
+      "options": [
+        "four hours",
+        "two hours",
+        "one hour",
+        "all day"
+      ],
+      "answer": 0,
+      "feedback": "Dağ yürüyüşü dört saat sürdü.",
+      "evidence": "It took four hours!"
+    },
+    {
+      "id": "q5",
+      "prompt": "What didn't Lily like?",
+      "options": [
+        "the lake",
+        "the party",
+        "the teachers",
+        "the food"
+      ],
+      "answer": 3,
+      "feedback": "Yemekler pek iyi değildi; her gün makarna yediler.",
+      "evidence": "The food wasn't very good."
+    }
+  ]
+}

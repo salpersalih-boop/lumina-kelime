@@ -1,0 +1,105 @@
+{
+  "id": "a1-zor-22",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A message from the dentist",
+  "topic": "Telefon mesajı",
+  "instructions": "Diş kliniği kısa bir sesli mesaj bırakıyor. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Dental clinic",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Hello, this is a message for Mr Ali Demir from City Dental."
+    },
+    {
+      "speaker": "voice",
+      "text": "Your appointment is not on Monday the third. It is on Tuesday the fourth."
+    },
+    {
+      "speaker": "voice",
+      "text": "The time is the same, at two forty-five."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please come ten minutes early. Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is the message for?",
+      "options": [
+        "Mr Ali Demir",
+        "Mrs Demir",
+        "a dentist",
+        "City Dental"
+      ],
+      "answer": 0,
+      "feedback": "Mesaj Bay Ali Demir için.",
+      "evidence": "this is a message for Mr Ali Demir"
+    },
+    {
+      "id": "q2",
+      "prompt": "When is the appointment now?",
+      "options": [
+        "Monday the third",
+        "Tuesday the third",
+        "Monday the fourth",
+        "Tuesday the fourth"
+      ],
+      "answer": 3,
+      "feedback": "Randevu pazartesi değil, dördü salı günü.",
+      "evidence": "It is on Tuesday the fourth."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time is the appointment?",
+      "options": [
+        "at two fifteen",
+        "at a quarter to two",
+        "at two forty-five",
+        "at four forty-five"
+      ],
+      "answer": 2,
+      "feedback": "Saat aynı: iki kırk beş (2:45).",
+      "evidence": "The time is the same, at two forty-five."
+    },
+    {
+      "id": "q4",
+      "prompt": "Did the time change?",
+      "options": [
+        "Yes, it is later.",
+        "No, it is the same.",
+        "Yes, it is earlier.",
+        "The message doesn't say."
+      ],
+      "answer": 1,
+      "feedback": "Saat değişmedi (the same); sadece gün değişti.",
+      "evidence": "The time is the same"
+    },
+    {
+      "id": "q5",
+      "prompt": "What time should Mr Demir arrive?",
+      "options": [
+        "at two thirty-five",
+        "at two forty-five",
+        "at two fifty-five",
+        "at two fifteen"
+      ],
+      "answer": 0,
+      "feedback": "On dakika erken gelmeli: 2:45 − 10 dakika = 2:35.",
+      "evidence": "Please come ten minutes early."
+    }
+  ]
+}

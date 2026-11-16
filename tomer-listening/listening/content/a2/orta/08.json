@@ -1,0 +1,116 @@
+{
+  "id": "a2-orta-08",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Renting a bike",
+  "topic": "Bisiklet kiralama",
+  "instructions": "Turist Paolo bisiklet kiralıyor. Süre, fiyat ve kurallara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "paolo": {
+      "name": "Paolo",
+      "voice": "male"
+    },
+    "staff": {
+      "name": "Bike shop",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "paolo",
+      "text": "Hi. How much is it to rent a bike?"
+    },
+    {
+      "speaker": "staff",
+      "text": "It's five pounds an hour, or twenty pounds for the whole day."
+    },
+    {
+      "speaker": "paolo",
+      "text": "I'd like one for the whole day, please. I want to ride along the river."
+    },
+    {
+      "speaker": "staff",
+      "text": "Good choice. The river path is beautiful. Here is a helmet. You must wear it."
+    },
+    {
+      "speaker": "paolo",
+      "text": "OK. What time do I need to bring the bike back?"
+    },
+    {
+      "speaker": "staff",
+      "text": "We close at six, so before six, please."
+    },
+    {
+      "speaker": "paolo",
+      "text": "And do I need to leave anything?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, I need your passport or your driving licence."
+    },
+    {
+      "speaker": "paolo",
+      "text": "Here's my driving licence."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much is a bike for the whole day?",
+      "options": [
+        "five pounds",
+        "fifteen pounds",
+        "twenty pounds",
+        "six pounds"
+      ],
+      "answer": 2,
+      "feedback": "Bütün gün yirmi pound; saatlik beş pound.",
+      "evidence": "twenty pounds for the whole day."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where does Paolo want to go?",
+      "options": [
+        "along the river",
+        "to the mountains",
+        "to the old town",
+        "to the beach"
+      ],
+      "answer": 0,
+      "feedback": "Nehir boyunca (along the river) bisiklet sürmek istiyor.",
+      "evidence": "I want to ride along the river."
+    },
+    {
+      "id": "q3",
+      "prompt": "What must Paolo do?",
+      "options": [
+        "ride slowly",
+        "wear a helmet",
+        "buy a map",
+        "pay with a card"
+      ],
+      "answer": 1,
+      "feedback": "Kask takmak zorunda (You must wear it).",
+      "evidence": "Here is a helmet. You must wear it."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Paolo leave at the shop?",
+      "options": [
+        "his passport",
+        "his credit card",
+        "his phone",
+        "his driving licence"
+      ],
+      "answer": 3,
+      "feedback": "Pasaport ya da ehliyet istenir; Paolo ehliyetini (driving licence) bırakıyor.",
+      "evidence": "Here's my driving licence."
+    }
+  ]
+}

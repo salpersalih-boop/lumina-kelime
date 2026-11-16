@@ -1,0 +1,116 @@
+{
+  "id": "a1-orta-24",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "A day off",
+  "topic": "Boş gün planı",
+  "instructions": "İki iş arkadaşı izin günlerini konuşuyor. Kim ne yapacak, dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "kate": {
+      "name": "Kate",
+      "voice": "female"
+    },
+    "sam": {
+      "name": "Sam",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "kate",
+      "text": "Sam, tomorrow is a holiday. What are you going to do?"
+    },
+    {
+      "speaker": "sam",
+      "text": "I'm going to sleep late! Then I'm going to play tennis with my brother."
+    },
+    {
+      "speaker": "kate",
+      "text": "Nice. Where do you play?"
+    },
+    {
+      "speaker": "sam",
+      "text": "At the sports centre near my house. And you?"
+    },
+    {
+      "speaker": "kate",
+      "text": "I'm going to visit my parents. They live by the sea."
+    },
+    {
+      "speaker": "sam",
+      "text": "How do you get there?"
+    },
+    {
+      "speaker": "kate",
+      "text": "By train. It takes two hours."
+    },
+    {
+      "speaker": "sam",
+      "text": "Have a good day!"
+    },
+    {
+      "speaker": "kate",
+      "text": "You too!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why don't they work tomorrow?",
+      "options": [
+        "It's Sunday.",
+        "It's a holiday.",
+        "They are ill.",
+        "The office is closed for work."
+      ],
+      "answer": 1,
+      "feedback": "Yarın tatil (a holiday).",
+      "evidence": "tomorrow is a holiday."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who is Sam going to play tennis with?",
+      "options": [
+        "Kate",
+        "his father",
+        "his brother",
+        "a friend"
+      ],
+      "answer": 2,
+      "feedback": "Sam kardeşiyle (with my brother) tenis oynayacak.",
+      "evidence": "play tennis with my brother."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where do Kate's parents live?",
+      "options": [
+        "by the sea",
+        "in the city centre",
+        "near Sam",
+        "in the mountains"
+      ],
+      "answer": 0,
+      "feedback": "Kate'in ailesi deniz kenarında yaşıyor.",
+      "evidence": "They live by the sea."
+    },
+    {
+      "id": "q4",
+      "prompt": "How long is Kate's train journey?",
+      "options": [
+        "one hour",
+        "twenty minutes",
+        "three hours",
+        "two hours"
+      ],
+      "answer": 3,
+      "feedback": "Trenle iki saat (two hours) sürüyor.",
+      "evidence": "It takes two hours."
+    }
+  ]
+}

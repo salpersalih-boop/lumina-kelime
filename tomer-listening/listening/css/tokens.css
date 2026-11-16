@@ -1,47 +1,72 @@
 /*
-  VOICE   Sakin, odaklı bir dil laboratuvarı: az renk, bol hava, net durumlar.
-  IDEA    Dil laboratuvarındaki kulaklıklı dinleme kabini ve onun ses bandı.
-  PICTURE Seçili metnin dalga formu oynatıcının kendisi; ilerledikçe dolar.
-  COLOUR  Derin petrol yeşili alan (baskın), açık su yeşili (destek), mercan vurgu.
-          Doğru = yeşil, yanlış = kırmızı — yalnızca cevap durumlarında.
-  TYPE    Lexend (okunabilirlik için tasarlandı), dört boyut.
-  LAYOUT  Üstte petrol yeşili seviye bandı; altında solda yapışkan oynatıcı + metin,
-          sağda sorular. 860px altında tek sütun.
+  Lumina tasarım dili ile uyumlu jetonlar.
+  Lumina'ya gömüldüğünde aynı adlı değişkenler (--bg-base, --accent-1 …)
+  Lumina'nın style.css'inden gelir ve bu modül onun temasını (koyu/açık,
+  dil teması) otomatik izler. Tek başına açıldığında aşağıdaki değerler geçerlidir.
+
+  VOICE   Sakin bir dinleme kabini: koyu lacivert zemin, tek parlak odak (oynat düğmesi).
+  COLOUR  Lumina paleti — lacivert yüzeyler, indigo → mavi degrade vurgu.
+          Yeşil / kırmızı yalnızca doğru / yanlış durumlarında.
+  TYPE    Inter (Lumina ile aynı). Başlıklar 800 ağırlık, sıkı harf aralığı.
+  LAYOUT  Ekran ekran ilerleyen akış: seviye → zorluk → metin → ders.
+          Ortalanmış başlıklar, büyük kartlar, tek sütunlu odaklı ders ekranı.
 */
 :root {
-  color-scheme: light dark;
+  color-scheme: dark;
 
-  --bg:        light-dark(#f4f7f6, #0d1413);
-  --surface:   light-dark(#ffffff, #152120);
-  --surface-2: light-dark(#e9f1ef, #1b2a28);
-  --ink:       light-dark(#14211f, #e6efed);
-  --ink-soft:  light-dark(#4d5f5c, #9db3ae);
-  --line:      light-dark(#d5e1de, #26403c);
+  --bg-base: #161c42;
+  --bg-surface: #1d2552;
+  --bg-card: #252f68;
+  --bg-elevated: #2e3a7c;
 
-  --brand:      light-dark(#0e5a55, #0c4743);   /* seviye bandı */
-  --brand-ink:  #f2fbf9;
-  --brand-strong: light-dark(#0e5a55, #5cc2b6); /* koyu temada da okunur vurgu */
-  --brand-soft: light-dark(#cfe6e2, #1f3b38);
-  --accent:     light-dark(#d9532b, #ff7a52);   /* oynat düğmesi, ilerleme */
-  --accent-ink: #ffffff;
+  --accent-1: #6366f1;   /* indigo */
+  --accent-2: #3b82f6;   /* mavi */
 
-  --ok:       light-dark(#1e7f4f, #4fd18b);
-  --ok-bg:    light-dark(#e3f5ea, #12301f);
-  --bad:      light-dark(#c3332b, #ff6b62);
-  --bad-bg:   light-dark(#fdeaea, #3a1716);
-  --warn-bg:  light-dark(#fff4dc, #33290f);
+  --text-primary: #eef1ff;
+  --text-muted: #9aa6d6;
+  --text-dim: #bcc6ee;
 
-  --radius:    14px;
+  --border: rgba(129, 140, 248, 0.32);
+  --border-hover: rgba(129, 140, 248, 0.7);
+
   --radius-sm: 10px;
-  --shadow:    0 1px 2px rgb(10 30 28 / .06), 0 8px 24px rgb(10 30 28 / .06);
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
 
-  --fs-1: 14px;   /* etiket */
-  --fs-2: 16px;   /* gövde */
-  --fs-3: 20px;   /* bölüm başlığı */
-  --fs-4: clamp(28px, 4vw, 40px); /* ders başlığı */
+  --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 24px rgba(99, 102, 241, 0.35);
 
-  --font: 'Lexend', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --spring: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Modüle özgü (ls- = listening) */
+  --ls-ok: #22c55e;
+  --ls-ok-text: #4ade80;
+  --ls-bad: #ef4444;
+  --ls-bad-text: #f87171;
+  --ls-mid: #eab308;
+  --ls-grad: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  --ls-font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
-:root[data-theme="light"] { color-scheme: light; }
-:root[data-theme="dark"]  { color-scheme: dark; }
+/* Açık tema: Lumina'daki body.light-theme ile aynı değerler.
+   Lumina gibi varsayılan koyu; üst çubuktaki düğmeyle açık temaya geçilir. */
+body.light-theme {
+  color-scheme: light;
+  --bg-base: #f0f2f9;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-elevated: #e8ecf8;
+  --text-primary: #1e2338;
+  --text-muted: #64748b;
+  --text-dim: #475569;
+  --border: rgba(124, 110, 247, 0.25);
+  --border-hover: rgba(124, 110, 247, 0.6);
+  --shadow-sm: 0 2px 10px rgba(30, 35, 80, 0.08);
+  --shadow-md: 0 8px 28px rgba(30, 35, 80, 0.12);
+  --shadow-glow: 0 0 22px rgba(99, 102, 241, 0.22);
+  --ls-ok-text: #15803d;
+  --ls-bad-text: #b91c1c;
+}

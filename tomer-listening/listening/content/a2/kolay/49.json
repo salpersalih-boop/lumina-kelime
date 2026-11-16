@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-49",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Our new kitten",
+  "topic": "Evcil hayvan",
+  "instructions": "Sara ailesinin yeni yavru kedisini anlatıyor. Nereden geldiğine ve ne yaptığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Sara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last week, we got a new kitten from an animal shelter."
+    },
+    {
+      "speaker": "s",
+      "text": "She is grey with white feet, so we called her Socks."
+    },
+    {
+      "speaker": "s",
+      "text": "She's only ten weeks old, and she sleeps most of the day."
+    },
+    {
+      "speaker": "s",
+      "text": "At night, she plays with everything, even my hair!"
+    },
+    {
+      "speaker": "s",
+      "text": "My dog was scared of her at first, but now they're friends."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where did they get the kitten?",
+      "options": [
+        "from a pet shop",
+        "from a friend",
+        "from an animal shelter",
+        "from the street"
+      ],
+      "answer": 2,
+      "feedback": "Bir hayvan barınağından aldılar.",
+      "evidence": "from an animal shelter."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why did they call her Socks?",
+      "options": [
+        "She plays with socks.",
+        "She has white feet.",
+        "She is grey.",
+        "She sleeps in a sock."
+      ],
+      "answer": 1,
+      "feedback": "Gri ve ayakları beyaz olduğu için Socks dediler.",
+      "evidence": "She is grey with white feet, so we called her Socks."
+    },
+    {
+      "id": "q3",
+      "prompt": "How did the dog feel about the kitten at first?",
+      "options": [
+        "He was happy.",
+        "He was angry.",
+        "He was scared.",
+        "He didn't see her."
+      ],
+      "answer": 2,
+      "feedback": "Köpek ilk başta ondan korkmuş.",
+      "evidence": "My dog was scared of her at first"
+    }
+  ]
+}

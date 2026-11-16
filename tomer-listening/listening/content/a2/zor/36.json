@@ -1,0 +1,105 @@
+{
+  "id": "a2-zor-36",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Concert cancelled",
+  "topic": "Duyuru",
+  "instructions": "Bir konser salonunun kısa duyurusu. Kısa ama her bilgi önemli. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Concert hall",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "We're sorry to say that tonight's concert is cancelled because the singer is ill."
+    },
+    {
+      "speaker": "voice",
+      "text": "The new date is Saturday the twenty-first of March."
+    },
+    {
+      "speaker": "voice",
+      "text": "Your tickets are still valid for the new date."
+    },
+    {
+      "speaker": "voice",
+      "text": "If you can't come, you can get your money back until the end of this month."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why is the concert cancelled?",
+      "options": [
+        "There was a fire.",
+        "The singer is ill.",
+        "Not enough tickets were sold.",
+        "The weather is bad."
+      ],
+      "answer": 1,
+      "feedback": "Şarkıcı hasta olduğu için konser iptal.",
+      "evidence": "because the singer is ill."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the new date?",
+      "options": [
+        "Saturday the twenty-first of March",
+        "Sunday the twenty-first of March",
+        "Saturday the thirty-first of March",
+        "Saturday the first of March"
+      ],
+      "answer": 0,
+      "feedback": "Yeni tarih 21 mart cumartesi.",
+      "evidence": "The new date is Saturday the twenty-first of March."
+    },
+    {
+      "id": "q3",
+      "prompt": "Do people need new tickets?",
+      "options": [
+        "Yes, they must buy new ones.",
+        "Yes, but they are free.",
+        "No, the old tickets are still valid.",
+        "Only for the best seats."
+      ],
+      "answer": 2,
+      "feedback": "Eski biletler yeni tarih için de geçerli.",
+      "evidence": "Your tickets are still valid for the new date."
+    },
+    {
+      "id": "q4",
+      "prompt": "What can people do if they can't come?",
+      "options": [
+        "give their tickets to a friend",
+        "come on another night",
+        "nothing",
+        "get their money back"
+      ],
+      "answer": 3,
+      "feedback": "Gelemeyenler paralarını geri alabilir.",
+      "evidence": "you can get your money back"
+    },
+    {
+      "id": "q5",
+      "prompt": "Until when can people get their money back?",
+      "options": [
+        "until the end of this month",
+        "until the concert",
+        "until tomorrow",
+        "until the twenty-first"
+      ],
+      "answer": 0,
+      "feedback": "Bu ayın sonuna kadar.",
+      "evidence": "until the end of this month."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-33",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Our kitchen",
+  "topic": "Ev ve eşyalar",
+  "instructions": "Mert evlerinin mutfağını anlatıyor. Kısa bir metin; eşyaların yerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mert": {
+      "name": "Mert",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mert",
+      "text": "Our kitchen is big and white."
+    },
+    {
+      "speaker": "mert",
+      "text": "There is a table with four chairs in the middle."
+    },
+    {
+      "speaker": "mert",
+      "text": "The fridge is next to the door."
+    },
+    {
+      "speaker": "mert",
+      "text": "We eat breakfast in the kitchen every day."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour is the kitchen?",
+      "options": [
+        "yellow",
+        "white",
+        "blue",
+        "green"
+      ],
+      "answer": 1,
+      "feedback": "Mutfak büyük ve beyaz.",
+      "evidence": "Our kitchen is big and white."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many chairs are there?",
+      "options": [
+        "two",
+        "six",
+        "four",
+        "three"
+      ],
+      "answer": 2,
+      "feedback": "Masanın etrafında dört sandalye var.",
+      "evidence": "There is a table with four chairs"
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is the fridge?",
+      "options": [
+        "next to the door",
+        "next to the window",
+        "in the middle",
+        "under the table"
+      ],
+      "answer": 0,
+      "feedback": "Buzdolabı kapının yanında.",
+      "evidence": "The fridge is next to the door."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "a1-orta-20",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Meeting a new neighbour",
+  "topic": "Tanışma ve komşular",
+  "instructions": "Tom yeni komşusu Lin ile tanışıyor. Uzun bir diyalog; iş, aile ve evcil hayvanlara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tom": {
+      "name": "Tom",
+      "voice": "male"
+    },
+    "lin": {
+      "name": "Lin",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tom",
+      "text": "Hello! I'm Tom. I live at number twelve."
+    },
+    {
+      "speaker": "lin",
+      "text": "Hi Tom. I'm Lin. I'm in number fourteen. We're new here."
+    },
+    {
+      "speaker": "tom",
+      "text": "Welcome! Where are you from?"
+    },
+    {
+      "speaker": "lin",
+      "text": "I'm from China, but my husband is from Canada."
+    },
+    {
+      "speaker": "tom",
+      "text": "Nice. What do you do?"
+    },
+    {
+      "speaker": "lin",
+      "text": "I'm a doctor at the hospital. My husband is a teacher."
+    },
+    {
+      "speaker": "tom",
+      "text": "Do you have children?"
+    },
+    {
+      "speaker": "lin",
+      "text": "Yes, one daughter. She is six. And we have a cat."
+    },
+    {
+      "speaker": "tom",
+      "text": "Oh, I have a dog. His name is Rex. He is very friendly."
+    },
+    {
+      "speaker": "lin",
+      "text": "My daughter loves dogs! Is there a park near here?"
+    },
+    {
+      "speaker": "tom",
+      "text": "Yes, there is a big park at the end of the street."
+    },
+    {
+      "speaker": "lin",
+      "text": "Great. Thank you, Tom."
+    },
+    {
+      "speaker": "tom",
+      "text": "No problem. Have a nice day!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What number is Lin's house?",
+      "options": [
+        "twelve",
+        "fourteen",
+        "four",
+        "forty"
+      ],
+      "answer": 1,
+      "feedback": "Lin on dört (fourteen) numarada. On iki Tom'un evi.",
+      "evidence": "I'm in number fourteen."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is Lin's husband from?",
+      "options": [
+        "China",
+        "America",
+        "Canada",
+        "England"
+      ],
+      "answer": 2,
+      "feedback": "Lin Çinli, eşi Kanadalı (from Canada).",
+      "evidence": "but my husband is from Canada."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Lin's job?",
+      "options": [
+        "a teacher",
+        "a nurse",
+        "a student",
+        "a doctor"
+      ],
+      "answer": 3,
+      "feedback": "Lin hastanede doktor; öğretmen olan eşi.",
+      "evidence": "I'm a doctor at the hospital."
+    },
+    {
+      "id": "q4",
+      "prompt": "What pet does Lin have?",
+      "options": [
+        "a cat",
+        "a dog",
+        "a bird",
+        "no pet"
+      ],
+      "answer": 0,
+      "feedback": "Lin'in kedisi var; köpek Tom'un (Rex).",
+      "evidence": "And we have a cat."
+    }
+  ]
+}

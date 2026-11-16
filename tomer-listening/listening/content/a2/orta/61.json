@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-61",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Asking about a job advert",
+  "topic": "İş başvurusu",
+  "instructions": "Bir öğrenci kafedeki iş ilanını soruyor. Saatler, ücret ve başlama tarihine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Student",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Café owner",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hi. I saw your advert for a part-time job. Is it still available?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, it is. Have you worked in a café before?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, for six months last summer."
+    },
+    {
+      "speaker": "b",
+      "text": "Good. We need someone on Saturdays and Sundays, from nine to three."
+    },
+    {
+      "speaker": "a",
+      "text": "That's perfect. I have classes during the week. What's the pay?"
+    },
+    {
+      "speaker": "b",
+      "text": "Eleven pounds an hour, and you can have free lunch."
+    },
+    {
+      "speaker": "a",
+      "text": "When could I start?"
+    },
+    {
+      "speaker": "b",
+      "text": "This Saturday, if you like."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long did she work in a café before?",
+      "options": [
+        "six weeks",
+        "six months",
+        "one year",
+        "two years"
+      ],
+      "answer": 1,
+      "feedback": "Geçen yaz altı ay çalışmış.",
+      "evidence": "Yes, for six months last summer."
+    },
+    {
+      "id": "q2",
+      "prompt": "When is the job?",
+      "options": [
+        "every evening",
+        "Monday to Friday",
+        "Saturdays and Sundays",
+        "only on Saturdays"
+      ],
+      "answer": 2,
+      "feedback": "Cumartesi ve pazar dokuzdan üçe.",
+      "evidence": "We need someone on Saturdays and Sundays"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is the job perfect for her?",
+      "options": [
+        "She has classes during the week.",
+        "It is near her home.",
+        "The pay is very good.",
+        "Her friend works there."
+      ],
+      "answer": 0,
+      "feedback": "Hafta içi dersleri var.",
+      "evidence": "I have classes during the week."
+    },
+    {
+      "id": "q4",
+      "prompt": "What else does she get?",
+      "options": [
+        "free coffee",
+        "a bonus",
+        "free transport",
+        "free lunch"
+      ],
+      "answer": 3,
+      "feedback": "Ücretsiz öğle yemeği.",
+      "evidence": "you can have free lunch."
+    }
+  ]
+}

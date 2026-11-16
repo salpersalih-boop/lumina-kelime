@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-15",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Where are my keys?",
+  "topic": "Evde eşya arama",
+  "instructions": "Ben anahtarlarını bulamıyor. Kısa bir diyalog; yer bildiren kelimelere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ben": {
+      "name": "Ben",
+      "voice": "male"
+    },
+    "mum": {
+      "name": "Mum",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ben",
+      "text": "Mum, where are my keys? They aren't in my bag."
+    },
+    {
+      "speaker": "mum",
+      "text": "Are they on the kitchen table?"
+    },
+    {
+      "speaker": "ben",
+      "text": "No, they aren't."
+    },
+    {
+      "speaker": "mum",
+      "text": "Look under your jacket, on the sofa."
+    },
+    {
+      "speaker": "ben",
+      "text": "Yes! Here they are. Thanks, Mum!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Ben looking for?",
+      "options": [
+        "his phone",
+        "his keys",
+        "his bag",
+        "his jacket"
+      ],
+      "answer": 1,
+      "feedback": "Ben anahtarlarını (keys) arıyor.",
+      "evidence": "where are my keys?"
+    },
+    {
+      "id": "q2",
+      "prompt": "Are the keys in Ben's bag?",
+      "options": [
+        "Yes, they are.",
+        "No, they aren't.",
+        "Some of them.",
+        "Ben doesn't know."
+      ],
+      "answer": 1,
+      "feedback": "Anahtarlar çantada değil (They aren't in my bag).",
+      "evidence": "They aren't in my bag."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where are the keys?",
+      "options": [
+        "on the kitchen table",
+        "in the kitchen",
+        "under his jacket on the sofa",
+        "in his pocket"
+      ],
+      "answer": 2,
+      "feedback": "Anahtarlar kanepedeki ceketin altında (under your jacket, on the sofa). Mutfak masasında değiller.",
+      "evidence": "Look under your jacket, on the sofa."
+    },
+    {
+      "id": "q4",
+      "prompt": "Who helps Ben?",
+      "options": [
+        "his mum",
+        "his sister",
+        "his dad",
+        "his friend"
+      ],
+      "answer": 0,
+      "feedback": "Ben annesiyle (Mum) konuşuyor; onu annesi buluyor.",
+      "evidence": "Thanks, Mum!"
+    }
+  ]
+}

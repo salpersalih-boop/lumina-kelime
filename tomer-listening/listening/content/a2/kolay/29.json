@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-29",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Why I started running",
+  "topic": "Sağlıklı yaşam",
+  "instructions": "Ben koşmaya nasıl başladığını anlatıyor. Sebebe ve gelişmesine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ben": {
+      "name": "Ben",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ben",
+      "text": "Two years ago, I worked in an office all day and I never did any exercise."
+    },
+    {
+      "speaker": "ben",
+      "text": "I felt tired all the time, so my doctor told me to start running."
+    },
+    {
+      "speaker": "ben",
+      "text": "At first, I could only run for five minutes. It was terrible!"
+    },
+    {
+      "speaker": "ben",
+      "text": "But I ran three times a week, and slowly it got easier."
+    },
+    {
+      "speaker": "ben",
+      "text": "Last month, I ran my first half marathon. It took me two hours."
+    },
+    {
+      "speaker": "ben",
+      "text": "Now I feel much healthier, and I sleep better too."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why did Ben start running?",
+      "options": [
+        "His friend asked him.",
+        "He wanted to win a race.",
+        "His doctor told him to.",
+        "He lost his job."
+      ],
+      "answer": 2,
+      "feedback": "Sürekli yorgundu; doktoru koşmaya başlamasını söyledi.",
+      "evidence": "so my doctor told me to start running."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long could Ben run at first?",
+      "options": [
+        "five minutes",
+        "two hours",
+        "fifteen minutes",
+        "half an hour"
+      ],
+      "answer": 0,
+      "feedback": "İlk başta sadece beş dakika koşabiliyordu.",
+      "evidence": "At first, I could only run for five minutes."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did Ben do last month?",
+      "options": [
+        "He started running.",
+        "He ran his first half marathon.",
+        "He went to the doctor.",
+        "He changed jobs."
+      ],
+      "answer": 1,
+      "feedback": "Geçen ay ilk yarı maratonunu koştu; iki saat sürdü.",
+      "evidence": "Last month, I ran my first half marathon."
+    }
+  ]
+}

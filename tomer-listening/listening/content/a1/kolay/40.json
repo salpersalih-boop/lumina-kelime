@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-40",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Our classroom",
+  "topic": "Okul",
+  "instructions": "Öğretmen Bay Ali sınıflarını anlatıyor. Sayılara ve eşyalara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ali": {
+      "name": "Mr Ali",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ali",
+      "text": "This is our classroom. It is on the second floor."
+    },
+    {
+      "speaker": "ali",
+      "text": "There are twenty-two students in my class."
+    },
+    {
+      "speaker": "ali",
+      "text": "There is a big board and a computer at the front."
+    },
+    {
+      "speaker": "ali",
+      "text": "On the wall, there is a map of the world."
+    },
+    {
+      "speaker": "ali",
+      "text": "The windows are big, so the room is very light."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the classroom?",
+      "options": [
+        "on the first floor",
+        "on the ground floor",
+        "on the second floor",
+        "on the third floor"
+      ],
+      "answer": 2,
+      "feedback": "Sınıf ikinci katta.",
+      "evidence": "It is on the second floor."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many students are there?",
+      "options": [
+        "twenty-two",
+        "twelve",
+        "twenty",
+        "thirty-two"
+      ],
+      "answer": 0,
+      "feedback": "Sınıfta yirmi iki öğrenci var.",
+      "evidence": "There are twenty-two students in my class."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is on the wall?",
+      "options": [
+        "a clock",
+        "a map of the world",
+        "a computer",
+        "photos"
+      ],
+      "answer": 1,
+      "feedback": "Duvarda bir dünya haritası var.",
+      "evidence": "On the wall, there is a map of the world."
+    }
+  ]
+}

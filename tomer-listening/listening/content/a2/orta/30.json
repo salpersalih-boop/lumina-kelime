@@ -1,0 +1,124 @@
+{
+  "id": "a2-orta-30",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Which hotel?",
+  "topic": "Otel seçme",
+  "instructions": "Sam ve Ayla iki otel arasında seçim yapıyor. Uzun bir diyalog; hangi özelliğin hangi otele ait olduğunu karıştırma.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sam": {
+      "name": "Sam",
+      "voice": "male"
+    },
+    "ayla": {
+      "name": "Ayla",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sam",
+      "text": "I've found two hotels for our trip to Rome. Can you help me choose?"
+    },
+    {
+      "speaker": "ayla",
+      "text": "Sure. Tell me about them."
+    },
+    {
+      "speaker": "sam",
+      "text": "The first one, Hotel Sole, is in the centre, near all the famous places. It's a hundred and forty euros a night."
+    },
+    {
+      "speaker": "ayla",
+      "text": "That's expensive. And the other one?"
+    },
+    {
+      "speaker": "sam",
+      "text": "Villa Verde is cheaper, ninety euros, and it has a swimming pool. But it's thirty minutes from the centre by bus."
+    },
+    {
+      "speaker": "ayla",
+      "text": "Does the price include breakfast?"
+    },
+    {
+      "speaker": "sam",
+      "text": "At Villa Verde, yes. At Hotel Sole, no. Breakfast is fifteen euros each."
+    },
+    {
+      "speaker": "ayla",
+      "text": "Hmm. We're only there for three days, and we want to see a lot. I don't want to spend hours on buses."
+    },
+    {
+      "speaker": "sam",
+      "text": "And we won't have time for the pool anyway."
+    },
+    {
+      "speaker": "ayla",
+      "text": "Exactly. Let's book Hotel Sole and have breakfast in a café. It's cheaper."
+    },
+    {
+      "speaker": "sam",
+      "text": "Good idea. I'll book it tonight."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Hotel Sole?",
+      "options": [
+        "near the airport",
+        "in the centre",
+        "thirty minutes from the centre",
+        "near the beach"
+      ],
+      "answer": 1,
+      "feedback": "Hotel Sole merkezde, ünlü yerlerin yakınında.",
+      "evidence": "is in the centre, near all the famous places."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Villa Verde have?",
+      "options": [
+        "a swimming pool",
+        "a gym",
+        "a restaurant",
+        "a garden"
+      ],
+      "answer": 0,
+      "feedback": "Villa Verde daha ucuz ve havuzlu ama merkeze otuz dakika uzak.",
+      "evidence": "and it has a swimming pool."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which hotel includes breakfast?",
+      "options": [
+        "Hotel Sole",
+        "both hotels",
+        "Villa Verde",
+        "neither hotel"
+      ],
+      "answer": 2,
+      "feedback": "Kahvaltı Villa Verde'de dahil; Hotel Sole'de kişi başı on beş euro.",
+      "evidence": "At Villa Verde, yes."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why do they choose Hotel Sole?",
+      "options": [
+        "It's cheaper.",
+        "It has breakfast.",
+        "It has a pool.",
+        "They don't want to spend time on buses."
+      ],
+      "answer": 3,
+      "feedback": "Üç günde çok şey görmek istiyorlar; otobüste saatler geçirmek istemiyorlar.",
+      "evidence": "I don't want to spend hours on buses."
+    }
+  ]
+}

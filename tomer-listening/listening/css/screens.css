@@ -1,0 +1,165 @@
+/* ═══════════ Üst çubuk ═══════════ */
+.ls-bar {
+  position: sticky; top: 0; z-index: 5;
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--bg-base) 72%, transparent);
+  border-bottom: 1px solid var(--border);
+}
+.ls-bar-inner { max-width: 1100px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; gap: 14px; }
+.ls-brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font-weight: 800; letter-spacing: -0.02em; }
+.ls-brand-mark {
+  display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px;
+  background: var(--ls-grad); color: #fff; box-shadow: var(--shadow-glow);
+}
+.ls-brand-mark svg { width: 20px; height: 20px; }
+.ls-brand small { display: block; font-size: 0.72rem; font-weight: 600; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; }
+.ls-crumbs { display: flex; align-items: center; gap: 6px; margin-left: 8px; font-size: 0.88rem; color: var(--text-muted); min-width: 0; }
+.ls-crumbs a { color: var(--text-dim); text-decoration: none; white-space: nowrap; }
+.ls-crumbs a:hover { color: var(--text-primary); }
+.ls-crumbs span[aria-current] { color: var(--text-primary); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ls-crumbs i { opacity: 0.5; font-style: normal; }
+.ls-icon-btn {
+  margin-left: auto; display: grid; place-items: center; width: 42px; height: 42px; flex: none;
+  border-radius: 50%; border: 1px solid var(--border); background: var(--bg-surface); color: var(--text-primary);
+  transition: var(--transition);
+}
+.ls-icon-btn:hover { border-color: var(--border-hover); transform: rotate(-12deg); }
+.ls-icon-btn svg { width: 20px; height: 20px; }
+
+/* ═══════════ Ekran iskeleti ═══════════ */
+.ls-screen { max-width: 1100px; margin: 0 auto; padding: 28px 20px 80px; display: flex; flex-direction: column; gap: 22px; animation: ls-in .35s ease both; }
+@keyframes ls-in { from { opacity: 0; transform: translateY(8px); } }
+
+.ls-back {
+  align-self: flex-start; display: inline-flex; text-decoration: none; align-items: center; gap: 6px;
+  padding: 8px 16px 8px 12px; border-radius: 999px; font-size: 0.9rem; font-weight: 600;
+  color: var(--text-dim); background: var(--bg-surface); border: 1px solid var(--border); transition: var(--transition);
+}
+.ls-back svg { width: 16px; height: 16px; transform: scaleX(-1); }
+.ls-back:hover { color: var(--text-primary); border-color: var(--border-hover); }
+
+.ls-head { text-align: center; display: grid; gap: 8px; justify-items: center; }
+.ls-kicker {
+  display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; border-radius: 999px;
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-dim); background: var(--bg-surface); border: 1px solid var(--border);
+}
+.ls-head h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.ls-head h1:focus { outline: none; }
+.ls-grad-text { background: var(--ls-grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.ls-head p { color: var(--text-muted); max-width: 52ch; }
+
+/* ═══════════ Özet göstergeleri ═══════════ */
+.ls-kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; max-width: 720px; width: 100%; margin: 0 auto; }
+.ls-kpi { padding: 16px 12px; border-radius: var(--radius-md); background: var(--bg-card); border: 1px solid var(--border); text-align: center; display: grid; gap: 2px; }
+.ls-kpi b { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; }
+.ls-kpi span { font-size: 0.8rem; color: var(--text-muted); }
+
+/* ═══════════ Kart ızgarası (seviye / zorluk / metin) ═══════════ */
+.ls-grid { display: grid; gap: 16px; }
+.ls-grid-levels { grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
+.ls-grid-subs { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.ls-grid-sets { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+
+.ls-card {
+  position: relative; display: flex; flex-direction: column; gap: 12px; width: 100%; text-align: left;
+  padding: 22px; border-radius: var(--radius-lg); color: var(--text-primary); text-decoration: none;
+  background: var(--bg-card); border: 2px solid var(--border); box-shadow: var(--shadow-sm);
+  transition: var(--spring); overflow: hidden; isolation: isolate;
+}
+.ls-card::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; opacity: 0; transition: opacity .3s;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.18), transparent 60%);
+}
+.ls-card:hover:not([aria-disabled="true"]) { transform: translateY(-4px); border-color: var(--accent-1); box-shadow: var(--shadow-glow); }
+.ls-card:hover::before { opacity: 1; }
+.ls-card[aria-disabled="true"] { opacity: 0.5; cursor: not-allowed; filter: saturate(0.6); }
+
+/* Seviye kartı */
+.ls-level { align-items: center; text-align: center; padding: 28px 18px 22px; }
+.ls-level-code { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+.ls-level-name { font-weight: 600; }
+.ls-level-meta { font-size: 0.85rem; color: var(--text-muted); }
+.ls-soon { position: absolute; top: 12px; right: 12px; padding: 3px 10px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; background: var(--bg-elevated); color: var(--text-dim); }
+.ls-meter { width: 100%; height: 6px; border-radius: 99px; background: var(--bg-elevated); overflow: hidden; }
+.ls-meter i { display: block; height: 100%; width: var(--v, 0%); border-radius: 99px; background: var(--ls-grad); transition: width .4s; }
+
+/* Zorluk kartı */
+.ls-sub { padding: 26px; gap: 16px; }
+.ls-sub-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.ls-bars { display: inline-flex; align-items: end; gap: 4px; height: 30px; }
+.ls-bars i { width: 8px; border-radius: 3px; background: var(--bg-elevated); }
+.ls-bars i:nth-child(1) { height: 40%; } .ls-bars i:nth-child(2) { height: 70%; } .ls-bars i:nth-child(3) { height: 100%; }
+.ls-bars i.on { background: var(--ls-grad); }
+.ls-ring {
+  --p: 0; width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; flex: none;
+  background: conic-gradient(var(--accent-2) calc(var(--p) * 1%), var(--bg-elevated) 0);
+}
+.ls-ring span { width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; background: var(--bg-card); font-size: 0.82rem; font-weight: 800; }
+.ls-sub h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+.ls-sub p { color: var(--text-muted); font-size: 0.92rem; }
+.ls-facts { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* Etiketler */
+.ls-chip {
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px;
+  font-size: 0.78rem; font-weight: 700; color: var(--text-dim); background: var(--bg-elevated); white-space: nowrap;
+}
+.ls-chip svg { width: 13px; height: 13px; }
+.ls-len::before {
+  content: ''; width: 16px; height: 5px; border-radius: 3px;
+  background: linear-gradient(90deg, var(--accent-2) var(--fill), color-mix(in srgb, var(--text-muted) 35%, transparent) 0);
+}
+.ls-len-kisa { --fill: 33%; } .ls-len-orta { --fill: 66%; } .ls-len-uzun { --fill: 100%; }
+.ls-score { padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 800; }
+.ls-score.good { background: rgba(34, 197, 94, .18); color: var(--ls-ok-text); }
+.ls-score.mid { background: rgba(234, 179, 8, .18); color: #facc15; }
+.ls-score.bad { background: rgba(239, 68, 68, .18); color: var(--ls-bad-text); }
+.ls-score.new { background: color-mix(in srgb, var(--accent-1) 22%, transparent); color: var(--text-primary); }
+body.light-theme .ls-score.mid { color: #a16207; }
+
+/* Filtre */
+.ls-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.ls-seg { display: inline-flex; padding: 4px; gap: 4px; border-radius: 999px; background: var(--bg-surface); border: 1px solid var(--border); }
+.ls-seg button {
+  padding: 7px 14px; border-radius: 999px; border: 0; background: none; font-size: 0.88rem; font-weight: 600; color: var(--text-dim);
+  transition: var(--transition);
+}
+.ls-seg button:hover { color: var(--text-primary); }
+.ls-seg button[aria-pressed="true"] { color: #fff; background: var(--ls-grad); box-shadow: var(--shadow-glow); }
+.ls-count { font-size: 0.88rem; color: var(--text-muted); }
+
+/* Metin kartı */
+.ls-set { padding: 18px 18px 16px; gap: 10px; }
+.ls-set-top { display: flex; align-items: center; gap: 12px; }
+.ls-num {
+  display: grid; place-items: center; width: 38px; height: 38px; flex: none; border-radius: 12px;
+  font-weight: 800; background: var(--bg-elevated); font-variant-numeric: tabular-nums;
+}
+.ls-set.is-done .ls-num { background: var(--ls-grad); color: #fff; }
+.ls-set-top .ls-score { margin-left: auto; }
+.ls-set h2 { font-size: 1.12rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.3; }
+.ls-set-topic { font-size: 0.88rem; color: var(--text-muted); margin-top: -4px; }
+.ls-set-foot { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 4px; }
+
+/* Boş / hata */
+.ls-empty { text-align: center; padding: 48px 20px; border-radius: var(--radius-lg); background: var(--bg-card); border: 1px dashed var(--border-hover); display: grid; gap: 10px; justify-items: center; }
+.ls-empty h2 { font-size: 1.25rem; }
+.ls-empty p { color: var(--text-muted); max-width: 52ch; }
+.ls-empty pre { max-width: 100%; overflow-x: auto; text-align: left; font-size: 0.82rem; padding: 12px; border-radius: 12px; background: var(--bg-surface); }
+.ls-loading { display: grid; place-items: center; min-height: 40vh; color: var(--text-muted); }
+.ls-spinner { width: 34px; height: 34px; border-radius: 50%; border: 3px solid var(--bg-elevated); border-top-color: var(--accent-2); animation: ls-spin .8s linear infinite; }
+@keyframes ls-spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 640px) {
+  .ls-bar-inner { padding: 10px 14px; }
+  .ls-brand small, .ls-crumbs { display: none; }
+  .ls-screen { padding: 20px 14px 64px; gap: 18px; }
+  .ls-grid-levels { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .ls-level { padding: 20px 12px 16px; }
+  .ls-level-code { font-size: 2.1rem; }
+  .ls-kpi b { font-size: 1.3rem; }
+  .ls-toolbar { flex-direction: column; align-items: stretch; }
+  .ls-seg { justify-content: space-between; }
+  .ls-seg button { flex: 1; padding: 7px 8px; }
+}

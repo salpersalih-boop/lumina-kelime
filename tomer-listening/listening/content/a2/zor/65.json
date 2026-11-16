@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-65",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A day off work",
+  "topic": "Planlama ve uzlaşma",
+  "instructions": "İki iş arkadaşı izin günlerini değiştirmeye çalışıyor. Uzun bir diyalog; günleri ve anlaşmayı takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Jack",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Mia, can I ask you a favour? I'm working on Saturday, but my brother is getting married that day."
+    },
+    {
+      "speaker": "b",
+      "text": "Oh, congratulations! Do you want me to work for you?"
+    },
+    {
+      "speaker": "a",
+      "text": "If you can. I could work your Sunday shift in return."
+    },
+    {
+      "speaker": "b",
+      "text": "Hmm, I'm visiting my parents on Sunday, so I don't need to work then anyway. What about next Wednesday?"
+    },
+    {
+      "speaker": "a",
+      "text": "Next Wednesday is fine. I usually have that day off."
+    },
+    {
+      "speaker": "b",
+      "text": "OK. But I finish at six on Saturday. Is that OK? Your shift finishes at eight."
+    },
+    {
+      "speaker": "a",
+      "text": "I'll ask Tom to do the last two hours."
+    },
+    {
+      "speaker": "b",
+      "text": "Good. And you need to tell the manager by Thursday."
+    },
+    {
+      "speaker": "a",
+      "text": "I'll email her today. Thank you so much!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why can't Jack work on Saturday?",
+      "options": [
+        "He is ill.",
+        "His brother is getting married.",
+        "He is visiting his parents.",
+        "He has a holiday."
+      ],
+      "answer": 1,
+      "feedback": "Kardeşi o gün evleniyor.",
+      "evidence": "my brother is getting married that day."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Mia do on Sunday?",
+      "options": [
+        "She works.",
+        "She visits her parents.",
+        "She goes to a wedding.",
+        "She stays at home."
+      ],
+      "answer": 1,
+      "feedback": "Pazar ailesini ziyaret ediyor.",
+      "evidence": "I'm visiting my parents on Sunday"
+    },
+    {
+      "id": "q3",
+      "prompt": "Which day will Jack work for Mia?",
+      "options": [
+        "Sunday",
+        "Thursday",
+        "Saturday",
+        "next Wednesday"
+      ],
+      "answer": 3,
+      "feedback": "Jack karşılığında gelecek çarşamba Mia'nın yerine çalışacak.",
+      "evidence": "Next Wednesday is fine."
+    },
+    {
+      "id": "q4",
+      "prompt": "Who will work the last two hours on Saturday?",
+      "options": [
+        "Tom",
+        "Mia",
+        "the manager",
+        "Jack"
+      ],
+      "answer": 0,
+      "feedback": "Son iki saati Tom'dan isteyecek.",
+      "evidence": "I'll ask Tom to do the last two hours."
+    },
+    {
+      "id": "q5",
+      "prompt": "When must Jack tell the manager?",
+      "options": [
+        "today",
+        "by Thursday",
+        "on Saturday",
+        "next Wednesday"
+      ],
+      "answer": 1,
+      "feedback": "Perşembeye kadar yöneticiye haber vermeli.",
+      "evidence": "you need to tell the manager by Thursday."
+    }
+  ]
+}

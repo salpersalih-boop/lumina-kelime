@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-49",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Can you recommend a restaurant?",
+  "topic": "Otelde öneri",
+  "instructions": "Bir turist otel resepsiyonundan restoran önerisi alıyor. Kısa bir diyalog; önerilere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Tourist",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Receptionist",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Can you recommend a good restaurant near here?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, try Marco's. It's Italian and only five minutes away."
+    },
+    {
+      "speaker": "a",
+      "text": "Do I need to book?"
+    },
+    {
+      "speaker": "b",
+      "text": "On Fridays, yes. I can call them for you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What kind of restaurant is Marco's?",
+      "options": [
+        "French",
+        "Italian",
+        "Turkish",
+        "Chinese"
+      ],
+      "answer": 1,
+      "feedback": "Marco's bir İtalyan restoranı.",
+      "evidence": "It's Italian"
+    },
+    {
+      "id": "q2",
+      "prompt": "How far is it?",
+      "options": [
+        "five minutes away",
+        "fifteen minutes away",
+        "an hour away",
+        "next door"
+      ],
+      "answer": 0,
+      "feedback": "Sadece beş dakika uzaklıkta.",
+      "evidence": "only five minutes away."
+    },
+    {
+      "id": "q3",
+      "prompt": "When do you need to book?",
+      "options": [
+        "every day",
+        "never",
+        "on Fridays",
+        "at the weekend"
+      ],
+      "answer": 2,
+      "feedback": "Cuma günleri rezervasyon gerekiyor.",
+      "evidence": "On Fridays, yes."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the receptionist offer to do?",
+      "options": [
+        "take her there",
+        "give her a map",
+        "book a taxi",
+        "call the restaurant"
+      ],
+      "answer": 3,
+      "feedback": "Restoranı onun için aramayı teklif ediyor.",
+      "evidence": "I can call them for you."
+    }
+  ]
+}

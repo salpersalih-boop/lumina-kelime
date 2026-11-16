@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-45",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Sports I like",
+  "topic": "Spor",
+  "instructions": "Omar sevdiği sporları anlatıyor. Kısa bir metin; günlere ve kiminle oynadığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "omar": {
+      "name": "Omar",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "omar",
+      "text": "I like football and basketball."
+    },
+    {
+      "speaker": "omar",
+      "text": "I play football with my friends on Tuesdays."
+    },
+    {
+      "speaker": "omar",
+      "text": "I play basketball at school on Fridays."
+    },
+    {
+      "speaker": "omar",
+      "text": "I don't like swimming. The water is always cold!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When does Omar play football?",
+      "options": [
+        "on Fridays",
+        "on Mondays",
+        "on Saturdays",
+        "on Tuesdays"
+      ],
+      "answer": 3,
+      "feedback": "Futbolu salı günleri arkadaşlarıyla oynuyor.",
+      "evidence": "I play football with my friends on Tuesdays."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where does he play basketball?",
+      "options": [
+        "at school",
+        "in the park",
+        "at home",
+        "at a club"
+      ],
+      "answer": 0,
+      "feedback": "Basketbolu cuma günleri okulda oynuyor.",
+      "evidence": "I play basketball at school on Fridays."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why doesn't Omar like swimming?",
+      "options": [
+        "He can't swim.",
+        "The water is always cold.",
+        "It's boring.",
+        "It's expensive."
+      ],
+      "answer": 1,
+      "feedback": "Su hep soğuk olduğu için yüzmeyi sevmiyor.",
+      "evidence": "The water is always cold!"
+    }
+  ]
+}

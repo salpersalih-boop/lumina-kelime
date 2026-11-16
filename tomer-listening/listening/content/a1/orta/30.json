@@ -1,0 +1,124 @@
+{
+  "id": "a1-orta-30",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the information desk",
+  "topic": "İstasyonda bilgi",
+  "instructions": "Bir turist istasyondaki danışmada bilgi alıyor. Saat, peron ve bilet fiyatına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tourist": {
+      "name": "Tourist",
+      "voice": "male"
+    },
+    "staff": {
+      "name": "Information desk",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tourist",
+      "text": "Excuse me. When is the next train to Brighton?"
+    },
+    {
+      "speaker": "staff",
+      "text": "The next one is at eleven fifteen."
+    },
+    {
+      "speaker": "tourist",
+      "text": "Which platform is it?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Platform five."
+    },
+    {
+      "speaker": "tourist",
+      "text": "How long does it take?"
+    },
+    {
+      "speaker": "staff",
+      "text": "About one hour. It arrives at twelve fifteen."
+    },
+    {
+      "speaker": "tourist",
+      "text": "How much is a ticket?"
+    },
+    {
+      "speaker": "staff",
+      "text": "A single is twenty pounds, and a return is thirty."
+    },
+    {
+      "speaker": "tourist",
+      "text": "I want to come back tonight, so a return, please. Where can I buy it?"
+    },
+    {
+      "speaker": "staff",
+      "text": "At the machines over there, or on the app."
+    },
+    {
+      "speaker": "tourist",
+      "text": "Thank you very much."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time is the next train to Brighton?",
+      "options": [
+        "at eleven fifty",
+        "at eleven fifteen",
+        "at twelve fifteen",
+        "at eleven o'clock"
+      ],
+      "answer": 1,
+      "feedback": "Sonraki tren on biri çeyrek geçe (eleven fifteen). 12:15 varış saati.",
+      "evidence": "The next one is at eleven fifteen."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which platform does it leave from?",
+      "options": [
+        "platform five",
+        "platform fifteen",
+        "platform nine",
+        "platform one"
+      ],
+      "answer": 0,
+      "feedback": "Beş numaralı peron.",
+      "evidence": "Platform five."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is a return ticket?",
+      "options": [
+        "twenty pounds",
+        "fifteen pounds",
+        "thirty pounds",
+        "forty pounds"
+      ],
+      "answer": 2,
+      "feedback": "Tek yön yirmi, gidiş-dönüş otuz pound.",
+      "evidence": "a return is thirty."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where can the tourist buy a ticket?",
+      "options": [
+        "at the information desk",
+        "on the train",
+        "at the café",
+        "at the machines or on the app"
+      ],
+      "answer": 3,
+      "feedback": "Biletler oradaki makinelerden ya da uygulamadan alınıyor.",
+      "evidence": "At the machines over there, or on the app."
+    }
+  ]
+}

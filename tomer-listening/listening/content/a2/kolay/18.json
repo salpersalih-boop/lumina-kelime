@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-18",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Living alone",
+  "topic": "Bağımsız yaşam",
+  "instructions": "Clara ilk kez yalnız yaşamayı anlatıyor. İyi ve kötü yanlara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "clara": {
+      "name": "Clara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "clara",
+      "text": "Six months ago, I moved out of my parents' house."
+    },
+    {
+      "speaker": "clara",
+      "text": "Now I live alone in a small flat near my university."
+    },
+    {
+      "speaker": "clara",
+      "text": "I love it because I can do what I want. I listen to music, and nobody tells me to turn it down!"
+    },
+    {
+      "speaker": "clara",
+      "text": "But some things are harder. I have to cook, clean and wash my clothes."
+    },
+    {
+      "speaker": "clara",
+      "text": "I'm not a good cook, so I often eat pasta."
+    },
+    {
+      "speaker": "clara",
+      "text": "I call my mum every evening, and I visit my parents once a month."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does Clara live now?",
+      "options": [
+        "with her parents",
+        "near her university",
+        "with friends",
+        "in a big house"
+      ],
+      "answer": 1,
+      "feedback": "Üniversitesinin yakınında küçük bir dairede yalnız yaşıyor.",
+      "evidence": "Now I live alone in a small flat near my university."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Clara often eat?",
+      "options": [
+        "pizza",
+        "salad",
+        "pasta",
+        "sandwiches"
+      ],
+      "answer": 2,
+      "feedback": "İyi yemek yapamadığı için sık sık makarna yiyor.",
+      "evidence": "so I often eat pasta."
+    },
+    {
+      "id": "q3",
+      "prompt": "How often does Clara visit her parents?",
+      "options": [
+        "every evening",
+        "once a week",
+        "every six months",
+        "once a month"
+      ],
+      "answer": 3,
+      "feedback": "Annesini her akşam arıyor; ailesini ayda bir (once a month) ziyaret ediyor.",
+      "evidence": "I visit my parents once a month."
+    }
+  ]
+}

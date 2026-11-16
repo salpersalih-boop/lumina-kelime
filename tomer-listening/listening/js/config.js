@@ -8,9 +8,9 @@
 
 /** Her ana seviyenin (A1, A2, …) altındaki 3 alt zorluk derecesi. */
 export const SUBLEVELS = Object.freeze([
-  { id: 'kolay', label: 'Kolay', rank: 1, hint: 'Kısa metin, temel kelimeler' },
-  { id: 'orta',  label: 'Orta',  rank: 2, hint: 'Günlük diyalog, detay soruları' },
-  { id: 'zor',   label: 'Zor',   rank: 3, hint: 'Uzun metin, çeldiriciler' },
+  { id: 'kolay', label: 'Kolay', rank: 1, hint: 'Yavaş konuşma, temel kelimeler. Kişi, yer, renk, sayı gibi temel bilgiler.' },
+  { id: 'orta',  label: 'Orta',  rank: 2, hint: 'Günlük hayattan diyaloglar. Fiyat, saat, yer gibi detayları yakala.' },
+  { id: 'zor',   label: 'Zor',   rank: 3, hint: 'Normal hız ve çeldiriciler: düzeltilen bilgiler, olumsuz cümleler, karışan sayılar.' },
 ]);
 
 export const SUBLEVEL_IDS = Object.freeze(SUBLEVELS.map(s => s.id));
@@ -27,4 +27,3 @@ export const STORAGE_KEY = 'listening.progress.v1';
 /** Seslendirmede cümleler arasındaki bekleme (ms). */
 export const SEGMENT_GAP_MS = Object.freeze({ monologue: 250, dialogue: 450 });
 
-export const DEFAULT_SELECTION = Object.freeze({ level: 'A1', sub: 'kolay' });

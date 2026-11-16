@@ -1,0 +1,116 @@
+{
+  "id": "a1-orta-38",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Calling the doctor's office",
+  "topic": "Randevu alma",
+  "instructions": "Bay Kaya doktordan randevu alıyor. Gün ve saate dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "rec": {
+      "name": "Receptionist",
+      "voice": "female"
+    },
+    "kaya": {
+      "name": "Mr Kaya",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "rec",
+      "text": "Good morning, Green Street Medical Centre."
+    },
+    {
+      "speaker": "kaya",
+      "text": "Hello. I'd like to see a doctor, please. I have a bad back."
+    },
+    {
+      "speaker": "rec",
+      "text": "Can you come today at three o'clock?"
+    },
+    {
+      "speaker": "kaya",
+      "text": "Sorry, I'm at work today. What about tomorrow?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Tomorrow at ten in the morning?"
+    },
+    {
+      "speaker": "kaya",
+      "text": "Yes, that's fine."
+    },
+    {
+      "speaker": "rec",
+      "text": "What is your name, please?"
+    },
+    {
+      "speaker": "kaya",
+      "text": "Murat Kaya. K-A-Y-A."
+    },
+    {
+      "speaker": "rec",
+      "text": "OK, Mr Kaya. See you tomorrow at ten."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Mr Kaya's problem?",
+      "options": [
+        "a headache",
+        "a bad back",
+        "a cold",
+        "a bad leg"
+      ],
+      "answer": 1,
+      "feedback": "Sırtı ağrıyor (a bad back).",
+      "evidence": "I have a bad back."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't he go today?",
+      "options": [
+        "He is at work.",
+        "He is on holiday.",
+        "The doctor is busy.",
+        "He is too ill."
+      ],
+      "answer": 0,
+      "feedback": "Bugün işte.",
+      "evidence": "Sorry, I'm at work today."
+    },
+    {
+      "id": "q3",
+      "prompt": "When is his appointment?",
+      "options": [
+        "today at three",
+        "tomorrow at three",
+        "today at ten",
+        "tomorrow at ten"
+      ],
+      "answer": 3,
+      "feedback": "Randevu yarın sabah onda.",
+      "evidence": "See you tomorrow at ten."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is his first name?",
+      "options": [
+        "Kaya",
+        "Mehmet",
+        "Murat",
+        "Mustafa"
+      ],
+      "answer": 2,
+      "feedback": "Adı Murat, soyadı Kaya.",
+      "evidence": "Murat Kaya."
+    }
+  ]
+}

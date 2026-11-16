@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-49",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "The weather in my country",
+  "topic": "Hava durumu",
+  "instructions": "Ahmet ülkesindeki havayı anlatıyor. Mevsimlere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Ahmet",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "In my country, summer is very hot."
+    },
+    {
+      "speaker": "s",
+      "text": "In winter, it is cold and it snows in the mountains."
+    },
+    {
+      "speaker": "s",
+      "text": "Spring is my favourite season."
+    },
+    {
+      "speaker": "s",
+      "text": "It is warm and there are flowers everywhere."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is summer like?",
+      "options": [
+        "very hot",
+        "cold",
+        "rainy",
+        "windy"
+      ],
+      "answer": 0,
+      "feedback": "Yaz çok sıcak.",
+      "evidence": "summer is very hot."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where does it snow in winter?",
+      "options": [
+        "in the city",
+        "in the mountains",
+        "by the sea",
+        "everywhere"
+      ],
+      "answer": 1,
+      "feedback": "Kışın dağlara kar yağıyor.",
+      "evidence": "it snows in the mountains."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Ahmet's favourite season?",
+      "options": [
+        "summer",
+        "winter",
+        "autumn",
+        "spring"
+      ],
+      "answer": 3,
+      "feedback": "En sevdiği mevsim ilkbahar.",
+      "evidence": "Spring is my favourite season."
+    }
+  ]
+}

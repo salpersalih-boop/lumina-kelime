@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-11",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My first job",
+  "topic": "İş (geçmiş zaman)",
+  "instructions": "Carlos ilk işini anlatıyor. Yaşa, iş yerine ve ne kazandığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "carlos": {
+      "name": "Carlos",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "carlos",
+      "text": "I got my first job when I was sixteen."
+    },
+    {
+      "speaker": "carlos",
+      "text": "I worked in a small café near my school every Saturday."
+    },
+    {
+      "speaker": "carlos",
+      "text": "I made coffee and washed the cups."
+    },
+    {
+      "speaker": "carlos",
+      "text": "The owner, Mrs Rossi, was kind, but she was very strict about time."
+    },
+    {
+      "speaker": "carlos",
+      "text": "I earned five pounds an hour, and I saved the money for a guitar."
+    },
+    {
+      "speaker": "carlos",
+      "text": "After six months, I bought it. I still play it today."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old was Carlos when he got his first job?",
+      "options": [
+        "fifteen",
+        "sixteen",
+        "six",
+        "eighteen"
+      ],
+      "answer": 1,
+      "feedback": "İlk işini on altı (sixteen) yaşında buldu.",
+      "evidence": "I got my first job when I was sixteen."
+    },
+    {
+      "id": "q2",
+      "prompt": "When did he work?",
+      "options": [
+        "every day after school",
+        "every Saturday",
+        "every Sunday",
+        "in the summer"
+      ],
+      "answer": 1,
+      "feedback": "Her cumartesi (every Saturday) çalıştı.",
+      "evidence": "every Saturday."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did he buy with the money?",
+      "options": [
+        "a bike",
+        "a phone",
+        "a guitar",
+        "a computer"
+      ],
+      "answer": 2,
+      "feedback": "Parayı biriktirip gitar (a guitar) aldı.",
+      "evidence": "I saved the money for a guitar."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "a1-orta-28",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Breakfast at the hotel",
+  "topic": "Otel kahvaltısı",
+  "instructions": "Bir misafir otelde kahvaltı hakkında soru soruyor. Saat, yer ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "guest": {
+      "name": "Guest",
+      "voice": "female"
+    },
+    "staff": {
+      "name": "Receptionist",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "guest",
+      "text": "Excuse me. What time is breakfast?"
+    },
+    {
+      "speaker": "staff",
+      "text": "It's from seven to ten o'clock."
+    },
+    {
+      "speaker": "guest",
+      "text": "And where is it?"
+    },
+    {
+      "speaker": "staff",
+      "text": "In the restaurant, on the ground floor, next to the lift."
+    },
+    {
+      "speaker": "guest",
+      "text": "Is breakfast in the price of my room?"
+    },
+    {
+      "speaker": "staff",
+      "text": "No, I'm sorry. It's twelve euros."
+    },
+    {
+      "speaker": "guest",
+      "text": "Can I have breakfast in my room?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, but it is fifteen euros."
+    },
+    {
+      "speaker": "guest",
+      "text": "OK. I'll go to the restaurant."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When does breakfast finish?",
+      "options": [
+        "at seven o'clock",
+        "at nine o'clock",
+        "at ten o'clock",
+        "at eleven o'clock"
+      ],
+      "answer": 2,
+      "feedback": "Kahvaltı yediden ona kadar; onda bitiyor.",
+      "evidence": "It's from seven to ten o'clock."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is the restaurant?",
+      "options": [
+        "on the first floor",
+        "on the ground floor",
+        "outside",
+        "on the top floor"
+      ],
+      "answer": 1,
+      "feedback": "Restoran zemin katta, asansörün yanında.",
+      "evidence": "on the ground floor, next to the lift."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is breakfast in the restaurant?",
+      "options": [
+        "twelve euros",
+        "fifteen euros",
+        "twenty euros",
+        "nothing"
+      ],
+      "answer": 0,
+      "feedback": "Restoranda kahvaltı on iki euro; odada on beş.",
+      "evidence": "It's twelve euros."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where will the guest have breakfast?",
+      "options": [
+        "in her room",
+        "at a café",
+        "in the garden",
+        "in the restaurant"
+      ],
+      "answer": 3,
+      "feedback": "Odada daha pahalı; restorana gidecek.",
+      "evidence": "I'll go to the restaurant."
+    }
+  ]
+}

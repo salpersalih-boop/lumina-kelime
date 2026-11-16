@@ -1,0 +1,116 @@
+{
+  "id": "a2-orta-34",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "A problem with my order",
+  "topic": "Online sipariş şikâyeti",
+  "instructions": "Kerem online sipariş ettiği ürünle ilgili müşteri hizmetlerini arıyor. Sorunu ve çözümü takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Customer service",
+      "voice": "female"
+    },
+    "kerem": {
+      "name": "Kerem",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "staff",
+      "text": "Good morning, Home Style customer service."
+    },
+    {
+      "speaker": "kerem",
+      "text": "Hi. I ordered a lamp from your website last week, but there's a problem."
+    },
+    {
+      "speaker": "staff",
+      "text": "I'm sorry. What's wrong?"
+    },
+    {
+      "speaker": "kerem",
+      "text": "I ordered a white one, but you sent a black one."
+    },
+    {
+      "speaker": "staff",
+      "text": "I'm very sorry about that. Can I have your order number?"
+    },
+    {
+      "speaker": "kerem",
+      "text": "It's four five seven two nine."
+    },
+    {
+      "speaker": "staff",
+      "text": "Thank you. We'll send you a white lamp tomorrow, and a driver will collect the black one at the same time."
+    },
+    {
+      "speaker": "kerem",
+      "text": "Do I need to pay for that?"
+    },
+    {
+      "speaker": "staff",
+      "text": "No, it's free. And we'll give you a ten percent discount on your next order."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What did Kerem order?",
+      "options": [
+        "a table",
+        "a lamp",
+        "a chair",
+        "a mirror"
+      ],
+      "answer": 1,
+      "feedback": "Web sitesinden bir lamba sipariş etti.",
+      "evidence": "I ordered a lamp from your website last week"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem?",
+      "options": [
+        "It's broken.",
+        "It's the wrong size.",
+        "It's the wrong colour.",
+        "It didn't arrive."
+      ],
+      "answer": 2,
+      "feedback": "Beyaz istedi, siyah geldi.",
+      "evidence": "I ordered a white one, but you sent a black one."
+    },
+    {
+      "id": "q3",
+      "prompt": "What will happen tomorrow?",
+      "options": [
+        "They will send a white lamp and collect the black one.",
+        "Kerem will get his money back.",
+        "Kerem will take the lamp to the shop.",
+        "They will call Kerem."
+      ],
+      "answer": 0,
+      "feedback": "Yarın beyaz lamba gönderilecek ve aynı anda siyah olan alınacak.",
+      "evidence": "We'll send you a white lamp tomorrow"
+    },
+    {
+      "id": "q4",
+      "prompt": "What will Kerem get?",
+      "options": [
+        "a free lamp",
+        "his money back",
+        "free delivery for a year",
+        "a ten percent discount on his next order"
+      ],
+      "answer": 3,
+      "feedback": "Bir sonraki siparişinde yüzde on indirim.",
+      "evidence": "we'll give you a ten percent discount on your next order."
+    }
+  ]
+}

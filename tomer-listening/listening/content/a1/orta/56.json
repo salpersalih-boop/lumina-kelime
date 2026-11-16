@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-56",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Lost keys at school",
+  "topic": "Kayıp eşya",
+  "instructions": "Bir öğrenci okulda anahtarlarını kaybetmiş. Anahtarın tarifine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Student",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Secretary",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Excuse me. I can't find my keys."
+    },
+    {
+      "speaker": "b",
+      "text": "What do they look like?"
+    },
+    {
+      "speaker": "a",
+      "text": "There are three keys and a small green football."
+    },
+    {
+      "speaker": "b",
+      "text": "Let me look. Are these your keys?"
+    },
+    {
+      "speaker": "a",
+      "text": "No, those have a blue ball."
+    },
+    {
+      "speaker": "b",
+      "text": "What about these?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes! Thank you!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the student looking for?",
+      "options": [
+        "his bag",
+        "his keys",
+        "his phone",
+        "his ball"
+      ],
+      "answer": 1,
+      "feedback": "Anahtarlarını arıyor.",
+      "evidence": "I can't find my keys."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many keys are there?",
+      "options": [
+        "two",
+        "four",
+        "three",
+        "one"
+      ],
+      "answer": 2,
+      "feedback": "Üç anahtar var.",
+      "evidence": "There are three keys"
+    },
+    {
+      "id": "q3",
+      "prompt": "What colour is the small football?",
+      "options": [
+        "blue",
+        "green",
+        "red",
+        "white"
+      ],
+      "answer": 1,
+      "feedback": "Küçük futbol topu yeşil; mavi olan onun değil.",
+      "evidence": "a small green football."
+    },
+    {
+      "id": "q4",
+      "prompt": "Does he find his keys?",
+      "options": [
+        "Yes, he does.",
+        "No, he doesn't.",
+        "Tomorrow.",
+        "His friend has them."
+      ],
+      "answer": 0,
+      "feedback": "Evet, ikinci denemede buluyor.",
+      "evidence": "Yes! Thank you!"
+    }
+  ]
+}

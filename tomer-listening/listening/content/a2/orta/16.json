@@ -1,0 +1,124 @@
+{
+  "id": "a2-orta-16",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Choosing a present",
+  "topic": "Hediye seçme",
+  "instructions": "Ben ve Lucy arkadaşları için hediye seçiyor. Önerileri, reddedilenleri ve son kararı takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ben": {
+      "name": "Ben",
+      "voice": "male"
+    },
+    "lucy": {
+      "name": "Lucy",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ben",
+      "text": "It's Ali's birthday on Saturday. What shall we buy him?"
+    },
+    {
+      "speaker": "lucy",
+      "text": "What about a book? He reads a lot."
+    },
+    {
+      "speaker": "ben",
+      "text": "Yes, but he has hundreds of books. It's difficult to choose one he hasn't read."
+    },
+    {
+      "speaker": "lucy",
+      "text": "True. What about a T-shirt from his favourite football team?"
+    },
+    {
+      "speaker": "ben",
+      "text": "He already has three. I think he'd like something different."
+    },
+    {
+      "speaker": "lucy",
+      "text": "He started cooking lessons last month, didn't he?"
+    },
+    {
+      "speaker": "ben",
+      "text": "Yes! He loves them. Let's buy him a cooking book and some good knives."
+    },
+    {
+      "speaker": "lucy",
+      "text": "Knives are expensive. Maybe just the cooking book and a nice apron."
+    },
+    {
+      "speaker": "ben",
+      "text": "Good idea. How much shall we spend?"
+    },
+    {
+      "speaker": "lucy",
+      "text": "About thirty pounds each?"
+    },
+    {
+      "speaker": "ben",
+      "text": "OK, sixty pounds together. Let's go to the shop after work."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is Ali's birthday?",
+      "options": [
+        "on Friday",
+        "on Saturday",
+        "on Sunday",
+        "today"
+      ],
+      "answer": 1,
+      "feedback": "Ali'nin doğum günü cumartesi (on Saturday).",
+      "evidence": "It's Ali's birthday on Saturday."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why don't they buy a football T-shirt?",
+      "options": [
+        "He doesn't like football.",
+        "It's too expensive.",
+        "He already has three.",
+        "The shop is closed."
+      ],
+      "answer": 2,
+      "feedback": "Zaten üç tane (already has three) var.",
+      "evidence": "He already has three."
+    },
+    {
+      "id": "q3",
+      "prompt": "What are they going to buy?",
+      "options": [
+        "a cooking book and some knives",
+        "a cooking book and an apron",
+        "a book and a T-shirt",
+        "cooking lessons"
+      ],
+      "answer": 1,
+      "feedback": "Bıçaklar pahalı; yemek kitabı ve önlük (apron) alacaklar.",
+      "evidence": "Maybe just the cooking book and a nice apron."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much will they spend together?",
+      "options": [
+        "thirty pounds",
+        "forty pounds",
+        "fifty pounds",
+        "sixty pounds"
+      ],
+      "answer": 3,
+      "feedback": "Kişi başı otuz; birlikte altmış pound (sixty pounds).",
+      "evidence": "OK, sixty pounds together."
+    }
+  ]
+}

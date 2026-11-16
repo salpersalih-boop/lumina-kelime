@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-31",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Buying a sandwich",
+  "topic": "Yemek siparişi",
+  "instructions": "Joe bir kafede sandviç alıyor. Kısa bir diyalog; seçimine ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Café",
+      "voice": "female"
+    },
+    "joe": {
+      "name": "Joe",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "staff",
+      "text": "Hi. What would you like?"
+    },
+    {
+      "speaker": "joe",
+      "text": "A chicken sandwich, please."
+    },
+    {
+      "speaker": "staff",
+      "text": "Sorry, there's no chicken. We have cheese or egg."
+    },
+    {
+      "speaker": "joe",
+      "text": "Cheese, please. And a small coffee."
+    },
+    {
+      "speaker": "staff",
+      "text": "That's five pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What sandwich does Joe want first?",
+      "options": [
+        "cheese",
+        "egg",
+        "chicken",
+        "tuna"
+      ],
+      "answer": 2,
+      "feedback": "Önce tavuklu sandviç istiyor.",
+      "evidence": "A chicken sandwich, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "What sandwich does Joe get?",
+      "options": [
+        "chicken",
+        "cheese",
+        "egg",
+        "no sandwich"
+      ],
+      "answer": 1,
+      "feedback": "Tavuk yok; peynirli alıyor.",
+      "evidence": "Cheese, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Joe drink?",
+      "options": [
+        "a small coffee",
+        "a large coffee",
+        "tea",
+        "water"
+      ],
+      "answer": 0,
+      "feedback": "Küçük bir kahve alıyor.",
+      "evidence": "And a small coffee."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does Joe pay?",
+      "options": [
+        "four pounds",
+        "fifteen pounds",
+        "nine pounds",
+        "five pounds"
+      ],
+      "answer": 3,
+      "feedback": "Toplam beş pound.",
+      "evidence": "That's five pounds."
+    }
+  ]
+}

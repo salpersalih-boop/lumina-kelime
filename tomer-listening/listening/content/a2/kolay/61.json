@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-61",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My favourite teacher",
+  "topic": "Okul anıları",
+  "instructions": "Ahmet en sevdiği öğretmenini anlatıyor. Neden sevdiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Ahmet",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "My favourite teacher was Mr Davis. He taught me history when I was fourteen."
+    },
+    {
+      "speaker": "s",
+      "text": "Before his lessons, I thought history was boring."
+    },
+    {
+      "speaker": "s",
+      "text": "But he told stories and showed us old photos and films."
+    },
+    {
+      "speaker": "s",
+      "text": "He also took us on trips to museums and castles."
+    },
+    {
+      "speaker": "s",
+      "text": "Because of him, I studied history at university."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What did Mr Davis teach?",
+      "options": [
+        "English",
+        "geography",
+        "history",
+        "art"
+      ],
+      "answer": 2,
+      "feedback": "Tarih öğretiyordu.",
+      "evidence": "He taught me history"
+    },
+    {
+      "id": "q2",
+      "prompt": "What did Ahmet think about history before?",
+      "options": [
+        "It was boring.",
+        "It was easy.",
+        "It was his favourite.",
+        "It was difficult."
+      ],
+      "answer": 0,
+      "feedback": "Önceden tarihi sıkıcı buluyordu.",
+      "evidence": "I thought history was boring."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did Ahmet study at university?",
+      "options": [
+        "teaching",
+        "history",
+        "art",
+        "film"
+      ],
+      "answer": 1,
+      "feedback": "Onun sayesinde üniversitede tarih okudu.",
+      "evidence": "I studied history at university."
+    }
+  ]
+}

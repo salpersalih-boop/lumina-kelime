@@ -1,0 +1,101 @@
+{
+  "id": "a2-zor-22",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Pool announcement",
+  "topic": "Havuz anonsu",
+  "instructions": "Yüzme havuzunda kısa bir anons. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Leisure centre",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Attention, please. The main pool will close in fifteen minutes, at seven forty-five."
+    },
+    {
+      "speaker": "voice",
+      "text": "The children's pool is already closed for cleaning."
+    },
+    {
+      "speaker": "voice",
+      "text": "Tomorrow, the pool opens at ten, not seven, because of a swimming competition."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When will the main pool close?",
+      "options": [
+        "in fifty minutes",
+        "in fifteen minutes",
+        "at seven fifteen",
+        "at eight"
+      ],
+      "answer": 1,
+      "feedback": "Ana havuz on beş dakika içinde, 7:45'te kapanacak.",
+      "evidence": "The main pool will close in fifteen minutes"
+    },
+    {
+      "id": "q2",
+      "prompt": "What time is it now?",
+      "options": [
+        "seven thirty",
+        "seven forty-five",
+        "seven fifteen",
+        "eight o'clock"
+      ],
+      "answer": 0,
+      "feedback": "On beş dakika sonra 7:45 olacak; şu an 7:30. İki bilgiyi birleştirmen gerek.",
+      "evidence": "at seven forty-five."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is the children's pool closed?",
+      "options": [
+        "for a competition",
+        "because it is late",
+        "for cleaning",
+        "because it's broken"
+      ],
+      "answer": 2,
+      "feedback": "Çocuk havuzu temizlik için kapalı.",
+      "evidence": "The children's pool is already closed for cleaning."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time does the pool open tomorrow?",
+      "options": [
+        "at seven",
+        "at seven forty-five",
+        "at nine",
+        "at ten"
+      ],
+      "answer": 3,
+      "feedback": "Yarın yedide değil, onda açılıyor.",
+      "evidence": "Tomorrow, the pool opens at ten, not seven"
+    },
+    {
+      "id": "q5",
+      "prompt": "Why does the pool open later tomorrow?",
+      "options": [
+        "because of a swimming competition",
+        "because of cleaning",
+        "because it is Sunday",
+        "because of a holiday"
+      ],
+      "answer": 0,
+      "feedback": "Bir yüzme yarışması nedeniyle.",
+      "evidence": "because of a swimming competition."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-63",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Our holiday in Italy",
+  "topic": "Tatil (geçmiş zaman)",
+  "instructions": "Kim ailesiyle İtalya tatilini anlatıyor. Şehirleri ve olanları takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Kim",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last summer, my family spent two weeks in Italy."
+    },
+    {
+      "speaker": "s",
+      "text": "First, we visited Rome. It was very hot and crowded, but the old buildings were amazing."
+    },
+    {
+      "speaker": "s",
+      "text": "Then we took the train to Florence, where we stayed in a small hotel."
+    },
+    {
+      "speaker": "s",
+      "text": "My favourite part was the food. I ate ice cream every day!"
+    },
+    {
+      "speaker": "s",
+      "text": "The only problem was that my brother lost his phone on the train."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long was the holiday?",
+      "options": [
+        "one week",
+        "two weeks",
+        "ten days",
+        "a month"
+      ],
+      "answer": 1,
+      "feedback": "İtalya'da iki hafta kaldılar.",
+      "evidence": "my family spent two weeks in Italy."
+    },
+    {
+      "id": "q2",
+      "prompt": "How did they go to Florence?",
+      "options": [
+        "by plane",
+        "by car",
+        "by train",
+        "by bus"
+      ],
+      "answer": 2,
+      "feedback": "Floransa'ya trenle gittiler.",
+      "evidence": "Then we took the train to Florence"
+    },
+    {
+      "id": "q3",
+      "prompt": "What problem did they have?",
+      "options": [
+        "Her brother lost his phone.",
+        "They missed the train.",
+        "The hotel was bad.",
+        "Kim was ill."
+      ],
+      "answer": 0,
+      "feedback": "Kardeşi telefonunu trende kaybetti.",
+      "evidence": "my brother lost his phone on the train."
+    }
+  ]
+}

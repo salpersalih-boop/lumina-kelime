@@ -1,0 +1,96 @@
+{
+  "id": "a1-orta-34",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Is this seat free?",
+  "topic": "Trende konuşma",
+  "instructions": "Trende iki yolcu konuşuyor. Kısa bir diyalog; yer ve varış noktasına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "man": {
+      "name": "Man",
+      "voice": "male"
+    },
+    "woman": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "man",
+      "text": "Excuse me. Is this seat free?"
+    },
+    {
+      "speaker": "woman",
+      "text": "Yes, it is. Let me move my bag."
+    },
+    {
+      "speaker": "man",
+      "text": "Thank you. Are you going to Leeds?"
+    },
+    {
+      "speaker": "woman",
+      "text": "No, I'm getting off at York. It's the next stop."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does the man ask?",
+      "options": [
+        "if the train is late",
+        "if the seat is free",
+        "where the toilet is",
+        "what time it is"
+      ],
+      "answer": 1,
+      "feedback": "Koltuğun boş olup olmadığını soruyor.",
+      "evidence": "Is this seat free?"
+    },
+    {
+      "id": "q2",
+      "prompt": "What does the woman move?",
+      "options": [
+        "her coat",
+        "her bag",
+        "her book",
+        "her coffee"
+      ],
+      "answer": 1,
+      "feedback": "Çantasını kaldırıyor.",
+      "evidence": "Let me move my bag."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is the woman going?",
+      "options": [
+        "to York",
+        "to Leeds",
+        "to London",
+        "to Manchester"
+      ],
+      "answer": 0,
+      "feedback": "Leeds'e değil, York'ta iniyor.",
+      "evidence": "No, I'm getting off at York."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is her stop?",
+      "options": [
+        "in an hour",
+        "after Leeds",
+        "in two stops",
+        "It's the next stop."
+      ],
+      "answer": 3,
+      "feedback": "York bir sonraki durak.",
+      "evidence": "It's the next stop."
+    }
+  ]
+}

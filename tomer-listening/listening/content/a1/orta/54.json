@@ -1,0 +1,104 @@
+{
+  "id": "a1-orta-54",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Choosing a pizza",
+  "topic": "Yemek seçme",
+  "instructions": "İki arkadaş hangi pizzayı alacaklarını seçiyor. Malzemelere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Ali",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Sara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Let's order a pizza. What do you like?"
+    },
+    {
+      "speaker": "b",
+      "text": "I love cheese and mushrooms."
+    },
+    {
+      "speaker": "a",
+      "text": "I don't like mushrooms. What about cheese and tomato?"
+    },
+    {
+      "speaker": "b",
+      "text": "OK. And can we have olives too?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, I like olives. One big pizza with cheese, tomato and olives."
+    },
+    {
+      "speaker": "b",
+      "text": "Perfect!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Sara love?",
+      "options": [
+        "cheese and mushrooms",
+        "cheese and olives",
+        "tomato and olives",
+        "chicken"
+      ],
+      "answer": 0,
+      "feedback": "Peynir ve mantarı seviyor.",
+      "evidence": "I love cheese and mushrooms."
+    },
+    {
+      "id": "q2",
+      "prompt": "What doesn't Ali like?",
+      "options": [
+        "olives",
+        "cheese",
+        "mushrooms",
+        "tomatoes"
+      ],
+      "answer": 2,
+      "feedback": "Ali mantar sevmiyor.",
+      "evidence": "I don't like mushrooms."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is on their pizza?",
+      "options": [
+        "cheese, tomato and olives",
+        "cheese and mushrooms",
+        "cheese, tomato and mushrooms",
+        "only cheese"
+      ],
+      "answer": 0,
+      "feedback": "Peynir, domates ve zeytinli.",
+      "evidence": "One big pizza with cheese, tomato and olives."
+    },
+    {
+      "id": "q4",
+      "prompt": "How many pizzas do they order?",
+      "options": [
+        "two",
+        "one",
+        "three",
+        "none"
+      ],
+      "answer": 1,
+      "feedback": "Bir büyük pizza.",
+      "evidence": "One big pizza"
+    }
+  ]
+}

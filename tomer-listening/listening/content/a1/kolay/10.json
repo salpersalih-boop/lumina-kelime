@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-10",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My pet cat",
+  "topic": "Evcil hayvanlar",
+  "instructions": "Lucy kedisi Luna'yı anlatıyor. Çok kısa bir metin.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "lucy": {
+      "name": "Lucy",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lucy",
+      "text": "Hi, I'm Lucy. I have a cat. Her name is Luna."
+    },
+    {
+      "speaker": "lucy",
+      "text": "She is three years old."
+    },
+    {
+      "speaker": "lucy",
+      "text": "Luna is white with a black tail."
+    },
+    {
+      "speaker": "lucy",
+      "text": "She likes milk and fish."
+    },
+    {
+      "speaker": "lucy",
+      "text": "She sleeps on my bed every night."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is Luna?",
+      "options": [
+        "one year old",
+        "two years old",
+        "three years old",
+        "five years old"
+      ],
+      "answer": 2,
+      "feedback": "Luna üç (three) yaşında.",
+      "evidence": "She is three years old."
+    },
+    {
+      "id": "q2",
+      "prompt": "What colour is Luna's tail?",
+      "options": [
+        "white",
+        "black",
+        "brown",
+        "grey"
+      ],
+      "answer": 1,
+      "feedback": "Luna beyaz ama kuyruğu siyah (a black tail). Soru kuyruğu soruyor.",
+      "evidence": "Luna is white with a black tail."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where does Luna sleep?",
+      "options": [
+        "in the garden",
+        "on the sofa",
+        "on Lucy's bed",
+        "in the kitchen"
+      ],
+      "answer": 2,
+      "feedback": "Luna her gece Lucy'nin yatağında (on my bed) uyuyor.",
+      "evidence": "She sleeps on my bed every night."
+    }
+  ]
+}

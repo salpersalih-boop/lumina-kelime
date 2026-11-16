@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-35",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My busy timetable",
+  "topic": "Haftalık program",
+  "instructions": "Öğrenci Sara haftalık programını anlatıyor. Uzun bir metin; günleri ve saatleri dikkatle eşleştir. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "sara": {
+      "name": "Sara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sara",
+      "text": "I'm Sara, and I'm a university student. My week is very busy."
+    },
+    {
+      "speaker": "sara",
+      "text": "On Mondays, I have classes from nine to three. Then I work in a café from four to eight."
+    },
+    {
+      "speaker": "sara",
+      "text": "On Tuesdays, I only have one class, at eleven. In the afternoon, I study in the library."
+    },
+    {
+      "speaker": "sara",
+      "text": "On Wednesdays, I go to the gym in the morning and have classes in the afternoon."
+    },
+    {
+      "speaker": "sara",
+      "text": "Thursday is my favourite day. I have no classes, so I sleep late and meet my friends."
+    },
+    {
+      "speaker": "sara",
+      "text": "On Fridays, I work in the café again, from ten to six."
+    },
+    {
+      "speaker": "sara",
+      "text": "At the weekend, I visit my parents. They live two hours away by train."
+    },
+    {
+      "speaker": "sara",
+      "text": "I'm always tired on Sunday evening, but I like my life."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Sara do on Monday evenings?",
+      "options": [
+        "She studies in the library.",
+        "She works in a café.",
+        "She goes to the gym.",
+        "She meets friends."
+      ],
+      "answer": 1,
+      "feedback": "Pazartesi dörtten sekize kafede çalışıyor.",
+      "evidence": "Then I work in a café from four to eight."
+    },
+    {
+      "id": "q2",
+      "prompt": "When is Sara's only class on Tuesday?",
+      "options": [
+        "at nine",
+        "at three",
+        "at eleven",
+        "at four"
+      ],
+      "answer": 2,
+      "feedback": "Salı günü tek dersi saat on birde.",
+      "evidence": "I only have one class, at eleven."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is Thursday her favourite day?",
+      "options": [
+        "She has no classes.",
+        "She sees her parents.",
+        "She gets paid.",
+        "She goes to the gym."
+      ],
+      "answer": 0,
+      "feedback": "Perşembe dersi yok; geç uyuyup arkadaşlarıyla buluşuyor.",
+      "evidence": "I have no classes"
+    },
+    {
+      "id": "q4",
+      "prompt": "How many hours does she work on Fridays?",
+      "options": [
+        "four hours",
+        "six hours",
+        "ten hours",
+        "eight hours"
+      ],
+      "answer": 3,
+      "feedback": "Cuma ondan altıya: sekiz saat.",
+      "evidence": "from ten to six."
+    },
+    {
+      "id": "q5",
+      "prompt": "How does Sara go to her parents' house?",
+      "options": [
+        "by car",
+        "by train",
+        "by bus",
+        "by plane"
+      ],
+      "answer": 1,
+      "feedback": "Ailesi trenle iki saat uzakta.",
+      "evidence": "They live two hours away by train."
+    }
+  ]
+}

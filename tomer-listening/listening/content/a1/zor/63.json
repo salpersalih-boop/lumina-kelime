@@ -1,0 +1,117 @@
+{
+  "id": "a1-zor-63",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My cooking week",
+  "topic": "Hobiler (geçmiş zaman)",
+  "instructions": "Leo yemek yapmaya başladığı haftayı anlatıyor. Günleri ve yemekleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last week, I started a new hobby: cooking."
+    },
+    {
+      "speaker": "s",
+      "text": "On Monday, I made pasta with tomato sauce. It was easy and very good."
+    },
+    {
+      "speaker": "s",
+      "text": "On Wednesday, I tried to make bread, but it was too hard. Nobody ate it!"
+    },
+    {
+      "speaker": "s",
+      "text": "On Friday, I made chicken soup for my mum because she was ill."
+    },
+    {
+      "speaker": "s",
+      "text": "She said it was the best soup in the world."
+    },
+    {
+      "speaker": "s",
+      "text": "On Saturday, my friends came to my house and I made pizza."
+    },
+    {
+      "speaker": "s",
+      "text": "Next week, I want to make a chocolate cake for my sister's birthday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What did Leo make on Monday?",
+      "options": [
+        "bread",
+        "pasta with tomato sauce",
+        "chicken soup",
+        "pizza"
+      ],
+      "answer": 1,
+      "feedback": "Pazartesi domates soslu makarna yaptı.",
+      "evidence": "On Monday, I made pasta with tomato sauce."
+    },
+    {
+      "id": "q2",
+      "prompt": "What was the problem with the bread?",
+      "options": [
+        "It was too hard.",
+        "It was too salty.",
+        "It burned.",
+        "It was too soft."
+      ],
+      "answer": 0,
+      "feedback": "Ekmek çok sertti; kimse yemedi.",
+      "evidence": "it was too hard."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why did he make soup on Friday?",
+      "options": [
+        "His friends came.",
+        "It was cold.",
+        "His mum was ill.",
+        "It was his sister's birthday."
+      ],
+      "answer": 2,
+      "feedback": "Annesi hastaydı.",
+      "evidence": "because she was ill."
+    },
+    {
+      "id": "q4",
+      "prompt": "What did he make for his friends?",
+      "options": [
+        "soup",
+        "pasta",
+        "a cake",
+        "pizza"
+      ],
+      "answer": 3,
+      "feedback": "Cumartesi arkadaşlarına pizza yaptı.",
+      "evidence": "I made pizza."
+    },
+    {
+      "id": "q5",
+      "prompt": "What does he want to make next week?",
+      "options": [
+        "a chocolate cake",
+        "bread",
+        "pizza",
+        "a salad"
+      ],
+      "answer": 0,
+      "feedback": "Kız kardeşinin doğum günü için çikolatalı pasta.",
+      "evidence": "I want to make a chocolate cake"
+    }
+  ]
+}

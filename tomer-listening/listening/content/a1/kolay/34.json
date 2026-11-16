@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-34",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My new bike",
+  "topic": "Eşyalar ve hobiler",
+  "instructions": "Jack yeni bisikletini anlatıyor. Kısa bir metin; renk ve kimden aldığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jack": {
+      "name": "Jack",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jack",
+      "text": "I have a new bike. It is green and black."
+    },
+    {
+      "speaker": "jack",
+      "text": "It is a present from my grandparents."
+    },
+    {
+      "speaker": "jack",
+      "text": "I ride it to school every day."
+    },
+    {
+      "speaker": "jack",
+      "text": "It is very fast!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colours is the bike?",
+      "options": [
+        "red and black",
+        "green and white",
+        "green and black",
+        "blue and black"
+      ],
+      "answer": 2,
+      "feedback": "Bisiklet yeşil ve siyah.",
+      "evidence": "It is green and black."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who gave Jack the bike?",
+      "options": [
+        "his parents",
+        "his grandparents",
+        "his brother",
+        "his friend"
+      ],
+      "answer": 1,
+      "feedback": "Bisiklet büyükanne ve büyükbabasının hediyesi.",
+      "evidence": "It is a present from my grandparents."
+    },
+    {
+      "id": "q3",
+      "prompt": "When does Jack ride it to school?",
+      "options": [
+        "every day",
+        "on Mondays",
+        "at the weekend",
+        "never"
+      ],
+      "answer": 0,
+      "feedback": "Her gün bisikletle okula gidiyor.",
+      "evidence": "I ride it to school every day."
+    }
+  ]
+}

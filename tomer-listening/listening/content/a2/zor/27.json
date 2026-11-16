@@ -1,0 +1,125 @@
+{
+  "id": "a2-zor-27",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "The history of chocolate",
+  "topic": "Kısa ders",
+  "instructions": "Bir müze rehberi çikolatanın tarihini anlatıyor. Uzun bir metin; tarihler, yerler ve sıralamaya dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "guide": {
+      "name": "Museum guide",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "guide",
+      "text": "Welcome to the Chocolate Museum. Let me tell you a little about the history of chocolate."
+    },
+    {
+      "speaker": "guide",
+      "text": "Chocolate comes from the cacao tree, which grows in hot countries."
+    },
+    {
+      "speaker": "guide",
+      "text": "More than three thousand years ago, people in Central America made a drink from cacao beans."
+    },
+    {
+      "speaker": "guide",
+      "text": "But it wasn't sweet. It was bitter, and they often added chilli!"
+    },
+    {
+      "speaker": "guide",
+      "text": "In the sixteenth century, the Spanish brought cacao to Europe. They added sugar, and the drink became very popular with rich people."
+    },
+    {
+      "speaker": "guide",
+      "text": "For a long time, chocolate was only a drink. The first chocolate bar was made in England in eighteen forty-seven."
+    },
+    {
+      "speaker": "guide",
+      "text": "Milk chocolate came later, from Switzerland, in eighteen seventy-five."
+    },
+    {
+      "speaker": "guide",
+      "text": "Today, most cacao comes from West Africa, especially Ivory Coast and Ghana."
+    },
+    {
+      "speaker": "guide",
+      "text": "At the end of the tour, you can make your own chocolate in our kitchen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does chocolate come from?",
+      "options": [
+        "the cacao tree",
+        "sugar cane",
+        "milk",
+        "the coffee plant"
+      ],
+      "answer": 0,
+      "feedback": "Çikolata kakao ağacından gelir.",
+      "evidence": "Chocolate comes from the cacao tree"
+    },
+    {
+      "id": "q2",
+      "prompt": "What was the first chocolate drink like?",
+      "options": [
+        "sweet",
+        "bitter",
+        "cold and sweet",
+        "like milk"
+      ],
+      "answer": 1,
+      "feedback": "Tatlı değil, acıydı; genelde biber de eklenirdi.",
+      "evidence": "It was bitter, and they often added chilli!"
+    },
+    {
+      "id": "q3",
+      "prompt": "Who brought cacao to Europe?",
+      "options": [
+        "the English",
+        "the Swiss",
+        "the Spanish",
+        "the French"
+      ],
+      "answer": 2,
+      "feedback": "On altıncı yüzyılda İspanyollar getirdi.",
+      "evidence": "the Spanish brought cacao to Europe."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where was the first chocolate bar made?",
+      "options": [
+        "in Switzerland",
+        "in Spain",
+        "in Ghana",
+        "in England"
+      ],
+      "answer": 3,
+      "feedback": "İlk çikolata tableti 1847'de İngiltere'de yapıldı. İsviçre sütlü çikolatanın yeri.",
+      "evidence": "The first chocolate bar was made in England in eighteen forty-seven."
+    },
+    {
+      "id": "q5",
+      "prompt": "Where does most cacao come from today?",
+      "options": [
+        "West Africa",
+        "Central America",
+        "Spain",
+        "Switzerland"
+      ],
+      "answer": 0,
+      "feedback": "Bugün kakaonun çoğu Batı Afrika'dan, özellikle Fildişi Sahili ve Gana'dan.",
+      "evidence": "Today, most cacao comes from West Africa"
+    }
+  ]
+}

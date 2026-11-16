@@ -1,0 +1,116 @@
+{
+  "id": "a2-orta-57",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Planning a barbecue",
+  "topic": "Etkinlik planlama",
+  "instructions": "İki komşu barbekü planlıyor. Gün, kişi sayısı ve kimin ne getireceğini takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Jack",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Let's have a barbecue in my garden this weekend."
+    },
+    {
+      "speaker": "b",
+      "text": "Great idea! Saturday or Sunday?"
+    },
+    {
+      "speaker": "a",
+      "text": "The weather forecast says it'll rain on Sunday. So Saturday."
+    },
+    {
+      "speaker": "b",
+      "text": "Who shall we invite?"
+    },
+    {
+      "speaker": "a",
+      "text": "The neighbours from numbers five and seven, and a few friends. About fifteen people."
+    },
+    {
+      "speaker": "b",
+      "text": "I can make salads and bring drinks."
+    },
+    {
+      "speaker": "a",
+      "text": "Perfect. I'll buy the meat and some vegetarian burgers too."
+    },
+    {
+      "speaker": "b",
+      "text": "What time?"
+    },
+    {
+      "speaker": "a",
+      "text": "Let's say four o'clock."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why will the barbecue be on Saturday?",
+      "options": [
+        "It'll rain on Sunday.",
+        "Mia works on Sunday.",
+        "Jack is busy on Sunday.",
+        "It's a holiday."
+      ],
+      "answer": 0,
+      "feedback": "Pazar yağmur bekleniyor.",
+      "evidence": "it'll rain on Sunday."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many people are they inviting?",
+      "options": [
+        "about five",
+        "about seven",
+        "about fifteen",
+        "about fifty"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık on beş kişi.",
+      "evidence": "About fifteen people."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Mia bringing?",
+      "options": [
+        "meat and burgers",
+        "salads and drinks",
+        "a cake",
+        "vegetarian burgers"
+      ],
+      "answer": 1,
+      "feedback": "Mia salata ve içecek getirecek.",
+      "evidence": "I can make salads and bring drinks."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time is the barbecue?",
+      "options": [
+        "at two",
+        "at five",
+        "at seven",
+        "at four"
+      ],
+      "answer": 3,
+      "feedback": "Barbekü saat dörtte.",
+      "evidence": "Let's say four o'clock."
+    }
+  ]
+}

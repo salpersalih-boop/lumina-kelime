@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-34",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Wake-up call",
+  "topic": "Otel uyandırma servisi",
+  "instructions": "Bir misafir otel resepsiyonuyla uyandırma servisi ve taksi için konuşuyor. Saatleri ve hesapları dikkatle takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "guest": {
+      "name": "Mr Lee",
+      "voice": "male"
+    },
+    "rec": {
+      "name": "Receptionist",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "guest",
+      "text": "Hello, this is room 512. I'd like a wake-up call tomorrow, please."
+    },
+    {
+      "speaker": "rec",
+      "text": "Of course. What time?"
+    },
+    {
+      "speaker": "guest",
+      "text": "My flight is at nine. I need to be at the airport two hours before."
+    },
+    {
+      "speaker": "rec",
+      "text": "The airport is forty-five minutes away by taxi. Shall I book one for you?"
+    },
+    {
+      "speaker": "guest",
+      "text": "Yes, please. For a quarter past six. And the wake-up call at half past five."
+    },
+    {
+      "speaker": "rec",
+      "text": "Breakfast starts at six thirty. Would you like a breakfast box to take with you?"
+    },
+    {
+      "speaker": "guest",
+      "text": "That would be great. Is it free?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Yes, it's included in your room price."
+    },
+    {
+      "speaker": "guest",
+      "text": "Perfect. Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Mr Lee's room number?",
+      "options": [
+        "215",
+        "512",
+        "521",
+        "152"
+      ],
+      "answer": 1,
+      "feedback": "Oda numarası 512.",
+      "evidence": "this is room 512."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does Mr Lee need to be at the airport?",
+      "options": [
+        "at nine",
+        "at six fifteen",
+        "at seven",
+        "at seven forty-five"
+      ],
+      "answer": 2,
+      "feedback": "Uçuş dokuzda, iki saat önce orada olmalı: yedi.",
+      "evidence": "I need to be at the airport two hours before."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time is the taxi?",
+      "options": [
+        "at half past five",
+        "at six thirty",
+        "at seven",
+        "at a quarter past six"
+      ],
+      "answer": 3,
+      "feedback": "Taksi altıyı çeyrek geçe.",
+      "evidence": "For a quarter past six."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why will Mr Lee get a breakfast box?",
+      "options": [
+        "Breakfast starts after he leaves.",
+        "He doesn't like the restaurant.",
+        "It's cheaper.",
+        "The restaurant is closed."
+      ],
+      "answer": 0,
+      "feedback": "Kahvaltı altı buçukta başlıyor; o saatte taksiyle çıkmış olacak.",
+      "evidence": "Breakfast starts at six thirty."
+    },
+    {
+      "id": "q5",
+      "prompt": "How much is the breakfast box?",
+      "options": [
+        "five pounds",
+        "nothing",
+        "ten pounds",
+        "six pounds thirty"
+      ],
+      "answer": 1,
+      "feedback": "Oda fiyatına dahil; ücretsiz.",
+      "evidence": "Yes, it's included in your room price."
+    }
+  ]
+}

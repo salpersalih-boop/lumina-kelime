@@ -1,0 +1,153 @@
+{
+  "id": "a1-zor-03",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Lost at the airport",
+  "topic": "Havalimanı",
+  "instructions": "Leo havalimanında kayıp bavulunu bildiriyor. Uzun bir diyalog; Leo bir bilgiyi düzeltiyor ve olumsuz cümleler var. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "officer": {
+      "name": "Officer",
+      "voice": "female"
+    },
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "officer",
+      "text": "Good morning. Can I help you?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Yes, I hope so. My suitcase isn't here. I was on the flight from Rome."
+    },
+    {
+      "speaker": "officer",
+      "text": "I'm sorry to hear that. What time did your flight arrive?"
+    },
+    {
+      "speaker": "leo",
+      "text": "It arrived at nine thirty, but we waited on the plane for an hour."
+    },
+    {
+      "speaker": "officer",
+      "text": "OK. Can you describe your suitcase?"
+    },
+    {
+      "speaker": "leo",
+      "text": "It's big and grey. No, sorry, it's dark blue. My grey one is at home."
+    },
+    {
+      "speaker": "officer",
+      "text": "Big and dark blue. Is there a name on it?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Yes, there's a small red card with my name, Leo Rossi."
+    },
+    {
+      "speaker": "officer",
+      "text": "What is inside?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Clothes, two books and a present for my sister. My laptop isn't in it. It's in my small bag, here."
+    },
+    {
+      "speaker": "officer",
+      "text": "Good. We usually find bags in one or two days. Where are you staying?"
+    },
+    {
+      "speaker": "leo",
+      "text": "At the Park Hotel, near the station. I'm here until Friday."
+    },
+    {
+      "speaker": "officer",
+      "text": "Fine. We can send the suitcase to your hotel. Can I have your phone number?"
+    },
+    {
+      "speaker": "leo",
+      "text": "Of course. Here is my card with my number."
+    },
+    {
+      "speaker": "officer",
+      "text": "Thank you, Mister Rossi. We'll call you tomorrow."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where was Leo's flight from?",
+      "options": [
+        "Paris",
+        "Rome",
+        "Madrid",
+        "Milan"
+      ],
+      "answer": 1,
+      "feedback": "Leo Roma'dan (from Rome) gelen uçaktaydı.",
+      "evidence": "I was on the flight from Rome."
+    },
+    {
+      "id": "q2",
+      "prompt": "What colour is Leo's suitcase?",
+      "options": [
+        "grey",
+        "red",
+        "dark blue",
+        "black"
+      ],
+      "answer": 2,
+      "feedback": "Önce gri (grey) diyor, sonra düzeltiyor: lacivert (dark blue). Gri olan evde. Kırmızı olan isim kartı.",
+      "evidence": "No, sorry, it's dark blue."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is NOT in the suitcase?",
+      "options": [
+        "clothes",
+        "books",
+        "a present",
+        "his laptop"
+      ],
+      "answer": 3,
+      "feedback": "Bilgisayar bavulda değil (isn't in it), küçük çantasında.",
+      "evidence": "My laptop isn't in it."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is Leo staying?",
+      "options": [
+        "at a hotel near the station",
+        "at a hotel near the airport",
+        "at his sister's house",
+        "at a friend's flat"
+      ],
+      "answer": 0,
+      "feedback": "İstasyonun yakınındaki Park Hotel'de kalıyor. Kız kardeşi yalnızca hediyenin sahibi.",
+      "evidence": "At the Park Hotel, near the station."
+    },
+    {
+      "id": "q5",
+      "prompt": "When will the officer call Leo?",
+      "options": [
+        "today",
+        "tomorrow",
+        "on Friday",
+        "in two days"
+      ],
+      "answer": 1,
+      "feedback": "Görevli yarın (tomorrow) arayacak. \"One or two days\" çantaların genelde bulunma süresi, cuma Leo'nun kalış süresi.",
+      "evidence": "We'll call you tomorrow."
+    }
+  ]
+}

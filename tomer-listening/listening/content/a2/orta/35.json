@@ -1,0 +1,132 @@
+{
+  "id": "a2-orta-35",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the tourist office",
+  "topic": "Turizm danışma",
+  "instructions": "Bir çift turizm danışma bürosunda bilgi alıyor. Uzun bir diyalog; önerileri, fiyatları ve saatleri takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Tourist office",
+      "voice": "female"
+    },
+    "paul": {
+      "name": "Paul",
+      "voice": "male"
+    },
+    "jen": {
+      "name": "Jen",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "paul",
+      "text": "Hello. We're here for two days. What do you recommend?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Well, the castle is our most famous place. It's open from nine to five."
+    },
+    {
+      "speaker": "jen",
+      "text": "How much is it to go in?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Twelve pounds each. But with a City Card, it's free, and buses are free too."
+    },
+    {
+      "speaker": "paul",
+      "text": "How much is the City Card?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Twenty-five pounds for two days. It also gives you a free boat trip on the river."
+    },
+    {
+      "speaker": "jen",
+      "text": "That's a good price. We'll take two cards."
+    },
+    {
+      "speaker": "paul",
+      "text": "Is there a good place to eat near the castle?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, the Old Bridge restaurant. It's famous for fish. But book a table, it's always busy."
+    },
+    {
+      "speaker": "jen",
+      "text": "And is there anything to do in the evening?"
+    },
+    {
+      "speaker": "staff",
+      "text": "There's a free concert in the main square tonight at eight."
+    },
+    {
+      "speaker": "paul",
+      "text": "Wonderful. Thank you very much!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long are Paul and Jen staying?",
+      "options": [
+        "one day",
+        "two days",
+        "a week",
+        "three days"
+      ],
+      "answer": 1,
+      "feedback": "İki gün kalıyorlar.",
+      "evidence": "We're here for two days."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is free with the City Card?",
+      "options": [
+        "the castle, buses and a boat trip",
+        "only the castle",
+        "restaurants",
+        "hotels"
+      ],
+      "answer": 0,
+      "feedback": "Kartla kale, otobüsler ve nehirde tekne turu ücretsiz.",
+      "evidence": "It also gives you a free boat trip on the river."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is one City Card?",
+      "options": [
+        "twelve pounds",
+        "fifty pounds",
+        "twenty-five pounds",
+        "twenty pounds"
+      ],
+      "answer": 2,
+      "feedback": "İki günlük kart yirmi beş pound.",
+      "evidence": "Twenty-five pounds for two days."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the woman say about the Old Bridge restaurant?",
+      "options": [
+        "It's cheap.",
+        "It's closed tonight.",
+        "It's near the river.",
+        "It's always busy, so book a table."
+      ],
+      "answer": 3,
+      "feedback": "Balığıyla ünlü ve hep kalabalık; masa ayırtmak gerekiyor.",
+      "evidence": "But book a table, it's always busy."
+    }
+  ]
+}

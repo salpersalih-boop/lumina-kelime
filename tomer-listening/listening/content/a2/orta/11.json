@@ -1,0 +1,100 @@
+{
+  "id": "a2-orta-11",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the hairdresser's",
+  "topic": "Kuaför",
+  "instructions": "Lisa kuaförde saçını kestiriyor. Kısa bir diyalog; ne istediğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "hair": {
+      "name": "Hairdresser",
+      "voice": "male"
+    },
+    "lisa": {
+      "name": "Lisa",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "hair",
+      "text": "What would you like today?"
+    },
+    {
+      "speaker": "lisa",
+      "text": "Just a little shorter, please. About two centimetres."
+    },
+    {
+      "speaker": "hair",
+      "text": "Would you like a different colour too?"
+    },
+    {
+      "speaker": "lisa",
+      "text": "No, thanks. I like my colour. Just a cut and a wash."
+    },
+    {
+      "speaker": "hair",
+      "text": "No problem. That takes about forty minutes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much shorter does Lisa want her hair?",
+      "options": [
+        "about twelve centimetres",
+        "about two centimetres",
+        "very short",
+        "about four centimetres"
+      ],
+      "answer": 1,
+      "feedback": "Saçını iki santim (two centimetres) kısaltmak istiyor.",
+      "evidence": "About two centimetres."
+    },
+    {
+      "id": "q2",
+      "prompt": "Does Lisa want a new colour?",
+      "options": [
+        "Yes, a darker colour.",
+        "Yes, a lighter colour.",
+        "No, she likes her colour.",
+        "She doesn't know."
+      ],
+      "answer": 2,
+      "feedback": "Rengini seviyor, değiştirmek istemiyor.",
+      "evidence": "No, thanks. I like my colour."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Lisa going to have?",
+      "options": [
+        "a cut and a wash",
+        "only a wash",
+        "a cut and a colour",
+        "only a cut"
+      ],
+      "answer": 0,
+      "feedback": "Sadece kesim ve yıkama (a cut and a wash).",
+      "evidence": "Just a cut and a wash."
+    },
+    {
+      "id": "q4",
+      "prompt": "How long will it take?",
+      "options": [
+        "fourteen minutes",
+        "twenty minutes",
+        "an hour",
+        "about forty minutes"
+      ],
+      "answer": 3,
+      "feedback": "Yaklaşık kırk dakika (about forty minutes) sürecek.",
+      "evidence": "That takes about forty minutes."
+    }
+  ]
+}

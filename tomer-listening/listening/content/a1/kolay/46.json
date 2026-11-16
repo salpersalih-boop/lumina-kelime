@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-46",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My grandad",
+  "topic": "Aile",
+  "instructions": "Ela dedesini anlatıyor. Kısa bir metin; yaşına ve hobisine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Ela",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "My grandad is seventy-five."
+    },
+    {
+      "speaker": "s",
+      "text": "He has white hair and a big smile."
+    },
+    {
+      "speaker": "s",
+      "text": "He likes fishing."
+    },
+    {
+      "speaker": "s",
+      "text": "Every Sunday, he goes to the lake."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is Ela's grandad?",
+      "options": [
+        "sixty-five",
+        "seventy-five",
+        "fifty-seven",
+        "eighty-five"
+      ],
+      "answer": 1,
+      "feedback": "Dedesi yetmiş beş yaşında.",
+      "evidence": "My grandad is seventy-five."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does he like?",
+      "options": [
+        "fishing",
+        "cooking",
+        "reading",
+        "walking"
+      ],
+      "answer": 0,
+      "feedback": "Balık tutmayı seviyor.",
+      "evidence": "He likes fishing."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where does he go on Sundays?",
+      "options": [
+        "to the sea",
+        "to the park",
+        "to the lake",
+        "to the market"
+      ],
+      "answer": 2,
+      "feedback": "Her pazar göle gidiyor.",
+      "evidence": "he goes to the lake."
+    }
+  ]
+}

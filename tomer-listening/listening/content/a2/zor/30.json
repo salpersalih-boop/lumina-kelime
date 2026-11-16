@@ -1,0 +1,113 @@
+{
+  "id": "a2-zor-30",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Train strike tomorrow",
+  "topic": "Haber: grev",
+  "instructions": "Radyo haberlerinde tren grevi duyuruluyor. Hatları, saatleri ve alternatifleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "News",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "And now some travel news. There will be a train strike tomorrow, Tuesday, from six a.m. to eight p.m."
+    },
+    {
+      "speaker": "host",
+      "text": "There will be no trains on the north and east lines."
+    },
+    {
+      "speaker": "host",
+      "text": "Trains on the south line will run, but only one every hour, not every fifteen minutes."
+    },
+    {
+      "speaker": "host",
+      "text": "Extra buses will run between the main stations, but they will be very busy."
+    },
+    {
+      "speaker": "host",
+      "text": "If you can, please work from home or travel after eight in the evening."
+    },
+    {
+      "speaker": "host",
+      "text": "Tickets for tomorrow can be used on Wednesday instead."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is the strike?",
+      "options": [
+        "today",
+        "tomorrow, Tuesday",
+        "on Wednesday",
+        "all week"
+      ],
+      "answer": 1,
+      "feedback": "Grev yarın, salı günü.",
+      "evidence": "There will be a train strike tomorrow, Tuesday"
+    },
+    {
+      "id": "q2",
+      "prompt": "Which lines will have no trains?",
+      "options": [
+        "the north and east lines",
+        "the south line",
+        "all lines",
+        "the west line"
+      ],
+      "answer": 0,
+      "feedback": "Kuzey ve doğu hatlarında hiç tren olmayacak.",
+      "evidence": "There will be no trains on the north and east lines."
+    },
+    {
+      "id": "q3",
+      "prompt": "How often will trains run on the south line?",
+      "options": [
+        "every fifteen minutes",
+        "every thirty minutes",
+        "not at all",
+        "one every hour"
+      ],
+      "answer": 3,
+      "feedback": "Güney hattında on beş dakikada bir değil, saatte bir.",
+      "evidence": "but only one every hour, not every fifteen minutes."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the news suggest?",
+      "options": [
+        "take a taxi",
+        "drive to work",
+        "work from home or travel after eight p.m.",
+        "travel before six a.m."
+      ],
+      "answer": 2,
+      "feedback": "Mümkünse evden çalışın ya da akşam sekizden sonra yolculuk edin.",
+      "evidence": "please work from home or travel after eight in the evening."
+    },
+    {
+      "id": "q5",
+      "prompt": "What can people do with tickets for tomorrow?",
+      "options": [
+        "get their money back",
+        "use them on Wednesday",
+        "use them on the bus",
+        "nothing"
+      ],
+      "answer": 1,
+      "feedback": "Yarının biletleri çarşamba kullanılabilir.",
+      "evidence": "Tickets for tomorrow can be used on Wednesday instead."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "a2-orta-22",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Hiring a car",
+  "topic": "Araba kiralama",
+  "instructions": "Mr Silva tatilde araba kiralıyor. Uzun bir diyalog; süre, araba türü, fiyat ve kurallara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Car hire",
+      "voice": "female"
+    },
+    "silva": {
+      "name": "Mr Silva",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "staff",
+      "text": "Good morning. How can I help you?"
+    },
+    {
+      "speaker": "silva",
+      "text": "I'd like to hire a car for five days, please."
+    },
+    {
+      "speaker": "staff",
+      "text": "Certainly. What kind of car would you like?"
+    },
+    {
+      "speaker": "silva",
+      "text": "Something small and cheap. It's just me and my wife."
+    },
+    {
+      "speaker": "staff",
+      "text": "We have a small car for thirty-five euros a day, or a bigger one for fifty."
+    },
+    {
+      "speaker": "silva",
+      "text": "The small one is fine. Is insurance included?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Basic insurance is included. Full insurance is ten euros more per day."
+    },
+    {
+      "speaker": "silva",
+      "text": "I'll take the full insurance. The roads here are narrow!"
+    },
+    {
+      "speaker": "staff",
+      "text": "Good idea. Please bring the car back with a full tank of petrol."
+    },
+    {
+      "speaker": "silva",
+      "text": "Of course. Where can I leave it at the end?"
+    },
+    {
+      "speaker": "staff",
+      "text": "You can leave it here or at the airport. The airport costs twenty euros extra."
+    },
+    {
+      "speaker": "silva",
+      "text": "We're flying home from the airport, so I'll leave it there."
+    },
+    {
+      "speaker": "staff",
+      "text": "No problem. Can I see your driving licence and credit card?"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long does Mr Silva want the car?",
+      "options": [
+        "three days",
+        "five days",
+        "a week",
+        "ten days"
+      ],
+      "answer": 1,
+      "feedback": "Arabayı beş günlüğüne (five days) kiralıyor.",
+      "evidence": "I'd like to hire a car for five days, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much is the small car per day?",
+      "options": [
+        "thirty-five euros",
+        "fifty euros",
+        "forty-five euros",
+        "ten euros"
+      ],
+      "answer": 0,
+      "feedback": "Küçük araba günlük otuz beş euro; büyük olan elli.",
+      "evidence": "We have a small car for thirty-five euros a day"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why does he take full insurance?",
+      "options": [
+        "It's free.",
+        "His wife wants it.",
+        "The roads are narrow.",
+        "The car is new."
+      ],
+      "answer": 2,
+      "feedback": "Yollar dar olduğu için tam sigorta alıyor.",
+      "evidence": "The roads here are narrow!"
+    },
+    {
+      "id": "q4",
+      "prompt": "Where will he leave the car?",
+      "options": [
+        "at the hotel",
+        "at the car hire office",
+        "in the city centre",
+        "at the airport"
+      ],
+      "answer": 3,
+      "feedback": "Eve havalimanından uçacakları için arabayı havalimanına bırakacak (yirmi euro ekstra).",
+      "evidence": "so I'll leave it there."
+    }
+  ]
+}

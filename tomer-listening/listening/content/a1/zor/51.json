@@ -1,0 +1,129 @@
+{
+  "id": "a1-zor-51",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Booking a doctor's appointment",
+  "topic": "Randevu",
+  "instructions": "Bir adam doktor randevusu almaya çalışıyor. Önerilen ve kabul edilen günleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Receptionist",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Mr Yilmaz",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good morning, City Health Centre."
+    },
+    {
+      "speaker": "b",
+      "text": "Hello. I'd like an appointment with Dr Lee, please. I have a bad headache every day."
+    },
+    {
+      "speaker": "a",
+      "text": "Dr Lee is on holiday this week. Dr Patel is free on Wednesday at ten."
+    },
+    {
+      "speaker": "b",
+      "text": "Sorry, I work on Wednesday mornings. What about Thursday?"
+    },
+    {
+      "speaker": "a",
+      "text": "Dr Patel is free on Thursday at four thirty."
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, that's good. Thursday at four thirty."
+    },
+    {
+      "speaker": "a",
+      "text": "Can I have your name and phone number?"
+    },
+    {
+      "speaker": "b",
+      "text": "Ali Yilmaz. My number is 0-7-7-0-0, 9-8-1-2-3."
+    },
+    {
+      "speaker": "a",
+      "text": "Thank you, Mr Yilmaz. Please come ten minutes early."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Mr Yilmaz's problem?",
+      "options": [
+        "a bad back",
+        "a bad headache",
+        "a cold",
+        "a toothache"
+      ],
+      "answer": 1,
+      "feedback": "Her gün kötü baş ağrısı oluyor.",
+      "evidence": "I have a bad headache every day."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't he see Dr Lee?",
+      "options": [
+        "Dr Lee is ill.",
+        "Dr Lee is on holiday.",
+        "Dr Lee is busy.",
+        "Dr Lee left."
+      ],
+      "answer": 1,
+      "feedback": "Dr Lee bu hafta tatilde.",
+      "evidence": "Dr Lee is on holiday this week."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why can't he go on Wednesday?",
+      "options": [
+        "He works on Wednesday mornings.",
+        "He is on holiday.",
+        "He has a meeting.",
+        "It's too early."
+      ],
+      "answer": 0,
+      "feedback": "Çarşamba sabahları çalışıyor.",
+      "evidence": "I work on Wednesday mornings."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is his appointment?",
+      "options": [
+        "Wednesday at ten",
+        "Thursday at ten",
+        "Wednesday at four thirty",
+        "Thursday at four thirty"
+      ],
+      "answer": 3,
+      "feedback": "Randevu perşembe dört buçukta, Dr Patel ile.",
+      "evidence": "Thursday at four thirty."
+    },
+    {
+      "id": "q5",
+      "prompt": "What time should he arrive?",
+      "options": [
+        "at four twenty",
+        "at four thirty",
+        "at four forty",
+        "at four"
+      ],
+      "answer": 0,
+      "feedback": "On dakika erken: 4:20.",
+      "evidence": "Please come ten minutes early."
+    }
+  ]
+}

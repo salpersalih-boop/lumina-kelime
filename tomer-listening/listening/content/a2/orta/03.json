@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-03",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Taking a shirt back",
+  "topic": "Ürün iadesi",
+  "instructions": "Mark aldığı gömleği geri getiriyor. Sorunun ne olduğuna ve sonuca dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mark": {
+      "name": "Mark",
+      "voice": "male"
+    },
+    "assistant": {
+      "name": "Shop assistant",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mark",
+      "text": "Hi. I bought this shirt here last week, but there is a problem."
+    },
+    {
+      "speaker": "assistant",
+      "text": "Oh, I'm sorry. What's wrong with it?"
+    },
+    {
+      "speaker": "mark",
+      "text": "It's too small. I usually wear a large, but this is a medium."
+    },
+    {
+      "speaker": "assistant",
+      "text": "Do you have the receipt?"
+    },
+    {
+      "speaker": "mark",
+      "text": "Yes, here it is."
+    },
+    {
+      "speaker": "assistant",
+      "text": "Thank you. I'm sorry, we don't have this shirt in large now. Would you like a different colour?"
+    },
+    {
+      "speaker": "mark",
+      "text": "No, thanks. I don't like the other colours. Can I have my money back?"
+    },
+    {
+      "speaker": "assistant",
+      "text": "Of course. That's thirty-five pounds back on your card."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did Mark buy the shirt?",
+      "options": [
+        "yesterday",
+        "last week",
+        "last month",
+        "two days ago"
+      ],
+      "answer": 1,
+      "feedback": "Gömleği geçen hafta (last week) almış.",
+      "evidence": "I bought this shirt here last week"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem with the shirt?",
+      "options": [
+        "It's the wrong colour.",
+        "It's broken.",
+        "It's too small.",
+        "It's too expensive."
+      ],
+      "answer": 2,
+      "feedback": "Gömlek çok küçük (too small): large giyiyor ama bu medium.",
+      "evidence": "It's too small."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why can't Mark change the shirt?",
+      "options": [
+        "There are no large shirts now.",
+        "He doesn't have the receipt.",
+        "The shop is closing.",
+        "He used the shirt."
+      ],
+      "answer": 0,
+      "feedback": "Mağazada şu an large beden yok.",
+      "evidence": "we don't have this shirt in large now."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Mark get in the end?",
+      "options": [
+        "a different shirt",
+        "a different colour",
+        "a voucher",
+        "his money back"
+      ],
+      "answer": 3,
+      "feedback": "Başka renk istemiyor; parasını geri alıyor (money back).",
+      "evidence": "Can I have my money back?"
+    }
+  ]
+}

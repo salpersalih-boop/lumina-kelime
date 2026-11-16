@@ -1,0 +1,109 @@
+{
+  "id": "a1-zor-02",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A voicemail message",
+  "topic": "Telefon mesajı",
+  "instructions": "Helen, Mark'a sesli mesaj bırakıyor. Kısa ama bilgi dolu; her kelime önemli. Değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "helen": {
+      "name": "Helen",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "helen",
+      "text": "Hi Mark, it's Helen."
+    },
+    {
+      "speaker": "helen",
+      "text": "The meeting isn't on Tuesday now. It's on Thursday at a quarter past ten."
+    },
+    {
+      "speaker": "helen",
+      "text": "It's in room twelve, not twenty."
+    },
+    {
+      "speaker": "helen",
+      "text": "Bring the report, but not your laptop."
+    },
+    {
+      "speaker": "helen",
+      "text": "And please call me before five."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is the meeting now?",
+      "options": [
+        "on Tuesday",
+        "on Thursday",
+        "on Wednesday",
+        "on Friday"
+      ],
+      "answer": 1,
+      "feedback": "Toplantı artık salı değil (isn't on Tuesday now), perşembe (Thursday).",
+      "evidence": "It's on Thursday at a quarter past ten."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time is the meeting?",
+      "options": [
+        "at ten fifteen",
+        "at ten fifty",
+        "at a quarter to ten",
+        "at twelve"
+      ],
+      "answer": 0,
+      "feedback": "\"A quarter past ten\" 10:15 demek. \"Quarter to ten\" olsaydı 9:45 olurdu.",
+      "evidence": "at a quarter past ten"
+    },
+    {
+      "id": "q3",
+      "prompt": "Which room is the meeting in?",
+      "options": [
+        "room twenty",
+        "room two",
+        "room twelve",
+        "room twenty-two"
+      ],
+      "answer": 2,
+      "feedback": "Oda on iki (twelve), yirmi değil (not twenty). İki sayı da geçiyor, olumsuzu dinle.",
+      "evidence": "It's in room twelve, not twenty."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Mark need to bring?",
+      "options": [
+        "his laptop",
+        "the report",
+        "the report and his laptop",
+        "nothing"
+      ],
+      "answer": 1,
+      "feedback": "Raporu getirecek ama dizüstü bilgisayarı değil (but not your laptop).",
+      "evidence": "Bring the report, but not your laptop."
+    },
+    {
+      "id": "q5",
+      "prompt": "When should Mark call Helen?",
+      "options": [
+        "after five",
+        "at five",
+        "before five",
+        "tomorrow morning"
+      ],
+      "answer": 2,
+      "feedback": "Helen beşten önce (before five) aranmak istiyor.",
+      "evidence": "And please call me before five."
+    }
+  ]
+}
