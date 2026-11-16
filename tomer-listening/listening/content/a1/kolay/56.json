@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-56",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My pet rabbit",
+  "topic": "Evcil hayvanlar",
+  "instructions": "Tom tavşanını anlatıyor. Kısa bir metin; renk, isim ve yemeğe dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I have a rabbit. Her name is Snow."
+    },
+    {
+      "speaker": "s",
+      "text": "She is white with long ears."
+    },
+    {
+      "speaker": "s",
+      "text": "She lives in the garden."
+    },
+    {
+      "speaker": "s",
+      "text": "She loves carrots."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the rabbit's name?",
+      "options": [
+        "White",
+        "Snow",
+        "Tom",
+        "Carrot"
+      ],
+      "answer": 1,
+      "feedback": "Tavşanın adı Snow.",
+      "evidence": "Her name is Snow."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where does she live?",
+      "options": [
+        "in the house",
+        "in Tom's room",
+        "in the garden",
+        "at school"
+      ],
+      "answer": 2,
+      "feedback": "Bahçede yaşıyor.",
+      "evidence": "She lives in the garden."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does she love?",
+      "options": [
+        "apples",
+        "grass",
+        "bread",
+        "carrots"
+      ],
+      "answer": 3,
+      "feedback": "Havuç seviyor.",
+      "evidence": "She loves carrots."
+    }
+  ]
+}

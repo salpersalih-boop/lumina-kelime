@@ -1,0 +1,121 @@
+{
+  "id": "a2-zor-16",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "New library rules",
+  "topic": "Duyuru: kütüphane",
+  "instructions": "Kütüphane müdürü yeni kuralları açıklıyor. Uzun bir metin; eski ve yeni kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Librarian",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Good morning, everyone. From next month, there are some changes at the City Library."
+    },
+    {
+      "speaker": "voice",
+      "text": "First, the opening hours. We used to close at six, but now we will be open until eight in the evening, Monday to Friday."
+    },
+    {
+      "speaker": "voice",
+      "text": "On Saturdays, we will still close at four, and we will stay closed on Sundays."
+    },
+    {
+      "speaker": "voice",
+      "text": "Second, you can now borrow six books at a time, not four."
+    },
+    {
+      "speaker": "voice",
+      "text": "You can keep them for three weeks. If you bring them back late, you will pay twenty pence a day."
+    },
+    {
+      "speaker": "voice",
+      "text": "Third, food is not allowed anywhere in the library, but you can drink water."
+    },
+    {
+      "speaker": "voice",
+      "text": "The computer room on the first floor is free for members, but you must book a computer at the front desk."
+    },
+    {
+      "speaker": "voice",
+      "text": "Finally, our new children's area opens on the fifteenth. There will be a story hour every Wednesday afternoon."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time will the library close on weekdays?",
+      "options": [
+        "at six",
+        "at four",
+        "at eight",
+        "at seven"
+      ],
+      "answer": 2,
+      "feedback": "Önceden altıda kapanıyordu; artık hafta içi sekize kadar açık.",
+      "evidence": "now we will be open until eight in the evening, Monday to Friday."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many books can you borrow now?",
+      "options": [
+        "four",
+        "six",
+        "three",
+        "eight"
+      ],
+      "answer": 1,
+      "feedback": "Artık dört değil, altı kitap alınabiliyor.",
+      "evidence": "you can now borrow six books at a time, not four."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much do you pay if you bring books back late?",
+      "options": [
+        "twenty pence a day",
+        "two pounds a day",
+        "twenty pence a week",
+        "nothing"
+      ],
+      "answer": 0,
+      "feedback": "Gecikme için günlük yirmi peni.",
+      "evidence": "you will pay twenty pence a day."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is allowed in the library?",
+      "options": [
+        "food",
+        "food and drinks",
+        "coffee",
+        "water"
+      ],
+      "answer": 3,
+      "feedback": "Yiyecek yasak ama su içilebilir.",
+      "evidence": "but you can drink water."
+    },
+    {
+      "id": "q5",
+      "prompt": "When is the story hour?",
+      "options": [
+        "every Saturday morning",
+        "every Wednesday afternoon",
+        "on the fifteenth only",
+        "every Sunday"
+      ],
+      "answer": 1,
+      "feedback": "Hikâye saati her çarşamba öğleden sonra. On beşi çocuk alanının açılış tarihi.",
+      "evidence": "There will be a story hour every Wednesday afternoon."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "a2-zor-62",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "On board the ferry",
+  "topic": "Feribot anonsu",
+  "instructions": "Feribotta yolculara yapılan anons. Süreyi, yerleri ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Ferry",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Good afternoon, passengers. Welcome on board the ferry to Bodrum."
+    },
+    {
+      "speaker": "s",
+      "text": "Our journey today will take about one hour and forty minutes."
+    },
+    {
+      "speaker": "s",
+      "text": "The café on deck two is now open. Hot food is available until thirty minutes before we arrive."
+    },
+    {
+      "speaker": "s",
+      "text": "Please do not leave children alone on the outside decks."
+    },
+    {
+      "speaker": "s",
+      "text": "Car passengers must return to their cars when we make the arrival announcement, not before."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the ferry going?",
+      "options": [
+        "to Bodrum",
+        "to Istanbul",
+        "to Izmir",
+        "to an island"
+      ],
+      "answer": 0,
+      "feedback": "Feribot Bodrum'a gidiyor.",
+      "evidence": "Welcome on board the ferry to Bodrum."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long is the journey?",
+      "options": [
+        "about forty minutes",
+        "about one hour",
+        "about one hour and forty minutes",
+        "about two hours"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık bir saat kırk dakika.",
+      "evidence": "about one hour and forty minutes."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is the café?",
+      "options": [
+        "on deck one",
+        "on deck two",
+        "on the outside deck",
+        "near the cars"
+      ],
+      "answer": 1,
+      "feedback": "Kafe ikinci güvertede.",
+      "evidence": "The café on deck two is now open."
+    },
+    {
+      "id": "q4",
+      "prompt": "Until when is hot food available?",
+      "options": [
+        "until thirty minutes before arrival",
+        "until we arrive",
+        "for one hour",
+        "all the time"
+      ],
+      "answer": 0,
+      "feedback": "Sıcak yemek varıştan otuz dakika öncesine kadar.",
+      "evidence": "until thirty minutes before we arrive."
+    },
+    {
+      "id": "q5",
+      "prompt": "When should car passengers return to their cars?",
+      "options": [
+        "now",
+        "thirty minutes before arrival",
+        "when they want",
+        "when they hear the arrival announcement"
+      ],
+      "answer": 3,
+      "feedback": "Varış anonsu yapılınca, önce değil.",
+      "evidence": "when we make the arrival announcement, not before."
+    }
+  ]
+}

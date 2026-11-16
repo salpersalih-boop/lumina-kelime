@@ -1,0 +1,109 @@
+{
+  "id": "a1-zor-16",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Supermarket announcement",
+  "topic": "Market anonsu",
+  "instructions": "Süpermarkette kısa bir anons. Kısa ama her bilgi önemli. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Supermarket",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Good afternoon, shoppers."
+    },
+    {
+      "speaker": "voice",
+      "text": "Today all fruit is half price, but not bananas."
+    },
+    {
+      "speaker": "voice",
+      "text": "The café on the first floor is closed today."
+    },
+    {
+      "speaker": "voice",
+      "text": "The supermarket closes at nine tonight, not ten."
+    },
+    {
+      "speaker": "voice",
+      "text": "Thank you for shopping with us."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is half price today?",
+      "options": [
+        "all food",
+        "bananas only",
+        "all fruit except bananas",
+        "vegetables"
+      ],
+      "answer": 2,
+      "feedback": "Bütün meyveler yarı fiyat ama muz hariç (but not bananas).",
+      "evidence": "Today all fruit is half price, but not bananas."
+    },
+    {
+      "id": "q2",
+      "prompt": "Are bananas half price?",
+      "options": [
+        "Yes, they are.",
+        "No, they aren't.",
+        "Only in the morning.",
+        "Only on the first floor."
+      ],
+      "answer": 1,
+      "feedback": "\"But not bananas\": muz indirimde değil.",
+      "evidence": "but not bananas."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is the café?",
+      "options": [
+        "on the ground floor",
+        "outside",
+        "on the first floor",
+        "on the second floor"
+      ],
+      "answer": 2,
+      "feedback": "Kafe birinci katta ve bugün kapalı.",
+      "evidence": "The café on the first floor is closed today."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time does the supermarket close tonight?",
+      "options": [
+        "at nine",
+        "at ten",
+        "at eight",
+        "at half past nine"
+      ],
+      "answer": 0,
+      "feedback": "Bu akşam dokuzda (at nine) kapanıyor, onda değil.",
+      "evidence": "closes at nine tonight, not ten."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is the time of day?",
+      "options": [
+        "morning",
+        "night",
+        "evening",
+        "afternoon"
+      ],
+      "answer": 3,
+      "feedback": "Anons \"Good afternoon\" ile başlıyor: öğleden sonra.",
+      "evidence": "Good afternoon, shoppers."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-19",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Are you free tonight?",
+  "topic": "Davet etme",
+  "instructions": "Sophie arkadaşını davet ediyor. Kısa bir diyalog; davetin reddine ve yeni plana dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sophie": {
+      "name": "Sophie",
+      "voice": "female"
+    },
+    "dan": {
+      "name": "Dan",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sophie",
+      "text": "Dan, are you free tonight? There's a jazz concert in the park."
+    },
+    {
+      "speaker": "dan",
+      "text": "I'd love to, but I'm working late tonight."
+    },
+    {
+      "speaker": "sophie",
+      "text": "That's a pity. What about tomorrow? We could have lunch."
+    },
+    {
+      "speaker": "dan",
+      "text": "Tomorrow's great. Shall we meet at one at the Italian café?"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is happening tonight?",
+      "options": [
+        "a football match",
+        "a jazz concert",
+        "a party",
+        "a film"
+      ],
+      "answer": 1,
+      "feedback": "Bu akşam parkta caz konseri (jazz concert) var.",
+      "evidence": "There's a jazz concert in the park."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't Dan go tonight?",
+      "options": [
+        "He's ill.",
+        "He's working late.",
+        "He doesn't like jazz.",
+        "He's visiting his family."
+      ],
+      "answer": 1,
+      "feedback": "Bu akşam geç saate kadar çalışıyor.",
+      "evidence": "I'm working late tonight."
+    },
+    {
+      "id": "q3",
+      "prompt": "What are they going to do tomorrow?",
+      "options": [
+        "go to the concert",
+        "have dinner",
+        "have lunch",
+        "go to the park"
+      ],
+      "answer": 2,
+      "feedback": "Yarın öğle yemeği (lunch) yiyecekler.",
+      "evidence": "We could have lunch."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where are they going to meet?",
+      "options": [
+        "at the Italian café",
+        "in the park",
+        "at Dan's office",
+        "at the station"
+      ],
+      "answer": 0,
+      "feedback": "Saat birde İtalyan kafede buluşacaklar.",
+      "evidence": "Shall we meet at one at the Italian café?"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "a1-orta-42",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "What is the homework?",
+  "topic": "Ödev sorma",
+  "instructions": "İki sınıf arkadaşı ödevi konuşuyor. Kısa bir diyalog; sayfa ve teslim gününe dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ella": {
+      "name": "Ella",
+      "voice": "female"
+    },
+    "tom": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ella",
+      "text": "Tom, what's the English homework?"
+    },
+    {
+      "speaker": "tom",
+      "text": "Page forty, exercises one and two."
+    },
+    {
+      "speaker": "ella",
+      "text": "Is it for tomorrow?"
+    },
+    {
+      "speaker": "tom",
+      "text": "No, it's for Friday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which subject is the homework for?",
+      "options": [
+        "maths",
+        "English",
+        "science",
+        "history"
+      ],
+      "answer": 1,
+      "feedback": "İngilizce ödevi.",
+      "evidence": "what's the English homework?"
+    },
+    {
+      "id": "q2",
+      "prompt": "What page is the homework on?",
+      "options": [
+        "page fourteen",
+        "page four",
+        "page forty",
+        "page forty-two"
+      ],
+      "answer": 2,
+      "feedback": "Kırkıncı sayfa.",
+      "evidence": "Page forty"
+    },
+    {
+      "id": "q3",
+      "prompt": "Which exercises do they do?",
+      "options": [
+        "one and two",
+        "one and three",
+        "two and four",
+        "only one"
+      ],
+      "answer": 0,
+      "feedback": "Birinci ve ikinci alıştırmalar.",
+      "evidence": "exercises one and two."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is the homework for?",
+      "options": [
+        "tomorrow",
+        "Monday",
+        "next week",
+        "Friday"
+      ],
+      "answer": 3,
+      "feedback": "Ödev yarın için değil, cuma için.",
+      "evidence": "No, it's for Friday."
+    }
+  ]
+}

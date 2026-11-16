@@ -1,0 +1,129 @@
+{
+  "id": "a1-zor-56",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Buying train tickets",
+  "topic": "Bilet alma",
+  "instructions": "Bir aile tren bileti alıyor. Uzun bir diyalog; kişi sayısı, saat ve fiyatı takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Dad",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Ticket office",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello. I'd like tickets to Oxford for two adults and two children, please."
+    },
+    {
+      "speaker": "b",
+      "text": "Single or return?"
+    },
+    {
+      "speaker": "a",
+      "text": "Return. We are coming back this evening."
+    },
+    {
+      "speaker": "b",
+      "text": "Adult tickets are twenty pounds and child tickets are ten pounds."
+    },
+    {
+      "speaker": "a",
+      "text": "So, sixty pounds?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. But with a family card, it's only forty-five."
+    },
+    {
+      "speaker": "a",
+      "text": "Great, I have a family card. When is the next train?"
+    },
+    {
+      "speaker": "b",
+      "text": "At ten fifteen, from platform four. It takes one hour."
+    },
+    {
+      "speaker": "a",
+      "text": "Thank you very much."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many people are travelling?",
+      "options": [
+        "two",
+        "three",
+        "four",
+        "five"
+      ],
+      "answer": 2,
+      "feedback": "İki yetişkin, iki çocuk: dört kişi.",
+      "evidence": "for two adults and two children"
+    },
+    {
+      "id": "q2",
+      "prompt": "When are they coming back?",
+      "options": [
+        "tomorrow",
+        "this evening",
+        "next week",
+        "on Sunday"
+      ],
+      "answer": 1,
+      "feedback": "Bu akşam dönüyorlar.",
+      "evidence": "We are coming back this evening."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is a child ticket?",
+      "options": [
+        "twenty pounds",
+        "ten pounds",
+        "fifteen pounds",
+        "five pounds"
+      ],
+      "answer": 1,
+      "feedback": "Çocuk bileti on pound.",
+      "evidence": "child tickets are ten pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does the dad pay?",
+      "options": [
+        "sixty pounds",
+        "fifty pounds",
+        "forty pounds",
+        "forty-five pounds"
+      ],
+      "answer": 3,
+      "feedback": "Aile kartıyla kırk beş pound.",
+      "evidence": "with a family card, it's only forty-five."
+    },
+    {
+      "id": "q5",
+      "prompt": "What time will they arrive in Oxford?",
+      "options": [
+        "at eleven fifteen",
+        "at ten fifteen",
+        "at eleven",
+        "at four fifteen"
+      ],
+      "answer": 0,
+      "feedback": "Tren 10:15'te kalkıyor, bir saat sürüyor: 11:15'te varırlar.",
+      "evidence": "It takes one hour."
+    }
+  ]
+}

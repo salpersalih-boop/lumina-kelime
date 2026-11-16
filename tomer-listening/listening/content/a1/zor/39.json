@@ -1,0 +1,105 @@
+{
+  "id": "a1-zor-39",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A message from the travel agent",
+  "topic": "Telefon mesajı",
+  "instructions": "Seyahat acentesi kısa bir sesli mesaj bırakıyor. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Travel agent",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Hello Mr Smith, this is Sun Travel."
+    },
+    {
+      "speaker": "voice",
+      "text": "Your flight to Rome is now at nine forty, not seven forty."
+    },
+    {
+      "speaker": "voice",
+      "text": "Your hotel is the same, but your room has a sea view now."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please come to our office on Friday to get your tickets."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Mr Smith flying to?",
+      "options": [
+        "Paris",
+        "Madrid",
+        "Rome",
+        "Athens"
+      ],
+      "answer": 2,
+      "feedback": "Uçuş Roma'ya.",
+      "evidence": "Your flight to Rome"
+    },
+    {
+      "id": "q2",
+      "prompt": "What time is the flight now?",
+      "options": [
+        "at seven forty",
+        "at nine forty",
+        "at nine fourteen",
+        "at seven fourteen"
+      ],
+      "answer": 1,
+      "feedback": "Uçuş artık dokuz kırkta, yedi kırk değil.",
+      "evidence": "is now at nine forty, not seven forty."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much later is the flight?",
+      "options": [
+        "two hours",
+        "one hour",
+        "forty minutes",
+        "thirty minutes"
+      ],
+      "answer": 0,
+      "feedback": "7:40'tan 9:40'a: iki saat sonra.",
+      "evidence": "not seven forty."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is new about the room?",
+      "options": [
+        "It's bigger.",
+        "It's cheaper.",
+        "It's in a different hotel.",
+        "It has a sea view."
+      ],
+      "answer": 3,
+      "feedback": "Otel aynı ama odada artık deniz manzarası var.",
+      "evidence": "your room has a sea view now."
+    },
+    {
+      "id": "q5",
+      "prompt": "When should Mr Smith go to the office?",
+      "options": [
+        "today",
+        "on Monday",
+        "on Friday",
+        "before the flight"
+      ],
+      "answer": 2,
+      "feedback": "Biletleri almak için cuma günü ofise gitmeli.",
+      "evidence": "Please come to our office on Friday"
+    }
+  ]
+}

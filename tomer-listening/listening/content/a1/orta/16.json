@@ -1,0 +1,112 @@
+{
+  "id": "a1-orta-16",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the bakery",
+  "topic": "Fırın alışverişi",
+  "instructions": "Kim fırında alışveriş yapıyor. Ne aldığına ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "baker": {
+      "name": "Baker",
+      "voice": "male"
+    },
+    "kim": {
+      "name": "Kim",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "baker",
+      "text": "Good morning. What can I get you?"
+    },
+    {
+      "speaker": "kim",
+      "text": "Good morning. A loaf of white bread, please."
+    },
+    {
+      "speaker": "baker",
+      "text": "Sorry, we don't have white bread now. We have brown bread."
+    },
+    {
+      "speaker": "kim",
+      "text": "OK, brown bread is fine. And four croissants, please."
+    },
+    {
+      "speaker": "baker",
+      "text": "Here you are. Anything else?"
+    },
+    {
+      "speaker": "kim",
+      "text": "Yes, a small chocolate cake, please."
+    },
+    {
+      "speaker": "baker",
+      "text": "That's nine pounds, please."
+    },
+    {
+      "speaker": "kim",
+      "text": "Here you are. Thank you!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What bread does Kim buy?",
+      "options": [
+        "white bread",
+        "brown bread",
+        "no bread",
+        "two loaves"
+      ],
+      "answer": 1,
+      "feedback": "Beyaz ekmek kalmamış; esmer ekmek (brown bread) alıyor.",
+      "evidence": "OK, brown bread is fine."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many croissants does Kim buy?",
+      "options": [
+        "two",
+        "three",
+        "five",
+        "four"
+      ],
+      "answer": 3,
+      "feedback": "Dört (four) kruvasan alıyor.",
+      "evidence": "And four croissants, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "What kind of cake does Kim want?",
+      "options": [
+        "a big chocolate cake",
+        "a small lemon cake",
+        "a small chocolate cake",
+        "a big lemon cake"
+      ],
+      "answer": 2,
+      "feedback": "Küçük çikolatalı pasta (a small chocolate cake).",
+      "evidence": "a small chocolate cake, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does Kim pay?",
+      "options": [
+        "nine pounds",
+        "five pounds",
+        "nineteen pounds",
+        "four pounds"
+      ],
+      "answer": 0,
+      "feedback": "Toplam dokuz pound (nine pounds).",
+      "evidence": "That's nine pounds, please."
+    }
+  ]
+}

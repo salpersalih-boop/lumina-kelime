@@ -1,0 +1,105 @@
+{
+  "id": "a2-zor-20",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Bus service changes",
+  "topic": "Ulaşım duyurusu",
+  "instructions": "Otobüs şirketinin kısa duyurusu. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Bus company",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "From Monday, the number twenty-four bus will not stop at the hospital."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please take the number forty-two instead."
+    },
+    {
+      "speaker": "voice",
+      "text": "Buses will run every fifteen minutes, not every ten."
+    },
+    {
+      "speaker": "voice",
+      "text": "Tickets now cost two pounds twenty."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which bus will not stop at the hospital?",
+      "options": [
+        "number forty-two",
+        "number twenty-four",
+        "number fourteen",
+        "number twenty"
+      ],
+      "answer": 1,
+      "feedback": "Yirmi dört numaralı otobüs artık hastanede durmayacak.",
+      "evidence": "the number twenty-four bus will not stop at the hospital."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which bus should people take to the hospital?",
+      "options": [
+        "number forty-two",
+        "number twenty-four",
+        "number twelve",
+        "number four"
+      ],
+      "answer": 0,
+      "feedback": "Bunun yerine kırk iki numaraya binilmeli. Sayılar yer değiştirmiş; dikkat.",
+      "evidence": "Please take the number forty-two instead."
+    },
+    {
+      "id": "q3",
+      "prompt": "When do the changes start?",
+      "options": [
+        "today",
+        "next month",
+        "on Monday",
+        "on Sunday"
+      ],
+      "answer": 2,
+      "feedback": "Değişiklikler pazartesiden itibaren.",
+      "evidence": "From Monday"
+    },
+    {
+      "id": "q4",
+      "prompt": "How often will the buses run?",
+      "options": [
+        "every ten minutes",
+        "every twenty minutes",
+        "every five minutes",
+        "every fifteen minutes"
+      ],
+      "answer": 3,
+      "feedback": "Otobüsler artık on değil, on beş dakikada bir.",
+      "evidence": "Buses will run every fifteen minutes, not every ten."
+    },
+    {
+      "id": "q5",
+      "prompt": "How much is a ticket now?",
+      "options": [
+        "two pounds",
+        "two pounds twenty",
+        "twenty pounds",
+        "two pounds forty-two"
+      ],
+      "answer": 1,
+      "feedback": "Bilet iki pound yirmi.",
+      "evidence": "Tickets now cost two pounds twenty."
+    }
+  ]
+}

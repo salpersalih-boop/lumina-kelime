@@ -1,0 +1,116 @@
+{
+  "id": "a1-orta-48",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "A new T-shirt",
+  "topic": "Kıyafet alışverişi",
+  "instructions": "Can bir mağazada tişört alıyor. Renk, beden ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Shop assistant",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Can",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello. Can I help you?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. Do you have this T-shirt in red?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes. What size?"
+    },
+    {
+      "speaker": "b",
+      "text": "Large, please."
+    },
+    {
+      "speaker": "a",
+      "text": "Sorry, we only have red in small and medium."
+    },
+    {
+      "speaker": "b",
+      "text": "OK. What about blue?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, we have blue in large."
+    },
+    {
+      "speaker": "b",
+      "text": "Great. How much is it?"
+    },
+    {
+      "speaker": "a",
+      "text": "Fifteen pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour does Can want first?",
+      "options": [
+        "blue",
+        "red",
+        "black",
+        "green"
+      ],
+      "answer": 1,
+      "feedback": "Önce kırmızı istiyor.",
+      "evidence": "Do you have this T-shirt in red?"
+    },
+    {
+      "id": "q2",
+      "prompt": "What size is Can?",
+      "options": [
+        "small",
+        "medium",
+        "large",
+        "extra large"
+      ],
+      "answer": 2,
+      "feedback": "Large beden.",
+      "evidence": "Large, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "What colour does he buy?",
+      "options": [
+        "red",
+        "black",
+        "white",
+        "blue"
+      ],
+      "answer": 3,
+      "feedback": "Kırmızı large yok; mavi alıyor.",
+      "evidence": "Yes, we have blue in large."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the T-shirt?",
+      "options": [
+        "fifteen pounds",
+        "fifty pounds",
+        "five pounds",
+        "twelve pounds"
+      ],
+      "answer": 0,
+      "feedback": "Tişört on beş pound.",
+      "evidence": "Fifteen pounds."
+    }
+  ]
+}

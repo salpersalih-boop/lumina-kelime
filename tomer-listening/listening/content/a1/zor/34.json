@@ -1,0 +1,137 @@
+{
+  "id": "a1-zor-34",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "The train to the airport",
+  "topic": "Ulaşım bilgisi",
+  "instructions": "Bir turist istasyonda havalimanı trenini soruyor. Saat, peron ve fiyattaki bilgileri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "tourist": {
+      "name": "Tourist",
+      "voice": "female"
+    },
+    "staff": {
+      "name": "Station staff",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tourist",
+      "text": "Excuse me. Which train goes to the airport?"
+    },
+    {
+      "speaker": "staff",
+      "text": "The Airport Express. It leaves every fifteen minutes."
+    },
+    {
+      "speaker": "tourist",
+      "text": "When is the next one?"
+    },
+    {
+      "speaker": "staff",
+      "text": "It's ten past nine now, so the next one is at nine fifteen. Then nine thirty."
+    },
+    {
+      "speaker": "tourist",
+      "text": "How long does it take?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Twenty-five minutes."
+    },
+    {
+      "speaker": "tourist",
+      "text": "And which platform?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Platform two. But today it is platform three, because of work on the tracks."
+    },
+    {
+      "speaker": "tourist",
+      "text": "How much is a ticket?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Twelve pounds, or eight pounds with a student card."
+    },
+    {
+      "speaker": "tourist",
+      "text": "I'm not a student. One ticket, please."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How often does the Airport Express leave?",
+      "options": [
+        "every five minutes",
+        "every fifteen minutes",
+        "every fifty minutes",
+        "every hour"
+      ],
+      "answer": 1,
+      "feedback": "Havalimanı treni on beş dakikada bir kalkıyor.",
+      "evidence": "It leaves every fifteen minutes."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time is it now?",
+      "options": [
+        "nine fifteen",
+        "nine thirty",
+        "ten past nine",
+        "ten to nine"
+      ],
+      "answer": 2,
+      "feedback": "Şu an dokuzu on geçiyor.",
+      "evidence": "It's ten past nine now"
+    },
+    {
+      "id": "q3",
+      "prompt": "If the tourist takes the next train, when will she arrive?",
+      "options": [
+        "at nine forty",
+        "at nine twenty-five",
+        "at nine fifty-five",
+        "at ten fifteen"
+      ],
+      "answer": 0,
+      "feedback": "Sonraki tren 9:15; yolculuk 25 dakika: 9:40'ta varır.",
+      "evidence": "Twenty-five minutes."
+    },
+    {
+      "id": "q4",
+      "prompt": "Which platform does the train leave from today?",
+      "options": [
+        "platform two",
+        "platform twelve",
+        "platform eight",
+        "platform three"
+      ],
+      "answer": 3,
+      "feedback": "Normalde iki ama bugün ray çalışması nedeniyle üç numaralı peron.",
+      "evidence": "But today it is platform three"
+    },
+    {
+      "id": "q5",
+      "prompt": "How much does the tourist pay?",
+      "options": [
+        "eight pounds",
+        "twelve pounds",
+        "twenty pounds",
+        "fifteen pounds"
+      ],
+      "answer": 1,
+      "feedback": "Öğrenci olmadığı için on iki pound ödüyor.",
+      "evidence": "I'm not a student."
+    }
+  ]
+}

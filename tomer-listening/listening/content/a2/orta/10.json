@@ -1,0 +1,108 @@
+{
+  "id": "a2-orta-10",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Did you like the film?",
+  "topic": "Film hakkında konuşma",
+  "instructions": "Jo ve Ryan dün izledikleri filmi konuşuyor. Kimin ne düşündüğüne dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jo": {
+      "name": "Jo",
+      "voice": "female"
+    },
+    "ryan": {
+      "name": "Ryan",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jo",
+      "text": "So, did you like the film last night?"
+    },
+    {
+      "speaker": "ryan",
+      "text": "Not really. It was too long. Nearly three hours!"
+    },
+    {
+      "speaker": "jo",
+      "text": "Really? I loved it. The actors were fantastic."
+    },
+    {
+      "speaker": "ryan",
+      "text": "The actors were good, I agree. But the story was boring."
+    },
+    {
+      "speaker": "jo",
+      "text": "I thought the ending was very exciting."
+    },
+    {
+      "speaker": "ryan",
+      "text": "Maybe. I fell asleep before the end, so I don't know!"
+    },
+    {
+      "speaker": "jo",
+      "text": "Ryan! Next time, you choose the film."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What did Ryan think of the film?",
+      "options": [
+        "He loved it.",
+        "He didn't really like it.",
+        "He thought it was too short.",
+        "He liked the story."
+      ],
+      "answer": 1,
+      "feedback": "\"Not really\" pek sevmedim demek; çok uzun buldu.",
+      "evidence": "Not really. It was too long."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long was the film?",
+      "options": [
+        "about one hour",
+        "about two hours",
+        "nearly three hours",
+        "more than three hours"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık üç saat (nearly three hours).",
+      "evidence": "Nearly three hours!"
+    },
+    {
+      "id": "q3",
+      "prompt": "What do Jo and Ryan agree about?",
+      "options": [
+        "The actors were good.",
+        "The story was boring.",
+        "The ending was exciting.",
+        "The film was too long."
+      ],
+      "answer": 0,
+      "feedback": "İkisi de oyuncuların iyi olduğunda hemfikir (I agree).",
+      "evidence": "The actors were good, I agree."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why doesn't Ryan know about the ending?",
+      "options": [
+        "He left early.",
+        "He was on his phone.",
+        "He forgot it.",
+        "He fell asleep."
+      ],
+      "answer": 3,
+      "feedback": "Sonundan önce uyuyakaldı (fell asleep).",
+      "evidence": "I fell asleep before the end"
+    }
+  ]
+}

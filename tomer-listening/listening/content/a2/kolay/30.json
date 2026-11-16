@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-30",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My grandparents' farm",
+  "topic": "Çiftlik hayatı",
+  "instructions": "Selin dedesiyle büyükannesinin çiftliğini anlatıyor. Hayvanlara ve yapılan işlere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "selin": {
+      "name": "Selin",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "selin",
+      "text": "My grandparents have a small farm near the Black Sea."
+    },
+    {
+      "speaker": "selin",
+      "text": "They have ten cows, some chickens and a lot of tea plants."
+    },
+    {
+      "speaker": "selin",
+      "text": "Every summer, I stay with them for a month."
+    },
+    {
+      "speaker": "selin",
+      "text": "I get up early to collect the eggs, and in the afternoon I help pick the tea leaves."
+    },
+    {
+      "speaker": "selin",
+      "text": "It's hard work, but the view of the green hills is beautiful."
+    },
+    {
+      "speaker": "selin",
+      "text": "My grandmother makes cheese from the milk. It tastes much better than cheese from the shop."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the farm?",
+      "options": [
+        "near the Black Sea",
+        "near the city",
+        "in the mountains",
+        "near a lake"
+      ],
+      "answer": 0,
+      "feedback": "Çiftlik Karadeniz yakınında.",
+      "evidence": "My grandparents have a small farm near the Black Sea."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long does Selin stay every summer?",
+      "options": [
+        "a week",
+        "two weeks",
+        "a month",
+        "all summer"
+      ],
+      "answer": 2,
+      "feedback": "Her yaz bir ay kalıyor.",
+      "evidence": "I stay with them for a month."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Selin do in the afternoon?",
+      "options": [
+        "She collects eggs.",
+        "She helps pick tea leaves.",
+        "She makes cheese.",
+        "She milks the cows."
+      ],
+      "answer": 1,
+      "feedback": "Sabah yumurta topluyor; öğleden sonra çay toplamaya yardım ediyor.",
+      "evidence": "in the afternoon I help pick the tea leaves."
+    }
+  ]
+}

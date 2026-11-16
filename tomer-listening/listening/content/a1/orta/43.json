@@ -1,0 +1,112 @@
+{
+  "id": "a1-orta-43",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the gift shop",
+  "topic": "Hediyelik eşya",
+  "instructions": "Bir turist hediyelik eşya dükkânında alışveriş yapıyor. Ne aldığına ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Shop assistant",
+      "voice": "male"
+    },
+    "tourist": {
+      "name": "Tourist",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tourist",
+      "text": "Excuse me. How much are these postcards?"
+    },
+    {
+      "speaker": "staff",
+      "text": "They're fifty pence each, or five for two pounds."
+    },
+    {
+      "speaker": "tourist",
+      "text": "Five, please. And I'd like a T-shirt for my son."
+    },
+    {
+      "speaker": "staff",
+      "text": "What size is he?"
+    },
+    {
+      "speaker": "tourist",
+      "text": "He's ten years old. Small, I think."
+    },
+    {
+      "speaker": "staff",
+      "text": "Here you are. This blue one is very popular."
+    },
+    {
+      "speaker": "tourist",
+      "text": "OK. How much is it?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Twelve pounds. So that's fourteen pounds altogether."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much is one postcard?",
+      "options": [
+        "fifty pence",
+        "two pounds",
+        "five pounds",
+        "one pound"
+      ],
+      "answer": 0,
+      "feedback": "Bir kartpostal elli peni.",
+      "evidence": "They're fifty pence each"
+    },
+    {
+      "id": "q2",
+      "prompt": "How many postcards does she buy?",
+      "options": [
+        "one",
+        "two",
+        "ten",
+        "five"
+      ],
+      "answer": 3,
+      "feedback": "Beş tane alıyor (beşi iki pound).",
+      "evidence": "Five, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who is the T-shirt for?",
+      "options": [
+        "her daughter",
+        "her son",
+        "her husband",
+        "herself"
+      ],
+      "answer": 1,
+      "feedback": "Tişört on yaşındaki oğlu için.",
+      "evidence": "I'd like a T-shirt for my son."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does she pay altogether?",
+      "options": [
+        "twelve pounds",
+        "two pounds",
+        "fourteen pounds",
+        "forty pounds"
+      ],
+      "answer": 2,
+      "feedback": "Tişört on iki, kartpostallar iki pound: toplam on dört.",
+      "evidence": "So that's fourteen pounds altogether."
+    }
+  ]
+}

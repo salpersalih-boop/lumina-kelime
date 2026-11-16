@@ -1,0 +1,117 @@
+{
+  "id": "a2-zor-47",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Saving money",
+  "topic": "Podcast: para biriktirme",
+  "instructions": "Bir podcast'te para biriktirme önerileri. Uzun bir metin; önerileri ve sayıları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Podcast host",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Welcome to Money Matters. Today I'm giving you some simple ways to save money every month."
+    },
+    {
+      "speaker": "s",
+      "text": "First, make a list before you go shopping, and only buy what is on the list. People who do this spend about twenty percent less."
+    },
+    {
+      "speaker": "s",
+      "text": "Second, cook at home more often. A takeaway meal costs about fifteen pounds, but you can cook the same meal for four."
+    },
+    {
+      "speaker": "s",
+      "text": "Third, check your phone and internet contracts. Many people pay too much because they never change their plan."
+    },
+    {
+      "speaker": "s",
+      "text": "Fourth, don't go shopping when you're hungry. You'll buy more snacks!"
+    },
+    {
+      "speaker": "s",
+      "text": "And finally, try a \"no-spend weekend\" once a month. Go for a walk, visit a free museum, or invite friends for a simple dinner."
+    },
+    {
+      "speaker": "s",
+      "text": "If you follow these ideas, you could save more than a hundred pounds a month. Next week, we'll talk about saving for a holiday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much less do people spend if they use a shopping list?",
+      "options": [
+        "about twenty percent",
+        "about ten percent",
+        "about fifteen percent",
+        "about half"
+      ],
+      "answer": 0,
+      "feedback": "Listeyle alışveriş yapanlar yaklaşık yüzde yirmi daha az harcıyor.",
+      "evidence": "People who do this spend about twenty percent less."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much does it cost to cook a takeaway meal at home?",
+      "options": [
+        "about fifteen pounds",
+        "about forty pounds",
+        "about five pounds",
+        "about four pounds"
+      ],
+      "answer": 3,
+      "feedback": "Dışarıdan on beş pound; evde aynı yemek dört pound.",
+      "evidence": "you can cook the same meal for four."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why do many people pay too much for their phone?",
+      "options": [
+        "They use it too much.",
+        "Phones are expensive.",
+        "They never change their plan.",
+        "They buy new phones every year."
+      ],
+      "answer": 2,
+      "feedback": "Tarifelerini hiç değiştirmiyorlar.",
+      "evidence": "because they never change their plan."
+    },
+    {
+      "id": "q4",
+      "prompt": "What happens if you shop when you are hungry?",
+      "options": [
+        "You spend less.",
+        "You buy more snacks.",
+        "You forget your list.",
+        "You go home early."
+      ],
+      "answer": 1,
+      "feedback": "Aç alışveriş yaparsan daha çok atıştırmalık alırsın.",
+      "evidence": "You'll buy more snacks!"
+    },
+    {
+      "id": "q5",
+      "prompt": "How often should you try a \"no-spend weekend\"?",
+      "options": [
+        "every weekend",
+        "once a month",
+        "twice a month",
+        "once a year"
+      ],
+      "answer": 1,
+      "feedback": "Ayda bir.",
+      "evidence": "try a \"no-spend weekend\" once a month."
+    }
+  ]
+}

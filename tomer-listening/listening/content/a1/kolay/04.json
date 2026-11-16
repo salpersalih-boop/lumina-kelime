@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-04",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "The weather today",
+  "topic": "Hava durumu",
+  "instructions": "Kısa bir hava durumu anonsu. Sabah ve öğleden sonrayı ayırt et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "kate": {
+      "name": "Kate",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "kate",
+      "text": "Good morning! Here is the weather for today."
+    },
+    {
+      "speaker": "kate",
+      "text": "It is cold and windy in the morning."
+    },
+    {
+      "speaker": "kate",
+      "text": "In the afternoon, it is sunny and warm."
+    },
+    {
+      "speaker": "kate",
+      "text": "It is not rainy today, so you don't need an umbrella."
+    },
+    {
+      "speaker": "kate",
+      "text": "Take your sunglasses!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the weather like in the morning?",
+      "options": [
+        "hot and sunny",
+        "cold and windy",
+        "rainy",
+        "snowy"
+      ],
+      "answer": 1,
+      "feedback": "Sabah soğuk ve rüzgârlı (cold and windy). Güneşli ve sıcak olan öğleden sonra.",
+      "evidence": "It is cold and windy in the morning."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the weather like in the afternoon?",
+      "options": [
+        "cold",
+        "rainy",
+        "sunny and warm",
+        "windy"
+      ],
+      "answer": 2,
+      "feedback": "Öğleden sonra (in the afternoon) güneşli ve ılık.",
+      "evidence": "In the afternoon, it is sunny and warm."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Kate tell you to take?",
+      "options": [
+        "an umbrella",
+        "a coat",
+        "a hat",
+        "your sunglasses"
+      ],
+      "answer": 3,
+      "feedback": "Bugün yağmur yok, şemsiyeye gerek yok (don't need an umbrella). Güneş gözlüğünü al diyor.",
+      "evidence": "Take your sunglasses!"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "a2-kolay-01",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My last holiday",
+  "topic": "Tatil (geçmiş zaman)",
+  "instructions": "Emma geçen yazki tatilini anlatıyor. Uzun bir metin; geçmiş zamandaki fiillere ve yerlere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "emma": {
+      "name": "Emma",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "emma",
+      "text": "Last summer, I went to Greece with my family."
+    },
+    {
+      "speaker": "emma",
+      "text": "We flew from London to Athens. The flight took about four hours."
+    },
+    {
+      "speaker": "emma",
+      "text": "We stayed in Athens for three days and visited the old city."
+    },
+    {
+      "speaker": "emma",
+      "text": "It was very hot, so we drank a lot of water and wore hats."
+    },
+    {
+      "speaker": "emma",
+      "text": "Then we took a boat to a small island called Naxos."
+    },
+    {
+      "speaker": "emma",
+      "text": "Our hotel there was next to the beach."
+    },
+    {
+      "speaker": "emma",
+      "text": "Every morning, I swam in the sea before breakfast."
+    },
+    {
+      "speaker": "emma",
+      "text": "My brother learned to sail, but I was too scared to try."
+    },
+    {
+      "speaker": "emma",
+      "text": "The food was delicious. My favourite was the Greek salad with fresh cheese."
+    },
+    {
+      "speaker": "emma",
+      "text": "On the last day, I bought some postcards and a blue bag for my best friend."
+    },
+    {
+      "speaker": "emma",
+      "text": "It was the best holiday of my life."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How did Emma's family travel to Athens?",
+      "options": [
+        "by boat",
+        "by plane",
+        "by train",
+        "by car"
+      ],
+      "answer": 1,
+      "feedback": "\"We flew\" uçakla gittik demek (fly → flew). Tekne Naxos adasına gitmek için.",
+      "evidence": "We flew from London to Athens."
+    },
+    {
+      "id": "q2",
+      "prompt": "What did Emma do every morning on Naxos?",
+      "options": [
+        "She went sailing.",
+        "She swam in the sea.",
+        "She visited the old city.",
+        "She bought postcards."
+      ],
+      "answer": 1,
+      "feedback": "Her sabah kahvaltıdan önce denizde yüzdü (swam). Yelkeni kardeşi öğrendi.",
+      "evidence": "Every morning, I swam in the sea before breakfast."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did Emma buy for her best friend?",
+      "options": [
+        "a postcard",
+        "a hat",
+        "a blue bag",
+        "some cheese"
+      ],
+      "answer": 2,
+      "feedback": "Kartpostalları kendisi için aldı; en iyi arkadaşına mavi bir çanta (a blue bag) aldı.",
+      "evidence": "a blue bag for my best friend."
+    }
+  ]
+}

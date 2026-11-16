@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-29",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Shopping with Mum",
+  "topic": "Alışveriş",
+  "instructions": "Lea annesiyle alışverişe gidiyor. Ne aldıklarına ve ne almadıklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "lea": {
+      "name": "Lea",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lea",
+      "text": "Today I am at the supermarket with my mum."
+    },
+    {
+      "speaker": "lea",
+      "text": "We need milk, bread, eggs and some fruit."
+    },
+    {
+      "speaker": "lea",
+      "text": "Mum buys bananas and oranges."
+    },
+    {
+      "speaker": "lea",
+      "text": "I want some chocolate, but Mum says no."
+    },
+    {
+      "speaker": "lea",
+      "text": "Then we go to the clothes shop. Mum buys me new shoes for school."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where are Lea and her mum first?",
+      "options": [
+        "at the clothes shop",
+        "at the supermarket",
+        "at the market",
+        "at home"
+      ],
+      "answer": 1,
+      "feedback": "Önce süpermarketteler.",
+      "evidence": "Today I am at the supermarket with my mum."
+    },
+    {
+      "id": "q2",
+      "prompt": "What fruit does Mum buy?",
+      "options": [
+        "bananas and oranges",
+        "apples and bananas",
+        "oranges and apples",
+        "grapes"
+      ],
+      "answer": 0,
+      "feedback": "Annesi muz ve portakal alıyor.",
+      "evidence": "Mum buys bananas and oranges."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Lea get at the clothes shop?",
+      "options": [
+        "a new dress",
+        "a new jacket",
+        "new shoes",
+        "nothing"
+      ],
+      "answer": 2,
+      "feedback": "Annesi okul için yeni ayakkabı alıyor. Çikolata isteği reddedildi.",
+      "evidence": "Mum buys me new shoes for school."
+    }
+  ]
+}

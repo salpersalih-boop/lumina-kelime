@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-07",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "My grandfather's life",
+  "topic": "Hayat hikâyesi (geçmiş zaman)",
+  "instructions": "Elif dedesinin hayatını anlatıyor. Uzun bir metin; yılları, yaşları ve olayların sırasını takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "elif": {
+      "name": "Elif",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "elif",
+      "text": "My grandfather, Hasan, was born in a small village in nineteen forty-eight."
+    },
+    {
+      "speaker": "elif",
+      "text": "His family were farmers, and he had four brothers and two sisters."
+    },
+    {
+      "speaker": "elif",
+      "text": "When he was fourteen, he left school and started working on the farm."
+    },
+    {
+      "speaker": "elif",
+      "text": "At twenty, he moved to Izmir and found a job in a factory."
+    },
+    {
+      "speaker": "elif",
+      "text": "He met my grandmother there. She worked in the factory office."
+    },
+    {
+      "speaker": "elif",
+      "text": "They got married in nineteen seventy-two and had three children. My mother is the youngest."
+    },
+    {
+      "speaker": "elif",
+      "text": "Later, my grandfather opened a small shoe shop. He worked there for thirty years."
+    },
+    {
+      "speaker": "elif",
+      "text": "He never went to university, but he loved reading. He read a newspaper every morning."
+    },
+    {
+      "speaker": "elif",
+      "text": "Now he is retired. He lives with my grandmother in a house with a big garden."
+    },
+    {
+      "speaker": "elif",
+      "text": "He grows tomatoes and peppers, and he still walks five kilometres every day."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When was Elif's grandfather born?",
+      "options": [
+        "in nineteen fifty-eight",
+        "in nineteen seventy-two",
+        "in nineteen forty",
+        "in nineteen forty-eight"
+      ],
+      "answer": 3,
+      "feedback": "Dedesi 1948'de (nineteen forty-eight) doğdu. 1972 evlendikleri yıl.",
+      "evidence": "was born in a small village in nineteen forty-eight."
+    },
+    {
+      "id": "q2",
+      "prompt": "How old was he when he moved to Izmir?",
+      "options": [
+        "fourteen",
+        "twenty",
+        "eighteen",
+        "thirty"
+      ],
+      "answer": 1,
+      "feedback": "Yirmi yaşında (At twenty) İzmir'e taşındı. On dört okulu bıraktığı yaş.",
+      "evidence": "At twenty, he moved to Izmir"
+    },
+    {
+      "id": "q3",
+      "prompt": "Where did he meet Elif's grandmother?",
+      "options": [
+        "in the village",
+        "at university",
+        "at the factory",
+        "in his shoe shop"
+      ],
+      "answer": 2,
+      "feedback": "Fabrikada tanıştılar; büyükannesi fabrikanın ofisinde çalışıyordu.",
+      "evidence": "He met my grandmother there."
+    },
+    {
+      "id": "q4",
+      "prompt": "How long did he work in the shoe shop?",
+      "options": [
+        "thirty years",
+        "thirteen years",
+        "twenty years",
+        "three years"
+      ],
+      "answer": 0,
+      "feedback": "Ayakkabı dükkânında otuz yıl (thirty years) çalıştı.",
+      "evidence": "He worked there for thirty years."
+    },
+    {
+      "id": "q5",
+      "prompt": "What does he do every day now?",
+      "options": [
+        "He reads books at the library.",
+        "He works in his shop.",
+        "He goes to the factory.",
+        "He walks five kilometres."
+      ],
+      "answer": 3,
+      "feedback": "Hâlâ her gün beş kilometre yürüyor.",
+      "evidence": "he still walks five kilometres every day."
+    }
+  ]
+}

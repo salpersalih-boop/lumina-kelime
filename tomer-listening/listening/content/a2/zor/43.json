@@ -1,0 +1,125 @@
+{
+  "id": "a2-zor-43",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A year in Spain",
+  "topic": "Değişim öğrencisi deneyimi",
+  "instructions": "Zeynep İspanya'daki öğrenci değişim yılını anlatıyor. Uzun bir metin; ilk zorlukları, değişenleri ve planlarını ayırt et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "zeynep": {
+      "name": "Zeynep",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "zeynep",
+      "text": "Two years ago, I spent a year studying in Valencia as an exchange student."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "Before I went, I only knew a few words of Spanish, like hello and thank you."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "The first month was really hard. I didn't understand my lessons, and I felt homesick."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "I lived with a Spanish family. They didn't speak any English, so I had to speak Spanish all the time."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "After about three months, everything got easier. I could understand most of my lessons and make jokes with my friends."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "The thing I found strangest was the time people ate. Dinner was at ten at night!"
+    },
+    {
+      "speaker": "zeynep",
+      "text": "I travelled a lot too. My favourite trip was to Granada, in the south."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "Now I'm back home, but I still speak to my Spanish family every month."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "Next year, I want to do a master's degree in Madrid."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where did Zeynep study?",
+      "options": [
+        "in Madrid",
+        "in Valencia",
+        "in Granada",
+        "in Barcelona"
+      ],
+      "answer": 1,
+      "feedback": "Valencia'da okudu. Granada en sevdiği gezi, Madrid gelecek planı.",
+      "evidence": "I spent a year studying in Valencia"
+    },
+    {
+      "id": "q2",
+      "prompt": "How much Spanish did she know before she went?",
+      "options": [
+        "a lot",
+        "nothing at all",
+        "only a few words",
+        "she was fluent"
+      ],
+      "answer": 2,
+      "feedback": "Sadece birkaç kelime biliyordu.",
+      "evidence": "I only knew a few words of Spanish"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why did she have to speak Spanish all the time?",
+      "options": [
+        "Her family didn't speak English.",
+        "Her teachers asked her to.",
+        "She wanted to.",
+        "Her friends were Spanish."
+      ],
+      "answer": 0,
+      "feedback": "Kaldığı aile hiç İngilizce bilmiyordu.",
+      "evidence": "They didn't speak any English"
+    },
+    {
+      "id": "q4",
+      "prompt": "What did she find strangest?",
+      "options": [
+        "the weather",
+        "the lessons",
+        "the food",
+        "the time people ate dinner"
+      ],
+      "answer": 3,
+      "feedback": "En garip bulduğu şey akşam yemeğinin gece onda yenmesi.",
+      "evidence": "The thing I found strangest was the time people ate."
+    },
+    {
+      "id": "q5",
+      "prompt": "How often does she speak to her Spanish family now?",
+      "options": [
+        "every week",
+        "every month",
+        "every day",
+        "never"
+      ],
+      "answer": 1,
+      "feedback": "Hâlâ her ay İspanyol ailesiyle konuşuyor.",
+      "evidence": "I still speak to my Spanish family every month."
+    }
+  ]
+}

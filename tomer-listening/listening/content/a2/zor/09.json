@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-09",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Cooking class",
+  "topic": "Yemek tarifi ve talimatlar",
+  "instructions": "Bir aşçı kurs sırasında omlet tarifi veriyor. Uzun bir metin; miktarlara ve sıraya dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "chef": {
+      "name": "Chef",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "chef",
+      "text": "Good evening, everyone. Tonight we're going to make a Spanish omelette. It's easy and cheap."
+    },
+    {
+      "speaker": "chef",
+      "text": "For four people, you need six eggs, three potatoes, one onion and some olive oil."
+    },
+    {
+      "speaker": "chef",
+      "text": "First, cut the potatoes into small, thin pieces. Then cut the onion."
+    },
+    {
+      "speaker": "chef",
+      "text": "Put some oil in a pan and cook the potatoes and the onion slowly for about twenty minutes."
+    },
+    {
+      "speaker": "chef",
+      "text": "Don't cook them too fast, or they will burn."
+    },
+    {
+      "speaker": "chef",
+      "text": "While the potatoes are cooking, break the eggs into a bowl. Add a little salt and mix them."
+    },
+    {
+      "speaker": "chef",
+      "text": "When the potatoes are soft, put them in the bowl with the eggs."
+    },
+    {
+      "speaker": "chef",
+      "text": "Then put everything back in the pan and cook it for five minutes."
+    },
+    {
+      "speaker": "chef",
+      "text": "Now the difficult part. Turn the omelette over with a big plate and cook the other side for three more minutes."
+    },
+    {
+      "speaker": "chef",
+      "text": "You can eat it hot or cold. In Spain, people often take it to the beach for lunch."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many eggs do you need?",
+      "options": [
+        "four",
+        "three",
+        "six",
+        "five"
+      ],
+      "answer": 2,
+      "feedback": "Dört kişilik için altı (six) yumurta. Dört kişi sayısı, üç patates sayısı.",
+      "evidence": "you need six eggs, three potatoes, one onion"
+    },
+    {
+      "id": "q2",
+      "prompt": "How long do you cook the potatoes and onion?",
+      "options": [
+        "about twenty minutes",
+        "about five minutes",
+        "about three minutes",
+        "about two minutes"
+      ],
+      "answer": 0,
+      "feedback": "Patates ve soğanı yaklaşık yirmi dakika yavaşça pişir.",
+      "evidence": "cook the potatoes and the onion slowly for about twenty minutes."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why shouldn't you cook the potatoes too fast?",
+      "options": [
+        "They will be hard.",
+        "They will burn.",
+        "The oil is expensive.",
+        "The eggs will break."
+      ],
+      "answer": 1,
+      "feedback": "Çok hızlı pişirirsen yanarlar (burn).",
+      "evidence": "or they will burn."
+    },
+    {
+      "id": "q4",
+      "prompt": "What do you do while the potatoes are cooking?",
+      "options": [
+        "cut the onion",
+        "turn the omelette",
+        "wash the pan",
+        "mix the eggs with salt"
+      ],
+      "answer": 3,
+      "feedback": "Patatesler pişerken yumurtaları kâseye kır, tuz ekle ve karıştır.",
+      "evidence": "While the potatoes are cooking, break the eggs into a bowl."
+    },
+    {
+      "id": "q5",
+      "prompt": "What does the chef say is the difficult part?",
+      "options": [
+        "cutting the potatoes",
+        "breaking the eggs",
+        "turning the omelette over",
+        "cooking slowly"
+      ],
+      "answer": 2,
+      "feedback": "Zor kısım omleti büyük bir tabakla ters çevirmek.",
+      "evidence": "Turn the omelette over with a big plate"
+    }
+  ]
+}

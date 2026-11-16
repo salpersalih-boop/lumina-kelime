@@ -1,0 +1,91 @@
+{
+  "id": "a2-kolay-03",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My working day",
+  "topic": "Günlük rutin",
+  "instructions": "Hemşire David bir iş gününü anlatıyor. Saatlere ve sıklık bildiren kelimelere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "david": {
+      "name": "David",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "david",
+      "text": "I'm David, and I'm a nurse in a big hospital."
+    },
+    {
+      "speaker": "david",
+      "text": "I usually get up at half past five, because my work starts at seven."
+    },
+    {
+      "speaker": "david",
+      "text": "I never have a big breakfast. I just drink a cup of coffee."
+    },
+    {
+      "speaker": "david",
+      "text": "I go to work by bike. It takes twenty minutes."
+    },
+    {
+      "speaker": "david",
+      "text": "My job is hard, but I love helping people."
+    },
+    {
+      "speaker": "david",
+      "text": "I finish work at three and I often go to the gym after that."
+    },
+    {
+      "speaker": "david",
+      "text": "In the evening, I cook dinner and watch TV. I go to bed early, at ten."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time does David's work start?",
+      "options": [
+        "at half past five",
+        "at seven",
+        "at three",
+        "at ten"
+      ],
+      "answer": 1,
+      "feedback": "İşi yedide (at seven) başlıyor. Beş buçuk kalkış saati.",
+      "evidence": "my work starts at seven."
+    },
+    {
+      "id": "q2",
+      "prompt": "How does David go to work?",
+      "options": [
+        "by car",
+        "by bus",
+        "on foot",
+        "by bike"
+      ],
+      "answer": 3,
+      "feedback": "İşe bisikletle (by bike) gidiyor; yirmi dakika sürüyor.",
+      "evidence": "I go to work by bike."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does David often do after work?",
+      "options": [
+        "He goes to the gym.",
+        "He sleeps.",
+        "He meets friends.",
+        "He goes shopping."
+      ],
+      "answer": 0,
+      "feedback": "İşten sonra sık sık (often) spor salonuna gidiyor.",
+      "evidence": "I often go to the gym after that."
+    }
+  ]
+}

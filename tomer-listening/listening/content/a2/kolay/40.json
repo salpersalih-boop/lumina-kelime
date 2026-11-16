@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-40",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A day at the zoo",
+  "topic": "Gezi (geçmiş zaman)",
+  "instructions": "Mia ailesiyle hayvanat bahçesi gezisini anlatıyor. Hayvanlara ve olaylara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mia": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mia",
+      "text": "Last Sunday, I took my children to the zoo."
+    },
+    {
+      "speaker": "mia",
+      "text": "My son wanted to see the lions, but they were sleeping all day."
+    },
+    {
+      "speaker": "mia",
+      "text": "My daughter loved the penguins. We watched them eat fish."
+    },
+    {
+      "speaker": "mia",
+      "text": "We had a picnic near the giraffes, but a bird stole one of our sandwiches!"
+    },
+    {
+      "speaker": "mia",
+      "text": "The children were very tired, and they both fell asleep in the car."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What were the lions doing?",
+      "options": [
+        "eating",
+        "sleeping",
+        "playing",
+        "running"
+      ],
+      "answer": 1,
+      "feedback": "Aslanlar bütün gün uyuyordu.",
+      "evidence": "they were sleeping all day."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which animals did her daughter love?",
+      "options": [
+        "the lions",
+        "the giraffes",
+        "the monkeys",
+        "the penguins"
+      ],
+      "answer": 3,
+      "feedback": "Kızı penguenlere bayıldı.",
+      "evidence": "My daughter loved the penguins."
+    },
+    {
+      "id": "q3",
+      "prompt": "What happened at the picnic?",
+      "options": [
+        "It started to rain.",
+        "A bird stole a sandwich.",
+        "They lost their bag.",
+        "A giraffe ate their food."
+      ],
+      "answer": 1,
+      "feedback": "Bir kuş sandviçlerinden birini çaldı.",
+      "evidence": "a bird stole one of our sandwiches!"
+    }
+  ]
+}

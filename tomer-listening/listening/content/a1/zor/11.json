@@ -1,0 +1,137 @@
+{
+  "id": "a1-zor-11",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "The shopping list",
+  "topic": "Alışveriş ve miktarlar",
+  "instructions": "Anna ve Tim markette telefonla konuşuyor. Alınacak ve alınmayacak şeyleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "anna": {
+      "name": "Anna",
+      "voice": "female"
+    },
+    "tim": {
+      "name": "Tim",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tim",
+      "text": "Hi Anna, I'm at the supermarket. What do we need?"
+    },
+    {
+      "speaker": "anna",
+      "text": "We need milk, eggs and bread."
+    },
+    {
+      "speaker": "tim",
+      "text": "How many eggs?"
+    },
+    {
+      "speaker": "anna",
+      "text": "Twelve. No, six is fine. We don't eat a lot of eggs."
+    },
+    {
+      "speaker": "tim",
+      "text": "OK. Do we need cheese?"
+    },
+    {
+      "speaker": "anna",
+      "text": "No, we have cheese. But we don't have any butter."
+    },
+    {
+      "speaker": "tim",
+      "text": "Butter. And coffee?"
+    },
+    {
+      "speaker": "anna",
+      "text": "Yes, please, but not the expensive one. The small one is OK."
+    },
+    {
+      "speaker": "tim",
+      "text": "There isn't any brown bread. Is white bread OK?"
+    },
+    {
+      "speaker": "anna",
+      "text": "Yes, white is fine. Oh, and buy some flowers for my mum. It's her birthday tomorrow."
+    },
+    {
+      "speaker": "tim",
+      "text": "Good idea. See you soon!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many eggs does Tim buy?",
+      "options": [
+        "twelve",
+        "two",
+        "six",
+        "ten"
+      ],
+      "answer": 2,
+      "feedback": "Anna önce on iki der, sonra altı (six is fine) yeterli der.",
+      "evidence": "No, six is fine."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why doesn't Tim buy cheese?",
+      "options": [
+        "It's expensive.",
+        "They have cheese at home.",
+        "Anna doesn't like it.",
+        "There isn't any in the shop."
+      ],
+      "answer": 1,
+      "feedback": "Evde peynir var (we have cheese).",
+      "evidence": "No, we have cheese."
+    },
+    {
+      "id": "q3",
+      "prompt": "What kind of coffee does Anna want?",
+      "options": [
+        "the expensive one",
+        "the big one",
+        "the small one",
+        "no coffee"
+      ],
+      "answer": 2,
+      "feedback": "Pahalı olanı değil, küçük olanı (The small one) istiyor.",
+      "evidence": "The small one is OK."
+    },
+    {
+      "id": "q4",
+      "prompt": "What bread does Tim buy?",
+      "options": [
+        "white bread",
+        "brown bread",
+        "no bread",
+        "brown and white bread"
+      ],
+      "answer": 0,
+      "feedback": "Kepekli (brown) ekmek yok; beyaz ekmek (white bread) alıyor.",
+      "evidence": "Yes, white is fine."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why does Tim buy flowers?",
+      "options": [
+        "It's Anna's birthday.",
+        "It's their anniversary.",
+        "Tim's mum is ill.",
+        "It's Anna's mum's birthday tomorrow."
+      ],
+      "answer": 3,
+      "feedback": "Çiçekler Anna'nın annesi için; yarın onun doğum günü.",
+      "evidence": "It's her birthday tomorrow."
+    }
+  ]
+}

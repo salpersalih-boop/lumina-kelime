@@ -1,0 +1,117 @@
+{
+  "id": "a1-zor-06",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "The new gym",
+  "topic": "Duyuru: spor salonu",
+  "instructions": "Yeni açılan bir spor salonunun duyurusu. Günleri, saatleri ve fiyatları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Announcer",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Welcome to Body Plus, the new gym on King Street!"
+    },
+    {
+      "speaker": "voice",
+      "text": "We are open from six in the morning to ten at night, Monday to Friday."
+    },
+    {
+      "speaker": "voice",
+      "text": "At the weekend, we open at eight and close at six."
+    },
+    {
+      "speaker": "voice",
+      "text": "There is a swimming pool, but it is closed on Mondays."
+    },
+    {
+      "speaker": "voice",
+      "text": "Yoga classes are on Tuesday and Thursday evenings at seven."
+    },
+    {
+      "speaker": "voice",
+      "text": "A month at the gym is thirty pounds. For students, it is only twenty."
+    },
+    {
+      "speaker": "voice",
+      "text": "This week, the first visit is free. Come and see us!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time does the gym close on weekdays?",
+      "options": [
+        "at six",
+        "at eight",
+        "at ten",
+        "at seven"
+      ],
+      "answer": 2,
+      "feedback": "Hafta içi akşam onda (ten at night) kapanıyor. Altı, hafta içi açılış ve hafta sonu kapanış saati.",
+      "evidence": "from six in the morning to ten at night, Monday to Friday."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does the gym open at the weekend?",
+      "options": [
+        "at eight",
+        "at six",
+        "at seven",
+        "at ten"
+      ],
+      "answer": 0,
+      "feedback": "Hafta sonu sekizde (at eight) açılıyor, altıda kapanıyor.",
+      "evidence": "At the weekend, we open at eight and close at six."
+    },
+    {
+      "id": "q3",
+      "prompt": "When is the swimming pool closed?",
+      "options": [
+        "on Sundays",
+        "on Tuesdays",
+        "at the weekend",
+        "on Mondays"
+      ],
+      "answer": 3,
+      "feedback": "Havuz pazartesi günleri (on Mondays) kapalı.",
+      "evidence": "it is closed on Mondays."
+    },
+    {
+      "id": "q4",
+      "prompt": "When are the yoga classes?",
+      "options": [
+        "Monday and Wednesday mornings",
+        "Tuesday and Thursday evenings",
+        "every evening at seven",
+        "Saturday mornings"
+      ],
+      "answer": 1,
+      "feedback": "Yoga salı ve perşembe akşamları (Tuesday and Thursday evenings) saat yedide.",
+      "evidence": "Yoga classes are on Tuesday and Thursday evenings at seven."
+    },
+    {
+      "id": "q5",
+      "prompt": "How much does a student pay for a month?",
+      "options": [
+        "thirty pounds",
+        "nothing",
+        "twenty pounds",
+        "thirteen pounds"
+      ],
+      "answer": 2,
+      "feedback": "Öğrenciler ayda yirmi pound (only twenty) ödüyor. Otuz normal fiyat; ücretsiz olan yalnızca ilk ziyaret.",
+      "evidence": "For students, it is only twenty."
+    }
+  ]
+}

@@ -1,141 +1,242 @@
-import { SUBLEVELS, SUBLEVEL_IDS, DEFAULT_SELECTION } from './config.js';
-import { createStore } from './core/store.js';
+import { SUBLEVELS, SUBLEVEL_IDS } from './config.js';
 import { loadProgress, saveResult } from './core/progress.js';
+import { setIdOf, wordCount, lengthClassOf, nextSet } from './core/sets.js';
+import { estimateSeconds, formatTime } from './core/timing.js';
+import { parseRoute, hashOf } from './core/route.js';
 import { ContentRepository } from './services/contentRepository.js';
-import { mountLevelNav } from './ui/levelNav.js';
-import { mountLesson, renderEmpty } from './ui/lessonView.js';
-import { $, esc } from './ui/dom.js';
+import { renderLevels } from './ui/screens/levelsScreen.js';
+import { renderSublevels } from './ui/screens/sublevelsScreen.js';
+import { renderSets } from './ui/screens/setsScreen.js';
+import { renderLesson } from './ui/screens/lessonScreen.js';
+import { emptyState } from './ui/screens/parts.js';
+import { $, esc, listen, ICONS } from './ui/dom.js';
 
 /**
- * Uygulama girişi: durum, yönlendirme (#a1-orta) ve bileşenlerin bağlanması.
+ * Uygulama girişi: adres (#/a1/kolay/3) → ekran.
+ * Ekranlar saf görünümdür; veriyi burada hazırlayıp onlara verir, sonuçları
+ * (ilerleme, hız tercihi, süzgeç) burada tutarız.
  */
 const repo = new ContentRepository();
-const store = createStore({
+const app = $('#app');
+const crumbs = $('#crumbs');
+
+const state = {
   levels: [],
-  selection: { ...DEFAULT_SELECTION },
   progress: loadProgress(),
-  rate: null,          // kullanıcı hız seçtiyse oturum boyunca korunur
+  rate: null,                 // kullanıcı hız seçtiyse oturum boyunca korunur
+  filters: {},                // "A1/kolay" → 'all' | 'kisa' | 'orta' | 'uzun'
+};
+
+let screen = null;
+let token = 0;
+let firstRender = true;
+
+const sublevelOf = id => SUBLEVELS.find(s => s.id === id);
+const levelOf = id => state.levels.find(l => l.id === id);
+const countOf = (level, sub) => levelOf(level)?.sets[sub]?.length ?? 0;
+const doneIn = (level, sub) =>
+  Array.from({ length: countOf(level, sub) }, (_, i) => setIdOf(level, sub, i + 1)).filter(id => state.progress[id]).length;
+const bestOf = (level, sub, n) => state.progress[setIdOf(level, sub, n)]?.best ?? null;
+
+/** Bir setin liste ve başlıkta gösterilen özeti. */
+function describe(set, n) {
+  const words = wordCount(set.script);
+  const chars = set.script.reduce((sum, l) => sum + l.text.length, 0);
+  return {
+    n,
+    title: set.title,
+    topic: set.topic,
+    words,
+    length: lengthClassOf(words),
+    seconds: `~${formatTime(estimateSeconds(chars, set.audio.rate ?? 1))}`,
+    kind: Object.keys(set.speakers).length > 1 ? 'Diyalog' : 'Monolog',
+    questions: set.questions.length,
+    maxPlays: set.audio.maxPlays ?? null,
+  };
+}
+
+// ── üst çubuk: yol ve tema ───────────────────────────────────
+function drawCrumbs(route) {
+  const parts = [{ label: 'Dinleme', href: hashOf({ name: 'levels' }) }];
+  if (route.level) parts.push({ label: route.level, href: hashOf({ name: 'sublevels', level: route.level }) });
+  if (route.sub) parts.push({ label: sublevelOf(route.sub).label, href: hashOf({ name: 'sets', level: route.level, sub: route.sub }) });
+  if (route.n) parts.push({ label: `Metin ${route.n}` });
+  const last = parts.length - 1;
+  crumbs.innerHTML = parts.map((p, i) => i === last
+    ? `<span aria-current="page">${esc(p.label)}</span>`
+    : `<a href="${p.href}">${esc(p.label)}</a><i aria-hidden="true">›</i>`).join('');
+}
+
+const THEME_KEY = 'listening.theme';
+const themeBtn = $('#themeToggle');
+function applyTheme(theme) {
+  document.body.classList.toggle('light-theme', theme === 'light');
+  themeBtn.innerHTML = theme === 'light' ? ICONS.moon : ICONS.sun;
+  themeBtn.setAttribute('aria-label', theme === 'light' ? 'Koyu temaya geç' : 'Açık temaya geç');
+}
+let theme = 'dark';
+try { theme = localStorage.getItem(THEME_KEY) === 'light' ? 'light' : 'dark'; } catch { /* gizli mod */ }
+applyTheme(theme);
+listen(themeBtn, 'click', () => {
+  theme = theme === 'light' ? 'dark' : 'light';
+  applyTheme(theme);
+  try { localStorage.setItem(THEME_KEY, theme); } catch { /* gizli mod */ }
 });
 
-const navRoot = $('#levelNav');
-const lessonRoot = $('#lesson');
-let lesson = null;
-let loadToken = 0;
-
-const setIdOf = (level, sub) => `${level.toLowerCase()}-${sub}`;
-const sublevelOf = id => SUBLEVELS.find(s => s.id === id);
-
-// ── yönlendirme ─────────────────────────────────────────────
-function parseHash() {
-  const m = /^#([a-c][12])-(kolay|orta|zor)$/i.exec(location.hash);
-  return m ? { level: m[1].toUpperCase(), sub: m[2].toLowerCase() } : null;
-}
-
-function select(selection) {
-  const hash = `#${setIdOf(selection.level, selection.sub)}`;
-  if (location.hash !== hash) history.replaceState(null, '', hash);
-  store.set({ selection });
-}
-
-/** Sıradaki alt seviye: Kolay → Orta → Zor → bir üst seviyenin Kolay'ı. */
-function nextOf({ level, sub }) {
-  const { levels } = store.get();
-  const si = SUBLEVEL_IDS.indexOf(sub);
-  if (si < SUBLEVEL_IDS.length - 1) return { level, sub: SUBLEVEL_IDS[si + 1] };
-  const li = levels.findIndex(l => l.id === level);
-  return levels[li + 1] ? { level: levels[li + 1].id, sub: SUBLEVEL_IDS[0] } : null;
-}
-
-function labelOf({ level, sub }) {
-  return `${level} · ${sublevelOf(sub).label}`;
-}
-
-// ── görünüm ─────────────────────────────────────────────────
-const nav = mountLevelNav(navRoot, { onSelect: select });
-
-function renderNav() {
-  const { levels, selection, progress } = store.get();
-  nav.render({ levels, sublevels: SUBLEVELS, selection, progress, setIdOf });
-}
-
-async function renderLesson() {
-  const token = ++loadToken;
-  const { levels, selection, rate } = store.get();
-  const level = levels.find(l => l.id === selection.level);
-  const sublevel = sublevelOf(selection.sub);
-
-  lesson?.destroy();
-  lesson = null;
-  lessonRoot.innerHTML = '<p class="loading">Yükleniyor…</p>';
+// ── ekranlar ────────────────────────────────────────────────
+async function show(route) {
+  const my = ++token;
+  screen?.destroy();
+  screen = null;
+  drawCrumbs(route);
+  app.innerHTML = '<div class="ls-loading" aria-busy="true"><span class="ls-spinner"></span></div>';
 
   try {
-    const set = await repo.getSet(selection.level, selection.sub);
-    if (token !== loadToken) return;
-
-    if (!set) {
-      const first = levels.flatMap(l => SUBLEVEL_IDS.filter(s => l.sets?.[s]).map(s => ({ level: l.id, sub: s })))[0];
-      renderEmpty(lessonRoot, {
-        level, sublevel,
-        firstAvailable: first && { label: `${labelOf(first)} ile başla` },
-        onGo: () => select(first),
-      });
-      document.title = `${selection.level} ${sublevel.label} · Dinleme`;
-      return;
+    const instance = await build(route, () => my !== token);
+    if (my !== token) return instance?.destroy();
+    screen = instance;
+    if (!firstRender) {
+      window.scrollTo({ top: 0 });
+      app.querySelector('h1')?.focus({ preventScroll: true });
     }
-
-    const next = nextOf(selection);
-    const instance = await mountLesson(lessonRoot, {
-      set,
-      level,
-      sublevel,
-      rate,
-      resolve: path => repo.resolve(path),
-      next: next && { label: labelOf(next) },
-      onNext: () => { select(next); window.scrollTo({ top: 0 }); },
-      onResult: result => store.set({ progress: saveResult(set.id, result) }),
-      onRateChange: r => store.set({ rate: r }),
-    });
-    if (token !== loadToken) return instance.destroy();
-    lesson = instance;
-    document.title = `${set.title} · ${selection.level} ${sublevel.label} · Dinleme`;
+    firstRender = false;
   } catch (err) {
-    if (token !== loadToken) return;
+    if (my !== token) return;
     console.error(err);
-    lessonRoot.innerHTML = `
-      <section class="empty is-error" role="alert">
-        <h2>İçerik yüklenemedi</h2>
-        <pre>${esc(err.message)}</pre>
-        <button type="button" class="btn btn-primary" data-retry>Tekrar dene</button>
-      </section>`;
-    lessonRoot.querySelector('[data-retry]').addEventListener('click', renderLesson);
+    app.innerHTML = `
+      <div class="ls-screen">
+        <section class="ls-empty" role="alert">
+          <h2>İçerik yüklenemedi</h2>
+          <p>Sayfayı bir web sunucusu üzerinden açtığından emin ol (README › Çalıştırma).</p>
+          <pre>${esc(err.message)}</pre>
+          <button type="button" class="ls-btn ls-btn-primary" data-retry>Tekrar dene</button>
+        </section>
+      </div>`;
+    app.querySelector('[data-retry]').addEventListener('click', () => show(route));
   }
 }
 
-store.subscribe((state, prev) => {
-  renderNav();
-  const changed = state.selection.level !== prev.selection.level || state.selection.sub !== prev.selection.sub;
-  if (changed || state.levels !== prev.levels) renderLesson();
-});
+/** Adrese göre ekranı kurar. Geçersiz adresleri en yakın geçerli ekrana yönlendirir. */
+async function build(route, stale) {
+  const level = route.level && levelOf(route.level);
+  if (route.name !== 'levels' && !level) return redirect({ name: 'levels' });
 
-window.addEventListener('hashchange', () => {
-  const sel = parseHash();
-  if (sel) store.set({ selection: sel });
-});
+  if (route.name === 'levels') {
+    const levels = state.levels.map(l => {
+      const total = SUBLEVEL_IDS.reduce((s, sub) => s + countOf(l.id, sub), 0);
+      const done = SUBLEVEL_IDS.reduce((s, sub) => s + doneIn(l.id, sub), 0);
+      return { id: l.id, name: l.name, total, done };
+    });
+    const bests = Object.values(state.progress).map(p => p.best);
+    const stats = {
+      total: levels.reduce((s, l) => s + l.total, 0),
+      done: levels.reduce((s, l) => s + l.done, 0),
+      average: bests.length ? Math.round(bests.reduce((a, b) => a + b, 0) / bests.length) : null,
+    };
+    document.title = 'Dinleme ve Anlama';
+    return renderLevels(app, { levels, stats });
+  }
+
+  if (route.name === 'sublevels') {
+    const all = await Promise.all(SUBLEVEL_IDS.map(sub => repo.listSets(level.id, sub)));
+    if (stale()) return null;
+    const subs = SUBLEVELS.map((s, i) => {
+      const items = all[i].map((set, j) => describe(set, j + 1));
+      const qs = [...new Set(items.map(it => it.questions))];
+      const kinds = new Set(items.map(it => it.kind));
+      const plays = items.find(it => it.maxPlays)?.maxPlays;
+      return {
+        ...s,
+        total: items.length,
+        done: doneIn(level.id, s.id),
+        questions: qs.length === 1 ? qs[0] : `${Math.min(...qs)}–${Math.max(...qs)}`,
+        details: items.length ? [
+          kinds.size > 1 ? 'Monolog + diyalog' : [...kinds][0],
+          ...(plays ? [`${plays} dinleme hakkı`] : []),
+        ] : [],
+      };
+    });
+    document.title = `${level.id} · Dinleme`;
+    return renderSublevels(app, { level, subs });
+  }
+
+  const sublevel = sublevelOf(route.sub);
+  const count = countOf(level.id, sublevel.id);
+
+  if (route.name === 'sets') {
+    if (!count) {
+      app.innerHTML = `<div class="ls-screen">${emptyState({
+        title: `${level.id} ${sublevel.label} için henüz metin yok`,
+        text: 'İçerik hazırlanıyor. Şimdilik başka bir zorluk seçebilirsin.',
+        action: { label: `${level.id} zorluklarına dön`, href: hashOf({ name: 'sublevels', level: level.id }) },
+      })}</div>`;
+      return { destroy() {} };
+    }
+    const sets = await repo.listSets(level.id, sublevel.id);
+    if (stale()) return null;
+    const key = `${level.id}/${sublevel.id}`;
+    document.title = `${level.id} ${sublevel.label} · Dinleme`;
+    return renderSets(app, {
+      level, sublevel,
+      items: sets.map((set, i) => ({ ...describe(set, i + 1), best: bestOf(level.id, sublevel.id, i + 1) })),
+      filter: state.filters[key] ?? 'all',
+      onFilter: f => { state.filters[key] = f; },
+    });
+  }
+
+  // ders
+  if (!count) return redirect({ name: 'sets', level: level.id, sub: sublevel.id });
+  if (route.n > count) return redirect({ ...route, n: count });
+
+  const set = await repo.getSet(level.id, sublevel.id, route.n);
+  if (stale()) return null;
+  const counts = state.levels.map(l => ({ id: l.id, sets: Object.fromEntries(SUBLEVEL_IDS.map(s => [s, countOf(l.id, s)])) }));
+  const nxt = nextSet({ level: level.id, sub: sublevel.id, n: route.n }, counts, SUBLEVEL_IDS);
+  const lessonHref = n => hashOf({ name: 'lesson', level: level.id, sub: sublevel.id, n });
+
+  document.title = `${set.title} · ${level.id} ${sublevel.label} · Dinleme`;
+  return renderLesson(app, {
+    set, level, sublevel,
+    summary: describe(set, route.n),
+    position: { n: route.n, count },
+    dots: Array.from({ length: count }, (_, i) => ({ n: i + 1, href: lessonHref(i + 1), done: bestOf(level.id, sublevel.id, i + 1) != null })),
+    prev: route.n > 1 ? lessonHref(route.n - 1) : null,
+    next: nxt && {
+      href: hashOf({ name: 'lesson', ...nxt }),
+      sameSublevel: nxt.level === level.id && nxt.sub === sublevel.id,
+      label: nxt.level === level.id && nxt.sub === sublevel.id
+        ? 'Sıradaki metin'
+        : `${nxt.level} ${sublevelOf(nxt.sub).label} metinlerine geç`,
+    },
+    rate: state.rate,
+    resolve: p => repo.resolve(p),
+    onResult: result => { state.progress = saveResult(set.id, result); },
+    onRateChange: r => { state.rate = r; },
+  });
+}
+
+/** Adresi okur, eski biçimi (#a1-kolay-3) ya da hatalı adresi düzeltip ekranı açar. */
+function navigate() {
+  const route = parseRoute(location.hash);
+  if (location.hash !== hashOf(route)) history.replaceState(null, '', hashOf(route));
+  show(route);
+}
+
+function redirect(route) {
+  history.replaceState(null, '', hashOf(route));
+  show(route);
+  return null;
+}
 
 // ── başlat ──────────────────────────────────────────────────
 (async function init() {
   try {
-    const manifest = await repo.manifest();
-    const fromHash = parseHash();
-    const valid = fromHash && manifest.levels.some(l => l.id === fromHash.level);
-    store.set({ levels: manifest.levels, selection: valid ? fromHash : { ...DEFAULT_SELECTION } });
+    state.levels = (await repo.manifest()).levels;
   } catch (err) {
     console.error(err);
-    lessonRoot.innerHTML = `
-      <section class="empty is-error" role="alert">
-        <h2>Seviye listesi yüklenemedi</h2>
-        <p>Sayfayı bir web sunucusu üzerinden açtığından emin ol (README › Çalıştırma).</p>
-        <pre>${esc(err.message)}</pre>
-      </section>`;
+    app.innerHTML = `<div class="ls-screen">${emptyState({ title: 'Seviye listesi yüklenemedi', text: `Sayfayı bir web sunucusu üzerinden aç (npm start). ${err.message}` })}</div>`;
+    return;
   }
+  listen(window, 'hashchange', navigate);
+  navigate();
 })();

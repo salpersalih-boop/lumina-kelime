@@ -1,0 +1,141 @@
+{
+  "id": "a1-zor-45",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Swimming lessons",
+  "topic": "Kursa kayıt",
+  "instructions": "Bir baba çocuğu için yüzme kursu soruyor. Uzun bir diyalog; yaş, gün, saat ve fiyatları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "dad": {
+      "name": "Dad",
+      "voice": "male"
+    },
+    "staff": {
+      "name": "Pool reception",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "dad",
+      "text": "Hello. I want swimming lessons for my daughter."
+    },
+    {
+      "speaker": "staff",
+      "text": "How old is she?"
+    },
+    {
+      "speaker": "dad",
+      "text": "She's seven. She can't swim at all."
+    },
+    {
+      "speaker": "staff",
+      "text": "OK. We have a beginners' class for children from six to nine."
+    },
+    {
+      "speaker": "dad",
+      "text": "When is it?"
+    },
+    {
+      "speaker": "staff",
+      "text": "On Mondays at four thirty, or on Saturdays at ten."
+    },
+    {
+      "speaker": "dad",
+      "text": "She has piano on Mondays. Saturday is better."
+    },
+    {
+      "speaker": "staff",
+      "text": "The course is ten weeks, and it costs sixty pounds."
+    },
+    {
+      "speaker": "dad",
+      "text": "Does she need anything?"
+    },
+    {
+      "speaker": "staff",
+      "text": "A swimming cap and goggles. You can buy them here for eight pounds."
+    },
+    {
+      "speaker": "dad",
+      "text": "OK. When does the course start?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Next Saturday, the twelfth."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is the daughter?",
+      "options": [
+        "six",
+        "seven",
+        "eight",
+        "nine"
+      ],
+      "answer": 1,
+      "feedback": "Kızı yedi yaşında.",
+      "evidence": "She's seven."
+    },
+    {
+      "id": "q2",
+      "prompt": "Can the daughter swim?",
+      "options": [
+        "Yes, very well.",
+        "Yes, a little.",
+        "No, not at all.",
+        "The dad doesn't know."
+      ],
+      "answer": 2,
+      "feedback": "Hiç yüzme bilmiyor.",
+      "evidence": "She can't swim at all."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why doesn't the dad choose Monday?",
+      "options": [
+        "He works on Mondays.",
+        "She has piano on Mondays.",
+        "It's too late.",
+        "It's full."
+      ],
+      "answer": 1,
+      "feedback": "Kızının pazartesi piyano dersi var.",
+      "evidence": "She has piano on Mondays."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the course?",
+      "options": [
+        "eight pounds",
+        "ten pounds",
+        "sixteen pounds",
+        "sixty pounds"
+      ],
+      "answer": 3,
+      "feedback": "On haftalık kurs altmış pound.",
+      "evidence": "it costs sixty pounds."
+    },
+    {
+      "id": "q5",
+      "prompt": "When does the course start?",
+      "options": [
+        "next Saturday",
+        "next Monday",
+        "today",
+        "in ten weeks"
+      ],
+      "answer": 0,
+      "feedback": "Kurs gelecek cumartesi, on ikisinde başlıyor.",
+      "evidence": "Next Saturday, the twelfth."
+    }
+  ]
+}

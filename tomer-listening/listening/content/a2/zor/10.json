@@ -1,0 +1,141 @@
+{
+  "id": "a2-zor-10",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A problem with the room",
+  "topic": "Otel şikâyeti",
+  "instructions": "Bayan Clark otel resepsiyonuna şikâyete geliyor. Uzun bir diyalog; sorunları ve çözümleri eşleştir. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "clark": {
+      "name": "Mrs Clark",
+      "voice": "female"
+    },
+    "rec": {
+      "name": "Receptionist",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "clark",
+      "text": "Excuse me. I'm in room three-oh-five, and I'm afraid there are some problems."
+    },
+    {
+      "speaker": "rec",
+      "text": "I'm sorry to hear that. What's wrong?"
+    },
+    {
+      "speaker": "clark",
+      "text": "First, the air conditioning doesn't work. The room is very hot."
+    },
+    {
+      "speaker": "rec",
+      "text": "I'll send someone to look at it right away."
+    },
+    {
+      "speaker": "clark",
+      "text": "Also, I asked for a room with a sea view, but my window looks at the car park."
+    },
+    {
+      "speaker": "rec",
+      "text": "Let me check. You're right. I'm very sorry. We have a sea view room on the fifth floor, room five-twelve."
+    },
+    {
+      "speaker": "clark",
+      "text": "Is the air conditioning OK in that room?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Yes, it's a new room. And the air conditioning works perfectly."
+    },
+    {
+      "speaker": "clark",
+      "text": "Good. And one more thing. There were no towels in the bathroom."
+    },
+    {
+      "speaker": "rec",
+      "text": "I'm so sorry. There will be towels in your new room. And as we're sorry, breakfast is free for the rest of your stay."
+    },
+    {
+      "speaker": "clark",
+      "text": "Thank you. That's very kind."
+    },
+    {
+      "speaker": "rec",
+      "text": "Someone will help you with your bags in ten minutes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What was Mrs Clark's first room number?",
+      "options": [
+        "three-oh-five",
+        "five-twelve",
+        "three-fifteen",
+        "five-oh-three"
+      ],
+      "answer": 0,
+      "feedback": "İlk odası 305 (three-oh-five). 512 yeni odası.",
+      "evidence": "I'm in room three-oh-five"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem with the air conditioning?",
+      "options": [
+        "It's too cold.",
+        "It is noisy.",
+        "It doesn't work.",
+        "She can't turn it off."
+      ],
+      "answer": 2,
+      "feedback": "Klima çalışmıyor (doesn't work), oda çok sıcak.",
+      "evidence": "the air conditioning doesn't work."
+    },
+    {
+      "id": "q3",
+      "prompt": "What can Mrs Clark see from her first room?",
+      "options": [
+        "the sea",
+        "the car park",
+        "the garden",
+        "the swimming pool"
+      ],
+      "answer": 1,
+      "feedback": "Deniz manzarası istedi ama penceresi otoparka (car park) bakıyor.",
+      "evidence": "but my window looks at the car park."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the hotel give her because of the problems?",
+      "options": [
+        "a free night",
+        "free dinner",
+        "money back",
+        "free breakfast"
+      ],
+      "answer": 3,
+      "feedback": "Özür olarak kalan günler kahvaltı bedava (breakfast is free).",
+      "evidence": "breakfast is free for the rest of your stay."
+    },
+    {
+      "id": "q5",
+      "prompt": "What floor is her new room on?",
+      "options": [
+        "the third floor",
+        "the fifth floor",
+        "the twelfth floor",
+        "the ground floor"
+      ],
+      "answer": 1,
+      "feedback": "Yeni oda beşinci katta, 512 numara.",
+      "evidence": "We have a sea view room on the fifth floor"
+    }
+  ]
+}

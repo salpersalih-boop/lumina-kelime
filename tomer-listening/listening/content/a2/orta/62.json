@@ -1,0 +1,104 @@
+{
+  "id": "a2-orta-62",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Lost in a new city",
+  "topic": "Yol tarifi",
+  "instructions": "Bir turist yol soruyor. Yön ifadelerine ve ulaşım seçeneğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Tourist",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Excuse me, I'm looking for the National Museum."
+    },
+    {
+      "speaker": "b",
+      "text": "Oh, it's quite far from here. About thirty minutes on foot."
+    },
+    {
+      "speaker": "a",
+      "text": "Is there a bus?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, the number nine. The bus stop is across the road, opposite the bank."
+    },
+    {
+      "speaker": "a",
+      "text": "Where do I get off?"
+    },
+    {
+      "speaker": "b",
+      "text": "At the fourth stop. The museum is right in front of you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long does it take on foot?",
+      "options": [
+        "about ten minutes",
+        "about thirty minutes",
+        "about an hour",
+        "about five minutes"
+      ],
+      "answer": 1,
+      "feedback": "Yürüyerek yaklaşık otuz dakika.",
+      "evidence": "About thirty minutes on foot."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which bus should he take?",
+      "options": [
+        "number four",
+        "number nine",
+        "number nineteen",
+        "number thirty"
+      ],
+      "answer": 1,
+      "feedback": "Dokuz numaralı otobüs.",
+      "evidence": "Yes, the number nine."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is the bus stop?",
+      "options": [
+        "next to the bank",
+        "behind the museum",
+        "opposite the bank",
+        "at the station"
+      ],
+      "answer": 2,
+      "feedback": "Durak karşıda, bankanın karşısında.",
+      "evidence": "opposite the bank."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where should he get off?",
+      "options": [
+        "at the fourth stop",
+        "at the ninth stop",
+        "at the last stop",
+        "at the second stop"
+      ],
+      "answer": 0,
+      "feedback": "Dördüncü durakta inmeli.",
+      "evidence": "At the fourth stop."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-62",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "I can't come tomorrow",
+  "topic": "Telefon mesajı",
+  "instructions": "Bir öğrenci öğretmenine mesaj bırakıyor. Sebep ve ne istediğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Jake",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Hello, Mrs Hill. It's Jake from class 3B."
+    },
+    {
+      "speaker": "s",
+      "text": "I'm sorry, but I can't come to the lesson tomorrow. I have a hospital appointment."
+    },
+    {
+      "speaker": "s",
+      "text": "Could you email me the homework, please? Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why can't Jake come tomorrow?",
+      "options": [
+        "He is on holiday.",
+        "He has a hospital appointment.",
+        "He has a football match.",
+        "He is moving house."
+      ],
+      "answer": 1,
+      "feedback": "Hastane randevusu var.",
+      "evidence": "I have a hospital appointment."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which class is Jake in?",
+      "options": [
+        "3B",
+        "3D",
+        "2B",
+        "3A"
+      ],
+      "answer": 0,
+      "feedback": "Jake 3B sınıfında.",
+      "evidence": "It's Jake from class 3B."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Jake ask for?",
+      "options": [
+        "a new appointment",
+        "a phone call",
+        "more time",
+        "the homework by email"
+      ],
+      "answer": 3,
+      "feedback": "Ödevi e-postayla göndermesini istiyor.",
+      "evidence": "Could you email me the homework, please?"
+    }
+  ]
+}

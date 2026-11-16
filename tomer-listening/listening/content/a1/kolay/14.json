@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-14",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "In the park",
+  "topic": "Serbest zaman",
+  "instructions": "Max parkta ne yaptığını anlatıyor. Kısa bir metin; kim ne yapıyor, dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "max": {
+      "name": "Max",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "max",
+      "text": "It is Saturday, and I am in the park with my family."
+    },
+    {
+      "speaker": "max",
+      "text": "My dad is reading a newspaper."
+    },
+    {
+      "speaker": "max",
+      "text": "My sister is playing with the dog."
+    },
+    {
+      "speaker": "max",
+      "text": "I am riding my bike. It is sunny and warm."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What day is it?",
+      "options": [
+        "Saturday",
+        "Sunday",
+        "Friday",
+        "Monday"
+      ],
+      "answer": 0,
+      "feedback": "Bugün cumartesi (Saturday).",
+      "evidence": "It is Saturday"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is Max's sister doing?",
+      "options": [
+        "reading",
+        "riding a bike",
+        "eating",
+        "playing with the dog"
+      ],
+      "answer": 3,
+      "feedback": "Kız kardeşi köpekle oynuyor. Gazete okuyan babası, bisiklete binen Max.",
+      "evidence": "My sister is playing with the dog."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the weather like?",
+      "options": [
+        "cold and rainy",
+        "windy",
+        "sunny and warm",
+        "cloudy"
+      ],
+      "answer": 2,
+      "feedback": "Hava güneşli ve ılık (sunny and warm).",
+      "evidence": "It is sunny and warm."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "a2-zor-05",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A message from the landlord",
+  "topic": "Ev sahibinden mesaj",
+  "instructions": "Ev sahibi kiracısına sesli mesaj bırakıyor. Kısa ama her ayrıntı önemli. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "land": {
+      "name": "Mr Brown",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "land",
+      "text": "Hello Sara, it's Mr Brown, your landlord."
+    },
+    {
+      "speaker": "land",
+      "text": "A man is coming to repair the heating on Tuesday, not Monday."
+    },
+    {
+      "speaker": "land",
+      "text": "He'll be there between nine and eleven."
+    },
+    {
+      "speaker": "land",
+      "text": "If you aren't at home, please leave the key with your neighbour, Mrs White."
+    },
+    {
+      "speaker": "land",
+      "text": "Call me if there is a problem."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is calling?",
+      "options": [
+        "Sara's neighbour",
+        "Sara's landlord",
+        "a repair man",
+        "Sara's friend"
+      ],
+      "answer": 1,
+      "feedback": "Arayan ev sahibi (landlord) Bay Brown.",
+      "evidence": "it's Mr Brown, your landlord."
+    },
+    {
+      "id": "q2",
+      "prompt": "What needs repairing?",
+      "options": [
+        "the window",
+        "the door",
+        "the heating",
+        "the fridge"
+      ],
+      "answer": 2,
+      "feedback": "Kalorifer/ısıtma (heating) tamir edilecek.",
+      "evidence": "repair the heating"
+    },
+    {
+      "id": "q3",
+      "prompt": "When is the man coming?",
+      "options": [
+        "on Monday",
+        "on Tuesday",
+        "on Thursday",
+        "today"
+      ],
+      "answer": 1,
+      "feedback": "Pazartesi değil, salı (Tuesday) geliyor.",
+      "evidence": "on Tuesday, not Monday."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time will he arrive?",
+      "options": [
+        "between nine and eleven",
+        "at nine",
+        "at eleven",
+        "after eleven"
+      ],
+      "answer": 0,
+      "feedback": "Dokuz ile on bir arasında gelecek.",
+      "evidence": "He'll be there between nine and eleven."
+    },
+    {
+      "id": "q5",
+      "prompt": "What should Sara do if she isn't at home?",
+      "options": [
+        "call the repair man",
+        "leave the door open",
+        "call Mr Brown",
+        "leave the key with Mrs White"
+      ],
+      "answer": 3,
+      "feedback": "Evde değilse anahtarı komşusu Mrs White'a bırakmalı.",
+      "evidence": "please leave the key with your neighbour, Mrs White."
+    }
+  ]
+}

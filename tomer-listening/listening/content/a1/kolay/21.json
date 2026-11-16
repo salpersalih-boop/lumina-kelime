@@ -1,0 +1,75 @@
+{
+  "id": "a1-kolay-21",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My favourite colour",
+  "topic": "Renkler",
+  "instructions": "Ella en sevdiği rengi anlatıyor. Kısa bir metin; renklere ve eşyalara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ella": {
+      "name": "Ella",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ella",
+      "text": "My favourite colour is purple."
+    },
+    {
+      "speaker": "ella",
+      "text": "My bag is purple and my bike is purple too."
+    },
+    {
+      "speaker": "ella",
+      "text": "I don't like brown. My brother's favourite colour is orange."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Ella's favourite colour?",
+      "options": [
+        "pink",
+        "purple",
+        "orange",
+        "brown"
+      ],
+      "answer": 1,
+      "feedback": "En sevdiği renk mor (purple).",
+      "evidence": "My favourite colour is purple."
+    },
+    {
+      "id": "q2",
+      "prompt": "What colour doesn't Ella like?",
+      "options": [
+        "brown",
+        "purple",
+        "orange",
+        "blue"
+      ],
+      "answer": 0,
+      "feedback": "Kahverengiyi (brown) sevmiyor.",
+      "evidence": "I don't like brown."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is her brother's favourite colour?",
+      "options": [
+        "purple",
+        "green",
+        "orange",
+        "red"
+      ],
+      "answer": 2,
+      "feedback": "Kardeşinin en sevdiği renk turuncu (orange).",
+      "evidence": "My brother's favourite colour is orange."
+    }
+  ]
+}

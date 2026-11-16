@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-17",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A busy family",
+  "topic": "Aile ve haftalık program",
+  "instructions": "Maria ailesinin haftalık programını anlatıyor. Uzun bir metin; kim hangi gün ne yapıyor, karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "maria": {
+      "name": "Maria",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "maria",
+      "text": "My family is very busy during the week."
+    },
+    {
+      "speaker": "maria",
+      "text": "On Mondays, my son Leo has swimming lessons after school, at four o'clock."
+    },
+    {
+      "speaker": "maria",
+      "text": "My daughter Emma has piano lessons on Tuesdays and Thursdays."
+    },
+    {
+      "speaker": "maria",
+      "text": "My husband works late on Wednesdays, so I cook dinner. On the other days, he cooks."
+    },
+    {
+      "speaker": "maria",
+      "text": "On Fridays, we usually eat pizza and watch a film together. It's my favourite evening."
+    },
+    {
+      "speaker": "maria",
+      "text": "On Saturday mornings, I go to the market and the children play football."
+    },
+    {
+      "speaker": "maria",
+      "text": "On Sundays, we visit my parents. They live in a village forty minutes from our house."
+    },
+    {
+      "speaker": "maria",
+      "text": "We don't have much free time, but we are happy."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When does Leo have swimming lessons?",
+      "options": [
+        "on Tuesdays",
+        "on Mondays",
+        "on Thursdays",
+        "on Saturdays"
+      ],
+      "answer": 1,
+      "feedback": "Leo pazartesi (on Mondays) yüzmeye gidiyor. Salı ve perşembe Emma'nın piyano günleri.",
+      "evidence": "On Mondays, my son Leo has swimming lessons"
+    },
+    {
+      "id": "q2",
+      "prompt": "How often does Emma have piano lessons?",
+      "options": [
+        "once a week",
+        "every day",
+        "twice a week",
+        "three times a week"
+      ],
+      "answer": 2,
+      "feedback": "Salı ve perşembe: haftada iki kez.",
+      "evidence": "My daughter Emma has piano lessons on Tuesdays and Thursdays."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who cooks dinner on Wednesdays?",
+      "options": [
+        "Maria",
+        "her husband",
+        "Leo",
+        "Emma"
+      ],
+      "answer": 0,
+      "feedback": "Eşi çarşamba geç çalışıyor, o gün Maria yemek yapıyor. Diğer günler eşi pişiriyor.",
+      "evidence": "My husband works late on Wednesdays, so I cook dinner."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is Maria's favourite evening?",
+      "options": [
+        "Monday",
+        "Wednesday",
+        "Saturday",
+        "Friday"
+      ],
+      "answer": 3,
+      "feedback": "Cuma akşamı pizza ve film; en sevdiği akşam.",
+      "evidence": "It's my favourite evening."
+    },
+    {
+      "id": "q5",
+      "prompt": "How far is her parents' village?",
+      "options": [
+        "four minutes",
+        "forty minutes",
+        "fourteen minutes",
+        "four hours"
+      ],
+      "answer": 1,
+      "feedback": "Köy evlerine kırk dakika (forty minutes) uzaklıkta.",
+      "evidence": "They live in a village forty minutes from our house."
+    }
+  ]
+}

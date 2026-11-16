@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-20",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My hobby: photography",
+  "topic": "Hobiler",
+  "instructions": "Yuki fotoğrafçılık hobisini anlatıyor. Ne zaman başladığına ve neyin fotoğrafını çektiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "yuki": {
+      "name": "Yuki",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "yuki",
+      "text": "I started taking photos two years ago, when my grandfather gave me his old camera."
+    },
+    {
+      "speaker": "yuki",
+      "text": "At first, I only took photos with my phone. Now I always use the camera."
+    },
+    {
+      "speaker": "yuki",
+      "text": "I like taking photos of birds and trees. I don't like taking photos of people."
+    },
+    {
+      "speaker": "yuki",
+      "text": "Every Saturday morning, I go to the forest near my town."
+    },
+    {
+      "speaker": "yuki",
+      "text": "Last month, one of my photos won a prize in a local competition."
+    },
+    {
+      "speaker": "yuki",
+      "text": "Now I want to buy a better lens, but it is very expensive."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who gave Yuki her camera?",
+      "options": [
+        "her father",
+        "her grandfather",
+        "a friend",
+        "her teacher"
+      ],
+      "answer": 1,
+      "feedback": "Dedesi eski fotoğraf makinesini verdi.",
+      "evidence": "when my grandfather gave me his old camera."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Yuki like taking photos of?",
+      "options": [
+        "people",
+        "buildings",
+        "birds and trees",
+        "food"
+      ],
+      "answer": 2,
+      "feedback": "Kuşların ve ağaçların fotoğrafını çekmeyi seviyor; insanları sevmiyor.",
+      "evidence": "I like taking photos of birds and trees."
+    },
+    {
+      "id": "q3",
+      "prompt": "What happened last month?",
+      "options": [
+        "One of her photos won a prize.",
+        "She bought a new lens.",
+        "She lost her camera.",
+        "She started a new hobby."
+      ],
+      "answer": 0,
+      "feedback": "Fotoğraflarından biri yerel bir yarışmada ödül kazandı.",
+      "evidence": "Last month, one of my photos won a prize"
+    }
+  ]
+}

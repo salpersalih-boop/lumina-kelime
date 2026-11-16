@@ -1,0 +1,145 @@
+{
+  "id": "a2-zor-14",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Two different holidays",
+  "topic": "Tatil karşılaştırma",
+  "instructions": "Ece ve Jack tatillerini karşılaştırıyor. Uzun bir diyalog; hangi bilginin kime ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "ece": {
+      "name": "Ece",
+      "voice": "female"
+    },
+    "jack": {
+      "name": "Jack",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jack",
+      "text": "Hi Ece! How was your holiday?"
+    },
+    {
+      "speaker": "ece",
+      "text": "It was wonderful, thanks. I went to Norway with my sister."
+    },
+    {
+      "speaker": "jack",
+      "text": "Norway? Was it cold?"
+    },
+    {
+      "speaker": "ece",
+      "text": "Not really. It was about fifteen degrees. We went hiking in the mountains every day. And you? You went to Egypt, didn't you?"
+    },
+    {
+      "speaker": "jack",
+      "text": "Yes, I did. It was really hot, nearly forty degrees."
+    },
+    {
+      "speaker": "ece",
+      "text": "Wow! What did you do there?"
+    },
+    {
+      "speaker": "jack",
+      "text": "We visited the pyramids, and we went diving in the Red Sea. The fish were amazing."
+    },
+    {
+      "speaker": "ece",
+      "text": "That sounds fantastic. Was it expensive?"
+    },
+    {
+      "speaker": "jack",
+      "text": "Not very. The hotel was cheap, and food was cheap too. Norway is expensive, isn't it?"
+    },
+    {
+      "speaker": "ece",
+      "text": "Yes, very. A coffee was six pounds! So we stayed in a tent and cooked our own food."
+    },
+    {
+      "speaker": "jack",
+      "text": "In a tent? Brave! Would you go back?"
+    },
+    {
+      "speaker": "ece",
+      "text": "Definitely. But next time I want to go in winter to see the northern lights."
+    },
+    {
+      "speaker": "jack",
+      "text": "I'd like to go back to Egypt, but in spring, when it's not so hot."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who did Ece go on holiday with?",
+      "options": [
+        "her friend",
+        "her sister",
+        "Jack",
+        "her parents"
+      ],
+      "answer": 1,
+      "feedback": "Ece Norveç'e kız kardeşiyle (with my sister) gitti.",
+      "evidence": "I went to Norway with my sister."
+    },
+    {
+      "id": "q2",
+      "prompt": "What was the temperature in Norway?",
+      "options": [
+        "about five degrees",
+        "about forty degrees",
+        "about fifteen degrees",
+        "about fifty degrees"
+      ],
+      "answer": 2,
+      "feedback": "Norveç yaklaşık on beş derece. Kırk derece Mısır.",
+      "evidence": "It was about fifteen degrees."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did Jack do in Egypt?",
+      "options": [
+        "He went hiking and camping.",
+        "He saw the northern lights.",
+        "He stayed in a tent.",
+        "He visited the pyramids and went diving."
+      ],
+      "answer": 3,
+      "feedback": "Jack piramitleri gezdi ve Kızıldeniz'de dalış yaptı. Yürüyüş ve çadır Ece'nin tatili.",
+      "evidence": "We visited the pyramids, and we went diving in the Red Sea."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why did Ece stay in a tent?",
+      "options": [
+        "Norway is very expensive.",
+        "The hotels were full.",
+        "She loves camping.",
+        "Her sister wanted to."
+      ],
+      "answer": 0,
+      "feedback": "Norveç çok pahalı (bir kahve altı pound); bu yüzden çadırda kaldılar.",
+      "evidence": "So we stayed in a tent and cooked our own food."
+    },
+    {
+      "id": "q5",
+      "prompt": "When does Jack want to go back to Egypt?",
+      "options": [
+        "in summer",
+        "in winter",
+        "in spring",
+        "next month"
+      ],
+      "answer": 2,
+      "feedback": "Mısır'a ilkbaharda (in spring) dönmek istiyor, çok sıcak olmadığında. Kış Ece'nin Norveç planı.",
+      "evidence": "but in spring, when it's not so hot."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "a1-orta-10",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the library",
+  "topic": "Kütüphane",
+  "instructions": "Can kütüphaneye üye oluyor ve kitap alıyor. Kaç kitap alabileceğine ve iade gününe dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "librarian": {
+      "name": "Librarian",
+      "voice": "female"
+    },
+    "can": {
+      "name": "Can",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "can",
+      "text": "Hello. I want to borrow some books. Can I join the library?"
+    },
+    {
+      "speaker": "librarian",
+      "text": "Yes, of course. Can I see your ID card, please?"
+    },
+    {
+      "speaker": "can",
+      "text": "Here you are."
+    },
+    {
+      "speaker": "librarian",
+      "text": "Thank you. And what is your address?"
+    },
+    {
+      "speaker": "can",
+      "text": "Fourteen Hill Street."
+    },
+    {
+      "speaker": "librarian",
+      "text": "OK. Here is your library card. You can borrow four books at a time."
+    },
+    {
+      "speaker": "can",
+      "text": "Great. I want these three books."
+    },
+    {
+      "speaker": "librarian",
+      "text": "Fine. Please bring them back in two weeks."
+    },
+    {
+      "speaker": "can",
+      "text": "Is the library open on Sundays?"
+    },
+    {
+      "speaker": "librarian",
+      "text": "No, it isn't. We're open from Monday to Saturday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does the librarian want to see?",
+      "options": [
+        "his passport",
+        "his ID card",
+        "his phone",
+        "his bank card"
+      ],
+      "answer": 1,
+      "feedback": "Görevli kimlik kartını (ID card) görmek istiyor.",
+      "evidence": "Can I see your ID card, please?"
+    },
+    {
+      "id": "q2",
+      "prompt": "How many books can Can borrow at a time?",
+      "options": [
+        "two",
+        "three",
+        "four",
+        "fourteen"
+      ],
+      "answer": 2,
+      "feedback": "Bir seferde dört (four) kitap alabilir. Bugün üç tane alıyor; on dört adres numarası.",
+      "evidence": "You can borrow four books at a time."
+    },
+    {
+      "id": "q3",
+      "prompt": "When must Can bring the books back?",
+      "options": [
+        "in two weeks",
+        "in two days",
+        "on Sunday",
+        "in four weeks"
+      ],
+      "answer": 0,
+      "feedback": "Kitapları iki hafta içinde (in two weeks) getirmeli.",
+      "evidence": "Please bring them back in two weeks."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is the library closed?",
+      "options": [
+        "on Monday",
+        "on Saturday",
+        "every evening",
+        "on Sunday"
+      ],
+      "answer": 3,
+      "feedback": "Kütüphane pazartesiden cumartesiye açık; pazar (Sunday) kapalı.",
+      "evidence": "No, it isn't. We're open from Monday to Saturday."
+    }
+  ]
+}

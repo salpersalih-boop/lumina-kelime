@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-24",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "I love winter",
+  "topic": "Mevsimler",
+  "instructions": "Ivan kışı neden sevdiğini anlatıyor. Etkinliklere ve sevmediği şeye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ivan": {
+      "name": "Ivan",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ivan",
+      "text": "My favourite season is winter."
+    },
+    {
+      "speaker": "ivan",
+      "text": "In winter, it snows a lot in my town."
+    },
+    {
+      "speaker": "ivan",
+      "text": "I go skiing with my dad every Saturday."
+    },
+    {
+      "speaker": "ivan",
+      "text": "After skiing, we drink hot chocolate."
+    },
+    {
+      "speaker": "ivan",
+      "text": "I don't like summer, because it is too hot."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Ivan's favourite season?",
+      "options": [
+        "summer",
+        "spring",
+        "winter",
+        "autumn"
+      ],
+      "answer": 2,
+      "feedback": "En sevdiği mevsim kış (winter).",
+      "evidence": "My favourite season is winter."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Ivan do every Saturday?",
+      "options": [
+        "He goes skiing.",
+        "He goes swimming.",
+        "He plays football.",
+        "He visits friends."
+      ],
+      "answer": 0,
+      "feedback": "Her cumartesi babasıyla kayak yapıyor.",
+      "evidence": "I go skiing with my dad every Saturday."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why doesn't Ivan like summer?",
+      "options": [
+        "It's boring.",
+        "It's too hot.",
+        "It rains a lot.",
+        "He works."
+      ],
+      "answer": 1,
+      "feedback": "Yazı sevmiyor çünkü çok sıcak.",
+      "evidence": "because it is too hot."
+    }
+  ]
+}

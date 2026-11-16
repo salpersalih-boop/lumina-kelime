@@ -1,0 +1,91 @@
+{
+  "id": "a2-kolay-13",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My favourite place",
+  "topic": "Yerler ve duygular",
+  "instructions": "Aylin en sevdiği yeri anlatıyor. Neden sevdiğine ve ne zaman gittiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "aylin": {
+      "name": "Aylin",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "aylin",
+      "text": "My favourite place is a small beach near my grandparents' village."
+    },
+    {
+      "speaker": "aylin",
+      "text": "It isn't famous, so there are never many people there."
+    },
+    {
+      "speaker": "aylin",
+      "text": "The water is clear and quite cold, even in August."
+    },
+    {
+      "speaker": "aylin",
+      "text": "When I was a child, I went there every summer with my cousins."
+    },
+    {
+      "speaker": "aylin",
+      "text": "We swam all day and ate watermelon under the trees."
+    },
+    {
+      "speaker": "aylin",
+      "text": "Now I live in the city, but I still go there for a week every year."
+    },
+    {
+      "speaker": "aylin",
+      "text": "It's the best place to relax."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why are there never many people at the beach?",
+      "options": [
+        "It's far away.",
+        "It isn't famous.",
+        "The water is cold.",
+        "It's expensive."
+      ],
+      "answer": 1,
+      "feedback": "Ünlü değil (It isn't famous), bu yüzden kalabalık olmuyor.",
+      "evidence": "It isn't famous, so there are never many people there."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who did Aylin go there with as a child?",
+      "options": [
+        "her parents",
+        "her friends",
+        "her cousins",
+        "her school"
+      ],
+      "answer": 2,
+      "feedback": "Çocukken kuzenleriyle (with my cousins) giderdi.",
+      "evidence": "every summer with my cousins."
+    },
+    {
+      "id": "q3",
+      "prompt": "How long does Aylin go there now?",
+      "options": [
+        "for a week every year",
+        "every summer",
+        "every weekend",
+        "for a month"
+      ],
+      "answer": 0,
+      "feedback": "Şimdi her yıl bir haftalığına (for a week) gidiyor.",
+      "evidence": "I still go there for a week every year."
+    }
+  ]
+}

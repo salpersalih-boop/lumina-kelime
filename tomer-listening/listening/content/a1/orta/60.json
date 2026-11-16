@@ -1,0 +1,104 @@
+{
+  "id": "a1-orta-60",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "A visit to the library",
+  "topic": "Kütüphane",
+  "instructions": "Bir öğrenci kütüphanede kitap alıyor. Kaç kitap ve ne zaman getirmesi gerektiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Student",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Librarian",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello. Can I take these two books, please?"
+    },
+    {
+      "speaker": "b",
+      "text": "Sure. Do you have your library card?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, here it is."
+    },
+    {
+      "speaker": "b",
+      "text": "Thank you. Please bring them back in three weeks."
+    },
+    {
+      "speaker": "a",
+      "text": "Is the library open on Sunday?"
+    },
+    {
+      "speaker": "b",
+      "text": "No, it's closed on Sundays and Mondays."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many books does she take?",
+      "options": [
+        "one",
+        "three",
+        "two",
+        "four"
+      ],
+      "answer": 2,
+      "feedback": "İki kitap alıyor.",
+      "evidence": "Can I take these two books, please?"
+    },
+    {
+      "id": "q2",
+      "prompt": "What does the librarian ask for?",
+      "options": [
+        "her library card",
+        "her passport",
+        "money",
+        "her name"
+      ],
+      "answer": 0,
+      "feedback": "Kütüphane kartını istiyor.",
+      "evidence": "Do you have your library card?"
+    },
+    {
+      "id": "q3",
+      "prompt": "When must she bring the books back?",
+      "options": [
+        "in two weeks",
+        "in three days",
+        "next Monday",
+        "in three weeks"
+      ],
+      "answer": 3,
+      "feedback": "Üç hafta içinde getirmeli.",
+      "evidence": "Please bring them back in three weeks."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is the library closed?",
+      "options": [
+        "on Saturdays",
+        "on Sundays and Mondays",
+        "every evening",
+        "on Fridays"
+      ],
+      "answer": 1,
+      "feedback": "Pazar ve pazartesi kapalı.",
+      "evidence": "No, it's closed on Sundays and Mondays."
+    }
+  ]
+}

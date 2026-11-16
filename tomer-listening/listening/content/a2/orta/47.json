@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-47",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Feeling ill at work",
+  "topic": "Sağlık ve iş",
+  "instructions": "Bir çalışan yöneticisine hasta olduğunu söylüyor. Belirtiler ve karara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Sam",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Manager",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Excuse me, Linda. I don't feel very well."
+    },
+    {
+      "speaker": "b",
+      "text": "Oh no. What's wrong?"
+    },
+    {
+      "speaker": "a",
+      "text": "I have a terrible headache, and I think I have a temperature."
+    },
+    {
+      "speaker": "b",
+      "text": "You should go home and rest."
+    },
+    {
+      "speaker": "a",
+      "text": "But I have the report to finish for tomorrow."
+    },
+    {
+      "speaker": "b",
+      "text": "Don't worry about that. Maria can finish it. Just send her your notes."
+    },
+    {
+      "speaker": "a",
+      "text": "Thank you. I'll email them now."
+    },
+    {
+      "speaker": "b",
+      "text": "And call me tomorrow morning if you can't come in."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Sam's problem?",
+      "options": [
+        "a stomach ache",
+        "a headache and a temperature",
+        "a bad back",
+        "a cough"
+      ],
+      "answer": 1,
+      "feedback": "Çok kötü baş ağrısı ve ateşi var.",
+      "evidence": "I have a terrible headache, and I think I have a temperature."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Linda tell Sam to do?",
+      "options": [
+        "go home and rest",
+        "see a doctor at work",
+        "take medicine and stay",
+        "finish the report"
+      ],
+      "answer": 0,
+      "feedback": "Eve gidip dinlenmesini söylüyor.",
+      "evidence": "You should go home and rest."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who will finish the report?",
+      "options": [
+        "Sam",
+        "Linda",
+        "Maria",
+        "nobody"
+      ],
+      "answer": 2,
+      "feedback": "Raporu Maria bitirecek.",
+      "evidence": "Maria can finish it."
+    },
+    {
+      "id": "q4",
+      "prompt": "What should Sam do tomorrow morning?",
+      "options": [
+        "come to work early",
+        "email the report",
+        "go to the doctor",
+        "call Linda if he can't come in"
+      ],
+      "answer": 3,
+      "feedback": "Gelemeyecekse yarın sabah Linda'yı aramalı.",
+      "evidence": "call me tomorrow morning if you can't come in."
+    }
+  ]
+}

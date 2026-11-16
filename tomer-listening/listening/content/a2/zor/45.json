@@ -1,0 +1,117 @@
+{
+  "id": "a2-zor-45",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "New recycling rules",
+  "topic": "Şehir duyurusu",
+  "instructions": "Belediye yeni geri dönüşüm kurallarını duyuruyor. Kutu renklerini, günleri ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "City council",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "From the first of next month, the city has new rules for recycling."
+    },
+    {
+      "speaker": "voice",
+      "text": "Every home will get three bins. The blue bin is for paper and cardboard."
+    },
+    {
+      "speaker": "voice",
+      "text": "The green bin is for glass bottles and jars. The black bin is for everything else."
+    },
+    {
+      "speaker": "voice",
+      "text": "Plastic bottles now go in the blue bin with the paper, not in the black bin."
+    },
+    {
+      "speaker": "voice",
+      "text": "The blue and green bins will be collected every Tuesday. The black bin will be collected every other Friday."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please don't put food in any of the bins. You can get a free food box from the city council website."
+    },
+    {
+      "speaker": "voice",
+      "text": "If you put things in the wrong bin, we will not collect it."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When do the new rules start?",
+      "options": [
+        "today",
+        "on the first of next month",
+        "next year",
+        "next Tuesday"
+      ],
+      "answer": 1,
+      "feedback": "Yeni kurallar gelecek ayın birinde başlıyor.",
+      "evidence": "From the first of next month"
+    },
+    {
+      "id": "q2",
+      "prompt": "What goes in the green bin?",
+      "options": [
+        "paper and cardboard",
+        "plastic bottles",
+        "glass bottles and jars",
+        "food"
+      ],
+      "answer": 2,
+      "feedback": "Yeşil kutu cam şişe ve kavanozlar için.",
+      "evidence": "The green bin is for glass bottles and jars."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where do plastic bottles go now?",
+      "options": [
+        "in the blue bin",
+        "in the black bin",
+        "in the green bin",
+        "in a food box"
+      ],
+      "answer": 0,
+      "feedback": "Plastik şişeler artık siyah değil, mavi kutuya kâğıtla birlikte.",
+      "evidence": "Plastic bottles now go in the blue bin with the paper"
+    },
+    {
+      "id": "q4",
+      "prompt": "How often is the black bin collected?",
+      "options": [
+        "every Tuesday",
+        "every Friday",
+        "every day",
+        "every other Friday"
+      ],
+      "answer": 3,
+      "feedback": "Siyah kutu iki cumada bir toplanıyor.",
+      "evidence": "The black bin will be collected every other Friday."
+    },
+    {
+      "id": "q5",
+      "prompt": "What happens if you put things in the wrong bin?",
+      "options": [
+        "You pay money.",
+        "They will not collect it.",
+        "You get a letter.",
+        "Nothing."
+      ],
+      "answer": 1,
+      "feedback": "Yanlış kutuya konursa toplanmayacak.",
+      "evidence": "we will not collect it."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "a1-zor-54",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Science Museum information",
+  "topic": "Müze anonsu",
+  "instructions": "Bir müzede kısa bir anons. Saatler, yerler ve kurallara dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Museum",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Welcome to the Science Museum."
+    },
+    {
+      "speaker": "s",
+      "text": "The museum is open today until six o'clock."
+    },
+    {
+      "speaker": "s",
+      "text": "The space room on the second floor is closed for cleaning."
+    },
+    {
+      "speaker": "s",
+      "text": "Children under twelve must stay with an adult."
+    },
+    {
+      "speaker": "s",
+      "text": "There is a free film about the sea at three o'clock in room four."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Until what time is the museum open?",
+      "options": [
+        "five o'clock",
+        "six o'clock",
+        "four o'clock",
+        "three o'clock"
+      ],
+      "answer": 1,
+      "feedback": "Müze bugün altıya kadar açık.",
+      "evidence": "The museum is open today until six o'clock."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which room is closed?",
+      "options": [
+        "room four",
+        "the sea room",
+        "the space room",
+        "the café"
+      ],
+      "answer": 2,
+      "feedback": "İkinci kattaki uzay odası temizlik için kapalı.",
+      "evidence": "The space room on the second floor is closed for cleaning."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is it closed?",
+      "options": [
+        "for cleaning",
+        "for a film",
+        "It is broken.",
+        "for a party"
+      ],
+      "answer": 0,
+      "feedback": "Temizlik için kapalı.",
+      "evidence": "closed for cleaning."
+    },
+    {
+      "id": "q4",
+      "prompt": "Who must stay with an adult?",
+      "options": [
+        "all children",
+        "children under ten",
+        "children under fourteen",
+        "children under twelve"
+      ],
+      "answer": 3,
+      "feedback": "On iki yaş altı çocuklar bir yetişkinle kalmalı.",
+      "evidence": "Children under twelve must stay with an adult."
+    },
+    {
+      "id": "q5",
+      "prompt": "Where is the free film?",
+      "options": [
+        "in room four",
+        "on the second floor",
+        "in the café",
+        "in room three"
+      ],
+      "answer": 0,
+      "feedback": "Ücretsiz film saat üçte dört numaralı odada.",
+      "evidence": "in room four."
+    }
+  ]
+}

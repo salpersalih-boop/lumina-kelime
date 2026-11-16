@@ -1,0 +1,105 @@
+{
+  "id": "a1-zor-31",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A message from the hotel",
+  "topic": "Otel mesajı",
+  "instructions": "Otel resepsiyonu bir misafire kısa bir mesaj bırakıyor. Kısa ama her ayrıntı önemli. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Hotel",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Hello Mrs Brown, this is the Park Hotel."
+    },
+    {
+      "speaker": "voice",
+      "text": "Your room is ready now, but it is room 214, not 204."
+    },
+    {
+      "speaker": "voice",
+      "text": "Breakfast is from seven to ten, on the first floor."
+    },
+    {
+      "speaker": "voice",
+      "text": "The taxi to the airport is tomorrow at six fifteen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which room is Mrs Brown's?",
+      "options": [
+        "room 204",
+        "room 241",
+        "room 214",
+        "room 240"
+      ],
+      "answer": 2,
+      "feedback": "Oda 204 değil, 214.",
+      "evidence": "it is room 214, not 204."
+    },
+    {
+      "id": "q2",
+      "prompt": "Is the room ready?",
+      "options": [
+        "Yes, it is.",
+        "No, not yet.",
+        "In one hour.",
+        "Tomorrow."
+      ],
+      "answer": 0,
+      "feedback": "Oda şimdi hazır.",
+      "evidence": "Your room is ready now"
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is breakfast?",
+      "options": [
+        "on the ground floor",
+        "in the room",
+        "on the second floor",
+        "on the first floor"
+      ],
+      "answer": 3,
+      "feedback": "Kahvaltı birinci katta.",
+      "evidence": "on the first floor."
+    },
+    {
+      "id": "q4",
+      "prompt": "When does breakfast finish?",
+      "options": [
+        "at seven",
+        "at ten",
+        "at six fifteen",
+        "at nine"
+      ],
+      "answer": 1,
+      "feedback": "Kahvaltı yediden ona kadar.",
+      "evidence": "Breakfast is from seven to ten"
+    },
+    {
+      "id": "q5",
+      "prompt": "What time is the taxi?",
+      "options": [
+        "at six fifty",
+        "at six fifteen",
+        "at six",
+        "at seven fifteen"
+      ],
+      "answer": 1,
+      "feedback": "Havalimanı taksisi yarın altıyı çeyrek geçe.",
+      "evidence": "The taxi to the airport is tomorrow at six fifteen."
+    }
+  ]
+}

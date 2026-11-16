@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-63",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Ordering flowers online",
+  "topic": "Telefonla sipariş",
+  "instructions": "Bir adam telefonla çiçek siparişi veriyor. Çiçek, mesaj ve teslimata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Flower shop",
+      "voice": "female"
+    },
+    "b": {
+      "name": "David",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good afternoon, Bloom Flowers."
+    },
+    {
+      "speaker": "b",
+      "text": "Hello. I'd like to send some flowers to my grandmother. It's her ninetieth birthday tomorrow."
+    },
+    {
+      "speaker": "a",
+      "text": "How lovely! What would you like?"
+    },
+    {
+      "speaker": "b",
+      "text": "Something with pink roses. She loves pink."
+    },
+    {
+      "speaker": "a",
+      "text": "We have a bouquet with pink roses and white lilies for forty-five pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "Perfect. Can you deliver it tomorrow morning?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, before twelve. Would you like a card with a message?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. 'Happy birthday, Grandma. Love, David.'"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why is David sending flowers?",
+      "options": [
+        "It's his grandmother's birthday.",
+        "His grandmother is ill.",
+        "It's Mother's Day.",
+        "He wants to say sorry."
+      ],
+      "answer": 0,
+      "feedback": "Büyükannesinin doksanıncı doğum günü.",
+      "evidence": "It's her ninetieth birthday tomorrow."
+    },
+    {
+      "id": "q2",
+      "prompt": "How old will his grandmother be?",
+      "options": [
+        "eighty",
+        "nineteen",
+        "ninety",
+        "seventy"
+      ],
+      "answer": 2,
+      "feedback": "Doksan yaşına giriyor.",
+      "evidence": "It's her ninetieth birthday tomorrow."
+    },
+    {
+      "id": "q3",
+      "prompt": "What colour roses does he want?",
+      "options": [
+        "red",
+        "white",
+        "yellow",
+        "pink"
+      ],
+      "answer": 3,
+      "feedback": "Büyükannesi pembeyi seviyor.",
+      "evidence": "Something with pink roses."
+    },
+    {
+      "id": "q4",
+      "prompt": "When will the flowers arrive?",
+      "options": [
+        "today",
+        "tomorrow before twelve",
+        "tomorrow evening",
+        "next week"
+      ],
+      "answer": 1,
+      "feedback": "Yarın saat on ikiden önce.",
+      "evidence": "Yes, before twelve."
+    }
+  ]
+}

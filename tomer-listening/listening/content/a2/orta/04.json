@@ -1,0 +1,128 @@
+{
+  "id": "a2-orta-04",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Where shall we eat?",
+  "topic": "Restoran seçme",
+  "instructions": "Ella ve Max akşam yemeği için yer seçiyor. Uzun bir diyalog; önerileri ve neden reddedildiklerini takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ella": {
+      "name": "Ella",
+      "voice": "female"
+    },
+    "max": {
+      "name": "Max",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ella",
+      "text": "I'm hungry. Where shall we eat tonight?"
+    },
+    {
+      "speaker": "max",
+      "text": "What about the Chinese restaurant on Bridge Street?"
+    },
+    {
+      "speaker": "ella",
+      "text": "We went there last Friday. Let's try something different."
+    },
+    {
+      "speaker": "max",
+      "text": "OK. There's a new Mexican place near the cinema. My sister says it's very good."
+    },
+    {
+      "speaker": "ella",
+      "text": "Mexican food is too spicy for me. I can't eat hot food."
+    },
+    {
+      "speaker": "max",
+      "text": "Hmm. What about the Italian restaurant in the old town? They make great pizza."
+    },
+    {
+      "speaker": "ella",
+      "text": "I love pizza, but isn't it expensive?"
+    },
+    {
+      "speaker": "max",
+      "text": "It's not cheap, but on Tuesdays all pizzas are half price."
+    },
+    {
+      "speaker": "ella",
+      "text": "Today is Tuesday! Perfect. Do we need to book a table?"
+    },
+    {
+      "speaker": "max",
+      "text": "Yes, it's always busy. I'll call them now. Is eight o'clock OK?"
+    },
+    {
+      "speaker": "ella",
+      "text": "Eight is a bit late. Can we go at half past seven?"
+    },
+    {
+      "speaker": "max",
+      "text": "Sure. Half past seven it is."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why doesn't Ella want Chinese food?",
+      "options": [
+        "It's too spicy.",
+        "They went there last Friday.",
+        "It's expensive.",
+        "It's closed."
+      ],
+      "answer": 1,
+      "feedback": "Geçen cuma oraya gitmişler, farklı bir şey denemek istiyor.",
+      "evidence": "We went there last Friday."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem with the Mexican restaurant?",
+      "options": [
+        "It's far away.",
+        "It's too expensive.",
+        "The food is too spicy for Ella.",
+        "Max's sister doesn't like it."
+      ],
+      "answer": 2,
+      "feedback": "Meksika yemeği Ella için fazla acı (too spicy).",
+      "evidence": "Mexican food is too spicy for me."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is the Italian restaurant a good idea today?",
+      "options": [
+        "Pizzas are half price on Tuesdays.",
+        "It's new.",
+        "It's near the cinema.",
+        "It's never busy."
+      ],
+      "answer": 0,
+      "feedback": "Salı günleri pizzalar yarı fiyat; bugün salı.",
+      "evidence": "on Tuesdays all pizzas are half price."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time are they going to eat?",
+      "options": [
+        "at eight o'clock",
+        "at seven",
+        "at half past eight",
+        "at half past seven"
+      ],
+      "answer": 3,
+      "feedback": "Max sekizi önerir ama Ella için geç; yedi buçukta (half past seven) anlaşıyorlar.",
+      "evidence": "Half past seven it is."
+    }
+  ]
+}

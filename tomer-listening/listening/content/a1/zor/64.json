@@ -1,0 +1,133 @@
+{
+  "id": "a1-zor-64",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Lost on the bus",
+  "topic": "Kayıp eşya",
+  "instructions": "Bir kadın otobüs şirketini arayıp kayıp çantasını soruyor. Otobüs numarası, saat ve çantanın tarifine dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Bus office",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "City Buses, lost property. Can I help you?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. I left my bag on the bus this morning."
+    },
+    {
+      "speaker": "a",
+      "text": "Which bus was it?"
+    },
+    {
+      "speaker": "b",
+      "text": "The number fifteen. No, sorry, the number fifty."
+    },
+    {
+      "speaker": "a",
+      "text": "What time?"
+    },
+    {
+      "speaker": "b",
+      "text": "At about eight thirty."
+    },
+    {
+      "speaker": "a",
+      "text": "What does your bag look like?"
+    },
+    {
+      "speaker": "b",
+      "text": "It's a small brown bag. My glasses and a book are in it."
+    },
+    {
+      "speaker": "a",
+      "text": "Just a moment. Yes, we have it. You can get it at the bus station after two o'clock."
+    },
+    {
+      "speaker": "b",
+      "text": "Oh, thank you so much!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did she leave her bag?",
+      "options": [
+        "last night",
+        "this morning",
+        "yesterday",
+        "this afternoon"
+      ],
+      "answer": 1,
+      "feedback": "Bu sabah bıraktı.",
+      "evidence": "I left my bag on the bus this morning."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which bus was she on?",
+      "options": [
+        "number fifteen",
+        "number five",
+        "number fifty",
+        "number eight"
+      ],
+      "answer": 2,
+      "feedback": "Önce on beş der, sonra düzeltir: elli.",
+      "evidence": "No, sorry, the number fifty."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is in her bag?",
+      "options": [
+        "her phone and keys",
+        "her glasses and a book",
+        "her wallet",
+        "her glasses and her phone"
+      ],
+      "answer": 1,
+      "feedback": "Çantada gözlüğü ve bir kitap var.",
+      "evidence": "My glasses and a book are in it."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where can she get the bag?",
+      "options": [
+        "at the bus station",
+        "on the bus",
+        "at the police station",
+        "at home"
+      ],
+      "answer": 0,
+      "feedback": "Otobüs garından alabilir.",
+      "evidence": "You can get it at the bus station"
+    },
+    {
+      "id": "q5",
+      "prompt": "When can she get it?",
+      "options": [
+        "now",
+        "at eight thirty",
+        "tomorrow",
+        "after two o'clock"
+      ],
+      "answer": 3,
+      "feedback": "Saat ikiden sonra alabilir.",
+      "evidence": "after two o'clock."
+    }
+  ]
+}

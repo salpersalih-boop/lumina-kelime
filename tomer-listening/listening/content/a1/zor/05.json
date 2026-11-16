@@ -1,0 +1,133 @@
+{
+  "id": "a1-zor-05",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Weekend on City Radio",
+  "topic": "Radyo: hava ve etkinlikler",
+  "instructions": "Bir radyo sunucusu hafta sonu hava durumunu ve şehirdeki etkinlikleri anlatıyor. En uzun metin; günleri, saatleri ve \"usually / but\" ifadesini dikkatle dinle. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Radio host",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Good morning, and welcome to City Radio. Here's your guide to the weekend."
+    },
+    {
+      "speaker": "host",
+      "text": "First, the weather. On Saturday morning it's going to be cloudy, and in the afternoon there's going to be some rain."
+    },
+    {
+      "speaker": "host",
+      "text": "But don't worry. Sunday is going to be sunny and warm, with a top temperature of twenty-two degrees."
+    },
+    {
+      "speaker": "host",
+      "text": "Now, what's on in town? On Saturday, the food market is open from eight in the morning to two in the afternoon, in Market Square."
+    },
+    {
+      "speaker": "host",
+      "text": "Usually the market is on Sundays, but this week it's on Saturday because of the bike race."
+    },
+    {
+      "speaker": "host",
+      "text": "The city bike race starts at ten o'clock on Sunday morning at the river."
+    },
+    {
+      "speaker": "host",
+      "text": "Many roads in the centre are closed from nine to one, so please take the train or the bus."
+    },
+    {
+      "speaker": "host",
+      "text": "On Sunday evening, there's a free concert in Central Park. It starts at seven."
+    },
+    {
+      "speaker": "host",
+      "text": "Children under twelve can go to the City Museum for free all weekend."
+    },
+    {
+      "speaker": "host",
+      "text": "Adults pay five pounds."
+    },
+    {
+      "speaker": "host",
+      "text": "That's all from me. Have a great weekend!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the weather going to be like on Saturday afternoon?",
+      "options": [
+        "sunny",
+        "cloudy",
+        "rainy",
+        "windy"
+      ],
+      "answer": 2,
+      "feedback": "Cumartesi sabah bulutlu (cloudy), öğleden sonra yağmurlu (rain). Güneşli olan pazar.",
+      "evidence": "in the afternoon there's going to be some rain."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why is the market on Saturday this week?",
+      "options": [
+        "because of the rain",
+        "because of the bike race",
+        "because of the concert",
+        "because it's a holiday"
+      ],
+      "answer": 1,
+      "feedback": "Pazar genelde (usually) pazar günü kurulur ama bu hafta bisiklet yarışı (bike race) yüzünden cumartesi.",
+      "evidence": "but this week it's on Saturday because of the bike race."
+    },
+    {
+      "id": "q3",
+      "prompt": "When are the roads in the centre closed?",
+      "options": [
+        "from eight to two",
+        "from ten to twelve",
+        "from nine to one",
+        "all day"
+      ],
+      "answer": 2,
+      "feedback": "Yollar dokuzdan bire (from nine to one) kapalı. \"Eight to two\" pazarın açık olduğu saatler.",
+      "evidence": "closed from nine to one"
+    },
+    {
+      "id": "q4",
+      "prompt": "What time does the concert start?",
+      "options": [
+        "at seven o'clock",
+        "at ten o'clock",
+        "at two o'clock",
+        "at nine o'clock"
+      ],
+      "answer": 0,
+      "feedback": "Konser pazar akşamı yedide (at seven). On, yarışın başlama saati.",
+      "evidence": "It starts at seven."
+    },
+    {
+      "id": "q5",
+      "prompt": "How much does a ten-year-old child pay at the museum?",
+      "options": [
+        "five pounds",
+        "nothing",
+        "two pounds",
+        "ten pounds"
+      ],
+      "answer": 1,
+      "feedback": "On iki yaş altı çocuklar hafta sonu boyunca ücretsiz (for free). Beş pound yetişkinlerin ücreti.",
+      "evidence": "Children under twelve can go to the City Museum for free all weekend."
+    }
+  ]
+}

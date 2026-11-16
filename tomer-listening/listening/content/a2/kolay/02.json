@@ -1,0 +1,79 @@
+{
+  "id": "a2-kolay-02",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A note from Mum",
+  "topic": "Ev işleri",
+  "instructions": "Annesi Jake'e kısa bir sesli not bırakıyor. Kısa bir metin; ne yapması gerektiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mum": {
+      "name": "Mum",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mum",
+      "text": "Hi Jake, it's Mum. I'm going to be late tonight."
+    },
+    {
+      "speaker": "mum",
+      "text": "There's some pasta in the fridge for dinner."
+    },
+    {
+      "speaker": "mum",
+      "text": "Please take the dog for a walk before six."
+    },
+    {
+      "speaker": "mum",
+      "text": "And don't forget to do your homework. See you at nine!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is in the fridge?",
+      "options": [
+        "some pizza",
+        "some pasta",
+        "some soup",
+        "some chicken"
+      ],
+      "answer": 1,
+      "feedback": "Buzdolabında makarna (pasta) var.",
+      "evidence": "There's some pasta in the fridge for dinner."
+    },
+    {
+      "id": "q2",
+      "prompt": "When must Jake walk the dog?",
+      "options": [
+        "before six",
+        "after six",
+        "at nine",
+        "after dinner"
+      ],
+      "answer": 0,
+      "feedback": "Köpeği altıdan önce (before six) gezdirmeli.",
+      "evidence": "Please take the dog for a walk before six."
+    },
+    {
+      "id": "q3",
+      "prompt": "When is Mum coming home?",
+      "options": [
+        "at six",
+        "at seven",
+        "at eight",
+        "at nine"
+      ],
+      "answer": 3,
+      "feedback": "Annesi dokuzda (See you at nine) gelecek. Altı, köpeğin gezdirilmesi gereken saat.",
+      "evidence": "See you at nine!"
+    }
+  ]
+}

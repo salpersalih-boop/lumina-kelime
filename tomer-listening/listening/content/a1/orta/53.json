@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-53",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the doctor's reception",
+  "topic": "Sağlık",
+  "instructions": "Bir çocuk ve annesi doktora geliyor. Sorun ve bekleme süresine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Receptionist",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Mum",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good morning. Do you have an appointment?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, at half past nine. My son has a bad cold."
+    },
+    {
+      "speaker": "a",
+      "text": "What's his name?"
+    },
+    {
+      "speaker": "b",
+      "text": "Leo Brown."
+    },
+    {
+      "speaker": "a",
+      "text": "OK. Please sit down. The doctor is about fifteen minutes late today."
+    },
+    {
+      "speaker": "b",
+      "text": "No problem. Is there water?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, next to the door."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time is the appointment?",
+      "options": [
+        "at nine",
+        "at half past nine",
+        "at ten",
+        "at quarter past nine"
+      ],
+      "answer": 1,
+      "feedback": "Randevu dokuz buçukta.",
+      "evidence": "Yes, at half past nine."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the son's problem?",
+      "options": [
+        "a bad cold",
+        "a headache",
+        "a bad leg",
+        "a stomach ache"
+      ],
+      "answer": 0,
+      "feedback": "Oğlunun kötü bir soğuk algınlığı var.",
+      "evidence": "My son has a bad cold."
+    },
+    {
+      "id": "q3",
+      "prompt": "How late is the doctor?",
+      "options": [
+        "five minutes",
+        "fifty minutes",
+        "half an hour",
+        "about fifteen minutes"
+      ],
+      "answer": 3,
+      "feedback": "Doktor yaklaşık on beş dakika gecikmeli.",
+      "evidence": "The doctor is about fifteen minutes late today."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the water?",
+      "options": [
+        "next to the window",
+        "next to the door",
+        "in the doctor's room",
+        "there isn't any"
+      ],
+      "answer": 1,
+      "feedback": "Su kapının yanında.",
+      "evidence": "Yes, next to the door."
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "a2-zor-03",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Changing an appointment",
+  "topic": "Randevu değiştirme",
+  "instructions": "Bay Ross diş hekimi randevusunu değiştirmeye çalışıyor. Önerilen ve kabul edilen saatleri ayırt et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "rec": {
+      "name": "Receptionist",
+      "voice": "female"
+    },
+    "ross": {
+      "name": "Mr Ross",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "rec",
+      "text": "Smile Dental Clinic, good morning."
+    },
+    {
+      "speaker": "ross",
+      "text": "Hello, this is Peter Ross. I have an appointment on Wednesday at ten, but I can't come. Can I change it?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Of course. Is Thursday morning OK?"
+    },
+    {
+      "speaker": "ross",
+      "text": "Sorry, I work in the mornings this week. Do you have anything in the afternoon?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Let me see. Thursday at three or Friday at half past four."
+    },
+    {
+      "speaker": "ross",
+      "text": "Friday is better. Thursday afternoon I'm picking up my son from school."
+    },
+    {
+      "speaker": "rec",
+      "text": "OK, Friday at half past four with Doctor Patel."
+    },
+    {
+      "speaker": "ross",
+      "text": "Is it Doctor Patel? Last time I saw Doctor Green."
+    },
+    {
+      "speaker": "rec",
+      "text": "Doctor Green is on holiday until the end of the month."
+    },
+    {
+      "speaker": "ross",
+      "text": "That's fine. Thank you very much."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When was Mr Ross's first appointment?",
+      "options": [
+        "Thursday at ten",
+        "Wednesday at ten",
+        "Friday at ten",
+        "Wednesday at two"
+      ],
+      "answer": 1,
+      "feedback": "İlk randevusu çarşamba saat onda (Wednesday at ten).",
+      "evidence": "I have an appointment on Wednesday at ten"
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't he come on Thursday morning?",
+      "options": [
+        "He has to work.",
+        "He is going on holiday.",
+        "He's picking up his son.",
+        "The clinic is closed."
+      ],
+      "answer": 0,
+      "feedback": "Bu hafta sabahları çalışıyor (I work in the mornings).",
+      "evidence": "I work in the mornings this week."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Mr Ross doing on Thursday afternoon?",
+      "options": [
+        "going to work",
+        "seeing a doctor",
+        "going on holiday",
+        "picking up his son from school"
+      ],
+      "answer": 3,
+      "feedback": "Perşembe öğleden sonra oğlunu okuldan alacak.",
+      "evidence": "Thursday afternoon I'm picking up my son from school."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is the new appointment?",
+      "options": [
+        "Thursday at three",
+        "Friday at four",
+        "Friday at half past four",
+        "Thursday at half past four"
+      ],
+      "answer": 2,
+      "feedback": "Yeni randevu cuma dört buçukta (Friday at half past four).",
+      "evidence": "OK, Friday at half past four with Doctor Patel."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why won't Mr Ross see Doctor Green?",
+      "options": [
+        "Doctor Green is on holiday.",
+        "He doesn't like Doctor Green.",
+        "Doctor Green only works in the morning.",
+        "Doctor Green left the clinic."
+      ],
+      "answer": 0,
+      "feedback": "Doktor Green ay sonuna kadar tatilde.",
+      "evidence": "Doctor Green is on holiday until the end of the month."
+    }
+  ]
+}

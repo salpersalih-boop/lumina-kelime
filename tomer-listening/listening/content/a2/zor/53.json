@@ -1,0 +1,137 @@
+{
+  "id": "a2-zor-53",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "At the estate agent",
+  "topic": "Ev kiralama",
+  "instructions": "Bir çift emlakçıda iki daireyi konuşuyor. Hangi özelliğin hangi daireye ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Estate agent",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "So, I have two flats that might be good for you. The first one is on Queen Street."
+    },
+    {
+      "speaker": "b",
+      "text": "How much is it?"
+    },
+    {
+      "speaker": "a",
+      "text": "Nine hundred pounds a month. It has two bedrooms and a big kitchen, but it's on the fourth floor and there's no lift."
+    },
+    {
+      "speaker": "b",
+      "text": "Hmm, we have a baby, so stairs are a problem. What about the other one?"
+    },
+    {
+      "speaker": "a",
+      "text": "The second flat is on Park Road. It's on the ground floor and has a small garden. It's a bit smaller, with one bedroom and a study."
+    },
+    {
+      "speaker": "b",
+      "text": "And the price?"
+    },
+    {
+      "speaker": "a",
+      "text": "Eight hundred and fifty. It's also closer to the train station."
+    },
+    {
+      "speaker": "b",
+      "text": "That sounds better for us. Can we see it this week?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, how about Thursday at six?"
+    },
+    {
+      "speaker": "b",
+      "text": "My wife finishes work at six thirty. Is seven OK?"
+    },
+    {
+      "speaker": "a",
+      "text": "Seven is fine."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the problem with the Queen Street flat?",
+      "options": [
+        "It's too expensive.",
+        "It's on the fourth floor and has no lift.",
+        "It's too small.",
+        "It's far from the station."
+      ],
+      "answer": 1,
+      "feedback": "Dördüncü katta ve asansör yok.",
+      "evidence": "it's on the fourth floor and there's no lift."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why are stairs a problem for Tom?",
+      "options": [
+        "He has a bad leg.",
+        "They have a baby.",
+        "His wife is ill.",
+        "They have a lot of furniture."
+      ],
+      "answer": 1,
+      "feedback": "Bebekleri var.",
+      "evidence": "we have a baby, so stairs are a problem."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does the Park Road flat have?",
+      "options": [
+        "two bedrooms and a big kitchen",
+        "a lift",
+        "a small garden",
+        "a balcony"
+      ],
+      "answer": 2,
+      "feedback": "Park Road dairesi zemin katta ve küçük bir bahçesi var.",
+      "evidence": "It's on the ground floor and has a small garden."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the Park Road flat?",
+      "options": [
+        "nine hundred pounds",
+        "eight hundred and fifty pounds",
+        "eight hundred pounds",
+        "nine hundred and fifty pounds"
+      ],
+      "answer": 1,
+      "feedback": "Sekiz yüz elli pound.",
+      "evidence": "Eight hundred and fifty."
+    },
+    {
+      "id": "q5",
+      "prompt": "When will they see the flat?",
+      "options": [
+        "Thursday at six",
+        "Thursday at six thirty",
+        "Friday at seven",
+        "Thursday at seven"
+      ],
+      "answer": 3,
+      "feedback": "Eşi altı buçukta işten çıkıyor; perşembe saat yedi.",
+      "evidence": "Seven is fine."
+    }
+  ]
+}

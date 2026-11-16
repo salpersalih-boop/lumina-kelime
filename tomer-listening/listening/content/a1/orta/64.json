@@ -1,0 +1,104 @@
+{
+  "id": "a1-orta-64",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the swimming pool reception",
+  "topic": "Spor",
+  "instructions": "Bir öğrenci yüzme havuzu hakkında bilgi alıyor. Saatler ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Student",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Receptionist",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hi. What time does the pool open?"
+    },
+    {
+      "speaker": "b",
+      "text": "At seven in the morning. It closes at ten at night."
+    },
+    {
+      "speaker": "a",
+      "text": "How much is it for students?"
+    },
+    {
+      "speaker": "b",
+      "text": "Three pounds. For adults, it's five."
+    },
+    {
+      "speaker": "a",
+      "text": "Do I need a swimming cap?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, you do. We sell them here for two pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time does the pool open?",
+      "options": [
+        "at six",
+        "at seven",
+        "at ten",
+        "at eight"
+      ],
+      "answer": 1,
+      "feedback": "Havuz sabah yedide açılıyor.",
+      "evidence": "At seven in the morning."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does it close?",
+      "options": [
+        "at eight at night",
+        "at nine at night",
+        "at ten at night",
+        "at seven at night"
+      ],
+      "answer": 2,
+      "feedback": "Gece onda kapanıyor.",
+      "evidence": "It closes at ten at night."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is it for students?",
+      "options": [
+        "two pounds",
+        "five pounds",
+        "seven pounds",
+        "three pounds"
+      ],
+      "answer": 3,
+      "feedback": "Öğrenciler için üç pound.",
+      "evidence": "Three pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is a swimming cap?",
+      "options": [
+        "two pounds",
+        "three pounds",
+        "five pounds",
+        "free"
+      ],
+      "answer": 0,
+      "feedback": "Bone iki pound.",
+      "evidence": "We sell them here for two pounds."
+    }
+  ]
+}

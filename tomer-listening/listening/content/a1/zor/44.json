@@ -1,0 +1,113 @@
+{
+  "id": "a1-zor-44",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "What's on this weekend",
+  "topic": "Radyo: etkinlikler",
+  "instructions": "Radyoda hafta sonu etkinlikleri duyuruluyor. Etkinlikleri, günleri ve fiyatları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Radio",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Good morning! Here's what's on in town this weekend."
+    },
+    {
+      "speaker": "host",
+      "text": "On Saturday, there is a book market in the town square from ten to five. Old books are only one pound."
+    },
+    {
+      "speaker": "host",
+      "text": "On Saturday evening, there is a jazz concert at the City Hall. Tickets are fifteen pounds."
+    },
+    {
+      "speaker": "host",
+      "text": "On Sunday morning, there is a fun run in the park. It is five kilometres, and it starts at nine."
+    },
+    {
+      "speaker": "host",
+      "text": "Children can run too. They run one kilometre, at half past eight."
+    },
+    {
+      "speaker": "host",
+      "text": "On Sunday afternoon, the museum has a free art class for families."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the book market?",
+      "options": [
+        "in the park",
+        "at the City Hall",
+        "in the town square",
+        "at the museum"
+      ],
+      "answer": 2,
+      "feedback": "Kitap pazarı kasaba meydanında.",
+      "evidence": "there is a book market in the town square"
+    },
+    {
+      "id": "q2",
+      "prompt": "How much is an old book?",
+      "options": [
+        "one pound",
+        "five pounds",
+        "ten pounds",
+        "fifteen pounds"
+      ],
+      "answer": 0,
+      "feedback": "Eski kitaplar sadece bir pound.",
+      "evidence": "Old books are only one pound."
+    },
+    {
+      "id": "q3",
+      "prompt": "When is the jazz concert?",
+      "options": [
+        "Sunday morning",
+        "Saturday evening",
+        "Saturday morning",
+        "Sunday afternoon"
+      ],
+      "answer": 1,
+      "feedback": "Caz konseri cumartesi akşamı.",
+      "evidence": "On Saturday evening, there is a jazz concert"
+    },
+    {
+      "id": "q4",
+      "prompt": "What time does the children's run start?",
+      "options": [
+        "at nine",
+        "at ten",
+        "at five",
+        "at half past eight"
+      ],
+      "answer": 3,
+      "feedback": "Çocuk koşusu sekiz buçukta; yetişkinler dokuzda.",
+      "evidence": "They run one kilometre, at half past eight."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is free on Sunday afternoon?",
+      "options": [
+        "an art class at the museum",
+        "the jazz concert",
+        "books",
+        "the fun run"
+      ],
+      "answer": 0,
+      "feedback": "Pazar öğleden sonra müzede ailelere ücretsiz resim dersi var.",
+      "evidence": "the museum has a free art class for families."
+    }
+  ]
+}

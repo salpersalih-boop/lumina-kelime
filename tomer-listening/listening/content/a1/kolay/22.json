@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-22",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Our family car",
+  "topic": "Ulaşım",
+  "instructions": "Can ailesinin arabasını anlatıyor. Kısa bir metin; renk, yaş ve kullanan kişiye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "can": {
+      "name": "Can",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "can",
+      "text": "We have a small red car."
+    },
+    {
+      "speaker": "can",
+      "text": "It is ten years old, but it is very good."
+    },
+    {
+      "speaker": "can",
+      "text": "My mum drives it to work every day."
+    },
+    {
+      "speaker": "can",
+      "text": "At the weekend, we go to the mountains in it."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour is the car?",
+      "options": [
+        "blue",
+        "black",
+        "white",
+        "red"
+      ],
+      "answer": 3,
+      "feedback": "Araba kırmızı (red).",
+      "evidence": "We have a small red car."
+    },
+    {
+      "id": "q2",
+      "prompt": "How old is the car?",
+      "options": [
+        "two years old",
+        "ten years old",
+        "one year old",
+        "twelve years old"
+      ],
+      "answer": 1,
+      "feedback": "Araba on yaşında.",
+      "evidence": "It is ten years old"
+    },
+    {
+      "id": "q3",
+      "prompt": "Who drives the car to work?",
+      "options": [
+        "Can's dad",
+        "Can",
+        "Can's mum",
+        "Can's brother"
+      ],
+      "answer": 2,
+      "feedback": "Annesi her gün arabayla işe gidiyor.",
+      "evidence": "My mum drives it to work every day."
+    }
+  ]
+}

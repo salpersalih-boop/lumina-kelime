@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-52",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My bedroom",
+  "topic": "Ev ve eşyalar",
+  "instructions": "Leo yatak odasını anlatıyor. Eşyaların yerine ve rengine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "My bedroom is blue."
+    },
+    {
+      "speaker": "s",
+      "text": "There is a bed, a desk and a big cupboard."
+    },
+    {
+      "speaker": "s",
+      "text": "My clothes are in the cupboard."
+    },
+    {
+      "speaker": "s",
+      "text": "My computer is on the desk."
+    },
+    {
+      "speaker": "s",
+      "text": "There are posters of football players on the wall."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour is Leo's bedroom?",
+      "options": [
+        "green",
+        "white",
+        "blue",
+        "yellow"
+      ],
+      "answer": 2,
+      "feedback": "Yatak odası mavi.",
+      "evidence": "My bedroom is blue."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where are his clothes?",
+      "options": [
+        "in the cupboard",
+        "on the bed",
+        "on the desk",
+        "on the floor"
+      ],
+      "answer": 0,
+      "feedback": "Kıyafetleri dolapta.",
+      "evidence": "My clothes are in the cupboard."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is on the wall?",
+      "options": [
+        "photos of his family",
+        "posters of football players",
+        "a clock",
+        "a map"
+      ],
+      "answer": 1,
+      "feedback": "Duvarda futbolcu posterleri var.",
+      "evidence": "There are posters of football players on the wall."
+    }
+  ]
+}

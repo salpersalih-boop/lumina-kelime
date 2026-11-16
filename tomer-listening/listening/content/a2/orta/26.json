@@ -1,0 +1,120 @@
+{
+  "id": "a2-orta-26",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the bank",
+  "topic": "Banka",
+  "instructions": "Diego banka hesabı açmak istiyor. Gerekli belgeler ve kart hakkındaki bilgilere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Bank clerk",
+      "voice": "female"
+    },
+    "diego": {
+      "name": "Diego",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "diego",
+      "text": "Good morning. I'd like to open a bank account, please."
+    },
+    {
+      "speaker": "staff",
+      "text": "Of course. Are you a student or do you work?"
+    },
+    {
+      "speaker": "diego",
+      "text": "I'm a student. I came here from Mexico two months ago."
+    },
+    {
+      "speaker": "staff",
+      "text": "OK, then you can open a student account. There's no monthly fee."
+    },
+    {
+      "speaker": "diego",
+      "text": "Great. What do you need from me?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Your passport and a letter from your university with your address."
+    },
+    {
+      "speaker": "diego",
+      "text": "I have my passport, but I don't have the letter with me."
+    },
+    {
+      "speaker": "staff",
+      "text": "No problem. You can bring it tomorrow. We open at nine."
+    },
+    {
+      "speaker": "diego",
+      "text": "And when will I get my bank card?"
+    },
+    {
+      "speaker": "staff",
+      "text": "It'll arrive by post in about a week."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Diego from?",
+      "options": [
+        "Spain",
+        "Mexico",
+        "Brazil",
+        "Chile"
+      ],
+      "answer": 1,
+      "feedback": "Diego iki ay önce Meksika'dan geldi.",
+      "evidence": "I came here from Mexico two months ago."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is good about the student account?",
+      "options": [
+        "There's no monthly fee.",
+        "It has a free phone.",
+        "You get money back.",
+        "You don't need a passport."
+      ],
+      "answer": 0,
+      "feedback": "Öğrenci hesabının aylık ücreti yok.",
+      "evidence": "There's no monthly fee."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Diego need to bring tomorrow?",
+      "options": [
+        "his passport",
+        "a photo",
+        "a letter from his university",
+        "some money"
+      ],
+      "answer": 2,
+      "feedback": "Pasaportu yanında ama üniversite mektubu yok; yarın getirecek.",
+      "evidence": "but I don't have the letter with me."
+    },
+    {
+      "id": "q4",
+      "prompt": "How will Diego get his bank card?",
+      "options": [
+        "at the bank tomorrow",
+        "today",
+        "from the university",
+        "by post in about a week"
+      ],
+      "answer": 3,
+      "feedback": "Kart yaklaşık bir haftada postayla gelecek.",
+      "evidence": "It'll arrive by post in about a week."
+    }
+  ]
+}

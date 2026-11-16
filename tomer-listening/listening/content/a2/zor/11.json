@@ -1,0 +1,113 @@
+{
+  "id": "a2-zor-11",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "The weekend forecast",
+  "topic": "Hava durumu (bölgeler)",
+  "instructions": "Hafta sonu hava durumu farklı bölgeler için veriliyor. Bölge, gün ve sıcaklıkları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Weather",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Here's the weather for the weekend."
+    },
+    {
+      "speaker": "host",
+      "text": "On Saturday, it'll be sunny in the south, with temperatures of about twenty-six degrees."
+    },
+    {
+      "speaker": "host",
+      "text": "In the north, it'll be cloudy and cooler, around eighteen degrees, with some rain in the evening."
+    },
+    {
+      "speaker": "host",
+      "text": "On Sunday, the rain will move to the south, so take an umbrella if you live there."
+    },
+    {
+      "speaker": "host",
+      "text": "The north will be dry on Sunday, but very windy near the coast."
+    },
+    {
+      "speaker": "host",
+      "text": "Next week will be warmer everywhere."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What will the weather be like in the south on Saturday?",
+      "options": [
+        "cloudy",
+        "rainy",
+        "sunny",
+        "windy"
+      ],
+      "answer": 2,
+      "feedback": "Cumartesi güneyde güneşli, yaklaşık yirmi altı derece.",
+      "evidence": "it'll be sunny in the south"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the temperature in the north on Saturday?",
+      "options": [
+        "about eighteen degrees",
+        "about twenty-six degrees",
+        "about eight degrees",
+        "about sixteen degrees"
+      ],
+      "answer": 0,
+      "feedback": "Kuzeyde daha serin, yaklaşık on sekiz derece.",
+      "evidence": "around eighteen degrees"
+    },
+    {
+      "id": "q3",
+      "prompt": "When will it rain in the north?",
+      "options": [
+        "Saturday morning",
+        "all day Sunday",
+        "next week",
+        "Saturday evening"
+      ],
+      "answer": 3,
+      "feedback": "Kuzeyde cumartesi akşam (in the evening) biraz yağmur var. Pazar kuzey kuru.",
+      "evidence": "with some rain in the evening."
+    },
+    {
+      "id": "q4",
+      "prompt": "Who needs an umbrella on Sunday?",
+      "options": [
+        "people in the north",
+        "people in the south",
+        "people near the coast",
+        "everybody"
+      ],
+      "answer": 1,
+      "feedback": "Pazar yağmur güneye geçiyor; orada yaşayanlar şemsiye almalı.",
+      "evidence": "On Sunday, the rain will move to the south, so take an umbrella if you live there."
+    },
+    {
+      "id": "q5",
+      "prompt": "What will it be like near the north coast on Sunday?",
+      "options": [
+        "very windy",
+        "very hot",
+        "rainy",
+        "snowy"
+      ],
+      "answer": 0,
+      "feedback": "Kuzey pazar kuru ama kıyıda çok rüzgârlı.",
+      "evidence": "but very windy near the coast."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "a2-zor-01",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Gate change",
+  "topic": "Havalimanı anonsu",
+  "instructions": "Havalimanında hızlı bir anons. Kısa ama bilgi dolu; değişen bilgileri yakala. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Airport",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "This is a message for passengers on flight TK 482 to Berlin."
+    },
+    {
+      "speaker": "voice",
+      "text": "The flight will now leave from gate fourteen, not gate forty."
+    },
+    {
+      "speaker": "voice",
+      "text": "Boarding will start at eleven fifty, thirty minutes later than planned."
+    },
+    {
+      "speaker": "voice",
+      "text": "Passengers with small children can board first."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the flight going?",
+      "options": [
+        "to Bern",
+        "to Berlin",
+        "to Brussels",
+        "to Barcelona"
+      ],
+      "answer": 1,
+      "feedback": "Uçuş Berlin'e (to Berlin).",
+      "evidence": "flight TK 482 to Berlin."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which gate does the flight leave from now?",
+      "options": [
+        "gate forty",
+        "gate four",
+        "gate fourteen",
+        "gate forty-eight"
+      ],
+      "answer": 2,
+      "feedback": "Artık on dört numaralı kapı (gate fourteen), kırk değil.",
+      "evidence": "gate fourteen, not gate forty."
+    },
+    {
+      "id": "q3",
+      "prompt": "When does boarding start?",
+      "options": [
+        "at eleven fifty",
+        "at eleven fifteen",
+        "at eleven twenty",
+        "at twelve thirty"
+      ],
+      "answer": 0,
+      "feedback": "Biniş on bir elli'de (eleven fifty) başlıyor.",
+      "evidence": "Boarding will start at eleven fifty"
+    },
+    {
+      "id": "q4",
+      "prompt": "What time was boarding planned before?",
+      "options": [
+        "at eleven fifty",
+        "at twelve twenty",
+        "at eleven thirty",
+        "at eleven twenty"
+      ],
+      "answer": 3,
+      "feedback": "Biniş planlanandan otuz dakika geç; 11:50 − 30 dakika = 11:20. İki bilgiyi birleştirmen gerek.",
+      "evidence": "thirty minutes later than planned."
+    },
+    {
+      "id": "q5",
+      "prompt": "Who can get on the plane first?",
+      "options": [
+        "passengers with small children",
+        "business class passengers",
+        "old passengers",
+        "passengers with big bags"
+      ],
+      "answer": 0,
+      "feedback": "Küçük çocuklu yolcular önce binebilir.",
+      "evidence": "Passengers with small children can board first."
+    }
+  ]
+}

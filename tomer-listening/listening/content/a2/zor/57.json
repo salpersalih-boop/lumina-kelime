@@ -1,0 +1,105 @@
+{
+  "id": "a2-zor-57",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Closing time",
+  "topic": "Spor merkezi anonsu",
+  "instructions": "Spor merkezinde kapanış anonsu. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Leisure centre",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Attention, please. The leisure centre will close in fifteen minutes, at nine forty-five."
+    },
+    {
+      "speaker": "s",
+      "text": "The sauna is already closed."
+    },
+    {
+      "speaker": "s",
+      "text": "Please return your locker keys to reception before you leave."
+    },
+    {
+      "speaker": "s",
+      "text": "Tomorrow, the centre opens at eight, not seven, because of staff training."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time does the centre close tonight?",
+      "options": [
+        "at nine fifteen",
+        "at nine forty-five",
+        "at ten",
+        "at nine thirty"
+      ],
+      "answer": 1,
+      "feedback": "Merkez dokuz kırk beşte kapanıyor.",
+      "evidence": "at nine forty-five."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time is it now?",
+      "options": [
+        "nine thirty",
+        "nine forty-five",
+        "nine fifteen",
+        "ten o'clock"
+      ],
+      "answer": 0,
+      "feedback": "On beş dakika sonra 9:45; şu an 9:30.",
+      "evidence": "The leisure centre will close in fifteen minutes"
+    },
+    {
+      "id": "q3",
+      "prompt": "What is already closed?",
+      "options": [
+        "the pool",
+        "the gym",
+        "the sauna",
+        "the café"
+      ],
+      "answer": 2,
+      "feedback": "Sauna zaten kapalı.",
+      "evidence": "The sauna is already closed."
+    },
+    {
+      "id": "q4",
+      "prompt": "What should people return?",
+      "options": [
+        "their towels",
+        "their tickets",
+        "their cards",
+        "their locker keys"
+      ],
+      "answer": 3,
+      "feedback": "Dolap anahtarlarını resepsiyona vermeliler.",
+      "evidence": "Please return your locker keys to reception"
+    },
+    {
+      "id": "q5",
+      "prompt": "Why does the centre open later tomorrow?",
+      "options": [
+        "because of cleaning",
+        "because of staff training",
+        "because it is a holiday",
+        "because of repairs"
+      ],
+      "answer": 1,
+      "feedback": "Personel eğitimi nedeniyle.",
+      "evidence": "because of staff training."
+    }
+  ]
+}

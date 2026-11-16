@@ -1,0 +1,105 @@
+{
+  "id": "a1-zor-26",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "No sports today",
+  "topic": "Okul anonsu",
+  "instructions": "Okul hoparlöründen kısa bir anons. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "School office",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Good morning, students."
+    },
+    {
+      "speaker": "voice",
+      "text": "Today the sports lesson is cancelled because the teacher is ill."
+    },
+    {
+      "speaker": "voice",
+      "text": "Class 4B, please go to the library, not the gym."
+    },
+    {
+      "speaker": "voice",
+      "text": "The football match is now on Thursday, not Wednesday."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why is the sports lesson cancelled?",
+      "options": [
+        "It is raining.",
+        "The gym is closed.",
+        "The teacher is ill.",
+        "There is a match."
+      ],
+      "answer": 2,
+      "feedback": "Öğretmen hasta olduğu için spor dersi iptal.",
+      "evidence": "because the teacher is ill."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which class gets the message?",
+      "options": [
+        "Class 4A",
+        "Class 4B",
+        "Class 3B",
+        "Class 2B"
+      ],
+      "answer": 1,
+      "feedback": "Mesaj 4B sınıfı için.",
+      "evidence": "Class 4B, please go to the library"
+    },
+    {
+      "id": "q3",
+      "prompt": "Where should the class go?",
+      "options": [
+        "to the library",
+        "to the gym",
+        "to the classroom",
+        "home"
+      ],
+      "answer": 0,
+      "feedback": "Spor salonuna değil, kütüphaneye gitmeliler.",
+      "evidence": "please go to the library, not the gym."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is the football match now?",
+      "options": [
+        "on Wednesday",
+        "today",
+        "on Friday",
+        "on Thursday"
+      ],
+      "answer": 3,
+      "feedback": "Maç çarşamba değil, perşembe.",
+      "evidence": "The football match is now on Thursday, not Wednesday."
+    },
+    {
+      "id": "q5",
+      "prompt": "When is this announcement?",
+      "options": [
+        "in the evening",
+        "in the morning",
+        "in the afternoon",
+        "at lunch"
+      ],
+      "answer": 1,
+      "feedback": "\"Good morning\" diyor: sabah.",
+      "evidence": "Good morning, students."
+    }
+  ]
+}

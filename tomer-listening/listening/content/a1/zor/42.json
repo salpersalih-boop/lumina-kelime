@@ -1,0 +1,133 @@
+{
+  "id": "a1-zor-42",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "The cooking club",
+  "topic": "Kulübe katılma",
+  "instructions": "Bir kadın mahalledeki yemek kulübü hakkında bilgi alıyor. Gün, saat, fiyat ve gerekenleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "woman": {
+      "name": "Woman",
+      "voice": "female"
+    },
+    "staff": {
+      "name": "Community centre",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "woman",
+      "text": "Hello. I want some information about the cooking club."
+    },
+    {
+      "speaker": "staff",
+      "text": "Sure. It's every Thursday evening, from six to eight."
+    },
+    {
+      "speaker": "woman",
+      "text": "Every Thursday? I work late on the first Thursday of the month."
+    },
+    {
+      "speaker": "staff",
+      "text": "That's OK. You can come on the other Thursdays."
+    },
+    {
+      "speaker": "woman",
+      "text": "How much is it?"
+    },
+    {
+      "speaker": "staff",
+      "text": "It's five pounds a week, or eighteen pounds for a month."
+    },
+    {
+      "speaker": "woman",
+      "text": "What do I need to bring?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Just an apron and a box to take your food home. We buy all the food."
+    },
+    {
+      "speaker": "woman",
+      "text": "And what do you cook?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Food from different countries. Next week is Indian food."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is the cooking club?",
+      "options": [
+        "every Tuesday evening",
+        "every Thursday evening",
+        "every Thursday morning",
+        "every Saturday"
+      ],
+      "answer": 1,
+      "feedback": "Kulüp her perşembe akşamı.",
+      "evidence": "It's every Thursday evening, from six to eight."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long is each meeting?",
+      "options": [
+        "one hour",
+        "two hours",
+        "three hours",
+        "six hours"
+      ],
+      "answer": 1,
+      "feedback": "Altıdan sekize: iki saat.",
+      "evidence": "from six to eight."
+    },
+    {
+      "id": "q3",
+      "prompt": "When does the woman work late?",
+      "options": [
+        "every Thursday",
+        "on Fridays",
+        "on the first Thursday of the month",
+        "at the weekend"
+      ],
+      "answer": 2,
+      "feedback": "Her ayın ilk perşembesi geç çalışıyor.",
+      "evidence": "I work late on the first Thursday of the month."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is it for a month?",
+      "options": [
+        "five pounds",
+        "twenty pounds",
+        "fifteen pounds",
+        "eighteen pounds"
+      ],
+      "answer": 3,
+      "feedback": "Haftalık beş, aylık on sekiz pound.",
+      "evidence": "or eighteen pounds for a month."
+    },
+    {
+      "id": "q5",
+      "prompt": "What food are they cooking next week?",
+      "options": [
+        "Indian food",
+        "Italian food",
+        "Chinese food",
+        "Turkish food"
+      ],
+      "answer": 0,
+      "feedback": "Gelecek hafta Hint yemeği.",
+      "evidence": "Next week is Indian food."
+    }
+  ]
+}

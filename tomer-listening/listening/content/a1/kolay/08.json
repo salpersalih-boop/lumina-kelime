@@ -1,0 +1,98 @@
+{
+  "id": "a1-kolay-08",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My best friend",
+  "topic": "İnsanları tanımlama",
+  "instructions": "Mia en yakın arkadaşı Zoe'yi anlatıyor. Görünüş ve \"but\" ile gelen farklara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mia": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mia",
+      "text": "My best friend's name is Zoe."
+    },
+    {
+      "speaker": "mia",
+      "text": "She is twelve years old, like me."
+    },
+    {
+      "speaker": "mia",
+      "text": "Zoe is tall and she has long black hair."
+    },
+    {
+      "speaker": "mia",
+      "text": "She has brown eyes and a big smile."
+    },
+    {
+      "speaker": "mia",
+      "text": "She lives next to my house."
+    },
+    {
+      "speaker": "mia",
+      "text": "Zoe is very good at sports. She plays tennis and football."
+    },
+    {
+      "speaker": "mia",
+      "text": "I'm not good at sports, but I can sing."
+    },
+    {
+      "speaker": "mia",
+      "text": "We go to the same school, but we aren't in the same class."
+    },
+    {
+      "speaker": "mia",
+      "text": "At the weekend, we watch films together."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Zoe look like?",
+      "options": [
+        "short with blonde hair",
+        "tall with long black hair",
+        "tall with short brown hair",
+        "short with long black hair"
+      ],
+      "answer": 1,
+      "feedback": "Zoe uzun boylu (tall) ve uzun siyah saçlı. Kahverengi (brown) olan gözleri, saçı değil.",
+      "evidence": "Zoe is tall and she has long black hair."
+    },
+    {
+      "id": "q2",
+      "prompt": "What sport does Zoe play?",
+      "options": [
+        "basketball",
+        "swimming",
+        "tennis",
+        "volleyball"
+      ],
+      "answer": 2,
+      "feedback": "Zoe tenis ve futbol oynuyor. Şıklarda yalnızca tenis var.",
+      "evidence": "She plays tennis and football."
+    },
+    {
+      "id": "q3",
+      "prompt": "Are Mia and Zoe in the same class?",
+      "options": [
+        "Yes, they are.",
+        "No, they aren't.",
+        "They don't go to school."
+      ],
+      "answer": 1,
+      "feedback": "Aynı okula gidiyorlar ama aynı sınıfta değiller (aren't in the same class).",
+      "evidence": "We go to the same school, but we aren't in the same class."
+    }
+  ]
+}

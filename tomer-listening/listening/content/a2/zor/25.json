@@ -1,0 +1,113 @@
+{
+  "id": "a2-zor-25",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Storm warning",
+  "topic": "Hava uyarısı",
+  "instructions": "Radyoda fırtına uyarısı veriliyor. Bölgeleri, saatleri ve tavsiyeleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Radio",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "This is a weather warning for tonight."
+    },
+    {
+      "speaker": "host",
+      "text": "A big storm will arrive in the west at about nine p.m. and move east after midnight."
+    },
+    {
+      "speaker": "host",
+      "text": "There will be very strong winds, up to one hundred kilometres per hour, and heavy rain."
+    },
+    {
+      "speaker": "host",
+      "text": "Please don't drive unless it's necessary, and stay away from the coast."
+    },
+    {
+      "speaker": "host",
+      "text": "All ferries tonight are cancelled, but trains are running normally for now."
+    },
+    {
+      "speaker": "host",
+      "text": "The storm will finish by tomorrow morning, and the afternoon will be sunny."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When will the storm arrive in the west?",
+      "options": [
+        "at about nine p.m.",
+        "after midnight",
+        "tomorrow morning",
+        "at about nine a.m."
+      ],
+      "answer": 0,
+      "feedback": "Fırtına batıya akşam dokuz civarında gelecek; gece yarısından sonra doğuya geçecek.",
+      "evidence": "will arrive in the west at about nine p.m."
+    },
+    {
+      "id": "q2",
+      "prompt": "How strong will the winds be?",
+      "options": [
+        "up to ten kilometres per hour",
+        "up to fifty kilometres per hour",
+        "up to one hundred kilometres per hour",
+        "up to one thousand kilometres per hour"
+      ],
+      "answer": 2,
+      "feedback": "Rüzgâr saatte yüz kilometreye kadar çıkacak.",
+      "evidence": "up to one hundred kilometres per hour"
+    },
+    {
+      "id": "q3",
+      "prompt": "What should people do?",
+      "options": [
+        "go to the coast",
+        "drive slowly",
+        "take the ferry",
+        "stay away from the coast"
+      ],
+      "answer": 3,
+      "feedback": "Gerekmedikçe araba kullanmayın ve kıyıdan uzak durun.",
+      "evidence": "stay away from the coast."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is cancelled tonight?",
+      "options": [
+        "trains",
+        "ferries",
+        "buses",
+        "flights"
+      ],
+      "answer": 1,
+      "feedback": "Bu geceki bütün feribotlar iptal; trenler şimdilik normal.",
+      "evidence": "All ferries tonight are cancelled"
+    },
+    {
+      "id": "q5",
+      "prompt": "What will the weather be like tomorrow afternoon?",
+      "options": [
+        "stormy",
+        "rainy",
+        "sunny",
+        "windy"
+      ],
+      "answer": 2,
+      "feedback": "Fırtına yarın sabaha biter; öğleden sonra güneşli.",
+      "evidence": "the afternoon will be sunny."
+    }
+  ]
+}

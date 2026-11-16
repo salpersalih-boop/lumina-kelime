@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-50",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My sister's wedding",
+  "topic": "Düğün (geçmiş zaman)",
+  "instructions": "Tom kız kardeşinin düğününü anlatıyor. Uzun bir metin; yer, saat ve kişileri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last Saturday was my sister's wedding."
+    },
+    {
+      "speaker": "s",
+      "text": "It was in a small church in our village at eleven o'clock."
+    },
+    {
+      "speaker": "s",
+      "text": "My sister wore a long white dress, and her husband, Mark, wore a grey suit."
+    },
+    {
+      "speaker": "s",
+      "text": "After the church, we had lunch in a big garden. There were one hundred people!"
+    },
+    {
+      "speaker": "s",
+      "text": "The food was very good. I ate a lot of cake."
+    },
+    {
+      "speaker": "s",
+      "text": "In the evening, there was music and everyone danced."
+    },
+    {
+      "speaker": "s",
+      "text": "My grandmother danced with me. She is eighty years old, but she dances very well!"
+    },
+    {
+      "speaker": "s",
+      "text": "We went home at midnight. I was very tired but happy."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where was the wedding?",
+      "options": [
+        "in a big church in the city",
+        "in a small church in their village",
+        "in a garden",
+        "in a hotel"
+      ],
+      "answer": 1,
+      "feedback": "Köylerindeki küçük bir kilisede.",
+      "evidence": "It was in a small church in our village"
+    },
+    {
+      "id": "q2",
+      "prompt": "What did Mark wear?",
+      "options": [
+        "a black suit",
+        "a white suit",
+        "a blue suit",
+        "a grey suit"
+      ],
+      "answer": 3,
+      "feedback": "Mark gri takım elbise giydi.",
+      "evidence": "wore a grey suit."
+    },
+    {
+      "id": "q3",
+      "prompt": "How many people were at the lunch?",
+      "options": [
+        "ten",
+        "fifty",
+        "one hundred",
+        "eighty"
+      ],
+      "answer": 2,
+      "feedback": "Yüz kişi vardı.",
+      "evidence": "There were one hundred people!"
+    },
+    {
+      "id": "q4",
+      "prompt": "Who danced with Tom?",
+      "options": [
+        "his sister",
+        "his grandmother",
+        "Mark",
+        "his mother"
+      ],
+      "answer": 1,
+      "feedback": "Seksen yaşındaki büyükannesi onunla dans etti.",
+      "evidence": "My grandmother danced with me."
+    },
+    {
+      "id": "q5",
+      "prompt": "When did they go home?",
+      "options": [
+        "at midnight",
+        "at eleven",
+        "in the evening",
+        "at one o'clock"
+      ],
+      "answer": 0,
+      "feedback": "Gece yarısı eve gittiler.",
+      "evidence": "We went home at midnight."
+    }
+  ]
+}

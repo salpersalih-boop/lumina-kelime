@@ -1,0 +1,109 @@
+{
+  "id": "a2-zor-60",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Three-day forecast",
+  "topic": "Hava durumu",
+  "instructions": "Üç günlük hava durumu. Günleri, sıcaklıkları ve bölgeleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Weather",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Here's the weather forecast for the next three days."
+    },
+    {
+      "speaker": "s",
+      "text": "Today will be sunny and warm in most places, with temperatures of around twenty-four degrees."
+    },
+    {
+      "speaker": "s",
+      "text": "Tomorrow, clouds will come from the west, and there will be heavy rain in the afternoon, especially in the mountains."
+    },
+    {
+      "speaker": "s",
+      "text": "On Friday, the rain will stop in the morning, but it will be much cooler, only about fifteen degrees, and windy near the coast."
+    },
+    {
+      "speaker": "s",
+      "text": "The weekend looks sunny again, so it's a good time for outdoor plans."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What will today be like?",
+      "options": [
+        "rainy",
+        "sunny and warm",
+        "cool and windy",
+        "cloudy"
+      ],
+      "answer": 1,
+      "feedback": "Bugün güneşli ve ılık.",
+      "evidence": "Today will be sunny and warm"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where will the rain be heaviest tomorrow?",
+      "options": [
+        "near the coast",
+        "in the city",
+        "in the mountains",
+        "in the south"
+      ],
+      "answer": 2,
+      "feedback": "Yarın özellikle dağlarda yoğun yağmur.",
+      "evidence": "especially in the mountains."
+    },
+    {
+      "id": "q3",
+      "prompt": "What will the temperature be on Friday?",
+      "options": [
+        "about twenty-four degrees",
+        "about fifteen degrees",
+        "about five degrees",
+        "about fifty degrees"
+      ],
+      "answer": 1,
+      "feedback": "Cuma çok daha serin, yaklaşık on beş derece.",
+      "evidence": "only about fifteen degrees"
+    },
+    {
+      "id": "q4",
+      "prompt": "When will the rain stop?",
+      "options": [
+        "tomorrow afternoon",
+        "on Friday morning",
+        "at the weekend",
+        "today"
+      ],
+      "answer": 1,
+      "feedback": "Yağmur cuma sabahı duracak.",
+      "evidence": "On Friday, the rain will stop in the morning"
+    },
+    {
+      "id": "q5",
+      "prompt": "What does the forecaster say about the weekend?",
+      "options": [
+        "It's good for outdoor plans.",
+        "It will be very windy.",
+        "It will snow.",
+        "It will rain all weekend."
+      ],
+      "answer": 0,
+      "feedback": "Hafta sonu yine güneşli; açık hava planları için iyi.",
+      "evidence": "so it's a good time for outdoor plans."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-59",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Buying a cinema ticket",
+  "topic": "Sinema",
+  "instructions": "Bir adam sinemada bilet alıyor. Film saati, koltuk ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Man",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Cinema staff",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello. One ticket for 'Space Dogs', please."
+    },
+    {
+      "speaker": "b",
+      "text": "For the six o'clock or the eight o'clock show?"
+    },
+    {
+      "speaker": "a",
+      "text": "Eight o'clock, please."
+    },
+    {
+      "speaker": "b",
+      "text": "Where do you want to sit? The front or the back?"
+    },
+    {
+      "speaker": "a",
+      "text": "The back, please."
+    },
+    {
+      "speaker": "b",
+      "text": "That's nine pounds."
+    },
+    {
+      "speaker": "a",
+      "text": "Here you are."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which film does the man want to see?",
+      "options": [
+        "Space Cats",
+        "Space Dogs",
+        "Sea Dogs",
+        "Star Dogs"
+      ],
+      "answer": 1,
+      "feedback": "Space Dogs filmini izlemek istiyor.",
+      "evidence": "One ticket for 'Space Dogs', please."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time is his show?",
+      "options": [
+        "at six o'clock",
+        "at seven o'clock",
+        "at eight o'clock",
+        "at nine o'clock"
+      ],
+      "answer": 2,
+      "feedback": "Saat sekiz seansı.",
+      "evidence": "Eight o'clock, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where does he want to sit?",
+      "options": [
+        "at the front",
+        "in the middle",
+        "near the door",
+        "at the back"
+      ],
+      "answer": 3,
+      "feedback": "Arkada oturmak istiyor.",
+      "evidence": "The back, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the ticket?",
+      "options": [
+        "nine pounds",
+        "eight pounds",
+        "six pounds",
+        "nineteen pounds"
+      ],
+      "answer": 0,
+      "feedback": "Bilet dokuz pound.",
+      "evidence": "That's nine pounds."
+    }
+  ]
+}

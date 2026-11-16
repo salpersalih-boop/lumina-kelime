@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-46",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the bakery counter",
+  "topic": "Alışveriş",
+  "instructions": "Bir kadın fırından ekmek ve kek alıyor. Kısa bir diyalog; sayı ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Baker",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good morning. What would you like?"
+    },
+    {
+      "speaker": "b",
+      "text": "Two loaves of bread and three muffins, please."
+    },
+    {
+      "speaker": "a",
+      "text": "Chocolate or banana muffins?"
+    },
+    {
+      "speaker": "b",
+      "text": "Banana, please."
+    },
+    {
+      "speaker": "a",
+      "text": "That's six pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many loaves of bread does she buy?",
+      "options": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "answer": 1,
+      "feedback": "İki somun ekmek alıyor.",
+      "evidence": "Two loaves of bread"
+    },
+    {
+      "id": "q2",
+      "prompt": "How many muffins does she buy?",
+      "options": [
+        "two",
+        "six",
+        "three",
+        "four"
+      ],
+      "answer": 2,
+      "feedback": "Üç muffin alıyor.",
+      "evidence": "three muffins, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "What kind of muffins does she choose?",
+      "options": [
+        "chocolate",
+        "banana",
+        "lemon",
+        "apple"
+      ],
+      "answer": 1,
+      "feedback": "Muzlu muffin seçiyor.",
+      "evidence": "Banana, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does she pay?",
+      "options": [
+        "six pounds",
+        "three pounds",
+        "two pounds",
+        "sixteen pounds"
+      ],
+      "answer": 0,
+      "feedback": "Altı pound ödüyor.",
+      "evidence": "That's six pounds."
+    }
+  ]
+}

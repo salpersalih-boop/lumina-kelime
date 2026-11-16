@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-66",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Getting a haircut",
+  "topic": "Kuaför",
+  "instructions": "Bir çocuk berberde saç kestiriyor. Kısa bir diyalog; ne istediğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Barber",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Boy",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hi! What would you like today?"
+    },
+    {
+      "speaker": "b",
+      "text": "Short on the sides, please, but not too short on top."
+    },
+    {
+      "speaker": "a",
+      "text": "OK. That's ten pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "Can I pay by card?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, no problem."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the boy?",
+      "options": [
+        "at the barber's",
+        "at the doctor's",
+        "at school",
+        "at a shop"
+      ],
+      "answer": 0,
+      "feedback": "Berberde.",
+      "evidence": "What would you like today?"
+    },
+    {
+      "id": "q2",
+      "prompt": "How does he want the sides?",
+      "options": [
+        "long",
+        "not too short",
+        "short",
+        "the same"
+      ],
+      "answer": 2,
+      "feedback": "Yanları kısa istiyor.",
+      "evidence": "Short on the sides, please"
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is the haircut?",
+      "options": [
+        "five pounds",
+        "twelve pounds",
+        "twenty pounds",
+        "ten pounds"
+      ],
+      "answer": 3,
+      "feedback": "Saç kesimi on pound.",
+      "evidence": "That's ten pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "How does he pay?",
+      "options": [
+        "by card",
+        "in cash",
+        "by phone",
+        "He doesn't pay."
+      ],
+      "answer": 0,
+      "feedback": "Kartla ödüyor.",
+      "evidence": "Yes, no problem."
+    }
+  ]
+}

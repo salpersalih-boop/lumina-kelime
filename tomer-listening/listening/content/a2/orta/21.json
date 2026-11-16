@@ -1,0 +1,120 @@
+{
+  "id": "a2-orta-21",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Buying a return ticket",
+  "topic": "Tren bileti",
+  "instructions": "Hannah istasyonda gidiş-dönüş bilet alıyor. Saat, peron ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "hannah": {
+      "name": "Hannah",
+      "voice": "female"
+    },
+    "clerk": {
+      "name": "Ticket office",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "hannah",
+      "text": "Hello. I'd like a return ticket to York, please."
+    },
+    {
+      "speaker": "clerk",
+      "text": "When are you coming back?"
+    },
+    {
+      "speaker": "hannah",
+      "text": "On Sunday evening."
+    },
+    {
+      "speaker": "clerk",
+      "text": "OK. That's forty-two pounds. If you have a student card, it's thirty."
+    },
+    {
+      "speaker": "hannah",
+      "text": "I'm not a student any more, unfortunately. When's the next train?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "There's one at ten fifteen, but it's very slow. The ten forty is faster. It arrives at the same time."
+    },
+    {
+      "speaker": "hannah",
+      "text": "Then I'll take the ten forty. Which platform?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "Platform nine."
+    },
+    {
+      "speaker": "hannah",
+      "text": "Thanks. Is there a café on the train?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "Yes, but it's quite expensive. You can buy a coffee here in the station."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much does Hannah pay?",
+      "options": [
+        "thirty pounds",
+        "forty-two pounds",
+        "twenty-four pounds",
+        "forty pounds"
+      ],
+      "answer": 1,
+      "feedback": "Artık öğrenci değil; kırk iki pound ödüyor.",
+      "evidence": "That's forty-two pounds."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why does Hannah take the ten forty train?",
+      "options": [
+        "It's cheaper.",
+        "It's faster.",
+        "It has a café.",
+        "The ten fifteen is full."
+      ],
+      "answer": 1,
+      "feedback": "10:40 daha hızlı ve aynı saatte varıyor.",
+      "evidence": "The ten forty is faster."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which platform does the train leave from?",
+      "options": [
+        "platform nine",
+        "platform ten",
+        "platform four",
+        "platform fifteen"
+      ],
+      "answer": 0,
+      "feedback": "Dokuz numaralı peron.",
+      "evidence": "Platform nine."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the clerk say about the café on the train?",
+      "options": [
+        "It's closed.",
+        "There isn't one.",
+        "It's very good.",
+        "It's quite expensive."
+      ],
+      "answer": 3,
+      "feedback": "Trende kafe var ama oldukça pahalı.",
+      "evidence": "Yes, but it's quite expensive."
+    }
+  ]
+}

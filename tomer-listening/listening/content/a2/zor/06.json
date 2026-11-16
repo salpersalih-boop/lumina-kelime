@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-06",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Which phone should I buy?",
+  "topic": "Ürün karşılaştırma",
+  "instructions": "Deniz mağazada iki telefonu karşılaştırıyor. Hangi özelliğin hangi telefona ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "deniz": {
+      "name": "Deniz",
+      "voice": "female"
+    },
+    "staff": {
+      "name": "Shop assistant",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "deniz",
+      "text": "Hi. I can't decide between these two phones. What's the difference?"
+    },
+    {
+      "speaker": "staff",
+      "text": "The Nova is cheaper, only two hundred and fifty pounds. The Star is four hundred."
+    },
+    {
+      "speaker": "deniz",
+      "text": "Why is the Star more expensive?"
+    },
+    {
+      "speaker": "staff",
+      "text": "It has a better camera, and the screen is bigger."
+    },
+    {
+      "speaker": "deniz",
+      "text": "What about the battery?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Actually, the Nova's battery is better. It lasts two days. The Star lasts only one day."
+    },
+    {
+      "speaker": "deniz",
+      "text": "I don't take many photos, but I travel a lot for work."
+    },
+    {
+      "speaker": "staff",
+      "text": "Then I think the Nova is better for you."
+    },
+    {
+      "speaker": "deniz",
+      "text": "You're right. I'll take the Nova in grey, please."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much is the Star?",
+      "options": [
+        "two hundred and fifty pounds",
+        "four hundred pounds",
+        "four hundred and fifty pounds",
+        "two hundred pounds"
+      ],
+      "answer": 1,
+      "feedback": "Star dört yüz pound; Nova iki yüz elli.",
+      "evidence": "The Star is four hundred."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is better on the Star?",
+      "options": [
+        "the battery",
+        "the price",
+        "the camera and the screen",
+        "the colour"
+      ],
+      "answer": 2,
+      "feedback": "Star'ın kamerası daha iyi, ekranı daha büyük.",
+      "evidence": "It has a better camera, and the screen is bigger."
+    },
+    {
+      "id": "q3",
+      "prompt": "How long does the Nova's battery last?",
+      "options": [
+        "one day",
+        "half a day",
+        "three days",
+        "two days"
+      ],
+      "answer": 3,
+      "feedback": "Nova'nın pili iki gün dayanıyor; Star'ınki bir gün.",
+      "evidence": "It lasts two days."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why does Deniz choose the Nova?",
+      "options": [
+        "She travels a lot.",
+        "She takes a lot of photos.",
+        "She likes big screens.",
+        "It looks nicer."
+      ],
+      "answer": 0,
+      "feedback": "Çok fotoğraf çekmiyor ama iş için çok seyahat ediyor; uzun pil önemli.",
+      "evidence": "but I travel a lot for work."
+    },
+    {
+      "id": "q5",
+      "prompt": "What colour phone does Deniz buy?",
+      "options": [
+        "black",
+        "grey",
+        "white",
+        "blue"
+      ],
+      "answer": 1,
+      "feedback": "Nova'yı gri (grey) renkte alıyor.",
+      "evidence": "I'll take the Nova in grey, please."
+    }
+  ]
+}

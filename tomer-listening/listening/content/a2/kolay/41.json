@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-41",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Shopping online",
+  "topic": "Alışveriş alışkanlıkları",
+  "instructions": "Kerem neden internetten alışveriş yaptığını anlatıyor. İyi ve kötü yanlara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "kerem": {
+      "name": "Kerem",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "kerem",
+      "text": "These days, I buy almost everything online, even food."
+    },
+    {
+      "speaker": "kerem",
+      "text": "It's quicker than going to the shops, and I can do it at midnight if I want."
+    },
+    {
+      "speaker": "kerem",
+      "text": "Prices are often lower online too."
+    },
+    {
+      "speaker": "kerem",
+      "text": "But sometimes clothes don't fit, and sending them back is annoying."
+    },
+    {
+      "speaker": "kerem",
+      "text": "Last month, I ordered a jacket three times before I got the right size!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Kerem buy online?",
+      "options": [
+        "only clothes",
+        "almost everything",
+        "only books",
+        "only food"
+      ],
+      "answer": 1,
+      "feedback": "Yiyecek dahil neredeyse her şeyi internetten alıyor.",
+      "evidence": "I buy almost everything online, even food."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem with buying clothes online?",
+      "options": [
+        "They're expensive.",
+        "They arrive late.",
+        "Sometimes they don't fit.",
+        "The colours are wrong."
+      ],
+      "answer": 2,
+      "feedback": "Bazen kıyafetler olmuyor ve geri göndermek can sıkıcı.",
+      "evidence": "But sometimes clothes don't fit"
+    },
+    {
+      "id": "q3",
+      "prompt": "How many times did he order the jacket?",
+      "options": [
+        "three times",
+        "twice",
+        "once",
+        "four times"
+      ],
+      "answer": 0,
+      "feedback": "Doğru bedeni alana kadar ceketi üç kez sipariş etti.",
+      "evidence": "I ordered a jacket three times"
+    }
+  ]
+}

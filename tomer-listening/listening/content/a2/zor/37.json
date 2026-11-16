@@ -1,0 +1,121 @@
+{
+  "id": "a2-zor-37",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "How to learn a language",
+  "topic": "Podcast: dil öğrenme",
+  "instructions": "Bir dil öğretmeni podcast'te dil öğrenme önerileri veriyor. Uzun bir metin; önerileri ve sayıları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Podcast host",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Welcome back to Language Tips. Today, I'm giving you my five best ideas for learning a new language."
+    },
+    {
+      "speaker": "host",
+      "text": "First, study a little every day. Fifteen minutes every day is better than two hours once a week."
+    },
+    {
+      "speaker": "host",
+      "text": "Second, don't be afraid of mistakes. Everyone makes them, and they help you learn."
+    },
+    {
+      "speaker": "host",
+      "text": "Third, listen to podcasts or music in the language. You can do this on the bus or while you cook."
+    },
+    {
+      "speaker": "host",
+      "text": "Fourth, find a speaking partner. Many people use apps to talk to native speakers online."
+    },
+    {
+      "speaker": "host",
+      "text": "And finally, choose things you enjoy. If you love football, read football news in your new language."
+    },
+    {
+      "speaker": "host",
+      "text": "Some people think you need to live abroad to learn a language. That isn't true, but it helps!"
+    },
+    {
+      "speaker": "host",
+      "text": "Next week, I'll talk about the best apps for learning vocabulary."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does the host say about studying?",
+      "options": [
+        "Study two hours once a week.",
+        "Study a little every day.",
+        "Study only at the weekend.",
+        "Study at night."
+      ],
+      "answer": 1,
+      "feedback": "Her gün biraz çalışmak, haftada bir iki saatten iyidir.",
+      "evidence": "First, study a little every day."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many minutes a day does she suggest?",
+      "options": [
+        "five",
+        "fifteen",
+        "fifty",
+        "thirty"
+      ],
+      "answer": 1,
+      "feedback": "Günde on beş dakika öneriyor.",
+      "evidence": "Fifteen minutes every day"
+    },
+    {
+      "id": "q3",
+      "prompt": "What does she say about mistakes?",
+      "options": [
+        "Try not to make them.",
+        "They help you learn.",
+        "Only beginners make them.",
+        "Teachers should correct them all."
+      ],
+      "answer": 1,
+      "feedback": "Herkes hata yapar ve hatalar öğrenmeye yardım eder.",
+      "evidence": "and they help you learn."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is her fourth idea?",
+      "options": [
+        "listen to music",
+        "read the news",
+        "find a speaking partner",
+        "live abroad"
+      ],
+      "answer": 2,
+      "feedback": "Dördüncü öneri: bir konuşma partneri bulmak.",
+      "evidence": "Fourth, find a speaking partner."
+    },
+    {
+      "id": "q5",
+      "prompt": "What will she talk about next week?",
+      "options": [
+        "speaking partners",
+        "living abroad",
+        "football news",
+        "the best apps for learning vocabulary"
+      ],
+      "answer": 3,
+      "feedback": "Gelecek hafta kelime öğrenmek için en iyi uygulamaları anlatacak.",
+      "evidence": "Next week, I'll talk about the best apps for learning vocabulary."
+    }
+  ]
+}

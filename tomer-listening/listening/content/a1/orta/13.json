@@ -1,0 +1,120 @@
+{
+  "id": "a1-orta-13",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the market",
+  "topic": "Pazar alışverişi",
+  "instructions": "Peter pazarda meyve sebze alıyor. Miktarlara ve toplam fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "seller": {
+      "name": "Seller",
+      "voice": "female"
+    },
+    "peter": {
+      "name": "Peter",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "seller",
+      "text": "Good morning! What would you like?"
+    },
+    {
+      "speaker": "peter",
+      "text": "Good morning. A kilo of tomatoes, please."
+    },
+    {
+      "speaker": "seller",
+      "text": "Here you are. Anything else?"
+    },
+    {
+      "speaker": "peter",
+      "text": "Yes. Six oranges, please."
+    },
+    {
+      "speaker": "seller",
+      "text": "Sorry, I don't have any oranges today. I have nice apples."
+    },
+    {
+      "speaker": "peter",
+      "text": "OK, then six apples, please. And are these bananas from Spain?"
+    },
+    {
+      "speaker": "seller",
+      "text": "No, they are from Colombia."
+    },
+    {
+      "speaker": "peter",
+      "text": "Fine. I'll take some bananas too. How much is that?"
+    },
+    {
+      "speaker": "seller",
+      "text": "That's seven pounds fifty, please."
+    },
+    {
+      "speaker": "peter",
+      "text": "Here you are. Thank you!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many tomatoes does Peter buy?",
+      "options": [
+        "six",
+        "a kilo",
+        "two kilos",
+        "half a kilo"
+      ],
+      "answer": 1,
+      "feedback": "Peter bir kilo (a kilo of) domates alıyor. Altı, elmaların sayısı.",
+      "evidence": "A kilo of tomatoes, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why doesn't Peter buy oranges?",
+      "options": [
+        "They are expensive.",
+        "He doesn't like them.",
+        "There are no oranges today.",
+        "They are from Spain."
+      ],
+      "answer": 2,
+      "feedback": "Satıcının bugün portakalı yok (I don't have any oranges today).",
+      "evidence": "Sorry, I don't have any oranges today."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where are the bananas from?",
+      "options": [
+        "Colombia",
+        "Spain",
+        "Brazil",
+        "Turkey"
+      ],
+      "answer": 0,
+      "feedback": "Muzlar İspanya'dan değil, Kolombiya'dan (Colombia).",
+      "evidence": "No, they are from Colombia."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does Peter pay?",
+      "options": [
+        "five pounds seventy",
+        "seventeen pounds fifty",
+        "seven pounds fifteen",
+        "seven pounds fifty"
+      ],
+      "answer": 3,
+      "feedback": "Toplam yedi pound elli (seven pounds fifty).",
+      "evidence": "That's seven pounds fifty, please."
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "id": "a2-zor-28",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A lost passport",
+  "topic": "Konsoloslukta",
+  "instructions": "Turist Lena kayıp pasaportu için konsolosluğa gidiyor. Uzun bir diyalog; gerekenleri, süreyi ve ücreti takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "officer": {
+      "name": "Consulate officer",
+      "voice": "male"
+    },
+    "lena": {
+      "name": "Lena",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "officer",
+      "text": "Good morning. How can I help?"
+    },
+    {
+      "speaker": "lena",
+      "text": "I think someone stole my passport yesterday. I was at the market, and my bag was open."
+    },
+    {
+      "speaker": "officer",
+      "text": "I'm sorry. Have you told the police?"
+    },
+    {
+      "speaker": "lena",
+      "text": "Yes, I went to the police station last night. Here is the police report."
+    },
+    {
+      "speaker": "officer",
+      "text": "Good. When are you flying home?"
+    },
+    {
+      "speaker": "lena",
+      "text": "On Thursday, in three days."
+    },
+    {
+      "speaker": "officer",
+      "text": "Then we can give you an emergency passport. It's valid for one trip only."
+    },
+    {
+      "speaker": "lena",
+      "text": "What do you need from me?"
+    },
+    {
+      "speaker": "officer",
+      "text": "Two photos, the police report, and a copy of your flight ticket."
+    },
+    {
+      "speaker": "lena",
+      "text": "I have the report and the ticket, but no photos."
+    },
+    {
+      "speaker": "officer",
+      "text": "There's a photo machine at the station across the road."
+    },
+    {
+      "speaker": "lena",
+      "text": "How long does it take?"
+    },
+    {
+      "speaker": "officer",
+      "text": "If you bring everything before twelve, you can collect it tomorrow afternoon. It costs one hundred euros."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where was Lena when her passport was stolen?",
+      "options": [
+        "at the hotel",
+        "at the market",
+        "on the bus",
+        "at the station"
+      ],
+      "answer": 1,
+      "feedback": "Pazardaydı ve çantası açıktı.",
+      "evidence": "I was at the market, and my bag was open."
+    },
+    {
+      "id": "q2",
+      "prompt": "When is Lena flying home?",
+      "options": [
+        "tomorrow",
+        "today",
+        "on Thursday",
+        "next week"
+      ],
+      "answer": 2,
+      "feedback": "Üç gün sonra, perşembe günü uçuyor.",
+      "evidence": "On Thursday, in three days."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is special about the emergency passport?",
+      "options": [
+        "It's free.",
+        "It's valid for one trip only.",
+        "It's valid for one year.",
+        "It has no photo."
+      ],
+      "answer": 1,
+      "feedback": "Acil pasaport sadece tek bir yolculuk için geçerli.",
+      "evidence": "It's valid for one trip only."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Lena need to get?",
+      "options": [
+        "a police report",
+        "a flight ticket",
+        "a new bag",
+        "photos"
+      ],
+      "answer": 3,
+      "feedback": "Rapor ve bileti var; fotoğrafı yok.",
+      "evidence": "I have the report and the ticket, but no photos."
+    },
+    {
+      "id": "q5",
+      "prompt": "How much does the emergency passport cost?",
+      "options": [
+        "one hundred euros",
+        "twelve euros",
+        "fifty euros",
+        "nothing"
+      ],
+      "answer": 0,
+      "feedback": "Acil pasaport yüz euro.",
+      "evidence": "It costs one hundred euros."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-49",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Meeting after school",
+  "topic": "Buluşma",
+  "instructions": "İki arkadaş okuldan sonra buluşmayı planlıyor. Kısa bir diyalog; yer ve saate dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Emma",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Jack",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Jack, do you want to play tennis after school?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes! Where?"
+    },
+    {
+      "speaker": "a",
+      "text": "At the park. At four o'clock?"
+    },
+    {
+      "speaker": "b",
+      "text": "I have a piano lesson until four. Can we meet at half past four?"
+    },
+    {
+      "speaker": "a",
+      "text": "OK, see you then."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Emma want to do?",
+      "options": [
+        "play football",
+        "play tennis",
+        "go swimming",
+        "watch a film"
+      ],
+      "answer": 1,
+      "feedback": "Tenis oynamak istiyor.",
+      "evidence": "do you want to play tennis after school?"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where are they going to play?",
+      "options": [
+        "at school",
+        "at the park",
+        "at the sports centre",
+        "at Jack's house"
+      ],
+      "answer": 1,
+      "feedback": "Parkta oynayacaklar.",
+      "evidence": "At the park."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why can't Jack meet at four?",
+      "options": [
+        "He has homework.",
+        "He has a piano lesson.",
+        "He is tired.",
+        "He has football."
+      ],
+      "answer": 1,
+      "feedback": "Saat dörde kadar piyano dersi var.",
+      "evidence": "I have a piano lesson until four."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time will they meet?",
+      "options": [
+        "at four",
+        "at five",
+        "at half past four",
+        "at half past three"
+      ],
+      "answer": 2,
+      "feedback": "Dört buçukta buluşacaklar.",
+      "evidence": "Can we meet at half past four?"
+    }
+  ]
+}

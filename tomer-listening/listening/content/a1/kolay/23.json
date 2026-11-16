@@ -1,0 +1,87 @@
+{
+  "id": "a1-kolay-23",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My village",
+  "topic": "Yaşanılan yer",
+  "instructions": "Rosa köyünü anlatıyor. Köyde ne olduğuna ve ne olmadığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "rosa": {
+      "name": "Rosa",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "rosa",
+      "text": "I live in a small village in the mountains."
+    },
+    {
+      "speaker": "rosa",
+      "text": "There are about two hundred people here."
+    },
+    {
+      "speaker": "rosa",
+      "text": "There is a school, a small shop and a church."
+    },
+    {
+      "speaker": "rosa",
+      "text": "There isn't a cinema or a hospital."
+    },
+    {
+      "speaker": "rosa",
+      "text": "The air is clean and it is very quiet."
+    },
+    {
+      "speaker": "rosa",
+      "text": "I love my village, but in winter it is very cold."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many people live in the village?",
+      "options": [
+        "about twenty",
+        "about two hundred",
+        "about two thousand",
+        "about twelve"
+      ],
+      "answer": 1,
+      "feedback": "Köyde yaklaşık iki yüz (two hundred) kişi yaşıyor.",
+      "evidence": "There are about two hundred people here."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is NOT in the village?",
+      "options": [
+        "a school",
+        "a shop",
+        "a church",
+        "a cinema"
+      ],
+      "answer": 3,
+      "feedback": "Köyde sinema ve hastane yok.",
+      "evidence": "There isn't a cinema or a hospital."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the problem in winter?",
+      "options": [
+        "It's very cold.",
+        "It's noisy.",
+        "It's dark.",
+        "There's no school."
+      ],
+      "answer": 0,
+      "feedback": "Kışın çok soğuk.",
+      "evidence": "in winter it is very cold."
+    }
+  ]
+}

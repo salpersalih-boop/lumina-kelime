@@ -1,0 +1,105 @@
+{
+  "id": "a2-zor-49",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Changes at City Gym",
+  "topic": "Spor salonu duyurusu",
+  "instructions": "Spor salonundan kısa bir duyuru. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Gym",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Hello, this is a message for all members of City Gym."
+    },
+    {
+      "speaker": "s",
+      "text": "From next Monday, the gym will open at six a.m. instead of seven."
+    },
+    {
+      "speaker": "s",
+      "text": "The swimming pool will be closed for two weeks for repairs."
+    },
+    {
+      "speaker": "s",
+      "text": "Yoga classes are moving from room two to room five."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is the message for?",
+      "options": [
+        "new members",
+        "all members",
+        "the staff",
+        "swimmers only"
+      ],
+      "answer": 1,
+      "feedback": "Mesaj tüm üyeler için.",
+      "evidence": "this is a message for all members of City Gym."
+    },
+    {
+      "id": "q2",
+      "prompt": "When do the changes start?",
+      "options": [
+        "today",
+        "next Monday",
+        "next month",
+        "in two weeks"
+      ],
+      "answer": 1,
+      "feedback": "Gelecek pazartesiden itibaren.",
+      "evidence": "From next Monday"
+    },
+    {
+      "id": "q3",
+      "prompt": "What time will the gym open?",
+      "options": [
+        "at five a.m.",
+        "at seven a.m.",
+        "at six a.m.",
+        "at eight a.m."
+      ],
+      "answer": 2,
+      "feedback": "Yedi yerine sabah altıda açılacak.",
+      "evidence": "the gym will open at six a.m. instead of seven."
+    },
+    {
+      "id": "q4",
+      "prompt": "How long will the pool be closed?",
+      "options": [
+        "one week",
+        "two weeks",
+        "two days",
+        "a month"
+      ],
+      "answer": 1,
+      "feedback": "Havuz tamir için iki hafta kapalı.",
+      "evidence": "closed for two weeks for repairs."
+    },
+    {
+      "id": "q5",
+      "prompt": "Where will the yoga classes be?",
+      "options": [
+        "room two",
+        "the pool",
+        "room six",
+        "room five"
+      ],
+      "answer": 3,
+      "feedback": "Yoga iki numaradan beş numaralı odaya taşınıyor.",
+      "evidence": "Yoga classes are moving from room two to room five."
+    }
+  ]
+}

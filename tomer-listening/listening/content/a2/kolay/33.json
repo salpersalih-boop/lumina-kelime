@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-33",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Learning the guitar",
+  "topic": "Hobiler",
+  "instructions": "Lara gitar öğrenmeyi anlatıyor. Ne zaman başladığına ve nasıl çalıştığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "lara": {
+      "name": "Lara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lara",
+      "text": "I started learning the guitar six months ago."
+    },
+    {
+      "speaker": "lara",
+      "text": "I don't have a teacher. I learn from videos on the internet."
+    },
+    {
+      "speaker": "lara",
+      "text": "I practise for half an hour every evening after dinner."
+    },
+    {
+      "speaker": "lara",
+      "text": "At first, my fingers hurt a lot, but now it's easier."
+    },
+    {
+      "speaker": "lara",
+      "text": "I can play about ten songs now. My family says I'm getting better!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did Lara start learning the guitar?",
+      "options": [
+        "six weeks ago",
+        "six months ago",
+        "a year ago",
+        "last month"
+      ],
+      "answer": 1,
+      "feedback": "Altı ay önce başladı.",
+      "evidence": "I started learning the guitar six months ago."
+    },
+    {
+      "id": "q2",
+      "prompt": "How does Lara learn?",
+      "options": [
+        "with a teacher",
+        "from videos on the internet",
+        "at school",
+        "from her father"
+      ],
+      "answer": 1,
+      "feedback": "Öğretmeni yok; internetteki videolardan öğreniyor.",
+      "evidence": "I learn from videos on the internet."
+    },
+    {
+      "id": "q3",
+      "prompt": "How many songs can she play now?",
+      "options": [
+        "about ten",
+        "about six",
+        "about twenty",
+        "only one"
+      ],
+      "answer": 0,
+      "feedback": "Şu an yaklaşık on şarkı çalabiliyor.",
+      "evidence": "I can play about ten songs now."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-59",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My English class",
+  "topic": "Okul",
+  "instructions": "Yusuf İngilizce dersini anlatıyor. Gün, saat ve öğretmene dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Yusuf",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I have English on Mondays and Thursdays."
+    },
+    {
+      "speaker": "s",
+      "text": "The class starts at ten o'clock."
+    },
+    {
+      "speaker": "s",
+      "text": "My teacher is from Canada. Her name is Mrs White."
+    },
+    {
+      "speaker": "s",
+      "text": "We sing songs and play games. It is my favourite class."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When does Yusuf have English?",
+      "options": [
+        "Mondays and Tuesdays",
+        "Mondays and Thursdays",
+        "every day",
+        "Tuesdays and Fridays"
+      ],
+      "answer": 1,
+      "feedback": "Pazartesi ve perşembe.",
+      "evidence": "I have English on Mondays and Thursdays."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is the teacher from?",
+      "options": [
+        "England",
+        "America",
+        "Australia",
+        "Canada"
+      ],
+      "answer": 3,
+      "feedback": "Öğretmeni Kanada'dan.",
+      "evidence": "My teacher is from Canada."
+    },
+    {
+      "id": "q3",
+      "prompt": "What do they do in class?",
+      "options": [
+        "sing songs and play games",
+        "watch films",
+        "write stories",
+        "read books"
+      ],
+      "answer": 0,
+      "feedback": "Şarkı söyleyip oyun oynuyorlar.",
+      "evidence": "We sing songs and play games."
+    }
+  ]
+}

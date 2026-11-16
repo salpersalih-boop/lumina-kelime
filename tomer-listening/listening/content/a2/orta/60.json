@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-60",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Missing the last bus",
+  "topic": "Plan değişikliği",
+  "instructions": "İki arkadaş son otobüsü kaçırıyor ve ne yapacaklarını konuşuyor. Seçenekleri ve kararı takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Anna",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Oh no, we've missed the last bus!"
+    },
+    {
+      "speaker": "b",
+      "text": "What time was it?"
+    },
+    {
+      "speaker": "a",
+      "text": "Eleven thirty. It's eleven thirty-five now."
+    },
+    {
+      "speaker": "b",
+      "text": "We could walk. How far is it?"
+    },
+    {
+      "speaker": "a",
+      "text": "About an hour, and it's raining."
+    },
+    {
+      "speaker": "b",
+      "text": "What about a taxi?"
+    },
+    {
+      "speaker": "a",
+      "text": "It's about twenty pounds, but we can share it."
+    },
+    {
+      "speaker": "b",
+      "text": "OK, ten pounds each. That's fine. I'll call one now."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time was the last bus?",
+      "options": [
+        "eleven o'clock",
+        "eleven thirty",
+        "eleven thirty-five",
+        "midnight"
+      ],
+      "answer": 1,
+      "feedback": "Son otobüs on bir buçuktaydı.",
+      "evidence": "Eleven thirty."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why don't they walk?",
+      "options": [
+        "It's too far and it's raining.",
+        "They're tired.",
+        "It's dangerous.",
+        "They don't know the way."
+      ],
+      "answer": 0,
+      "feedback": "Yaklaşık bir saat sürer ve yağmur yağıyor.",
+      "evidence": "About an hour, and it's raining."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is the taxi in total?",
+      "options": [
+        "ten pounds",
+        "thirty pounds",
+        "twenty pounds",
+        "fifteen pounds"
+      ],
+      "answer": 2,
+      "feedback": "Taksi toplam yaklaşık yirmi pound.",
+      "evidence": "It's about twenty pounds"
+    },
+    {
+      "id": "q4",
+      "prompt": "How much will each person pay?",
+      "options": [
+        "twenty pounds",
+        "five pounds",
+        "nothing",
+        "ten pounds"
+      ],
+      "answer": 3,
+      "feedback": "Paylaşınca kişi başı on pound.",
+      "evidence": "OK, ten pounds each."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "a2-kolay-12",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Dinner is at Grandma's",
+  "topic": "Telefon mesajı",
+  "instructions": "Babası Nina'ya kısa bir mesaj bırakıyor. Değişen plana dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "dad": {
+      "name": "Dad",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "dad",
+      "text": "Hi Nina, it's Dad. We aren't eating at home tonight."
+    },
+    {
+      "speaker": "dad",
+      "text": "We're having dinner at Grandma's house at seven."
+    },
+    {
+      "speaker": "dad",
+      "text": "Can you buy some flowers for her on your way home?"
+    },
+    {
+      "speaker": "dad",
+      "text": "I'll pick you up at half past six."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where are they having dinner tonight?",
+      "options": [
+        "at home",
+        "at a restaurant",
+        "at Grandma's house",
+        "at a friend's house"
+      ],
+      "answer": 2,
+      "feedback": "Bu akşam evde değil, büyükannenin evinde yiyecekler.",
+      "evidence": "We're having dinner at Grandma's house at seven."
+    },
+    {
+      "id": "q2",
+      "prompt": "What should Nina buy?",
+      "options": [
+        "some flowers",
+        "a cake",
+        "some bread",
+        "a present"
+      ],
+      "answer": 0,
+      "feedback": "Eve gelirken büyükanne için çiçek (flowers) almalı.",
+      "evidence": "Can you buy some flowers for her"
+    },
+    {
+      "id": "q3",
+      "prompt": "What time will Dad pick Nina up?",
+      "options": [
+        "at seven",
+        "at six",
+        "at half past seven",
+        "at half past six"
+      ],
+      "answer": 3,
+      "feedback": "Babası onu altı buçukta (half past six) alacak; yemek yedide.",
+      "evidence": "I'll pick you up at half past six."
+    }
+  ]
+}

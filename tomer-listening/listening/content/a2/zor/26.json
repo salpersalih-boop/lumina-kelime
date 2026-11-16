@@ -1,0 +1,117 @@
+{
+  "id": "a2-zor-26",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Safety on board",
+  "topic": "Uçak güvenlik anonsu",
+  "instructions": "Uçakta kabin ekibinin güvenlik anonsu. Kuralları ve sayıları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "crew": {
+      "name": "Cabin crew",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "crew",
+      "text": "Good morning, ladies and gentlemen, and welcome on board flight BA 207 to Lisbon."
+    },
+    {
+      "speaker": "crew",
+      "text": "Our flight time today is two hours and forty minutes."
+    },
+    {
+      "speaker": "crew",
+      "text": "Please put your bags in the lockers above your seat or under the seat in front of you."
+    },
+    {
+      "speaker": "crew",
+      "text": "There are six emergency exits: two at the front, two in the middle and two at the back."
+    },
+    {
+      "speaker": "crew",
+      "text": "Please keep your seatbelt on while you are sitting down."
+    },
+    {
+      "speaker": "crew",
+      "text": "Smoking is not allowed anywhere on the plane, including the toilets."
+    },
+    {
+      "speaker": "crew",
+      "text": "We will serve drinks and snacks in about thirty minutes. Hot meals are available to buy."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the flight going?",
+      "options": [
+        "to London",
+        "to Lisbon",
+        "to Madrid",
+        "to Lima"
+      ],
+      "answer": 1,
+      "feedback": "Uçuş Lizbon'a.",
+      "evidence": "welcome on board flight BA 207 to Lisbon."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long is the flight?",
+      "options": [
+        "two hours and forty minutes",
+        "two hours and fourteen minutes",
+        "four hours and twenty minutes",
+        "two hours"
+      ],
+      "answer": 0,
+      "feedback": "Uçuş süresi iki saat kırk dakika.",
+      "evidence": "Our flight time today is two hours and forty minutes."
+    },
+    {
+      "id": "q3",
+      "prompt": "How many emergency exits are there?",
+      "options": [
+        "two",
+        "four",
+        "six",
+        "eight"
+      ],
+      "answer": 2,
+      "feedback": "Altı acil çıkış var: önde, ortada ve arkada ikişer.",
+      "evidence": "There are six emergency exits"
+    },
+    {
+      "id": "q4",
+      "prompt": "When should passengers wear their seatbelt?",
+      "options": [
+        "only at take-off",
+        "only when the light is on",
+        "never",
+        "while they are sitting down"
+      ],
+      "answer": 3,
+      "feedback": "Oturdukları sürece kemer takılı olmalı.",
+      "evidence": "Please keep your seatbelt on while you are sitting down."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is free on this flight?",
+      "options": [
+        "hot meals",
+        "drinks and snacks",
+        "nothing",
+        "everything"
+      ],
+      "answer": 1,
+      "feedback": "İçecek ve atıştırmalık servis ediliyor; sıcak yemek ücretli.",
+      "evidence": "Hot meals are available to buy."
+    }
+  ]
+}

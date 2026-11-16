@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-19",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Our new flat",
+  "topic": "Ev ve odalar",
+  "instructions": "Tim yeni dairesini eski evleriyle karşılaştırıyor. Uzun bir metin; eski ve yeni evi karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "tim": {
+      "name": "Tim",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tim",
+      "text": "Last month, my wife and I moved to a new flat."
+    },
+    {
+      "speaker": "tim",
+      "text": "Our old house was outside the city. It had a big garden, but it was very old and cold."
+    },
+    {
+      "speaker": "tim",
+      "text": "The new flat is in the city centre, on the third floor."
+    },
+    {
+      "speaker": "tim",
+      "text": "It has two bedrooms, a living room and a small kitchen. There isn't a garden, but there is a big balcony."
+    },
+    {
+      "speaker": "tim",
+      "text": "From the balcony, we can see the river."
+    },
+    {
+      "speaker": "tim",
+      "text": "The best thing is that I can walk to work now. Before, I drove for an hour every day."
+    },
+    {
+      "speaker": "tim",
+      "text": "The bad thing is the noise. The street is very busy at night."
+    },
+    {
+      "speaker": "tim",
+      "text": "My wife wants a cat, but cats are not allowed in the building."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where was the old house?",
+      "options": [
+        "in the city centre",
+        "outside the city",
+        "near the river",
+        "on the third floor"
+      ],
+      "answer": 1,
+      "feedback": "Eski ev şehrin dışındaydı.",
+      "evidence": "Our old house was outside the city."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does the new flat have?",
+      "options": [
+        "a big garden",
+        "three bedrooms",
+        "a big balcony",
+        "a big kitchen"
+      ],
+      "answer": 2,
+      "feedback": "Bahçe yok ama büyük bir balkon var. Büyük bahçe eski evdeydi.",
+      "evidence": "there is a big balcony."
+    },
+    {
+      "id": "q3",
+      "prompt": "How does Tim go to work now?",
+      "options": [
+        "on foot",
+        "by car",
+        "by bus",
+        "by train"
+      ],
+      "answer": 0,
+      "feedback": "Artık işe yürüyerek gidiyor; önceden bir saat araba sürüyordu.",
+      "evidence": "I can walk to work now."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is the bad thing about the new flat?",
+      "options": [
+        "It's cold.",
+        "It's far from work.",
+        "It's small.",
+        "It's noisy at night."
+      ],
+      "answer": 3,
+      "feedback": "Kötü yanı gürültü; sokak geceleri çok kalabalık.",
+      "evidence": "The bad thing is the noise."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why can't they have a cat?",
+      "options": [
+        "Tim doesn't like cats.",
+        "Cats are not allowed in the building.",
+        "There isn't a garden.",
+        "The flat is too small."
+      ],
+      "answer": 1,
+      "feedback": "Binada kedi yasak.",
+      "evidence": "cats are not allowed in the building."
+    }
+  ]
+}

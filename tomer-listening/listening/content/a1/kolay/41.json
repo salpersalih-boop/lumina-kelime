@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-41",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My mum's job",
+  "topic": "Meslekler",
+  "instructions": "Emre annesinin işini anlatıyor. İş yerine ve çalışma saatlerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "emre": {
+      "name": "Emre",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "emre",
+      "text": "My mum is a teacher. She teaches music."
+    },
+    {
+      "speaker": "emre",
+      "text": "She works at a big school in the city centre."
+    },
+    {
+      "speaker": "emre",
+      "text": "She goes to work by bus at half past seven."
+    },
+    {
+      "speaker": "emre",
+      "text": "She comes home at four o'clock."
+    },
+    {
+      "speaker": "emre",
+      "text": "She loves her job, but she is always tired in the evening."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Emre's mum teach?",
+      "options": [
+        "English",
+        "maths",
+        "art",
+        "music"
+      ],
+      "answer": 3,
+      "feedback": "Annesi müzik öğretmeni.",
+      "evidence": "She teaches music."
+    },
+    {
+      "id": "q2",
+      "prompt": "How does she go to work?",
+      "options": [
+        "by car",
+        "by bus",
+        "on foot",
+        "by train"
+      ],
+      "answer": 1,
+      "feedback": "İşe otobüsle gidiyor.",
+      "evidence": "She goes to work by bus"
+    },
+    {
+      "id": "q3",
+      "prompt": "When does she come home?",
+      "options": [
+        "at four o'clock",
+        "at half past seven",
+        "at five o'clock",
+        "at three o'clock"
+      ],
+      "answer": 0,
+      "feedback": "Saat dörtte eve geliyor. Yedi buçuk işe çıkış saati.",
+      "evidence": "She comes home at four o'clock."
+    }
+  ]
+}

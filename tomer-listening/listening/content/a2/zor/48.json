@@ -1,0 +1,137 @@
+{
+  "id": "a2-zor-48",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A noisy hotel room",
+  "topic": "Otel şikâyeti",
+  "instructions": "Bir misafir gürültülü odası için resepsiyona şikâyette bulunuyor. Uzun bir diyalog; sorunları ve çözümleri eşleştir. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Guest",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Receptionist",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good morning. I'm in room 214. I'm afraid I didn't sleep at all last night."
+    },
+    {
+      "speaker": "b",
+      "text": "Oh, I'm sorry to hear that. What was the problem?"
+    },
+    {
+      "speaker": "a",
+      "text": "There was loud music from the bar until two in the morning. My room is right above it."
+    },
+    {
+      "speaker": "b",
+      "text": "I'm very sorry. The bar should close at midnight. I'll speak to the manager."
+    },
+    {
+      "speaker": "a",
+      "text": "Thank you. Also, the shower is very weak. The water just drips."
+    },
+    {
+      "speaker": "b",
+      "text": "I see. Would you like to change rooms? We have a quiet room on the fifth floor, at the back of the hotel."
+    },
+    {
+      "speaker": "a",
+      "text": "Does it have a better shower?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, all the rooms on that floor were renovated last year."
+    },
+    {
+      "speaker": "a",
+      "text": "Great. I'll move today."
+    },
+    {
+      "speaker": "b",
+      "text": "And because of the problems, we won't charge you for last night."
+    },
+    {
+      "speaker": "a",
+      "text": "That's very kind. Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why didn't the guest sleep?",
+      "options": [
+        "The room was cold.",
+        "There was loud music from the bar.",
+        "The bed was uncomfortable.",
+        "People were talking in the corridor."
+      ],
+      "answer": 1,
+      "feedback": "Bardan sabah ikiye kadar yüksek müzik geldi.",
+      "evidence": "There was loud music from the bar until two in the morning."
+    },
+    {
+      "id": "q2",
+      "prompt": "When should the bar close?",
+      "options": [
+        "at eleven",
+        "at one",
+        "at midnight",
+        "at two"
+      ],
+      "answer": 2,
+      "feedback": "Bar gece yarısı kapanmalı.",
+      "evidence": "The bar should close at midnight."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is wrong with the shower?",
+      "options": [
+        "It's very weak.",
+        "It's too hot.",
+        "It's broken.",
+        "There is no hot water."
+      ],
+      "answer": 0,
+      "feedback": "Duş çok zayıf, su damlıyor.",
+      "evidence": "the shower is very weak."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the new room?",
+      "options": [
+        "on the second floor",
+        "next to the bar",
+        "on the fifth floor at the front",
+        "on the fifth floor at the back"
+      ],
+      "answer": 3,
+      "feedback": "Beşinci katta, otelin arka tarafında sessiz bir oda.",
+      "evidence": "We have a quiet room on the fifth floor, at the back of the hotel."
+    },
+    {
+      "id": "q5",
+      "prompt": "What will the hotel do because of the problems?",
+      "options": [
+        "give him free breakfast",
+        "not charge him for last night",
+        "give him a free dinner",
+        "give him a discount next time"
+      ],
+      "answer": 1,
+      "feedback": "Geçen gece için ücret almayacaklar.",
+      "evidence": "we won't charge you for last night."
+    }
+  ]
+}

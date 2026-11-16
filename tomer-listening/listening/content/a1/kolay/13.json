@@ -1,0 +1,91 @@
+{
+  "id": "a1-kolay-13",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My birthday party",
+  "topic": "Kutlama",
+  "instructions": "Nora doğum günü partisini anlatıyor. Tarih, yer ve hediyelere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "nora": {
+      "name": "Nora",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "nora",
+      "text": "My birthday is on the fifth of May."
+    },
+    {
+      "speaker": "nora",
+      "text": "This year, I am ten years old."
+    },
+    {
+      "speaker": "nora",
+      "text": "My party is at home, in the garden."
+    },
+    {
+      "speaker": "nora",
+      "text": "Twelve friends from my class are coming."
+    },
+    {
+      "speaker": "nora",
+      "text": "My mum is making a big chocolate cake."
+    },
+    {
+      "speaker": "nora",
+      "text": "We are going to play games and dance."
+    },
+    {
+      "speaker": "nora",
+      "text": "I want a new bike for my birthday. My old bike is too small!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is Nora's birthday?",
+      "options": [
+        "the tenth of May",
+        "the fifth of May",
+        "the twelfth of May",
+        "the fifth of March"
+      ],
+      "answer": 1,
+      "feedback": "Doğum günü beş mayıs (the fifth of May). On, yaşı; on iki, arkadaş sayısı.",
+      "evidence": "My birthday is on the fifth of May."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is the party?",
+      "options": [
+        "at school",
+        "at a restaurant",
+        "in the garden at home",
+        "in the park"
+      ],
+      "answer": 2,
+      "feedback": "Parti evde, bahçede (at home, in the garden).",
+      "evidence": "My party is at home, in the garden."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Nora want for her birthday?",
+      "options": [
+        "a cake",
+        "a new bike",
+        "a game",
+        "a dress"
+      ],
+      "answer": 1,
+      "feedback": "Yeni bir bisiklet (a new bike) istiyor; eskisi çok küçük.",
+      "evidence": "I want a new bike for my birthday."
+    }
+  ]
+}

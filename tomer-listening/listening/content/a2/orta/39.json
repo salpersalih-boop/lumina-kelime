@@ -1,0 +1,120 @@
+{
+  "id": "a2-orta-39",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Ordering a birthday cake",
+  "topic": "Pastane siparişi",
+  "instructions": "Elena kızı için doğum günü pastası sipariş ediyor. Tat, yazı, boyut ve teslim gününe dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "elena": {
+      "name": "Elena",
+      "voice": "female"
+    },
+    "baker": {
+      "name": "Baker",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "elena",
+      "text": "Hello. I'd like to order a birthday cake for my daughter."
+    },
+    {
+      "speaker": "baker",
+      "text": "Of course. What kind of cake would you like?"
+    },
+    {
+      "speaker": "elena",
+      "text": "Chocolate, please. But she doesn't like nuts, so no nuts at all."
+    },
+    {
+      "speaker": "baker",
+      "text": "No problem. How many people is it for?"
+    },
+    {
+      "speaker": "elena",
+      "text": "About fifteen children."
+    },
+    {
+      "speaker": "baker",
+      "text": "Then a medium cake is enough. Would you like any writing on it?"
+    },
+    {
+      "speaker": "elena",
+      "text": "Yes, 'Happy 8th Birthday, Zoe'."
+    },
+    {
+      "speaker": "baker",
+      "text": "When do you need it?"
+    },
+    {
+      "speaker": "elena",
+      "text": "On Saturday morning. The party starts at two."
+    },
+    {
+      "speaker": "baker",
+      "text": "It'll be ready on Friday afternoon. It's thirty-five pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What kind of cake does Elena want?",
+      "options": [
+        "chocolate with nuts",
+        "lemon",
+        "chocolate without nuts",
+        "strawberry"
+      ],
+      "answer": 2,
+      "feedback": "Çikolatalı ama kesinlikle fındıksız/cevizsiz.",
+      "evidence": "Chocolate, please. But she doesn't like nuts"
+    },
+    {
+      "id": "q2",
+      "prompt": "How old will Zoe be?",
+      "options": [
+        "eight",
+        "fifteen",
+        "five",
+        "eighteen"
+      ],
+      "answer": 0,
+      "feedback": "Zoe sekiz yaşına giriyor.",
+      "evidence": "Happy 8th Birthday, Zoe"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why does the baker suggest a medium cake?",
+      "options": [
+        "It's cheaper.",
+        "It's for about fifteen children.",
+        "Large cakes are sold out.",
+        "Zoe likes small cakes."
+      ],
+      "answer": 1,
+      "feedback": "Yaklaşık on beş çocuk için orta boy yeterli.",
+      "evidence": "Then a medium cake is enough."
+    },
+    {
+      "id": "q4",
+      "prompt": "When will the cake be ready?",
+      "options": [
+        "on Saturday morning",
+        "on Saturday at two",
+        "on Thursday",
+        "on Friday afternoon"
+      ],
+      "answer": 3,
+      "feedback": "Pasta cuma öğleden sonra hazır olacak.",
+      "evidence": "It'll be ready on Friday afternoon."
+    }
+  ]
+}

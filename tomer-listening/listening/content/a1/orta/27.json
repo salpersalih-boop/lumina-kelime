@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-27",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Ordering a pizza",
+  "topic": "Telefonla sipariş",
+  "instructions": "Leo telefonda pizza sipariş ediyor. Kısa bir diyalog; boy, malzeme ve süreye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "shop": {
+      "name": "Pizza shop",
+      "voice": "female"
+    },
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "shop",
+      "text": "Hello, Pizza Roma."
+    },
+    {
+      "speaker": "leo",
+      "text": "Hi. A large pizza with cheese and mushrooms, please."
+    },
+    {
+      "speaker": "shop",
+      "text": "Anything to drink?"
+    },
+    {
+      "speaker": "leo",
+      "text": "No, thanks. How long?"
+    },
+    {
+      "speaker": "shop",
+      "text": "About thirty minutes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What size pizza does Leo want?",
+      "options": [
+        "small",
+        "medium",
+        "large",
+        "extra large"
+      ],
+      "answer": 2,
+      "feedback": "Büyük (large) pizza istiyor.",
+      "evidence": "A large pizza"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is on the pizza?",
+      "options": [
+        "cheese and mushrooms",
+        "cheese and chicken",
+        "mushrooms and tomatoes",
+        "only cheese"
+      ],
+      "answer": 0,
+      "feedback": "Peynirli ve mantarlı.",
+      "evidence": "with cheese and mushrooms"
+    },
+    {
+      "id": "q3",
+      "prompt": "Does Leo order a drink?",
+      "options": [
+        "Yes, a cola.",
+        "Yes, water.",
+        "Yes, juice.",
+        "No, he doesn't."
+      ],
+      "answer": 3,
+      "feedback": "İçecek istemiyor (No, thanks).",
+      "evidence": "No, thanks."
+    },
+    {
+      "id": "q4",
+      "prompt": "When will the pizza arrive?",
+      "options": [
+        "in about thirteen minutes",
+        "in about thirty minutes",
+        "in an hour",
+        "in ten minutes"
+      ],
+      "answer": 1,
+      "feedback": "Yaklaşık otuz dakika içinde.",
+      "evidence": "About thirty minutes."
+    }
+  ]
+}

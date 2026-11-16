@@ -8,7 +8,7 @@ import { esc } from './dom.js';
  * Bir dinleme setinin tam ekranı: başlık + oynatıcı + metin + sorular.
  * Alt bileşenlerin yaşam döngüsünü yönetir; destroy() hepsini temizler.
  */
-export async function mountLesson(root, { set, level, sublevel, rate, resolve, next, onNext, onResult, onRateChange }) {
+export async function mountLesson(root, { set, level, sublevel, position, rate, resolve, next, onNext, onResult, onRateChange }) {
   const voiceCount = Object.keys(set.speakers).length;
   const kind = voiceCount > 1 ? `Diyalog · ${voiceCount} konuşmacı` : 'Monolog';
 
@@ -16,9 +16,9 @@ export async function mountLesson(root, { set, level, sublevel, rate, resolve, n
     <article class="lesson" aria-labelledby="lesson-title">
       <div class="lesson-side">
         <header class="lesson-head">
-          <p class="lesson-tag"><span class="tag-lvl">${esc(level.id)}</span>${esc(sublevel.label)} · ${esc(set.topic)}</p>
+          <p class="lesson-tag"><span class="tag-lvl">${esc(level.id)}</span>${esc(sublevel.label)} · Metin ${position.n}/${position.count} · ${esc(set.topic)}</p>
           <h2 id="lesson-title" lang="en">${esc(set.title)}</h2>
-          <p class="lesson-meta">${esc(kind)} · ${set.questions.length} soru</p>
+          <p class="lesson-meta"><span class="len len-${esc(position.length.id)}">${esc(position.length.label)}</span> ${position.words} kelime · ${esc(kind)} · ${set.questions.length} soru</p>
           ${set.instructions ? `<p class="lesson-ins">${esc(set.instructions)}</p>` : ''}
         </header>
         <div class="slot-player"><div class="player player-loading" aria-busy="true">Sesler hazırlanıyor…</div></div>
@@ -74,13 +74,13 @@ export async function mountLesson(root, { set, level, sublevel, rate, resolve, n
 
 /** Henüz içerik eklenmemiş alt seviye için boş durum ekranı. */
 export function renderEmpty(root, { level, sublevel, firstAvailable, onGo }) {
-  const path = `content/${level.id.toLowerCase()}/${sublevel.id}.json`;
+  const path = `content/${level.id.toLowerCase()}/${sublevel.id}/01.json`;
   root.innerHTML = `
     <section class="empty">
       <p class="lesson-tag"><span class="tag-lvl">${esc(level.id)}</span>${esc(sublevel.label)}</p>
       <h2>Bu alt seviyenin içeriği henüz eklenmedi</h2>
       <p>${esc(level.id)} ${esc(level.name)} · ${esc(sublevel.label)} için yeni bir set eklemek üzere
-         <code>${esc(path)}</code> dosyasını oluşturup <code>content/manifest.json</code> içinde bu yolu göster.
+         <code>${esc(path)}</code> dosyasını oluşturup <code>content/manifest.json</code> içindeki listeye bu yolu ekle.
          Biçim için README'deki "İçerik şeması" bölümüne bak.</p>
       ${firstAvailable ? `<button type="button" class="btn btn-primary" data-go>${esc(firstAvailable.label)}</button>` : ''}
     </section>`;

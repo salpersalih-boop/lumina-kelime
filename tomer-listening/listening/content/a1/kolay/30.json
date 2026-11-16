@@ -1,0 +1,91 @@
+{
+  "id": "a1-kolay-30",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My new friend Ken",
+  "topic": "Arkadaşlık",
+  "instructions": "Ada yeni arkadaşı Ken'i anlatıyor. Uzun bir metin; ülke, yaş ve ortak hobilere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ada": {
+      "name": "Ada",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ada",
+      "text": "I have a new friend at school. His name is Ken."
+    },
+    {
+      "speaker": "ada",
+      "text": "He is from Japan, but now he lives in my street."
+    },
+    {
+      "speaker": "ada",
+      "text": "He is twelve, like me."
+    },
+    {
+      "speaker": "ada",
+      "text": "Ken speaks Japanese and English. He is teaching me some Japanese words."
+    },
+    {
+      "speaker": "ada",
+      "text": "We both love drawing. After school, we draw comics together."
+    },
+    {
+      "speaker": "ada",
+      "text": "Ken has a little sister. Her name is Yumi, and she is six."
+    },
+    {
+      "speaker": "ada",
+      "text": "Next week, Ken's mum is going to cook Japanese food for me."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Ken from?",
+      "options": [
+        "China",
+        "Korea",
+        "Japan",
+        "Thailand"
+      ],
+      "answer": 2,
+      "feedback": "Ken Japonya'dan.",
+      "evidence": "He is from Japan"
+    },
+    {
+      "id": "q2",
+      "prompt": "What do Ada and Ken both love?",
+      "options": [
+        "drawing",
+        "football",
+        "cooking",
+        "music"
+      ],
+      "answer": 0,
+      "feedback": "İkisi de resim yapmayı seviyor.",
+      "evidence": "We both love drawing."
+    },
+    {
+      "id": "q3",
+      "prompt": "How old is Yumi?",
+      "options": [
+        "twelve",
+        "ten",
+        "eight",
+        "six"
+      ],
+      "answer": 3,
+      "feedback": "Ken'in kız kardeşi Yumi altı yaşında. On iki Ken ile Ada'nın yaşı.",
+      "evidence": "and she is six."
+    }
+  ]
+}

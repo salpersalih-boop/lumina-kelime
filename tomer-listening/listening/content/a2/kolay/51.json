@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-51",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Learning to swim",
+  "topic": "Yeni beceri",
+  "instructions": "Maria yetişkinken yüzmeyi öğrenmesini anlatıyor. Neden ve nasıl öğrendiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Maria",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I didn't learn to swim when I was a child."
+    },
+    {
+      "speaker": "s",
+      "text": "Last year, my daughter started swimming lessons, and I felt silly sitting by the pool."
+    },
+    {
+      "speaker": "s",
+      "text": "So I joined an adult class on Tuesday evenings."
+    },
+    {
+      "speaker": "s",
+      "text": "At first, I was afraid of deep water, but my teacher was very patient."
+    },
+    {
+      "speaker": "s",
+      "text": "Now I can swim fifty metres without stopping!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why did Maria decide to learn to swim?",
+      "options": [
+        "Her doctor told her to.",
+        "She felt silly sitting by the pool.",
+        "She wanted to go on holiday.",
+        "Her husband asked her."
+      ],
+      "answer": 1,
+      "feedback": "Kızı yüzme derslerine başlayınca havuz kenarında oturmak ona saçma geldi.",
+      "evidence": "I felt silly sitting by the pool."
+    },
+    {
+      "id": "q2",
+      "prompt": "When is her class?",
+      "options": [
+        "on Tuesday evenings",
+        "on Saturday mornings",
+        "every day",
+        "on Thursday evenings"
+      ],
+      "answer": 0,
+      "feedback": "Salı akşamları.",
+      "evidence": "on Tuesday evenings."
+    },
+    {
+      "id": "q3",
+      "prompt": "How far can she swim now?",
+      "options": [
+        "five metres",
+        "five hundred metres",
+        "fifty metres",
+        "fifteen metres"
+      ],
+      "answer": 2,
+      "feedback": "Durmadan elli metre yüzebiliyor.",
+      "evidence": "Now I can swim fifty metres without stopping!"
+    }
+  ]
+}

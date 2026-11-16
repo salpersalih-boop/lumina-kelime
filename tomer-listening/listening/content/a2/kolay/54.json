@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-54",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Volunteering at the library",
+  "topic": "Gönüllülük",
+  "instructions": "Emre kütüphanede gönüllü olarak ne yaptığını anlatıyor. Gün ve görevlerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Emre",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Every Saturday morning, I volunteer at our local library."
+    },
+    {
+      "speaker": "s",
+      "text": "I help children choose books, and I read stories to them."
+    },
+    {
+      "speaker": "s",
+      "text": "I also put the returned books back on the shelves."
+    },
+    {
+      "speaker": "s",
+      "text": "I don't get any money, but I really enjoy it."
+    },
+    {
+      "speaker": "s",
+      "text": "It's also good practice, because I want to be a teacher."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When does Emre volunteer?",
+      "options": [
+        "every Saturday morning",
+        "every evening",
+        "on Sundays",
+        "every weekday"
+      ],
+      "answer": 0,
+      "feedback": "Her cumartesi sabahı.",
+      "evidence": "Every Saturday morning, I volunteer"
+    },
+    {
+      "id": "q2",
+      "prompt": "What does he do for the children?",
+      "options": [
+        "He teaches them maths.",
+        "He reads stories to them.",
+        "He plays games with them.",
+        "He helps with homework."
+      ],
+      "answer": 1,
+      "feedback": "Çocuklara hikâye okuyor.",
+      "evidence": "I read stories to them."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why is it good practice for Emre?",
+      "options": [
+        "He wants to be a librarian.",
+        "He wants to be a writer.",
+        "He wants to be a teacher.",
+        "He wants to work with books."
+      ],
+      "answer": 2,
+      "feedback": "Öğretmen olmak istiyor.",
+      "evidence": "because I want to be a teacher."
+    }
+  ]
+}

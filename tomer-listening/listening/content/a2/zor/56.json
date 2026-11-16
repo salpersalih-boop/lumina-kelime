@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-56",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A problem with the rent",
+  "topic": "Ev sahibiyle görüşme",
+  "instructions": "Kiracı Ece ev sahibiyle kira artışını konuşuyor. Uzun bir diyalog; rakamları ve uzlaşmayı takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Landlord",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Ece",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello, Ece. I wanted to talk to you about the rent. From next month, it will go up to seven hundred pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "Seven hundred? It's six hundred now. That's a lot more."
+    },
+    {
+      "speaker": "a",
+      "text": "I know, but my costs have gone up too, and other flats in this area are seven fifty."
+    },
+    {
+      "speaker": "b",
+      "text": "I understand, but I can't pay a hundred pounds more. I've lived here for four years and always paid on time."
+    },
+    {
+      "speaker": "a",
+      "text": "That's true. You're a very good tenant."
+    },
+    {
+      "speaker": "b",
+      "text": "Could we say six hundred and fifty?"
+    },
+    {
+      "speaker": "a",
+      "text": "Hmm. OK, six fifty, but you sign a contract for two more years."
+    },
+    {
+      "speaker": "b",
+      "text": "That's fine. And could you fix the kitchen window? It's been broken since the winter."
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, I'll send someone next week."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much is the rent now?",
+      "options": [
+        "five hundred pounds",
+        "six hundred pounds",
+        "seven hundred pounds",
+        "six hundred and fifty pounds"
+      ],
+      "answer": 1,
+      "feedback": "Şu anki kira altı yüz pound.",
+      "evidence": "It's six hundred now."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much are other flats in the area?",
+      "options": [
+        "six hundred and fifty pounds",
+        "seven hundred pounds",
+        "seven hundred and fifty pounds",
+        "eight hundred pounds"
+      ],
+      "answer": 2,
+      "feedback": "Bölgedeki diğer daireler yedi yüz elli.",
+      "evidence": "other flats in this area are seven fifty."
+    },
+    {
+      "id": "q3",
+      "prompt": "How long has Ece lived in the flat?",
+      "options": [
+        "four years",
+        "two years",
+        "one year",
+        "six years"
+      ],
+      "answer": 0,
+      "feedback": "Dört yıldır orada yaşıyor.",
+      "evidence": "I've lived here for four years"
+    },
+    {
+      "id": "q4",
+      "prompt": "What rent do they agree on?",
+      "options": [
+        "six hundred pounds",
+        "seven hundred pounds",
+        "seven hundred and fifty pounds",
+        "six hundred and fifty pounds"
+      ],
+      "answer": 3,
+      "feedback": "Altı yüz elli pound, iki yıllık sözleşmeyle.",
+      "evidence": "OK, six fifty"
+    },
+    {
+      "id": "q5",
+      "prompt": "What else will the landlord do?",
+      "options": [
+        "paint the flat",
+        "fix the kitchen window",
+        "buy a new fridge",
+        "clean the garden"
+      ],
+      "answer": 1,
+      "feedback": "Mutfak penceresini tamir ettirecek.",
+      "evidence": "could you fix the kitchen window?"
+    }
+  ]
+}

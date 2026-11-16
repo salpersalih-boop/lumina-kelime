@@ -1,0 +1,95 @@
+{
+  "id": "a2-kolay-08",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "What my family does",
+  "topic": "Meslekler",
+  "instructions": "Ayşe ailesindeki kişilerin mesleklerini anlatıyor. Uzun bir metin; kimin ne iş yaptığını karıştırma.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ayse": {
+      "name": "Ayşe",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ayse",
+      "text": "There are five people in my family, and everyone has a different job."
+    },
+    {
+      "speaker": "ayse",
+      "text": "My father is a bus driver. He works very early in the morning and comes home at two."
+    },
+    {
+      "speaker": "ayse",
+      "text": "My mother works in a bank. She wears smart clothes and uses a computer all day."
+    },
+    {
+      "speaker": "ayse",
+      "text": "My older brother, Can, is a chef in a hotel. He cooks fantastic fish, but he never cooks at home!"
+    },
+    {
+      "speaker": "ayse",
+      "text": "My sister, Deniz, is a university student. She wants to be a doctor."
+    },
+    {
+      "speaker": "ayse",
+      "text": "And me? I am a teacher. I teach English to young children."
+    },
+    {
+      "speaker": "ayse",
+      "text": "I love my job because the children are funny and every day is different."
+    },
+    {
+      "speaker": "ayse",
+      "text": "At the weekend, we all have dinner together at my parents' house."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Ayşe's father's job?",
+      "options": [
+        "a chef",
+        "a bank worker",
+        "a bus driver",
+        "a doctor"
+      ],
+      "answer": 2,
+      "feedback": "Babası otobüs şoförü (a bus driver).",
+      "evidence": "My father is a bus driver."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who wants to be a doctor?",
+      "options": [
+        "Can",
+        "Deniz",
+        "Ayşe",
+        "her mother"
+      ],
+      "answer": 1,
+      "feedback": "Üniversite öğrencisi olan kız kardeşi Deniz doktor olmak istiyor.",
+      "evidence": "She wants to be a doctor."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Ayşe do?",
+      "options": [
+        "She is a teacher.",
+        "She is a student.",
+        "She is a chef.",
+        "She works in a bank."
+      ],
+      "answer": 0,
+      "feedback": "Ayşe öğretmen; küçük çocuklara İngilizce öğretiyor.",
+      "evidence": "I am a teacher."
+    }
+  ]
+}

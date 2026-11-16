@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-60",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A concert in the park",
+  "topic": "Etkinlik (geçmiş zaman)",
+  "instructions": "Lisa parkta gittiği konseri anlatıyor. Kiminle gittiğine ve ne olduğuna dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Lisa",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last Saturday, there was a free concert in the city park."
+    },
+    {
+      "speaker": "s",
+      "text": "I went with my best friend, Jo."
+    },
+    {
+      "speaker": "s",
+      "text": "We took a blanket and some sandwiches and sat on the grass."
+    },
+    {
+      "speaker": "s",
+      "text": "The music was great, but at nine o'clock it suddenly started to rain."
+    },
+    {
+      "speaker": "s",
+      "text": "Everyone ran to the trees, but the band kept playing!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How much was the concert?",
+      "options": [
+        "five pounds",
+        "nothing",
+        "ten pounds",
+        "two pounds"
+      ],
+      "answer": 1,
+      "feedback": "Konser ücretsizdi.",
+      "evidence": "there was a free concert in the city park."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who did Lisa go with?",
+      "options": [
+        "her sister",
+        "her mum",
+        "her best friend",
+        "alone"
+      ],
+      "answer": 2,
+      "feedback": "En iyi arkadaşı Jo ile gitti.",
+      "evidence": "I went with my best friend, Jo."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did the band do when it rained?",
+      "options": [
+        "They stopped.",
+        "They ran to the trees.",
+        "They went home.",
+        "They kept playing."
+      ],
+      "answer": 3,
+      "feedback": "Grup çalmaya devam etti.",
+      "evidence": "but the band kept playing!"
+    }
+  ]
+}

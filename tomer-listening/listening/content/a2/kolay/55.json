@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-55",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A walk in the forest",
+  "topic": "Doğa (geçmiş zaman)",
+  "instructions": "Nina ormanda yaptığı yürüyüşü anlatıyor. Olanları ve gördüklerini takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Nina",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last Sunday, my husband and I went for a long walk in the forest near our town."
+    },
+    {
+      "speaker": "s",
+      "text": "We walked for about three hours and saw two deer!"
+    },
+    {
+      "speaker": "s",
+      "text": "We had a picnic next to a small river."
+    },
+    {
+      "speaker": "s",
+      "text": "On the way back, it started to rain, and we got very wet."
+    },
+    {
+      "speaker": "s",
+      "text": "But it was still a lovely day."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long did they walk?",
+      "options": [
+        "about one hour",
+        "about two hours",
+        "about three hours",
+        "all day"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık üç saat yürüdüler.",
+      "evidence": "We walked for about three hours"
+    },
+    {
+      "id": "q2",
+      "prompt": "What animals did they see?",
+      "options": [
+        "two deer",
+        "a fox",
+        "some rabbits",
+        "two dogs"
+      ],
+      "answer": 0,
+      "feedback": "İki geyik gördüler.",
+      "evidence": "and saw two deer!"
+    },
+    {
+      "id": "q3",
+      "prompt": "What happened on the way back?",
+      "options": [
+        "They got lost.",
+        "It started to rain.",
+        "Nina hurt her foot.",
+        "They met friends."
+      ],
+      "answer": 1,
+      "feedback": "Dönüşte yağmur başladı ve çok ıslandılar.",
+      "evidence": "it started to rain"
+    }
+  ]
+}

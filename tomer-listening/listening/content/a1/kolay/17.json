@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-17",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Breakfast at my house",
+  "topic": "Yemek",
+  "instructions": "Omar evdeki kahvaltıyı anlatıyor. Kim ne yiyor, dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "omar": {
+      "name": "Omar",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "omar",
+      "text": "We have breakfast at seven o'clock in the kitchen."
+    },
+    {
+      "speaker": "omar",
+      "text": "My dad eats bread with cheese and olives."
+    },
+    {
+      "speaker": "omar",
+      "text": "My mum only drinks tea. She is never hungry in the morning."
+    },
+    {
+      "speaker": "omar",
+      "text": "I eat cereal with milk and a banana."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does the family have breakfast?",
+      "options": [
+        "in the garden",
+        "in the kitchen",
+        "in the living room",
+        "at a café"
+      ],
+      "answer": 1,
+      "feedback": "Kahvaltı mutfakta (in the kitchen).",
+      "evidence": "We have breakfast at seven o'clock in the kitchen."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Omar's mum have?",
+      "options": [
+        "bread and cheese",
+        "cereal",
+        "only tea",
+        "a banana"
+      ],
+      "answer": 2,
+      "feedback": "Annesi sadece çay içiyor (only drinks tea).",
+      "evidence": "My mum only drinks tea."
+    },
+    {
+      "id": "q3",
+      "prompt": "What fruit does Omar eat?",
+      "options": [
+        "a banana",
+        "an apple",
+        "an orange",
+        "olives"
+      ],
+      "answer": 0,
+      "feedback": "Omar mısır gevreği ve bir muz (a banana) yiyor.",
+      "evidence": "I eat cereal with milk and a banana."
+    }
+  ]
+}

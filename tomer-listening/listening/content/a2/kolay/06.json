@@ -1,0 +1,91 @@
+{
+  "id": "a2-kolay-06",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Why I love tennis",
+  "topic": "Spor ve hobiler",
+  "instructions": "Mia tenisi nasıl sevdiğini anlatıyor. Geçmiş ve şimdiki zamanı ayırt et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mia": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mia",
+      "text": "I started playing tennis when I was eight years old."
+    },
+    {
+      "speaker": "mia",
+      "text": "My dad taught me in the park near our house."
+    },
+    {
+      "speaker": "mia",
+      "text": "Now I play three times a week at a tennis club."
+    },
+    {
+      "speaker": "mia",
+      "text": "My coach is called Anna. She is strict, but she is a great teacher."
+    },
+    {
+      "speaker": "mia",
+      "text": "Last month, I won my first competition. I was so happy!"
+    },
+    {
+      "speaker": "mia",
+      "text": "Next year, I want to play in the national championship."
+    },
+    {
+      "speaker": "mia",
+      "text": "Tennis isn't easy, but it makes me feel strong."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who taught Mia to play tennis?",
+      "options": [
+        "her coach",
+        "her dad",
+        "her mum",
+        "her friend"
+      ],
+      "answer": 1,
+      "feedback": "Ona ilk tenisi babası (my dad) öğretti. Anna şimdiki antrenörü.",
+      "evidence": "My dad taught me in the park near our house."
+    },
+    {
+      "id": "q2",
+      "prompt": "How often does Mia play now?",
+      "options": [
+        "every day",
+        "once a week",
+        "three times a week",
+        "twice a month"
+      ],
+      "answer": 2,
+      "feedback": "Şimdi haftada üç kez (three times a week) oynuyor.",
+      "evidence": "Now I play three times a week at a tennis club."
+    },
+    {
+      "id": "q3",
+      "prompt": "What happened last month?",
+      "options": [
+        "She won a competition.",
+        "She met a new coach.",
+        "She started tennis.",
+        "She played in the national championship."
+      ],
+      "answer": 0,
+      "feedback": "Geçen ay ilk yarışmasını kazandı (won). Ulusal şampiyona gelecek yılın hedefi.",
+      "evidence": "Last month, I won my first competition."
+    }
+  ]
+}

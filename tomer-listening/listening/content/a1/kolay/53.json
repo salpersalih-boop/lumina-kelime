@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-53",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Going to school",
+  "topic": "Ulaşım",
+  "instructions": "Sara okula nasıl gittiğini anlatıyor. Saat ve süreye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Sara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I go to school by bus."
+    },
+    {
+      "speaker": "s",
+      "text": "The bus comes at half past seven."
+    },
+    {
+      "speaker": "s",
+      "text": "The journey takes twenty minutes."
+    },
+    {
+      "speaker": "s",
+      "text": "My friend Ece is on the bus too."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How does Sara go to school?",
+      "options": [
+        "by car",
+        "by bus",
+        "on foot",
+        "by bike"
+      ],
+      "answer": 1,
+      "feedback": "Okula otobüsle gidiyor.",
+      "evidence": "I go to school by bus."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does the bus come?",
+      "options": [
+        "at seven",
+        "at half past seven",
+        "at eight",
+        "at twenty past seven"
+      ],
+      "answer": 1,
+      "feedback": "Otobüs yedi buçukta geliyor.",
+      "evidence": "The bus comes at half past seven."
+    },
+    {
+      "id": "q3",
+      "prompt": "How long is the journey?",
+      "options": [
+        "ten minutes",
+        "thirty minutes",
+        "twenty minutes",
+        "an hour"
+      ],
+      "answer": 2,
+      "feedback": "Yolculuk yirmi dakika.",
+      "evidence": "The journey takes twenty minutes."
+    }
+  ]
+}

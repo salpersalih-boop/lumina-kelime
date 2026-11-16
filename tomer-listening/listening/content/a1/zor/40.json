@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-40",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "School sports day",
+  "topic": "Okul etkinliği",
+  "instructions": "Spor öğretmeni okul spor gününü anlatıyor. Uzun bir metin; saatleri, yerleri ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "teacher": {
+      "name": "Sports teacher",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "teacher",
+      "text": "Hello, everyone. Our school sports day is next Wednesday."
+    },
+    {
+      "speaker": "teacher",
+      "text": "It isn't at school this year. It's at the city sports centre, because our field is too small."
+    },
+    {
+      "speaker": "teacher",
+      "text": "We are going there by bus. The buses leave at half past eight."
+    },
+    {
+      "speaker": "teacher",
+      "text": "In the morning, there are running races. In the afternoon, there is football and basketball."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Please wear your school sports clothes: a white T-shirt and blue shorts."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Bring a water bottle and a hat. It is going to be hot and sunny."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Parents can come and watch. It is free for them."
+    },
+    {
+      "speaker": "teacher",
+      "text": "We are coming back to school at four o'clock."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the sports day this year?",
+      "options": [
+        "at school",
+        "in the park",
+        "at the city sports centre",
+        "at another school"
+      ],
+      "answer": 2,
+      "feedback": "Bu yıl şehir spor merkezinde; okulun sahası çok küçük.",
+      "evidence": "It's at the city sports centre"
+    },
+    {
+      "id": "q2",
+      "prompt": "What time do the buses leave?",
+      "options": [
+        "at eight o'clock",
+        "at half past eight",
+        "at nine o'clock",
+        "at four o'clock"
+      ],
+      "answer": 1,
+      "feedback": "Otobüsler sekiz buçukta kalkıyor.",
+      "evidence": "The buses leave at half past eight."
+    },
+    {
+      "id": "q3",
+      "prompt": "What happens in the morning?",
+      "options": [
+        "football",
+        "basketball",
+        "swimming",
+        "running races"
+      ],
+      "answer": 3,
+      "feedback": "Sabah koşu yarışları; öğleden sonra futbol ve basketbol.",
+      "evidence": "In the morning, there are running races."
+    },
+    {
+      "id": "q4",
+      "prompt": "What colour are the shorts?",
+      "options": [
+        "blue",
+        "white",
+        "black",
+        "red"
+      ],
+      "answer": 0,
+      "feedback": "Beyaz tişört ve mavi şort.",
+      "evidence": "a white T-shirt and blue shorts."
+    },
+    {
+      "id": "q5",
+      "prompt": "How much do parents pay?",
+      "options": [
+        "five pounds",
+        "nothing",
+        "two pounds",
+        "ten pounds"
+      ],
+      "answer": 1,
+      "feedback": "Veliler ücretsiz izleyebilir.",
+      "evidence": "It is free for them."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-05",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Meeting at the station",
+  "topic": "Buluşma",
+  "instructions": "Anna ve Tim istasyonda buluşmaya çalışıyor. Kısa bir diyalog; nerede olduklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "anna": {
+      "name": "Anna",
+      "voice": "female"
+    },
+    "tim": {
+      "name": "Tim",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "anna",
+      "text": "Tim, where are you? I'm at the station."
+    },
+    {
+      "speaker": "tim",
+      "text": "I'm at the station too! I'm next to the ticket office."
+    },
+    {
+      "speaker": "anna",
+      "text": "I'm at the café near platform two."
+    },
+    {
+      "speaker": "tim",
+      "text": "OK, stay there. I'm coming in two minutes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Tim?",
+      "options": [
+        "at the café",
+        "on platform two",
+        "next to the ticket office",
+        "at home"
+      ],
+      "answer": 2,
+      "feedback": "Tim bilet gişesinin yanında (next to the ticket office).",
+      "evidence": "I'm next to the ticket office."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is Anna?",
+      "options": [
+        "at the café near platform two",
+        "at the ticket office",
+        "on the train",
+        "outside the station"
+      ],
+      "answer": 0,
+      "feedback": "Anna iki numaralı peronun yanındaki kafede.",
+      "evidence": "I'm at the café near platform two."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who is going to walk to the other person?",
+      "options": [
+        "Anna",
+        "both of them",
+        "nobody",
+        "Tim"
+      ],
+      "answer": 3,
+      "feedback": "Tim \"stay there, I'm coming\" diyor; o yürüyecek.",
+      "evidence": "OK, stay there. I'm coming in two minutes."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is Tim going to arrive?",
+      "options": [
+        "in ten minutes",
+        "in two minutes",
+        "in twenty minutes",
+        "in an hour"
+      ],
+      "answer": 1,
+      "feedback": "İki dakika içinde (in two minutes) gelecek.",
+      "evidence": "I'm coming in two minutes."
+    }
+  ]
+}

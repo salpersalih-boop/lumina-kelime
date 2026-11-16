@@ -1,0 +1,96 @@
+{
+  "id": "a1-orta-47",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Where is the toilet?",
+  "topic": "Yer sorma",
+  "instructions": "Bir adam restoranda tuvaleti soruyor. Kısa bir diyalog; yön ifadelerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Man",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Waitress",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Excuse me. Where is the toilet, please?"
+    },
+    {
+      "speaker": "b",
+      "text": "It's upstairs, on the right."
+    },
+    {
+      "speaker": "a",
+      "text": "Is there a lift?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, next to the kitchen door."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the toilet?",
+      "options": [
+        "downstairs, on the left",
+        "upstairs, on the right",
+        "upstairs, on the left",
+        "next to the kitchen"
+      ],
+      "answer": 1,
+      "feedback": "Tuvalet üst katta, sağda.",
+      "evidence": "It's upstairs, on the right."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does the man ask about?",
+      "options": [
+        "the menu",
+        "the lift",
+        "the bill",
+        "the time"
+      ],
+      "answer": 1,
+      "feedback": "Asansör olup olmadığını soruyor.",
+      "evidence": "Is there a lift?"
+    },
+    {
+      "id": "q3",
+      "prompt": "Is there a lift?",
+      "options": [
+        "No, there isn't.",
+        "Yes, there is.",
+        "Only for staff.",
+        "The waitress doesn't know."
+      ],
+      "answer": 1,
+      "feedback": "Evet, asansör var.",
+      "evidence": "Yes, next to the kitchen door."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the lift?",
+      "options": [
+        "next to the toilet",
+        "next to the main door",
+        "next to the kitchen door",
+        "upstairs"
+      ],
+      "answer": 2,
+      "feedback": "Asansör mutfak kapısının yanında.",
+      "evidence": "next to the kitchen door."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-67",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Talking about a new job",
+  "topic": "İş değişikliği",
+  "instructions": "İki arkadaş birinin yeni işini konuşuyor. Eski ve yeni işi karşılaştır.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Jo",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Can",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Can! I heard you have a new job."
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, I started last Monday. I'm working for a travel company now."
+    },
+    {
+      "speaker": "a",
+      "text": "Do you like it more than the bank?"
+    },
+    {
+      "speaker": "b",
+      "text": "Much more. The work is more interesting, and my colleagues are really friendly."
+    },
+    {
+      "speaker": "a",
+      "text": "What about the money?"
+    },
+    {
+      "speaker": "b",
+      "text": "It's a little less, but I don't have to work on Saturdays any more."
+    },
+    {
+      "speaker": "a",
+      "text": "That's great. And it's closer to your home, isn't it?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, I can walk there in ten minutes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did Can start his new job?",
+      "options": [
+        "last Monday",
+        "yesterday",
+        "last month",
+        "last Friday"
+      ],
+      "answer": 0,
+      "feedback": "Geçen pazartesi başladı.",
+      "evidence": "I started last Monday."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where did Can work before?",
+      "options": [
+        "at a travel company",
+        "at a school",
+        "at a bank",
+        "at a hotel"
+      ],
+      "answer": 2,
+      "feedback": "Önceden bankada çalışıyordu.",
+      "evidence": "Do you like it more than the bank?"
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Can say about the money?",
+      "options": [
+        "It's much more.",
+        "It's a little less.",
+        "It's the same.",
+        "It's a lot less."
+      ],
+      "answer": 1,
+      "feedback": "Maaş biraz daha az.",
+      "evidence": "It's a little less"
+    },
+    {
+      "id": "q4",
+      "prompt": "How does Can go to work now?",
+      "options": [
+        "by bus",
+        "by car",
+        "by train",
+        "on foot"
+      ],
+      "answer": 3,
+      "feedback": "On dakikada yürüyerek gidiyor.",
+      "evidence": "I can walk there in ten minutes."
+    }
+  ]
+}

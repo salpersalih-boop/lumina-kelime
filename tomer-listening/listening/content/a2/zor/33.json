@@ -1,0 +1,125 @@
+{
+  "id": "a2-zor-33",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Before the hike",
+  "topic": "Doğa yürüyüşü bilgilendirmesi",
+  "instructions": "Bir rehber dağ yürüyüşü öncesi grubu bilgilendiriyor. Uzun bir metin; rota, saatler ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "guide": {
+      "name": "Hiking guide",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "guide",
+      "text": "Good morning, everyone. I'm Sarah, and I'll be your guide today."
+    },
+    {
+      "speaker": "guide",
+      "text": "Today's walk is fourteen kilometres. It usually takes about six hours, with breaks."
+    },
+    {
+      "speaker": "guide",
+      "text": "We start here in the village and walk up to Eagle Lake. We'll have lunch there at about twelve thirty."
+    },
+    {
+      "speaker": "guide",
+      "text": "After lunch, we go up to the top of the mountain. This part is the most difficult, so walk slowly."
+    },
+    {
+      "speaker": "guide",
+      "text": "Then we come down a different path through the forest and finish at the car park at around four."
+    },
+    {
+      "speaker": "guide",
+      "text": "Please stay behind me at all times. Some paths are dangerous, especially near the lake."
+    },
+    {
+      "speaker": "guide",
+      "text": "The weather can change quickly up there. It's sunny now, but it might rain in the afternoon, so I hope you've got a raincoat."
+    },
+    {
+      "speaker": "guide",
+      "text": "Bring at least two litres of water. There's nowhere to buy drinks on the way."
+    },
+    {
+      "speaker": "guide",
+      "text": "If you feel ill or tired, tell me straight away. Don't be shy! Right, let's go."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long is the walk?",
+      "options": [
+        "four kilometres",
+        "forty kilometres",
+        "six kilometres",
+        "fourteen kilometres"
+      ],
+      "answer": 3,
+      "feedback": "Yürüyüş on dört kilometre, yaklaşık altı saat sürüyor.",
+      "evidence": "Today's walk is fourteen kilometres."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where will they have lunch?",
+      "options": [
+        "at Eagle Lake",
+        "at the top of the mountain",
+        "in the village",
+        "in the forest"
+      ],
+      "answer": 0,
+      "feedback": "Öğle yemeği yaklaşık on iki buçukta Eagle Lake'te.",
+      "evidence": "We'll have lunch there at about twelve thirty."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which part is the most difficult?",
+      "options": [
+        "the walk to the lake",
+        "going up to the top after lunch",
+        "the forest path",
+        "the start in the village"
+      ],
+      "answer": 1,
+      "feedback": "Öğle yemeğinden sonra zirveye çıkış en zor kısım.",
+      "evidence": "This part is the most difficult"
+    },
+    {
+      "id": "q4",
+      "prompt": "What might happen in the afternoon?",
+      "options": [
+        "It might snow.",
+        "It might be very hot.",
+        "It might rain.",
+        "It might be windy."
+      ],
+      "answer": 2,
+      "feedback": "Öğleden sonra yağmur yağabilir; yağmurluk gerekiyor.",
+      "evidence": "but it might rain in the afternoon"
+    },
+    {
+      "id": "q5",
+      "prompt": "Why should people bring two litres of water?",
+      "options": [
+        "The guide says it is a rule.",
+        "There's nowhere to buy drinks.",
+        "It's very hot.",
+        "The lake water is dirty."
+      ],
+      "answer": 1,
+      "feedback": "Yolda içecek alınacak bir yer yok.",
+      "evidence": "There's nowhere to buy drinks on the way."
+    }
+  ]
+}

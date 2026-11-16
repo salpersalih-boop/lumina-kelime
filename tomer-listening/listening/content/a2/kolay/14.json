@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-14",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Learning to drive",
+  "topic": "Yeni beceriler",
+  "instructions": "Sam araba kullanmayı öğreniyor. Kaç ders aldığına ve sınav tarihine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sam": {
+      "name": "Sam",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sam",
+      "text": "I'm learning to drive at the moment."
+    },
+    {
+      "speaker": "sam",
+      "text": "I have a lesson every Tuesday and Friday with my teacher, Mr Hill."
+    },
+    {
+      "speaker": "sam",
+      "text": "So far, I've had twelve lessons."
+    },
+    {
+      "speaker": "sam",
+      "text": "Parking is the most difficult thing for me. I always get nervous."
+    },
+    {
+      "speaker": "sam",
+      "text": "My driving test is next month, on the twentieth."
+    },
+    {
+      "speaker": "sam",
+      "text": "If I pass, my mum is going to give me her old car."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When does Sam have driving lessons?",
+      "options": [
+        "every day",
+        "on Tuesdays and Fridays",
+        "on Tuesdays and Thursdays",
+        "at the weekend"
+      ],
+      "answer": 1,
+      "feedback": "Salı ve cuma (Tuesday and Friday) dersleri var.",
+      "evidence": "I have a lesson every Tuesday and Friday"
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the most difficult thing for Sam?",
+      "options": [
+        "parking",
+        "driving fast",
+        "driving at night",
+        "turning left"
+      ],
+      "answer": 0,
+      "feedback": "En zor şey park etmek (parking).",
+      "evidence": "Parking is the most difficult thing for me."
+    },
+    {
+      "id": "q3",
+      "prompt": "What will happen if Sam passes his test?",
+      "options": [
+        "He will buy a new car.",
+        "Mr Hill will give him a car.",
+        "He will drive to the beach.",
+        "He will get his mum's old car."
+      ],
+      "answer": 3,
+      "feedback": "Geçerse annesi ona eski arabasını verecek.",
+      "evidence": "my mum is going to give me her old car."
+    }
+  ]
+}

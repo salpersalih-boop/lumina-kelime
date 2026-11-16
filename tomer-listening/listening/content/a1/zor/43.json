@@ -1,0 +1,117 @@
+{
+  "id": "a1-zor-43",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My job at the café",
+  "topic": "İş ve günlük düzen",
+  "instructions": "Öğrenci Max kafedeki yarı zamanlı işini anlatıyor. Uzun bir metin; günleri, saatleri ve görevleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "max": {
+      "name": "Max",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "max",
+      "text": "I'm a student, and I have a job in a café near my university."
+    },
+    {
+      "speaker": "max",
+      "text": "I work on Tuesdays and Thursdays from five to nine, and on Saturdays from ten to four."
+    },
+    {
+      "speaker": "max",
+      "text": "I make coffee, clean the tables and wash the cups."
+    },
+    {
+      "speaker": "max",
+      "text": "I don't cook. The chef, Rosa, makes all the food."
+    },
+    {
+      "speaker": "max",
+      "text": "My favourite part is talking to the customers. Many of them come every day."
+    },
+    {
+      "speaker": "max",
+      "text": "The worst part is Saturday. It's very busy, and I'm always tired after work."
+    },
+    {
+      "speaker": "max",
+      "text": "I get ten pounds an hour. I want to save money for a holiday in Greece next summer."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which days does Max work?",
+      "options": [
+        "Monday, Wednesday and Saturday",
+        "Tuesday, Thursday and Saturday",
+        "Tuesday, Thursday and Sunday",
+        "every day"
+      ],
+      "answer": 1,
+      "feedback": "Salı, perşembe ve cumartesi çalışıyor.",
+      "evidence": "I work on Tuesdays and Thursdays from five to nine, and on Saturdays"
+    },
+    {
+      "id": "q2",
+      "prompt": "Who makes the food?",
+      "options": [
+        "Max",
+        "the customers",
+        "Rosa",
+        "the manager"
+      ],
+      "answer": 2,
+      "feedback": "Yemekleri aşçı Rosa yapıyor.",
+      "evidence": "The chef, Rosa, makes all the food."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Max's favourite part of the job?",
+      "options": [
+        "talking to the customers",
+        "making coffee",
+        "Saturdays",
+        "cleaning"
+      ],
+      "answer": 0,
+      "feedback": "En sevdiği kısım müşterilerle konuşmak.",
+      "evidence": "My favourite part is talking to the customers."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why doesn't Max like Saturdays?",
+      "options": [
+        "He doesn't get money.",
+        "It's boring.",
+        "He works alone.",
+        "It's very busy."
+      ],
+      "answer": 3,
+      "feedback": "Cumartesi çok yoğun ve işten sonra hep yorgun.",
+      "evidence": "It's very busy, and I'm always tired after work."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why is Max saving money?",
+      "options": [
+        "for a car",
+        "for a holiday in Greece",
+        "for his university",
+        "for a new phone"
+      ],
+      "answer": 1,
+      "feedback": "Gelecek yaz Yunanistan tatili için para biriktiriyor.",
+      "evidence": "save money for a holiday in Greece next summer."
+    }
+  ]
+}

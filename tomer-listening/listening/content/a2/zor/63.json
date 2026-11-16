@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-63",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Which laptop should I buy?",
+  "topic": "Ürün karşılaştırma",
+  "instructions": "Bir öğrenci iki dizüstü bilgisayarı karşılaştırıyor. Hangi özelliğin hangi bilgisayara ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Staff",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Emre",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "b",
+      "text": "Hi. I'm a student, and I need a laptop for university. What's the difference between these two?"
+    },
+    {
+      "speaker": "a",
+      "text": "The Swift is lighter, only one kilo, and the battery lasts twelve hours. It's six hundred pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "And the Power?"
+    },
+    {
+      "speaker": "a",
+      "text": "The Power is faster and has a bigger screen, but it's heavier, about two and a half kilos. It's eight hundred."
+    },
+    {
+      "speaker": "b",
+      "text": "I'll carry it to university every day, and I mostly write essays and watch lectures."
+    },
+    {
+      "speaker": "a",
+      "text": "Then the Swift is better for you. The Power is good for games and video editing."
+    },
+    {
+      "speaker": "b",
+      "text": "Is there a student discount?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, ten percent with your student card."
+    },
+    {
+      "speaker": "b",
+      "text": "Great, I'll take the Swift."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How heavy is the Swift?",
+      "options": [
+        "half a kilo",
+        "one kilo",
+        "two kilos",
+        "two and a half kilos"
+      ],
+      "answer": 1,
+      "feedback": "Swift sadece bir kilo.",
+      "evidence": "The Swift is lighter, only one kilo"
+    },
+    {
+      "id": "q2",
+      "prompt": "How long does the Swift's battery last?",
+      "options": [
+        "six hours",
+        "eight hours",
+        "ten hours",
+        "twelve hours"
+      ],
+      "answer": 3,
+      "feedback": "Swift'in pili on iki saat dayanıyor.",
+      "evidence": "the battery lasts twelve hours."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is better about the Power?",
+      "options": [
+        "It's lighter.",
+        "It's cheaper.",
+        "It's faster and has a bigger screen.",
+        "Its battery is better."
+      ],
+      "answer": 2,
+      "feedback": "Power daha hızlı ve ekranı daha büyük.",
+      "evidence": "The Power is faster and has a bigger screen"
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Emre mostly use a laptop for?",
+      "options": [
+        "games",
+        "video editing",
+        "writing essays and watching lectures",
+        "music"
+      ],
+      "answer": 2,
+      "feedback": "Çoğunlukla ödev yazmak ve ders izlemek için.",
+      "evidence": "I mostly write essays and watch lectures."
+    },
+    {
+      "id": "q5",
+      "prompt": "How much is the student discount?",
+      "options": [
+        "ten percent",
+        "twenty percent",
+        "fifty pounds",
+        "nothing"
+      ],
+      "answer": 0,
+      "feedback": "Öğrenci kartıyla yüzde on indirim.",
+      "evidence": "ten percent with your student card."
+    }
+  ]
+}

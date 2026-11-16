@@ -1,0 +1,132 @@
+{
+  "id": "a2-orta-25",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Planning a dinner party",
+  "topic": "Davet planlama",
+  "instructions": "Jess ve Tom akşam yemeği daveti planlıyor. Uzun bir diyalog; misafir sayısı, yemek seçimi ve görev dağılımını takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jess": {
+      "name": "Jess",
+      "voice": "female"
+    },
+    "tom": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jess",
+      "text": "Let's have a dinner party next Saturday. We haven't seen our friends for ages."
+    },
+    {
+      "speaker": "tom",
+      "text": "Good idea. Who shall we invite?"
+    },
+    {
+      "speaker": "jess",
+      "text": "Sara and Paul, and Ahmet and his wife. So six people with us."
+    },
+    {
+      "speaker": "tom",
+      "text": "Our table is only for four, but we can borrow chairs from my brother."
+    },
+    {
+      "speaker": "jess",
+      "text": "Great. What shall we cook? I was thinking of roast beef."
+    },
+    {
+      "speaker": "tom",
+      "text": "Paul doesn't eat meat. He's vegetarian."
+    },
+    {
+      "speaker": "jess",
+      "text": "Oh, I forgot. Then let's make a big vegetable lasagne. Everybody likes that."
+    },
+    {
+      "speaker": "tom",
+      "text": "And for dessert?"
+    },
+    {
+      "speaker": "jess",
+      "text": "Sara said she wants to bring a cake. She makes amazing cakes."
+    },
+    {
+      "speaker": "tom",
+      "text": "Perfect. I'll do the shopping on Friday."
+    },
+    {
+      "speaker": "jess",
+      "text": "And I'll cook. Can you clean the flat?"
+    },
+    {
+      "speaker": "tom",
+      "text": "Sure. What time shall we tell them?"
+    },
+    {
+      "speaker": "jess",
+      "text": "Eight o'clock."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many people will be at the dinner?",
+      "options": [
+        "four",
+        "five",
+        "six",
+        "eight"
+      ],
+      "answer": 2,
+      "feedback": "İki çift ve kendileri: altı kişi.",
+      "evidence": "So six people with us."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why don't they cook roast beef?",
+      "options": [
+        "It's expensive.",
+        "Paul is vegetarian.",
+        "Tom can't cook it.",
+        "Sara doesn't like it."
+      ],
+      "answer": 1,
+      "feedback": "Paul et yemiyor; vejetaryen.",
+      "evidence": "He's vegetarian."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who is bringing dessert?",
+      "options": [
+        "Sara",
+        "Paul",
+        "Ahmet",
+        "Tom's brother"
+      ],
+      "answer": 0,
+      "feedback": "Sara pasta getirmek istiyor.",
+      "evidence": "Sara said she wants to bring a cake."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is Tom going to do?",
+      "options": [
+        "cook the lasagne",
+        "make a cake",
+        "buy new chairs",
+        "do the shopping and clean the flat"
+      ],
+      "answer": 3,
+      "feedback": "Tom cuma alışveriş yapacak ve evi temizleyecek; yemeği Jess pişirecek.",
+      "evidence": "I'll do the shopping on Friday."
+    }
+  ]
+}

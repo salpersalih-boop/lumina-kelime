@@ -1,0 +1,96 @@
+{
+  "id": "a1-orta-58",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Asking the way to the bank",
+  "topic": "Yol tarifi",
+  "instructions": "Bir turist bankayı soruyor. Kısa bir diyalog; yön ifadelerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Tourist",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Man",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Excuse me. Is there a bank near here?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. Go straight on and turn left at the church."
+    },
+    {
+      "speaker": "a",
+      "text": "Left at the church?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. The bank is next to the supermarket. It's five minutes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the tourist looking for?",
+      "options": [
+        "a church",
+        "a supermarket",
+        "a bank",
+        "a hotel"
+      ],
+      "answer": 2,
+      "feedback": "Banka arıyor.",
+      "evidence": "Is there a bank near here?"
+    },
+    {
+      "id": "q2",
+      "prompt": "Where should she turn left?",
+      "options": [
+        "at the church",
+        "at the supermarket",
+        "at the bank",
+        "at the traffic lights"
+      ],
+      "answer": 0,
+      "feedback": "Kilisede sola dönmeli.",
+      "evidence": "turn left at the church."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is the bank?",
+      "options": [
+        "next to the church",
+        "opposite the supermarket",
+        "next to the supermarket",
+        "behind the church"
+      ],
+      "answer": 2,
+      "feedback": "Banka süpermarketin yanında.",
+      "evidence": "The bank is next to the supermarket."
+    },
+    {
+      "id": "q4",
+      "prompt": "How far is it?",
+      "options": [
+        "two minutes",
+        "five minutes",
+        "fifteen minutes",
+        "half an hour"
+      ],
+      "answer": 1,
+      "feedback": "Beş dakika.",
+      "evidence": "It's five minutes."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-59",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Why I sold my car",
+  "topic": "Yaşam tarzı",
+  "instructions": "Paul arabasını neden sattığını anlatıyor. Sebeplere ve şimdi nasıl yolculuk ettiğine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Paul",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last year, I sold my car."
+    },
+    {
+      "speaker": "s",
+      "text": "Petrol and parking were too expensive, and I was always stuck in traffic."
+    },
+    {
+      "speaker": "s",
+      "text": "Now I go to work by bike. It takes twenty-five minutes."
+    },
+    {
+      "speaker": "s",
+      "text": "When it rains, I take the bus."
+    },
+    {
+      "speaker": "s",
+      "text": "I save about two hundred pounds a month, and I'm much fitter!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why did Paul sell his car?",
+      "options": [
+        "It was old.",
+        "It was expensive and he was always in traffic.",
+        "He moved abroad.",
+        "He had an accident."
+      ],
+      "answer": 1,
+      "feedback": "Benzin ve otopark pahalıydı, hep trafikteydi.",
+      "evidence": "Petrol and parking were too expensive"
+    },
+    {
+      "id": "q2",
+      "prompt": "How does he go to work now?",
+      "options": [
+        "by bike",
+        "by car",
+        "on foot",
+        "by train"
+      ],
+      "answer": 0,
+      "feedback": "İşe bisikletle gidiyor.",
+      "evidence": "Now I go to work by bike."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much money does he save?",
+      "options": [
+        "twenty-five pounds a month",
+        "two hundred pounds a year",
+        "about two hundred pounds a month",
+        "nothing"
+      ],
+      "answer": 2,
+      "feedback": "Ayda yaklaşık iki yüz pound tasarruf ediyor.",
+      "evidence": "I save about two hundred pounds a month"
+    }
+  ]
+}

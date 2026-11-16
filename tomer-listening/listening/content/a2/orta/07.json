@@ -1,0 +1,104 @@
+{
+  "id": "a2-orta-07",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the post office",
+  "topic": "Postane",
+  "instructions": "Bir kadın postanede paket gönderiyor. Kısa bir diyalog; ülke, süre ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "clerk": {
+      "name": "Clerk",
+      "voice": "male"
+    },
+    "woman": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "woman",
+      "text": "Hello. I'd like to send this parcel to Canada."
+    },
+    {
+      "speaker": "clerk",
+      "text": "By air or by sea?"
+    },
+    {
+      "speaker": "woman",
+      "text": "How long does it take by sea?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "About six weeks. By air, it takes five days."
+    },
+    {
+      "speaker": "woman",
+      "text": "It's a birthday present, so by air, please."
+    },
+    {
+      "speaker": "clerk",
+      "text": "That's eighteen pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the parcel going?",
+      "options": [
+        "to America",
+        "to Canada",
+        "to Australia",
+        "to France"
+      ],
+      "answer": 1,
+      "feedback": "Paket Kanada'ya (to Canada) gidiyor.",
+      "evidence": "send this parcel to Canada."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long does it take by sea?",
+      "options": [
+        "five days",
+        "six days",
+        "about six weeks",
+        "five weeks"
+      ],
+      "answer": 2,
+      "feedback": "Deniz yoluyla yaklaşık altı hafta; uçakla beş gün.",
+      "evidence": "About six weeks."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why does the woman choose air?",
+      "options": [
+        "It's cheaper.",
+        "It's a birthday present.",
+        "It's very heavy.",
+        "There's no sea post."
+      ],
+      "answer": 1,
+      "feedback": "Doğum günü hediyesi olduğu için hızlı gitmeli.",
+      "evidence": "It's a birthday present, so by air, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does she pay?",
+      "options": [
+        "eighteen pounds",
+        "eighty pounds",
+        "eight pounds",
+        "fifteen pounds"
+      ],
+      "answer": 0,
+      "feedback": "On sekiz pound (eighteen). \"Eighteen\" ile \"eighty\" karışmasın.",
+      "evidence": "That's eighteen pounds."
+    }
+  ]
+}

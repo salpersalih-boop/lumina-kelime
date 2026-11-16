@@ -1,0 +1,137 @@
+{
+  "id": "a1-zor-01",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Daniel's busy week",
+  "topic": "Günlük rutin ve planlar",
+  "instructions": "Daniel günlük rutinini ve hafta sonu planlarını anlatıyor. Metinde \"usually / but / don't\" gibi çeldiriciler var; dikkatli dinle. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "daniel": {
+      "name": "Daniel",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "daniel",
+      "text": "Hi, I'm Daniel. I'm a nurse at a big hospital, and my days are very busy."
+    },
+    {
+      "speaker": "daniel",
+      "text": "I usually get up at six o'clock, but on Saturdays I get up at nine."
+    },
+    {
+      "speaker": "daniel",
+      "text": "I have breakfast at half past six."
+    },
+    {
+      "speaker": "daniel",
+      "text": "I don't drink coffee in the morning. I drink tea."
+    },
+    {
+      "speaker": "daniel",
+      "text": "I go to work by bus. I don't drive, because I don't have a car."
+    },
+    {
+      "speaker": "daniel",
+      "text": "I start work at eight o'clock and I finish at four."
+    },
+    {
+      "speaker": "daniel",
+      "text": "After work, I go to the gym on Mondays and Wednesdays."
+    },
+    {
+      "speaker": "daniel",
+      "text": "On Tuesdays and Thursdays, I have Spanish lessons."
+    },
+    {
+      "speaker": "daniel",
+      "text": "Next weekend, I have a lot of plans."
+    },
+    {
+      "speaker": "daniel",
+      "text": "On Saturday morning, I'm going to visit my grandmother. She lives in a small town near the sea."
+    },
+    {
+      "speaker": "daniel",
+      "text": "On Saturday evening, I want to go to the cinema with my friend Paula."
+    },
+    {
+      "speaker": "daniel",
+      "text": "But on Sunday, I'm going to stay at home and sleep!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time does Daniel get up on Saturdays?",
+      "options": [
+        "at six o'clock",
+        "at half past six",
+        "at eight o'clock",
+        "at nine o'clock"
+      ],
+      "answer": 3,
+      "feedback": "Daniel genelde (usually) altıda kalkıyor, ama (but) cumartesileri dokuzda. \"Half past six\" kahvaltı saati.",
+      "evidence": "but on Saturdays I get up at nine."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Daniel drink in the morning?",
+      "options": [
+        "coffee",
+        "tea",
+        "milk",
+        "juice"
+      ],
+      "answer": 1,
+      "feedback": "Önce \"coffee\" kelimesini duyuyorsun ama olumsuz cümlede (don't drink). Sabahları çay içiyor.",
+      "evidence": "I don't drink coffee in the morning. I drink tea."
+    },
+    {
+      "id": "q3",
+      "prompt": "How does Daniel go to work?",
+      "options": [
+        "by car",
+        "by bike",
+        "by bus",
+        "on foot"
+      ],
+      "answer": 2,
+      "feedback": "İşe otobüsle gidiyor. Arabası yok, bu yüzden \"by car\" yanlış.",
+      "evidence": "I go to work by bus."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Daniel do on Tuesdays?",
+      "options": [
+        "He goes to the gym.",
+        "He has Spanish lessons.",
+        "He visits his grandmother.",
+        "He goes to the cinema."
+      ],
+      "answer": 1,
+      "feedback": "Spor salonu pazartesi ve çarşamba. Salı ve perşembe İspanyolca dersi var.",
+      "evidence": "On Tuesdays and Thursdays, I have Spanish lessons."
+    },
+    {
+      "id": "q5",
+      "prompt": "What is Daniel going to do on Sunday?",
+      "options": [
+        "visit his grandmother",
+        "go to the cinema",
+        "stay at home",
+        "go to the gym"
+      ],
+      "answer": 2,
+      "feedback": "Büyükanne ziyareti ve sinema cumartesi. Pazar günü evde kalıp uyuyacak.",
+      "evidence": "But on Sunday, I'm going to stay at home and sleep!"
+    }
+  ]
+}

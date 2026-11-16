@@ -1,0 +1,117 @@
+{
+  "id": "a1-zor-58",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My two children",
+  "topic": "Aile ve karşılaştırma",
+  "instructions": "Ayşe iki çocuğunu anlatıyor. Hangi bilginin hangi çocuğa ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Ayşe",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "My husband and I have two children, a son and a daughter."
+    },
+    {
+      "speaker": "s",
+      "text": "Our son, Can, is twelve. He is tall and has short black hair. He loves football and plays every Saturday."
+    },
+    {
+      "speaker": "s",
+      "text": "Our daughter, Defne, is eight. She has long brown hair. She loves animals and wants to be a vet."
+    },
+    {
+      "speaker": "s",
+      "text": "Can is good at maths, but he is not very good at English."
+    },
+    {
+      "speaker": "s",
+      "text": "Defne is good at English and art."
+    },
+    {
+      "speaker": "s",
+      "text": "They are very different, but they are good friends."
+    },
+    {
+      "speaker": "s",
+      "text": "In the evening, Can helps Defne with maths, and Defne helps Can with English!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is Can?",
+      "options": [
+        "eight",
+        "ten",
+        "twelve",
+        "fourteen"
+      ],
+      "answer": 2,
+      "feedback": "Can on iki yaşında; Defne sekiz.",
+      "evidence": "Our son, Can, is twelve."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Defne look like?",
+      "options": [
+        "She has long brown hair.",
+        "She has short black hair.",
+        "She is tall.",
+        "She has short brown hair."
+      ],
+      "answer": 0,
+      "feedback": "Defne'nin uzun kahverengi saçları var.",
+      "evidence": "She has long brown hair."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Defne want to be?",
+      "options": [
+        "a teacher",
+        "a doctor",
+        "a football player",
+        "a vet"
+      ],
+      "answer": 3,
+      "feedback": "Veteriner olmak istiyor.",
+      "evidence": "wants to be a vet."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is Can good at?",
+      "options": [
+        "English",
+        "maths",
+        "art",
+        "music"
+      ],
+      "answer": 1,
+      "feedback": "Can matematikte iyi, İngilizcede pek iyi değil.",
+      "evidence": "Can is good at maths"
+    },
+    {
+      "id": "q5",
+      "prompt": "How does Defne help Can?",
+      "options": [
+        "with maths",
+        "with football",
+        "with English",
+        "with art"
+      ],
+      "answer": 2,
+      "feedback": "Defne Can'a İngilizcede yardım ediyor.",
+      "evidence": "Defne helps Can with English!"
+    }
+  ]
+}

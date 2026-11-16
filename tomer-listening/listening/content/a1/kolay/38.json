@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-38",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My street",
+  "topic": "Yaşanılan yer",
+  "instructions": "Sam yaşadığı sokağı anlatıyor. Sokaktaki yerlere ve komşulara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sam": {
+      "name": "Sam",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sam",
+      "text": "I live on Oak Street. It is a quiet street."
+    },
+    {
+      "speaker": "sam",
+      "text": "There are twenty houses on my street."
+    },
+    {
+      "speaker": "sam",
+      "text": "There is a small shop at the end of the street."
+    },
+    {
+      "speaker": "sam",
+      "text": "My best friend, Tom, lives in the house opposite."
+    },
+    {
+      "speaker": "sam",
+      "text": "There are a lot of trees, and in spring there are flowers everywhere."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the name of Sam's street?",
+      "options": [
+        "Park Street",
+        "Oak Street",
+        "Tree Street",
+        "Hill Street"
+      ],
+      "answer": 1,
+      "feedback": "Sokağın adı Oak Street.",
+      "evidence": "I live on Oak Street."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many houses are there?",
+      "options": [
+        "twelve",
+        "two",
+        "twenty",
+        "thirty"
+      ],
+      "answer": 2,
+      "feedback": "Sokakta yirmi ev var.",
+      "evidence": "There are twenty houses on my street."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where does Tom live?",
+      "options": [
+        "in the house opposite",
+        "next to the shop",
+        "on another street",
+        "next door"
+      ],
+      "answer": 0,
+      "feedback": "Tom karşıdaki evde oturuyor.",
+      "evidence": "lives in the house opposite."
+    }
+  ]
+}

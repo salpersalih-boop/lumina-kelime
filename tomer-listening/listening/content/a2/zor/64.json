@@ -1,0 +1,117 @@
+{
+  "id": "a2-zor-64",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Museum of Transport",
+  "topic": "Müze rehberi",
+  "instructions": "Ulaşım müzesinde bir rehber konuşuyor. Tarihleri, sayıları ve kuralları karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Museum guide",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Welcome to the Museum of Transport. In this room, you can see how people travelled in our city over the last two hundred years."
+    },
+    {
+      "speaker": "s",
+      "text": "On your left is a horse and carriage from eighteen fifty. At that time, only rich people could travel like this."
+    },
+    {
+      "speaker": "s",
+      "text": "In front of you is the first electric tram. It started running in nineteen hundred and five and could carry forty people."
+    },
+    {
+      "speaker": "s",
+      "text": "Trams were very popular until the nineteen sixties, when more people started buying cars."
+    },
+    {
+      "speaker": "s",
+      "text": "On your right is a red bus from nineteen seventy. Many visitors remember these buses from their childhood!"
+    },
+    {
+      "speaker": "s",
+      "text": "Next year, the museum is opening a new room about bicycles."
+    },
+    {
+      "speaker": "s",
+      "text": "You can sit in the old bus, but please don't touch the carriage or the tram. Photos are allowed everywhere."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is the horse and carriage from?",
+      "options": [
+        "eighteen fifty",
+        "nineteen fifty",
+        "nineteen hundred and five",
+        "eighteen fifteen"
+      ],
+      "answer": 0,
+      "feedback": "At arabası 1850'den.",
+      "evidence": "a horse and carriage from eighteen fifty."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many people could the first electric tram carry?",
+      "options": [
+        "fourteen",
+        "forty",
+        "four hundred",
+        "fifty"
+      ],
+      "answer": 1,
+      "feedback": "İlk elektrikli tramvay kırk kişi taşıyabiliyordu.",
+      "evidence": "could carry forty people."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why did trams become less popular?",
+      "options": [
+        "They were too slow.",
+        "More people started buying cars.",
+        "They were expensive.",
+        "Buses were faster."
+      ],
+      "answer": 1,
+      "feedback": "Daha çok insan araba almaya başladı.",
+      "evidence": "when more people started buying cars."
+    },
+    {
+      "id": "q4",
+      "prompt": "What will the museum open next year?",
+      "options": [
+        "a new room about trains",
+        "a café",
+        "a new room about bicycles",
+        "a shop"
+      ],
+      "answer": 2,
+      "feedback": "Gelecek yıl bisikletler hakkında yeni bir oda açılacak.",
+      "evidence": "the museum is opening a new room about bicycles."
+    },
+    {
+      "id": "q5",
+      "prompt": "What can visitors do?",
+      "options": [
+        "touch the tram",
+        "touch the carriage",
+        "sit in the old bus",
+        "drive the bus"
+      ],
+      "answer": 2,
+      "feedback": "Eski otobüse oturabilirler; arabaya ve tramvaya dokunamazlar.",
+      "evidence": "You can sit in the old bus"
+    }
+  ]
+}

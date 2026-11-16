@@ -1,0 +1,112 @@
+{
+  "id": "a1-orta-32",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the bookshop",
+  "topic": "Kitapçı",
+  "instructions": "Ella kitapçıda bir kitap arıyor. Kitabın yerine ve fiyatına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ella": {
+      "name": "Ella",
+      "voice": "female"
+    },
+    "staff": {
+      "name": "Bookseller",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ella",
+      "text": "Excuse me. I'm looking for a book called 'The Red Door'."
+    },
+    {
+      "speaker": "staff",
+      "text": "Is it for children or adults?"
+    },
+    {
+      "speaker": "ella",
+      "text": "It's for children. It's a present for my son."
+    },
+    {
+      "speaker": "staff",
+      "text": "The children's books are upstairs, on the left."
+    },
+    {
+      "speaker": "ella",
+      "text": "Thank you. How much is it?"
+    },
+    {
+      "speaker": "staff",
+      "text": "It's eight pounds ninety-nine."
+    },
+    {
+      "speaker": "ella",
+      "text": "Can I pay by card?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, of course."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is the book for?",
+      "options": [
+        "Ella's daughter",
+        "Ella's son",
+        "Ella",
+        "Ella's friend"
+      ],
+      "answer": 1,
+      "feedback": "Kitap oğluna hediye.",
+      "evidence": "It's a present for my son."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where are the children's books?",
+      "options": [
+        "downstairs, on the right",
+        "upstairs, on the right",
+        "near the door",
+        "upstairs, on the left"
+      ],
+      "answer": 3,
+      "feedback": "Çocuk kitapları üst katta, solda.",
+      "evidence": "The children's books are upstairs, on the left."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is the book?",
+      "options": [
+        "eight pounds ninety-nine",
+        "nine pounds ninety-nine",
+        "eighteen pounds ninety-nine",
+        "eight pounds nineteen"
+      ],
+      "answer": 0,
+      "feedback": "Kitap sekiz pound doksan dokuz.",
+      "evidence": "It's eight pounds ninety-nine."
+    },
+    {
+      "id": "q4",
+      "prompt": "How does Ella pay?",
+      "options": [
+        "in cash",
+        "by phone",
+        "by card",
+        "with a voucher"
+      ],
+      "answer": 2,
+      "feedback": "Kartla ödüyor.",
+      "evidence": "Can I pay by card?"
+    }
+  ]
+}

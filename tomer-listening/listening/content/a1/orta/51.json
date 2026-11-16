@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-51",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "A phone call to Grandma",
+  "topic": "Telefon konuşması",
+  "instructions": "Mia büyükannesiyle telefonda konuşuyor. Planlara ve günlere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Grandma",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "b",
+      "text": "Hi Grandma! It's Mia."
+    },
+    {
+      "speaker": "a",
+      "text": "Hello, darling! How are you?"
+    },
+    {
+      "speaker": "b",
+      "text": "I'm fine. Can I come to your house on Saturday?"
+    },
+    {
+      "speaker": "a",
+      "text": "Of course! Come for lunch. I can make your favourite soup."
+    },
+    {
+      "speaker": "b",
+      "text": "Yummy! Can I bring my friend Zoe?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, of course. See you on Saturday at twelve."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is Mia talking to?",
+      "options": [
+        "her mum",
+        "her grandma",
+        "her friend",
+        "her teacher"
+      ],
+      "answer": 1,
+      "feedback": "Büyükannesiyle konuşuyor.",
+      "evidence": "Hi Grandma! It's Mia."
+    },
+    {
+      "id": "q2",
+      "prompt": "When does Mia want to visit?",
+      "options": [
+        "on Sunday",
+        "on Friday",
+        "on Saturday",
+        "tomorrow"
+      ],
+      "answer": 2,
+      "feedback": "Cumartesi gitmek istiyor.",
+      "evidence": "Can I come to your house on Saturday?"
+    },
+    {
+      "id": "q3",
+      "prompt": "What will Grandma make?",
+      "options": [
+        "a cake",
+        "pizza",
+        "pasta",
+        "soup"
+      ],
+      "answer": 3,
+      "feedback": "Mia'nın en sevdiği çorbayı yapacak.",
+      "evidence": "I can make your favourite soup."
+    },
+    {
+      "id": "q4",
+      "prompt": "Who is coming with Mia?",
+      "options": [
+        "her friend Zoe",
+        "her mum",
+        "her brother",
+        "nobody"
+      ],
+      "answer": 0,
+      "feedback": "Arkadaşı Zoe da gelecek.",
+      "evidence": "Can I bring my friend Zoe?"
+    }
+  ]
+}

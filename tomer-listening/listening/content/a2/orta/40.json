@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-40",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "A late library book",
+  "topic": "Kütüphane",
+  "instructions": "Tom kütüphaneye gecikmiş bir kitap getiriyor. Ceza ve yeni kitapla ilgili bilgilere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tom": {
+      "name": "Tom",
+      "voice": "male"
+    },
+    "lib": {
+      "name": "Librarian",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tom",
+      "text": "Hi. I'm sorry, this book is late. I was on holiday."
+    },
+    {
+      "speaker": "lib",
+      "text": "Let me check. It was due on the fifth, so it's ten days late."
+    },
+    {
+      "speaker": "tom",
+      "text": "How much do I have to pay?"
+    },
+    {
+      "speaker": "lib",
+      "text": "It's twenty pence a day, so two pounds."
+    },
+    {
+      "speaker": "tom",
+      "text": "OK. Here you are. Can I borrow the next book in the series?"
+    },
+    {
+      "speaker": "lib",
+      "text": "Sorry, someone has it now. But I can reserve it for you."
+    },
+    {
+      "speaker": "tom",
+      "text": "Yes, please. When will it come back?"
+    },
+    {
+      "speaker": "lib",
+      "text": "In about a week. We'll send you an email."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why is Tom's book late?",
+      "options": [
+        "He forgot it.",
+        "He was on holiday.",
+        "He lost it.",
+        "He was ill."
+      ],
+      "answer": 1,
+      "feedback": "Tatildeymiş.",
+      "evidence": "I was on holiday."
+    },
+    {
+      "id": "q2",
+      "prompt": "How late is the book?",
+      "options": [
+        "five days",
+        "ten days",
+        "twenty days",
+        "two days"
+      ],
+      "answer": 1,
+      "feedback": "Kitap on gün gecikmiş.",
+      "evidence": "so it's ten days late."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much does Tom pay?",
+      "options": [
+        "twenty pence",
+        "two pounds",
+        "ten pounds",
+        "fifty pence"
+      ],
+      "answer": 1,
+      "feedback": "Günlük yirmi peniden on gün: iki pound.",
+      "evidence": "so two pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "How will Tom know the next book is back?",
+      "options": [
+        "They will call him.",
+        "He will check online.",
+        "They will send him an email.",
+        "He will come every day."
+      ],
+      "answer": 2,
+      "feedback": "Kitap gelince e-posta gönderecekler.",
+      "evidence": "We'll send you an email."
+    }
+  ]
+}

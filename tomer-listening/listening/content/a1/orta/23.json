@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-23",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Our lost dog",
+  "topic": "Kayıp hayvan",
+  "instructions": "Lily kayıp köpeğini bir komşuya soruyor. Köpeğin tarifine ve nerede görüldüğüne dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "lily": {
+      "name": "Lily",
+      "voice": "female"
+    },
+    "man": {
+      "name": "Neighbour",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lily",
+      "text": "Excuse me. I can't find my dog. Can you help me?"
+    },
+    {
+      "speaker": "man",
+      "text": "What does he look like?"
+    },
+    {
+      "speaker": "lily",
+      "text": "He's small and white, with a black ear. His name is Coco."
+    },
+    {
+      "speaker": "man",
+      "text": "Hmm. I saw a small white dog ten minutes ago."
+    },
+    {
+      "speaker": "lily",
+      "text": "Really? Where?"
+    },
+    {
+      "speaker": "man",
+      "text": "In the park, near the lake. He was with some children."
+    },
+    {
+      "speaker": "lily",
+      "text": "Thank you so much! I'm going there now."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour is the dog?",
+      "options": [
+        "black",
+        "white with a black ear",
+        "brown and white",
+        "black with a white ear"
+      ],
+      "answer": 1,
+      "feedback": "Köpek beyaz, bir kulağı siyah.",
+      "evidence": "He's small and white, with a black ear."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the dog's name?",
+      "options": [
+        "Coco",
+        "Lily",
+        "Max",
+        "Rex"
+      ],
+      "answer": 0,
+      "feedback": "Köpeğin adı Coco.",
+      "evidence": "His name is Coco."
+    },
+    {
+      "id": "q3",
+      "prompt": "When did the man see a dog?",
+      "options": [
+        "an hour ago",
+        "yesterday",
+        "ten minutes ago",
+        "this morning"
+      ],
+      "answer": 2,
+      "feedback": "On dakika önce (ten minutes ago) gördü.",
+      "evidence": "I saw a small white dog ten minutes ago."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where was the dog?",
+      "options": [
+        "in the street",
+        "at the school",
+        "in a shop",
+        "in the park, near the lake"
+      ],
+      "answer": 3,
+      "feedback": "Parkta, gölün yanında, çocuklarla birlikteydi.",
+      "evidence": "In the park, near the lake."
+    }
+  ]
+}

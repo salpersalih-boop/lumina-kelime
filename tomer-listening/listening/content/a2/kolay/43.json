@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-43",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My favourite season",
+  "topic": "Mevsimler",
+  "instructions": "Yuki en sevdiği mevsimi anlatıyor. Neden sevdiğine ve ne yaptığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "yuki": {
+      "name": "Yuki",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "yuki",
+      "text": "My favourite season is autumn."
+    },
+    {
+      "speaker": "yuki",
+      "text": "Summer in my city is too hot and humid, and winter is grey and cold."
+    },
+    {
+      "speaker": "yuki",
+      "text": "In autumn, the weather is cool and the trees turn red and yellow."
+    },
+    {
+      "speaker": "yuki",
+      "text": "Every year, I go to the mountains with my friends to take photos of the leaves."
+    },
+    {
+      "speaker": "yuki",
+      "text": "I also love autumn food, especially sweet potatoes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is Yuki's favourite season?",
+      "options": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "answer": 2,
+      "feedback": "En sevdiği mevsim sonbahar.",
+      "evidence": "My favourite season is autumn."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is summer like in her city?",
+      "options": [
+        "too hot and humid",
+        "cool and dry",
+        "grey and cold",
+        "rainy"
+      ],
+      "answer": 0,
+      "feedback": "Yazın şehri çok sıcak ve nemli.",
+      "evidence": "Summer in my city is too hot and humid"
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Yuki do every year?",
+      "options": [
+        "She goes to the beach.",
+        "She takes photos of the leaves in the mountains.",
+        "She visits her family.",
+        "She goes skiing."
+      ],
+      "answer": 1,
+      "feedback": "Her yıl arkadaşlarıyla dağlara gidip yaprakların fotoğrafını çekiyor.",
+      "evidence": "to take photos of the leaves."
+    }
+  ]
+}

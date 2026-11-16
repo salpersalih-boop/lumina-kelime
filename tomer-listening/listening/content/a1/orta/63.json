@@ -1,0 +1,96 @@
+{
+  "id": "a1-orta-63",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Is it your bag?",
+  "topic": "Trende kayıp eşya",
+  "instructions": "Trende bir yolcu bir çanta buluyor. Kısa bir diyalog; çantanın rengine ve içindekilere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Man",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Excuse me. Is this your bag?"
+    },
+    {
+      "speaker": "b",
+      "text": "No, it isn't. My bag is red."
+    },
+    {
+      "speaker": "a",
+      "text": "It's black and there's a book in it."
+    },
+    {
+      "speaker": "b",
+      "text": "Maybe it's the man's bag. He got off at the last station."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Is it the woman's bag?",
+      "options": [
+        "Yes, it is.",
+        "No, it isn't.",
+        "She doesn't know.",
+        "Maybe."
+      ],
+      "answer": 1,
+      "feedback": "Hayır, onun değil.",
+      "evidence": "No, it isn't."
+    },
+    {
+      "id": "q2",
+      "prompt": "What colour is the woman's bag?",
+      "options": [
+        "black",
+        "red",
+        "blue",
+        "brown"
+      ],
+      "answer": 1,
+      "feedback": "Kadının çantası kırmızı.",
+      "evidence": "My bag is red."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is in the black bag?",
+      "options": [
+        "a phone",
+        "a book",
+        "a wallet",
+        "some food"
+      ],
+      "answer": 1,
+      "feedback": "Siyah çantada bir kitap var.",
+      "evidence": "there's a book in it."
+    },
+    {
+      "id": "q4",
+      "prompt": "Whose bag is it, maybe?",
+      "options": [
+        "the woman's",
+        "a child's",
+        "the driver's",
+        "a man who got off"
+      ],
+      "answer": 3,
+      "feedback": "Belki son istasyonda inen adamın.",
+      "evidence": "He got off at the last station."
+    }
+  ]
+}

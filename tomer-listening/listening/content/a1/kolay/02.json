@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-02",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My bag",
+  "topic": "Eşyalar ve renkler",
+  "instructions": "Tom okul çantasını anlatıyor. Kısa bir metin; dinle ve 3 soruyu cevapla.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tom": {
+      "name": "Tom",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tom",
+      "text": "Hello, I'm Tom."
+    },
+    {
+      "speaker": "tom",
+      "text": "This is my school bag. It is blue."
+    },
+    {
+      "speaker": "tom",
+      "text": "In my bag, I have two books and a pen."
+    },
+    {
+      "speaker": "tom",
+      "text": "I have an apple too."
+    },
+    {
+      "speaker": "tom",
+      "text": "My phone is not in my bag. It is on the table."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour is Tom's bag?",
+      "options": [
+        "red",
+        "blue",
+        "black",
+        "green"
+      ],
+      "answer": 1,
+      "feedback": "Tom çantasının mavi (blue) olduğunu söylüyor. Diğer renkler metinde geçmiyor.",
+      "evidence": "This is my school bag. It is blue."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many books are in the bag?",
+      "options": [
+        "one",
+        "two",
+        "three",
+        "four"
+      ],
+      "answer": 1,
+      "feedback": "Çantada iki (two) kitap ve bir kalem var.",
+      "evidence": "I have two books and a pen."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is Tom's phone?",
+      "options": [
+        "in the bag",
+        "in his pocket",
+        "at school",
+        "on the table"
+      ],
+      "answer": 3,
+      "feedback": "Telefon çantada değil (not in my bag). Masanın üstünde (on the table). Olumsuz cümleye dikkat.",
+      "evidence": "It is on the table."
+    }
+  ]
+}

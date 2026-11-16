@@ -1,0 +1,112 @@
+{
+  "id": "a1-orta-41",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Buying vegetables",
+  "topic": "Pazar alışverişi",
+  "instructions": "Bir adam pazarda sebze alıyor. Miktarlara ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "seller": {
+      "name": "Seller",
+      "voice": "female"
+    },
+    "man": {
+      "name": "Man",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "seller",
+      "text": "Good morning! Can I help you?"
+    },
+    {
+      "speaker": "man",
+      "text": "Yes, please. Two kilos of potatoes and one kilo of onions."
+    },
+    {
+      "speaker": "seller",
+      "text": "Here you are. Anything else?"
+    },
+    {
+      "speaker": "man",
+      "text": "How much are the tomatoes?"
+    },
+    {
+      "speaker": "seller",
+      "text": "They're three pounds a kilo."
+    },
+    {
+      "speaker": "man",
+      "text": "That's expensive. Just half a kilo, please."
+    },
+    {
+      "speaker": "seller",
+      "text": "OK. That's six pounds fifty altogether."
+    },
+    {
+      "speaker": "man",
+      "text": "Here you are. Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many kilos of potatoes does the man buy?",
+      "options": [
+        "one",
+        "two",
+        "three",
+        "half a kilo"
+      ],
+      "answer": 1,
+      "feedback": "İki kilo patates alıyor.",
+      "evidence": "Two kilos of potatoes"
+    },
+    {
+      "id": "q2",
+      "prompt": "How much are the tomatoes?",
+      "options": [
+        "three pounds a kilo",
+        "two pounds a kilo",
+        "six pounds a kilo",
+        "fifty pence a kilo"
+      ],
+      "answer": 0,
+      "feedback": "Domatesin kilosu üç pound.",
+      "evidence": "They're three pounds a kilo."
+    },
+    {
+      "id": "q3",
+      "prompt": "How many tomatoes does he buy?",
+      "options": [
+        "one kilo",
+        "two kilos",
+        "none",
+        "half a kilo"
+      ],
+      "answer": 3,
+      "feedback": "Pahalı bulduğu için yarım kilo alıyor.",
+      "evidence": "Just half a kilo, please."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does he pay?",
+      "options": [
+        "three pounds",
+        "six pounds",
+        "six pounds fifty",
+        "sixteen pounds fifty"
+      ],
+      "answer": 2,
+      "feedback": "Toplam altı pound elli.",
+      "evidence": "That's six pounds fifty altogether."
+    }
+  ]
+}

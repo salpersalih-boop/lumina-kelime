@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-29",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Lunch today?",
+  "topic": "Buluşma ayarlama",
+  "instructions": "İki iş arkadaşı öğle yemeği için buluşma ayarlıyor. Kısa bir diyalog; saat ve yere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "nina": {
+      "name": "Nina",
+      "voice": "female"
+    },
+    "raj": {
+      "name": "Raj",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "nina",
+      "text": "Raj, do you want to have lunch with me today?"
+    },
+    {
+      "speaker": "raj",
+      "text": "Sure! What time?"
+    },
+    {
+      "speaker": "nina",
+      "text": "At half past twelve?"
+    },
+    {
+      "speaker": "raj",
+      "text": "I have a meeting until one. Can we meet at quarter past one?"
+    },
+    {
+      "speaker": "nina",
+      "text": "OK. Let's go to the new sandwich bar."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Nina want to do?",
+      "options": [
+        "have dinner",
+        "have lunch",
+        "go shopping",
+        "have a meeting"
+      ],
+      "answer": 1,
+      "feedback": "Birlikte öğle yemeği (lunch) yemek istiyor.",
+      "evidence": "do you want to have lunch with me today?"
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't Raj meet at half past twelve?",
+      "options": [
+        "He has a meeting.",
+        "He is not hungry.",
+        "He is busy at home.",
+        "He is ill."
+      ],
+      "answer": 0,
+      "feedback": "Saat bire kadar toplantısı var.",
+      "evidence": "I have a meeting until one."
+    },
+    {
+      "id": "q3",
+      "prompt": "What time are they going to meet?",
+      "options": [
+        "at half past twelve",
+        "at one o'clock",
+        "at quarter to one",
+        "at quarter past one"
+      ],
+      "answer": 3,
+      "feedback": "Biri çeyrek geçe (quarter past one) buluşacaklar.",
+      "evidence": "Can we meet at quarter past one?"
+    },
+    {
+      "id": "q4",
+      "prompt": "Where are they going?",
+      "options": [
+        "to a café",
+        "to a pizza restaurant",
+        "to the new sandwich bar",
+        "to the office kitchen"
+      ],
+      "answer": 2,
+      "feedback": "Yeni sandviççiye gidecekler.",
+      "evidence": "Let's go to the new sandwich bar."
+    }
+  ]
+}

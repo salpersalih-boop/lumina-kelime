@@ -1,0 +1,136 @@
+{
+  "id": "a2-orta-06",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "A job interview",
+  "topic": "İş görüşmesi",
+  "instructions": "Elena bir kafede garsonluk için görüşmeye giriyor. Uzun bir diyalog; deneyim, çalışma saatleri ve ücrete dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "boss": {
+      "name": "Manager",
+      "voice": "male"
+    },
+    "elena": {
+      "name": "Elena",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "boss",
+      "text": "Hello, Elena. Thanks for coming. Please sit down."
+    },
+    {
+      "speaker": "elena",
+      "text": "Thank you."
+    },
+    {
+      "speaker": "boss",
+      "text": "So, have you worked in a café before?"
+    },
+    {
+      "speaker": "elena",
+      "text": "Yes, I worked in a coffee shop for two years when I was at university."
+    },
+    {
+      "speaker": "boss",
+      "text": "Good. Why do you want to work here?"
+    },
+    {
+      "speaker": "elena",
+      "text": "I love meeting people, and your café is very close to my house. I can walk here."
+    },
+    {
+      "speaker": "boss",
+      "text": "Can you work at the weekend?"
+    },
+    {
+      "speaker": "elena",
+      "text": "Saturdays are fine, but I can't work on Sundays. I visit my grandmother every Sunday."
+    },
+    {
+      "speaker": "boss",
+      "text": "That's OK. We need someone from Monday to Saturday, from eight to two."
+    },
+    {
+      "speaker": "elena",
+      "text": "That sounds perfect. How much is the pay?"
+    },
+    {
+      "speaker": "boss",
+      "text": "Eleven pounds an hour, and you can have free lunch."
+    },
+    {
+      "speaker": "elena",
+      "text": "Great. When can I start?"
+    },
+    {
+      "speaker": "boss",
+      "text": "Can you start next Monday?"
+    },
+    {
+      "speaker": "elena",
+      "text": "Yes, of course!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long did Elena work in a coffee shop?",
+      "options": [
+        "one year",
+        "two years",
+        "six months",
+        "three years"
+      ],
+      "answer": 1,
+      "feedback": "Üniversitedeyken iki yıl (two years) çalışmış.",
+      "evidence": "I worked in a coffee shop for two years"
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't Elena work on Sundays?",
+      "options": [
+        "She studies.",
+        "She has another job.",
+        "She visits her grandmother.",
+        "The café is closed."
+      ],
+      "answer": 2,
+      "feedback": "Her pazar büyükannesini ziyaret ediyor.",
+      "evidence": "I visit my grandmother every Sunday."
+    },
+    {
+      "id": "q3",
+      "prompt": "What are the working hours?",
+      "options": [
+        "from eight to two",
+        "from two to eight",
+        "from nine to five",
+        "from eight to eleven"
+      ],
+      "answer": 0,
+      "feedback": "Pazartesiden cumartesiye sekizden ikiye (from eight to two).",
+      "evidence": "from eight to two."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Elena get besides money?",
+      "options": [
+        "free coffee",
+        "a uniform",
+        "free bus tickets",
+        "free lunch"
+      ],
+      "answer": 3,
+      "feedback": "Saatlik on bir poundun yanında öğle yemeği bedava (free lunch).",
+      "evidence": "you can have free lunch."
+    }
+  ]
+}

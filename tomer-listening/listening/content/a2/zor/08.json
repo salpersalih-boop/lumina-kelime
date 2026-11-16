@@ -1,0 +1,113 @@
+{
+  "id": "a2-zor-08",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Morning traffic news",
+  "topic": "Radyo: trafik",
+  "instructions": "Sabah radyosunda trafik haberleri. Yolları, sebepleri ve önerileri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "host": {
+      "name": "Radio",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Good morning. It's seven forty-five, and here is the traffic news."
+    },
+    {
+      "speaker": "host",
+      "text": "There's an accident on the A6 near the airport. Traffic is very slow, so please use the A8."
+    },
+    {
+      "speaker": "host",
+      "text": "In the city centre, Park Road is closed all day because of building work."
+    },
+    {
+      "speaker": "host",
+      "text": "The trains are running normally this morning, but buses on route twelve are about twenty minutes late."
+    },
+    {
+      "speaker": "host",
+      "text": "If you're driving to the football match tonight, the car park at the stadium is full. Take the free bus from the station."
+    },
+    {
+      "speaker": "host",
+      "text": "The next traffic news is at eight fifteen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the accident?",
+      "options": [
+        "on the A8 near the station",
+        "on the A6 near the airport",
+        "on Park Road",
+        "near the stadium"
+      ],
+      "answer": 1,
+      "feedback": "Kaza havalimanı yakınındaki A6 yolunda.",
+      "evidence": "There's an accident on the A6 near the airport."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why is Park Road closed?",
+      "options": [
+        "because of an accident",
+        "because of the football match",
+        "because of building work",
+        "because of snow"
+      ],
+      "answer": 2,
+      "feedback": "Park Road inşaat çalışması (building work) yüzünden kapalı.",
+      "evidence": "Park Road is closed all day because of building work."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the problem with the buses on route twelve?",
+      "options": [
+        "They are about twenty minutes late.",
+        "They aren't running.",
+        "They are full.",
+        "They go to the stadium."
+      ],
+      "answer": 0,
+      "feedback": "On iki numaralı hat otobüsleri yaklaşık yirmi dakika gecikmeli. Trenler normal.",
+      "evidence": "buses on route twelve are about twenty minutes late."
+    },
+    {
+      "id": "q4",
+      "prompt": "How should football fans get to the stadium?",
+      "options": [
+        "by car",
+        "on the A6",
+        "by train only",
+        "by the free bus from the station"
+      ],
+      "answer": 3,
+      "feedback": "Stadyum otoparkı dolu; istasyondan kalkan ücretsiz otobüse binmeliler.",
+      "evidence": "Take the free bus from the station."
+    },
+    {
+      "id": "q5",
+      "prompt": "When is the next traffic news?",
+      "options": [
+        "at seven forty-five",
+        "at eight fifteen",
+        "at eight forty-five",
+        "at eight o'clock"
+      ],
+      "answer": 1,
+      "feedback": "Sonraki trafik haberleri sekizi çeyrek geçe (eight fifteen). 7:45 şu anki saat.",
+      "evidence": "The next traffic news is at eight fifteen."
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "a2-zor-51",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Planning a school reunion",
+  "topic": "Etkinlik planlama",
+  "instructions": "Eski okul arkadaşları buluşma düzenliyor. Uzun bir diyalog; tarih, yer, kişi sayısı ve görevleri takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Ayla",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Kerem",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Kerem, it's been fifteen years since we finished school. Let's organise a reunion!"
+    },
+    {
+      "speaker": "b",
+      "text": "Great idea! When?"
+    },
+    {
+      "speaker": "a",
+      "text": "What about the last Saturday in June? Most people are on holiday in July."
+    },
+    {
+      "speaker": "b",
+      "text": "OK. Where shall we have it?"
+    },
+    {
+      "speaker": "a",
+      "text": "The school said we can use the hall for free, but there's no kitchen."
+    },
+    {
+      "speaker": "b",
+      "text": "Then let's book a restaurant. There's a nice one by the sea that has a private room for fifty people."
+    },
+    {
+      "speaker": "a",
+      "text": "How many people were in our year?"
+    },
+    {
+      "speaker": "b",
+      "text": "About eighty, but I think maybe forty will come."
+    },
+    {
+      "speaker": "a",
+      "text": "OK. I'll create a group online and find everyone's contact details."
+    },
+    {
+      "speaker": "b",
+      "text": "And I'll call the restaurant tomorrow to ask about prices."
+    },
+    {
+      "speaker": "a",
+      "text": "Let's ask people to pay by the end of May."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long ago did they finish school?",
+      "options": [
+        "five years ago",
+        "ten years ago",
+        "fifteen years ago",
+        "fifty years ago"
+      ],
+      "answer": 2,
+      "feedback": "Okulu on beş yıl önce bitirdiler.",
+      "evidence": "it's been fifteen years since we finished school."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why don't they choose July?",
+      "options": [
+        "The restaurant is closed.",
+        "Most people are on holiday.",
+        "It's too hot.",
+        "The school is closed."
+      ],
+      "answer": 1,
+      "feedback": "Temmuzda çoğu kişi tatilde.",
+      "evidence": "Most people are on holiday in July."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why don't they use the school hall?",
+      "options": [
+        "It's too expensive.",
+        "It's too small.",
+        "There's no kitchen.",
+        "It's closed in June."
+      ],
+      "answer": 2,
+      "feedback": "Salon ücretsiz ama mutfağı yok.",
+      "evidence": "but there's no kitchen."
+    },
+    {
+      "id": "q4",
+      "prompt": "How many people do they think will come?",
+      "options": [
+        "about eighty",
+        "about fifty",
+        "about fifteen",
+        "about forty"
+      ],
+      "answer": 3,
+      "feedback": "Seksen kişiden yaklaşık kırkının geleceğini düşünüyor.",
+      "evidence": "I think maybe forty will come."
+    },
+    {
+      "id": "q5",
+      "prompt": "What will Kerem do tomorrow?",
+      "options": [
+        "call the restaurant",
+        "create an online group",
+        "call the school",
+        "pay for the room"
+      ],
+      "answer": 0,
+      "feedback": "Yarın restoranı arayıp fiyat soracak.",
+      "evidence": "I'll call the restaurant tomorrow to ask about prices."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "a1-zor-41",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Two schools",
+  "topic": "Karşılaştırma",
+  "instructions": "Deniz eski okuluyla yeni okulunu karşılaştırıyor. Hangi bilginin hangi okula ait olduğunu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "deniz": {
+      "name": "Deniz",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "deniz",
+      "text": "This year, I started at a new school."
+    },
+    {
+      "speaker": "deniz",
+      "text": "My old school was small, with only two hundred students. My new school is big. It has a thousand students!"
+    },
+    {
+      "speaker": "deniz",
+      "text": "At my old school, I walked to school. Now I take the bus. It takes thirty minutes."
+    },
+    {
+      "speaker": "deniz",
+      "text": "My new school has a swimming pool, but my old school had a beautiful garden."
+    },
+    {
+      "speaker": "deniz",
+      "text": "The lessons are more difficult now, but the teachers are very kind."
+    },
+    {
+      "speaker": "deniz",
+      "text": "I miss my old friends, but I have two new friends, Elif and Can."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many students were at her old school?",
+      "options": [
+        "two hundred",
+        "a thousand",
+        "twelve hundred",
+        "two thousand"
+      ],
+      "answer": 0,
+      "feedback": "Eski okulunda sadece iki yüz öğrenci vardı; yenisinde bin.",
+      "evidence": "with only two hundred students."
+    },
+    {
+      "id": "q2",
+      "prompt": "How does Deniz go to her new school?",
+      "options": [
+        "on foot",
+        "by car",
+        "by bus",
+        "by bike"
+      ],
+      "answer": 2,
+      "feedback": "Yeni okula otobüsle gidiyor; eski okula yürüyordu.",
+      "evidence": "Now I take the bus."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does the new school have?",
+      "options": [
+        "a beautiful garden",
+        "a swimming pool",
+        "a small library",
+        "a cinema"
+      ],
+      "answer": 1,
+      "feedback": "Yeni okulun havuzu var; güzel bahçe eski okuldaydı.",
+      "evidence": "My new school has a swimming pool"
+    },
+    {
+      "id": "q4",
+      "prompt": "What does she say about the lessons now?",
+      "options": [
+        "They're easier.",
+        "They're boring.",
+        "They're shorter.",
+        "They're more difficult."
+      ],
+      "answer": 3,
+      "feedback": "Dersler artık daha zor.",
+      "evidence": "The lessons are more difficult now"
+    },
+    {
+      "id": "q5",
+      "prompt": "Who are her new friends?",
+      "options": [
+        "Elif and Can",
+        "Elif and Deniz",
+        "Can and Ali",
+        "her old friends"
+      ],
+      "answer": 0,
+      "feedback": "Yeni arkadaşları Elif ve Can.",
+      "evidence": "I have two new friends, Elif and Can."
+    }
+  ]
+}

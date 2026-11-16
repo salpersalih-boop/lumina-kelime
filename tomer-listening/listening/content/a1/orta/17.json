@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-17",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "What's your phone number?",
+  "topic": "Kişisel bilgiler",
+  "instructions": "Yeni iki arkadaş numaralarını paylaşıyor. Kısa bir diyalog; sayıları dikkatle dinle.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jon": {
+      "name": "Jon",
+      "voice": "male"
+    },
+    "mia": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jon",
+      "text": "Mia, what's your phone number?"
+    },
+    {
+      "speaker": "mia",
+      "text": "It's oh seven seven, four three two, nine eight one."
+    },
+    {
+      "speaker": "jon",
+      "text": "Sorry, nine eight one or nine eight five?"
+    },
+    {
+      "speaker": "mia",
+      "text": "Nine eight one. And what is your email?"
+    },
+    {
+      "speaker": "jon",
+      "text": "It's jon at mail dot com."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Jon ask for first?",
+      "options": [
+        "Mia's address",
+        "Mia's phone number",
+        "Mia's email",
+        "Mia's name"
+      ],
+      "answer": 1,
+      "feedback": "Jon önce telefon numarasını (phone number) soruyor.",
+      "evidence": "Mia, what's your phone number?"
+    },
+    {
+      "id": "q2",
+      "prompt": "How does Mia's number start?",
+      "options": [
+        "oh seven seven",
+        "oh seven four",
+        "oh nine eight",
+        "oh three two"
+      ],
+      "answer": 0,
+      "feedback": "Numara \"oh seven seven\" (077) ile başlıyor.",
+      "evidence": "It's oh seven seven"
+    },
+    {
+      "id": "q3",
+      "prompt": "What are the last three numbers?",
+      "options": [
+        "nine eight five",
+        "four three two",
+        "eight nine one",
+        "nine eight one"
+      ],
+      "answer": 3,
+      "feedback": "Jon emin değil; Mia tekrar ediyor: nine eight one (981).",
+      "evidence": "Nine eight one."
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Mia ask Jon for?",
+      "options": [
+        "his phone number",
+        "his address",
+        "his email",
+        "his age"
+      ],
+      "answer": 2,
+      "feedback": "Mia, Jon'un e-postasını (email) soruyor.",
+      "evidence": "And what is your email?"
+    }
+  ]
+}

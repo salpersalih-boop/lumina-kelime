@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-56",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My grandmother's garden",
+  "topic": "Bahçe",
+  "instructions": "Ece büyükannesinin bahçesini anlatıyor. Bitkilere ve yaptıklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Ece",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "My grandmother has a beautiful garden behind her house."
+    },
+    {
+      "speaker": "s",
+      "text": "She grows tomatoes, peppers, beans and lots of flowers."
+    },
+    {
+      "speaker": "s",
+      "text": "She works in the garden every morning, even though she is eighty-two."
+    },
+    {
+      "speaker": "s",
+      "text": "In summer, she gives vegetables to all her neighbours."
+    },
+    {
+      "speaker": "s",
+      "text": "She says gardening keeps her young."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old is Ece's grandmother?",
+      "options": [
+        "seventy-two",
+        "eighty-two",
+        "eighty",
+        "ninety-two"
+      ],
+      "answer": 1,
+      "feedback": "Büyükannesi seksen iki yaşında.",
+      "evidence": "even though she is eighty-two."
+    },
+    {
+      "id": "q2",
+      "prompt": "When does she work in the garden?",
+      "options": [
+        "every evening",
+        "every morning",
+        "at the weekend",
+        "only in summer"
+      ],
+      "answer": 1,
+      "feedback": "Her sabah bahçede çalışıyor.",
+      "evidence": "She works in the garden every morning"
+    },
+    {
+      "id": "q3",
+      "prompt": "What does she do in summer?",
+      "options": [
+        "She sells vegetables.",
+        "She goes on holiday.",
+        "She gives vegetables to her neighbours.",
+        "She stops gardening."
+      ],
+      "answer": 2,
+      "feedback": "Yazın komşularına sebze veriyor.",
+      "evidence": "she gives vegetables to all her neighbours."
+    }
+  ]
+}

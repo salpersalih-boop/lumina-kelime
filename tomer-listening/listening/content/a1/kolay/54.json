@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-54",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My hobbies",
+  "topic": "Hobiler",
+  "instructions": "Nora hobilerini anlatıyor. Ne zaman ne yaptığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Nora",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "I have two hobbies: painting and singing."
+    },
+    {
+      "speaker": "s",
+      "text": "I paint pictures of animals at the weekend."
+    },
+    {
+      "speaker": "s",
+      "text": "I sing in the school choir on Wednesdays."
+    },
+    {
+      "speaker": "s",
+      "text": "I don't like sports very much."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What are Nora's hobbies?",
+      "options": [
+        "painting and singing",
+        "reading and swimming",
+        "dancing and singing",
+        "painting and dancing"
+      ],
+      "answer": 0,
+      "feedback": "Resim yapmak ve şarkı söylemek.",
+      "evidence": "I have two hobbies: painting and singing."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does she paint?",
+      "options": [
+        "people",
+        "flowers",
+        "houses",
+        "animals"
+      ],
+      "answer": 3,
+      "feedback": "Hayvan resimleri yapıyor.",
+      "evidence": "I paint pictures of animals"
+    },
+    {
+      "id": "q3",
+      "prompt": "When does she sing in the choir?",
+      "options": [
+        "on Mondays",
+        "at the weekend",
+        "on Wednesdays",
+        "on Fridays"
+      ],
+      "answer": 2,
+      "feedback": "Çarşamba günleri okul korosunda şarkı söylüyor.",
+      "evidence": "I sing in the school choir on Wednesdays."
+    }
+  ]
+}

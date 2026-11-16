@@ -1,0 +1,87 @@
+{
+  "id": "a1-kolay-36",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My aunt Sofia",
+  "topic": "Aile",
+  "instructions": "Leo halasını anlatıyor. Nerede yaşadığına, işine ve ailesine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "leo",
+      "text": "My aunt Sofia is my mother's sister."
+    },
+    {
+      "speaker": "leo",
+      "text": "She lives in Rome, in Italy."
+    },
+    {
+      "speaker": "leo",
+      "text": "She is a doctor at a big hospital."
+    },
+    {
+      "speaker": "leo",
+      "text": "She has two children, a boy and a girl."
+    },
+    {
+      "speaker": "leo",
+      "text": "Every summer, we visit her for two weeks."
+    },
+    {
+      "speaker": "leo",
+      "text": "She cooks fantastic pasta!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does aunt Sofia live?",
+      "options": [
+        "in Milan",
+        "in Rome",
+        "in London",
+        "in Paris"
+      ],
+      "answer": 1,
+      "feedback": "Halası İtalya'da, Roma'da yaşıyor.",
+      "evidence": "She lives in Rome, in Italy."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is her job?",
+      "options": [
+        "a teacher",
+        "a cook",
+        "a doctor",
+        "a nurse"
+      ],
+      "answer": 2,
+      "feedback": "Büyük bir hastanede doktor.",
+      "evidence": "She is a doctor at a big hospital."
+    },
+    {
+      "id": "q3",
+      "prompt": "How long does Leo's family visit her?",
+      "options": [
+        "one week",
+        "two weeks",
+        "a month",
+        "three days"
+      ],
+      "answer": 1,
+      "feedback": "Her yaz iki hafta ziyaret ediyorlar.",
+      "evidence": "we visit her for two weeks."
+    }
+  ]
+}

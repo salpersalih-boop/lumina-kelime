@@ -89,3 +89,65 @@ test('progress: bozuk ya da erişilemeyen depolama uygulamayı çökertmez', () 
   const broken = { getItem: () => null, setItem: () => { throw new Error('kota'); } };
   assert.doesNotThrow(() => saveResult('x', { percent: 50, score: 1, total: 2 }, broken));
 });
+
+// ── Setler: kimlik, uzunluk, sıradaki metin ─────────────────
+import { setIdOf, setPathOf, wordCount, lengthClassOf, nextSet } from '../js/core/sets.js';
+import { normalizeManifest } from '../js/services/contentRepository.js';
+
+test('setIdOf / setPathOf: sıra numarasından kimlik ve yol', () => {
+  assert.equal(setIdOf('A1', 'kolay', 3), 'a1-kolay-03');
+  assert.equal(setPathOf('B2', 'zor', 12), 'b2/zor/12.json');
+});
+
+test('wordCount ve lengthClassOf', () => {
+  const script = [{ text: "Hi, I'm Tom." }, { text: 'This is my bag — it is blue.' }];
+  assert.equal(wordCount(script), 10); // Hi · I'm · Tom + This · is · my · bag · it · is · blue
+  assert.equal(lengthClassOf(30).id, 'kisa');
+  assert.equal(lengthClassOf(80).id, 'orta');
+  assert.equal(lengthClassOf(400).id, 'uzun');
+});
+
+test('nextSet: aynı alt seviye → sonraki alt seviye → boşları atlayıp sonraki seviye', () => {
+  const subs = ['kolay', 'orta', 'zor'];
+  const levels = [
+    { id: 'A1', sets: { kolay: 3, orta: 0, zor: 2 } },
+    { id: 'A2', sets: { kolay: 0, orta: 1, zor: 0 } },
+  ];
+  assert.deepEqual(nextSet({ level: 'A1', sub: 'kolay', n: 1 }, levels, subs), { level: 'A1', sub: 'kolay', n: 2 });
+  assert.deepEqual(nextSet({ level: 'A1', sub: 'kolay', n: 3 }, levels, subs), { level: 'A1', sub: 'zor', n: 1 });
+  assert.deepEqual(nextSet({ level: 'A1', sub: 'zor', n: 2 }, levels, subs), { level: 'A2', sub: 'orta', n: 1 });
+  assert.equal(nextSet({ level: 'A2', sub: 'orta', n: 1 }, levels, subs), null);
+});
+
+test('normalizeManifest: eski tek-yol biçimini ve null değeri diziye çevirir', () => {
+  const m = normalizeManifest({ levels: [{ id: 'A1', sets: { kolay: 'a.json', orta: null, zor: ['b.json', null] } }] });
+  assert.deepEqual(m.levels[0].sets, { kolay: ['a.json'], orta: [], zor: ['b.json'] });
+});
+
+// ── Yönlendirme ─────────────────────────────────────────────
+import { parseRoute, hashOf, parentOf } from '../js/core/route.js';
+
+test('parseRoute: dört ekran ve eski biçim', () => {
+  assert.deepEqual(parseRoute(''), { name: 'levels' });
+  assert.deepEqual(parseRoute('#/'), { name: 'levels' });
+  assert.deepEqual(parseRoute('#/a1'), { name: 'sublevels', level: 'A1' });
+  assert.deepEqual(parseRoute('#/A1/Kolay'), { name: 'sets', level: 'A1', sub: 'kolay' });
+  assert.deepEqual(parseRoute('#/b2/zor/12'), { name: 'lesson', level: 'B2', sub: 'zor', n: 12 });
+  assert.deepEqual(parseRoute('#a1-orta-3'), { name: 'lesson', level: 'A1', sub: 'orta', n: 3 });
+  assert.deepEqual(parseRoute('#a1-orta'), { name: 'sets', level: 'A1', sub: 'orta' });
+});
+
+test('parseRoute: geçersiz parçalar bir üst ekrana düşer', () => {
+  assert.deepEqual(parseRoute('#/z9'), { name: 'levels' });
+  assert.deepEqual(parseRoute('#/a1/super'), { name: 'sublevels', level: 'A1' });
+  assert.deepEqual(parseRoute('#/a1/kolay/0'), { name: 'sets', level: 'A1', sub: 'kolay' });
+  assert.deepEqual(parseRoute('#/a1/kolay/abc'), { name: 'sets', level: 'A1', sub: 'kolay' });
+});
+
+test('hashOf ↔ parseRoute gidiş-dönüş, parentOf', () => {
+  for (const r of [{ name: 'levels' }, { name: 'sublevels', level: 'C1' }, { name: 'sets', level: 'A2', sub: 'orta' }, { name: 'lesson', level: 'A1', sub: 'zor', n: 4 }]) {
+    assert.deepEqual(parseRoute(hashOf(r)), r);
+  }
+  assert.deepEqual(parentOf({ name: 'lesson', level: 'A1', sub: 'zor', n: 4 }), { name: 'sets', level: 'A1', sub: 'zor' });
+  assert.equal(parentOf({ name: 'levels' }), null);
+});

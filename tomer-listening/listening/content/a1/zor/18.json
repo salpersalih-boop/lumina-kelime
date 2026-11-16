@@ -1,0 +1,125 @@
+{
+  "id": "a1-zor-18",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A delayed flight",
+  "topic": "Havalimanı",
+  "instructions": "Jan havalimanında uçuşunu soruyor. Uçuşla ilgili değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "jan": {
+      "name": "Jan",
+      "voice": "male"
+    },
+    "staff": {
+      "name": "Airline staff",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jan",
+      "text": "Excuse me. Is the flight to Madrid on time?"
+    },
+    {
+      "speaker": "staff",
+      "text": "No, I'm sorry. It's late. It leaves at two thirty now, not at one."
+    },
+    {
+      "speaker": "jan",
+      "text": "Oh no. That's an hour and a half late!"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, I'm very sorry. Here is a ticket for a free lunch."
+    },
+    {
+      "speaker": "jan",
+      "text": "Thank you. Where can I eat?"
+    },
+    {
+      "speaker": "staff",
+      "text": "At the restaurant upstairs, next to gate eleven."
+    },
+    {
+      "speaker": "jan",
+      "text": "And which gate is the flight?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Gate seven. But please check the screens. It can change."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Jan flying to?",
+      "options": [
+        "Milan",
+        "Madrid",
+        "Malaga",
+        "Munich"
+      ],
+      "answer": 1,
+      "feedback": "Jan Madrid'e uçuyor.",
+      "evidence": "Is the flight to Madrid on time?"
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does the flight leave now?",
+      "options": [
+        "at one",
+        "at half past one",
+        "at two thirty",
+        "at three thirty"
+      ],
+      "answer": 2,
+      "feedback": "Uçuş artık iki buçukta (two thirty), saat birde değil.",
+      "evidence": "It leaves at two thirty now, not at one."
+    },
+    {
+      "id": "q3",
+      "prompt": "How late is the flight?",
+      "options": [
+        "an hour and a half",
+        "one hour",
+        "two hours",
+        "thirty minutes"
+      ],
+      "answer": 0,
+      "feedback": "Birden iki buçuğa: bir buçuk saat geç.",
+      "evidence": "That's an hour and a half late!"
+    },
+    {
+      "id": "q4",
+      "prompt": "What does Jan get?",
+      "options": [
+        "a new ticket",
+        "money",
+        "a free coffee",
+        "a ticket for a free lunch"
+      ],
+      "answer": 3,
+      "feedback": "Ücretsiz öğle yemeği fişi (a ticket for a free lunch) alıyor.",
+      "evidence": "Here is a ticket for a free lunch."
+    },
+    {
+      "id": "q5",
+      "prompt": "Which gate is Jan's flight?",
+      "options": [
+        "gate eleven",
+        "gate seven",
+        "gate seventeen",
+        "gate one"
+      ],
+      "answer": 1,
+      "feedback": "Uçuş yedi numaralı kapıdan (gate seven). On bir restoranın yanındaki kapı.",
+      "evidence": "Gate seven."
+    }
+  ]
+}

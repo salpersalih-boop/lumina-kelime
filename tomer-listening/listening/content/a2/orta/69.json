@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-69",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Planning a weekend in the city",
+  "topic": "Hafta sonu planı",
+  "instructions": "İki arkadaş şehirde geçirecekleri hafta sonunu planlıyor. Etkinlikler, günler ve maliyetleri takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Ece",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Lisa",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "So, when you visit me next weekend, what would you like to do?"
+    },
+    {
+      "speaker": "b",
+      "text": "I'd love to see the old town and the castle."
+    },
+    {
+      "speaker": "a",
+      "text": "The castle is open on Saturday until five. Tickets are twelve pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "Great. What about Saturday evening?"
+    },
+    {
+      "speaker": "a",
+      "text": "There's a jazz concert in the park. It's free!"
+    },
+    {
+      "speaker": "b",
+      "text": "Perfect. And on Sunday?"
+    },
+    {
+      "speaker": "a",
+      "text": "There's a big market by the river every Sunday morning. We could have breakfast there."
+    },
+    {
+      "speaker": "b",
+      "text": "Lovely. My train home is at four, so that's perfect."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Lisa want to see?",
+      "options": [
+        "the old town and the castle",
+        "the museum",
+        "the river",
+        "the shops"
+      ],
+      "answer": 0,
+      "feedback": "Eski şehri ve kaleyi görmek istiyor.",
+      "evidence": "I'd love to see the old town and the castle."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much are castle tickets?",
+      "options": [
+        "five pounds",
+        "twelve pounds",
+        "twenty pounds",
+        "nothing"
+      ],
+      "answer": 1,
+      "feedback": "Kale biletleri on iki pound.",
+      "evidence": "Tickets are twelve pounds."
+    },
+    {
+      "id": "q3",
+      "prompt": "What will they do on Saturday evening?",
+      "options": [
+        "go to the market",
+        "visit the castle",
+        "go to a jazz concert",
+        "have dinner at home"
+      ],
+      "answer": 2,
+      "feedback": "Cumartesi akşamı parkta ücretsiz caz konseri.",
+      "evidence": "There's a jazz concert in the park."
+    },
+    {
+      "id": "q4",
+      "prompt": "What time is Lisa's train home?",
+      "options": [
+        "at five",
+        "on Saturday",
+        "in the morning",
+        "at four"
+      ],
+      "answer": 3,
+      "feedback": "Eve dönüş treni saat dörtte.",
+      "evidence": "My train home is at four"
+    }
+  ]
+}

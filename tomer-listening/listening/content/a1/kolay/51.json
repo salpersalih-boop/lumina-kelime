@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-51",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "At the beach",
+  "topic": "Tatil",
+  "instructions": "Mia sahildeki gününü anlatıyor. Kısa bir metin; ne yaptıklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Today we are at the beach."
+    },
+    {
+      "speaker": "s",
+      "text": "The sea is blue and the sand is hot."
+    },
+    {
+      "speaker": "s",
+      "text": "My brother is swimming."
+    },
+    {
+      "speaker": "s",
+      "text": "I am reading a book under an umbrella."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where are they?",
+      "options": [
+        "at the pool",
+        "at the beach",
+        "in the park",
+        "at a lake"
+      ],
+      "answer": 1,
+      "feedback": "Sahildeler.",
+      "evidence": "Today we are at the beach."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is her brother doing?",
+      "options": [
+        "reading",
+        "sleeping",
+        "eating",
+        "swimming"
+      ],
+      "answer": 3,
+      "feedback": "Kardeşi yüzüyor.",
+      "evidence": "My brother is swimming."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Mia doing?",
+      "options": [
+        "reading a book",
+        "swimming",
+        "playing",
+        "eating ice cream"
+      ],
+      "answer": 0,
+      "feedback": "Şemsiyenin altında kitap okuyor.",
+      "evidence": "I am reading a book under an umbrella."
+    }
+  ]
+}

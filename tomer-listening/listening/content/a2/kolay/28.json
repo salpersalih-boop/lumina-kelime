@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-28",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Can you get the car?",
+  "topic": "Telefon mesajı",
+  "instructions": "Annesi Can'a kısa bir mesaj bırakıyor. Ne yapması gerektiğine ve saate dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mum": {
+      "name": "Mum",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mum",
+      "text": "Can, it's Mum. The car is ready at the garage."
+    },
+    {
+      "speaker": "mum",
+      "text": "Can you pick it up before five? The garage closes at half past five."
+    },
+    {
+      "speaker": "mum",
+      "text": "The keys are on the kitchen table. Don't forget your driving licence!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the car?",
+      "options": [
+        "at home",
+        "at the garage",
+        "at Mum's office",
+        "in the street"
+      ],
+      "answer": 1,
+      "feedback": "Araba tamirhanede hazır.",
+      "evidence": "The car is ready at the garage."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does the garage close?",
+      "options": [
+        "at five",
+        "at half past four",
+        "at half past five",
+        "at six"
+      ],
+      "answer": 2,
+      "feedback": "Tamirhane beş buçukta kapanıyor; Can beşten önce almalı.",
+      "evidence": "The garage closes at half past five."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where are the keys?",
+      "options": [
+        "on the kitchen table",
+        "in the car",
+        "at the garage",
+        "in Mum's bag"
+      ],
+      "answer": 0,
+      "feedback": "Anahtarlar mutfak masasında.",
+      "evidence": "The keys are on the kitchen table."
+    }
+  ]
+}

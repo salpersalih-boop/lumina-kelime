@@ -1,50 +1,57 @@
-*, *::before, *::after { box-sizing: border-box; min-width: 0; }
-
+*, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-
-/* Bileşenlerdeki display kuralları hidden özniteliğini ezmesin. */
-[hidden] { display: none !important; }
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-  font: var(--fs-2)/1.55 var(--font);
-  overflow-x: clip;
+  min-height: 100dvh;
+  font-family: var(--ls-font);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text-primary);
+  background: var(--bg-base);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(99, 102, 241, 0.45) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 90% 90%, rgba(59, 130, 246, 0.35) 0%, transparent 60%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+body.light-theme {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124, 110, 247, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 90% 90%, rgba(94, 196, 245, 0.1) 0%, transparent 60%);
 }
 
-h1, h2, h3 { margin: 0; line-height: 1.1; text-wrap: balance; font-weight: 600; }
-p { margin: 0; }
-code, pre { font-family: ui-monospace, 'SF Mono', Consolas, monospace; font-size: .9em; }
-pre { overflow-x: auto; white-space: pre-wrap; }
-svg { width: 1em; height: 1em; fill: currentColor; flex: none; }
+h1, h2, h3, p, ol, ul, figure { margin: 0; }
+ol, ul { padding: 0; list-style: none; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+svg { display: block; fill: currentColor; }
+[hidden] { display: none !important; }
 
-.wrap { max-width: 1240px; margin: 0 auto; padding: clamp(20px, 3vw, 40px) max(4vw, 16px) 64px; }
-.wrap:focus { outline: none; }
+:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 3px; border-radius: 8px; }
 
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.ls-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-.skip {
-  position: absolute; left: 12px; top: -60px; z-index: 10;
-  background: var(--surface); color: var(--ink); padding: 10px 14px; border-radius: var(--radius-sm);
+.ls-skip {
+  position: absolute; left: 12px; top: -60px; z-index: 10; padding: 10px 16px; border-radius: 999px;
+  background: var(--accent-1); color: #fff; font-weight: 700; text-decoration: none;
 }
-.skip:focus { top: 12px; }
+.ls-skip:focus { top: 12px; }
 
-.loading { color: var(--ink-soft); padding: 40px 0; }
-
-/* Düğmeler */
-.btn {
+/* ── Düğmeler (Lumina btn-primary / btn-secondary ile aynı dil) ── */
+.ls-btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  min-height: 46px; padding: 0 20px; border-radius: 999px;
-  font: 600 var(--fs-2) var(--font); cursor: pointer;
-  border: 1.5px solid transparent; transition: background .15s, transform .1s;
+  min-height: 48px; padding: 12px 22px; border-radius: 999px;
+  font-weight: 700; font-size: 0.98rem; letter-spacing: -0.005em;
+  border: 1px solid transparent; transition: var(--transition); text-decoration: none;
 }
-.btn:active { transform: translateY(1px); }
-.btn-primary { background: var(--brand); color: var(--brand-ink); }
-.btn-primary:hover { background: color-mix(in srgb, var(--brand) 88%, black); }
-.btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
-.btn-ghost:hover { background: var(--surface-2); }
+.ls-btn svg { width: 18px; height: 18px; }
+.ls-btn-primary { color: #fff; background: var(--ls-grad); box-shadow: var(--shadow-glow); }
+.ls-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(99, 102, 241, 0.45); }
+.ls-btn-secondary { color: var(--text-primary); background: var(--bg-surface); border-color: var(--border); }
+.ls-btn-secondary:hover { border-color: var(--border-hover); transform: translateY(-2px); }
+.ls-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition: none !important; animation: none !important; }
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }

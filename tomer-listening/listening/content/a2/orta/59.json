@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-59",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Choosing a holiday hotel",
+  "topic": "Tatil planı",
+  "instructions": "Bir çift iki otel arasında seçim yapıyor. Hangi özelliğin hangi otele ait olduğunu karıştırma.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Mark",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Lucy",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Look, there are two hotels in Antalya. The Sun Palace is right on the beach."
+    },
+    {
+      "speaker": "b",
+      "text": "How much is it?"
+    },
+    {
+      "speaker": "a",
+      "text": "A hundred and twenty euros a night, with breakfast and dinner."
+    },
+    {
+      "speaker": "b",
+      "text": "And the other one?"
+    },
+    {
+      "speaker": "a",
+      "text": "The Garden Hotel is eighty euros a night, but it's twenty minutes from the beach."
+    },
+    {
+      "speaker": "b",
+      "text": "Does it have a pool?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, a big one. The Sun Palace has a pool too."
+    },
+    {
+      "speaker": "b",
+      "text": "I want to be near the sea. Let's pay more and go to the Sun Palace."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the Sun Palace?",
+      "options": [
+        "twenty minutes from the beach",
+        "right on the beach",
+        "in the city centre",
+        "near the airport"
+      ],
+      "answer": 1,
+      "feedback": "Sun Palace tam plajın üzerinde.",
+      "evidence": "The Sun Palace is right on the beach."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is included at the Sun Palace?",
+      "options": [
+        "breakfast and dinner",
+        "only breakfast",
+        "all meals",
+        "nothing"
+      ],
+      "answer": 0,
+      "feedback": "Kahvaltı ve akşam yemeği dahil.",
+      "evidence": "with breakfast and dinner."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is the Garden Hotel?",
+      "options": [
+        "a hundred and twenty euros",
+        "twenty euros",
+        "ninety euros",
+        "eighty euros"
+      ],
+      "answer": 3,
+      "feedback": "Garden Hotel gecelik seksen euro.",
+      "evidence": "The Garden Hotel is eighty euros a night"
+    },
+    {
+      "id": "q4",
+      "prompt": "Why does Lucy choose the Sun Palace?",
+      "options": [
+        "It's cheaper.",
+        "It has a bigger pool.",
+        "She wants to be near the sea.",
+        "It has better food."
+      ],
+      "answer": 2,
+      "feedback": "Denize yakın olmak istiyor.",
+      "evidence": "I want to be near the sea."
+    }
+  ]
+}

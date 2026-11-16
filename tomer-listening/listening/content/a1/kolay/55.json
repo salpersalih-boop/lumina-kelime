@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-55",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Breakfast in Turkey",
+  "topic": "Yemek ve kültür",
+  "instructions": "Elif Türk kahvaltısını anlatıyor. Yiyecek ve içeceklere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Elif",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "In Turkey, breakfast is very big."
+    },
+    {
+      "speaker": "s",
+      "text": "We eat bread, cheese, olives, tomatoes and eggs."
+    },
+    {
+      "speaker": "s",
+      "text": "We drink black tea in small glasses."
+    },
+    {
+      "speaker": "s",
+      "text": "On Sundays, my family has breakfast together for two hours!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What do they drink at breakfast?",
+      "options": [
+        "coffee",
+        "milk",
+        "black tea",
+        "juice"
+      ],
+      "answer": 2,
+      "feedback": "Küçük bardaklarda siyah çay içiyorlar.",
+      "evidence": "We drink black tea in small glasses."
+    },
+    {
+      "id": "q2",
+      "prompt": "When does the family have a long breakfast?",
+      "options": [
+        "every day",
+        "on Sundays",
+        "on Saturdays",
+        "on holidays"
+      ],
+      "answer": 1,
+      "feedback": "Pazar günleri iki saat birlikte kahvaltı yapıyorlar.",
+      "evidence": "On Sundays, my family has breakfast together"
+    },
+    {
+      "id": "q3",
+      "prompt": "How long is the Sunday breakfast?",
+      "options": [
+        "two hours",
+        "one hour",
+        "thirty minutes",
+        "three hours"
+      ],
+      "answer": 0,
+      "feedback": "Pazar kahvaltısı iki saat.",
+      "evidence": "for two hours!"
+    }
+  ]
+}

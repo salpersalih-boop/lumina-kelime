@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-31",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My toys",
+  "topic": "Eşyalar",
+  "instructions": "Eli oyuncaklarını anlatıyor. Kısa bir metin; sayılara ve renklere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "eli": {
+      "name": "Eli",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "eli",
+      "text": "I have a lot of toys."
+    },
+    {
+      "speaker": "eli",
+      "text": "I have three cars and a big red train."
+    },
+    {
+      "speaker": "eli",
+      "text": "My favourite toy is a small brown bear."
+    },
+    {
+      "speaker": "eli",
+      "text": "His name is Teddy, and he sleeps in my bed."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many cars does Eli have?",
+      "options": [
+        "two",
+        "three",
+        "four",
+        "one"
+      ],
+      "answer": 1,
+      "feedback": "Eli'nin üç arabası var.",
+      "evidence": "I have three cars"
+    },
+    {
+      "id": "q2",
+      "prompt": "What colour is the train?",
+      "options": [
+        "red",
+        "blue",
+        "brown",
+        "green"
+      ],
+      "answer": 0,
+      "feedback": "Tren kırmızı (red). Kahverengi olan ayı.",
+      "evidence": "a big red train."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where does Teddy sleep?",
+      "options": [
+        "in a box",
+        "on the sofa",
+        "in Eli's bed",
+        "on the floor"
+      ],
+      "answer": 2,
+      "feedback": "Teddy Eli'nin yatağında uyuyor.",
+      "evidence": "he sleeps in my bed."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "a2-zor-15",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Summer camp information",
+  "topic": "Yaz kampı bilgilendirmesi",
+  "instructions": "Kamp görevlisi velilere yaz kampını anlatıyor. Tarih, yaş, fiyat ve gerekenleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "leader": {
+      "name": "Camp leader",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "leader",
+      "text": "Thank you for your interest in Lake Camp."
+    },
+    {
+      "speaker": "leader",
+      "text": "The camp is for children from nine to fourteen years old."
+    },
+    {
+      "speaker": "leader",
+      "text": "It starts on the third of July and lasts for two weeks."
+    },
+    {
+      "speaker": "leader",
+      "text": "Children sleep in wooden cabins, six children in each cabin."
+    },
+    {
+      "speaker": "leader",
+      "text": "Every day there are activities like swimming, climbing and boat trips."
+    },
+    {
+      "speaker": "leader",
+      "text": "The price is four hundred pounds, but brothers and sisters get ten percent off."
+    },
+    {
+      "speaker": "leader",
+      "text": "Please don't send mobile phones. Children can call home every Sunday from our office."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is the camp for?",
+      "options": [
+        "children from nine to fourteen",
+        "children under nine",
+        "teenagers over fourteen",
+        "families"
+      ],
+      "answer": 0,
+      "feedback": "Kamp dokuz ile on dört yaş arası çocuklar için.",
+      "evidence": "The camp is for children from nine to fourteen years old."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long is the camp?",
+      "options": [
+        "one week",
+        "three weeks",
+        "two weeks",
+        "one month"
+      ],
+      "answer": 2,
+      "feedback": "Kamp iki hafta (two weeks) sürüyor.",
+      "evidence": "lasts for two weeks."
+    },
+    {
+      "id": "q3",
+      "prompt": "How many children sleep in each cabin?",
+      "options": [
+        "four",
+        "six",
+        "nine",
+        "ten"
+      ],
+      "answer": 1,
+      "feedback": "Her kulübede altı (six) çocuk kalıyor.",
+      "evidence": "six children in each cabin."
+    },
+    {
+      "id": "q4",
+      "prompt": "Who pays less?",
+      "options": [
+        "younger children",
+        "children who swim",
+        "children who come for one week",
+        "brothers and sisters"
+      ],
+      "answer": 3,
+      "feedback": "Kardeşlere yüzde on indirim (ten percent off) var.",
+      "evidence": "brothers and sisters get ten percent off."
+    },
+    {
+      "id": "q5",
+      "prompt": "How can children call home?",
+      "options": [
+        "on their mobile phones",
+        "from the office every Sunday",
+        "every evening",
+        "They can't call home."
+      ],
+      "answer": 1,
+      "feedback": "Telefon göndermeyin; çocuklar her pazar ofisten evi arayabilir.",
+      "evidence": "Children can call home every Sunday from our office."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-53",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Dinner plans changed",
+  "topic": "Telefon mesajı",
+  "instructions": "Selin eşine kısa bir mesaj bırakıyor. Değişen plana dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Selin",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Hi, it's me. My mum just called. She wants us to have dinner at her house tonight."
+    },
+    {
+      "speaker": "s",
+      "text": "So don't cook anything!"
+    },
+    {
+      "speaker": "s",
+      "text": "I'll meet you there at seven. Can you buy some flowers on the way?"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where are they having dinner tonight?",
+      "options": [
+        "at home",
+        "at Selin's mum's house",
+        "at a restaurant",
+        "at a friend's house"
+      ],
+      "answer": 1,
+      "feedback": "Selin'in annesinin evinde yiyecekler.",
+      "evidence": "She wants us to have dinner at her house tonight."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Selin tell her husband not to do?",
+      "options": [
+        "cook anything",
+        "be late",
+        "buy flowers",
+        "call her mum"
+      ],
+      "answer": 0,
+      "feedback": "Hiçbir şey pişirmemesini söylüyor.",
+      "evidence": "So don't cook anything!"
+    },
+    {
+      "id": "q3",
+      "prompt": "What should he buy?",
+      "options": [
+        "a cake",
+        "wine",
+        "chocolate",
+        "some flowers"
+      ],
+      "answer": 3,
+      "feedback": "Yolda çiçek almalı.",
+      "evidence": "Can you buy some flowers on the way?"
+    }
+  ]
+}

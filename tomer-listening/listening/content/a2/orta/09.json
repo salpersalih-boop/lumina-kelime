@@ -1,0 +1,128 @@
+{
+  "id": "a2-orta-09",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Planning a holiday",
+  "topic": "Tatil planlama",
+  "instructions": "Burak ve Selin yaz tatili planlıyor. Uzun bir diyalog; yer, süre, ulaşım ve konaklama kararlarını takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "burak": {
+      "name": "Burak",
+      "voice": "male"
+    },
+    "selin": {
+      "name": "Selin",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "burak",
+      "text": "Selin, where do you want to go this summer?"
+    },
+    {
+      "speaker": "selin",
+      "text": "I'd like to go somewhere with beaches. What about Spain?"
+    },
+    {
+      "speaker": "burak",
+      "text": "We went to Spain two years ago. What about Croatia? I saw some photos. It looks amazing."
+    },
+    {
+      "speaker": "selin",
+      "text": "Croatia sounds good. How long can we go for?"
+    },
+    {
+      "speaker": "burak",
+      "text": "I have ten days off in August."
+    },
+    {
+      "speaker": "selin",
+      "text": "I only have a week. So let's go for seven days."
+    },
+    {
+      "speaker": "burak",
+      "text": "OK. Shall we fly or drive?"
+    },
+    {
+      "speaker": "selin",
+      "text": "Driving is too far. It's more than twenty hours. Let's fly to Split."
+    },
+    {
+      "speaker": "burak",
+      "text": "And where shall we stay? A hotel?"
+    },
+    {
+      "speaker": "selin",
+      "text": "Hotels are expensive in August. Let's rent a small apartment. We can cook some meals."
+    },
+    {
+      "speaker": "burak",
+      "text": "Good idea. I can look at apartments tonight."
+    },
+    {
+      "speaker": "selin",
+      "text": "And I can check the flight prices."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why don't they go to Spain?",
+      "options": [
+        "It's too hot.",
+        "They went there two years ago.",
+        "It's expensive.",
+        "There aren't beaches."
+      ],
+      "answer": 1,
+      "feedback": "İki yıl önce İspanya'ya gitmişler.",
+      "evidence": "We went to Spain two years ago."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long is their holiday?",
+      "options": [
+        "seven days",
+        "ten days",
+        "two weeks",
+        "twenty days"
+      ],
+      "answer": 0,
+      "feedback": "Burak'ın on günü var ama Selin'in sadece bir haftası; yedi gün gidecekler.",
+      "evidence": "So let's go for seven days."
+    },
+    {
+      "id": "q3",
+      "prompt": "How are they going to travel?",
+      "options": [
+        "by car",
+        "by train",
+        "by plane",
+        "by bus"
+      ],
+      "answer": 2,
+      "feedback": "Arabayla çok uzak; Split'e uçacaklar (fly).",
+      "evidence": "Let's fly to Split."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where are they going to stay?",
+      "options": [
+        "in a hotel",
+        "with friends",
+        "in a tent",
+        "in an apartment"
+      ],
+      "answer": 3,
+      "feedback": "Otel ağustosta pahalı; küçük bir daire kiralayacaklar.",
+      "evidence": "Let's rent a small apartment."
+    }
+  ]
+}

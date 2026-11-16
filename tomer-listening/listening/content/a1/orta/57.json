@@ -1,0 +1,104 @@
+{
+  "id": "a1-orta-57",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "What are you doing this weekend?",
+  "topic": "Hafta sonu planları",
+  "instructions": "İki iş arkadaşı hafta sonu planlarını konuşuyor. Kim ne yapacak, dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Kate",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Omar",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Omar, what are you doing this weekend?"
+    },
+    {
+      "speaker": "b",
+      "text": "On Saturday, I'm going to a football match with my son."
+    },
+    {
+      "speaker": "a",
+      "text": "Nice! And on Sunday?"
+    },
+    {
+      "speaker": "b",
+      "text": "I'm visiting my parents. And you?"
+    },
+    {
+      "speaker": "a",
+      "text": "I'm going shopping on Saturday. On Sunday, I'm cooking lunch for my friends."
+    },
+    {
+      "speaker": "b",
+      "text": "Sounds good. Have a nice weekend!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who is Omar going to the match with?",
+      "options": [
+        "his son",
+        "his daughter",
+        "his wife",
+        "his friends"
+      ],
+      "answer": 0,
+      "feedback": "Oğluyla maça gidiyor.",
+      "evidence": "I'm going to a football match with my son."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is Omar doing on Sunday?",
+      "options": [
+        "going shopping",
+        "cooking lunch",
+        "visiting his parents",
+        "playing football"
+      ],
+      "answer": 2,
+      "feedback": "Pazar ailesini ziyaret ediyor.",
+      "evidence": "I'm visiting my parents."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Kate doing on Saturday?",
+      "options": [
+        "going shopping",
+        "cooking",
+        "going to a match",
+        "visiting friends"
+      ],
+      "answer": 0,
+      "feedback": "Kate cumartesi alışverişe gidiyor.",
+      "evidence": "I'm going shopping on Saturday."
+    },
+    {
+      "id": "q4",
+      "prompt": "Who is Kate cooking for on Sunday?",
+      "options": [
+        "her parents",
+        "Omar",
+        "her family",
+        "her friends"
+      ],
+      "answer": 3,
+      "feedback": "Pazar arkadaşlarına öğle yemeği yapıyor.",
+      "evidence": "I'm cooking lunch for my friends."
+    }
+  ]
+}

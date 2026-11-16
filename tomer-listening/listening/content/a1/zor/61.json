@@ -1,0 +1,129 @@
+{
+  "id": "a1-zor-61",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Choosing a holiday",
+  "topic": "Tatil planı",
+  "instructions": "Bir çift tatil yeri seçiyor. Uzun bir diyalog; reddedilen fikirleri ve kararı takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Paul",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Kate",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Where do you want to go this summer?"
+    },
+    {
+      "speaker": "b",
+      "text": "I want to go to the beach. What about Spain?"
+    },
+    {
+      "speaker": "a",
+      "text": "Spain is very hot in August. What about the mountains in Austria?"
+    },
+    {
+      "speaker": "b",
+      "text": "I don't like walking a lot. What about Greece? There are beaches and it's not very expensive."
+    },
+    {
+      "speaker": "a",
+      "text": "Good idea. How long?"
+    },
+    {
+      "speaker": "b",
+      "text": "Ten days?"
+    },
+    {
+      "speaker": "a",
+      "text": "I only have one week of holiday."
+    },
+    {
+      "speaker": "b",
+      "text": "OK, seven days. Shall we go by plane?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, it takes three hours. I can look for tickets tonight."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why doesn't Paul want to go to Spain?",
+      "options": [
+        "It's expensive.",
+        "It's very hot in August.",
+        "He went there last year.",
+        "There are no beaches."
+      ],
+      "answer": 1,
+      "feedback": "Ağustosta İspanya çok sıcak.",
+      "evidence": "Spain is very hot in August."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why doesn't Kate want to go to Austria?",
+      "options": [
+        "She doesn't like walking a lot.",
+        "It's too cold.",
+        "It's expensive.",
+        "She went there before."
+      ],
+      "answer": 0,
+      "feedback": "Çok yürümeyi sevmiyor.",
+      "evidence": "I don't like walking a lot."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where are they going?",
+      "options": [
+        "Spain",
+        "Austria",
+        "Italy",
+        "Greece"
+      ],
+      "answer": 3,
+      "feedback": "Yunanistan'a gidecekler.",
+      "evidence": "What about Greece?"
+    },
+    {
+      "id": "q4",
+      "prompt": "How long is their holiday?",
+      "options": [
+        "ten days",
+        "seven days",
+        "two weeks",
+        "three days"
+      ],
+      "answer": 1,
+      "feedback": "Paul'un bir haftalık izni var; yedi gün.",
+      "evidence": "OK, seven days."
+    },
+    {
+      "id": "q5",
+      "prompt": "How long is the flight?",
+      "options": [
+        "one hour",
+        "seven hours",
+        "three hours",
+        "ten hours"
+      ],
+      "answer": 2,
+      "feedback": "Uçuş üç saat.",
+      "evidence": "it takes three hours."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "a1-zor-37",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My weekend in Paris",
+  "topic": "Seyahat (geçmiş zaman)",
+  "instructions": "Elena Paris'teki hafta sonunu anlatıyor. Uzun bir metin; günleri, yerleri ve sevmediği şeyi karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "elena": {
+      "name": "Elena",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "elena",
+      "text": "Last month, I went to Paris with my sister for the weekend."
+    },
+    {
+      "speaker": "elena",
+      "text": "We went by train on Friday evening. It took two and a half hours."
+    },
+    {
+      "speaker": "elena",
+      "text": "On Saturday morning, we visited the Eiffel Tower. There were a lot of people, so we waited for an hour."
+    },
+    {
+      "speaker": "elena",
+      "text": "In the afternoon, we went to a big museum. My sister loved it, but I was very tired."
+    },
+    {
+      "speaker": "elena",
+      "text": "On Saturday evening, we had dinner in a small French restaurant. The food was wonderful, but very expensive."
+    },
+    {
+      "speaker": "elena",
+      "text": "On Sunday, it rained, so we went shopping. I bought a red bag and some chocolate."
+    },
+    {
+      "speaker": "elena",
+      "text": "We came home on Sunday night. It was a great weekend!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Who did Elena go to Paris with?",
+      "options": [
+        "her mother",
+        "her sister",
+        "a friend",
+        "her husband"
+      ],
+      "answer": 1,
+      "feedback": "Kız kardeşiyle gitti.",
+      "evidence": "with my sister for the weekend."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long was the train journey?",
+      "options": [
+        "two hours",
+        "an hour",
+        "two and a half hours",
+        "three hours"
+      ],
+      "answer": 2,
+      "feedback": "Tren yolculuğu iki buçuk saat sürdü.",
+      "evidence": "It took two and a half hours."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why did they wait at the Eiffel Tower?",
+      "options": [
+        "It was closed.",
+        "There were a lot of people.",
+        "It was raining.",
+        "They were early."
+      ],
+      "answer": 1,
+      "feedback": "Çok kalabalıktı, bir saat beklediler.",
+      "evidence": "There were a lot of people, so we waited for an hour."
+    },
+    {
+      "id": "q4",
+      "prompt": "What was the problem with the restaurant?",
+      "options": [
+        "The food was bad.",
+        "It was very expensive.",
+        "It was full.",
+        "It was far."
+      ],
+      "answer": 1,
+      "feedback": "Yemek harikaydı ama çok pahalıydı.",
+      "evidence": "The food was wonderful, but very expensive."
+    },
+    {
+      "id": "q5",
+      "prompt": "What did they do on Sunday?",
+      "options": [
+        "They went shopping.",
+        "They visited a museum.",
+        "They saw the Eiffel Tower.",
+        "They stayed at the hotel."
+      ],
+      "answer": 0,
+      "feedback": "Pazar yağmur yağdığı için alışverişe gittiler.",
+      "evidence": "On Sunday, it rained, so we went shopping."
+    }
+  ]
+}

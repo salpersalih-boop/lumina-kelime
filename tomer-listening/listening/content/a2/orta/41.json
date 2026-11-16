@@ -1,0 +1,128 @@
+{
+  "id": "a2-orta-41",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Planning a road trip",
+  "topic": "Yolculuk planı",
+  "instructions": "Jake ve Mia araba yolculuğu planlıyor. Uzun bir diyalog; rota, kalış yerleri ve görev dağılımını takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jake": {
+      "name": "Jake",
+      "voice": "male"
+    },
+    "mia": {
+      "name": "Mia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jake",
+      "text": "So, for our road trip, shall we drive along the coast or through the mountains?"
+    },
+    {
+      "speaker": "mia",
+      "text": "The coast. I want to stop at some beaches."
+    },
+    {
+      "speaker": "jake",
+      "text": "OK. The whole trip is about eight hundred kilometres. We can do it in four days."
+    },
+    {
+      "speaker": "mia",
+      "text": "Four days is good. Where shall we stay?"
+    },
+    {
+      "speaker": "jake",
+      "text": "Hotels are expensive in summer. What about camping?"
+    },
+    {
+      "speaker": "mia",
+      "text": "I don't like camping. What about small guest houses? They're cheaper than hotels."
+    },
+    {
+      "speaker": "jake",
+      "text": "Good idea. Who's going to drive?"
+    },
+    {
+      "speaker": "mia",
+      "text": "Both of us. You drive in the mornings, and I'll drive in the afternoons."
+    },
+    {
+      "speaker": "jake",
+      "text": "Deal. And I'll make a playlist for the car."
+    },
+    {
+      "speaker": "mia",
+      "text": "Great. I'll book the guest houses tonight."
+    },
+    {
+      "speaker": "jake",
+      "text": "Should we take your car or mine?"
+    },
+    {
+      "speaker": "mia",
+      "text": "Yours. Mine is too small for all our bags."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which route do they choose?",
+      "options": [
+        "through the mountains",
+        "along the coast",
+        "through the city",
+        "by the river"
+      ],
+      "answer": 1,
+      "feedback": "Mia plajlarda durmak istediği için sahil yolunu seçiyorlar.",
+      "evidence": "The coast. I want to stop at some beaches."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where are they going to stay?",
+      "options": [
+        "in hotels",
+        "in a tent",
+        "in small guest houses",
+        "with friends"
+      ],
+      "answer": 2,
+      "feedback": "Mia kamp sevmiyor; küçük pansiyonlarda kalacaklar.",
+      "evidence": "What about small guest houses?"
+    },
+    {
+      "id": "q3",
+      "prompt": "When will Mia drive?",
+      "options": [
+        "in the afternoons",
+        "in the mornings",
+        "at night",
+        "She won't drive."
+      ],
+      "answer": 0,
+      "feedback": "Jake sabahları, Mia öğleden sonraları sürecek.",
+      "evidence": "and I'll drive in the afternoons."
+    },
+    {
+      "id": "q4",
+      "prompt": "Whose car are they taking?",
+      "options": [
+        "Mia's",
+        "a hire car",
+        "Mia's parents'",
+        "Jake's"
+      ],
+      "answer": 3,
+      "feedback": "Mia'nın arabası çantalar için küçük; Jake'in arabasını alacaklar.",
+      "evidence": "Yours. Mine is too small for all our bags."
+    }
+  ]
+}

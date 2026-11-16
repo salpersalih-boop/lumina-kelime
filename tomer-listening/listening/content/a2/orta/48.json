@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-48",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the bike shop",
+  "topic": "Bisiklet tamiri",
+  "instructions": "Bir genç bisikletini tamire getiriyor. Sorunu, süreyi ve fiyatı takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Mechanic",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "b",
+      "text": "Hi. My bike has a flat tyre, and the brakes don't work well."
+    },
+    {
+      "speaker": "a",
+      "text": "Let me see. Yes, you need a new tyre and new brakes."
+    },
+    {
+      "speaker": "b",
+      "text": "How long will it take?"
+    },
+    {
+      "speaker": "a",
+      "text": "The tyre is quick, about twenty minutes. The brakes take longer. You can collect it tomorrow."
+    },
+    {
+      "speaker": "b",
+      "text": "I need it for school tomorrow. Can you just do the tyre today?"
+    },
+    {
+      "speaker": "a",
+      "text": "OK, but the brakes are dangerous. Please bring it back on Saturday."
+    },
+    {
+      "speaker": "b",
+      "text": "I will. How much is the tyre?"
+    },
+    {
+      "speaker": "a",
+      "text": "Fifteen pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is wrong with the bike?",
+      "options": [
+        "a flat tyre and bad brakes",
+        "a broken chain",
+        "only the brakes",
+        "a broken light"
+      ],
+      "answer": 0,
+      "feedback": "Lastiği patlak ve frenleri iyi çalışmıyor.",
+      "evidence": "My bike has a flat tyre, and the brakes don't work well."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why does Leo want only the tyre fixed today?",
+      "options": [
+        "It is cheaper.",
+        "He needs the bike for school tomorrow.",
+        "The brakes are OK.",
+        "The shop is closing."
+      ],
+      "answer": 1,
+      "feedback": "Yarın okul için bisiklete ihtiyacı var.",
+      "evidence": "I need it for school tomorrow."
+    },
+    {
+      "id": "q3",
+      "prompt": "When will he bring the bike back for the brakes?",
+      "options": [
+        "tomorrow",
+        "next week",
+        "today",
+        "on Saturday"
+      ],
+      "answer": 3,
+      "feedback": "Frenler için cumartesi getirecek.",
+      "evidence": "Please bring it back on Saturday."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the tyre?",
+      "options": [
+        "five pounds",
+        "fifty pounds",
+        "fifteen pounds",
+        "twenty pounds"
+      ],
+      "answer": 2,
+      "feedback": "Lastik on beş pound.",
+      "evidence": "Fifteen pounds."
+    }
+  ]
+}

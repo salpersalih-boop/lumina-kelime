@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-52",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Choosing a birthday present",
+  "topic": "Hediye seçme",
+  "instructions": "İki kardeş annelerine hediye seçiyor. Fikirleri ve son kararı takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Ali",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Elif",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Mum's birthday is next week. What shall we get her?"
+    },
+    {
+      "speaker": "b",
+      "text": "What about a new handbag?"
+    },
+    {
+      "speaker": "a",
+      "text": "She got one for Christmas. What about flowers?"
+    },
+    {
+      "speaker": "b",
+      "text": "Flowers are nice, but they don't last long. She's always saying she wants to learn to paint."
+    },
+    {
+      "speaker": "a",
+      "text": "Oh, good idea! We could buy her a painting course."
+    },
+    {
+      "speaker": "b",
+      "text": "Yes. There's one at the community centre on Saturday mornings."
+    },
+    {
+      "speaker": "a",
+      "text": "How much is it?"
+    },
+    {
+      "speaker": "b",
+      "text": "Eighty pounds for eight weeks. So forty each."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why don't they buy a handbag?",
+      "options": [
+        "It's too expensive.",
+        "She got one for Christmas.",
+        "She doesn't like handbags.",
+        "The shop is closed."
+      ],
+      "answer": 1,
+      "feedback": "Noel'de bir çanta almış.",
+      "evidence": "She got one for Christmas."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is the problem with flowers?",
+      "options": [
+        "They don't last long.",
+        "She doesn't like flowers.",
+        "They're expensive.",
+        "She's allergic."
+      ],
+      "answer": 0,
+      "feedback": "Çiçekler uzun dayanmıyor.",
+      "evidence": "they don't last long."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does their mum want to learn?",
+      "options": [
+        "to cook",
+        "to dance",
+        "to paint",
+        "to swim"
+      ],
+      "answer": 2,
+      "feedback": "Annesi resim yapmayı öğrenmek istiyor.",
+      "evidence": "She's always saying she wants to learn to paint."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much will each person pay?",
+      "options": [
+        "eighty pounds",
+        "eight pounds",
+        "twenty pounds",
+        "forty pounds"
+      ],
+      "answer": 3,
+      "feedback": "Kurs seksen pound; kişi başı kırk.",
+      "evidence": "So forty each."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-37",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "Moving to a new city",
+  "topic": "Taşınma",
+  "instructions": "Omar yeni bir şehre taşınmayı anlatıyor. Neden taşındığına ve ilk izlenimlerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "omar": {
+      "name": "Omar",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "omar",
+      "text": "Three weeks ago, I moved to Manchester for a new job."
+    },
+    {
+      "speaker": "omar",
+      "text": "I didn't know anyone here, so the first week was quite lonely."
+    },
+    {
+      "speaker": "omar",
+      "text": "But my colleagues are very friendly, and they invited me to play football on Wednesdays."
+    },
+    {
+      "speaker": "omar",
+      "text": "The weather is rainier than in my home town, so I bought a good umbrella."
+    },
+    {
+      "speaker": "omar",
+      "text": "Next month, my brother is coming to visit me."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why did Omar move to Manchester?",
+      "options": [
+        "for university",
+        "for a new job",
+        "to be near his family",
+        "for his health"
+      ],
+      "answer": 1,
+      "feedback": "Yeni bir iş için taşındı.",
+      "evidence": "I moved to Manchester for a new job."
+    },
+    {
+      "id": "q2",
+      "prompt": "How was the first week?",
+      "options": [
+        "exciting",
+        "quite lonely",
+        "very busy",
+        "boring"
+      ],
+      "answer": 1,
+      "feedback": "Kimseyi tanımadığı için ilk hafta oldukça yalnızdı.",
+      "evidence": "the first week was quite lonely."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who is coming to visit next month?",
+      "options": [
+        "his brother",
+        "his parents",
+        "his colleagues",
+        "his friend"
+      ],
+      "answer": 0,
+      "feedback": "Gelecek ay kardeşi ziyarete gelecek.",
+      "evidence": "Next month, my brother is coming to visit me."
+    }
+  ]
+}

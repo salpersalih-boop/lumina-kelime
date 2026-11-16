@@ -1,0 +1,96 @@
+{
+  "id": "a1-orta-69",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "What time is it?",
+  "topic": "Saat sorma",
+  "instructions": "Bir kadın sokakta saati soruyor. Kısa bir diyalog; saate ve otobüse dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Woman",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Boy",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Excuse me. What time is it, please?"
+    },
+    {
+      "speaker": "b",
+      "text": "It's ten to five."
+    },
+    {
+      "speaker": "a",
+      "text": "Oh no! My bus is at five."
+    },
+    {
+      "speaker": "b",
+      "text": "The bus stop is just there. You have ten minutes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time is it?",
+      "options": [
+        "ten past five",
+        "ten to five",
+        "five to ten",
+        "five o'clock"
+      ],
+      "answer": 1,
+      "feedback": "Saat beşe on var (4:50).",
+      "evidence": "It's ten to five."
+    },
+    {
+      "id": "q2",
+      "prompt": "When is her bus?",
+      "options": [
+        "at five",
+        "at ten",
+        "at ten to five",
+        "at half past five"
+      ],
+      "answer": 0,
+      "feedback": "Otobüsü saat beşte.",
+      "evidence": "My bus is at five."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much time does she have?",
+      "options": [
+        "five minutes",
+        "ten minutes",
+        "fifteen minutes",
+        "an hour"
+      ],
+      "answer": 1,
+      "feedback": "On dakikası var.",
+      "evidence": "You have ten minutes."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the bus stop?",
+      "options": [
+        "far away",
+        "next to the station",
+        "behind the school",
+        "just there"
+      ],
+      "answer": 3,
+      "feedback": "Otobüs durağı hemen orada.",
+      "evidence": "The bus stop is just there."
+    }
+  ]
+}

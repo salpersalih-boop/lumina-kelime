@@ -1,0 +1,121 @@
+{
+  "id": "a2-zor-58",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Less time on my phone",
+  "topic": "Dijital alışkanlıklar",
+  "instructions": "Sara telefon kullanımını nasıl azalttığını anlatıyor. Uzun bir metin; önceki ve şimdiki durumu karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Sara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last year, I decided to stop using my phone so much. I was spending about six hours a day on it, mostly on social media."
+    },
+    {
+      "speaker": "s",
+      "text": "I felt tired all the time, and I wasn't sleeping well."
+    },
+    {
+      "speaker": "s",
+      "text": "So I made some rules. No phone in the bedroom, no phone during meals, and no social media after eight in the evening."
+    },
+    {
+      "speaker": "s",
+      "text": "The first two weeks were really hard. I kept picking up my phone without thinking."
+    },
+    {
+      "speaker": "s",
+      "text": "But slowly, things changed. I started reading again. In one year, I've read twenty-five books!"
+    },
+    {
+      "speaker": "s",
+      "text": "I also sleep much better, and I spend more time with my friends face to face."
+    },
+    {
+      "speaker": "s",
+      "text": "I still use my phone for messages and maps, but now it's about two hours a day."
+    },
+    {
+      "speaker": "s",
+      "text": "I think everyone should try it, even for just one week."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many hours a day did Sara use her phone before?",
+      "options": [
+        "about two",
+        "about four",
+        "about six",
+        "about eight"
+      ],
+      "answer": 2,
+      "feedback": "Önceden günde yaklaşık altı saat.",
+      "evidence": "I was spending about six hours a day on it"
+    },
+    {
+      "id": "q2",
+      "prompt": "What was one of her rules?",
+      "options": [
+        "no phone at work",
+        "no phone in the bedroom",
+        "no messages after six",
+        "no phone at the weekend"
+      ],
+      "answer": 1,
+      "feedback": "Kurallardan biri yatak odasında telefon olmaması.",
+      "evidence": "No phone in the bedroom"
+    },
+    {
+      "id": "q3",
+      "prompt": "How were the first two weeks?",
+      "options": [
+        "really hard",
+        "easy",
+        "boring",
+        "fun"
+      ],
+      "answer": 0,
+      "feedback": "İlk iki hafta çok zordu.",
+      "evidence": "The first two weeks were really hard."
+    },
+    {
+      "id": "q4",
+      "prompt": "How many books has she read in one year?",
+      "options": [
+        "five",
+        "fifteen",
+        "twenty",
+        "twenty-five"
+      ],
+      "answer": 3,
+      "feedback": "Bir yılda yirmi beş kitap okudu.",
+      "evidence": "In one year, I've read twenty-five books!"
+    },
+    {
+      "id": "q5",
+      "prompt": "How long does she use her phone now?",
+      "options": [
+        "about two hours a day",
+        "about six hours a day",
+        "never",
+        "about one hour a week"
+      ],
+      "answer": 0,
+      "feedback": "Şimdi günde yaklaşık iki saat.",
+      "evidence": "now it's about two hours a day."
+    }
+  ]
+}

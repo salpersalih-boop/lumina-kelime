@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-52",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "The new shopping centre",
+  "topic": "Şehir",
+  "instructions": "Can şehirdeki yeni alışveriş merkezini anlatıyor. İyi ve kötü yanlara dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Can",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "A new shopping centre opened in my town last month."
+    },
+    {
+      "speaker": "s",
+      "text": "It has more than a hundred shops, a cinema and lots of restaurants."
+    },
+    {
+      "speaker": "s",
+      "text": "I went there on the first weekend, but it was so crowded that I left after an hour."
+    },
+    {
+      "speaker": "s",
+      "text": "Parking is also expensive: four pounds an hour."
+    },
+    {
+      "speaker": "s",
+      "text": "I think I'll go on a weekday next time."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did the shopping centre open?",
+      "options": [
+        "last week",
+        "last month",
+        "last year",
+        "yesterday"
+      ],
+      "answer": 1,
+      "feedback": "Geçen ay açıldı.",
+      "evidence": "A new shopping centre opened in my town last month."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why did Can leave after an hour?",
+      "options": [
+        "It was very crowded.",
+        "He was tired.",
+        "The shops were closed.",
+        "He had no money."
+      ],
+      "answer": 0,
+      "feedback": "Çok kalabalıktı.",
+      "evidence": "it was so crowded that I left after an hour."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is parking?",
+      "options": [
+        "one pound an hour",
+        "four pounds a day",
+        "forty pounds",
+        "four pounds an hour"
+      ],
+      "answer": 3,
+      "feedback": "Otopark saatte dört pound.",
+      "evidence": "four pounds an hour."
+    }
+  ]
+}

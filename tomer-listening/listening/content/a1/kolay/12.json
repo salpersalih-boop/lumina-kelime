@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-12",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My room",
+  "topic": "Eşyalar ve renkler",
+  "instructions": "Zoe odasını anlatıyor. Kısa bir metin; renklere ve eşyaların yerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "zoe": {
+      "name": "Zoe",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "zoe",
+      "text": "My room is small, but I like it."
+    },
+    {
+      "speaker": "zoe",
+      "text": "The walls are yellow."
+    },
+    {
+      "speaker": "zoe",
+      "text": "My bed is next to the window."
+    },
+    {
+      "speaker": "zoe",
+      "text": "There is a desk and a green chair."
+    },
+    {
+      "speaker": "zoe",
+      "text": "My books are on the shelf."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour are the walls?",
+      "options": [
+        "green",
+        "white",
+        "blue",
+        "yellow"
+      ],
+      "answer": 3,
+      "feedback": "Duvarlar sarı (yellow). Yeşil olan sandalye.",
+      "evidence": "The walls are yellow."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is the bed?",
+      "options": [
+        "next to the window",
+        "next to the door",
+        "under the shelf",
+        "next to the desk"
+      ],
+      "answer": 0,
+      "feedback": "Yatak pencerenin yanında (next to the window).",
+      "evidence": "My bed is next to the window."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where are the books?",
+      "options": [
+        "on the desk",
+        "on the shelf",
+        "on the bed",
+        "on the chair"
+      ],
+      "answer": 1,
+      "feedback": "Kitaplar rafta (on the shelf).",
+      "evidence": "My books are on the shelf."
+    }
+  ]
+}

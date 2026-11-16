@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-42",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "Dinner time",
+  "topic": "Yemek",
+  "instructions": "Maya akşam yemeğini anlatıyor. Kısa bir metin; saat ve yemeklere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "maya": {
+      "name": "Maya",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "maya",
+      "text": "We have dinner at seven o'clock."
+    },
+    {
+      "speaker": "maya",
+      "text": "Tonight, my dad is cooking chicken and rice."
+    },
+    {
+      "speaker": "maya",
+      "text": "I make a salad."
+    },
+    {
+      "speaker": "maya",
+      "text": "After dinner, we eat ice cream."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time is dinner?",
+      "options": [
+        "at six o'clock",
+        "at seven o'clock",
+        "at eight o'clock",
+        "at half past seven"
+      ],
+      "answer": 1,
+      "feedback": "Akşam yemeği saat yedide.",
+      "evidence": "We have dinner at seven o'clock."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who is cooking tonight?",
+      "options": [
+        "Maya",
+        "her mum",
+        "her dad",
+        "her brother"
+      ],
+      "answer": 2,
+      "feedback": "Bu akşam babası tavuk ve pilav pişiriyor.",
+      "evidence": "my dad is cooking chicken and rice."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Maya make?",
+      "options": [
+        "a salad",
+        "ice cream",
+        "rice",
+        "a cake"
+      ],
+      "answer": 0,
+      "feedback": "Maya salata yapıyor.",
+      "evidence": "I make a salad."
+    }
+  ]
+}

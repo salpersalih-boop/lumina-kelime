@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-20",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "The school concert",
+  "topic": "Okul etkinliği",
+  "instructions": "Müzik öğretmeni velilere okul konserini anlatıyor. Tarih, saat, yer ve fiyatlara dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "teacher": {
+      "name": "Music teacher",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "teacher",
+      "text": "Hello, parents. This is Mr Davies, the music teacher."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Our school concert is on Friday the eighteenth of December."
+    },
+    {
+      "speaker": "teacher",
+      "text": "It isn't in the school hall this year. It's in the church next to the school, because the hall is too small."
+    },
+    {
+      "speaker": "teacher",
+      "text": "The concert starts at six o'clock, but please come at half past five."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Children must wear white shirts and black trousers or skirts."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Tickets are three pounds for adults. Children under five are free."
+    },
+    {
+      "speaker": "teacher",
+      "text": "After the concert, there are drinks and cakes in the school hall."
+    },
+    {
+      "speaker": "teacher",
+      "text": "Thank you, and see you there!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is the concert?",
+      "options": [
+        "Friday the eighth of December",
+        "Friday the eighteenth of December",
+        "Thursday the eighteenth of December",
+        "Friday the eighteenth of November"
+      ],
+      "answer": 1,
+      "feedback": "Konser 18 aralık cuma (Friday the eighteenth of December).",
+      "evidence": "Our school concert is on Friday the eighteenth of December."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is the concert?",
+      "options": [
+        "in the school hall",
+        "in the park",
+        "in the church next to the school",
+        "in the town hall"
+      ],
+      "answer": 2,
+      "feedback": "Bu yıl salon küçük olduğu için okulun yanındaki kilisede.",
+      "evidence": "It's in the church next to the school"
+    },
+    {
+      "id": "q3",
+      "prompt": "What time should parents arrive?",
+      "options": [
+        "at half past five",
+        "at six o'clock",
+        "at half past six",
+        "at five o'clock"
+      ],
+      "answer": 0,
+      "feedback": "Konser altıda başlıyor ama beş buçukta gelinmeli.",
+      "evidence": "please come at half past five."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does a ticket cost for a four-year-old child?",
+      "options": [
+        "three pounds",
+        "four pounds",
+        "one pound",
+        "nothing"
+      ],
+      "answer": 3,
+      "feedback": "Beş yaş altı çocuklar ücretsiz.",
+      "evidence": "Children under five are free."
+    },
+    {
+      "id": "q5",
+      "prompt": "Where are the drinks and cakes?",
+      "options": [
+        "in the church",
+        "in the school hall",
+        "in the classrooms",
+        "in the garden"
+      ],
+      "answer": 1,
+      "feedback": "Konserden sonra içecek ve pastalar okul salonunda.",
+      "evidence": "there are drinks and cakes in the school hall."
+    }
+  ]
+}

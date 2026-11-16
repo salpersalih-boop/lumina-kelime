@@ -1,0 +1,108 @@
+{
+  "id": "a1-orta-11",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Calling a taxi",
+  "topic": "Taksi çağırma",
+  "instructions": "Mary telefonda taksi çağırıyor. Kısa bir diyalog; adrese ve süreye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "driver": {
+      "name": "Taxi office",
+      "voice": "male"
+    },
+    "mary": {
+      "name": "Mary",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "driver",
+      "text": "City Taxis, good evening."
+    },
+    {
+      "speaker": "mary",
+      "text": "Hello. I need a taxi to the airport, please."
+    },
+    {
+      "speaker": "driver",
+      "text": "What's your address?"
+    },
+    {
+      "speaker": "mary",
+      "text": "Twenty-two Rose Road."
+    },
+    {
+      "speaker": "driver",
+      "text": "OK. The taxi is there in fifteen minutes."
+    },
+    {
+      "speaker": "mary",
+      "text": "Thank you. I have three big bags."
+    },
+    {
+      "speaker": "driver",
+      "text": "No problem. It's a big car."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where does Mary want to go?",
+      "options": [
+        "to the station",
+        "to the city centre",
+        "to the airport",
+        "to a hotel"
+      ],
+      "answer": 2,
+      "feedback": "Mary havalimanına (airport) gitmek istiyor.",
+      "evidence": "I need a taxi to the airport, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is Mary's address?",
+      "options": [
+        "Twenty-two Rose Road",
+        "Twelve Rose Road",
+        "Twenty Rose Road",
+        "Two Rose Road"
+      ],
+      "answer": 0,
+      "feedback": "Adresi yirmi iki (twenty-two) Rose Road.",
+      "evidence": "Twenty-two Rose Road."
+    },
+    {
+      "id": "q3",
+      "prompt": "When is the taxi coming?",
+      "options": [
+        "in five minutes",
+        "in fifty minutes",
+        "in an hour",
+        "in fifteen minutes"
+      ],
+      "answer": 3,
+      "feedback": "Taksi on beş dakika içinde (in fifteen minutes) gelecek. \"Fifteen\" ile \"fifty\" karışmasın.",
+      "evidence": "The taxi is there in fifteen minutes."
+    },
+    {
+      "id": "q4",
+      "prompt": "How many bags does Mary have?",
+      "options": [
+        "one",
+        "three",
+        "two",
+        "four"
+      ],
+      "answer": 1,
+      "feedback": "Üç büyük çantası (three big bags) var.",
+      "evidence": "I have three big bags."
+    }
+  ]
+}

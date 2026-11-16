@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-64",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the gym",
+  "topic": "Spor salonunda",
+  "instructions": "Yeni bir üye spor salonunda antrenörle konuşuyor. Hedefini, programını ve tavsiyeleri takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Trainer",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Sara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Hi, Sara. Welcome to the gym. What would you like to do here?"
+    },
+    {
+      "speaker": "b",
+      "text": "I want to get fitter. I get tired very quickly when I walk up stairs."
+    },
+    {
+      "speaker": "a",
+      "text": "OK. How often can you come?"
+    },
+    {
+      "speaker": "b",
+      "text": "Three times a week, maybe. I work long hours."
+    },
+    {
+      "speaker": "a",
+      "text": "Three times is great. Let's start with thirty minutes on the bike and some easy exercises."
+    },
+    {
+      "speaker": "b",
+      "text": "Should I do it every day?"
+    },
+    {
+      "speaker": "a",
+      "text": "No, your body needs to rest. Have a day off between each visit."
+    },
+    {
+      "speaker": "b",
+      "text": "OK. Thanks!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why does Sara want to go to the gym?",
+      "options": [
+        "to lose weight",
+        "to get fitter",
+        "to meet people",
+        "for a race"
+      ],
+      "answer": 1,
+      "feedback": "Daha formda olmak istiyor.",
+      "evidence": "I want to get fitter."
+    },
+    {
+      "id": "q2",
+      "prompt": "How often can she come?",
+      "options": [
+        "every day",
+        "once a week",
+        "twice a week",
+        "three times a week"
+      ],
+      "answer": 3,
+      "feedback": "Haftada üç kez gelebilir.",
+      "evidence": "Three times a week, maybe."
+    },
+    {
+      "id": "q3",
+      "prompt": "What will she start with?",
+      "options": [
+        "thirty minutes on the bike",
+        "running",
+        "swimming",
+        "heavy weights"
+      ],
+      "answer": 0,
+      "feedback": "Bisiklette otuz dakika ve kolay egzersizlerle başlayacak.",
+      "evidence": "Let's start with thirty minutes on the bike"
+    },
+    {
+      "id": "q4",
+      "prompt": "What does the trainer say about exercising every day?",
+      "options": [
+        "It's a good idea.",
+        "She should do it twice a day.",
+        "Her body needs to rest.",
+        "It's only for experts."
+      ],
+      "answer": 2,
+      "feedback": "Vücudun dinlenmeye ihtiyacı var.",
+      "evidence": "your body needs to rest."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "a2-kolay-09",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "This week's weather",
+  "topic": "Hava durumu (gelecek)",
+  "instructions": "Kısa bir haftalık hava durumu. Günlere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "host": {
+      "name": "Weather",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "host",
+      "text": "Here's the weather for this week."
+    },
+    {
+      "speaker": "host",
+      "text": "Monday and Tuesday are going to be cloudy and cool."
+    },
+    {
+      "speaker": "host",
+      "text": "On Wednesday, it's going to rain all day."
+    },
+    {
+      "speaker": "host",
+      "text": "From Thursday, it will be sunny and warmer, about twenty-five degrees."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What will the weather be like on Monday?",
+      "options": [
+        "sunny",
+        "rainy",
+        "cloudy and cool",
+        "hot"
+      ],
+      "answer": 2,
+      "feedback": "Pazartesi ve salı bulutlu ve serin (cloudy and cool).",
+      "evidence": "Monday and Tuesday are going to be cloudy and cool."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which day will be rainy?",
+      "options": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "answer": 1,
+      "feedback": "Çarşamba (Wednesday) bütün gün yağmur yağacak.",
+      "evidence": "On Wednesday, it's going to rain all day."
+    },
+    {
+      "id": "q3",
+      "prompt": "What temperature will it be from Thursday?",
+      "options": [
+        "about fifteen degrees",
+        "about twenty degrees",
+        "about thirty degrees",
+        "about twenty-five degrees"
+      ],
+      "answer": 3,
+      "feedback": "Perşembeden itibaren yaklaşık yirmi beş derece (twenty-five degrees).",
+      "evidence": "about twenty-five degrees."
+    }
+  ]
+}

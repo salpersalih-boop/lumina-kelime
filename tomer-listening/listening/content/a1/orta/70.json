@@ -1,0 +1,120 @@
+{
+  "id": "a1-orta-70",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Planning a trip to the zoo",
+  "topic": "Gezi planı",
+  "instructions": "Anne ve kızı hayvanat bahçesi gezisini planlıyor. Uzun bir diyalog; gün, ulaşım ve yanlarına alacaklarına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Lucy",
+      "voice": "female"
+    },
+    "b": {
+      "name": "Mum",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Mum, can we go to the zoo this weekend?"
+    },
+    {
+      "speaker": "b",
+      "text": "Good idea! Saturday or Sunday?"
+    },
+    {
+      "speaker": "a",
+      "text": "Saturday. On Sunday I have a dance lesson."
+    },
+    {
+      "speaker": "b",
+      "text": "OK. How do we get there? The car is at the garage."
+    },
+    {
+      "speaker": "a",
+      "text": "We can take the train. It takes thirty minutes."
+    },
+    {
+      "speaker": "b",
+      "text": "Good. What do you want to see?"
+    },
+    {
+      "speaker": "a",
+      "text": "The elephants and the penguins!"
+    },
+    {
+      "speaker": "b",
+      "text": "Let's take sandwiches. The zoo café is very expensive."
+    },
+    {
+      "speaker": "a",
+      "text": "Can my friend Mia come too?"
+    },
+    {
+      "speaker": "b",
+      "text": "Yes, ask her mum."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why can't they go on Sunday?",
+      "options": [
+        "It is going to rain.",
+        "Lucy has a dance lesson.",
+        "The zoo is closed.",
+        "Mum works."
+      ],
+      "answer": 1,
+      "feedback": "Pazar Lucy'nin dans dersi var.",
+      "evidence": "On Sunday I have a dance lesson."
+    },
+    {
+      "id": "q2",
+      "prompt": "How are they going to the zoo?",
+      "options": [
+        "by car",
+        "by bus",
+        "by train",
+        "on foot"
+      ],
+      "answer": 2,
+      "feedback": "Araba tamirde; trenle gidecekler.",
+      "evidence": "We can take the train."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Lucy want to see?",
+      "options": [
+        "the elephants and the penguins",
+        "the lions and the monkeys",
+        "the giraffes",
+        "the penguins and the lions"
+      ],
+      "answer": 0,
+      "feedback": "Filleri ve penguenleri görmek istiyor.",
+      "evidence": "The elephants and the penguins!"
+    },
+    {
+      "id": "q4",
+      "prompt": "Why will they take sandwiches?",
+      "options": [
+        "Lucy loves sandwiches.",
+        "There isn't a café.",
+        "They are vegetarian.",
+        "The zoo café is very expensive."
+      ],
+      "answer": 3,
+      "feedback": "Hayvanat bahçesi kafesi çok pahalı.",
+      "evidence": "The zoo café is very expensive."
+    }
+  ]
+}

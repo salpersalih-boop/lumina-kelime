@@ -1,0 +1,112 @@
+{
+  "id": "a1-orta-40",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Where are you from?",
+  "topic": "Tanışma",
+  "instructions": "İki öğrenci dil kursunun ilk gününde tanışıyor. Ülke, şehir ve dillere dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "pablo": {
+      "name": "Pablo",
+      "voice": "male"
+    },
+    "yuki": {
+      "name": "Yuki",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "pablo",
+      "text": "Hi, I'm Pablo. Is this your first day too?"
+    },
+    {
+      "speaker": "yuki",
+      "text": "Yes, it is. I'm Yuki. Nice to meet you."
+    },
+    {
+      "speaker": "pablo",
+      "text": "Nice to meet you too. Where are you from?"
+    },
+    {
+      "speaker": "yuki",
+      "text": "I'm from Japan, from Kyoto. And you?"
+    },
+    {
+      "speaker": "pablo",
+      "text": "I'm from Mexico. I live in Mexico City."
+    },
+    {
+      "speaker": "yuki",
+      "text": "Do you speak any other languages?"
+    },
+    {
+      "speaker": "pablo",
+      "text": "Spanish, of course, and a little French."
+    },
+    {
+      "speaker": "yuki",
+      "text": "I speak Japanese and a little Chinese."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Yuki from?",
+      "options": [
+        "China",
+        "Korea",
+        "Japan",
+        "Mexico"
+      ],
+      "answer": 2,
+      "feedback": "Yuki Japonya'dan, Kyoto'dan.",
+      "evidence": "I'm from Japan, from Kyoto."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where does Pablo live?",
+      "options": [
+        "in Mexico City",
+        "in Madrid",
+        "in Kyoto",
+        "in Paris"
+      ],
+      "answer": 0,
+      "feedback": "Pablo Meksiko şehrinde yaşıyor.",
+      "evidence": "I live in Mexico City."
+    },
+    {
+      "id": "q3",
+      "prompt": "What other language does Pablo speak a little?",
+      "options": [
+        "Chinese",
+        "French",
+        "Japanese",
+        "Italian"
+      ],
+      "answer": 1,
+      "feedback": "Pablo biraz Fransızca konuşuyor.",
+      "evidence": "and a little French."
+    },
+    {
+      "id": "q4",
+      "prompt": "What other language does Yuki speak a little?",
+      "options": [
+        "French",
+        "Spanish",
+        "Korean",
+        "Chinese"
+      ],
+      "answer": 3,
+      "feedback": "Yuki biraz Çince konuşuyor.",
+      "evidence": "I speak Japanese and a little Chinese."
+    }
+  ]
+}

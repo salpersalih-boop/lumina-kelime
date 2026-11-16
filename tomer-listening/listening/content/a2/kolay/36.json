@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-36",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My cousin's wedding",
+  "topic": "Düğün (geçmiş zaman)",
+  "instructions": "Ayla kuzeninin düğününü anlatıyor. Yeri, kişi sayısını ve olanları takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ayla": {
+      "name": "Ayla",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ayla",
+      "text": "Last weekend, I went to my cousin Elif's wedding."
+    },
+    {
+      "speaker": "ayla",
+      "text": "It was in a beautiful garden next to the sea."
+    },
+    {
+      "speaker": "ayla",
+      "text": "There were about two hundred guests, and the music was fantastic."
+    },
+    {
+      "speaker": "ayla",
+      "text": "I wore a long blue dress that I bought especially for the wedding."
+    },
+    {
+      "speaker": "ayla",
+      "text": "We danced until two in the morning. My feet hurt the next day!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where was the wedding?",
+      "options": [
+        "in a hotel",
+        "in a garden next to the sea",
+        "in a restaurant",
+        "in a church"
+      ],
+      "answer": 1,
+      "feedback": "Düğün denizin yanındaki güzel bir bahçedeydi.",
+      "evidence": "It was in a beautiful garden next to the sea."
+    },
+    {
+      "id": "q2",
+      "prompt": "How many guests were there?",
+      "options": [
+        "about twenty",
+        "about two hundred",
+        "about two thousand",
+        "about fifty"
+      ],
+      "answer": 1,
+      "feedback": "Yaklaşık iki yüz misafir vardı.",
+      "evidence": "There were about two hundred guests"
+    },
+    {
+      "id": "q3",
+      "prompt": "Until what time did they dance?",
+      "options": [
+        "midnight",
+        "one in the morning",
+        "two in the morning",
+        "eleven at night"
+      ],
+      "answer": 2,
+      "feedback": "Sabah ikiye kadar dans ettiler.",
+      "evidence": "We danced until two in the morning."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "a1-orta-07",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "Planning a birthday party",
+  "topic": "Kutlama planlama",
+  "instructions": "Emily ve Josh anneleri için doğum günü partisi planlıyor. Fikir değişikliklerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "emily": {
+      "name": "Emily",
+      "voice": "female"
+    },
+    "josh": {
+      "name": "Josh",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "emily",
+      "text": "Josh, it's Mum's birthday next Saturday. Let's have a party for her."
+    },
+    {
+      "speaker": "josh",
+      "text": "Good idea! Where? At home?"
+    },
+    {
+      "speaker": "emily",
+      "text": "No, our flat is too small. Let's have it at Aunt Rose's house. She has a big garden."
+    },
+    {
+      "speaker": "josh",
+      "text": "OK. How many people?"
+    },
+    {
+      "speaker": "emily",
+      "text": "About twenty. I can make a chocolate cake."
+    },
+    {
+      "speaker": "josh",
+      "text": "Mum doesn't like chocolate. Make a lemon cake."
+    },
+    {
+      "speaker": "emily",
+      "text": "Oh yes, you're right. And you can buy the drinks."
+    },
+    {
+      "speaker": "josh",
+      "text": "No problem. What about a present?"
+    },
+    {
+      "speaker": "emily",
+      "text": "Mum loves books. Let's buy her a cookbook."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Whose birthday is it?",
+      "options": [
+        "Josh's",
+        "Emily's",
+        "their mum's",
+        "Aunt Rose's"
+      ],
+      "answer": 2,
+      "feedback": "Doğum günü annelerinin (Mum's birthday). Rose teyze partinin yapılacağı evin sahibi.",
+      "evidence": "it's Mum's birthday next Saturday."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is the party going to be?",
+      "options": [
+        "at their flat",
+        "at Aunt Rose's house",
+        "in a restaurant",
+        "in the park"
+      ],
+      "answer": 1,
+      "feedback": "Evleri çok küçük (too small), parti Rose teyzenin evinde olacak.",
+      "evidence": "Let's have it at Aunt Rose's house."
+    },
+    {
+      "id": "q3",
+      "prompt": "What cake is Emily going to make?",
+      "options": [
+        "chocolate",
+        "lemon",
+        "strawberry",
+        "banana"
+      ],
+      "answer": 1,
+      "feedback": "Emily önce çikolatalı der ama anneleri çikolata sevmiyor. Limonlu (lemon) pasta yapacak.",
+      "evidence": "Make a lemon cake."
+    },
+    {
+      "id": "q4",
+      "prompt": "What present are they going to buy?",
+      "options": [
+        "a cookbook",
+        "flowers",
+        "a scarf",
+        "a cake"
+      ],
+      "answer": 0,
+      "feedback": "Anneleri kitap seviyor; yemek kitabı (cookbook) alacaklar.",
+      "evidence": "Let's buy her a cookbook."
+    }
+  ]
+}

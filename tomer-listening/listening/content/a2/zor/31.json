@@ -1,0 +1,105 @@
+{
+  "id": "a2-zor-31",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "A message from the gym",
+  "topic": "Spor salonu mesajı",
+  "instructions": "Spor salonundan kısa bir sesli mesaj. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Gym",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Hello Mr Aydın, this is Fit Life gym."
+    },
+    {
+      "speaker": "voice",
+      "text": "Your personal training session is moved from Friday at six to Saturday at ten."
+    },
+    {
+      "speaker": "voice",
+      "text": "Your trainer will be Tom, not Lisa, because she is on holiday."
+    },
+    {
+      "speaker": "voice",
+      "text": "Please call us if this time is a problem."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When was the session before?",
+      "options": [
+        "Saturday at ten",
+        "Friday at six",
+        "Friday at ten",
+        "Saturday at six"
+      ],
+      "answer": 1,
+      "feedback": "Seans önce cuma saat altıdaydı.",
+      "evidence": "is moved from Friday at six"
+    },
+    {
+      "id": "q2",
+      "prompt": "When is the session now?",
+      "options": [
+        "Saturday at ten",
+        "Friday at ten",
+        "Saturday at six",
+        "Sunday at ten"
+      ],
+      "answer": 0,
+      "feedback": "Artık cumartesi saat onda.",
+      "evidence": "to Saturday at ten."
+    },
+    {
+      "id": "q3",
+      "prompt": "Who will be the trainer?",
+      "options": [
+        "Lisa",
+        "Mr Aydın",
+        "Tom",
+        "nobody"
+      ],
+      "answer": 2,
+      "feedback": "Lisa değil, Tom.",
+      "evidence": "Your trainer will be Tom, not Lisa"
+    },
+    {
+      "id": "q4",
+      "prompt": "Why is Lisa not working?",
+      "options": [
+        "She is ill.",
+        "She left the gym.",
+        "She has another client.",
+        "She is on holiday."
+      ],
+      "answer": 3,
+      "feedback": "Lisa tatilde.",
+      "evidence": "because she is on holiday."
+    },
+    {
+      "id": "q5",
+      "prompt": "What should Mr Aydın do if the time is a problem?",
+      "options": [
+        "call the gym",
+        "come on Friday",
+        "email Lisa",
+        "do nothing"
+      ],
+      "answer": 0,
+      "feedback": "Saat uygun değilse spor salonunu aramalı.",
+      "evidence": "Please call us if this time is a problem."
+    }
+  ]
+}

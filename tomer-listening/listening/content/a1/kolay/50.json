@@ -1,0 +1,83 @@
+{
+  "id": "a1-kolay-50",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My best friend Ali",
+  "topic": "Arkadaşlık",
+  "instructions": "Can en iyi arkadaşını anlatıyor. Görünüşüne ve ortak hobilerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Can",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "My best friend is Ali."
+    },
+    {
+      "speaker": "s",
+      "text": "He is short and he has black hair."
+    },
+    {
+      "speaker": "s",
+      "text": "He is in my class at school."
+    },
+    {
+      "speaker": "s",
+      "text": "We play computer games together."
+    },
+    {
+      "speaker": "s",
+      "text": "He is very funny."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Ali look like?",
+      "options": [
+        "tall with black hair",
+        "short with black hair",
+        "short with brown hair",
+        "tall with blond hair"
+      ],
+      "answer": 1,
+      "feedback": "Ali kısa boylu ve siyah saçlı.",
+      "evidence": "He is short and he has black hair."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where do they meet?",
+      "options": [
+        "at school",
+        "at the park",
+        "at the gym",
+        "at church"
+      ],
+      "answer": 0,
+      "feedback": "Okulda aynı sınıftalar.",
+      "evidence": "He is in my class at school."
+    },
+    {
+      "id": "q3",
+      "prompt": "What do they do together?",
+      "options": [
+        "play football",
+        "read books",
+        "play computer games",
+        "swim"
+      ],
+      "answer": 2,
+      "feedback": "Birlikte bilgisayar oyunu oynuyorlar.",
+      "evidence": "We play computer games together."
+    }
+  ]
+}

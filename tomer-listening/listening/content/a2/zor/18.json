@@ -1,0 +1,145 @@
+{
+  "id": "a2-zor-18",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "At the vet",
+  "topic": "Veteriner",
+  "instructions": "Ece kedisini veterinere götürüyor. Uzun bir diyalog; belirtiler, sebep ve tedaviyi takip et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "vet": {
+      "name": "Vet",
+      "voice": "male"
+    },
+    "ece": {
+      "name": "Ece",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "vet",
+      "text": "Hello. What seems to be the problem?"
+    },
+    {
+      "speaker": "ece",
+      "text": "It's my cat, Pamuk. She hasn't eaten anything for two days, and she sleeps all the time."
+    },
+    {
+      "speaker": "vet",
+      "text": "How old is she?"
+    },
+    {
+      "speaker": "ece",
+      "text": "She's seven. Last year she was ill too, but it was her stomach."
+    },
+    {
+      "speaker": "vet",
+      "text": "Let me look. Hmm, I think it's her teeth. One of them is broken. That's why she can't eat."
+    },
+    {
+      "speaker": "ece",
+      "text": "Oh no! Is it serious?"
+    },
+    {
+      "speaker": "vet",
+      "text": "Not very serious, but we need to take the tooth out. We can do it tomorrow morning."
+    },
+    {
+      "speaker": "ece",
+      "text": "Can she eat tonight?"
+    },
+    {
+      "speaker": "vet",
+      "text": "Give her some soft food tonight, but nothing after ten o'clock."
+    },
+    {
+      "speaker": "ece",
+      "text": "OK. How long will she stay here tomorrow?"
+    },
+    {
+      "speaker": "vet",
+      "text": "You can bring her at eight and collect her at about four in the afternoon."
+    },
+    {
+      "speaker": "ece",
+      "text": "And how much will it cost?"
+    },
+    {
+      "speaker": "vet",
+      "text": "About one hundred and twenty pounds, with the medicine."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long hasn't the cat eaten?",
+      "options": [
+        "one day",
+        "two days",
+        "a week",
+        "seven days"
+      ],
+      "answer": 1,
+      "feedback": "Kedi iki gündür (for two days) bir şey yemiyor. Yedi, kedinin yaşı.",
+      "evidence": "She hasn't eaten anything for two days"
+    },
+    {
+      "id": "q2",
+      "prompt": "What was the problem last year?",
+      "options": [
+        "her teeth",
+        "her eyes",
+        "her stomach",
+        "her leg"
+      ],
+      "answer": 2,
+      "feedback": "Geçen yılki sorun midesiydi.",
+      "evidence": "Last year she was ill too, but it was her stomach."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why can't the cat eat now?",
+      "options": [
+        "She has a broken tooth.",
+        "She is too old.",
+        "She doesn't like her food.",
+        "Her stomach hurts."
+      ],
+      "answer": 0,
+      "feedback": "Bir dişi kırık; bu yüzden yiyemiyor.",
+      "evidence": "One of them is broken. That's why she can't eat."
+    },
+    {
+      "id": "q4",
+      "prompt": "What should Ece do tonight?",
+      "options": [
+        "give her no food",
+        "give her medicine",
+        "bring her to the vet",
+        "give her soft food before ten"
+      ],
+      "answer": 3,
+      "feedback": "Bu akşam yumuşak yiyecek verebilir ama saat ondan sonra hiçbir şey vermemeli.",
+      "evidence": "Give her some soft food tonight, but nothing after ten o'clock."
+    },
+    {
+      "id": "q5",
+      "prompt": "When can Ece collect her cat tomorrow?",
+      "options": [
+        "at eight in the morning",
+        "at about four in the afternoon",
+        "at ten",
+        "in the evening"
+      ],
+      "answer": 1,
+      "feedback": "Sabah sekizde getirip öğleden sonra dört civarında alacak.",
+      "evidence": "collect her at about four in the afternoon."
+    }
+  ]
+}

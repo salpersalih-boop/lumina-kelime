@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-27",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My neighbour's dog",
+  "topic": "Komşular ve hayvanlar",
+  "instructions": "Emily komşusunun köpeğine nasıl baktığını anlatıyor. Ne zaman ve neden yaptığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "emily": {
+      "name": "Emily",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "emily",
+      "text": "My neighbour, Mr Green, is eighty years old and he has a big dog called Rocky."
+    },
+    {
+      "speaker": "emily",
+      "text": "Last year, Mr Green hurt his leg, so he couldn't walk Rocky."
+    },
+    {
+      "speaker": "emily",
+      "text": "I offered to help, and now I walk Rocky every afternoon after school."
+    },
+    {
+      "speaker": "emily",
+      "text": "Rocky is very friendly, but he's very strong. Sometimes he pulls me!"
+    },
+    {
+      "speaker": "emily",
+      "text": "Mr Green pays me ten pounds a week, but I would do it for free. I love that dog."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why couldn't Mr Green walk his dog?",
+      "options": [
+        "He was on holiday.",
+        "He hurt his leg.",
+        "He was too busy.",
+        "He doesn't like walking."
+      ],
+      "answer": 1,
+      "feedback": "Bay Green bacağını incitti.",
+      "evidence": "Mr Green hurt his leg, so he couldn't walk Rocky."
+    },
+    {
+      "id": "q2",
+      "prompt": "When does Emily walk Rocky?",
+      "options": [
+        "every morning",
+        "at the weekend",
+        "every afternoon after school",
+        "every evening"
+      ],
+      "answer": 2,
+      "feedback": "Her öğleden sonra okuldan sonra gezdiriyor.",
+      "evidence": "I walk Rocky every afternoon after school."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much does Mr Green pay Emily?",
+      "options": [
+        "ten pounds a week",
+        "nothing",
+        "ten pounds a day",
+        "eighty pounds a month"
+      ],
+      "answer": 0,
+      "feedback": "Haftada on pound ödüyor; Emily ücretsiz de yapardı.",
+      "evidence": "Mr Green pays me ten pounds a week"
+    }
+  ]
+}

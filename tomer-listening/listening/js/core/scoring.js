@@ -30,10 +30,10 @@ export function gradeQuiz(questions, answers) {
 
 /** Yüzdeye göre kısa değerlendirme metni. */
 export function verdict(percent) {
-  if (percent === 100) return { tone: 'perfect', text: 'Kusursuz! Bir sonraki alt seviyeye hazırsın.' };
-  if (percent >= 70)  return { tone: 'good',    text: 'Güzel iş. Yanlışlarının açıklamalarına göz at.' };
-  if (percent >= 40)  return { tone: 'fair',    text: 'Fena değil. Metni bir kez daha dinleyip tekrar dene.' };
-  return { tone: 'low', text: 'Bu metni daha yavaş hızda tekrar dinlemeyi dene.' };
+  if (percent === 100) return { tone: 'perfect', text: 'Bütün soruları doğru cevapladın. Sıradaki metne geçebilirsin.' };
+  if (percent >= 70)  return { tone: 'good',    text: 'Yanlış cevaplarının açıklamalarına ve metindeki cümlelere göz at.' };
+  if (percent >= 40)  return { tone: 'fair',    text: 'Aşağıdaki açıklamaları oku, metni bir kez daha dinleyip tekrar dene.' };
+  return { tone: 'low', text: 'Metni daha yavaş hızda (0.75×) dinleyip tekrar dene.' };
 }
 
 /** 0 → "A" */

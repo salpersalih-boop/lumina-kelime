@@ -1,0 +1,100 @@
+{
+  "id": "a1-orta-36",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "At the ice cream shop",
+  "topic": "Dondurma alma",
+  "instructions": "Bir çocuk dondurma alıyor. Kısa bir diyalog; tat, boy ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "Shop",
+      "voice": "female"
+    },
+    "boy": {
+      "name": "Boy",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "staff",
+      "text": "Hello! What would you like?"
+    },
+    {
+      "speaker": "boy",
+      "text": "A chocolate ice cream, please. Small."
+    },
+    {
+      "speaker": "staff",
+      "text": "Sorry, we don't have chocolate today. We have strawberry and lemon."
+    },
+    {
+      "speaker": "boy",
+      "text": "Strawberry, then."
+    },
+    {
+      "speaker": "staff",
+      "text": "That's two pounds."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What flavour does the boy want first?",
+      "options": [
+        "strawberry",
+        "lemon",
+        "chocolate",
+        "vanilla"
+      ],
+      "answer": 2,
+      "feedback": "Önce çikolatalı istiyor.",
+      "evidence": "A chocolate ice cream, please."
+    },
+    {
+      "id": "q2",
+      "prompt": "What size does he want?",
+      "options": [
+        "small",
+        "medium",
+        "large",
+        "two scoops"
+      ],
+      "answer": 0,
+      "feedback": "Küçük boy (small) istiyor.",
+      "evidence": "Small."
+    },
+    {
+      "id": "q3",
+      "prompt": "What flavour does he get?",
+      "options": [
+        "chocolate",
+        "strawberry",
+        "lemon",
+        "vanilla"
+      ],
+      "answer": 1,
+      "feedback": "Çikolata yok; çilekli alıyor.",
+      "evidence": "Strawberry, then."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much does he pay?",
+      "options": [
+        "two pounds",
+        "three pounds",
+        "one pound",
+        "four pounds"
+      ],
+      "answer": 0,
+      "feedback": "İki pound ödüyor.",
+      "evidence": "That's two pounds."
+    }
+  ]
+}

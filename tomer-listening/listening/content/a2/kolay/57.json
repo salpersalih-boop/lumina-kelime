@@ -1,0 +1,75 @@
+{
+  "id": "a2-kolay-57",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "The train is cancelled",
+  "topic": "Telefon mesajı",
+  "instructions": "Mark eşine kısa bir sesli mesaj bırakıyor. Sebep ve yeni plana dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Mark",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Hi Anna, it's Mark. My train is cancelled because of the snow."
+    },
+    {
+      "speaker": "s",
+      "text": "I'm going to take the bus instead, but it's much slower."
+    },
+    {
+      "speaker": "s",
+      "text": "I probably won't be home before ten. Don't wait for me for dinner."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why is the train cancelled?",
+      "options": [
+        "because of the snow",
+        "because of a strike",
+        "because of an accident",
+        "because of rain"
+      ],
+      "answer": 0,
+      "feedback": "Kar yüzünden tren iptal.",
+      "evidence": "My train is cancelled because of the snow."
+    },
+    {
+      "id": "q2",
+      "prompt": "How will Mark get home?",
+      "options": [
+        "by taxi",
+        "by car",
+        "on foot",
+        "by bus"
+      ],
+      "answer": 3,
+      "feedback": "Otobüsle gelecek; çok daha yavaş.",
+      "evidence": "I'm going to take the bus instead"
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Mark tell Anna?",
+      "options": [
+        "to pick him up",
+        "not to wait for him for dinner",
+        "to call the station",
+        "to cook dinner"
+      ],
+      "answer": 1,
+      "feedback": "Akşam yemeği için onu beklememesini söylüyor.",
+      "evidence": "Don't wait for me for dinner."
+    }
+  ]
+}

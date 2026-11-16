@@ -1,0 +1,137 @@
+{
+  "id": "a2-zor-38",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Problems in the flat",
+  "topic": "Ev sahibiyle konuşma",
+  "instructions": "Kiracı Sophie ev sahibini arayıp sorunları anlatıyor. Uzun bir diyalog; sorunları ve çözümleri eşleştir. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "sophie": {
+      "name": "Sophie",
+      "voice": "female"
+    },
+    "landlord": {
+      "name": "Mr Hill",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sophie",
+      "text": "Hello, Mr Hill. It's Sophie from flat four. I'm calling about some problems."
+    },
+    {
+      "speaker": "landlord",
+      "text": "Hello, Sophie. What's wrong?"
+    },
+    {
+      "speaker": "sophie",
+      "text": "First, the shower. There's no hot water since Monday."
+    },
+    {
+      "speaker": "landlord",
+      "text": "Oh dear. I'll call a plumber today. He can probably come tomorrow morning."
+    },
+    {
+      "speaker": "sophie",
+      "text": "I start work at eight. Can he come after six in the evening?"
+    },
+    {
+      "speaker": "landlord",
+      "text": "I'll ask. If not, I can let him in with my key."
+    },
+    {
+      "speaker": "sophie",
+      "text": "That's fine. Also, the kitchen window doesn't close properly, and it's very cold at night."
+    },
+    {
+      "speaker": "landlord",
+      "text": "I can fix that myself. I'll come on Saturday at ten."
+    },
+    {
+      "speaker": "sophie",
+      "text": "Thank you. And one more thing. The light on the stairs is broken. It's dangerous in the dark."
+    },
+    {
+      "speaker": "landlord",
+      "text": "You're right. I'll bring a new bulb on Saturday too."
+    },
+    {
+      "speaker": "sophie",
+      "text": "Great, thanks a lot."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Since when is there no hot water?",
+      "options": [
+        "since yesterday",
+        "since Monday",
+        "since last week",
+        "since Saturday"
+      ],
+      "answer": 1,
+      "feedback": "Pazartesiden beri sıcak su yok.",
+      "evidence": "There's no hot water since Monday."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why can't Sophie be at home in the morning?",
+      "options": [
+        "She starts work at eight.",
+        "She goes to the gym.",
+        "She takes her son to school.",
+        "She is on holiday."
+      ],
+      "answer": 0,
+      "feedback": "Sabah sekizde işe başlıyor.",
+      "evidence": "I start work at eight."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is the problem with the kitchen window?",
+      "options": [
+        "It's broken.",
+        "It won't open.",
+        "It doesn't close properly.",
+        "It's dirty."
+      ],
+      "answer": 2,
+      "feedback": "Mutfak penceresi tam kapanmıyor; geceleri çok soğuk.",
+      "evidence": "the kitchen window doesn't close properly"
+    },
+    {
+      "id": "q4",
+      "prompt": "When will Mr Hill come to the flat?",
+      "options": [
+        "tomorrow morning",
+        "tonight after six",
+        "on Monday",
+        "on Saturday at ten"
+      ],
+      "answer": 3,
+      "feedback": "Cumartesi saat onda gelip pencereyi tamir edecek ve ampul getirecek.",
+      "evidence": "I'll come on Saturday at ten."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why is the broken light dangerous?",
+      "options": [
+        "It's on the stairs and it's dark.",
+        "It might start a fire.",
+        "It's very old.",
+        "The children play there."
+      ],
+      "answer": 0,
+      "feedback": "Merdivendeki ışık bozuk; karanlıkta tehlikeli.",
+      "evidence": "It's dangerous in the dark."
+    }
+  ]
+}

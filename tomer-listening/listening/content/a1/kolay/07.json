@@ -1,0 +1,91 @@
+{
+  "id": "a1-kolay-07",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "At the shop",
+  "topic": "Alışveriş",
+  "instructions": "Ben bir dükkânda alışveriş yapıyor. Kısa bir diyalog; ne aldığına ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "clerk": {
+      "name": "Shop assistant",
+      "voice": "female"
+    },
+    "ben": {
+      "name": "Ben",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "clerk",
+      "text": "Good morning. Can I help you?"
+    },
+    {
+      "speaker": "ben",
+      "text": "Yes, please. I want a bottle of water."
+    },
+    {
+      "speaker": "clerk",
+      "text": "Here you are. Anything else?"
+    },
+    {
+      "speaker": "ben",
+      "text": "And a banana, please. How much is it?"
+    },
+    {
+      "speaker": "clerk",
+      "text": "That's two pounds."
+    },
+    {
+      "speaker": "ben",
+      "text": "Thank you!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Ben want first?",
+      "options": [
+        "a banana",
+        "a bottle of water",
+        "a coffee",
+        "an apple"
+      ],
+      "answer": 1,
+      "feedback": "Ben önce bir şişe su (a bottle of water) istiyor. Muzu sonra ekliyor.",
+      "evidence": "I want a bottle of water."
+    },
+    {
+      "id": "q2",
+      "prompt": "What else does Ben buy?",
+      "options": [
+        "an apple",
+        "a sandwich",
+        "a banana",
+        "some milk"
+      ],
+      "answer": 2,
+      "feedback": "\"Anything else?\" (başka bir şey?) sorusuna muz (banana) diye cevap veriyor.",
+      "evidence": "And a banana, please."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is it?",
+      "options": [
+        "three pounds",
+        "twelve pounds",
+        "one pound",
+        "two pounds"
+      ],
+      "answer": 3,
+      "feedback": "Toplam iki pound (two pounds). \"Two\" ile \"twelve\" karışmasın.",
+      "evidence": "That's two pounds."
+    }
+  ]
+}

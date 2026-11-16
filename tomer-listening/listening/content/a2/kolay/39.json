@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-39",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My first concert",
+  "topic": "Anı anlatma",
+  "instructions": "Ben ilk konserini anlatıyor. Yaşını, kiminle gittiğini ve neler olduğunu takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ben": {
+      "name": "Ben",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ben",
+      "text": "I went to my first concert when I was fifteen."
+    },
+    {
+      "speaker": "ben",
+      "text": "It was my favourite rock band, and I went with my older sister."
+    },
+    {
+      "speaker": "ben",
+      "text": "We waited outside for three hours to get near the stage."
+    },
+    {
+      "speaker": "ben",
+      "text": "When the band came on, everyone screamed. It was so loud that I couldn't hear my sister!"
+    },
+    {
+      "speaker": "ben",
+      "text": "I bought a black T-shirt with the band's name on it. I still have it today."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old was Ben at his first concert?",
+      "options": [
+        "thirteen",
+        "fifteen",
+        "fifty",
+        "eighteen"
+      ],
+      "answer": 1,
+      "feedback": "İlk konserine on beş yaşında gitti.",
+      "evidence": "I went to my first concert when I was fifteen."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who did he go with?",
+      "options": [
+        "his older sister",
+        "his parents",
+        "his friends",
+        "his brother"
+      ],
+      "answer": 0,
+      "feedback": "Ablasıyla gitti.",
+      "evidence": "I went with my older sister."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why did they wait for three hours?",
+      "options": [
+        "The band was late.",
+        "It was raining.",
+        "to get near the stage",
+        "to buy tickets"
+      ],
+      "answer": 2,
+      "feedback": "Sahneye yakın olmak için üç saat beklediler.",
+      "evidence": "to get near the stage."
+    }
+  ]
+}

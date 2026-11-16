@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-21",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A surprise party",
+  "topic": "Kutlama (geçmiş zaman)",
+  "instructions": "Zeynep annesi için hazırladıkları sürpriz partiyi anlatıyor. Kim ne yaptı, dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "zeynep": {
+      "name": "Zeynep",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "zeynep",
+      "text": "Last Friday was my mum's fiftieth birthday, so we organised a surprise party."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "My dad took her to the cinema, and we got the house ready."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "My brother made a big cake, and I put balloons everywhere."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "Thirty people came, including her old school friends."
+    },
+    {
+      "speaker": "zeynep",
+      "text": "When she opened the door, everybody shouted \"Surprise!\""
+    },
+    {
+      "speaker": "zeynep",
+      "text": "She was so happy that she cried."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old was Zeynep's mum?",
+      "options": [
+        "forty",
+        "fifty",
+        "fifteen",
+        "thirty"
+      ],
+      "answer": 1,
+      "feedback": "Annesinin ellinci (fiftieth) doğum günüydü. Otuz, gelen kişi sayısı.",
+      "evidence": "Last Friday was my mum's fiftieth birthday"
+    },
+    {
+      "id": "q2",
+      "prompt": "Who made the cake?",
+      "options": [
+        "Zeynep",
+        "her dad",
+        "her brother",
+        "her mum's friends"
+      ],
+      "answer": 2,
+      "feedback": "Pastayı kardeşi yaptı; Zeynep balonları astı.",
+      "evidence": "My brother made a big cake"
+    },
+    {
+      "id": "q3",
+      "prompt": "How did her mum feel?",
+      "options": [
+        "She was angry.",
+        "She was tired.",
+        "She was so happy that she cried.",
+        "She was surprised but sad."
+      ],
+      "answer": 2,
+      "feedback": "Öyle mutlu oldu ki ağladı.",
+      "evidence": "She was so happy that she cried."
+    }
+  ]
+}

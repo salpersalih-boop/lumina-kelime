@@ -1,0 +1,83 @@
+{
+  "id": "a2-kolay-65",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A birthday surprise",
+  "topic": "Kutlama (geçmiş zaman)",
+  "instructions": "Omar eşinin doğum günü için hazırladığı sürprizi anlatıyor. Ne yaptığına ve sonucuna dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "s": {
+      "name": "Omar",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Last month was my wife's fortieth birthday."
+    },
+    {
+      "speaker": "s",
+      "text": "I wanted to surprise her, so I booked a weekend in Paris without telling her."
+    },
+    {
+      "speaker": "s",
+      "text": "On Friday evening, I told her to pack a bag, but I didn't say where we were going."
+    },
+    {
+      "speaker": "s",
+      "text": "When we arrived at the airport and she saw the tickets, she was so happy."
+    },
+    {
+      "speaker": "s",
+      "text": "It was the best weekend we've had for years."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How old was Omar's wife?",
+      "options": [
+        "thirty",
+        "forty",
+        "fourteen",
+        "fifty"
+      ],
+      "answer": 1,
+      "feedback": "Eşinin kırkıncı doğum günüydü.",
+      "evidence": "Last month was my wife's fortieth birthday."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where did they go?",
+      "options": [
+        "to Rome",
+        "to London",
+        "to Paris",
+        "to the seaside"
+      ],
+      "answer": 2,
+      "feedback": "Paris'te bir hafta sonu ayarladı.",
+      "evidence": "I booked a weekend in Paris"
+    },
+    {
+      "id": "q3",
+      "prompt": "When did she find out where they were going?",
+      "options": [
+        "at the airport",
+        "on Friday evening",
+        "a week before",
+        "in Paris"
+      ],
+      "answer": 0,
+      "feedback": "Havalimanında biletleri görünce öğrendi.",
+      "evidence": "When we arrived at the airport and she saw the tickets"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "a2-orta-01",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Booking a hotel room",
+  "topic": "Otel rezervasyonu",
+  "instructions": "Mr Kaya telefonda otel odası ayırtıyor. Tarihlere, oda türüne ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "hotel": {
+      "name": "Receptionist",
+      "voice": "female"
+    },
+    "kaya": {
+      "name": "Mr Kaya",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "hotel",
+      "text": "Good morning, Sea View Hotel. How can I help you?"
+    },
+    {
+      "speaker": "kaya",
+      "text": "Hello. I'd like to book a room for three nights, from the tenth of June."
+    },
+    {
+      "speaker": "hotel",
+      "text": "A single or a double room?"
+    },
+    {
+      "speaker": "kaya",
+      "text": "A double, please. I'm coming with my wife."
+    },
+    {
+      "speaker": "hotel",
+      "text": "We have a double room with a sea view for ninety pounds a night."
+    },
+    {
+      "speaker": "kaya",
+      "text": "Is breakfast included?"
+    },
+    {
+      "speaker": "hotel",
+      "text": "Yes, it is. Breakfast is from seven to ten."
+    },
+    {
+      "speaker": "kaya",
+      "text": "Great. Is there parking at the hotel?"
+    },
+    {
+      "speaker": "hotel",
+      "text": "I'm afraid not, but there's a car park next to the hotel."
+    },
+    {
+      "speaker": "kaya",
+      "text": "That's fine. I'll take the room."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many nights does Mr Kaya want to stay?",
+      "options": [
+        "two",
+        "three",
+        "ten",
+        "seven"
+      ],
+      "answer": 1,
+      "feedback": "Üç gece (three nights) kalmak istiyor. On, haziranın onu.",
+      "evidence": "I'd like to book a room for three nights"
+    },
+    {
+      "id": "q2",
+      "prompt": "Why does he want a double room?",
+      "options": [
+        "He likes big rooms.",
+        "It's cheaper.",
+        "He is coming with his wife.",
+        "He has a child."
+      ],
+      "answer": 2,
+      "feedback": "Eşiyle geliyor (I'm coming with my wife).",
+      "evidence": "I'm coming with my wife."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is the room?",
+      "options": [
+        "ninety pounds a night",
+        "nineteen pounds a night",
+        "ninety pounds for three nights",
+        "seventy pounds a night"
+      ],
+      "answer": 0,
+      "feedback": "Deniz manzaralı çift kişilik oda gecelik doksan pound.",
+      "evidence": "ninety pounds a night."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where can Mr Kaya park his car?",
+      "options": [
+        "at the hotel",
+        "on the street",
+        "at the beach",
+        "in a car park next to the hotel"
+      ],
+      "answer": 3,
+      "feedback": "Otelde otopark yok (I'm afraid not), yanındaki otoparka bırakabilir.",
+      "evidence": "there's a car park next to the hotel."
+    }
+  ]
+}

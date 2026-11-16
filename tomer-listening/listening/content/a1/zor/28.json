@@ -1,0 +1,145 @@
+{
+  "id": "a1-zor-28",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "At the police station",
+  "topic": "Kayıp cüzdan",
+  "instructions": "Adam polise kayıp cüzdanını bildiriyor. Uzun bir diyalog; düzeltilen bilgilere ve cüzdanın içindekilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "officer": {
+      "name": "Police officer",
+      "voice": "female"
+    },
+    "adam": {
+      "name": "Adam",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "officer",
+      "text": "Good afternoon. How can I help you?"
+    },
+    {
+      "speaker": "adam",
+      "text": "I lost my wallet this morning."
+    },
+    {
+      "speaker": "officer",
+      "text": "Where were you?"
+    },
+    {
+      "speaker": "adam",
+      "text": "I was on the bus, the number nine. No, sorry, the number nineteen."
+    },
+    {
+      "speaker": "officer",
+      "text": "What time was that?"
+    },
+    {
+      "speaker": "adam",
+      "text": "At about ten o'clock."
+    },
+    {
+      "speaker": "officer",
+      "text": "What does your wallet look like?"
+    },
+    {
+      "speaker": "adam",
+      "text": "It's brown and small. It's made of leather."
+    },
+    {
+      "speaker": "officer",
+      "text": "What was in it?"
+    },
+    {
+      "speaker": "adam",
+      "text": "My bank card, my ID card and about thirty pounds. And a photo of my children."
+    },
+    {
+      "speaker": "officer",
+      "text": "Was your phone in it?"
+    },
+    {
+      "speaker": "adam",
+      "text": "No, my phone is here, in my pocket."
+    },
+    {
+      "speaker": "officer",
+      "text": "OK. Please write your name and phone number here. We'll call you if we find it."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did Adam lose his wallet?",
+      "options": [
+        "last night",
+        "this morning",
+        "yesterday",
+        "this afternoon"
+      ],
+      "answer": 1,
+      "feedback": "Cüzdanını bu sabah kaybetti.",
+      "evidence": "I lost my wallet this morning."
+    },
+    {
+      "id": "q2",
+      "prompt": "Which bus was Adam on?",
+      "options": [
+        "number nine",
+        "number ninety",
+        "number nineteen",
+        "number ten"
+      ],
+      "answer": 2,
+      "feedback": "Önce dokuz der, sonra düzeltir: on dokuz.",
+      "evidence": "No, sorry, the number nineteen."
+    },
+    {
+      "id": "q3",
+      "prompt": "What colour is the wallet?",
+      "options": [
+        "brown",
+        "black",
+        "red",
+        "grey"
+      ],
+      "answer": 0,
+      "feedback": "Cüzdan kahverengi ve küçük, deriden.",
+      "evidence": "It's brown and small."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much money was in the wallet?",
+      "options": [
+        "three pounds",
+        "thirteen pounds",
+        "fifty pounds",
+        "about thirty pounds"
+      ],
+      "answer": 3,
+      "feedback": "Yaklaşık otuz pound vardı.",
+      "evidence": "about thirty pounds."
+    },
+    {
+      "id": "q5",
+      "prompt": "What was NOT in the wallet?",
+      "options": [
+        "his bank card",
+        "his phone",
+        "his ID card",
+        "a photo"
+      ],
+      "answer": 1,
+      "feedback": "Telefonu cüzdanda değil, cebinde.",
+      "evidence": "No, my phone is here, in my pocket."
+    }
+  ]
+}

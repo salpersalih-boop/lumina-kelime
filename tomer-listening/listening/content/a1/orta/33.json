@@ -1,0 +1,116 @@
+{
+  "id": "a1-orta-33",
+  "level": "A1",
+  "sublevel": "orta",
+  "title": "The lost umbrella",
+  "topic": "Kayıp eşya",
+  "instructions": "Bir kadın kafede unuttuğu şemsiyesini soruyor. Şemsiyenin tarifine ve nerede olduğuna dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "woman": {
+      "name": "Woman",
+      "voice": "female"
+    },
+    "waiter": {
+      "name": "Waiter",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "woman",
+      "text": "Excuse me. I was here this morning, and I think I left my umbrella."
+    },
+    {
+      "speaker": "waiter",
+      "text": "What colour is it?"
+    },
+    {
+      "speaker": "woman",
+      "text": "It's green with white flowers."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Where did you sit?"
+    },
+    {
+      "speaker": "woman",
+      "text": "At the table next to the window."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Let me look. Is this it?"
+    },
+    {
+      "speaker": "woman",
+      "text": "No, that one is black. Mine is green."
+    },
+    {
+      "speaker": "waiter",
+      "text": "Oh, wait. There is a green one behind the door."
+    },
+    {
+      "speaker": "woman",
+      "text": "Yes, that's my umbrella! Thank you so much."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When was the woman at the café?",
+      "options": [
+        "last night",
+        "yesterday",
+        "this morning",
+        "an hour ago"
+      ],
+      "answer": 2,
+      "feedback": "Kadın bu sabah kafedeydi.",
+      "evidence": "I was here this morning"
+    },
+    {
+      "id": "q2",
+      "prompt": "What does her umbrella look like?",
+      "options": [
+        "black with white flowers",
+        "green with white flowers",
+        "white with green flowers",
+        "green and black"
+      ],
+      "answer": 1,
+      "feedback": "Şemsiyesi yeşil, üzerinde beyaz çiçekler var.",
+      "evidence": "It's green with white flowers."
+    },
+    {
+      "id": "q3",
+      "prompt": "Where did she sit?",
+      "options": [
+        "next to the window",
+        "next to the door",
+        "outside",
+        "near the kitchen"
+      ],
+      "answer": 0,
+      "feedback": "Pencerenin yanındaki masada oturdu.",
+      "evidence": "At the table next to the window."
+    },
+    {
+      "id": "q4",
+      "prompt": "Where is the umbrella?",
+      "options": [
+        "under the table",
+        "next to the window",
+        "in the kitchen",
+        "behind the door"
+      ],
+      "answer": 3,
+      "feedback": "Siyah olan onun değil; yeşil şemsiye kapının arkasında.",
+      "evidence": "There is a green one behind the door."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-26",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "A day in the snow",
+  "topic": "Kış tatili (geçmiş zaman)",
+  "instructions": "Arda karlı bir günü anlatıyor. Ne yaptıklarına ve ne olduğuna dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "arda": {
+      "name": "Arda",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "arda",
+      "text": "Last January, it snowed for three days in my city."
+    },
+    {
+      "speaker": "arda",
+      "text": "The schools were closed, so my sister and I went to the park."
+    },
+    {
+      "speaker": "arda",
+      "text": "We built a big snowman and gave him my dad's old hat."
+    },
+    {
+      "speaker": "arda",
+      "text": "Then we had a snowball fight with our friends."
+    },
+    {
+      "speaker": "arda",
+      "text": "I fell over and hurt my arm, but it wasn't serious."
+    },
+    {
+      "speaker": "arda",
+      "text": "When we got home, Mum made us hot soup."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why didn't Arda go to school?",
+      "options": [
+        "He was ill.",
+        "The schools were closed.",
+        "It was a holiday.",
+        "He missed the bus."
+      ],
+      "answer": 1,
+      "feedback": "Kar nedeniyle okullar kapalıydı.",
+      "evidence": "The schools were closed"
+    },
+    {
+      "id": "q2",
+      "prompt": "What did they give the snowman?",
+      "options": [
+        "his dad's old hat",
+        "a scarf",
+        "his mum's hat",
+        "some gloves"
+      ],
+      "answer": 0,
+      "feedback": "Kardan adama babasının eski şapkasını giydirdiler.",
+      "evidence": "gave him my dad's old hat."
+    },
+    {
+      "id": "q3",
+      "prompt": "What happened to Arda?",
+      "options": [
+        "He lost his hat.",
+        "He got very cold.",
+        "He fell over and hurt his arm.",
+        "He broke his leg."
+      ],
+      "answer": 2,
+      "feedback": "Düşüp kolunu incitti ama ciddi değildi.",
+      "evidence": "I fell over and hurt my arm"
+    }
+  ]
+}

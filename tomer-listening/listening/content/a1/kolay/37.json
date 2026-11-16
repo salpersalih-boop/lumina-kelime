@@ -1,0 +1,79 @@
+{
+  "id": "a1-kolay-37",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "My computer",
+  "topic": "Teknoloji",
+  "instructions": "Ana bilgisayarını nasıl kullandığını anlatıyor. Kısa bir metin; ne için kullandığına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ana": {
+      "name": "Ana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ana",
+      "text": "I have a small grey computer."
+    },
+    {
+      "speaker": "ana",
+      "text": "I use it for my homework."
+    },
+    {
+      "speaker": "ana",
+      "text": "In the evening, I watch films on it."
+    },
+    {
+      "speaker": "ana",
+      "text": "I don't play games on my computer."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What colour is Ana's computer?",
+      "options": [
+        "black",
+        "white",
+        "silver",
+        "grey"
+      ],
+      "answer": 3,
+      "feedback": "Bilgisayarı küçük ve gri.",
+      "evidence": "I have a small grey computer."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Ana do in the evening?",
+      "options": [
+        "She plays games.",
+        "She watches films.",
+        "She does homework.",
+        "She writes emails."
+      ],
+      "answer": 1,
+      "feedback": "Akşamları bilgisayarda film izliyor.",
+      "evidence": "In the evening, I watch films on it."
+    },
+    {
+      "id": "q3",
+      "prompt": "What doesn't Ana do on her computer?",
+      "options": [
+        "play games",
+        "watch films",
+        "do homework",
+        "listen to music"
+      ],
+      "answer": 0,
+      "feedback": "Bilgisayarda oyun oynamıyor.",
+      "evidence": "I don't play games on my computer."
+    }
+  ]
+}

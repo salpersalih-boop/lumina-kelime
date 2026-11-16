@@ -1,0 +1,129 @@
+{
+  "id": "a2-zor-12",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Welcome to Oak Hill School",
+  "topic": "Okul tanıtımı",
+  "instructions": "Okul müdürü yeni velilere okulu tanıtıyor. Uzun bir metin; saatler, kurallar ve günleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "head": {
+      "name": "Head teacher",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "head",
+      "text": "Good evening, everyone, and welcome to Oak Hill School. I'm Mrs Turner, the head teacher."
+    },
+    {
+      "speaker": "head",
+      "text": "We have about four hundred students and thirty teachers."
+    },
+    {
+      "speaker": "head",
+      "text": "School starts at eight forty-five, but the doors open at eight fifteen. Please do not bring children before that."
+    },
+    {
+      "speaker": "head",
+      "text": "Lessons finish at three fifteen from Monday to Thursday. On Fridays, school finishes earlier, at two."
+    },
+    {
+      "speaker": "head",
+      "text": "All students must wear the school uniform: a blue jumper and grey trousers or a grey skirt."
+    },
+    {
+      "speaker": "head",
+      "text": "Students can't use mobile phones during the school day. They can keep them in their bags, but they must be off."
+    },
+    {
+      "speaker": "head",
+      "text": "Lunch is in the dining hall. It costs two pounds fifty a day, or children can bring lunch from home."
+    },
+    {
+      "speaker": "head",
+      "text": "After school, there are clubs every day: football, art, music and chess. The chess club is the most popular!"
+    },
+    {
+      "speaker": "head",
+      "text": "Our first parents' meeting is on the twentieth of October."
+    },
+    {
+      "speaker": "head",
+      "text": "Now, please follow the teachers for a tour of the building."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What time do the school doors open?",
+      "options": [
+        "at eight forty-five",
+        "at eight fifteen",
+        "at eight o'clock",
+        "at eight thirty"
+      ],
+      "answer": 1,
+      "feedback": "Kapılar sekizi çeyrek geçe (eight fifteen) açılıyor; dersler 8:45'te başlıyor.",
+      "evidence": "the doors open at eight fifteen."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does school finish on Fridays?",
+      "options": [
+        "at three fifteen",
+        "at three",
+        "at two",
+        "at one"
+      ],
+      "answer": 2,
+      "feedback": "Cuma günleri daha erken, saat ikide (at two) bitiyor.",
+      "evidence": "On Fridays, school finishes earlier, at two."
+    },
+    {
+      "id": "q3",
+      "prompt": "What colour is the school jumper?",
+      "options": [
+        "grey",
+        "blue",
+        "green",
+        "black"
+      ],
+      "answer": 1,
+      "feedback": "Kazak mavi (a blue jumper); pantolon ya da etek gri.",
+      "evidence": "a blue jumper and grey trousers or a grey skirt."
+    },
+    {
+      "id": "q4",
+      "prompt": "What is the rule about mobile phones?",
+      "options": [
+        "Students must leave them at home.",
+        "Students can use them at lunch.",
+        "Teachers keep them all day.",
+        "They must be off in their bags."
+      ],
+      "answer": 3,
+      "feedback": "Telefonlar çantada kalabilir ama kapalı (off) olmalı.",
+      "evidence": "They can keep them in their bags, but they must be off."
+    },
+    {
+      "id": "q5",
+      "prompt": "Which club is the most popular?",
+      "options": [
+        "the chess club",
+        "the football club",
+        "the art club",
+        "the music club"
+      ],
+      "answer": 0,
+      "feedback": "En popüler kulüp satranç (chess).",
+      "evidence": "The chess club is the most popular!"
+    }
+  ]
+}

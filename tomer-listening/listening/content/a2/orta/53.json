@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-53",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the train ticket machine",
+  "topic": "Yardım isteme",
+  "instructions": "Bir turist bilet makinesini kullanamıyor ve yardım istiyor. Kısa bir diyalog; fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Tourist",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Woman",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Excuse me, can you help me? The machine won't take my card."
+    },
+    {
+      "speaker": "b",
+      "text": "Some machines only take cash. Try the one by the door."
+    },
+    {
+      "speaker": "a",
+      "text": "Thanks. Do you know how much a ticket to the airport is?"
+    },
+    {
+      "speaker": "b",
+      "text": "It's about twelve pounds. The train goes every twenty minutes."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the problem?",
+      "options": [
+        "The machine won't take his card.",
+        "He has no money.",
+        "The machine is broken.",
+        "He can't read the screen."
+      ],
+      "answer": 0,
+      "feedback": "Makine kartını kabul etmiyor.",
+      "evidence": "The machine won't take my card."
+    },
+    {
+      "id": "q2",
+      "prompt": "What does the woman suggest?",
+      "options": [
+        "buying a ticket on the train",
+        "trying the machine by the door",
+        "going to the ticket office",
+        "paying cash"
+      ],
+      "answer": 1,
+      "feedback": "Kapının yanındaki makineyi denemesini öneriyor.",
+      "evidence": "Try the one by the door."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is a ticket to the airport?",
+      "options": [
+        "about two pounds",
+        "about twenty pounds",
+        "about twelve pounds",
+        "about fifteen pounds"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık on iki pound.",
+      "evidence": "It's about twelve pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "How often does the train go?",
+      "options": [
+        "every ten minutes",
+        "every hour",
+        "every twelve minutes",
+        "every twenty minutes"
+      ],
+      "answer": 3,
+      "feedback": "Yirmi dakikada bir.",
+      "evidence": "The train goes every twenty minutes."
+    }
+  ]
+}

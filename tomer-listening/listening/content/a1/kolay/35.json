@@ -1,0 +1,75 @@
+{
+  "id": "a1-kolay-35",
+  "level": "A1",
+  "sublevel": "kolay",
+  "title": "A cold day",
+  "topic": "Hava ve kıyafetler",
+  "instructions": "Kim soğuk bir günü anlatıyor. Kısa bir metin; giydiklerine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "kim": {
+      "name": "Kim",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "kim",
+      "text": "Today it is very cold. It is minus two degrees."
+    },
+    {
+      "speaker": "kim",
+      "text": "I am wearing a big coat, a hat and gloves."
+    },
+    {
+      "speaker": "kim",
+      "text": "My brother is not wearing a hat. His ears are red!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is the temperature?",
+      "options": [
+        "two degrees",
+        "minus two degrees",
+        "twelve degrees",
+        "minus twelve degrees"
+      ],
+      "answer": 1,
+      "feedback": "Sıcaklık eksi iki derece.",
+      "evidence": "It is minus two degrees."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is Kim NOT wearing?",
+      "options": [
+        "a coat",
+        "a hat",
+        "gloves",
+        "a scarf"
+      ],
+      "answer": 3,
+      "feedback": "Kaban, şapka ve eldiven giyiyor; atkıdan bahsetmiyor.",
+      "evidence": "I am wearing a big coat, a hat and gloves."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why are her brother's ears red?",
+      "options": [
+        "He is not wearing a hat.",
+        "He is ill.",
+        "He is angry.",
+        "He is hot."
+      ],
+      "answer": 0,
+      "feedback": "Kardeşi şapka takmıyor; kulakları kızarmış.",
+      "evidence": "My brother is not wearing a hat."
+    }
+  ]
+}

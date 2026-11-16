@@ -1,0 +1,116 @@
+{
+  "id": "a2-orta-12",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "I left my bag on the bus",
+  "topic": "Kayıp eşya",
+  "instructions": "Omar otobüste unuttuğu çantası için kayıp eşya bürosunu arıyor. Çantanın tarifine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "office": {
+      "name": "Lost property",
+      "voice": "female"
+    },
+    "omar": {
+      "name": "Omar",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "office",
+      "text": "Lost property office. Can I help you?"
+    },
+    {
+      "speaker": "omar",
+      "text": "Yes, please. I left my bag on the number fifteen bus this morning."
+    },
+    {
+      "speaker": "office",
+      "text": "What time were you on the bus?"
+    },
+    {
+      "speaker": "omar",
+      "text": "At about half past eight. I got off at the university."
+    },
+    {
+      "speaker": "office",
+      "text": "Can you describe the bag?"
+    },
+    {
+      "speaker": "omar",
+      "text": "It's a black backpack. There's a laptop and two notebooks inside."
+    },
+    {
+      "speaker": "office",
+      "text": "Just a moment. Yes, we have a black backpack from the number fifteen bus. Is there a name in it?"
+    },
+    {
+      "speaker": "omar",
+      "text": "Yes, my name is on the first notebook. Omar Hassan."
+    },
+    {
+      "speaker": "office",
+      "text": "That's it. You can collect it today, before five o'clock."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Which bus was Omar on?",
+      "options": [
+        "number fifty",
+        "number five",
+        "number fifteen",
+        "number eight"
+      ],
+      "answer": 2,
+      "feedback": "On beş numaralı (number fifteen) otobüs.",
+      "evidence": "on the number fifteen bus this morning."
+    },
+    {
+      "id": "q2",
+      "prompt": "Where did Omar get off?",
+      "options": [
+        "at the station",
+        "at the university",
+        "in the city centre",
+        "at the hospital"
+      ],
+      "answer": 1,
+      "feedback": "Üniversitede (at the university) indi.",
+      "evidence": "I got off at the university."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is in the bag?",
+      "options": [
+        "a laptop and two notebooks",
+        "a laptop and a phone",
+        "two books and a wallet",
+        "some clothes"
+      ],
+      "answer": 0,
+      "feedback": "Çantada bir dizüstü bilgisayar ve iki defter var.",
+      "evidence": "There's a laptop and two notebooks inside."
+    },
+    {
+      "id": "q4",
+      "prompt": "When can Omar collect the bag?",
+      "options": [
+        "tomorrow morning",
+        "after five",
+        "at half past eight",
+        "today, before five o'clock"
+      ],
+      "answer": 3,
+      "feedback": "Bugün saat beşten önce alabilir.",
+      "evidence": "You can collect it today, before five o'clock."
+    }
+  ]
+}

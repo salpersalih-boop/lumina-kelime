@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-31",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the dry cleaner's",
+  "topic": "Kuru temizleme",
+  "instructions": "Bir adam kuru temizlemeciye takım elbise bırakıyor. Kısa bir diyalog; süre ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "man": {
+      "name": "Customer",
+      "voice": "male"
+    },
+    "staff": {
+      "name": "Dry cleaner",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "man",
+      "text": "Hi. Can you clean this suit by Friday? I've got a wedding on Saturday."
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, it'll be ready on Thursday afternoon."
+    },
+    {
+      "speaker": "man",
+      "text": "Great. How much is it?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Twelve pounds. You pay when you collect it."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why does the man need his suit?",
+      "options": [
+        "for a job interview",
+        "for a wedding",
+        "for a party",
+        "for work"
+      ],
+      "answer": 1,
+      "feedback": "Cumartesi bir düğüne gidecek.",
+      "evidence": "I've got a wedding on Saturday."
+    },
+    {
+      "id": "q2",
+      "prompt": "When will the suit be ready?",
+      "options": [
+        "on Friday",
+        "on Saturday",
+        "on Thursday afternoon",
+        "tomorrow"
+      ],
+      "answer": 2,
+      "feedback": "Takım perşembe öğleden sonra hazır olacak.",
+      "evidence": "it'll be ready on Thursday afternoon."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much does it cost?",
+      "options": [
+        "twelve pounds",
+        "twenty pounds",
+        "two pounds",
+        "fifteen pounds"
+      ],
+      "answer": 0,
+      "feedback": "On iki pound.",
+      "evidence": "Twelve pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "When does the man pay?",
+      "options": [
+        "now",
+        "on Friday",
+        "on Saturday",
+        "when he collects the suit"
+      ],
+      "answer": 3,
+      "feedback": "Teslim alırken ödeyecek.",
+      "evidence": "You pay when you collect it."
+    }
+  ]
+}

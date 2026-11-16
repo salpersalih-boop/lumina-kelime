@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-22",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My grandmother's recipe",
+  "topic": "Yemek tarifi",
+  "instructions": "Ali büyükannesinin çorba tarifini anlatıyor. Malzemelere ve süreye dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ali": {
+      "name": "Ali",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ali",
+      "text": "My grandmother makes the best lentil soup in the world."
+    },
+    {
+      "speaker": "ali",
+      "text": "Last weekend, she finally taught me her recipe."
+    },
+    {
+      "speaker": "ali",
+      "text": "You need red lentils, an onion, a carrot, some butter and a little mint."
+    },
+    {
+      "speaker": "ali",
+      "text": "First, you cook the onion and the carrot in butter. Then you add the lentils and water."
+    },
+    {
+      "speaker": "ali",
+      "text": "It cooks for about thirty minutes."
+    },
+    {
+      "speaker": "ali",
+      "text": "My soup wasn't as good as hers, but my family liked it."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What soup does Ali's grandmother make?",
+      "options": [
+        "tomato soup",
+        "chicken soup",
+        "lentil soup",
+        "vegetable soup"
+      ],
+      "answer": 2,
+      "feedback": "Büyükannesi mercimek çorbası (lentil soup) yapıyor.",
+      "evidence": "the best lentil soup in the world."
+    },
+    {
+      "id": "q2",
+      "prompt": "How long does the soup cook?",
+      "options": [
+        "about thirty minutes",
+        "about thirteen minutes",
+        "about an hour",
+        "about ten minutes"
+      ],
+      "answer": 0,
+      "feedback": "Çorba yaklaşık otuz dakika pişiyor.",
+      "evidence": "It cooks for about thirty minutes."
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Ali say about his soup?",
+      "options": [
+        "It was better than his grandmother's.",
+        "Nobody liked it.",
+        "It wasn't as good as his grandmother's.",
+        "He forgot the lentils."
+      ],
+      "answer": 2,
+      "feedback": "Onunki kadar iyi değildi ama ailesi beğendi.",
+      "evidence": "My soup wasn't as good as hers"
+    }
+  ]
+}

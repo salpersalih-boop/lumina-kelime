@@ -1,0 +1,128 @@
+{
+  "id": "a2-orta-15",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "The school trip",
+  "topic": "Okul gezisi",
+  "instructions": "Öğretmen Mrs Lee ve öğrenci Sam okul gezisini konuşuyor. Uzun bir diyalog; tarih, saat, gerekenler ve fiyata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "teacher": {
+      "name": "Mrs Lee",
+      "voice": "female"
+    },
+    "sam": {
+      "name": "Sam",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sam",
+      "text": "Mrs Lee, can you tell me about the school trip?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "Of course, Sam. We're going to the Science Museum in London on the twelfth of May."
+    },
+    {
+      "speaker": "sam",
+      "text": "Is that a Friday?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "No, it's a Thursday. We're leaving school at half past seven in the morning, by coach."
+    },
+    {
+      "speaker": "sam",
+      "text": "That's early! When are we coming back?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "At about six in the evening."
+    },
+    {
+      "speaker": "sam",
+      "text": "Do we need to bring lunch?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "Yes, please bring a packed lunch and some water. There's a café, but it's expensive."
+    },
+    {
+      "speaker": "sam",
+      "text": "How much is the trip?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "It's fifteen pounds. Please give the money and the letter from your parents to me by next Monday."
+    },
+    {
+      "speaker": "sam",
+      "text": "Can I bring my camera?"
+    },
+    {
+      "speaker": "teacher",
+      "text": "Yes, but you can't take photos in some rooms."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What day is the trip?",
+      "options": [
+        "Friday",
+        "Monday",
+        "Thursday",
+        "Tuesday"
+      ],
+      "answer": 2,
+      "feedback": "Sam cuma mı diye soruyor; hayır, perşembe (Thursday).",
+      "evidence": "No, it's a Thursday."
+    },
+    {
+      "id": "q2",
+      "prompt": "How are they travelling?",
+      "options": [
+        "by coach",
+        "by train",
+        "by car",
+        "by plane"
+      ],
+      "answer": 0,
+      "feedback": "Sabah yedi buçukta otobüsle (by coach) yola çıkıyorlar.",
+      "evidence": "by coach."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why should students bring lunch?",
+      "options": [
+        "There's no café.",
+        "The café is expensive.",
+        "They are not allowed to buy food.",
+        "The café is closed on Thursdays."
+      ],
+      "answer": 1,
+      "feedback": "Kafe var ama pahalı (expensive).",
+      "evidence": "There's a café, but it's expensive."
+    },
+    {
+      "id": "q4",
+      "prompt": "When must Sam give the money?",
+      "options": [
+        "on the day of the trip",
+        "today",
+        "on the twelfth of May",
+        "by next Monday"
+      ],
+      "answer": 3,
+      "feedback": "Parayı ve veli mektubunu gelecek pazartesiye kadar (by next Monday) vermeli.",
+      "evidence": "by next Monday."
+    }
+  ]
+}

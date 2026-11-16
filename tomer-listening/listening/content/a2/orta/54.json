@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-54",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Looking for a flatmate",
+  "topic": "Ev arkadaşı",
+  "instructions": "Ben ev arkadaşı arıyor ve bir adayla konuşuyor. Kira, kurallar ve taşınma tarihine dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Ben",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Ana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "So, this is the room. What do you think?"
+    },
+    {
+      "speaker": "b",
+      "text": "It's bigger than I expected. How much is the rent?"
+    },
+    {
+      "speaker": "a",
+      "text": "Three hundred and fifty a month, plus bills. Bills are about fifty pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "That's fine. Are there any rules?"
+    },
+    {
+      "speaker": "a",
+      "text": "Just two: no smoking, and please keep the kitchen clean."
+    },
+    {
+      "speaker": "b",
+      "text": "No problem. I don't smoke."
+    },
+    {
+      "speaker": "a",
+      "text": "When would you like to move in?"
+    },
+    {
+      "speaker": "b",
+      "text": "At the start of next month, if that's OK."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Ana think about the room?",
+      "options": [
+        "It's smaller than she expected.",
+        "It's bigger than she expected.",
+        "It's too dark.",
+        "It's too expensive."
+      ],
+      "answer": 1,
+      "feedback": "Beklediğinden büyük.",
+      "evidence": "It's bigger than I expected."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much are the bills?",
+      "options": [
+        "about fifty pounds",
+        "about fifteen pounds",
+        "three hundred and fifty pounds",
+        "nothing"
+      ],
+      "answer": 0,
+      "feedback": "Faturalar yaklaşık elli pound.",
+      "evidence": "Bills are about fifty pounds."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is one of the rules?",
+      "options": [
+        "no pets",
+        "no visitors",
+        "no music after ten",
+        "no smoking"
+      ],
+      "answer": 3,
+      "feedback": "Kurallardan biri sigara içmemek.",
+      "evidence": "no smoking"
+    },
+    {
+      "id": "q4",
+      "prompt": "When does Ana want to move in?",
+      "options": [
+        "next week",
+        "tomorrow",
+        "at the start of next month",
+        "in two months"
+      ],
+      "answer": 2,
+      "feedback": "Gelecek ayın başında taşınmak istiyor.",
+      "evidence": "At the start of next month"
+    }
+  ]
+}

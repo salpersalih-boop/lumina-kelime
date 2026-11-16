@@ -1,0 +1,133 @@
+{
+  "id": "a1-zor-12",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "A weekend in London",
+  "topic": "Seyahat anlatısı",
+  "instructions": "Ali Londra'daki hafta sonunu anlatıyor. En uzun metinlerden; geçmiş zaman, günler ve planlar değişiyor. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "ali": {
+      "name": "Ali",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ali",
+      "text": "Last weekend I went to London with my friend Kerem."
+    },
+    {
+      "speaker": "ali",
+      "text": "We went by train on Friday evening. It was cheap, only twenty pounds."
+    },
+    {
+      "speaker": "ali",
+      "text": "Our hotel was small but clean, and it was near a big park."
+    },
+    {
+      "speaker": "ali",
+      "text": "On Saturday morning, we wanted to visit the Tower of London, but there were a lot of people."
+    },
+    {
+      "speaker": "ali",
+      "text": "So we went to the British Museum. It was free and very interesting."
+    },
+    {
+      "speaker": "ali",
+      "text": "For lunch, we had fish and chips. Kerem loved it, but I didn't like it very much."
+    },
+    {
+      "speaker": "ali",
+      "text": "In the afternoon, it rained, so we went shopping. I bought a red umbrella and a book."
+    },
+    {
+      "speaker": "ali",
+      "text": "On Saturday evening, we saw a musical. The tickets were expensive, but the show was fantastic."
+    },
+    {
+      "speaker": "ali",
+      "text": "On Sunday, the weather was beautiful. We walked by the river and took a lot of photos."
+    },
+    {
+      "speaker": "ali",
+      "text": "We came home on Sunday night at eleven. We were very tired, but happy."
+    },
+    {
+      "speaker": "ali",
+      "text": "Next time, I want to stay for a week."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How did Ali and Kerem go to London?",
+      "options": [
+        "by bus",
+        "by car",
+        "by plane",
+        "by train"
+      ],
+      "answer": 3,
+      "feedback": "Cuma akşamı trenle (by train) gittiler.",
+      "evidence": "We went by train on Friday evening."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why didn't they visit the Tower of London?",
+      "options": [
+        "It was closed.",
+        "There were a lot of people.",
+        "It was expensive.",
+        "It was raining."
+      ],
+      "answer": 1,
+      "feedback": "Gitmek istediler ama çok kalabalıktı (there were a lot of people), bu yüzden müzeye gittiler.",
+      "evidence": "but there were a lot of people."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did Ali think of the fish and chips?",
+      "options": [
+        "He loved it.",
+        "He didn't eat it.",
+        "He didn't like it very much.",
+        "It was expensive."
+      ],
+      "answer": 2,
+      "feedback": "Kerem bayıldı ama Ali pek sevmedi (I didn't like it very much).",
+      "evidence": "but I didn't like it very much."
+    },
+    {
+      "id": "q4",
+      "prompt": "What did Ali buy?",
+      "options": [
+        "a red umbrella and a book",
+        "a red umbrella and a T-shirt",
+        "a book and photos",
+        "tickets for a musical"
+      ],
+      "answer": 0,
+      "feedback": "Yağmur yağınca alışverişe çıktılar; kırmızı şemsiye ve kitap (a red umbrella and a book) aldı.",
+      "evidence": "I bought a red umbrella and a book."
+    },
+    {
+      "id": "q5",
+      "prompt": "What was the weather like on Sunday?",
+      "options": [
+        "rainy",
+        "cloudy",
+        "beautiful",
+        "cold and windy"
+      ],
+      "answer": 2,
+      "feedback": "Pazar günü hava çok güzeldi (beautiful). Yağmur cumartesi öğleden sonraydı.",
+      "evidence": "On Sunday, the weather was beautiful."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "a2-kolay-25",
+  "level": "A2",
+  "sublevel": "kolay",
+  "title": "My first day at work",
+  "topic": "İş (geçmiş zaman)",
+  "instructions": "Sofia yeni işindeki ilk gününü anlatıyor. Olayların sırasına ve duygularına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.9,
+    "maxPlays": null
+  },
+  "speakers": {
+    "sofia": {
+      "name": "Sofia",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sofia",
+      "text": "Yesterday was my first day at a new company."
+    },
+    {
+      "speaker": "sofia",
+      "text": "I was very nervous, so I arrived thirty minutes early."
+    },
+    {
+      "speaker": "sofia",
+      "text": "My manager, Mr Park, showed me the office and introduced me to the team."
+    },
+    {
+      "speaker": "sofia",
+      "text": "Everyone was friendly. A colleague called Ines took me to lunch."
+    },
+    {
+      "speaker": "sofia",
+      "text": "In the afternoon, I had some training on the computer system. It was a bit boring."
+    },
+    {
+      "speaker": "sofia",
+      "text": "I left at five thirty. I was tired, but I think I'm going to like this job."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why did Sofia arrive early?",
+      "options": [
+        "She was nervous.",
+        "There was no traffic.",
+        "Her manager asked her to.",
+        "She wanted breakfast."
+      ],
+      "answer": 0,
+      "feedback": "Çok gergindi, bu yüzden otuz dakika erken geldi.",
+      "evidence": "I was very nervous, so I arrived thirty minutes early."
+    },
+    {
+      "id": "q2",
+      "prompt": "Who took Sofia to lunch?",
+      "options": [
+        "Mr Park",
+        "her manager",
+        "Ines",
+        "the whole team"
+      ],
+      "answer": 2,
+      "feedback": "Ines adlı bir iş arkadaşı onu öğle yemeğine götürdü.",
+      "evidence": "A colleague called Ines took me to lunch."
+    },
+    {
+      "id": "q3",
+      "prompt": "What did Sofia think of the training?",
+      "options": [
+        "It was exciting.",
+        "It was a bit boring.",
+        "It was difficult.",
+        "It was too long."
+      ],
+      "answer": 1,
+      "feedback": "Bilgisayar eğitimi biraz sıkıcıydı.",
+      "evidence": "It was a bit boring."
+    }
+  ]
+}

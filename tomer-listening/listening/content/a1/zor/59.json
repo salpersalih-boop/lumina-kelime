@@ -1,0 +1,133 @@
+{
+  "id": "a1-zor-59",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "At the hotel reception",
+  "topic": "Otele giriş",
+  "instructions": "Bir çift otele giriş yapıyor. Uzun bir diyalog; oda, kahvaltı ve Wi-Fi bilgilerine dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "a": {
+      "name": "Receptionist",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Mrs Ross",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "Good evening. Welcome to the Sea View Hotel."
+    },
+    {
+      "speaker": "b",
+      "text": "Hello. We have a room for three nights. The name is Ross."
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, Mrs Ross. A double room with a sea view. Your room is number 305, on the third floor."
+    },
+    {
+      "speaker": "b",
+      "text": "Is breakfast included?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes. Breakfast is from seven to ten in the restaurant on the ground floor."
+    },
+    {
+      "speaker": "b",
+      "text": "And is there Wi-Fi?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, it's free. The password is SEAVIEW, all in capital letters."
+    },
+    {
+      "speaker": "b",
+      "text": "Great. What time do we need to leave the room on the last day?"
+    },
+    {
+      "speaker": "a",
+      "text": "At eleven o'clock."
+    },
+    {
+      "speaker": "b",
+      "text": "Thank you."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How many nights are they staying?",
+      "options": [
+        "two",
+        "three",
+        "four",
+        "one"
+      ],
+      "answer": 1,
+      "feedback": "Üç gece kalıyorlar.",
+      "evidence": "We have a room for three nights."
+    },
+    {
+      "id": "q2",
+      "prompt": "What is their room number?",
+      "options": [
+        "350",
+        "503",
+        "305",
+        "35"
+      ],
+      "answer": 2,
+      "feedback": "Oda numarası 305, üçüncü katta.",
+      "evidence": "Your room is number 305"
+    },
+    {
+      "id": "q3",
+      "prompt": "Where is the restaurant?",
+      "options": [
+        "on the ground floor",
+        "on the third floor",
+        "on the first floor",
+        "outside"
+      ],
+      "answer": 0,
+      "feedback": "Restoran zemin katta.",
+      "evidence": "in the restaurant on the ground floor."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the Wi-Fi?",
+      "options": [
+        "five pounds",
+        "three pounds a day",
+        "ten pounds",
+        "nothing"
+      ],
+      "answer": 3,
+      "feedback": "Wi-Fi ücretsiz.",
+      "evidence": "Yes, it's free."
+    },
+    {
+      "id": "q5",
+      "prompt": "What time must they leave the room on the last day?",
+      "options": [
+        "at ten o'clock",
+        "at eleven o'clock",
+        "at seven o'clock",
+        "at twelve o'clock"
+      ],
+      "answer": 1,
+      "feedback": "Son gün odayı saat on birde boşaltmaları gerekiyor.",
+      "evidence": "At eleven o'clock."
+    }
+  ]
+}

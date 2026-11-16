@@ -1,0 +1,117 @@
+{
+  "id": "a1-zor-23",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "The new café",
+  "topic": "Tanıtım",
+  "instructions": "Yeni bir kafenin sahibi kafesini tanıtıyor. Saatler, fiyatlar ve günleri karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "owner": {
+      "name": "Café owner",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "owner",
+      "text": "Hello! I'm Luca, and this is my new café, Luca's Corner. We opened last week."
+    },
+    {
+      "speaker": "owner",
+      "text": "We're open every day from eight in the morning to six in the evening, but on Sundays we close at three."
+    },
+    {
+      "speaker": "owner",
+      "text": "We have coffee, tea, fresh juice and homemade cakes."
+    },
+    {
+      "speaker": "owner",
+      "text": "A coffee is two pounds fifty, and a piece of cake is three pounds."
+    },
+    {
+      "speaker": "owner",
+      "text": "From Monday to Friday, coffee is half price before nine o'clock."
+    },
+    {
+      "speaker": "owner",
+      "text": "We don't have a big kitchen, so we don't make hot food. But we have sandwiches."
+    },
+    {
+      "speaker": "owner",
+      "text": "Come and visit us!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did the café open?",
+      "options": [
+        "yesterday",
+        "last week",
+        "last month",
+        "today"
+      ],
+      "answer": 1,
+      "feedback": "Kafe geçen hafta açıldı.",
+      "evidence": "We opened last week."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does the café close on Sundays?",
+      "options": [
+        "at six",
+        "at eight",
+        "at three",
+        "at five"
+      ],
+      "answer": 2,
+      "feedback": "Her gün altıda kapanıyor ama pazar üçte.",
+      "evidence": "but on Sundays we close at three."
+    },
+    {
+      "id": "q3",
+      "prompt": "How much is a piece of cake?",
+      "options": [
+        "three pounds",
+        "two pounds fifty",
+        "two pounds",
+        "three pounds fifty"
+      ],
+      "answer": 0,
+      "feedback": "Bir dilim pasta üç pound; kahve iki pound elli.",
+      "evidence": "a piece of cake is three pounds."
+    },
+    {
+      "id": "q4",
+      "prompt": "When is coffee half price?",
+      "options": [
+        "all day on Sundays",
+        "after six",
+        "every afternoon",
+        "before nine, Monday to Friday"
+      ],
+      "answer": 3,
+      "feedback": "Hafta içi saat dokuzdan önce kahve yarı fiyat.",
+      "evidence": "From Monday to Friday, coffee is half price before nine o'clock."
+    },
+    {
+      "id": "q5",
+      "prompt": "Why doesn't the café have hot food?",
+      "options": [
+        "It's expensive.",
+        "The kitchen isn't big.",
+        "Luca can't cook.",
+        "People only want cake."
+      ],
+      "answer": 1,
+      "feedback": "Mutfak büyük değil; sıcak yemek yapmıyorlar.",
+      "evidence": "We don't have a big kitchen"
+    }
+  ]
+}

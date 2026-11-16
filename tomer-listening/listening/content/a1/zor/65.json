@@ -1,0 +1,117 @@
+{
+  "id": "a1-zor-65",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "Our class trip",
+  "topic": "Okul gezisi",
+  "instructions": "Öğretmen sınıf gezisini anlatıyor. Saatleri, gerekenleri ve fiyatı karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Teacher",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "Good morning, class. Here is some information about our school trip next Tuesday."
+    },
+    {
+      "speaker": "s",
+      "text": "We are going to the city museum by train."
+    },
+    {
+      "speaker": "s",
+      "text": "Please be at the train station at eight o'clock. The train leaves at eight fifteen."
+    },
+    {
+      "speaker": "s",
+      "text": "Bring a packed lunch and a drink. There is no café at the museum."
+    },
+    {
+      "speaker": "s",
+      "text": "Wear comfortable shoes, because we are going to walk a lot."
+    },
+    {
+      "speaker": "s",
+      "text": "The trip costs five pounds. Please bring the money on Friday."
+    },
+    {
+      "speaker": "s",
+      "text": "We will come back to school at three thirty."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where are they going?",
+      "options": [
+        "to the zoo",
+        "to the city museum",
+        "to a farm",
+        "to the beach"
+      ],
+      "answer": 1,
+      "feedback": "Şehir müzesine gidiyorlar.",
+      "evidence": "We are going to the city museum by train."
+    },
+    {
+      "id": "q2",
+      "prompt": "What time does the train leave?",
+      "options": [
+        "at eight o'clock",
+        "at eight fifteen",
+        "at eight thirty",
+        "at three thirty"
+      ],
+      "answer": 1,
+      "feedback": "Tren sekizi çeyrek geçe kalkıyor.",
+      "evidence": "The train leaves at eight fifteen."
+    },
+    {
+      "id": "q3",
+      "prompt": "Why should students bring lunch?",
+      "options": [
+        "There is no café at the museum.",
+        "The café is expensive.",
+        "They will eat on the train.",
+        "Food is free."
+      ],
+      "answer": 0,
+      "feedback": "Müzede kafe yok.",
+      "evidence": "There is no café at the museum."
+    },
+    {
+      "id": "q4",
+      "prompt": "How much is the trip?",
+      "options": [
+        "three pounds",
+        "fifteen pounds",
+        "eight pounds",
+        "five pounds"
+      ],
+      "answer": 3,
+      "feedback": "Gezi beş pound.",
+      "evidence": "The trip costs five pounds."
+    },
+    {
+      "id": "q5",
+      "prompt": "When should students bring the money?",
+      "options": [
+        "on Tuesday",
+        "today",
+        "on Friday",
+        "on the trip"
+      ],
+      "answer": 2,
+      "feedback": "Parayı cuma günü getirmeliler.",
+      "evidence": "Please bring the money on Friday."
+    }
+  ]
+}

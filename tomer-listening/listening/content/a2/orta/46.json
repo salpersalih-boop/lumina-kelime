@@ -1,0 +1,112 @@
+{
+  "id": "a2-orta-46",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Buying a sofa",
+  "topic": "Mobilya alışverişi",
+  "instructions": "Bir çift mobilya mağazasında kanepe bakıyor. Renk, fiyat ve teslimata dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Staff",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Emma",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "b",
+      "text": "Hi. We're looking for a sofa for our living room."
+    },
+    {
+      "speaker": "a",
+      "text": "This grey one is very popular. It's four hundred and fifty pounds."
+    },
+    {
+      "speaker": "b",
+      "text": "It's nice, but our living room is quite small. Do you have a smaller one?"
+    },
+    {
+      "speaker": "a",
+      "text": "Yes, this blue one is smaller, and it's three hundred and twenty."
+    },
+    {
+      "speaker": "b",
+      "text": "I like the colour. How long does delivery take?"
+    },
+    {
+      "speaker": "a",
+      "text": "About two weeks. Delivery is free if you spend more than three hundred."
+    },
+    {
+      "speaker": "b",
+      "text": "Great. We'll take the blue one."
+    },
+    {
+      "speaker": "a",
+      "text": "Perfect. Can I have your address?"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Why doesn't Emma buy the grey sofa?",
+      "options": [
+        "It's too expensive.",
+        "Her living room is quite small.",
+        "She doesn't like grey.",
+        "It's not comfortable."
+      ],
+      "answer": 1,
+      "feedback": "Oturma odası küçük.",
+      "evidence": "our living room is quite small."
+    },
+    {
+      "id": "q2",
+      "prompt": "How much is the blue sofa?",
+      "options": [
+        "four hundred and fifty pounds",
+        "three hundred pounds",
+        "three hundred and twenty pounds",
+        "two hundred and thirty pounds"
+      ],
+      "answer": 2,
+      "feedback": "Mavi kanepe üç yüz yirmi pound.",
+      "evidence": "it's three hundred and twenty."
+    },
+    {
+      "id": "q3",
+      "prompt": "How long does delivery take?",
+      "options": [
+        "about two weeks",
+        "about two days",
+        "one week",
+        "a month"
+      ],
+      "answer": 0,
+      "feedback": "Teslimat yaklaşık iki hafta.",
+      "evidence": "About two weeks."
+    },
+    {
+      "id": "q4",
+      "prompt": "Why is delivery free?",
+      "options": [
+        "It's a special offer.",
+        "They live near the shop.",
+        "They pay by card.",
+        "They spend more than three hundred pounds."
+      ],
+      "answer": 3,
+      "feedback": "Üç yüz pounddan fazla harcayınca teslimat ücretsiz.",
+      "evidence": "Delivery is free if you spend more than three hundred."
+    }
+  ]
+}

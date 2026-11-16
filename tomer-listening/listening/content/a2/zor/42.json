@@ -1,0 +1,101 @@
+{
+  "id": "a2-zor-42",
+  "level": "A2",
+  "sublevel": "zor",
+  "title": "Ferry announcement",
+  "topic": "Feribot anonsu",
+  "instructions": "Limanda kısa bir feribot anonsu. Kısa ama değişen bilgilere dikkat et. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "voice": {
+      "name": "Port",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "voice",
+      "text": "Passengers for the ten thirty ferry to the island, please listen."
+    },
+    {
+      "speaker": "voice",
+      "text": "Because of strong winds, the ferry will leave at twelve fifteen."
+    },
+    {
+      "speaker": "voice",
+      "text": "Car passengers should go to lane three. Foot passengers should wait in the café."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the ferry going?",
+      "options": [
+        "to the island",
+        "to the city",
+        "to France",
+        "to the airport"
+      ],
+      "answer": 0,
+      "feedback": "Feribot adaya gidiyor.",
+      "evidence": "the ten thirty ferry to the island"
+    },
+    {
+      "id": "q2",
+      "prompt": "Why is the ferry late?",
+      "options": [
+        "There is a problem with the engine.",
+        "because of strong winds",
+        "because of fog",
+        "The captain is late."
+      ],
+      "answer": 1,
+      "feedback": "Kuvvetli rüzgâr yüzünden.",
+      "evidence": "Because of strong winds"
+    },
+    {
+      "id": "q3",
+      "prompt": "What time will the ferry leave now?",
+      "options": [
+        "at ten thirty",
+        "at twelve thirty",
+        "at twelve fifteen",
+        "at ten fifteen"
+      ],
+      "answer": 2,
+      "feedback": "Feribot on ikiyi çeyrek geçe kalkacak.",
+      "evidence": "the ferry will leave at twelve fifteen."
+    },
+    {
+      "id": "q4",
+      "prompt": "How late is the ferry?",
+      "options": [
+        "one hour",
+        "an hour and a half",
+        "two hours",
+        "an hour and three quarters"
+      ],
+      "answer": 3,
+      "feedback": "10:30'dan 12:15'e: bir saat kırk beş dakika (bir saat ve dörtte üç).",
+      "evidence": "the ferry will leave at twelve fifteen."
+    },
+    {
+      "id": "q5",
+      "prompt": "Where should foot passengers wait?",
+      "options": [
+        "in lane three",
+        "in the café",
+        "on the ferry",
+        "outside"
+      ],
+      "answer": 1,
+      "feedback": "Yaya yolcular kafede beklemeli; araçlılar üç numaralı şeride.",
+      "evidence": "Foot passengers should wait in the café."
+    }
+  ]
+}

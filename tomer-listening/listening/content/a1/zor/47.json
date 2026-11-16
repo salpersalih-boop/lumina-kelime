@@ -1,0 +1,121 @@
+{
+  "id": "a1-zor-47",
+  "level": "A1",
+  "sublevel": "zor",
+  "title": "My English family",
+  "topic": "Yurt dışında yaşam",
+  "instructions": "Elif Londra'da yanında kaldığı aileyi anlatıyor. Uzun bir metin; kim kimdir, karıştırma. Bu sette 3 dinleme hakkın var.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "s": {
+      "name": "Elif",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "s",
+      "text": "My name is Elif, and I am a student in London."
+    },
+    {
+      "speaker": "s",
+      "text": "I am from Turkey, but now I live with an English family."
+    },
+    {
+      "speaker": "s",
+      "text": "There are four people in the family: Mr and Mrs Smith and their two children, Tom and Lucy."
+    },
+    {
+      "speaker": "s",
+      "text": "Tom is ten and Lucy is seven. They are very funny."
+    },
+    {
+      "speaker": "s",
+      "text": "Mr Smith is a bus driver, and Mrs Smith works in a bank."
+    },
+    {
+      "speaker": "s",
+      "text": "I have English lessons every morning from nine to one."
+    },
+    {
+      "speaker": "s",
+      "text": "In the afternoon, I help Lucy with her homework, and Tom teaches me English words."
+    },
+    {
+      "speaker": "s",
+      "text": "The food is different here. I miss Turkish breakfast, but I love English fish and chips!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is Elif from?",
+      "options": [
+        "England",
+        "Turkey",
+        "Greece",
+        "Spain"
+      ],
+      "answer": 1,
+      "feedback": "Elif Türkiye'den.",
+      "evidence": "I am from Turkey"
+    },
+    {
+      "id": "q2",
+      "prompt": "How old is Lucy?",
+      "options": [
+        "ten",
+        "four",
+        "seven",
+        "nine"
+      ],
+      "answer": 2,
+      "feedback": "Lucy yedi yaşında; Tom on.",
+      "evidence": "Tom is ten and Lucy is seven."
+    },
+    {
+      "id": "q3",
+      "prompt": "What is Mrs Smith's job?",
+      "options": [
+        "a bus driver",
+        "a teacher",
+        "a student",
+        "She works in a bank."
+      ],
+      "answer": 3,
+      "feedback": "Bayan Smith bankada çalışıyor; otobüs şoförü Bay Smith.",
+      "evidence": "Mrs Smith works in a bank."
+    },
+    {
+      "id": "q4",
+      "prompt": "When does Elif have English lessons?",
+      "options": [
+        "every morning",
+        "every afternoon",
+        "every evening",
+        "at the weekend"
+      ],
+      "answer": 0,
+      "feedback": "Her sabah dokuzdan bire kadar.",
+      "evidence": "I have English lessons every morning"
+    },
+    {
+      "id": "q5",
+      "prompt": "What does Elif miss?",
+      "options": [
+        "fish and chips",
+        "Turkish breakfast",
+        "her school",
+        "English food"
+      ],
+      "answer": 1,
+      "feedback": "Türk kahvaltısını özlüyor.",
+      "evidence": "I miss Turkish breakfast"
+    }
+  ]
+}

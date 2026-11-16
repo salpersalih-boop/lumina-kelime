@@ -1,0 +1,132 @@
+{
+  "id": "a2-orta-20",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "Which course should I take?",
+  "topic": "Kurs seçme",
+  "instructions": "Emre bir dil okulunda kurs seçiyor. Uzun bir diyalog; seviye, gün, süre ve fiyatı takip et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "staff": {
+      "name": "School staff",
+      "voice": "female"
+    },
+    "emre": {
+      "name": "Emre",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "emre",
+      "text": "Hello. I want to improve my English. What courses do you have?"
+    },
+    {
+      "speaker": "staff",
+      "text": "We have a general English course and a business English course. What is your level?"
+    },
+    {
+      "speaker": "emre",
+      "text": "I'm not sure. I studied English at school, but that was ten years ago."
+    },
+    {
+      "speaker": "staff",
+      "text": "No problem. You can do a short test online. It takes about twenty minutes."
+    },
+    {
+      "speaker": "emre",
+      "text": "OK. Which course is better for my job? I work in a hotel."
+    },
+    {
+      "speaker": "staff",
+      "text": "Then general English is better. It focuses on speaking and listening."
+    },
+    {
+      "speaker": "emre",
+      "text": "When are the classes?"
+    },
+    {
+      "speaker": "staff",
+      "text": "There's a morning class on Monday, Wednesday and Friday, or an evening class on Tuesday and Thursday."
+    },
+    {
+      "speaker": "emre",
+      "text": "I work in the mornings, so the evening class, please."
+    },
+    {
+      "speaker": "staff",
+      "text": "The course lasts ten weeks and costs three hundred pounds."
+    },
+    {
+      "speaker": "emre",
+      "text": "Can I pay in two parts?"
+    },
+    {
+      "speaker": "staff",
+      "text": "Yes, half now and half after five weeks."
+    },
+    {
+      "speaker": "emre",
+      "text": "Great. I'll do the test tonight."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When did Emre study English at school?",
+      "options": [
+        "last year",
+        "five years ago",
+        "ten years ago",
+        "twenty years ago"
+      ],
+      "answer": 2,
+      "feedback": "Okulda on yıl önce (ten years ago) çalışmış. Yirmi, testin dakika süresi.",
+      "evidence": "but that was ten years ago."
+    },
+    {
+      "id": "q2",
+      "prompt": "Why is general English better for Emre?",
+      "options": [
+        "It's cheaper.",
+        "It focuses on speaking and listening.",
+        "It's shorter.",
+        "It has evening classes only."
+      ],
+      "answer": 1,
+      "feedback": "Otelde çalışıyor; genel İngilizce konuşma ve dinlemeye odaklanıyor.",
+      "evidence": "It focuses on speaking and listening."
+    },
+    {
+      "id": "q3",
+      "prompt": "Which days will Emre have classes?",
+      "options": [
+        "Tuesday and Thursday",
+        "Monday, Wednesday and Friday",
+        "every day",
+        "Saturday and Sunday"
+      ],
+      "answer": 0,
+      "feedback": "Sabahları çalıştığı için akşam sınıfı: salı ve perşembe.",
+      "evidence": "or an evening class on Tuesday and Thursday."
+    },
+    {
+      "id": "q4",
+      "prompt": "How will Emre pay?",
+      "options": [
+        "all now",
+        "after ten weeks",
+        "every week",
+        "half now and half after five weeks"
+      ],
+      "answer": 3,
+      "feedback": "İki taksitte: yarısı şimdi, yarısı beş hafta sonra.",
+      "evidence": "Yes, half now and half after five weeks."
+    }
+  ]
+}

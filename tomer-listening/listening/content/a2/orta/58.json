@@ -1,0 +1,96 @@
+{
+  "id": "a2-orta-58",
+  "level": "A2",
+  "sublevel": "orta",
+  "title": "At the pharmacy counter",
+  "topic": "Eczane",
+  "instructions": "Bir adam eczanede öksürük için ilaç alıyor. Kısa bir diyalog; kullanım talimatına dikkat et.",
+  "audio": {
+    "src": null,
+    "lang": "en-US",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "a": {
+      "name": "Man",
+      "voice": "male"
+    },
+    "b": {
+      "name": "Pharmacist",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "a",
+      "text": "I've had a bad cough for a week. Can you recommend something?"
+    },
+    {
+      "speaker": "b",
+      "text": "Try this syrup. Take two spoons three times a day, after meals."
+    },
+    {
+      "speaker": "a",
+      "text": "Can I drive after taking it?"
+    },
+    {
+      "speaker": "b",
+      "text": "No, it can make you sleepy. And if you're not better in five days, see a doctor."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How long has the man had a cough?",
+      "options": [
+        "three days",
+        "a week",
+        "two weeks",
+        "five days"
+      ],
+      "answer": 1,
+      "feedback": "Bir haftadır öksürüyor.",
+      "evidence": "I've had a bad cough for a week."
+    },
+    {
+      "id": "q2",
+      "prompt": "How often should he take the syrup?",
+      "options": [
+        "twice a day",
+        "once a day",
+        "three times a day",
+        "every hour"
+      ],
+      "answer": 2,
+      "feedback": "Günde üç kez, yemeklerden sonra.",
+      "evidence": "three times a day"
+    },
+    {
+      "id": "q3",
+      "prompt": "Why shouldn't he drive?",
+      "options": [
+        "It can make him sleepy.",
+        "It's dangerous for his eyes.",
+        "It makes him dizzy.",
+        "He is too ill."
+      ],
+      "answer": 0,
+      "feedback": "Şurup uyku yapabilir.",
+      "evidence": "it can make you sleepy."
+    },
+    {
+      "id": "q4",
+      "prompt": "When should he see a doctor?",
+      "options": [
+        "today",
+        "tomorrow",
+        "after a week",
+        "if he's not better in five days"
+      ],
+      "answer": 3,
+      "feedback": "Beş gün içinde iyileşmezse doktora gitmeli.",
+      "evidence": "if you're not better in five days, see a doctor."
+    }
+  ]
+}
