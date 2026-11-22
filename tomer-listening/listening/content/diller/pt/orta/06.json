@@ -1,0 +1,121 @@
+{
+  "id": "pt-orta-06",
+  "level": "PT",
+  "sublevel": "orta",
+  "title": "Na rodoviária",
+  "topic": "Ulaşım",
+  "instructions": "Otobüs terminalinde bilet alırken. Saatlere ve peron numarasına dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "fun": {
+      "name": "Funcionária",
+      "voice": "female"
+    },
+    "pas": {
+      "name": "Passageiro",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "pas",
+      "text": "Bom dia, eu queria uma passagem para Campinas."
+    },
+    {
+      "speaker": "fun",
+      "text": "Para hoje?"
+    },
+    {
+      "speaker": "pas",
+      "text": "Sim, o próximo ônibus, por favor."
+    },
+    {
+      "speaker": "fun",
+      "text": "O próximo sai às dez e quinze, mas está lotado. O seguinte é às onze e meia."
+    },
+    {
+      "speaker": "pas",
+      "text": "Tá, o das onze e meia. Quanto tempo leva?"
+    },
+    {
+      "speaker": "fun",
+      "text": "Uma hora e quarenta minutos. Chega às treze e dez."
+    },
+    {
+      "speaker": "pas",
+      "text": "E o preço?"
+    },
+    {
+      "speaker": "fun",
+      "text": "Noventa reais ida e volta, ou cinquenta só ida."
+    },
+    {
+      "speaker": "pas",
+      "text": "Só ida, eu volto de carona com um amigo."
+    },
+    {
+      "speaker": "fun",
+      "text": "Aqui está. Sai da plataforma número seis."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Yolcu nereye gidiyor?",
+      "options": [
+        "São Paulo",
+        "Campinas",
+        "Santos",
+        "Rio"
+      ],
+      "answer": 1,
+      "feedback": "Campinas’a bilet istiyor.",
+      "evidence": "eu queria uma passagem para Campinas."
+    },
+    {
+      "id": "q2",
+      "prompt": "Neden 10:15 otobüsüne binemiyor?",
+      "options": [
+        "İptal edildi",
+        "Dolu",
+        "Çok pahalı",
+        "Geç kaldı"
+      ],
+      "answer": 1,
+      "feedback": "On on beş otobüsü dolu.",
+      "evidence": "O próximo sai às dez e quinze, mas está lotado."
+    },
+    {
+      "id": "q3",
+      "prompt": "Yolculuk ne kadar sürüyor?",
+      "options": [
+        "50 dakika",
+        "1 saat",
+        "1 saat 40 dakika",
+        "2 saat"
+      ],
+      "answer": 2,
+      "feedback": "Bir saat kırk dakika.",
+      "evidence": "Uma hora e quarenta minutos."
+    },
+    {
+      "id": "q4",
+      "prompt": "Yolcu kaç real ödüyor?",
+      "options": [
+        "40",
+        "50",
+        "90",
+        "100"
+      ],
+      "answer": 1,
+      "feedback": "Sadece gidiş: elli real.",
+      "evidence": "ou cinquenta só ida."
+    }
+  ]
+}

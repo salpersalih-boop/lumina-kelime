@@ -10,7 +10,7 @@ import { backLink, lengthChip, kindChip, timeChip } from './parts.js';
  * Tek sütunlu, odaklı akış. Alt bileşenlerin yaşam döngüsünü yönetir.
  *
  * @param {HTMLElement} root
- * @param {{set: object, level: {id: string}, sublevel: {id: string, label: string},
+ * @param {{set: object, level: {id: string, label: string}, sublevel: {id: string, label: string},
  *          summary: {length: object, seconds: string, kind: string, words: number},
  *          position: {n: number, count: number},
  *          dots: {n: number, href: string, done: boolean}[],
@@ -30,7 +30,7 @@ export async function renderLesson(root, opts) {
   root.innerHTML = `
     <article class="ls-screen ls-lesson" aria-labelledby="ls-lesson-title">
       <div class="ls-lesson-top">
-        ${backLink({ name: 'sets', level: level.id, sub: sublevel.id }, `${level.id} ${sublevel.label} metinleri`)}
+        ${backLink({ name: 'sets', level: level.id, sub: sublevel.id }, `${level.label} ${sublevel.label} metinleri`)}
         <nav class="ls-pager" aria-label="Metinler arasında geçiş">
           ${pagerLink(prev, 'prev', 'Önceki metin')}
           <span>${position.n} / ${position.count}</span>
@@ -40,13 +40,13 @@ export async function renderLesson(root, opts) {
 
       <header class="ls-head">
         <div class="ls-chips">
-          <span class="ls-chip">${esc(level.id)} · ${esc(sublevel.label)}</span>
+          <span class="ls-chip">${esc(level.label)} · ${esc(sublevel.label)}</span>
           ${lengthChip(summary.length)}
           ${kindChip(summary.kind)}
           ${timeChip(summary.seconds)}
           <span class="ls-chip">${set.questions.length} soru</span>
         </div>
-        <h1 id="ls-lesson-title" lang="en" tabindex="-1">${esc(set.title)}</h1>
+        <h1 id="ls-lesson-title" lang="${esc(set.audio.lang)}" tabindex="-1">${esc(set.title)}</h1>
         ${set.instructions ? `<p class="ls-ins">${esc(set.instructions)}</p>` : ''}
       </header>
 

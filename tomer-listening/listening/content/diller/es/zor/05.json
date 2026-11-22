@@ -1,0 +1,126 @@
+{
+  "id": "es-zor-05",
+  "level": "ES",
+  "sublevel": "zor",
+  "title": "Podcast: trabajar desde casa",
+  "topic": "Podcast",
+  "instructions": "Bir podcast bölümü. Konuşmacı artıları ve eksileri sıralıyor; hangisi hangi tarafta, dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "pres": {
+      "name": "Presentadora",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "pres",
+      "text": "Hoy hablamos de trabajar desde casa, algo que hace ya casi un tercio de los trabajadores en España."
+    },
+    {
+      "speaker": "pres",
+      "text": "Lo primero que dice todo el mundo es el tiempo: sin desplazamientos, la gente gana una media de una hora al día."
+    },
+    {
+      "speaker": "pres",
+      "text": "Lo segundo es el dinero. Se gasta menos en transporte y en comer fuera, aunque sube la factura de la luz."
+    },
+    {
+      "speaker": "pres",
+      "text": "Pero no todo son ventajas. Muchas personas trabajan más horas, porque no saben cuándo parar."
+    },
+    {
+      "speaker": "pres",
+      "text": "Y el problema más grande, según los psicólogos, no es el cansancio, sino la soledad."
+    },
+    {
+      "speaker": "pres",
+      "text": "Por eso las empresas recomiendan un modelo mixto: tres días en casa y dos en la oficina."
+    },
+    {
+      "speaker": "pres",
+      "text": "Hace cinco años solo el ocho por ciento de las empresas lo ofrecía; hoy es más de la mitad."
+    },
+    {
+      "speaker": "pres",
+      "text": "Mi consejo: si trabajas desde casa, sal a la calle al menos una vez al día y cierra el ordenador a una hora fija."
+    },
+    {
+      "speaker": "pres",
+      "text": "En el próximo episodio hablaremos de cómo pedir un aumento de sueldo. Hasta entonces."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "İspanya’da çalışanların ne kadarı evden çalışıyor?",
+      "options": [
+        "Yaklaşık dörtte biri",
+        "Yaklaşık üçte biri",
+        "Yarısı",
+        "Hemen hepsi"
+      ],
+      "answer": 1,
+      "feedback": "Neredeyse üçte biri.",
+      "evidence": "algo que hace ya casi un tercio de los trabajadores en España."
+    },
+    {
+      "id": "q2",
+      "prompt": "Evden çalışanlar günde ortalama ne kadar zaman kazanıyor?",
+      "options": [
+        "Yarım saat",
+        "Bir saat",
+        "İki saat",
+        "Üç saat"
+      ],
+      "answer": 1,
+      "feedback": "Yol olmadığı için günde ortalama bir saat.",
+      "evidence": "la gente gana una media de una hora al día."
+    },
+    {
+      "id": "q3",
+      "prompt": "Evden çalışınca hangi gider artıyor?",
+      "options": [
+        "Ulaşım",
+        "Dışarıda yemek",
+        "Elektrik faturası",
+        "Kira"
+      ],
+      "answer": 2,
+      "feedback": "Elektrik faturası yükseliyor.",
+      "evidence": "aunque sube la factura de la luz."
+    },
+    {
+      "id": "q4",
+      "prompt": "Psikologlara göre en büyük sorun ne?",
+      "options": [
+        "Yorgunluk",
+        "Yalnızlık",
+        "Gürültü",
+        "Düşük maaş"
+      ],
+      "answer": 1,
+      "feedback": "Yorgunluk değil, yalnızlık.",
+      "evidence": "no es el cansancio, sino la soledad."
+    },
+    {
+      "id": "q5",
+      "prompt": "Bugün karma modeli sunan şirketlerin oranı ne?",
+      "options": [
+        "%8",
+        "%30",
+        "Yarısından fazlası",
+        "Hepsi"
+      ],
+      "answer": 2,
+      "feedback": "Beş yıl önce %8’di, bugün yarısından fazlası.",
+      "evidence": "hoy es más de la mitad."
+    }
+  ]
+}

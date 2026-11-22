@@ -1,0 +1,96 @@
+{
+  "id": "pt-kolay-04",
+  "level": "PT",
+  "sublevel": "kolay",
+  "title": "Na padaria",
+  "topic": "Sipariş",
+  "instructions": "Fırında kısa bir sipariş diyaloğu.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "at": {
+      "name": "Atendente",
+      "voice": "male"
+    },
+    "cli": {
+      "name": "Cliente",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "at",
+      "text": "Bom dia! O que a senhora deseja?"
+    },
+    {
+      "speaker": "cli",
+      "text": "Um pão de queijo e um café com leite, por favor."
+    },
+    {
+      "speaker": "at",
+      "text": "O café é pequeno ou grande?"
+    },
+    {
+      "speaker": "cli",
+      "text": "Grande, sem açúcar."
+    },
+    {
+      "speaker": "at",
+      "text": "Certo. São nove reais."
+    },
+    {
+      "speaker": "cli",
+      "text": "Aqui está. Posso pagar com cartão?"
+    },
+    {
+      "speaker": "at",
+      "text": "Pode sim. Obrigado!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Müşteri ne sipariş ediyor?",
+      "options": [
+        "Çay ve kek",
+        "Peynirli ekmek ve sütlü kahve",
+        "Portakal suyu",
+        "Sade kahve"
+      ],
+      "answer": 1,
+      "feedback": "Pão de queijo ve sütlü kahve.",
+      "evidence": "Um pão de queijo e um café com leite, por favor."
+    },
+    {
+      "id": "q2",
+      "prompt": "Kahve nasıl?",
+      "options": [
+        "Küçük, şekerli",
+        "Büyük, şekersiz",
+        "Küçük, şekersiz",
+        "Büyük, şekerli"
+      ],
+      "answer": 1,
+      "feedback": "Büyük ve şekersiz.",
+      "evidence": "Grande, sem açúcar."
+    },
+    {
+      "id": "q3",
+      "prompt": "Hesap ne kadar?",
+      "options": [
+        "7 real",
+        "8 real",
+        "9 real",
+        "10 real"
+      ],
+      "answer": 2,
+      "feedback": "Dokuz real.",
+      "evidence": "São nove reais."
+    }
+  ]
+}

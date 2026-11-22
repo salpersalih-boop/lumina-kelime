@@ -1,0 +1,121 @@
+{
+  "id": "pt-orta-09",
+  "level": "PT",
+  "sublevel": "orta",
+  "title": "Como chego ao museu?",
+  "topic": "Toplu taşıma",
+  "instructions": "Bir turist müzeye nasıl gideceğini soruyor.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tur": {
+      "name": "Turista",
+      "voice": "male"
+    },
+    "inf": {
+      "name": "Informações",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tur",
+      "text": "Oi, como eu faço para chegar ao Museu do Amanhã?"
+    },
+    {
+      "speaker": "inf",
+      "text": "O mais fácil é o VLT. Pegue a linha um até a Praça Mauá."
+    },
+    {
+      "speaker": "tur",
+      "text": "Preciso trocar de linha?"
+    },
+    {
+      "speaker": "inf",
+      "text": "Não, é direto. São cinco paradas, uns quinze minutos."
+    },
+    {
+      "speaker": "tur",
+      "text": "E de ônibus?"
+    },
+    {
+      "speaker": "inf",
+      "text": "O ônibus vinte e três também vai, mas com o trânsito leva quarenta minutos."
+    },
+    {
+      "speaker": "tur",
+      "text": "Então vou de VLT. Quanto custa a passagem?"
+    },
+    {
+      "speaker": "inf",
+      "text": "Quatro reais e trinta. Pode pagar com cartão na máquina."
+    },
+    {
+      "speaker": "tur",
+      "text": "Obrigado. Ah, o museu abre hoje?"
+    },
+    {
+      "speaker": "inf",
+      "text": "Abre, até as seis. E às terças a entrada é gratuita."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Hangi VLT hattını kullanmalı?",
+      "options": [
+        "Hat 1",
+        "Hat 2",
+        "Hat 3",
+        "Hat 23"
+      ],
+      "answer": 0,
+      "feedback": "Bir numaralı hat, Praça Mauá’ya kadar.",
+      "evidence": "Pegue a linha um até a Praça Mauá."
+    },
+    {
+      "id": "q2",
+      "prompt": "VLT ile yolculuk ne kadar sürüyor?",
+      "options": [
+        "Beş dakika",
+        "On beş dakika",
+        "Kırk dakika",
+        "Bir saat"
+      ],
+      "answer": 1,
+      "feedback": "Beş durak, yaklaşık on beş dakika.",
+      "evidence": "São cinco paradas, uns quinze minutos."
+    },
+    {
+      "id": "q3",
+      "prompt": "Otobüsün dezavantajı ne?",
+      "options": [
+        "Pahalı",
+        "Trafik yüzünden yavaş",
+        "Müzeye gitmiyor",
+        "Kalabalık"
+      ],
+      "answer": 1,
+      "feedback": "Trafikle kırk dakika sürüyor.",
+      "evidence": "mas com o trânsito leva quarenta minutos."
+    },
+    {
+      "id": "q4",
+      "prompt": "Müze ne zaman ücretsiz?",
+      "options": [
+        "Pazartesi",
+        "Salı",
+        "Hafta sonu",
+        "Saat altıdan sonra"
+      ],
+      "answer": 1,
+      "feedback": "Salıları giriş ücretsiz.",
+      "evidence": "E às terças a entrada é gratuita."
+    }
+  ]
+}

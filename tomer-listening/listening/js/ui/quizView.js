@@ -12,19 +12,20 @@ import { esc, listen, ICONS } from './dom.js';
  */
 export function mountQuiz(root, set, { onGraded, onRetry, next }) {
   const { questions } = set;
+  const qLang = set.questionLang ?? set.audio.lang; // sorular hedef dilde ya da Türkçe olabilir
   let confirmEmpty = false;
   let graded = false;
 
   const renderQuestion = (q, qi) => `
     <li class="ls-q" data-q="${esc(q.id)}">
       <fieldset>
-        <legend><span class="ls-qn">${qi + 1}</span><span lang="en">${esc(q.prompt)}</span></legend>
+        <legend><span class="ls-qn">${qi + 1}</span><span lang="${esc(qLang)}">${esc(q.prompt)}</span></legend>
         <div class="ls-opts">
           ${q.options.map((opt, oi) => `
             <label class="ls-opt">
               <input type="radio" name="${esc(q.id)}" value="${oi}">
               <span class="ls-letter">${optionLetter(oi)}</span>
-              <span class="ls-opt-text" lang="en">${esc(opt)}</span>
+              <span class="ls-opt-text" lang="${esc(qLang)}">${esc(opt)}</span>
               <span class="ls-mark" aria-hidden="true"></span>
             </label>`).join('')}
         </div>
@@ -93,7 +94,7 @@ export function mountQuiz(root, set, { onGraded, onRetry, next }) {
         <div class="ls-fb ${item.isCorrect ? 'ok' : 'no'}">
           <p class="ls-fb-status">${status}</p>
           <p class="ls-fb-text">${esc(q.feedback)}</p>
-          <p class="ls-fb-quote"><span>Metinde geçen cümle</span><q lang="en">${esc(q.evidence)}</q></p>
+          <p class="ls-fb-quote"><span>Metinde geçen cümle</span><q lang="${esc(set.audio.lang)}">${esc(q.evidence)}</q></p>
         </div>`);
     });
 

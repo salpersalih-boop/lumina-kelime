@@ -1,0 +1,100 @@
+{
+  "id": "pt-kolay-07",
+  "level": "PT",
+  "sublevel": "kolay",
+  "title": "Onde fica o banco?",
+  "topic": "Yol tarifi",
+  "instructions": "Sokakta kısa bir yol tarifi.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tur": {
+      "name": "Turista",
+      "voice": "female"
+    },
+    "mor": {
+      "name": "Morador",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tur",
+      "text": "Com licença, tem um banco perto daqui?"
+    },
+    {
+      "speaker": "mor",
+      "text": "Tem sim. Siga em frente por esta rua."
+    },
+    {
+      "speaker": "mor",
+      "text": "No segundo sinal, vire à direita."
+    },
+    {
+      "speaker": "mor",
+      "text": "O banco fica ao lado da farmácia, em frente à praça."
+    },
+    {
+      "speaker": "tur",
+      "text": "É longe?"
+    },
+    {
+      "speaker": "mor",
+      "text": "Não, uns dez minutos a pé."
+    },
+    {
+      "speaker": "tur",
+      "text": "Muito obrigada!"
+    },
+    {
+      "speaker": "mor",
+      "text": "De nada. Boa sorte!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "İkinci trafik ışığında ne yapmalı?",
+      "options": [
+        "Sola dönmeli",
+        "Sağa dönmeli",
+        "Düz gitmeli",
+        "Geri dönmeli"
+      ],
+      "answer": 1,
+      "feedback": "İkinci ışıkta sağa dönecek.",
+      "evidence": "No segundo sinal, vire à direita."
+    },
+    {
+      "id": "q2",
+      "prompt": "Banka neyin yanında?",
+      "options": [
+        "Eczanenin",
+        "Okulun",
+        "Restoranın",
+        "Otelin"
+      ],
+      "answer": 0,
+      "feedback": "Eczanenin yanında, meydanın karşısında.",
+      "evidence": "O banco fica ao lado da farmácia, em frente à praça."
+    },
+    {
+      "id": "q3",
+      "prompt": "Banka ne kadar uzakta?",
+      "options": [
+        "Beş dakika",
+        "Yürüyerek on dakika",
+        "Çok uzak",
+        "Otobüsle yarım saat"
+      ],
+      "answer": 1,
+      "feedback": "Yürüyerek yaklaşık on dakika.",
+      "evidence": "Não, uns dez minutos a pé."
+    }
+  ]
+}

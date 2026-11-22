@@ -505,7 +505,8 @@ function authGoToDashboard(user) {
     const topBar = document.getElementById('globalTopBar');
     if (topBar) topBar.classList.remove('hidden');
     NotificationManager.addNotification('Hoş Geldiniz', `${user.name || user.email} ile oturum açıldı.`, '👋');
-    showScreen('languageScreen');
+    if (typeof Router !== 'undefined') Router.afterLogin();   // giriş öncesi açılan adres varsa oraya
+    else showScreen('languageScreen');
 }
 
 document.addEventListener('keydown', function (e) {

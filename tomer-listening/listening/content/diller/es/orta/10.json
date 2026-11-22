@@ -1,0 +1,125 @@
+{
+  "id": "es-orta-10",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "Organizando la fiesta",
+  "topic": "Kutlama",
+  "instructions": "İki ev arkadaşı doğum günü partisi hazırlıyor. Kim ne yapacak, dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "teo": {
+      "name": "Teo",
+      "voice": "male"
+    },
+    "vera": {
+      "name": "Vera",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "vera",
+      "text": "El sábado es el cumpleaños de Ana. ¿Hacemos una fiesta sorpresa?"
+    },
+    {
+      "speaker": "teo",
+      "text": "Buena idea. ¿En casa o en un bar?"
+    },
+    {
+      "speaker": "vera",
+      "text": "En casa, es más barato. Yo me encargo de la comida."
+    },
+    {
+      "speaker": "teo",
+      "text": "Entonces yo compro las bebidas y la tarta."
+    },
+    {
+      "speaker": "vera",
+      "text": "La tarta de chocolate, es su favorita. Y sin frutos secos, Ana es alérgica."
+    },
+    {
+      "speaker": "teo",
+      "text": "Vale, lo apunto. ¿A quién invitamos?"
+    },
+    {
+      "speaker": "vera",
+      "text": "A los del trabajo y a su hermano. Unas quince personas."
+    },
+    {
+      "speaker": "teo",
+      "text": "¿Y cómo la traemos a casa sin que sospeche?"
+    },
+    {
+      "speaker": "vera",
+      "text": "Su hermano la lleva al cine y vuelven a las nueve."
+    },
+    {
+      "speaker": "teo",
+      "text": "Perfecto. Entonces todos aquí a las ocho y media, con las luces apagadas."
+    },
+    {
+      "speaker": "vera",
+      "text": "Y recuerda: no publiques nada en redes sociales."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Parti nerede olacak?",
+      "options": [
+        "Barda",
+        "Evde",
+        "Sinemada",
+        "Restoranda"
+      ],
+      "answer": 1,
+      "feedback": "Evde, daha ucuz.",
+      "evidence": "En casa, es más barato."
+    },
+    {
+      "id": "q2",
+      "prompt": "Teo ne alacak?",
+      "options": [
+        "Yemek",
+        "Hediye",
+        "İçecekler ve pasta",
+        "Balonlar"
+      ],
+      "answer": 2,
+      "feedback": "Teo içecekleri ve pastayı alacak.",
+      "evidence": "Entonces yo compro las bebidas y la tarta."
+    },
+    {
+      "id": "q3",
+      "prompt": "Pasta neden kuruyemişsiz olmalı?",
+      "options": [
+        "Ana sevmiyor",
+        "Ana alerjik",
+        "Çok pahalı",
+        "Bulunmuyor"
+      ],
+      "answer": 1,
+      "feedback": "Ana kuruyemişe alerjik.",
+      "evidence": "Y sin frutos secos, Ana es alérgica."
+    },
+    {
+      "id": "q4",
+      "prompt": "Konuklar saat kaçta gelmeli?",
+      "options": [
+        "Sekiz",
+        "Sekiz buçuk",
+        "Dokuz",
+        "Dokuz buçuk"
+      ],
+      "answer": 1,
+      "feedback": "Ana dokuzda dönüyor; herkes sekiz buçukta gelmeli.",
+      "evidence": "Entonces todos aquí a las ocho y media, con las luces apagadas."
+    }
+  ]
+}

@@ -81,7 +81,7 @@ function renderLanguageCards() {
         </div>
         <div class="lang-info">
           <h3>${escapeHtml(l.label)}</h3>
-          <p id="langDesc${sfx}">${l.soon ? 'İçerik hazırlanıyor' : l.code === 'dersler' ? 'Ders notları + normal ve klasik sorular' : l.module ? 'Kelime + Gramer · kişisel çalışma' : 'Yükleniyor...'}</p>
+          <p id="langDesc${sfx}">${l.soon ? 'İçerik hazırlanıyor' : l.code === 'dersler' ? 'Ders notları + normal ve klasik sorular' : l.code === 'listening' ? 'İspanyolca · Portekizce · dinle ve cevapla' : l.module ? 'Kelime + Gramer · kişisel çalışma' : 'Yükleniyor...'}</p>
         </div>
         ${l.soon ? '<span class="soon-badge">Yakında</span>' : ''}
       </button>`;
@@ -93,6 +93,7 @@ function renderLanguageCards() {
             if (!lang || btn.classList.contains('is-soon')) return;
             if (lang.code === 'tomer') TomerModule.open();
             else if (lang.code === 'dersler') DerslerModule.open();
+            else if (lang.code === 'listening') location.assign(Router.LISTENING + 'languages.html');
             else selectLanguage(lang.code);
         });
     });

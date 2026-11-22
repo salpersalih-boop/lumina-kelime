@@ -1,0 +1,92 @@
+{
+  "id": "pt-kolay-05",
+  "level": "PT",
+  "sublevel": "kolay",
+  "title": "Minha família",
+  "topic": "Aile",
+  "instructions": "Gustavo ailesini tanıtıyor. Kim ne iş yapıyor, dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "gus": {
+      "name": "Gustavo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "gus",
+      "text": "Vou falar da minha família."
+    },
+    {
+      "speaker": "gus",
+      "text": "Meu pai se chama Roberto e é motorista de ônibus. Ele trabalha de manhã bem cedo."
+    },
+    {
+      "speaker": "gus",
+      "text": "Minha mãe se chama Lúcia e é enfermeira em um hospital."
+    },
+    {
+      "speaker": "gus",
+      "text": "Tenho uma irmã, a Camila. Ela tem dezesseis anos e adora desenhar."
+    },
+    {
+      "speaker": "gus",
+      "text": "Meu avô mora com a gente. Ele tem setenta anos e cozinha muito bem."
+    },
+    {
+      "speaker": "gus",
+      "text": "Também temos uma cachorra chamada Mel."
+    },
+    {
+      "speaker": "gus",
+      "text": "Aos domingos vamos juntos à praia ou ao parque."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Gustavo’nun babası ne iş yapıyor?",
+      "options": [
+        "Hemşire",
+        "Otobüs şoförü",
+        "Aşçı",
+        "Öğretmen"
+      ],
+      "answer": 1,
+      "feedback": "Babası otobüs şoförü.",
+      "evidence": "Meu pai se chama Roberto e é motorista de ônibus."
+    },
+    {
+      "id": "q2",
+      "prompt": "Camila kaç yaşında?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "answer": 2,
+      "feedback": "On altı yaşında ve çizim yapmayı seviyor.",
+      "evidence": "Ela tem dezesseis anos e adora desenhar."
+    },
+    {
+      "id": "q3",
+      "prompt": "Evde kim çok iyi yemek yapıyor?",
+      "options": [
+        "Anne",
+        "Baba",
+        "Büyükbaba",
+        "Camila"
+      ],
+      "answer": 2,
+      "feedback": "Yetmiş yaşındaki büyükbaba çok iyi yemek yapıyor.",
+      "evidence": "Ele tem setenta anos e cozinha muito bem."
+    }
+  ]
+}

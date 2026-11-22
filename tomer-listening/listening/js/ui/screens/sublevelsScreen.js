@@ -5,17 +5,17 @@ import { backLink, difficultyBars, ring } from './parts.js';
 /**
  * Seçilen seviyenin zorlukları: Kolay / Orta / Zor kartları.
  * @param {HTMLElement} root
- * @param {{level: {id: string, name: string},
+ * @param {{level: {id: string, name: string, flag?: string, app: {short: string, groupLabel: string}},
  *          subs: {id: string, label: string, rank: number, hint: string, details: string[],
  *                 total: number, done: number, questions: number}[]}} model
  */
 export function renderSublevels(root, { level, subs }) {
   root.innerHTML = `
     <div class="ls-screen">
-      ${backLink({ name: 'levels' }, 'Seviyeler')}
+      ${backLink({ name: 'levels' }, level.app.groupLabel)}
       <header class="ls-head">
-        <span class="ls-kicker">Dinleme</span>
-        <h1 tabindex="-1">${esc(level.id)} · <span class="ls-grad-text">${esc(level.name)}</span></h1>
+        <span class="ls-kicker">${esc(level.app.short)}</span>
+        <h1 tabindex="-1">${level.flag ? `<span aria-hidden="true">${esc(level.flag)}</span> ` : `${esc(level.id)} · `}<span class="ls-grad-text">${esc(level.name)}</span></h1>
         <p>Bir zorluk seç. Her zorlukta kısa, orta ve uzun metinler karışık; böylece hem hızlı konuşmalara hem uzun anlatımlara alışırsın.</p>
       </header>
       <ul class="ls-grid ls-grid-subs">

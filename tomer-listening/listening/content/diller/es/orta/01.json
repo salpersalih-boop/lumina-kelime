@@ -1,0 +1,129 @@
+{
+  "id": "es-orta-01",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "Reserva en el restaurante",
+  "topic": "Rezervasyon",
+  "instructions": "Telefonda restoran rezervasyonu. Gün, saat ve kişi sayısına dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "rec": {
+      "name": "Recepcionista",
+      "voice": "female"
+    },
+    "luis": {
+      "name": "Luis",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "rec",
+      "text": "Restaurante La Plaza, buenas tardes."
+    },
+    {
+      "speaker": "luis",
+      "text": "Hola, quería reservar una mesa para el sábado."
+    },
+    {
+      "speaker": "rec",
+      "text": "¿Para cuántas personas?"
+    },
+    {
+      "speaker": "luis",
+      "text": "Somos seis. Bueno, siete, viene también mi hermana."
+    },
+    {
+      "speaker": "rec",
+      "text": "Siete personas. ¿A qué hora?"
+    },
+    {
+      "speaker": "luis",
+      "text": "A las nueve, si es posible."
+    },
+    {
+      "speaker": "rec",
+      "text": "A las nueve está todo lleno. Tengo mesa a las ocho y media o a las diez."
+    },
+    {
+      "speaker": "luis",
+      "text": "Entonces a las ocho y media."
+    },
+    {
+      "speaker": "rec",
+      "text": "Perfecto. ¿A nombre de quién?"
+    },
+    {
+      "speaker": "luis",
+      "text": "Luis Ortega. Una pregunta: ¿tienen menú vegetariano?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Sí, tenemos varios platos sin carne."
+    },
+    {
+      "speaker": "luis",
+      "text": "Estupendo, gracias."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Rezervasyon hangi gün için?",
+      "options": [
+        "Cuma",
+        "Cumartesi",
+        "Pazar",
+        "Pazartesi"
+      ],
+      "answer": 1,
+      "feedback": "Cumartesi için masa istiyor.",
+      "evidence": "quería reservar una mesa para el sábado."
+    },
+    {
+      "id": "q2",
+      "prompt": "Kaç kişi gelecek?",
+      "options": [
+        "Beş",
+        "Altı",
+        "Yedi",
+        "Sekiz"
+      ],
+      "answer": 2,
+      "feedback": "Önce altı diyor, sonra kız kardeşiyle yedi kişi oluyorlar.",
+      "evidence": "Somos seis. Bueno, siete, viene también mi hermana."
+    },
+    {
+      "id": "q3",
+      "prompt": "Masa saat kaça ayarlandı?",
+      "options": [
+        "Sekiz",
+        "Sekiz buçuk",
+        "Dokuz",
+        "On"
+      ],
+      "answer": 1,
+      "feedback": "Dokuz doluydu; sekiz buçuğu seçti.",
+      "evidence": "Entonces a las ocho y media."
+    },
+    {
+      "id": "q4",
+      "prompt": "Luis en son ne soruyor?",
+      "options": [
+        "Park yeri var mı",
+        "Vejetaryen menü var mı",
+        "Kartla ödeme olur mu",
+        "Çocuk sandalyesi var mı"
+      ],
+      "answer": 1,
+      "feedback": "Vejetaryen menü olup olmadığını soruyor.",
+      "evidence": "¿tienen menú vegetariano?"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "es-orta-05",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "Buscando piso",
+  "topic": "Ev kiralama",
+  "instructions": "Bir emlakçıyla telefon görüşmesi. Daireye ilişkin ayrıntılara dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ag": {
+      "name": "Agente",
+      "voice": "male"
+    },
+    "sof": {
+      "name": "Sofía",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "sof",
+      "text": "Hola, llamo por el piso del anuncio, el de la calle Mayor."
+    },
+    {
+      "speaker": "ag",
+      "text": "Sí. Es un piso de dos habitaciones, en un tercer piso con ascensor."
+    },
+    {
+      "speaker": "sof",
+      "text": "¿Cuánto es el alquiler?"
+    },
+    {
+      "speaker": "ag",
+      "text": "Setecientos euros al mes, con el agua incluida. La luz y el gas aparte."
+    },
+    {
+      "speaker": "sof",
+      "text": "¿Está amueblado?"
+    },
+    {
+      "speaker": "ag",
+      "text": "Sí, tiene cocina completa, sofá y camas. No tiene lavadora."
+    },
+    {
+      "speaker": "sof",
+      "text": "¿Se admiten mascotas? Tengo un gato."
+    },
+    {
+      "speaker": "ag",
+      "text": "Lo siento, el dueño no quiere animales."
+    },
+    {
+      "speaker": "sof",
+      "text": "Qué pena. Entonces no me interesa. Gracias de todas formas."
+    },
+    {
+      "speaker": "ag",
+      "text": "Si quiere, tengo otro piso en la misma zona donde sí aceptan gatos. Es un poco más caro, ochocientos."
+    },
+    {
+      "speaker": "sof",
+      "text": "Vale, ¿puedo verlo mañana por la tarde?"
+    },
+    {
+      "speaker": "ag",
+      "text": "Claro, a las cinco en el portal."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "İlk dairenin kirası ne kadar?",
+      "options": [
+        "600 €",
+        "700 €",
+        "800 €",
+        "900 €"
+      ],
+      "answer": 1,
+      "feedback": "Yedi yüz euro, su dahil.",
+      "evidence": "Setecientos euros al mes, con el agua incluida."
+    },
+    {
+      "id": "q2",
+      "prompt": "Dairede ne yok?",
+      "options": [
+        "Mutfak",
+        "Kanepe",
+        "Çamaşır makinesi",
+        "Asansör"
+      ],
+      "answer": 2,
+      "feedback": "Mobilyalı ama çamaşır makinesi yok.",
+      "evidence": "No tiene lavadora."
+    },
+    {
+      "id": "q3",
+      "prompt": "Sofía ilk daireyi neden istemiyor?",
+      "options": [
+        "Çok pahalı",
+        "Asansör yok",
+        "Kedi kabul edilmiyor",
+        "Merkeze uzak"
+      ],
+      "answer": 2,
+      "feedback": "Ev sahibi hayvan istemiyor, Sofía’nın kedisi var.",
+      "evidence": "el dueño no quiere animales."
+    },
+    {
+      "id": "q4",
+      "prompt": "İkinci daireyi ne zaman görecek?",
+      "options": [
+        "Bugün sabah",
+        "Yarın öğleden sonra saat beşte",
+        "Cumartesi",
+        "Haftaya"
+      ],
+      "answer": 1,
+      "feedback": "Yarın öğleden sonra saat beşte bina girişinde.",
+      "evidence": "Claro, a las cinco en el portal."
+    }
+  ]
+}

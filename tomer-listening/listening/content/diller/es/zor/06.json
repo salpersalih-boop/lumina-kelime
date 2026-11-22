@@ -1,0 +1,142 @@
+{
+  "id": "es-zor-06",
+  "level": "ES",
+  "sublevel": "zor",
+  "title": "Reclamación en el hotel",
+  "topic": "Şikâyet",
+  "instructions": "Resepsiyonda bir şikâyet. Oda numaralarına ve çözüme dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "rec": {
+      "name": "Recepcionista",
+      "voice": "male"
+    },
+    "hu": {
+      "name": "Huésped",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "hu",
+      "text": "Buenas noches. Estoy en la habitación trescientos doce y tengo varios problemas."
+    },
+    {
+      "speaker": "rec",
+      "text": "Dígame, por favor."
+    },
+    {
+      "speaker": "hu",
+      "text": "Primero, el aire acondicionado no funciona y hace muchísimo calor."
+    },
+    {
+      "speaker": "hu",
+      "text": "Segundo, reservé una habitación con vistas al mar y la mía da al aparcamiento."
+    },
+    {
+      "speaker": "rec",
+      "text": "Lo siento mucho. Déjeme comprobar... Tiene razón, en la reserva pone vistas al mar."
+    },
+    {
+      "speaker": "rec",
+      "text": "Puedo cambiarla a la cuatrocientos ocho, en la última planta. Tiene vistas y el aire funciona."
+    },
+    {
+      "speaker": "hu",
+      "text": "¿Y mi equipaje?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Un compañero lo sube ahora mismo. Además, el desayuno de mañana corre por cuenta del hotel."
+    },
+    {
+      "speaker": "hu",
+      "text": "Bueno, gracias. ¿A qué hora es el desayuno?"
+    },
+    {
+      "speaker": "rec",
+      "text": "De siete a diez y media, en el restaurante de la planta baja."
+    },
+    {
+      "speaker": "hu",
+      "text": "Perfecto. Y otra cosa: el wifi de la habitación es muy lento."
+    },
+    {
+      "speaker": "rec",
+      "text": "En la cuatrocientos ocho la señal es mejor, pero si sigue lento, llámeme al cero."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Konuk şu an hangi odada?",
+      "options": [
+        "308",
+        "312",
+        "408",
+        "412"
+      ],
+      "answer": 1,
+      "feedback": "Üç yüz on iki numaralı odada.",
+      "evidence": "Estoy en la habitación trescientos doce"
+    },
+    {
+      "id": "q2",
+      "prompt": "İlk sorun ne?",
+      "options": [
+        "Wifi yavaş",
+        "Klima çalışmıyor",
+        "Oda kirli",
+        "Gürültü var"
+      ],
+      "answer": 1,
+      "feedback": "Klima çalışmıyor ve çok sıcak.",
+      "evidence": "el aire acondicionado no funciona y hace muchísimo calor."
+    },
+    {
+      "id": "q3",
+      "prompt": "Odanın manzarası neye bakıyor?",
+      "options": [
+        "Denize",
+        "Havuza",
+        "Otoparka",
+        "Bahçeye"
+      ],
+      "answer": 2,
+      "feedback": "Deniz manzarası yerine otoparka bakıyor.",
+      "evidence": "la mía da al aparcamiento."
+    },
+    {
+      "id": "q4",
+      "prompt": "Otel ek olarak ne sunuyor?",
+      "options": [
+        "İndirim",
+        "Ücretsiz kahvaltı",
+        "Ücretsiz taksi",
+        "Masaj"
+      ],
+      "answer": 1,
+      "feedback": "Yarınki kahvaltı otelden.",
+      "evidence": "el desayuno de mañana corre por cuenta del hotel."
+    },
+    {
+      "id": "q5",
+      "prompt": "Kahvaltı saat kaça kadar?",
+      "options": [
+        "Dokuz",
+        "On",
+        "On buçuk",
+        "On bir"
+      ],
+      "answer": 2,
+      "feedback": "Yediden on buçuğa kadar.",
+      "evidence": "De siete a diez y media, en el restaurante de la planta baja."
+    }
+  ]
+}

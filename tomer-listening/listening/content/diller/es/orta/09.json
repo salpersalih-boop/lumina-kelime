@@ -1,0 +1,121 @@
+{
+  "id": "es-orta-09",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "¿Cómo llego al museo?",
+  "topic": "Toplu taşıma",
+  "instructions": "Bir turist müzeye nasıl gideceğini soruyor.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tur": {
+      "name": "Turista",
+      "voice": "female"
+    },
+    "inf": {
+      "name": "Información",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tur",
+      "text": "Hola, ¿cómo puedo ir al Museo del Prado desde aquí?"
+    },
+    {
+      "speaker": "inf",
+      "text": "Lo más fácil es el metro. Tome la línea dos hasta Banco de España."
+    },
+    {
+      "speaker": "tur",
+      "text": "¿Hay que cambiar de línea?"
+    },
+    {
+      "speaker": "inf",
+      "text": "No, es directo. Son cuatro paradas, unos diez minutos."
+    },
+    {
+      "speaker": "tur",
+      "text": "¿Y en autobús?"
+    },
+    {
+      "speaker": "inf",
+      "text": "El autobús catorce también va, pero con el tráfico tarda media hora."
+    },
+    {
+      "speaker": "tur",
+      "text": "Entonces el metro. ¿Cuánto cuesta el billete?"
+    },
+    {
+      "speaker": "inf",
+      "text": "Un euro con cincuenta. Puede comprarlo en la máquina."
+    },
+    {
+      "speaker": "tur",
+      "text": "Gracias. Ah, ¿el museo abre hoy?"
+    },
+    {
+      "speaker": "inf",
+      "text": "Sí, hasta las ocho. Y a partir de las seis la entrada es gratis."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Hangi metro hattını kullanmalı?",
+      "options": [
+        "Hat 1",
+        "Hat 2",
+        "Hat 4",
+        "Hat 14"
+      ],
+      "answer": 1,
+      "feedback": "İki numaralı hat, Banco de España’ya kadar.",
+      "evidence": "Tome la línea dos hasta Banco de España."
+    },
+    {
+      "id": "q2",
+      "prompt": "Metroyla yolculuk ne kadar sürüyor?",
+      "options": [
+        "Beş dakika",
+        "On dakika",
+        "Yarım saat",
+        "Bir saat"
+      ],
+      "answer": 1,
+      "feedback": "Dört durak, yaklaşık on dakika.",
+      "evidence": "Son cuatro paradas, unos diez minutos."
+    },
+    {
+      "id": "q3",
+      "prompt": "Otobüsün dezavantajı ne?",
+      "options": [
+        "Pahalı",
+        "Trafik yüzünden yavaş",
+        "Müzeye gitmiyor",
+        "Kalabalık"
+      ],
+      "answer": 1,
+      "feedback": "Trafikle yarım saat sürüyor.",
+      "evidence": "pero con el tráfico tarda media hora."
+    },
+    {
+      "id": "q4",
+      "prompt": "Müze ne zaman ücretsiz?",
+      "options": [
+        "Sabah",
+        "Öğlen",
+        "Saat altıdan sonra",
+        "Her zaman"
+      ],
+      "answer": 2,
+      "feedback": "Altıdan sonra giriş ücretsiz.",
+      "evidence": "Y a partir de las seis la entrada es gratis."
+    }
+  ]
+}

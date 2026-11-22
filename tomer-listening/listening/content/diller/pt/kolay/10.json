@@ -1,0 +1,116 @@
+{
+  "id": "pt-kolay-10",
+  "level": "PT",
+  "sublevel": "kolay",
+  "title": "Meu melhor amigo",
+  "topic": "Arkadaşlık",
+  "instructions": "Larissa en iyi arkadaşını anlatıyor. Uzun bir metin; ayrıntılara dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "lari": {
+      "name": "Larissa",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lari",
+      "text": "Meu melhor amigo se chama Thiago. A gente se conhece desde a escola."
+    },
+    {
+      "speaker": "lari",
+      "text": "Ele tem vinte e três anos, um ano a mais do que eu, e mora na mesma rua."
+    },
+    {
+      "speaker": "lari",
+      "text": "O Thiago é alto, tem cabelo curto e preto e usa óculos."
+    },
+    {
+      "speaker": "lari",
+      "text": "Ele é muito engraçado e fala com todo mundo."
+    },
+    {
+      "speaker": "lari",
+      "text": "Ele estuda fotografia e tira fotos muito bonitas."
+    },
+    {
+      "speaker": "lari",
+      "text": "Nos sábados a gente vai ao cinema ou toma um açaí no centro."
+    },
+    {
+      "speaker": "lari",
+      "text": "Ele gosta de filmes de ação, mas eu prefiro comédia."
+    },
+    {
+      "speaker": "lari",
+      "text": "Então a gente escolhe um filme de cada vez."
+    },
+    {
+      "speaker": "lari",
+      "text": "Também jogamos vôlei na praia aos domingos. Ele joga melhor do que eu."
+    },
+    {
+      "speaker": "lari",
+      "text": "Em julho queremos viajar para a Argentina de ônibus."
+    },
+    {
+      "speaker": "lari",
+      "text": "O Thiago já pesquisou os hotéis e fez a lista das cidades."
+    },
+    {
+      "speaker": "lari",
+      "text": "Eu só preciso comprar as passagens."
+    },
+    {
+      "speaker": "lari",
+      "text": "Acho que vai ser uma viagem incrível."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Thiago ne okuyor?",
+      "options": [
+        "Fotoğrafçılık",
+        "Tıp",
+        "Müzik",
+        "Sinema"
+      ],
+      "answer": 0,
+      "feedback": "Fotoğrafçılık okuyor ve çok güzel fotoğraflar çekiyor.",
+      "evidence": "Ele estuda fotografia e tira fotos muito bonitas."
+    },
+    {
+      "id": "q2",
+      "prompt": "Larissa hangi filmleri tercih ediyor?",
+      "options": [
+        "Aksiyon",
+        "Komedi",
+        "Korku",
+        "Belgesel"
+      ],
+      "answer": 1,
+      "feedback": "Thiago aksiyon seviyor, Larissa komedi tercih ediyor.",
+      "evidence": "Ele gosta de filmes de ação, mas eu prefiro comédia."
+    },
+    {
+      "id": "q3",
+      "prompt": "Temmuzda nereye gitmek istiyorlar?",
+      "options": [
+        "Şili’ye uçakla",
+        "Uruguay’a arabayla",
+        "Arjantin’e otobüsle",
+        "Rio’ya trenle"
+      ],
+      "answer": 2,
+      "feedback": "Otobüsle Arjantin’e gitmek istiyorlar.",
+      "evidence": "Em julho queremos viajar para a Argentina de ônibus."
+    }
+  ]
+}

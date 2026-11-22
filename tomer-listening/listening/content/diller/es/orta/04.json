@@ -1,0 +1,121 @@
+{
+  "id": "es-orta-04",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "En la consulta del médico",
+  "topic": "Sağlık",
+  "instructions": "Doktorda bir muayene. Belirtilere ve tavsiyelere dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "doc": {
+      "name": "Doctora",
+      "voice": "female"
+    },
+    "pac": {
+      "name": "Paciente",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "doc",
+      "text": "Buenos días. ¿Qué le pasa?"
+    },
+    {
+      "speaker": "pac",
+      "text": "Me duele la garganta desde el lunes y tengo un poco de fiebre."
+    },
+    {
+      "speaker": "doc",
+      "text": "¿Tose mucho?"
+    },
+    {
+      "speaker": "pac",
+      "text": "Por la noche sí, bastante."
+    },
+    {
+      "speaker": "doc",
+      "text": "A ver... Tiene la garganta roja. Es una infección, pero no es grave."
+    },
+    {
+      "speaker": "pac",
+      "text": "¿Necesito antibióticos?"
+    },
+    {
+      "speaker": "doc",
+      "text": "No. Tome este jarabe tres veces al día y beba mucha agua."
+    },
+    {
+      "speaker": "doc",
+      "text": "Nada de café ni bebidas frías."
+    },
+    {
+      "speaker": "pac",
+      "text": "¿Puedo ir a trabajar?"
+    },
+    {
+      "speaker": "doc",
+      "text": "Mejor descanse dos días. Si la fiebre sube, vuelva."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Hasta ne zamandan beri rahatsız?",
+      "options": [
+        "Dünden beri",
+        "Pazartesiden beri",
+        "Bir haftadır",
+        "Bir aydır"
+      ],
+      "answer": 1,
+      "feedback": "Pazartesiden beri boğazı ağrıyor.",
+      "evidence": "Me duele la garganta desde el lunes y tengo un poco de fiebre."
+    },
+    {
+      "id": "q2",
+      "prompt": "Doktor ne veriyor?",
+      "options": [
+        "Antibiyotik",
+        "Şurup",
+        "İğne",
+        "Hiçbir şey"
+      ],
+      "answer": 1,
+      "feedback": "Antibiyotik yok; günde üç kez şurup.",
+      "evidence": "Tome este jarabe tres veces al día y beba mucha agua."
+    },
+    {
+      "id": "q3",
+      "prompt": "Hasta neyi içmemeli?",
+      "options": [
+        "Su",
+        "Çay",
+        "Kahve ve soğuk içecekler",
+        "Süt"
+      ],
+      "answer": 2,
+      "feedback": "Kahve ve soğuk içecek yok.",
+      "evidence": "Nada de café ni bebidas frías."
+    },
+    {
+      "id": "q4",
+      "prompt": "Doktor işe gitmek konusunda ne diyor?",
+      "options": [
+        "Hemen gidebilir",
+        "İki gün dinlensin",
+        "Bir hafta izin alsın",
+        "Hastaneye yatsın"
+      ],
+      "answer": 1,
+      "feedback": "İki gün dinlenmesi daha iyi.",
+      "evidence": "Mejor descanse dos días."
+    }
+  ]
+}

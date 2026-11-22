@@ -15,12 +15,28 @@ import { $, esc, listen, ICONS } from './ui/dom.js';
  * Uygulama girişi: adres (#/a1/kolay/3) → ekran.
  * Ekranlar saf görünümdür; veriyi burada hazırlayıp onlara verir, sonuçları
  * (ilerleme, hız tercihi, süzgeç) burada tutarız.
+ *
+ * Aynı motor iki kataloğu sunar; hangisinin açılacağını sayfa söyler:
+ *   index.html  → content/         (TÖMER: A1 … C2)
+ *   languages.html → content/diller/  (Dinleyerek Öğren: İspanyolca, Portekizce …)
+ * Katalog başlıkları manifest'in "app" alanından gelir.
  */
-const repo = new ContentRepository();
 const app = $('#app');
 const crumbs = $('#crumbs');
+const repo = new ContentRepository({ root: app.dataset.content || undefined });
+
+/** Manifest'te "app" yoksa TÖMER varsayılanları. */
+const APP_DEFAULTS = Object.freeze({
+  title: 'Dinleme ve Anlama',
+  short: 'Dinleme',
+  kicker: 'TÖMER · İngilizce',
+  heading: ['Dinleme ve', 'Anlama'],
+  intro: 'Seviyeni seç, kısa ve uzun metinleri dinle, soruları cevapla. Her sorunun açıklaması metindeki cümleyi gösterir.',
+  groupLabel: 'Seviyeler',
+});
 
 const state = {
+  app: APP_DEFAULTS,
   levels: [],
   progress: loadProgress(),
   rate: null,                 // kullanıcı hız seçtiyse oturum boyunca korunur
@@ -33,6 +49,8 @@ let firstRender = true;
 
 const sublevelOf = id => SUBLEVELS.find(s => s.id === id);
 const levelOf = id => state.levels.find(l => l.id === id);
+/** Ekranlara giden seviye nesnesi: etiket (A1 ya da dil adı) ve katalog metinleri eklenir. */
+const viewOf = level => ({ ...level, label: level.label ?? level.id, app: state.app });
 const countOf = (level, sub) => levelOf(level)?.sets[sub]?.length ?? 0;
 const doneIn = (level, sub) =>
   Array.from({ length: countOf(level, sub) }, (_, i) => setIdOf(level, sub, i + 1)).filter(id => state.progress[id]).length;
@@ -52,13 +70,29 @@ function describe(set, n) {
     kind: Object.keys(set.speakers).length > 1 ? 'Diyalog' : 'Monolog',
     questions: set.questions.length,
     maxPlays: set.audio.maxPlays ?? null,
+    lang: set.audio.lang,
   };
 }
 
-// ── üst çubuk: yol ve tema ───────────────────────────────────
+// ── üst çubuk: Lumina'ya dönüş, yol ve tema ──────────────────
+// Modül Lumina'nın içinde (…/tomer-listening/listening/) açıldıysa üst çubukta
+// Lumina'ya dönüş bağlantısı çıkar: TÖMER kataloğu → #/tomer/<seviye>, diller → #/
+const INSIDE_LUMINA = location.pathname.includes('/tomer-listening/');
+const appBack = INSIDE_LUMINA ? document.createElement('a') : null;
+if (appBack) {
+  appBack.className = 'ls-app-back';
+  appBack.innerHTML = '<span aria-hidden="true">←</span> Lumina';
+  $('#themeToggle').before(appBack);
+}
+function luminaHref(route) {
+  if (app.dataset.content) return '../../#/';
+  return route.level ? `../../#/tomer/${route.level.toLowerCase()}` : '../../#/tomer';
+}
+
 function drawCrumbs(route) {
-  const parts = [{ label: 'Dinleme', href: hashOf({ name: 'levels' }) }];
-  if (route.level) parts.push({ label: route.level, href: hashOf({ name: 'sublevels', level: route.level }) });
+  if (appBack) appBack.href = luminaHref(route);
+  const parts = [{ label: state.app.short, href: hashOf({ name: 'levels' }) }];
+  if (route.level) parts.push({ label: levelOf(route.level)?.label ?? route.level, href: hashOf({ name: 'sublevels', level: route.level }) });
   if (route.sub) parts.push({ label: sublevelOf(route.sub).label, href: hashOf({ name: 'sets', level: route.level, sub: route.sub }) });
   if (route.n) parts.push({ label: `Metin ${route.n}` });
   const last = parts.length - 1;
@@ -118,23 +152,26 @@ async function show(route) {
 
 /** Adrese göre ekranı kurar. Geçersiz adresleri en yakın geçerli ekrana yönlendirir. */
 async function build(route, stale) {
-  const level = route.level && levelOf(route.level);
+  const level = route.level && levelOf(route.level) && viewOf(levelOf(route.level));
   if (route.name !== 'levels' && !level) return redirect({ name: 'levels' });
 
   if (route.name === 'levels') {
     const levels = state.levels.map(l => {
       const total = SUBLEVEL_IDS.reduce((s, sub) => s + countOf(l.id, sub), 0);
       const done = SUBLEVEL_IDS.reduce((s, sub) => s + doneIn(l.id, sub), 0);
-      return { id: l.id, name: l.name, total, done };
+      return { id: l.id, name: l.name, flag: l.flag, badge: l.flag ?? l.id, total, done };
     });
-    const bests = Object.values(state.progress).map(p => p.best);
+    // Yalnızca bu kataloğun metinleri (ilerleme deposu iki katalog arasında ortak).
+    const bests = state.levels
+      .flatMap(l => SUBLEVEL_IDS.flatMap(sub => Array.from({ length: countOf(l.id, sub) }, (_, i) => state.progress[setIdOf(l.id, sub, i + 1)]?.best)))
+      .filter(b => b != null);
     const stats = {
       total: levels.reduce((s, l) => s + l.total, 0),
       done: levels.reduce((s, l) => s + l.done, 0),
       average: bests.length ? Math.round(bests.reduce((a, b) => a + b, 0) / bests.length) : null,
     };
-    document.title = 'Dinleme ve Anlama';
-    return renderLevels(app, { levels, stats });
+    document.title = state.app.title;
+    return renderLevels(app, { app: state.app, levels, stats });
   }
 
   if (route.name === 'sublevels') {
@@ -156,7 +193,7 @@ async function build(route, stale) {
         ] : [],
       };
     });
-    document.title = `${level.id} · Dinleme`;
+    document.title = `${level.label} · ${state.app.short}`;
     return renderSublevels(app, { level, subs });
   }
 
@@ -166,16 +203,16 @@ async function build(route, stale) {
   if (route.name === 'sets') {
     if (!count) {
       app.innerHTML = `<div class="ls-screen">${emptyState({
-        title: `${level.id} ${sublevel.label} için henüz metin yok`,
+        title: `${level.label} ${sublevel.label} için henüz metin yok`,
         text: 'İçerik hazırlanıyor. Şimdilik başka bir zorluk seçebilirsin.',
-        action: { label: `${level.id} zorluklarına dön`, href: hashOf({ name: 'sublevels', level: level.id }) },
+        action: { label: `${level.label} zorluklarına dön`, href: hashOf({ name: 'sublevels', level: level.id }) },
       })}</div>`;
       return { destroy() {} };
     }
     const sets = await repo.listSets(level.id, sublevel.id);
     if (stale()) return null;
     const key = `${level.id}/${sublevel.id}`;
-    document.title = `${level.id} ${sublevel.label} · Dinleme`;
+    document.title = `${level.label} ${sublevel.label} · ${state.app.short}`;
     return renderSets(app, {
       level, sublevel,
       items: sets.map((set, i) => ({ ...describe(set, i + 1), best: bestOf(level.id, sublevel.id, i + 1) })),
@@ -194,7 +231,7 @@ async function build(route, stale) {
   const nxt = nextSet({ level: level.id, sub: sublevel.id, n: route.n }, counts, SUBLEVEL_IDS);
   const lessonHref = n => hashOf({ name: 'lesson', level: level.id, sub: sublevel.id, n });
 
-  document.title = `${set.title} · ${level.id} ${sublevel.label} · Dinleme`;
+  document.title = `${set.title} · ${level.label} ${sublevel.label} · ${state.app.short}`;
   return renderLesson(app, {
     set, level, sublevel,
     summary: describe(set, route.n),
@@ -206,7 +243,7 @@ async function build(route, stale) {
       sameSublevel: nxt.level === level.id && nxt.sub === sublevel.id,
       label: nxt.level === level.id && nxt.sub === sublevel.id
         ? 'Sıradaki metin'
-        : `${nxt.level} ${sublevelOf(nxt.sub).label} metinlerine geç`,
+        : `${viewOf(levelOf(nxt.level)).label} ${sublevelOf(nxt.sub).label} metinlerine geç`,
     },
     rate: state.rate,
     resolve: p => repo.resolve(p),
@@ -231,7 +268,9 @@ function redirect(route) {
 // ── başlat ──────────────────────────────────────────────────
 (async function init() {
   try {
-    state.levels = (await repo.manifest()).levels;
+    const manifest = await repo.manifest();
+    state.levels = manifest.levels;
+    state.app = { ...APP_DEFAULTS, ...(manifest.app ?? {}) };
   } catch (err) {
     console.error(err);
     app.innerHTML = `<div class="ls-screen">${emptyState({ title: 'Seviye listesi yüklenemedi', text: `Sayfayı bir web sunucusu üzerinden aç (npm start). ${err.message}` })}</div>`;

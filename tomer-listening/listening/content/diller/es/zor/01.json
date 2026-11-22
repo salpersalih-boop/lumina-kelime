@@ -1,0 +1,118 @@
+{
+  "id": "es-zor-01",
+  "level": "ES",
+  "sublevel": "zor",
+  "title": "Aviso en el aeropuerto",
+  "topic": "Anons",
+  "instructions": "Havalimanı anonsu. Kapı numarası ve değişikliklere dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "meg": {
+      "name": "Megafonía",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "meg",
+      "text": "Atención, pasajeros del vuelo IB tres cuatro siete con destino a Lisboa."
+    },
+    {
+      "speaker": "meg",
+      "text": "Por motivos operativos, el embarque se realizará por la puerta B doce, y no por la B veinte, como estaba previsto."
+    },
+    {
+      "speaker": "meg",
+      "text": "El vuelo saldrá con un retraso aproximado de cuarenta minutos."
+    },
+    {
+      "speaker": "meg",
+      "text": "La nueva hora de salida es a las dieciséis treinta y cinco."
+    },
+    {
+      "speaker": "meg",
+      "text": "Rogamos a los pasajeros con niños pequeños o movilidad reducida que se acerquen primero al mostrador."
+    },
+    {
+      "speaker": "meg",
+      "text": "Les recordamos que solo se permite una pieza de equipaje de mano por persona."
+    },
+    {
+      "speaker": "meg",
+      "text": "Disculpen las molestias."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Uçuş nereye?",
+      "options": [
+        "Madrid",
+        "Lizbon",
+        "Londra",
+        "Paris"
+      ],
+      "answer": 1,
+      "feedback": "Lizbon’a giden IB 347 uçuşu.",
+      "evidence": "con destino a Lisboa."
+    },
+    {
+      "id": "q2",
+      "prompt": "Biniş hangi kapıdan?",
+      "options": [
+        "B 20",
+        "B 12",
+        "A 12",
+        "C 20"
+      ],
+      "answer": 1,
+      "feedback": "B 20 yerine B 12 kapısından.",
+      "evidence": "el embarque se realizará por la puerta B doce, y no por la B veinte"
+    },
+    {
+      "id": "q3",
+      "prompt": "Rötar ne kadar?",
+      "options": [
+        "20 dakika",
+        "30 dakika",
+        "40 dakika",
+        "1 saat"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık kırk dakika.",
+      "evidence": "con un retraso aproximado de cuarenta minutos."
+    },
+    {
+      "id": "q4",
+      "prompt": "Yeni kalkış saati?",
+      "options": [
+        "15:35",
+        "16:35",
+        "16:45",
+        "17:35"
+      ],
+      "answer": 1,
+      "feedback": "On altı otuz beş.",
+      "evidence": "La nueva hora de salida es a las dieciséis treinta y cinco."
+    },
+    {
+      "id": "q5",
+      "prompt": "Kimler önce bankoya çağrılıyor?",
+      "options": [
+        "İş sınıfı yolcular",
+        "Küçük çocuklu ya da hareket kısıtlı yolcular",
+        "Büyük valizi olanlar",
+        "Geç kalanlar"
+      ],
+      "answer": 1,
+      "feedback": "Küçük çocuklu ya da hareket kısıtlılığı olan yolcular.",
+      "evidence": "pasajeros con niños pequeños o movilidad reducida"
+    }
+  ]
+}

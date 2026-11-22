@@ -1,0 +1,105 @@
+{
+  "id": "pt-orta-03",
+  "level": "PT",
+  "sublevel": "orta",
+  "title": "Planos para o sábado",
+  "topic": "Planlar",
+  "instructions": "İki arkadaş hafta sonu planı yapıyor. Kısa bir diyalog.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "bia": {
+      "name": "Bia",
+      "voice": "female"
+    },
+    "leo": {
+      "name": "Leo",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "bia",
+      "text": "O que você vai fazer no sábado?"
+    },
+    {
+      "speaker": "leo",
+      "text": "De manhã tenho jogo de futebol."
+    },
+    {
+      "speaker": "bia",
+      "text": "E à tarde? Tem um show grátis na praça, às seis."
+    },
+    {
+      "speaker": "leo",
+      "text": "Legal. Mas no domingo não posso, vou visitar minha avó."
+    },
+    {
+      "speaker": "bia",
+      "text": "Então a gente se encontra no sábado às cinco, na frente da praça."
+    },
+    {
+      "speaker": "leo",
+      "text": "Combinado."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Leo cumartesi sabahı ne yapıyor?",
+      "options": [
+        "Çalışıyor",
+        "Futbol maçı var",
+        "Büyükannesini ziyaret ediyor",
+        "Uyuyor"
+      ],
+      "answer": 1,
+      "feedback": "Cumartesi sabahı futbol maçı var.",
+      "evidence": "De manhã tenho jogo de futebol."
+    },
+    {
+      "id": "q2",
+      "prompt": "Konser nerede ve saat kaçta?",
+      "options": [
+        "Stadyumda, beşte",
+        "Meydanda, altıda",
+        "Parkta, yedide",
+        "Okulda, sekizde"
+      ],
+      "answer": 1,
+      "feedback": "Meydanda, saat altıda ücretsiz konser.",
+      "evidence": "Tem um show grátis na praça, às seis."
+    },
+    {
+      "id": "q3",
+      "prompt": "Neden pazar günü buluşamıyorlar?",
+      "options": [
+        "Leo çalışıyor",
+        "Bia seyahatte",
+        "Leo büyükannesini ziyaret edecek",
+        "Yağmur yağacak"
+      ],
+      "answer": 2,
+      "feedback": "Leo pazar günü büyükannesini ziyaret edecek.",
+      "evidence": "no domingo não posso, vou visitar minha avó."
+    },
+    {
+      "id": "q4",
+      "prompt": "Nerede buluşacaklar?",
+      "options": [
+        "Meydanın önünde",
+        "Leo’nun evinde",
+        "Stadyumda",
+        "Kafede"
+      ],
+      "answer": 0,
+      "feedback": "Cumartesi beşte meydanın önünde.",
+      "evidence": "a gente se encontra no sábado às cinco, na frente da praça."
+    }
+  ]
+}

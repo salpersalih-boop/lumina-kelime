@@ -1,0 +1,129 @@
+{
+  "id": "pt-orta-05",
+  "level": "PT",
+  "sublevel": "orta",
+  "title": "Procurando apartamento",
+  "topic": "Ev kiralama",
+  "instructions": "Bir emlakçıyla telefon görüşmesi. Daireye ilişkin ayrıntılara dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "cor": {
+      "name": "Corretor",
+      "voice": "male"
+    },
+    "cam": {
+      "name": "Camila",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "cam",
+      "text": "Oi, estou ligando por causa do apartamento do anúncio, na Rua das Flores."
+    },
+    {
+      "speaker": "cor",
+      "text": "Sim. É um apartamento de dois quartos, no terceiro andar, com elevador."
+    },
+    {
+      "speaker": "cam",
+      "text": "Quanto é o aluguel?"
+    },
+    {
+      "speaker": "cor",
+      "text": "Mil e oitocentos reais por mês, com água e condomínio incluídos. Luz e internet são à parte."
+    },
+    {
+      "speaker": "cam",
+      "text": "É mobiliado?"
+    },
+    {
+      "speaker": "cor",
+      "text": "É sim: cozinha completa, sofá e camas. Só não tem máquina de lavar."
+    },
+    {
+      "speaker": "cam",
+      "text": "Aceita animais? Tenho um cachorro pequeno."
+    },
+    {
+      "speaker": "cor",
+      "text": "Infelizmente o proprietário não aceita animais."
+    },
+    {
+      "speaker": "cam",
+      "text": "Que pena. Então não me interessa. Obrigada mesmo assim."
+    },
+    {
+      "speaker": "cor",
+      "text": "Se quiser, tenho outro na mesma região que aceita cachorro. É um pouco mais caro, dois mil."
+    },
+    {
+      "speaker": "cam",
+      "text": "Tá, posso ver amanhã à tarde?"
+    },
+    {
+      "speaker": "cor",
+      "text": "Claro, às quatro na portaria."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "İlk dairenin kirası ne kadar?",
+      "options": [
+        "1.500 real",
+        "1.800 real",
+        "2.000 real",
+        "2.200 real"
+      ],
+      "answer": 1,
+      "feedback": "Bin sekiz yüz real; su ve aidat dahil.",
+      "evidence": "Mil e oitocentos reais por mês, com água e condomínio incluídos."
+    },
+    {
+      "id": "q2",
+      "prompt": "Dairede ne yok?",
+      "options": [
+        "Mutfak",
+        "Kanepe",
+        "Çamaşır makinesi",
+        "Asansör"
+      ],
+      "answer": 2,
+      "feedback": "Mobilyalı ama çamaşır makinesi yok.",
+      "evidence": "Só não tem máquina de lavar."
+    },
+    {
+      "id": "q3",
+      "prompt": "Camila ilk daireyi neden istemiyor?",
+      "options": [
+        "Çok pahalı",
+        "Asansör yok",
+        "Hayvan kabul edilmiyor",
+        "Merkeze uzak"
+      ],
+      "answer": 2,
+      "feedback": "Ev sahibi hayvan kabul etmiyor; Camila’nın köpeği var.",
+      "evidence": "o proprietário não aceita animais."
+    },
+    {
+      "id": "q4",
+      "prompt": "İkinci daireyi ne zaman görecek?",
+      "options": [
+        "Bugün sabah",
+        "Yarın öğleden sonra saat dörtte",
+        "Cumartesi",
+        "Haftaya"
+      ],
+      "answer": 1,
+      "feedback": "Yarın öğleden sonra dörtte, kapıcı girişinde.",
+      "evidence": "Claro, às quatro na portaria."
+    }
+  ]
+}

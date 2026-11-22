@@ -1,0 +1,126 @@
+{
+  "id": "pt-zor-07",
+  "level": "PT",
+  "sublevel": "zor",
+  "title": "Instruções da prova",
+  "topic": "Sınav yönergesi",
+  "instructions": "Bir öğretmen sınav öncesi kuralları açıklıyor. Sürelere ve yasaklara dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "prof": {
+      "name": "Professora",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "prof",
+      "text": "Bom dia a todos. Antes de começar, prestem atenção."
+    },
+    {
+      "speaker": "prof",
+      "text": "A prova tem três partes: leitura, gramática e redação."
+    },
+    {
+      "speaker": "prof",
+      "text": "Vocês têm duas horas no total, mas a redação é entregue separadamente, até as onze e quinze no máximo."
+    },
+    {
+      "speaker": "prof",
+      "text": "Os celulares devem ficar desligados e dentro da mochila, não no bolso."
+    },
+    {
+      "speaker": "prof",
+      "text": "Podem usar dicionário de papel só na terceira parte; nas duas primeiras, não."
+    },
+    {
+      "speaker": "prof",
+      "text": "Escrevam com caneta azul ou preta. Nada de lápis, porque não dá para corrigir depois."
+    },
+    {
+      "speaker": "prof",
+      "text": "Quem terminar antes pode sair, mas em silêncio e sem voltar."
+    },
+    {
+      "speaker": "prof",
+      "text": "As notas estarão no sistema na segunda, e não na sexta como eu disse semana passada."
+    },
+    {
+      "speaker": "prof",
+      "text": "Alguma pergunta? Então podem começar."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Sınav kaç bölümden oluşuyor?",
+      "options": [
+        "İki",
+        "Üç",
+        "Dört",
+        "Beş"
+      ],
+      "answer": 1,
+      "feedback": "Okuma, dil bilgisi ve yazma: üç bölüm.",
+      "evidence": "A prova tem três partes: leitura, gramática e redação."
+    },
+    {
+      "id": "q2",
+      "prompt": "Yazma bölümü en geç ne zaman teslim edilmeli?",
+      "options": [
+        "10:15",
+        "11:00",
+        "11:15",
+        "12:00"
+      ],
+      "answer": 2,
+      "feedback": "En geç on bir on beşte.",
+      "evidence": "até as onze e quinze no máximo."
+    },
+    {
+      "id": "q3",
+      "prompt": "Sözlük hangi bölümde kullanılabilir?",
+      "options": [
+        "Birinci",
+        "İkinci",
+        "Üçüncü",
+        "Hiçbiri"
+      ],
+      "answer": 2,
+      "feedback": "Yalnızca üçüncü bölümde kâğıt sözlük.",
+      "evidence": "Podem usar dicionário de papel só na terceira parte"
+    },
+    {
+      "id": "q4",
+      "prompt": "Neden kurşun kalem yasak?",
+      "options": [
+        "Kolay siliniyor",
+        "Sonradan düzeltilemiyor",
+        "Okunmuyor",
+        "Öğretmen sevmiyor"
+      ],
+      "answer": 1,
+      "feedback": "Sonradan düzeltme yapılamayacağı için.",
+      "evidence": "porque não dá para corrigir depois."
+    },
+    {
+      "id": "q5",
+      "prompt": "Notlar ne zaman açıklanacak?",
+      "options": [
+        "Cuma",
+        "Cumartesi",
+        "Pazartesi",
+        "Bugün"
+      ],
+      "answer": 2,
+      "feedback": "Cuma değil, pazartesi.",
+      "evidence": "As notas estarão no sistema na segunda, e não na sexta"
+    }
+  ]
+}

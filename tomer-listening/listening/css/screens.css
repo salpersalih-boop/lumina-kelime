@@ -18,6 +18,13 @@
 .ls-crumbs a:hover { color: var(--text-primary); }
 .ls-crumbs span[aria-current] { color: var(--text-primary); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .ls-crumbs i { opacity: 0.5; font-style: normal; }
+.ls-app-back {
+  margin-left: auto; flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px;
+  font-size: 0.86rem; font-weight: 600; color: var(--text-dim); text-decoration: none;
+  background: var(--bg-card); border: 1px solid var(--border); transition: color 0.2s, border-color 0.2s;
+}
+.ls-app-back:hover { color: var(--text-primary); border-color: var(--border-hover); }
+.ls-app-back + .ls-icon-btn { margin-left: 0; }
 .ls-icon-btn {
   margin-left: auto; display: grid; place-items: center; width: 42px; height: 42px; flex: none;
   border-radius: 50%; border: 1px solid var(--border); background: var(--bg-surface); color: var(--text-primary);
@@ -78,6 +85,7 @@
 /* Seviye kartı */
 .ls-level { align-items: center; text-align: center; padding: 28px 18px 22px; }
 .ls-level-code { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+.ls-level-code.is-flag { font-size: 3rem; line-height: 1.1; }
 .ls-level-name { font-weight: 600; }
 .ls-level-meta { font-size: 0.85rem; color: var(--text-muted); }
 .ls-soon { position: absolute; top: 12px; right: 12px; padding: 3px 10px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; background: var(--bg-elevated); color: var(--text-dim); }

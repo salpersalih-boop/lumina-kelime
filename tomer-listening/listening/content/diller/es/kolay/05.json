@@ -1,0 +1,92 @@
+{
+  "id": "es-kolay-05",
+  "level": "ES",
+  "sublevel": "kolay",
+  "title": "Mi familia",
+  "topic": "Aile",
+  "instructions": "Diego ailesini tanıtıyor. Kim ne iş yapıyor, dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "diego": {
+      "name": "Diego",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "diego",
+      "text": "Os presento a mi familia."
+    },
+    {
+      "speaker": "diego",
+      "text": "Mi padre se llama Antonio y es cocinero. Trabaja en un restaurante pequeño."
+    },
+    {
+      "speaker": "diego",
+      "text": "Mi madre se llama Carmen y es profesora de inglés en un instituto."
+    },
+    {
+      "speaker": "diego",
+      "text": "Tengo dos hermanas. Elena tiene veinticinco años y vive en Barcelona."
+    },
+    {
+      "speaker": "diego",
+      "text": "Sara es la pequeña. Tiene doce años y le encanta bailar."
+    },
+    {
+      "speaker": "diego",
+      "text": "También tenemos un gato gris que se llama Tomás."
+    },
+    {
+      "speaker": "diego",
+      "text": "Los domingos comemos todos juntos en casa de mis abuelos."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Diego’nun babası ne iş yapıyor?",
+      "options": [
+        "Öğretmen",
+        "Aşçı",
+        "Doktor",
+        "Şoför"
+      ],
+      "answer": 1,
+      "feedback": "Babası aşçı ve küçük bir restoranda çalışıyor.",
+      "evidence": "Mi padre se llama Antonio y es cocinero."
+    },
+    {
+      "id": "q2",
+      "prompt": "Elena nerede yaşıyor?",
+      "options": [
+        "Barselona’da",
+        "Madrid’de",
+        "Sevilla’da",
+        "Büyükannesinde"
+      ],
+      "answer": 0,
+      "feedback": "Elena yirmi beş yaşında ve Barselona’da yaşıyor.",
+      "evidence": "Elena tiene veinticinco años y vive en Barcelona."
+    },
+    {
+      "id": "q3",
+      "prompt": "Pazar günleri aile ne yapıyor?",
+      "options": [
+        "Sinemaya gidiyor",
+        "Dans ediyor",
+        "Büyükanne ve büyükbabada yemek yiyor",
+        "Restoranda çalışıyor"
+      ],
+      "answer": 2,
+      "feedback": "Pazar günleri hep birlikte büyükanne ve büyükbabanın evinde yemek yiyorlar.",
+      "evidence": "Los domingos comemos todos juntos en casa de mis abuelos."
+    }
+  ]
+}

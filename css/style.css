@@ -5903,7 +5903,8 @@ body.light-theme .th-dots i { border-color: rgba(30, 35, 56, .25); }
 .tm-level.is-off { opacity: .45; cursor: not-allowed; }
 .tm-level-badge { font-size: 2.2rem; font-weight: 800; background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .tm-level-book { color: var(--text-muted); font-size: .85rem; text-align: center; }
-.tm-choice { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.tm-choice { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+a.tm-choice-card { text-decoration: none; }
 .tm-choice-card strong { font-size: 1.3rem; }
 .tm-choice-card span { color: var(--text-muted); font-size: .88rem; text-align: center; }
 .tm-choice-icon { font-size: 2.4rem; }

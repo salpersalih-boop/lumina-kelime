@@ -1,0 +1,96 @@
+{
+  "id": "pt-kolay-08",
+  "level": "PT",
+  "sublevel": "kolay",
+  "title": "Férias em Florianópolis",
+  "topic": "Tatil",
+  "instructions": "Mariana yaz tatilini anlatıyor. Nereye gittiğine, ne yaptığına dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mari": {
+      "name": "Mariana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mari",
+      "text": "Nas férias eu fui para Florianópolis com duas amigas."
+    },
+    {
+      "speaker": "mari",
+      "text": "Ficamos uma semana em uma pousada perto da praia."
+    },
+    {
+      "speaker": "mari",
+      "text": "De manhã íamos à praia e à tarde andávamos de bicicleta pela ilha."
+    },
+    {
+      "speaker": "mari",
+      "text": "A água estava quente e o céu sempre azul."
+    },
+    {
+      "speaker": "mari",
+      "text": "Um dia fizemos uma trilha até uma lagoa muito bonita."
+    },
+    {
+      "speaker": "mari",
+      "text": "Comemos camarão e açaí quase todos os dias."
+    },
+    {
+      "speaker": "mari",
+      "text": "Só choveu um dia, e nesse dia visitamos o mercado público."
+    },
+    {
+      "speaker": "mari",
+      "text": "Foram as melhores férias da minha vida."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Mariana kiminle gitti?",
+      "options": [
+        "Ailesiyle",
+        "İki arkadaşıyla",
+        "Erkek arkadaşıyla",
+        "Tek başına"
+      ],
+      "answer": 1,
+      "feedback": "İki arkadaşıyla gitti.",
+      "evidence": "eu fui para Florianópolis com duas amigas."
+    },
+    {
+      "id": "q2",
+      "prompt": "Öğleden sonraları ne yaptılar?",
+      "options": [
+        "Uyudular",
+        "Bisiklete bindiler",
+        "Alışveriş yaptılar",
+        "Film izlediler"
+      ],
+      "answer": 1,
+      "feedback": "Öğleden sonra adada bisiklete bindiler.",
+      "evidence": "à tarde andávamos de bicicleta pela ilha."
+    },
+    {
+      "id": "q3",
+      "prompt": "Yağmurlu gün ne yaptılar?",
+      "options": [
+        "Plaja gittiler",
+        "Lagüne yürüdüler",
+        "Halk pazarını gezdiler",
+        "Evde kaldılar"
+      ],
+      "answer": 2,
+      "feedback": "Yağmurlu günde halk pazarını gezdiler.",
+      "evidence": "e nesse dia visitamos o mercado público."
+    }
+  ]
+}

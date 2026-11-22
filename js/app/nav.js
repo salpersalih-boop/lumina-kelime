@@ -5,6 +5,7 @@
    - farenin yan "geri" tuşu, tarayıcının geri düğmesi, Alt+Sol ok
    uygulamanın içinde bir önceki ekrana döner.
    Uygulama içindeki "geri" tuşları da aynı geçmişi kullanır; ileri-geri karışmaz.
+   Her girdi ekranın adresini de taşır (#/football/groups/3 …): adresler js/app/router.js'te.
 ============================================================ */
 const Nav = (() => {
     const supported = typeof history !== 'undefined' && typeof history.pushState === 'function';
@@ -15,7 +16,17 @@ const Nav = (() => {
     let applying = false;  // geçmişten bir ekran uygulanırken yeni kayıt yazılmasın
 
     const top = () => stack[stack.length - 1];
-    const write = (method, entry) => history[method]({ lumina: entry, idx: stack.length - 1 }, '');
+    // Pencere girdileri adresi değiştirmez; ekran girdileri o ekranın adresini yazar
+    const urlOf = entry => entry.startsWith('modal:') || typeof Router === 'undefined' ? undefined : Router.urlFor(entry);
+    const write = (method, entry) => history[method]({ lumina: entry, idx: stack.length - 1 }, '', urlOf(entry));
+
+    // Görünen ekranın adresini, geçmişe yeni girdi eklemeden güncelle
+    function syncUrl() {
+        if (!supported || typeof Router === 'undefined' || !history.state || !history.state.lumina) return;
+        if (history.state.lumina.startsWith('modal:')) return;
+        const url = Router.current();
+        if (url !== location.pathname + location.search + location.hash) history.replaceState(history.state, '', url);
+    }
 
     function goBackTo(index) {
         const steps = stack.length - 1 - index;
@@ -28,7 +39,8 @@ const Nav = (() => {
     // showScreen() her çağrıldığında
     function recordScreen(id) {
         if (!supported || applying) return;
-        if (id === top()) return;
+        // Aynı ekran başka içerikle yeniden çizildi (ör. sonraki konu): yalnızca adresi güncelle
+        if (id === top()) { if (ignorePops === 0) syncUrl(); return; }
 
         // Giriş ekranı geçmişte tutulmaz: çıkış yapınca ya da ilk açılışta yığın sıfırlanır
         if (id === 'authScreen' || stack.length === 0 || top() === 'authScreen') {
@@ -100,9 +112,14 @@ const Nav = (() => {
     }
 
     function onPopState(e) {
-        if (ignorePops > 0) { ignorePops--; return; }
+        // Kendi geri dönüşümüz bitti: hedef girdinin adresini görünen içerikle eşitle
+        if (ignorePops > 0) { ignorePops--; if (ignorePops === 0) syncUrl(); return; }
         const entry = e.state && e.state.lumina;
-        if (!entry) return;
+        if (!entry) {
+            // Adres çubuğu elle değiştirildi (#/spanish/groups/2 …): o ekranı temiz açılışla göster
+            if (typeof Router !== 'undefined' && location.hash.startsWith('#/')) location.reload();
+            return;
+        }
 
         const activeId = document.querySelector('.screen.active')?.id;
         closeOverlays();
@@ -134,6 +151,7 @@ const Nav = (() => {
         } finally {
             applying = false;
         }
+        syncUrl();
     }
 
     if (supported) window.addEventListener('popstate', onPopState);

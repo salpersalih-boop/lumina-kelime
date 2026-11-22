@@ -1,0 +1,125 @@
+{
+  "id": "pt-orta-10",
+  "level": "PT",
+  "sublevel": "orta",
+  "title": "Organizando a festa",
+  "topic": "Kutlama",
+  "instructions": "İki ev arkadaşı doğum günü partisi hazırlıyor. Kim ne yapacak, dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "vic": {
+      "name": "Vicente",
+      "voice": "male"
+    },
+    "lu": {
+      "name": "Luana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "lu",
+      "text": "Sábado é aniversário da Paula. Vamos fazer uma festa surpresa?"
+    },
+    {
+      "speaker": "vic",
+      "text": "Boa ideia. Em casa ou num bar?"
+    },
+    {
+      "speaker": "lu",
+      "text": "Em casa, sai mais barato. Eu cuido da comida."
+    },
+    {
+      "speaker": "vic",
+      "text": "Então eu compro as bebidas e o bolo."
+    },
+    {
+      "speaker": "lu",
+      "text": "Bolo de chocolate, é o preferido dela. E sem amendoim, a Paula tem alergia."
+    },
+    {
+      "speaker": "vic",
+      "text": "Tá, vou anotar. Quem a gente convida?"
+    },
+    {
+      "speaker": "lu",
+      "text": "O pessoal do trabalho e o irmão dela. Umas quinze pessoas."
+    },
+    {
+      "speaker": "vic",
+      "text": "E como a gente traz ela para casa sem ela desconfiar?"
+    },
+    {
+      "speaker": "lu",
+      "text": "O irmão leva ela no cinema e eles voltam às nove."
+    },
+    {
+      "speaker": "vic",
+      "text": "Perfeito. Então todo mundo aqui às oito e meia, com as luzes apagadas."
+    },
+    {
+      "speaker": "lu",
+      "text": "E lembra: não posta nada nas redes sociais."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Parti nerede olacak?",
+      "options": [
+        "Barda",
+        "Evde",
+        "Sinemada",
+        "Restoranda"
+      ],
+      "answer": 1,
+      "feedback": "Evde, daha ucuz.",
+      "evidence": "Em casa, sai mais barato."
+    },
+    {
+      "id": "q2",
+      "prompt": "Vicente ne alacak?",
+      "options": [
+        "Yemek",
+        "Hediye",
+        "İçecekler ve pasta",
+        "Balonlar"
+      ],
+      "answer": 2,
+      "feedback": "Vicente içecekleri ve pastayı alacak.",
+      "evidence": "Então eu compro as bebidas e o bolo."
+    },
+    {
+      "id": "q3",
+      "prompt": "Pasta neden fıstıksız olmalı?",
+      "options": [
+        "Paula sevmiyor",
+        "Paula alerjik",
+        "Çok pahalı",
+        "Bulunmuyor"
+      ],
+      "answer": 1,
+      "feedback": "Paula fıstığa alerjik.",
+      "evidence": "E sem amendoim, a Paula tem alergia."
+    },
+    {
+      "id": "q4",
+      "prompt": "Konuklar saat kaçta gelmeli?",
+      "options": [
+        "Sekiz",
+        "Sekiz buçuk",
+        "Dokuz",
+        "Dokuz buçuk"
+      ],
+      "answer": 1,
+      "feedback": "Paula dokuzda dönüyor; herkes sekiz buçukta gelmeli.",
+      "evidence": "Então todo mundo aqui às oito e meia, com as luzes apagadas."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "pt-zor-05",
+  "level": "PT",
+  "sublevel": "zor",
+  "title": "Podcast: trabalhar de casa",
+  "topic": "Podcast",
+  "instructions": "Bir podcast bölümü. Konuşmacı artıları ve eksileri sıralıyor; hangisi hangi tarafta, dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "apr": {
+      "name": "Apresentadora",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "apr",
+      "text": "Hoje o assunto é trabalhar de casa, algo que já faz quase um terço dos trabalhadores do país."
+    },
+    {
+      "speaker": "apr",
+      "text": "A primeira coisa que todo mundo fala é o tempo: sem deslocamento, as pessoas ganham em média uma hora por dia."
+    },
+    {
+      "speaker": "apr",
+      "text": "A segunda é o dinheiro. Gasta-se menos com transporte e com almoço fora, embora a conta de luz suba."
+    },
+    {
+      "speaker": "apr",
+      "text": "Mas nem tudo é vantagem. Muita gente trabalha mais horas, porque não sabe quando parar."
+    },
+    {
+      "speaker": "apr",
+      "text": "E o problema maior, segundo os psicólogos, não é o cansaço, e sim a solidão."
+    },
+    {
+      "speaker": "apr",
+      "text": "Por isso as empresas recomendam um modelo misto: três dias em casa e dois no escritório."
+    },
+    {
+      "speaker": "apr",
+      "text": "Há cinco anos só oito por cento das empresas ofereciam isso; hoje é mais da metade."
+    },
+    {
+      "speaker": "apr",
+      "text": "Meu conselho: se você trabalha de casa, saia na rua pelo menos uma vez por dia e feche o computador em um horário fixo."
+    },
+    {
+      "speaker": "apr",
+      "text": "No próximo episódio vamos falar sobre como pedir aumento de salário. Até lá."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Ülkede çalışanların ne kadarı evden çalışıyor?",
+      "options": [
+        "Yaklaşık dörtte biri",
+        "Yaklaşık üçte biri",
+        "Yarısı",
+        "Hemen hepsi"
+      ],
+      "answer": 1,
+      "feedback": "Neredeyse üçte biri.",
+      "evidence": "algo que já faz quase um terço dos trabalhadores do país."
+    },
+    {
+      "id": "q2",
+      "prompt": "Evden çalışanlar günde ortalama ne kadar zaman kazanıyor?",
+      "options": [
+        "Yarım saat",
+        "Bir saat",
+        "İki saat",
+        "Üç saat"
+      ],
+      "answer": 1,
+      "feedback": "Yol olmadığı için günde ortalama bir saat.",
+      "evidence": "as pessoas ganham em média uma hora por dia."
+    },
+    {
+      "id": "q3",
+      "prompt": "Evden çalışınca hangi gider artıyor?",
+      "options": [
+        "Ulaşım",
+        "Dışarıda yemek",
+        "Elektrik faturası",
+        "Kira"
+      ],
+      "answer": 2,
+      "feedback": "Elektrik faturası yükseliyor.",
+      "evidence": "embora a conta de luz suba."
+    },
+    {
+      "id": "q4",
+      "prompt": "Psikologlara göre en büyük sorun ne?",
+      "options": [
+        "Yorgunluk",
+        "Yalnızlık",
+        "Gürültü",
+        "Düşük maaş"
+      ],
+      "answer": 1,
+      "feedback": "Yorgunluk değil, yalnızlık.",
+      "evidence": "não é o cansaço, e sim a solidão."
+    },
+    {
+      "id": "q5",
+      "prompt": "Bugün karma modeli sunan şirketlerin oranı ne?",
+      "options": [
+        "%8",
+        "%30",
+        "Yarısından fazlası",
+        "Hepsi"
+      ],
+      "answer": 2,
+      "feedback": "Beş yıl önce %8’di, bugün yarısından fazlası.",
+      "evidence": "hoje é mais da metade."
+    }
+  ]
+}

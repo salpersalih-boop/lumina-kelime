@@ -1,0 +1,92 @@
+{
+  "id": "pt-kolay-02",
+  "level": "PT",
+  "sublevel": "kolay",
+  "title": "Meu apartamento",
+  "topic": "Ev",
+  "instructions": "Rafael dairesini anlatıyor.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "rafa": {
+      "name": "Rafael",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "rafa",
+      "text": "Eu moro em um apartamento pequeno em São Paulo."
+    },
+    {
+      "speaker": "rafa",
+      "text": "Fica no quinto andar de um prédio perto do metrô."
+    },
+    {
+      "speaker": "rafa",
+      "text": "Tem dois quartos, uma sala, uma cozinha e um banheiro."
+    },
+    {
+      "speaker": "rafa",
+      "text": "Meu quarto é branco e tem uma janela grande."
+    },
+    {
+      "speaker": "rafa",
+      "text": "Da janela eu vejo um parque com muitas árvores."
+    },
+    {
+      "speaker": "rafa",
+      "text": "Não tem garagem, mas eu não tenho carro."
+    },
+    {
+      "speaker": "rafa",
+      "text": "Vou para o trabalho de metrô todos os dias."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Daire kaçıncı katta?",
+      "options": [
+        "Üçüncü",
+        "Dördüncü",
+        "Beşinci",
+        "Altıncı"
+      ],
+      "answer": 2,
+      "feedback": "Beşinci katta.",
+      "evidence": "Fica no quinto andar de um prédio perto do metrô."
+    },
+    {
+      "id": "q2",
+      "prompt": "Rafael pencereden ne görüyor?",
+      "options": [
+        "Denizi",
+        "Bir park",
+        "Sokağı",
+        "Dağları"
+      ],
+      "answer": 1,
+      "feedback": "Ağaçlı bir park görüyor.",
+      "evidence": "Da janela eu vejo um parque com muitas árvores."
+    },
+    {
+      "id": "q3",
+      "prompt": "Rafael işe nasıl gidiyor?",
+      "options": [
+        "Arabayla",
+        "Otobüsle",
+        "Metroyla",
+        "Bisikletle"
+      ],
+      "answer": 2,
+      "feedback": "Her gün metroyla gidiyor.",
+      "evidence": "Vou para o trabalho de metrô todos os dias."
+    }
+  ]
+}

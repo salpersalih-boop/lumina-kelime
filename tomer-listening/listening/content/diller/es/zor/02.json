@@ -1,0 +1,118 @@
+{
+  "id": "es-zor-02",
+  "level": "ES",
+  "sublevel": "zor",
+  "title": "Noticias de la mañana",
+  "topic": "Radyo haberi",
+  "instructions": "Kısa bir radyo bülteni. Sayılar birbirine karışabilir. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "loc": {
+      "name": "Locutor",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "loc",
+      "text": "Buenos días, son las ocho. Estas son las noticias."
+    },
+    {
+      "speaker": "loc",
+      "text": "El Ayuntamiento ha anunciado que, desde el próximo lunes, el transporte público será gratuito para los menores de dieciséis años."
+    },
+    {
+      "speaker": "loc",
+      "text": "La medida costará unos doce millones de euros al año."
+    },
+    {
+      "speaker": "loc",
+      "text": "En deportes, el equipo local ganó anoche por tres a uno y sube al segundo puesto de la liga."
+    },
+    {
+      "speaker": "loc",
+      "text": "Y el tiempo: hoy lluvia débil por la mañana y sol por la tarde, con máximas de diecinueve grados."
+    },
+    {
+      "speaker": "loc",
+      "text": "Mañana, en cambio, se esperan tormentas fuertes en toda la región."
+    },
+    {
+      "speaker": "loc",
+      "text": "Volvemos a las nueve con más información."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Toplu taşıma kimlere ücretsiz olacak?",
+      "options": [
+        "Herkese",
+        "16 yaş altına",
+        "65 yaş üstüne",
+        "Öğrencilere"
+      ],
+      "answer": 1,
+      "feedback": "On altı yaş altına.",
+      "evidence": "será gratuito para los menores de dieciséis años."
+    },
+    {
+      "id": "q2",
+      "prompt": "Uygulama ne zaman başlıyor?",
+      "options": [
+        "Bugün",
+        "Yarın",
+        "Gelecek pazartesi",
+        "Gelecek ay"
+      ],
+      "answer": 2,
+      "feedback": "Gelecek pazartesiden itibaren.",
+      "evidence": "desde el próximo lunes"
+    },
+    {
+      "id": "q3",
+      "prompt": "Maç kaç kaç bitti?",
+      "options": [
+        "1-3",
+        "3-1",
+        "2-1",
+        "3-0"
+      ],
+      "answer": 1,
+      "feedback": "Üçe bir kazandılar.",
+      "evidence": "ganó anoche por tres a uno"
+    },
+    {
+      "id": "q4",
+      "prompt": "Bugün öğleden sonra hava nasıl?",
+      "options": [
+        "Yağmurlu",
+        "Fırtınalı",
+        "Güneşli",
+        "Karlı"
+      ],
+      "answer": 2,
+      "feedback": "Sabah hafif yağmur, öğleden sonra güneş.",
+      "evidence": "hoy lluvia débil por la mañana y sol por la tarde"
+    },
+    {
+      "id": "q5",
+      "prompt": "Fırtına ne zaman bekleniyor?",
+      "options": [
+        "Bugün",
+        "Yarın",
+        "Hafta sonu",
+        "Gelecek hafta"
+      ],
+      "answer": 1,
+      "feedback": "Yarın bütün bölgede şiddetli fırtına.",
+      "evidence": "Mañana, en cambio, se esperan tormentas fuertes en toda la región."
+    }
+  ]
+}

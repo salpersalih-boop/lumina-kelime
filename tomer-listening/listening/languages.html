@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dinleyerek Öğren</title>
+  <meta name="description" content="Lumina Dinleyerek Öğren: İspanyolca, Portekizce ve diğer dillerde Kolay / Orta / Zor dinleme metinleri, Türkçe sorular.">
+  <meta name="theme-color" content="#161c42">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/screens.css">
+  <link rel="stylesheet" href="css/lesson.css">
+</head>
+<body>
+  <script>
+    // Tema, ilk boyamadan önce uygulanır (açık temada yanıp sönmeyi önler).
+    try { if (localStorage.getItem('listening.theme') === 'light') document.body.classList.add('light-theme'); } catch (e) {}
+  </script>
+  <a class="ls-skip" href="#app">İçeriğe geç</a>
+
+  <header class="ls-bar">
+    <div class="ls-bar-inner">
+      <a class="ls-brand" href="#/" aria-label="Dinleyerek Öğren ana sayfa">
+        <span class="ls-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><rect x="3" y="13" width="5" height="8" rx="2"/><rect x="16" y="13" width="5" height="8" rx="2"/></svg>
+        </span>
+        <span><small>Lumina</small>Dinleyerek Öğren</span>
+      </a>
+      <nav id="crumbs" class="ls-crumbs" aria-label="Konum"></nav>
+      <button type="button" id="themeToggle" class="ls-icon-btn" aria-label="Temayı değiştir"></button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1" data-content="content/diller/">
+    <div class="ls-loading"><span class="ls-spinner"></span></div>
+  </main>
+
+  <noscript><p class="ls-screen">Bu modül JavaScript gerektirir.</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

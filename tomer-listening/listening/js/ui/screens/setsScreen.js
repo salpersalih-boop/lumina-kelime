@@ -6,7 +6,7 @@ import { backLink, lengthChip, kindChip, timeChip, scoreBadge } from './parts.js
 /**
  * Bir zorluktaki metinlerin listesi; uzunluğa göre süzülebilir.
  * @param {HTMLElement} root
- * @param {{level: {id: string}, sublevel: {id: string, label: string},
+ * @param {{level: {id: string, label: string, app: {short: string}}, sublevel: {id: string, label: string},
  *          items: {n: number, title: string, topic: string, length: {id: string, label: string},
  *                  seconds: string, kind: string, questions: number, best: number|null}[],
  *          filter: string, onFilter: (id: string) => void}} model
@@ -17,9 +17,9 @@ export function renderSets(root, { level, sublevel, items, filter, onFilter }) {
 
   root.innerHTML = `
     <div class="ls-screen">
-      ${backLink({ name: 'sublevels', level: level.id }, `${level.id} zorlukları`)}
+      ${backLink({ name: 'sublevels', level: level.id }, `${level.label} zorlukları`)}
       <header class="ls-head">
-        <span class="ls-kicker">${esc(level.id)} · Dinleme</span>
+        <span class="ls-kicker">${esc(level.label)} · ${esc(level.app.short)}</span>
         <h1 tabindex="-1"><span class="ls-grad-text">${esc(sublevel.label)}</span> metinler</h1>
         <p>${items.length} metin · ${done} tamamlandı. Bir metin seç; dinledikten sonra soruları cevapla.</p>
       </header>
@@ -46,7 +46,7 @@ export function renderSets(root, { level, sublevel, items, filter, onFilter }) {
             ${lengthChip(it.length)}
             ${scoreBadge(it.best)}
           </div>
-          <h2 lang="en">${esc(it.title)}</h2>
+          <h2 lang="${esc(it.lang)}">${esc(it.title)}</h2>
           <p class="ls-set-topic">${esc(it.topic)}</p>
           <div class="ls-set-foot">
             ${timeChip(it.seconds)}

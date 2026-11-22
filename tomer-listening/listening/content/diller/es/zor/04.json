@@ -1,0 +1,126 @@
+{
+  "id": "es-zor-04",
+  "level": "ES",
+  "sublevel": "zor",
+  "title": "Visita guiada: el casco antiguo",
+  "topic": "Müze rehberi",
+  "instructions": "Bir şehir turu rehberi konuşuyor. Tarihlere ve yasaklara dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "guia": {
+      "name": "Guía",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "guia",
+      "text": "Bienvenidos al casco antiguo. Vamos a empezar por la catedral."
+    },
+    {
+      "speaker": "guia",
+      "text": "La construcción comenzó en el año mil doscientos veintiuno y terminó casi tres siglos después."
+    },
+    {
+      "speaker": "guia",
+      "text": "Por eso mezcla estilos: la parte baja es gótica y las torres son renacentistas."
+    },
+    {
+      "speaker": "guia",
+      "text": "Dentro pueden hacer fotos, pero sin flash, para proteger las pinturas."
+    },
+    {
+      "speaker": "guia",
+      "text": "Después caminaremos hasta el mercado, que está abierto desde las ocho hasta las tres."
+    },
+    {
+      "speaker": "guia",
+      "text": "Allí tendrán cuarenta y cinco minutos libres para comer algo."
+    },
+    {
+      "speaker": "guia",
+      "text": "Les recomiendo el puesto de quesos, al fondo a la izquierda, aunque el de jamón es más famoso."
+    },
+    {
+      "speaker": "guia",
+      "text": "Nos vemos de nuevo a las dos en punto en la fuente de la plaza."
+    },
+    {
+      "speaker": "guia",
+      "text": "Si alguien se pierde, mi número está en el folleto."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Katedralin inşası ne zaman başladı?",
+      "options": [
+        "1121",
+        "1221",
+        "1321",
+        "1521"
+      ],
+      "answer": 1,
+      "feedback": "Bin iki yüz yirmi birde.",
+      "evidence": "La construcción comenzó en el año mil doscientos veintiuno"
+    },
+    {
+      "id": "q2",
+      "prompt": "Kuleler hangi tarzda?",
+      "options": [
+        "Gotik",
+        "Barok",
+        "Rönesans",
+        "Modern"
+      ],
+      "answer": 2,
+      "feedback": "Alt kısım gotik, kuleler Rönesans.",
+      "evidence": "las torres son renacentistas."
+    },
+    {
+      "id": "q3",
+      "prompt": "İçeride fotoğraf çekmek için kural ne?",
+      "options": [
+        "Yasak",
+        "Flaşsız serbest",
+        "Sadece telefonla",
+        "Ücretli"
+      ],
+      "answer": 1,
+      "feedback": "Flaşsız çekilebilir.",
+      "evidence": "pueden hacer fotos, pero sin flash"
+    },
+    {
+      "id": "q4",
+      "prompt": "Markette ne kadar serbest zaman var?",
+      "options": [
+        "30 dakika",
+        "45 dakika",
+        "1 saat",
+        "2 saat"
+      ],
+      "answer": 1,
+      "feedback": "Kırk beş dakika.",
+      "evidence": "Allí tendrán cuarenta y cinco minutos libres para comer algo."
+    },
+    {
+      "id": "q5",
+      "prompt": "Grup nerede yeniden buluşacak?",
+      "options": [
+        "Katedralde",
+        "Markette",
+        "Meydandaki çeşmede",
+        "Otobüste"
+      ],
+      "answer": 2,
+      "feedback": "Saat ikide meydandaki çeşmede.",
+      "evidence": "Nos vemos de nuevo a las dos en punto en la fuente de la plaza."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "es-kolay-06",
+  "level": "ES",
+  "sublevel": "kolay",
+  "title": "El tiempo hoy",
+  "topic": "Hava durumu",
+  "instructions": "Kısa bir hava durumu haberi.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "loc": {
+      "name": "Locutora",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "loc",
+      "text": "Buenos días. Hoy en Madrid hace sol y la temperatura es de veintidós grados."
+    },
+    {
+      "speaker": "loc",
+      "text": "En Bilbao está nublado y por la tarde va a llover."
+    },
+    {
+      "speaker": "loc",
+      "text": "En Málaga hace calor: treinta grados y cielo azul."
+    },
+    {
+      "speaker": "loc",
+      "text": "Mañana baja la temperatura en todo el país."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Madrid’de hava nasıl?",
+      "options": [
+        "Yağmurlu",
+        "Güneşli",
+        "Bulutlu",
+        "Karlı"
+      ],
+      "answer": 1,
+      "feedback": "Madrid’de güneşli, 22 derece.",
+      "evidence": "Hoy en Madrid hace sol y la temperatura es de veintidós grados."
+    },
+    {
+      "id": "q2",
+      "prompt": "Nerede yağmur yağacak?",
+      "options": [
+        "Madrid",
+        "Málaga",
+        "Bilbao",
+        "Sevilla"
+      ],
+      "answer": 2,
+      "feedback": "Bilbao’da öğleden sonra yağmur yağacak.",
+      "evidence": "En Bilbao está nublado y por la tarde va a llover."
+    },
+    {
+      "id": "q3",
+      "prompt": "Málaga’da sıcaklık kaç derece?",
+      "options": [
+        "22",
+        "25",
+        "30",
+        "35"
+      ],
+      "answer": 2,
+      "feedback": "Málaga’da otuz derece.",
+      "evidence": "En Málaga hace calor: treinta grados y cielo azul."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "es-kolay-08",
+  "level": "ES",
+  "sublevel": "kolay",
+  "title": "Mis vacaciones en Galicia",
+  "topic": "Tatil",
+  "instructions": "Raquel yaz tatilini anlatıyor. Nereye gittiğine, ne yaptığına dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "raquel": {
+      "name": "Raquel",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "raquel",
+      "text": "Este verano fui de vacaciones a Galicia con mi familia."
+    },
+    {
+      "speaker": "raquel",
+      "text": "Estuvimos diez días en un pueblo pequeño cerca del mar."
+    },
+    {
+      "speaker": "raquel",
+      "text": "La casa era de mi tía y tenía un jardín con árboles de manzanas."
+    },
+    {
+      "speaker": "raquel",
+      "text": "Por las mañanas íbamos a la playa, aunque el agua estaba muy fría."
+    },
+    {
+      "speaker": "raquel",
+      "text": "Por las tardes paseábamos por el pueblo y comíamos helado."
+    },
+    {
+      "speaker": "raquel",
+      "text": "Un día visitamos Santiago de Compostela y vimos la catedral."
+    },
+    {
+      "speaker": "raquel",
+      "text": "Comimos pulpo y empanada en un restaurante pequeño."
+    },
+    {
+      "speaker": "raquel",
+      "text": "Llovió dos días, pero no importó: jugamos a las cartas en casa."
+    },
+    {
+      "speaker": "raquel",
+      "text": "Fueron unas vacaciones muy tranquilas y quiero volver el año que viene."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Raquel tatilde kaç gün kaldı?",
+      "options": [
+        "Bir hafta",
+        "On gün",
+        "İki hafta",
+        "Bir ay"
+      ],
+      "answer": 1,
+      "feedback": "On gün küçük bir köyde kaldılar.",
+      "evidence": "Estuvimos diez días en un pueblo pequeño cerca del mar."
+    },
+    {
+      "id": "q2",
+      "prompt": "Deniz suyu nasıldı?",
+      "options": [
+        "Çok sıcak",
+        "Ilık",
+        "Çok soğuk",
+        "Kirli"
+      ],
+      "answer": 2,
+      "feedback": "Su çok soğuktu ama yine de plaja gittiler.",
+      "evidence": "aunque el agua estaba muy fría."
+    },
+    {
+      "id": "q3",
+      "prompt": "Yağmurlu günlerde ne yaptılar?",
+      "options": [
+        "Katedrali gezdiler",
+        "Kart oynadılar",
+        "Dondurma yediler",
+        "Plaja gittiler"
+      ],
+      "answer": 1,
+      "feedback": "Yağmurlu iki günde evde kart oynadılar.",
+      "evidence": "jugamos a las cartas en casa."
+    }
+  ]
+}

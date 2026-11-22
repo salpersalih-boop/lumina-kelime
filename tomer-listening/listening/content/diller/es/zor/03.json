@@ -1,0 +1,118 @@
+{
+  "id": "es-zor-03",
+  "level": "ES",
+  "sublevel": "zor",
+  "title": "Mensaje de voz: cambio de planes",
+  "topic": "Sesli mesaj",
+  "instructions": "Bir arkadaş plan değişikliği bırakıyor. Düzeltilen bilgilere dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "alba": {
+      "name": "Alba",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "alba",
+      "text": "Hola, soy Alba. Oye, cambio de planes para mañana."
+    },
+    {
+      "speaker": "alba",
+      "text": "El restaurante de la calle Luna está cerrado por reforma, así que vamos al italiano de la plaza."
+    },
+    {
+      "speaker": "alba",
+      "text": "He reservado a las nueve... no, espera, a las nueve y media, que Pedro sale tarde del trabajo."
+    },
+    {
+      "speaker": "alba",
+      "text": "Somos cinco, no seis: Marina al final no viene, tiene examen el viernes."
+    },
+    {
+      "speaker": "alba",
+      "text": "Ah, y lleva efectivo, porque ahí no aceptan tarjeta."
+    },
+    {
+      "speaker": "alba",
+      "text": "Si puedes, pasa antes por mi casa a recoger el regalo de Pedro. Lo tiene mi hermano."
+    },
+    {
+      "speaker": "alba",
+      "text": "Llámame cuando oigas esto. ¡Chao!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Neden ilk restorana gitmiyorlar?",
+      "options": [
+        "Çok pahalı",
+        "Tadilat için kapalı",
+        "Yer yok",
+        "Uzak"
+      ],
+      "answer": 1,
+      "feedback": "Luna sokağındaki restoran tadilat nedeniyle kapalı.",
+      "evidence": "está cerrado por reforma"
+    },
+    {
+      "id": "q2",
+      "prompt": "Rezervasyon saat kaçta?",
+      "options": [
+        "Dokuz",
+        "Dokuz buçuk",
+        "On",
+        "Sekiz buçuk"
+      ],
+      "answer": 1,
+      "feedback": "Önce dokuz diyor, sonra dokuz buçuk olarak düzeltiyor.",
+      "evidence": "a las nueve y media, que Pedro sale tarde del trabajo."
+    },
+    {
+      "id": "q3",
+      "prompt": "Kaç kişi olacaklar?",
+      "options": [
+        "Dört",
+        "Beş",
+        "Altı",
+        "Yedi"
+      ],
+      "answer": 1,
+      "feedback": "Beş kişi; Marina gelmiyor.",
+      "evidence": "Somos cinco, no seis"
+    },
+    {
+      "id": "q4",
+      "prompt": "Marina neden gelmiyor?",
+      "options": [
+        "Hasta",
+        "Cuma günü sınavı var",
+        "Çalışıyor",
+        "Seyahatte"
+      ],
+      "answer": 1,
+      "feedback": "Cuma günü sınavı var.",
+      "evidence": "tiene examen el viernes."
+    },
+    {
+      "id": "q5",
+      "prompt": "Hediye kimde?",
+      "options": [
+        "Alba’da",
+        "Pedro’da",
+        "Alba’nın erkek kardeşinde",
+        "Marina’da"
+      ],
+      "answer": 2,
+      "feedback": "Hediye Alba’nın erkek kardeşinde.",
+      "evidence": "Lo tiene mi hermano."
+    }
+  ]
+}
