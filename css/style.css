@@ -6119,3 +6119,64 @@ body.light-theme .dr-code code { color: #1f2328; }
 .dr-lvchip { display: inline-block; padding: 2px 8px; border-radius: 999px; font-weight: 800; font-size: .72rem; background: var(--bg-elevated); }
 .dr-lvchip.lv1 { color: #4ade80; } .dr-lvchip.lv2 { color: #facc15; } .dr-lvchip.lv3 { color: #f87171; }
 body.light-theme .dr-lvchip.lv1 { color: #15803d; } body.light-theme .dr-lvchip.lv2 { color: #a16207; } body.light-theme .dr-lvchip.lv3 { color: #b91c1c; }
+
+/* ═══════════════════════════════════════
+   DİL SEÇİMİ: çalışma alanları + kelime dilleri
+   #langModules: TÖMER, Derslerim, Dinleyerek Öğren (geniş, yatay kartlar)
+═══════════════════════════════════════ */
+.lang-section { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+.lang-section + .lang-section { margin-top: 2.25rem; }
+.lang-section-title {
+    display: flex; align-items: center; gap: 12px; margin: 0 0 1rem;
+    font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted);
+}
+.lang-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.lang-section #langGrid { padding: 0; }
+#langModulesSection:has(#langModules:empty) { display: none; }
+
+#langModules { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+#langModules .module-btn {
+    width: 100%; max-width: none; flex-direction: row; align-items: center; text-align: left;
+    gap: 1.1rem; padding: 1.35rem 1.4rem; min-height: 112px;
+}
+#langModules .module-btn:hover { transform: translateY(-4px); }
+#langModules .module-btn .lang-icon-wrap { width: 64px; height: 64px; flex: none; }
+#langModules .module-btn .lang-info { flex: 1; min-width: 0; align-items: flex-start; text-align: left; }
+#langModules .module-btn .lang-info h3 { font-size: 1.2rem; margin-bottom: 4px; }
+#langModules .module-btn .lang-info p { font-size: .86rem; line-height: 1.4; }
+.module-tag {
+    position: absolute; top: 12px; right: 14px; z-index: 1;
+    padding: 2px 9px; border-radius: 999px; font-size: .66rem; font-weight: 800; letter-spacing: .04em;
+    color: var(--text-dim); background: var(--bg-surface); border: 1px solid var(--border);
+}
+.module-go {
+    flex: none; z-index: 1; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+    font-weight: 800; color: var(--text-dim); background: var(--bg-surface); border: 1px solid var(--border); transition: var(--transition);
+}
+#langModules .module-btn:hover .module-go { color: #fff; background: var(--accent-1); border-color: transparent; transform: translateX(3px); }
+
+/* Dinleyerek Öğren */
+.lang-btn.listening-theme {
+    border-color: rgba(124, 110, 247, .45);
+    background: linear-gradient(135deg, rgba(124, 110, 247, .22) 0%, rgba(94, 196, 245, .10) 55%, var(--bg-card) 100%);
+}
+.lang-btn.listening-theme::before { background: linear-gradient(135deg, rgba(124, 110, 247, .3), rgba(94, 196, 245, .08) 60%); }
+.lang-btn.listening-theme:hover { border-color: rgba(124, 110, 247, .9); box-shadow: 0 12px 40px rgba(0, 0, 0, .45), 0 0 30px rgba(124, 110, 247, .25); }
+.lang-btn.listening-theme .lang-info h3 {
+    background: linear-gradient(90deg, #a99cff, #5ec4f5); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.lang-btn.listening-theme .module-tag { color: #fff; background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); border-color: transparent; }
+.lang-icon-wrap.listening { background: radial-gradient(circle, rgba(124, 110, 247, .35), rgba(94, 196, 245, .12)); border-color: rgba(124, 110, 247, .45); }
+body.light-theme .lang-btn.listening-theme { background: linear-gradient(135deg, rgba(124, 110, 247, .14) 0%, rgba(94, 196, 245, .06) 55%, var(--bg-card) 100%); }
+
+/* Bayrak emojisi göstermeyen sistemler (Windows): "GB EN" gibi çift kısaltma yerine tek, büyük kod */
+html.no-flag-emoji .flag-emoji.is-flag { display: none; }
+html.no-flag-emoji .lang-icon-wrap:has(.flag-emoji.is-flag) .flag-code { font-size: 1.15rem; letter-spacing: 1px; color: var(--text-primary); margin: 0; }
+
+@media (max-width: 520px) {
+    .lang-section { padding: 0 10px; }
+    #langModules { grid-template-columns: 1fr; gap: .75rem; }
+    #langModules .module-btn { padding: 1rem 1.1rem; min-height: 0; gap: .9rem; }
+    #langModules .module-btn .lang-icon-wrap { width: 52px; height: 52px; }
+    .module-go { display: none; }
+}
