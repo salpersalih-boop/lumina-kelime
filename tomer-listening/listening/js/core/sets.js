@@ -18,9 +18,9 @@ export function setPathOf(level, sub, n) {
   return `${level.toLowerCase()}/${sub}/${pad(n)}.json`;
 }
 
-/** Bir metnin kelime sayısı (konuşmacı adları hariç). */
+/** Bir metnin kelime sayısı (konuşmacı adları hariç). Aksanlı harfler de kelimeye dahildir (está, ação). */
 export function wordCount(script) {
-  return script.reduce((sum, line) => sum + (line.text.match(/[A-Za-z0-9'’]+/g)?.length ?? 0), 0);
+  return script.reduce((sum, line) => sum + (line.text.match(/[\p{L}\p{N}'’]+/gu)?.length ?? 0), 0);
 }
 
 /**

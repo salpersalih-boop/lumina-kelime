@@ -1,0 +1,96 @@
+{
+  "id": "es-kolay-03",
+  "level": "ES",
+  "sublevel": "kolay",
+  "title": "Un día normal",
+  "topic": "Günlük rutin",
+  "instructions": "Marta sıradan bir gününü anlatıyor.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "marta": {
+      "name": "Marta",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "marta",
+      "text": "Me levanto a las siete de la mañana."
+    },
+    {
+      "speaker": "marta",
+      "text": "Desayuno café con leche y tostadas."
+    },
+    {
+      "speaker": "marta",
+      "text": "A las ocho tomo el autobús al trabajo."
+    },
+    {
+      "speaker": "marta",
+      "text": "Trabajo en una oficina en el centro de la ciudad."
+    },
+    {
+      "speaker": "marta",
+      "text": "Como a las dos con mis compañeros."
+    },
+    {
+      "speaker": "marta",
+      "text": "Por la tarde vuelvo a casa y hago deporte."
+    },
+    {
+      "speaker": "marta",
+      "text": "Ceno a las nueve y veo una serie."
+    },
+    {
+      "speaker": "marta",
+      "text": "Me acuesto a las once y media."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Marta saat kaçta kalkıyor?",
+      "options": [
+        "Altıda",
+        "Yedide",
+        "Sekizde",
+        "Dokuzda"
+      ],
+      "answer": 1,
+      "feedback": "Sabah yedide kalkıyor.",
+      "evidence": "Me levanto a las siete de la mañana."
+    },
+    {
+      "id": "q2",
+      "prompt": "Marta işe nasıl gidiyor?",
+      "options": [
+        "Arabayla",
+        "Metroyla",
+        "Otobüsle",
+        "Yürüyerek"
+      ],
+      "answer": 2,
+      "feedback": "Saat sekizde otobüse biniyor.",
+      "evidence": "A las ocho tomo el autobús al trabajo."
+    },
+    {
+      "id": "q3",
+      "prompt": "Marta akşam yemeğini saat kaçta yiyor?",
+      "options": [
+        "Yedide",
+        "Sekizde",
+        "Dokuzda",
+        "Onda"
+      ],
+      "answer": 2,
+      "feedback": "Dokuzda akşam yemeği yiyor.",
+      "evidence": "Ceno a las nueve y veo una serie."
+    }
+  ]
+}

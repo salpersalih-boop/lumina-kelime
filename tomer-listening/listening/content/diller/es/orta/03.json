@@ -1,0 +1,105 @@
+{
+  "id": "es-orta-03",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "Planes para el fin de semana",
+  "topic": "Planlar",
+  "instructions": "İki arkadaş hafta sonu planı yapıyor. Kısa bir diyalog.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "nuria": {
+      "name": "Nuria",
+      "voice": "female"
+    },
+    "ivan": {
+      "name": "Iván",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "nuria",
+      "text": "¿Qué haces el sábado?"
+    },
+    {
+      "speaker": "ivan",
+      "text": "Por la mañana tengo partido de baloncesto."
+    },
+    {
+      "speaker": "nuria",
+      "text": "Hay un concierto gratis en el parque, a las siete."
+    },
+    {
+      "speaker": "ivan",
+      "text": "Vale. Pero el domingo no puedo, voy a ver a mis abuelos."
+    },
+    {
+      "speaker": "nuria",
+      "text": "Entonces quedamos el sábado a las seis en la entrada del parque."
+    },
+    {
+      "speaker": "ivan",
+      "text": "Perfecto."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Iván cumartesi sabahı ne yapıyor?",
+      "options": [
+        "Çalışıyor",
+        "Basketbol maçı var",
+        "Büyükannesini ziyaret ediyor",
+        "Uyuyor"
+      ],
+      "answer": 1,
+      "feedback": "Cumartesi sabahı basketbol maçı var.",
+      "evidence": "Por la mañana tengo partido de baloncesto."
+    },
+    {
+      "id": "q2",
+      "prompt": "Konser nerede ve saat kaçta?",
+      "options": [
+        "Stadyumda, altıda",
+        "Parkta, yedide",
+        "Tiyatroda, sekizde",
+        "Okulda, dokuzda"
+      ],
+      "answer": 1,
+      "feedback": "Parkta, saat yedide ücretsiz konser.",
+      "evidence": "Hay un concierto gratis en el parque, a las siete."
+    },
+    {
+      "id": "q3",
+      "prompt": "Neden pazar günü buluşamıyorlar?",
+      "options": [
+        "Iván çalışıyor",
+        "Nuria seyahatte",
+        "Iván büyükanne ve büyükbabasına gidiyor",
+        "Yağmur yağacak"
+      ],
+      "answer": 2,
+      "feedback": "Iván pazar günü büyükanne ve büyükbabasını görmeye gidiyor.",
+      "evidence": "el domingo no puedo, voy a ver a mis abuelos."
+    },
+    {
+      "id": "q4",
+      "prompt": "Nerede buluşacaklar?",
+      "options": [
+        "Parkın girişinde",
+        "Iván’ın evinde",
+        "Stadyumda",
+        "Kafede"
+      ],
+      "answer": 0,
+      "feedback": "Cumartesi altıda parkın girişinde.",
+      "evidence": "quedamos el sábado a las seis en la entrada del parque."
+    }
+  ]
+}

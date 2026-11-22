@@ -1,0 +1,121 @@
+{
+  "id": "es-orta-07",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "Problema con el pedido",
+  "topic": "Şikâyet",
+  "instructions": "Bir müşteri internet siparişi için arıyor.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "at": {
+      "name": "Atención al cliente",
+      "voice": "female"
+    },
+    "mar": {
+      "name": "Marcos",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "at",
+      "text": "Tienda Online, le atiende Paula. ¿En qué puedo ayudarle?"
+    },
+    {
+      "speaker": "mar",
+      "text": "Hola. Hice un pedido hace dos semanas y todavía no ha llegado."
+    },
+    {
+      "speaker": "at",
+      "text": "¿Me dice el número de pedido?"
+    },
+    {
+      "speaker": "mar",
+      "text": "Sí, es el cuatro, siete, dos, nueve."
+    },
+    {
+      "speaker": "at",
+      "text": "Un momento... Veo que el paquete salió el martes, pero la dirección estaba incompleta. Falta el número del piso."
+    },
+    {
+      "speaker": "mar",
+      "text": "Es el segundo, puerta B."
+    },
+    {
+      "speaker": "at",
+      "text": "Perfecto, lo corrijo. Le llegará el jueves o el viernes."
+    },
+    {
+      "speaker": "mar",
+      "text": "¿Y los gastos de envío? Ya los pagué una vez."
+    },
+    {
+      "speaker": "at",
+      "text": "No se preocupe, no paga nada más. Además le mando un cupón de cinco euros por las molestias."
+    },
+    {
+      "speaker": "mar",
+      "text": "Gracias, muy amable."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Marcos siparişi ne zaman verdi?",
+      "options": [
+        "Dün",
+        "İki hafta önce",
+        "Bir ay önce",
+        "Salı günü"
+      ],
+      "answer": 1,
+      "feedback": "İki hafta önce sipariş vermiş.",
+      "evidence": "Hice un pedido hace dos semanas y todavía no ha llegado."
+    },
+    {
+      "id": "q2",
+      "prompt": "Paket neden ulaşmadı?",
+      "options": [
+        "Kaybolmuş",
+        "Adres eksikti",
+        "Ödeme yapılmamış",
+        "Ürün tükenmiş"
+      ],
+      "answer": 1,
+      "feedback": "Adres eksikti; daire numarası yoktu.",
+      "evidence": "pero la dirección estaba incompleta."
+    },
+    {
+      "id": "q3",
+      "prompt": "Paket ne zaman gelecek?",
+      "options": [
+        "Bugün",
+        "Yarın",
+        "Perşembe ya da cuma",
+        "Haftaya"
+      ],
+      "answer": 2,
+      "feedback": "Perşembe ya da cuma gelecek.",
+      "evidence": "Le llegará el jueves o el viernes."
+    },
+    {
+      "id": "q4",
+      "prompt": "Marcos ne alıyor?",
+      "options": [
+        "Para iadesi",
+        "5 euroluk kupon",
+        "Yeni ürün",
+        "Hiçbir şey"
+      ],
+      "answer": 1,
+      "feedback": "Rahatsızlık için beş euroluk kupon.",
+      "evidence": "le mando un cupón de cinco euros por las molestias."
+    }
+  ]
+}

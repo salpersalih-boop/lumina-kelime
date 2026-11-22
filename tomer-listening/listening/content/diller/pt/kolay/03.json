@@ -1,0 +1,92 @@
+{
+  "id": "pt-kolay-03",
+  "level": "PT",
+  "sublevel": "kolay",
+  "title": "A rotina da Juliana",
+  "topic": "Günlük rutin",
+  "instructions": "Juliana gününü anlatıyor. Saatlere dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ju": {
+      "name": "Juliana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ju",
+      "text": "Eu acordo às seis e meia da manhã."
+    },
+    {
+      "speaker": "ju",
+      "text": "Tomo café da manhã: pão com queijo e suco de laranja."
+    },
+    {
+      "speaker": "ju",
+      "text": "Às sete e meia pego o ônibus para a escola, onde sou professora."
+    },
+    {
+      "speaker": "ju",
+      "text": "Almoço ao meio-dia com as outras professoras."
+    },
+    {
+      "speaker": "ju",
+      "text": "À tarde corrijo provas e preparo as aulas."
+    },
+    {
+      "speaker": "ju",
+      "text": "Volto para casa às cinco e faço ioga."
+    },
+    {
+      "speaker": "ju",
+      "text": "Janto às oito e leio um pouco antes de dormir."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Juliana saat kaçta uyanıyor?",
+      "options": [
+        "Altı",
+        "Altı buçuk",
+        "Yedi",
+        "Yedi buçuk"
+      ],
+      "answer": 1,
+      "feedback": "Altı buçukta uyanıyor.",
+      "evidence": "Eu acordo às seis e meia da manhã."
+    },
+    {
+      "id": "q2",
+      "prompt": "Juliana ne iş yapıyor?",
+      "options": [
+        "Öğretmen",
+        "Doktor",
+        "Hemşire",
+        "Sekreter"
+      ],
+      "answer": 0,
+      "feedback": "Okulda öğretmen.",
+      "evidence": "pego o ônibus para a escola, onde sou professora."
+    },
+    {
+      "id": "q3",
+      "prompt": "Eve dönünce ne yapıyor?",
+      "options": [
+        "Koşuyor",
+        "Televizyon izliyor",
+        "Yoga yapıyor",
+        "Yemek pişiriyor"
+      ],
+      "answer": 2,
+      "feedback": "Beşte eve dönüp yoga yapıyor.",
+      "evidence": "Volto para casa às cinco e faço ioga."
+    }
+  ]
+}

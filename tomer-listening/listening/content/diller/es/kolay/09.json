@@ -1,0 +1,88 @@
+{
+  "id": "es-kolay-09",
+  "level": "ES",
+  "sublevel": "kolay",
+  "title": "Mensaje para Carlos",
+  "topic": "Sesli mesaj",
+  "instructions": "Carlos’un annesinden sesli mesaj.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "mama": {
+      "name": "Mamá",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mama",
+      "text": "Hola Carlos, soy mamá."
+    },
+    {
+      "speaker": "mama",
+      "text": "Hoy llego tarde a casa, a las nueve."
+    },
+    {
+      "speaker": "mama",
+      "text": "La cena está en la nevera: hay sopa y pollo."
+    },
+    {
+      "speaker": "mama",
+      "text": "Por favor, saca al perro y compra pan."
+    },
+    {
+      "speaker": "mama",
+      "text": "No olvides tus deberes de matemáticas."
+    },
+    {
+      "speaker": "mama",
+      "text": "Un beso."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Anne saat kaçta geliyor?",
+      "options": [
+        "Yedide",
+        "Sekizde",
+        "Dokuzda",
+        "Onda"
+      ],
+      "answer": 2,
+      "feedback": "Bugün geç, dokuzda geliyor.",
+      "evidence": "Hoy llego tarde a casa, a las nueve."
+    },
+    {
+      "id": "q2",
+      "prompt": "Buzdolabında ne var?",
+      "options": [
+        "Pizza",
+        "Çorba ve tavuk",
+        "Salata",
+        "Balık"
+      ],
+      "answer": 1,
+      "feedback": "Buzdolabında çorba ve tavuk var.",
+      "evidence": "hay sopa y pollo."
+    },
+    {
+      "id": "q3",
+      "prompt": "Carlos ne satın almalı?",
+      "options": [
+        "Süt",
+        "Ekmek",
+        "Meyve",
+        "Peynir"
+      ],
+      "answer": 1,
+      "feedback": "Köpeği çıkarıp ekmek alması isteniyor.",
+      "evidence": "saca al perro y compra pan."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "pt-orta-01",
+  "level": "PT",
+  "sublevel": "orta",
+  "title": "Reserva no restaurante",
+  "topic": "Rezervasyon",
+  "instructions": "Telefonda restoran rezervasyonu. Gün, saat ve kişi sayısına dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "rec": {
+      "name": "Recepcionista",
+      "voice": "male"
+    },
+    "ana": {
+      "name": "Ana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "rec",
+      "text": "Restaurante Mar Azul, boa tarde."
+    },
+    {
+      "speaker": "ana",
+      "text": "Oi, eu queria reservar uma mesa para sexta-feira."
+    },
+    {
+      "speaker": "rec",
+      "text": "Para quantas pessoas?"
+    },
+    {
+      "speaker": "ana",
+      "text": "Quatro. Ah não, cinco, minha prima também vem."
+    },
+    {
+      "speaker": "rec",
+      "text": "Cinco pessoas. Que horas?"
+    },
+    {
+      "speaker": "ana",
+      "text": "Às oito, se possível."
+    },
+    {
+      "speaker": "rec",
+      "text": "Às oito está lotado. Tenho mesa às sete ou às nove e meia."
+    },
+    {
+      "speaker": "ana",
+      "text": "Então às nove e meia."
+    },
+    {
+      "speaker": "rec",
+      "text": "Perfeito. Em nome de quem?"
+    },
+    {
+      "speaker": "ana",
+      "text": "Ana Souza. Uma pergunta: vocês têm opção vegana?"
+    },
+    {
+      "speaker": "rec",
+      "text": "Temos sim, dois pratos no cardápio."
+    },
+    {
+      "speaker": "ana",
+      "text": "Ótimo, obrigada."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Rezervasyon hangi gün için?",
+      "options": [
+        "Perşembe",
+        "Cuma",
+        "Cumartesi",
+        "Pazar"
+      ],
+      "answer": 1,
+      "feedback": "Cuma günü için.",
+      "evidence": "eu queria reservar uma mesa para sexta-feira."
+    },
+    {
+      "id": "q2",
+      "prompt": "Kaç kişi gelecek?",
+      "options": [
+        "Üç",
+        "Dört",
+        "Beş",
+        "Altı"
+      ],
+      "answer": 2,
+      "feedback": "Önce dört diyor, sonra kuzeniyle beş.",
+      "evidence": "Quatro. Ah não, cinco, minha prima também vem."
+    },
+    {
+      "id": "q3",
+      "prompt": "Masa saat kaça ayarlandı?",
+      "options": [
+        "Yedi",
+        "Sekiz",
+        "Dokuz",
+        "Dokuz buçuk"
+      ],
+      "answer": 3,
+      "feedback": "Sekiz doluydu; dokuz buçuğu seçti.",
+      "evidence": "Então às nove e meia."
+    },
+    {
+      "id": "q4",
+      "prompt": "Ana en son ne soruyor?",
+      "options": [
+        "Park yeri",
+        "Vegan seçenek",
+        "Kartla ödeme",
+        "Çocuk menüsü"
+      ],
+      "answer": 1,
+      "feedback": "Vegan seçenek olup olmadığını soruyor.",
+      "evidence": "vocês têm opção vegana?"
+    }
+  ]
+}

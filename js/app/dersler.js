@@ -728,8 +728,40 @@ const DerslerModule = (() => {
         if ($('languageScreen')?.classList.contains('active')) fetchAndShowLangCounts();
     }
 
+    // ── adres çubuğu (js/app/router.js) ──
+    function route(id) {
+        if (id === 'derslerScreen' || !course) return ['courses'];
+        const C = ['courses', course.id];
+        const T = topicId ? [...C, 'topics', topicId] : C;
+        switch (id) {
+            case 'derslerCourseScreen':   return C;
+            case 'derslerTopicScreen':    return T;
+            case 'derslerMistakesScreen': return [...C, 'mistakes'];
+            case 'derslerQuizScreen':
+                if (quiz && quiz.kind === 'mistakes') return [...C, 'mistakes', 'quiz'];
+                if (quiz && quiz.kind === 'mixed') return [...C, 'quiz'];
+                return [...T, 'quiz'];
+            case 'derslerClassicScreen':
+                if (classic && classic.kind === 'mistakes') return [...C, 'mistakes', 'classic'];
+                return [...T, 'classic'];
+        }
+        return C;
+    }
+
+    // Adresten aç (ders → konu ya da hatalar); süren sorular bir üst ekrana döner
+    async function restore(segs) {
+        if (!available && !(await checkAvailability())) return;
+        await open();
+        const [cid, section, tid] = segs;
+        if (!cid || !index.courses.some(c => c.id === cid && c.topics.length)) return;
+        await openCourse(cid);
+        if (!course || course.id !== cid) return;
+        if (section === 'topics' && tid && topicOf(tid)) showTopic(tid);
+        else if (section === 'mistakes') showMistakes();
+    }
+
     return {
-        checkAvailability, open, isAvailable: () => available, getSource: () => source, refreshCard,
+        checkAvailability, open, isAvailable: () => available, getSource: () => source, refreshCard, route, restore,
         // geri hareketiyle dönülünce güncel haliyle çiz
         refresh(id) {
             if (id === 'derslerScreen' && available) { open(); return true; }

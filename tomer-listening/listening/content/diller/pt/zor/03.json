@@ -1,0 +1,118 @@
+{
+  "id": "pt-zor-03",
+  "level": "PT",
+  "sublevel": "zor",
+  "title": "Áudio: mudança de planos",
+  "topic": "Sesli mesaj",
+  "instructions": "Bir arkadaş plan değişikliği bırakıyor. Düzeltilen bilgilere dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "isa": {
+      "name": "Isabela",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "isa",
+      "text": "Oi, é a Isabela. Olha, mudança de planos para amanhã."
+    },
+    {
+      "speaker": "isa",
+      "text": "O restaurante da Rua Augusta está fechado para reforma, então vamos no japonês da praça."
+    },
+    {
+      "speaker": "isa",
+      "text": "Reservei para as oito... não, espera, oito e meia, porque o Bruno sai tarde do trabalho."
+    },
+    {
+      "speaker": "isa",
+      "text": "Somos cinco, não seis: a Carol não vem, ela tem prova na sexta."
+    },
+    {
+      "speaker": "isa",
+      "text": "Ah, e leva dinheiro, porque lá não aceitam cartão."
+    },
+    {
+      "speaker": "isa",
+      "text": "Se der, passa antes na minha casa para pegar o presente do Bruno. Está com o meu irmão."
+    },
+    {
+      "speaker": "isa",
+      "text": "Me liga quando ouvir isso. Tchau!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Neden ilk restorana gitmiyorlar?",
+      "options": [
+        "Çok pahalı",
+        "Tadilat için kapalı",
+        "Yer yok",
+        "Uzak"
+      ],
+      "answer": 1,
+      "feedback": "Rua Augusta’daki restoran tadilat nedeniyle kapalı.",
+      "evidence": "está fechado para reforma"
+    },
+    {
+      "id": "q2",
+      "prompt": "Rezervasyon saat kaçta?",
+      "options": [
+        "Sekiz",
+        "Sekiz buçuk",
+        "Dokuz",
+        "Yedi buçuk"
+      ],
+      "answer": 1,
+      "feedback": "Önce sekiz diyor, sonra sekiz buçuk olarak düzeltiyor.",
+      "evidence": "oito e meia, porque o Bruno sai tarde do trabalho."
+    },
+    {
+      "id": "q3",
+      "prompt": "Kaç kişi olacaklar?",
+      "options": [
+        "Dört",
+        "Beş",
+        "Altı",
+        "Yedi"
+      ],
+      "answer": 1,
+      "feedback": "Beş kişi; Carol gelmiyor.",
+      "evidence": "Somos cinco, não seis"
+    },
+    {
+      "id": "q4",
+      "prompt": "Carol neden gelmiyor?",
+      "options": [
+        "Hasta",
+        "Cuma günü sınavı var",
+        "Çalışıyor",
+        "Seyahatte"
+      ],
+      "answer": 1,
+      "feedback": "Cuma günü sınavı var.",
+      "evidence": "ela tem prova na sexta."
+    },
+    {
+      "id": "q5",
+      "prompt": "Hediye kimde?",
+      "options": [
+        "Isabela’da",
+        "Bruno’da",
+        "Isabela’nın erkek kardeşinde",
+        "Carol’da"
+      ],
+      "answer": 2,
+      "feedback": "Hediye Isabela’nın erkek kardeşinde.",
+      "evidence": "Está com o meu irmão."
+    }
+  ]
+}

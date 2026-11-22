@@ -1,0 +1,125 @@
+{
+  "id": "pt-orta-02",
+  "level": "PT",
+  "sublevel": "orta",
+  "title": "Na loja de sapatos",
+  "topic": "Alışveriş",
+  "instructions": "Bir ayakkabı mağazasında konuşma. Numara ve fiyata dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ven": {
+      "name": "Vendedora",
+      "voice": "female"
+    },
+    "cli": {
+      "name": "Cliente",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ven",
+      "text": "Oi, posso ajudar?"
+    },
+    {
+      "speaker": "cli",
+      "text": "Sim, estou procurando um tênis preto para correr."
+    },
+    {
+      "speaker": "ven",
+      "text": "Qual é o seu número?"
+    },
+    {
+      "speaker": "cli",
+      "text": "Quarenta e dois."
+    },
+    {
+      "speaker": "ven",
+      "text": "Este modelo é muito bom. Custa trezentos e cinquenta reais."
+    },
+    {
+      "speaker": "cli",
+      "text": "É um pouco caro. Tem algo mais barato?"
+    },
+    {
+      "speaker": "ven",
+      "text": "Este outro custa duzentos e vinte, mas só tenho no quarenta e um."
+    },
+    {
+      "speaker": "cli",
+      "text": "Vou experimentar. Hmm, ficou apertado."
+    },
+    {
+      "speaker": "ven",
+      "text": "Então recomendo o primeiro. Hoje ele está com quinze por cento de desconto."
+    },
+    {
+      "speaker": "cli",
+      "text": "Tá bom, vou levar. Posso parcelar no cartão?"
+    },
+    {
+      "speaker": "ven",
+      "text": "Pode, em até três vezes. O caixa é ali."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Müşteri ne arıyor?",
+      "options": [
+        "Siyah koşu ayakkabısı",
+        "Kahverengi bot",
+        "Beyaz spor ayakkabı",
+        "Sandalet"
+      ],
+      "answer": 0,
+      "feedback": "Koşu için siyah spor ayakkabı.",
+      "evidence": "estou procurando um tênis preto para correr."
+    },
+    {
+      "id": "q2",
+      "prompt": "Müşterinin numarası ne?",
+      "options": [
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "answer": 2,
+      "feedback": "Kırk iki numara.",
+      "evidence": "Quarenta e dois."
+    },
+    {
+      "id": "q3",
+      "prompt": "Ucuz ayakkabının sorunu ne?",
+      "options": [
+        "Rengi farklı",
+        "Dar geliyor",
+        "Kirli",
+        "Yırtık"
+      ],
+      "answer": 1,
+      "feedback": "Sadece 41 var ve dar geliyor.",
+      "evidence": "Hmm, ficou apertado."
+    },
+    {
+      "id": "q4",
+      "prompt": "İlk ayakkabıda ne kadar indirim var?",
+      "options": [
+        "%5",
+        "%10",
+        "%15",
+        "%20"
+      ],
+      "answer": 2,
+      "feedback": "Bugün yüzde on beş indirimli.",
+      "evidence": "Hoje ele está com quinze por cento de desconto."
+    }
+  ]
+}

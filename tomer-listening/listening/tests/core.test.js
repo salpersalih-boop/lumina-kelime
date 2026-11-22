@@ -137,8 +137,25 @@ test('parseRoute: dört ekran ve eski biçim', () => {
   assert.deepEqual(parseRoute('#a1-orta'), { name: 'sets', level: 'A1', sub: 'orta' });
 });
 
+test('parseRoute: dil kodları da grup olarak tanınır (#/es/kolay/2)', () => {
+  assert.deepEqual(parseRoute('#/es'), { name: 'sublevels', level: 'ES' });
+  assert.deepEqual(parseRoute('#/pt/orta'), { name: 'sets', level: 'PT', sub: 'orta' });
+  assert.deepEqual(parseRoute('#/es/kolay/2'), { name: 'lesson', level: 'ES', sub: 'kolay', n: 2 });
+  assert.equal(hashOf({ name: 'lesson', level: 'ES', sub: 'kolay', n: 2 }), '#/es/easy/2');
+});
+
+test('adresler İngilizce: easy / medium / hard; Türkçe adresler de açılır', () => {
+  assert.equal(hashOf({ name: 'sets', level: 'A1', sub: 'orta' }), '#/a1/medium');
+  assert.equal(hashOf({ name: 'lesson', level: 'PT', sub: 'zor', n: 7 }), '#/pt/hard/7');
+  assert.deepEqual(parseRoute('#/a2/Hard/3'), { name: 'lesson', level: 'A2', sub: 'zor', n: 3 });
+  assert.deepEqual(parseRoute('#/a1/easy'), { name: 'sets', level: 'A1', sub: 'kolay' });
+  assert.deepEqual(parseRoute('#/a1/kolay'), { name: 'sets', level: 'A1', sub: 'kolay' });
+});
+
 test('parseRoute: geçersiz parçalar bir üst ekrana düşer', () => {
-  assert.deepEqual(parseRoute('#/z9'), { name: 'levels' });
+  // Grup biçimi serbesttir (a1, es, z9); var olup olmadığına manifest karar verir.
+  assert.deepEqual(parseRoute('#/z9'), { name: 'sublevels', level: 'Z9' });
+  assert.deepEqual(parseRoute('#/uzun-bir-sey'), { name: 'levels' });
   assert.deepEqual(parseRoute('#/a1/super'), { name: 'sublevels', level: 'A1' });
   assert.deepEqual(parseRoute('#/a1/kolay/0'), { name: 'sets', level: 'A1', sub: 'kolay' });
   assert.deepEqual(parseRoute('#/a1/kolay/abc'), { name: 'sets', level: 'A1', sub: 'kolay' });

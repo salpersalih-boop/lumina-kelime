@@ -1,0 +1,96 @@
+{
+  "id": "es-kolay-04",
+  "level": "ES",
+  "sublevel": "kolay",
+  "title": "En la cafetería",
+  "topic": "Sipariş",
+  "instructions": "Bir kafede kısa bir sipariş diyaloğu.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "cam": {
+      "name": "Camarero",
+      "voice": "male"
+    },
+    "ana": {
+      "name": "Ana",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "cam",
+      "text": "Buenos días. ¿Qué desea?"
+    },
+    {
+      "speaker": "ana",
+      "text": "Un café con leche y un cruasán, por favor."
+    },
+    {
+      "speaker": "cam",
+      "text": "¿El café con azúcar?"
+    },
+    {
+      "speaker": "ana",
+      "text": "No, sin azúcar, gracias."
+    },
+    {
+      "speaker": "cam",
+      "text": "Muy bien. Son tres euros con cincuenta."
+    },
+    {
+      "speaker": "ana",
+      "text": "Aquí tiene. ¿Dónde está el baño?"
+    },
+    {
+      "speaker": "cam",
+      "text": "Al fondo, a la derecha."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Ana ne sipariş ediyor?",
+      "options": [
+        "Çay ve kek",
+        "Sütlü kahve ve kruvasan",
+        "Portakal suyu",
+        "Sade kahve"
+      ],
+      "answer": 1,
+      "feedback": "Sütlü kahve ve kruvasan istiyor.",
+      "evidence": "Un café con leche y un cruasán, por favor."
+    },
+    {
+      "id": "q2",
+      "prompt": "Kahve nasıl olacak?",
+      "options": [
+        "Şekerli",
+        "Şekersiz",
+        "Buzlu",
+        "Sütsüz"
+      ],
+      "answer": 1,
+      "feedback": "\"Sin azúcar\" şekersiz demek.",
+      "evidence": "No, sin azúcar, gracias."
+    },
+    {
+      "id": "q3",
+      "prompt": "Hesap ne kadar?",
+      "options": [
+        "2,50 €",
+        "3,00 €",
+        "3,50 €",
+        "4,50 €"
+      ],
+      "answer": 2,
+      "feedback": "Üç euro elli sent.",
+      "evidence": "Son tres euros con cincuenta."
+    }
+  ]
+}

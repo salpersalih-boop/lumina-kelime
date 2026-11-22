@@ -1,0 +1,137 @@
+{
+  "id": "es-orta-08",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "Una entrevista corta",
+  "topic": "İş görüşmesi",
+  "instructions": "Bir kafede garsonluk için kısa iş görüşmesi. Uzun bir diyalog; çalışma saatlerine dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "jefe": {
+      "name": "Jefe",
+      "voice": "male"
+    },
+    "clara": {
+      "name": "Clara",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jefe",
+      "text": "Hola Clara, siéntate. ¿Has trabajado antes en un café?"
+    },
+    {
+      "speaker": "clara",
+      "text": "Sí, trabajé un año en una cafetería en Granada mientras estudiaba."
+    },
+    {
+      "speaker": "jefe",
+      "text": "¿Qué hacías allí?"
+    },
+    {
+      "speaker": "clara",
+      "text": "Servía mesas, preparaba cafés y a veces cerraba la caja."
+    },
+    {
+      "speaker": "jefe",
+      "text": "Bien. Aquí necesitamos a alguien para las tardes, de cuatro a diez."
+    },
+    {
+      "speaker": "clara",
+      "text": "¿Todos los días?"
+    },
+    {
+      "speaker": "jefe",
+      "text": "De martes a sábado. Domingo y lunes cerramos."
+    },
+    {
+      "speaker": "clara",
+      "text": "Perfecto. Por las mañanas tengo clases de alemán."
+    },
+    {
+      "speaker": "jefe",
+      "text": "¿Hablas otros idiomas? Vienen muchos turistas."
+    },
+    {
+      "speaker": "clara",
+      "text": "Inglés bastante bien y un poco de francés."
+    },
+    {
+      "speaker": "jefe",
+      "text": "Estupendo. El sueldo es de mil cien euros al mes, más propinas."
+    },
+    {
+      "speaker": "clara",
+      "text": "Me parece bien. ¿Cuándo empiezo?"
+    },
+    {
+      "speaker": "jefe",
+      "text": "El próximo martes. Ven a las tres y media, media hora antes, para conocer al equipo."
+    },
+    {
+      "speaker": "clara",
+      "text": "Allí estaré. Muchas gracias."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Clara daha önce nerede çalıştı?",
+      "options": [
+        "Granada’da bir kafede",
+        "Madrid’de bir otelde",
+        "Bir restoranda",
+        "Hiç çalışmadı"
+      ],
+      "answer": 0,
+      "feedback": "Granada’da bir yıl kafede çalışmış.",
+      "evidence": "trabajé un año en una cafetería en Granada mientras estudiaba."
+    },
+    {
+      "id": "q2",
+      "prompt": "Çalışma saatleri ne?",
+      "options": [
+        "Sabah 8–14",
+        "Öğleden sonra 16–22",
+        "Gece 22–04",
+        "Tam gün"
+      ],
+      "answer": 1,
+      "feedback": "Öğleden sonra dörtten ona kadar.",
+      "evidence": "de cuatro a diez."
+    },
+    {
+      "id": "q3",
+      "prompt": "Kafe hangi günler kapalı?",
+      "options": [
+        "Cumartesi ve pazar",
+        "Sadece pazar",
+        "Pazar ve pazartesi",
+        "Hiçbir gün"
+      ],
+      "answer": 2,
+      "feedback": "Pazar ve pazartesi kapalı.",
+      "evidence": "Domingo y lunes cerramos."
+    },
+    {
+      "id": "q4",
+      "prompt": "İlk gün saat kaçta gelmeli?",
+      "options": [
+        "Üç",
+        "Üç buçuk",
+        "Dört",
+        "Dört buçuk"
+      ],
+      "answer": 1,
+      "feedback": "Ekibi tanımak için yarım saat erken, üç buçukta.",
+      "evidence": "Ven a las tres y media, media hora antes, para conocer al equipo."
+    }
+  ]
+}

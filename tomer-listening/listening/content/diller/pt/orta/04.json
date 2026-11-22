@@ -1,0 +1,121 @@
+{
+  "id": "pt-orta-04",
+  "level": "PT",
+  "sublevel": "orta",
+  "title": "No consultório",
+  "topic": "Sağlık",
+  "instructions": "Doktorda bir muayene. Belirtilere ve tavsiyelere dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "dr": {
+      "name": "Médico",
+      "voice": "male"
+    },
+    "pac": {
+      "name": "Paciente",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "dr",
+      "text": "Bom dia. O que a senhora está sentindo?"
+    },
+    {
+      "speaker": "pac",
+      "text": "Estou com dor de cabeça desde terça-feira e um pouco de febre."
+    },
+    {
+      "speaker": "dr",
+      "text": "Está tossindo?"
+    },
+    {
+      "speaker": "pac",
+      "text": "À noite sim, bastante."
+    },
+    {
+      "speaker": "dr",
+      "text": "Deixa eu ver... A garganta está vermelha. É uma infecção, mas nada grave."
+    },
+    {
+      "speaker": "pac",
+      "text": "Preciso de antibiótico?"
+    },
+    {
+      "speaker": "dr",
+      "text": "Não. Tome este xarope três vezes por dia e beba bastante água."
+    },
+    {
+      "speaker": "dr",
+      "text": "Nada de refrigerante nem bebida gelada."
+    },
+    {
+      "speaker": "pac",
+      "text": "Posso trabalhar?"
+    },
+    {
+      "speaker": "dr",
+      "text": "Melhor descansar dois dias. Se a febre aumentar, volte aqui."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Hasta ne zamandan beri rahatsız?",
+      "options": [
+        "Dünden beri",
+        "Salıdan beri",
+        "Bir haftadır",
+        "Bir aydır"
+      ],
+      "answer": 1,
+      "feedback": "Salıdan beri başı ağrıyor.",
+      "evidence": "Estou com dor de cabeça desde terça-feira e um pouco de febre."
+    },
+    {
+      "id": "q2",
+      "prompt": "Doktor ne veriyor?",
+      "options": [
+        "Antibiyotik",
+        "Şurup",
+        "İğne",
+        "Hiçbir şey"
+      ],
+      "answer": 1,
+      "feedback": "Antibiyotik yok; günde üç kez şurup.",
+      "evidence": "Tome este xarope três vezes por dia e beba bastante água."
+    },
+    {
+      "id": "q3",
+      "prompt": "Hasta neyi içmemeli?",
+      "options": [
+        "Su",
+        "Çay",
+        "Gazlı ve soğuk içecekler",
+        "Süt"
+      ],
+      "answer": 2,
+      "feedback": "Gazlı içecek ve soğuk içecek yok.",
+      "evidence": "Nada de refrigerante nem bebida gelada."
+    },
+    {
+      "id": "q4",
+      "prompt": "Doktor işe gitmek konusunda ne diyor?",
+      "options": [
+        "Hemen gidebilir",
+        "İki gün dinlensin",
+        "Bir hafta izin alsın",
+        "Hastaneye yatsın"
+      ],
+      "answer": 1,
+      "feedback": "İki gün dinlenmesi daha iyi.",
+      "evidence": "Melhor descansar dois dias."
+    }
+  ]
+}

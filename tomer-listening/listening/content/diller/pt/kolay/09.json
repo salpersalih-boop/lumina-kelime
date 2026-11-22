@@ -1,0 +1,88 @@
+{
+  "id": "pt-kolay-09",
+  "level": "PT",
+  "sublevel": "kolay",
+  "title": "Recado para o Pedro",
+  "topic": "Sesli mesaj",
+  "instructions": "Pedro’nun babasından sesli mesaj.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "pai": {
+      "name": "Pai",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "pai",
+      "text": "Oi Pedro, é o pai."
+    },
+    {
+      "speaker": "pai",
+      "text": "Hoje eu chego em casa às oito."
+    },
+    {
+      "speaker": "pai",
+      "text": "O jantar está na geladeira: arroz, feijão e frango."
+    },
+    {
+      "speaker": "pai",
+      "text": "Por favor, leva o lixo para fora e compra leite."
+    },
+    {
+      "speaker": "pai",
+      "text": "E não esquece a lição de português."
+    },
+    {
+      "speaker": "pai",
+      "text": "Um abraço."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Baba saat kaçta geliyor?",
+      "options": [
+        "Yedide",
+        "Sekizde",
+        "Dokuzda",
+        "Onda"
+      ],
+      "answer": 1,
+      "feedback": "Sekizde geliyor.",
+      "evidence": "Hoje eu chego em casa às oito."
+    },
+    {
+      "id": "q2",
+      "prompt": "Buzdolabında ne var?",
+      "options": [
+        "Pizza",
+        "Çorba",
+        "Pilav, fasulye ve tavuk",
+        "Balık"
+      ],
+      "answer": 2,
+      "feedback": "Pilav, fasulye ve tavuk var.",
+      "evidence": "arroz, feijão e frango."
+    },
+    {
+      "id": "q3",
+      "prompt": "Pedro ne satın almalı?",
+      "options": [
+        "Ekmek",
+        "Süt",
+        "Meyve",
+        "Peynir"
+      ],
+      "answer": 1,
+      "feedback": "Çöpü çıkarıp süt alması isteniyor.",
+      "evidence": "leva o lixo para fora e compra leite."
+    }
+  ]
+}

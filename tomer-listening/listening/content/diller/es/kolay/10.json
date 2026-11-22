@@ -1,0 +1,116 @@
+{
+  "id": "es-kolay-10",
+  "level": "ES",
+  "sublevel": "kolay",
+  "title": "Mi mejor amiga",
+  "topic": "Arkadaşlık",
+  "instructions": "Javier en iyi arkadaşını anlatıyor. Uzun bir metin; ayrıntılara dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "javier": {
+      "name": "Javier",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "javier",
+      "text": "Mi mejor amiga se llama Inés. Nos conocemos desde el colegio."
+    },
+    {
+      "speaker": "javier",
+      "text": "Ella tiene veintidós años, como yo, y vive en el mismo barrio."
+    },
+    {
+      "speaker": "javier",
+      "text": "Inés es alta, tiene el pelo largo y castaño y siempre lleva gafas."
+    },
+    {
+      "speaker": "javier",
+      "text": "Es muy simpática y habla con todo el mundo."
+    },
+    {
+      "speaker": "javier",
+      "text": "Estudia arquitectura y dibuja muy bien."
+    },
+    {
+      "speaker": "javier",
+      "text": "Los sábados vamos juntos al cine o a tomar algo en el centro."
+    },
+    {
+      "speaker": "javier",
+      "text": "A ella le gustan las películas de miedo, pero a mí no."
+    },
+    {
+      "speaker": "javier",
+      "text": "Por eso a veces vemos comedias."
+    },
+    {
+      "speaker": "javier",
+      "text": "También tocamos la guitarra juntos. Ella toca mejor que yo."
+    },
+    {
+      "speaker": "javier",
+      "text": "En verano queremos viajar a Portugal en tren."
+    },
+    {
+      "speaker": "javier",
+      "text": "Inés ya tiene el mapa y la lista de ciudades."
+    },
+    {
+      "speaker": "javier",
+      "text": "Yo solo tengo que comprar los billetes."
+    },
+    {
+      "speaker": "javier",
+      "text": "Creo que va a ser un viaje muy divertido."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Inés ne okuyor?",
+      "options": [
+        "Tıp",
+        "Mimarlık",
+        "Müzik",
+        "Sinema"
+      ],
+      "answer": 1,
+      "feedback": "Mimarlık okuyor ve çok iyi çizim yapıyor.",
+      "evidence": "Estudia arquitectura y dibuja muy bien."
+    },
+    {
+      "id": "q2",
+      "prompt": "Inés hangi filmleri seviyor?",
+      "options": [
+        "Komedi",
+        "Aşk filmleri",
+        "Korku filmleri",
+        "Belgesel"
+      ],
+      "answer": 2,
+      "feedback": "Inés korku filmlerini seviyor, Javier sevmiyor.",
+      "evidence": "A ella le gustan las películas de miedo, pero a mí no."
+    },
+    {
+      "id": "q3",
+      "prompt": "Yazın nereye gitmek istiyorlar?",
+      "options": [
+        "Fransa’ya uçakla",
+        "Portekiz’e trenle",
+        "İtalya’ya arabayla",
+        "Galicia’ya otobüsle"
+      ],
+      "answer": 1,
+      "feedback": "Trenle Portekiz’e gitmek istiyorlar.",
+      "evidence": "En verano queremos viajar a Portugal en tren."
+    }
+  ]
+}

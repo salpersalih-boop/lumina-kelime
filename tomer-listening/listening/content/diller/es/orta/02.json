@@ -1,0 +1,125 @@
+{
+  "id": "es-orta-02",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "En la tienda de ropa",
+  "topic": "Alışveriş",
+  "instructions": "Bir giyim mağazasında konuşma. Beden ve fiyata dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "dep": {
+      "name": "Dependienta",
+      "voice": "female"
+    },
+    "cli": {
+      "name": "Cliente",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "dep",
+      "text": "Hola, ¿te puedo ayudar?"
+    },
+    {
+      "speaker": "cli",
+      "text": "Sí, busco una camisa azul para una boda."
+    },
+    {
+      "speaker": "dep",
+      "text": "¿Qué talla usas?"
+    },
+    {
+      "speaker": "cli",
+      "text": "Normalmente la mediana."
+    },
+    {
+      "speaker": "dep",
+      "text": "Esta es muy bonita. Cuesta cuarenta y cinco euros."
+    },
+    {
+      "speaker": "cli",
+      "text": "Un poco cara. ¿Hay algo más barato?"
+    },
+    {
+      "speaker": "dep",
+      "text": "Esta otra cuesta veintiocho, pero solo la tengo en talla grande."
+    },
+    {
+      "speaker": "cli",
+      "text": "Me la pruebo. Mmm, me queda grande."
+    },
+    {
+      "speaker": "dep",
+      "text": "Entonces te recomiendo la primera. Hoy tiene un descuento del diez por ciento."
+    },
+    {
+      "speaker": "cli",
+      "text": "Vale, me la llevo. ¿Puedo pagar con tarjeta?"
+    },
+    {
+      "speaker": "dep",
+      "text": "Claro. Pasa por caja, por favor."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Müşteri ne arıyor?",
+      "options": [
+        "Mavi bir gömlek",
+        "Siyah pantolon",
+        "Kırmızı ceket",
+        "Beyaz tişört"
+      ],
+      "answer": 0,
+      "feedback": "Düğün için mavi gömlek arıyor.",
+      "evidence": "busco una camisa azul para una boda."
+    },
+    {
+      "id": "q2",
+      "prompt": "Müşterinin bedeni ne?",
+      "options": [
+        "Küçük",
+        "Orta",
+        "Büyük",
+        "Çok büyük"
+      ],
+      "answer": 1,
+      "feedback": "\"La mediana\" orta beden.",
+      "evidence": "Normalmente la mediana."
+    },
+    {
+      "id": "q3",
+      "prompt": "Ucuz gömleğin sorunu ne?",
+      "options": [
+        "Rengi farklı",
+        "Büyük geliyor",
+        "Kirli",
+        "Yırtık"
+      ],
+      "answer": 1,
+      "feedback": "Sadece büyük beden var ve büyük geliyor.",
+      "evidence": "me queda grande."
+    },
+    {
+      "id": "q4",
+      "prompt": "İlk gömlekte ne kadar indirim var?",
+      "options": [
+        "%5",
+        "%10",
+        "%20",
+        "%50"
+      ],
+      "answer": 1,
+      "feedback": "Bugün yüzde on indirimli.",
+      "evidence": "Hoy tiene un descuento del diez por ciento."
+    }
+  ]
+}

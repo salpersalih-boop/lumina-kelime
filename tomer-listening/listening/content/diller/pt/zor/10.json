@@ -1,0 +1,146 @@
+{
+  "id": "pt-zor-10",
+  "level": "PT",
+  "sublevel": "zor",
+  "title": "Entrevista: uma chef jovem",
+  "topic": "Röportaj",
+  "instructions": "Radyoda genç bir aşçıyla röportaj. Uzun bir metin; hikâyedeki sırayı takip et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "jor": {
+      "name": "Jornalista",
+      "voice": "male"
+    },
+    "chef": {
+      "name": "Chef",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "jor",
+      "text": "Hoje está conosco Helena Castro, a chef mais jovem da cidade com uma estrela. Helena, quando você começou a cozinhar?"
+    },
+    {
+      "speaker": "chef",
+      "text": "Criança, com a minha avó. Mas profissionalmente comecei aos dezessete, lavando pratos em um restaurante do porto."
+    },
+    {
+      "speaker": "jor",
+      "text": "E como você passou de lavar pratos a comandar a própria cozinha?"
+    },
+    {
+      "speaker": "chef",
+      "text": "Aos poucos. Aos vinte fui para a França, para Lyon, e fiquei quatro anos em dois restaurantes diferentes."
+    },
+    {
+      "speaker": "chef",
+      "text": "Lá aprendi a técnica, mas também aprendi que não queria copiar a cozinha francesa."
+    },
+    {
+      "speaker": "jor",
+      "text": "Então você voltou."
+    },
+    {
+      "speaker": "chef",
+      "text": "Sim, em dois mil e dezenove. Abri o restaurante com o meu irmão, que cuida do salão. No começo tínhamos só oito mesas."
+    },
+    {
+      "speaker": "jor",
+      "text": "E a estrela chegou..."
+    },
+    {
+      "speaker": "chef",
+      "text": "No ano passado. Eu não esperava. Naquele dia fechamos e fomos todos para a praia."
+    },
+    {
+      "speaker": "jor",
+      "text": "Qual é o seu prato preferido do cardápio?"
+    },
+    {
+      "speaker": "chef",
+      "text": "As pessoas diriam a moqueca de camarão, que é o mais pedido, mas o meu é um prato simples: sardinha com farinha de milho, a receita da minha avó."
+    },
+    {
+      "speaker": "jor",
+      "text": "Planos para o futuro?"
+    },
+    {
+      "speaker": "chef",
+      "text": "Abrir uma escola de cozinha para jovens sem recursos. As aulas seriam de graça. Isso me importa mais do que uma segunda estrela."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Helena profesyonel olarak ilk nerede çalıştı?",
+      "options": [
+        "Lyon’da bir restoranda",
+        "Limandaki bir restoranda bulaşıkçı olarak",
+        "Büyükannesinin lokantasında",
+        "Bir otelde"
+      ],
+      "answer": 1,
+      "feedback": "On yedi yaşında limandaki bir restoranda bulaşık yıkayarak.",
+      "evidence": "lavando pratos em um restaurante do porto."
+    },
+    {
+      "id": "q2",
+      "prompt": "Fransa’da kaç yıl kaldı?",
+      "options": [
+        "İki",
+        "Üç",
+        "Dört",
+        "Beş"
+      ],
+      "answer": 2,
+      "feedback": "Lyon’da dört yıl, iki farklı restoranda.",
+      "evidence": "fiquei quatro anos em dois restaurantes diferentes."
+    },
+    {
+      "id": "q3",
+      "prompt": "Restoranı kiminle açtı?",
+      "options": [
+        "Büyükannesiyle",
+        "Erkek kardeşiyle",
+        "Bir Fransız şefle",
+        "Tek başına"
+      ],
+      "answer": 1,
+      "feedback": "Salonu yöneten erkek kardeşiyle.",
+      "evidence": "Abri o restaurante com o meu irmão, que cuida do salão."
+    },
+    {
+      "id": "q4",
+      "prompt": "Helena’nın kendi favori yemeği ne?",
+      "options": [
+        "Karidesli moqueca",
+        "Mısır unlu sardalya",
+        "Fransız soğan çorbası",
+        "Deniz ürünleri tabağı"
+      ],
+      "answer": 1,
+      "feedback": "En çok istenen moqueca ama onunki büyükannesinin tarifi, mısır unlu sardalya.",
+      "evidence": "sardinha com farinha de milho, a receita da minha avó."
+    },
+    {
+      "id": "q5",
+      "prompt": "Gelecek planı ne?",
+      "options": [
+        "İkinci yıldız almak",
+        "Fransa’ya dönmek",
+        "Gençler için ücretsiz aşçılık okulu açmak",
+        "Restoranı büyütmek"
+      ],
+      "answer": 2,
+      "feedback": "İmkânı olmayan gençler için ücretsiz aşçılık okulu.",
+      "evidence": "Abrir uma escola de cozinha para jovens sem recursos."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "pt-zor-09",
+  "level": "PT",
+  "sublevel": "zor",
+  "title": "Aviso: fechamento da biblioteca",
+  "topic": "Duyuru",
+  "instructions": "Kısa ama yoğun bir kütüphane duyurusu. Tarihler ve istisnalar önemli. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "meg": {
+      "name": "Alto-falante",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "meg",
+      "text": "A biblioteca fecha para reforma de quinze a vinte e oito de agosto."
+    },
+    {
+      "speaker": "meg",
+      "text": "Os empréstimos são renovados automaticamente."
+    },
+    {
+      "speaker": "meg",
+      "text": "A sala de estudo abre só de segunda a sexta."
+    },
+    {
+      "speaker": "meg",
+      "text": "Devolvam os livros na caixa da entrada."
+    },
+    {
+      "speaker": "meg",
+      "text": "A partir do dia vinte e nove, horário normal, exceto aos sábados: só de manhã."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Kütüphane hangi tarihlerde kapalı?",
+      "options": [
+        "1–14 Ağustos",
+        "15–28 Ağustos",
+        "15–28 Eylül",
+        "Bütün ağustos"
+      ],
+      "answer": 1,
+      "feedback": "On beş–yirmi sekiz ağustos arası.",
+      "evidence": "de quinze a vinte e oito de agosto."
+    },
+    {
+      "id": "q2",
+      "prompt": "Ödünç alınan kitaplar için ne yapmak gerekiyor?",
+      "options": [
+        "Hemen iade etmek",
+        "Hiçbir şey, süre otomatik uzuyor",
+        "Telefonla yenilemek",
+        "Ceza ödemek"
+      ],
+      "answer": 1,
+      "feedback": "Süreler otomatik yenileniyor.",
+      "evidence": "Os empréstimos são renovados automaticamente."
+    },
+    {
+      "id": "q3",
+      "prompt": "Çalışma salonu hangi günler açık?",
+      "options": [
+        "Her gün",
+        "Sadece hafta sonu",
+        "Pazartesi–cuma",
+        "Kapalı"
+      ],
+      "answer": 2,
+      "feedback": "Yalnızca pazartesiden cumaya.",
+      "evidence": "abre só de segunda a sexta."
+    },
+    {
+      "id": "q4",
+      "prompt": "Kitaplar nereye iade edilmeli?",
+      "options": [
+        "Girişteki kutuya",
+        "Birinci kata",
+        "Postaya",
+        "Başka bir kütüphaneye"
+      ],
+      "answer": 0,
+      "feedback": "Girişteki kutuya.",
+      "evidence": "Devolvam os livros na caixa da entrada."
+    },
+    {
+      "id": "q5",
+      "prompt": "29 Ağustos’tan sonra cumartesileri nasıl?",
+      "options": [
+        "Tamamen kapalı",
+        "Sadece öğleden sonra açık",
+        "Normal saatlerde",
+        "Sadece sabah açık"
+      ],
+      "answer": 3,
+      "feedback": "Cumartesileri yalnızca sabah açık.",
+      "evidence": "exceto aos sábados: só de manhã."
+    }
+  ]
+}

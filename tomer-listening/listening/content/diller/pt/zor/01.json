@@ -1,0 +1,118 @@
+{
+  "id": "pt-zor-01",
+  "level": "PT",
+  "sublevel": "zor",
+  "title": "Aviso no aeroporto",
+  "topic": "Anons",
+  "instructions": "Havalimanı anonsu. Kapı numarası ve değişikliklere dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "meg": {
+      "name": "Alto-falante",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "meg",
+      "text": "Atenção, passageiros do voo G três quatro sete com destino a Recife."
+    },
+    {
+      "speaker": "meg",
+      "text": "Por motivos operacionais, o embarque será feito pelo portão B doze, e não pelo B vinte, como estava previsto."
+    },
+    {
+      "speaker": "meg",
+      "text": "O voo sairá com um atraso de aproximadamente quarenta minutos."
+    },
+    {
+      "speaker": "meg",
+      "text": "O novo horário de partida é dezesseis e trinta e cinco."
+    },
+    {
+      "speaker": "meg",
+      "text": "Pedimos aos passageiros com crianças pequenas ou mobilidade reduzida que se dirijam primeiro ao balcão."
+    },
+    {
+      "speaker": "meg",
+      "text": "Lembramos que é permitida apenas uma bagagem de mão por pessoa."
+    },
+    {
+      "speaker": "meg",
+      "text": "Pedimos desculpas pelo transtorno."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Uçuş nereye?",
+      "options": [
+        "Salvador",
+        "Recife",
+        "Lizbon",
+        "Fortaleza"
+      ],
+      "answer": 1,
+      "feedback": "Recife’ye giden uçuş.",
+      "evidence": "com destino a Recife."
+    },
+    {
+      "id": "q2",
+      "prompt": "Biniş hangi kapıdan?",
+      "options": [
+        "B 20",
+        "B 12",
+        "A 12",
+        "C 20"
+      ],
+      "answer": 1,
+      "feedback": "B 20 yerine B 12 kapısından.",
+      "evidence": "o embarque será feito pelo portão B doze, e não pelo B vinte"
+    },
+    {
+      "id": "q3",
+      "prompt": "Rötar ne kadar?",
+      "options": [
+        "20 dakika",
+        "30 dakika",
+        "40 dakika",
+        "1 saat"
+      ],
+      "answer": 2,
+      "feedback": "Yaklaşık kırk dakika.",
+      "evidence": "com um atraso de aproximadamente quarenta minutos."
+    },
+    {
+      "id": "q4",
+      "prompt": "Yeni kalkış saati?",
+      "options": [
+        "15:35",
+        "16:35",
+        "16:45",
+        "17:35"
+      ],
+      "answer": 1,
+      "feedback": "On altı otuz beş.",
+      "evidence": "O novo horário de partida é dezesseis e trinta e cinco."
+    },
+    {
+      "id": "q5",
+      "prompt": "Kimler önce bankoya çağrılıyor?",
+      "options": [
+        "İş sınıfı yolcular",
+        "Küçük çocuklu ya da hareket kısıtlı yolcular",
+        "Büyük valizi olanlar",
+        "Geç kalanlar"
+      ],
+      "answer": 1,
+      "feedback": "Küçük çocuklu ya da hareket kısıtlılığı olan yolcular.",
+      "evidence": "passageiros com crianças pequenas ou mobilidade reduzida"
+    }
+  ]
+}

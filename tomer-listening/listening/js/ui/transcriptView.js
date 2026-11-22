@@ -50,7 +50,7 @@ export function mountTranscript(root, set, colors = {}) {
     root.innerHTML = `
       <details class="ls-tr" open>
         <summary>Dinleme metni</summary>
-        <ol class="ls-lines ${multi ? 'is-dialogue' : ''}" lang="en">
+        <ol class="ls-lines ${multi ? 'is-dialogue' : ''}" lang="${esc(set.audio.lang)}">
           ${set.script.map((l, i) => `
             <li data-line="${i}">
               ${multi ? `<span class="ls-who" style="--voice:${colors[l.speaker] ?? 'var(--accent-1)'}">${esc(set.speakers[l.speaker].name)}</span>` : ''}

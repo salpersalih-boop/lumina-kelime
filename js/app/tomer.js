@@ -4,7 +4,8 @@
    1) data/tomer/ (yerel; GitHub'a gönderilmez — .gitignore)
    2) Firestore "tomer" koleksiyonu (yalnızca sahibinin hesabı okuyabilir — firestore.rules)
    İkisi de yoksa TÖMER kartı "Yakında" görünür.
-   Akış: TÖMER → seviye (A1–B2) → Kelime | Gramer
+   Akış: TÖMER → seviye (A1–B2) → Kelime | Gramer | Testler | Dinleme
+   Dinleme: tomer-listening/listening/ (ayrı sayfa, GitHub'da; içeriği olan seviyelerde kart çıkar)
    Gramer: konu → özet/notlar → test → sonuç; analiz, akıllı geri bildirim, grafikler.
    İlerleme: localStorage + Firestore senkronu (progress/tomergr).
 ============================================================ */
@@ -12,6 +13,8 @@ const TomerModule = (() => {
     const BASE = './data/tomer/';
     const PROGRESS_CODE = 'tomergr';
     const TEST_SIZE = 12;
+    // Dinleme modülünde içeriği olan seviyeler (tomer-listening/listening/content/manifest.json)
+    const LISTENING_LEVELS = ['A1', 'A2'];
 
     let index = null;          // data/tomer/index.json
     let available = false;
@@ -243,9 +246,15 @@ const TomerModule = (() => {
               <span class="tm-choice-icon">🧾</span><strong>Testler</strong>
               <span>${grammar.tests.length} kitap testi · ${grammar.tests.reduce((a, t) => a + t.questions.length, 0)} soru</span>
             </button>` : ''}
+            ${LISTENING_LEVELS.includes(level.id) ? `<a class="tm-choice-card" href="${listeningUrl(level.id)}">
+              <span class="tm-choice-icon">🎧</span><strong>Dinleme</strong>
+              <span>Kolay · Orta · Zor · kısa ve uzun metinler, sorular</span>
+            </a>` : ''}
           </div>`;
         showScreen('tomerLevelScreen');
     }
+
+    const listeningUrl = levelId => `${Router.LISTENING}index.html#/${encodeURIComponent(levelId.toLowerCase())}`;
 
     async function openWords() {
         const code = 'tomer' + level.id;
@@ -637,8 +646,47 @@ const TomerModule = (() => {
     }
     bind();
 
+    // ── adres çubuğu (js/app/router.js) ──
+    function route(id) {
+        if (id === 'tomerScreen' || !level) return ['tomer'];
+        const L = ['tomer', level.id.toLowerCase()];
+        switch (id) {
+            case 'tomerLevelScreen':   return L;
+            case 'tomerGrammarScreen': return [...L, 'grammar'];
+            case 'tomerTopicScreen':   return [...L, 'grammar', topicId];
+            case 'tomerTestsScreen':   return [...L, 'tests'];
+            case 'tomerStatsScreen':   return [...L, 'stats'];
+            case 'tomerTestScreen':
+                if (!test) return [...L, 'grammar'];
+                if (test.kind === 'book') return [...L, 'tests', topicId];
+                if (test.kind === 'topic') return [...L, 'grammar', topicId, 'test'];
+                return [...L, 'grammar', 'review'];
+        }
+        return L;
+    }
+
+    // Adresten aç: her adım geçmişe yazılır, böylece geri tuşu bir üst ekrana döner
+    async function restore(segs) {
+        if (!available && !(await checkAvailability())) return;
+        await open();
+        const lv = String(segs[0] || '').toUpperCase();
+        if (!lv) return;
+        await openLevel(lv);
+        if (!level || level.id !== lv) return;
+        const [, section, id] = segs;
+        if (section === 'grammar') {
+            showGrammar();
+            if (id && id !== 'review' && grammar.topics.some(t => t.id === id)) showTopic(id);
+        } else if (section === 'tests' && (grammar.tests || []).length) {
+            showTests();
+            if (id && grammar.tests.some(t => t.id === id)) startBookTest(id);
+        } else if (section === 'stats') {
+            showStats();
+        }
+    }
+
     return {
-        checkAvailability, open, wordsCsv, isAvailable: () => available, getSource: () => source,
+        checkAvailability, open, wordsCsv, isAvailable: () => available, getSource: () => source, route, restore,
         // geri hareketiyle dönülünce güncel haliyle çiz
         refresh(id) {
             if (!level || !grammar) return false;

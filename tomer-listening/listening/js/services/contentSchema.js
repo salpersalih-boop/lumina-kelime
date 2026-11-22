@@ -27,6 +27,7 @@ export function validateSet(set) {
   if (audio.rate !== undefined && !(typeof audio.rate === 'number' && audio.rate >= 0.5 && audio.rate <= 1.5)) {
     err('"audio.rate" 0.5 ile 1.5 arasında olmalı');
   }
+  if (set.questionLang != null && !isStr(set.questionLang)) err('"questionLang" boş olamaz (ör. "tr")');
   if (audio.src != null && !isStr(audio.src)) err('"audio.src" null ya da dosya yolu olmalı');
   if (audio.maxPlays != null && !(Number.isInteger(audio.maxPlays) && audio.maxPlays > 0)) {
     err('"audio.maxPlays" null ya da pozitif tam sayı olmalı');

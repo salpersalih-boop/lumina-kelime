@@ -1,0 +1,142 @@
+{
+  "id": "es-zor-08",
+  "level": "ES",
+  "sublevel": "zor",
+  "title": "Llamada al taller",
+  "topic": "Araba tamiri",
+  "instructions": "Bir tamirci müşterisini arıyor. Fiyatlara ve sürelere dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "mec": {
+      "name": "Mecánico",
+      "voice": "male"
+    },
+    "cli": {
+      "name": "Clienta",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mec",
+      "text": "Hola, soy Andrés, del taller. Llamo por su coche."
+    },
+    {
+      "speaker": "cli",
+      "text": "Sí, dígame. ¿Es grave?"
+    },
+    {
+      "speaker": "mec",
+      "text": "El ruido venía de los frenos. Las pastillas están gastadas y hay que cambiarlas."
+    },
+    {
+      "speaker": "cli",
+      "text": "¿Cuánto cuesta?"
+    },
+    {
+      "speaker": "mec",
+      "text": "Las pastillas, ciento veinte euros con la mano de obra. Pero también he visto que la batería está casi muerta."
+    },
+    {
+      "speaker": "cli",
+      "text": "Uf. ¿Y la batería?"
+    },
+    {
+      "speaker": "mec",
+      "text": "Noventa euros. Si cambia las dos cosas hoy, le hago un descuento y se queda en ciento noventa en total."
+    },
+    {
+      "speaker": "cli",
+      "text": "Vale, cambie las dos. ¿Cuándo puedo recogerlo?"
+    },
+    {
+      "speaker": "mec",
+      "text": "Las pastillas las tengo aquí, pero la batería llega mañana por la mañana. Así que mañana a partir de las doce."
+    },
+    {
+      "speaker": "cli",
+      "text": "Mañana trabajo hasta las seis. ¿Hasta qué hora abren?"
+    },
+    {
+      "speaker": "mec",
+      "text": "Hasta las siete. Si no llega, puede recogerlo el sábado por la mañana."
+    },
+    {
+      "speaker": "cli",
+      "text": "Pasaré mañana a las seis y media. Gracias."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Ses nereden geliyordu?",
+      "options": [
+        "Frenlerden",
+        "Motordan",
+        "Tekerleklerden",
+        "Egzozdan"
+      ],
+      "answer": 0,
+      "feedback": "Frenlerden; balatalar aşınmış.",
+      "evidence": "El ruido venía de los frenos."
+    },
+    {
+      "id": "q2",
+      "prompt": "Fren balataları ne kadar?",
+      "options": [
+        "90 €",
+        "120 €",
+        "190 €",
+        "210 €"
+      ],
+      "answer": 1,
+      "feedback": "İşçilik dahil yüz yirmi euro.",
+      "evidence": "Las pastillas, ciento veinte euros con la mano de obra."
+    },
+    {
+      "id": "q3",
+      "prompt": "İkisi birlikte indirimli ne kadar?",
+      "options": [
+        "180 €",
+        "200 €",
+        "190 €",
+        "210 €"
+      ],
+      "answer": 2,
+      "feedback": "Toplam yüz doksan euro.",
+      "evidence": "se queda en ciento noventa en total."
+    },
+    {
+      "id": "q4",
+      "prompt": "Araba neden bugün hazır olmuyor?",
+      "options": [
+        "Tamirci hasta",
+        "Akü yarın geliyor",
+        "Çok iş var",
+        "Parça yok"
+      ],
+      "answer": 1,
+      "feedback": "Akü yarın sabah geliyor.",
+      "evidence": "pero la batería llega mañana por la mañana."
+    },
+    {
+      "id": "q5",
+      "prompt": "Müşteri arabayı ne zaman alacak?",
+      "options": [
+        "Yarın 12:00",
+        "Cumartesi sabahı",
+        "Bugün 19:00",
+        "Yarın 18:30"
+      ],
+      "answer": 3,
+      "feedback": "Yarın altı buçukta uğrayacak.",
+      "evidence": "Pasaré mañana a las seis y media."
+    }
+  ]
+}

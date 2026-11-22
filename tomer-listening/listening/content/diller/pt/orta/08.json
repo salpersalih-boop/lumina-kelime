@@ -1,0 +1,137 @@
+{
+  "id": "pt-orta-08",
+  "level": "PT",
+  "sublevel": "orta",
+  "title": "Uma entrevista rápida",
+  "topic": "İş görüşmesi",
+  "instructions": "Bir kafede garsonluk için kısa iş görüşmesi. Uzun bir diyalog; çalışma saatlerine dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "ger": {
+      "name": "Gerente",
+      "voice": "female"
+    },
+    "dan": {
+      "name": "Daniel",
+      "voice": "male"
+    }
+  },
+  "script": [
+    {
+      "speaker": "ger",
+      "text": "Oi Daniel, senta aí. Você já trabalhou em café?"
+    },
+    {
+      "speaker": "dan",
+      "text": "Já. Trabalhei um ano em uma cafeteria em Belo Horizonte enquanto estudava."
+    },
+    {
+      "speaker": "ger",
+      "text": "O que você fazia lá?"
+    },
+    {
+      "speaker": "dan",
+      "text": "Atendia as mesas, preparava os cafés e às vezes fechava o caixa."
+    },
+    {
+      "speaker": "ger",
+      "text": "Legal. Aqui precisamos de alguém para a parte da tarde, das duas às nove."
+    },
+    {
+      "speaker": "dan",
+      "text": "Todos os dias?"
+    },
+    {
+      "speaker": "ger",
+      "text": "De terça a sábado. Domingo e segunda a gente fecha."
+    },
+    {
+      "speaker": "dan",
+      "text": "Perfeito. De manhã eu tenho aula de inglês."
+    },
+    {
+      "speaker": "ger",
+      "text": "Você fala outras línguas? Vem muito turista aqui."
+    },
+    {
+      "speaker": "dan",
+      "text": "Espanhol bem e um pouco de inglês."
+    },
+    {
+      "speaker": "ger",
+      "text": "Ótimo. O salário é de dois mil e duzentos por mês, mais as gorjetas."
+    },
+    {
+      "speaker": "dan",
+      "text": "Acho bom. Quando eu começo?"
+    },
+    {
+      "speaker": "ger",
+      "text": "Na próxima terça. Chega à uma e meia, meia hora antes, para conhecer a equipe."
+    },
+    {
+      "speaker": "dan",
+      "text": "Estarei lá. Muito obrigado."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Daniel daha önce nerede çalıştı?",
+      "options": [
+        "Belo Horizonte’de bir kafede",
+        "Rio’da bir otelde",
+        "Bir restoranda",
+        "Hiç çalışmadı"
+      ],
+      "answer": 0,
+      "feedback": "Belo Horizonte’de bir yıl kafede çalışmış.",
+      "evidence": "Trabalhei um ano em uma cafeteria em Belo Horizonte enquanto estudava."
+    },
+    {
+      "id": "q2",
+      "prompt": "Çalışma saatleri ne?",
+      "options": [
+        "Sabah 8–14",
+        "Öğleden sonra 14–21",
+        "Gece 21–03",
+        "Tam gün"
+      ],
+      "answer": 1,
+      "feedback": "Öğleden sonra ikiden dokuza.",
+      "evidence": "das duas às nove."
+    },
+    {
+      "id": "q3",
+      "prompt": "Kafe hangi günler kapalı?",
+      "options": [
+        "Cumartesi ve pazar",
+        "Sadece pazar",
+        "Pazar ve pazartesi",
+        "Hiçbir gün"
+      ],
+      "answer": 2,
+      "feedback": "Pazar ve pazartesi kapalı.",
+      "evidence": "Domingo e segunda a gente fecha."
+    },
+    {
+      "id": "q4",
+      "prompt": "İlk gün saat kaçta gelmeli?",
+      "options": [
+        "Bir",
+        "Bir buçuk",
+        "İki",
+        "İki buçuk"
+      ],
+      "answer": 1,
+      "feedback": "Ekibi tanımak için yarım saat erken, bir buçukta.",
+      "evidence": "Chega à uma e meia, meia hora antes, para conhecer a equipe."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "pt-kolay-06",
+  "level": "PT",
+  "sublevel": "kolay",
+  "title": "Previsão do tempo",
+  "topic": "Hava durumu",
+  "instructions": "Kısa bir hava durumu haberi.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "loc": {
+      "name": "Apresentadora",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "loc",
+      "text": "Bom dia. Hoje no Rio de Janeiro faz sol e a temperatura é de trinta e um graus."
+    },
+    {
+      "speaker": "loc",
+      "text": "Em Porto Alegre o dia é nublado e vai chover à noite."
+    },
+    {
+      "speaker": "loc",
+      "text": "Em Brasília faz calor, mas o ar está muito seco."
+    },
+    {
+      "speaker": "loc",
+      "text": "Amanhã a temperatura cai em todo o país."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Rio’da hava nasıl?",
+      "options": [
+        "Yağmurlu",
+        "Güneşli",
+        "Bulutlu",
+        "Rüzgârlı"
+      ],
+      "answer": 1,
+      "feedback": "Rio’da güneşli, 31 derece.",
+      "evidence": "Hoje no Rio de Janeiro faz sol e a temperatura é de trinta e um graus."
+    },
+    {
+      "id": "q2",
+      "prompt": "Porto Alegre’de ne zaman yağmur yağacak?",
+      "options": [
+        "Sabah",
+        "Öğlen",
+        "Gece",
+        "Yarın"
+      ],
+      "answer": 2,
+      "feedback": "Gece yağmur yağacak.",
+      "evidence": "Em Porto Alegre o dia é nublado e vai chover à noite."
+    },
+    {
+      "id": "q3",
+      "prompt": "Brasília’da hava nasıl?",
+      "options": [
+        "Soğuk",
+        "Sıcak ama kuru",
+        "Yağmurlu",
+        "Karlı"
+      ],
+      "answer": 1,
+      "feedback": "Sıcak ama hava çok kuru.",
+      "evidence": "Em Brasília faz calor, mas o ar está muito seco."
+    }
+  ]
+}

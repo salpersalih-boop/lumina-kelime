@@ -1,0 +1,146 @@
+{
+  "id": "es-zor-10",
+  "level": "ES",
+  "sublevel": "zor",
+  "title": "Entrevista: una chef joven",
+  "topic": "Röportaj",
+  "instructions": "Radyoda genç bir aşçıyla röportaj. Uzun bir metin; hikâyedeki sırayı takip et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "per": {
+      "name": "Periodista",
+      "voice": "male"
+    },
+    "chef": {
+      "name": "Chef",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "per",
+      "text": "Hoy está con nosotros Lucía Romero, la chef más joven de la ciudad con estrella. Lucía, ¿cuándo empezaste a cocinar?"
+    },
+    {
+      "speaker": "chef",
+      "text": "De niña, con mi abuela. Pero profesionalmente empecé a los diecisiete, lavando platos en un restaurante del puerto."
+    },
+    {
+      "speaker": "per",
+      "text": "¿Y cómo pasaste de lavar platos a dirigir tu propia cocina?"
+    },
+    {
+      "speaker": "chef",
+      "text": "Poco a poco. A los veinte me fui a Francia, a Lyon, y estuve cuatro años en dos restaurantes diferentes."
+    },
+    {
+      "speaker": "chef",
+      "text": "Allí aprendí la técnica, pero también aprendí que no quería copiar la cocina francesa."
+    },
+    {
+      "speaker": "per",
+      "text": "Entonces volviste."
+    },
+    {
+      "speaker": "chef",
+      "text": "Sí, en dos mil diecinueve. Abrí el restaurante con mi hermano, que lleva la sala. Al principio solo teníamos ocho mesas."
+    },
+    {
+      "speaker": "per",
+      "text": "Y la estrella llegó..."
+    },
+    {
+      "speaker": "chef",
+      "text": "El año pasado. No me lo esperaba. Ese día cerramos y nos fuimos todos a la playa."
+    },
+    {
+      "speaker": "per",
+      "text": "¿Cuál es tu plato favorito de la carta?"
+    },
+    {
+      "speaker": "chef",
+      "text": "La gente diría el arroz con bogavante, que es el más pedido, pero el mío es un plato humilde: sardinas con pan de maíz, la receta de mi abuela."
+    },
+    {
+      "speaker": "per",
+      "text": "¿Planes de futuro?"
+    },
+    {
+      "speaker": "chef",
+      "text": "Abrir una escuela de cocina para jóvenes sin recursos. Las clases serían gratis. Eso me importa más que una segunda estrella."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Lucía profesyonel olarak ilk nerede çalıştı?",
+      "options": [
+        "Lyon’da bir restoranda",
+        "Limandaki bir restoranda bulaşıkçı olarak",
+        "Büyükannesinin lokantasında",
+        "Bir otelde"
+      ],
+      "answer": 1,
+      "feedback": "On yedi yaşında limandaki bir restoranda bulaşık yıkayarak.",
+      "evidence": "lavando platos en un restaurante del puerto."
+    },
+    {
+      "id": "q2",
+      "prompt": "Fransa’da kaç yıl kaldı?",
+      "options": [
+        "İki",
+        "Üç",
+        "Dört",
+        "Beş"
+      ],
+      "answer": 2,
+      "feedback": "Lyon’da dört yıl, iki farklı restoranda.",
+      "evidence": "estuve cuatro años en dos restaurantes diferentes."
+    },
+    {
+      "id": "q3",
+      "prompt": "Restoranı kiminle açtı?",
+      "options": [
+        "Büyükannesiyle",
+        "Erkek kardeşiyle",
+        "Bir Fransız şefle",
+        "Tek başına"
+      ],
+      "answer": 1,
+      "feedback": "Salonu yöneten erkek kardeşiyle.",
+      "evidence": "Abrí el restaurante con mi hermano, que lleva la sala."
+    },
+    {
+      "id": "q4",
+      "prompt": "Lucía’nın kendi favori yemeği ne?",
+      "options": [
+        "Istakozlu pilav",
+        "Mısır ekmekli sardalya",
+        "Fransız soğan çorbası",
+        "Deniz ürünleri tabağı"
+      ],
+      "answer": 1,
+      "feedback": "En çok istenen ıstakozlu pilav ama onunki büyükannesinin tarifi, mısır ekmekli sardalya.",
+      "evidence": "sardinas con pan de maíz, la receta de mi abuela."
+    },
+    {
+      "id": "q5",
+      "prompt": "Gelecek planı ne?",
+      "options": [
+        "İkinci yıldız almak",
+        "Fransa’ya dönmek",
+        "Gençler için ücretsiz aşçılık okulu açmak",
+        "Restoranı büyütmek"
+      ],
+      "answer": 2,
+      "feedback": "İmkânı olmayan gençler için ücretsiz aşçılık okulu.",
+      "evidence": "Abrir una escuela de cocina para jóvenes sin recursos."
+    }
+  ]
+}

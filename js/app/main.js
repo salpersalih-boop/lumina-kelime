@@ -211,12 +211,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // Oturum durumunu bekle (Firebase kayıtlı oturumu geri yükler)
+    // Oturum durumunu bekle (Firebase kayıtlı oturumu geri yükler).
+    // Adresteki ekran açılır (#/football/groups/3); oturum yoksa girişten sonra oraya gidilir.
     const session = await AuthManager.ready;
-    if (session) {
-        updateUserUI(session);
-        showScreen('languageScreen');
-    } else {
-        showScreen('authScreen');
-    }
+    if (session) updateUserUI(session);
+    Router.start(session);
 });

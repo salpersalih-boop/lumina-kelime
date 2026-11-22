@@ -1,0 +1,142 @@
+{
+  "id": "pt-zor-08",
+  "level": "PT",
+  "sublevel": "zor",
+  "title": "Ligação da oficina",
+  "topic": "Araba tamiri",
+  "instructions": "Bir tamirci müşterisini arıyor. Fiyatlara ve sürelere dikkat et. Bu metni en fazla 3 kez dinleyebilirsin.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "pt-BR",
+    "rate": 1.0,
+    "maxPlays": 3
+  },
+  "speakers": {
+    "mec": {
+      "name": "Mecânico",
+      "voice": "male"
+    },
+    "cli": {
+      "name": "Cliente",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "mec",
+      "text": "Oi, é o André, da oficina. Estou ligando por causa do seu carro."
+    },
+    {
+      "speaker": "cli",
+      "text": "Oi. É grave?"
+    },
+    {
+      "speaker": "mec",
+      "text": "O barulho vinha dos freios. As pastilhas estão gastas e precisam ser trocadas."
+    },
+    {
+      "speaker": "cli",
+      "text": "Quanto custa?"
+    },
+    {
+      "speaker": "mec",
+      "text": "As pastilhas, quatrocentos reais com a mão de obra. Mas também vi que a bateria está quase no fim."
+    },
+    {
+      "speaker": "cli",
+      "text": "Nossa. E a bateria?"
+    },
+    {
+      "speaker": "mec",
+      "text": "Trezentos reais. Se trocar as duas coisas hoje, eu faço um desconto e fica seiscentos e cinquenta no total."
+    },
+    {
+      "speaker": "cli",
+      "text": "Tá, troca as duas. Quando posso buscar?"
+    },
+    {
+      "speaker": "mec",
+      "text": "As pastilhas eu tenho aqui, mas a bateria só chega amanhã de manhã. Então amanhã a partir do meio-dia."
+    },
+    {
+      "speaker": "cli",
+      "text": "Amanhã eu trabalho até as seis. Até que horas vocês ficam abertos?"
+    },
+    {
+      "speaker": "mec",
+      "text": "Até as sete. Se não der, pode buscar no sábado de manhã."
+    },
+    {
+      "speaker": "cli",
+      "text": "Passo amanhã às seis e meia. Obrigada."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Ses nereden geliyordu?",
+      "options": [
+        "Frenlerden",
+        "Motordan",
+        "Tekerleklerden",
+        "Egzozdan"
+      ],
+      "answer": 0,
+      "feedback": "Frenlerden; balatalar aşınmış.",
+      "evidence": "O barulho vinha dos freios."
+    },
+    {
+      "id": "q2",
+      "prompt": "Fren balataları ne kadar?",
+      "options": [
+        "300 real",
+        "400 real",
+        "650 real",
+        "700 real"
+      ],
+      "answer": 1,
+      "feedback": "İşçilik dahil dört yüz real.",
+      "evidence": "As pastilhas, quatrocentos reais com a mão de obra."
+    },
+    {
+      "id": "q3",
+      "prompt": "İkisi birlikte indirimli ne kadar?",
+      "options": [
+        "600 real",
+        "700 real",
+        "650 real",
+        "750 real"
+      ],
+      "answer": 2,
+      "feedback": "Toplam altı yüz elli real.",
+      "evidence": "fica seiscentos e cinquenta no total."
+    },
+    {
+      "id": "q4",
+      "prompt": "Araba neden bugün hazır olmuyor?",
+      "options": [
+        "Tamirci hasta",
+        "Akü yarın geliyor",
+        "Çok iş var",
+        "Parça yok"
+      ],
+      "answer": 1,
+      "feedback": "Akü yarın sabah geliyor.",
+      "evidence": "mas a bateria só chega amanhã de manhã."
+    },
+    {
+      "id": "q5",
+      "prompt": "Müşteri arabayı ne zaman alacak?",
+      "options": [
+        "Yarın 12:00",
+        "Cumartesi sabahı",
+        "Bugün 19:00",
+        "Yarın 18:30"
+      ],
+      "answer": 3,
+      "feedback": "Yarın altı buçukta uğrayacak.",
+      "evidence": "Passo amanhã às seis e meia."
+    }
+  ]
+}

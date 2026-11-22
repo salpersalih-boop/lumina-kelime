@@ -13,7 +13,16 @@ npm start            # node tools/serve.js — Python ya da ek paket gerekmez
 npm start -- 8081    # 8080 doluysa başka port
 ```
 
-Sonra `http://localhost:8080` adresini aç. Doğrudan bir metne bağlantı verilebilir: `http://localhost:8080/#/a1/orta/3` (A1 · Orta · 3. metin).
+Sonra `http://localhost:8080` adresini aç. Doğrudan bir metne bağlantı verilebilir: `http://localhost:8080/#/a1/medium/3` (A1 · Orta · 3. metin).
+
+Aynı motor iki kataloğu sunar:
+
+| Sayfa | Katalog | İçerik kökü | Örnek adres |
+|---|---|---|---|
+| `index.html` | TÖMER · İngilizce (A1 … C2) | `content/` | `#/a1/medium/3` |
+| `languages.html` | **Dinleyerek Öğren** (dil × Kolay/Orta/Zor) | `content/diller/` | `languages.html#/es/easy/2` |
+
+Hangi kataloğun açılacağını `<main data-content="content/diller/">` niteliği söyler; başlıklar manifest'in `app` alanından gelir.
 
 ## Test ve doğrulama
 
@@ -38,7 +47,7 @@ js/
   main.js                  Giriş: adres → ekran, veriyi hazırlar, ilerlemeyi saklar
   config.js                Alt seviyeler, hız seçenekleri, sabitler
   core/                    DOM'a bağlı olmayan, test edilen saf mantık
-    route.js               Adres ↔ ekran (#/a1/kolay/3)
+    route.js               Adres ↔ ekran (#/a1/easy/3)
     sets.js                Set kimliği/yolu, kelime sayısı, uzunluk sınıfı, sıradaki metin
     scoring.js             Puanlama ve değerlendirme metni
     timing.js              Süre tahmini, zaman biçimi, konum hesapları
@@ -66,6 +75,8 @@ content/
 tests/                     node:test birim testleri
 tools/validate-content.js  İçerik doğrulama aracı (--list ile metin listesi ve uzunlukları)
 tools/serve.js             Bağımsız statik sunucu (npm start)
+languages.html                Dinleyerek Öğren girişi (content/diller/ kataloğu)
+content/diller/            Dil kataloğu: manifest.json + es/, pt/ …
 ```
 
 ### Ekran akışı
@@ -74,10 +85,10 @@ tools/serve.js             Bağımsız statik sunucu (npm start)
 |---|---|
 | `#/` | Seviyeler (A1–C2) ve genel ilerleme |
 | `#/a1` | A1'in zorlukları: Kolay / Orta / Zor |
-| `#/a1/kolay` | A1 Kolay metinleri (Tümü / Kısa / Orta / Uzun süzgeci) |
-| `#/a1/kolay/3` | 3. metin: dinle, cevapla, açıklamaları ve metni gör |
+| `#/a1/easy` | A1 Kolay metinleri (Tümü / Kısa / Orta / Uzun süzgeci) |
+| `#/a1/easy/3` | 3. metin: dinle, cevapla, açıklamaları ve metni gör |
 
-Eski biçimdeki adresler (`#a1-kolay-3`) yeni biçime çevrilir. Geçersiz adresler en yakın geçerli ekrana yönlendirilir.
+Adreslerde zorluklar İngilizcedir (`easy` / `medium` / `hard`). Türkçe (`#/a1/kolay/3`) ve eski biçimdeki adresler (`#a1-kolay-3`) de açılır ve yeni biçime çevrilir. Lumina içinden açıldığında üst çubukta "Lumina" dönüş bağlantısı görünür. Geçersiz adresler en yakın geçerli ekrana yönlendirilir.
 
 ### Mimari kararlar
 
@@ -317,6 +328,82 @@ Her metin kelime sayısına göre **Kısa** (≤ 50), **Orta** (≤ 110) ya da *
 | 70 |  |  | Choosing a phone for Grandpa | Orta |  |  |
 
 Her soruda Türkçe açıklama ve metindeki kanıt cümlesi bulunur. Kontrol sonrası açılan metinde bu cümleler soru numarasıyla işaretlenir.
+
+## Dinleyerek Öğren (content/diller)
+
+TÖMER seviyelerinden bağımsız ikinci katalog: dil kartları → Kolay / Orta / Zor → metinler. Metinler hedef dilde, sorular ve şıklar Türkçe (`questionLang: "tr"`); kanıt cümlesi hedef dilde. Manifest'teki her dil `id` (iki harf), `label`, `flag`, `lang` (sesin dili; her setin `audio.lang` değeri bununla eşleşmeli) taşır. İçeriği olmayan diller "Yakında" olarak görünür.
+
+Şu an İspanyolca ve Portekizce'de 10'ar Kolay (3 soru), Orta (4 soru, diyalog) ve Zor (5 soru, 3 dinleme hakkı) metin var; her zorlukta kısa, orta ve uzun metin karışık.
+
+### İspanyolca (es-ES)
+
+| Zorluk | # | Uzunluk | Kelime | Başlık |
+|---|---|---|---|---|
+| Kolay | 1 | Kısa | 36 | Me llamo Lucía |
+| Kolay | 2 | Orta | 62 | Mi casa nueva |
+| Kolay | 3 | Orta | 63 | Un día normal |
+| Kolay | 4 | Kısa | 39 | En la cafetería |
+| Kolay | 5 | Orta | 72 | Mi familia |
+| Kolay | 6 | Kısa | 42 | El tiempo hoy |
+| Kolay | 7 | Kısa | 48 | ¿Dónde está la farmacia? |
+| Kolay | 8 | Orta | 99 | Mis vacaciones en Galicia |
+| Kolay | 9 | Kısa | 38 | Mensaje para Carlos |
+| Kolay | 10 | Uzun | 126 | Mi mejor amiga |
+| Orta | 1 | Orta | 78 | Reserva en el restaurante |
+| Orta | 2 | Orta | 79 | En la tienda de ropa |
+| Orta | 3 | Kısa | 46 | Planes para el fin de semana |
+| Orta | 4 | Orta | 71 | En la consulta del médico |
+| Orta | 5 | Uzun | 111 | Buscando piso |
+| Orta | 6 | Orta | 82 | En la estación de tren |
+| Orta | 7 | Orta | 99 | Problema con el pedido |
+| Orta | 8 | Uzun | 115 | Una entrevista corta |
+| Orta | 9 | Orta | 89 | ¿Cómo llego al museo? |
+| Orta | 10 | Orta | 110 | Organizando la fiesta |
+| Zor | 1 | Orta | 88 | Aviso en el aeropuerto |
+| Zor | 2 | Orta | 95 | Noticias de la mañana |
+| Zor | 3 | Orta | 89 | Mensaje de voz: cambio de planes |
+| Zor | 4 | Uzun | 117 | Visita guiada: el casco antiguo |
+| Zor | 5 | Uzun | 165 | Podcast: trabajar desde casa |
+| Zor | 6 | Uzun | 136 | Reclamación en el hotel |
+| Zor | 7 | Uzun | 116 | Instrucciones del examen |
+| Zor | 8 | Uzun | 131 | Llamada al taller |
+| Zor | 9 | Kısa | 47 | Aviso: cierre de la biblioteca |
+| Zor | 10 | Uzun | 188 | Entrevista: una chef joven |
+
+### Portekizce (pt-BR)
+
+| Zorluk | # | Uzunluk | Kelime | Başlık |
+|---|---|---|---|---|
+| Kolay | 1 | Kısa | 35 | Eu sou a Beatriz |
+| Kolay | 2 | Orta | 64 | Meu apartamento |
+| Kolay | 3 | Orta | 66 | A rotina da Juliana |
+| Kolay | 4 | Kısa | 40 | Na padaria |
+| Kolay | 5 | Orta | 73 | Minha família |
+| Kolay | 6 | Kısa | 48 | Previsão do tempo |
+| Kolay | 7 | Kısa | 46 | Onde fica o banco? |
+| Kolay | 8 | Orta | 76 | Férias em Florianópolis |
+| Kolay | 9 | Kısa | 40 | Recado para o Pedro |
+| Kolay | 10 | Uzun | 139 | Meu melhor amigo |
+| Orta | 1 | Orta | 72 | Reserva no restaurante |
+| Orta | 2 | Orta | 85 | Na loja de sapatos |
+| Orta | 3 | Kısa | 48 | Planos para o sábado |
+| Orta | 4 | Orta | 73 | No consultório |
+| Orta | 5 | Orta | 110 | Procurando apartamento |
+| Orta | 6 | Orta | 80 | Na rodoviária |
+| Orta | 7 | Orta | 93 | Problema com o pedido |
+| Orta | 8 | Uzun | 126 | Uma entrevista rápida |
+| Orta | 9 | Orta | 89 | Como chego ao museu? |
+| Orta | 10 | Orta | 109 | Organizando a festa |
+| Zor | 1 | Orta | 82 | Aviso no aeroporto |
+| Zor | 2 | Orta | 96 | Notícias da manhã |
+| Zor | 3 | Orta | 87 | Áudio: mudança de planos |
+| Zor | 4 | Uzun | 117 | Visita guiada: o centro histórico |
+| Zor | 5 | Uzun | 158 | Podcast: trabalhar de casa |
+| Zor | 6 | Uzun | 143 | Reclamação no hotel |
+| Zor | 7 | Orta | 109 | Instruções da prova |
+| Zor | 8 | Uzun | 131 | Ligação da oficina |
+| Zor | 9 | Kısa | 50 | Aviso: fechamento da biblioteca |
+| Zor | 10 | Uzun | 190 | Entrevista: uma chef jovem |
 
 ## Tarayıcı desteği
 

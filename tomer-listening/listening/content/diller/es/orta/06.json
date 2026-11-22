@@ -1,0 +1,121 @@
+{
+  "id": "es-orta-06",
+  "level": "ES",
+  "sublevel": "orta",
+  "title": "En la estación de tren",
+  "topic": "Ulaşım",
+  "instructions": "Tren bileti alırken. Saatlere ve peron numarasına dikkat et.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.95,
+    "maxPlays": null
+  },
+  "speakers": {
+    "emp": {
+      "name": "Empleado",
+      "voice": "male"
+    },
+    "via": {
+      "name": "Viajera",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "via",
+      "text": "Buenos días, quería un billete para Zaragoza."
+    },
+    {
+      "speaker": "emp",
+      "text": "¿Para hoy?"
+    },
+    {
+      "speaker": "via",
+      "text": "Sí, el próximo tren, por favor."
+    },
+    {
+      "speaker": "emp",
+      "text": "El próximo sale a las once y cuarto, pero está completo. El siguiente es a las doce y media."
+    },
+    {
+      "speaker": "via",
+      "text": "Vale, el de las doce y media. ¿Cuánto tarda?"
+    },
+    {
+      "speaker": "emp",
+      "text": "Una hora y veinte minutos. Llega a las trece cincuenta."
+    },
+    {
+      "speaker": "via",
+      "text": "¿Y el precio?"
+    },
+    {
+      "speaker": "emp",
+      "text": "Treinta y dos euros ida y vuelta, o diecinueve solo ida."
+    },
+    {
+      "speaker": "via",
+      "text": "Solo ida, vuelvo en coche con una amiga."
+    },
+    {
+      "speaker": "emp",
+      "text": "Aquí tiene. Sale del andén número cuatro."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Yolcu nereye gidiyor?",
+      "options": [
+        "Madrid",
+        "Zaragoza",
+        "Sevilla",
+        "Bilbao"
+      ],
+      "answer": 1,
+      "feedback": "Zaragoza’ya bilet istiyor.",
+      "evidence": "quería un billete para Zaragoza."
+    },
+    {
+      "id": "q2",
+      "prompt": "Neden 11:15 trenine binemiyor?",
+      "options": [
+        "İptal edildi",
+        "Dolu",
+        "Çok pahalı",
+        "Geç kaldı"
+      ],
+      "answer": 1,
+      "feedback": "On bir on beş treni dolu.",
+      "evidence": "El próximo sale a las once y cuarto, pero está completo."
+    },
+    {
+      "id": "q3",
+      "prompt": "Yolculuk ne kadar sürüyor?",
+      "options": [
+        "50 dakika",
+        "1 saat",
+        "1 saat 20 dakika",
+        "2 saat"
+      ],
+      "answer": 2,
+      "feedback": "Bir saat yirmi dakika sürüyor.",
+      "evidence": "Una hora y veinte minutos."
+    },
+    {
+      "id": "q4",
+      "prompt": "Yolcu kaç euro ödüyor?",
+      "options": [
+        "19",
+        "32",
+        "45",
+        "12"
+      ],
+      "answer": 0,
+      "feedback": "Sadece gidiş alıyor: on dokuz euro.",
+      "evidence": "o diecinueve solo ida."
+    }
+  ]
+}

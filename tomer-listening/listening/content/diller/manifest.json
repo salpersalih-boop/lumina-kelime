@@ -1,0 +1,133 @@
+{
+  "version": 2,
+  "app": {
+    "title": "Dinleyerek Öğren",
+    "short": "Dinleyerek Öğren",
+    "kicker": "Lumina · Diller",
+    "heading": ["Dinleyerek", "Öğren"],
+    "intro": "Bir dil seç, kısa ve uzun metinleri dinle, Türkçe soruları cevapla. Her sorunun açıklaması metindeki cümleyi gösterir.",
+    "groupLabel": "Diller"
+  },
+  "levels": [
+    {
+      "id": "ES",
+      "name": "İspanyolca",
+      "label": "İspanyolca",
+      "flag": "🇪🇸",
+      "lang": "es-ES",
+      "sets": {
+        "kolay": ["es/kolay/01.json", "es/kolay/02.json", "es/kolay/03.json", "es/kolay/04.json", "es/kolay/05.json", "es/kolay/06.json", "es/kolay/07.json", "es/kolay/08.json", "es/kolay/09.json", "es/kolay/10.json"],
+        "orta": ["es/orta/01.json", "es/orta/02.json", "es/orta/03.json", "es/orta/04.json", "es/orta/05.json", "es/orta/06.json", "es/orta/07.json", "es/orta/08.json", "es/orta/09.json", "es/orta/10.json"],
+        "zor": ["es/zor/01.json", "es/zor/02.json", "es/zor/03.json", "es/zor/04.json", "es/zor/05.json", "es/zor/06.json", "es/zor/07.json", "es/zor/08.json", "es/zor/09.json", "es/zor/10.json"]
+      }
+    },
+    {
+      "id": "PT",
+      "name": "Portekizce",
+      "label": "Portekizce",
+      "flag": "🇧🇷",
+      "lang": "pt-BR",
+      "sets": {
+        "kolay": ["pt/kolay/01.json", "pt/kolay/02.json", "pt/kolay/03.json", "pt/kolay/04.json", "pt/kolay/05.json", "pt/kolay/06.json", "pt/kolay/07.json", "pt/kolay/08.json", "pt/kolay/09.json", "pt/kolay/10.json"],
+        "orta": ["pt/orta/01.json", "pt/orta/02.json", "pt/orta/03.json", "pt/orta/04.json", "pt/orta/05.json", "pt/orta/06.json", "pt/orta/07.json", "pt/orta/08.json", "pt/orta/09.json", "pt/orta/10.json"],
+        "zor": ["pt/zor/01.json", "pt/zor/02.json", "pt/zor/03.json", "pt/zor/04.json", "pt/zor/05.json", "pt/zor/06.json", "pt/zor/07.json", "pt/zor/08.json", "pt/zor/09.json", "pt/zor/10.json"]
+      }
+    },
+    {
+      "id": "EN",
+      "name": "İngilizce",
+      "label": "İngilizce",
+      "flag": "🇬🇧",
+      "lang": "en-US",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "FR",
+      "name": "Fransızca",
+      "label": "Fransızca",
+      "flag": "🇫🇷",
+      "lang": "fr-FR",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "DE",
+      "name": "Almanca",
+      "label": "Almanca",
+      "flag": "🇩🇪",
+      "lang": "de-DE",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "IT",
+      "name": "İtalyanca",
+      "label": "İtalyanca",
+      "flag": "🇮🇹",
+      "lang": "it-IT",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "RU",
+      "name": "Rusça",
+      "label": "Rusça",
+      "flag": "🇷🇺",
+      "lang": "ru-RU",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "AR",
+      "name": "Arapça",
+      "label": "Arapça",
+      "flag": "🇸🇦",
+      "lang": "ar-SA",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "ZH",
+      "name": "Çince",
+      "label": "Çince",
+      "flag": "🇨🇳",
+      "lang": "zh-CN",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    },
+    {
+      "id": "HI",
+      "name": "Hintçe",
+      "label": "Hintçe",
+      "flag": "🇮🇳",
+      "lang": "hi-IN",
+      "sets": {
+        "kolay": [],
+        "orta": [],
+        "zor": []
+      }
+    }
+  ]
+}

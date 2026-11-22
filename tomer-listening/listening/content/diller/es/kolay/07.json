@@ -1,0 +1,100 @@
+{
+  "id": "es-kolay-07",
+  "level": "ES",
+  "sublevel": "kolay",
+  "title": "¿Dónde está la farmacia?",
+  "topic": "Yol tarifi",
+  "instructions": "Sokakta kısa bir yol tarifi.",
+  "questionLang": "tr",
+  "audio": {
+    "src": null,
+    "lang": "es-ES",
+    "rate": 0.85,
+    "maxPlays": null
+  },
+  "speakers": {
+    "tur": {
+      "name": "Turista",
+      "voice": "male"
+    },
+    "vec": {
+      "name": "Vecina",
+      "voice": "female"
+    }
+  },
+  "script": [
+    {
+      "speaker": "tur",
+      "text": "Perdone, ¿hay una farmacia cerca de aquí?"
+    },
+    {
+      "speaker": "vec",
+      "text": "Sí. Siga todo recto por esta calle."
+    },
+    {
+      "speaker": "vec",
+      "text": "En el semáforo, gire a la izquierda."
+    },
+    {
+      "speaker": "vec",
+      "text": "La farmacia está al lado del banco, enfrente de la estación de metro."
+    },
+    {
+      "speaker": "tur",
+      "text": "¿Está lejos?"
+    },
+    {
+      "speaker": "vec",
+      "text": "No, son cinco minutos a pie."
+    },
+    {
+      "speaker": "tur",
+      "text": "Muchas gracias."
+    },
+    {
+      "speaker": "vec",
+      "text": "De nada. ¡Buen día!"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Trafik ışığında ne yapmalı?",
+      "options": [
+        "Sağa dönmeli",
+        "Sola dönmeli",
+        "Düz gitmeli",
+        "Geri dönmeli"
+      ],
+      "answer": 1,
+      "feedback": "Trafik ışığında sola dönecek.",
+      "evidence": "En el semáforo, gire a la izquierda."
+    },
+    {
+      "id": "q2",
+      "prompt": "Eczane neyin yanında?",
+      "options": [
+        "Okulun",
+        "Bankanın",
+        "Restoranın",
+        "Otelin"
+      ],
+      "answer": 1,
+      "feedback": "Eczane bankanın yanında, metro istasyonunun karşısında.",
+      "evidence": "La farmacia está al lado del banco, enfrente de la estación de metro."
+    },
+    {
+      "id": "q3",
+      "prompt": "Eczane ne kadar uzakta?",
+      "options": [
+        "Yürüyerek beş dakika",
+        "On dakika",
+        "Çok uzak",
+        "Otobüsle on beş dakika"
+      ],
+      "answer": 0,
+      "feedback": "Yürüyerek beş dakika.",
+      "evidence": "No, son cinco minutos a pie."
+    }
+  ]
+}
