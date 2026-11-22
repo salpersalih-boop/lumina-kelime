@@ -13,8 +13,11 @@ const TomerModule = (() => {
     const BASE = './data/tomer/';
     const PROGRESS_CODE = 'tomergr';
     const TEST_SIZE = 12;
-    // Dinleme modülünde içeriği olan seviyeler (tomer-listening/listening/content/manifest.json)
+    // Dinleme modülünde içeriği olan seviyeler (tomer-listening/listening/content/manifest.json).
+    // Seviye kimlikleri içerikte "a1" ya da "A1" olabilir: karşılaştırmalar büyük/küçük harf duyarsız.
     const LISTENING_LEVELS = ['A1', 'A2'];
+    const sameId = (a, b) => String(a || '').toUpperCase() === String(b || '').toUpperCase();
+    const hasListening = id => LISTENING_LEVELS.some(l => sameId(l, id));
 
     let index = null;          // data/tomer/index.json
     let available = false;
@@ -218,7 +221,7 @@ const TomerModule = (() => {
 
     // ── ekran 2: Kelime / Gramer ──
     async function openLevel(levelId) {
-        level = index.levels.find(l => l.id === levelId);
+        level = index.levels.find(l => sameId(l.id, levelId));
         if (!level || !level.available) return;
         try { grammar = await loadGrammar(level.id); }
         catch (e) { alert('TÖMER içeriği yüklenemedi: ' + e.message); return; }
@@ -246,7 +249,7 @@ const TomerModule = (() => {
               <span class="tm-choice-icon">🧾</span><strong>Testler</strong>
               <span>${grammar.tests.length} kitap testi · ${grammar.tests.reduce((a, t) => a + t.questions.length, 0)} soru</span>
             </button>` : ''}
-            ${LISTENING_LEVELS.includes(level.id) ? `<a class="tm-choice-card" href="${listeningUrl(level.id)}">
+            ${hasListening(level.id) ? `<a class="tm-choice-card" href="${listeningUrl(level.id)}">
               <span class="tm-choice-icon">🎧</span><strong>Dinleme</strong>
               <span>Kolay · Orta · Zor · kısa ve uzun metinler, sorular</span>
             </a>` : ''}
@@ -257,7 +260,7 @@ const TomerModule = (() => {
     const listeningUrl = levelId => `${Router.LISTENING}index.html#/${encodeURIComponent(levelId.toLowerCase())}`;
 
     async function openWords() {
-        const code = 'tomer' + level.id;
+        const code = 'tomer' + String(level.id).toLowerCase();
         if (!LANGUAGE_BY_CODE[code]) return;
         await selectLanguage(code);
     }
@@ -669,10 +672,10 @@ const TomerModule = (() => {
     async function restore(segs) {
         if (!available && !(await checkAvailability())) return;
         await open();
-        const lv = String(segs[0] || '').toUpperCase();
+        const lv = segs[0];
         if (!lv) return;
         await openLevel(lv);
-        if (!level || level.id !== lv) return;
+        if (!level || !sameId(level.id, lv)) return;
         const [, section, id] = segs;
         if (section === 'grammar') {
             showGrammar();

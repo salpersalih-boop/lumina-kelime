@@ -62,35 +62,73 @@ async function fetchAndShowLangCounts() {
 }
 
 // ── DİL SEÇİM EKRANI ──
-// Kartlar LANGUAGES listesinden üretilir (index.html → #langGrid)
-function renderLanguageCards() {
-    const grid = document.getElementById('langGrid');
-    if (!grid) return;
-    const tomerReady = typeof TomerModule !== 'undefined' && TomerModule.isAvailable();
-    const derslerReady = typeof DerslerModule !== 'undefined' && DerslerModule.isAvailable();
-    // ownerOnly kartlar (Derslerim) yetkili hesap + içerik yoksa hiç çizilmez
-    grid.innerHTML = LANGUAGES.filter(l => !l.hidden && !(l.ownerOnly && !derslerReady)).map(lang => {
-        const l = lang.code === 'tomer' ? { ...lang, soon: !tomerReady } : lang;
-        const sfx = langIdSuffix(l.code);
-        const cls = ['lang-btn', l.theme ? `${l.theme}-theme` : '', l.soon ? 'is-soon' : ''].filter(Boolean).join(' ');
-        return `
-      <button class="${cls}" id="btnLang${sfx}" data-lang="${l.code}"${l.soon ? ' aria-disabled="true"' : ''}>
+// Kartlar LANGUAGES listesinden üretilir. İki bölüm:
+//   #langModules → çalışma alanları (TÖMER, Derslerim, Dinleyerek Öğren): geniş, yatay kartlar
+//   #langGrid    → kelime dilleri
+// TÖMER ve Derslerim yalnızca içeriği açık olan hesapta (yerel klasör ya da hesaba özel bulut) görünür.
+const MODULE_INFO = {
+    tomer:     { desc: 'Kelime · Gramer · Testler · Dinleme', tag: 'Kişisel' },
+    dersler:   { desc: 'Ders notları · normal ve klasik sorular', tag: 'Kişisel' },
+    listening: { desc: 'İspanyolca · Portekizce · Kolay, Orta, Zor metinler', tag: 'Yeni' },
+};
+
+// Windows bayrak emojilerini çizmez ("🇬🇧" → "GB" harfleri). Öyleyse <html>'e sınıf ekle:
+// kartlarda harf bayrak gizlenir, yalnızca dil kodu büyük gösterilir (css: html.no-flag-emoji).
+const isFlagEmoji = s => /^[\u{1F1E6}-\u{1F1FF}]{2}$/u.test(s);
+(function detectFlagEmoji() {
+    try {
+        const c = document.createElement('canvas');
+        c.width = c.height = 24;
+        const ctx = c.getContext('2d', { willReadFrequently: true });
+        ctx.textBaseline = 'top';
+        ctx.font = '20px sans-serif';
+        ctx.fillStyle = '#000';
+        ctx.fillText('\u{1F1F9}\u{1F1F7}', 0, 0);
+        const d = ctx.getImageData(0, 0, 24, 24).data;
+        let colored = false;
+        for (let i = 0; i < d.length; i += 4) {
+            if (d[i + 3] > 0 && (Math.abs(d[i] - d[i + 1]) > 20 || Math.abs(d[i + 1] - d[i + 2]) > 20)) { colored = true; break; }
+        }
+        document.documentElement.classList.toggle('no-flag-emoji', !colored);
+    } catch { /* canvas yoksa olduğu gibi kalsın */ }
+})();
+
+function langCard(l) {
+    const sfx = langIdSuffix(l.code);
+    const info = MODULE_INFO[l.code];
+    const cls = ['lang-btn', l.module ? 'module-btn' : '', l.theme ? `${l.theme}-theme` : '', l.code === 'listening' ? 'listening-theme' : ''].filter(Boolean).join(' ');
+    return `
+      <button class="${cls}" id="btnLang${sfx}" data-lang="${l.code}">
         <div class="lang-icon-wrap ${l.code}">
-          <span class="flag-emoji">${l.flag}</span>
+          <span class="flag-emoji${isFlagEmoji(l.flag) ? ' is-flag' : ''}">${l.flag}</span>
           <span class="flag-code">${escapeHtml(l.short)}</span>
         </div>
         <div class="lang-info">
           <h3>${escapeHtml(l.label)}</h3>
-          <p id="langDesc${sfx}">${l.soon ? 'İçerik hazırlanıyor' : l.code === 'dersler' ? 'Ders notları + normal ve klasik sorular' : l.code === 'listening' ? 'İspanyolca · Portekizce · dinle ve cevapla' : l.module ? 'Kelime + Gramer · kişisel çalışma' : 'Yükleniyor...'}</p>
+          <p id="langDesc${sfx}">${info ? escapeHtml(info.desc) : 'Yükleniyor...'}</p>
         </div>
-        ${l.soon ? '<span class="soon-badge">Yakında</span>' : ''}
+        ${info ? `<span class="module-tag">${info.tag}</span><span class="module-go" aria-hidden="true">→</span>` : ''}
       </button>`;
-    }).join('');
+}
 
-    grid.querySelectorAll('.lang-btn').forEach(btn => {
+function renderLanguageCards() {
+    const grid = document.getElementById('langGrid');
+    const modules = document.getElementById('langModules');
+    if (!grid || !modules) return;
+    const ready = {
+        tomer: typeof TomerModule !== 'undefined' && TomerModule.isAvailable(),
+        dersler: typeof DerslerModule !== 'undefined' && DerslerModule.isAvailable(),
+    };
+    const visible = LANGUAGES.filter(l => !l.hidden && ready[l.code] !== false);
+    const mods = visible.filter(l => l.module);
+    modules.innerHTML = mods.map(langCard).join('');
+    modules.dataset.count = String(mods.length);
+    grid.innerHTML = visible.filter(l => !l.module).map(langCard).join('');
+
+    document.querySelectorAll('#langModules .lang-btn, #langGrid .lang-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const lang = LANGUAGE_BY_CODE[btn.dataset.lang];
-            if (!lang || btn.classList.contains('is-soon')) return;
+            if (!lang) return;
             if (lang.code === 'tomer') TomerModule.open();
             else if (lang.code === 'dersler') DerslerModule.open();
             else if (lang.code === 'listening') location.assign(Router.LISTENING + 'languages.html');

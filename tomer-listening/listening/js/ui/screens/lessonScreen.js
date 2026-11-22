@@ -6,7 +6,7 @@ import { esc, ICONS } from '../dom.js';
 import { backLink, lengthChip, kindChip, timeChip } from './parts.js';
 
 /**
- * Ders ekranı: başlık → oynatıcı → sorular → (kontrolden sonra) dinleme metni.
+ * Ders ekranı: başlık → oynatıcı → dinleme metni (istenince açılır) → sorular.
  * Tek sütunlu, odaklı akış. Alt bileşenlerin yaşam döngüsünü yönetir.
  *
  * @param {HTMLElement} root
@@ -51,8 +51,8 @@ export async function renderLesson(root, opts) {
       </header>
 
       <div class="slot-player"><div class="ls-player ls-player-loading" aria-busy="true"><span class="ls-spinner"></span></div></div>
-      <div class="slot-quiz"></div>
       <div class="slot-transcript"></div>
+      <div class="slot-quiz"></div>
 
       ${dots.length > 1 ? `
       <nav class="ls-dots" aria-label="${esc(sublevel.label)} metinleri">
@@ -94,6 +94,7 @@ export async function renderLesson(root, opts) {
       onRateChange: opts.onRateChange,
     });
     player.on('segment', i => transcript.setActiveLine(i));
+    player.on('progress', ({ ratio }) => { if (player.state === 'playing') transcript.setProgress(ratio); });
     player.on('state', s => { if (s === 'ended') transcript.setActiveLine(-1); });
   }
 
@@ -102,6 +103,7 @@ export async function renderLesson(root, opts) {
       destroyed = true;
       audioUi?.destroy();
       quiz.destroy();
+      transcript.destroy();
     },
   };
 }
