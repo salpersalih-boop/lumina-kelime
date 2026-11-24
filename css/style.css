@@ -4949,6 +4949,27 @@ body.theme-sv .group-card {
     border: 1px solid rgba(245, 124, 110, 0.25);
     border-radius: var(--radius-sm);
     margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.race-results-score.is-winner {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.18), rgba(34, 197, 94, 0.06));
+    border-color: rgba(34, 197, 94, 0.45);
+    box-shadow: 0 4px 18px rgba(34, 197, 94, 0.15);
+}
+
+.race-results-score.is-winner .results-score-value {
+    color: #22c55e;
+}
+
+.race-results-score.is-record {
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.22), rgba(245, 158, 11, 0.08));
+    border-color: rgba(250, 204, 21, 0.55);
+    box-shadow: 0 4px 22px rgba(250, 204, 21, 0.22);
+}
+
+.race-results-score.is-record .results-score-value {
+    color: #eab308;
 }
 
 .results-score-label {
