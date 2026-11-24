@@ -104,6 +104,9 @@ const Nav = (() => {
             case 'testHubScreen':  openTestHub(); break;
             case 'writeHubScreen': openWriteHub(); break;
             case 'raceHubScreen':  openRaceHub(); break;
+            // Yarış / eşleştirme ekranına geri-ileri ile dönülürse oyun baştan kurulmaz, boş ekran kalmasın
+            case 'typingRaceScreen': case 'quickQuizScreen': case 'speedMatchScreen': openRaceHub(); break;
+            case 'matchScreen':    startMatch(); break;
             default:
                 if (typeof TomerModule !== 'undefined' && TomerModule.refresh(id)) break;
                 if (typeof DerslerModule !== 'undefined' && DerslerModule.refresh(id)) break;

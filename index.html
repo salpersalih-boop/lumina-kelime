@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=37" />
+  <link rel="stylesheet" href="css/style.css?v=38" />
 </head>
 
 <body>
@@ -694,25 +694,49 @@
   </div>
 
   <!-- ══════════════ MATCH SCREEN ══════════════ -->
-  <div id="matchScreen" class="screen">
-    <div class="fc-header" style="margin-bottom: 24px;">
-      <button class="btn-back" id="btnBackMatch" aria-label="Dashboard'a dön">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M19 12H5M12 5l-7 7 7 7" />
-        </svg>
-        Dashboard
-      </button>
-      <h2 style="margin:0; font-size: 1.4rem; color: var(--accent-2);">🧩 Match & Learn</h2>
-      <button class="btn-primary" id="btnRefreshMatch"
-        style="margin-left:auto; padding: 8px 16px; border-radius: 99px; background: rgba(94,196,245,0.15); color: var(--accent-2); border: 1px solid rgba(94,196,245,0.4); cursor:pointer;">♻️
-        Yenile</button>
+  <div id="matchScreen" class="screen mg-screen">
+    <div class="mg-wrap">
+      <div class="mg-top">
+        <button class="btn-back" id="btnBackMatch" aria-label="Dashboard'a dön">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7" /></svg>
+          Dashboard
+        </button>
+        <h2 class="mg-title"><span>🧩</span> Eşleştir &amp; Kazan</h2>
+        <span class="mg-round" id="mgRound">Tur 1</span>
+      </div>
+
+      <div class="mg-hud">
+        <div class="mg-timer" id="mgTimer" aria-label="Kalan süre">
+          <svg viewBox="0 0 60 60" aria-hidden="true">
+            <circle class="mg-ring-bg" cx="30" cy="30" r="26" />
+            <circle class="mg-ring-fg" id="mgRingFg" cx="30" cy="30" r="26" />
+          </svg>
+          <b id="mgTime">60</b>
+        </div>
+        <div class="mg-chip mg-score-chip"><small>Skor</small><b id="mgScore">0</b></div>
+        <div class="mg-chip mg-combo" id="mgCombo">x1</div>
+        <div class="mg-chip mg-best-chip"><small>🏆 Rekor</small><b id="mgBest">—</b></div>
+      </div>
+
+      <div class="mg-progress">
+        <div class="mg-progress-bar"><div class="mg-progress-fill" id="mgProgFill"></div></div>
+        <span id="mgProgText">0 / 6</span>
+      </div>
+
+      <div class="mg-board">
+        <div class="mg-col" id="matchColEng"></div>
+        <div class="mg-col" id="matchColTr"></div>
+      </div>
+      <p class="mg-hint">Soldan kelimeyi, sağdan anlamını seç · doğru seri = daha çok puan</p>
     </div>
-    <div class="match-board">
-      <div class="match-col eng" id="matchColEng"></div>
-      <div class="match-col tr" id="matchColTr"></div>
-    </div>
+
   </div>
+  <!-- Eşleştirme katmanları ekranın dışında: .screen animasyonu fixed konumlamayı bozmasın -->
+  <div class="mg-banner" id="mgBanner" aria-live="polite"></div>
+  <div class="mg-perfect hidden" id="mgPerfect"></div>
+  <div class="mg-result hidden" id="mgResult" role="dialog" aria-modal="true"></div>
+  <canvas id="mgFx" class="mg-fx" aria-hidden="true"></canvas>
 
   <!-- ══════════════ MODALS ══════════════ -->
   <!-- Hesabı Yönet Modalı -->
@@ -1297,25 +1321,26 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
   <script src="js/firebase-config.js"></script>
-  <script src="js/utils.js?v=37"></script>
-  <script src="js/auth.js?v=37"></script>
+  <script src="js/utils.js?v=38"></script>
+  <script src="js/auth.js?v=38"></script>
   <!-- Uygulama (sıra önemli: aynı global kapsamı paylaşırlar) -->
-  <script src="js/app/nav.js?v=37"></script>
-  <script src="js/app/state.js?v=37"></script>
-  <script src="js/app/data.js?v=37"></script>
-  <script src="js/app/progress.js?v=37"></script>
-  <script src="js/app/dashboard.js?v=37"></script>
-  <script src="js/app/study.js?v=37"></script>
-  <script src="js/app/lab.js?v=37"></script>
-  <script src="js/app/ui.js?v=37"></script>
-  <script src="js/app/theme.js?v=37"></script>
-  <script src="js/app/tomer.js?v=37"></script>
-  <script src="js/app/dersler.js?v=37"></script>
-  <script src="js/app/router.js?v=37"></script>
-  <script src="js/app/main.js?v=37"></script>
-  <script src="js/app/test-write.js?v=37"></script>
-  <script src="js/app/race.js?v=37"></script>
-  <script src="js/app/account.js?v=37"></script>
+  <script src="js/app/nav.js?v=38"></script>
+  <script src="js/app/state.js?v=38"></script>
+  <script src="js/app/data.js?v=38"></script>
+  <script src="js/app/progress.js?v=38"></script>
+  <script src="js/app/dashboard.js?v=38"></script>
+  <script src="js/app/study.js?v=38"></script>
+  <script src="js/app/lab.js?v=38"></script>
+  <script src="js/app/match.js?v=38"></script>
+  <script src="js/app/ui.js?v=38"></script>
+  <script src="js/app/theme.js?v=38"></script>
+  <script src="js/app/tomer.js?v=38"></script>
+  <script src="js/app/dersler.js?v=38"></script>
+  <script src="js/app/router.js?v=38"></script>
+  <script src="js/app/main.js?v=38"></script>
+  <script src="js/app/test-write.js?v=38"></script>
+  <script src="js/app/race.js?v=38"></script>
+  <script src="js/app/account.js?v=38"></script>
 </body>
 
 </html>

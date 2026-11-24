@@ -1,6 +1,6 @@
 /* ============================================================
    LUMINA — FİİL LAB, EŞLEŞTİRME, SANDBOX
-   Fiil laboratuvarı, eşleştirme oyunu, serbest çalışma, sesli okuma
+   Fiil laboratuvarı, serbest çalışma, sesli okuma
 ============================================================ */
 
 // ── VERBS LAB MODULE ──
@@ -48,95 +48,7 @@ function startLabForGroup(groupNum) {
     showScreen('labScreen');
 }
 
-// ── MATCHING MODULE ──
-let matchState = {
-    selectedEng: null,
-    selectedTr: null,
-    words: []
-};
-
-function startMatch() {
-    let pot = [];
-    Object.values(allWords).forEach(group => {
-        pot.push(...group);
-    });
-
-    if (pot.length === 0) {
-        alert('Eşleştirme oyunu için kelime bulunamadı.');
-        return;
-    }
-
-    const selectedCount = Math.min(pot.length, 6);
-    const selected = shuffle(pot).slice(0, selectedCount);
-
-    let engList = selected.map((w, i) => ({ id: i, text: w.en }));
-    let trList = selected.map((w, i) => ({ id: i, text: w.tr }));
-
-    engList = shuffle(engList);
-    trList = shuffle(trList);
-
-    matchState.selectedEng = null;
-    matchState.selectedTr = null;
-    matchState.words = selected;
-
-    const engCol = document.getElementById('matchColEng');
-    const trCol = document.getElementById('matchColTr');
-
-    engCol.innerHTML = engList.map(item => `<button class="match-btn eng-btn" data-id="${item.id}">${escapeHtml(item.text)}</button>`).join('');
-    trCol.innerHTML = trList.map(item => `<button class="match-btn tr-btn" data-id="${item.id}">${escapeHtml(item.text)}</button>`).join('');
-
-    document.querySelectorAll('.eng-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            if (btn.classList.contains('matched')) return;
-            document.querySelectorAll('.eng-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            matchState.selectedEng = btn;
-            checkMatch();
-        });
-    });
-
-    document.querySelectorAll('.tr-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            if (btn.classList.contains('matched')) return;
-            document.querySelectorAll('.tr-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            matchState.selectedTr = btn;
-            checkMatch();
-        });
-    });
-
-    showScreen('matchScreen');
-}
-
-function checkMatch() {
-    if (!matchState.selectedEng || !matchState.selectedTr) return;
-
-    const eBtn = matchState.selectedEng;
-    const tBtn = matchState.selectedTr;
-
-    if (eBtn.dataset.id === tBtn.dataset.id) {
-        eBtn.classList.remove('active');
-        tBtn.classList.remove('active');
-        eBtn.classList.add('matched');
-        tBtn.classList.add('matched');
-
-        const matchedCount = document.querySelectorAll('.eng-btn.matched').length;
-        if (matchedCount === matchState.words.length) {
-            setTimeout(() => {
-                alert('🎉 Tebrikler! Tüm kelimeleri başarıyla eşleştirdiniz!');
-            }, 300);
-        }
-    } else {
-        eBtn.classList.add('wrong');
-        tBtn.classList.add('wrong');
-        setTimeout(() => {
-            eBtn.classList.remove('wrong', 'active');
-            tBtn.classList.remove('wrong', 'active');
-        }, 400);
-    }
-    matchState.selectedEng = null;
-    matchState.selectedTr = null;
-}
+// Eşleştirme oyunu: js/app/match.js
 
 // ── SANDBOX MODULE ──
 function startSandbox() {
