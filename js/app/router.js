@@ -2,31 +2,34 @@
    LUMINA — ADRES ÇUBUĞU (router)
    Her ekranın kendi adresi vardır; adresler İngilizce ve okunaklıdır:
 
-     #/                                   dil seçimi (ana sayfa)
-     #/login                              giriş
-     #/english                            İngilizce · gruplar
-     #/football/groups/3                  Futbol · 3. grup
-     #/football/groups/3/flashcards       kartlar
-     #/football/groups/3/test             test (oturum: …/test/session)
-     #/football/groups/3/write            yazma (oturum: …/write/session)
-     #/football/groups/3/lab              gruba özel lab
-     #/spanish/lab · /match · /review     lab, eşleştirme, haftalık tekrar
-     #/spanish/races[/typing|/quick-quiz|/speed-match]
-     #/tomer                              TÖMER seviyeleri
-     #/tomer/a1                           Kelime · Gramer · Testler · Dinleme
-     #/tomer/a1/words[/groups/3/…]        TÖMER kelime kartları
-     #/tomer/a1/grammar[/<konu>[/test]]   gramer
-     #/tomer/a1/grammar/review            eksiklerimi çalış
-     #/tomer/a1/tests[/<test>]            kitap testleri
-     #/tomer/a1/stats                     analiz
-     #/tomer/a1/listening                 dinleme modülü (ayrı sayfa)
-     #/courses[/<ders>[/topics/<konu>[/quiz|/classic]]]   Derslerim
-     #/courses/<ders>/mistakes[/quiz|/classic]
-     #/listening                          Dinleyerek Öğren (ayrı sayfa)
+     /                                    dil seçimi (ana sayfa)
+     /login                              giriş
+     /english                            İngilizce · gruplar
+     /football/groups/3                  Futbol · 3. grup
+     /football/groups/3/flashcards       kartlar
+     /football/groups/3/test             test (oturum: …/test/session)
+     /football/groups/3/write            yazma (oturum: …/write/session)
+     /football/groups/3/lab              gruba özel lab
+     /spanish/lab · /match · /review     lab, eşleştirme, haftalık tekrar
+     /spanish/races[/typing|/quick-quiz|/speed-match]
+     /tomer                              TÖMER seviyeleri
+     /tomer/a1                           Kelime · Gramer · Testler · Dinleme
+     /tomer/a1/words[/groups/3/…]        TÖMER kelime kartları
+     /tomer/a1/grammar[/<konu>[/test]]   gramer
+     /tomer/a1/grammar/review            eksiklerimi çalış
+     /tomer/a1/tests[/<test>]            kitap testleri
+     /tomer/a1/stats                     analiz
+     /tomer/a1/listening                 dinleme modülü (ayrı sayfa)
+     /courses[/<ders>[/topics/<konu>[/quiz|/classic]]]   Derslerim
+     /courses/<ders>/mistakes[/quiz|/classic]
+     /listening                          Dinleyerek Öğren (ayrı sayfa)
 
    Adres yenilenince ya da paylaşılınca aynı ekran açılır. Süren bir test
    ya da yarış yeniden başlatılamayacağı için bir üst ekrana (merkez/konu) döner.
-   Hash (#/) kullanılır: GitHub Pages ve yerel sunucu ek ayar istemez.
+   Adresler gerçek yoldur (/football/groups/3). GitHub Pages bilinmeyen yolda 404.html'i
+   açar; o adresi saklayıp ana sayfaya yönlendirir (index.html başındaki betik geri yazar).
+   Yerel sunucu da bilinmeyen yollarda index.html döndürmelidir (Baslat.bat bunu yapar).
+   Eski #/ adresleri index.html'de yeni adrese çevrilir.
 ============================================================ */
 const Router = (() => {
     const LISTENING = 'tomer-listening/listening/';
@@ -51,11 +54,19 @@ const Router = (() => {
         return lang ? lang.code : null;
     }
 
-    const toHash = segs => '#/' + segs.filter(s => s !== null && s !== undefined && s !== '')
+    // Uygulamanın kök yolu: GitHub Pages'te /lumina-kelime/, yerelde /
+    const ROOT = () => window.LUMINA_ROOT || '/';
+    const joinSegs = segs => segs.filter(s => s !== null && s !== undefined && s !== '')
         .map(s => encodeURIComponent(String(s))).join('/');
+    const toPath = segs => ROOT() + joinSegs(segs);
+    // Ayrı sayfalardaki (dinleme modülü) kendi # adresleri için
+    const toHash = segs => '#/' + joinSegs(segs);
 
-    function parse(hash) {
-        return String(hash || '').replace(/^#\/?/, '').split('/').filter(Boolean)
+    // '/lumina-kelime/football/groups/3' → ['football','groups','3']
+    function parse(path) {
+        let p = String(path || '');
+        if (p.startsWith(ROOT())) p = p.slice(ROOT().length);
+        return p.replace(/^\/+/, '').split('?')[0].split('#')[0].split('/').filter(Boolean)
             .map(s => { try { return decodeURIComponent(s); } catch { return s; } });
     }
 
@@ -89,7 +100,7 @@ const Router = (() => {
     }
 
     function urlFor(screenId) {
-        return location.pathname + location.search + toHash(segmentsFor(screenId));
+        return toPath(segmentsFor(screenId)) + location.search;
     }
     const activeScreen = () => document.querySelector('.screen.active')?.id;
     // Şu an görünen ekranın adresi
@@ -142,19 +153,19 @@ const Router = (() => {
     }
 
     // Adresi uygula (açılışta, girişten sonra ya da adres elle değiştirilince)
-    async function restore(hash) {
+    async function restore(path) {
         if (restoring) return;
         restoring = true;
-        try { await apply(parse(hash)); }
-        catch (e) { console.warn('Adres açılamadı:', hash, e); showScreen('languageScreen'); }
+        try { await apply(parse(path)); }
+        catch (e) { console.warn('Adres açılamadı:', path, e); showScreen('languageScreen'); }
         finally { restoring = false; }
     }
 
     // Açılış: oturum varsa adresteki ekranı aç, yoksa adresi girişten sonrası için sakla
     function start(session) {
-        const segs = parse(location.hash);
-        if (session) return restore(location.hash);
-        if (segs.length && segs[0] !== 'login') pending = location.hash;
+        const segs = parse(location.pathname);
+        if (session) return restore(location.pathname);
+        if (segs.length && segs[0] !== 'login') pending = location.pathname;
         showScreen('authScreen');
     }
 
@@ -165,5 +176,5 @@ const Router = (() => {
         else showScreen('languageScreen');
     }
 
-    return { urlFor, current, parse, start, afterLogin, restore, isRestoring: () => restoring, LISTENING };
+    return { urlFor, current, parse, start, afterLogin, restore, isRestoring: () => restoring, LISTENING, ROOT, toPath };
 })();

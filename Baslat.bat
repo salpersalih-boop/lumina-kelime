@@ -6,12 +6,12 @@ rem Tarayici, sunucu hazir olduktan sonra acilsin (yoksa eski onbellekteki sayfa
 where npx >nul 2>nul
 if %errorlevel%==0 (
   start "" /b cmd /c "ping -n 6 127.0.0.1 >nul & explorer http://localhost:3000"
-  npx --yes serve -l 3000 .
+  npx --yes serve -s -l 3000 .
 ) else (
   where python >nul 2>nul
   if %errorlevel%==0 (
     start "" /b cmd /c "ping -n 3 127.0.0.1 >nul & explorer http://localhost:3000"
-    python -m http.server 3000
+    python dev-server.py 3000
   ) else (
     echo Node.js veya Python bulunamadi. Node.js kurun: https://nodejs.org
     pause

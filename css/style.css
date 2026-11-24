@@ -6180,3 +6180,14 @@ html.no-flag-emoji .lang-icon-wrap:has(.flag-emoji.is-flag) .flag-code { font-si
     #langModules .module-btn .lang-icon-wrap { width: 52px; height: 52px; }
     .module-go { display: none; }
 }
+
+
+/* ── Yasal metinler: kayıt onayı, giriş altı not, alt bağlantılar ── */
+.auth-consent { display: flex; gap: 10px; align-items: flex-start; margin: 4px 0 14px; font-size: .82rem; line-height: 1.5; color: var(--text-muted, #7b82a8); cursor: pointer; }
+.auth-consent input { margin-top: 3px; flex: 0 0 auto; width: 18px; height: 18px; accent-color: #f97316; }
+.auth-consent a, .legal-note a, .legal-footer a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.legal-note { max-width: 420px; margin: 14px auto 0; text-align: center; font-size: .78rem; line-height: 1.5; color: var(--text-muted, #7b82a8); }
+.legal-footer { margin-top: 28px; text-align: center; font-size: .78rem; color: var(--text-muted, #7b82a8); }
+.legal-footer a:hover, .legal-note a:hover, .auth-consent a:hover { opacity: .8; }
+
+.auth-consent.hidden { display: none; }
