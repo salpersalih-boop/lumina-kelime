@@ -33,9 +33,9 @@ const RaceStatsManager = (() => {
             lastPlayDate: null,
             dailyHighScore: 0,
             dailyDate: null,
-            typing: { played: 0, totalScore: 0, highScore: 0 },
-            quiz: { played: 0, totalScore: 0, highScore: 0 },
-            match: { played: 0, totalScore: 0, highScore: 0 }
+            typing: { played: 0, totalScore: 0, highScore: 0, lowScore: null, lastScore: null },
+            quiz:   { played: 0, totalScore: 0, highScore: 0, lowScore: null, lastScore: null },
+            match:  { played: 0, totalScore: 0, highScore: 0, lowScore: null, lastScore: null }
         };
     }
 
@@ -50,35 +50,12 @@ const RaceStatsManager = (() => {
     function recordGame(gameType, score, correct, wrong, timeSec) {
         const stats = getStats();
 
-        // Önceki ve en düşük skorları kaydetmeden önce al
-        const prevHighScore   = stats.highScore   || 0;
-        const prevGameBest    = (stats[gameType]?.highScore) || 0;
-        const prevLastScore   = stats.lastScore   || null;   // bir önceki oyun puanı
-        const prevLowScore    = stats.lowScore    != null ? stats.lowScore : null; // en düşük puan
-
+        // 1. Genel toplam istatistikler (profil/hub için)
         stats.totalScore += score;
         stats.gamesPlayed++;
         stats.totalCorrect += correct;
         stats.totalWrong   += wrong;
-
-        // Yeni rekor mu? (ilk oyun rekor sayılmaz)
-        const isNewHighScore = score > prevHighScore && stats.gamesPlayed > 1;
-        const isNewGameBest  = score > prevGameBest  && (stats[gameType]?.played || 0) > 0;
-
-        // Bir önceki oyuna göre daha yüksek mi?
-        const isBetterThanLast = prevLastScore !== null && score > prevLastScore;
-        // Bir önceki oyuna göre daha düşük mü?
-        const isWorseThanLast  = prevLastScore !== null && score < prevLastScore;
-        // Tüm zamanların en kötüsü mü? (ilk oyun hariç)
-        const isNewLowScore    = prevLowScore !== null
-            ? score < prevLowScore && stats.gamesPlayed > 1
-            : false;
-
-        // Puanları güncelle
-        if (score > stats.highScore) stats.highScore = score;
-        if (stats.lowScore == null || score < stats.lowScore) stats.lowScore = score;
-        stats.lastScore = score;
-
+        if (score > (stats.highScore || 0)) stats.highScore = score;
         if (timeSec && (!stats.bestTime || timeSec < stats.bestTime)) stats.bestTime = timeSec;
 
         // Streak
@@ -90,7 +67,7 @@ const RaceStatsManager = (() => {
         if (stats.streak > stats.maxStreak) stats.maxStreak = stats.streak;
         stats.lastPlayDate = today;
 
-        // Daily high score
+        // Günlük rekor
         if (stats.dailyDate !== today) {
             stats.dailyDate = today;
             stats.dailyHighScore = score;
@@ -98,56 +75,66 @@ const RaceStatsManager = (() => {
             stats.dailyHighScore = score;
         }
 
-        // Won if >50% correct
         const won = correct > wrong;
         if (won) stats.gamesWon++;
 
-        // Per-game stats
-        const gk = stats[gameType] || { played: 0, totalScore: 0, highScore: 0, lowScore: null, lastScore: null };
-        const prevGameLow  = gk.lowScore  != null ? gk.lowScore  : null;
-        const prevGameLast = gk.lastScore != null ? gk.lastScore : null;
+        // 2. Her oyun türü (typing, quiz, match) KENDİ içinde bağımsız puan tutar!
+        if (!stats[gameType]) {
+            stats[gameType] = { played: 0, totalScore: 0, highScore: 0, lowScore: null, lastScore: null };
+        }
+        const gk = stats[gameType];
 
-        const isBetterThanGameLast = prevGameLast !== null && score > prevGameLast;
-        const isWorseThanGameLast  = prevGameLast !== null && score < prevGameLast;
-        const isNewGameLow = prevGameLow !== null
-            ? score < prevGameLow && gk.played > 0
-            : false;
+        const prevGameBest = gk.highScore || 0;
+        const prevGameLast = (gk.lastScore !== undefined && gk.lastScore !== null) ? gk.lastScore : null;
+        const prevGameLow  = (gk.lowScore  !== undefined && gk.lowScore  !== null) ? gk.lowScore  : null;
+        const playedBefore = gk.played || 0;
 
+        // Karşılaştırmalar SADECE ve SADECE bu oyun türünün kendi geçmişine göre yapılır:
+        // 1. Yeni Rekor: Daha önce en az 1 kez oynamış ve şu anki puan önceki en yüksekten büyükse
+        const isNewGameRecord = playedBefore > 0 && score > prevGameBest;
+
+        // 2. En Düşük Skor: Daha önce en az 1 kez oynamış ve şu anki puan önceki en düşükten küçükse
+        const isNewGameLow = playedBefore > 0 && prevGameLow !== null && score < prevGameLow;
+
+        // 3. Önceki Denemeden Daha İyi: Bu oyundaki bir önceki puandan yüksekse
+        const isBetterThanLast = prevGameLast !== null && score > prevGameLast;
+
+        // 4. Önceki Denemeden Daha Kötü: Bu oyundaki bir önceki puandan düşükse
+        const isWorseThanLast = prevGameLast !== null && score < prevGameLast;
+
+        // Oyun istatistiklerini güncelle
         gk.played++;
         gk.totalScore += score;
-        if (score > gk.highScore)                      gk.highScore = score;
-        if (gk.lowScore == null || score < gk.lowScore) gk.lowScore  = score;
+        if (score > gk.highScore) gk.highScore = score;
+        if (gk.lowScore === null || score < gk.lowScore) gk.lowScore = score;
         gk.lastScore = score;
         stats[gameType] = gk;
 
         saveStats(stats);
 
-        // Senaryo belirleme önceliği:
-        // 1. Yeni tüm-zamanlar rekoru
-        // 2. Tüm-zamanlar en düşüğü
-        // 3. Oyun türü rekoru
-        // 4. Öncekinden iyi
-        // 5. Öncekinden kötü
-        // 6. Nötr (ilk oyun veya eşit)
+        // Senaryo belirleme (Tamamen bu oyuna özgü):
         let scenario;
-        if (isNewHighScore || isNewGameBest) {
+        if (isNewGameRecord) {
             scenario = 'alltime_record';
-        } else if (isNewLowScore || isNewGameLow) {
+        } else if (isNewGameLow) {
             scenario = 'alltime_low';
-        } else if (isBetterThanLast || isBetterThanGameLast) {
+        } else if (isBetterThanLast) {
             scenario = 'better_than_last';
-        } else if (isWorseThanLast || isWorseThanGameLast) {
+        } else if (isWorseThanLast) {
             scenario = 'worse_than_last';
         } else {
             scenario = 'neutral';
         }
 
         return {
-            stats, won,
-            isNewHighScore, isNewGameBest,
-            isNewLowScore, isNewGameLow,
-            isBetterThanLast, isWorseThanLast,
-            scenario
+            stats,
+            won,
+            scenario,
+            gameType,
+            gameBest: gk.highScore,
+            prevScore: prevGameLast,
+            isNewRecord: isNewGameRecord,
+            isNewLow: isNewGameLow
         };
     }
 
@@ -403,23 +390,23 @@ function countRaceScore(el, from, to, ms = 750) {
 //   defaultIcon: oyuna özgü emoji  (⌨️ / ⚡ / 🔗)
 function applyRaceResultUI(resultId, defaultIcon, outcome, score) {
     const scenario = outcome.scenario;
+    const gameType = outcome.gameType || '';
+
+    const GAME_NAMES = {
+        typing: 'Hızlı Yazma',
+        quiz:   'Hızlı Şık',
+        match:  'Hızlı Eşleştirme'
+    };
+    const gameName = GAME_NAMES[gameType] || 'Yarış';
 
     // Senaryo → ikon, başlık, CSS sınıfı, bant metni
     const MAP = {
-        alltime_record:    { icon: '🏆🏆🏆', title: '🏆 TÜM ZAMANLAR REKORU!',       css: 'is-alltime-record',  badge: '🥇 YENİ REKOR', badgeCss: 'badge-record'   },
-        alltime_low:       { icon: '💔',      title: '😞 En Kötü Skorun Bu Oldu…',    css: 'is-alltime-low',    badge: '📉 En Düşük',   badgeCss: 'badge-low'      },
-        better_than_last:  { icon: '🎉',      title: '🎉 Öncekini Geçtin!',           css: 'is-winner',         badge: '📈 Yükseliş',   badgeCss: 'badge-better'   },
-        worse_than_last:   { icon: '😕',      title: '😕 Öncekinden Düşük',           css: 'is-loser',          badge: '📉 Düşüş',      badgeCss: 'badge-worse'    },
-        neutral:           { icon: defaultIcon,'title': 'Sonuçlar',                    css: '',                  badge: null,            badgeCss: ''               },
+        alltime_record:   { icon: '🏆🏆🏆', title: `🏆 ${gameName} Rekoru Kırıldı!`, css: 'is-alltime-record',  badge: '🥇 YENİ REKOR', badgeCss: 'badge-record'   },
+        alltime_low:      { icon: '💔',      title: `😞 ${gameName} En Düşük Skorun`, css: 'is-alltime-low',     badge: '📉 En Düşük',   badgeCss: 'badge-low'      },
+        better_than_last: { icon: '🎉',      title: '🎉 Önceki Denemenden Daha İyi!', css: 'is-winner',          badge: '📈 Yükseliş',   badgeCss: 'badge-better'   },
+        worse_than_last:  { icon: '😕',      title: '😕 Önceki Denemenden Düşük',     css: 'is-loser',           badge: '📉 Düşüş',      badgeCss: 'badge-worse'    },
+        neutral:          { icon: defaultIcon, title: `${gameName} Sonuçları`,         css: '',                   badge: null,            badgeCss: ''               },
     };
-
-    // neutral'da oyuna özel başlık atayacağız
-    const NEUTRAL_TITLES = {
-        '⌨️': 'Hızlı Yazma Sonuçları',
-        '⚡': 'Hızlı Şık Sonuçları',
-        '🔗': 'Hızlı Eşleştirme Sonuçları',
-    };
-    if (scenario === 'neutral') MAP.neutral.title = NEUTRAL_TITLES[defaultIcon] || 'Sonuçlar';
 
     const cfg = MAP[scenario] || MAP.neutral;
 
