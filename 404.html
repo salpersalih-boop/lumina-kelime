@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lumina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <!-- GitHub Pages bilinmeyen adreslerde (/football/groups/3) bu sayfayı açar:
+       istenen adresi saklayıp ana sayfaya gönderiyoruz, uygulama adresi geri yazıp ekranı açıyor. -->
+  <script>
+    (function () {
+      var root = /\.github\.io$/.test(location.hostname) ? '/' + (location.pathname.split('/')[1] || '') + '/' : '/';
+      try { sessionStorage.setItem('lumina.redirect', location.pathname + location.search + location.hash); } catch (e) {}
+      location.replace(root);
+    })();
+  </script>
+</head>
+<body style="background:#0f1230;color:#cfd3ff;font-family:system-ui,sans-serif;text-align:center;padding-top:20vh">
+  <p>Lumina açılıyor…</p>
+  <noscript><a href="/">Ana sayfaya git</a></noscript>
+</body>
+</html>

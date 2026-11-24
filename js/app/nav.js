@@ -25,7 +25,7 @@ const Nav = (() => {
         if (!supported || typeof Router === 'undefined' || !history.state || !history.state.lumina) return;
         if (history.state.lumina.startsWith('modal:')) return;
         const url = Router.current();
-        if (url !== location.pathname + location.search + location.hash) history.replaceState(history.state, '', url);
+        if (url !== location.pathname + location.search) history.replaceState(history.state, '', url);
     }
 
     function goBackTo(index) {
@@ -116,8 +116,10 @@ const Nav = (() => {
         if (ignorePops > 0) { ignorePops--; if (ignorePops === 0) syncUrl(); return; }
         const entry = e.state && e.state.lumina;
         if (!entry) {
-            // Adres çubuğu elle değiştirildi (#/spanish/groups/2 …): o ekranı temiz açılışla göster
-            if (typeof Router !== 'undefined' && location.hash.startsWith('#/')) location.reload();
+            // Eski biçimde (#/spanish/groups/2) adres yazıldı: yeni adrese çevirip temiz açılışla göster
+            if (typeof Router !== 'undefined' && location.hash.startsWith('#/')) {
+                location.replace(Router.ROOT() + location.hash.slice(2) + location.search);
+            }
             return;
         }
 

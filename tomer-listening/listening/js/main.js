@@ -76,7 +76,7 @@ function describe(set, n) {
 
 // ── üst çubuk: Lumina'ya dönüş, yol ve tema ──────────────────
 // Modül Lumina'nın içinde (…/tomer-listening/listening/) açıldıysa üst çubukta
-// Lumina'ya dönüş bağlantısı çıkar: TÖMER kataloğu → #/tomer/<seviye>, diller → #/
+// Lumina'ya dönüş bağlantısı çıkar: TÖMER kataloğu → /tomer/<seviye>, diller → ana sayfa (/)
 const INSIDE_LUMINA = location.pathname.includes('/tomer-listening/');
 const appBack = INSIDE_LUMINA ? document.createElement('a') : null;
 if (appBack) {
@@ -85,8 +85,8 @@ if (appBack) {
   $('#themeToggle').before(appBack);
 }
 function luminaHref(route) {
-  if (app.dataset.content) return '../../#/';
-  return route.level ? `../../#/tomer/${route.level.toLowerCase()}` : '../../#/tomer';
+  if (app.dataset.content) return '../../';
+  return route.level ? `../../tomer/${route.level.toLowerCase()}` : '../../tomer';
 }
 
 function drawCrumbs(route) {

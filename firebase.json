@@ -6,6 +6,7 @@
       "**/.*", "**/node_modules/**", "server/**", "Lumina.Api/**", "Database/**", "Lum*/**", "data/tomer/**", "data/dersler/**",
       "**/*.xlsx", "**/*.sql", "**/*.txt", "**/*.cs", "**/*.csproj"
     ],
+    "rewrites": [{ "source": "**", "destination": "/index.html" }],
     "headers": [
       { "source": "**/*.@(html|js|css|csv)", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] },
       { "source": "service-worker.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }

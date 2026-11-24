@@ -1,7 +1,6 @@
 /* ============================================================
    LUMINA — KİMLİK DOĞRULAMA (Firebase Authentication) + İLERLEME SENKRONU
    - E-posta/şifre, Google, şifre sıfırlama (gerçek e-posta), e-posta doğrulama
-   - Misafir modu (hesapsız, yalnızca bu cihazda)
    - İlerleme: localStorage (hızlı) + Firestore (cihazlar arası)
    Gerekenler: js/firebase-config.js ve js/utils.js (önce yüklenir), Firebase compat SDK'ları
 ============================================================ */
@@ -42,15 +41,8 @@ const AuthManager = (() => {
     let resolveReady;
     const ready = new Promise(res => { resolveReady = res; });
 
-    function readGuestFlag() {
-        try { return localStorage.getItem(GUEST_FLAG) === '1'; } catch { return false; }
-    }
     function setGuestFlag(on) {
         try { on ? localStorage.setItem(GUEST_FLAG, '1') : localStorage.removeItem(GUEST_FLAG); } catch { /* yoksay */ }
-    }
-
-    function guestSession() {
-        return { uid: 'guest', guest: true, email: '', name: 'Misafir', picture: '', role: 'user', authProvider: 'guest', emailVerified: false };
     }
 
     function buildSession(user, role) {
@@ -95,7 +87,7 @@ const AuthManager = (() => {
         return ERRORS[code] || ('Beklenmeyen bir hata oluştu' + (code ? ` (${code})` : '') + '.');
     }
     function notConfigured() {
-        return { ok: false, error: 'Firebase henüz yapılandırılmadı. firebase-config.js dosyasına proje ayarlarınızı girin ya da "Misafir" olarak devam edin.' };
+        return { ok: false, error: 'Firebase henüz yapılandırılmadı. firebase-config.js dosyasına proje ayarlarınızı girin' };
     }
 
     // ── Firestore: kullanıcı profili + rol ──
@@ -135,8 +127,8 @@ const AuthManager = (() => {
 
     function init() {
         if (!configured) {
-            console.info('ℹ️ Firebase yapılandırılmadı: yalnızca misafir modu kullanılabilir.');
-            session = readGuestFlag() ? guestSession() : null;
+            console.info('ℹ️ Firebase yapılandırılmadı: giriş yapılamaz.');
+            session = null;
             firstStateSeen = true;
             resolveReady(session);
             return;
@@ -147,15 +139,15 @@ const AuthManager = (() => {
         auth.languageCode = 'tr';
         db = firebase.firestore();
 
+        setGuestFlag(false);   // misafir modu kaldırıldı: eski misafir oturumları sonlanır
         auth.onAuthStateChanged(async (user) => {
             if (user) {
-                setGuestFlag(false);
                 migrateLegacyProgress(user);
                 const role = await loadRoleAndTouchProfile(user);
                 session = buildSession(user, role);
                 SyncManager.pullAll(session).catch(e => console.warn('Senkron hatası:', e.message));
             } else {
-                session = readGuestFlag() ? guestSession() : null;
+                session = null;
             }
             if (!firstStateSeen) {
                 firstStateSeen = true;
@@ -275,12 +267,6 @@ const AuthManager = (() => {
         return session;
     }
 
-    function continueAsGuest() {
-        setGuestFlag(true);
-        session = guestSession();
-        return session;
-    }
-
     async function signOut() {
         await SyncManager.flush().catch(() => { });
         setGuestFlag(false);
@@ -303,7 +289,7 @@ const AuthManager = (() => {
         getDb: () => db,
         signUp, signIn, signInWithGoogle, sendPasswordReset,
         updateProfile: updateProfileName,
-        changePassword, continueAsGuest, signOut, progressKey
+        changePassword, signOut, progressKey
     };
 })();
 
@@ -398,6 +384,7 @@ const SyncManager = (() => {
    AUTH ARAYÜZ FONKSİYONLARI
 ============================================================ */
 function authShowPanel(panel) {
+    authSyncConsentUi();
     document.querySelectorAll('.auth-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
 
@@ -434,17 +421,37 @@ function authShowMsg(id, msg) {
     el.classList.remove('hidden');
 }
 
+// KVKK onayı: bu cihazda bir kez verilir (kayıtta ya da ilk girişte); verilmeden hesap açılmaz / giriş yapılmaz
+const CONSENT_KEY = 'lumina_consent';
+function authHasConsent() {
+    try { return !!JSON.parse(localStorage.getItem(CONSENT_KEY) || 'null'); } catch { return false; }
+}
+function authSaveConsent() {
+    try { localStorage.setItem(CONSENT_KEY, JSON.stringify({ v: 1, at: Date.now() })); } catch { /* yoksay */ }
+}
+// Giriş panelindeki onay kutusu yalnızca onay henüz verilmediyse görünür
+function authSyncConsentUi() {
+    const box = document.getElementById('siConsentWrap');
+    if (box) box.classList.toggle('hidden', authHasConsent());
+}
+function authConsentOk(checkboxId, errorId) {
+    if (authHasConsent() || document.getElementById(checkboxId)?.checked) return true;
+    authShowMsg(errorId, '⚠️ Devam etmek için KVKK Aydınlatma Metni ve Kullanım Koşulları\'nı onaylaman gerekir.');
+    return false;
+}
+
 async function authSignIn() {
     const email = document.getElementById('siEmail').value;
     const password = document.getElementById('siPassword').value;
     document.getElementById('siError').classList.add('hidden');
 
     if (!email || !password) { authShowMsg('siError', '⚠️ Lütfen tüm alanları doldurun.'); return; }
+    if (!authConsentOk('siConsent', 'siError')) return;
 
     authSetLoading('btnSignIn', true);
     const result = await AuthManager.signIn(email, password);
     authSetLoading('btnSignIn', false);
-    if (result.ok) authGoToDashboard(result.user);
+    if (result.ok) { authSaveConsent(); authGoToDashboard(result.user); }
     else authShowMsg('siError', '⚠️ ' + result.error);
 }
 
@@ -457,11 +464,16 @@ async function authSignUp() {
     document.getElementById('suSuccess').classList.add('hidden');
 
     if (!email || !password) { authShowMsg('suError', '⚠️ E-posta ve şifre zorunludur.'); return; }
+    if (!document.getElementById('suConsent')?.checked) {
+        authShowMsg('suError', '⚠️ Kayıt için KVKK Aydınlatma Metni ve Kullanım Koşulları\'nı onaylaman gerekir.');
+        return;
+    }
 
     authSetLoading('btnSignUp', true);
     const result = await AuthManager.signUp(email, password, name);
     authSetLoading('btnSignUp', false);
     if (result.ok) {
+        authSaveConsent();
         authShowMsg('suSuccess', '✅ Hesabınız oluşturuldu! Doğrulama e-postası gönderildi. Giriş yapılıyor…');
         setTimeout(() => authGoToDashboard(result.user), 900);
     } else {
@@ -481,15 +493,13 @@ async function authForgotPassword() {
     else authShowMsg('fpError', '⚠️ ' + result.error);
 }
 
-async function googleSignIn() {
+async function googleSignIn(panel) {
+    // Google ile giriş yeni hesap da açabilir: hangi panelden basıldıysa oradaki onay kutusu aranır
+    const signup = panel === 'signup';
+    if (!authConsentOk(signup ? 'suConsent' : 'siConsent', signup ? 'suError' : 'siError')) return;
     const result = await AuthManager.signInWithGoogle();
-    if (result.ok) authGoToDashboard(result.user);
-    else if (!result.silent) authShowMsg('siError', '⚠️ ' + result.error);
-}
-
-function authGuest() {
-    const s = AuthManager.continueAsGuest();
-    authGoToDashboard(s);
+    if (result.ok) { authSaveConsent(); authGoToDashboard(result.user); }
+    else if (!result.silent) authShowMsg(signup ? 'suError' : 'siError', '⚠️ ' + result.error);
 }
 
 function authToggleEye(inputId, btnId) {
@@ -598,3 +608,5 @@ AuthManager.onChange(s => {
 });
 
 AuthManager.init();
+
+authSyncConsentUi();   // ilk açılışta giriş paneli onay kutusunu göster/gizle

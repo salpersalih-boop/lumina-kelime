@@ -1,8 +1,9 @@
-const CACHE_NAME = 'lumina-cache-v36';
+const CACHE_NAME = 'lumina-cache-v39';
 // index.html'deki ?v= sürümü değiştiğinde CACHE_NAME'i de artırın
 const STATIC_ASSETS = [
   './',
   './index.html',
+  './404.html',
   './css/style.css',
   './img/logo.png',
   './img/favicon.png',
@@ -86,6 +87,17 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (url.origin !== location.origin) return;
+
+  // Temiz adresler (/football/groups/3): uzantısız sayfa istekleri uygulamayı (index.html) açar.
+  // Gerçek klasörler (dinleme modülü) ve dosyalar olduğu gibi servis edilir.
+  if (request.mode === 'navigate') {
+    const rel = url.pathname.slice(new URL(self.registration.scope).pathname.length);
+    const isApp = rel !== '' && !/\.[a-z0-9]+$/i.test(rel) && !rel.startsWith('tomer-listening/');
+    if (isApp) {
+      event.respondWith(networkFirst(new Request(new URL('./index.html', self.registration.scope).href)));
+      return;
+    }
+  }
 
   // Kod ve veri dosyaları: önce ağ (güncel kalsın), ağ yoksa önbellek
   const isFresh = /\.(html|js|css|csv|json)$/i.test(decodeURIComponent(url.pathname)) || url.pathname.endsWith('/');
