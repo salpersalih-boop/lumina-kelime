@@ -4879,31 +4879,32 @@ body.theme-sv .group-card {
    RACE RESULTS
 ═══════════════════════════════════════ */
 .race-results {
-    position: absolute;
+    position: fixed;
     inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 10;
-    padding: 16px;
+    z-index: 1000;
+    padding: 20px;
+    background: rgba(10, 15, 30, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     overflow-y: auto;
 }
 
-.race-results.hidden { display: none; }
+.race-results.hidden { display: none !important; }
 
 .race-results-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    padding: 28px 24px;
+    padding: 30px 24px;
     text-align: center;
-    max-width: 460px;
+    max-width: 440px;
     width: 100%;
-    max-height: 100%;
-    overflow-y: auto;
-    animation: screenIn 0.4s ease both;
-    box-shadow: var(--shadow-md);
     margin: auto;
+    animation: screenIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .race-results-icon {
@@ -5119,11 +5120,18 @@ body.theme-sv .group-card {
     .speed-match-board { gap: 10px; }
     .speed-match-item { padding: 10px 8px; font-size: 0.8rem; }
     .race-rank-section { flex-direction: column; text-align: center; }
-    .race-results-card { padding: 24px 16px; }
-    .race-results { padding: 8px; align-items: flex-start; padding-top: 16px; }
-    .race-results-icon { font-size: 2rem; margin-bottom: 8px; }
-    .race-results-score { padding: 12px; }
+    .race-results { padding: 14px; }
+    .race-results-card { padding: 22px 16px; border-radius: 20px; max-width: 360px; }
+    .race-results-icon { font-size: 2.2rem; margin-bottom: 6px; }
+    .race-results-card h3 { font-size: 1.1rem; margin-bottom: 14px; }
+    .race-results-stats { gap: 8px; margin-bottom: 14px; }
+    .race-result-stat { padding: 8px 6px; }
+    .race-result-stat .stat-val { font-size: 1.15rem; }
+    .race-results-score { padding: 12px; margin-bottom: 14px; }
     .results-score-value { font-size: 2rem; }
+    .race-results-actions { flex-direction: column; gap: 8px; }
+    .race-results-actions .btn-primary,
+    .race-results-actions .btn-secondary { padding: 10px 14px; width: 100%; }
     .race-full-stats { grid-template-columns: 1fr 1fr; }
 }
 
