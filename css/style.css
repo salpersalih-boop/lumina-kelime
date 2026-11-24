@@ -4885,7 +4885,8 @@ body.theme-sv .group-card {
     align-items: center;
     justify-content: center;
     z-index: 10;
-    padding: 24px;
+    padding: 16px;
+    overflow-y: auto;
 }
 
 .race-results.hidden { display: none; }
@@ -4894,12 +4895,15 @@ body.theme-sv .group-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    padding: 36px 28px;
+    padding: 28px 24px;
     text-align: center;
-    max-width: 420px;
+    max-width: 460px;
     width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
     animation: screenIn 0.4s ease both;
     box-shadow: var(--shadow-md);
+    margin: auto;
 }
 
 .race-results-icon {
@@ -4971,6 +4975,53 @@ body.theme-sv .group-card {
 .race-results-score.is-record .results-score-value {
     color: #eab308;
 }
+
+/* Alltime record — altın parıltı */
+.race-results-score.is-alltime-record {
+    background: linear-gradient(135deg, rgba(250,204,21,0.28), rgba(245,158,11,0.10));
+    border-color: rgba(250,204,21,0.65);
+    box-shadow: 0 6px 28px rgba(250,204,21,0.30);
+    animation: recordPulse 1.2s ease-in-out 3;
+}
+.race-results-score.is-alltime-record .results-score-value { color: #eab308; }
+
+@keyframes recordPulse {
+    0%, 100% { box-shadow: 0 6px 28px rgba(250,204,21,0.30); }
+    50%       { box-shadow: 0 10px 40px rgba(250,204,21,0.65); }
+}
+
+/* Alltime low — üzücü senaryo */
+.race-results-score.is-alltime-low {
+    background: linear-gradient(135deg, rgba(107,114,128,0.18), rgba(55,65,81,0.08));
+    border-color: rgba(107,114,128,0.4);
+    box-shadow: 0 4px 18px rgba(107,114,128,0.12);
+}
+.race-results-score.is-alltime-low .results-score-value { color: #6b7280; }
+
+/* Loser — öncekinden daha kötü */
+.race-results-score.is-loser {
+    background: linear-gradient(135deg, rgba(249,115,22,0.14), rgba(239,68,68,0.06));
+    border-color: rgba(249,115,22,0.35);
+    box-shadow: 0 4px 16px rgba(249,115,22,0.10);
+}
+.race-results-score.is-loser .results-score-value { color: #f97316; }
+
+/* Rozet / Badge */
+.race-result-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-radius: 99px;
+    padding: 4px 12px;
+    margin-bottom: 10px;
+    border: 1px solid currentColor;
+}
+.race-result-badge.badge-record  { color: #eab308; border-color: rgba(234,179,8,0.5);   background: rgba(250,204,21,0.12); }
+.race-result-badge.badge-low     { color: #9ca3af; border-color: rgba(156,163,175,0.4); background: rgba(107,114,128,0.10); }
+.race-result-badge.badge-better  { color: #22c55e; border-color: rgba(34,197,94,0.4);   background: rgba(34,197,94,0.10); }
+.race-result-badge.badge-worse   { color: #f97316; border-color: rgba(249,115,22,0.4);  background: rgba(249,115,22,0.10); }
 
 .results-score-label {
     display: block;
@@ -5069,6 +5120,10 @@ body.theme-sv .group-card {
     .speed-match-item { padding: 10px 8px; font-size: 0.8rem; }
     .race-rank-section { flex-direction: column; text-align: center; }
     .race-results-card { padding: 24px 16px; }
+    .race-results { padding: 8px; align-items: flex-start; padding-top: 16px; }
+    .race-results-icon { font-size: 2rem; margin-bottom: 8px; }
+    .race-results-score { padding: 12px; }
+    .results-score-value { font-size: 2rem; }
     .race-full-stats { grid-template-columns: 1fr 1fr; }
 }
 
