@@ -49,18 +49,36 @@ const RaceStatsManager = (() => {
 
     function recordGame(gameType, score, correct, wrong, timeSec) {
         const stats = getStats();
-        const prevHighScore = stats.highScore || 0;
-        const prevGameBest = (stats[gameType] && stats[gameType].highScore) || 0;
+
+        // Önceki ve en düşük skorları kaydetmeden önce al
+        const prevHighScore   = stats.highScore   || 0;
+        const prevGameBest    = (stats[gameType]?.highScore) || 0;
+        const prevLastScore   = stats.lastScore   || null;   // bir önceki oyun puanı
+        const prevLowScore    = stats.lowScore    != null ? stats.lowScore : null; // en düşük puan
 
         stats.totalScore += score;
         stats.gamesPlayed++;
         stats.totalCorrect += correct;
-        stats.totalWrong += wrong;
+        stats.totalWrong   += wrong;
 
+        // Yeni rekor mu? (ilk oyun rekor sayılmaz)
         const isNewHighScore = score > prevHighScore && stats.gamesPlayed > 1;
-        const isNewGameBest = score > prevGameBest && (stats[gameType]?.played || 0) > 0;
+        const isNewGameBest  = score > prevGameBest  && (stats[gameType]?.played || 0) > 0;
 
+        // Bir önceki oyuna göre daha yüksek mi?
+        const isBetterThanLast = prevLastScore !== null && score > prevLastScore;
+        // Bir önceki oyuna göre daha düşük mü?
+        const isWorseThanLast  = prevLastScore !== null && score < prevLastScore;
+        // Tüm zamanların en kötüsü mü? (ilk oyun hariç)
+        const isNewLowScore    = prevLowScore !== null
+            ? score < prevLowScore && stats.gamesPlayed > 1
+            : false;
+
+        // Puanları güncelle
         if (score > stats.highScore) stats.highScore = score;
+        if (stats.lowScore == null || score < stats.lowScore) stats.lowScore = score;
+        stats.lastScore = score;
+
         if (timeSec && (!stats.bestTime || timeSec < stats.bestTime)) stats.bestTime = timeSec;
 
         // Streak
@@ -85,14 +103,52 @@ const RaceStatsManager = (() => {
         if (won) stats.gamesWon++;
 
         // Per-game stats
-        const gk = stats[gameType] || { played: 0, totalScore: 0, highScore: 0 };
+        const gk = stats[gameType] || { played: 0, totalScore: 0, highScore: 0, lowScore: null, lastScore: null };
+        const prevGameLow  = gk.lowScore  != null ? gk.lowScore  : null;
+        const prevGameLast = gk.lastScore != null ? gk.lastScore : null;
+
+        const isBetterThanGameLast = prevGameLast !== null && score > prevGameLast;
+        const isWorseThanGameLast  = prevGameLast !== null && score < prevGameLast;
+        const isNewGameLow = prevGameLow !== null
+            ? score < prevGameLow && gk.played > 0
+            : false;
+
         gk.played++;
         gk.totalScore += score;
-        if (score > gk.highScore) gk.highScore = score;
+        if (score > gk.highScore)                      gk.highScore = score;
+        if (gk.lowScore == null || score < gk.lowScore) gk.lowScore  = score;
+        gk.lastScore = score;
         stats[gameType] = gk;
 
         saveStats(stats);
-        return { stats, won, isNewHighScore, isNewGameBest };
+
+        // Senaryo belirleme önceliği:
+        // 1. Yeni tüm-zamanlar rekoru
+        // 2. Tüm-zamanlar en düşüğü
+        // 3. Oyun türü rekoru
+        // 4. Öncekinden iyi
+        // 5. Öncekinden kötü
+        // 6. Nötr (ilk oyun veya eşit)
+        let scenario;
+        if (isNewHighScore || isNewGameBest) {
+            scenario = 'alltime_record';
+        } else if (isNewLowScore || isNewGameLow) {
+            scenario = 'alltime_low';
+        } else if (isBetterThanLast || isBetterThanGameLast) {
+            scenario = 'better_than_last';
+        } else if (isWorseThanLast || isWorseThanGameLast) {
+            scenario = 'worse_than_last';
+        } else {
+            scenario = 'neutral';
+        }
+
+        return {
+            stats, won,
+            isNewHighScore, isNewGameBest,
+            isNewLowScore, isNewGameLow,
+            isBetterThanLast, isWorseThanLast,
+            scenario
+        };
     }
 
     function reset() {
@@ -234,34 +290,95 @@ function showScorePop(x, y, text, negative) {
     setTimeout(() => pop.remove(), 800);
 }
 
-// ── RACE WIN / CELEBRATION EFFECTS ──
-function triggerRaceCelebration(isWin, isRecord) {
+// ── RACE WIN / CELEBRATION EFFECTS (4 Senaryo) ──
+//
+//  alltime_record   → Tüm zamanların yeni rekoru  : 🏆 Altın konfeti, 3 dalga, yıldız yağmuru
+//  alltime_low      → Tüm zamanların en kötüsü    : 💔 Siyah/kırmızı duman, düşen kül parçaları
+//  better_than_last → Öncekinden iyi               : 🎉 Renkli konfeti, 2 dalga
+//  worse_than_last  → Öncekinden kötü              : 😞 Sarı/turuncu duman, kıvılcım
+//  neutral          → İlk oyun veya eşit           : ✨ Hafif mavi/mor parçacıklar
+//
+function triggerRaceCelebration(scenario) {
     const fx = window.MatchFx || (typeof MatchFx !== 'undefined' ? MatchFx : null);
     if (!fx) return;
 
     const W = window.innerWidth, H = window.innerHeight;
-    if (isRecord) {
-        const gold = ['#facc15', '#fde047', '#f59e0b', '#ffffff', '#6366f1', '#ec4899', '#22c55e'];
-        const wave = () => {
-            fx.burst({ x: 0, y: H, angle: -Math.PI / 3, spread: 0.7, power: 19, count: 70, colors: gold });
-            fx.burst({ x: W, y: H, angle: -2 * Math.PI / 3, spread: 0.7, power: 19, count: 70, colors: gold });
-            fx.burst({ x: W / 2, y: H * 0.22, angle: -Math.PI / 2, spread: Math.PI * 1.2, power: 11, count: 36, colors: gold, shapes: ['star', 'star', 'glow'] });
-        };
-        wave();
-        setTimeout(wave, 450);
-        setTimeout(wave, 900);
-        setTimeout(() => fx.burst({
-            x: W / 2, y: -20, angle: Math.PI / 2, spread: 0.6, power: 3, jitter: W, count: 120,
-            gravity: 0.08, sway: 1.2, life: 260, colors: gold, shapes: ['rect', 'star']
-        }), 300);
-    } else if (isWin) {
-        const confetti = ['#22c55e', '#4ade80', '#3b82f6', '#6366f1', '#facc15', '#ec4899', '#f97316'];
-        fx.burst({ x: 0, y: H, angle: -Math.PI / 3, spread: 0.65, power: 17, count: 65, colors: confetti, shapes: ['rect', 'circle', 'star'] });
-        fx.burst({ x: W, y: H, angle: -2 * Math.PI / 3, spread: 0.65, power: 17, count: 65, colors: confetti, shapes: ['rect', 'circle', 'star'] });
-        setTimeout(() => fx.burst({
-            x: W / 2, y: -20, angle: Math.PI / 2, spread: 0.5, power: 2.5, jitter: W, count: 80,
-            gravity: 0.07, sway: 1, life: 240, colors: confetti
-        }), 250);
+
+    switch (scenario) {
+        case 'alltime_record': {
+            // 3 dalga altın konfeti + yıldız yağmuru
+            const gold = ['#facc15', '#fde047', '#f59e0b', '#ffffff', '#6366f1', '#ec4899', '#22c55e'];
+            const wave = () => {
+                fx.burst({ x: 0,     y: H,       angle: -Math.PI / 3,       spread: 0.75, power: 22, count: 80, colors: gold });
+                fx.burst({ x: W,     y: H,       angle: -2 * Math.PI / 3,   spread: 0.75, power: 22, count: 80, colors: gold });
+                fx.burst({ x: W/2,   y: H * 0.2, angle: -Math.PI / 2,       spread: Math.PI * 1.3, power: 13, count: 50, colors: gold, shapes: ['star', 'star', 'glow'] });
+            };
+            wave();
+            setTimeout(wave, 400);
+            setTimeout(wave, 800);
+            setTimeout(wave, 1200);
+            setTimeout(() => fx.burst({
+                x: W / 2, y: -20, angle: Math.PI / 2, spread: 0.65, power: 3.5, jitter: W,
+                count: 140, gravity: 0.07, sway: 1.3, life: 280, colors: gold, shapes: ['rect', 'star']
+            }), 300);
+            break;
+        }
+
+        case 'alltime_low': {
+            // Siyah/kırmızı/gri duman + çöküş parçaları — üzücü senaryo
+            const dark = ['#374151', '#6b7280', '#ef4444', '#dc2626', '#1f2937', '#4b5563'];
+            const ash  = () => fx.burst({
+                x: W / 2, y: H + 10, angle: -Math.PI / 2, spread: 0.6,
+                power: 4, jitter: W * 0.9, count: 35, gravity: -0.015, drag: 0.994,
+                sway: 1.1, life: 190, size: 9, alpha: 0.65, colors: dark, shapes: ['circle', 'glow']
+            });
+            ash();
+            setTimeout(ash, 700);
+            setTimeout(ash, 1400);
+            // Birkaç kıvılcım aşağıya düşsün
+            fx.burst({
+                x: W / 2, y: 0, angle: Math.PI / 2, spread: 0.8, power: 5, jitter: W * 0.6,
+                count: 25, gravity: 0.3, drag: 0.97, life: 100, size: 7,
+                colors: ['#ef4444', '#dc2626'], shapes: ['circle']
+            });
+            break;
+        }
+
+        case 'better_than_last': {
+            // 2 dalga renkli konfeti
+            const confetti = ['#22c55e', '#4ade80', '#3b82f6', '#6366f1', '#facc15', '#ec4899', '#f97316'];
+            fx.burst({ x: 0, y: H, angle: -Math.PI / 3,     spread: 0.65, power: 17, count: 65, colors: confetti, shapes: ['rect', 'circle', 'star'] });
+            fx.burst({ x: W, y: H, angle: -2 * Math.PI / 3, spread: 0.65, power: 17, count: 65, colors: confetti, shapes: ['rect', 'circle', 'star'] });
+            setTimeout(() => fx.burst({
+                x: W / 2, y: -20, angle: Math.PI / 2, spread: 0.5, power: 2.5, jitter: W,
+                count: 85, gravity: 0.07, sway: 1, life: 240, colors: confetti
+            }), 250);
+            break;
+        }
+
+        case 'worse_than_last': {
+            // Turuncu/kırmızı duman + düşen kıvılcım — hayal kırıklığı
+            const fire = ['#f97316', '#fb923c', '#ef4444', '#facc15', '#fdba74'];
+            const embers = () => fx.burst({
+                x: W / 2, y: H + 10, angle: -Math.PI / 2, spread: 0.5,
+                power: 5, jitter: W * 0.8, count: 40, gravity: -0.025, drag: 0.993,
+                sway: 0.9, life: 170, size: 7, colors: fire, shapes: ['glow', 'circle']
+            });
+            embers();
+            setTimeout(embers, 600);
+            setTimeout(embers, 1200);
+            break;
+        }
+
+        default: { // neutral — ilk oyun veya eşit
+            const soft = ['#6366f1', '#8b5cf6', '#3b82f6', '#7dd3fc', '#a5b4fc'];
+            fx.burst({
+                x: W / 2, y: H + 20, angle: -Math.PI / 2, spread: 0.4, power: 3, jitter: W * 0.7,
+                count: 30, gravity: -0.01, drag: 0.995, sway: 1.2, life: 240,
+                size: 12, alpha: 0.6, colors: soft, shapes: ['circle', 'star']
+            });
+            break;
+        }
     }
 }
 
@@ -279,6 +396,65 @@ function countRaceScore(el, from, to, ms = 750) {
         if (k < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
+}
+
+// ── Ortak sonuç ekranı güncelleme yardımcısı ──
+//   resultId   : 'typingResults' | 'quizResults' | 'matchResults'
+//   defaultIcon: oyuna özgü emoji  (⌨️ / ⚡ / 🔗)
+function applyRaceResultUI(resultId, defaultIcon, outcome, score) {
+    const scenario = outcome.scenario;
+
+    // Senaryo → ikon, başlık, CSS sınıfı, bant metni
+    const MAP = {
+        alltime_record:    { icon: '🏆🏆🏆', title: '🏆 TÜM ZAMANLAR REKORU!',       css: 'is-alltime-record',  badge: '🥇 YENİ REKOR', badgeCss: 'badge-record'   },
+        alltime_low:       { icon: '💔',      title: '😞 En Kötü Skorun Bu Oldu…',    css: 'is-alltime-low',    badge: '📉 En Düşük',   badgeCss: 'badge-low'      },
+        better_than_last:  { icon: '🎉',      title: '🎉 Öncekini Geçtin!',           css: 'is-winner',         badge: '📈 Yükseliş',   badgeCss: 'badge-better'   },
+        worse_than_last:   { icon: '😕',      title: '😕 Öncekinden Düşük',           css: 'is-loser',          badge: '📉 Düşüş',      badgeCss: 'badge-worse'    },
+        neutral:           { icon: defaultIcon,'title': 'Sonuçlar',                    css: '',                  badge: null,            badgeCss: ''               },
+    };
+
+    // neutral'da oyuna özel başlık atayacağız
+    const NEUTRAL_TITLES = {
+        '⌨️': 'Hızlı Yazma Sonuçları',
+        '⚡': 'Hızlı Şık Sonuçları',
+        '🔗': 'Hızlı Eşleştirme Sonuçları',
+    };
+    if (scenario === 'neutral') MAP.neutral.title = NEUTRAL_TITLES[defaultIcon] || 'Sonuçlar';
+
+    const cfg = MAP[scenario] || MAP.neutral;
+
+    const scoreEl = document.getElementById(resultId.replace('Results', 'FinalScore'));
+    const scoreBox = document.querySelector(`#${resultId} .race-results-score`);
+    const iconEl   = document.querySelector(`#${resultId} .race-results-icon`);
+    const titleEl  = document.querySelector(`#${resultId} h3`);
+
+    // CSS sınıflarını sıfırla
+    const ALL_CSS = ['is-alltime-record', 'is-alltime-low', 'is-winner', 'is-loser'];
+    if (scoreBox) {
+        scoreBox.classList.remove(...ALL_CSS);
+        if (cfg.css) scoreBox.classList.add(cfg.css);
+    }
+
+    if (iconEl) iconEl.textContent = cfg.icon;
+    if (titleEl) titleEl.textContent = cfg.title;
+
+    // Rozet (badge) — results kartının üstünde gösterilecek
+    let badgeEl = document.querySelector(`#${resultId} .race-result-badge`);
+    if (cfg.badge) {
+        if (!badgeEl) {
+            badgeEl = document.createElement('div');
+            badgeEl.className = 'race-result-badge';
+            const card = document.querySelector(`#${resultId} .race-results-card`);
+            if (card) card.prepend(badgeEl);
+        }
+        badgeEl.textContent = cfg.badge;
+        badgeEl.className = `race-result-badge ${cfg.badgeCss}`;
+        badgeEl.style.display = '';
+    } else if (badgeEl) {
+        badgeEl.style.display = 'none';
+    }
+
+    countRaceScore(scoreEl, 0, score, 800);
 }
 
 // ── COUNTDOWN HELPER ──
@@ -475,27 +651,6 @@ const TypingRace = (() => {
         document.getElementById('typingGameArea').style.display = 'none';
 
         const outcome = RaceStatsManager.recordGame('typing', score, totalCorrect, totalWrong, null);
-        const isWin = outcome.won && totalCorrect > 0;
-        const isRecord = outcome.isNewHighScore || outcome.isNewGameBest;
-
-        const scoreEl = document.getElementById('typingFinalScore');
-        const scoreBox = document.querySelector('#typingResults .race-results-score');
-        const iconEl = document.querySelector('#typingResults .race-results-icon');
-        const titleEl = document.querySelector('#typingResults h3');
-
-        if (scoreBox) {
-            scoreBox.classList.remove('is-winner', 'is-record');
-            if (isRecord) scoreBox.classList.add('is-record');
-            else if (isWin) scoreBox.classList.add('is-winner');
-        }
-        if (iconEl) {
-            iconEl.textContent = isRecord ? '🏆' : (isWin ? '🎉' : '⌨️');
-        }
-        if (titleEl) {
-            titleEl.textContent = isRecord ? '🏆 Yeni Rekor!' : (isWin ? '🎉 Tebrikler, Kazandın!' : 'Hızlı Yazma Sonuçları');
-        }
-
-        countRaceScore(scoreEl, 0, score, 800);
 
         document.getElementById('typingResultsStats').innerHTML = `
             <div class="race-result-stat"><span class="stat-val">${totalCorrect}</span><span class="stat-lbl">Doğru</span></div>
@@ -503,8 +658,9 @@ const TypingRace = (() => {
             <div class="race-result-stat"><span class="stat-val">${words.length}</span><span class="stat-lbl">Toplam Kelime</span></div>
             <div class="race-result-stat"><span class="stat-val">${Math.round((totalCorrect / Math.max(1, words.length)) * 100)}%</span><span class="stat-lbl">Başarı Oranı</span></div>
         `;
+        applyRaceResultUI('typingResults', '⌨️', outcome, score);
         document.getElementById('typingResults').classList.remove('hidden');
-        triggerRaceCelebration(isWin, isRecord);
+        triggerRaceCelebration(outcome.scenario);
     }
 
     function cleanup() {
@@ -681,27 +837,6 @@ const QuickQuiz = (() => {
         document.getElementById('quizGameArea').style.display = 'none';
 
         const outcome = RaceStatsManager.recordGame('quiz', score, totalCorrect, totalWrong, null);
-        const isWin = outcome.won && totalCorrect > 0;
-        const isRecord = outcome.isNewHighScore || outcome.isNewGameBest;
-
-        const scoreEl = document.getElementById('quizFinalScore');
-        const scoreBox = document.querySelector('#quizResults .race-results-score');
-        const iconEl = document.querySelector('#quizResults .race-results-icon');
-        const titleEl = document.querySelector('#quizResults h3');
-
-        if (scoreBox) {
-            scoreBox.classList.remove('is-winner', 'is-record');
-            if (isRecord) scoreBox.classList.add('is-record');
-            else if (isWin) scoreBox.classList.add('is-winner');
-        }
-        if (iconEl) {
-            iconEl.textContent = isRecord ? '🏆' : (isWin ? '🎉' : '⚡');
-        }
-        if (titleEl) {
-            titleEl.textContent = isRecord ? '🏆 Yeni Rekor!' : (isWin ? '🎉 Tebrikler, Kazandın!' : 'Hızlı Şık Sonuçları');
-        }
-
-        countRaceScore(scoreEl, 0, score, 800);
 
         document.getElementById('quizResultsStats').innerHTML = `
             <div class="race-result-stat"><span class="stat-val">${totalCorrect}</span><span class="stat-lbl">Doğru</span></div>
@@ -709,8 +844,9 @@ const QuickQuiz = (() => {
             <div class="race-result-stat"><span class="stat-val">${words.length}</span><span class="stat-lbl">Toplam Soru</span></div>
             <div class="race-result-stat"><span class="stat-val">${Math.round((totalCorrect / Math.max(1, words.length)) * 100)}%</span><span class="stat-lbl">Başarı Oranı</span></div>
         `;
+        applyRaceResultUI('quizResults', '⚡', outcome, score);
         document.getElementById('quizResults').classList.remove('hidden');
-        triggerRaceCelebration(isWin, isRecord);
+        triggerRaceCelebration(outcome.scenario);
     }
 
     function cleanup() {
@@ -895,34 +1031,12 @@ const SpeedMatch = (() => {
 
         // Bonus for finishing early
         if (matched >= pairs.length && timeLeft > 0) {
-            const timeBonus = Math.round(timeLeft * 5);
-            score += timeBonus;
+            score += Math.round(timeLeft * 5);
         }
 
         document.getElementById('matchGameArea').style.display = 'none';
 
         const outcome = RaceStatsManager.recordGame('match', score, totalCorrect, totalWrong, elapsed);
-        const isWin = (matched >= pairs.length || totalCorrect > totalWrong) && score > 0;
-        const isRecord = outcome.isNewHighScore || outcome.isNewGameBest;
-
-        const scoreEl = document.getElementById('matchFinalScore');
-        const scoreBox = document.querySelector('#matchResults .race-results-score');
-        const iconEl = document.querySelector('#matchResults .race-results-icon');
-        const titleEl = document.querySelector('#matchResults h3');
-
-        if (scoreBox) {
-            scoreBox.classList.remove('is-winner', 'is-record');
-            if (isRecord) scoreBox.classList.add('is-record');
-            else if (isWin) scoreBox.classList.add('is-winner');
-        }
-        if (iconEl) {
-            iconEl.textContent = isRecord ? '🏆' : (isWin ? '🎉' : '🔗');
-        }
-        if (titleEl) {
-            titleEl.textContent = isRecord ? '🏆 Yeni Rekor!' : (isWin ? '🎉 Tebrikler, Kazandın!' : 'Hızlı Eşleştirme Sonuçları');
-        }
-
-        countRaceScore(scoreEl, 0, score, 800);
 
         document.getElementById('matchResultsStats').innerHTML = `
             <div class="race-result-stat"><span class="stat-val">${totalCorrect}</span><span class="stat-lbl">Doğru Eşleşme</span></div>
@@ -930,8 +1044,9 @@ const SpeedMatch = (() => {
             <div class="race-result-stat"><span class="stat-val">${elapsed.toFixed(1)}s</span><span class="stat-lbl">Geçen Süre</span></div>
             <div class="race-result-stat"><span class="stat-val">${matched}/${pairs.length}</span><span class="stat-lbl">Eşleşen Çift</span></div>
         `;
+        applyRaceResultUI('matchResults', '🔗', outcome, score);
         document.getElementById('matchResults').classList.remove('hidden');
-        triggerRaceCelebration(isWin, isRecord);
+        triggerRaceCelebration(outcome.scenario);
     }
 
     function cleanup() {
