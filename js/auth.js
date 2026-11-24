@@ -610,3 +610,81 @@ AuthManager.onChange(s => {
 AuthManager.init();
 
 authSyncConsentUi();   // ilk açılışta giriş paneli onay kutusunu göster/gizle
+
+
+// ── KVKK / Kullanım Koşulları penceresi ──────────────────────────
+// Metin yeni sekmede değil uygulama içinde açılır; "Okudum" düğmesi en az 5 sn sonra aktif olur.
+// İki metin de okunmadan onay kutusu işaretlenemez.
+const LEGAL_DOCS = { kvkk: 'legal/kvkk.html', terms: 'legal/terms.html' };
+const LEGAL_TITLES = { kvkk: 'KVKK Aydınlatma Metni', terms: 'Kullanım Koşulları ve Gizlilik' };
+const LEGAL_WAIT_SEC = 5;
+const legalRead = { kvkk: false, terms: false };
+const legalCache = {};
+let legalCurrent = null, legalTimer = null, legalFromCheckbox = false;
+
+async function authOpenLegal(doc, fromCheckbox) {
+    if (!LEGAL_DOCS[doc]) return;
+    legalCurrent = doc;
+    legalFromCheckbox = !!fromCheckbox;
+    const body = document.getElementById('legalBody');
+    document.getElementById('legalTitle').textContent = LEGAL_TITLES[doc];
+    body.innerHTML = '<p>Yükleniyor…</p>';
+    body.scrollTop = 0;
+    openModal('legalModal');
+    authLegalStartTimer();
+    try {
+        if (!legalCache[doc]) {
+            const html = await (await fetch(LEGAL_DOCS[doc], { cache: 'no-cache' })).text();
+            const main = new DOMParser().parseFromString(html, 'text/html').querySelector('main');
+            main?.querySelector('.back')?.remove();
+            legalCache[doc] = main ? main.innerHTML : '';
+        }
+        if (!legalCache[doc]) throw new Error('boş');
+        if (legalCurrent === doc) body.innerHTML = legalCache[doc];
+    } catch {
+        body.innerHTML = '<p>Metin yüklenemedi. İnternet bağlantını kontrol edip tekrar dene.</p>';
+    }
+}
+
+// Geri sayım: metin yüklenmiş olsun olmasın düğme 5 sn sonra açılır
+function authLegalStartTimer() {
+    const btn = document.getElementById('legalOk');
+    clearInterval(legalTimer);
+    let left = LEGAL_WAIT_SEC;
+    btn.disabled = true;
+    btn.textContent = `Okudum (${left})`;
+    legalTimer = setInterval(() => {
+        left -= 1;
+        if (left > 0) { btn.textContent = `Okudum (${left})`; return; }
+        clearInterval(legalTimer);
+        btn.textContent = 'Okudum';
+        btn.disabled = false;
+    }, 1000);
+}
+
+function authLegalDone() {
+    const btn = document.getElementById('legalOk');
+    if (btn.disabled || !legalCurrent) return;
+    legalRead[legalCurrent] = true;
+    const from = legalFromCheckbox;
+    clearInterval(legalTimer);
+    closeModal('legalModal');
+    const next = ['kvkk', 'terms'].find(d => !legalRead[d]);
+    if (!next) { ['suConsent', 'siConsent'].forEach(id => { const c = document.getElementById(id); if (c) c.checked = true; }); return; }
+    if (from) setTimeout(() => authOpenLegal(next, true), 250);   // kutudan başladıysa sıradaki metne geç
+}
+
+// Bağlantılar (data-legal) ve onay kutuları
+document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[data-legal]');
+    if (link) { e.preventDefault(); authOpenLegal(link.dataset.legal); return; }
+    const inner = e.target.closest('#legalBody a[href$="kvkk.html"], #legalBody a[href$="terms.html"]');
+    if (inner) { e.preventDefault(); authOpenLegal(inner.getAttribute('href').includes('kvkk') ? 'kvkk' : 'terms'); }
+});
+['suConsent', 'siConsent'].forEach(id => {
+    document.getElementById(id)?.addEventListener('click', (e) => {
+        if (!e.target.checked || (legalRead.kvkk && legalRead.terms)) return;
+        e.preventDefault();                                    // önce metinler okunmalı
+        authOpenLegal(legalRead.kvkk ? 'terms' : 'kvkk', true);
+    });
+});
