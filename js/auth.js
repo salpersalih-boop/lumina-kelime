@@ -198,9 +198,9 @@ const AuthManager = (() => {
         const provider = new firebase.auth.GoogleAuthProvider();
         provider.setCustomParameters({ prompt: 'select_account' });
         try {
-            await auth.signInWithPopup(provider);
+            const cred = await auth.signInWithPopup(provider);
             await refreshSession();
-            return { ok: true, user: session };
+            return { ok: true, user: session, isNewUser: !!(cred && cred.additionalUserInfo && cred.additionalUserInfo.isNewUser) };
         } catch (e) {
             if (e.code === 'auth/popup-closed-by-user' || e.code === 'auth/cancelled-popup-request') {
                 return { ok: false, silent: true };
@@ -267,6 +267,13 @@ const AuthManager = (() => {
         return session;
     }
 
+    // KVKK onayı verilmeyen yeni (Google) hesabı geri al: hesabı sil ve çıkış yap
+    async function discardNewAccount() {
+        const user = auth && auth.currentUser;
+        try { if (user) await user.delete(); } catch (e) { console.warn('Hesap silinemedi:', e.code || e.message); try { await auth.signOut(); } catch { /* yoksay */ } }
+        session = null;
+    }
+
     async function signOut() {
         await SyncManager.flush().catch(() => { });
         setGuestFlag(false);
@@ -289,7 +296,7 @@ const AuthManager = (() => {
         getDb: () => db,
         signUp, signIn, signInWithGoogle, sendPasswordReset,
         updateProfile: updateProfileName,
-        changePassword, signOut, progressKey
+        changePassword, discardNewAccount, signOut, progressKey
     };
 })();
 
@@ -384,7 +391,6 @@ const SyncManager = (() => {
    AUTH ARAYÜZ FONKSİYONLARI
 ============================================================ */
 function authShowPanel(panel) {
-    authSyncConsentUi();
     document.querySelectorAll('.auth-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
 
@@ -421,18 +427,13 @@ function authShowMsg(id, msg) {
     el.classList.remove('hidden');
 }
 
-// KVKK onayı: bu cihazda bir kez verilir (kayıtta ya da ilk girişte); verilmeden hesap açılmaz / giriş yapılmaz
+// KVKK onayı: yalnızca yeni hesap açacaklar için zorunlu; kayıtta (ya da yeni Google hesabında) bu cihazda saklanır
 const CONSENT_KEY = 'lumina_consent';
 function authHasConsent() {
     try { return !!JSON.parse(localStorage.getItem(CONSENT_KEY) || 'null'); } catch { return false; }
 }
 function authSaveConsent() {
     try { localStorage.setItem(CONSENT_KEY, JSON.stringify({ v: 1, at: Date.now() })); } catch { /* yoksay */ }
-}
-// Giriş panelindeki onay kutusu yalnızca onay henüz verilmediyse görünür
-function authSyncConsentUi() {
-    const box = document.getElementById('siConsentWrap');
-    if (box) box.classList.toggle('hidden', authHasConsent());
 }
 function authConsentOk(checkboxId, errorId) {
     if (authHasConsent() || document.getElementById(checkboxId)?.checked) return true;
@@ -446,12 +447,11 @@ async function authSignIn() {
     document.getElementById('siError').classList.add('hidden');
 
     if (!email || !password) { authShowMsg('siError', '⚠️ Lütfen tüm alanları doldurun.'); return; }
-    if (!authConsentOk('siConsent', 'siError')) return;
 
     authSetLoading('btnSignIn', true);
     const result = await AuthManager.signIn(email, password);
     authSetLoading('btnSignIn', false);
-    if (result.ok) { authSaveConsent(); authGoToDashboard(result.user); }
+    if (result.ok) authGoToDashboard(result.user);
     else authShowMsg('siError', '⚠️ ' + result.error);
 }
 
@@ -494,12 +494,23 @@ async function authForgotPassword() {
 }
 
 async function googleSignIn(panel) {
-    // Google ile giriş yeni hesap da açabilir: hangi panelden basıldıysa oradaki onay kutusu aranır
+    // Onay yalnızca YENİ hesap açacaklar için zorunlu. Kayıt panelinden basıldıysa kutu önceden aranır;
+    // giriş panelinden basılan Google girişi mevcut hesaba girerse onay istenmez, yeni hesap açarsa sonradan istenir.
     const signup = panel === 'signup';
-    if (!authConsentOk(signup ? 'suConsent' : 'siConsent', signup ? 'suError' : 'siError')) return;
+    if (signup && !authConsentOk('suConsent', 'suError')) return;
+    const errId = signup ? 'suError' : 'siError';
     const result = await AuthManager.signInWithGoogle();
-    if (result.ok) { authSaveConsent(); authGoToDashboard(result.user); }
-    else if (!result.silent) authShowMsg(signup ? 'suError' : 'siError', '⚠️ ' + result.error);
+    if (!result.ok) { if (!result.silent) authShowMsg(errId, '⚠️ ' + result.error); return; }
+    if (result.isNewUser && !signup && !authHasConsent()) {
+        const accepted = await authAskConsent();
+        if (!accepted) {
+            await AuthManager.discardNewAccount();
+            authShowMsg('siError', '⚠️ Yeni hesap açmak için KVKK Aydınlatma Metni ve Kullanım Koşulları\'nı okuyup onaylaman gerekir. Hesap oluşturulmadı.');
+            return;
+        }
+    }
+    if (signup || result.isNewUser) authSaveConsent();   // onay yalnızca yeni hesapta verilmiş sayılır
+    authGoToDashboard(result.user);
 }
 
 function authToggleEye(inputId, btnId) {
@@ -609,7 +620,6 @@ AuthManager.onChange(s => {
 
 AuthManager.init();
 
-authSyncConsentUi();   // ilk açılışta giriş paneli onay kutusunu göster/gizle
 
 
 // ── KVKK / Kullanım Koşulları penceresi ──────────────────────────
@@ -620,7 +630,7 @@ const LEGAL_TITLES = { kvkk: 'KVKK Aydınlatma Metni', terms: 'Kullanım Koşull
 const LEGAL_WAIT_SEC = 5;
 const legalRead = { kvkk: false, terms: false };
 const legalCache = {};
-let legalCurrent = null, legalTimer = null, legalFromCheckbox = false;
+let legalCurrent = null, legalTimer = null, legalFromCheckbox = false, legalResolve = null;
 
 async function authOpenLegal(doc, fromCheckbox) {
     if (!LEGAL_DOCS[doc]) return;
@@ -670,7 +680,7 @@ function authLegalDone() {
     clearInterval(legalTimer);
     closeModal('legalModal');
     const next = ['kvkk', 'terms'].find(d => !legalRead[d]);
-    if (!next) { ['suConsent', 'siConsent'].forEach(id => { const c = document.getElementById(id); if (c) c.checked = true; }); return; }
+    if (!next) { const c = document.getElementById('suConsent'); if (c) c.checked = true; if (legalResolve) { legalResolve(true); legalResolve = null; } return; }
     if (from) setTimeout(() => authOpenLegal(next, true), 250);   // kutudan başladıysa sıradaki metne geç
 }
 
@@ -681,10 +691,28 @@ document.addEventListener('click', (e) => {
     const inner = e.target.closest('#legalBody a[href$="kvkk.html"], #legalBody a[href$="terms.html"]');
     if (inner) { e.preventDefault(); authOpenLegal(inner.getAttribute('href').includes('kvkk') ? 'kvkk' : 'terms'); }
 });
-['suConsent', 'siConsent'].forEach(id => {
-    document.getElementById(id)?.addEventListener('click', (e) => {
-        if (!e.target.checked || (legalRead.kvkk && legalRead.terms)) return;
-        e.preventDefault();                                    // önce metinler okunmalı
+document.getElementById('suConsent')?.addEventListener('click', (e) => {
+    if (!e.target.checked || (legalRead.kvkk && legalRead.terms)) return;
+    e.preventDefault();                                        // önce metinler okunmalı
+    authOpenLegal(legalRead.kvkk ? 'terms' : 'kvkk', true);
+});
+
+// Yeni Google hesabı için zorunlu onay: iki metin de okunup "Okudum"a basılırsa true, pencere kapatılırsa false
+function authAskConsent() {
+    return new Promise((resolve) => {
+        const modal = document.getElementById('legalModal');
+        let finished = false;
+        const finish = (v) => {
+            if (finished) return;
+            finished = true; obs.disconnect(); legalResolve = null; resolve(v);
+        };
+        // İki metin arasında pencere kısa süre kapanıp açılır; 600 ms içinde yeniden açılmazsa vazgeçilmiş sayılır
+        const obs = new MutationObserver(() => {
+            if (!modal.classList.contains('hidden')) return;
+            setTimeout(() => { if (modal.classList.contains('hidden')) finish(false); }, 600);
+        });
+        obs.observe(modal, { attributes: true, attributeFilter: ['class'] });
+        legalResolve = finish;
         authOpenLegal(legalRead.kvkk ? 'terms' : 'kvkk', true);
     });
-});
+}

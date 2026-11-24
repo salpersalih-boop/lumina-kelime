@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=36" />
+  <link rel="stylesheet" href="css/style.css?v=37" />
 </head>
 
 <body>
@@ -198,10 +198,6 @@
                 type="button">👁</button>
             </div>
           </div>
-          <label class="auth-consent hidden" id="siConsentWrap">
-            <input type="checkbox" id="siConsent" />
-            <span><a href="legal/kvkk.html" data-legal="kvkk">KVKK Aydınlatma Metni</a>'ni okudum; <a href="legal/terms.html" data-legal="terms">Kullanım Koşulları</a>'nı kabul ediyor ve verilerimin Google (Firebase) altyapısında, yurt dışı sunucularda da saklanmasına onay veriyorum.</span>
-          </label>
           <div id="siError" class="auth-error hidden"></div>
           <button class="auth-submit-btn" id="btnSignIn" onclick="authSignIn()">
             <span>Giriş Yap</span>
@@ -1281,7 +1277,11 @@
   <div id="legalModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
     <div class="modal-card legal-card">
       <div class="legal-head">
-        <strong id="legalTitle">KVKK Aydınlatma Metni</strong>
+        <img src="img/logo.png" width="40" height="40" alt="" />
+        <div class="legal-head-text">
+          <strong id="legalTitle">KVKK Aydınlatma Metni</strong>
+          <span>Lumina ✨ · kişisel verilerin korunması</span>
+        </div>
         <button class="legal-x" type="button" onclick="closeModal('legalModal')" aria-label="Kapat">✕</button>
       </div>
       <div class="legal-body" id="legalBody" tabindex="0"></div>
@@ -1297,25 +1297,25 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
   <script src="js/firebase-config.js"></script>
-  <script src="js/utils.js?v=36"></script>
-  <script src="js/auth.js?v=36"></script>
+  <script src="js/utils.js?v=37"></script>
+  <script src="js/auth.js?v=37"></script>
   <!-- Uygulama (sıra önemli: aynı global kapsamı paylaşırlar) -->
-  <script src="js/app/nav.js?v=36"></script>
-  <script src="js/app/state.js?v=36"></script>
-  <script src="js/app/data.js?v=36"></script>
-  <script src="js/app/progress.js?v=36"></script>
-  <script src="js/app/dashboard.js?v=36"></script>
-  <script src="js/app/study.js?v=36"></script>
-  <script src="js/app/lab.js?v=36"></script>
-  <script src="js/app/ui.js?v=36"></script>
-  <script src="js/app/theme.js?v=36"></script>
-  <script src="js/app/tomer.js?v=36"></script>
-  <script src="js/app/dersler.js?v=36"></script>
-  <script src="js/app/router.js?v=36"></script>
-  <script src="js/app/main.js?v=36"></script>
-  <script src="js/app/test-write.js?v=36"></script>
-  <script src="js/app/race.js?v=36"></script>
-  <script src="js/app/account.js?v=36"></script>
+  <script src="js/app/nav.js?v=37"></script>
+  <script src="js/app/state.js?v=37"></script>
+  <script src="js/app/data.js?v=37"></script>
+  <script src="js/app/progress.js?v=37"></script>
+  <script src="js/app/dashboard.js?v=37"></script>
+  <script src="js/app/study.js?v=37"></script>
+  <script src="js/app/lab.js?v=37"></script>
+  <script src="js/app/ui.js?v=37"></script>
+  <script src="js/app/theme.js?v=37"></script>
+  <script src="js/app/tomer.js?v=37"></script>
+  <script src="js/app/dersler.js?v=37"></script>
+  <script src="js/app/router.js?v=37"></script>
+  <script src="js/app/main.js?v=37"></script>
+  <script src="js/app/test-write.js?v=37"></script>
+  <script src="js/app/race.js?v=37"></script>
+  <script src="js/app/account.js?v=37"></script>
 </body>
 
 </html>
