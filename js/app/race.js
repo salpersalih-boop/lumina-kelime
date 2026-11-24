@@ -40,15 +40,25 @@ const RaceStatsManager = (() => {
     }
 
     function saveStats(stats) {
-        localStorage.setItem(LS_KEY, JSON.stringify(stats));
+        try {
+            localStorage.setItem(statsKey(), JSON.stringify(stats));
+        } catch (e) {
+            console.error('RaceStatsManager save error:', e);
+        }
     }
 
     function recordGame(gameType, score, correct, wrong, timeSec) {
         const stats = getStats();
+        const prevHighScore = stats.highScore || 0;
+        const prevGameBest = (stats[gameType] && stats[gameType].highScore) || 0;
+
         stats.totalScore += score;
         stats.gamesPlayed++;
         stats.totalCorrect += correct;
         stats.totalWrong += wrong;
+
+        const isNewHighScore = score > prevHighScore && stats.gamesPlayed > 1;
+        const isNewGameBest = score > prevGameBest && (stats[gameType]?.played || 0) > 0;
 
         if (score > stats.highScore) stats.highScore = score;
         if (timeSec && (!stats.bestTime || timeSec < stats.bestTime)) stats.bestTime = timeSec;
@@ -71,7 +81,8 @@ const RaceStatsManager = (() => {
         }
 
         // Won if >50% correct
-        if (correct > wrong) stats.gamesWon++;
+        const won = correct > wrong;
+        if (won) stats.gamesWon++;
 
         // Per-game stats
         const gk = stats[gameType] || { played: 0, totalScore: 0, highScore: 0 };
@@ -81,11 +92,15 @@ const RaceStatsManager = (() => {
         stats[gameType] = gk;
 
         saveStats(stats);
-        return stats;
+        return { stats, won, isNewHighScore, isNewGameBest };
     }
 
     function reset() {
-        localStorage.removeItem(LS_KEY);
+        try {
+            localStorage.removeItem(statsKey());
+        } catch (e) {
+            console.error('RaceStatsManager reset error:', e);
+        }
     }
 
     return { getStats, recordGame, reset };
@@ -217,6 +232,53 @@ function showScorePop(x, y, text, negative) {
     pop.style.top = y + 'px';
     document.body.appendChild(pop);
     setTimeout(() => pop.remove(), 800);
+}
+
+// ── RACE WIN / CELEBRATION EFFECTS ──
+function triggerRaceCelebration(isWin, isRecord) {
+    const fx = window.MatchFx || (typeof MatchFx !== 'undefined' ? MatchFx : null);
+    if (!fx) return;
+
+    const W = window.innerWidth, H = window.innerHeight;
+    if (isRecord) {
+        const gold = ['#facc15', '#fde047', '#f59e0b', '#ffffff', '#6366f1', '#ec4899', '#22c55e'];
+        const wave = () => {
+            fx.burst({ x: 0, y: H, angle: -Math.PI / 3, spread: 0.7, power: 19, count: 70, colors: gold });
+            fx.burst({ x: W, y: H, angle: -2 * Math.PI / 3, spread: 0.7, power: 19, count: 70, colors: gold });
+            fx.burst({ x: W / 2, y: H * 0.22, angle: -Math.PI / 2, spread: Math.PI * 1.2, power: 11, count: 36, colors: gold, shapes: ['star', 'star', 'glow'] });
+        };
+        wave();
+        setTimeout(wave, 450);
+        setTimeout(wave, 900);
+        setTimeout(() => fx.burst({
+            x: W / 2, y: -20, angle: Math.PI / 2, spread: 0.6, power: 3, jitter: W, count: 120,
+            gravity: 0.08, sway: 1.2, life: 260, colors: gold, shapes: ['rect', 'star']
+        }), 300);
+    } else if (isWin) {
+        const confetti = ['#22c55e', '#4ade80', '#3b82f6', '#6366f1', '#facc15', '#ec4899', '#f97316'];
+        fx.burst({ x: 0, y: H, angle: -Math.PI / 3, spread: 0.65, power: 17, count: 65, colors: confetti, shapes: ['rect', 'circle', 'star'] });
+        fx.burst({ x: W, y: H, angle: -2 * Math.PI / 3, spread: 0.65, power: 17, count: 65, colors: confetti, shapes: ['rect', 'circle', 'star'] });
+        setTimeout(() => fx.burst({
+            x: W / 2, y: -20, angle: Math.PI / 2, spread: 0.5, power: 2.5, jitter: W, count: 80,
+            gravity: 0.07, sway: 1, life: 240, colors: confetti
+        }), 250);
+    }
+}
+
+function countRaceScore(el, from, to, ms = 750) {
+    if (!el) return;
+    if (to <= 0) {
+        el.textContent = '0';
+        return;
+    }
+    const t0 = performance.now();
+    const step = (t) => {
+        const k = Math.min(1, (t - t0) / ms);
+        const e = 1 - Math.pow(1 - k, 3);
+        el.textContent = Math.round(from + (to - from) * e);
+        if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
 }
 
 // ── COUNTDOWN HELPER ──
@@ -412,21 +474,43 @@ const TypingRace = (() => {
         clearInterval(timer);
         document.getElementById('typingGameArea').style.display = 'none';
 
-        const stats = RaceStatsManager.recordGame('typing', score, totalCorrect, totalWrong, null);
+        const outcome = RaceStatsManager.recordGame('typing', score, totalCorrect, totalWrong, null);
+        const isWin = outcome.won && totalCorrect > 0;
+        const isRecord = outcome.isNewHighScore || outcome.isNewGameBest;
 
-        document.getElementById('typingFinalScore').textContent = score;
+        const scoreEl = document.getElementById('typingFinalScore');
+        const scoreBox = document.querySelector('#typingResults .race-results-score');
+        const iconEl = document.querySelector('#typingResults .race-results-icon');
+        const titleEl = document.querySelector('#typingResults h3');
+
+        if (scoreBox) {
+            scoreBox.classList.remove('is-winner', 'is-record');
+            if (isRecord) scoreBox.classList.add('is-record');
+            else if (isWin) scoreBox.classList.add('is-winner');
+        }
+        if (iconEl) {
+            iconEl.textContent = isRecord ? '🏆' : (isWin ? '🎉' : '⌨️');
+        }
+        if (titleEl) {
+            titleEl.textContent = isRecord ? '🏆 Yeni Rekor!' : (isWin ? '🎉 Tebrikler, Kazandın!' : 'Hızlı Yazma Sonuçları');
+        }
+
+        countRaceScore(scoreEl, 0, score, 800);
+
         document.getElementById('typingResultsStats').innerHTML = `
             <div class="race-result-stat"><span class="stat-val">${totalCorrect}</span><span class="stat-lbl">Doğru</span></div>
             <div class="race-result-stat"><span class="stat-val">${totalWrong}</span><span class="stat-lbl">Yanlış</span></div>
             <div class="race-result-stat"><span class="stat-val">${words.length}</span><span class="stat-lbl">Toplam Kelime</span></div>
-            <div class="race-result-stat"><span class="stat-val">${Math.round((totalCorrect / words.length) * 100)}%</span><span class="stat-lbl">Başarı Oranı</span></div>
+            <div class="race-result-stat"><span class="stat-val">${Math.round((totalCorrect / Math.max(1, words.length)) * 100)}%</span><span class="stat-lbl">Başarı Oranı</span></div>
         `;
         document.getElementById('typingResults').classList.remove('hidden');
+        triggerRaceCelebration(isWin, isRecord);
     }
 
     function cleanup() {
         clearInterval(timer);
         cancelRaceCountdown();
+        window.MatchFx?.clear();
     }
 
     return { start, handleInput, cleanup };
@@ -596,21 +680,43 @@ const QuickQuiz = (() => {
         clearInterval(timer);
         document.getElementById('quizGameArea').style.display = 'none';
 
-        RaceStatsManager.recordGame('quiz', score, totalCorrect, totalWrong, null);
+        const outcome = RaceStatsManager.recordGame('quiz', score, totalCorrect, totalWrong, null);
+        const isWin = outcome.won && totalCorrect > 0;
+        const isRecord = outcome.isNewHighScore || outcome.isNewGameBest;
 
-        document.getElementById('quizFinalScore').textContent = score;
+        const scoreEl = document.getElementById('quizFinalScore');
+        const scoreBox = document.querySelector('#quizResults .race-results-score');
+        const iconEl = document.querySelector('#quizResults .race-results-icon');
+        const titleEl = document.querySelector('#quizResults h3');
+
+        if (scoreBox) {
+            scoreBox.classList.remove('is-winner', 'is-record');
+            if (isRecord) scoreBox.classList.add('is-record');
+            else if (isWin) scoreBox.classList.add('is-winner');
+        }
+        if (iconEl) {
+            iconEl.textContent = isRecord ? '🏆' : (isWin ? '🎉' : '⚡');
+        }
+        if (titleEl) {
+            titleEl.textContent = isRecord ? '🏆 Yeni Rekor!' : (isWin ? '🎉 Tebrikler, Kazandın!' : 'Hızlı Şık Sonuçları');
+        }
+
+        countRaceScore(scoreEl, 0, score, 800);
+
         document.getElementById('quizResultsStats').innerHTML = `
             <div class="race-result-stat"><span class="stat-val">${totalCorrect}</span><span class="stat-lbl">Doğru</span></div>
             <div class="race-result-stat"><span class="stat-val">${totalWrong}</span><span class="stat-lbl">Yanlış</span></div>
             <div class="race-result-stat"><span class="stat-val">${words.length}</span><span class="stat-lbl">Toplam Soru</span></div>
-            <div class="race-result-stat"><span class="stat-val">${Math.round((totalCorrect / words.length) * 100)}%</span><span class="stat-lbl">Başarı Oranı</span></div>
+            <div class="race-result-stat"><span class="stat-val">${Math.round((totalCorrect / Math.max(1, words.length)) * 100)}%</span><span class="stat-lbl">Başarı Oranı</span></div>
         `;
         document.getElementById('quizResults').classList.remove('hidden');
+        triggerRaceCelebration(isWin, isRecord);
     }
 
     function cleanup() {
         clearInterval(timer);
         cancelRaceCountdown();
+        window.MatchFx?.clear();
     }
 
     return { start, cleanup };
@@ -795,9 +901,29 @@ const SpeedMatch = (() => {
 
         document.getElementById('matchGameArea').style.display = 'none';
 
-        RaceStatsManager.recordGame('match', score, totalCorrect, totalWrong, elapsed);
+        const outcome = RaceStatsManager.recordGame('match', score, totalCorrect, totalWrong, elapsed);
+        const isWin = (matched >= pairs.length || totalCorrect > totalWrong) && score > 0;
+        const isRecord = outcome.isNewHighScore || outcome.isNewGameBest;
 
-        document.getElementById('matchFinalScore').textContent = score;
+        const scoreEl = document.getElementById('matchFinalScore');
+        const scoreBox = document.querySelector('#matchResults .race-results-score');
+        const iconEl = document.querySelector('#matchResults .race-results-icon');
+        const titleEl = document.querySelector('#matchResults h3');
+
+        if (scoreBox) {
+            scoreBox.classList.remove('is-winner', 'is-record');
+            if (isRecord) scoreBox.classList.add('is-record');
+            else if (isWin) scoreBox.classList.add('is-winner');
+        }
+        if (iconEl) {
+            iconEl.textContent = isRecord ? '🏆' : (isWin ? '🎉' : '🔗');
+        }
+        if (titleEl) {
+            titleEl.textContent = isRecord ? '🏆 Yeni Rekor!' : (isWin ? '🎉 Tebrikler, Kazandın!' : 'Hızlı Eşleştirme Sonuçları');
+        }
+
+        countRaceScore(scoreEl, 0, score, 800);
+
         document.getElementById('matchResultsStats').innerHTML = `
             <div class="race-result-stat"><span class="stat-val">${totalCorrect}</span><span class="stat-lbl">Doğru Eşleşme</span></div>
             <div class="race-result-stat"><span class="stat-val">${totalWrong}</span><span class="stat-lbl">Yanlış Deneme</span></div>
@@ -805,11 +931,13 @@ const SpeedMatch = (() => {
             <div class="race-result-stat"><span class="stat-val">${matched}/${pairs.length}</span><span class="stat-lbl">Eşleşen Çift</span></div>
         `;
         document.getElementById('matchResults').classList.remove('hidden');
+        triggerRaceCelebration(isWin, isRecord);
     }
 
     function cleanup() {
         clearInterval(timer);
         cancelRaceCountdown();
+        window.MatchFx?.clear();
     }
 
     return { start, cleanup };

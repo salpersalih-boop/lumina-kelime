@@ -101,6 +101,9 @@ const MatchFx = (() => {
     return { burst, clear };
 })();
 
+// Dışarıya aç (Yarış Arenası ve diğer modüller parçacık efektlerini kullanabilsin)
+window.MatchFx = MatchFx;
+
 // ── Oyun ──
 const MatchGame = (() => {
     const ROUND_SEC = 60, PAIRS = 6, POINTS = 100, COMBO_STEP = 20, COMBO_MAX = 5, WRONG = 25, BONUS_PER_SEC = 10;
