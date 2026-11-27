@@ -344,7 +344,7 @@ const MatchGame = (() => {
         record: { cls: 'record', icon: '🏆', title: 'İNANILMAZ! Yeni Rekor Kırdın! 🏆' },
         good:   { cls: 'good',   icon: '🚀', title: 'Harika İş!' },
         worse:  { cls: 'worse',  icon: '🔥', title: 'Bir önceki turda daha hızlıydın!' },
-        worst:  { cls: 'worst',  icon: '🧿', title: 'Bunu ısınma turu sayalım! 😅' }
+        worst:  { cls: 'worst',  icon: '<i class="mg-w-bolt">⚡</i><i class="mg-w-arm">💪</i>', title: 'Bunu ısınma turu sayalım! 😅' }
     };
 
     function subtitle(r) {
@@ -373,7 +373,7 @@ const MatchGame = (() => {
           <div class="mg-result-card">
             <div class="mg-scene-fx"></div>
             <div class="mg-scene-ic"><span>${sc.icon}</span></div>
-            ${r.kind === 'worst' ? '<div class="mg-stamp">ISINMA TURU</div>' : ''}
+            ${r.kind === 'worst' ? '<div class="mg-charge"><div class="mg-charge-bar"></div><span>GÜÇ TOPLANIYOR…</span><b>HAZIRSIN! ⚡</b></div>' : ''}
             <h3 class="mg-scene-title">${sc.title}</h3>
             <p class="mg-scene-sub">${subtitle(r)}</p>
             <div class="mg-stats">
@@ -421,9 +421,18 @@ const MatchGame = (() => {
                 gravity: -0.02, drag: 0.99, sway: 0.9, life: 170, size: 7, colors: fire, shapes: ['glow', 'circle'] });
             embers(); setTimeout(embers, 600); setTimeout(embers, 1200);
         } else {
-            const soft = () => MatchFx.burst({ x: W / 2, y: H + 20, angle: -Math.PI / 2, spread: 0.4, power: 3.5, jitter: W, count: 8,
-                gravity: -0.01, drag: 0.995, sway: 1.4, life: 300, size: 20, alpha: 0.55, shapes: ['nazar'] });
-            soft(); setTimeout(soft, 900);
+            // Şarj: mavi-mor kıvılcımlar yükselir, dolum bitince ikonun çevresinde güç patlaması
+            const volt = ['#60a5fa', '#818cf8', '#a78bfa', '#22d3ee', '#ffffff', '#fde047'];
+            const sparks = () => MatchFx.burst({ x: W / 2, y: H + 10, angle: -Math.PI / 2, spread: 0.35, power: 7, jitter: W * 0.9, count: 28,
+                gravity: -0.03, drag: 0.99, sway: 0.5, life: 140, size: 6, colors: volt, shapes: ['glow', 'circle'] });
+            sparks(); setTimeout(sparks, 500); setTimeout(sparks, 1000);
+            setTimeout(() => {
+                const ic = document.querySelector('.scene-worst .mg-scene-ic');
+                const r = ic ? ic.getBoundingClientRect() : { left: W / 2, top: H / 3, width: 0, height: 0 };
+                const x = r.left + r.width / 2, y = r.top + r.height / 2;
+                MatchFx.burst({ x, y, spread: Math.PI * 2, power: 10, count: 70, gravity: 0.08, size: 10, colors: volt, shapes: ['star', 'glow', 'circle'] });
+                MatchFx.burst({ x, y, spread: Math.PI * 2, power: 4, count: 24, gravity: 0, drag: 0.95, life: 60, size: 14, colors: ['#ffffff', '#c7d2fe'], shapes: ['glow'] });
+            }, 1650);
         }
     }
 

@@ -6495,17 +6495,34 @@ html.no-flag-emoji .lang-icon-wrap:has(.flag-emoji.is-flag) .flag-code { font-si
 @keyframes mgFire { from { transform: scale(1, 1) rotate(-3deg); } to { transform: scale(1.08, 1.18) rotate(3deg); } }
 @keyframes mgHeat { from { opacity: .6; } to { opacity: 1; } }
 
-/* D — Isınma turu: sallanan nazar boncuğu, damga */
-.scene-worst .mg-result-card { border-color: rgba(59,130,246,.45); }
-.scene-worst .mg-scene-fx { background: radial-gradient(circle at 50% 15%, rgba(59,130,246,.18), transparent 55%); }
-.scene-worst .mg-scene-ic { background: radial-gradient(circle, #dbeafe, #93c5fd); box-shadow: 0 0 0 10px rgba(59,130,246,.15), 0 14px 36px rgba(59,130,246,.35); transform-origin: 50% -40px; animation: mgSwing 2.2s ease-in-out infinite; }
-.scene-worst .mg-scene-ic::before { content: ''; position: absolute; top: -40px; left: 50%; width: 2px; height: 40px; background: linear-gradient(#94a3b8, transparent 0%, #94a3b8); transform: translateX(-50%); }
-.scene-worst .mg-scene-ic span { animation: mgWink 3s ease-in-out infinite; }
-.mg-stamp { display: inline-block; margin: 0 auto 4px; padding: 4px 14px; border: 3px solid #3b82f6; border-radius: 10px; color: #3b82f6; font-weight: 900; letter-spacing: .14em; font-size: .85rem;
-  transform: rotate(-6deg); animation: mgStamp .5s cubic-bezier(.2,1.8,.4,1) .45s both; }
-@keyframes mgSwing { 0%,100% { transform: rotate(14deg); } 50% { transform: rotate(-14deg); } }
-@keyframes mgWink { 0%,45%,55%,100% { transform: scale(1); } 50% { transform: scale(1, .2); } }
-@keyframes mgStamp { from { opacity: 0; transform: scale(2.4) rotate(-14deg); } to { opacity: 1; transform: scale(1) rotate(-6deg); } }
+/* D — Isınma turu: şimşek şarj halkasını doldurur, dolunca 💪'ye dönüşür, güç çubuğu dolar, güç patlaması */
+@property --mgp { syntax: '<percentage>'; inherits: false; initial-value: 0%; }
+.scene-worst .mg-result-card { border-color: rgba(129,140,248,.6); box-shadow: 0 0 0 6px rgba(129,140,248,.15), 0 30px 90px rgba(99,102,241,.4); }
+.scene-worst .mg-scene-fx { background: radial-gradient(circle at 50% 16%, rgba(129,140,248,.35), transparent 55%), linear-gradient(115deg, transparent 30%, rgba(96,165,250,.18) 50%, transparent 70%); background-size: 100% 100%, 250% 100%; animation: mgWave 2.2s linear infinite; }
+.scene-worst .mg-scene-ic { background: radial-gradient(circle, #1e1b4b 55%, #312e81); box-shadow: 0 0 0 6px rgba(129,140,248,.18), 0 0 40px rgba(99,102,241,.5); animation: mgCharged .7s cubic-bezier(.2,1.8,.4,1) 1.6s both; }
+.scene-worst .mg-scene-ic::before { content: ''; position: absolute; inset: -8px; border-radius: 50%; z-index: -1;
+  background: conic-gradient(#22d3ee, #818cf8, #c084fc var(--mgp), rgba(129,140,248,.15) 0);
+  -webkit-mask: radial-gradient(circle, transparent 58%, #000 60%); mask: radial-gradient(circle, transparent 58%, #000 60%); animation: mgFill 1.6s cubic-bezier(.5,0,.3,1) .2s forwards; }
+.scene-worst .mg-scene-ic::after { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 3px solid #818cf8; opacity: 0; animation: mgRingOut 1.4s ease-out 1.8s infinite; }
+.scene-worst .mg-scene-ic span { position: relative; width: 1em; height: 1em; }
+.scene-worst .mg-scene-ic i { position: absolute; inset: 0; font-style: normal; display: grid; place-items: center; }
+.mg-w-bolt { animation: mgBolt .26s steps(2) 6, mgOut .35s ease 1.6s forwards; filter: drop-shadow(0 0 12px #fde047); }
+.mg-w-arm { opacity: 0; animation: mgArm .7s cubic-bezier(.2,1.8,.4,1) 1.7s forwards, mgFlex 1.4s ease-in-out 2.5s infinite; }
+.mg-charge { position: relative; width: min(260px, 80%); margin: 16px auto 8px; text-align: center; }
+.mg-charge-bar { height: 10px; border-radius: 99px; background: rgba(129,140,248,.18); overflow: hidden; position: relative; }
+.mg-charge-bar::after { content: ''; position: absolute; inset: 0; width: 0; border-radius: inherit; background: linear-gradient(90deg, #22d3ee, #818cf8, #c084fc); box-shadow: 0 0 14px #818cf8; animation: mgBar 1.6s cubic-bezier(.5,0,.3,1) .2s forwards; }
+.mg-charge span, .mg-charge b { display: block; margin-top: 6px; font-size: .72rem; font-weight: 900; letter-spacing: .2em; }
+.mg-charge span { color: #818cf8; animation: mgBlink .5s steps(2) 3, mgOut .2s ease 1.7s forwards; }
+.mg-charge b { position: absolute; left: 0; right: 0; bottom: 0; color: #22c55e; opacity: 0; animation: mgArm .5s cubic-bezier(.2,1.8,.4,1) 1.8s forwards; }
+.scene-worst .mg-scene-title { color: #6366f1; }
+@keyframes mgFill { to { --mgp: 100%; } }
+@keyframes mgBar { to { width: 100%; } }
+@keyframes mgBolt { 50% { transform: scale(1.15) rotate(-8deg); opacity: .6; } }
+@keyframes mgOut { to { opacity: 0; transform: scale(2); filter: blur(4px); } }
+@keyframes mgArm { from { opacity: 0; transform: scale(0) rotate(-40deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
+@keyframes mgFlex { 0%,100% { transform: scale(1) rotate(0); } 50% { transform: scale(1.15) rotate(-10deg); } }
+@keyframes mgCharged { 0% { transform: scale(1); } 40% { transform: scale(1.2); box-shadow: 0 0 0 16px rgba(129,140,248,.25), 0 0 90px rgba(129,140,248,.9); } 100% { transform: scale(1); } }
+@keyframes mgBlink { 50% { opacity: .3; } }
 
 @media (max-width: 560px) {
   .mg-hud { grid-template-columns: auto 1fr auto 1fr; gap: 8px; }
