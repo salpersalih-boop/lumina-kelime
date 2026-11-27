@@ -999,3 +999,1041 @@ Sıra;Kelime;Tür;Türkçe Anlamı
 998;prethodni;adj;eski, önceki
 999;vjerojatan;adj;olası
 1000;jasan;adj;açık, net
+1001;čelo;n;alın
+1002;obraz;n;yanak
+1003;brada;n;çene
+1004;usna;n;dudak
+1005;obrva;n;kaş
+1006;trepavica;n;kirpik
+1007;brada (dlake);n;sakal
+1008;brkovi;n;bıyık
+1009;grlo;n;boğaz
+1010;zapešće;n;bilek
+1011;lakat;n;dirsek
+1012;nokat;n;tırnak
+1013;palac;n;başparmak
+1014;struk;n;bel
+1015;kuk;n;kalça
+1016;gležanj;n;ayak bileği
+1017;peta;n;topuk
+1018;mozak;n;beyin
+1019;pluća;n;akciğer
+1020;jetra;n;karaciğer
+1021;bubreg;n;böbrek
+1022;mišić;n;kas
+1023;vena;n;damar
+1024;otkucaj srca;n;kalp atışı
+1025;disanje;n;nefes
+1026;suza;n;gözyaşı
+1027;znoj;n;ter
+1028;vrućica;n;ateş (hastalık)
+1029;kašalj;n;öksürük
+1030;prehlada;n;soğuk algınlığı
+1031;gripa;n;grip
+1032;glavobolja;n;baş ağrısı
+1033;rana;n;yara
+1034;operacija;n;ameliyat
+1035;pacijent;n;hasta (kişi)
+1036;liječenje;n;tedavi
+1037;recept;n;reçete / yemek tarifi
+1038;tableta;n;hap
+1039;cjepivo;n;aşı
+1040;hitna pomoć;n;ambulans
+1041;hitan slučaj;n;acil durum
+1042;spavanje;n;uyku
+1043;umor;n;yorgunluk
+1044;stres;n;stres
+1045;dijeta;n;diyet
+1046;vježba;n;egzersiz
+1047;visina;n;boy (uzunluk)
+1048;radost;n;sevinç
+1049;tuga;n;üzüntü
+1050;bijes;n;öfke
+1051;ljubomora;n;kıskançlık
+1052;sram;n;utanç
+1053;ponos;n;gurur
+1054;znatiželja;n;merak
+1055;strpljenje;n;sabır
+1056;povjerenje;n;güven
+1057;briga;n;endişe
+1058;samoća;n;yalnızlık
+1059;hrabrost;n;cesaret
+1060;mržnja;n;nefret
+1061;iznenađenje;n;şaşkınlık
+1062;užitak;n;keyif, zevk
+1063;kajanje;n;pişmanlık
+1064;zahvalnost;n;minnettarlık
+1065;poštovanje;n;saygı
+1066;osobnost;n;kişilik
+1067;navika;n;alışkanlık
+1068;ponašanje;n;davranış
+1069;raspoloženje;n;ruh hali
+1070;smijeh;n;kahkaha
+1071;osmijeh;n;gülümseme
+1072;poljubac;n;öpücük
+1073;zagrljaj;n;sarılma
+1074;duša;n;ruh
+1075;um;n;zihin
+1076;pamćenje;n;hafıza
+1077;inteligencija;n;zeka
+1078;mudrost;n;bilgelik
+1079;talent;n;yetenek
+1080;vještina;n;beceri
+1081;ljepota;n;güzellik
+1082;mladost;n;gençlik
+1083;starost;n;yaşlılık
+1084;djetinjstvo;n;çocukluk
+1085;rođenje;n;doğum
+1086;vjenčanje;n;düğün
+1087;pogreb;n;cenaze
+1088;zaručnik;n;nişanlı (erkek)
+1089;mladenka;n;gelin
+1090;udovica;n;dul (kadın)
+1091;odrasla osoba;n;yetişkin
+1092;tinejdžer;n;ergen
+1093;starac;n;yaşlı (kişi)
+1094;unuk;n;torun
+1095;nećak;n;yeğen
+1096;svekrva;n;kayınvalide
+1097;blizanac;n;ikiz
+1098;rođak;n;akraba
+1099;dečko;n;sevgili (erkek)
+1100;neprijatelj;n;düşman
+1101;jastuk;n;yastık
+1102;deka;n;battaniye
+1103;plahta;n;çarşaf
+1104;polica;n;raf
+1105;ladica;n;çekmece
+1106;brava;n;kilit
+1107;utičnica;n;priz
+1108;klima-uređaj;n;klima
+1109;grijalica;n;kalorifer
+1110;perilica rublja;n;çamaşır makinesi
+1111;perilica posuđa;n;bulaşık makinesi
+1112;usisavač;n;elektrikli süpürge
+1113;glačalo;n;ütü
+1114;mikrovalna pećnica;n;mikrodalga fırın
+1115;štednjak;n;ocak (mutfak)
+1116;tava;n;tava
+1117;čajnik;n;çaydanlık
+1118;zdjela;n;kase
+1119;salveta;n;peçete
+1120;pladanj;n;tepsi
+1121;smeće;n;çöp
+1122;kanta za smeće;n;çöp kutusu
+1123;kanta;n;kova
+1124;metla;n;süpürge
+1125;četka;n;fırça
+1126;češalj;n;tarak
+1127;pasta za zube;n;diş macunu
+1128;šampon;n;şampuan
+1129;tuš;n;duş
+1130;kada za kupanje;n;küvet
+1131;umivaonik;n;lavabo
+1132;zahodska školjka;n;klozet
+1133;slavina;n;musluk
+1134;toaletni papir;n;tuvalet kağıdı
+1135;svijeća;n;mum
+1136;šibica;n;kibrit
+1137;upaljač;n;çakmak
+1138;škare;n;makas
+1139;igla;n;iğne
+1140;konac;n;iplik
+1141;gumb;n;düğme
+1142;patentni zatvarač;n;fermuar
+1143;džep;n;cep
+1144;remen;n;kemer
+1145;kravata;n;kravat
+1146;rukavice;n;eldiven
+1147;šal;n;atkı
+1148;džemper;n;kazak
+1149;kratke hlače;n;şort
+1150;donje rublje;n;iç çamaşırı
+1151;pidžama;n;pijama
+1152;papuče;n;terlik
+1153;čizme;n;çizme
+1154;ruksak;n;sırt çantası
+1155;kišobran;n;şemsiye
+1156;ogrlica;n;kolye
+1157;naušnica;n;küpe
+1158;ručni sat;n;kol saati
+1159;parfem;n;parfüm
+1160;šminka;n;makyaj
+1161;fotoaparat;n;fotoğraf makinesi
+1162;baterija;n;pil
+1163;punjač;n;şarj aleti
+1164;slušalice;n;kulaklık
+1165;kabel;n;kablo
+1166;zaslon;n;ekran
+1167;tipkovnica;n;klavye
+1168;miš (računalo);n;fare (bilgisayar)
+1169;pisač;n;yazıcı
+1170;radio;n;radyo
+1171;daljinski upravljač;n;kumanda
+1172;kalendar;n;takvim
+1173;omotnica;n;zarf
+1174;poštanska marka;n;pul
+1175;paket;n;koli
+1176;uže;n;ip
+1177;čavao;n;çivi
+1178;čekić;n;çekiç
+1179;odvijač;n;tornavida
+1180;ljestve;n;el merdiveni
+1181;cigla;n;tuğla
+1182;drvo (građa);n;tahta (malzeme)
+1183;staklo;n;cam
+1184;željezo;n;demir
+1185;zlato;n;altın
+1186;srebro;n;gümüş
+1187;plastika;n;plastik
+1188;metal;n;metal
+1189;tkanina;n;kumaş
+1190;pamuk;n;pamuk
+1191;koža (materijal);n;deri (malzeme)
+1192;svila;n;ipek
+1193;vuna;n;yün
+1194;namještaj;n;mobilya
+1195;kvaka;n;kapı kolu
+1196;balkon;n;balkon
+1197;podrum;n;bodrum
+1198;garaža;n;garaj
+1199;dizalo;n;asansör
+1200;kat;n;kat
+1201;hodnik;n;koridor
+1202;ograda;n;çit
+1203;najamnina;n;kira
+1204;brašno;n;un
+1205;maslina;n;zeytin
+1206;maslinovo ulje;n;zeytinyağı
+1207;ocat;n;sirke
+1208;umak;n;sos
+1209;začin;n;baharat
+1210;metvica;n;nane
+1211;peršin;n;maydanoz
+1212;cimet;n;tarçın
+1213;đumbir;n;zencefil
+1214;grah;n;fasulye
+1215;slanutak;n;nohut
+1216;leća;n;mercimek
+1217;grašak;n;bezelye
+1218;kukuruz;n;mısır
+1219;pšenica;n;buğday
+1220;kupus;n;lahana
+1221;zelena salata;n;marul
+1222;patlidžan;n;patlıcan
+1223;špinat;n;ıspanak
+1224;gljiva;n;mantar
+1225;bundeva;n;bal kabağı
+1226;lubenica;n;karpuz
+1227;dinja;n;kavun
+1228;kruška;n;armut
+1229;breskva;n;şeftali
+1230;trešnja;n;kiraz
+1231;šljiva;n;erik
+1232;ananas;n;ananas
+1233;mango;n;mango
+1234;smokva;n;incir
+1235;datulja;n;hurma
+1236;nar;n;nar
+1237;lješnjak;n;fındık
+1238;orah;n;ceviz
+1239;badem;n;badem
+1240;kikiriki;n;yer fıstığı
+1241;grožđica;n;kuru üzüm
+1242;janjetina;n;kuzu eti
+1243;govedina;n;dana eti
+1244;kobasica;n;sosis
+1245;mesna okruglica;n;köfte
+1246;mljeveno meso;n;kıyma
+1247;škamp;n;karides
+1248;tuna;n;ton balığı
+1249;jogurt;n;yoğurt
+1250;vrhnje;n;krema
+1251;džem;n;reçel
+1252;keks;n;kurabiye
+1253;bombon;n;şekerleme
+1254;desert;n;tatlı (yemek)
+1255;sendvič;n;sandviç
+1256;pizza;n;pizza
+1257;hamburger;n;hamburger
+1258;pomfrit;n;patates kızartması
+1259;omlet;n;omlet
+1260;ćevapi;n;kebap
+1261;mineralna voda;n;maden suyu
+1262;gazirani sok;n;gazoz
+1263;led;n;buz
+1264;kriška;n;dilim
+1265;sastojak;n;malzeme
+1266;porcija;n;porsiyon
+1267;pekara;n;fırın (ekmek)
+1268;mesnica;n;kasap
+1269;voćarna;n;manav
+1270;avokado;n;avokado
+1271;kokos;n;hindistan cevizi
+1272;marelica;n;kayısı
+1273;malina;n;ahududu
+1274;rotkvica;n;turp
+1275;celer;n;kereviz
+1276;brokula;n;brokoli
+1277;cvjetača;n;karnabahar
+1278;žitarice;n;tahıl
+1279;zob;n;yulaf
+1280;kvasac;n;maya
+1281;vanilija;n;vanilya
+1282;krilo;n;kanat
+1283;daska za rezanje;n;kesme tahtası
+1284;poklopac;n;kapak
+1285;staklenka;n;kavanoz
+1286;limenka;n;konserve kutusu
+1287;vrećica;n;poşet
+1288;stolnjak;n;masa örtüsü
+1289;vrč;n;sürahi
+1290;grickalica;n;atıştırmalık
+1291;piće;n;içecek
+1292;alkohol;n;alkol
+1293;vegetarijanac;n;vejetaryen
+1294;zalogaj;n;lokma
+1295;tost;n;kızarmış ekmek
+1296;palačinka;n;krep
+1297;limunada;n;limonata
+1298;kakao;n;kakao
+1299;sjeme;n;tohum
+1300;kora;n;kabuk
+1301;četvrt (kvart);n;mahalle
+1302;gradić;n;kasaba
+1303;glavni grad;n;başkent
+1304;granica;n;sınır
+1305;pločnik;n;kaldırım
+1306;raskrižje;n;kavşak
+1307;semafor;n;trafik ışığı
+1308;pješački prijelaz;n;yaya geçidi
+1309;parkiralište;n;otopark
+1310;benzinska postaja;n;benzin istasyonu
+1311;benzin;n;benzin
+1312;kotač;n;tekerlek
+1313;motor;n;motor
+1314;kočnica;n;fren
+1315;vozačka dozvola;n;ehliyet
+1316;motocikl;n;motosiklet
+1317;kamion;n;kamyon
+1318;čamac;n;tekne
+1319;helikopter;n;helikopter
+1320;tramvaj;n;tramvay
+1321;peron;n;peron
+1322;putnik;n;yolcu
+1323;pilot;n;pilot
+1324;stjuardesa;n;hostes
+1325;slijetanje;n;iniş (uçak)
+1326;let;n;uçuş
+1327;prtljaga;n;bagaj
+1328;carina;n;gümrük
+1329;viza;n;vize
+1330;vodič;n;rehber (kişi)
+1331;kamp;n;kamp
+1332;šator;n;çadır
+1333;krajolik;n;manzara
+1334;spomenik;n;anıt
+1335;palača;n;saray
+1336;dvorac;n;kale
+1337;toranj;n;kule
+1338;hram;n;tapınak
+1339;kip;n;heykel
+1340;fontana;n;çeşme
+1341;zoološki vrt;n;hayvanat bahçesi
+1342;trgovački centar;n;alışveriş merkezi
+1343;blagajna;n;kasa (ödeme)
+1344;potvrda;n;fiş
+1345;gotovina;n;nakit
+1346;kreditna kartica;n;kredi kartı
+1347;kovanica;n;bozuk para / para birimi
+1348;ljekarnik;n;eczacı
+1349;frizer;n;kuaför
+1350;krojač;n;terzi
+1351;knjižara;n;kitapçı
+1352;izlog;n;vitrin
+1353;rasprodaja;n;indirimli satış
+1354;marka (proizvod);n;marka
+1355;košara;n;sepet
+1356;kolica za kupnju;n;alışveriş arabası
+1357;natpis;n;tabela
+1358;javni zahod;n;umumi tuvalet
+1359;podstanar;n;kiracı
+1360;stanodavac;n;ev sahibi
+1361;zatvor;n;hapishane
+1362;općina;n;belediye
+1363;veleposlanstvo;n;elçilik
+1364;tvornica;n;fabrika
+1365;skladište;n;depo
+1366;farma;n;çiftlik
+1367;stadion;n;stadyum
+1368;teretana;n;spor salonu
+1369;bazen;n;yüzme havuzu
+1370;groblje;n;mezarlık
+1371;tunel;n;tünel
+1372;autocesta;n;otoyol
+1373;udaljenost;n;mesafe
+1374;kilometar;n;kilometre
+1375;smjer;n;yön
+1376;brzina;n;hız
+1377;dolazak;n;varış
+1378;kašnjenje;n;gecikme
+1379;vozni red;n;tarife (saatler)
+1380;rezervacija;n;rezervasyon
+1381;recepcija;n;resepsiyon
+1382;izlet;n;tur
+1383;obala;n;kıyı
+1384;svjetionik;n;deniz feneri
+1385;ruševine;n;harabe
+1386;neboder;n;gökdelen
+1387;poštanski sandučić;n;posta kutusu
+1388;razglednica;n;kartpostal
+1389;kapetan;n;kaptan
+1390;krema za sunčanje;n;güneş kremi
+1391;sunčane naočale;n;güneş gözlüğü
+1392;turizam;n;turizm
+1393;inozemstvo;n;yurt dışı
+1394;useljenik;n;göçmen
+1395;građanin;n;vatandaş
+1396;planet;n;gezegen
+1397;svemir;n;evren
+1398;prostor (svemir);n;uzay
+1399;duga;n;gökkuşağı
+1400;munja;n;şimşek
+1401;grmljavina;n;gök gürültüsü
+1402;magla;n;sis
+1403;tuča;n;dolu (yağış)
+1404;potres;n;deprem
+1405;poplava;n;sel
+1406;suša;n;kuraklık
+1407;vulkan;n;volkan
+1408;pustinja;n;çöl
+1409;dolina;n;vadi
+1410;špilja;n;mağara
+1411;slap;n;şelale
+1412;val;n;dalga
+1413;stijena;n;kaya
+1414;prašina;n;toz
+1415;blato;n;çamur
+1416;kontinent;n;kıta
+1417;obzor;n;ufuk
+1418;izlazak sunca;n;gün doğumu
+1419;zalazak sunca;n;gün batımı
+1420;sjena;n;gölge
+1421;klima;n;iklim
+1422;okoliš;n;çevre
+1423;onečišćenje;n;kirlilik
+1424;biljka;n;bitki
+1425;korijen;n;kök
+1426;grana;n;dal
+1427;ruža;n;gül
+1428;tulipan;n;lale
+1429;bor;n;çam
+1430;hrast;n;meşe
+1431;palma;n;palmiye
+1432;kaktus;n;kaktüs
+1433;mahovina;n;yosun
+1434;gnijezdo;n;kuş yuvası
+1435;pero;n;tüy
+1436;rep;n;kuyruk (hayvan)
+1437;rog;n;boynuz
+1438;kandža;n;pençe
+1439;kljun;n;gaga
+1440;koza;n;keçi
+1441;magarac;n;eşek
+1442;deva;n;deve
+1443;tigar;n;kaplan
+1444;žirafa;n;zürafa
+1445;zebra;n;zebra
+1446;jelen;n;geyik
+1447;vjeverica;n;sincap
+1448;jež;n;kirpi
+1449;kornjača;n;kaplumbağa
+1450;žaba;n;kurbağa
+1451;krokodil;n;timsah
+1452;morski pas;n;köpekbalığı
+1453;kit;n;balina
+1454;dupin;n;yunus
+1455;hobotnica;n;ahtapot
+1456;rak;n;yengeç
+1457;mrav;n;karınca
+1458;pauk;n;örümcek
+1459;komarac;n;sivrisinek
+1460;crv;n;solucan
+1461;orao;n;kartal
+1462;sova;n;baykuş
+1463;golub;n;güvercin
+1464;gavran;n;karga
+1465;papiga;n;papağan
+1466;pijetao;n;horoz
+1467;janje;n;kuzu
+1468;štene;n;köpek yavrusu
+1469;mače;n;kedi yavrusu
+1470;kućni ljubimac;n;evcil hayvan
+1471;izvor;n;kaynak (su)
+1472;močvara;n;bataklık
+1473;zaljev;n;körfez
+1474;vrh;n;zirve
+1475;ravnica;n;ova
+1476;ledenjak;n;buzul
+1477;pol;n;kutup
+1478;ugljen;n;kömür
+1479;nafta;n;petrol
+1480;plin;n;gaz
+1481;dim;n;duman
+1482;plamen;n;alev
+1483;para;n;buhar
+1484;kap;n;damla
+1485;sunčeva svjetlost;n;güneş ışığı
+1486;biološka vrsta;n;tür (canlı)
+1487;vlaga;n;nem
+1488;stupanj;n;derece
+1489;vremenska prognoza;n;hava tahmini
+1490;grm;n;çalı
+1491;drva za ogrjev;n;odun
+1492;koralj;n;mercan
+1493;biser;n;inci
+1494;dijamant;n;elmas
+1495;magnet;n;mıknatıs
+1496;razgovor za posao;n;iş görüşmesi
+1497;životopis;n;özgeçmiş
+1498;ugovor;n;sözleşme
+1499;potpis;n;imza
+1500;dokument;n;belge
+1501;datoteka;n;dosya
+1502;izvješće;n;rapor
+1503;projekt;n;proje
+1504;zadatak;n;görev
+1505;rok;n;son tarih
+1506;upravitelj;n;müdür
+1507;zaposlenik;n;çalışan
+1508;nezaposlenost;n;işsizlik
+1509;mirovina;n;emeklilik
+1510;karijera;n;kariyer
+1511;promaknuće;n;terfi
+1512;dobit;n;kâr
+1513;gubitak;n;zarar
+1514;dug;n;borç
+1515;zajam;n;banka kredisi
+1516;ulaganje;n;yatırım
+1517;proračun;n;bütçe
+1518;dionica;n;hisse senedi
+1519;industrija;n;sanayi
+1520;trgovanje;n;ticaret
+1521;izvoz;n;ihracat
+1522;uvoz;n;ithalat
+1523;student;n;üniversite öğrencisi
+1524;profesor;n;profesör
+1525;domaća zadaća;n;ödev
+1526;ocjena;n;not (sınav)
+1527;diploma;n;diploma
+1528;odsjek;n;bölüm (üniversite)
+1529;predmet;n;ders konusu
+1530;matematika;n;matematik
+1531;fizika;n;fizik
+1532;kemija;n;kimya
+1533;biologija;n;biyoloji
+1534;geografija;n;coğrafya
+1535;književnost;n;edebiyat
+1536;filozofija;n;felsefe
+1537;medicina;n;tıp
+1538;inženjerstvo;n;mühendislik
+1539;istraživanje;n;araştırma
+1540;pokus;n;deney
+1541;teorija;n;teori
+1542;formula;n;formül
+1543;izračun;n;hesaplama
+1544;zbrajanje;n;toplama (matematik)
+1545;program;n;program (bilgisayar) / televizyon programı
+1546;aplikacija;n;uygulama (mobil)
+1547;softver;n;yazılım
+1548;hardver;n;donanım
+1549;podaci;n;veri
+1550;lozinka;n;şifre
+1551;korisnik;n;kullanıcı
+1552;web-stranica;n;web sitesi
+1553;mreža;n;ağ
+1554;poveznica;n;bağlantı (link)
+1555;društvene mreže;n;sosyal medya
+1556;video;n;video
+1557;pametni telefon;n;akıllı telefon
+1558;robot;n;robot
+1559;umjetna inteligencija;n;yapay zeka
+1560;tehnologija;n;teknoloji
+1561;izum;n;icat
+1562;novinar;n;gazeteci
+1563;intervju;n;röportaj
+1564;članak;n;makale
+1565;naslov;n;başlık
+1566;kanal;n;kanal
+1567;gledatelj;n;izleyici
+1568;pjesnik;n;şair
+1569;pjesma (poezija);n;şiir
+1570;roman;n;roman
+1571;slikar;n;ressam
+1572;glazbenik;n;müzisyen
+1573;pjevač;n;şarkıcı
+1574;glumac;n;oyuncu (film)
+1575;redatelj;n;yönetmen
+1576;pozornica;n;sahne
+1577;koncert;n;konser
+1578;izložba;n;sergi
+1579;glazbeni instrument;n;müzik aleti
+1580;gitara;n;gitar
+1581;klavir;n;piyano
+1582;bubanj;n;davul
+1583;violina;n;keman
+1584;melodija;n;melodi
+1585;ples;n;dans
+1586;crtež;n;çizim
+1587;hobi;n;hobi
+1588;slagalica;n;bulmaca
+1589;šah;n;satranç
+1590;igračka;n;oyuncak
+1591;rječnik;n;sözlük
+1592;gramatika;n;dil bilgisi
+1593;prijevod;n;çeviri
+1594;upozoriti;v;uyarmak
+1595;zavidjeti;v;kıskanmak
+1596;vjerovati (nekome);v;güvenmek
+1597;sumnjati;v;şüphelenmek
+1598;pogoditi;v;tahmin etmek
+1599;zamisliti;v;hayal etmek
+1600;sanjati;v;rüya görmek
+1601;razgovarati;v;sohbet etmek
+1602;uvjeriti;v;ikna etmek
+1603;inzistirati;v;ısrar etmek
+1604;priznati;v;itiraf etmek
+1605;poreći;v;inkar etmek
+1606;optužiti;v;suçlamak
+1607;ispričati se;v;özür dilemek
+1608;pozdraviti;v;selamlamak
+1609;oprostiti se;v;veda etmek
+1610;predstaviti;v;tanıştırmak
+1611;ohrabriti;v;cesaretlendirmek
+1612;pohvaliti;v;övmek
+1613;kritizirati;v;eleştirmek
+1614;rugati se;v;alay etmek
+1615;šaliti se;v;şaka yapmak
+1616;lagati;v;yalan söylemek
+1617;prevariti;v;aldatmak
+1618;prijetiti;v;tehdit etmek
+1619;napasti;v;saldırmak
+1620;braniti;v;savunmak
+1621;pobjeći;v;kaçmak
+1622;sakriti se;v;saklanmak
+1623;progoniti;v;kovalamak
+1624;skakati;v;zıplamak
+1625;sagnuti se;v;eğilmek
+1626;leći;v;uzanmak (yatmak)
+1627;puzati;v;sürünmek
+1628;okliznuti se;v;kaymak
+1629;potonuti;v;batmak
+1630;plutati;v;su üstünde durmak
+1631;puhati;v;esmek (rüzgar)
+1632;kišiti;v;yağmur yağmak
+1633;sjati;v;parlamak
+1634;gorjeti;v;yanmak
+1635;topiti se;v;erimek
+1636;smrznuti se;v;donmak
+1637;kuhati se (vrenje);v;kaynamak
+1638;pržiti;v;kızartmak
+1639;peći;v;fırında pişirmek
+1640;miješati;v;karıştırmak
+1641;sjeckati;v;doğramak
+1642;guliti;v;soymak (kabuk)
+1643;proliti;v;dökmek
+1644;poslužiti;v;servis etmek
+1645;gristi;v;ısırmak
+1646;žvakati;v;çiğnemek
+1647;gutati;v;yutmak
+1648;smrzavati se;v;üşümek
+1649;razboljeti se;v;hastalanmak
+1650;ozlijediti se;v;yaralanmak
+1651;krvariti;v;kanamak
+1652;kašljati;v;öksürmek
+1653;kihati;v;hapşırmak
+1654;zijevati;v;esnemek
+1655;hrkati;v;horlamak
+1656;drhtati;v;titremek
+1657;onesvijestiti se;v;bayılmak
+1658;hraniti;v;beslemek
+1659;trenirati;v;eğitmek
+1660;naučiti napamet;v;ezberlemek
+1661;zabilježiti;v;not almak
+1662;podcrtati;v;altını çizmek
+1663;ispraviti;v;düzeltmek (hata)
+1664;otkriti;v;keşfetmek
+1665;izumiti;v;icat etmek
+1666;istraživati;v;araştırmak
+1667;analizirati;v;analiz etmek
+1668;izračunati;v;hesaplamak
+1669;razvrstati;v;sınıflandırmak
+1670;glasati;v;oy vermek
+1671;prijaviti se (za posao);v;başvurmak
+1672;zaposliti;v;işe almak
+1673;otpustiti;v;işten çıkarmak
+1674;dati ostavku;v;istifa etmek
+1675;umiroviti se;v;emekli olmak
+1676;uložiti;v;yatırım yapmak
+1677;posuditi (od nekoga);v;borç almak
+1678;vratiti novac;v;geri ödemek
+1679;potpisati;v;imzalamak
+1680;odobriti;v;onaylamak
+1681;otkazati;v;iptal etmek
+1682;odgoditi;v;ertelemek
+1683;isporučiti;v;teslim etmek
+1684;dovršiti;v;tamamlamak
+1685;uspjeti;v;başarmak
+1686;propasti;v;başarısız olmak
+1687;odustati;v;vazgeçmek
+1688;podnositi;v;katlanmak
+1689;žuriti se;v;acele etmek
+1690;zakasniti;v;geç kalmak
+1691;izgubiti se;v;yolunu kaybetmek
+1692;pojaviti se;v;ortaya çıkmak
+1693;nestati;v;kaybolmak (gözden)
+1694;postojati;v;var olmak
+1695;pripadati;v;ait olmak
+1696;sadržavati;v;içermek
+1697;ovisiti;v;bağlı olmak
+1698;utjecati;v;etkilemek
+1699;uzrokovati;v;neden olmak
+1700;spriječiti;v;önlemek
+1701;riješiti;v;çözmek
+1702;primijeniti;v;uygulamak
+1703;instalirati;v;kurmak (program)
+1704;isključiti;v;kapatmak (cihaz)
+1705;pretraživati;v;internette aramak
+1706;lajkati;v;beğenmek (sosyal medya)
+1707;registrirati se;v;kaydolmak
+1708;ažurirati;v;güncellemek
+1709;kopirati;v;kopyalamak
+1710;zalijepiti;v;yapıştırmak
+1711;tipkati;v;klavyede yazmak
+1712;snimati;v;kayıt yapmak (ses, video)
+1713;gledati televiziju;v;izlemek
+1714;fotografirati;v;fotoğraf çekmek
+1715;bojiti;v;boyamak
+1716;šivati;v;dikiş dikmek
+1717;plesti;v;örmek
+1718;donirati;v;bağışlamak (para)
+1719;naručiti;v;sipariş vermek
+1720;cjenkati se;v;pazarlık yapmak
+1721;vratiti (robu);v;iade etmek
+1722;isprobati;v;giyip denemek
+1723;parkirati;v;park etmek
+1724;ukrcati se;v;binmek
+1725;iskrcati se;v;araçtan inmek
+1726;presjedati;v;aktarma yapmak
+1727;šetati;v;gezmek
+1728;pakirati;v;paketlemek
+1729;ugostiti;v;ağırlamak
+1730;nastaniti se;v;yerleşmek
+1731;iseliti se;v;göç etmek
+1732;prilagoditi se;v;uyum sağlamak
+1733;naviknuti se;v;alışmak
+1734;nedostajati;v;özlemek
+1735;zaslužiti;v;hak etmek
+1736;poštovati (pravila);v;uymak (kurala)
+1737;prekršiti;v;ihlal etmek
+1738;prepun;adj;kalabalık
+1739;pust;adj;ıssız
+1740;udoban;adj;rahat
+1741;neudoban;adj;rahatsız
+1742;velikodušan;adj;cömert
+1743;škrt;adj;cimri
+1744;vjeran;adj;sadık
+1745;sebičan;adj;bencil
+1746;arogantan;adj;kibirli
+1747;skroman;adj;alçakgönüllü
+1748;marljiv;adj;çalışkan
+1749;strpljiv;adj;sabırlı
+1750;nestrpljiv;adj;sabırsız
+1751;pažljiv;adj;dikkatli
+1752;nepažljiv;adj;dikkatsiz
+1753;veseo;adj;neşeli
+1754;zabrinut;adj;endişeli
+1755;uplašen;adj;korkmuş
+1756;uzbuđen;adj;heyecanlı
+1757;iznenađen;adj;şaşırmış
+1758;razočaran;adj;hayal kırıklığına uğramış
+1759;ponosan;adj;gururlu
+1760;zahvalan;adj;minnettar
+1761;usamljen;adj;yalnız (duygusal)
+1762;zaljubljen;adj;aşık
+1763;pijan;adj;sarhoş
+1764;pospan;adj;uykulu
+1765;žedan;adj;susamış
+1766;sit;adj;tok
+1767;bolan;adj;ağrılı
+1768;ozlijeđen;adj;yaralı
+1769;ćelav;adj;kel
+1770;plavokos;adj;sarışın
+1771;taman (put);adj;esmer
+1772;trudna;adj;hamile
+1773;popularan;adj;popüler
+1774;rijedak;adj;nadir
+1775;uobičajen;adj;yaygın / sıradan
+1776;tipičan;adj;tipik
+1777;službeni;adj;resmi
+1778;srdačan;adj;samimi
+1779;jedinstven;adj;eşsiz
+1780;glavni;adj;ana, başlıca
+1781;osnovni;adj;temel
+1782;napredan;adj;ileri (seviye)
+1783;neizvjestan;adj;belirsiz
+1784;tajni;adj;gizli
+1785;zakonit;adj;yasal
+1786;nezakonit;adj;yasadışı
+1787;pravedan;adj;adil
+1788;nepravedan;adj;haksız
+1789;svet;adj;kutsal
+1790;povijesni;adj;tarihi
+1791;politički;adj;siyasi
+1792;gospodarski;adj;ekonomik
+1793;društveni;adj;sosyal
+1794;kulturni;adj;kültürel
+1795;znanstveni;adj;bilimsel
+1796;prirodan;adj;doğal
+1797;umjetan;adj;yapay
+1798;digitalni;adj;dijital
+1799;elektronički;adj;elektronik
+1800;automatski;adj;otomatik
+1801;besplatan;adj;ücretsiz
+1802;dostupan;adj;mevcut (elde var)
+1803;nepotpun;adj;eksik
+1804;dodatni;adj;fazladan
+1805;izgubljen;adj;kayıp
+1806;slomljen;adj;kırık
+1807;čvrst;adj;sağlam
+1808;pouzdan;adj;güvenilir
+1809;koristan;adj;faydalı
+1810;beskoristan;adj;faydasız
+1811;štetan;adj;zararlı
+1812;učinkovit;adj;etkili
+1813;uspješan;adj;başarılı
+1814;luksuzan;adj;lüks
+1815;šaren;adj;renkli
+1816;sjajan;adj;parlak
+1817;blijed;adj;soluk
+1818;proziran;adj;şeffaf
+1819;tanak;adj;ince (kalınlık)
+1820;tijesan;adj;sıkı
+1821;labav;adj;gevşek
+1822;šiljast;adj;sivri
+1823;gladak;adj;pürüzsüz
+1824;hrapav;adj;pürüzlü
+1825;kvadratni;adj;kare
+1826;prikladan;adj;uygun
+1827;neprikladan;adj;uygunsuz
+1828;obavezan;adj;zorunlu
+1829;neobavezan;adj;isteğe bağlı
+1830;hitan;adj;acil
+1831;divlji;adj;vahşi
+1832;domaći;adj;evcil
+1833;otrovan;adj;zehirli
+1834;gol;adj;çıplak
+1835;budan;adj;uyanık
+1836;znan;adj;bilinen
+1837;nepoznat;adj;bilinmeyen
+1838;realan;adj;gerçekçi
+1839;pozitivan;adj;olumlu
+1840;negativan;adj;olumsuz
+1841;jednak;adj;eşit
+1842;neovisan;adj;bağımsız
+1843;aktivan;adj;aktif
+1844;pasivan;adj;pasif
+1845;privremen;adj;geçici
+1846;trajan;adj;kalıcı
+1847;beskonačan;adj;sonsuz
+1848;dovoljan;adj;yeterli
+1849;pretjeran;adj;aşırı
+1850;sretan (ima sreće);adj;şanslı
+1851;nesretan (nema sreće);adj;şanssız
+1852;nevin;adj;masum
+1853;kriv;adj;suçlu
+1854;talentiran;adj;yetenekli
+1855;sinoć;adv;dün gece
+1856;večeras;adv;bu gece
+1857;sutra ujutro;adv;yarın sabah
+1858;prekosutra;adv;öbür gün
+1859;prekjučer;adv;evvelsi gün
+1860;prošli tjedan;adv;geçen hafta
+1861;sljedeći tjedan;adv;gelecek hafta
+1862;prošle godine;adv;geçen yıl
+1863;sljedeće godine;adv;gelecek yıl
+1864;trenutačno;adv;şu anda
+1865;tada;adv;o zaman
+1866;jednom;adv;bir kez
+1867;dvaput;adv;iki kez
+1868;rijetko;adv;nadiren
+1869;svaki dan;adv;her gün
+1870;još ne;adv;henüz değil
+1871;više ne;adv;artık değil
+1872;zatim;adv;ardından
+1873;naposljetku;adv;en son
+1874;stalno;adv;sürekli
+1875;postupno;adv;yavaş yavaş
+1876;tiho;adv;sessizce
+1877;naglas;adv;yüksek sesle
+1878;lako;adv;kolayca
+1879;s mukom;adv;zorlukla
+1880;srećom;adv;neyse ki
+1881;jasno;adv;açıkça
+1882;potpuno;adv;tamamen
+1883;djelomično;adv;kısmen
+1884;uglavnom;adv;çoğunlukla
+1885;prethodno;adv;daha önce
+1886;kasnije;adv;daha sonra
+1887;od tada;adv;o zamandan beri
+1888;dosad;adv;şimdiye kadar
+1889;prema unutra;adv;içeri (yön)
+1890;van;adv;dışarı (yön)
+1891;prema gore;adv;yukarı (yön)
+1892;prema dolje;adv;aşağı (yön)
+1893;natrag;adv;geri (yön)
+1894;prema naprijed;adv;ileri (yön)
+1895;preko puta;adv;karşısında
+1896;okolo;adv;etrafında
+1897;duž;prep;boyunca
+1898;do;prep;-e kadar
+1899;otkad;prep;-den beri
+1900;tijekom;prep;sırasında
+1901;unatoč;prep;-e rağmen
+1902;umjesto;prep;yerine
+1903;osim;prep;hariç
+1904;sukladno;prep;-e göre
+1905;zahvaljujući;prep;sayesinde
+1906;dok;conj;-ken
+1907;kao da;conj;sanki
+1908;čak i ako;conj;-sa bile
+1909;inače;conj;aksi halde
+1910;da bi;conj;-sın diye
+1911;bravo;int;aferin
+1912;čestitam;int;tebrikler
+1913;sretno;int;iyi şanslar
+1914;dobar tek;int;afiyet olsun
+1915;brz oporavak;int;geçmiş olsun
+1916;pazi;int;dikkat et
+1917;upomoć;int;imdat
+1918;živjeli;int;şerefe
+1919;sretno s poslom;int;kolay gelsin
+1920;vidimo se;int;görüşürüz
+1921;kako si;int;nasılsın
+1922;dobro sam;int;iyiyim
+1923;nema na čemu;int;rica ederim
+1924;ne razumijem;int;anlamıyorum
+1925;možete li ponoviti;int;tekrar eder misiniz
+1926;kako lijepo;int;ne güzel
+1927;odlično;int;harika
+1928;šteta;int;ne yazık
+1929;hajde;int;hadi
+1930;stani;int;dur
+1931;paran broj;num;çift sayı
+1932;neparan broj;num;tek sayı
+1933;tucet;num;düzine
+1934;četvrtina;num;çeyrek
+1935;jedan i pol;num;bir buçuk
+1936;četvrti;num;dördüncü
+1937;peti;num;beşinci
+1938;deseti;num;onuncu
+1939;milijarda;num;milyar
+1940;društvo;n;toplum
+1941;stanovništvo;n;nüfus
+1942;demokracija;n;demokrasi
+1943;republika;n;cumhuriyet
+1944;stranka;n;siyasi parti
+1945;izborni glas;n;oy
+1946;ministar;n;bakan
+1947;sabor;n;meclis
+1948;ustav;n;anayasa
+1949;zastava;n;bayrak
+1950;carstvo;n;imparatorluk
+1951;revolucija;n;devrim
+1952;neovisnost;n;bağımsızlık
+1953;pobjeda;n;zafer
+1954;poraz;n;yenilgi
+1955;junak;n;kahraman
+1956;vođa;n;lider
+1957;zaštitar;n;güvenlik görevlisi
+1958;svjedok;n;tanık
+1959;dokaz;n;kanıt
+1960;kazna;n;ceza
+1961;novčana kazna;n;para cezası
+1962;nagrada;n;ödül
+1963;medalja;n;madalya
+1964;prvak;n;şampiyon
+1965;utrka;n;yarış / koşu
+1966;igrač;n;oyuncu (spor)
+1967;sportski sudac;n;hakem
+1968;trener;n;antrenör
+1969;pogodak;n;gol
+1970;rezultat utakmice;n;skor
+1971;košarka;n;basketbol
+1972;odbojka;n;voleybol
+1973;tenis;n;tenis
+1974;plivanje;n;yüzme (spor)
+1975;hrvanje;n;güreş
+1976;boks;n;boks
+1977;skijanje;n;kayak
+1978;Olimpijske igre;n;olimpiyatlar
+1979;turnir;n;turnuva
+1980;navijač;n;taraftar
+1981;molitva;n;dua
+1982;vjera;n;inanç
+1983;raj;n;cennet
+1984;pakao;n;cehennem
+1985;anđeo;n;melek
+1986;vrag;n;şeytan
+1987;blagdan;n;bayram
+1988;Nova godina;n;yılbaşı
+1989;moral;n;ahlak
+1990;pravda;n;adalet
+1991;jednakost;n;eşitlik
+1992;odgovornost;n;sorumluluk
+1993;dužnost;n;yükümlülük
+1994;identitet;n;kimlik
+1995;osobna iskaznica;n;kimlik kartı
+1996;prihod;n;gelir
+1997;trošak;n;gider
+1998;bogatstvo;n;zenginlik
+1999;siromaštvo;n;yoksulluk
+2000;osiguranje;n;sigorta
+2001;rad;n;emek
+2002;štrajk;n;grev
+2003;organizacija;n;örgüt
+2004;ustanova;n;kurum
+2005;sustav;n;sistem
+2006;struktura;n;yapı
+2007;proces;n;süreç
+2008;strategija;n;strateji
+2009;prilika;n;fırsat
+2010;rizik;n;risk
+2011;kriza;n;kriz
+2012;sukob;n;çatışma
+2013;sporazum;n;anlaşma
+2014;svađa;n;münakaşa
+2015;mišljenje;n;görüş
+2016;savjet;n;öğüt
+2017;kritika;n;eleştiri
+2018;pritužba;n;şikayet (dilekçe)
+2019;rješenje;n;çözüm
+2020;namjera;n;niyet
+2021;želja;n;dilek
+2022;sklonost;n;tercih
+2023;činjenica;n;olgu
+2024;tajna;n;sır
+2025;obećanje;n;vaat
+2026;šala;n;şaka
+2027;prijetnja;n;tehdit
+2028;napad;n;saldırı
+2029;nasilje;n;şiddet
+2030;žrtva;n;kurban
+2031;izbjeglica;n;mülteci
+2032;volonter;n;gönüllü
+2033;donacija;n;bağış
+2034;svečanost;n;tören
+2035;nasljedstvo;n;miras
+2036;civilizacija;n;medeniyet
+2037;naraštaj;n;nesil
+2038;čovječanstvo;n;insanlık
