@@ -214,6 +214,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Oturum durumunu bekle (Firebase kayıtlı oturumu geri yükler).
     // Adresteki ekran açılır (#/football/groups/3); oturum yoksa girişten sonra oraya gidilir.
     const session = await AuthManager.ready;
-    if (session) updateUserUI(session);
+    if (session) { updateUserUI(session); if (typeof authUpdateVerifyBanner === 'function') authUpdateVerifyBanner(session); }
     Router.start(session);
 });

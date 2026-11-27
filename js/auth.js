@@ -5,6 +5,27 @@
    Gerekenler: js/firebase-config.js ve js/utils.js (önce yüklenir), Firebase compat SDK'ları
 ============================================================ */
 
+// Şifre kuralı: en az 8 karakter, en az bir harf ve bir rakam
+function passwordProblem(p) {
+    p = p || '';
+    if (p.length < 8) return 'Şifre en az 8 karakter olmalı.';
+    if (!/[A-Za-zÇĞİÖŞÜçğıöşü]/.test(p)) return 'Şifre en az bir harf içermeli.';
+    if (!/\d/.test(p)) return 'Şifre en az bir rakam içermeli.';
+    return null;
+}
+// 0–4 arası güç puanı (gösterge için)
+function passwordScore(p) {
+    p = p || '';
+    let sc = 0;
+    if (p.length >= 8) sc++;
+    if (p.length >= 12) sc++;
+    if (/[a-zçğıöşü]/.test(p) && /[A-ZÇĞİÖŞÜ]/.test(p)) sc++;
+    if (/\d/.test(p)) sc++;
+    if (/[^A-Za-z0-9ÇĞİÖŞÜçğıöşü]/.test(p)) sc++;
+    if (passwordProblem(p)) sc = Math.min(sc, 1);
+    return Math.min(4, sc);
+}
+
 const PROGRESS_BASE_KEYS = {
     en: 'lumina_progress_en',
     es: 'lumina_progress_es',
@@ -72,7 +93,7 @@ const AuthManager = (() => {
         'auth/invalid-credential': 'E-posta veya şifre hatalı.',
         'auth/invalid-login-credentials': 'E-posta veya şifre hatalı.',
         'auth/email-already-in-use': 'Bu e-posta adresi zaten kayıtlı. Giriş yapmayı deneyin.',
-        'auth/weak-password': 'Şifre en az 6 karakter olmalıdır.',
+        'auth/weak-password': 'Şifre en az 8 karakter olmalı, harf ve rakam içermelidir.',
         'auth/too-many-requests': 'Çok fazla deneme yapıldı. Lütfen biraz bekleyip tekrar deneyin.',
         'auth/network-request-failed': 'İnternet bağlantısı kurulamadı. Bağlantınızı kontrol edin.',
         'auth/requires-recent-login': 'Güvenlik için lütfen çıkış yapıp tekrar giriş yapın.',
@@ -167,7 +188,8 @@ const AuthManager = (() => {
     async function signUp(email, password, name) {
         email = (email || '').trim().toLowerCase();
         if (!email || !password) return { ok: false, error: 'E-posta ve şifre zorunludur.' };
-        if (password.length < 6) return { ok: false, error: 'Şifre en az 6 karakter olmalıdır.' };
+        const weak = passwordProblem(password);
+        if (weak) return { ok: false, error: weak };
         if (!auth) return notConfigured();
         try {
             const cred = await auth.createUserWithEmailAndPassword(email, password);
@@ -243,7 +265,8 @@ const AuthManager = (() => {
     async function changePassword(oldPassword, newPassword) {
         if (!auth || !auth.currentUser) return { ok: false, error: 'Oturum bulunamadı.' };
         if (!oldPassword || !newPassword) return { ok: false, error: 'Lütfen tüm alanları doldurun.' };
-        if (newPassword.length < 6) return { ok: false, error: 'Yeni şifre en az 6 karakter olmalıdır.' };
+        const weak = passwordProblem(newPassword);
+        if (weak) return { ok: false, error: 'Yeni şifre: ' + weak };
         const user = auth.currentUser;
         try {
             const cred = firebase.auth.EmailAuthProvider.credential(user.email, oldPassword);
@@ -265,6 +288,52 @@ const AuthManager = (() => {
             session = buildSession(auth.currentUser, role);
         }
         return session;
+    }
+
+    // ── E-posta doğrulama ──
+    async function resendVerification() {
+        if (!auth || !auth.currentUser) return { ok: false, error: 'Oturum bulunamadı.' };
+        try { await auth.currentUser.sendEmailVerification(); return { ok: true }; }
+        catch (e) { return { ok: false, error: errText(e) }; }
+    }
+
+    // ── Hesabı kalıcı olarak sil (KVKK silme hakkı) ──
+    // Önce kimlik yeniden doğrulanır (Firebase son giriş ister), sonra buluttaki ilerleme,
+    // profil belgesi ve hesap silinir; bu cihazdaki hesaba ait kayıtlar da temizlenir.
+    async function deleteAccount(password) {
+        const user = auth && auth.currentUser;
+        if (!user) return { ok: false, error: 'Oturum bulunamadı.' };
+        const uid = user.uid;
+        const usesPassword = (user.providerData || []).some(p => p.providerId === 'password');
+        try {
+            if (usesPassword) {
+                if (!password) return { ok: false, error: 'Onaylamak için şifreni gir.' };
+                await user.reauthenticateWithCredential(firebase.auth.EmailAuthProvider.credential(user.email, password));
+            } else {
+                await user.reauthenticateWithPopup(new firebase.auth.GoogleAuthProvider());
+            }
+        } catch (e) {
+            if (e.code === 'auth/popup-closed-by-user' || e.code === 'auth/cancelled-popup-request') return { ok: false, error: 'Google doğrulaması tamamlanmadı.' };
+            if (e.code === 'auth/wrong-password' || e.code === 'auth/invalid-credential') return { ok: false, error: 'Şifren hatalı.' };
+            return { ok: false, error: errText(e) };
+        }
+        let cloudLeft = false;
+        if (db) {
+            try {
+                const snap = await db.collection('users').doc(uid).collection('progress').get();
+                await Promise.all(snap.docs.map(d => d.ref.delete()));
+            } catch (e) { cloudLeft = true; console.warn('İlerleme silinemedi:', e.code || e); }
+            try { await db.collection('users').doc(uid).delete(); }
+            catch (e) { cloudLeft = true; console.warn('Profil silinemedi:', e.code || e); }
+        }
+        try { await user.delete(); }
+        catch (e) { return { ok: false, error: errText(e) }; }
+        try {
+            Object.keys(localStorage).forEach(k => { if (k.endsWith('_' + uid) || k.includes(uid)) localStorage.removeItem(k); });
+            localStorage.removeItem('lumina_consent');
+        } catch { /* yoksay */ }
+        session = null;
+        return { ok: true, cloudLeft };
     }
 
     // KVKK onayı verilmeyen yeni (Google) hesabı geri al: hesabı sil ve çıkış yap
@@ -296,7 +365,7 @@ const AuthManager = (() => {
         getDb: () => db,
         signUp, signIn, signInWithGoogle, sendPasswordReset,
         updateProfile: updateProfileName,
-        changePassword, discardNewAccount, signOut, progressKey
+        changePassword, discardNewAccount, resendVerification, deleteAccount, refreshSession, signOut, progressKey
     };
 })();
 
@@ -442,6 +511,7 @@ function authConsentOk(checkboxId, errorId) {
 }
 
 async function authSignIn() {
+    document.getElementById('siInfo')?.classList.add('hidden');
     const email = document.getElementById('siEmail').value;
     const password = document.getElementById('siPassword').value;
     document.getElementById('siError').classList.add('hidden');
@@ -525,6 +595,7 @@ function authGoToDashboard(user) {
     updateUserUI(user);
     const topBar = document.getElementById('globalTopBar');
     if (topBar) topBar.classList.remove('hidden');
+    authUpdateVerifyBanner(user);
     NotificationManager.addNotification('Hoş Geldiniz', `${user.name || user.email} ile oturum açıldı.`, '👋');
     if (typeof Router !== 'undefined') Router.afterLogin();   // giriş öncesi açılan adres varsa oraya
     else showScreen('languageScreen');
@@ -592,6 +663,7 @@ function resetToAuthScreen() {
 
     document.body.classList.remove('google-user');
     document.getElementById('globalTopBar')?.classList.add('hidden');
+    document.getElementById('verifyBanner')?.classList.add('hidden');
     document.getElementById('userDropdownMenu')?.classList.add('hidden');
     document.querySelector('.user-dropdown-wrapper')?.classList.remove('active');
     document.getElementById('notifPopover')?.classList.add('hidden');
@@ -615,7 +687,7 @@ window.executeSignOut = async function () {
 // Başka sekmede çıkış yapılırsa bu sekmeyi de çıkışa al
 AuthManager.onChange(s => {
     if (!s) resetToAuthScreen();
-    else if (typeof updateUserUI === 'function') updateUserUI(s);
+    else { if (typeof updateUserUI === 'function') updateUserUI(s); authUpdateVerifyBanner(s); }
 });
 
 AuthManager.init();
@@ -715,4 +787,80 @@ function authAskConsent() {
         legalResolve = finish;
         authOpenLegal(legalRead.kvkk ? 'terms' : 'kvkk', true);
     });
+}
+
+
+// ── E-posta doğrulama bandı ──────────────────────────────────────
+// Şifreyle kayıt olup e-postasını doğrulamamış kullanıcıya üstte hatırlatma gösterilir (Google hesapları zaten doğrulanmış).
+let verifyBannerDismissed = false;
+function authUpdateVerifyBanner(s) {
+    const el = document.getElementById('verifyBanner');
+    if (!el) return;
+    const show = !!(s && !s.guest && s.authProvider === 'password' && !s.emailVerified && !verifyBannerDismissed);
+    el.classList.toggle('hidden', !show);
+    if (show) document.getElementById('vbEmail').textContent = s.email || '';
+}
+async function authResendVerify() {
+    const btn = document.getElementById('vbResend');
+    btn.disabled = true;
+    const r = await AuthManager.resendVerification();
+    document.getElementById('vbMsg').textContent = r.ok ? '✅ Doğrulama e-postası yeniden gönderildi. Spam klasörüne de bak.' : '⚠️ ' + r.error;
+    setTimeout(() => { btn.disabled = false; }, r.ok ? 30000 : 2000);
+}
+async function authCheckVerified() {
+    const s = await AuthManager.refreshSession();
+    if (s && s.emailVerified) {
+        document.getElementById('verifyBanner').classList.add('hidden');
+        NotificationManager.addNotification('E-posta doğrulandı', 'Hesabın artık doğrulanmış.', '✅');
+    } else {
+        document.getElementById('vbMsg').textContent = 'Henüz doğrulanmamış görünüyor. E-postadaki bağlantıya tıkladıktan sonra tekrar dene.';
+    }
+}
+function authDismissVerify() { verifyBannerDismissed = true; document.getElementById('verifyBanner').classList.add('hidden'); }
+
+// ── Şifre gücü göstergesi (kayıt ve şifre değiştirme) ──────────
+const PW_LABELS = ['Çok zayıf', 'Zayıf', 'Orta', 'Güçlü', 'Çok güçlü'];
+function authBindPwMeter(inputId, meterId) {
+    const input = document.getElementById(inputId), meter = document.getElementById(meterId);
+    if (!input || !meter) return;
+    const upd = () => {
+        const v = input.value, sc = passwordScore(v), prob = passwordProblem(v);
+        meter.dataset.score = v ? sc : '';
+        meter.querySelector('.pw-label').textContent = v ? (prob ? prob : PW_LABELS[sc]) : 'En az 8 karakter, harf ve rakam';
+    };
+    input.addEventListener('input', upd); upd();
+}
+authBindPwMeter('suPassword', 'suPwMeter');
+authBindPwMeter('cpNewPassword', 'cpPwMeter');
+
+// ── Hesabı sil penceresi ─────────────────────────────────────────
+function openDeleteAccountModal() {
+    const s = AuthManager.getSession();
+    if (!s) return;
+    closeModal('manageAccountModal');
+    const pw = s.authProvider === 'password';
+    document.getElementById('daPwGroup').classList.toggle('hidden', !pw);
+    document.getElementById('daGoogleNote').classList.toggle('hidden', pw);
+    ['daPassword', 'daConfirm'].forEach(id => { document.getElementById(id).value = ''; });
+    document.getElementById('daError').classList.add('hidden');
+    document.getElementById('daBtn').disabled = true;
+    openModal('deleteAccountModal');
+    setTimeout(() => document.getElementById('daConfirm').focus(), 200);
+}
+document.getElementById('daConfirm')?.addEventListener('input', e => {
+    document.getElementById('daBtn').disabled = e.target.value.trim().toLocaleUpperCase('tr-TR') !== 'SİL';
+});
+async function confirmDeleteAccount() {
+    const btn = document.getElementById('daBtn'), err = document.getElementById('daError');
+    if (btn.disabled) return;
+    err.classList.add('hidden');
+    authSetLoading('daBtn', true);
+    const r = await AuthManager.deleteAccount(document.getElementById('daPassword').value);
+    authSetLoading('daBtn', false);
+    if (!r.ok) { err.textContent = '⚠️ ' + r.error; err.classList.remove('hidden'); return; }
+    closeModal('deleteAccountModal');
+    resetToAuthScreen();
+    authShowMsg('siInfo', r.cloudLeft
+        ? '✅ Hesabın silindi. Buluttaki bazı kayıtlar silinemedi; tamamen silinmesi için salpersalih@gmail.com adresine yazabilirsin.'
+        : '✅ Hesabın ve tüm verilerin kalıcı olarak silindi. Seni tekrar görmek isteriz!');
 }
