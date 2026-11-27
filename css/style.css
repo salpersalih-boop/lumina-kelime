@@ -6539,3 +6539,45 @@ html.no-flag-emoji .lang-icon-wrap:has(.flag-emoji.is-flag) .flag-code { font-si
 @media (prefers-reduced-motion: reduce) {
   .mg-screen *, .mg-result *, .mg-perfect * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+
+/* ── Şifre gücü göstergesi ── */
+.pw-meter { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.pw-bars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; width: 120px; flex: 0 0 auto; }
+.pw-bars i { height: 6px; border-radius: 99px; background: var(--border); transition: background .25s; }
+.pw-label { font-size: .76rem; color: var(--text-muted); }
+.pw-meter[data-score="0"] .pw-bars i:nth-child(-n+1), .pw-meter[data-score="1"] .pw-bars i:nth-child(-n+1) { background: #ef4444; }
+.pw-meter[data-score="2"] .pw-bars i:nth-child(-n+2) { background: #f59e0b; }
+.pw-meter[data-score="3"] .pw-bars i:nth-child(-n+3) { background: #22c55e; }
+.pw-meter[data-score="4"] .pw-bars i { background: #16a34a; }
+.pw-meter[data-score="0"] .pw-label, .pw-meter[data-score="1"] .pw-label { color: #ef4444; }
+.pw-meter[data-score="3"] .pw-label, .pw-meter[data-score="4"] .pw-label { color: #16a34a; font-weight: 600; }
+
+/* ── E-posta doğrulama bandı ── */
+.verify-banner { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; max-width: 1100px; margin: 10px auto 0; padding: 10px 14px; border-radius: 14px;
+  background: linear-gradient(135deg, rgba(99,102,241,.12), rgba(59,130,246,.10)); border: 1px solid rgba(99,102,241,.35); color: var(--text-primary); font-size: .88rem; }
+.verify-banner.hidden, .global-top-bar.hidden + .verify-banner { display: none; }
+.vb-ic { font-size: 1.3rem; }
+.vb-text { flex: 1; min-width: 200px; line-height: 1.45; }
+.vb-text #vbMsg { display: block; color: var(--text-muted); font-size: .8rem; }
+.vb-text #vbMsg:empty { display: none; }
+.vb-actions { display: flex; gap: 6px; align-items: center; }
+.vb-actions button { border: 1px solid var(--border); background: var(--bg-card); color: var(--text-primary); border-radius: 10px; padding: 6px 12px; font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; }
+.vb-actions button:disabled { opacity: .5; cursor: not-allowed; }
+.vb-actions .vb-main { background: var(--accent-1); border-color: transparent; color: #fff; }
+.vb-actions .vb-x { padding: 6px 9px; background: none; border: 0; color: var(--text-muted); }
+
+/* ── Hesabı sil ── */
+.ma-danger { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 18px; padding: 14px; border-radius: 14px;
+  border: 1px solid rgba(239,68,68,.35); background: rgba(239,68,68,.06); }
+.ma-danger strong { color: #ef4444; font-size: .92rem; }
+.ma-danger p { margin: 3px 0 0; font-size: .8rem; color: var(--text-muted); line-height: 1.45; }
+.btn-danger-outline { flex: 0 0 auto; padding: 9px 14px; border-radius: 10px; border: 1.5px solid #ef4444; background: transparent; color: #ef4444; font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; transition: background .2s, color .2s; }
+.btn-danger-outline:hover { background: #ef4444; color: #fff; }
+.da-lead { margin: 0 0 6px; }
+.da-list { margin: 0 0 16px; padding-left: 1.2em; color: var(--text-muted); font-size: .88rem; line-height: 1.6; }
+.da-note { font-size: .85rem; color: var(--text-muted); margin: 0 0 12px; }
+.da-note.hidden { display: none; }
+.da-btn { flex: 0 1 auto; }
+.da-btn:disabled { opacity: .45; cursor: not-allowed; transform: none; box-shadow: none; }
+@media (max-width: 520px) { .ma-danger { flex-direction: column; align-items: stretch; } }
