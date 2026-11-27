@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lumina-cache-v46';
+const CACHE_NAME = 'lumina-cache-v47';
 // index.html'deki ?v= sürümü değiştiğinde CACHE_NAME'i de artırın
 const STATIC_ASSETS = [
   './',
