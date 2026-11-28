@@ -153,6 +153,10 @@ function openModal(modalId) {
             document.getElementById('maNameInput').value = session.name || '';
             document.getElementById('maEmailInput').value = session.email;
         }
+        const hasPw = AuthManager.hasPassword ? AuthManager.hasPassword() : true;
+        document.getElementById('maPwHas')?.classList.toggle('hidden', !hasPw);
+        document.getElementById('maPwNone')?.classList.toggle('hidden', hasPw);
+        document.getElementById('maPwMsg')?.classList.add('hidden');
         document.getElementById('maSuccess')?.classList.add('hidden');
         document.getElementById('maError')?.classList.add('hidden');
     } else if (modalId === 'changePasswordModal') {

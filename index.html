@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=45" />
+  <link rel="stylesheet" href="css/style.css?v=46" />
 </head>
 
 <body>
@@ -783,6 +783,24 @@
           </div>
         </div>
 
+        <div class="ma-security">
+          <strong>🔑 Şifre</strong>
+          <div id="maPwHas" class="ma-sec-row">
+            <p>E-posta ve şifreyle giriş yapıyorsun.</p>
+            <div class="ma-sec-actions">
+              <button type="button" class="btn-secondary ma-sec-btn" onclick="closeModal('manageAccountModal'); openModal('changePasswordModal')">Şifreyi değiştir</button>
+              <button type="button" class="ma-link-btn" onclick="sendAccountPasswordLink(this)">Şifremi unuttum</button>
+            </div>
+          </div>
+          <div id="maPwNone" class="ma-sec-row hidden">
+            <p>Google ile giriş yapıyorsun, henüz şifren yok. E-postana bir bağlantı gönderelim, oradan şifre belirle; sonra e-posta ve şifreyle de girebilirsin.</p>
+            <div class="ma-sec-actions">
+              <button type="button" class="btn-secondary ma-sec-btn" onclick="sendAccountPasswordLink(this)">Şifre belirleme bağlantısı gönder</button>
+            </div>
+          </div>
+          <div id="maPwMsg" class="ma-sec-msg hidden"></div>
+        </div>
+
         <div class="ma-danger">
           <div>
             <strong>Hesabı sil</strong>
@@ -917,6 +935,8 @@
             <button class="auth-eye-btn" onclick="authToggleEye('cpConfirmPassword', this)">👁</button>
           </div>
         </div>
+
+        <button type="button" class="ma-link-btn cp-forgot" onclick="sendAccountPasswordLink(this, 'cp')">Mevcut şifremi unuttum, bağlantı gönder</button>
 
         <div id="cpSuccess" class="auth-success hidden"></div>
         <div id="cpError" class="auth-error hidden"></div>
@@ -1379,26 +1399,26 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
   <script src="js/firebase-config.js"></script>
-  <script src="js/utils.js?v=45"></script>
-  <script src="js/auth.js?v=45"></script>
+  <script src="js/utils.js?v=46"></script>
+  <script src="js/auth.js?v=46"></script>
   <!-- Uygulama (sıra önemli: aynı global kapsamı paylaşırlar) -->
-  <script src="js/app/nav.js?v=45"></script>
-  <script src="js/app/state.js?v=45"></script>
-  <script src="js/app/data.js?v=45"></script>
-  <script src="js/app/progress.js?v=45"></script>
-  <script src="js/app/dashboard.js?v=45"></script>
-  <script src="js/app/study.js?v=45"></script>
-  <script src="js/app/lab.js?v=45"></script>
-  <script src="js/app/match.js?v=45"></script>
-  <script src="js/app/ui.js?v=45"></script>
-  <script src="js/app/theme.js?v=45"></script>
-  <script src="js/app/tomer.js?v=45"></script>
-  <script src="js/app/dersler.js?v=45"></script>
-  <script src="js/app/router.js?v=45"></script>
-  <script src="js/app/main.js?v=45"></script>
-  <script src="js/app/test-write.js?v=45"></script>
-  <script src="js/app/race.js?v=45"></script>
-  <script src="js/app/account.js?v=45"></script>
+  <script src="js/app/nav.js?v=46"></script>
+  <script src="js/app/state.js?v=46"></script>
+  <script src="js/app/data.js?v=46"></script>
+  <script src="js/app/progress.js?v=46"></script>
+  <script src="js/app/dashboard.js?v=46"></script>
+  <script src="js/app/study.js?v=46"></script>
+  <script src="js/app/lab.js?v=46"></script>
+  <script src="js/app/match.js?v=46"></script>
+  <script src="js/app/ui.js?v=46"></script>
+  <script src="js/app/theme.js?v=46"></script>
+  <script src="js/app/tomer.js?v=46"></script>
+  <script src="js/app/dersler.js?v=46"></script>
+  <script src="js/app/router.js?v=46"></script>
+  <script src="js/app/main.js?v=46"></script>
+  <script src="js/app/test-write.js?v=46"></script>
+  <script src="js/app/race.js?v=46"></script>
+  <script src="js/app/account.js?v=46"></script>
 </body>
 
 </html>

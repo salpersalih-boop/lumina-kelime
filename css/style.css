@@ -6567,6 +6567,19 @@ html.no-flag-emoji .lang-icon-wrap:has(.flag-emoji.is-flag) .flag-code { font-si
 .vb-actions .vb-main { background: var(--accent-1); border-color: transparent; color: #fff; }
 .vb-actions .vb-x { padding: 6px 9px; background: none; border: 0; color: var(--text-muted); }
 
+/* ── Hesabı Yönet: şifre ── */
+.ma-security { margin-top: 18px; padding: 14px; border-radius: 14px; border: 1px solid var(--border); background: rgba(255,255,255,.03); }
+.ma-security > strong { font-size: .92rem; color: var(--text-primary); }
+.ma-sec-row p { margin: 4px 0 10px; font-size: .8rem; color: var(--text-muted); line-height: 1.45; }
+.ma-sec-row.hidden, .ma-sec-msg.hidden { display: none; }
+.ma-sec-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ma-sec-btn { flex: 0 0 auto; padding: 9px 14px; font-size: .85rem; }
+.ma-link-btn { background: none; border: 0; padding: 4px 0; color: var(--accent-1); font: inherit; font-size: .84rem; font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.ma-link-btn:disabled { opacity: .5; cursor: default; }
+.ma-sec-msg { margin-top: 10px; font-size: .82rem; line-height: 1.45; color: #ef4444; }
+.ma-sec-msg.ok { color: #22c55e; }
+.cp-forgot { display: block; margin: -4px 0 12px; }
+
 /* ── Hesabı sil ── */
 .ma-danger { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 18px; padding: 14px; border-radius: 14px;
   border: 1px solid rgba(239,68,68,.35); background: rgba(239,68,68,.06); }
