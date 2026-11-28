@@ -281,6 +281,22 @@ const AuthManager = (() => {
         }
     }
 
+    // Hesapta e-posta/şifre girişi var mı? (Google ile açılan hesapta yoktur)
+    function hasPassword() {
+        const user = auth && auth.currentUser;
+        if (!user) return false;
+        return (user.providerData || []).some(p => p.providerId === 'password');
+    }
+
+    // Oturumdaki kullanıcının kendi e-postasına şifre sıfırlama / belirleme bağlantısı gönderir.
+    // Google hesabında bu bağlantıyla şifre belirlenince e-posta + şifre girişi de açılır.
+    async function sendOwnPasswordLink() {
+        const user = auth && auth.currentUser;
+        if (!user || !user.email) return { ok: false, error: 'Oturum bulunamadı.' };
+        try { await auth.sendPasswordResetEmail(user.email); return { ok: true, email: user.email }; }
+        catch (e) { return { ok: false, error: errText(e) }; }
+    }
+
     async function refreshSession() {
         if (auth && auth.currentUser) {
             await auth.currentUser.reload().catch(() => { });
@@ -365,7 +381,7 @@ const AuthManager = (() => {
         getDb: () => db,
         signUp, signIn, signInWithGoogle, sendPasswordReset,
         updateProfile: updateProfileName,
-        changePassword, discardNewAccount, resendVerification, deleteAccount, refreshSession, signOut, progressKey
+        changePassword, hasPassword, sendOwnPasswordLink, discardNewAccount, resendVerification, deleteAccount, refreshSession, signOut, progressKey
     };
 })();
 
@@ -628,6 +644,29 @@ async function saveProfileChanges() {
         errEl.textContent = '⚠️ ' + result.error;
         errEl.classList.remove('hidden');
     }
+}
+
+// Hesabı Yönet / Şifre Değiştir: kendi e-postana şifre bağlantısı gönder
+async function sendAccountPasswordLink(btn, where) {
+    const box = where === 'cp' ? null : document.getElementById('maPwMsg');
+    const errEl = where === 'cp' ? document.getElementById('cpError') : null;
+    const succEl = where === 'cp' ? document.getElementById('cpSuccess') : null;
+    if (btn) { btn.disabled = true; }
+    const r = await AuthManager.sendOwnPasswordLink();
+    if (btn) { setTimeout(() => { btn.disabled = false; }, 30000); }   // art arda göndermeyi engelle
+    const text = r.ok
+        ? '✅ ' + r.email + ' adresine bağlantı gönderildi. Gelen kutunu ve spam klasörünü kontrol et.'
+        : '⚠️ ' + r.error;
+    if (box) {
+        box.textContent = text;
+        box.classList.toggle('ok', !!r.ok);
+        box.classList.remove('hidden');
+    } else {
+        errEl.classList.add('hidden'); succEl.classList.add('hidden');
+        const el = r.ok ? succEl : errEl;
+        el.textContent = text; el.classList.remove('hidden');
+    }
+    if (!r.ok && btn) btn.disabled = false;
 }
 
 async function savePasswordChanges() {
